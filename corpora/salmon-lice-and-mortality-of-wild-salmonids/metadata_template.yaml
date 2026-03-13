@@ -1,0 +1,329 @@
+# ==================================================
+# METADATA TEMPLATE
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+#
+# Copy to: documents/[YYYY_outlet_keyword]/metadata.yaml
+# Fill all fields. See KEYWORDS.md for tag vocabulary.
+# See ../../../shared/tagging_guide.md for guidance.
+# ==================================================
+
+
+# ==================================================
+# BASIC DOCUMENT INFORMATION
+# (Descriptive facts — should come directly from document)
+# ==================================================
+
+title: ""               # Full title of the document
+year: null              # Year of publication
+source_type: peer_reviewed
+# peer_reviewed | report | government_report | expert_group_report
+# white_paper | thesis | conference_paper | dataset | commentary | response
+
+journal: ""             # Journal or outlet name
+publisher: ""           # Optional: publisher / institution
+doi: ""                 # DOI or stable identifier
+url: ""                 # Optional stable URL
+authors: []             # Optional list of authors
+language: english
+# english | norwegian | other
+
+document_type: ""
+# research_article | review_article | systematic_review | meta_analysis
+# modelling_study | methods_paper | commentary | response | policy_report
+# risk_assessment | monitoring_report | thesis | dataset_description
+
+abstract_available: unclear
+# yes | no | unclear
+
+
+# ==================================================
+# CORPUS ASSIGNMENT
+# ==================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - ""     # Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10
+
+
+# ==================================================
+# CONTEXT OF THE EVIDENCE
+# (Descriptive, but requires correct interpretation)
+# ==================================================
+
+causal_chain_stage:
+  - ""
+# farm_lice_abundance | lice_reproduction | larval_production
+# larval_dispersal | environmental_drivers | host_exposure
+# infestation | physiological_effects | behaviour
+# individual_mortality | population_impacts
+# monitoring_methods | model_calibration | model_validation
+# regulatory_assessment
+
+host_species:
+  - ""
+# atlantic_salmon | sea_trout | arctic_char
+# pacific_salmon | chum_salmon | pink_salmon | coho_salmon | chinook_salmon
+# mixed_salmonids | not_species_specific
+
+wild_or_farmed_focus: ""
+# wild | farmed | both | not_applicable
+
+life_stage:
+  - ""
+# egg | fry | parr | smolt | post_smolt | juvenile | adult
+# returning_adult | mixed | not_applicable
+
+parasite_species:
+  - ""
+# lepeophtheirus_salmonis | caligus_clemensi | caligus_elongatus
+# mixed_lice | not_specified
+
+environment:
+  - ""
+# freshwater | estuary | fjord | coastal | archipelago
+# shelf_sea | open_ocean | laboratory | mesocosm | modelled_environment
+
+geography:
+  - ""
+# Country / region / production area
+# Norway | Norway_PO3 | Norway_PO4 | Hardangerfjord
+# British_Columbia | Discovery_Islands | Broughton_Archipelago
+# Scotland | Ireland
+
+time_period: ""
+# Years or monitoring period: e.g. "2015–2019"
+
+seasonality_focus:
+  - ""
+# spring | summer | autumn | winter | full_year
+# migration_period | not_applicable
+
+regulatory_context:
+  - ""
+# Norway_TLS | Norway_expert_group | Canada_management
+# Scotland_management | Ireland_management | none
+
+evidence_type: ""
+# empirical_experimental | empirical_observational | review
+# systematic_review | meta_analysis | model | methods
+# commentary | response | policy_assessment | mixed
+
+
+# ==================================================
+# STUDY DESIGN / EVIDENCE GENERATION
+# (Descriptive; useful for retrieval and filtering)
+# ==================================================
+
+study_design:
+  - ""
+# laboratory_challenge | field_sampling | trawl_sampling | sentinel_cage
+# telemetry | genetic_assignment | farm_monitoring | statistical_analysis
+# hydrodynamic_modelling | particle_tracking | virtual_post_smolt_modelling
+# population_modelling | literature_review | expert_assessment | mixed
+
+data_source:
+  - ""
+# wild_fish_sampling | farm_lice_counts | sentinel_cages | trawl_data
+# trap_net_data | telemetry_tracking | genetic_assignment
+# hydrodynamic_model_output | particle_tracking_output
+# expert_group_reports | published_literature | mixed
+
+model_type:
+  - ""
+# none | hydrodynamic_model | lice_particle_tracking_model
+# infestation_model | virtual_post_smolt_model
+# statistical_regression_model | threshold_model | population_model
+# risk_assessment_model | ensemble_or_multi_model | conceptual_model
+
+observation_unit:
+  - ""
+# individual_fish | fish_group | river | production_area | farm
+# farm_month | site | grid_cell | model_particle | study | mixed
+
+comparison_type:
+  - ""
+# exposed_vs_unexposed | treated_vs_untreated | farm_present_vs_removed
+# high_vs_low_infestation | observed_vs_modelled | trawl_vs_sentinel
+# before_after | among_regions | among_years | none | mixed
+
+
+# ==================================================
+# OUTCOME DOMAIN
+# (What kind of endpoint is actually studied?)
+# ==================================================
+
+outcome_domain:
+  - ""
+# lice_abundance_on_farms | larval_density_in_water
+# infestation_on_wild_fish | infestation_pressure
+# migration_timing | migration_route
+# physiological_stress | skin_damage | osmoregulatory_effects
+# behaviour_change | survival | mortality | marine_survival
+# adult_returns | population_abundance
+# regulatory_classification | model_performance | uncertainty_estimation
+
+primary_endpoint: ""    # Free-text short label of main endpoint
+
+secondary_endpoints: []
+
+
+# ==================================================
+# DIRECTION OF EVIDENCE
+# (Interpretive, but directly about the paper's substantive thrust)
+# ==================================================
+
+evidence_direction: ""
+# supports_effect   — supports the view that farm lice harm wild salmonids
+# weak_support      — some support, but limited or equivocal
+# mixed_within_study
+# no_effect_detected
+# contradicts_effect
+# critiques_methodology
+# not_applicable
+
+effect_scale: ""
+# individual_level | population_level | both | not_applicable
+
+uncertainty_emphasis: ""
+# low | moderate | high | very_high | not_stated
+#
+# Reflects whether the paper itself emphasises uncertainty,
+# not the curator's own judgement.
+
+main_uncertainty_sources:
+  - ""
+# migration_timing | migration_duration | larval_production
+# hydrodynamics | calibration_data
+# infestation_to_mortality_thresholds | observational_bias
+# sampling_representativeness | model_structure
+# parameter_uncertainty | transferability | none_highlighted
+
+
+# ==================================================
+# SYNTHESIS-LEVEL HUMAN ASSESSMENTS
+# (These do NOT come from the paper — they come from the curator)
+# ==================================================
+
+consensus_signal: mixed
+# high_agreement | moderate_agreement | mixed
+# context_dependent | contested | insufficient_evidence
+#
+# How this document fits into the broader literature,
+# not whether it is "right".
+
+quality_signal: medium
+# strong | medium | weak
+
+relevance_signal: high
+# high | medium | low
+
+controversy_role: ""
+# foundational   — establishes a key concept or baseline
+# supportive     — adds evidence in the dominant direction
+# critical       — raises methodological or empirical challenges
+# rebuttal       — directly responds to or refutes another study
+# bridge_between_positions — connects or mediates between opposing views
+# peripheral     — indirectly relevant
+# not_applicable
+
+
+# ==================================================
+# INCLUSION LOGIC (CRITICAL)
+# ==================================================
+
+included_because: >
+  # Explicit reason why this document is included.
+  # Human curatorial judgement.
+  # Focus on the role in the knowledge landscape, not the conclusions.
+  # Minimum 2–3 sentences.
+
+
+# ==================================================
+# OPTIONAL BUT RECOMMENDED CURATOR FIELDS
+# ==================================================
+
+quality_rationale: >
+  # Short explanation of quality_signal.
+  # Key strengths and limitations.
+
+relevance_rationale: >
+  # Why this document matters (or is only marginal) for this corpus.
+
+transferability: medium
+# high | medium | low
+
+transferability_notes: >
+  # What limits or supports applicability to other contexts.
+
+coi_declared: unclear
+# yes | no | unclear
+
+coi_notes: >
+  # Funding, industry involvement, advocacy links,
+  # expert-group roles, or uncertainty about COI.
+
+methodological_limitations:
+  - ""   # E.g. "Relies on assumed migration duration not directly observed"
+  - ""
+
+retrieval_tags:
+  - ""   # Additional free-form tags for RAG retrieval
+  - ""
+
+
+# ==================================================
+# KEY CLAIMS FOR SYNTHESIS
+# (Human-formulated — not AI-extracted)
+# ==================================================
+
+key_claims:
+  - ""   # Short, neutral statement of a central finding or claim
+  - ""
+  - ""
+
+claims_about_uncertainty:
+  - ""   # Key claim about uncertainty, assumptions, or limitations
+  - ""
+
+claims_about_policy_or_management:
+  - ""   # Claims about TLS, regulation, or management implications
+  - ""
+
+
+# ==================================================
+# RELATION TO OTHER DOCUMENTS
+# (Optional but valuable in controversial literatures)
+# ==================================================
+
+related_documents_supporting:
+  - ""   # DOI or filename of aligned studies
+
+related_documents_contrasting:
+  - ""   # Studies reaching different conclusions
+
+related_documents_reply_to:
+  - ""   # For comments / responses / rebuttals
+
+should_be_read_with:
+  - ""   # Helpful paired reading for context
+
+
+# ==================================================
+# RAG-ORIENTED MINI SUMMARY
+# (Short retrieval-friendly synopsis — human written)
+# ==================================================
+
+rag_summary: >
+  # 3–6 sentence neutral summary optimised for retrieval.
+  # Mention: population/species, causal-chain stage, method,
+  # main finding, and main limitation if important.
+
+
+# ==================================================
+# FREE-FORM CURATOR COMMENTS (OPTIONAL)
+# ==================================================
+
+curator_note: >
+  # Comments helpful to humans but not for automated filtering.
+  # E.g. suggested pairings, assumptions to flag, notes for future updates.
