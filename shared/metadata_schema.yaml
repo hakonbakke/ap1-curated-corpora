@@ -1,0 +1,156 @@
+# --------------------------------------------------
+# AP1 CORPUS — DOCUMENT METADATA SCHEMA
+# Version: 1.0
+# See TAXONOMY.md for controlled vocabulary values.
+# See shared/tagging_guide.md for guidance on ambiguous cases.
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# BASIC DOCUMENT INFORMATION
+# (Descriptive facts — not interpretation)
+# --------------------------------------------------
+
+title: ""
+year: null
+source_type: peer_reviewed
+# See TAXONOMY.md: peer_reviewed | institute_report | public_authority_report |
+#                  fhf_report | white_paper | grey_literature
+
+journal: ""           # Journal or series name (if applicable)
+doi: ""               # DOI or stable URL identifier
+authors: []           # List of authors (optional but recommended)
+language: "en"        # Language of the document: en | no | other
+
+
+# --------------------------------------------------
+# CORPUS ASSIGNMENT
+# (Which corpus/corpora does this document belong to?)
+# --------------------------------------------------
+
+corpus:
+  - ""
+# salmon-lice-and-mortality-of-wild-salmonids
+# salmon-lice-and-farmed-salmon-welfare-and-mortality
+# salmon-mortality
+
+priority_questions:
+  - ""
+# List question IDs this document addresses, e.g. Q1, Q2
+
+
+# --------------------------------------------------
+# RELEVANCE TO AP1
+# (Human judgement — why this document matters here)
+# --------------------------------------------------
+
+relevance:
+  - ""
+# Free tags: lice | mortality | treatment | welfare | wild_salmon |
+#            smolt | delousing | population | trafikklys | threshold |
+#            disease | genetics | introgression | etc.
+
+relevance_score: 3
+# 1 = peripheral context
+# 3 = relevant to at least one priority question
+# 5 = central — directly addresses a core priority question
+
+relevance_rationale: >
+  # Short explanation of why this document is relevant for AP1.
+  # Focus on the question it helps illuminate, not its conclusions.
+
+
+# --------------------------------------------------
+# CONTEXT OF THE EVIDENCE
+# (Descriptive, requires correct interpretation)
+# --------------------------------------------------
+
+production_stage:
+  - ""
+# See TAXONOMY.md: broodstock | egg_fry | smolt | post_smolt |
+#                  grow_out | pre_slaughter | wild
+
+system_type:
+  - ""
+# See TAXONOMY.md: open_cage | semi_closed | closed_containment |
+#                  ras | flow_through | natural
+
+geography:
+  - ""
+# Country, region, or Norwegian production area (PO1–PO13)
+
+time_period: ""
+# Year range of data or observation period, e.g. "2015–2020"
+
+evidence_type: ""
+# See TAXONOMY.md: empirical_experimental | empirical_observational |
+#                  model | review | qualitative | regulatory
+
+
+# --------------------------------------------------
+# SYNTHESIS-LEVEL HUMAN ASSESSMENTS
+# (These do NOT come from the paper — they come from the curator)
+# --------------------------------------------------
+
+consensus_signal: mixed
+# See TAXONOMY.md: high_agreement | moderate_agreement | mixed |
+#                  context_dependent | contested | insufficient_evidence
+
+quality_signal: medium
+# See TAXONOMY.md: strong | medium | weak
+
+transferability: medium
+# See TAXONOMY.md: high | medium | low
+
+transferability_notes: >
+  # Brief explanation of what limits or supports transferability.
+
+
+# --------------------------------------------------
+# INCLUSION LOGIC (CRITICAL)
+# --------------------------------------------------
+
+included_because: >
+  # Explicit reason why this document is included in the AP1 corpus.
+  # This is a human, curatorial judgement.
+  # Focus on the role the document plays in the knowledge landscape.
+  # Minimum 1–3 sentences.
+
+
+# --------------------------------------------------
+# QUALITY ASSESSMENT
+# --------------------------------------------------
+
+quality_rationale: >
+  # Short explanation of the quality_signal.
+  # Mention key strengths or limitations of the methodology.
+
+coi_declared: unclear
+# See TAXONOMY.md: yes | no | unclear
+
+coi_notes: >
+  # Any relevant notes on funding, industry involvement, or uncertainty
+  # about conflict of interest.
+
+
+# --------------------------------------------------
+# KEY CLAIMS FOR SYNTHESIS
+# (Human-formulated, neutral summaries — not quotes)
+# --------------------------------------------------
+
+key_claims:
+  - ""   # Short, neutral statement of a central finding or claim
+  - ""
+  - ""
+# These are written by the curator, not extracted by AI.
+# They should be neutral in framing and accurately reflect the document.
+
+
+# --------------------------------------------------
+# FREE-FORM CURATOR COMMENTS (OPTIONAL)
+# --------------------------------------------------
+
+# curator_note: >
+#   Use for comments helpful to humans but not for automated filtering.
+#   E.g. suggested pairings with contrasting studies, assumptions to
+#   flag, or reminders for future updates.

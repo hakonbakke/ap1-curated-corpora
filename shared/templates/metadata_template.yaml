@@ -1,0 +1,56 @@
+# Copy this file to documents/[YYYY_journal-abbrev_keyword]/metadata.yaml
+# and fill in all fields.
+# See shared/tagging_guide.md for guidance.
+# See TAXONOMY.md for controlled vocabulary values.
+
+title: ""
+year: null
+source_type: peer_reviewed
+journal: ""
+doi: ""
+authors: []
+language: "en"
+
+corpus:
+  - ""
+
+priority_questions:
+  - ""
+
+relevance:
+  - ""
+
+relevance_score: 3
+
+relevance_rationale: >
+
+
+production_stage:
+  - ""
+
+system_type:
+  - ""
+
+geography:
+  - ""
+
+time_period: ""
+
+evidence_type: ""
+
+consensus_signal: mixed
+quality_signal: medium
+transferability: medium
+transferability_notes: >
+
+included_because: >
+
+quality_rationale: >
+
+coi_declared: unclear
+coi_notes: >
+
+key_claims:
+  - ""
+  - ""
+  - ""
