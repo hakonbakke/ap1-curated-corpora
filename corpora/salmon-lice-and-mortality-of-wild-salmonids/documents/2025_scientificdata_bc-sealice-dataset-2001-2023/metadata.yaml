@@ -1,0 +1,119 @@
+# ==================================================
+# METADATA — MVP VERSION
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# curator_review_status: pending
+# ==================================================
+
+
+# --------------------------------------------------
+# GRUNNLEGGENDE INFO
+# --------------------------------------------------
+
+title: "Sea lice infestation dataset for wild and farmed salmon populations on the Pacific coast of Canada (2001–2023)"
+year: 2025
+doi: "10.1038/s41597-025-05653-x"
+authors:
+  - Revie, Crawford W.
+  - Patanasatienkul, Thitiwan
+  - McEwan, Gregor
+  - Stewardson, Lance
+journal: "Scientific Data"
+document_type: dataset_description
+
+
+# --------------------------------------------------
+# KONTEKST
+# --------------------------------------------------
+
+causal_chain_stage:
+  - farm_lice_abundance
+  - infestation
+  - monitoring_methods
+
+evidence_type: empirical_observational
+
+host_species:
+  - atlantic_salmon        # farmed
+  - chum_salmon            # wild
+  - pink_salmon            # wild
+  - coho_salmon            # wild
+  - chinook_salmon         # wild
+  - mixed_salmonids
+
+life_stage:
+  - smolt                  # wild juveniles during outmigration
+  - post_smolt
+  - grow_out               # farmed Atlantic salmon
+
+geography:
+  - British_Columbia
+  - Discovery_Islands      # DFO sub-zone 3.2
+  - Broughton_Archipelago  # DFO sub-zone 3.3
+
+time_period: "2001–2023"
+
+evidence_direction: not_applicable
+# This is a data descriptor — it does not argue for or against
+# the effect of farm lice on wild salmon. It provides the dataset
+# that others use to make such arguments.
+
+priority_questions:
+  - Q1   # Attribution of lice to farm vs. wild sources
+  - Q2   # Estimating lice production on farms
+  - Q5   # Model predictions of infestation on wild fish
+
+
+# --------------------------------------------------
+# NØKKELPÅSTANDER
+# --------------------------------------------------
+
+key_claims:
+  - "Dataset covers ~100 Atlantic salmon farms and >365,000 wild fish observations across 7 DFO fish health sub-zones in BC over 22 years (2001–2023)."
+  - "Sea lice levels show substantial spatial and temporal variation across zones; an unusual spike occurred across most zones in 2015, attributed to the Pacific 'warm blob'."
+  - "The dataset enables analysis of regulatory impacts, including the effect of farm closures in the Discovery Islands and Broughton Archipelago since 2021."
+
+claims_about_uncertainty:
+  - "Sampling protocols, species identification standards, and temporal coverage differ across contributing programmes, limiting direct comparisons across years and zones."
+
+rag_summary: >
+  Revie et al. (2025) describe a large, publicly available longitudinal dataset
+  of sea lice infestation on wild Pacific salmonids and farmed Atlantic salmon
+  along the coast of British Columbia, Canada, spanning 2001 to 2023. The dataset
+  covers approximately 100 farms and over 365,000 wild fish observations across
+  seven DFO fish health sub-zones, collected by multiple monitoring programmes
+  using both lethal and non-lethal sampling protocols. Infestation levels show
+  marked spatial and temporal variation. The paper does not analyse causal links
+  between farm and wild lice, but provides the empirical infrastructure for such
+  analyses. A key limitation is heterogeneity in sampling protocols across
+  programmes and time periods.
+
+
+# --------------------------------------------------
+# INKLUSJONSLOGIKK
+# --------------------------------------------------
+
+included_because: >
+  This is the largest publicly available longitudinal sea lice dataset for the
+  BC coast, spanning 22 years and covering both farmed and wild populations
+  across seven monitoring zones. It provides the observational foundation for
+  Q1 (attribution of lice sources), Q2 (estimating farm lice abundance), and Q5
+  (calibration and validation of infestation models). It also documents the
+  impact of regulatory changes (farm closures post-2021), making it relevant
+  for Q10. Included as a key empirical reference point for the Canadian context,
+  which provides a comparative case for Norwegian management.
+
+coi_declared: unclear
+coi_notes: >
+  One author (Lance Stewardson) is affiliated with Mainstream Biological
+  Consulting — a private consultancy with aquaculture industry clients.
+  No explicit conflict of interest declaration was found in the text reviewed.
+  Funding sources should be verified against the full published version.
+
+
+# --------------------------------------------------
+# KURATERSTATUS
+# --------------------------------------------------
+
+curator_review_status: pending
+added_by: "Thord"
+added_date: "2026-03-03"

@@ -46,12 +46,12 @@ Core questions:
 
 | ID | Title | Year | Type | Q |
 |---|---|---|---|---|
-| — | *No documents added yet* | — | — | — |
+| 2025_scientificdata_bc-sealice-dataset-2001-2023 | Sea lice infestation dataset for wild and farmed salmon populations on the Pacific coast of Canada (2001–2023) | 2025 | dataset_description | Q1, Q2, Q5, Q10 |
 
 ---
 
 ## Status
 
-`Empty — pending first document additions`
+`Active — 1 document added (2026-03-03)`
 
 See `inclusion_log.md` for curation history.
