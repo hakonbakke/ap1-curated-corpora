@@ -1,31 +1,42 @@
-# ==================================================
+# ======================================================================
 # METADATA TEMPLATE
 # Corpus: salmon-lice-and-mortality-of-wild-salmonids
 #
-# Copy to: documents/[YYYY_outlet_keyword]/metadata.yaml
-# Fill all fields. See KEYWORDS.md for tag vocabulary.
-# See ../../../shared/tagging_guide.md for guidance.
-# ==================================================
+# INSTRUKSJON TIL CLAUDE:
+#   Du er kurator for et vitenskapelig evidenskorpus om lakselus og
+#   villaks. Fyll ut alle felt merket [CLAUDE] basert på dokumentet
+#   jeg vedlegger. Vær nøytral og presis. Hvis du er usikker på et
+#   felt, skriv 'unclear'. Ikke trekk konklusjoner utover det
+#   dokumentet faktisk sier.
+#   Felt merket [FAGPERSON] skal stå tomme — ikke forsøk å fylle dem.
+#   Felt merket [KURATOR] fylles av den som legger inn dokumentet.
+#
+# WORKFLOW:
+#   1. Gi Claude denne templaten + PDF
+#   2. Kopier Claude-svaret til documents/YYYY_outlet_keyword/metadata.yaml
+#   3. Sett curator_review_status: pending
+#   4. Last opp til GitHub
+# ======================================================================
 
 
-# ==================================================
-# BASIC DOCUMENT INFORMATION
-# (Descriptive facts — should come directly from document)
-# ==================================================
+# ======================================================================
+# DEL A — BIBLIOGRAFISK INFO
+# [CLAUDE] Fyll ut fra dokumentet
+# ======================================================================
 
-title: ""               # Full title of the document
-year: null              # Year of publication
-source_type: peer_reviewed
-# peer_reviewed | report | government_report | expert_group_report
-# white_paper | thesis | conference_paper | dataset | commentary | response
-
-journal: ""             # Journal or outlet name
-publisher: ""           # Optional: publisher / institution
-doi: ""                 # DOI or stable identifier
-url: ""                 # Optional stable URL
-authors: []             # Optional list of authors
+title: ""
+year: null
+doi: ""
+url: ""
+authors: []
+journal: ""
+publisher: ""
 language: english
 # english | norwegian | other
+
+source_type: ""
+# peer_reviewed | report | government_report | expert_group_report
+# white_paper | thesis | conference_paper | dataset | commentary | response
 
 document_type: ""
 # research_article | review_article | systematic_review | meta_analysis
@@ -36,20 +47,16 @@ abstract_available: unclear
 # yes | no | unclear
 
 
-# ==================================================
-# CORPUS ASSIGNMENT
-# ==================================================
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# [CLAUDE] Fyll ut fra dokumentet
+# ======================================================================
 
 corpus: salmon-lice-and-mortality-of-wild-salmonids
 
 priority_questions:
-  - ""     # Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10
-
-
-# ==================================================
-# CONTEXT OF THE EVIDENCE
-# (Descriptive, but requires correct interpretation)
-# ==================================================
+  - ""
+# Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10
 
 causal_chain_stage:
   - ""
@@ -86,18 +93,16 @@ environment:
 
 geography:
   - ""
-# Country / region / production area
-# Norway | Norway_PO3 | Norway_PO4 | Hardangerfjord
+# Norway | Norway_PO[1-13] | Hardangerfjord
 # British_Columbia | Discovery_Islands | Broughton_Archipelago
 # Scotland | Ireland
 
 time_period: ""
-# Years or monitoring period: e.g. "2015–2019"
+# Eks: "2010–2018"
 
 seasonality_focus:
   - ""
-# spring | summer | autumn | winter | full_year
-# migration_period | not_applicable
+# spring | summer | autumn | winter | full_year | migration_period | not_applicable
 
 regulatory_context:
   - ""
@@ -108,12 +113,6 @@ evidence_type: ""
 # empirical_experimental | empirical_observational | review
 # systematic_review | meta_analysis | model | methods
 # commentary | response | policy_assessment | mixed
-
-
-# ==================================================
-# STUDY DESIGN / EVIDENCE GENERATION
-# (Descriptive; useful for retrieval and filtering)
-# ==================================================
 
 study_design:
   - ""
@@ -147,12 +146,6 @@ comparison_type:
 # high_vs_low_infestation | observed_vs_modelled | trawl_vs_sentinel
 # before_after | among_regions | among_years | none | mixed
 
-
-# ==================================================
-# OUTCOME DOMAIN
-# (What kind of endpoint is actually studied?)
-# ==================================================
-
 outcome_domain:
   - ""
 # lice_abundance_on_farms | larval_density_in_water
@@ -163,19 +156,18 @@ outcome_domain:
 # adult_returns | population_abundance
 # regulatory_classification | model_performance | uncertainty_estimation
 
-primary_endpoint: ""    # Free-text short label of main endpoint
-
+primary_endpoint: ""
 secondary_endpoints: []
 
 
-# ==================================================
-# DIRECTION OF EVIDENCE
-# (Interpretive, but directly about the paper's substantive thrust)
-# ==================================================
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# [CLAUDE] Fyll ut fra dokumentet
+# ======================================================================
 
 evidence_direction: ""
-# supports_effect   — supports the view that farm lice harm wild salmonids
-# weak_support      — some support, but limited or equivocal
+# supports_effect   — støtter at oppdrettslus skader villaks
+# weak_support      — noe støtte, men begrenset eller tvetydig
 # mixed_within_study
 # no_effect_detected
 # contradicts_effect
@@ -187,9 +179,7 @@ effect_scale: ""
 
 uncertainty_emphasis: ""
 # low | moderate | high | very_high | not_stated
-#
-# Reflects whether the paper itself emphasises uncertainty,
-# not the curator's own judgement.
+# Reflekterer om papiret selv vektlegger usikkerhet
 
 main_uncertainty_sources:
   - ""
@@ -199,131 +189,112 @@ main_uncertainty_sources:
 # sampling_representativeness | model_structure
 # parameter_uncertainty | transferability | none_highlighted
 
-
-# ==================================================
-# SYNTHESIS-LEVEL HUMAN ASSESSMENTS
-# (These do NOT come from the paper — they come from the curator)
-# ==================================================
-
-consensus_signal: mixed
-# high_agreement | moderate_agreement | mixed
-# context_dependent | contested | insufficient_evidence
-#
-# How this document fits into the broader literature,
-# not whether it is "right".
-
-quality_signal: medium
-# strong | medium | weak
-
-relevance_signal: high
-# high | medium | low
-
-controversy_role: ""
-# foundational   — establishes a key concept or baseline
-# supportive     — adds evidence in the dominant direction
-# critical       — raises methodological or empirical challenges
-# rebuttal       — directly responds to or refutes another study
-# bridge_between_positions — connects or mediates between opposing views
-# peripheral     — indirectly relevant
-# not_applicable
-
-
-# ==================================================
-# INCLUSION LOGIC (CRITICAL)
-# ==================================================
-
-included_because: >
-  # Explicit reason why this document is included.
-  # Human curatorial judgement.
-  # Focus on the role in the knowledge landscape, not the conclusions.
-  # Minimum 2–3 sentences.
-
-
-# ==================================================
-# OPTIONAL BUT RECOMMENDED CURATOR FIELDS
-# ==================================================
-
-quality_rationale: >
-  # Short explanation of quality_signal.
-  # Key strengths and limitations.
-
-relevance_rationale: >
-  # Why this document matters (or is only marginal) for this corpus.
-
-transferability: medium
-# high | medium | low
-
-transferability_notes: >
-  # What limits or supports applicability to other contexts.
-
-coi_declared: unclear
-# yes | no | unclear
-
-coi_notes: >
-  # Funding, industry involvement, advocacy links,
-  # expert-group roles, or uncertainty about COI.
-
-methodological_limitations:
-  - ""   # E.g. "Relies on assumed migration duration not directly observed"
-  - ""
-
-retrieval_tags:
-  - ""   # Additional free-form tags for RAG retrieval
-  - ""
-
-
-# ==================================================
-# KEY CLAIMS FOR SYNTHESIS
-# (Human-formulated — not AI-extracted)
-# ==================================================
-
 key_claims:
-  - ""   # Short, neutral statement of a central finding or claim
+  - ""   # Nøytral formulering av sentralt funn
   - ""
   - ""
 
 claims_about_uncertainty:
-  - ""   # Key claim about uncertainty, assumptions, or limitations
+  - ""
   - ""
 
 claims_about_policy_or_management:
-  - ""   # Claims about TLS, regulation, or management implications
+  - ""   # Påstander om TLS, regulering, forvaltning
   - ""
 
-
-# ==================================================
-# RELATION TO OTHER DOCUMENTS
-# (Optional but valuable in controversial literatures)
-# ==================================================
-
-related_documents_supporting:
-  - ""   # DOI or filename of aligned studies
-
-related_documents_contrasting:
-  - ""   # Studies reaching different conclusions
-
-related_documents_reply_to:
-  - ""   # For comments / responses / rebuttals
-
-should_be_read_with:
-  - ""   # Helpful paired reading for context
-
-
-# ==================================================
-# RAG-ORIENTED MINI SUMMARY
-# (Short retrieval-friendly synopsis — human written)
-# ==================================================
+methodological_limitations:
+  - ""
+  - ""
 
 rag_summary: >
-  # 3–6 sentence neutral summary optimised for retrieval.
-  # Mention: population/species, causal-chain stage, method,
-  # main finding, and main limitation if important.
+  # 3–6 nøytrale setninger optimalisert for gjenfinning.
+  # Inkluder: populasjon/art, kausal trinn, metode, hovedfunn, viktigste begrensning.
+
+coi_declared: unclear
+# yes | no | unclear — sjekk finansieringserklæring i dokumentet
+
+coi_notes: >
+  # Hvem finansierte studien? Noen tilknytning til næring, forvaltning eller
+  # interesseorganisasjoner? Beskriv kun det som fremgår av dokumentet.
 
 
-# ==================================================
-# FREE-FORM CURATOR COMMENTS (OPTIONAL)
-# ==================================================
+# ======================================================================
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+# [FAGPERSON] Disse feltene skal stå tomme inntil fagperson fyller dem
+# ======================================================================
+
+consensus_signal: null
+# high_agreement | moderate_agreement | mixed
+# context_dependent | contested | insufficient_evidence
+# — Hvordan passer dette dokumentet inn i den bredere litteraturen?
+#   Dette er en vurdering av fagpersonen, ikke av papiret i seg selv.
+
+quality_signal: null
+# strong | medium | weak
+
+quality_rationale: >
+  # [FAGPERSON] Viktigste styrker og svakheter metodisk sett.
+
+controversy_role: null
+# foundational   — etablerer et nøkkelbegrep eller baseline
+# supportive     — legger til bevis i dominerende retning
+# critical       — reiser metodiske eller empiriske utfordringer
+# rebuttal       — svarer direkte på eller tilbakeviser en annen studie
+# bridge_between_positions
+# peripheral
+# not_applicable
+
+relevance_signal: null
+# high | medium | low
+
+relevance_rationale: >
+  # [FAGPERSON] Hvorfor dette dokumentet er sentralt (eller marginalt) for dette korpuset.
+
+transferability: null
+# high | medium | low
+
+transferability_notes: >
+  # [FAGPERSON] Hva begrenser eller støtter overførbarheten til andre kontekster
+  # (f.eks. fra Canada til Norge, fra fjordmiljø til åpent kyst).
+
+
+# ======================================================================
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+# [KURATOR] Fylles av den som legger inn dokumentet, evt. over tid
+# ======================================================================
+
+included_because: >
+  # [KURATOR] Eksplisitt begrunnelse for inkludering.
+  # Fokuser på dokumentets rolle i kunnskapslandskapet, ikke bare konklusjonene.
+  # Minimum 2–3 setninger.
+
+related_documents_supporting:
+  - ""   # DOI eller filnavn på studier som peker i samme retning
+
+related_documents_contrasting:
+  - ""   # Studier som kommer til andre konklusjoner
+
+related_documents_reply_to:
+  - ""   # For kommentarer / svar / tilbakevisninger
+
+should_be_read_with:
+  - ""   # Nyttig sammenparet lesing for kontekst
+
+retrieval_tags:
+  - ""   # Tilleggstagger for RAG-gjenfinning
 
 curator_note: >
-  # Comments helpful to humans but not for automated filtering.
-  # E.g. suggested pairings, assumptions to flag, notes for future updates.
+  # Kommentarer nyttige for mennesker, men ikke for automatisert filtrering.
+
+
+# ======================================================================
+# KURATERSTATUS
+# ======================================================================
+
+curator_review_status: pending
+# pending   = Claude har fylt ut, ikke faglig verifisert
+# reviewed  = kurator har lest gjennom Del D og E
+# approved  = fagperson har godkjent Del D
+
+added_by: ""
+added_date: ""   # YYYY-MM-DD

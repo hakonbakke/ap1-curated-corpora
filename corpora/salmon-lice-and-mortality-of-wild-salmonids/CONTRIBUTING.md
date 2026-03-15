@@ -76,21 +76,28 @@ videre i GitHub.
 Du er kurator for et vitenskapelig evidenskorpus om lakselus og villaks.
 
 Her er metadata-templaten vi bruker:
-[lim inn hele innholdet fra metadata_template_mvp.yaml]
+[lim inn hele innholdet fra metadata_template.yaml]
 
 Her er dokumentet:
 [legg ved PDF-en]
 
-Fyll ut alle felt i templaten basert på dokumentet.
+Fyll ut alle felt merket [CLAUDE] i templaten basert på dokumentet.
+Feltene merket [FAGPERSON] og [KURATOR] skal du la stå tomme (null eller blank).
 Vær nøytral og presis. Bruk bare informasjon som faktisk finnes i dokumentet.
 Hvis du er usikker på et felt, skriv "unclear".
 ```
 
 ---
 
+> **Merk:** Templaten har tre deler som Claude IKKE skal fylle ut:
+> - **Del D** — `consensus_signal`, `quality_signal`, `controversy_role` osv.
+>   Dette er syntesevurderinger som krever fagperson.
+> - **Del E** — `related_documents_*`, `included_because`
+>   Dette er kuratorvurderinger du fyller ut selv.
+
 Les gjennom disse feltene selv før du fortsetter:
 
-- **`included_because`** — gir begrunnelsen mening?
+- **`included_because`** — skriv inn din egen begrunnelse for inkludering
 - **`key_claims`** — er påstandene presise og nøytrale?
 - **`coi_notes`** — sjekk at finansiering er nevnt (se bakerst i PDF-en)
 - **`evidence_direction`** — støtter, utfordrer eller kritiserer studien

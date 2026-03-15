@@ -1,17 +1,12 @@
-# ==================================================
-# METADATA — MVP VERSION
-# Corpus: salmon-lice-and-mortality-of-wild-salmonids
-# curator_review_status: pending
-# ==================================================
-
-
-# --------------------------------------------------
-# GRUNNLEGGENDE INFO
-# --------------------------------------------------
+# ======================================================================
+# DEL A — BIBLIOGRAFISK INFO
+# [CLAUDE]
+# ======================================================================
 
 title: "Salmon lice – impact on wild salmonids and salmon aquaculture"
 year: 2013
 doi: "10.1111/jfd.12061"
+url: ""
 authors:
   - Torrissen, O.
   - Jones, S.
@@ -22,12 +17,29 @@ authors:
   - Horsberg, T.E.
   - Jackson, D.
 journal: "Journal of Fish Diseases"
+publisher: "Wiley"
+language: english
+source_type: peer_reviewed
 document_type: review_article
+abstract_available: yes
 
 
-# --------------------------------------------------
-# KONTEKST
-# --------------------------------------------------
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# [CLAUDE]
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q1   # Attribution of lice to farm vs. wild sources
+  - Q2   # Estimating lice production on farms
+  - Q3   # Larval dispersal
+  - Q4   # Smolt exposure
+  - Q6   # Physiological effects on wild fish
+  - Q7   # Translating infestation to mortality
+  - Q8   # Fraction of smolts dying
+  - Q9   # Population-level impact
 
 causal_chain_stage:
   - farm_lice_abundance
@@ -41,9 +53,6 @@ causal_chain_stage:
   - population_impacts
   - monitoring_methods
   - regulatory_assessment
-# Full-chain review covering all steps from farm lice to population impact
-
-evidence_type: review
 
 host_species:
   - atlantic_salmon
@@ -53,10 +62,22 @@ host_species:
   - coho_salmon
   - chinook_salmon
 
+wild_or_farmed_focus: both
+
 life_stage:
   - smolt
   - post_smolt
   - adult
+
+parasite_species:
+  - lepeophtheirus_salmonis
+  - caligus_clemensi
+  - caligus_elongatus
+
+environment:
+  - fjord
+  - coastal
+  - estuary
 
 geography:
   - Norway
@@ -66,25 +87,67 @@ geography:
 
 time_period: "review of literature up to 2012"
 
+seasonality_focus:
+  - migration_period
+  - full_year
+
+regulatory_context:
+  - Norway_TLS
+  - Scotland_management
+  - Ireland_management
+  - Canada_management
+
+evidence_type: review
+
+study_design:
+  - literature_review
+
+data_source:
+  - published_literature
+
+model_type:
+  - none
+
+observation_unit:
+  - study
+
+comparison_type:
+  - among_regions
+  - exposed_vs_unexposed
+
+outcome_domain:
+  - infestation_on_wild_fish
+  - physiological_stress
+  - survival
+  - mortality
+  - population_abundance
+
+primary_endpoint: "Smolt survival odds ratio under lice infestation (Ireland and Norway field data)"
+secondary_endpoints:
+  - "Population-level impact of farm lice on wild salmonid stocks"
+  - "Overview of treatment resistance trends"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# [CLAUDE]
+# ======================================================================
+
 evidence_direction: weak_support
 # The review concludes farm lice negatively impact wild salmonids,
 # but explicitly qualifies the extent as debated and the effect
 # as "moderate". Not a strong causal claim.
 
-priority_questions:
-  - Q1   # Attribution of lice to farm vs. wild sources
-  - Q2   # Estimating lice production on farms
-  - Q3   # Larval dispersal
-  - Q4   # Smolt exposure
-  - Q6   # Physiological effects on wild fish
-  - Q7   # Translating infestation to mortality
-  - Q8   # Fraction of smolts dying
-  - Q9   # Population-level impact
+effect_scale: both
 
+uncertainty_emphasis: moderate
 
-# --------------------------------------------------
-# NØKKELPÅSTANDER
-# --------------------------------------------------
+main_uncertainty_sources:
+  - observational_bias
+  - sampling_representativeness
+  - transferability
+  # The review acknowledges correlation ≠ causation and that data gaps
+  # have led to over-interpretation in parts of the literature.
 
 key_claims:
   - "Treated Atlantic salmon smolts showed an odds ratio of 1.1:1–1.2:1 for surviving sea migration compared to untreated smolts (Ireland and Norway data), characterised as a 'moderate population regulatory effect'."
@@ -93,6 +156,14 @@ key_claims:
 
 claims_about_uncertainty:
   - "The review acknowledges that correlation between aquaculture expansion and wild salmon decline does not imply causation, and that lack of good data has led to over-interpretation in parts of the literature."
+
+claims_about_policy_or_management:
+  - "Regulatory management of lice levels is necessary, but thresholds and enforcement vary considerably across jurisdictions."
+  - "Resistance to chemical treatments is growing and poses a challenge to lice management across all regions reviewed."
+
+methodological_limitations:
+  - "Narrative review without systematic search protocol — susceptible to selective citation."
+  - "Synthesises studies with different designs, species, and geographies without formal meta-analysis."
 
 rag_summary: >
   Torrissen et al. (2013) is a broad multi-national review of salmon lice
@@ -107,21 +178,6 @@ rag_summary: >
   A key limitation is that as a narrative review it does not apply a systematic
   search protocol, making it susceptible to selective citation.
 
-
-# --------------------------------------------------
-# INKLUSJONSLOGIKK
-# --------------------------------------------------
-
-included_because: >
-  Widely cited foundational review that synthesises knowledge across the full
-  causal chain from farm lice to wild salmonid population effects, covering
-  multiple countries and the main contested questions. Provides the biological
-  and epidemiological baseline against which more recent empirical and modelling
-  studies should be interpreted. The explicit odds ratio for smolt survival is
-  one of the most frequently cited effect-size estimates in Norwegian and
-  international regulatory discussions. Its explicit acknowledgement of debate
-  makes it a useful reference for both Q7 and Q9.
-
 coi_declared: unclear
 coi_notes: >
   Several authors are affiliated with research institutions with close ties
@@ -131,9 +187,69 @@ coi_notes: >
   found in the sections reviewed. Verify in the published version.
 
 
-# --------------------------------------------------
+# ======================================================================
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+# [FAGPERSON] Disse feltene skal stå tomme inntil fagperson fyller dem
+# ======================================================================
+
+consensus_signal: null
+quality_signal: null
+quality_rationale: >
+
+controversy_role: null
+relevance_signal: null
+relevance_rationale: >
+
+transferability: null
+transferability_notes: >
+
+
+# ======================================================================
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+# [KURATOR]
+# ======================================================================
+
+included_because: >
+  Widely cited foundational review that synthesises knowledge across the full
+  causal chain from farm lice to wild salmonid population effects, covering
+  multiple countries and the main contested questions. Provides the biological
+  and epidemiological baseline against which more recent empirical and modelling
+  studies should be interpreted. The explicit odds ratio for smolt survival (1.1:1–1.2:1)
+  is one of the most frequently cited effect-size estimates in Norwegian and
+  international regulatory discussions. Its explicit acknowledgement of ongoing
+  debate makes it a useful anchor for the full corpus — neither dismissing nor
+  overstating the effect.
+
+related_documents_supporting:
+  - ""
+
+related_documents_contrasting:
+  - "10.3354/aei00443"   # Stige 2022 — shows model estimates highly uncertain; questions Q7/Q8 baseline
+
+related_documents_reply_to:
+  - ""
+
+should_be_read_with:
+  - "10.3354/aei00443"   # Stige 2022 — for context on the model uncertainty behind the mortality numbers
+
+retrieval_tags:
+  - foundational_review
+  - full_causal_chain
+  - smolt_survival
+  - odds_ratio
+  - treatment_resistance
+  - multi_country
+
+curator_note: >
+  This is the standard starting reference for anyone new to the literature.
+  The 1.1:1–1.2:1 odds ratio is frequently cited out of context; the review
+  itself frames it as moderate and contested. Pair with Stige 2022 when
+  discussing the model basis of mortality estimates.
+
+
+# ======================================================================
 # KURATERSTATUS
-# --------------------------------------------------
+# ======================================================================
 
 curator_review_status: pending
 added_by: "Thord"

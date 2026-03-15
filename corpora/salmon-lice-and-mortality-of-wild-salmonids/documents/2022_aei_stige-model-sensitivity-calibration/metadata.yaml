@@ -1,29 +1,37 @@
-# ==================================================
-# METADATA — MVP VERSION
-# Corpus: salmon-lice-and-mortality-of-wild-salmonids
-# curator_review_status: pending
-# ==================================================
-
-
-# --------------------------------------------------
-# GRUNNLEGGENDE INFO
-# --------------------------------------------------
+# ======================================================================
+# DEL A — BIBLIOGRAFISK INFO
+# [CLAUDE]
+# ======================================================================
 
 title: "Modelling salmon lice-induced mortality of wild salmon post-smolts is highly sensitive to calibration data"
 year: 2022
 doi: "10.3354/aei00443"
+url: ""
 authors:
   - Stige, Leif Christian
   - Helgesen, Kari O.
   - Viljugrein, Hildegunn
   - Qviller, Lars
 journal: "Aquaculture Environment Interactions"
+publisher: "Inter-Research"
+language: english
+source_type: peer_reviewed
 document_type: modelling_study
+abstract_available: yes
 
 
-# --------------------------------------------------
-# KONTEKST
-# --------------------------------------------------
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# [CLAUDE]
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q5   # How well do models predict infestation on wild fish?
+  - Q7   # Translating infestation to mortality estimates
+  - Q8   # Fraction of smolts dying due to lice
+  - Q10  # Robustness of the Traffic Light System model basis
 
 causal_chain_stage:
   - model_calibration
@@ -31,13 +39,21 @@ causal_chain_stage:
   - individual_mortality
   - regulatory_assessment
 
-evidence_type: model
-
 host_species:
   - atlantic_salmon
 
+wild_or_farmed_focus: wild
+
 life_stage:
   - post_smolt
+
+parasite_species:
+  - lepeophtheirus_salmonis
+
+environment:
+  - coastal
+  - fjord
+  - modelled_environment
 
 geography:
   - Norway
@@ -45,22 +61,76 @@ geography:
 
 time_period: "2012–2021"
 
+seasonality_focus:
+  - migration_period
+  - spring
+
+regulatory_context:
+  - Norway_TLS
+  - Norway_expert_group
+
+evidence_type: model
+
+study_design:
+  - virtual_post_smolt_modelling
+  - statistical_analysis
+  - sentinel_cage
+  - trawl_sampling
+
+data_source:
+  - farm_lice_counts
+  - sentinel_cages
+  - trawl_data
+
+model_type:
+  - virtual_post_smolt_model
+  - infestation_model
+  - statistical_regression_model
+
+observation_unit:
+  - individual_fish
+  - river
+  - production_area
+
+comparison_type:
+  - trawl_vs_sentinel
+  - observed_vs_modelled
+  - among_regions
+  - among_years
+
+outcome_domain:
+  - infestation_on_wild_fish
+  - mortality
+  - model_performance
+  - uncertainty_estimation
+
+primary_endpoint: "Salmon lice-induced mortality of seaward-migrating wild salmon post-smolts, per management area"
+secondary_endpoints:
+  - "Sensitivity of mortality estimates to calibration data type (trawl vs. sentinel cage)"
+  - "Sensitivity of mortality estimates to assumed migration speed (7 vs. 10 km/day)"
+  - "Effect of density-dependence assumption on infestation rate"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# [CLAUDE]
+# ======================================================================
+
 evidence_direction: critiques_methodology
 # Does not deny lice effects on wild salmon, but demonstrates that
 # mortality estimates from virtual post-smolt models are highly
 # sensitive to calibration data type — directly challenging the
 # reliability of models underpinning the Traffic Light System.
 
-priority_questions:
-  - Q5   # How well do models predict infestation on wild fish?
-  - Q7   # Translating infestation to mortality estimates
-  - Q8   # Fraction of smolts dying due to lice
-  - Q10  # Robustness of the Traffic Light System
+effect_scale: individual_level
 
+uncertainty_emphasis: very_high
 
-# --------------------------------------------------
-# NØKKELPÅSTANDER
-# --------------------------------------------------
+main_uncertainty_sources:
+  - calibration_data
+  - model_structure
+  - migration_duration
+  - parameter_uncertainty
 
 key_claims:
   - "Trawl-caught post-smolts show 10 times higher infestation rates than sentinel cage post-smolts, meaning choice of calibration data type has a large impact on modelled mortality estimates."
@@ -73,6 +143,11 @@ claims_about_uncertainty:
 
 claims_about_policy_or_management:
   - "The Traffic Light System relies on virtual post-smolt models that give systematically different mortality estimates; understanding the sources of these differences is critical for the system's credibility and legitimacy."
+  - "An international evaluation of the TLS identified sensitivity analysis of uncertain parameters as critical — this paper directly responds to that requirement."
+
+methodological_limitations:
+  - "Revised NVI model — paper is written from the perspective of improving the NVI model, not as an independent external review."
+  - "Migration routes assumed to follow shortest sea path; actual migration behaviour is uncertain."
 
 rag_summary: >
   Stige et al. (2022) assess the sensitivity of virtual post-smolt models
@@ -84,13 +159,40 @@ rag_summary: >
   assumptions about migration speed. The study explains key differences
   between the three models used by the Norwegian Traffic Light System
   expert group (IMR, NVI, SINTEF) and demonstrates that mortality estimates
-  are highly sensitive to assumptions that remain uncertain. Published by the
-  Norwegian Veterinary Institute; open access.
+  are highly sensitive to assumptions that remain uncertain. Published open
+  access by the Norwegian Veterinary Institute.
+
+coi_declared: unclear
+coi_notes: >
+  All authors are from the Norwegian Veterinary Institute (NVI), a government
+  research institution. NVI's model gives lower mortality estimates than IMR's
+  model. This does not constitute a commercial COI, but NVI has an institutional
+  interest in demonstrating the validity of its own modelling approach relative
+  to IMR's. No formal COI declaration was found in the sections reviewed.
+  Verify in the published version.
 
 
-# --------------------------------------------------
-# INKLUSJONSLOGIKK
-# --------------------------------------------------
+# ======================================================================
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+# [FAGPERSON] Disse feltene skal stå tomme inntil fagperson fyller dem
+# ======================================================================
+
+consensus_signal: null
+quality_signal: null
+quality_rationale: >
+
+controversy_role: null
+relevance_signal: null
+relevance_rationale: >
+
+transferability: null
+transferability_notes: >
+
+
+# ======================================================================
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+# [KURATOR]
+# ======================================================================
 
 included_because: >
   This is one of the most methodologically important papers for Q10 in the
@@ -103,19 +205,37 @@ included_because: >
   demonstration that the magnitude of estimated effects depends critically
   on modelling choices that remain unresolved.
 
-coi_declared: unclear
-coi_notes: >
-  All authors are from the Norwegian Veterinary Institute (NVI), a government
-  research institution. NVI's model gives lower mortality estimates than IMR's
-  model. This does not constitute a commercial COI, but the institutional
-  position of NVI within the expert group system is relevant context.
-  No formal COI declaration was found in the sections reviewed.
-  Verify in the published version.
+related_documents_supporting:
+  - ""
+
+related_documents_contrasting:
+  - "10.1111/jfd.12061"   # Torrissen 2013 — presents the odds ratio as settled; Stige 2022 questions the model basis behind such estimates
+
+related_documents_reply_to:
+  - ""   # Responds implicitly to international evaluation of TLS (Eliasen et al. 2021)
+
+should_be_read_with:
+  - "10.1111/jfd.12061"   # Torrissen 2013 — for biological baseline that precedes model uncertainty debate
+
+retrieval_tags:
+  - virtual_post_smolt_model
+  - calibration_sensitivity
+  - traffic_light_system
+  - IMR_vs_NVI
+  - trawl_vs_sentinel_cage
+  - mortality_estimates
+  - Norway
+
+curator_note: >
+  Key paper for anyone questioning the model basis of the TLS.
+  Note that NVI is both author institution and one of the models being compared —
+  this context is important for interpretation. Pair always with Torrissen 2013
+  as the biological baseline.
 
 
-# --------------------------------------------------
+# ======================================================================
 # KURATERSTATUS
-# --------------------------------------------------
+# ======================================================================
 
 curator_review_status: pending
 added_by: "Thord"
