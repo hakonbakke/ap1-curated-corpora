@@ -1,0 +1,122 @@
+# ==================================================
+# METADATA — MVP VERSION
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# curator_review_status: pending
+# ==================================================
+
+
+# --------------------------------------------------
+# GRUNNLEGGENDE INFO
+# --------------------------------------------------
+
+title: "Modelling salmon lice-induced mortality of wild salmon post-smolts is highly sensitive to calibration data"
+year: 2022
+doi: "10.3354/aei00443"
+authors:
+  - Stige, Leif Christian
+  - Helgesen, Kari O.
+  - Viljugrein, Hildegunn
+  - Qviller, Lars
+journal: "Aquaculture Environment Interactions"
+document_type: modelling_study
+
+
+# --------------------------------------------------
+# KONTEKST
+# --------------------------------------------------
+
+causal_chain_stage:
+  - model_calibration
+  - model_validation
+  - individual_mortality
+  - regulatory_assessment
+
+evidence_type: model
+
+host_species:
+  - atlantic_salmon
+
+life_stage:
+  - post_smolt
+
+geography:
+  - Norway
+  # All 13 management areas; 401 salmon-producing rivers modelled
+
+time_period: "2012–2021"
+
+evidence_direction: critiques_methodology
+# Does not deny lice effects on wild salmon, but demonstrates that
+# mortality estimates from virtual post-smolt models are highly
+# sensitive to calibration data type — directly challenging the
+# reliability of models underpinning the Traffic Light System.
+
+priority_questions:
+  - Q5   # How well do models predict infestation on wild fish?
+  - Q7   # Translating infestation to mortality estimates
+  - Q8   # Fraction of smolts dying due to lice
+  - Q10  # Robustness of the Traffic Light System
+
+
+# --------------------------------------------------
+# NØKKELPÅSTANDER
+# --------------------------------------------------
+
+key_claims:
+  - "Trawl-caught post-smolts show 10 times higher infestation rates than sentinel cage post-smolts, meaning choice of calibration data type has a large impact on modelled mortality estimates."
+  - "Mortality estimates are more sensitive to calibration data type (trawl vs. sentinel cage) than to assumptions about post-smolt migration speed."
+  - "Systematic differences in mortality estimates between the three Norwegian virtual post-smolt models (IMR, NVI, SINTEF) are substantially explained by differences in calibration data and density-dependence assumptions."
+
+claims_about_uncertainty:
+  - "The paper directly quantifies sensitivity of mortality estimates to three key model assumptions, demonstrating that uncertainty in calibration propagates into large variation in mortality outcomes used for regulatory decisions."
+  - "IMR's model (calibrated to trawl data) consistently predicts higher mortality than NVI's and SINTEF's models (calibrated to sentinel cage data); the causes of these differences were not fully understood prior to this study."
+
+claims_about_policy_or_management:
+  - "The Traffic Light System relies on virtual post-smolt models that give systematically different mortality estimates; understanding the sources of these differences is critical for the system's credibility and legitimacy."
+
+rag_summary: >
+  Stige et al. (2022) assess the sensitivity of virtual post-smolt models
+  for estimating salmon lice-induced mortality of wild Atlantic salmon
+  post-smolts in Norway. Using data from 2012–2021 across all Norwegian
+  coastal management areas, they show that trawl-caught post-smolts exhibit
+  10 times higher infestation rates than sentinel cage post-smolts, and that
+  calibration data type has a larger effect on mortality estimates than
+  assumptions about migration speed. The study explains key differences
+  between the three models used by the Norwegian Traffic Light System
+  expert group (IMR, NVI, SINTEF) and demonstrates that mortality estimates
+  are highly sensitive to assumptions that remain uncertain. Published by the
+  Norwegian Veterinary Institute; open access.
+
+
+# --------------------------------------------------
+# INKLUSJONSLOGIKK
+# --------------------------------------------------
+
+included_because: >
+  This is one of the most methodologically important papers for Q10 in the
+  entire corpus. It directly quantifies the sensitivity of the virtual
+  post-smolt models that underpin the Norwegian Traffic Light System, and
+  explains why the three models used by the expert group give systematically
+  different mortality estimates. Inclusion is essential for representing the
+  legitimate scientific debate about the reliability of the regulatory
+  assessment framework — not as a denial of lice effects, but as a
+  demonstration that the magnitude of estimated effects depends critically
+  on modelling choices that remain unresolved.
+
+coi_declared: unclear
+coi_notes: >
+  All authors are from the Norwegian Veterinary Institute (NVI), a government
+  research institution. NVI's model gives lower mortality estimates than IMR's
+  model. This does not constitute a commercial COI, but the institutional
+  position of NVI within the expert group system is relevant context.
+  No formal COI declaration was found in the sections reviewed.
+  Verify in the published version.
+
+
+# --------------------------------------------------
+# KURATERSTATUS
+# --------------------------------------------------
+
+curator_review_status: pending
+added_by: "Thord"
+added_date: "2026-03-03"

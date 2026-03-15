@@ -48,11 +48,12 @@ Core questions:
 |---|---|---|---|---|
 | 2025_scientificdata_bc-sealice-dataset-2001-2023 | Sea lice infestation dataset for wild and farmed salmon populations on the Pacific coast of Canada (2001–2023) | 2025 | dataset_description | Q1, Q2, Q5, Q10 |
 | 2013_jfd_torrissen-review-lice-impact | Salmon lice – impact on wild salmonids and salmon aquaculture | 2013 | review_article | Q1, Q2, Q3, Q4, Q6, Q7, Q8, Q9 |
+| 2022_aei_stige-model-sensitivity-calibration | Modelling salmon lice-induced mortality of wild salmon post-smolts is highly sensitive to calibration data | 2022 | modelling_study | Q5, Q7, Q8, Q10 |
 
 ---
 
 ## Status
 
-`Active — 2 documents added (2026-03-03)`
+`Active — 3 documents added (2026-03-03)`
 
 See `inclusion_log.md` for curation history.
