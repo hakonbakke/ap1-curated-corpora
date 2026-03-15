@@ -5,30 +5,68 @@
 
 ---
 
-## Det du trenger
+## Oversikt over workflowen
 
-- Ein PDF du vil legge til
-- Claude i nettleseren (claude.ai)
-- GitHub-tilgang til dette repoet
+```
+1. Finn artikkel
+      ↓
+2. Last opp PDF til SharePoint → Publications_candidates
+      ↓
+3. Flytt til Publications_selected (når du har vurdert at den er relevant)
+      ↓
+4. Bruk Claude til å fylle ut metadata
+      ↓
+5. Last opp metadata + PDF til GitHub
+      ↓
+6. Logg i inclusion_log.md
+```
 
 ---
 
-## Steg for steg
+## Steg 1: Finn en relevant artikkel
 
-### 1. Sjekk at dokumentet er relevant
+Bruk søkeordene i `KEYWORDS.md` mot Google Scholar, Scopus eller
+Web of Science.
 
-Åpne `PRIORITY_QUESTIONS.md` og sjekk at dokumentet bidrar til
-minst ett av spørsmålene Q1–Q10.
+Sjekk at artikkelen bidrar til minst ett av spørsmålene Q1–Q10
+i `PRIORITY_QUESTIONS.md`.
 
-Sjekk også `CORPUS_CRITERIA.md` i rotmappen — dokumentet må være
-peer-reviewed, en instituttrapport, eller tilsvarende.
+Sjekk også at den oppfyller minstekravene i `CORPUS_CRITERIA.md`:
+peer-reviewed artikkel, instituttrapport eller tilsvarende.
 Ikke medieartikler eller presentasjoner uten metode.
 
 ---
 
-### 2. Be Claude fylle ut metadata
+## Steg 2: Last opp til SharePoint — Publications_candidates
 
-Åpne claude.ai. Send denne meldingen (tilpass siste linje):
+Gå til SharePoint-gruppen **RAG_Salmon lice and wild salmonid mortality**.
+
+Last opp PDF-en til mappen:
+`Publications_candidates`
+
+Dette er holdestedet for artikler du vurderer, men ennå ikke har
+besluttet å inkludere.
+
+---
+
+## Steg 3: Flytt til Publications_selected
+
+Når du har bestemt deg for at artikkelen skal inkluderes, flytt
+PDF-en til:
+`Publications_selected`
+
+Artikler i denne mappen er besluttet inkludert og skal behandles
+videre i GitHub.
+
+> **Merk:** Hvis Ragnar Tveterås er tilgjengelig, kan han gjerne
+> se over kandidatene i `Publications_candidates` før du velger ut.
+> Hans faglige vurdering veier tyngre enn den automatiske.
+
+---
+
+## Steg 4: Fyll ut metadata med Claude
+
+Åpne claude.ai og send denne meldingen:
 
 ---
 
@@ -50,18 +88,17 @@ Hvis du er usikker på et felt, skriv "unclear".
 
 ---
 
-### 3. Les gjennom disse feltene selv
-
-Før du laster opp, les gjennom og juster om nødvendig:
+Les gjennom disse feltene selv før du fortsetter:
 
 - **`included_because`** — gir begrunnelsen mening?
 - **`key_claims`** — er påstandene presise og nøytrale?
 - **`coi_notes`** — sjekk at finansiering er nevnt (se bakerst i PDF-en)
-- **`evidence_direction`** — støtter, utfordrer eller kritiserer studien påstanden om at lusepresset fra oppdrett skader villaks?
+- **`evidence_direction`** — støtter, utfordrer eller kritiserer studien
+  påstanden om at lusepresset fra oppdrett skader villaks?
 
 ---
 
-### 4. Legg det inn i GitHub
+## Steg 5: Last opp til GitHub
 
 Gå til:
 `corpora/salmon-lice-and-mortality-of-wild-salmonids/documents/`
@@ -82,7 +119,7 @@ Last deretter opp PDF-en via **Add file → Upload files** til samme mappe.
 
 ---
 
-### 5. Logg beslutningen
+## Steg 6: Logg beslutningen
 
 Legg til en rad i `inclusion_log.md`:
 
@@ -92,16 +129,14 @@ Legg til en rad i `inclusion_log.md`:
 
 ---
 
-## Mappestruktur per dokument
+## Mappestruktur per dokument i GitHub
 
 ```
 documents/
 └── 2021_jfd_delousing-mortality/
     ├── metadata.yaml     ← fylt ut av Claude, verifisert av deg
-    └── original.pdf      ← PDF-en
+    └── original.pdf      ← PDF-en fra Publications_selected
 ```
-
-Det er alt. Ingen andre filer er nødvendig.
 
 ---
 
