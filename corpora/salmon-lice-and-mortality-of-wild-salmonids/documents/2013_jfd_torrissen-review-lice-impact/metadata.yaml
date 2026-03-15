@@ -1,0 +1,140 @@
+# ==================================================
+# METADATA — MVP VERSION
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# curator_review_status: pending
+# ==================================================
+
+
+# --------------------------------------------------
+# GRUNNLEGGENDE INFO
+# --------------------------------------------------
+
+title: "Salmon lice – impact on wild salmonids and salmon aquaculture"
+year: 2013
+doi: "10.1111/jfd.12061"
+authors:
+  - Torrissen, O.
+  - Jones, S.
+  - Asche, F.
+  - Guttormsen, A.
+  - Skilbrei, O.T.
+  - Nilsen, F.
+  - Horsberg, T.E.
+  - Jackson, D.
+journal: "Journal of Fish Diseases"
+document_type: review_article
+
+
+# --------------------------------------------------
+# KONTEKST
+# --------------------------------------------------
+
+causal_chain_stage:
+  - farm_lice_abundance
+  - lice_reproduction
+  - larval_production
+  - larval_dispersal
+  - host_exposure
+  - infestation
+  - physiological_effects
+  - individual_mortality
+  - population_impacts
+  - monitoring_methods
+  - regulatory_assessment
+# Full-chain review covering all steps from farm lice to population impact
+
+evidence_type: review
+
+host_species:
+  - atlantic_salmon
+  - sea_trout
+  - pink_salmon
+  - chum_salmon
+  - coho_salmon
+  - chinook_salmon
+
+life_stage:
+  - smolt
+  - post_smolt
+  - adult
+
+geography:
+  - Norway
+  - Ireland
+  - Scotland
+  - British_Columbia
+
+time_period: "review of literature up to 2012"
+
+evidence_direction: weak_support
+# The review concludes farm lice negatively impact wild salmonids,
+# but explicitly qualifies the extent as debated and the effect
+# as "moderate". Not a strong causal claim.
+
+priority_questions:
+  - Q1   # Attribution of lice to farm vs. wild sources
+  - Q2   # Estimating lice production on farms
+  - Q3   # Larval dispersal
+  - Q4   # Smolt exposure
+  - Q6   # Physiological effects on wild fish
+  - Q7   # Translating infestation to mortality
+  - Q8   # Fraction of smolts dying
+  - Q9   # Population-level impact
+
+
+# --------------------------------------------------
+# NØKKELPÅSTANDER
+# --------------------------------------------------
+
+key_claims:
+  - "Treated Atlantic salmon smolts showed an odds ratio of 1.1:1–1.2:1 for surviving sea migration compared to untreated smolts (Ireland and Norway data), characterised as a 'moderate population regulatory effect'."
+  - "Farm-origin salmon lice negatively impact wild salmonid stocks, but the extent of the impact is explicitly described as a matter of ongoing debate."
+  - "Intensive salmon aquaculture creates year-round high host density that amplifies lice reproduction and shedding of larvae into coastal waters beyond what natural wild populations would sustain."
+
+claims_about_uncertainty:
+  - "The review acknowledges that correlation between aquaculture expansion and wild salmon decline does not imply causation, and that lack of good data has led to over-interpretation in parts of the literature."
+
+rag_summary: >
+  Torrissen et al. (2013) is a broad multi-national review of salmon lice
+  biology, epidemiology, impact on wild salmonids, treatment strategies, and
+  socioeconomic consequences, published in Journal of Fish Diseases. It covers
+  the full causal chain from farm lice production to population-level effects
+  on wild salmon and sea trout across Norway, Ireland, Scotland, and Canada.
+  The review concludes that farm-origin lice negatively affect wild salmonids
+  but characterises the impact as moderate (odds ratio 1.1:1–1.2:1 for smolt
+  survival) and explicitly acknowledges that the extent of impact is debated.
+  Resistance to chemical treatments is highlighted as a growing concern.
+  A key limitation is that as a narrative review it does not apply a systematic
+  search protocol, making it susceptible to selective citation.
+
+
+# --------------------------------------------------
+# INKLUSJONSLOGIKK
+# --------------------------------------------------
+
+included_because: >
+  Widely cited foundational review that synthesises knowledge across the full
+  causal chain from farm lice to wild salmonid population effects, covering
+  multiple countries and the main contested questions. Provides the biological
+  and epidemiological baseline against which more recent empirical and modelling
+  studies should be interpreted. The explicit odds ratio for smolt survival is
+  one of the most frequently cited effect-size estimates in Norwegian and
+  international regulatory discussions. Its explicit acknowledgement of debate
+  makes it a useful reference for both Q7 and Q9.
+
+coi_declared: unclear
+coi_notes: >
+  Several authors are affiliated with research institutions with close ties
+  to aquaculture governance (IMR Norway, Marine Institute Ireland, DFO Canada).
+  Frank Asche is affiliated with University of Stavanger, which leads the
+  Havbruksløftet project. No formal conflict-of-interest declaration was
+  found in the sections reviewed. Verify in the published version.
+
+
+# --------------------------------------------------
+# KURATERSTATUS
+# --------------------------------------------------
+
+curator_review_status: pending
+added_by: "Thord"
+added_date: "2026-03-03"

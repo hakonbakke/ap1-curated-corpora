@@ -47,11 +47,12 @@ Core questions:
 | ID | Title | Year | Type | Q |
 |---|---|---|---|---|
 | 2025_scientificdata_bc-sealice-dataset-2001-2023 | Sea lice infestation dataset for wild and farmed salmon populations on the Pacific coast of Canada (2001–2023) | 2025 | dataset_description | Q1, Q2, Q5, Q10 |
+| 2013_jfd_torrissen-review-lice-impact | Salmon lice – impact on wild salmonids and salmon aquaculture | 2013 | review_article | Q1, Q2, Q3, Q4, Q6, Q7, Q8, Q9 |
 
 ---
 
 ## Status
 
-`Active — 1 document added (2026-03-03)`
+`Active — 2 documents added (2026-03-03)`
 
 See `inclusion_log.md` for curation history.
