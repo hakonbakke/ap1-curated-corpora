@@ -220,22 +220,23 @@ coi_notes: >
 
 # ======================================================================
 # DEL D — SYNTESE OG PLASSERING I LITTERATUREN
-# [FAGPERSON] Disse feltene skal stå tomme inntil fagperson fyller dem
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# Claude gjør et informert førsteutkast. Fagperson bør lese gjennom
+# og korrigere — særlig consensus_signal og controversy_role.
 # ======================================================================
 
-consensus_signal: null
+consensus_signal: ""
 # high_agreement | moderate_agreement | mixed
 # context_dependent | contested | insufficient_evidence
 # — Hvordan passer dette dokumentet inn i den bredere litteraturen?
-#   Dette er en vurdering av fagpersonen, ikke av papiret i seg selv.
 
-quality_signal: null
+quality_signal: ""
 # strong | medium | weak
 
 quality_rationale: >
-  # [FAGPERSON] Viktigste styrker og svakheter metodisk sett.
+  # Viktigste metodiske styrker og svakheter.
 
-controversy_role: null
+controversy_role: ""
 # foundational   — etablerer et nøkkelbegrep eller baseline
 # supportive     — legger til bevis i dominerende retning
 # critical       — reiser metodiske eller empiriske utfordringer
@@ -244,28 +245,30 @@ controversy_role: null
 # peripheral
 # not_applicable
 
-relevance_signal: null
+relevance_signal: ""
 # high | medium | low
 
 relevance_rationale: >
-  # [FAGPERSON] Hvorfor dette dokumentet er sentralt (eller marginalt) for dette korpuset.
+  # Hvorfor dette dokumentet er sentralt (eller marginalt) for dette korpuset.
 
-transferability: null
+transferability: ""
 # high | medium | low
 
 transferability_notes: >
-  # [FAGPERSON] Hva begrenser eller støtter overførbarheten til andre kontekster
-  # (f.eks. fra Canada til Norge, fra fjordmiljø til åpent kyst).
+  # Hva begrenser eller støtter overførbarheten til andre kontekster.
 
 
 # ======================================================================
 # DEL E — RELASJONER OG KURATORKOMMENTARER
-# [KURATOR] Fylles av den som legger inn dokumentet, evt. over tid
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# Claude foreslår koblinger basert på kjennskap til feltet.
+# Kurator / fagperson bør supplere og korrigere etter hvert som
+# korpuset vokser.
 # ======================================================================
 
 included_because: >
-  # [KURATOR] Eksplisitt begrunnelse for inkludering.
-  # Fokuser på dokumentets rolle i kunnskapslandskapet, ikke bare konklusjonene.
+  # Eksplisitt begrunnelse for inkludering.
+  # Fokuser på dokumentets rolle i kunnskapslandskapet.
   # Minimum 2–3 setninger.
 
 related_documents_supporting:
@@ -284,7 +287,7 @@ retrieval_tags:
   - ""   # Tilleggstagger for RAG-gjenfinning
 
 curator_note: >
-  # Kommentarer nyttige for mennesker, men ikke for automatisert filtrering.
+  # Eventuelle tilleggskommentarer for mennesker.
 
 
 # ======================================================================
@@ -293,8 +296,8 @@ curator_note: >
 
 curator_review_status: pending
 # pending   = Claude har fylt ut, ikke faglig verifisert
-# reviewed  = kurator har lest gjennom Del D og E
-# approved  = fagperson har godkjent Del D
+# reviewed  = kurator / fagperson har lest gjennom og korrigert Del D og E
+# approved  = fagperson har godkjent alle fire deler
 
 added_by: ""
 added_date: ""   # YYYY-MM-DD

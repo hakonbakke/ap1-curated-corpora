@@ -189,19 +189,51 @@ coi_notes: >
 
 # ======================================================================
 # DEL D — SYNTESE OG PLASSERING I LITTERATUREN
-# [FAGPERSON] Disse feltene skal stå tomme inntil fagperson fyller dem
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
 # ======================================================================
 
-consensus_signal: null
-quality_signal: null
+consensus_signal: mixed
+# The review itself frames the evidence as mixed and explicitly
+# acknowledges ongoing debate about the magnitude of effects.
+# It represents a moderate-consensus position: effects exist, but
+# extent is debated. Neither high-agreement nor contested.
+
+quality_signal: medium
+# Broad multi-national coverage and widely cited are strengths.
+# However, this is a narrative review without a systematic search
+# protocol — selection bias cannot be ruled out. The odds ratio
+# (1.1:1–1.2:1) is widely cited but originates from a small number
+# of underlying field studies.
+
 quality_rationale: >
+  Strengths: broad coverage (Norway, Ireland, Scotland, Canada);
+  covers full causal chain; widely cited baseline for regulatory
+  discussions; explicit acknowledgement of uncertainty and debate.
+  Limitations: narrative review without systematic search — susceptible
+  to selective citation; synthesises heterogeneous study designs
+  without meta-analysis; now 12+ years old (literature has advanced).
 
-controversy_role: null
-relevance_signal: null
+controversy_role: foundational
+# Provides the most widely cited biological and epidemiological
+# baseline for the field. The odds ratio for smolt survival is the
+# reference estimate used in most subsequent Norwegian regulatory
+# discussions. Does not resolve the controversy but frames it.
+
+relevance_signal: high
 relevance_rationale: >
+  Covers the full causal chain across all major jurisdictions.
+  The smolt survival odds ratio (1.1:1–1.2:1) is one of the most
+  frequently cited effect-size estimates in Norwegian regulatory
+  contexts. Essential as a baseline document for the entire corpus.
 
-transferability: null
+transferability: medium
 transferability_notes: >
+  Covers multiple jurisdictions including Norway — directly applicable
+  to Norwegian context. However, the synthesis mixes evidence from
+  different regulatory frameworks, species compositions, and ecological
+  settings, making it difficult to isolate Norway-specific conclusions.
+  More recent Norwegian-specific studies should be used for current
+  regulatory arguments.
 
 
 # ======================================================================

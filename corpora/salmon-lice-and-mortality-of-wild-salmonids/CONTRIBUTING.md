@@ -81,27 +81,27 @@ Her er metadata-templaten vi bruker:
 Her er dokumentet:
 [legg ved PDF-en]
 
-Fyll ut alle felt merket [CLAUDE] i templaten basert på dokumentet.
-Feltene merket [FAGPERSON] og [KURATOR] skal du la stå tomme (null eller blank).
-Vær nøytral og presis. Bruk bare informasjon som faktisk finnes i dokumentet.
-Hvis du er usikker på et felt, skriv "unclear".
+Fyll ut ALLE felt i templaten basert på dokumentet og din kunnskap om feltet.
+Del A, B og C fyller du direkte fra dokumentet.
+Del D og E fyller du som et informert faglig førsteutkast — disse vil bli
+verifisert av en fagperson etterpå.
+Vær nøytral og presis. Hvis du er usikker på et felt, skriv "unclear".
 ```
 
 ---
 
-> **Merk:** Templaten har tre deler som Claude IKKE skal fylle ut:
-> - **Del D** — `consensus_signal`, `quality_signal`, `controversy_role` osv.
->   Dette er syntesevurderinger som krever fagperson.
-> - **Del E** — `related_documents_*`, `included_because`
->   Dette er kuratorvurderinger du fyller ut selv.
+Les gjennom disse feltene selv før du laster opp:
 
-Les gjennom disse feltene selv før du fortsetter:
-
-- **`included_because`** — skriv inn din egen begrunnelse for inkludering
 - **`key_claims`** — er påstandene presise og nøytrale?
 - **`coi_notes`** — sjekk at finansiering er nevnt (se bakerst i PDF-en)
 - **`evidence_direction`** — støtter, utfordrer eller kritiserer studien
   påstanden om at lusepresset fra oppdrett skader villaks?
+- **`consensus_signal`** og **`controversy_role`** — virker Claude sin
+  plassering av dokumentet i litteraturen rimelig?
+
+> **Husk:** Del D og E er Claude sitt førsteutkast — ikke fasit.
+> Ragnar kan oppdatere disse feltene når han er tilgjengelig.
+> Sett `curator_review_status: reviewed` når du har lest gjennom.
 
 ---
 

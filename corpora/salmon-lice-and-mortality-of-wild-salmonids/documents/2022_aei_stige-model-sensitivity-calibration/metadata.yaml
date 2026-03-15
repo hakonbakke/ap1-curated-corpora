@@ -174,19 +174,57 @@ coi_notes: >
 
 # ======================================================================
 # DEL D — SYNTESE OG PLASSERING I LITTERATUREN
-# [FAGPERSON] Disse feltene skal stå tomme inntil fagperson fyller dem
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
 # ======================================================================
 
-consensus_signal: null
-quality_signal: null
+consensus_signal: contested
+# The finding that mortality estimates are highly sensitive to
+# calibration data directly contests the reliability of the models
+# underpinning the TLS — a framework that has broad institutional
+# backing. The result is not universally accepted as undermining
+# the TLS, but it reveals a fundamental unresolved disagreement
+# among the three expert-group models.
+
+quality_signal: strong
+# Rigorous sensitivity analysis; integrates both trawl and sentinel
+# cage data systematically; NVI is a credible government research
+# institution; open access; published in a peer-reviewed specialist
+# journal. The main caveat is that NVI is both author institution
+# and one of the models being compared.
+
 quality_rationale: >
+  Strengths: first paper to formally integrate both trawl and sentinel
+  cage data in the NVI model; explicit sensitivity analysis across
+  three key model assumptions; uses 10 years of data from all Norwegian
+  coastal management areas; open access. Limitations: paper is written
+  from the NVI perspective — the model being improved is NVI's own,
+  which creates a potential institutional bias even without commercial COI;
+  assumed migration routes may not reflect actual fish behaviour.
 
-controversy_role: null
-relevance_signal: null
+controversy_role: critical
+# Directly challenges the model basis of the Norwegian Traffic Light
+# System by demonstrating that the three official models (IMR, NVI,
+# SINTEF) give systematically different mortality estimates, and that
+# the source of these differences is primarily in calibration data
+# choices rather than migration assumptions.
+
+relevance_signal: high
 relevance_rationale: >
+  One of the most directly relevant papers for Q10 (TLS robustness)
+  in the entire corpus. The finding that calibration data type
+  (trawl vs. sentinel cage) drives mortality estimates more than
+  migration speed has direct implications for how the expert group
+  should interpret and communicate model uncertainty in regulatory
+  decisions.
 
-transferability: null
+transferability: low
 transferability_notes: >
+  Specific to the Norwegian virtual post-smolt modelling framework
+  and the 13 Norwegian management areas. The methodological insight
+  (that calibration data choice drives model output more than migration
+  speed) may generalise conceptually to other jurisdictions using
+  similar modelling approaches, but the quantitative results do not
+  transfer directly.
 
 
 # ======================================================================

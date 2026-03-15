@@ -168,19 +168,45 @@ coi_notes: >
 
 # ======================================================================
 # DEL D — SYNTESE OG PLASSERING I LITTERATUREN
-# [FAGPERSON] Disse feltene skal stå tomme inntil fagperson fyller dem
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
 # ======================================================================
 
-consensus_signal: null
-quality_signal: null
+consensus_signal: not_applicable
+# This is a data descriptor — it does not make an empirical claim
+# about the direction or magnitude of lice effects on wild fish.
+
+quality_signal: strong
+# Published in Scientific Data (Nature Portfolio), which requires
+# a rigorous data quality review. Dataset spans 22 years with clear
+# provenance documentation. Multiple monitoring programmes contribute,
+# which is a strength (breadth) but also the main limitation (heterogeneity).
+
 quality_rationale: >
+  Strengths: largest publicly available long-term BC sea lice dataset;
+  22-year span; both wild and farmed fish covered; includes natural
+  experiment from farm closures 2021. Limitations: heterogeneity in
+  sampling protocols across programmes reduces comparability over time;
+  no causal analysis performed.
 
-controversy_role: null
-relevance_signal: null
+controversy_role: foundational
+# Provides the raw observational data that other studies use to make
+# arguments about farm-lice effects. Does not itself take a position
+# in the controversy — it is infrastructure.
+
+relevance_signal: high
 relevance_rationale: >
+  Directly relevant to Q1 and Q2 (farm lice abundance, attribution)
+  and Q5 (model calibration data). The farm closure natural experiment
+  is uniquely relevant to Q10 (regulatory framework robustness).
+  BC context provides a comparative case for Norwegian management.
 
-transferability: null
+transferability: low
 transferability_notes: >
+  Data are from British Columbia — different species mix (Pacific salmon
+  vs. Atlantic salmon), different regulatory framework (DFO vs. Norwegian
+  TLS), different lice species composition (C. clemensi more prominent).
+  Useful as comparative context, not directly applicable to Norwegian
+  management areas.
 
 
 # ======================================================================
