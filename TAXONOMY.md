@@ -18,11 +18,15 @@ Refer to `shared/tagging_guide.md` for guidance on applying ambiguous tags.
 | Value | Description |
 |---|---|
 | `peer_reviewed` | Published in peer-reviewed journal |
-| `institute_report` | Research institute report (HI, Nofima, Veterinærinstituttet, SINTEF, etc.) |
-| `public_authority_report` | Regulatory or government report (Mattilsynet, Fiskeridirektoratet, NOU) |
-| `fhf_report` | FHF-funded project report |
+| `report` | Research institute report (HI, Nofima, Veterinærinstituttet, SINTEF, etc.) |
+| `government_report` | Regulatory or government report (Mattilsynet, Fiskeridirektoratet, NOU) |
+| `expert_group_report` | Report from an expert group (e.g. TLS expert group) |
 | `white_paper` | Industry or NGO white paper |
-| `grey_literature` | Other documented sources not fitting above categories |
+| `thesis` | PhD or Master's thesis |
+| `conference_paper` | Conference proceedings paper |
+| `dataset` | Data descriptor or data paper |
+| `commentary` | Commentary, letter, or opinion piece |
+| `response` | Formal response or rebuttal to another publication |
 
 ---
 
@@ -33,9 +37,14 @@ Refer to `shared/tagging_guide.md` for guidance on applying ambiguous tags.
 | `empirical_experimental` | Controlled experiment with treatment/control |
 | `empirical_observational` | Field or production data without experimental control |
 | `model` | Mathematical or simulation model |
-| `review` | Systematic or narrative review of existing literature |
-| `qualitative` | Interview, case study, expert assessment |
-| `regulatory` | Regulatory document, threshold-setting, policy assessment |
+| `review` | Narrative review of existing literature |
+| `systematic_review` | Systematic review with defined search protocol |
+| `meta_analysis` | Statistical synthesis across multiple studies |
+| `methods` | Methodological paper, tool development |
+| `commentary` | Commentary, opinion, letter |
+| `response` | Formal response or rebuttal |
+| `policy_assessment` | Regulatory document, threshold-setting, risk assessment |
+| `mixed` | Combines more than one of the above |
 
 ---
 

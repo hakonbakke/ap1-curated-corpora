@@ -4,12 +4,11 @@
 #
 # INSTRUKSJON TIL CLAUDE:
 #   Du er kurator for et vitenskapelig evidenskorpus om lakselus og
-#   villaks. Fyll ut alle felt merket [CLAUDE] basert på dokumentet
-#   jeg vedlegger. Vær nøytral og presis. Hvis du er usikker på et
-#   felt, skriv 'unclear'. Ikke trekk konklusjoner utover det
-#   dokumentet faktisk sier.
-#   Felt merket [FAGPERSON] skal stå tomme — ikke forsøk å fylle dem.
-#   Felt merket [KURATOR] fylles av den som legger inn dokumentet.
+#   villaks. Fyll ut ALLE felt i templaten basert på dokumentet og din
+#   kunnskap om feltet. Del A, B og C fyller du direkte fra dokumentet.
+#   Del D og E fyller du som et informert faglig førsteutkast — disse
+#   vil bli verifisert av en fagperson etterpå.
+#   Vær nøytral og presis. Hvis du er usikker på et felt, skriv 'unclear'.
 #
 # WORKFLOW:
 #   1. Gi Claude denne templaten + PDF

@@ -55,14 +55,20 @@ production context within which lice-related mortality should be interpreted.
 
 ## Shared infrastructure
 
-All three corpora use the same:
-- **Metadata schema** (`shared/metadata_schema.yaml`)
+All three corpora share the same:
 - **Tagging vocabulary** (`TAXONOMY.md` + `shared/tagging_guide.md`)
 - **Methodological principles** (`METHOD.md`)
 - **Inclusion criteria** (`CORPUS_CRITERIA.md`)
 
-This ensures that findings can be compared and synthesised across corpora
-where questions overlap.
+Each active corpus maintains its own **corpus-specific metadata template**
+in `corpora/[corpus-name]/metadata_template.yaml`. These templates extend
+the shared vocabulary with fields specific to the corpus's causal chain and
+priority questions. `shared/templates/metadata_template.yaml` serves as
+the baseline for new corpora not yet built.
+
+This ensures findings can be compared and synthesised across corpora
+where questions overlap, while allowing each corpus the flexibility to
+capture evidence dimensions specific to its domain.
 
 ---
 

@@ -1,35 +1,61 @@
-# Copy this file to documents/[YYYY_journal-abbrev_keyword]/metadata.yaml
-# and fill in all fields.
-# See shared/tagging_guide.md for guidance.
-# See TAXONOMY.md for controlled vocabulary values.
+# ======================================================================
+# GENERIC METADATA TEMPLATE — AP1 CURATED CORPORA
+#
+# NOTE: Each active corpus has its own corpus-specific template.
+# Use the corpus-specific template when adding documents, not this file.
+#
+# Current corpus-specific templates:
+#   corpora/salmon-lice-and-mortality-of-wild-salmonids/metadata_template.yaml
+#
+# This generic template serves as a reference baseline for new corpora
+# not yet built. When a new corpus is activated, create a corpus-specific
+# template by extending this base with corpus-specific fields.
+# ======================================================================
+
+
+# --------------------------------------------------
+# BASIC DOCUMENT INFORMATION
+# --------------------------------------------------
 
 title: ""
 year: null
-source_type: peer_reviewed
-journal: ""
 doi: ""
+url: ""
 authors: []
-language: "en"
+journal: ""
+publisher: ""
+language: english
+# english | norwegian | other
 
-corpus:
-  - ""
+source_type: ""
+# peer_reviewed | report | government_report | expert_group_report
+# white_paper | thesis | conference_paper | dataset | commentary | response
+
+document_type: ""
+# research_article | review_article | systematic_review | meta_analysis
+# modelling_study | methods_paper | commentary | response | policy_report
+# risk_assessment | monitoring_report | thesis | dataset_description
+
+abstract_available: unclear
+# yes | no | unclear
+
+
+# --------------------------------------------------
+# CORPUS ASSIGNMENT
+# --------------------------------------------------
+
+corpus: ""
+# salmon-lice-and-mortality-of-wild-salmonids
+# salmon-lice-and-farmed-salmon-welfare-and-mortality
+# salmon-mortality
 
 priority_questions:
   - ""
 
-relevance:
-  - ""
 
-relevance_score: 3
-
-relevance_rationale: >
-
-
-production_stage:
-  - ""
-
-system_type:
-  - ""
+# --------------------------------------------------
+# CONTEXT OF THE EVIDENCE
+# --------------------------------------------------
 
 geography:
   - ""
@@ -37,20 +63,64 @@ geography:
 time_period: ""
 
 evidence_type: ""
+# empirical_experimental | empirical_observational | review
+# systematic_review | meta_analysis | model | methods
+# commentary | response | policy_assessment | mixed
 
-consensus_signal: mixed
-quality_signal: medium
-transferability: medium
-transferability_notes: >
 
-included_because: >
+# --------------------------------------------------
+# DIRECTION AND QUALITY
+# --------------------------------------------------
+
+evidence_direction: ""
+# supports_effect | weak_support | mixed_within_study
+# no_effect_detected | contradicts_effect | critiques_methodology | not_applicable
+
+consensus_signal: ""
+# high_agreement | moderate_agreement | mixed
+# context_dependent | contested | insufficient_evidence
+
+quality_signal: ""
+# strong | medium | weak
 
 quality_rationale: >
 
+transferability: ""
+# high | medium | low
+
+transferability_notes: >
+
+
+# --------------------------------------------------
+# INCLUSION LOGIC
+# --------------------------------------------------
+
+included_because: >
+
 coi_declared: unclear
+# yes | no | unclear
+
 coi_notes: >
+
+
+# --------------------------------------------------
+# KEY CLAIMS
+# --------------------------------------------------
 
 key_claims:
   - ""
   - ""
   - ""
+
+rag_summary: >
+
+
+# --------------------------------------------------
+# CURATOR STATUS
+# --------------------------------------------------
+
+curator_review_status: pending
+# pending | reviewed | approved
+
+added_by: ""
+added_date: ""

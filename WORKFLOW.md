@@ -68,17 +68,17 @@ inclusion/exclusion decisions before proceeding.
 **Goal**: Complete the metadata record and document the inclusion decision.
 
 **Actions**:
-- Copy `shared/templates/metadata_template.yaml` to `metadata.yaml`
-- Fill all fields using `shared/tagging_guide.md` and `TAXONOMY.md`
-- Write `included_because` — a short explicit justification
-- Formulate 2–4 `key_claims` as neutral, human-written summaries
+- Copy the corpus-specific `metadata_template.yaml` to `documents/YYYY_journal_keyword/metadata.yaml`
+- Give Claude the template and the PDF; Claude fills all fields as a first draft
+- Del A–C: Claude extracts from the document directly
+- Del D–E: Claude provides an informed first draft; a human or expert reviews and corrects
 - Record inclusion decision in `inclusion_log.md`
 
-**Output**: Completed `metadata.yaml`
+**Output**: Completed `metadata.yaml` with `curator_review_status: pending`
 
-**Human checkpoint**: All synthesis-level fields
-(`consensus_signal`, `quality_signal`, `included_because`, `key_claims`)
-must be written by a human. These fields are never AI-generated.
+**Human checkpoint**: Review Del D (`consensus_signal`, `quality_signal`,
+`controversy_role`) and Del E (`included_because`, `related_documents_*`)
+before setting `curator_review_status: reviewed`. Expert sign-off sets it to `approved`.
 
 ---
 
