@@ -64,7 +64,34 @@ videre i GitHub.
 
 ---
 
-## Steg 4: Fyll ut metadata med Claude
+## Steg 4: Lag AI-sammendrag med Claude
+
+Åpne claude.ai og send denne meldingen:
+
+---
+
+```
+Skriv et strukturert sammendrag av dette dokumentet for et vitenskapelig
+evidenskorpus om lakselus og villaks. Inkluder disse seksjonene:
+- Bakgrunn
+- Metode
+- Hovedfunn
+- Usikkerhet og begrensninger
+- Relevans for dette korpuset
+- Relasjon til andre dokumenter
+
+Vær nøytral og presis. Merk sammendraget som AI-generert.
+[legg ved PDF-en]
+```
+
+---
+
+Lagre Claude-svaret som `summary.md` i dokumentmappen på GitHub
+(samme mappe som `metadata.yaml` og `original.pdf`).
+
+---
+
+## Steg 5: Fyll ut metadata med Claude
 
 Åpne claude.ai og send denne meldingen:
 
@@ -105,7 +132,7 @@ Les gjennom disse feltene selv før du laster opp:
 
 ---
 
-## Steg 5: Last opp til GitHub
+## Steg 6: Last opp til GitHub
 
 Gå til:
 `corpora/salmon-lice-and-mortality-of-wild-salmonids/documents/`
@@ -126,7 +153,7 @@ Last deretter opp PDF-en via **Add file → Upload files** til samme mappe.
 
 ---
 
-## Steg 6: Logg beslutningen
+## Steg 7: Logg beslutningen
 
 Legg til en rad i `inclusion_log.md`:
 
@@ -141,6 +168,7 @@ Legg til en rad i `inclusion_log.md`:
 ```
 documents/
 └── 2021_jfd_delousing-mortality/
+    ├── summary.md        ← AI-generert sammendrag
     ├── metadata.yaml     ← fylt ut av Claude, verifisert av deg
     └── original.pdf      ← PDF-en fra Publications_selected
 ```

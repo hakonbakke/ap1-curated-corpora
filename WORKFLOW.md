@@ -50,16 +50,16 @@ inclusion/exclusion decisions before proceeding.
 
 ---
 
-## Stage 3: CONVERT
+## Stage 3: CONVERT AND SUMMARISE
 
-**Goal**: Convert PDF to machine-readable text for AI-assisted analysis.
+**Goal**: Generate a human-readable AI summary of the document.
 
 **Actions**:
-- Convert PDF to Markdown using a PDF extraction tool
-- Store as `document.md` in the same folder
-- Flag any conversion quality issues (OCR problems, tables, figures)
+- Give Claude the PDF with the instruction: "Write a structured summary of this document for a scientific evidence corpus. Include: Background, Methods, Key Findings, Uncertainty and Limitations, Relevance to corpus, and Relation to other documents."
+- Save output as `summary.md` in the document folder
+- Flag any content extraction issues (scanned PDFs, non-English text)
 
-**Output**: `document.md` alongside `original.pdf`
+**Output**: `summary.md` alongside `original.pdf`
 
 ---
 
@@ -138,7 +138,7 @@ by a human curator before being treated as corpus outputs.
 |---|---|---|
 | Document folder | `YYYY_journal-abbrev_keyword` | `2021_jfd_delousing-mortality` |
 | Original PDF | `original.pdf` | — |
-| Converted text | `document.md` | — |
+| AI summary | `summary.md` | — |
 | Metadata | `metadata.yaml` | — |
 | Synthesis output | `YYYY-MM-DD_Q[n]_[topic].md` | `2026-03-01_Q1_lice-smolt-mortality.md` |
 
