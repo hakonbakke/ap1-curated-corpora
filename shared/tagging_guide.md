@@ -8,10 +8,11 @@ to real documents. For the controlled vocabulary itself, see `TAXONOMY.md`.
 ## General principles
 
 - Tag what the document **actually studies**, not what it mentions in passing
-- When in doubt, use a **more conservative** tag (lower relevance score,
-  `unclear` for COI, `mixed` for consensus)
-- All synthesis-level fields (`consensus_signal`, `quality_signal`,
-  `included_because`, `key_claims`) must be written by a human curator
+- When in doubt, use a **more conservative** tag (`unclear` for COI,
+  `mixed` for consensus)
+- Claude fills all fields as a first draft. Synthesis-level fields
+  (`consensus_signal`, `quality_signal`, `controversy_role`, `included_because`)
+  should be reviewed by a human or expert before setting `curator_review_status: reviewed`
 - If a field is genuinely unclear, use the most conservative option and
   add a note in `curator_note`
 
@@ -24,9 +25,10 @@ If a study uses a mathematical model fitted to observational data, classify
 as `model`. If it analyses field or production data directly without
 a mechanistic model, classify as `empirical_observational`.
 
-**Review vs. meta-analysis**
-For this corpus, both are classified as `review`. Note in `quality_rationale`
-whether it is systematic, narrative, or meta-analytic.
+**Review vs. systematic review vs. meta-analysis**
+Use `review` for narrative reviews, `systematic_review` for reviews with
+a defined search protocol, and `meta_analysis` for statistical syntheses.
+Note details in `quality_rationale`.
 
 **Regulatory**
 Use for documents whose primary purpose is to set, evaluate, or document

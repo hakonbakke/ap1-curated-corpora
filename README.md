@@ -31,8 +31,7 @@ ap1-curated-corpora/
 │       ├── documents/
 │       │   └── YYYY_journal_keyword/
 │       │       ├── summary.md       ← AI-generated summary
-│       │       ├── metadata.yaml    ← filled by Claude, reviewed by human
-│       │       └── original.pdf
+│       │       └── metadata.yaml    ← filled by Claude, reviewed by human
 │       └── synthesis/               ← cross-document syntheses (future)
 │
 └── shared/

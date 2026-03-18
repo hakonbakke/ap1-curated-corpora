@@ -43,10 +43,10 @@ inclusion/exclusion decisions before proceeding.
 **Actions**:
 - Download PDF from DOI, publisher, or open repository
 - For paywalled content: use institutional access or contact authors
-- Store original file as `original.pdf` in the document folder
+- Store PDF in SharePoint under `Publications_selected`
 - Generate a stable identifier (folder name = `YYYY_journal_keyword`)
 
-**Output**: `original.pdf` in `documents/YYYY_journal_keyword/`
+**Output**: PDF in SharePoint; document folder created in GitHub
 
 ---
 
@@ -137,9 +137,9 @@ by a human curator before being treated as corpus outputs.
 | File | Convention | Example |
 |---|---|---|
 | Document folder | `YYYY_journal-abbrev_keyword` | `2021_jfd_delousing-mortality` |
-| Original PDF | `original.pdf` | — |
 | AI summary | `summary.md` | — |
 | Metadata | `metadata.yaml` | — |
+| Original PDF | Stored in SharePoint `Publications_selected` | — |
 | Synthesis output | `YYYY-MM-DD_Q[n]_[topic].md` | `2026-03-01_Q1_lice-smolt-mortality.md` |
 
 ---
