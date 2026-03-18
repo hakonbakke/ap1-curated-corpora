@@ -22,17 +22,20 @@ ap1-curated-corpora/
 ├── WORKFLOW.md             ← step-by-step curation and synthesis workflow
 │
 ├── corpora/
-│   └── salmon-lice-and-mortality-of-wild-salmonids/
-│       ├── metadata_template.yaml   ← corpus-specific template
-│       ├── PRIORITY_QUESTIONS.md
-│       ├── KEYWORDS.md
-│       ├── CONTRIBUTING.md
-│       ├── inclusion_log.md
-│       ├── documents/
-│       │   └── YYYY_journal_keyword/
-│       │       ├── summary.md       ← AI-generated summary
-│       │       └── metadata.yaml    ← filled by Claude, reviewed by human
-│       └── synthesis/               ← cross-document syntheses (future)
+│   ├── salmon-lice-and-mortality-of-wild-salmonids/   ← active
+│   │   ├── metadata_template.yaml
+│   │   ├── PRIORITY_QUESTIONS.md
+│   │   ├── KEYWORDS.md
+│   │   ├── CONTRIBUTING.md
+│   │   ├── inclusion_log.md
+│   │   ├── documents/
+│   │   │   └── YYYY_journal_keyword/
+│   │   │       ├── summary.md       ← AI-generated summary
+│   │   │       └── metadata.yaml    ← filled by Claude, reviewed by human
+│   │   └── synthesis/               ← cross-document syntheses (future)
+│   │
+│   ├── salmon-lice-and-farmed-salmon-welfare-and-mortality/   ← stub
+│   └── salmon-mortality/                                      ← stub
 │
 └── shared/
     ├── tagging_guide.md
