@@ -1,0 +1,200 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2021_rcn_traffic-light-evaluation
+# ======================================================================
+
+# DEL A — BIBLIOGRAFISK INFO
+title: "An evaluation of the Scientific Basis of the Traffic Light System for Norwegian Salmonid Aquaculture"
+year: 2021
+doi: ""
+url: "https://trafikklyssystemet.no/"
+authors:
+  - "Kirstin Eliasen"
+  - "David Jackson"
+  - "Anders Koed"
+  - "Crawford Revie"
+  - "Heather Anne Swanson"
+  - "Jimmy Turnbull"
+  - "Jarno Vanhatalo"
+  - "André Visser"
+journal: ""
+publisher: "The Research Council of Norway"
+language: english
+source_type: expert_group_report
+document_type: policy_report
+abstract_available: no
+
+# DEL B — KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q7"
+  - "Q8"
+  - "Q9"
+  - "Q10"
+
+causal_chain_stage:
+  - "model_calibration"
+  - "model_validation"
+  - "regulatory_assessment"
+  - "monitoring_methods"
+
+host_species:
+  - "atlantic_salmon"
+
+wild_or_farmed_focus: both
+
+life_stage:
+  - "smolt"
+  - "post_smolt"
+
+parasite_species:
+  - "lepeophtheirus_salmonis"
+
+environment:
+  - "fjord"
+  - "coastal"
+
+geography:
+  - "Norway"
+
+time_period: "2017–2021"
+
+seasonality_focus:
+  - "migration_period"
+
+regulatory_context:
+  - "Norway_TLS"
+  - "Norway_expert_group"
+
+evidence_type: policy_assessment
+
+study_design:
+  - "expert_assessment"
+  - "literature_review"
+
+data_source:
+  - "expert_group_reports"
+  - "published_literature"
+
+model_type:
+  - "none"
+
+observation_unit:
+  - "production_area"
+
+comparison_type:
+  - "none"
+
+outcome_domain:
+  - "regulatory_classification"
+  - "model_performance"
+  - "uncertainty_estimation"
+
+primary_endpoint: "scientific quality assessment of TLS methodology"
+secondary_endpoints:
+  - "recommendations for improvement"
+  - "evaluation of uncertainty handling"
+
+# DEL C — FUNN OG BEVIS
+evidence_direction: mixed_within_study
+effect_scale: population_level
+uncertainty_emphasis: very_high
+
+main_uncertainty_sources:
+  - "infestation_to_mortality_thresholds"
+  - "calibration_data"
+  - "model_structure"
+  - "parameter_uncertainty"
+
+key_claims:
+  - "The mortality thresholds used in the TLS lack a solid empirical basis and have not been reassessed since inception"
+  - "Uncertainty quantification and propagation through the TLS is insufficient and not transparently reported"
+  - "Expert elicitation processes are poorly documented and do not follow accepted best practice standards"
+  - "The TLS should be framed within an iterative DPSIR process for ongoing performance review"
+
+claims_about_uncertainty:
+  - "Multiple places within the TLS contain uncertainty that is not formally quantified or propagated"
+  - "The perception of advanced computational models can lead to misplaced over-confidence in results"
+
+claims_about_policy_or_management:
+  - "The TLS is probably the most sophisticated salmon risk assessment in operation globally"
+  - "The TLS should adopt IPCC-style language for communicating uncertainty to non-scientific audiences"
+  - "No assessment of TLS system performance or conservation effectiveness has been undertaken"
+
+methodological_limitations:
+  - "Review scope was selective rather than comprehensive"
+  - "Sea trout and Arctic char assessment was deemed outside scope"
+
+rag_summary: >
+  Independent international evaluation of the Norwegian Traffic Light System (TLS) scientific basis,
+  commissioned by the Research Council of Norway in 2021. Eight international scientists reviewed the
+  modelling framework, mortality thresholds, uncertainty handling, and expert elicitation processes.
+  Found that mortality thresholds lack empirical basis, uncertainty is insufficiently quantified and
+  communicated, and expert judgment processes are poorly documented. Recommended DPSIR framework
+  for iterative system review. Fifteen recommendations issued for improving transparency and reliability.
+
+coi_declared: yes
+coi_notes: >
+  Committee members were independent international scientists with no direct involvement in the TLS.
+  Appointed under the auspices of the Research Council of Norway at the request of the Ministry.
+
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+consensus_signal: high_agreement
+quality_signal: strong
+quality_rationale: >
+  Independent international expert committee with diverse expertise. Systematic review of extensive
+  documentation. Transparent recommendations process. However, not a peer-reviewed publication.
+
+controversy_role: foundational
+relevance_signal: high
+relevance_rationale: >
+  The only independent international evaluation of the TLS scientific basis. Frames the structural
+  weaknesses that subsequent debate literature addresses. Essential reference for understanding
+  the methodological and governance context of the TLS.
+
+transferability: medium
+transferability_notes: >
+  Findings specific to the Norwegian TLS but recommendations on uncertainty communication,
+  expert elicitation, and DPSIR apply to any risk-based aquaculture management system.
+
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+included_because: >
+  Foundational governance document providing the only independent international evaluation of the
+  TLS scientific basis. Its 15 recommendations frame the structural weaknesses in the system —
+  particularly around mortality thresholds, uncertainty, and expert judgment — that are central
+  to the scientific debate captured in this corpus.
+
+related_documents_supporting:
+  - "Stige et al. 2022 (10.3354/aei00443)"
+  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+
+related_documents_contrasting: []
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "Van Nes et al. 2024 — cites this evaluation extensively"
+  - "Stige et al. 2022 — directly relevant to calibration concerns raised here"
+
+retrieval_tags:
+  - "TLS evaluation"
+  - "DPSIR"
+  - "uncertainty"
+  - "expert elicitation"
+  - "mortality thresholds"
+  - "Research Council Norway"
+  - "governance"
+
+curator_note: >
+  ISBN 978-82-12-03918-6. Not peer-reviewed in traditional sense but produced by
+  credentialed international committee through formal process. Widely cited in
+  subsequent literature on both sides of the debate.
+
+# KURATERSTATUS
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-03-23"

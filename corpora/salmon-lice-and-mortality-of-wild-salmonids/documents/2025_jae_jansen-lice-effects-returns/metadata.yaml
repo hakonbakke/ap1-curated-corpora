@@ -1,0 +1,205 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2025_jae_jansen-lice-effects-returns
+# ======================================================================
+
+# DEL A — BIBLIOGRAFISK INFO
+title: "Effects of salmon lice on numbers and size distributions of Atlantic salmon returning to spawn in Norwegian rivers"
+year: 2025
+doi: "10.1111/1365-2664.70212"
+url: "https://doi.org/10.1111/1365-2664.70212"
+authors:
+  - "Peder A. Jansen"
+  - "Henning André Urke"
+  - "Solveig Engebretsen"
+  - "Magne Aldrin"
+  - "Kari O. Helgesen"
+journal: "Journal of Applied Ecology"
+publisher: "British Ecological Society / Wiley"
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: yes
+
+# DEL B — KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q4"
+  - "Q6"
+  - "Q9"
+  - "Q10"
+
+causal_chain_stage:
+  - "individual_mortality"
+  - "population_impacts"
+  - "regulatory_assessment"
+
+host_species:
+  - "atlantic_salmon"
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - "adult"
+  - "returning_adult"
+
+parasite_species:
+  - "lepeophtheirus_salmonis"
+
+environment:
+  - "fjord"
+  - "coastal"
+
+geography:
+  - "Norway"
+
+time_period: "2019–2024"
+
+seasonality_focus:
+  - "full_year"
+
+regulatory_context:
+  - "Norway_TLS"
+
+evidence_type: empirical_observational
+
+study_design:
+  - "statistical_analysis"
+  - "field_sampling"
+
+data_source:
+  - "wild_fish_sampling"
+  - "trap_net_data"
+
+model_type:
+  - "statistical_regression_model"
+
+observation_unit:
+  - "river"
+
+comparison_type:
+  - "high_vs_low_infestation"
+  - "among_regions"
+  - "among_years"
+
+outcome_domain:
+  - "adult_returns"
+  - "population_abundance"
+
+primary_endpoint: "number of returning mature salmon per river by size class"
+secondary_endpoints:
+  - "proportion of 1SW salmon"
+  - "estimated weight of returning population"
+
+# DEL C — FUNN OG BEVIS
+evidence_direction: supports_effect
+effect_scale: population_level
+uncertainty_emphasis: moderate
+
+main_uncertainty_sources:
+  - "observational_bias"
+  - "sampling_representativeness"
+  - "parameter_uncertainty"
+
+key_claims:
+  - "Significant negative effect of PIM on returns of 1SW salmon, with reduced returns exceeding PIM estimates"
+  - "Proportion of 1SW salmon decreases from ~60% to <20% across the PIM range"
+  - "10% reduction in total returns predicted at PIM ~5.5%; 10% weight reduction at PIM ~10%"
+  - "Over 70% of river-year data exceeds PIM levels where 10% reduction is predicted"
+  - "Results are more in support of TLS model outcomes than critical studies"
+
+claims_about_uncertainty:
+  - "PIM is not the dominant covariate — river size and previous generation catches explain more variance"
+  - "Cannot exclude confounding factors; size-weight relationship introduces classification uncertainty"
+
+claims_about_policy_or_management:
+  - "Norwegian Government goal of <10% mortality is exceeded for the majority of rivers"
+  - "Substantial reductions in farm lice abundances are necessary to meet the government sustainability goal"
+  - "The quantitative relationship opens for more targeted management of individual rivers"
+
+methodological_limitations:
+  - "Correlational — cannot prove causation"
+  - "Sea-age classification from weight may misclassify some fish"
+  - "Violation of independence assumption across size classes"
+  - "Count data quality varies between rivers and teams"
+
+rag_summary: >
+  First study linking parasite-induced mortality (PIM) estimates from the TLS to observations of
+  adult salmon returning to 104 Norwegian rivers (2019-2024). Found significant negative effect of
+  PIM on 1SW salmon returns (p<0.0005), with proportion of small salmon declining from 60% to <20%
+  in high-PIM rivers. Predicts 10% reduction in returns at PIM ~5.5%. Over 70% of river-years exceed
+  this threshold. Results support TLS model outcomes and suggest substantial reductions in farm lice
+  are needed to meet the Norwegian Government's <10% mortality goal. Size-dependent effects suggest
+  lice may also delay maturation in surviving fish.
+
+coi_declared: yes
+coi_notes: >
+  Funded by Norwegian Seafood Research Fund (HELLUS project 901877), Vestland County Council, and
+  PO3/4 Kunnskapsinkubator. Authors declare no competing financial interests. First author affiliated
+  with AquaLife R&D and Norwegian Computing Center.
+
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+consensus_signal: moderate_agreement
+quality_signal: strong
+quality_rationale: >
+  Large dataset (104 rivers, 396 river-years, 2019-2024). Peer-reviewed in high-impact
+  ecology journal. Transparent methodology with extensive sensitivity analyses in supplements.
+  Main limitation is correlational design and sea-age classification from weight.
+
+controversy_role: bridge_between_positions
+relevance_signal: high
+relevance_rationale: >
+  Bridges the gap between theoretical PIM and observed population effects — the key missing
+  link identified by the Evaluation Committee. Notably, the first author previously critiqued
+  the VPS model (Jansen & Gjerde 2021) but here finds population-level evidence supporting
+  the TLS mortality estimates.
+
+transferability: medium
+transferability_notes: >
+  Methodology applicable wherever PIM estimates and returning salmon data exist.
+  Specific quantitative relationships are calibrated to Norwegian conditions.
+
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+included_because: >
+  First population-level study linking TLS mortality estimates to actual adult salmon returns,
+  directly responding to the Evaluation Committee's recommendation for in situ population-level
+  evidence. Unique because the first author previously critiqued the VPS model but here finds
+  supporting evidence at the population level.
+
+related_documents_supporting:
+  - "Stige et al. 2022 (10.3354/aei00443)"
+  - "Eliasen et al. 2021 — responds to recommendation R6"
+
+related_documents_contrasting:
+  - "Jansen & Gjerde 2021 (10.1093/icesjms/fsab206) — same first author, critiqued VPS model"
+  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "Jansen & Gjerde 2021 — earlier critique by same first author"
+  - "Eliasen et al. 2021 — the recommendation this study addresses"
+  - "Stige et al. 2022 — provides the PIM data used in this analysis"
+
+retrieval_tags:
+  - "adult returns"
+  - "population effects"
+  - "PIM"
+  - "grilse proportion"
+  - "size distribution"
+  - "river counting"
+  - "TLS validation"
+
+curator_note: >
+  Open access. Published January 2026 (volume year 2025/2026). Correction added December 2025
+  for Equation 2 (CWC to CGW). Uses NVI model PIM data. Notably bridges the critical and
+  supportive positions in the TLS debate.
+
+# KURATERSTATUS
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-03-23"

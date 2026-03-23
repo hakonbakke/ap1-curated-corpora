@@ -1,0 +1,158 @@
+title: "Salmon lice biology, environmental factors, and smolt behaviour with implications for the Norwegian salmon farming management system: A critical review"
+year: 2024
+doi: "10.1111/raq.12953"
+url: "https://doi.org/10.1111/raq.12953"
+authors:
+  - "Solveig van Nes"
+  - "Albert Kjartan Dagbjartarson Imsland"
+  - "Simon R. M. Jones"
+journal: "Reviews in Aquaculture"
+publisher: "Wiley"
+language: english
+source_type: peer_reviewed
+document_type: review_article
+abstract_available: yes
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+priority_questions:
+  - "Q1"
+  - "Q2"
+  - "Q5"
+  - "Q7"
+  - "Q8"
+  - "Q10"
+causal_chain_stage:
+  - "farm_lice_abundance"
+  - "larval_production"
+  - "larval_dispersal"
+  - "host_exposure"
+  - "infestation"
+  - "individual_mortality"
+  - "monitoring_methods"
+  - "model_calibration"
+  - "regulatory_assessment"
+host_species:
+  - "atlantic_salmon"
+  - "sea_trout"
+wild_or_farmed_focus: both
+life_stage:
+  - "smolt"
+  - "post_smolt"
+parasite_species:
+  - "lepeophtheirus_salmonis"
+environment:
+  - "fjord"
+  - "coastal"
+geography:
+  - "Norway"
+  - "Norway_PO3"
+  - "Norway_PO4"
+time_period: "2017–2024"
+seasonality_focus:
+  - "migration_period"
+  - "spring"
+  - "summer"
+regulatory_context:
+  - "Norway_TLS"
+  - "Norway_expert_group"
+evidence_type: review
+study_design:
+  - "literature_review"
+data_source:
+  - "published_literature"
+  - "expert_group_reports"
+model_type:
+  - "none"
+observation_unit:
+  - "study"
+comparison_type:
+  - "none"
+outcome_domain:
+  - "infestation_pressure"
+  - "mortality"
+  - "model_performance"
+  - "regulatory_classification"
+primary_endpoint: "assessment of TLS accuracy and reliability"
+secondary_endpoints:
+  - "identification of overestimation biases"
+  - "recommendations for improvement"
+evidence_direction: critiques_methodology
+effect_scale: both
+uncertainty_emphasis: very_high
+main_uncertainty_sources:
+  - "migration_timing"
+  - "migration_duration"
+  - "calibration_data"
+  - "infestation_to_mortality_thresholds"
+  - "model_structure"
+key_claims:
+  - "Smolt migration begins earlier and is shorter than assumed by the TLS, biasing mortality estimates upward"
+  - "Lice larvae production from farms is overestimated by excluding reducing biological and environmental effects"
+  - "Post-attachment lice loss (40-80%) is only partially corrected in two of seven TLS assessment endpoints"
+  - "Lice infection levels on farms are not associated with measurable effects on wild salmon populations"
+  - "Mortality thresholds may be too low relative to available experimental evidence"
+claims_about_uncertainty:
+  - "All seven TLS assessment endpoints share common sources of potential overestimation bias"
+  - "Model calibration against potentially biased observational data does not eliminate systematic error"
+claims_about_policy_or_management:
+  - "The TLS in its current form likely overestimates lice-induced mortality of wild salmon"
+  - "Recommended improvements include adjusting migration timing, incorporating lice biology, and revising mortality thresholds"
+methodological_limitations:
+  - "Draws heavily on acoustic telemetry from limited rivers in western Norway"
+  - "Arguments consistently favour overestimation; underestimation factors not equally explored"
+  - "Funded by aquaculture industry; first author has industry board membership"
+rag_summary: >
+  Comprehensive critical review of the Norwegian Traffic Light System (TLS) methodology for assessing
+  salmon lice impact on wild salmonids. Reviews literature on lice biology, environmental factors, and
+  smolt behaviour. Main findings: (1) migration timing mismatch biases data upward, (2) lice larvae
+  production overestimated, (3) model calibration flawed, (4) mortality thresholds potentially too low,
+  (5) no measurable population-level association between farm lice and wild salmon status. Argues TLS
+  systematically overestimates lice-induced mortality. Funded partly by aquaculture industry.
+coi_declared: yes
+coi_notes: >
+  Funded by Salmon Tracking 2030 (aquaculture industry-funded project in PO3/PO4) and FHF
+  (Norwegian Seafood Research Fund). First author (van Nes) is board member of Nova Sea,
+  a salmon farming company. Second author affiliated with Akvaplan-Niva.
+consensus_signal: contested
+quality_signal: medium
+quality_rationale: >
+  Comprehensive review with extensive literature coverage. Peer-reviewed with five reviewers.
+  However, consistently argues in one direction (overestimation). Conflict of interest concerns
+  raised by Stige et al. 2025 regarding industry funding and board membership.
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: >
+  The most comprehensive critique of TLS methodology from the industry-adjacent perspective.
+  Central to the scientific debate captured in this corpus. Prompted a published comment-response
+  exchange.
+transferability: medium
+transferability_notes: >
+  Points about migration timing, lice biology, and model calibration apply broadly.
+  Specific critique is tied to Norwegian TLS.
+included_because: >
+  Central critical review of the TLS, triggering a published debate. Provides the most detailed
+  compilation of arguments for why the TLS may overestimate lice-induced mortality. Essential
+  for representing the full spectrum of scientific positions in this corpus.
+related_documents_supporting:
+  - "Jansen & Gjerde 2021 (10.1093/icesjms/fsab206)"
+  - "Eliasen et al. 2021 — cited extensively to support critique"
+related_documents_contrasting:
+  - "Stige et al. 2025 (10.1111/raq.70040) — published comment"
+  - "Jansen et al. 2025 (10.1111/1365-2664.70212) — population-level evidence contradicts key claim"
+related_documents_reply_to: []
+should_be_read_with:
+  - "Stige et al. 2025 — published comment on this review"
+  - "Van Nes et al. 2025 — response to the comment"
+retrieval_tags:
+  - "TLS critique"
+  - "migration timing"
+  - "lice biology"
+  - "overestimation"
+  - "mortality thresholds"
+  - "sentinel cages"
+  - "industry perspective"
+curator_note: >
+  Open access. Part of a three-paper debate chain (this review -> Stige et al. 2025 comment ->
+  Van Nes et al. 2025 response). Conflict of interest is itself part of the debate.
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-03-23"

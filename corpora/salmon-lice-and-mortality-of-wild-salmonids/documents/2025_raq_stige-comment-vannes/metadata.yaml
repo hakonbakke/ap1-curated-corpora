@@ -1,0 +1,135 @@
+title: "Comment on 'Salmon Lice Biology, Environmental Factors, and Smolt Behaviour With Implications for the Norwegian Salmon Farming Management System: A Critical Review'"
+year: 2025
+doi: "10.1111/raq.70040"
+url: "https://doi.org/10.1111/raq.70040"
+authors:
+  - "Leif Christian Stige"
+  - "Knut W. Vollset"
+  - "Ola Diserud"
+  - "Ørjan Karlsen"
+  - "Øyvind Knutsen"
+  - "Frank Nilsen"
+  - "Rachel A. Paterson"
+  - "Lars Qviller"
+  - "Jofrid Skarðhamar"
+journal: "Reviews in Aquaculture"
+publisher: "Wiley"
+language: english
+source_type: peer_reviewed
+document_type: commentary
+abstract_available: no
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+priority_questions:
+  - "Q5"
+  - "Q7"
+  - "Q8"
+  - "Q10"
+causal_chain_stage:
+  - "model_calibration"
+  - "model_validation"
+  - "regulatory_assessment"
+host_species:
+  - "atlantic_salmon"
+wild_or_farmed_focus: both
+life_stage:
+  - "smolt"
+  - "post_smolt"
+parasite_species:
+  - "lepeophtheirus_salmonis"
+environment:
+  - "fjord"
+  - "coastal"
+geography:
+  - "Norway"
+time_period: "2017–2025"
+seasonality_focus:
+  - "migration_period"
+regulatory_context:
+  - "Norway_TLS"
+  - "Norway_expert_group"
+evidence_type: commentary
+study_design:
+  - "expert_assessment"
+data_source:
+  - "published_literature"
+  - "expert_group_reports"
+model_type:
+  - "none"
+observation_unit:
+  - "study"
+comparison_type:
+  - "none"
+outcome_domain:
+  - "model_performance"
+  - "regulatory_classification"
+primary_endpoint: "rebuttal of overestimation claims"
+secondary_endpoints: []
+evidence_direction: mixed_within_study
+effect_scale: both
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+  - "calibration_data"
+  - "infestation_to_mortality_thresholds"
+key_claims:
+  - "Model calibration compensates for overestimated larvae production — so it is unlikely to bias mortality estimation"
+  - "Van Nes et al. only highlights overestimation factors while ignoring underestimation factors"
+  - "Sentinel cages underestimate infestation by an order of magnitude compared to trawl data"
+  - "Available evidence suggests mortality thresholds should be lower than claimed by Van Nes et al."
+  - "Van Nes et al. failed to disclose relevant conflicts of interest"
+claims_about_uncertainty:
+  - "Post-attachment lice loss ranges from near-zero to >80% with unknown reasons for variation"
+  - "Different models use different assumptions about uncertain parameters, reflecting uncertainty similar to climate projections"
+claims_about_policy_or_management:
+  - "Assessment is not an average of seven indices but expert elicitation considering strengths and limitations of each"
+methodological_limitations:
+  - "Authors are current EG members with potential institutional bias"
+  - "Comment format limits depth of rebuttal on complex technical points"
+rag_summary: >
+  Comment by the TLS Expert Group responding to Van Nes et al. (2024) critical review. Key
+  counter-arguments: model calibration compensates for larvae overestimation; Van Nes et al.
+  selectively highlights overestimation while ignoring underestimation factors (trawl captures
+  only partial migration, sentinel cages underestimate by order of magnitude); mortality
+  thresholds should be lower than claimed; and relevant conflicts of interest were not disclosed.
+  Authored by 9 current EG members from NVI, IMR, NORCE, NINA, SINTEF, and UiB.
+coi_declared: yes
+coi_notes: >
+  Authors are current EG members. Vollset is member of VRL. Karlsen leads NALO surveillance
+  programme. Vollset, Karlsen, Nilsen, and Qviller gave expert witness testimony in TLS court
+  case 2021-2022.
+consensus_signal: moderate_agreement
+quality_signal: medium
+quality_rationale: >
+  Clear, point-by-point rebuttal with specific references. Appendix addresses additional
+  technical points. However, authors have institutional stake in the TLS methodology
+  they defend.
+controversy_role: rebuttal
+relevance_signal: high
+relevance_rationale: >
+  Direct counter to the most comprehensive TLS critique. Essential for balanced representation
+  of the scientific debate.
+transferability: low
+transferability_notes: >
+  Specific to the Norwegian TLS debate context.
+included_because: >
+  Direct Expert Group response to the most comprehensive TLS critique. Essential for representing
+  both sides of the scientific debate on TLS accuracy and reliability.
+related_documents_supporting:
+  - "Stige et al. 2022 (10.3354/aei00443)"
+related_documents_contrasting:
+  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+related_documents_reply_to:
+  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+should_be_read_with:
+  - "Van Nes et al. 2024 — the review being commented on"
+  - "Van Nes et al. 2025 — response to this comment"
+retrieval_tags:
+  - "EG response"
+  - "TLS defense"
+  - "calibration"
+  - "rebuttal"
+  - "conflict of interest"
+curator_note: >
+  Open access. Middle piece of debate chain. All 9 authors are current TLS Expert Group members.
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-03-23"
