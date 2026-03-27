@@ -1,0 +1,211 @@
+# ======================================================================
+# METADATA — Dadswell et al. 2021
+# ======================================================================
+
+title: "The Decline and Impending Collapse of the Atlantic Salmon (Salmo salar) Population in the North Atlantic Ocean: A Review of Possible Causes"
+year: 2021
+doi: "10.1080/23308249.2021.1937044"
+url: "https://doi.org/10.1080/23308249.2021.1937044"
+authors:
+  - "Michael Dadswell"
+  - "Aaron Spares"
+  - "Jeffrey Reader"
+  - "Montana McLean"
+  - "Tom McDermott"
+  - "Kurt Samways"
+  - "Jessie Lilly"
+journal: "Reviews in Fisheries Science & Aquaculture"
+publisher: "Taylor & Francis"
+language: english
+
+source_type: peer_reviewed
+
+document_type: review_article
+
+abstract_available: yes
+
+
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q9
+
+causal_chain_stage:
+  - population_impacts
+
+host_species:
+  - atlantic_salmon
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - returning_adult
+  - post_smolt
+  - mixed
+
+parasite_species:
+  - not_specified
+
+environment:
+  - open_ocean
+  - shelf_sea
+
+geography:
+  - Norway
+  - Scotland
+  - Ireland
+
+time_period: "1985–2020"
+
+seasonality_focus:
+  - not_applicable
+
+regulatory_context:
+  - none
+
+evidence_type: review
+
+study_design:
+  - literature_review
+
+data_source:
+  - published_literature
+  - expert_group_reports
+
+model_type:
+  - none
+
+observation_unit:
+  - river
+  - study
+  - mixed
+
+comparison_type:
+  - among_regions
+  - among_years
+
+outcome_domain:
+  - marine_survival
+  - adult_returns
+  - population_abundance
+
+primary_endpoint: "Adult return abundance trends in North Atlantic salmon stocks since 1985"
+secondary_endpoints:
+  - "Loss of cyclic abundance patterns in annual adult returns"
+  - "Decline in mean adult body size"
+  - "Spatial pattern of stock collapse relative to North Atlantic Subpolar Gyre"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# ======================================================================
+
+evidence_direction: contradicts_effect
+
+effect_scale: population_level
+
+uncertainty_emphasis: high
+
+main_uncertainty_sources:
+  - sampling_representativeness
+  - transferability
+  - observational_bias
+
+key_claims:
+  - "The widespread decline of Atlantic salmon cannot be explained by local freshwater impacts, climate change, salmon farming, food availability, or marine predators alone — stocks in pristine, remote watersheds with no salmon farming have also collapsed."
+  - "The pattern of collapse (loss of cyclic abundance, flatline of returns, reduced adult size, collapse first in watersheds distant from the North Atlantic Subpolar Gyre) is consistent with illegal, unreported, and unregulated (IUU) high-seas fisheries as the primary cause."
+  - "Enhancement programs, commercial fishery closures, and angling restrictions have all failed to halt the decline, suggesting the cause is operating in the marine phase."
+  - "Marine prey fields are diverse and historical high-seas fisheries data suggest IUU exploitation is a viable and historically documented mortality source."
+
+claims_about_uncertainty:
+  - "Attribution of Atlantic salmon decline to any single cause remains highly contested; the authors argue current dominant hypotheses (lice, climate, predation) are inconsistent with the full pattern of observations."
+  - "Lack of surveillance outside EEZs makes IUU estimation extremely difficult."
+
+claims_about_policy_or_management:
+  - "Current regulatory approaches focusing on freshwater habitat, fishing restrictions, and aquaculture management may be addressing secondary rather than primary causes."
+  - "International surveillance of high-seas fisheries targeting Atlantic salmon should be prioritised."
+
+methodological_limitations:
+  - "The IUU hypothesis is based on indirect evidence; direct quantification of IUU-origin mortality is not feasible with available data."
+  - "The review selectively interprets existing literature to build a case for IUU; counter-evidence on salmon lice and aquaculture impacts is acknowledged but de-emphasised."
+
+rag_summary: >
+  Dadswell et al. (2021) review the causes of the widespread decline and impending collapse of Atlantic salmon populations across the North Atlantic since 1985. The review challenges dominant hypotheses — climate change, salmon farming and sea lice, food availability, and marine predators — on the grounds that stocks remote from farms and in pristine watersheds have also collapsed. The authors instead propose that illegal, unreported, and unregulated (IUU) high-seas fisheries are the primary cause, citing evidence from the spatial pattern of collapse (earliest near the North Atlantic Subpolar Gyre), loss of cyclic abundance patterns, and the documented history of high-seas fisheries. This constitutes a strong counter-position to the view that salmon lice from aquaculture is the dominant driver of Atlantic salmon decline.
+
+coi_declared: no
+
+coi_notes: >
+  No competing interest declared. Authors are from Canadian (Acadia University, University of New Brunswick) and European (Marine Institute Ireland, University of Glasgow) academic institutions. No aquaculture industry affiliation stated.
+
+
+# ======================================================================
+# DEL D — SYNTESE
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+consensus_signal: contested
+
+quality_signal: medium
+
+quality_rationale: >
+  The review is wide-ranging and engages seriously with the existing literature. The IUU hypothesis is novel and builds on documented historical patterns in high-seas fisheries. However, the paper does not present new primary data; it reinterprets existing evidence, and the IUU hypothesis is difficult to test empirically. The review may underweight evidence from Norwegian, Irish, and Scottish studies showing local lice effects. The argument is internally coherent but would be strengthened by quantitative modelling of IUU mortality.
+
+controversy_role: critical
+
+relevance_signal: high
+
+relevance_rationale: >
+  Directly relevant to Q9 (population-level impact): argues that salmon lice and aquaculture are not the primary cause of the population-level decline, and that the real driver operates elsewhere in the life cycle. This is a significant counter-position in the corpus that should be weighed against studies supporting the primacy of lice-induced mortality.
+
+transferability: medium
+
+transferability_notes: >
+  The North Atlantic-wide scope includes Norwegian stocks, but the IUU hypothesis applies primarily to stocks that spend extended time in the open ocean far from farms. Rivers with high aquaculture exposure (e.g. in Norway and British Columbia) may have different dominant mortality drivers than those studied here.
+
+
+# ======================================================================
+# DEL E — RELASJONER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+included_because: >
+  Provides the strongest counter-argument in the corpus to the claim that salmon lice from aquaculture is the primary driver of Atlantic salmon population decline. The IUU hypothesis is empirically grounded in historical fishing data and the spatial pattern of collapse. Including this review is essential for the corpus to represent the genuine uncertainty around Q9 (population-level impact).
+
+related_documents_supporting:
+  - "2022_rfbf_gillson-marine-stressors-salmon"
+
+related_documents_contrasting:
+  - "2017_icesjms_forseth-major-threats-norway"
+  - "2025_jae_jansen-lice-effects-returns"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2017_icesjms_forseth-major-threats-norway"
+  - "2022_rfbf_gillson-marine-stressors-salmon"
+
+retrieval_tags:
+  - "Atlantic salmon decline"
+  - "North Atlantic"
+  - "IUU fisheries"
+  - "marine mortality"
+  - "population collapse"
+  - "high-seas fisheries"
+  - "competing causes"
+  - "cyclic abundance"
+
+curator_note: >
+  [UNVERIFIED: Del D og E] This paper argues against the primacy of aquaculture-related lice as the key driver of salmon decline. It should be read as a strong but contested counter-position. Expert review is recommended before drawing conclusions on consensus_signal and controversy_role.
+
+
+# ======================================================================
+# KURATERSTATUS
+# ======================================================================
+
+curator_review_status: pending
+added_by: Claude
+added_date: "2026-03-27"
