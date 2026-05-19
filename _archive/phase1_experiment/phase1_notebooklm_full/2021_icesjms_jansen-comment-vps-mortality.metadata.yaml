@@ -1,0 +1,196 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2021_icesjms_jansen-comment-vps-mortality
+# ======================================================================
+
+# DEL A — BIBLIOGRAFISK INFO
+title: "Comment on 'Salmon lice-induced mortality of Atlantic salmon post-smolt during migration in Norway' by Johnsen et al. (2021)"
+year: 2021
+doi: "10.1093/icesjms/fsab206"
+url: "https://doi.org/10.1093/icesjms/fsab206"
+authors:
+  - "Peder A. Jansen"
+  - "Bjarne Gjerde"
+journal: "ICES Journal of Marine Science"
+publisher: "Oxford University Press"
+language: english
+source_type: peer_reviewed
+document_type: commentary
+abstract_available: yes
+
+# DEL B — KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q5"
+  - "Q7"
+  - "Q8"
+  - "Q10"
+
+causal_chain_stage:
+  - "model_validation"
+  - "individual_mortality"
+  - "regulatory_assessment"
+
+host_species:
+  - "atlantic_salmon"
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - "post_smolt"
+
+parasite_species:
+  - "lepeophtheirus_salmonis"
+
+environment:
+  - "fjord"
+  - "coastal"
+
+geography:
+  - "Norway"
+
+time_period: "2017–2020"
+
+seasonality_focus:
+  - "migration_period"
+
+regulatory_context:
+  - "Norway_TLS"
+
+evidence_type: commentary
+
+study_design:
+  - "statistical_analysis"
+  - "trawl_sampling"
+
+data_source:
+  - "trawl_data"
+  - "hydrodynamic_model_output"
+
+model_type:
+  - "virtual_post_smolt_model"
+  - "statistical_regression_model"
+
+observation_unit:
+  - "individual_fish"
+  - "production_area"
+
+comparison_type:
+  - "observed_vs_modelled"
+  - "among_regions"
+  - "among_years"
+
+outcome_domain:
+  - "mortality"
+  - "infestation_on_wild_fish"
+  - "model_performance"
+
+primary_endpoint: "comparison of VPS mortality estimates vs. trawl-derived mortality estimates"
+secondary_endpoints:
+  - "sensitivity to remaining migration pathway"
+
+# DEL C — FUNN OG BEVIS
+evidence_direction: critiques_methodology
+effect_scale: population_level
+uncertainty_emphasis: high
+
+main_uncertainty_sources:
+  - "calibration_data"
+  - "model_structure"
+  - "sampling_representativeness"
+
+key_claims:
+  - "VPS model systematically overestimates lice-induced mortality compared to trawl observations in 26 of 27 area-year comparisons"
+  - "Overestimation is especially pronounced at low mortality levels"
+  - "The conclusion by Johnsen et al. that modelled lice levels coincide with observed levels is contradicted"
+  - "Even accounting for further infestation on remaining migration pathway, overestimation persists in 22 of 27 comparisons"
+
+claims_about_uncertainty:
+  - "Biases in sub-model parameterisation may propagate through the modelling system"
+  - "Due to model complexity, the specific reasons for systematic overestimation cannot be identified"
+
+claims_about_policy_or_management:
+  - "VPS predictions have contributed to mandatory production reductions in management areas 4 and 5"
+  - "The systematic overestimation has direct regulatory consequences"
+
+methodological_limitations:
+  - "Assumes trawled post-smolts originate from rivers draining into corresponding inner fjords"
+  - "Uses average VPS mortality, which may not represent actual trawl catch composition"
+  - "Does not identify which specific sub-model causes the overestimation"
+
+rag_summary: >
+  Validation analysis of the IMR virtual post-smolt (VPS) model used in the Norwegian Traffic Light
+  System. Compared VPS predicted mortality against mortality estimated from 7,929 trawled post-smolts
+  across 27 area-year comparisons (2017-2020). Found systematic overestimation: VPS mortality exceeded
+  trawl-derived mortality in 26 of 27 comparisons (p=0.003). Overestimation persisted even after
+  adjusting for remaining migration pathway. Contradicts the VPS model authors' claim that modelled and
+  observed lice levels coincide. Directly relevant to TLS regulatory decisions.
+
+coi_declared: yes
+coi_notes: >
+  First author affiliated with INAQ AS (private consultancy). Second author with Nofima AS.
+  No specific funding source declared for this comment. Jansen has been involved in industry-
+  funded research on salmon lice.
+
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+consensus_signal: contested
+quality_signal: medium
+quality_rationale: >
+  Clear methodology using publicly available data and the same mortality calculation as the
+  critiqued study. Statistical tests are appropriate. However, the assumption about trawled
+  fish origins has been debated, and the analysis cannot identify the specific source of
+  discrepancy in the complex model chain.
+
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: >
+  Direct challenge to the model outputs underlying TLS regulatory decisions. Part of a
+  published comment-reply exchange with the model developers. Central to understanding
+  the contested validity of VPS mortality estimates.
+
+transferability: medium
+transferability_notes: >
+  Validation approach is generally applicable to any lice dispersion model. Specific findings
+  are tied to the Norwegian TLS context and data.
+
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+included_because: >
+  Key critical study directly challenging the VPS model outputs used for TLS regulatory decisions.
+  Provides independent validation using publicly available trawl data. Part of the scientific
+  debate chain that is central to this corpus.
+
+related_documents_supporting:
+  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+  - "Eliasen et al. 2021 — model validation concerns"
+
+related_documents_contrasting:
+  - "Johnsen et al. 2021 (10.1093/icesjms/fsaa202) — the critiqued study"
+
+related_documents_reply_to:
+  - "Johnsen et al. 2021 (10.1093/icesjms/fsaa202)"
+
+should_be_read_with:
+  - "Stige et al. 2022 — calibration sensitivity in the NVI model"
+  - "Jansen et al. 2025 — same first author, extends to population-level analysis"
+
+retrieval_tags:
+  - "VPS model"
+  - "model validation"
+  - "trawl data"
+  - "mortality overestimation"
+  - "Johnsen et al."
+  - "comment"
+
+curator_note: >
+  Open access. Part of a comment-reply exchange (Johnsen et al. 2021b responded to this comment
+  in the same journal issue). First author later published Jansen et al. 2025, extending the
+  analysis to returning adult salmon.
+
+# KURATERSTATUS
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-03-23"

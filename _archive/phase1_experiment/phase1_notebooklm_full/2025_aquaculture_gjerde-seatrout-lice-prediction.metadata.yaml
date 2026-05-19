@@ -1,0 +1,216 @@
+# ======================================================================
+# METADATA — Gjerde & Aslam 2025
+# ======================================================================
+
+title: "Prediction of the salmon lice density on wild sea trout from the mean predicted lice density in the sea: A cross-validation of the data in Myksvoll et al. (2018)"
+year: 2025
+doi: "10.1016/j.aquaculture.2025.742149"
+url: "https://doi.org/10.1016/j.aquaculture.2025.742149"
+authors:
+  - "Bjarne Gjerde"
+  - "Muhammad Luqman Aslam"
+journal: "Aquaculture"
+publisher: "Elsevier"
+language: english
+
+source_type: peer_reviewed
+
+document_type: methods_paper
+
+abstract_available: yes
+
+
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q5
+  - Q7
+  - Q10
+
+causal_chain_stage:
+  - model_calibration
+  - model_validation
+  - regulatory_assessment
+
+host_species:
+  - sea_trout
+  - atlantic_salmon
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - post_smolt
+
+parasite_species:
+  - lepeophtheirus_salmonis
+
+environment:
+  - fjord
+  - coastal
+  - modelled_environment
+
+geography:
+  - Norway
+
+time_period: "2015–2017"
+
+seasonality_focus:
+  - migration_period
+
+regulatory_context:
+  - Norway_TLS
+
+evidence_type: model
+
+study_design:
+  - statistical_analysis
+  - field_sampling
+
+data_source:
+  - wild_fish_sampling
+  - hydrodynamic_model_output
+  - particle_tracking_output
+
+model_type:
+  - statistical_regression_model
+  - threshold_model
+
+observation_unit:
+  - site
+  - fish_group
+
+comparison_type:
+  - observed_vs_modelled
+
+outcome_domain:
+  - infestation_on_wild_fish
+  - infestation_pressure
+  - model_performance
+  - regulatory_classification
+
+primary_endpoint: "Predictive power of the hydrodynamic lice particle model (PMLD) for predicting observed mean lice burden on wild sea trout (OMLB) across 102 coastal locations"
+secondary_endpoints:
+  - "Ability of PMLD to correctly classify production zones as Green, Yellow, or Red"
+  - "Number of 15×15 km grid cells required to achieve adequate statistical power for TLS classification"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# ======================================================================
+
+evidence_direction: critiques_methodology
+
+effect_scale: not_applicable
+
+uncertainty_emphasis: very_high
+
+main_uncertainty_sources:
+  - model_structure
+  - calibration_data
+  - sampling_representativeness
+  - hydrodynamics
+  - observational_bias
+
+key_claims:
+  - "Cross-validation of the Myksvoll et al. (2018) dataset shows that Predicted Mean Lice Density (PMLD) from the hydrodynamic model is a very poor predictor of observed mean lice burden (OMLB) on sea trout (RPD = 1.18–1.19; r² ≈ 0.30)."
+  - "The 95% confidence interval of predicted lice burden from Model 1 spans about one unit along the entire range of PMLD — approximately three times the span of the mortality risk criteria (0–0.3 lice/g) used in the TLS classification."
+  - "Using a single 15×15 km grid cell (144 km²), the model cannot reliably classify a production zone as Green vs. Yellow or Yellow vs. Red."
+  - "Reliable Green/Yellow classification requires PMLD data from a sea area of at least 28,800 km² — larger than most of the 13 Norwegian production zones (the largest is ~15,784 km²)."
+  - "Myksvoll et al. (2018) overstated the model's reliability by using Spearman rank correlation without cross-validation; the Kendall correlation (more appropriate) is only 0.52."
+
+claims_about_uncertainty:
+  - "The poor predictive power is not a function of the statistical model chosen — all four linear regression models, the non-linear logistic model, and the threshold model give very similar, very low predictive power."
+  - "The poor predictive power is likely due to the low information content of PMLD itself for actual lice burden on individual fish — not correctable by choosing a different statistical approach."
+
+claims_about_policy_or_management:
+  - "Given the very low predictive power of PMLD, assigning a reliable Green, Yellow, or Red classification to a production zone using PMLD alone is not statistically justified."
+  - "The TLS relies on a model component (PMLD) that has not been validated at the spatial scales required for production zone classification."
+  - "The targeted species for TLS is Atlantic salmon post-smolts (~20g), not sea trout (<150g) — the validation data used by Myksvoll et al. (2018) therefore also mismatches the target species."
+
+methodological_limitations:
+  - "The analysis re-uses data from Myksvoll et al. (2018) — original data collection design was not intended for cross-validation."
+  - "The first author (Gjerde) presented these results as a witness in two court cases by salmon farmers against the Norwegian state; this potential conflict of interest should be noted, though neither court found in favour of the farmers."
+
+rag_summary: >
+  Gjerde & Aslam (2025) perform a rigorous cross-validation of a key component of the Norwegian Traffic Light System: the hydrodynamic salmon lice particle model used to predict lice infestation pressure on wild fish. Using the dataset from Myksvoll et al. (2018) — 102 coastal locations, 5211 wild sea trout, three years — they show that the model's predicted mean lice density (PMLD) explains only ~30% of variation in observed lice burden on sea trout (RPD ≈ 1.18). The 95% confidence interval of predictions spans nearly the entire range of the mortality risk criteria used for TLS classification. Reliable Green/Yellow classification would require sea area data larger than most production zones. This constitutes a strong methodological critique of a foundational TLS model component.
+
+coi_declared: yes
+
+coi_notes: >
+  First author (Bjarne Gjerde, retired Nofima) testified as a witness in two court cases by Norwegian salmon farmers against the Norwegian state (district court January 2020, court of appeal February 2021). Farmers lost both cases. Neither author received funding for this specific work. The conflict of interest is declared in the paper.
+
+
+# ======================================================================
+# DEL D — SYNTESE
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+consensus_signal: contested
+
+quality_signal: medium
+
+quality_rationale: >
+  The statistical analysis is technically rigorous: four different regression models, a non-linear logistic model, and a threshold model all give convergent results, and cross-validation is correctly applied. The findings of poor predictive power are internally consistent. However, the paper relies entirely on re-analysis of one previously published dataset; the analysis cannot assess whether the poor performance reflects a fundamental model limitation or a specific limitation of the Myksvoll et al. (2018) dataset. The declared conflict of interest (expert witness for salmon farmers) does not invalidate the statistical findings but is relevant context.
+
+controversy_role: critical
+
+relevance_signal: high
+
+relevance_rationale: >
+  Directly relevant to Q5 (model predictions of infestation on wild fish) and Q10 (TLS robustness). The lice particle model is a core operational component of the TLS annual risk assessment. If PMLD cannot reliably distinguish Green/Yellow/Red at the production zone scale, this undermines a key element of the regulatory framework. This paper should be read alongside Myksvoll et al. (2018) and the Stige et al. (2022) calibration study.
+
+transferability: high
+
+transferability_notes: >
+  Directly applicable to the Norwegian TLS context, which is the primary regulatory focus of this corpus. Findings on model performance limitations are relevant to any jurisdiction using hydrodynamic lice particle models as a regulatory tool.
+
+
+# ======================================================================
+# DEL E — RELASJONER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+included_because: >
+  Provides the most rigorous statistical challenge to the predictive validity of a core TLS model component. The finding that PMLD cannot reliably classify production zones — even after cross-validation with multiple model types — is directly relevant to Q5 and Q10. It complements methodological critiques in other corpus documents (e.g. Jansen & Gjerde 2021, Stige et al. 2022) that challenge model calibration and VPS reliability.
+
+related_documents_supporting:
+  - "2021_icesjms_jansen-comment-vps-mortality"
+  - "2024_raq_vannes-critical-review-tls"
+
+related_documents_contrasting:
+  - "2022_aei_stige-model-sensitivity-calibration"
+  - "2021_rcn_traffic-light-evaluation"
+
+related_documents_reply_to:
+  - "Myksvoll et al. (2018) — not in corpus"
+
+should_be_read_with:
+  - "2021_icesjms_jansen-comment-vps-mortality"
+  - "2022_aei_stige-model-sensitivity-calibration"
+
+retrieval_tags:
+  - "Traffic Light System"
+  - "lice particle model"
+  - "predictive validation"
+  - "cross-validation"
+  - "PMLD"
+  - "sea trout monitoring"
+  - "TLS model performance"
+  - "Myksvoll"
+  - "hydrodynamic model"
+
+curator_note: >
+  [UNVERIFIED: Del D og E] Note the declared conflict of interest (industry court witness). Ragnar Tveterås should be consulted on whether this paper's conclusions are accepted in the Norwegian scientific community or are considered contested. The court outcome (farmers lost) does not resolve the statistical merits of Gjerde's cross-validation.
+
+
+# ======================================================================
+# KURATERSTATUS
+# ======================================================================
+
+curator_review_status: pending
+added_by: Claude
+added_date: "2026-03-27"

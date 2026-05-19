@@ -1,0 +1,208 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2021_aei_seatrout-risk-assessment
+# ======================================================================
+
+# DEL A — BIBLIOGRAFISK INFO
+title: "Development of a risk assessment method for sea trout in coastal areas exploited for aquaculture"
+year: 2021
+doi: "10.3354/aei00391"
+url: "https://doi.org/10.3354/aei00391"
+authors:
+  - "Bengt Finstad"
+  - "Anne D. Sandvik"
+  - "Ola Ugedal"
+  - "Knut W. Vollset"
+  - "Ørjan Karlsen"
+  - "Jan G. Davidsen"
+  - "Harald Sægrov"
+  - "Robert J. Lennox"
+journal: "Aquaculture Environment Interactions"
+publisher: "Inter-Research"
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: yes
+
+# DEL B — KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q1"
+  - "Q2"
+  - "Q3"
+  - "Q5"
+  - "Q8"
+
+causal_chain_stage:
+  - "larval_dispersal"
+  - "host_exposure"
+  - "infestation"
+  - "physiological_effects"
+  - "population_impacts"
+
+host_species:
+  - "sea_trout"
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - "smolt"
+  - "post_smolt"
+
+parasite_species:
+  - "lepeophtheirus_salmonis"
+
+environment:
+  - "fjord"
+  - "coastal"
+
+geography:
+  - "Norway"
+  - "Norway_PO3"
+  - "Norway_PO5"
+  - "Hardangerfjord"
+
+time_period: "2018–2019"
+
+seasonality_focus:
+  - "spring"
+  - "summer"
+  - "migration_period"
+
+regulatory_context:
+  - "Norway_TLS"
+
+evidence_type: model
+
+study_design:
+  - "hydrodynamic_modelling"
+  - "particle_tracking"
+
+data_source:
+  - "farm_lice_counts"
+  - "sentinel_cages"
+  - "hydrodynamic_model_output"
+
+model_type:
+  - "lice_particle_tracking_model"
+  - "infestation_model"
+
+observation_unit:
+  - "river"
+  - "production_area"
+
+comparison_type:
+  - "among_regions"
+  - "among_years"
+
+outcome_domain:
+  - "infestation_pressure"
+  - "behaviour_change"
+  - "population_abundance"
+
+primary_endpoint: "reduced marine living area (RML)"
+secondary_endpoints:
+  - "reduced marine feeding time (RMT)"
+
+# DEL C — FUNN OG BEVIS
+evidence_direction: supports_effect
+effect_scale: population_level
+uncertainty_emphasis: moderate
+
+main_uncertainty_sources:
+  - "infestation_to_mortality_thresholds"
+  - "migration_timing"
+  - "sampling_representativeness"
+
+key_claims:
+  - "Sea trout in PO3 Hardangerfjord may lose 49-66% of marine living area depending on migration timing"
+  - "Within-production-area variation is dramatic: Oselvo trout lose 94-98% of habitat while Etne trout lose 0-68%"
+  - "Late-migrating sea trout are consistently more affected by lice than early migrants"
+  - "The proposed RML and RMT indices are scalable to all production areas and rivers"
+
+claims_about_uncertainty:
+  - "Critical lice thresholds for sea trout are based on limited laboratory studies and may not reflect field conditions"
+  - "Higher resolution model (160m) not yet as widely validated as the standard 800m grid"
+
+claims_about_policy_or_management:
+  - "A holistic view of environmental interactions between aquaculture and all wild species is necessary"
+  - "Proposed setting RML limit values equivalent to salmon mortality limits (>30% = high, 10-30% = moderate, <10% = low)"
+
+methodological_limitations:
+  - "Does not directly model mortality — uses habitat loss as proxy"
+  - "Fixed 60g fish size does not capture population-level size variation"
+  - "Assumes no return to sea after premature freshwater return"
+
+rag_summary: >
+  Proposes reduced marine living area (RML) and reduced marine feeding time (RMT) as sustainability
+  indicators for sea trout in the Norwegian Traffic Light System. Uses a bio-hydrodynamic model at
+  160m resolution to estimate salmon lice impact on sea trout habitat in PO3 (Hardangerfjord) and PO5
+  (Romsdalsfjord). Found dramatic potential impacts: 49-98% habitat loss depending on river location
+  and migration timing. Late-migrating trout consistently more affected. Method scalable to all
+  Norwegian production areas. Does not model mortality directly but estimates habitat loss as proxy.
+
+coi_declared: yes
+coi_notes: >
+  Funded by Ministry of Trade, Industry and Fisheries, Norwegian Environment Agency, and multiple
+  Norwegian research institutions. First author acknowledges DNV funding. Several authors are
+  members of the TLS Expert Group or closely affiliated institutions.
+
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+consensus_signal: moderate_agreement
+quality_signal: strong
+quality_rationale: >
+  Well-documented model methodology building on validated bio-hydrodynamic framework.
+  Clear sensitivity analysis with multiple migration timings and rivers. Peer-reviewed
+  in Aquaculture Environment Interactions. Limitation is proxy approach (habitat loss
+  rather than direct mortality).
+
+controversy_role: supportive
+relevance_signal: medium
+relevance_rationale: >
+  Extends the corpus focus to sea trout, which shares lice exposure pathways with salmon.
+  Demonstrates the spatial and temporal variability in lice impact within production areas,
+  relevant for understanding model uncertainty in the TLS.
+
+transferability: medium
+transferability_notes: >
+  Method applicable wherever bio-hydrodynamic lice models exist. Sea trout biology
+  parameters would need adjustment for other regions.
+
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+included_because: >
+  Demonstrates the methodological framework for estimating lice impact on sea trout, extending
+  the TLS approach. Shows dramatic within-production-area variation in lice exposure, which is
+  central to understanding the spatial resolution challenges of the regulatory system.
+
+related_documents_supporting:
+  - "Stige et al. 2022 (10.3354/aei00443) — calibration sensitivity applies to same model framework"
+
+related_documents_contrasting: []
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "Eliasen et al. 2021 — evaluates the same modelling framework this study extends"
+
+retrieval_tags:
+  - "sea trout"
+  - "habitat loss"
+  - "RML"
+  - "RMT"
+  - "bio-hydrodynamic model"
+  - "Hardangerfjord"
+  - "migration timing"
+
+curator_note: >
+  Open access. Several authors are TLS Expert Group members. The evaluation committee
+  (Eliasen et al. 2021) noted this method existed but was not yet peer-reviewed at time
+  of their evaluation; it was published in May 2021.
+
+# KURATERSTATUS
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-03-23"

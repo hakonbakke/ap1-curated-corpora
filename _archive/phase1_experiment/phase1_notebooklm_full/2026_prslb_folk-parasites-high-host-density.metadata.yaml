@@ -1,0 +1,207 @@
+# ======================================================================
+# METADATA — Folk et al. 2026
+# ======================================================================
+
+title: "Parasites perform poorly at high host densities: an experimental test in the salmon louse Lepeophtheirus salmonis"
+year: 2026
+doi: "10.1098/rspb.2025.1782"
+url: "https://doi.org/10.1098/rspb.2025.1782"
+authors:
+  - "Alexius W. T. Folk"
+  - "Mikko Heino"
+  - "Dieter Ebert"
+  - "Frank Nilsen"
+  - "Nils Christian Stenseth"
+  - "Adèle Mennerat"
+journal: "Proceedings of the Royal Society B"
+publisher: "Royal Society"
+language: english
+
+source_type: peer_reviewed
+
+document_type: research_article
+
+abstract_available: yes
+
+
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q2
+  - Q6
+
+causal_chain_stage:
+  - lice_reproduction
+  - larval_production
+  - physiological_effects
+
+host_species:
+  - atlantic_salmon
+
+wild_or_farmed_focus: farmed
+
+life_stage:
+  - post_smolt
+
+parasite_species:
+  - lepeophtheirus_salmonis
+
+environment:
+  - laboratory
+
+geography:
+  - Norway
+
+time_period: "2020–2021"
+
+seasonality_focus:
+  - not_applicable
+
+regulatory_context:
+  - none
+
+evidence_type: empirical_experimental
+
+study_design:
+  - laboratory_challenge
+
+data_source:
+  - wild_fish_sampling
+
+model_type:
+  - statistical_regression_model
+
+observation_unit:
+  - individual_fish
+
+comparison_type:
+  - high_vs_low_infestation
+  - exposed_vs_unexposed
+
+outcome_domain:
+  - lice_abundance_on_farms
+  - physiological_stress
+  - survival
+  - mortality
+
+primary_endpoint: "Life-history traits of individually tagged female L. salmonis under high vs. low host density conditions (fecundity, adult size, age at maturation, lifespan)"
+secondary_endpoints:
+  - "Pre-reproductive mortality rate by treatment"
+  - "Correlation between adult body size and fecundity/lifespan"
+  - "Geographical variation in louse life history across three Norwegian farm locations"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# ======================================================================
+
+evidence_direction: supports_effect
+
+effect_scale: individual_level
+
+uncertainty_emphasis: moderate
+
+main_uncertainty_sources:
+  - transferability
+  - model_structure
+  - sampling_representativeness
+
+key_claims:
+  - "Female salmon lice at high host density (mimicking aquaculture) exhibit greater pre-reproductive mortality, smaller adult body size, delayed maturation, and lower fecundity than lice at low host density (mimicking natural conditions)."
+  - "Adult body size is a key integrative life-history trait: larger females reproduce earlier, have greater lifetime fecundity, and live longer."
+  - "The most likely mechanism for reduced louse performance at high host density is stronger immune responses in hosts exposed to higher parasite doses, not direct competition among lice."
+  - "Female L. salmonis on farmed salmon are ~19% smaller than those on wild salmon (consistent with prior field data); this study provides an experimental explanation for this size difference."
+  - "The combination of high host density and strong within-host competition may be selecting for increased virulence in farm-origin lice, with potential adverse consequences for wild salmon."
+
+claims_about_uncertainty:
+  - "The experimental design cannot fully disentangle the contributions of host immune responses, host stress from crowding, and direct competition among lice."
+  - "Results from hatchery-reared salmon held in 500L tanks may not fully represent immune responses or lice life histories in large open-net cages."
+
+claims_about_policy_or_management:
+  - "Drug-based control thresholds set on average lice abundances may not account for density-dependent effects on parasite virulence and fecundity."
+  - "If aquaculture selects for more virulent lice (greater early investment in reproduction), spillover events to wild fish may cause disproportionate harm."
+
+methodological_limitations:
+  - "Experiment used post-smolt Atlantic salmon in small tanks; responses may not fully represent conditions in commercial open-net pens."
+  - "Adult male lice could not be tagged due to small size and are excluded from analysis."
+  - "Study reports on lice from three Norwegian locations; geographic variation in louse populations may affect generalisability."
+
+rag_summary: >
+  Folk et al. (2026) used individually tagged female salmon lice (L. salmonis) to compare parasite life histories under high host density (mimicking aquaculture conditions) and low host density (mimicking natural wild conditions) in a replicated laboratory experiment. Lice at high density showed reduced juvenile survival, smaller adult body size, delayed maturation, and lower fecundity — consistent with stronger immune responses in hosts exposed to higher parasite doses. Adult body size emerged as a key trait predicting reproductive success and lifespan. The results provide an experimental explanation for the observed smaller size of lice on farmed vs. wild salmon in field studies, and suggest that aquaculture environments may select for lice with faster, more virulent life histories. This has implications for the risk posed by farm-origin lice spilling over to wild salmonids.
+
+coi_declared: no
+
+coi_notes: >
+  Funded by the Research Council of Norway (grant 287405 to A. Mennerat), the L. Meltzer University Foundation, and the University of Bergen. No industry funding declared.
+
+
+# ======================================================================
+# DEL D — SYNTESE
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+consensus_signal: moderate_agreement
+
+quality_signal: strong
+
+quality_rationale: >
+  Methodologically rigorous: individual tagging of parasites allows tracking of life histories at an unprecedented resolution. Replicated across three geographical origins. Statistical modelling accounts for repeated measures, host ID as random effect, and confounding variables. The main limitations are the laboratory setting and relatively small sample size in the low-density treatment (n=35 females). The paper represents a significant methodological advance in salmon louse ecology.
+
+controversy_role: supportive
+
+relevance_signal: medium
+
+relevance_rationale: >
+  Directly relevant to Q2 (estimating lice production in farms: fecundity and density-dependent regulation) and Q6 (physiological effects: how lice life history affects virulence and host damage). Provides mechanistic insight into how aquaculture conditions alter louse life history, with downstream implications for virulence and farm-to-wild spillover risk.
+
+transferability: medium
+
+transferability_notes: >
+  Laboratory-based experiment using post-smolt Atlantic salmon; conditions differ from large commercial pens. Findings on density-dependent immune responses and louse size-fecundity relationships are biologically grounded and likely generalisable, but quantitative thresholds may not translate directly to field conditions.
+
+
+# ======================================================================
+# DEL E — RELASJONER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+included_because: >
+  Provides novel experimental evidence that aquaculture conditions (high host density) alter louse life history in ways that may select for increased virulence. This adds a mechanistic dimension to the question of how salmon farming affects lice that infect wild fish: not only does farming increase lice abundance, but it may change louse biology in ways that amplify harm to wild salmon during spillover events.
+
+related_documents_supporting:
+  - "2021_aei_seatrout-risk-assessment"
+
+related_documents_contrasting: []
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2021_rcn_traffic-light-evaluation"
+  - "2025_aquaculture_gjerde-seatrout-lice-prediction"
+
+retrieval_tags:
+  - "salmon louse life history"
+  - "host density"
+  - "parasite virulence"
+  - "fecundity"
+  - "aquaculture evolution"
+  - "density dependence"
+  - "individual tagging"
+  - "Lepeophtheirus salmonis"
+  - "evolutionary ecology"
+
+curator_note: >
+  [UNVERIFIED: Del D og E] Published in Proc R Soc B 293:20251782, received July 2025, accepted October 2025. Paper self-cites as "2026"; this is the formal publication year and is used as the folder year. File in Publications_selected folder uses "2025" (submission year).
+
+
+# ======================================================================
+# KURATERSTATUS
+# ======================================================================
+
+curator_review_status: pending
+added_by: Claude
+added_date: "2026-03-27"

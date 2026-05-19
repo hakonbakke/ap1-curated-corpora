@@ -1,0 +1,121 @@
+title: "Response to Stige LC, Vollset KW, Diserud O, et al. 'Comment on Van Nes, Imsland and Jones'"
+year: 2025
+doi: "10.1111/raq.70050"
+url: "https://doi.org/10.1111/raq.70050"
+authors:
+  - "Solveig van Nes"
+  - "Albert Kjartan Dagbjartarson Imsland"
+  - "Simon R. M. Jones"
+journal: "Reviews in Aquaculture"
+publisher: "Wiley"
+language: english
+source_type: peer_reviewed
+document_type: response
+abstract_available: no
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+priority_questions:
+  - "Q5"
+  - "Q7"
+  - "Q8"
+  - "Q10"
+causal_chain_stage:
+  - "model_calibration"
+  - "regulatory_assessment"
+host_species:
+  - "atlantic_salmon"
+wild_or_farmed_focus: both
+life_stage:
+  - "smolt"
+  - "post_smolt"
+parasite_species:
+  - "lepeophtheirus_salmonis"
+environment:
+  - "fjord"
+  - "coastal"
+geography:
+  - "Norway"
+time_period: "2017–2025"
+seasonality_focus:
+  - "migration_period"
+regulatory_context:
+  - "Norway_TLS"
+evidence_type: response
+study_design:
+  - "expert_assessment"
+data_source:
+  - "published_literature"
+model_type:
+  - "none"
+observation_unit:
+  - "study"
+comparison_type:
+  - "none"
+outcome_domain:
+  - "model_performance"
+  - "regulatory_classification"
+primary_endpoint: "defense of critical review findings"
+secondary_endpoints: []
+evidence_direction: critiques_methodology
+effect_scale: both
+uncertainty_emphasis: high
+main_uncertainty_sources:
+  - "calibration_data"
+  - "migration_timing"
+  - "infestation_to_mortality_thresholds"
+key_claims:
+  - "Acoustic telemetry data on migration timing are NOT included in TLS estimates, contrary to Stige et al.'s claim"
+  - "If both input and calibration data are unreliable, the calibration compensation argument is negated"
+  - "5 of 7 TLS endpoints still assume 100% lice survival post-attachment"
+  - "The review's conclusions align with the Evaluation Committee and the EG's own reports"
+claims_about_uncertainty:
+  - "The EG's own practice of implementing a 40% lice loss correction validates the review's concerns"
+claims_about_policy_or_management:
+  - "Current TLS practice will contribute to overestimates of lice-induced smolt mortality"
+methodological_limitations:
+  - "Short letter format limits depth of argumentation"
+  - "Same conflict of interest context as the original review"
+rag_summary: >
+  Response by Van Nes, Imsland and Jones to the Expert Group's comment on their 2024 critical
+  review. Defends key claims: acoustic telemetry migration data are not included in TLS estimates;
+  calibration compensation fails if calibration data themselves are unreliable; 5 of 7 endpoints
+  assume 100% lice survival. Notes that findings align with the independent evaluation committee
+  and the EG's own reports. Rejects allegations of bias and undisclosed conflicts of interest.
+coi_declared: yes
+coi_notes: >
+  Same as Van Nes et al. 2024. First author board member of Nova Sea.
+  Salmon Tracking 2030 funded by aquaculture industry.
+consensus_signal: contested
+quality_signal: medium
+quality_rationale: >
+  Focused response addressing specific points. Short format limits depth.
+controversy_role: rebuttal
+relevance_signal: high
+relevance_rationale: >
+  Closing piece of the debate chain. Essential for complete representation of the scientific exchange.
+transferability: low
+transferability_notes: >
+  Specific to the Norwegian TLS debate.
+included_because: >
+  Closing piece of a three-paper debate chain central to this corpus. Demonstrates the
+  contested nature of TLS methodology and the scientific exchange between critics and defenders.
+related_documents_supporting:
+  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+  - "Eliasen et al. 2021"
+related_documents_contrasting:
+  - "Stige et al. 2025 (10.1111/raq.70040)"
+related_documents_reply_to:
+  - "Stige et al. 2025 (10.1111/raq.70040)"
+should_be_read_with:
+  - "Van Nes et al. 2024 — the original review"
+  - "Stige et al. 2025 — the comment being responded to"
+retrieval_tags:
+  - "response"
+  - "TLS critique"
+  - "debate chain"
+  - "calibration"
+  - "migration timing"
+curator_note: >
+  Open access. Final piece of three-paper debate chain in Reviews in Aquaculture.
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-03-23"

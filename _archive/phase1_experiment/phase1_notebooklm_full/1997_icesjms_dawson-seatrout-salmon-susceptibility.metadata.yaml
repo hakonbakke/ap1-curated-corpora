@@ -1,0 +1,205 @@
+# ======================================================================
+# METADATA — Dawson et al. 1997
+# ======================================================================
+
+title: "Comparison of the susceptibility of sea trout (Salmo trutta L.) and Atlantic salmon (Salmo salar L.) to sea lice (Lepeophtheirus salmonis (Krøyer, 1837)) infections"
+year: 1997
+doi: ""
+url: "https://doi.org/10.1006/jmsc.1997.0309"
+authors:
+  - "L. H. J. Dawson"
+  - "A. W. Pike"
+  - "D. F. Houlihan"
+  - "A. H. McVicar"
+journal: "ICES Journal of Marine Science"
+publisher: "Oxford University Press / ICES"
+language: english
+
+source_type: peer_reviewed
+
+document_type: research_article
+
+abstract_available: yes
+
+
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q4
+  - Q6
+
+causal_chain_stage:
+  - host_exposure
+  - infestation
+  - physiological_effects
+  - behaviour
+
+host_species:
+  - atlantic_salmon
+  - sea_trout
+
+wild_or_farmed_focus: both
+
+life_stage:
+  - juvenile
+  - adult
+
+parasite_species:
+  - lepeophtheirus_salmonis
+
+environment:
+  - laboratory
+
+geography:
+  - Scotland
+
+time_period: "1996–1997"
+
+seasonality_focus:
+  - not_applicable
+
+regulatory_context:
+  - none
+
+evidence_type: empirical_experimental
+
+study_design:
+  - laboratory_challenge
+
+data_source:
+  - wild_fish_sampling
+
+model_type:
+  - none
+
+observation_unit:
+  - individual_fish
+
+comparison_type:
+  - exposed_vs_unexposed
+  - among_regions
+
+outcome_domain:
+  - infestation_on_wild_fish
+  - physiological_stress
+  - skin_damage
+  - survival
+
+primary_endpoint: "Mean sea lice abundance on sea trout vs. Atlantic salmon over 8 weeks post-experimental infection"
+secondary_endpoints:
+  - "Lice developmental stage distribution on both species"
+  - "Dorsal fin erosion and skin lesion severity"
+  - "Distribution of lice across body regions"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# ======================================================================
+
+evidence_direction: supports_effect
+
+effect_scale: individual_level
+
+uncertainty_emphasis: low
+
+main_uncertainty_sources:
+  - sampling_representativeness
+  - transferability
+
+key_claims:
+  - "At week 1 post-infection, significantly more lice were recorded on sea trout than Atlantic salmon, regardless of whether fish were in single-species or mixed-species tanks."
+  - "By week 8, Atlantic salmon had significantly fewer surviving lice than sea trout, indicating greater long-term immune clearance in salmon."
+  - "The survival of pre-adult and adult lice declined more rapidly on sea trout in the early weeks, but by the end of the experiment, sea trout carried more lice — suggesting sea trout as the more natural long-term host."
+  - "A greater humoral antibody response to sea lice infection was demonstrated for Atlantic salmon compared to sea trout, suggesting an immunological rather than behavioural primary defence strategy in salmon."
+  - "No fish mortality occurred from sea lice infection in this study."
+
+claims_about_uncertainty:
+  - "Differences in susceptibility may partly reflect the tank experimental conditions rather than natural differential exposure; swimming performance and distribution in tanks could influence copepodid settlement."
+  - "Hatchery-reared fish with potentially different immune histories were used; results may not fully represent wild population responses."
+
+claims_about_policy_or_management:
+  - "Sea trout appear to be the more natural long-term host for L. salmonis; this has implications for understanding why sea trout populations are particularly vulnerable to farm-origin lice pressure."
+
+methodological_limitations:
+  - "Experiment used hatchery-reared fish in controlled tanks; immune responses may differ from wild fish."
+  - "Copepodids used were reared from farmed Atlantic salmon; preferential settlement would be expected on Atlantic salmon rather than sea trout, potentially underestimating sea trout susceptibility in the field."
+  - "Experiment covers only 8 weeks; long-term effects on growth, osmoregulatory function, or survival are not assessed."
+
+rag_summary: >
+  Dawson et al. (1997) conducted a controlled laboratory challenge study comparing sea trout and Atlantic salmon under experimental infection with Lepeophtheirus salmonis. Sea trout carried more lice at week 1 and throughout the experiment, and showed lower immune-mediated clearance. Atlantic salmon exhibited a stronger humoral antibody response and shed lice faster, resulting in lower lice abundance by week 8. The findings suggest that sea trout are the more suitable long-term host for L. salmonis, likely reflecting the parasite's evolutionary adaptation to the coastal migratory behaviour of sea trout, while Atlantic salmon deploy a primarily immunological defence strategy. No mortality occurred from lice infection under experimental conditions.
+
+coi_declared: no
+
+coi_notes: >
+  Funded by a BBSRC CASE award (Biotechnology and Biological Sciences Research Council). Authors affiliated with University of Aberdeen and SOAEFD Marine Laboratory, Aberdeen. No industry affiliation stated.
+
+
+# ======================================================================
+# DEL D — SYNTESE
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+consensus_signal: high_agreement
+
+quality_signal: medium
+
+quality_rationale: >
+  A well-designed controlled experimental study with replicated tank groups, individual fish-level assessments, and comparison of single-species and mixed-species conditions. The main limitation is the use of hatchery-reared fish and artificial infection, which limits direct extrapolation to wild conditions. As a 1997 study it predates more recent immunological tools, and the absence of mortality observations is a limitation relative to post-smolt field studies.
+
+controversy_role: foundational
+
+relevance_signal: medium
+
+relevance_rationale: >
+  Provides important mechanistic baseline for understanding differential susceptibility between sea trout and Atlantic salmon (Q4, Q6). Sea trout vulnerability is a key reason why sea trout population data are used in Norwegian TLS monitoring. The finding that sea trout are the more natural long-term host helps explain field observations of heavy infestation on sea trout in proximity to farms.
+
+transferability: medium
+
+transferability_notes: >
+  Scottish laboratory conditions; hatchery-reared fish. Findings on differential host susceptibility are broadly applicable but may not quantitatively reflect wild fish responses. The infection dose and temperature conditions were specific to the experiment.
+
+
+# ======================================================================
+# DEL E — RELASJONER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+included_because: >
+  Classic experimental study establishing the foundational finding that sea trout are more susceptible to L. salmonis than Atlantic salmon over an extended infection period. This result underpins the use of sea trout as sentinel species in lice monitoring (as in the Norwegian TLS) and helps explain the relatively greater impact of farm-origin lice on sea trout populations.
+
+related_documents_supporting:
+  - "2021_aei_seatrout-risk-assessment"
+
+related_documents_contrasting: []
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2021_aei_seatrout-risk-assessment"
+  - "2025_aquaculture_gjerde-seatrout-lice-prediction"
+
+retrieval_tags:
+  - "sea trout"
+  - "Atlantic salmon"
+  - "host susceptibility"
+  - "immune response"
+  - "laboratory challenge"
+  - "Lepeophtheirus salmonis"
+  - "differential susceptibility"
+  - "host specificity"
+
+curator_note: >
+  [UNVERIFIED: Del D og E] Foundational 1997 study; cited widely in the literature. Expert should confirm whether the immunological findings remain consensus or have been revised by later immunological work.
+
+
+# ======================================================================
+# KURATERSTATUS
+# ======================================================================
+
+curator_review_status: pending
+added_by: Claude
+added_date: "2026-03-27"

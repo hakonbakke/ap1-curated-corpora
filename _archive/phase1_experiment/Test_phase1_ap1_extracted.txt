@@ -1,0 +1,389 @@
+﻿
+Phase1
+Testing in NotebookLM, only pdf vs. curated metadata + summaries
+Testspørsmål 1
+What is the strongest evidence that salmon lice from aquaculture causes population-level impact on wild Atlantic salmon in Norway?
+Fra PDF only:
+The strongest evidence that salmon lice originating from aquaculture cause population-level impacts on wild Atlantic salmon in Norway stems from long-term randomized controlled trials (RCTs), regional stock assessments, and recent quantitative modeling of adult spawning returns.
+1. Meta-Analyses of Controlled Treatment Trials
+The most frequently cited empirical evidence involves comparing the survival of groups of post-smolts that were chemically protected against salmon lice with untreated control groups. A comprehensive meta-analysis by Vollset et al. (2016) estimated that salmon lice cause an average additional marine mortality of 0.6% to 39% across various locations and years. These studies demonstrate that even in a natural setting, protecting fish from lice significantly increases their likelihood of surviving to return as adults, indicating a direct negative impact of farm-origin lice on wild populations.
+2. Association Between Lice Exposure and Adult Spawning Returns
+Recent research has moved beyond individual mortality to establish a quantitative relationship between estimated parasite-induced mortality (PIM) and the number of spawners returning to rivers.
+Reduced Returns: Analysis of returns to Norwegian rivers between 2019 and 2024 suggests that high louse exposure during the post-smolt phase is significantly associated with reduced adult returns, particularly for small salmon (one-winter-at-sea or 1SW).
+Impact on Population Structure: In rivers with high levels of PIM, the proportion of 1SW salmon in returning populations dropped from approximately 60% in low-exposure rivers to less than 20% in high-exposure rivers.
+Spatial Variation: The Norwegian Scientific Advisory Committee for Atlantic Salmon found that model-predicted lice infestation levels are a key explanatory variable for spatial variation in river stock status.
+3. Classification as an "Expanding Population Threat"
+The Norwegian government's Traffic Light System (TLS) is based on the consensus among expert researchers that salmon lice are one of the two primary anthropogenic threats to wild salmon in Norway (the other being escaped farmed salmon).
+Industrial Scale: Because farmed salmonids contribute roughly 98% of the mated female lice in Norwegian coastal waters, the sheer number of farmed fish (exceeding wild fish by 700 to 1) facilitates a massive "spill-back" effect.
+Population Viability: While individual lice effects are physiological, researchers argue that strong infection pressures over multiple years threaten the viability of entire populations, particularly in the long, complex fjords of western and central Norway.
+4. Direct Evidence from Parasite "Spillover" Studies
+Recent studies have provided direct evidence of increased natural mortality in wild fish through randomized control trials where sea trout were infested with lice and released in areas with naturally low lice densities. These trials showed that heavily infested fish had a significantly higher hazard ratio and reduced marine residence time, supporting the link between farm-derived lice and population-level survival.
+5. Notable Scientific Debates and Counter-Evidence
+Despite the evidence above, some researchers argue that the population-level impact is often overestimated or overshadowed by other factors:
+Systemic Declines: Some point out that Atlantic salmon stocks are collapsing even in regions remote from salmon farms, suggesting that illegal high-seas fishing (IUU) or broad ocean climate changes affecting food availability are the primary drivers of the North Atlantic decline.
+Model Inaccuracies: Critiques of the TLS models suggest they may systematically overestimate mortality compared to direct trawl observations of wild smolts.
+Environmental Mediation: In some areas, environmental variables like temperature and salinity are better predictors of wild infestation levels than the actual density of lice on nearby fish farms
+Fra kuratert utvalg med metadata + summary
+The strongest evidence that salmon lice from aquaculture cause population-level impacts on wild Atlantic salmon in Norway comes from recent large-scale empirical studies linking mortality models to actual adult fish returns, as well as the long-standing scientific consensus within Norwegian management.
+1. Empirical Evidence: Linking Mortality to Adult Returns
+The most direct evidence of population-level impact is found in Jansen et al. (2025), which is the first study to bridge the gap between theoretical models and observed adult returns across 104 Norwegian rivers.
+Impact on 1-Sea-Winter (1SW) Salmon: The study identified a significant negative effect of parasite-induced mortality (PIM) on the number of small salmon (1SW) returning to spawn.
+Predictive Thresholds: The research predicts that a 10% reduction in total returning salmon occurs when PIM reaches approximately 5.5%, and a 10% reduction in spawning weight occurs at approximately 10% PIM.
+Widespread Risk: Data suggests that over 70% of river-year observations exceed the PIM levels where a 10% reduction in returns is predicted.
+Size Distribution Changes: The proportion of 1SW salmon was found to decrease from roughly 60% in rivers with low lice pressure to less than 20% in high-pressure rivers, indicating a fundamental shift in population structure.
+2. Scientific Consensus and Threat Classification
+The official Norwegian scientific assessment, led by the national Atlantic Salmon Scientific Advisory Committee, ranks salmon lice from fish farms as the second largest threat to wild Atlantic salmon in Norway, surpassed only by escaped farmed salmon.
+Expanding Population Threat: In the framework established by Forseth et al. (2017), salmon lice are categorized as an "expanding population threat," a designation reserved for factors capable of causing populations to become critically endangered or lost.
+Insufficient Mitigation: This classification indicates that current mitigation efforts are considered insufficient to prevent further harm, as the threat is still growing compared to stabilized factors like acidification or hydropower.
+3. Contextual and Comparative Evidence
+The impact of salmon lice is highly context-dependent, which further supports the link to aquaculture.
+Geographic Variation: While lice are a major threat in Norway, they are ranked as a low-impact stressor in England, where salmon farms are largely absent along migration corridors.
+Experimental Support: Early laboratory studies, such as Dawson et al. (1997), established the biological mechanism by documenting the physical skin damage and lesions lice cause to Atlantic salmon, even though direct mortality was not always observed in controlled tank environments.
+4. Scientific Counter-Arguments and Uncertainties
+Despite the evidence above, the degree of population-level impact remains a subject of intense debate:
+Model Overestimation: Several critics, including Van Nes et al. (2024) and Jansen & Gjerde (2021), argue that the models used to estimate mortality (which underpin the Traffic Light System) systematically overestimate the impact due to flawed assumptions about migration timing, lice larvae production, and mortality thresholds.
+Broad Oceanic Factors: Dadswell et al. (2021) presents a major counter-position, arguing that the widespread collapse of Atlantic salmon is driven by illegal high-seas fisheries (IUU) rather than local factors like aquaculture, noting that populations far from salmon farms have also flatlined.
+Validation Issues: Independent evaluations have noted that the mortality thresholds used in Norwegian regulation lack a solid empirical basis and have not been reassessed since their inception
+From a general chatgtp: 
+1. Large-scale release experiments (causal, quasi-experimental)
+This is generally considered the strongest empirical evidence.
+Design:
+Hatchery-reared smolts are split into two groups: 
+Treated (protected against lice, typically with chemotherapeutants) 
+Control (unprotected) 
+Both groups are released simultaneously and recaptured as returning adults. 
+Key finding:
+Treated fish have significantly higher return rates, implying lice-induced mortality during the marine phase. 
+Magnitude:
+Studies summarized by NINA indicate: 
+12–29% fewer returning adults in untreated groups 
+~10% total national reduction (~50,000 fish/year) attributed to lice 
+Why this is strong:
+Controls for genetics, release timing, and environment 
+Directly measures survival to adulthood 
+Repeated across multiple rivers and years 
+Limitations:
+Uses hatchery fish (external validity debated) 
+Treatment itself may have side effects (though generally controlled for) 
+
+2. Mechanistic + observational modelling at national scale (high-resolution, spatially explicit)
+This is the backbone of Norway’s regulatory system (Traffic Light System).
+Approach:
+Combine: 
+Hydrodynamic models (lice dispersion) 
+Farm lice production data 
+Wild smolt migration routes 
+Field observations (trawled post-smolts) 
+Key finding (example 2019):
+Estimated lice-induced mortality: 
+<10% in 179 rivers 
+10–30% in 140 rivers 
+30% in 82 rivers 
+Why this is strong:
+Covers ~400 rivers across Norway 
+Integrates empirical monitoring with physics-based models 
+Directly used for policy decisions limiting aquaculture growth 
+Limitations:
+Model-based (not purely empirical) 
+Requires assumptions about dose–response relationships 
+
+3. Population-level correlations (fishery returns vs lice pressure)
+This is the clearest “population signal” in wild data.
+Approach:
+Compare: 
+Regional lice intensity (from farms) 
+Wild salmon catches / returns 
+Key finding:
+Significant negative correlation between lice levels and wild salmon catches across production areas 
+Why this matters:
+Uses real population outcomes (returns/catches) 
+Large spatial and temporal datasets 
+Limitations:
+Correlational → confounding factors (climate, ocean survival, etc.) 
+Still debated in attribution strength 
+
+4. Linking lice exposure to reduced adult returns (bridging mechanism → population)
+More recent work explicitly connects:
+Farm lice → smolt mortality 
+→ reduced adult returns to rivers 
+This “bridging” evidence is important because it connects:
+Mechanistic mortality estimates→ to observed population declines 
+
+5. Synthesis reviews (weight-of-evidence across methods)
+Comprehensive reviews (e.g. NASCO, NINA) conclude:
+Salmon lice from aquaculture are a “major threat” to wild salmon in Norway 
+Evidence across countries shows a “general and pervasive negative effect” at population level 
+These syntheses integrate:
+Experiments 
+Field observations 
+Modelling 
+Comparative international data 
+
+Bottom line (evidence hierarchy)
+Strongest evidence (highest confidence):
+Release experiments → causal effect on survival (12–29% reduction) 
+National-scale mechanistic models validated with field data → spatial population risk 
+Population correlations (catch/returns vs lice) → real-world population signal 
+Supporting evidence:4. Mechanistic link to reduced returns5. Cross-study syntheses and international consistency
+
+Critical interpretation
+There is no single “silver bullet” dataset proving population collapse solely due to lice. 
+Instead, the case is built from converging evidence across independent methods: 
+Experimental (causal) 
+Observational (population-level) 
+Mechanistic (process-based) 
+From an epidemiological standpoint, this resembles a Bradford Hill-style causal inference:
+Consistency: across regions and methods 
+Biological plausibility: well established 
+Dose–response: higher lice → lower survival 
+Experimental support: treatment improves survival
+
+Test spørsmål 2:
+What are the main methodological criticisms of the Traffic Light System models?
+Only pdf:
+he main methodological criticisms of the models used in the Norwegian Traffic Light System (TLS) focus on uncertainty in mortality thresholds, inaccurate assumptions regarding smolt migration, vulnerabilities in calibration data, and biological simplifications in lice production estimates.
+1. Weak Empirical Basis for Mortality Thresholds
+A central criticism is that the mortality thresholds used to estimate population impacts lack a solid empirical basis.
+Laboratory vs. Field Data: The thresholds are largely derived from laboratory studies that may not accurately reflect the physiological responses of wild fish in a natural environment.
+Overestimation of Risk: The sources indicate that the current TLS assumes a 100% mortality risk for individuals with a relative infection of >0.3 lice/g, a figure not supported by some relevant literature which suggests thresholds for high mortality are likely much higher.
+Sensitivity Issues: The system is highly sensitive to these threshold assumptions, yet they have not undergone a rigorous documented reassessment since the system's inception, potentially undermining confidence in the results.
+2. Mismatched Smolt Migration Assumptions
+Critiques suggest that the assumed timing and duration of smolt migration in the models do not align with field observations.
+Timing Inaccuracies: Data from acoustic telemetry indicate that actual smolt migration often begins earlier and is shorter than the models assume.
+Temperature Bias: Because the models assume migration occurs later in the season when water temperatures and lice levels are higher, they likely overestimate the infestation pressure to which migrating smolts are actually exposed.
+Residence Time: The TLS assumes a mean residence time of 28 days for some areas, while tracking studies show actual residence times in outer fjord areas may be as short as 3 to 14 days.
+3. Calibration and Predictive Power
+The models are heavily reliant on calibration data from sentinel cages and trawl surveys, both of which have documented vulnerabilities.
+Low Predictive Value: Cross-validation studies found that predicted mean lice density (PMLD) in the sea is a poor predictor of the observed mean lice burden (OMLB) on wild fish, leading to low statistical power for individual production areas.
+Sentinel Cage Limitations: These cages are stationary and may not reflect the infestation pressure experienced by actively swimming wild smolts; empirical analysis suggests they may underestimate infestations by an order of magnitude compared to trawl data.
+Systematic Overestimation: Some research found that virtual post-smolt models systematically overestimate mortality compared to observed lice counts on post-smolts caught in trawls.
+4. Biological Simplifications in Lice Production
+The methods for estimating the production of infectious lice larvae from fish farms are criticized for ignoring complex biological and environmental factors.
+The "Allee Effect": The TLS assumes all adult female lice on farms are reproductively active, but sources argue that at low densities, a significantly lower proportion of females may be reproductive.
+Environmental Factors: Critics point out that the models assume constant mortality rates for lice larvae and often ignore the lethal effects of suboptimal salinity and predation, leading to an overestimation of farm-derived lice larvae.
+Infection Success: The assumption that infection efficiency is independent of environmental parameters is contradicted by studies showing that temperature and salinity highly influence the ability of lice to attach and survive on a host.
+5. Uncertainty and Expert Judgement
+The process of integrating multiple model results into a final policy recommendation is criticized for a lack of transparency.
+Expert Elicitation: The TLS relies on expert judgement for final conclusions, but the process of "expert elicitation" is poorly documented and does not follow established best practice standards for risk assessment.
+Communication Gaps: Reporting of uncertainty does not consistently use plain-language protocols (like those used by the IPCC), making it difficult for stakeholders to understand the actual confidence levels of the assessments.
+6. Lack of External Validation
+Finally, there is a noted lack of correlation between the model-predicted impacts and actual wild salmon population trends.
+Return Rates: Areas consistently classified as "red" (high impact) have not always shown measurable declines in adult returns compared to "green" areas, suggesting that other factors like ocean climate or high-seas survival may overshadow lice impacts.
+Environmental Dominance: In some cases, environmental variables like salinity and temperature are better predictors of wild infestation levels than the actual density of lice on nearby farms.
+Fra kuratert utvalg med metadata + summary:
+Methodological criticisms of the models underpinning the Norwegian Traffic Light System (TLS) are extensive and center on five primary areas: migration assumptions, calibration data discrepancies, biological parameterization, mortality thresholds, and statistical predictive power.
+1. Migration Timing and Duration Mismatches
+A core criticism involves the assumptions regarding how and when wild smolts migrate through fjords.
+Timing: Van Nes et al. (2024) argue that acoustic telemetry data show smolt migration actually begins approximately 14 days earlier than the TLS assumes.
+Residence Time: The same study indicates that the actual time spent in fjords is much shorter (10–14 days) compared to the 28-day period often assumed in management models.
+Model Sensitivity: While Stige et al. (2022) found that mortality estimates are sensitive to migration speed (e.g., 7 vs. 10 km/day), they noted the models are even more sensitive to the type of data used for calibration.
+2. Discrepancies in Calibration Data (Trawl vs. Sentinel Cages)
+The three official models used in the TLS often produce diverging results because they rely on different calibration datasets.
+Tenfold Difference: Stige et al. (2022) demonstrated that post-smolts caught by trawling show approximately 10 times higher infestation rates than those kept in sentinel cages, even under similar pressure.
+Systematic Overestimation: Jansen & Gjerde (2021) found that the Virtual Post-Smolt (VPS) model systematically overestimated mortality in 26 out of 27 area-year comparisons when validated against actual trawl data.
+Representativeness: Critics argue that sentinel cage fish are often 4–5 times larger than wild smolts, potentially biasing the results.
+3. Outdated Mortality Thresholds and Biological Assumptions
+The biological "dose-response" relationships that translate lice counts into fish death are frequently challenged.
+Lack of Empirical Basis: The international evaluation committee (Eliasen et al., 2021) highlighted that the mortality thresholds used in the TLS lack a solid empirical basis and have not been reassessed since their inception in 2011–2012.
+Lice Loss Correction: Van Nes et al. (2024, 2025) point out that most assessment endpoints assume 100% lice survival after attachment, failing to account for natural post-attachment lice loss, which can range from 40% to 80%.
+Larval Production: Models may overestimate larval output by ignoring biological factors like the Allee effect, salinity, and predation that reduce the survival of eggs and larvae. Conversely, Folk et al. (2026) suggest that while aquaculture conditions may reduce individual louse fecundity, they may also select for higher virulence, a factor not currently captured in models.
+4. Poor Statistical Predictive Power for Zone Classification
+The ability of these models to accurately categorize production areas into "green," "yellow," or "red" zones has been statistically questioned.
+"Very Poor" Accuracy: A re-analysis by Gjerde & Aslam (2025) found that the hydrodynamic lice particle model (PMLD) has "very poor" predictive power (RPD ≈ 1.18), well below the standard threshold for reliability (RPD > 2.0).
+Sample Size Issues: To reliably distinguish between "green" and "yellow" zones, the model would require data from at least 200 grid cells, a spatial area larger than most of the 13 Norwegian production zones.
+Correlation Inflation: Critics argue that earlier validations of these models used Spearman rank correlations that were artificially inflated by "tied zero-values".
+5. Transparency and Uncertainty Management
+The Eliasen et al. (2021) evaluation identified several structural and procedural weaknesses in the TLS:
+Expert Judgment: The role of expert judgment in the final classification is critical but insufficiently documented, failing to follow accepted best-practice standards for scientific elicitation.
+Uncertainty Communication: There is a lack of a formal mechanism to quantify, propagate, and communicate model uncertainty to decision-makers.
+Lack of Performance Review: There is no existing mechanism to assess the actual effectiveness of the TLS as a management system over time.
+Fra general chatgtp:
+The Traffic Light System (TLS) rests heavily on coupled hydrodynamic–biological models that estimate lice exposure and translate that into mortality risk for wild salmon smolts. While widely used in management, the models have been subject to sustained methodological critique. The disagreements are less about whether lice can cause mortality, and more about how accurately the TLS quantifies population-level impact.
+Below are the main criticisms, grouped by model component.
+
+1. Dose–response relationship (lice → mortality)
+Core issue: How many lice does it take to kill a smolt?
+Criticism:
+The TLS uses fixed or simplified mortality functions derived from lab and semi-field studies. 
+These functions may overgeneralize across: 
+Fish size 
+Temperature 
+Salinity 
+Physiological condition 
+Implication:
+Mortality estimates may be biased upward or downward depending on context. 
+Small errors here propagate strongly because this is the final conversion step to “population impact.” 
+Typical critique:
+Thresholds (e.g. lice per gram) may not reflect real-world variability in tolerance. 
+
+2. Smolt migration assumptions
+Core issue: Where and when do wild smolts actually travel?
+Criticism:
+Models often assume: 
+Simplified migration routes 
+Uniform timing windows 
+In reality, smolt migration is: 
+Highly variable between rivers 
+Influenced by flow, temperature, and behavior 
+Implication:
+Exposure estimates can be misaligned with actual smolt trajectories 
+Overestimate exposure if fish avoid high-lice areas 
+Underestimate if migration overlaps more strongly than assumed 
+
+3. Hydrodynamic dispersion modelling (lice transport)
+Core issue: How accurately do models simulate lice drifting from farms?
+Criticism:
+Ocean models operate at finite resolution and depend on: 
+Boundary conditions 
+Wind forcing 
+Vertical mixing assumptions 
+Lice behavior (vertical migration, salinity avoidance) is parameterized, not directly observed at scale 
+Implication:
+Spatial distribution of lice may be: 
+Too smooth (underestimating hotspots) 
+Or misplaced geographically 
+Technical concern:
+Model skill varies across fjords; validation is uneven geographically 
+
+4. Farm lice input data (source term uncertainty)
+Core issue: How accurate are lice counts reported from farms?
+Criticism:
+TLS relies on reported lice levels and biomass from farms 
+Known issues: 
+Sampling variability (counting lice on fish is noisy) 
+Potential underreporting or systematic bias 
+Temporal gaps (weekly snapshots vs continuous reality) 
+Implication:
+Garbage-in / garbage-out problem: 
+Errors in farm data directly affect modelled infection pressure 
+
+5. Validation against field data (external consistency)
+Core issue: Do model outputs match observed lice on wild fish?
+Criticism:
+Validation uses: 
+Sentinel cages 
+Trawled post-smolts 
+These datasets are: 
+Spatially limited 
+Temporally sparse 
+Potentially biased (e.g. cage location effects) 
+Implication:
+Some argue the model is insufficiently validated at national scale 
+Others note reasonable agreement, but with high uncertainty 
+
+6. Scaling from individual mortality to population impact
+Core issue: Translating smolt mortality → reduced adult returns
+Criticism:
+TLS assumes a relatively direct scaling: 
+Increased smolt mortality → proportional reduction in adult returns 
+Critics argue: 
+Density dependence in marine phase may buffer effects 
+Ocean survival variability may dominate signal 
+Implication:
+Population-level impact may be: 
+Overestimated if compensatory mechanisms exist 
+Or underestimated if cumulative stressors interact 
+
+7. Lack of explicit uncertainty quantification in decisions
+Core issue: How uncertainty is handled in management thresholds
+Criticism:
+While models include uncertainty internally, the final TLS classification (green/yellow/red) is: 
+A deterministic output 
+Critics argue: 
+Decision thresholds (e.g. 10%, 30% mortality) do not adequately reflect confidence intervals 
+Implication:
+Risk of: 
+Overconfidence in classifications 
+Insufficient transparency in uncertainty propagation 
+
+8. Aggregation to production areas (spatial averaging)
+Core issue: Management decisions are made at large spatial scales
+Criticism:
+TLS aggregates results into 13 production areas 
+This can: 
+Mask local hotspots 
+Penalize low-impact zones within high-impact regions 
+Implication:
+Reduced spatial precision in regulation 
+Potential mismatch between local ecology and regional policy 
+
+9. Structural model dependence
+Core issue: Reliance on a specific modelling framework
+Criticism:
+TLS is built on a particular model architecture and parameter set 
+Limited use of: 
+Independent model ensembles 
+Competing structural assumptions 
+Implication:
+Results may be model-dependent rather than data-driven 
+Hard to assess robustness without true model comparison 
+
+10. Limited integration of other mortality drivers
+Core issue: Attribution problem
+Criticism:
+TLS isolates lice as a driver of mortality 
+But wild salmon are affected by: 
+Climate variability 
+Predation 
+Food availability 
+Other pathogens 
+Implication:
+Lice-attributed mortality may be: 
+Over-attributed if co-variates are not accounted for 
+
+Bottom line
+The main methodological criticisms fall into three categories:
+1. Biological uncertainty
+Dose–response 
+Smolt behavior 
+Scaling to populations 
+2. Physical/model uncertainty
+Ocean modelling 
+Lice dispersal 
+Parameterization 
+3. Data and governance limitations
+Farm lice counts 
+Sparse validation data 
+Coarse spatial aggregation 
+
+Strategic interpretation
+The TLS is not fundamentally challenged on direction of effect (lice can harm wild salmon). 
+The debate is about precision and magnitude of estimated impact, especially: 
+Whether mortality is closer to <10% vs >30% 
+And how confidently that can be assigned geographically 
+In practical terms, critics argue the system may be:
+Too deterministic for a high-uncertainty system 
+Too reliant on model assumptions relative to empirical population data
+
+Testspørsmål 3: Which studies in this corpus directly disagree on whether lice is the main driver of population decline?
+Only pdf: The studies in this corpus directly disagree on the extent to which salmon lice act as a primary driver of wild salmon population decline, with the debate often centering on whether farm-origin lice levels correlate with adult spawning returns.
+Studies Identifying Lice as a Main Driver
+Forseth et al. (2017): This study classifies salmon lice as one of the two primary anthropogenic threats to Atlantic salmon in Norway (alongside escaped farmed salmon). It notes that while lice may only threaten population viability under strong infection pressure over several years, they can, in combination with other stressors, cause populations to become critically endangered.
+Jansen et al. (2025): This research presents a quantitative relationship between louse infestations on post-smolts and the number of mature salmon returning to Norwegian rivers. The authors conclude that louse infestation from farms reduces returns and re-structures the size distribution of mature populations. They explicitly state that their results support the model outcomes used in the Traffic Light System (TLS) over more critical studies.
+Gillson et al. (2022): In a review of marine stressors, this study identifies salmon mariculture as a major stressor for wild salmon in Norway, citing data showing that lice-induced mortality can cause reductions in adult returns ranging from 0.6% to 39%.
+Studies Questioning Lice as the Main Driver
+Van Nes et al. (2024): This critical review argues that lice infection levels on farms are not associated with measurable effects on wild salmon returns. The authors contend that environmental variables (temperature and salinity) and fish size are better predictors of infestation levels on wild fish than actual infestation pressure from nearby salmon farms. They emphasize a "lack of correlation" between TLS population-level predictions and observed wild salmon dynamics.
+Jansen & Gjerde (2021): Evaluated against the models of Johnsen et al. (2021), this study argues that current virtual post-smolt models systematically overestimate lice-induced mortality compared to actual observed lice counts on post-smolts caught in trawls.
+Jackson et al. (2011, 2013) and Marty et al. (2010): These studies are frequently cited by those who question the severity of the effects of farm-origin salmon lice on wild populations. They are identified in the corpus as reports that provide a counter-narrative to the idea that lice are the dominant factor in population declines.
+The Core of the Disagreement
+The direct disagreement is best summarized by the Evaluation Committee (Eliasen et al., 2021) and subsequent rebuttals:
+The Stige et al. (2025) comment argues that the van Nes et al. review is biased toward evidence suggesting a low impact from aquaculture.
+Conversely, van Nes et al. (2025) responds that the models used by the Expert Group (EG) to justify population-level impacts rely on overly prolonged assumed migration times and include data collected after the majority of smolts have already passed through the fjords.
+While proponents cite Randomized Control Trials (RCTs) using anti-lice protection as proof of impact, critics point out that factors other than lice have increased mortality substantially over the same periods, making it difficult to isolate lice as the "main" driver.
+Fra kuratert med metadata + summaries: 
+I kildene er det en tydelig vitenskapelig uenighet om hvorvidt lakselus fra oppdrett er den primære årsaken til bestandsnedgangen hos villaks. Uenigheten står i hovedsak mellom studier som ser på lokale norske forhold og studier som ser på den generelle nedgangen i hele Nord-Atlanteren.
+De viktigste studiene som direkte motsier hverandre er:
+1. Forseth et al. (2017) og Jansen et al. (2025) vs. Dadswell et al. (2021)
+Dette er den mest grunnleggende uenigheten i kildematerialet angående årsaken til bestandsnedgang på populasjonsnivå:
+Lusehypotesen: Forseth et al. (2017) klassifiserer lakselus fra fiskefarmer som den nest største trusselen mot villaks i Norge. De definerer lus som en "ekspanderende bestandstrussel" som er i stand til å gjøre populasjoner kritisk truet eller føre til at de går tapt. Jansen et al. (2025) støtter dette ved å dokumentere en signifikant negativ sammenheng mellom modellert lusedødelighet og antallet laks som returnerer til 104 norske elver for å gyte.
+IUU-fiskehypotesen: Dadswell et al. (2021) representerer den primære motposisjonen. De argumenterer for at lakselus ikke kan forklare den brede kollapsen i laksebestander over hele Nord-Atlanteren, ettersom bestander i fjerntliggende områder uten oppdrettsanlegg også har kollapset. De foreslår i stedet at ulovlig, urapportert og uregulert (IUU) fiske i åpent hav er hovedårsaken til nedgangen.
+2. Van Nes et al. (2024) vs. Jansen et al. (2025)
+Disse to nyere studiene er uenige om hvorvidt det i det hele tatt finnes en målbar sammenheng mellom lus på oppdrettsfisk og villaksens status:
+Van Nes et al. (2024) hevder i sin kritiske gjennomgang at det ikke er noen klar sammenheng mellom luseinfeksjonsnivåer i merdene og statusen til villaksbestander. De argumenterer for at modellene som brukes i Trafikklyssystemet systematisk overvurderer effekten av lus.
+Jansen et al. (2025) motsier dette direkte ved å vise at data på returnerende voksen laks faktisk gir støtte til resultatene fra Trafikklyssystemets modeller, og at lusepresset fører til en målbar reduksjon i gytebestandene.
+3. Geografisk kontekst som forklaring: Gillson et al. (2022)
+Gillson et al. (2022) bidrar til å forklare hvorfor studiene kan komme til ulike konklusjoner ved å vise at trusselen er kontekstavhengig.
+De bekrefter at lakselus er en stor trussel i Norge, men klassifiserer det som en lavrisikofaktor for engelske laksebestander fordi disse sjelden vandrer forbi oppdrettsanlegg.
+Dette støtter argumentet om at lokale faktorer (som lus) kan dominere i enkelte regioner, mens globale faktorer (som klimaendringer) kan være viktigere for den generelle nedgangen i hele Atlanterhavet.
+
+

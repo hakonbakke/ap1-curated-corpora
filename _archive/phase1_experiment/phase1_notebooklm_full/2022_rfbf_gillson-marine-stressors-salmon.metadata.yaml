@@ -1,0 +1,210 @@
+# ======================================================================
+# METADATA — Gillson et al. 2022
+# ======================================================================
+
+title: "A review of marine stressors impacting Atlantic salmon Salmo salar, with an assessment of the major threats to English stocks"
+year: 2022
+doi: "10.1007/s11160-022-09714-x"
+url: "https://doi.org/10.1007/s11160-022-09714-x"
+authors:
+  - "Jonathan P. Gillson"
+  - "Tea Bašić"
+  - "Phil I. Davison"
+  - "William D. Riley"
+  - "Lawrence Talks"
+  - "Alan M. Walker"
+  - "Ian C. Russell"
+journal: "Reviews in Fish Biology and Fisheries"
+publisher: "Springer"
+language: english
+
+source_type: peer_reviewed
+
+document_type: review_article
+
+abstract_available: yes
+
+
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q9
+
+causal_chain_stage:
+  - population_impacts
+
+host_species:
+  - atlantic_salmon
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - post_smolt
+  - returning_adult
+  - mixed
+
+parasite_species:
+  - not_specified
+
+environment:
+  - coastal
+  - shelf_sea
+  - open_ocean
+  - estuary
+
+geography:
+  - Scotland
+  - Ireland
+
+time_period: "up to 2021"
+
+seasonality_focus:
+  - not_applicable
+
+regulatory_context:
+  - none
+
+evidence_type: review
+
+study_design:
+  - literature_review
+  - expert_assessment
+
+data_source:
+  - published_literature
+
+model_type:
+  - none
+
+observation_unit:
+  - river
+  - study
+
+comparison_type:
+  - among_regions
+
+outcome_domain:
+  - marine_survival
+  - adult_returns
+  - population_abundance
+
+primary_endpoint: "Ranking of marine stressors affecting English Atlantic salmon stocks using a 2D semi-quantitative classification system (based on Forseth et al. 2017)"
+secondary_endpoints:
+  - "Assessment of which stressors are 'expanding' vs. 'stabilised'"
+  - "Review of principal marine stressors operating on Atlantic salmon globally"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# ======================================================================
+
+evidence_direction: mixed_within_study
+
+effect_scale: population_level
+
+uncertainty_emphasis: high
+
+main_uncertainty_sources:
+  - transferability
+  - sampling_representativeness
+  - parameter_uncertainty
+
+key_claims:
+  - "Climate change and predation are identified as the largest current threats to English Atlantic salmon stocks and are projected to expand over the next decade."
+  - "Poor water quality and bycatch are classified as high-impact but stabilised stressors for English stocks."
+  - "Salmon mariculture (including sea lice) is classified as a relatively low-impact stressor for English stocks, due to limited salmon farm proximity to English rivers."
+  - "The 2D classification framework (Forseth et al. 2017) applied to English stocks produces substantially different threat rankings than the Norwegian context, illustrating strong geographic dependency of threat prioritisation."
+  - "Marine survival has declined markedly (<5% of smolts now survive to return as adults), with the causes poorly understood."
+
+claims_about_uncertainty:
+  - "The relative importance of different marine stressors on survival remains poorly understood, as mortality is difficult to directly observe at sea."
+  - "Cumulative and interactive effects of multiple stressors are not well quantified."
+
+claims_about_policy_or_management:
+  - "Local management actions directed toward improving freshwater and estuarine habitats to maximise ecosystem resilience are recommended."
+  - "Future research should prioritise climate change, predation, renewable energy impacts, and artificial light at night."
+
+methodological_limitations:
+  - "The classification system applies to English stocks specifically; direct comparisons with Norwegian or Canadian rankings require caution."
+  - "Quantitative data on several marine stressors (especially predation, artificial light) are limited; classifications involve expert judgment."
+
+rag_summary: >
+  Gillson et al. (2022) present a comprehensive review of marine stressors affecting Atlantic salmon and apply the semi-quantitative 2D threat classification system (developed by Forseth et al. 2017 for Norway) to English salmon stocks. For English rivers, climate change and predation emerge as the dominant expanding threats, while salmon mariculture is classified as low-impact due to limited farm proximity. This contrasts with Norway, where lice from farms and escaped salmon are ranked as the top expanding population threats. The paper demonstrates that the relative importance of aquaculture-related lice impacts is highly context-dependent, varying substantially with local aquaculture density and geography.
+
+coi_declared: no
+
+coi_notes: >
+  Authors are from the Centre for Environment, Fisheries and Aquaculture Science (CEFAS) and Environment Agency (England). Published under Crown copyright (2022). No industry funding declared.
+
+
+# ======================================================================
+# DEL D — SYNTESE
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+consensus_signal: context_dependent
+
+quality_signal: strong
+
+quality_rationale: >
+  The paper applies a validated, internationally recognised classification framework to a well-documented salmon population. The methodology is transparent and reproducible; the ranking system has precedent from Forseth et al. (2017). The review component is comprehensive, covering over 250 references. The classification for English stocks is specific to that geographic context and should not be extrapolated to Norwegian or Canadian situations.
+
+controversy_role: bridge_between_positions
+
+relevance_signal: medium
+
+relevance_rationale: >
+  Relevant to Q9 by demonstrating that the relative importance of salmon farming and lice as a population-level threat varies substantially by geography. Provides important comparative context: in regions with limited aquaculture proximity, other marine stressors dominate. This is a key piece of evidence for the position that lice from farms may be less important in some contexts than Norwegian-focused studies suggest.
+
+transferability: low
+
+transferability_notes: >
+  Findings on threat ranking are specific to English stocks. The methodological framework is transferable. The finding that salmon mariculture is a low-impact stressor for English rivers reflects the near-absence of salmon aquaculture in proximity to English rivers — not applicable to Norway or British Columbia where farms are densely integrated with salmon migration corridors.
+
+
+# ======================================================================
+# DEL E — RELASJONER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+included_because: >
+  Provides an important geographic and methodological counterpoint to Forseth et al. (2017): the same classification system that places salmon lice as the second largest threat in Norway ranks it as a minor threat for English stocks. This comparison helps calibrate the context-dependence of lice as a population-level threat (Q9) and informs the transferability of Norwegian regulatory approaches.
+
+related_documents_supporting:
+  - "2021_rfsa_dadswell-atlantic-salmon-collapse"
+
+related_documents_contrasting:
+  - "2017_icesjms_forseth-major-threats-norway"
+  - "2025_jae_jansen-lice-effects-returns"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2017_icesjms_forseth-major-threats-norway"
+  - "2021_rfsa_dadswell-atlantic-salmon-collapse"
+
+retrieval_tags:
+  - "marine stressors"
+  - "England"
+  - "Atlantic salmon"
+  - "climate change"
+  - "predation"
+  - "threat classification"
+  - "context-dependence"
+  - "salmon mariculture"
+
+curator_note: >
+  [UNVERIFIED: Del D og E] The English context differs sharply from Norway (no major salmon farming near English rivers). Expert should confirm whether the relevance to the Norwegian corpus question is primarily methodological/comparative rather than direct evidence.
+
+
+# ======================================================================
+# KURATERSTATUS
+# ======================================================================
+
+curator_review_status: pending
+added_by: Claude
+added_date: "2026-03-27"

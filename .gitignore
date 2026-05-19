@@ -1,2 +1,20 @@
 # PDFs are stored in SharePoint, not GitHub
 *.pdf
+
+# Large archive files
+*.zip
+*.docx
+
+# App secrets (set in Streamlit Cloud UI)
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# App data (generated locally, committed after ingest)
+# data/ is intentionally committed — remove this line if you want to exclude it
+

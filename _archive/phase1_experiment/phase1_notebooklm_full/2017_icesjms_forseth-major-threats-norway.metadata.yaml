@@ -1,0 +1,218 @@
+# ======================================================================
+# METADATA — Forseth et al. 2017
+# ======================================================================
+
+title: "The major threats to Atlantic salmon in Norway"
+year: 2017
+doi: "10.1093/icesjms/fsx020"
+url: "https://doi.org/10.1093/icesjms/fsx020"
+authors:
+  - "Torbjørn Forseth"
+  - "Bjørn T. Barlaup"
+  - "Bengt Finstad"
+  - "Peder Fiske"
+  - "Harald Gjøsæter"
+  - "Morten Falkegård"
+  - "Atle Hindar"
+  - "Tor Atle Mo"
+  - "Audun H. Rikardsen"
+  - "Eva B. Thorstad"
+  - "Leif Asbjørn Vøllestad"
+  - "Vidar Wennevik"
+journal: "ICES Journal of Marine Science"
+publisher: "Oxford University Press / ICES"
+language: english
+
+source_type: peer_reviewed
+
+document_type: review_article
+
+abstract_available: yes
+
+
+# ======================================================================
+# DEL B — KONTEKST OG STUDIEDESIGN
+# ======================================================================
+
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - Q9
+  - Q10
+
+causal_chain_stage:
+  - population_impacts
+  - regulatory_assessment
+
+host_species:
+  - atlantic_salmon
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - mixed
+
+parasite_species:
+  - lepeophtheirus_salmonis
+
+environment:
+  - freshwater
+  - coastal
+  - fjord
+  - open_ocean
+
+geography:
+  - Norway
+
+time_period: "up to 2016"
+
+seasonality_focus:
+  - not_applicable
+
+regulatory_context:
+  - Norway_TLS
+  - Norway_expert_group
+
+evidence_type: review
+
+study_design:
+  - expert_assessment
+  - literature_review
+
+data_source:
+  - published_literature
+  - expert_group_reports
+
+model_type:
+  - none
+
+observation_unit:
+  - river
+  - study
+
+comparison_type:
+  - among_regions
+
+outcome_domain:
+  - population_abundance
+  - adult_returns
+  - regulatory_classification
+
+primary_endpoint: "Ranking of 15 anthropogenic threat factors to Norwegian Atlantic salmon populations using a semi-quantitative 2D classification system"
+secondary_endpoints:
+  - "Classification of threats as 'expanding' vs. 'stabilized' population threats"
+  - "Assessment of whether mitigation measures are halting further decline"
+
+
+# ======================================================================
+# DEL C — FUNN OG BEVIS
+# ======================================================================
+
+evidence_direction: supports_effect
+
+effect_scale: population_level
+
+uncertainty_emphasis: moderate
+
+main_uncertainty_sources:
+  - sampling_representativeness
+  - model_structure
+  - parameter_uncertainty
+
+key_claims:
+  - "Escaped farmed salmon is ranked as the single largest current threat to Norwegian Atlantic salmon populations, classified as an 'expanding population threat'."
+  - "Salmon lice from fish farms is ranked as the second largest threat, also classified as an 'expanding population threat' — meaning it may cause populations to become critically endangered or lost, with a high likelihood of further expansion."
+  - "Both escaped farmed salmon and salmon lice affect populations to the extent that they may be critically endangered or lost, unlike other threats that cause reduction in adult returns but not population viability threats."
+  - "Gyrodactylus salaris, freshwater acidification, and hydropower regulation are classified as 'stabilized population threats' — formerly major causes of decline but now managed."
+  - "Overexploitation is no longer considered an important impact factor following introduction of conservation limits and fishing restrictions."
+
+claims_about_uncertainty:
+  - "The 2D classification system involves expert judgment and is semi-quantitative; exact placement of threats involves uncertainty."
+  - "The relative ranking of escaped salmon vs. salmon lice as the top threats reflects scientific consensus of the Norwegian Atlantic Salmon Committee, not formal meta-analysis."
+
+claims_about_policy_or_management:
+  - "The classification system is designed to support prioritisation of management measures and can be used as a template for other countries."
+  - "Salmon lice and escaped farmed salmon must be managed at national scale to prevent further population losses."
+  - "The Traffic Light System and related regulatory instruments are relevant management responses to the lice threat."
+
+methodological_limitations:
+  - "Semi-quantitative scoring involves expert elicitation; different expert panels may reach different rankings."
+  - "The classification focuses on Norwegian populations; ranking may differ for other North Atlantic regions."
+
+rag_summary: >
+  Forseth et al. (2017) developed a semi-quantitative 2D classification system to rank 15 anthropogenic threat factors to Norwegian Atlantic salmon populations. Escaped farmed salmon was identified as the largest current threat, followed by salmon lice from aquaculture — both classified as 'expanding population threats' capable of causing populations to become critically endangered or lost. Gyrodactylus salaris, acidification, and hydropower were ranked as 'stabilized threats'. The paper provides the authoritative Norwegian scientific consensus on the relative importance of aquaculture-related threats to wild Atlantic salmon, and serves as the foundational reference for the claim that salmon farming poses an existential risk to some Norwegian salmon populations.
+
+coi_declared: no
+
+coi_notes: >
+  Authors are from Norwegian Institute for Nature Research (NINA), Uni Research, Institute of Marine Research (IMR), Norwegian Institute for Water Research (NIVA), Norwegian Veterinary Institute, UiT, and University of Oslo. These institutions form the core of the Norwegian Atlantic Salmon Committee. No industry funding declared. Open access article.
+
+
+# ======================================================================
+# DEL D — SYNTESE
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+consensus_signal: high_agreement
+
+quality_signal: strong
+
+quality_rationale: >
+  The paper represents the formal scientific consensus of Norway's national advisory body for Atlantic salmon management (Vitenskapelig råd for lakseforvaltning). The 2D classification framework is transparent, replicable, and has since been applied in other countries (e.g. Gillson et al. 2022 for England). As a review and expert assessment it does not provide new empirical data, but synthesises the best available evidence and professional judgment across all relevant threat categories.
+
+controversy_role: foundational
+
+relevance_signal: high
+
+relevance_rationale: >
+  Directly relevant to Q9 (population-level impact: how does lice-induced mortality compare to other sources of marine mortality?) and Q10 (robustness of the regulatory framework). This paper establishes the authoritative Norwegian scientific position that salmon lice from farms are an 'expanding population threat', providing the policy context for the Traffic Light System and related regulatory interventions.
+
+transferability: medium
+
+transferability_notes: >
+  Focused on Norwegian populations and threat context. The classification methodology has been adopted internationally (see Gillson et al. 2022), but the specific ranking of threats reflects Norwegian aquaculture density and management context. Countries with different aquaculture footprints (e.g. England) rank salmon mariculture as a lower threat.
+
+
+# ======================================================================
+# DEL E — RELASJONER
+# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
+# ======================================================================
+
+included_because: >
+  Provides the authoritative Norwegian scientific consensus on threats to Atlantic salmon, establishing salmon lice from aquaculture as an 'expanding population threat' capable of causing populations to become critically endangered. This is the foundational policy-science document underpinning the regulatory importance of lice management in Norway, and is essential context for understanding why the TLS was developed and how lice are ranked against other threats.
+
+related_documents_supporting:
+  - "2025_jae_jansen-lice-effects-returns"
+  - "2021_rcn_traffic-light-evaluation"
+
+related_documents_contrasting:
+  - "2021_rfsa_dadswell-atlantic-salmon-collapse"
+  - "2022_rfbf_gillson-marine-stressors-salmon"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2021_rcn_traffic-light-evaluation"
+  - "2022_rfbf_gillson-marine-stressors-salmon"
+
+retrieval_tags:
+  - "threat ranking"
+  - "Norway"
+  - "escaped farmed salmon"
+  - "salmon lice"
+  - "population threats"
+  - "Atlantic salmon conservation"
+  - "classification system"
+  - "Norwegian expert group"
+
+curator_note: >
+  [UNVERIFIED: Del D og E] This is the formal output of Norway's national salmon scientific advisory committee. Expert should confirm that the current state of knowledge (post-2017) has not significantly revised the ranking of threats. Ragnar Tveterås may have specific views on how this relates to the TLS evidence base.
+
+
+# ======================================================================
+# KURATERSTATUS
+# ======================================================================
+
+curator_review_status: pending
+added_by: Claude
+added_date: "2026-03-27"
