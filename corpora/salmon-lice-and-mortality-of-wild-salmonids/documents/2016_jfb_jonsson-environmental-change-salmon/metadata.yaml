@@ -1,0 +1,228 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2016_jfb_jonsson-environmental-change-salmon
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Environmental change influences the life history of salmon Salmo salar in the North Atlantic Ocean"
+year: 2016
+doi: "10.1111/jfb.12854"
+url: "https://doi.org/10.1111/jfb.12854"
+authors:
+  - "B. Jonsson"
+  - "N. Jonsson"
+  - "J. Albretsen"
+journal: "Journal of Fish Biology"
+publisher: "Fisheries Society of the British Isles / Wiley"
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q9"
+
+causal_chain_stage:
+  - "environmental_drivers"
+  - "population_impacts"
+
+host_species:
+  - "atlantic_salmon"
+
+wild_or_farmed_focus: wild
+life_stage:
+  - "post-smolt"
+  - "adult"
+parasite_species: []
+environment:
+  - "marine"
+  - "Norwegian Sea"
+  - "North Atlantic"
+geography:
+  - "River Imsa, Norway (Boknafjorden, south-western Norway)"
+  - "Eastern Norwegian Sea"
+  - "North Atlantic Ocean"
+time_period: "1976-2010"
+seasonality_focus:
+  - "spring"
+  - "summer"
+  - "annual"
+regulatory_context:
+  - "none"
+
+evidence_type: empirical_observational
+
+study_design:
+  - "long_term_time_series"
+  - "wild_and_hatchery_comparison"
+  - "regression_analysis"
+  - "backcalculation_from_scales"
+data_source:
+  - "fish_trap_monitoring_River_Imsa"
+  - "hatchery_release_and_recapture"
+  - "scale_backcalculation"
+  - "Norwegian_Sea_surface_temperature_records"
+observation_unit:
+  - "cohort"
+  - "individual_fish"
+comparison_type:
+  - "wild_vs_hatchery"
+  - "temporal_trend_regression"
+  - "environmental_correlation"
+outcome_domain:
+  - "marine_survival"
+  - "body_size_at_maturity"
+  - "post-smolt_growth"
+  - "age_at_maturity"
+  - "condition_factor"
+primary_endpoint: "Temporal trends in total length, mass, condition factor and marine survival of River Imsa 1SW Atlantic salmon 1976-2010, and correlation with North Atlantic sea surface temperature"
+secondary_endpoints:
+  - "Proportion of cohort maturing as 1SW vs MSW fish"
+  - "Post-smolt growth backcalculated from scales"
+  - "Concordant trends in wild and hatchery fish as evidence of environmental rather than genetic causation"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: supports_effect
+effect_scale: population_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+  - "Confounding between multiple concurrent environmental changes (temperature, food web, climate)"
+  - "Scale of generalisation from single Norwegian river (River Imsa) to broader Atlantic salmon populations"
+  - "Inability to disentangle contributions of specific environmental drivers (temperature vs. zooplankton vs. food web restructuring)"
+  - "Lack of direct measurement of prey availability in oceanic feeding areas"
+key_claims:
+  - "Wild 1SW Atlantic salmon returning to River Imsa decreased in mean total length from 63 to 54 cm between 1976 and 2010 cohorts, corresponding to a 40% decline in individual mass (from 2.0 to 1.2 kg)"
+  - "The reduction in body size correlated negatively with near-surface temperatures in the eastern Norwegian Sea (the main feeding area of this stock)"
+  - "Post-smolt growth and marine survival both showed significant positive correlations — larger post-smolts had higher survival rates back to the River Imsa for spawning"
+  - "Hatchery fish reared from parental River Imsa fish exhibited similar declining trends from 1981 onwards, indicating environmental rather than genetic causation"
+  - "The proportion of cohorts maturing as 1SW fish was lower in the 1970s and after 2000 than in the 1980s-1990s, associated with gradual decline in post-smolt growth and lower energy reserves"
+  - "Changes attributed primarily to ecosystem-level restructuring in the North Atlantic: collapse/rebuilding of pelagic fish stocks, gradual decline in zooplankton abundance, and climate-driven sea surface warming"
+claims_about_uncertainty:
+  - "It is not possible to disentangle the individual contributions of temperature, zooplankton decline, and food web restructuring to the observed life-history changes"
+  - "The generalisability of single-river findings to the broader Norwegian or North Atlantic salmon population is uncertain"
+  - "Whether observed changes are primarily driven by temperature directly vs. its indirect effects on prey availability is unclear"
+claims_about_policy_or_management:
+  - "Declining marine survival of Atlantic salmon in Norway is substantially driven by oceanographic and food-web changes in the North Atlantic, independent of freshwater or coastal conditions"
+  - "Management of salmon populations must account for large-scale oceanographic drivers of marine mortality that are outside the control of local or national fisheries management"
+methodological_limitations:
+  - "Single river study (River Imsa) — may not be representative of all Norwegian salmon populations"
+  - "Marine feeding areas inferred from tagging data, not directly monitored"
+  - "Sea surface temperature is a proxy — the causal mechanism (food availability, energetics) is inferred rather than directly measured"
+  - "35-year time series is long but potentially insufficient to fully characterise multi-decadal ocean cycles"
+  - "Excludes MSW fish for most analyses due to small sample sizes, potentially biasing inferences"
+
+rag_summary: >
+  Jonsson, Jonsson and Albretsen (2016) present a 35-year time series analysis (1976-2010) of Atlantic
+  salmon (Salmo salar) life-history traits from the River Imsa, south-western Norway. Wild 1SW salmon
+  declined in mean total length from 63 to 54 cm, with a corresponding 40% decline in individual mass
+  (2.0 to 1.2 kg) across cohorts migrating to sea over this period. The decline correlated negatively
+  with near-surface temperatures in the eastern Norwegian Sea (the stock's main feeding area), and
+  post-smolt growth was positively associated with marine survival. Hatchery fish from the same
+  population showed identical trends from 1981 onwards, ruling out genetic change as the cause.
+  The authors attribute the observed changes to large-scale ecosystem restructuring in the North
+  Atlantic — including the collapse and rebuilding of pelagic fish stocks, declining zooplankton
+  abundance, and climate-driven sea surface warming — concluding that Atlantic salmon life-history
+  changes are primarily driven by shifts in the pelagic food web. This paper is relevant to Q9 in the
+  corpus as it provides quantitative evidence that non-lice oceanographic and food-web factors drive
+  large declines in Atlantic salmon marine survival, which is essential context for attributing
+  population-level mortality to sea lice specifically.
+
+coi_declared: unclear
+coi_notes: >
+  No explicit conflict of interest statement identified in the extracted text. B. Jonsson and N. Jonsson
+  are affiliated with the Norwegian Institute for Nature Research (NINA), Oslo — a publicly funded
+  independent research institute. J. Albretsen is affiliated with the Institute of Marine Research
+  (IMR), Flødevigen — a Norwegian government research institute. No industry funding is indicated.
+  Copyright note in the extract indicates the World Health Organization retains copyright as
+  submitted for publication, which is unusual and may reflect journal archiving conventions.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: strong_agreement
+quality_signal: strong
+quality_rationale: >
+  Exceptionally long (35-year) time series from a well-studied and intensively monitored Norwegian
+  salmon river with both wild and hatchery fish for comparison. Methods are rigorous (standardised
+  trapping, scale backcalculation, correlations with oceanographic data). The wild/hatchery
+  concordance is particularly important in ruling out genetic drift as an explanation for the
+  life-history changes, strengthening the causal inference for environmental drivers. Published in
+  Journal of Fish Biology by leading Norwegian salmon researchers (NINA). Findings are broadly
+  consistent with other long-term studies of Atlantic salmon marine survival in Norway and the
+  North Atlantic.
+
+controversy_role: neutral
+
+relevance_signal: medium
+relevance_rationale: >
+  This paper does not directly address sea lice or aquaculture — it is primarily about oceanographic
+  and food-web drivers of Atlantic salmon marine survival. However, it is highly relevant to Q9
+  (population-level impacts) because it provides essential baseline context: major declines in
+  Atlantic salmon condition and survival in Norway are attributable to North Atlantic ecosystem
+  changes, independent of sea lice. This is critical for disentangling lice-attributed mortality
+  from background oceanographic mortality when evaluating the TLS or other lice-based management
+  frameworks.
+
+transferability: high
+transferability_notes: >
+  This paper IS from Norway (River Imsa) and uses the precise species (Salmo salar) and geographic
+  context (Norwegian Sea, North Atlantic) most relevant to the corpus. The findings are directly
+  applicable to the Norwegian situation and provide authoritative local context for non-lice
+  mortality factors. The authors (NINA and IMR) are leading Norwegian salmon science institutions,
+  and the River Imsa is one of the best-monitored salmon rivers in Norway.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  This paper fills a critical contextual role in the corpus by documenting the magnitude and
+  oceanographic drivers of background marine mortality in Norwegian Atlantic salmon, independent
+  of sea lice. A 40% decline in individual salmon mass over 35 years — attributable primarily to
+  North Atlantic food-web restructuring — is essential context for evaluating claims about
+  lice-induced mortality at the population level (Q9). Without this context, population declines
+  may be incorrectly attributed to lice when large-scale oceanographic changes are the primary
+  driver. The Norwegian authorship and River Imsa long-term dataset make this particularly
+  authoritative for the corpus.
+
+related_documents_supporting:
+  - "Other long-term Norwegian salmon survival studies (Friedland et al. 2009, 2014 — cited in this paper)"
+  - "Studies documenting zooplankton declines in Norwegian Sea"
+
+related_documents_contrasting:
+  - "Norwegian TLS assessments — focus on lice as primary threat to wild salmon without equivalent emphasis on oceanographic context"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "Papers addressing lice-induced mortality fractions (Q7, Q8) — needs oceanographic background context to correctly interpret population-level attribution"
+
+retrieval_tags:
+  - "Atlantic_salmon"
+  - "marine_survival"
+  - "Norwegian_Sea"
+  - "ocean_temperature"
+  - "post-smolt_growth"
+  - "life_history"
+  - "body_size"
+  - "food_web"
+  - "zooplankton"
+  - "climate_change"
+  - "River_Imsa"
+  - "Norway"
+  - "NINA"
+  - "non-lice_mortality"
+  - "Q9_population_impacts"
+  - "oceanographic_drivers"
+
+curator_note: >
+  Published in Journal of Fish Biology 2016, 88: 618-637. Authors are from Norwegian Institute
+  for Nature Research (NINA) and Institute of Marine Research (IMR), Norway — both key institutions
+  in Norwegian salmon science and TLS assessment. The paper does not address sea lice directly
+  but provides essential oceanographic baseline context for the corpus. Note: the copyright notice
+  in the extracted text attributes copyright to the World Health Organization 'as submitted for
+  publication' — this is likely a journal archiving convention and does not reflect the paper's
+  content or funding.
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"

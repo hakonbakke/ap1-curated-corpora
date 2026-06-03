@@ -1,0 +1,217 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2021_icesjms_johnsen-vps-mortality-norway
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Salmon lice-induced mortality of Atlantic salmon during post-smolt migration in Norway"
+year: 2021
+doi: "10.1093/icesjms/fsaa202"
+url: "https://doi.org/10.1093/icesjms/fsaa202"
+authors:
+  - "Ingrid A. Johnsen"
+  - "Alison Harvey"
+  - "Pål Næverlid Sævik"
+  - "Anne D. Sandvik"
+  - "Ola Ugedal"
+  - "Bjørn Ådlandsvik"
+  - "Vidar Wennevik"
+  - "Kevin A. Glover"
+  - "Ørjan Karlsen"
+journal: "ICES Journal of Marine Science"
+publisher: "Oxford University Press / ICES"
+language: english
+source_type: peer_reviewed
+document_type: modelling_study
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q3"
+  - "Q4"
+  - "Q5"
+  - "Q7"
+  - "Q8"
+  - "Q10"
+
+causal_chain_stage:
+  - larval_dispersal
+  - host_exposure
+  - infestation
+  - individual_mortality
+  - regulatory_assessment
+  - model_calibration
+  - model_validation
+
+host_species:
+  - atlantic_salmon
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - post_smolt
+
+parasite_species:
+  - lepeophtheirus_salmonis
+
+environment:
+  - fjord
+  - coastal
+  - modelled_environment
+
+geography:
+  - "Norway (nationwide, all 13 management areas, 401 rivers)"
+
+time_period: "2015-2019"
+
+seasonality_focus:
+  - spring
+  - migration_period
+
+regulatory_context:
+  - Norway_TLS
+
+evidence_type: model
+
+study_design:
+  - virtual_post_smolt_modelling
+  - hydrodynamic_modelling
+  - particle_tracking
+  - genetic_assignment
+  - trawl_sampling
+  - statistical_analysis
+
+data_source:
+  - wild_fish_sampling
+  - trawl_data
+  - farm_lice_counts
+
+model_type:
+  - "Virtual Post-Smolt (VPS) model combining hydrodynamic lice larval dispersal model (Sandvik et al. 2020) with empirical salmon migration timing; calibrated against genetically assigned wild post-smolt trawl catches (NALO programme 2015-2019)"
+
+observation_unit:
+  - "individual virtual post-smolt; river-level mortality estimate"
+
+comparison_type:
+  - "River-specific mortality estimates across all 13 management areas; comparison of modelled vs. observed infestation levels on genetically assigned trawled post-smolts"
+
+outcome_domain:
+  - "Lice-induced mortality fraction of migrating post-smolts; classified as <10%, 10-30%, or >30%"
+
+primary_endpoint: "Estimated proportion of Atlantic salmon post-smolts from each of 401 Norwegian rivers dying from salmon lice infestation during seaward migration in 2019"
+secondary_endpoints:
+  - "Lice infestation levels on virtual post-smolts across 401 rivers"
+  - "Sensitivity analysis of mortality estimates to altered lice tolerance thresholds"
+  - "Calibration performance: model vs. observed infestation on genetically assigned trawled post-smolts (2015-2019)"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: supports_effect
+
+effect_scale: population_level
+
+uncertainty_emphasis: moderate
+
+main_uncertainty_sources:
+  - "Lice tolerance thresholds (Taranger et al. 2015) used for mortality conversion are based on limited experimental data"
+  - "Migration timing and speed assumptions based on data from 25 rivers extrapolated to all 401 rivers"
+  - "Hydrodynamic model resolution may not capture all small-scale fjord dynamics"
+  - "Genetic assignment covers a subset of trawled fish; not all post-smolts can be assigned to rivers of origin"
+  - "Inter-annual variability not fully characterised; results presented for 2019 as focal year"
+
+key_claims:
+  - "In 2019, estimated lice-induced mortality was <10% for 179 rivers, 10-30% for 140 rivers, and >30% for 82 rivers out of 401 modelled Norwegian salmon rivers"
+  - "The VPS model was calibrated against wild post-smolts genetically assigned to their river of origin, captured by trawling in 2015-2019 within the NALO programme"
+  - "Lice larvae may drift >100 km from source farms with prevailing water currents before dying, enabling widespread infestation of wild post-smolts"
+  - "Migration from river to open sea typically lasts 3-7 weeks, with most of a river population migrating within a 1-2 week window"
+  - "The Norwegian Traffic Light System classifies management areas as green (<10% mortality), yellow (10-30%), or red (>30%), directly determining whether aquaculture volume may expand, stay constant, or must be reduced"
+  - "Rivers located deep in fjord systems face higher lice exposure than outer-coast rivers due to longer residence time in aquaculture-intensive zones"
+
+claims_about_uncertainty:
+  - "Mortality estimates are sensitive to the choice of lice tolerance thresholds; sensitivity analyses were performed"
+  - "The VPS migration model assumes a 40-day migration window for all rivers, which may not reflect inter-river variation"
+  - "Calibration is constrained by the number of rivers to which sufficient fish could be genetically assigned"
+
+claims_about_policy_or_management:
+  - "The Norwegian Traffic Light System represents a globally leading example of science-based aquaculture regulation based on environmental impact"
+  - "Results from this model are used directly in biannual assessments to determine production volume adjustments across the 13 management areas"
+  - "The VPS model addresses a key limitation of the NALO trawling programme, which does not cover all Norwegian coastal waters and does not distinguish post-smolts by river of origin"
+
+methodological_limitations:
+  - "Lice tolerance thresholds underpinning mortality conversion are based on limited experimental challenge data (Taranger et al. 2015)"
+  - "Migration timing for most rivers derived by analogy with the 25 rivers with empirical smolt trapping data"
+  - "Model assumes passive post-smolt migration along hydrodynamically modelled routes; avoidance behaviour not incorporated"
+  - "Genetic baseline covers most but not all Norwegian salmon populations; some rivers cannot be resolved"
+  - "Full results tables and per-zone breakdowns are in supplementary materials; not fully available in extracted text"
+
+rag_summary: >
+  Johnsen et al. (2021) present the Institute of Marine Research (IMR) Virtual Post-Smolt (VPS) model, the core analytical tool underpinning Norway's Traffic Light System (TLS) for aquaculture regulation. The model estimates salmon lice-induced mortality of wild Atlantic salmon post-smolts from 401 Norwegian rivers by combining a hydrodynamic lice larval dispersal archive with empirical post-smolt migration parameters, and is calibrated by comparing predicted infestation against observed lice loads on wild post-smolts genetically assigned to their rivers of origin via the national NALO trawling programme (2015-2019). For 2019, the model estimated mortality less than 10% for 179 rivers, 10-30% for 140 rivers, and greater than 30% for 82 rivers, directly informing the green/yellow/red TLS classifications that determine whether aquaculture production in each zone may expand, remain stable, or must decrease. Key limitations include reliance on experimental lice tolerance thresholds from Taranger et al. (2015), migration timing parameters extrapolated from 25 to 401 rivers, and incomplete genetic resolution of all river populations; the model was formally critiqued by Jansen and Gjerde (2021) in the same journal.
+
+coi_declared: yes
+coi_notes: >
+  All primary authors affiliated with the Institute of Marine Research (IMR), Bergen, Norway; Ola Ugedal affiliated with the Norwegian Institute for Nature Research (NINA). IMR is a government research institute that produces the scientific basis for Norwegian fisheries and aquaculture management, including direct input to Traffic Light System regulatory assessments. Open access under Creative Commons Attribution License (CC BY 4.0). No explicit competing interest statement found in the extracted text.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: moderate_agreement
+
+quality_signal: strong
+
+quality_rationale: >
+  Published in ICES Journal of Marine Science, a high-impact peer-reviewed fisheries journal. The model integrates state-of-the-art hydrodynamic modelling with genetic assignment of wild fish, representing a methodologically sophisticated approach. Calibrated against five years of empirical data (2015-2019). Direct regulatory use implies additional scrutiny beyond typical peer review. The key limitation - reliance on lice tolerance thresholds from Taranger et al. (2015) - is acknowledged and was subsequently critiqued by Jansen and Gjerde (2021), reflecting active scientific scrutiny of the core assumptions.
+
+controversy_role: supports_effect
+
+relevance_signal: high
+
+relevance_rationale: >
+  This is the primary IMR model paper underpinning Norway's Traffic Light System. It is foundational to the entire corpus: it directly addresses Q3-Q5, Q7-Q8, and Q10 and is the specific target of the Jansen and Gjerde (2021) critique already in the corpus. No evaluation of salmon lice mortality science in Norway is complete without this paper.
+
+transferability: low
+
+transferability_notes: >
+  Highly Norway-specific: calibrated against Norwegian farm reporting data, NALO trawling surveys, Norwegian river genetics, and Norwegian coastal hydrodynamics. The VPS framework concept is transferable but all parameter values and validation data are Norwegian. Limited direct applicability to other salmon-farming regions without full re-parameterisation.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  Foundational paper presenting the IMR VPS model that is one of the primary models used by the Norwegian Traffic Light System to assess lice-induced mortality of wild post-smolts. Directly addresses how salmon lice from aquaculture causes mortality in migrating post-smolts at the population scale across all of Norway. The paper is the specific focus of a critique already in the corpus (Jansen and Gjerde 2021).
+
+related_documents_supporting:
+  - "Sandvik et al. 2020 - lice larval dispersal model on which VPS relies (Ices J. Mar. Sci.)"
+  - "Taranger et al. 2015 - provides lice tolerance thresholds used in mortality conversion"
+  - "Harvey et al. 2019 - genetic assignment of NALO post-smolts to rivers of origin"
+
+related_documents_contrasting:
+  - "2021_icesjms_jansen-comment-vps-mortality (Jansen and Gjerde 2021) - direct formal critique of this paper's model assumptions and mortality threshold use"
+  - "2018_epidemics_kristoffersen-risk-assessment (Kristoffersen et al. 2018) - NVI alternative model for same regulatory purpose using different assumptions"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2021_icesjms_jansen-comment-vps-mortality"
+  - "2018_epidemics_kristoffersen-risk-assessment"
+
+retrieval_tags:
+  - "virtual_post_smolt_model"
+  - "VPS_model"
+  - "IMR_model"
+  - "traffic_light_system"
+  - "Norway_TLS"
+  - "genetic_assignment"
+  - "NALO"
+  - "hydrodynamic_dispersal"
+  - "lice_induced_mortality"
+  - "post_smolt_migration"
+  - "401_rivers"
+  - "management_area"
+  - "lice_tolerance_threshold"
+  - "aquaculture_regulation"
+  - "lice_dispersal"
+
+curator_note: >
+  Open access (CC BY 4.0). This is the official IMR VPS model paper cited in all Norwegian TLS regulatory reports. The 2019 results (179 rivers <10%, 140 rivers 10-30%, 82 rivers >30%) are the primary quantitative outputs widely cited in policy discussions. Jansen and Gjerde (2021) published a formal comment on this paper in the same journal volume; both papers should always be read together to understand the state of the science and the contested assumptions. The Kristoffersen et al. (2018) NVI model was developed in parallel and uses substantially different assumptions: shortest-path migration routing vs. hydrodynamic routing, and sentinel cage calibration vs. genetic assignment calibration.
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"

@@ -1,0 +1,224 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2024_ijpara_stige-regional-lice-coordination
+# ======================================================================
+
+# DEL A — BIBLIOGRAFISK INFO
+title: "Effects of regional coordination of salmon louse control in reducing negative impacts of salmonid aquaculture on wild salmonids"
+year: 2024
+doi: "10.1016/j.ijpara.2024.04.003"
+url: "https://doi.org/10.1016/j.ijpara.2024.04.003"
+authors:
+  - "Leif Christian Stige"
+  - "Peder A. Jansen"
+  - "Kari O. Helgesen"
+journal: "International Journal for Parasitology"
+publisher: "Elsevier / Australian Society for Parasitology"
+language: english
+source_type: peer_reviewed
+document_type: modelling_study
+abstract_available: yes
+
+# DEL B — KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q2"
+  - "Q5"
+  - "Q8"
+  - "Q10"
+
+causal_chain_stage:
+  - "farm_lice_abundance"
+  - "infestation_pressure"
+  - "individual_mortality"
+  - "regulatory_assessment"
+  - "management_intervention"
+
+host_species:
+  - "atlantic_salmon"
+
+wild_or_farmed_focus: both
+
+life_stage:
+  - "post_smolt"
+
+parasite_species:
+  - "lepeophtheirus_salmonis"
+
+environment:
+  - "fjord"
+  - "coastal"
+
+geography:
+  - "Norway"
+  - "Nordfjord"
+  - "Production_area_4"
+
+time_period: "2015–2022"
+
+seasonality_focus:
+  - "spring"
+  - "migration_period"
+
+regulatory_context:
+  - "Norway_TLS"
+
+evidence_type: model
+
+study_design:
+  - "hindcast_scenario"
+  - "virtual_post_smolt_modelling"
+  - "farm_lice_dynamics_model"
+
+data_source:
+  - "farm_lice_counts"
+  - "farm_production_data"
+  - "ocean_model_salinity"
+
+model_type:
+  - "virtual_post_smolt_model"
+  - "stage_structured_lice_model"
+  - "scenario_simulation"
+
+observation_unit:
+  - "production_area"
+  - "farm_network"
+  - "river"
+
+comparison_type:
+  - "scenario_vs_baseline"
+  - "among_years"
+  - "coordinated_vs_uncoordinated"
+
+outcome_domain:
+  - "mortality"
+  - "farm_lice_abundance"
+  - "treatment_frequency"
+  - "management_effectiveness"
+
+primary_endpoint: "Salmon louse-induced mortality of wild Atlantic salmon post-smolts from nine Nordfjord rivers (NVI virtual post-smolt model)"
+secondary_endpoints:
+  - "Total adult female lice in study area in spring"
+  - "Weekly proportion of cages receiving lice treatments"
+  - "Interannual variability in spring lice abundance under zonation"
+
+# DEL C — FUNN OG BEVIS
+evidence_direction: supports_effect
+
+effect_scale: population_level
+
+uncertainty_emphasis: moderate
+
+main_uncertainty_sources:
+  - "model_structure"
+  - "scenario_assumptions"
+  - "stochastic_lice_dynamics"
+  - "profitability_and_feasibility_not_modelled"
+
+key_claims:
+  - "Estimated salmon louse-induced post-smolt mortality in the Nordfjord study area has averaged ~20% in recent years — roughly double the TLS green-light target (<10%)."
+  - "The virtual post-smolt model implies adult female farm lice in spring must be halved (~0.3 million females) to reach acceptable (green-light) mortality levels in Nordfjord."
+  - "Hindcast simulation of coordinated production and fallowing (zonation) reduced mean lice levels and treatments overall but increased interannual spring variability, with unacceptably high lice in even years when many farms are in year two of production."
+  - "Only measures that reduced density of farmed salmonids in open cages — stocking ≥1 kg fish, closed/semi-closed production, or fewer fish — brought spring lice below the ~0.3 million threshold in even years."
+  - "Coordinated highly effective spring treatment transiently reached the threshold but did not persist into summer; net benefit of the proposed zonation scheme alone is questionable."
+
+claims_about_uncertainty:
+  - "90% simulation intervals reflect stochasticity in lice dynamics and, for closed-cage scenarios, random farm subset selection."
+  - "Authors did not optimise alternative zonation schemes; conclusions apply to one regionally proposed plan."
+
+claims_about_policy_or_management:
+  - "TLS green light (<10% modelled post-smolt mortality) requires roughly halving spring adult female lice in Nordfjord; larger reductions may be needed elsewhere in western Norway (PA4 ~30%)."
+  - "Regional coordination of production cycles without complementary density-reduction measures may alternate between low impact in odd years and unacceptable impact in even years."
+  - "Stocking larger smolts, closed containment on a substantial share of farms, or downscaling open-cage biomass are the simulated paths to sustained acceptable lice levels for wild salmon."
+
+methodological_limitations:
+  - "Single case study (19 farm locations, Nordfjord / PA4); hindcast counterfactuals, not a field experiment."
+  - "VPS mortality estimates inherit calibration uncertainties documented in Stige et al. (2022)."
+  - "Treatment resistance, fish welfare costs of frequent treatments, and economic feasibility only discussed qualitatively."
+
+rag_summary: >
+  Stige et al. (2024) use farm-reported lice and production data (2015–2022) from 19 locations in
+  and around Nordfjord, Norway, with the NVI virtual post-smolt model and Aldrin et al. farm lice
+  dynamics model to test how regional coordination of louse control could meet Traffic Light System
+  goals. Modelled post-smolt mortality has averaged ~20%, so spring adult female lice must be halved
+  (~0.3 million) for green-light levels. Coordinated production/fallowing (zonation) lowered mean lice
+  and treatments but increased year-to-year spring variability, with unacceptably high lice when many
+  farms are in their second production year. Skirts, lower thresholds, and coordinated spring treatments
+  alone were insufficient in even years; only reduced open-cage salmonid density (≥1 kg stocking,
+  closed systems on many farms, or fewer fish) achieved sustained acceptable spring lice. Open access.
+
+coi_declared: unclear
+coi_notes: >
+  Authors from Norwegian Veterinary Institute (NVI), AquaLife R&D, and Norwegian Computing Centre.
+  NVI operates one of the three official TLS virtual post-smolt models. No commercial COI stated;
+  institutional role in TLS modelling. Open access CC BY.
+
+# DEL D — SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: moderate_agreement
+
+quality_signal: strong
+
+quality_rationale: >
+  Integrates two established modelling frameworks with eight years of mandatory farm reporting data;
+  systematic scenario matrix; peer-reviewed; open access. Case-study scope and reliance on VPS
+  mortality estimates limit generalisability.
+
+controversy_role: practical_implications
+
+relevance_signal: high
+
+relevance_rationale: >
+  Directly addresses how Norway can operationalise TLS mortality targets through coordinated farm
+  management in a high-impact fjord. Complements Stige (2022) on model sensitivity and Jansen et al.
+  (2025) on population returns by quantifying which control bundles actually reach <10% mortality.
+
+transferability: medium
+
+transferability_notes: >
+  Scenario logic applies to other Norwegian production areas with similar farm density and TLS
+  assessments; quantitative thresholds are Nordfjord-specific.
+
+# DEL E — RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  Sixteenth selected paper: management-focused hindcast linking farm lice coordination strategies to
+  TLS wild post-smolt mortality targets in a major western Norwegian fjord. Fills gap between TLS
+  model critique/calibration papers and population-return evidence by testing feasible control scenarios.
+
+related_documents_supporting:
+  - "Stige et al. 2022 (10.3354/aei00443) — same VPS model family"
+  - "Forseth et al. 2017 (10.1093/icesjms/fsx020) — lice as expanding population threat"
+  - "Eliasen et al. 2021 — TLS scientific basis evaluation"
+
+related_documents_contrasting:
+  - "Van Nes et al. 2024 (10.1111/raq.12953) — argues TLS mortality overestimated"
+  - "Jansen & Gjerde 2021 (10.1093/icesjms/fsab206) — VPS vs trawl validation"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2022_aei_stige-model-sensitivity-calibration"
+  - "2025_jae_jansen-lice-effects-returns"
+  - "2021_aei_seatrout-risk-assessment"
+  - "2021_rcn_traffic-light-evaluation"
+
+retrieval_tags:
+  - "Nordfjord"
+  - "zonation"
+  - "coordinated production"
+  - "fallowing"
+  - "hindcast scenario"
+  - "adult female lice"
+  - "density reduction"
+  - "closed containment"
+  - "stocking weight"
+  - "management measures"
+  - "TLS green light"
+
+curator_note: >
+  Open access. Case study in PA4 (Vestland). Cited by Jansen et al. (2025). PDF in documents/PDFs/.
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-05-20"

@@ -1,0 +1,218 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2018_epidemics_kristoffersen-risk-assessment
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Quantitative risk assessment of salmon louse-induced mortality of seaward-migrating post-smolt Atlantic salmon"
+year: 2018
+doi: "10.1016/j.epidem.2017.11.001"
+url: "https://doi.org/10.1016/j.epidem.2017.11.001"
+authors:
+  - "Anja Bråthen Kristoffersen"
+  - "Lars Qviller"
+  - "Kari Olli Helgesen"
+  - "Knut Wiik Vollset"
+  - "Hildegunn Viljugrein"
+  - "Peder Andreas Jansen"
+journal: "Epidemics"
+publisher: "Elsevier"
+language: english
+source_type: peer_reviewed
+document_type: risk_assessment
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q2"
+  - "Q3"
+  - "Q4"
+  - "Q5"
+  - "Q7"
+  - "Q8"
+  - "Q10"
+
+causal_chain_stage:
+  - lice_reproduction
+  - larval_production
+  - larval_dispersal
+  - host_exposure
+  - infestation
+  - individual_mortality
+  - regulatory_assessment
+  - model_calibration
+
+host_species:
+  - atlantic_salmon
+
+wild_or_farmed_focus: wild
+
+life_stage:
+  - post_smolt
+
+parasite_species:
+  - lepeophtheirus_salmonis
+
+environment:
+  - fjord
+  - coastal
+  - modelled_environment
+
+geography:
+  - "Norway (nationwide, 13 production zones, 401 rivers)"
+
+time_period: "2014-2016"
+
+seasonality_focus:
+  - spring
+  - migration_period
+
+regulatory_context:
+  - Norway_TLS
+
+evidence_type: model
+
+study_design:
+  - statistical_analysis
+  - particle_tracking
+  - population_modelling
+  - sentinel_cage
+
+data_source:
+  - farm_lice_counts
+  - sentinel_cages
+  - wild_fish_sampling
+
+model_type:
+  - "Quantitative risk assessment model: (1) farm egg production from reported adult female lice counts and temperature; (2) empirical kernel-density spatial infestation pressure model calibrated against sentinel cages; (3) shortest-path migration routing from river outlets to open sea at constant progression rate; (4) weight-dependent lice-induced mortality from Taranger et al. (2015) thresholds"
+
+observation_unit:
+  - "individual post-smolt; river-level mortality estimate aggregated to production zone"
+
+comparison_type:
+  - "River-level and production-zone-level risk estimates across 13 zones for 2014-2016; best-case vs. worst-case scenario comparisons; sensitivity analyses for key parameters"
+
+outcome_domain:
+  - "Lice-induced mortality fraction of seaward-migrating post-smolts; production-zone biomass-adjusted louse egg output"
+
+primary_endpoint: "Estimated proportion of Atlantic salmon post-smolts from 401 Norwegian rivers dying from salmon louse infestation during seaward migration, years 2014-2016"
+secondary_endpoints:
+  - "Production zone-level louse-egg output adjusted for standing stock biomass"
+  - "Sensitivity analyses for migration speed, body weight, mortality threshold, and sentinel cage calibration parameters"
+  - "Correlation between biomass-adjusted louse egg output and density of farmed salmon per production zone"
+  - "Best-case and worst-case scenario mortality estimates"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: supports_effect
+
+effect_scale: population_level
+
+uncertainty_emphasis: high
+
+main_uncertainty_sources:
+  - "Lice tolerance thresholds (Taranger et al. 2015) used for mortality conversion are acknowledged to be poorly documented"
+  - "Many processes in the chain of events are poorly documented; the model chains multiple uncertain estimates"
+  - "Post-smolt body weight assumption (20 g) may not reflect actual population variation"
+  - "Shortest-path migration routing is a simplification; actual routes may differ due to fjord topology and current patterns"
+  - "Sentinel cage calibration data used to parameterise infestation model may not represent all coastal habitats"
+  - "Migration timing from river outlets based on limited data for many rivers"
+
+key_claims:
+  - "Rivers draining into production zones on the West Coast of Norway were at highest risk of adverse lice effects across 2014-2016"
+  - "Rivers draining into northerly production zones and the southernmost production zone were at lower risk"
+  - "After adjusting for standing stock biomass, estimates of louse-egg output varied by factors of up to 8 between production zones"
+  - "Correlation between biomass-adjusted louse egg output and density of farmed salmon in production zones suggests a large-scale density-dependent host-parasite effect is a major driver of lice infestation rates and parasite-induced mortality"
+  - "The model assumes post-smolts weigh 20 g and follow the shortest path from river to open sea at constant progression rate"
+  - "Accumulated lice-induced mortality was calculated for the full migration period of all 401 rivers for each of 2014, 2015, and 2016"
+  - "All processes in the chain of events are modelled transparently with reproducible output, making the model suited for relative spatial and temporal risk assessment"
+
+claims_about_uncertainty:
+  - "Many processes in the chain of events are poorly documented, generating large uncertainties in both infestation rate and parasite-induced mortality estimates"
+  - "The model is argued to be suited for assessing relative (not absolute) spatial and temporal risks"
+  - "Best-case and worst-case scenarios are presented to bracket uncertainty in empirical infestation rates"
+
+claims_about_policy_or_management:
+  - "The model was developed to facilitate political decision-making concerning regulation of production capacity within production zones in Norway"
+  - "The Norwegian coast has been divided into 13 production zones for the Traffic Light System, and volume adjustments are obligated every two years based on salmon lice effects on wild salmonids"
+  - "Only indicators with density-dependent effects on the environment were to be considered for TLS; salmon lice was designated the first and only such indicator"
+
+methodological_limitations:
+  - "Shortest-path routing ignores hydrodynamic effects on post-smolt migration, potentially misrepresenting actual lice exposure in complex fjord systems"
+  - "Constant progression rate assumption for post-smolt migration is a simplification"
+  - "Lice mortality thresholds from Taranger et al. (2015) are based on limited experimental data with uncertain applicability to wild post-smolts"
+  - "Kernel-density infestation model is empirical and may not accurately extrapolate to areas or conditions outside the sentinel cage calibration data"
+  - "Model chains five or more processes each with their own uncertainty; error propagation is not fully quantified"
+  - "Density-dependent effects at the farm and zone level are not mechanistically modelled; the density-dependence finding is correlational"
+
+rag_summary: >
+  Kristoffersen et al. (2018) present the Norwegian Veterinary Institute (NVI) quantitative risk assessment model for salmon louse-induced mortality of seaward-migrating Atlantic salmon post-smolts, developed as one of the models underlying Norway's Traffic Light System (TLS). The model covers 401 salmon rivers across 13 Norwegian production zones using 2014-2016 data, and chains four processes: farm-origin louse egg production from reported female lice counts and temperature, empirical kernel-density spatial infestation pressure calibrated against sentinel cages, shortest-path post-smolt migration routing at constant progression rate, and weight-dependent mortality thresholds from Taranger et al. (2015). Key findings are that West Coast production zones faced the highest lice mortality risk, louse-egg output adjusted for standing stock biomass varied up to 8-fold between zones, and a large-scale density-dependent host-parasite effect appears to be the primary driver of spatial variation in infestation and mortality risk. The authors acknowledge large uncertainties throughout the causal chain and argue the model is suited for relative rather than absolute risk assessment.
+
+coi_declared: yes
+coi_notes: >
+  All primary authors affiliated with the Norwegian Veterinary Institute (NVI), Oslo, except Knut Wiik Vollset who was at Uni Research Environment, Bergen. NVI is the Norwegian government's primary institute for animal health and veterinary science, and is a key contributor to the Norwegian TLS regulatory process. Open access under CC BY-NC-ND 4.0. Peder Andreas Jansen (corresponding author) is the same author who later published a critique of the IMR/Johnsen VPS model (Jansen and Gjerde 2021), providing relevant context for interpreting both papers. No explicit conflict of interest statement found beyond institutional affiliations.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: moderate_agreement
+
+quality_signal: moderate
+
+quality_rationale: >
+  Published in Epidemics, a respected peer-reviewed journal for infectious disease modelling. The paper is methodologically transparent and includes sensitivity analyses. However, the authors themselves acknowledge that many processes in the causal chain are poorly documented, and the model relies on several simplifying assumptions (shortest-path routing, constant progression rate, sentinel cage calibration) that were later identified as limitations relative to the IMR approach. The paper's use for official regulatory purposes (Norwegian TLS) implies external scrutiny, but its core assumptions remain contested.
+
+controversy_role: supports_effect
+
+relevance_signal: high
+
+relevance_rationale: >
+  This is the NVI risk assessment model, one of the three models used in the Norwegian TLS expert group process. It directly addresses Q2-Q5, Q7-Q8, and Q10 and provides an alternative modelling framework to the IMR VPS model (Johnsen et al. 2021), with different assumptions about migration routing and calibration. Essential for understanding the diversity of approaches in the TLS and for evaluating the robustness of mortality estimates.
+
+transferability: low
+
+transferability_notes: >
+  Norway-specific: parameterised using Norwegian farm reporting data, Norwegian sentinel cage data, and Norwegian river geography. The quantitative risk assessment framework is conceptually transferable to other salmon-farming regions but requires local re-parameterisation. The density-dependence finding may have broader implications for other intensive farming regions.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  Presents the NVI risk assessment model for the Norwegian TLS, providing an alternative modelling framework to the IMR VPS model (Johnsen et al. 2021) with different assumptions. Directly quantifies lice-induced mortality for all 401 Norwegian salmon rivers and 13 production zones for 2014-2016. Essential for understanding the basis of the Norwegian TLS and the diversity of model approaches underlying it. The connection between lead author Kristoffersen and co-author Jansen (who later critiqued the IMR model) is an important context for corpus interpretation.
+
+related_documents_supporting:
+  - "Taranger et al. 2015 - provides lice tolerance thresholds used in mortality conversion"
+  - "Kristoffersen et al. 2014 - earlier infestation pressure model underlying the spatial component of this model"
+  - "Bjørn et al. 2011 - sentinel cage infestation data used in model calibration"
+
+related_documents_contrasting:
+  - "2021_icesjms_johnsen-vps-mortality-norway (Johnsen et al. 2021) - IMR VPS model using different migration routing (hydrodynamic) and calibration (genetic assignment) approaches"
+  - "2021_icesjms_jansen-comment-vps-mortality (Jansen and Gjerde 2021) - critique by co-author Jansen of the IMR model, which uses this NVI model's framework as an implicit alternative"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2021_icesjms_johnsen-vps-mortality-norway"
+  - "2021_icesjms_jansen-comment-vps-mortality"
+
+retrieval_tags:
+  - "NVI_model"
+  - "risk_assessment"
+  - "traffic_light_system"
+  - "Norway_TLS"
+  - "production_zones"
+  - "sentinel_cage"
+  - "shortest_path_migration"
+  - "kernel_density"
+  - "infestation_pressure"
+  - "lice_induced_mortality"
+  - "post_smolt_migration"
+  - "density_dependence"
+  - "401_rivers"
+  - "aquaculture_regulation"
+  - "louse_egg_production"
+
+curator_note: >
+  Open access under CC BY-NC-ND 4.0. This is the NVI model paper for the Norwegian TLS, published in 2018 before the IMR VPS model (Johnsen et al. 2021). The paper predates the TLS implementation and was developed as part of the scientific basis for the system. Key structural difference from the Johnsen VPS model: migration routing is shortest-path (not hydrodynamic), calibration uses sentinel cages (not genetic assignment), and the infestation model is an empirical kernel-density function (not a mechanistic larval dispersal model). Peder Andreas Jansen is both a co-author here and the lead author of the 2021 critique of the IMR model, making this paper an important reference point for understanding the NVI-IMR model debate within the Norwegian TLS scientific process.
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"

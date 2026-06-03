@@ -1,0 +1,166 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 1998_cjfas_mccormick-smolting-migration
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Movement, migration, and smolting of Atlantic salmon (Salmo salar)"
+year: 1998
+doi: "10.1139/f98-011"
+url: "https://doi.org/10.1139/f98-011"
+authors:
+  - "Stephen D. McCormick"
+  - "Lars P. Hansen"
+  - "Thomas P. Quinn"
+  - "Richard L. Saunders"
+journal: "Canadian Journal of Fisheries and Aquatic Sciences"
+publisher: "NRC Research Press"
+language: english
+source_type: peer_reviewed
+document_type: review_article
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q4"
+
+causal_chain_stage:
+  - "smolt exposure to lice (migration timing, behavior, physiology)"
+
+host_species:
+  - "Salmo salar (Atlantic salmon)"
+wild_or_farmed_focus: wild
+life_stage:
+  - "fry"
+  - "parr"
+  - "smolt"
+  - "post-smolt"
+parasite_species:
+  - "not_specified"
+environment:
+  - "river"
+  - "estuary"
+  - "coastal marine"
+geography:
+  - "review_mixed (North America and Europe)"
+time_period: "review_mixed"
+seasonality_focus:
+  - "spring"
+  - "winter"
+regulatory_context:
+  - "none"
+evidence_type: review
+study_design:
+  - "narrative synthesis review"
+  - "synthesis of experimental and observational studies"
+data_source:
+  - "review of published literature"
+observation_unit:
+  - "individual fish"
+  - "population"
+comparison_type:
+  - "review_mixed"
+outcome_domain:
+  - "smolt migration timing"
+  - "physiological readiness for seawater"
+  - "survival during migration"
+  - "behavioral changes during smoltification"
+primary_endpoint: "Mechanisms and timing of smolt migration and physiological smoltification; survival determinants during the freshwater-to-marine transition"
+secondary_endpoints:
+  - "Smolt window concept (physiological and ecological)"
+  - "Neuroendocrine control of smoltification"
+  - "Effects of environmental stressors on smolt development"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: not_applicable
+effect_scale: review_mixed
+uncertainty_emphasis: low
+main_uncertainty_sources:
+  - "Individual studies reviewed are site- and population-specific; generalisations across populations and regions have inherent uncertainty"
+  - "Physiological studies are often laboratory-based; translation to field conditions involves uncertainty"
+  - "The relative importance of ecological vs physiological smolt windows varies by population and environment"
+key_claims:
+  - "Smolting is an adaptive specialization involving tightly co-ordinated physiological, morphological, and behavioral changes including increased salinity tolerance, altered hemoglobin and visual pigments, loss of positive rheotaxis, and initiation of schooling behavior"
+  - "Smolt migration is regulated by both a physiological smolt window (a limited period of osmoregulatory readiness) and an ecological smolt window (the period when environmental conditions favor survival in seawater)"
+  - "Photoperiod is the primary proximate cue regulating the timing of smolt development; temperature modulates the pace and can advance or delay the timing"
+  - "Temperature and water flow are the primary cues that initiate downstream migration within the physiologically ready window"
+  - "Smolt survival is critically dependent on seawater entry coinciding with appropriate environmental conditions (temperature, food availability, predator abundance)"
+  - "Anthropogenic stressors including dams, acidification, and pollution disproportionately affect the smolt migration corridor (river mainstems and estuaries)"
+  - "Atlantic salmon display considerable behavioral plasticity at all life stages; facultative residence strategies exist (dwarf males, land-locked populations) demonstrating the non-obligatory nature of anadromy"
+claims_about_uncertainty:
+  - "The timing of the ecological smolt window relative to the physiological smolt window is highly variable and population-specific"
+  - "Whether all juvenile salmon movements in fresh water qualify as true migrations under strict behavioral definitions is unclear"
+claims_about_policy_or_management:
+  - "The smolt migration corridor (river mainstems and estuaries) is the most heavily impacted by human activities and deserves priority protection"
+  - "Hatchery release strategies should account for limited movement of fry from release sites"
+methodological_limitations:
+  - "Review reflects literature available to 1997-1998; does not cover later developments in salmon lice ecology or aquaculture impacts"
+  - "Geographic coverage is primarily North American and Norwegian; some aspects may not generalize to all Atlantic salmon range states"
+  - "Physiological mechanisms discussed are based largely on controlled laboratory experiments; field validation of threshold values is limited"
+
+rag_summary: >
+  McCormick et al. (1998) provide a comprehensive review of Atlantic salmon (Salmo salar) movement, migration, and smoltification biology, synthesising a large body of experimental and observational literature from freshwater life stages through the seawater transition. The review describes the dual smolt window concept: a physiological smolt window (a limited period of osmoregulatory readiness, regulated by photoperiod and temperature via the neuroendocrine system) and an ecological smolt window (the period when environmental conditions favor survival in seawater). Key physiological changes during smolting include increased salinity tolerance, altered hemoglobin and visual pigments, loss of positive rheotaxis, and initiation of schooling. Migration is triggered by temperature and water flow once physiological readiness is achieved. Smolt survival is critically dependent on the synchrony between physiological readiness and favorable ecological conditions at seawater entry. The paper does not address salmon lice directly but provides the foundational mechanistic basis for understanding why smolt migration timing, duration, and estuarine behavior determine the degree of lice exposure in coastal waters — making it a key reference for interpreting lice exposure models in Q4.
+
+coi_declared: no
+coi_notes: >
+  No conflict of interest declared (pre-DOI era paper, 1998). Authors affiliated with USGS (McCormick), Norwegian Institute for Nature Research (Hansen), University of Washington (Quinn), and Department of Fisheries and Oceans Canada (Saunders). No commercial funding indicated.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: strong_agreement
+quality_signal: strong
+quality_rationale: >
+  Foundational review paper co-authored by four senior researchers representing leading institutions in Atlantic salmon biology. Published in Canadian Journal of Fisheries and Aquatic Sciences (Supplement 1), a high-quality peer-reviewed journal. The paper has been widely cited and is considered a standard reference for smolt biology. Quality reflects the state of knowledge as of 1997-1998; it does not cover subsequent developments in lice ecology or genomics, but the core physiology described remains valid.
+
+controversy_role: neutral
+
+relevance_signal: medium
+relevance_rationale: >
+  This paper is relevant to Q4 (smolt exposure to lice) by providing the mechanistic basis for understanding why smolt migration timing and physiology create windows of vulnerability to parasite exposure in coastal waters. The smolt window concept — both physiological and ecological — directly underpins why timing of seawater entry relative to lice density peaks matters for exposure risk. As a 1998 review, it does not address salmon lice directly, so its relevance is primarily as foundational mechanistic context rather than direct evidence.
+
+transferability: high
+transferability_notes: >
+  The fundamental physiology and behavior of Atlantic salmon smolts described in this review is conserved across the species' range. The mechanisms governing smolt timing, physiological readiness, and migration behavior apply broadly to Norwegian populations, which are the focus of salmon lice management. The review's generality is an asset; population-specific timing details vary but the underlying biology is universal.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  This foundational review provides the mechanistic basis for understanding why smolt migration timing and biology determine the degree of salmon lice exposure in coastal waters. It is essential background for interpreting exposure models (Q4, Q5) and for understanding why the timing and duration of the smolt migration window creates differential vulnerability among cohorts and populations. Without this biological context, lice exposure estimates lack mechanistic grounding.
+
+related_documents_supporting:
+  - "Bohn et al. 2020 (timing of smolt migration relative to lice peaks affects survival)"
+  - "Johnsen et al. 2021 (smolt exposure and lice-induced mortality models)"
+
+related_documents_contrasting: []
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2024_ecosphere_hawley-anadromy-lice-mortality-trout"
+  - "Bohn et al. 2020"
+
+retrieval_tags:
+  - "smoltification"
+  - "smolt migration"
+  - "smolt window"
+  - "Atlantic salmon"
+  - "Salmo salar"
+  - "osmoregulation"
+  - "seawater acclimation"
+  - "photoperiod"
+  - "migration timing"
+  - "physiological readiness"
+  - "estuarine migration"
+  - "freshwater to marine transition"
+  - "salmon life history"
+  - "parr to smolt transformation"
+  - "foundational review"
+  - "neuroendocrine regulation"
+
+curator_note: >
+  Pre-digital-DOI era paper (published 1998 in CJFAS Supplement 1). DOI 10.1139/f98-011 is a retroactively assigned identifier; the paper may not resolve via all DOI resolvers. This is a citation classic in Atlantic salmon biology — likely to be very widely cited in the salmon lice literature as background on smolt biology. Included primarily to provide mechanistic grounding for lice exposure models and timing-based vulnerability arguments. The paper predates the major expansion of salmon farming in Norway and the establishment of the TLS; it does not discuss salmon lice directly.
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"

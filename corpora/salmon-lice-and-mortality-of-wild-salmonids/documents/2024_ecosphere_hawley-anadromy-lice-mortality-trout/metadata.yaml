@@ -1,0 +1,185 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2024_ecosphere_hawley-anadromy-lice-mortality-trout
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Individual patterns of anadromy determine the cost of salmon lice exposure in brown trout"
+year: 2024
+doi: "10.1002/ecs2.70098"
+url: "https://doi.org/10.1002/ecs2.70098"
+authors:
+  - "K. L. Hawley"
+  - "H. A. Urke"
+  - "T. Kristensen"
+  - "T. O. Haugen"
+journal: "Ecosphere"
+publisher: "Wiley Periodicals LLC on behalf of the Ecological Society of America"
+language: english
+source_type: peer_reviewed
+document_type: modelling_study
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q4"
+  - "Q5"
+  - "Q7"
+  - "Q8"
+  - "Q9"
+
+causal_chain_stage:
+  - "smolt exposure to lice"
+  - "translating infestation to mortality"
+  - "fraction dying from lice"
+  - "population-level impact"
+
+host_species:
+  - "Salmo trutta (brown trout / sea trout)"
+wild_or_farmed_focus: wild
+life_stage:
+  - "smolt"
+  - "veteran migrant (repeat sea-sojourner)"
+parasite_species:
+  - "Lepeophtheirus salmonis"
+environment:
+  - "fjord (marine and brackish)"
+  - "inner fjord (protected from aquaculture)"
+  - "outer fjord (near aquaculture facilities)"
+geography:
+  - "Sognefjorden, Norway"
+time_period: "2013-2015"
+seasonality_focus:
+  - "spring"
+  - "summer"
+regulatory_context:
+  - "Norwegian Traffic Light System (TLS)"
+  - "Norwegian National Salmon Fjord designation"
+evidence_type: model
+study_design:
+  - "individual-based simulation model"
+  - "spatial-temporal superimposition of trajectories and lice densities"
+  - "empirically-fitted fjord-use models"
+data_source:
+  - "acoustic telemetry tracking data (N=517 individual sea trout)"
+  - "open-access spatial-temporal modelled lice density data (Sandvik et al. 2020; Stige et al. 2021)"
+  - "simulated individual trajectories (N=8049)"
+observation_unit:
+  - "individual fish (simulated trajectory)"
+  - "population (N=5 populations)"
+comparison_type:
+  - "inner-fjord vs outer-fjord migrants"
+  - "smolts vs veteran migrants"
+  - "across years (2013, 2014, 2015)"
+  - "across populations (N=5)"
+outcome_domain:
+  - "lice infestation level"
+  - "lice-induced mortality probability"
+  - "fraction of total mortality attributed to lice"
+primary_endpoint: "Fraction of total sea-sojourn mortality attributed to salmon lice infestation, by population, year, and life-stage"
+secondary_endpoints:
+  - "Accumulated individual lice infestation during sea-sojourn"
+  - "Proportion of individuals exceeding critical infestation thresholds"
+  - "Spatial gradient of lice exposure within fjord"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: supports_effect
+effect_scale: individual
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+  - "Simulated (not directly observed) individual trajectories, despite empirical calibration"
+  - "Reliance on modelled (not measured in situ) lice density fields"
+  - "Lice transmission and mortality dose-response functions derived from Atlantic salmon literature, applied to brown trout"
+  - "No direct empirical mortality observations to validate model outputs"
+  - "Potential for behavioral avoidance to reduce actual exposure below modelled values"
+key_claims:
+  - "Fraction of total mortality attributed to lice was 25.3% for long-distance migrant smolts vs 14.7% for inner-fjord smolts"
+  - "Fraction of total mortality attributed to lice was 14.8% for long-distance veteran migrants vs 1.7% for inner-fjord veterans"
+  - "Total lice-attributed mortality ranged from 3.3% to 34.3% across the 5 studied populations"
+  - "Individual migration trajectory selection — not population-level average exposure — is the primary driver of differential lice-induced mortality"
+  - "Most brown trout remained in the inner fjord (protected from aquaculture), keeping population-average infestation below critical mortality thresholds"
+  - "Lice densities were highest in the outer fjord near aquaculture facilities; limited year-to-year variation was observed 2013-2015"
+  - "The seaward extent of Sognefjorden sea trout migration has declined over 60 years, coinciding with aquaculture expansion"
+claims_about_uncertainty:
+  - "Generic lice mortality models applied to all facultatively anadromous salmonids are likely to produce biased estimates due to behavioral heterogeneity"
+  - "Results are contingent on modelled (not empirically measured) lice densities and simulated (not directly tracked) migration trajectories"
+  - "Lice dose-response functions are based on Atlantic salmon and may not fully apply to brown trout"
+claims_about_policy_or_management:
+  - "Sea trout are not currently included in Norway's salmon lice management framework; their inclusion is analytically challenging due to behavioral plasticity"
+  - "Generic lice-mortality models should be used with caution for facultatively anadromous species; individual-level migration simulation is recommended"
+  - "Monitoring and management actions to preserve selection for anadromy are important given evidence that behavioral avoidance is reducing sea migration extent"
+methodological_limitations:
+  - "Trajectories are simulated from empirical data, not direct individual tracking during the modelled period"
+  - "Lice dose-response functions adapted from Atlantic salmon; validation for brown trout is limited"
+  - "No empirical validation of predicted mortality fractions against observed survival data"
+  - "Study is restricted to a single fjord system (Sognefjorden); generalizability to other fjord systems is uncertain"
+  - "Inner-fjord protection may not represent typical Norwegian sea trout habitat context"
+
+rag_summary: >
+  Hawley et al. (2024) used N=8049 simulated individual migration trajectories of facultatively anadromous brown trout (sea trout), calibrated from empirical acoustic-telemetry tracking data (N=517 fish across 5 populations) in Sognefjorden, Norway (2013-2015). These trajectories were superimposed on open-access spatial-temporal modelled salmon lice (Lepeophtheirus salmonis) densities to estimate individual accumulated infestation and the fraction of total sea-sojourn mortality attributable to lice. Long-distance migrants entering the outer fjord (near aquaculture) had substantially higher lice-attributed mortality (smolts: 25.3%; veteran migrants: 14.8%) compared to inner-fjord fish (smolts: 14.7%; veterans: 1.7%), resulting in a population-level range of 3.3-34.3% lice-attributed mortality. The core finding is that individual variation in migration trajectory — not population-level average exposure — drives lice-induced mortality outcomes, making generic models inappropriate for facultatively anadromous species. The paper is limited by its reliance on modelled rather than directly measured lice densities, and on simulated rather than observed trajectories; mortality estimates are not validated against empirical survival data.
+
+coi_declared: yes
+coi_notes: >
+  Funded by SalmonTracking 2030 (FHF 901890), Norwegian University of Life Sciences, and multiple regional authorities and aquaculture companies including Mowi AS, Osland Havbruk AS, and Sulefisk AS. Industry co-funding is noted; the paper nevertheless reports substantial lice-attributed mortality. Authors are affiliated with NIVA, NMBU, AquaLife R&D, and Nord University.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: moderate_agreement
+quality_signal: strong
+quality_rationale: >
+  High-quality modelling study grounded in large-scale empirical telemetry data (N=517 individuals across multiple populations and years). Published in Ecosphere (ESA journal), open access, peer reviewed. Clear model structure with stated assumptions. The limitation that dose-response functions are borrowed from Atlantic salmon rather than brown trout is acknowledged. The lack of empirical mortality validation is an important caveat but is inherent to the approach. Overall the study design is rigorous and the analysis transparent.
+
+controversy_role: supports_effect
+
+relevance_signal: high
+relevance_rationale: >
+  Directly addresses Q4 (smolt/sea trout exposure via migration route), Q5 (modelled infestation on wild fish), Q7 (infestation-to-mortality translation), Q8 (fraction of smolts/migrants dying from lice), and Q9 (population-level impact). Unique because it quantifies the importance of INDIVIDUAL VARIATION in migration patterns — a key analytical gap for facultatively anadromous species excluded from Norway's TLS. Provides the framework for why brown trout require separate treatment in lice risk assessment.
+
+transferability: medium
+transferability_notes: >
+  Study is geographically specific to Sognefjorden, which is unusually long (>200 km) and has a formally protected inner-fjord zone. Results quantifying heterogeneity in lice exposure due to individual migration behavior are likely transferable in principle, but specific mortality fractions depend on local farm distribution, fjord geometry, and population behavior. The modelling framework is broadly applicable to other fjord systems.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  This is the most methodologically advanced paper in the corpus for estimating lice-induced mortality on brown trout. It explicitly models individual variation in migration as the primary driver of differential exposure — a key mechanistic insight with policy implications for whether and how sea trout should be included in the TLS. It fills the gap between generic lice exposure models (calibrated for Atlantic salmon) and the behavioral reality of facultatively anadromous brown trout.
+
+related_documents_supporting:
+  - "Johnsen et al. 2021 (lice-induced mortality models for Atlantic salmon smolts)"
+  - "Stige et al. 2021 (modelled lice exposure and smolt mortality)"
+  - "Bohn et al. 2020 (timing effects on lice exposure and survival)"
+
+related_documents_contrasting:
+  - "Papers relying on generic population-average lice exposure models for sea trout"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2022_fishes_lamberg-pre-fishery-abundance"
+  - "1998_cjfas_mccormick-smolting-migration"
+
+retrieval_tags:
+  - "brown trout"
+  - "sea trout"
+  - "anadromy"
+  - "facultative anadromy"
+  - "individual variation"
+  - "migration trajectory"
+  - "salmon lice mortality"
+  - "Sognefjorden"
+  - "simulation model"
+  - "acoustic telemetry"
+  - "lice infestation threshold"
+  - "TLS exclusion of sea trout"
+  - "Norwegian aquaculture management"
+  - "Lepeophtheirus salmonis"
+  - "smolt window"
+  - "behavioral plasticity"
+
+curator_note: >
+  Open access article (CC BY). Downloaded from Wiley Online Library via Norwegian Institute of Public Health subscription (per download header). The paper is notable for its explicit focus on individual-level heterogeneity in migration patterns as the driver of lice exposure variance — not just population averages. This is a key conceptual contribution for the TLS debate. The Sognefjorden context (protected inner fjord) may limit direct comparison to more exposed fjord systems.
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"

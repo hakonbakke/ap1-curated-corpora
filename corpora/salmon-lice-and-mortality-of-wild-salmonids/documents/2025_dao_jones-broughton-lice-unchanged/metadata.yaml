@@ -1,0 +1,227 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2025_dao_jones-broughton-lice-unchanged
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Trends in sea lice infestations on chum and pink salmon in the Broughton Archipelago remain unchanged despite removal of finfish aquaculture"
+year: 2025
+doi: "10.3354/dao03866"
+url: "https://doi.org/10.3354/dao03866"
+authors:
+  - "Simon R. M. Jones"
+  - "Crawford W. Revie"
+  - "Lance Stewardson"
+journal: "Diseases of Aquatic Organisms"
+publisher: "Inter-Research"
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q1"
+  - "Q9"
+  - "Q10"
+
+causal_chain_stage:
+  - "farm_lice_abundance"
+  - "host_exposure"
+  - "infestation"
+  - "management_intervention"
+  - "regulatory_assessment"
+
+host_species:
+  - "pacific_salmon"
+  - "chum_salmon"
+  - "pink_salmon"
+
+wild_or_farmed_focus: wild
+life_stage:
+  - "juvenile"
+parasite_species:
+  - "Lepeophtheirus salmonis"
+  - "Caligus clemensi"
+environment:
+  - "coastal_marine"
+geography:
+  - "Broughton Archipelago, British Columbia, Canada"
+  - "Tribune Channel"
+  - "Fife Sound"
+  - "Knight Inlet"
+time_period: "2016-2024"
+seasonality_focus:
+  - "spring"
+regulatory_context:
+  - "Canada_management"
+
+evidence_type: empirical_observational
+
+study_design:
+  - "longitudinal_time_series"
+  - "natural_experiment"
+  - "before_after_aquaculture_removal"
+  - "before_after_3_phases"
+data_source:
+  - "beach_seine_sampling"
+  - "microscopic_lice_enumeration"
+  - "industry_biomass_records"
+observation_unit:
+  - "individual_fish"
+  - "site_year"
+comparison_type:
+  - "pre_post_aquaculture_removal"
+  - "temporal_trend"
+  - "three_phase_comparison"
+outcome_domain:
+  - "sea_lice_prevalence"
+  - "sea_lice_intensity"
+primary_endpoint: "Annual prevalence and intensity of L. salmonis and C. clemensi on juvenile chum and pink salmon 2016-2024"
+secondary_endpoints:
+  - "Relative species proportions of lice"
+  - "Correlation between aquaculture biomass and lice prevalence"
+  - "Comparison of lice levels across three aquaculture phases"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: no_significant_effect
+effect_scale: population_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+  - "Unknown natural reservoir host abundance and lice burden in BA"
+  - "Environmental drivers of inter-annual lice variability unquantified"
+  - "Reduced sample size per site in 2019-2024 (15 vs 30 fish per site)"
+  - "Phased rather than abrupt aquaculture removal makes causal inference more complex"
+key_claims:
+  - "In 2024, with aquaculture reduced to 614 metric tonnes in 2 facilities (from 21,645 t in 17 facilities in 2019), prevalence of L. salmonis and C. clemensi on chum and pink salmon increased to levels similar to or higher than values measured between 2016 and 2021"
+  - "In 2024, prevalence of all lice on chum salmon was 40.7% and on pink salmon 40.3% — higher than most preceding years despite near-total aquaculture removal"
+  - "Prevalence of L. salmonis on chum salmon in 2024 was 21.3% (up from 8.6% in 2023) and on pink salmon 12.4% (up from 2.3% in 2023)"
+  - "Prevalence of C. clemensi on chum salmon in 2024 was 28.7% and on pink salmon 32.6%, compared to 2023 lows of 3.9% and 5.1% respectively"
+  - "A total of 2,868 juvenile salmon (1,463 chum; 1,405 pink) from 14 fixed sites were examined over 9 years"
+  - "The Broughton Archipelago has been a focus of sea lice research for ~25 years; this dataset represents the most comprehensive before/after aquaculture removal dataset in the region"
+claims_about_uncertainty:
+  - "Little is known about the distribution and abundance of natural sources of L. salmonis in coastal BC during early spring juvenile salmon migration"
+  - "Resident wild salmonids are likely candidates as natural reservoirs for L. salmonis; herring and other species for C. clemensi"
+  - "The data support the importance of natural reservoirs as sources of sea lice infestation in the BA, but quantification requires further study"
+claims_about_policy_or_management:
+  - "The findings indicate that removal of finfish aquaculture from the Broughton Archipelago has not reduced sea lice infestation pressure on wild juvenile Pacific salmon"
+  - "Natural reservoir hosts play an important and possibly dominant role in driving sea lice infestations on wild Pacific salmon, independent of aquaculture presence"
+methodological_limitations:
+  - "Sample size reduced from 30 to 15 fish per species per site from 2019-2024, potentially reducing precision of prevalence estimates"
+  - "No statistical modelling of the aquaculture-lice relationship is presented; results are descriptive"
+  - "No concurrent sampling of natural reservoir hosts to quantify non-farm lice contributions"
+  - "The study area (Tribune Channel/Fife Sound) was selected for highest historical aquaculture density — may not be representative of broader BA"
+  - "Phased removal of facilities over 5 years (2019-2023) means no clean before/after cutpoint"
+
+rag_summary: >
+  Jones, Revie and Stewardson (2025) report a 9-year time series (2016-2024) of sea lice infestations
+  on juvenile chum and pink salmon (n=2,868) from 14 fixed beach seine sites in the Broughton Archipelago
+  (BA), British Columbia — a region where Atlantic salmon aquaculture declined from 21,645 metric tonnes
+  in 17 facilities (2019) to 614 t in 2 facilities (2024). The study covers three distinct phases:
+  extensive aquaculture (2016-2018), phased removal (2019-2023), and near-complete removal (2024).
+  The key finding is that in 2024, prevalence of both L. salmonis and C. clemensi on chum and pink
+  salmon increased to 40.7% and 40.3% respectively — levels similar to or exceeding values from the
+  full-aquaculture period (2016-2021). This directly contradicts the assumption that aquaculture is
+  the primary source of sea lice infestations on wild juvenile Pacific salmon in the BA. The paper
+  attributes the persistent infestations to natural reservoir hosts and argues for better quantification
+  of non-farm lice sources. Key limitations are the lack of statistical modelling and absence of
+  reservoir host sampling.
+
+coi_declared: yes
+coi_notes: >
+  No external funding for this work is declared. Data were compiled partly from industry monitoring
+  datasets (Mowi and Cermaq public sustainability reporting). Simon R. M. Jones is affiliated with
+  Fisheries and Oceans Canada; Crawford W. Revie with University of Strathclyde; Lance Stewardson
+  (corresponding author) with Mainstream Biological Consulting (private sector). Use of industry
+  monitoring data may introduce data provenance considerations, although the paper is published in
+  a peer-reviewed journal and methodology is described in detail.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: contested
+quality_signal: moderate
+quality_rationale: >
+  Strong study design as a natural experiment with the longest available before/during/after time
+  series for the Broughton Archipelago (9 years, 14 fixed sites). However, the study is descriptive
+  with no formal statistical modelling, relies partly on industry monitoring data, and lacks reservoir
+  host sampling. The reduction in sample size per site from 2019 onwards slightly weakens the
+  post-removal comparisons. The Broughton Archipelago is the most thoroughly studied sea lice system
+  in BC, making this high-value evidence despite these limitations.
+
+controversy_role: challenges_effect
+
+relevance_signal: high
+relevance_rationale: >
+  The Broughton Archipelago is the most extensively studied sea lice system in British Columbia,
+  and has been central to the international debate about aquaculture impacts on wild salmon for
+  over two decades. A finding of unchanged lice infestations after near-total aquaculture removal
+  in this area — with a 9-year time series — is among the strongest available natural experiment
+  evidence challenging the farm-attribution assumption central to both Canadian management and,
+  by analogy, the Norwegian TLS.
+
+transferability: medium
+transferability_notes: >
+  Results are directly applicable to the attribution question (Q1) in any salmon-aquaculture
+  management context, including Norway. The Broughton Archipelago system has closer ecological
+  similarities to Norwegian fjords (fjordic coastline, multiple farm sites, anadromous salmonids)
+  than many other Pacific systems. However, the host species (chum, pink salmon) differ from
+  Norwegian Atlantic salmon and sea trout, and natural reservoir communities differ. The lesson
+  about the importance of natural reservoirs in driving wild fish lice infestations is potentially
+  highly transferable to Norwegian context.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  This paper fills the same critical gap as its companion Discovery Islands paper (Jones et al. 2025,
+  JFD) but in the Broughton Archipelago — the site of the most intensive and long-running sea lice
+  research in BC. Together, these two papers represent the first multi-region natural experiment
+  evidence from BC challenging the farm-attribution assumption at the heart of Q1. The Broughton
+  Archipelago dataset extending back to 2016 (with comparisons to older DFO data from 2004-2009)
+  makes this particularly valuable. The paper also explicitly engages with recent evidence from
+  van Nes et al. (2025) and Jeong et al. (2025).
+
+related_documents_supporting:
+  - "Jones et al. 2025 (JFD) — Discovery Islands companion paper with same finding"
+  - "Jeong et al. 2025 — finds farm lice cannot solely explain wild fish infestations in BC"
+  - "van Nes et al. 2025 — models may overestimate aquaculture contribution to wild fish infestation"
+  - "Patanasatienkul et al. 2013 — earlier BA lice data (2004-2012) providing historical context"
+
+related_documents_contrasting:
+  - "Routledge and Morton 2023 — attributes 2020-2022 lice decline to aquaculture removal"
+  - "Krkošek et al. 2007 — foundational paper attributing BA wild salmon lice primarily to farms"
+  - "Peacock et al. 2016 — assumes most wild salmon lice originate from farmed salmon in BC"
+  - "Norwegian TLS documentation — premised on farm-attribution assumption"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2025_jfd_jones-pacific-lice-cessation-bc"
+
+retrieval_tags:
+  - "aquaculture_removal"
+  - "natural_experiment"
+  - "sea_lice_attribution"
+  - "wild_salmon_lice"
+  - "Broughton_Archipelago"
+  - "British_Columbia"
+  - "Pacific_salmon"
+  - "chum_salmon"
+  - "pink_salmon"
+  - "Lepeophtheirus_salmonis"
+  - "Caligus_clemensi"
+  - "natural_reservoir"
+  - "farm_lice_contribution"
+  - "Q1_attribution"
+  - "finfish_aquaculture"
+
+curator_note: >
+  Published in Diseases of Aquatic Organisms (Inter-Research), Volume 163: 107-112, August 2025.
+  The dataset draws partly on industry monitoring data (Mowi and Cermaq public sustainability
+  reporting) in addition to independent research sampling, which should be noted. The Broughton
+  Archipelago has ~25 years of sea lice monitoring history; this paper represents the most
+  up-to-date synthesis. Companion paper: Jones et al. 2025 in Journal of Fish Diseases (JFD).
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"

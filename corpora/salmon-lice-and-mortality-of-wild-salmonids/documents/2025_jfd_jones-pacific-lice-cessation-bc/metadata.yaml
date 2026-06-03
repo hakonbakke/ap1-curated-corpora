@@ -1,0 +1,208 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2025_jfd_jones-pacific-lice-cessation-bc
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Trends in Abundance of Sea Lice Lepeophtheirus salmonis and Caligus clemensi on Juvenile Wild Pacific Salmon Unchanged Following Cessation of Salmon Aquaculture in Coastal British Columbia"
+year: 2025
+doi: "10.1111/jfd.14136"
+url: "https://doi.org/10.1111/jfd.14136"
+authors:
+  - "Simon R. M. Jones"
+  - "Crawford W. Revie"
+  - "Lance Stewardson"
+journal: "Journal of Fish Diseases"
+publisher: "John Wiley & Sons Ltd"
+language: english
+source_type: peer_reviewed
+document_type: commentary
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q1"
+  - "Q9"
+  - "Q10"
+
+causal_chain_stage:
+  - "farm_lice_abundance"
+  - "host_exposure"
+  - "infestation"
+  - "management_intervention"
+  - "regulatory_assessment"
+
+host_species:
+  - "pacific_salmon"
+  - "chum_salmon"
+  - "pink_salmon"
+
+wild_or_farmed_focus: wild
+life_stage:
+  - "juvenile"
+parasite_species:
+  - "Lepeophtheirus salmonis"
+  - "Caligus clemensi"
+environment:
+  - "coastal_marine"
+geography:
+  - "Discovery Islands, British Columbia, Canada"
+time_period: "2017-2024"
+seasonality_focus:
+  - "spring"
+regulatory_context:
+  - "Canada_management"
+
+evidence_type: empirical_observational
+
+study_design:
+  - "longitudinal_time_series"
+  - "natural_experiment"
+  - "before_after_aquaculture_removal"
+data_source:
+  - "beach_seine_sampling"
+  - "microscopic_lice_enumeration"
+observation_unit:
+  - "individual_fish"
+  - "site_year"
+comparison_type:
+  - "pre_post_aquaculture_removal"
+  - "temporal_trend"
+outcome_domain:
+  - "sea_lice_prevalence"
+  - "sea_lice_abundance"
+primary_endpoint: "Mean abundance and prevalence of L. salmonis and C. clemensi on juvenile chum and pink salmon 2017-2024"
+secondary_endpoints:
+  - "Relative proportions of lice species by year"
+  - "Correlation between aquaculture biomass and lice abundance"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: no_significant_effect
+effect_scale: population_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+  - "Unknown contribution of natural reservoir hosts (resident Pacific salmon, herring, stickleback)"
+  - "Inter-annual environmental variability confounding attribution"
+  - "Limited spatial coverage of wild reservoir host sampling"
+  - "Only 2 years post-complete-removal (2023-2024)"
+key_claims:
+  - "Sea lice infestations on juvenile chum and pink salmon persisted in the Discovery Islands despite zero Atlantic salmon aquaculture production from 2022 onwards"
+  - "In 2024, lice prevalence and mean abundance on pink salmon exceeded levels measured in 2017-2019 (pre-removal peak era), despite continued absence of aquaculture"
+  - "A previously reported 96% decline in sea lice (2020-2022) attributed to aquaculture removal (Routledge and Morton 2023) was not sustained; 2024 data showed rebound to levels similar to or exceeding pre-removal years"
+  - "5,967 juvenile salmon examined across 16 sites from 2017-2024; prevalence on chum salmon ranged 2.9% (2023) to 26.9% (2019); on pink salmon 0% (2023) to 17.1% (2020)"
+  - "Natural reservoirs (resident Pacific salmon, herring, stickleback) are candidate sources of persistent lice infestations independent of aquaculture"
+claims_about_uncertainty:
+  - "The relative magnitude of aquaculture vs. natural reservoir contributions to sea lice infestations remains uncertain due to limited information on natural infestations"
+  - "Environmental factors appear to drive inter-annual variability in lice levels, complicating causal attribution to aquaculture removal"
+claims_about_policy_or_management:
+  - "The persistence and rebound of sea lice following aquaculture removal challenges the assumption that farm lice are the primary driver of wild salmon infestation in the Discovery Islands"
+  - "Results imply that aquaculture removal alone may be insufficient to reduce sea lice pressure on wild juvenile Pacific salmon"
+methodological_limitations:
+  - "Short communication with limited methodological detail"
+  - "No formal statistical modelling of aquaculture-lice relationship"
+  - "No concurrent sampling of reservoir host species to quantify natural lice sources"
+  - "Beach seine sampling may not capture all salmon size classes equally"
+
+rag_summary: >
+  Jones, Revie and Stewardson (2025) report a longitudinal natural experiment in the Discovery Islands (DI),
+  British Columbia, Canada, examining sea lice infestations on juvenile chum and pink salmon (n=5,967) from
+  2017 to 2024, spanning the full removal of 15 Atlantic salmon aquaculture facilities between 2020 and 2022.
+  The study found that despite zero Atlantic salmon aquaculture production since 2022, sea lice infestations
+  (L. salmonis and C. clemensi) persisted and rebounded in 2024 to levels similar to or exceeding those
+  measured in pre-removal years (2017-2019). Specifically, lice prevalence on pink salmon in 2024 exceeded
+  all years measured in 2017-2019, and mean abundance on chum salmon returned to above 2017-2018 levels.
+  The paper directly challenges an earlier claim (Routledge and Morton 2023) that a 96% decline in sea lice
+  in 2020-2022 was attributable to aquaculture removal, arguing instead that natural reservoir hosts and
+  environmental variability are primary drivers. The key limitation is the absence of reservoir host sampling
+  to quantify non-farm lice sources, and only two post-removal years are available (2023-2024).
+
+coi_declared: yes
+coi_notes: >
+  Authors declare no specific funding for this work. Simon R. M. Jones is affiliated with Fisheries and
+  Oceans Canada (government science agency); Crawford W. Revie with University of Strathclyde (UK);
+  Lance Stewardson with Mainstream Biological Consulting (private sector, Campbell River BC). Stewardson
+  is corresponding author and has commercial consulting background, which warrants transparency in
+  interpretation. No funding from aquaculture industry is declared.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: contested
+quality_signal: moderate
+quality_rationale: >
+  Short communication with a robust 8-year observational time series and rigorous standardised methods
+  (DFO beach seine protocols, microscopic lice enumeration). The natural experiment design is valuable,
+  but absence of statistical modelling, no reservoir host quantification, and publication as a short
+  communication limit the depth of causal inference. Direct rebuttal of Routledge and Morton (2023)
+  using the same dataset extended by two additional years.
+
+controversy_role: challenges_effect
+
+relevance_signal: high
+relevance_rationale: >
+  Directly addresses Q1 (attribution of lice to aquaculture) using the strongest possible natural
+  experiment design — complete removal of aquaculture in a defined area with multi-year pre/post
+  monitoring. The finding that lice infestations rebounded post-removal is high-value evidence for
+  the corpus, particularly for evaluating the causal assumptions underlying the Norwegian Traffic
+  Light System (TLS) which attributes wild salmon lice pressure primarily to farms.
+
+transferability: medium
+transferability_notes: >
+  Pacific salmon species (chum, pink) differ from Norwegian Atlantic salmon and sea trout; coastal
+  BC fjord systems differ from Norwegian fjord ecosystems. However, the fundamental question of
+  farm vs. natural reservoir contribution to wild fish lice burden is directly analogous to the
+  Norwegian situation. The natural experiment design and 8-year time series provide a methodological
+  template of high relevance. Results suggest that the link between farm lice and wild fish infestation
+  may be weaker than assumed in the Norwegian TLS framework.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  This paper provides rare natural experiment evidence bearing directly on Q1 (attribution of lice to
+  aquaculture sources). It is one of very few studies with a sufficiently long time series spanning
+  both presence and complete absence of aquaculture in the same area. The finding of lice rebound
+  post-removal fills a critical gap in the corpus by challenging the farm-attribution assumption
+  that is central to the Norwegian TLS. It should be read alongside its companion paper in Diseases
+  of Aquatic Organisms (DAO) covering the Broughton Archipelago.
+
+related_documents_supporting:
+  - "Jones et al. 2025 (DAO) — Broughton Archipelago companion paper with same finding"
+  - "Jeong et al. 2025 — finds farm lice cannot solely explain wild fish infestations"
+  - "van Nes et al. 2025 — models may overestimate aquaculture contribution to wild fish infestation"
+
+related_documents_contrasting:
+  - "Routledge and Morton 2023 — attributed 96% decline in DI lice (2020-2022) to aquaculture removal"
+  - "Krkošek et al. 2007 — early BC paper attributing wild salmon lice primarily to farm sources"
+  - "Norwegian TLS documentation — relies on assumption that farms are primary driver of wild fish lice"
+
+related_documents_reply_to:
+  - "Routledge and Morton 2023 (implicitly — extends their dataset by 2 years with contradictory result)"
+
+should_be_read_with:
+  - "2025_dao_jones-broughton-lice-unchanged"
+
+retrieval_tags:
+  - "aquaculture_removal"
+  - "natural_experiment"
+  - "sea_lice_attribution"
+  - "wild_salmon_lice"
+  - "Discovery_Islands"
+  - "British_Columbia"
+  - "Pacific_salmon"
+  - "chum_salmon"
+  - "pink_salmon"
+  - "Lepeophtheirus_salmonis"
+  - "Caligus_clemensi"
+  - "farm_lice_contribution"
+  - "natural_reservoir"
+  - "Q1_attribution"
+
+curator_note: >
+  Open access paper (Creative Commons Attribution License). Downloaded via Norwegian Institute of
+  Public Health (Wiley Online Library, accessed 28/05/2025). Short communication format (4 pages).
+  This is a direct challenge to the Routledge and Morton (2023) paper. Published in Journal of Fish
+  Diseases (Wiley). Companion paper: Jones et al. 2025 in Diseases of Aquatic Organisms (DAO).
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"

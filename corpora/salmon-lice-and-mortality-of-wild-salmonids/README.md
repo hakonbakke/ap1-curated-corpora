@@ -47,25 +47,37 @@ Core questions:
 | ID | Title | Year | Type | Q |
 |---|---|---|---|---|
 | 1997_icesjms_dawson-seatrout-salmon-susceptibility | Comparison of susceptibility of sea trout and Atlantic salmon to sea lice | 1997 | research_article | Q4, Q6 |
+| 1998_cjfas_mccormick-smolting-migration | Movement, migration, and smolting of Atlantic salmon | 1998 | review_article | Q4 |
+| 2015_aei_helland-monitoring-lice-challenges | Statistical and ecological challenges of monitoring parasitic salmon lice in wild salmonids | 2015 | methods_paper | Q5, Q10 |
 | 2017_icesjms_forseth-major-threats-norway | The major threats to Atlantic salmon in Norway | 2017 | review_article | Q9, Q10 |
+| 2018_epidemics_kristoffersen-risk-assessment | Quantitative risk assessment of salmon louse-induced mortality (NVI model) | 2018 | risk_assessment | Q2, Q3, Q4, Q5, Q7, Q8, Q10 |
+| 2020_conphys_fjelldal-lice-osmoregulation-salmon | Effects of laboratory salmon louse infection on osmoregulation, growth and survival | 2020 | research_article | Q6, Q7 |
+| 2020_jae_bohn-timing-survival-postsmolts | Timing is everything: Survival of post-smolts during high salmon lice events | 2020 | research_article | Q4, Q8 |
 | 2021_aei_seatrout-risk-assessment | Development of a risk assessment method for sea trout | 2021 | research_article | Q1, Q2, Q3, Q5, Q8 |
 | 2021_icesjms_jansen-comment-vps-mortality | Comment on Johnsen et al. — VPS model validation | 2021 | commentary | Q5, Q7, Q8, Q10 |
+| 2021_icesjms_johnsen-vps-mortality-norway | Salmon lice-induced mortality of Atlantic salmon during post-smolt migration (IMR VPS model) | 2021 | modelling_study | Q3, Q4, Q5, Q7, Q8, Q10 |
 | 2021_rcn_traffic-light-evaluation | An evaluation of the Scientific Basis of the Traffic Light System for Norwegian Salmonid Aquaculture | 2021 | policy_report | Q7, Q8, Q9, Q10 |
 | 2021_rfsa_dadswell-atlantic-salmon-collapse | Decline and Impending Collapse of the Atlantic Salmon Population in the North Atlantic | 2021 | review_article | Q9 |
 | 2022_aei_stige-model-sensitivity-calibration | Modelling salmon lice-induced mortality of wild salmon post-smolts is highly sensitive to calibration data | 2022 | modelling_study | Q5, Q7, Q8, Q10 |
+| 2022_fishes_lamberg-pre-fishery-abundance | Using Merged Pre-Fishery Abundance as a parameter evaluating Atlantic salmon population status | 2022 | methods_paper | Q9, Q10 |
 | 2022_rfbf_gillson-marine-stressors-salmon | A review of marine stressors impacting Atlantic salmon (major threats to English stocks) | 2022 | review_article | Q9 |
+| 2024_ecosphere_hawley-anadromy-lice-mortality-trout | Individual patterns of anadromy determine the cost of salmon lice exposure in brown trout | 2024 | research_article | Q4, Q5, Q7, Q8, Q9 |
+| 2024_ijpara_stige-regional-lice-coordination | Effects of regional coordination of salmon louse control (Nordfjord case study) | 2024 | modelling_study | Q2, Q5, Q8, Q10 |
 | 2024_raq_vannes-critical-review-tls | Salmon lice biology, environmental factors, and smolt behaviour: A critical review | 2024 | review_article | Q1, Q2, Q5, Q7, Q8, Q10 |
 | 2025_aquaculture_gjerde-seatrout-lice-prediction | Prediction of salmon lice density on wild sea trout — cross-validation of Myksvoll et al. (2018) | 2025 | methods_paper | Q5, Q7, Q10 |
+| 2025_dao_jones-broughton-lice-unchanged | Sea lice on chum/pink salmon in Broughton Archipelago unchanged after aquaculture removal | 2025 | research_article | Q1, Q9, Q10 |
 | 2025_jae_jansen-lice-effects-returns | Effects of salmon lice on numbers and size distributions of Atlantic salmon | 2025 | research_article | Q4, Q6, Q9, Q10 |
+| 2025_jfd_jones-pacific-lice-cessation-bc | Wild Pacific salmon lice trends unchanged after aquaculture cessation (Discovery Islands, BC) | 2025 | research_article | Q1, Q9, Q10 |
 | 2025_raq_stige-comment-vannes | Comment on Van Nes et al. (2024) | 2025 | commentary | Q5, Q7, Q8, Q10 |
 | 2025_raq_vannes-response-to-stige | Response to Stige et al. (2025) | 2025 | response | Q5, Q7, Q8, Q10 |
 | 2025_scientificdata_bc-sealice-dataset-2001-2023 | Sea lice infestation dataset — wild and farmed salmon, BC coast 2001–2023 | 2025 | dataset_description | Q1, Q5 |
+| 2016_jfb_jonsson-environmental-change-salmon | Environmental change influences the life history of salmon in the North Atlantic | 2016 | review_article | Q9 |
 | 2026_prslb_folk-parasites-high-host-density | Parasites perform poorly at high host densities — experimental test in salmon louse | 2026 | research_article | Q2, Q6 |
 
 ---
 
 ## Status
 
-`Active — 15 documents (2026-03-27)`
+`Active — 27 documents (2026-06-03)`
 
 See `inclusion_log.md` for curation history.

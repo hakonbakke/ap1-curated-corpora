@@ -1,0 +1,182 @@
+# ======================================================================
+# METADATA
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2022_fishes_lamberg-pre-fishery-abundance
+# ======================================================================
+
+# DEL A - BIBLIOGRAFISK INFO
+title: "Using Merged Pre-Fishery Abundance as a Parameter Evaluating the Status of Atlantic Salmon and Anadromous Brown Trout Populations: A Norwegian Case Study"
+year: 2022
+doi: "10.3390/fishes7050264"
+url: "https://doi.org/10.3390/fishes7050264"
+authors:
+  - "Anders Lamberg"
+  - "Albert Kjartan Dagbjartarson Imsland"
+journal: "Fishes"
+publisher: "MDPI"
+language: english
+source_type: peer_reviewed
+document_type: methods_paper
+abstract_available: yes
+
+# DEL B - KONTEKST OG STUDIEDESIGN
+corpus: salmon-lice-and-mortality-of-wild-salmonids
+
+priority_questions:
+  - "Q9"
+  - "Q10"
+
+causal_chain_stage:
+  - "population-level impact of lice-induced mortality"
+  - "monitoring and validation of management effectiveness"
+
+host_species:
+  - "Salmo salar (Atlantic salmon)"
+  - "Salmo trutta (anadromous brown trout / sea trout)"
+wild_or_farmed_focus: wild
+life_stage:
+  - "adult (returning spawners)"
+  - "smolt (smolt age used for standardization)"
+parasite_species:
+  - "not_specified"
+environment:
+  - "river"
+  - "coastal fjord"
+geography:
+  - "Norway (8 river regions from 58.6N to 69.0N)"
+  - "Bjerkreimselva (Region 1)"
+  - "Frafjord area (Region 2)"
+  - "Hardanger area (Region 3)"
+  - "Sunnfjord (Region 4)"
+  - "Orkla/Trondheimsfjord (Region 5)"
+  - "Nordfjord area (Region 6)"
+  - "Salten (Region 7)"
+  - "Malselva/Troms (Region 8)"
+time_period: "2019"
+seasonality_focus:
+  - "not_specified"
+regulatory_context:
+  - "Norwegian Traffic Light System (TLS)"
+  - "Norwegian Scientific Committee for Salmon Management (VRL)"
+  - "Spawning target (ST) management model"
+evidence_type: methods
+study_design:
+  - "comparative cross-regional methods study"
+  - "multi-river population monitoring"
+data_source:
+  - "underwater video surveillance systems (fish ladders)"
+  - "snorkelling surveys of spawning populations"
+  - "catch statistics"
+  - "hydrogeographic data (river length, area, mean discharge, precipitation field)"
+observation_unit:
+  - "river region (N=8 regions)"
+  - "individual river (N=27 rivers)"
+comparison_type:
+  - "merged PFA (salmon + trout) vs single-species PFA (salmon only)"
+  - "comparison across 8 Norwegian river regions"
+  - "standardized vs raw PFA values"
+outcome_domain:
+  - "pre-fishery abundance (PFA)"
+  - "population status assessment"
+  - "regional variation in salmonid populations"
+primary_endpoint: "Standardised merged pre-fishery abundance (PFA) of Atlantic salmon and anadromous brown trout combined, per river region"
+secondary_endpoints:
+  - "Single-species PFA (Atlantic salmon only)"
+  - "Difference in population status classification between merged and single-species approaches"
+  - "Inter-regional variation in merged PFA"
+
+# DEL C - FUNN OG BEVIS
+evidence_direction: not_applicable
+effect_scale: population_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+  - "Unknown interspecific competition between salmon and sea trout not accounted for in spawning target models"
+  - "PFA estimates from video and snorkelling have variable precision depending on river conditions"
+  - "Catch statistics are subject to variable fishing effort and unknown catchability"
+  - "Spatial straying between rivers (especially sea trout) complicates single-river population definition"
+  - "Data from a single year (2019) limits temporal generalizability"
+key_claims:
+  - "Standardised merged PFA (salmon + sea trout) differed substantially from single-species (salmon only) PFA in classifying regional population status"
+  - "The highest estimated standardised merged PFA across the 8 regions was approximately four times higher than the lowest"
+  - "Differences between the two approaches were mainly driven by variation in the size of sea trout populations across regions"
+  - "Sea trout are largely absent from Norway's national salmon management model despite significant population size variation"
+  - "Both salmon and sea trout stray between rivers, meaning single-river population definitions are an oversimplification"
+  - "Merged PFA standardised by smolt age and hydrogeographic factors offers a more ecologically coherent measure of regional salmonid production"
+claims_about_uncertainty:
+  - "Population development of anadromous brown trout in Norway remains largely unclear despite available monitoring methods"
+  - "The assumption that a salmon population is specific to one river is not always correct based on recent surveillance data"
+claims_about_policy_or_management:
+  - "The merged PFA framework may be a better input for management models than the current one-species (salmon only) spawning target model"
+  - "Merging salmon and trout population data could provide a more sensitive and ecologically valid indicator of the effects of anthropogenic factors including salmon farming"
+  - "If anadromous brown trout can serve as a proxy for lice severity in a fjord system, population growth of trout following lice management improvements would be an important validation signal"
+methodological_limitations:
+  - "Only 2019 data — a single-year snapshot; no time series or trend analysis"
+  - "Eight regions were chosen partly based on data availability, not random selection, which may introduce bias"
+  - "Interspecific competition between salmon and sea trout is unquantified and not modelled"
+  - "The standardisation by smolt age and hydrogeographic factors involves assumptions about comparative productivity"
+  - "The merged PFA concept is proposed but not yet validated against actual population recovery trajectories"
+
+rag_summary: >
+  Lamberg and Imsland (2022) propose using "merged pre-fishery abundance" (PFA) — combining Atlantic salmon and anadromous brown trout (sea trout) population counts — as a more ecologically valid metric for evaluating salmonid population status in Norwegian river regions. Using data from 27 rivers in 8 regions (2019), collected via underwater video, snorkelling, and catch statistics, they standardise merged PFA using river hydrogeography and mean smolt age. The highest standardised regional PFA was approximately four times higher than the lowest. Compared to the conventional single-species (salmon only) approach, the merged PFA revealed a substantially different picture of population status in most regions, with differences largely driven by variation in sea trout population sizes. The authors argue that since sea trout can serve as a proxy for lice severity in fjord systems, monitoring merged PFA could help validate whether management interventions (such as TLS regulations) are achieving conservation goals. Key limitations include single-year data, selective regional coverage, and unquantified interspecific competition.
+
+coi_declared: no
+coi_notes: >
+  No explicit conflict of interest statement found. Anders Lamberg is affiliated with Skandinavisk Naturovervaking (a private environmental consultancy), which may conduct monitoring for regulatory purposes. Albert Imsland is affiliated with Akvaplan-niva and the University of Bergen. No industry funding declared.
+
+# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+consensus_signal: unclear
+quality_signal: moderate
+quality_rationale: >
+  Methodological paper presenting a reasonable and practical framework for improving salmonid population monitoring in Norway. The study uses real monitoring data from 27 rivers across 8 regions, with sensible standardisation methods. However, the analysis is cross-sectional (single year), the regional coverage is convenience-based, and the proposed metric has not been prospectively validated. Published in MDPI Fishes (open access), which has lower impact than specialist fisheries journals; peer review quality is variable. The core methodological proposal is sound and practically motivated.
+
+controversy_role: practical_implications
+
+relevance_signal: medium
+relevance_rationale: >
+  Primarily relevant to Q9 (population-level impacts) and Q10 (TLS robustness). This paper is included not because it directly measures lice-induced mortality, but because it proposes a monitoring framework that could be used to detect whether lice management is actually working at the population level. The suggestion that sea trout could serve as a "lice proxy" — and that their population trends could validate TLS effectiveness — is a valuable conceptual contribution for the synthesis of evidence on TLS robustness.
+
+transferability: medium
+transferability_notes: >
+  The methodological approach (merging multi-species PFA with hydrogeographic standardisation) is in principle applicable across Norwegian salmon management zones. The specific results are limited to 2019 and the 8 selected regions. The concept of using sea trout population trends as a validation signal for lice management is broadly transferable.
+
+# DEL E - RELASJONER OG KURATORKOMMENTARER
+included_because: >
+  The paper fills a gap in the corpus by addressing how we could better measure whether lice management (TLS) is actually achieving population-level conservation goals. By proposing merged PFA as a more comprehensive population metric — one that includes sea trout, which are sensitive to lice but excluded from the TLS — it provides a framework for validating management effectiveness. It complements the mechanistic studies (e.g., Hawley et al. 2024, Johnsen et al. 2021) by addressing the population monitoring side of the evidence chain.
+
+related_documents_supporting:
+  - "2024_ecosphere_hawley-anadromy-lice-mortality-trout"
+  - "Johnsen et al. 2021 (lice-induced mortality Atlantic salmon)"
+
+related_documents_contrasting:
+  - "Studies using single-species (salmon-only) population models for TLS evaluation"
+
+related_documents_reply_to: []
+
+should_be_read_with:
+  - "2024_ecosphere_hawley-anadromy-lice-mortality-trout"
+  - "Helland et al. 2015 (statistical challenges of evaluating lice impacts on wild salmonids)"
+
+retrieval_tags:
+  - "pre-fishery abundance"
+  - "PFA"
+  - "population monitoring"
+  - "Atlantic salmon"
+  - "sea trout"
+  - "anadromous brown trout"
+  - "Norway"
+  - "river regions"
+  - "spawning target"
+  - "TLS validation"
+  - "population status"
+  - "salmon management"
+  - "underwater video"
+  - "snorkelling survey"
+  - "interspecific competition"
+  - "smolt age standardisation"
+
+curator_note: >
+  Open access article (CC BY, MDPI). This is a methodological/monitoring paper, not a lice-impact study per se. Its value for this corpus is conceptual: it demonstrates the inadequacy of single-species salmon monitoring for evaluating the full suite of anthropogenic impacts on wild salmonids, and proposes a concrete, practical alternative. The suggestion that sea trout population trends could be used as a validation signal for lice management effectiveness has not yet been formally tested but is an important research agenda item.
+
+curator_review_status: pending
+added_by: "Claude"
+added_date: "2026-06-03"
