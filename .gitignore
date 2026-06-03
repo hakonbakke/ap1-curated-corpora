@@ -4,6 +4,7 @@
 # Large archive files
 *.zip
 *.docx
+*.pptx
 
 # App secrets (set in Streamlit Cloud UI)
 .env
@@ -17,4 +18,8 @@ venv/
 
 # App data (generated locally, committed after ingest)
 # data/ is intentionally committed — remove this line if you want to exclude it
+
+# Local conversion / extraction scratch (not part of corpus)
+_odl_output/
+_tmp_extracts/
 

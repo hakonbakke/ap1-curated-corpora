@@ -7,6 +7,8 @@ University of Stavanger.
 Each corpus addresses a distinct but related analytical question about salmon
 aquaculture and its interactions with fish health, welfare, and wild populations.
 
+**For current project state, app setup, and agent handoff:** read [`STATUS.md`](STATUS.md) first.
+
 ---
 
 ## Repository structure
@@ -15,6 +17,7 @@ aquaculture and its interactions with fish health, welfare, and wild populations
 ap1-curated-corpora/
 │
 ├── README.md               ← this file
+├── STATUS.md               ← current state, blockers, next steps (read first for agents)
 ├── Context.md              ← problem statement and project rationale
 ├── METHOD.md               ← methodological principles (Honest Broker approach)
 ├── CORPUS_CRITERIA.md      ← rules governing document inclusion
@@ -88,5 +91,7 @@ capture evidence dimensions specific to its domain.
 This repository is a **working MVP**. All corpora are incomplete and will
 be expanded iteratively. Contributions, critiques, and suggested documents
 are welcome via Issues.
+
+Operational detail (corpus count, Streamlit app, known issues, priorities) lives in [`STATUS.md`](STATUS.md) and should be updated as work progresses.
 
 > The corpus is the infrastructure. The AI is a query layer on top of it.

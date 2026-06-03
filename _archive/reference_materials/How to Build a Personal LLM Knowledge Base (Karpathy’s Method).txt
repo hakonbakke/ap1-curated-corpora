@@ -1,0 +1,349 @@
+00:00 A few days ago, Andrej Karpathy,
+00:02 who is one of the early members of OpenAI
+00:04 and literally coined the term vibe coding,
+00:07 posted a Tweet that got 14
+00:08 million views in 72 hours.
+00:10 And when Lex Friedman saw it, he replied
+00:13 and said, I do the exact same thing.
+00:16 So what are two of the smartest people
+00:17 in AI doing with their time right now?
+00:19 And the answer is that they are
+00:21 building personal LLM knowledge bases.
+00:24 I've also heard this called an AI second
+00:26 brain, but it is an AI maintained
+00:28 wiki that grows over time.
+00:30 You can ask complex questions against
+00:32 it and it never forgets anything.
+00:34 So it gets stronger over time.
+00:35 And they do the whole thing using just
+00:37 Obsidian, Claude and your
+00:39 local computer files.
+00:40 And in this episode, I'm gonna
+00:41 show you exactly how to build one.
+00:43 Because if the smartest people in AI are
+00:45 doing this, we probably should be too.
+00:47 So before I show you the tutorial,
+00:49 let me walk you through how this
+00:50 thing works at a high level.
+00:51 Cause once you understand the concept,
+00:53 the tutorial will make way more sense.
+00:55 There's three phases.
+00:56 Collect, compile, and query.
+00:58 Step one is collect.
+00:60 You find the best content on the topic
+01:02 that you want to get smarter about.
+01:04 The example that I'm going to use
+01:05 for the tutorial is lifting for hypertrophy.
+01:07 So building muscle, because that's something
+01:09 I let slip over the past few months,
+01:10 but I'm getting back into now
+01:11 and really want to optimize it.
+01:13 And the thing is,
+01:13 LLMs know a lot of information,
+01:16 but it's sort of an aggregate
+01:18 of what is generally agreed upon.
+01:20 And so if you want cutting edge research or
+01:22 more niche information,
+01:24 it's harder to get that from an LLM.
+01:25 So you find the best content
+01:27 on the topic that you're interested in.
+01:29 You can pull from YouTube transcripts,
+01:31 substacks, podcast transcript research
+01:33 summaries, and then you save them
+01:35 all into a folder on your computer.
+01:37 The tool that they use for this and I will
+01:39 also be using is the Obsidian Web Clipper,
+01:41 which makes it really easy to save any
+01:43 of this information into
+01:45 a file on your computer.
+01:46 So these are your raw ingredients.
+01:48 You're not organizing anything yet,
+01:50 just collecting.
+01:51 Phase two is compile.
+01:53 You take everything in that folder and you
+01:55 hand it to Claude, you give it a specific
+01:57 prompt and I'll show you the one I use.
+01:59 And then Claude reads every file
+02:00 and creates a structured wiki.
+02:02 So it's a set of interconnected markdown
+02:05 files where each one is linking to other
+02:07 relevant ones and broken down by concept.
+02:10 To view and navigate that wiki,
+02:11 we will use Obsidian, which,
+02:13 if you don't know,
+02:14 sort of like a note taking and mind mapping
+02:17 tool that's really popular,
+02:18 but it is especially good at allowing you
+02:20 to read documents in a really
+02:22 clean and beautiful way.
+02:23 Think of Claude as the one
+02:24 building and maintaining the wiki.
+02:26 It's sort of like your librarian.
+02:28 And then Obsidian is the tool
+02:29 that you use to look at it.
+02:31 Phase three is query.
+02:33 So now that we have the wikis built,
+02:34 you go back to Claude, point it at the wikis
+02:36 and start asking complex questions.
+02:38 So not just what did X
+02:40 person say about this topic?
+02:42 But what's the actual debate between all
+02:44 of the sources in my wiki around this topic?
+02:47 Or what are the gaps
+02:49 in my knowledge right now?
+02:50 And then every time you find something new,
+02:52 you can just drop it into the wiki.
+02:54 You can add your own thoughts or information
+02:56 in there, tailor it as needed,
+02:58 then down the line you've got something
+02:60 insanely valuable that grows with you.
+03:03 So now let's jump into the tutorial.
+03:05 Step one is downloading Obsidian.
+03:07 So just type it in,
+03:09 click the first link and download.
+03:12 Once that's installed, we'll open it up
+03:15 in the onboarding flow.
+03:16 It will ask you to create a new vault.
+03:19 So we'll hit create, and then this is
+03:22 where we're going to give our vault a name.
+03:23 Typically, people use the name raw as your
+03:26 raw files that you're
+03:27 inputting everything into.
+03:28 And then you'll pick a location on your
+03:30 computer to put this and they'll hit create.
+03:32 So now we have our new vault and we don't
+03:34 have to do anything here just yet because we
+03:37 are going to compile information and put it
+03:39 into that vault or that folder
+03:41 that we just created.
+03:42 Now the next thing we're going to do is go
+03:43 to the Chrome web store and download
+03:46 the Obsidian Web Clipper.
+03:48 So this one here.
+03:48 And now we are going to start
+03:50 gathering information.
+03:52 So I would start with a topic you're really
+03:54 interested in, one that you
+03:55 want to learn and grow.
+03:56 Like I said, for me, that is hypertrophy,
+03:58 building muscle as efficiently as possible.
+04:00 So, for example, here I pulled up a podcast
+04:03 transcript of an interview
+04:05 with Dr. Andy Galpin,
+04:06 who is like a muscle building expert.
+04:08 He was on the Huberman Lab podcast.
+04:10 So I've got this.
+04:10 I'm just going to click the little Obsidian
+04:12 web Clipper and I'm going
+04:13 to hit add to Obsidian.
+04:15 Boom.
+04:15 Now I have that one in here.
+04:16 If there's something that you would rather
+04:18 download as opposed to clipping,
+04:20 you can just download it,
+04:21 find where it was downloaded to and then
+04:23 move it into that Obsidian folder.
+04:25 So here I'm moving it into the raw folder.
+04:27 So that's how you add information.
+04:29 Now I'm going to fast forward here
+04:30 through me adding a bunch of this stuff.
+04:32 But this is a very key
+04:34 phase as we talked about.
+04:35 So spend some time here finding the best
+04:37 resources, the things that you want
+04:39 to pull from and adding them into Obsidian.
+04:42 And then one nice tip if you want to grab
+04:44 YouTube videos is YouTube does have built
+04:47 in transcripts, so just go to whatever video
+04:49 that you want,
+04:50 scroll down in the description here
+04:53 and then you'll see this, the transcript.
+04:55 So just click show transcript and then you
+04:57 can just highlight this whole thing here,
+04:59 copy this and then create a new text file
+05:02 and save that in your raw file
+05:05 with the transcript of the video.
+05:07 So now I've compiled a bunch
+05:09 of resources you don't need a ton.
+05:12 I would say start with 10 really solid
+05:14 resources rather than trying
+05:15 to get a hundred right off the bat.
+05:17 Remember, you can always add more.
+05:19 Now that we have all of that information,
+05:21 we're going to go into Claude code.
+05:24 So you will need claude code or cloud cowork
+05:27 for this, which does cost $20
+05:29 a month for the monthly plan.
+05:30 I'm going to paste in this prompt.
+05:33 Now I will link to a prompt that is more
+05:34 general and has fill in the blanks that you
+05:36 can apply it to your specific use case.
+05:39 But this one illustrates
+05:40 the point just fine.
+05:42 So I have a folder of raw
+05:43 sources from four experts.
+05:45 These guys here
+05:47 read all of these and build me a structured
+05:48 wiki organized by concept,
+05:50 not by source or person.
+05:51 So then for each major concept,
+05:53 write a standalone article that does this,
+05:55 summarize what the evidence says,
+05:56 notes where people disagree,
+05:58 flags when they disagree, and why,
+05:60 and then links to related articles.
+06:02 Also create an index MD file that lists
+06:05 every article so that you know,
+06:06 you can go back and reference these.
+06:08 Now we are going to select our folder.
+06:11 So we're going to click this raw folder
+06:14 where we have everything
+06:15 and then we're going to hit enter.
+06:17 You'll have to allow things
+06:18 as it goes through this.
+06:21 Now the real question is, what do you
+06:22 do while you're waiting for cloud code?
+06:24 If anybody figured out a good
+06:26 answer for that, let me know.
+06:28 Okay, we are done.
+06:30 So this took about 20 minutes, 32.1k tokens.
+06:35 I did have some pretty long files in there.
+06:38 They're pretty wordy.
+06:39 Yours might be shorter.
+06:40 So now you can see
+06:41 in the Bends Obsidian folder.
+06:42 If we go into Raw, we have our wiki,
+06:44 we have all of these markdown files
+06:46 of the key things that we asked about.
+06:50 So now if we go into Obsidian and we'll do
+06:52 file and open Vault,
+06:55 we'll choose to open this wiki folder.
+06:58 Now you can see on the left here we have all
+07:00 of these files with the key concepts
+07:04 that we wanted to learn about.
+07:05 So this is pretty cool.
+07:06 We've got body recomposition,
+07:07 calorie and surplus, hypertrophy mechanisms,
+07:10 strength versus hypertrophy,
+07:12 sleep and recovery.
+07:14 This is awesome.
+07:15 And then we have the index file
+07:17 that has all of the key articles here.
+07:20 It talks about progressive overload.
+07:21 If you want to understand the single most
+07:23 important training principle,
+07:24 body recomposition,
+07:25 if you want to build muscle and lose fat
+07:27 at the same time, then it breaks
+07:29 down everything into these articles.
+07:31 This is sweet.
+07:32 Another cool thing with Obsidian is they
+07:34 have a graph view where you can see how all
+07:36 of these things, things are interconnected.
+07:39 So for example, body recomp is tied heavily
+07:41 to genetics and age, sleep and recovery,
+07:44 calorie, surplus, macronutrient, et cetera.
+07:47 Honestly, sometimes I think this looks
+07:48 cooler than it really is helpful.
+07:50 But depending on who you are,
+07:52 how advanced you are with your usage,
+07:54 it can be really cool to see
+07:55 how things string together.
+07:56 But this isn't even the end of it.
+07:58 If we go back to Claude code now,
+08:01 we can query and ask it
+08:03 questions based on the wiki.
+08:06 So now I'm going to ask it something like,
+08:08 based on the information in my wiki,
+08:11 what is the most important
+08:13 variable for hypertrophy,
+08:15 how do I optimize it, and where do
+08:17 my four sources agree versus disagree?
+08:20 And then we just have to make sure that we
+08:22 change the file to that actual wiki file.
+08:25 So go in here and change it to the wiki.
+08:27 And one of the great things about having
+08:29 the wiki and specifically the index
+08:31 in the wiki is, is that it's way easier,
+08:33 quicker and more efficient
+08:34 to get the information.
+08:35 So you're not going to use a bunch
+08:36 of tokens once you have the index built out.
+08:39 So saying the most important variable,
+08:41 mechanical tension, is unambiguous.
+08:44 They all agree that mechanical tension
+08:45 is the primary driver of hypertrophy.
+08:48 Progressive overload is the meta principle.
+08:50 It's how you ensure mechanical
+08:51 tension keeps increasing over time.
+08:53 Sources call it non negotiable.
+08:54 So this is, this is awesome.
+08:56 Great answer.
+08:57 But then another one that I really like
+08:58 to ask is where are the gaps in my wiki?
+09:01 What knowledge is underrepresented that I
+09:04 should be learning about more
+09:05 or should include more of?
+09:07 So this basically allows you to self improve
+09:10 your wiki, you can ask what information is
+09:13 missing from it and then it'll
+09:15 suggest things to add in.
+09:16 So what does it say?
+09:17 Wiki is genuinely strong on fundamentals,
+09:19 but the gaps are mostly in application
+09:21 troubleshooting and specialization.
+09:23 So no decision tree
+09:24 for debugging stalled progress.
+09:25 That's a cool one.
+09:25 Deloading strategies is a pretty cool idea
+09:27 and advanced intensity techniques so things
+09:28 like drop sets, rest, pause,
+09:29 my rep, supersets, etc.
+09:30 Yeah, so all of this,
+09:32 all of this makes sense, but again,
+09:33 great one to throw in consistently
+09:35 and then build on this one.
+09:37 Cool use case here is Lex Friedman has said
+09:39 that he's taken this and then fed it
+09:41 into voice mode so that when he goes on long
+09:43 runs he can chat with his
+09:45 wiki about key information.
+09:46 He could even try explaining something.
+09:49 This is like the Feynman technique,
+09:50 if you've ever heard of that,
+09:51 and see what the wiki says he's missing.
+09:54 Where is he not understanding
+09:55 something in his explanation?
+09:57 So I hope this is helpful.
+09:58 I really think this idea is going to be very
+09:60 popular in the next few months and years,
+10:02 so it makes sense to jump on the train now
+10:04 and use it to acquire knowledge
+10:06 and improve your life.
+
+Description of video: In this video I'll show you exactly how to build an AI-maintained personal LLM knowledge base, (often called an AI second brain) on any topic with no coding required. It’s the exact same method used by Andrej Karpathy (who popularized it) and Lex Fridman. You'll walk away knowing how to collect sources, get Claude to compile them into a structured personal wiki, and query it to get answers no single article could give you. And I’ll show you in real time how to build one using a real hypertrophy wiki I made to help me build muscle as fast as possible.
+
+This isn't about pasting things into ChatGPT. This is a completely different way to use AI, where Claude reads all your sources and writes you a personal Wikipedia that grows over time, lives on your computer, and never forgets anything.
+
+What you'll learn:
+
+What Andrej Karpathy's LLM Knowledge Base actually is (explained for non-technical people)
+The three-phase workflow: Collect → Compile → Query
+How to set up Obsidian and Obsidian Web Clipper for free
+The exact prompt I use to compile a wiki from raw sources
+How to query your wiki to get answers no single article could give you
+Why this beats just asking ChatGPT every time
+
+Tools used in this video (all free except Claude Code):
+
+Obsidian — http://obsidian.md/
+Obsidian Web Clipper — browser extension
+Claude — claude.ai
+Claude Code — for accessing local files
+
+Link to the prompt to create the wiki:
+
+https://benstevenson.notion.site/Wiki...
+
+I also created a free prompt pack with 25 of the best prompt to use with your wiki. These help you learn more, improve the wiki, find gaps in your knowledge, and hone your thinking skills about the topic. You can get it here: 
+https://ben-stevenson.kit.com/llmwiki 

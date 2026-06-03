@@ -1,20 +1,44 @@
 # Archive
 
-This folder contains earlier experimental work that is no longer part of the active pipeline.
-Files are kept for reference and reproducibility documentation.
+Earlier experiments and duplicate bundles that are **not** used by the active Streamlit app (`app/app.py`) or `scripts/ingest.py`.
+
+## Active pipeline (for reference)
+
+The app reads only:
+
+- `corpora/salmon-lice-and-mortality-of-wild-salmonids/documents/<doc_id>/metadata.yaml`
+- `corpora/salmon-lice-and-mortality-of-wild-salmonids/documents/<doc_id>/summary.md`
+- `data/corpus.parquet` (built by `python scripts/ingest.py`)
+
+---
 
 ## `phase1_experiment/`
 
-NotebookLM phase 1 testing (March 2026). Compared PDF-only vs curated metadata+summaries
-vs generic ChatGPT on Q1–Q3-style questions. Raw outputs documented in
-`Test_phase1_ap1_extracted.txt` and `Test_phase1_ap1.docx`.
+NotebookLM phase 1 testing (March 2026). Compared PDF-only vs curated metadata+summaries vs generic ChatGPT. Includes `Test_phase1_ap1_extracted.txt`, `phase1_notebooklm_full/`, `phase1_notebooklm_md/`.
 
-The `phase1_notebooklm_full/` and `phase1_notebooklm_md/` folders were the input bundles
-uploaded to NotebookLM for that experiment.
+---
 
 ## `ragie/`
 
-Ragie.ai integration (March 2026). Ragie was used as a managed RAG service.
-The partition `ap1-curated-summaries` was populated via the upload script.
-Superseded by the local Streamlit app (`app/`) which gives full control
-over retrieval, metadata filtering, and synthesis prompts.
+Ragie.ai managed RAG (superseded by local app).
+
+| Path | Contents |
+|------|----------|
+| `RAGIE_PARTITION_AP1_CURATED_SUMMARIES.md` | Upload instructions |
+| `upload_ap1_curated_summaries_to_ragie.py` | Ragie API upload script |
+| `SUMMARY_GENERATION_INSTRUCTIONS.md` | Template for `*.summary.md` Ragie bundle |
+| `retrieval_summaries_bundle/summaries/` | 15 × `*.summary.md` (duplicate of retrieval text; **not** read by ingest) |
+
+To improve the live app, edit `documents/*/metadata.yaml` (`rag_summary`, `key_claims`) and `documents/*/summary.md`, then re-run ingest.
+
+---
+
+## `benchmark/`
+
+`benchmark_protocol_v1.md` — pilot comparison plan (ChatGPT, NotebookLM, Ragie). Not loaded by the app; useful when running a formal evaluation.
+
+---
+
+## `reference_materials/`
+
+`reference_materials/` — methodology notes (e.g. Karpathy knowledge-base transcript). Not part of the evidence corpus.
