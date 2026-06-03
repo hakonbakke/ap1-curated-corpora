@@ -25,9 +25,9 @@ Two linked models are used:
 
 ### Scale of the problem in Nordfjord
 
-- Recent average modelled **post-smolt mortality ~20%** — about **double** the green-light target.  
-- Relationship between total **spring adult female lice** on farms and mortality is approximately **linear** in this system.  
-- Reaching green light therefore requires roughly **halving** spring adult females, to about **0.3 million** in the study area.
+- Recent average modelled **post-smolt mortality ~20%** — about **double** the green-light target (<10%).  
+- Linear VPS regression (2012–2022): **~0.3 million** spring adult females (weeks 16–21, 19 farms) ≈ 10% mortality.  
+- Historic mean spring lice **1.36 million** adult females; zonation scenario **1.20 million** (−12%) but even-year spring **1.06 million** vs odd-year **0.06 million**.
 
 ### Coordinated production and fallowing (“zonation”)
 
@@ -40,12 +40,11 @@ Two linked models are used:
 
 Scenarios included coordinated **lice skirts** (50% larval blocking), **spring treatments** (98% efficacy), **lower treatment thresholds**, **shorter cycles**, and variants of **larger smolt stocking**, **closed/semi-closed units**, and **downscaled biomass**.
 
-- **Skirts, thresholds, and zonation alone** did not reliably keep spring lice below ~0.3 million in **even years**.  
-- **Coordinated powerful spring treatment** could reach the threshold briefly but **not through summer** (relevant for **sea trout** residency — Finstad et al. 2021).  
-- **Lasting** acceptable spring levels in even years required measures that **reduced open-cage salmonid density**, especially:  
-  - **Stocking at ≥1 kg** (shorter exposure), and/or  
-  - **Closed production** on a large share of farms (>50% in random subsets; strategic site choice could lower that — Urke et al. 2021; Qviller et al. 2024).  
-- **50% downscaling** of fish numbers was **less effective** than replacing open cages with closed systems, because closed systems increase **distance between open farms** (Aldrin et al. 2019).
+- **Skirt all** (−29% lice, 0.84 M spring even years) and **zonation alone** insufficient for even years.  
+- **Week 15, 98% treatment**: spring lice **0.37 M** (−66%); **week 12 98% + 0.1 threshold**: **0.42 M** spring, **0.34 M** weeks 13–39 — still marginal vs 0.3 M goal.  
+- **Stock 1 kg**: spring even-year lice **0.27 M** (−75%, below goal); treatments −23%.  
+- **Closed half** of farms: **0.40 M** spring (−63%); **50% downscale** per farm: **0.48 M** (−54%) — less effective than closed units (increased inter-farm distance).  
+- **89%** of infestation pressure originated within the 19-farm study area; **100** stochastic simulation replicates per scenario.
 
 ---
 

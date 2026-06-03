@@ -12,7 +12,7 @@
 
 This short communication reports a longitudinal observational study examining sea lice infestations on juvenile wild Pacific salmon in the Discovery Islands (DI) region of coastal British Columbia, Canada, across 2017–2024. The study was designed to determine whether the removal of Atlantic salmon aquaculture from the area influenced sea lice levels on wild chum salmon (*Oncorhynchus keta*) and pink salmon (*O. gorbuscha*). All 15 Atlantic salmon netpen facilities in the study area were removed between 2020 and 2022, with zero production recorded from 2022 onwards — creating a natural experiment.
 
-Methods followed standardised DFO beach seine protocols: up to 30 fish per species per site were collected at 16 sites, euthanized, and subjected to full microscopic examination of all sea lice, identified to species (*L. salmonis* and *C. clemensi*) and developmental stage. A total of 5,967 juvenile salmon were examined over the 8-year period (3,481 chum, 2,486 pink). Infestations were described as prevalence (proportion infested) and mean abundance (lice per fish examined). Atlantic salmon farm biomass was estimated from official records (end-of-May closing biomass) for each study year.
+Methods followed DFO Broughton Archipelago beach-seine protocols (Hargreaves et al. 2004): up to 30 fish per species per site per month at **16 Discovery Islands sites** (Figure 1), frozen on dry ice, examined at BC-CAHS (Campbell River) with microscopic ID to species (*L. salmonis*, *C. clemensi*) and stage (copepodid, chalimus, pre-adult, adult). **5,967** juvenile salmon examined (3,481 chum, 2,486 pink), 2017–2024. Farm biomass = end-of-May closing biomass at **15 in-study-area Atlantic farms** (adjacent active farms excluded); **0 MT from 2022** after phased removals (2020–2022); two Chinook farms inactive since fall 2022.
 
 The paper explicitly positions itself as an extension of Routledge and Morton (2023), who had attributed a 96% decline in sea lice abundance between 2020 and 2022 to the removal of aquaculture in the DI region. The present study adds the 2023 and 2024 survey data to test whether that attribution was correct.
 
@@ -20,15 +20,19 @@ The paper explicitly positions itself as an extension of Routledge and Morton (2
 
 ## Main findings
 
-- **Lice infestations persisted and rebounded after aquaculture removal.** In 2024, with zero Atlantic salmon production in the study area since 2022, lice prevalence on pink salmon exceeded all values measured between 2017 and 2019. Mean abundance on chum salmon in 2024 (0.15 ± 0.02) was greater than in both 2017 (0.09 ± 0.01) and 2018 (0.06 ± 0.01).
+- **Lice infestations persisted and rebounded after aquaculture removal.** In 2024, with zero Atlantic salmon production (0 MT farm biomass) since 2022, pink salmon mean total abundance (0.18 ± 0.03) exceeded all 2017–2019 values; chum salmon (0.15 ± 0.02) exceeded 2017 (0.09 ± 0.01) and 2018 (0.06 ± 0.01).
 
-- **Year-to-year variability was high across the entire time series.** Prevalence on chum salmon ranged from 2.9% (2023) to 26.9% (2019); on pink salmon from 0% (2023, no lice detected) to 17.1% (2020). Mean abundance on chum ranged from 0.04 (2023) to 0.39 (2019).
+- **Farm biomass and lice levels decoupled post-2022.** Atlantic salmon biomass peaked at 18,126 MT (2020, 9 active facilities) then fell to 0 MT from 2022, yet 2024 lice levels rebounded — authors argue reported biomass did not adequately represent source infestation magnitude.
 
-- **The short-term decline (2020–2023) was not maintained.** The initial decline in lice in 2021–2023 was consistent with a temporal trend also attributable to environmental variability, but the 2024 rebound — in the continued absence of aquaculture — demonstrates that the pattern is not driven by farm removal alone.
+- **Year-to-year variability was high.** Chum prevalence 2.9% (2023) to 26.9% (2019); pink 0% (2023, no lice of either species detected) to 17.1% (2020). Chum mean total abundance ranged 0.04 (2023) to 0.39 (2019); pink 0 (2023) to 0.30 (2020).
 
-- **Both species showed similar rebound patterns in 2024**, with L. salmonis and C. clemensi individually exhibiting increases on both host species, emphasising the role of environmental factors and natural reservoir hosts.
+- **The short-term decline (2020–2023) was not maintained.** Replicates Routledge & Morton (2023) on reduced lice 2020–2022, but 2024 rebound under continued zero aquaculture implicates environmental variability and natural reservoirs.
 
-- *L. salmonis* comprised 57.3% (range: 25.0–74.2%) of all lice on chum salmon and 44.2% on pink salmon (range: 22.7–61.4%) across the study period.
+- *L. salmonis* comprised 57.3% of all lice on chum (25.0–74.2% by year) and 44.2% on pink (22.7–61.4%). Northwesterly juvenile migration and water flow reduce likelihood that two adjacent active farms contributed to observed infestations.
+
+### Conflict of interest (from paper)
+
+Lance Stewardson has an **ongoing annual contract** with Cermaq Canada, Grieg Seafood BC, and MOWI Canada West for wild juvenile salmon lice sampling (licence/certification). Grieg, MOWI, and Cermaq also provided biomass and monitoring data. Interpret attribution findings with this transparency in mind.
 
 ---
 

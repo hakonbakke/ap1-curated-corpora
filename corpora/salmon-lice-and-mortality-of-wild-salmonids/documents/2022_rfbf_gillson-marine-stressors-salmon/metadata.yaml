@@ -114,11 +114,11 @@ main_uncertainty_sources:
   - parameter_uncertainty
 
 key_claims:
-  - "Climate change and predation are identified as the largest current threats to English Atlantic salmon stocks and are projected to expand over the next decade."
-  - "Poor water quality and bycatch are classified as high-impact but stabilised stressors for English stocks."
-  - "Salmon mariculture (including sea lice) is classified as a relatively low-impact stressor for English stocks, due to limited salmon farm proximity to English rivers."
-  - "The 2D classification framework (Forseth et al. 2017) applied to English stocks produces substantially different threat rankings than the Norwegian context, illustrating strong geographic dependency of threat prioritisation."
-  - "Marine survival has declined markedly (<5% of smolts now survive to return as adults), with the causes poorly understood."
+  - "Climate change and predation are the dominant expanding high-impact marine stressors for English Atlantic salmon (42 principal rivers, 4 regional marine plan areas, 2018 classification)"
+  - "Poor water quality and bycatch are high-impact but stabilised (mitigation available); salmon fisheries exploitation is no longer important due to exploitation controls (no commercial take since 2019)"
+  - "Salmon mariculture (sea lice, escapes) is a stabilised LOW-impact stressor for England — near-absence of farms in English nearshore waters; contrasts with Norway where lice/escapes rank as top expanding threats (Forseth et al. 2017)"
+  - "Global farmed salmon ~1.5 million t in 2018 (Norway 81%, Scotland 10%); England has negligible production — location-specific severity is the main lesson for TLS transferability"
+  - "Post-smolt lice mortality can reduce adult returns 0.6–39% near farms (review cites Gargan, Krkošek, Skilbrei), but this pathway is ranked low for English stocks specifically"
 
 claims_about_uncertainty:
   - "The relative importance of different marine stressors on survival remains poorly understood, as mortality is difficult to directly observe at sea."
@@ -133,7 +133,7 @@ methodological_limitations:
   - "Quantitative data on several marine stressors (especially predation, artificial light) are limited; classifications involve expert judgment."
 
 rag_summary: >
-  Gillson et al. (2022) present a comprehensive review of marine stressors affecting Atlantic salmon and apply the semi-quantitative 2D threat classification system (developed by Forseth et al. 2017 for Norway) to English salmon stocks. For English rivers, climate change and predation emerge as the dominant expanding threats, while salmon mariculture is classified as low-impact due to limited farm proximity. This contrasts with Norway, where lice from farms and escaped salmon are ranked as the top expanding population threats. The paper demonstrates that the relative importance of aquaculture-related lice impacts is highly context-dependent, varying substantially with local aquaculture density and geography.
+  Gillson et al. (2022, Rev Fish Biol Fisheries 32:879–919) review 13 marine stressors for Atlantic salmon and apply Forseth et al. (2017) 2D classification to 42 English rivers (4 marine plan areas, 2018). Expanding high impact: climate change, predation. Stabilised high: water quality, bycatch. Stabilised low: salmon mariculture (lice/escapes/genetic introgression) and fisheries — farms absent from English coast; Norway produces 81% of NE Atlantic farmed salmon. Review notes post-smolt lice can cut returns 0.6–39% where farms exist. Crown copyright; CEFAS/Environment Agency authors. Core corpus value: geographic context-dependence of farm-lice as population threat (Q9/Q10).
 
 coi_declared: no
 
@@ -198,12 +198,7 @@ retrieval_tags:
   - "salmon mariculture"
 
 curator_note: >
-  [UNVERIFIED: Del D og E] The English context differs sharply from Norway (no major salmon farming near English rivers). Expert should confirm whether the relevance to the Norwegian corpus question is primarily methodological/comparative rather than direct evidence.
-
-
-# ======================================================================
-# KURATERSTATUS
-# ======================================================================
+  ODL refresh 2026-06-03 from extracted.md. Comparative review — English 2018 threat scores; mariculture stabilised-low vs Norway high. 250+ refs; 13 stressors scored 0–3 on effects and development axes.
 
 curator_review_status: pending
 added_by: Claude

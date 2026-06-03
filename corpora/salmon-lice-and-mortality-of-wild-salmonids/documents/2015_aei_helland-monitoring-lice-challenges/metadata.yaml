@@ -100,11 +100,11 @@ main_uncertainty_sources:
   - "Salmon migration timing uncertain — gill-net trout data used as proxy for salmon exposure"
   - "Uneven sampling effort across sites and years"
 key_claims:
-  - "Farm infestation pressure (mean female lice x number of farmed fish) significantly increases the probability of lice infestation in wild salmonids even after correcting for temperature and salinity"
-  - "Probability of infestation increases with fish body length, farm infestation pressure and temperature, and decreases with freshwater influence"
-  - "Significant interaction between temperature and farm infestation pressure: when farm pressure is low, temperature strongly increases infestation probability; as farm pressure increases, temperature becomes relatively less important"
-  - "Dataset of 4890 individual fish from 41 sites in 15 fjords (2004-2010) shows dominant role of Lepeophtheirus salmonis (99%) with Caligus elongatus at low abundance (1%)"
-  - "Zero-inflation in lice count data is a major statistical challenge that must be addressed in monitoring programme design and analysis"
+  - "Binary GLMM (N=4890 fish, 244 occasions, 52 fjord×year random groups): lice presence increases with fish length (+0.003 mm⁻¹), farm infestation pressure (+1.245 on standardized IP), temperature (+0.314), and decreases with freshwater influence (−134.1); T×IP interaction −0.075 (all p<0.001 except where noted)."
+  - "Farm pressure remains significant after temperature correction—first Norwegian demonstration that aquaculture pressure elevates wild infestation probability with environmental covariates in the model."
+  - "Proportional models (>0.025, >0.05, >0.1 lice g⁻¹ on trout <200 g, N=2250): temperature and freshwater effects robust; farm pressure significant only at 0.025 lice g⁻¹ threshold (p=0.016), not at 0.05 or 0.1."
+  - "Monitoring 2004–2010: 4610 trout + 280 char, 41 sites, 15 fjords; 66% chalimus, 17% pre-adults, 16% adults; 99% L. salmonis; 39% zero lice, 9% one louse, max 586 fish⁻¹; ZINB models on counts failed to converge."
+  - "Programme shifted after Helland et al. (2012) report: from 2013 fewer sites, fyke nets (live catch), four model fjords with richer environmental data."
 claims_about_uncertainty:
   - "Monitoring programmes using standard count data may have insufficient statistical power to detect moderate changes in lice levels without large sample sizes"
   - "Choice of infestation measure (prevalence vs. abundance vs. intensity) affects conclusions — results are qualitatively consistent but quantitatively different"
@@ -114,31 +114,18 @@ claims_about_policy_or_management:
   - "Sampling designs should account for zero-inflation and overdispersion to ensure adequate statistical power"
   - "Inner-fjord 'control' sites protected from farming provide useful reference points but may still be affected by lice dispersal from outer fjord farms"
 methodological_limitations:
-  - "Gill-net sampling captures sea trout and char, not Atlantic salmon post-smolts directly"
-  - "Temperature data at county resolution introduces spatial measurement error"
-  - "Salinity only approximated via river discharge proxy"
-  - "Unequal sampling intensity across years and sites limits temporal trend analysis"
-  - "Cross-sectional monitoring data cannot establish causality without experimental controls"
+  - "Gill-net mortality sampling—95% sea trout/char proxy for salmon post-smolt exposure; sites increased from 6 (2004) to 27 (2010) with uneven replication (7 sites >10 occasions)."
+  - "Temperature: monthly county means from lusedata.no (lagged 1 month); salinity only river-discharge proxy without temporal variation."
+  - "Farm IP: kernel density 40 km radius on mature female lice × reported farm fish (Jansen et al. 2012); inner–outer fjord gradients confound IP, temperature and salinity."
+  - "Zero-inflated count models (ZIP/ZINB) did not converge for per-fish lice counts; proportional thresholds lose observations (N=159 occasions)."
+  - "Cannot separate true vs false zeros (recent freshwater residency); observational design limits causality."
 
 rag_summary: >
-  Helland et al. (2015) analysed data from the Norwegian national salmon lice monitoring programme
-  (2004-2010) comprising 4890 individual wild salmonids (95% sea trout) from gill-net sampling at
-  41 sites in 15 Norwegian fjords. Using mixed-effects regression accounting for temperature, freshwater
-  influence and fish body length, they found that farm infestation pressure (mean female lice per farmed
-  fish x number of farmed fish) significantly increased lice infestation probability in wild salmonids
-  even after controlling for environmental variables. A significant temperature x farm pressure interaction
-  was detected: temperature effects are strongest when farm pressure is low, but diminish as farm pressure
-  increases. The paper also systematically discusses the statistical challenges of monitoring — including
-  zero-inflation, overdispersion, and measurement error in covariates — that reduce the power and
-  reliability of the monitoring programme, with direct implications for the evidential basis of the
-  Traffic Light System.
+  Helland et al. (2015) model Norwegian national lice monitoring (gill nets, 2004–2010): 4890 fish, 244 occasions, 41 inner–outer fjord sites. A binary mixed model shows farm infestation pressure, temperature, length and freshwater proxy drive lice presence, with farm effect persisting after temperature adjustment and a negative temperature×pressure interaction (temperature matters most when farm pressure is low). Threshold-based proportional models on small trout (<200 g) link farm pressure only at 0.025 lice g⁻¹, not at 0.05–0.1. Extreme zero-inflation (39% uninfected; max 586 lice) prevents robust intensity modelling. Authors recommend fewer, deeper-sampled fjords and biologically meaningful thresholds—changes partly adopted in 2013 (fyke nets, model fjords). Open-access; funded by Norwegian Environment Agency, Food Safety Authority, Research Council, NINA and IMR.
 
 coi_declared: yes
 coi_notes: >
-  Open access article. Authors affiliated with Norwegian Institute for Nature Research (NINA),
-  Norwegian Veterinary Institute (NVI), and Institute of Marine Research (IMR). These institutions
-  are involved in the national monitoring programme and TLS advisory processes. No commercial conflicts
-  declared. Published 2015, before the formal TLS implementation in 2017.
+  Open Access (CC BY). Funding: Norwegian Environment Agency, Norwegian Food Safety Authority, Norwegian Research Council, NINA and IMR strategic funds; sampling financed by multiple agencies (acknowledgements). Authors NINA, NVI, IMR—all national monitoring/TLS institutions. No commercial COI declared.
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: moderate_agreement
@@ -202,7 +189,7 @@ curator_note: >
   Open access, published in Inter-Research's Aquaculture Environment Interactions. Designated a
   Feature Article in the journal. Important for any Q10 (TLS robustness) query: the paper is a
   systematic critique of the monitoring data quality that feeds into TLS decisions. Should be
-  retrieved alongside papers discussing TLS thresholds and their empirical foundations.
+  retrieved alongside papers discussing TLS thresholds and their empirical foundations. ODL refresh 2026-06-03 from extracted.md (Table 1 GLMM coefficients, dataset composition, 2013 programme changes).
 
 curator_review_status: pending
 added_by: "Claude"

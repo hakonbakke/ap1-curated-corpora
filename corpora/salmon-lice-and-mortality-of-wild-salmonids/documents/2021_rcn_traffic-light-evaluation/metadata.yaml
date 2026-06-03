@@ -92,14 +92,16 @@ outcome_domain:
   - "model_performance"
   - "uncertainty_estimation"
 
-primary_endpoint: "scientific quality assessment of TLS methodology"
+primary_endpoint: "Independent assessment of TLS scientific quality (models, thresholds, uncertainty, expert elicitation)"
 secondary_endpoints:
-  - "recommendations for improvement"
-  - "evaluation of uncertainty handling"
+  - "15 recommendations R1-R15"
+  - "DPSIR framework proposal for iterative review"
 
 # DEL C — FUNN OG BEVIS
 evidence_direction: mixed_within_study
+
 effect_scale: population_level
+
 uncertainty_emphasis: very_high
 
 main_uncertainty_sources:
@@ -107,94 +109,95 @@ main_uncertainty_sources:
   - "calibration_data"
   - "model_structure"
   - "parameter_uncertainty"
+  - "transferability"
 
 key_claims:
-  - "The mortality thresholds used in the TLS lack a solid empirical basis and have not been reassessed since inception"
-  - "Uncertainty quantification and propagation through the TLS is insufficient and not transparently reported"
-  - "Expert elicitation processes are poorly documented and do not follow accepted best practice standards"
-  - "The TLS should be framed within an iterative DPSIR process for ongoing performance review"
+  - "TLS 'probably the most sophisticated salmon risk assessment in operation around the globe' — but not the only feasible approach"
+  - "Reviewed >1000 pages from nearly 100 documents; 14 online meetings Nov 2020-Dec 2021; Interim Report July 2021"
+  - "Figure 1: Taranger et al. (2011) mortality thresholds (orange oval) feed ALL sea lice impact indexes — single largest dependence among 7 assessment endpoints"
+  - "Three model streams (IMR, NVI, SINTEF) state-of-the-art but calibration data variable/uncertain"
+  - "Solid empirical basis for mortality thresholds NOT demonstrated; thresholds unchanged since TLS inception; ExpGrp 2019 subgroup found no basis to change"
+  - "Uncertainty insufficiently quantified, propagated, and communicated; risk of over-confidence in complex models"
+  - "Expert elicitation critical but poorly documented vs best practice; qualitative judgement in final green/yellow/red step"
+  - "Sea trout/Arctic char outside EvalComm remit (Finstad method appendix cited, not peer-reviewed at evaluation time)"
+  - "No TLS system performance / conservation effectiveness assessment undertaken"
+  - "15 recommendations include R5-R6 (reassess thresholds, in situ studies), R7-R10 (sensitivity & IPCC-style uncertainty language), R14 external validation, R15 DPSIR iterative framework"
 
 claims_about_uncertainty:
-  - "Multiple places within the TLS contain uncertainty that is not formally quantified or propagated"
-  - "The perception of advanced computational models can lead to misplaced over-confidence in results"
+  - "Model precision can mask parameter uncertainty — confidence intervals recommended (R8)"
+  - "Sensitivity to threshold values essential (R5)"
 
 claims_about_policy_or_management:
-  - "The TLS is probably the most sophisticated salmon risk assessment in operation globally"
-  - "The TLS should adopt IPCC-style language for communicating uncertainty to non-scientific audiences"
-  - "No assessment of TLS system performance or conservation effectiveness has been undertaken"
+  - "Present TLS honestly: precautionary system with embedded quantitative tools, not purely quantitative (R4)"
+  - "Knowledge inclusion processes need documented frameworks (R1-R2)"
 
 methodological_limitations:
-  - "Review scope was selective rather than comprehensive"
-  - "Sea trout and Arctic char assessment was deemed outside scope"
+  - "Selective 'key areas' review, not exhaustive audit of every TLS document"
+  - "Sea trout/char indicators not evaluated"
 
 rag_summary: >
-  Independent international evaluation of the Norwegian Traffic Light System (TLS) scientific basis,
-  commissioned by the Research Council of Norway in 2021. Eight international scientists reviewed the
-  modelling framework, mortality thresholds, uncertainty handling, and expert elicitation processes.
-  Found that mortality thresholds lack empirical basis, uncertainty is insufficiently quantified and
-  communicated, and expert judgment processes are poorly documented. Recommended DPSIR framework
-  for iterative system review. Fifteen recommendations issued for improving transparency and reliability.
+  Eliasen et al. / EvalComm (2021, Research Council of Norway, ISBN 978-82-12-03918-6): eight
+  international experts evaluate Norwegian TLS science. ~100 docs, 1000+ pages. Central finding:
+  Taranger mortality thresholds lack solid empirical basis yet drive all impact indexes; uncertainty
+  and expert elicitation under-documented; no performance monitoring. 15 recommendations (R1-R15);
+  proposes DPSIR for iterative governance. Sea trout excluded from scope. Chair: Crawford Revie.
 
 coi_declared: yes
+
 coi_notes: >
-  Committee members were independent international scientists with no direct involvement in the TLS.
-  Appointed under the auspices of the Research Council of Norway at the request of the Ministry.
+  **Evaluation Committee** appointed by **Research Council of Norway** at request of **Ministry of
+  Trade, Industry and Fisheries**. Eight scientists from Faroe Islands, Ireland, Denmark, UK, Finland
+  — stated independent of Norwegian ExpGrp/SG. No industry funding declared. Not traditional peer review.
 
 # DEL D — SYNTESE OG PLASSERING I LITTERATUREN
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
 consensus_signal: high_agreement
+
 quality_signal: strong
+
 quality_rationale: >
-  Independent international expert committee with diverse expertise. Systematic review of extensive
-  documentation. Transparent recommendations process. However, not a peer-reviewed publication.
+  Diverse international panel, structured process, explicit Figure 1 system map, actionable R1-R15.
+  Not peer-reviewed journal article.
 
 controversy_role: foundational
+
 relevance_signal: high
+
 relevance_rationale: >
-  The only independent international evaluation of the TLS scientific basis. Frames the structural
-  weaknesses that subsequent debate literature addresses. Essential reference for understanding
-  the methodological and governance context of the TLS.
+  Only independent international TLS science audit in corpus — frames Q10 debates.
 
 transferability: medium
+
 transferability_notes: >
-  Findings specific to the Norwegian TLS but recommendations on uncertainty communication,
-  expert elicitation, and DPSIR apply to any risk-based aquaculture management system.
+  Norway-specific system; R7-R11 on uncertainty communication generalise to risk-based aquaculture regulation.
 
 # DEL E — RELASJONER OG KURATORKOMMENTARER
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
 included_because: >
-  Foundational governance document providing the only independent international evaluation of the
-  TLS scientific basis. Its 15 recommendations frame the structural weaknesses in the system —
-  particularly around mortality thresholds, uncertainty, and expert judgment — that are central
-  to the scientific debate captured in this corpus.
+  Governance anchor identifying structural TLS weaknesses (thresholds, uncertainty, expert judgement)
+  that empirical and modelling papers in the corpus debate.
 
 related_documents_supporting:
-  - "Stige et al. 2022 (10.3354/aei00443)"
-  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+  - "2022_aei_stige-model-sensitivity-calibration"
+  - "2024_raq_vannes-critical-review-tls"
 
 related_documents_contrasting: []
 
 related_documents_reply_to: []
 
 should_be_read_with:
-  - "Van Nes et al. 2024 — cites this evaluation extensively"
-  - "Stige et al. 2022 — directly relevant to calibration concerns raised here"
+  - "2021_icesjms_johnsen-vps-mortality-norway"
+  - "2021_icesjms_jansen-comment-vps-mortality"
 
 retrieval_tags:
-  - "TLS evaluation"
+  - "EvalComm"
+  - "R1-R15"
   - "DPSIR"
-  - "uncertainty"
-  - "expert elicitation"
-  - "mortality thresholds"
-  - "Research Council Norway"
-  - "governance"
+  - "Taranger thresholds"
+  - "Figure 1 TLS"
 
 curator_note: >
-  ISBN 978-82-12-03918-6. Not peer-reviewed in traditional sense but produced by
-  credentialed international committee through formal process. Widely cited in
-  subsequent literature on both sides of the debate.
+  ODL refresh 2026-06-03 from extracted.md. Added R1-R15 summary, ISBN, meeting count, Figure 1
+  threshold centrality, Finstad appendix footnote. PDF report not journal article.
 
-# KURATERSTATUS
 curator_review_status: pending
 added_by: "Claude"
-added_date: "2026-03-23"
+added_date: "2026-06-03"

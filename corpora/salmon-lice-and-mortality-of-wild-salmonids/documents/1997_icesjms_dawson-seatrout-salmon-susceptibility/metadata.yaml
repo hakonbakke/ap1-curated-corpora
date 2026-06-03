@@ -111,11 +111,12 @@ main_uncertainty_sources:
   - transferability
 
 key_claims:
-  - "At week 1 post-infection, significantly more lice were recorded on sea trout than Atlantic salmon, regardless of whether fish were in single-species or mixed-species tanks."
-  - "By week 8, Atlantic salmon had significantly fewer surviving lice than sea trout, indicating greater long-term immune clearance in salmon."
-  - "The survival of pre-adult and adult lice declined more rapidly on sea trout in the early weeks, but by the end of the experiment, sea trout carried more lice — suggesting sea trout as the more natural long-term host."
-  - "A greater humoral antibody response to sea lice infection was demonstrated for Atlantic salmon compared to sea trout, suggesting an immunological rather than behavioural primary defence strategy in salmon."
-  - "No fish mortality occurred from sea lice infection in this study."
+  - "Week 1 mean lice abundance (SE): single-species sea trout 188.0 (2.7) vs Atlantic salmon 165.8 (10.2); all sea trout groups exceeded all salmon groups (p=0.039, n=8 fish per tank, quadruplicate tanks)."
+  - "By week 8, sea trout carried ~20 lice fish⁻¹ vs Atlantic salmon ~4–7 (e.g. single-species salmon 6.8 (2.1)); all sea trout groups exceeded all salmon (p=0.012)."
+  - "Lice survival from week 1: by week 8 only 10.6% on sea trout vs 4.1% on salmon (single-species); greater proportion survived on sea trout from week 6 onward (p=0.046 at week 6)."
+  - "Copepodids from farmed Atlantic salmon eggs (~4800 per tank, 3 h challenge) produced non-selective settlement; differential chalimus mortality favoured higher early loads on sea trout."
+  - "Atlantic salmon had more category 3 head lesions weeks 3–5 (p=0.036); sea trout more category 3 anal lesions weeks 7–8 (p=0.04); dorsal fin erosion categories 1–2 on all infected fish; no infection-related mortality."
+  - "Greater humoral antibody response in Atlantic salmon vs sea trout supports immunological clearance as salmon's primary defence vs possible freshwater-return behaviour in sea trout."
 
 claims_about_uncertainty:
   - "Differences in susceptibility may partly reflect the tank experimental conditions rather than natural differential exposure; swimming performance and distribution in tanks could influence copepodid settlement."
@@ -125,17 +126,18 @@ claims_about_policy_or_management:
   - "Sea trout appear to be the more natural long-term host for L. salmonis; this has implications for understanding why sea trout populations are particularly vulnerable to farm-origin lice pressure."
 
 methodological_limitations:
-  - "Experiment used hatchery-reared fish in controlled tanks; immune responses may differ from wild fish."
-  - "Copepodids used were reared from farmed Atlantic salmon; preferential settlement would be expected on Atlantic salmon rather than sea trout, potentially underestimating sea trout susceptibility in the field."
-  - "Experiment covers only 8 weeks; long-term effects on growth, osmoregulatory function, or survival are not assessed."
+  - "Hatchery-reared fish (431–511 g sea trout, 413–499 g salmon) in 400 L circular tanks, 7.9–11.4°C, 32‰, Oct–Dec 1996; not wild post-smolts."
+  - "Copepodids from west-coast farmed Atlantic salmon eggs; authors argue preferential settlement on salmon was not observed—non-selective attachment then differential survival."
+  - "Eight-week duration only; weekly anaesthesia and seven body-region lice counts; no osmotic or growth endpoints."
+  - "Skin damage scored on ordinal scales (Tables 1–2); cumulative damage not significantly different between groups (p>0.05)."
 
 rag_summary: >
-  Dawson et al. (1997) conducted a controlled laboratory challenge study comparing sea trout and Atlantic salmon under experimental infection with Lepeophtheirus salmonis. Sea trout carried more lice at week 1 and throughout the experiment, and showed lower immune-mediated clearance. Atlantic salmon exhibited a stronger humoral antibody response and shed lice faster, resulting in lower lice abundance by week 8. The findings suggest that sea trout are the more suitable long-term host for L. salmonis, likely reflecting the parasite's evolutionary adaptation to the coastal migratory behaviour of sea trout, while Atlantic salmon deploy a primarily immunological defence strategy. No mortality occurred from lice infection under experimental conditions.
+  Dawson et al. (1997) compared hatchery sea trout and Atlantic salmon in quadruplicate single- and mixed-species tank challenges with ~4800 L. salmonis copepodids per tank (eggs from Scottish farmed salmon). At week 1, mean abundance was higher on all sea trout groups (e.g. 188.0 vs 165.8 lice fish⁻¹); by week 8 sea trout retained roughly threefold more lice (e.g. 20.0 vs 6.8) while salmon showed stronger immune-mediated clearance (10.6% vs 4.1% survival from week-1 loads). Chalimus initially favoured dorsal fins; mobile stages concentrated on head and dorsal surfaces. Atlantic salmon developed severer head lesions mid-experiment; sea trout severer anal lesions late. A stronger humoral antibody response in salmon supports immunological defence, whereas sea trout may reflect a parasite–host match to coastal residency. No lice-induced mortality occurred. Funded by a BBSRC CASE studentship; University of Aberdeen and SOAEFD Marine Laboratory authors.
 
 coi_declared: no
 
 coi_notes: >
-  Funded by a BBSRC CASE award (Biotechnology and Biological Sciences Research Council). Authors affiliated with University of Aberdeen and SOAEFD Marine Laboratory, Aberdeen. No industry affiliation stated.
+  Acknowledgements state funding through a BBSRC CASE award to L. Dawson. Authors: University of Aberdeen (Dawson, Pike, Houlihan) and SOAEFD Marine Laboratory, Aberdeen (McVicar). No industry funding or conflict-of-interest statement in the paper.
 
 
 # ======================================================================
@@ -193,7 +195,7 @@ retrieval_tags:
   - "host specificity"
 
 curator_note: >
-  [UNVERIFIED: Del D og E] Foundational 1997 study; cited widely in the literature. Expert should confirm whether the immunological findings remain consensus or have been revised by later immunological work.
+  [UNVERIFIED: Del D og E] Foundational 1997 study; cited widely in the literature. Expert should confirm whether the immunological findings remain consensus or have been revised by later immunological work. ODL refresh 2026-06-03 from extracted.md (Tables 3–4 abundance/survival, tank design, BBSRC funding).
 
 
 # ======================================================================

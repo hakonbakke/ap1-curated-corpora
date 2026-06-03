@@ -1,57 +1,42 @@
 # Summary: Forseth et al. (2017)
 
-**Full title:** The major threats to Atlantic salmon in Norway
-**Journal:** ICES Journal of Marine Science, 74(6): 1496–1513
-**DOI:** 10.1093/icesjms/fsx020
-**Document type:** Review article (expert assessment)
+**Full title:** The major threats to Atlantic salmon in Norway  
+**Journal:** ICES Journal of Marine Science, 74: 1496–1513  
+**DOI:** 10.1093/icesjms/fsx020 (Open Access, CC BY 4.0)  
+**Document type:** Expert committee review  
 **Priority questions:** Q9, Q10
 
 ---
 
 ## What this paper does
 
-This paper presents a semi-quantitative 2D classification system developed by Norway's national Atlantic Salmon Scientific Advisory Committee (*Vitenskapelig råd for lakseforvaltning*) to rank 15 anthropogenic threat factors to Norwegian Atlantic salmon populations. The system was developed as a decision-support tool for prioritising management measures.
+Norwegian **Scientific Advisory Committee for Atlantic Salmon Management** ranks **15 anthropogenic impacts** on >400 salmon rivers using a semi-quantitative **effect × development** matrix (2015 status).
 
-## The classification framework
+## Top-ranked threats (expanding population threats)
 
-The 2D system uses two axes:
-- **Effect axis**: How severe is the impact on affected populations? (from adult return reductions to populations becoming critically endangered or lost)
-- **Development axis**: How likely is the threat to increase further? (from stabilised to expanding)
+| Threat | Approx. composite scores* | Notes |
+|--------|---------------------------|-------|
+| **Escaped farmed salmon** | ~0.83 effect, ~0.80 development | Highest; genetic integrity (>10% introgression); 51/109 populations affected (Karlsson et al. 2016) |
+| **Salmon lice** | ~0.70 effect, ~0.58 development | Second; regional–national scale; typical adult reductions >25% where affected |
 
-Combined, the axes categorise threats into four groups:
-1. **Expanding population threats** — capable of causing critically endangered/lost populations AND likely to worsen
-2. **Stabilised population threats** — have caused critical harm in the past, but manageable going forward
-3. **Expanding loss factors** — cause reduced returns but not population viability threats; worsening
-4. **Stabilised loss factors** — cause reduced returns; manageable
+*From Figure 2b normalized axes.
 
-## Threat rankings for Norwegian populations
+## Aquaculture scale (2015)
 
-**Expanding population threats** (the most serious category):
-- **Escaped farmed salmon** — largest current threat; causes genetic introgression; >20 populations already critically affected
-- **Salmon lice from fish farms** — second largest threat; increased mortality of sea-migrating smolts; affecting numerous populations across all production areas
+- **~382 million** farmed salmon vs **~522,000** wild spawners (**~732:1**).
+- Potential **>1 billion** lice larvae day⁻¹ under worst-case regulatory scenario.
+- Experimental smolt protection: **0.6–39%** additional marine mortality from lice (site/year variation).
 
-**Stabilised population threats** (serious, but being managed):
-- *Gyrodactylus salaris* (introduced ectoparasite)
-- Freshwater acidification
-- Hydropower regulation and migration barriers
+## Stabilized threats
 
-**No longer a major threat**:
-- Overexploitation — managed through conservation limits and fishing restrictions
+G. salaris, acidification, hydropower/habitat alteration—mitigation in place. **Overexploitation** downgraded after conservation limits.
 
-## Key messages
+## Relevance
 
-1. Salmon lice from farms is ranked as an **expanding** threat — meaning current mitigation is insufficient to prevent further harm
-2. The **genetic threat from escaped farmed salmon** and the **lice threat** together represent the primary aquaculture-related risks to wild Atlantic salmon in Norway
-3. Unlike other threats (acidification, hydropower), the lice and escaped salmon threats are **still growing** — requiring stronger regulatory responses
-4. The Traffic Light System was developed in direct response to this evidence base
-
-## Relevance to this corpus
-
-**Q9 (population-level impact):** Provides the official Norwegian scientific assessment that salmon lice causes population-level harm beyond mere reduction in adult returns — placing it in the "expanding population threats" category (capable of causing populations to become critically endangered or lost).
-
-**Q10 (TLS robustness):** Establishes the scientific rationale for the TLS. The classification provides the evidentiary basis for why lice from farms is regulated through a production capacity adjustment system.
+Authoritative Norwegian consensus that **lice and escapes** are expanding viability threats—policy foundation for TLS and national lice regulation.
 
 ## Limitations
 
-- Expert-elicitation-based; specific thresholds reflect scientific consensus of the Norwegian committee, not formal meta-analysis
-- Focused on Norwegian context; threat rankings may differ for other countries with different aquaculture proximity
+Expert scoring, not meta-analysis; Norway-specific; post-2017 updates not included.
+
+*ODL refresh 2026-06-03 from extracted.md*

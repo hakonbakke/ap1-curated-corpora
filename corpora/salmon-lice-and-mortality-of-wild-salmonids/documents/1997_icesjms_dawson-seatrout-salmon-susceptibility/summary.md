@@ -1,56 +1,53 @@
 # Summary: Dawson et al. (1997)
 
-**Full title:** Comparison of the susceptibility of sea trout (Salmo trutta L.) and Atlantic salmon (Salmo salar L.) to sea lice (Lepeophtheirus salmonis (Krøyer, 1837)) infections
-**Journal:** ICES Journal of Marine Science, 54: 1129–1139
-**DOI:** Not available (pre-DOI era); URL: https://doi.org/10.1006/jmsc.1997.0309
-**Document type:** Research article (experimental)
-**Priority questions:** Q4, Q6
+**Full title:** Comparison of the susceptibility of sea trout (*Salmo trutta*) and Atlantic salmon (*Salmo salar*) to sea lice (*Lepeophtheirus salmonis*) infections  
+**Journal:** ICES Journal of Marine Science, 54: 1129–1139  
+**URL:** https://doi.org/10.1006/jmsc.1997.0309  
+**Document type:** Research article (experimental)  
+**Priority questions:** Q4, Q6  
+**Funding:** BBSRC CASE award to L. Dawson (University of Aberdeen / SOAEFD Marine Laboratory)
 
 ---
 
 ## What this paper does
 
-This classic experimental study compares the relative susceptibility of sea trout (*Salmo trutta*) and Atlantic salmon (*Salmo salar*) to infection by *Lepeophtheirus salmonis* under controlled laboratory conditions. Hatchery-reared fish were challenged with copepodids hatched from eggs of gravid females from a Scottish Atlantic salmon farm, and monitored weekly over 8 weeks.
+Controlled laboratory comparison of hatchery sea trout and Atlantic salmon challenged with ~4800 *L. salmonis* copepodids per tank (eggs from west-coast farmed salmon), in quadruplicate single-species and mixed-species groups (n=8 fish/tank), weekly monitoring for 8 weeks (Oct–Dec 1996; 7.9–11.4°C, 32‰).
 
 ## Experimental design
 
-- **Fish groups**: Single-species sea trout tanks, single-species Atlantic salmon tanks, and mixed-species tanks (equal proportions)
-- **Infection**: ~4,800 copepodids per tank, administered over 3 hours with high aeration
-- **Temperature**: 7.9–11.4°C (ambient seawater, Scotland)
-- **Measurements**: Weekly counts of lice by developmental stage and body region; dorsal fin erosion; head, dorsal, and anal skin lesion severity
+| Element | Detail |
+|--------|--------|
+| Fish | Sea trout 431–511 g; Atlantic salmon 413–499 g |
+| Tanks | 400 L, 1 m diameter; 3-week acclimation |
+| Infection | ~4800 copepodids, 3 h, high aeration |
+| Scoring | Seven body regions; dorsal fin erosion (4 categories); head/dorsal/anal skin damage (5 categories) |
 
-## Key findings
+## Key findings (quantitative)
 
-**Lice abundance:**
-- Week 1: Significantly more lice on sea trout than Atlantic salmon (all tanks)
-- Weeks 2–5: Difference narrows; at week 4 single-species Atlantic salmon tanks had significantly more lice than sea trout
-- Weeks 6–8: By the end of the experiment, all sea trout had significantly more lice than all Atlantic salmon
+**Mean lice abundance (Table 3, lice fish⁻¹ ± SE):**
 
-**Lice survival:**
-- Pre-adult and adult lice survived longer on sea trout in the early weeks, then survival declined
-- Atlantic salmon showed a faster, stronger immune-mediated clearance of lice, resulting in lower long-term abundance
+| Week | Sea trout (single) | Atlantic salmon (single) |
+|------|-------------------|-------------------------|
+| 1 | 188.0 (2.7) | 165.8 (10.2) |
+| 4 | 40.2 (5.6) | 69.9 (8.3) — salmon peak |
+| 8 | 20.0 (5.0) | 6.8 (2.1) |
 
-**Distribution and damage:**
-- More chalimus attached to dorsal fins of sea trout than salmon
-- Atlantic salmon developed more severe head lesions during weeks 3–5; sea trout had more severe anal lesions in weeks 7–8
-- No fish mortality occurred from lice infection
+- Week 1: all sea trout groups > all salmon (p=0.039).
+- Week 8: all sea trout > all salmon (p=0.012); lice survival from week 1 only 10.6% (trout) vs 4.1% (salmon) in single-species tanks.
+- Copepodids from farmed salmon did not show preferential settlement; higher early chalimus on trout reflects differential survival/clearance.
+- Lesions: more Atlantic salmon category 3 head lesions weeks 3–5 (p=0.036); more sea trout category 3 anal lesions weeks 7–8 (p=0.04).
+- **No infection-related mortality**; antibody response stronger in salmon.
 
 ## Mechanistic interpretation
 
-The authors propose two possible explanations for the observed differential susceptibility:
-1. **Immunological strategy (Atlantic salmon)**: A stronger humoral antibody response reduces lice survival on salmon over time
-2. **Behavioural strategy (sea trout)**: Infected sea trout may return to freshwater early, naturally reducing lice burden — a known field observation
-
-Since the experiment used copepodids from farmed Atlantic salmon, non-selective settlement followed by differential mortality (rather than host preference) likely explains the initial similar settlement rates.
+Atlantic salmon appear to use immunological clearance; sea trout may be a more suitable long-term host (coastal residency, possible premature freshwater return). Relevant to why sea trout are used as lice sentinels in Norwegian monitoring.
 
 ## Relevance to this corpus
 
-**Q4 (smolt exposure):** Sea trout carry more lice than Atlantic salmon under natural conditions; this informs why sea trout monitoring data are used as sentinel species in the Norwegian TLS and other monitoring programmes. The biology of host preference and settlement is relevant to understanding exposure dynamics.
-
-**Q6 (physiological effects):** The paper documents the nature of lice-induced skin damage in both species and notes that while sea trout carry more lice, no mortality was observed under experimental conditions. This provides context for interpreting lice load thresholds used in dose-response models.
+**Q4 / Q6:** Baseline host-specific susceptibility and skin-damage patterns under controlled infection—context for sentinel species use and physiological thresholds, though fish size and absence of mortality differ from wild post-smolts.
 
 ## Limitations
 
-- Hatchery-reared fish; immune responses may differ from wild fish
-- Infection dose (copepodids from farmed Atlantic salmon) may favour initial settlement on salmon over sea trout, potentially underestimating natural sea trout susceptibility
-- 8-week timeframe does not capture long-term mortality, growth, or osmoregulatory effects
+Hatchery fish; farm-origin copepodids; 8 weeks only; no osmotic or field migration context.
+
+*ODL refresh 2026-06-03 from extracted.md*

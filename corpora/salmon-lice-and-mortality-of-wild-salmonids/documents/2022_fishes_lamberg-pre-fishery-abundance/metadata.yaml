@@ -96,12 +96,12 @@ main_uncertainty_sources:
   - "Spatial straying between rivers (especially sea trout) complicates single-river population definition"
   - "Data from a single year (2019) limits temporal generalizability"
 key_claims:
-  - "Standardised merged PFA (salmon + sea trout) differed substantially from single-species (salmon only) PFA in classifying regional population status"
-  - "The highest estimated standardised merged PFA across the 8 regions was approximately four times higher than the lowest"
-  - "Differences between the two approaches were mainly driven by variation in the size of sea trout populations across regions"
-  - "Sea trout are largely absent from Norway's national salmon management model despite significant population size variation"
-  - "Both salmon and sea trout stray between rivers, meaning single-river population definitions are an oversimplification"
-  - "Merged PFA standardised by smolt age and hydrogeographic factors offers a more ecologically coherent measure of regional salmonid production"
+  - "In 2019, standardised merged PFA (salmon + sea trout) in regions 1, 3, and 6 was 2–4× higher than in other regions; total inter-regional range was >4× between highest and lowest"
+  - "Spearman rank correlation between ST-based and merged-PFA regional rankings was non-significant (rs = −0.071, n = 8, p = 0.882); only region 1 shared the same rank under both approaches"
+  - "PFA approach upgraded regional status vs ST in regions 3, 5, and 6; downgraded in regions 2, 4, 7, and 8 — differences driven mainly by sea trout contribution"
+  - "Atlantic salmon spawning-target (ST) biomass per area was highest in region 5 (Orkla) and lowest in region 7; 2019 observed female spawner biomass exceeded ST most in regions 1, 2, and 6, lowest in region 5"
+  - "Mean smolt age across regions ranged 2.3–4.1 years (R² ≈ 0.70 with latitude); 27 rivers monitored by video and/or snorkelling — no national sea-trout spawning target exists"
+  - "Authors propose merged PFA as better input for TLS/VRL validation because sea trout overwinter in fjords and may proxy lice severity better than salmon-only metrics"
 claims_about_uncertainty:
   - "Population development of anadromous brown trout in Norway remains largely unclear despite available monitoring methods"
   - "The assumption that a salmon population is specific to one river is not always correct based on recent surveillance data"
@@ -117,11 +117,11 @@ methodological_limitations:
   - "The merged PFA concept is proposed but not yet validated against actual population recovery trajectories"
 
 rag_summary: >
-  Lamberg and Imsland (2022) propose using "merged pre-fishery abundance" (PFA) — combining Atlantic salmon and anadromous brown trout (sea trout) population counts — as a more ecologically valid metric for evaluating salmonid population status in Norwegian river regions. Using data from 27 rivers in 8 regions (2019), collected via underwater video, snorkelling, and catch statistics, they standardise merged PFA using river hydrogeography and mean smolt age. The highest standardised regional PFA was approximately four times higher than the lowest. Compared to the conventional single-species (salmon only) approach, the merged PFA revealed a substantially different picture of population status in most regions, with differences largely driven by variation in sea trout population sizes. The authors argue that since sea trout can serve as a proxy for lice severity in fjord systems, monitoring merged PFA could help validate whether management interventions (such as TLS regulations) are achieving conservation goals. Key limitations include single-year data, selective regional coverage, and unquantified interspecific competition.
+  Lamberg and Imsland (2022, Fishes 7:264) compare merged pre-fishery abundance (PFA: Atlantic salmon + sea trout) vs salmon-only spawning target (ST) rankings across 27 rivers in 8 Norwegian regions (58.6°N–69.0°N, 2019). Standardised merged PFA varied >4× between regions; regions 1, 3, and 6 were 2–4× above others. ST and merged-PFA regional ranks did not correlate (Spearman rs = −0.071, p = 0.882). Sea-trout inclusion changed status in 7/8 regions. Smolt age 2.3–4.1 years; hydrogeography standardisation (river area 26–112 km² accessible, discharge 1.5–5.0×10⁶ m³/s). Authors argue merged PFA better reflects anthropogenic impacts including lice, as sea trout remain in fjords longer. Funded by SALT2020/FHF 901575, Vestland county, POP-Kunnskapsinkubator. Single-year snapshot; no spawning targets for trout.
 
 coi_declared: no
 coi_notes: >
-  No explicit conflict of interest statement found. Anders Lamberg is affiliated with Skandinavisk Naturovervaking (a private environmental consultancy), which may conduct monitoring for regulatory purposes. Albert Imsland is affiliated with Akvaplan-niva and the University of Bergen. No industry funding declared.
+  Authors declare no conflict of interest. Funded by Norwegian Seafood Research Fund (SALT2020, 901575), Vestland Fylkeskommune (306-2020), and POP-Kunnskapsinkubator (Salmon Tracking 2020). Lamberg (Skandinavisk Naturovervåking); Imsland (Akvaplan-niva, UiB).
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: unclear
@@ -175,7 +175,7 @@ retrieval_tags:
   - "smolt age standardisation"
 
 curator_note: >
-  Open access article (CC BY, MDPI). This is a methodological/monitoring paper, not a lice-impact study per se. Its value for this corpus is conceptual: it demonstrates the inadequacy of single-species salmon monitoring for evaluating the full suite of anthropogenic impacts on wild salmonids, and proposes a concrete, practical alternative. The suggestion that sea trout population trends could be used as a validation signal for lice management effectiveness has not yet been formally tested but is an important research agenda item.
+  ODL refresh 2026-06-03 from extracted.md. Open access (CC BY, MDPI). Methodological paper — not direct lice-mortality measurement. Key numbers: 27 rivers, 8 regions, 2019 only; Spearman rs = −0.071 (ST vs merged PFA ranks); >4× PFA range; smolt age 2.3–4.1 yr.
 
 curator_review_status: pending
 added_by: "Claude"

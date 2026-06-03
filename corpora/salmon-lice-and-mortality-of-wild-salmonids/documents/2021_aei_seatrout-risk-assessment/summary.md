@@ -1,33 +1,97 @@
-# Finstad et al. 2021 — Development of a risk assessment method for sea trout in coastal areas exploited for aquaculture
+# Summary: Finstad et al. (2021)
 
-## Background
-While the Norwegian Traffic Light System (TLS) focuses primarily on wild Atlantic salmon, anadromous brown trout (sea trout) spend their marine phase in coastal waters where salmon lice impact is highest. Sea trout may be especially vulnerable because they remain in nearshore environments, where lice densities from farms are concentrated. This study proposes sustainability indicators for first-time migrant sea trout using the existing bio-hydrodynamic lice dispersion model.
-
-## Methods
-Two indices were developed: reduced marine living area (RML) and reduced marine feeding time (RMT). A bio-hydrodynamic model simulated salmon lice density at 160x160m resolution in two production areas (PO3 Hardangerfjord and PO5 Romsdalsfjord). Sea trout parameters were set at 60g body weight, 70-day marine residence, 20km range from river, and 2m depth. Three migration timings were tested (April 24, May 15, June 5). Critical lice thresholds derived from Taranger et al. (2015): 100% impact at >30 lice, 50% at 10-30 lice, none at <10 lice. ROC calibration was performed against sentinel cage data from Hardangerfjord 2012-2017.
-
-## Key Findings
-- Sea trout migrating late (June 5) were always more affected than early migrants.
-- In PO3, RML for intermediate migrants was 49%, rising to 66% for late migrants.
-- Individual river variation was dramatic: Oselvo trout (PO3) lost 94-98% of marine area; Etne trout lost 0-68% depending on timing.
-- In PO5, Eira trout lost 83-87% of marine area across all timings; Rauma trout lost 40-48%.
-- Marine residence time reductions were severe: Eira late migrants lost 50 of 70 days (71% reduction).
-- The method is scalable to all production areas and sea trout rivers in Norway.
-
-## Uncertainty and Limitations
-- Critical lice thresholds for sea trout are based on limited laboratory studies.
-- Model uses fixed 60g fish size; real populations have variable sizes.
-- Assumes sea trout don't return to sea after premature freshwater return.
-- 160x160m grid not yet as widely validated as the 800x800m grid.
-- Does not directly model mortality — uses habitat loss as proxy.
-
-## Relevance to Corpus
-Extends the TLS framework to sea trout, which are more coastal and arguably more lice-exposed than salmon smolts. Demonstrates that even without direct mortality modelling, the habitat impacts of lice are potentially devastating. Relevant as context for Q1, Q2, Q3 and methodological comparison for Q5, Q8.
-
-## Relation to Other Documents
-- Built on the same bio-hydrodynamic model system used in the TLS (evaluated by Eliasen et al. 2021).
-- Authors overlap with the TLS Expert Group.
-- Methodological approach (RML/RMT) is complementary to the virtual post-smolt models evaluated by Stige et al. 2022.
-- The Evaluation Committee (Eliasen et al. 2021) noted that sea trout assessment was proposed but not yet peer-reviewed.
+**Full title:** Development of a risk assessment method for sea trout in coastal areas exploited for aquaculture
+**Journal:** Aquaculture Environment Interactions, 13: 133–144
+**DOI:** 10.3354/aei00391
+**Document type:** Research article (modelling / risk assessment)
+**Priority questions:** Q1, Q2, Q3, Q5, Q8
 
 ---
+
+## What this paper does
+
+Proposes **Reduced Marine Living Area (RML)** and **Reduced Marine Feeding Time (RMT)** as sustainability indicators for first-time migrant **sea trout** (*Salmo trutta*), using the Norwegian bio-hydrodynamic lice model at **160×160 m** resolution (PO3 Hardanger, PO5 Romsdal). Demonstrates on four rivers: **Oselvo** and **Etne** (PO3), **Eira** and **Rauma** (PO5).
+
+**Model defaults:** 60 g smolt, **70 d** marine residence, **20 km** from river mouth, **2 m** depth. Migration scenarios: **24 Apr**, **15 May**, **5 Jun**.
+
+**Impact thresholds** (Taranger et al. 2015, 60 g fish ≈ 18 mobile lice critical): simplified to **100%** impact **>30** lice, **50%** at **10–30**, **0%** at **≤10** (40% mortality between sessile and mobile stages assumed). **ROC** maps red/yellow/green zones calibrated to Hardanger sentinel cages **2012–2017**.
+
+**Equations:**
+- RML = (red area + 0.5 × yellow area) / total area
+- RMT = days until RML > 30% − 70 d
+
+---
+
+## Key results tables
+
+### PO3 (Hardanger / Bjørnafjord) — area-wide RML
+
+| Migration timing | RML (%) |
+|------------------|---------|
+| Early (24 Apr) | 32 |
+| Intermediate (15 May) | **49** |
+| Late (5 Jun) | **66** |
+
+### PO3 — focal rivers (% RML / RMT days)
+
+| River | Early RML | Intermediate RML | Late RML | RMT (late) |
+|-------|-----------|-------------------|----------|------------|
+| **Oselvo** | 94 | 97 | **98** | −56 d |
+| **Etne** | 0 | 17 | **68** | −16 d |
+
+Oselvo: RMT −30 / −46 / −56 d (all timings). Etne: only late migrants lose marine time.
+
+### PO5 (Romsdal) — area-wide RML
+
+| Timing | RML (%) |
+|--------|---------|
+| Early | 34 |
+| Intermediate | 45 |
+| Late | **59** |
+
+### PO5 — focal rivers
+
+| River | Early | Intermediate | Late | RMT range |
+|-------|-------|--------------|------|-----------|
+| **Eira** | 83% | 87% | 85% | −19 to −50 d |
+| **Rauma** | 40% | 43% | 48% | −6 to −40 d |
+
+Discussion notes **up to 71%** reduction in marine sojourn for Eira late migrants (50 of 70 d lost).
+
+---
+
+## Policy proposals
+
+Suggests sea-trout **RML limits** analogous to salmon TLS mortality bands:
+- **High:** RML > 30%
+- **Moderate:** 10–30%
+- **Low:** < 10%
+
+Method intended for all **~430** mapped Norwegian sea-trout rivers and other countries with similar biophysical models.
+
+---
+
+## Conflict of interest (from paper)
+
+Core funding from **government ministries and research institutes** (Trade/Industry/Fisheries, Environment Agency, IMR, NINA, NVI, NORCE, NTNU, etc.). **Bengt Finstad acknowledges additional funding from DNV (Det Norske Veritas).** Multiple **Traffic Light expert group** members thanked. Open access CC BY.
+
+---
+
+## Limitations
+
+- Habitat-loss **proxy**, not direct mortality
+- Laboratory-derived lice thresholds
+- Fixed 60 g; no same-year return to sea after premature migration
+- 160 m grid less validated than 800 m standard
+
+---
+
+## Relevance to this corpus
+
+| Question | Contribution |
+|----------|----------------|
+| **Q1–Q3** | Quantifies coastal lice habitat exclusion for a species more resident than salmon smolts |
+| **Q5** | Same dispersion archive as salmon VPS; different host ecology |
+| **Q8** | Indirect mortality signal via truncated marine feeding |
+
+Read with **Eliasen et al. (2021)** (sea trout outside TLS scope then) and **Stige et al. (2022)** (calibration sensitivity for salmon models).

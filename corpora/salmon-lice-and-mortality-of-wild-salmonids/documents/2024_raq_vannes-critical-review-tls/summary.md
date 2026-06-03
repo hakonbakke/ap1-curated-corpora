@@ -1,32 +1,34 @@
 # Van Nes, Imsland & Jones 2024 — Salmon lice biology, environmental factors, and smolt behaviour with implications for the Norwegian salmon farming management system: A critical review
 
 ## Background
-The Traffic Light System (TLS) implemented in 2017 regulates Norwegian salmon farming based on estimated lethal effects of farm-origin salmon lice on wild salmon. The system relies on observational data, estimates, and models interpreted by an Expert Group. This comprehensive review examines the scientific literature underlying the TLS, focusing on four key elements: observational data reliability, estimated lice larvae production from farms, models estimating lice dispersal and infection, and interpretation of lice burden into mortality effects.
+The Traffic Light System (TLS, 2017) regulates Norwegian salmon farming across **13 production areas** using estimated lethal effects of farm-origin lice on wild Atlantic salmon: **green** (<10% added mortality, +6% biomass), **yellow** (10–30%), **red** (>30%, −6%). The Expert Group integrates **seven indicators** from trawls (~20 g smolts), trap-netted sea trout, sentinel cages (~80–100 g, two 14-day series), and four dispersion/VPS models calibrated to those data.
+
+This review examines TLS accuracy across four elements: observational data, larval production estimates, dispersal/infestation models, and infestation-to-mortality translation.
 
 ## Methods
-Systematic review of the scientific and grey literature forming the basis of the TLS, supplemented by additional relevant studies on lice biology, environmental factors, and smolt behaviour. Literature is presented in the context of four key elements affecting TLS accuracy and reliability.
+Systematic review of TLS framework literature plus additional studies on lice biology, environment, and smolt behaviour.
 
 ## Key Findings
-1. **Migration timing mismatch**: Acoustic telemetry data show smolt migration begins earlier and is shorter than assumed by TLS. Median migration date ~14 days earlier than TLS practice. Fjord residence time 10-14 days vs. 28 days assumed.
-2. **Lice larvae overestimation**: TLS estimates exclude reducing biological effects (Allee effect, salinity, predation, temperature) on adult female, egg, and larval stages.
-3. **Model calibration concerns**: All three TLS models rely on or are calibrated by potentially flawed observational data. Sentinel cage fish are 4-5x larger than wild smolts; sea trout used as proxy has limitations.
-4. **Mortality thresholds**: Evidence suggests lice-induced mortality thresholds may be higher than assumed. Post-attachment lice loss (40-80%) is only partially corrected in two of seven assessment endpoints.
-5. **Farm lice not associated with measurable population effects**: Analysis suggests lice infection levels on farms show no clear association with wild salmon population status.
+1. **Migration timing mismatch:** Telemetry (Sognefjord Lærdalselva 2009/2013/2014) — 50% smolt entry **2, 8, 16 May** (mean **~9 May**) vs TLS median **23 May** (~**14 days later**). Nordfjord: median **12 and 8 May**; residence **6.9 and 3.0 days** (Strynelva/Eidselva). Sognefjord: **10–14 days** river-to-outer-fjord, **3.3 days** for last two-thirds vs TLS **28 days** and **two × 14-day** sentinel exposures — argues **2–4×** overestimated exposure time.
+
+2. **Monitoring window bias (PA4, 2018–2019):** Infectious copepodid levels **~2–4× higher** in trawl weeks 19–22 and trap/sentinel periods than during inferred peak smolt passage (Figure 3).
+
+3. **Larvae production:** TLS daily larval mortality **0.17–0.22 d⁻¹** may be low vs newer work (**~0.30–0.32**); limited incorporation of salinity, Allee effect, predation; nauplii avoid **<30 psu**.
+
+4. **Mortality thresholds:** Taranger categories (<0.1, 0.1–0.2, 0.2–0.3, >0.3 lice g⁻¹ → 0/20/50/100% mortality) — review argues **no cited study supports 100% at ≥0.3**; Finstad et al. **8%** mortality at **0.3–1.24** mobile lice g⁻¹ (60 g fish). **5/7** indicators use all attached stages without **40%** early loss correction (only two VPS endpoints correct).
+
+5. **Proxy and calibration issues:** Sea trout traps as salmon proxy; sentinel fish size/swimming unlike wild smolts; farm lice not clearly linked to population status in authors' synthesis.
 
 ## Uncertainty and Limitations
-- Review draws heavily on acoustic telemetry data from limited rivers/years in western Norway.
-- Funded by "Salmon Tracking 2030" (aquaculture industry-funded) and FHF.
-- First author is board member of Nova Sea salmon farming company.
-- Argues consistently that biases lead to overestimation; potential underestimation factors are not equally explored.
+- Telemetry from limited western Norway rivers/years.
+- Funded by **Salmon Tracking 2030** (industry) and **FHF**; first author **Nova Sea** board member.
+- Critique emphasises overestimation; underestimation less explored.
 
 ## Relevance to Corpus
-The most comprehensive critical review of TLS methodology. Central to understanding the industry-side scientific critique. Relevant for Q1-Q10, particularly Q5, Q7, Q8, Q10.
+Most comprehensive TLS methodology critique in corpus. Q1–Q10, especially **Q5, Q7, Q8, Q10**.
 
 ## Relation to Other Documents
-- Cites Eliasen et al. 2021 evaluation committee to support critique.
-- Prompted Stige et al. 2025 comment and Van Nes et al. 2025 response.
-- Supports Jansen & Gjerde 2021 critique of VPS model overestimation.
-- Contested by Jansen et al. 2025 population-level evidence.
-- Stige et al. 2022 calibration findings are relevant context.
+- Prompted **Stige et al. 2025** comment and **Van Nes et al. 2025** response.
+- Pairs with **Gjerde & Aslam 2025** (PMLD validation) and **Stige et al. 2024** (operational control scenarios).
 
 ---

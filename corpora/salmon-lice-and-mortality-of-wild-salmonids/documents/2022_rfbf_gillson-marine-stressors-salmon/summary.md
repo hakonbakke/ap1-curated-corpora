@@ -14,7 +14,7 @@ This paper has two objectives:
 1. Provide a comprehensive review of all principal marine stressors affecting Atlantic salmon between fresh water departure and adult return
 2. Apply the same semi-quantitative 2D classification system developed by Forseth et al. (2017) for Norwegian rivers to assess relative threats to English salmon stocks over the current period and projected over the next decade
 
-The study covers 42 principal salmon rivers in England, grouped into four regional marine plan areas.
+The study covers **42 principal salmon rivers** in England, grouped into **four regional marine plan areas**, scored in **2018** against **13 stressors** (0–3 scales on effects and development axes, after Forseth et al. 2017).
 
 ## Principal marine stressors reviewed
 

@@ -1,6 +1,6 @@
 # STATUS - AP1 Curated Corpora
 
-Last updated: 2026-06-03 (corpus expansion: 16 → 27 papers)  
+Last updated: 2026-06-03 (ODL PDF extraction + metadata refresh on all 27 papers)  
 Owner: Thord Hakon Bakke
 
 ## Purpose of this file
@@ -49,6 +49,7 @@ Then hard refresh browser with `Ctrl + F5`.
 - `curator_review_status` is still `pending` across documents (expert validation not finished).
 - Retrieval quality depends mostly on `rag_summary` + `key_claims` quality.
 - New papers (2026-06-03 batch) added by agent with `curator_review_status: pending` — subject to expert QA.
+- **2026-06-03 ODL pass:** All 27 PDFs converted via `scripts/convert_pdfs_odl.py` → `documents/*/extracted.md`; metadata + summaries refreshed from extracts (tables, COI, quantitative detail). Re-run `python scripts/ingest.py` after further edits.
 
 ### 2026-06-03 corpus expansion (+11 papers)
 | Folder | Paper | Key Q |

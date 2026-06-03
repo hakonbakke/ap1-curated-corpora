@@ -83,13 +83,12 @@ main_uncertainty_sources:
   - "Physiological studies are often laboratory-based; translation to field conditions involves uncertainty"
   - "The relative importance of ecological vs physiological smolt windows varies by population and environment"
 key_claims:
-  - "Smolting is an adaptive specialization involving tightly co-ordinated physiological, morphological, and behavioral changes including increased salinity tolerance, altered hemoglobin and visual pigments, loss of positive rheotaxis, and initiation of schooling behavior"
-  - "Smolt migration is regulated by both a physiological smolt window (a limited period of osmoregulatory readiness) and an ecological smolt window (the period when environmental conditions favor survival in seawater)"
-  - "Photoperiod is the primary proximate cue regulating the timing of smolt development; temperature modulates the pace and can advance or delay the timing"
-  - "Temperature and water flow are the primary cues that initiate downstream migration within the physiologically ready window"
-  - "Smolt survival is critically dependent on seawater entry coinciding with appropriate environmental conditions (temperature, food availability, predator abundance)"
-  - "Anthropogenic stressors including dams, acidification, and pollution disproportionately affect the smolt migration corridor (river mainstems and estuaries)"
-  - "Atlantic salmon display considerable behavioral plasticity at all life stages; facultative residence strategies exist (dwarf males, land-locked populations) demonstrating the non-obligatory nature of anadromy"
+  - "Smolting coordinates salinity tolerance (gill Na⁺,K⁺-ATPase, chloride cells), porphyropsin→rhodopsin shift, adult hemoglobins, buoyancy, loss of rheotaxis/territoriality, and schooling—primarily driven by photoperiod with temperature modulating pace."
+  - "Physiological smolt window: retained smolts desmolt; gill Na⁺,K⁺-ATPase declines ~80% within ~400 degree-days after peak—window narrows in warmer water and with migration delays (e.g. dams)."
+  - "Ecological smolt window: synchrony of migration timing with temperature, food and predators strongly affects adult returns; Fig. 3 simulation shows ~166 vs ~94 returns when peaks align vs shift 2 weeks."
+  - "Migration initiation: increasing spring temperature (often ~10°C) and high discharge trigger descent; River Imsa smolt run timing correlated 91–95% with April–May warming (5.8–11.2°C start range)."
+  - "Acid exposure as short as 12 h (pH 5.2, 31 µg L⁻¹ Al) can abolish smolt salinity tolerance; acid in May more damaging than April; Norwegian acid rivers showed ~10× lower adult returns vs limed sites."
+  - "Hatchery smolt survival ~half wild (River Imsa); smolts more sensitive than parr to handling; mainstems/estuaries bear dams, pollution, acid—highest anthropogenic impact on the life cycle."
 claims_about_uncertainty:
   - "The timing of the ecological smolt window relative to the physiological smolt window is highly variable and population-specific"
   - "Whether all juvenile salmon movements in fresh water qualify as true migrations under strict behavioral definitions is unclear"
@@ -102,11 +101,11 @@ methodological_limitations:
   - "Physiological mechanisms discussed are based largely on controlled laboratory experiments; field validation of threshold values is limited"
 
 rag_summary: >
-  McCormick et al. (1998) provide a comprehensive review of Atlantic salmon (Salmo salar) movement, migration, and smoltification biology, synthesising a large body of experimental and observational literature from freshwater life stages through the seawater transition. The review describes the dual smolt window concept: a physiological smolt window (a limited period of osmoregulatory readiness, regulated by photoperiod and temperature via the neuroendocrine system) and an ecological smolt window (the period when environmental conditions favor survival in seawater). Key physiological changes during smolting include increased salinity tolerance, altered hemoglobin and visual pigments, loss of positive rheotaxis, and initiation of schooling. Migration is triggered by temperature and water flow once physiological readiness is achieved. Smolt survival is critically dependent on the synchrony between physiological readiness and favorable ecological conditions at seawater entry. The paper does not address salmon lice directly but provides the foundational mechanistic basis for understanding why smolt migration timing, duration, and estuarine behavior determine the degree of lice exposure in coastal waters — making it a key reference for interpreting lice exposure models in Q4.
+  McCormick et al. (1998) review Atlantic salmon movements from fry emergence through smolt migration, emphasising coordinated physiology (GH, cortisol, thyroid hormones), morphology (silvering, streamlined form), and behaviour (downstream rheotaxis, schooling). The dual smolt-window framework separates a photoperiod-temperature limited physiological readiness period—after which ~400 degree-days erode gill Na⁺,K⁺-ATPase and salinity tolerance—from an ecological window where temperature, food and predators determine marine survival. Temperature and discharge act as releasing factors once fish are migration-ready; mistimed seawater entry or delayed passage (dams, acid, pollutants in mainstems/estuaries) elevates mortality. Acid and other stressors disproportionately hit smolts; hatchery fish often show poorer survival and timing. The review predates lice–aquaculture literature but explains why brief, synchronised coastal passage sets exposure risk for post-smolts in fjord systems (Q4).
 
 coi_declared: no
 coi_notes: >
-  No conflict of interest declared (pre-DOI era paper, 1998). Authors affiliated with USGS (McCormick), Norwegian Institute for Nature Research (Hansen), University of Washington (Quinn), and Department of Fisheries and Oceans Canada (Saunders). No commercial funding indicated.
+  No funding or conflict-of-interest statement in the extract. Authors: USGS Conte Anadromous Fish Research Center (McCormick), NINA (Hansen), University of Washington (Quinn), DFO St. Andrews (Saunders). Workshop support acknowledged (Braemar, Scotland, March 1997); no industry funding cited.
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: strong_agreement
@@ -159,7 +158,7 @@ retrieval_tags:
   - "neuroendocrine regulation"
 
 curator_note: >
-  Pre-digital-DOI era paper (published 1998 in CJFAS Supplement 1). DOI 10.1139/f98-011 is a retroactively assigned identifier; the paper may not resolve via all DOI resolvers. This is a citation classic in Atlantic salmon biology — likely to be very widely cited in the salmon lice literature as background on smolt biology. Included primarily to provide mechanistic grounding for lice exposure models and timing-based vulnerability arguments. The paper predates the major expansion of salmon farming in Norway and the establishment of the TLS; it does not discuss salmon lice directly.
+  Pre-digital-DOI era paper (published 1998 in CJFAS Supplement 1). DOI 10.1139/f98-011 is a retroactively assigned identifier; the paper may not resolve via all DOI resolvers. This is a citation classic in Atlantic salmon biology — likely to be very widely cited in the salmon lice literature as background on smolt biology. Included primarily to provide mechanistic grounding for lice exposure models and timing-based vulnerability arguments. The paper predates the major expansion of salmon farming in Norway and the establishment of the TLS; it does not discuss salmon lice directly. ODL refresh 2026-06-03 from extracted.md (degree-day smolt window, Imsa temperature–migration correlations, acid thresholds).
 
 curator_review_status: pending
 added_by: "Claude"

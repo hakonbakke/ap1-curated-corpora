@@ -10,40 +10,83 @@
 
 ## What this paper does
 
-This wide-ranging review examines the causes of the widespread, sustained decline of Atlantic salmon populations across the North Atlantic since 1985. It systematically evaluates the most commonly cited hypotheses — climate change, salmon aquaculture and sea lice, food availability, and marine predators — and argues that none fully explain the observed pattern of collapse. The authors then propose a new primary hypothesis: illegal, unreported, and unregulated (IUU) high-seas fisheries.
+Synthesizes **North Atlantic-wide** evidence on salmon decline since **~1985**, tests dominant hypotheses (climate, **aquaculture/sea lice**, prey, predators), and argues they fail to explain stocks that collapsed in **pristine, farm-remote** rivers. Proposes **illegal, unreported, and unregulated (IUU) high-seas fisheries** as the primary driver, using historical legal fishery impacts and post-1985 surveillance gaps.
 
-## The pattern of decline
+---
 
-Since 1985, the characteristic cyclic abundance of annual adult returns has ceased in both eastern North America and western Europe. The review identifies four common characteristics of stocks in decline:
+## Collapse phenotype (four shared traits)
 
-1. Cyclic annual returns cease
-2. Annual returns flatline at very low levels
-3. Mean adult size declines
-4. Collapse occurred earliest among watersheds most distant from the North Atlantic Subpolar Gyre (NASpG)
+1. **Cyclic** adult returns **cease** (historically ~8–11 year cycles in many rivers)
+2. Abundance **flatlines** at very low levels (overexploited-stock signature)
+3. **Mean adult size** declines
+4. Collapse **earliest** in watersheds **farthest** from the **North Atlantic Subpolar Gyre (NASpG)** feeding grounds
 
-Critically, the decline has affected pristine, remote watersheds with no dams, no pollution, normal juvenile production, and no proximity to salmon farms — making local explanations insufficient.
+Stocks **near NASpG** (e.g. some Norway, Labrador, Margaree) still show **cycling** and higher abundance — spatial pattern inconsistent with coast-only drivers alone.
 
-## Why existing hypotheses fall short
+---
 
-- **Climate change**: Does not explain why stocks near the NASpG have survived better, nor the flatline pattern of abundance
-- **Salmon farming / sea lice**: Stocks far from farms have also collapsed; the timing and geography do not match a farming-driven cause
-- **Food availability**: Marine prey fields remain diverse; no clear prey collapse has been documented
-- **Marine predators**: Seal populations increased, but cannot explain the scale and spatial synchrony of the decline
+## Scale of decline (selected numbers from review)
 
-## The IUU hypothesis
+| Metric | Approximate change |
+|--------|-------------------|
+| North American **1SW** pre-fishery abundance | **~85%** fall (700–800k → 110–150k by 1990s) |
+| North American **2SW** | **~90%** (900k → 100k) |
+| Southern Europe total returns | **~70%** since 1985 |
+| Pre-1985 North Atlantic **PFA** | **6–9 million** fish |
+| Historic river stocks | **~2,500** |
 
-The authors propose that IUU high-seas fisheries — particularly paired-trawl fisheries in international waters, intercept fisheries off Greenland, and exploitation in areas outside EEZ surveillance — are the primary cause. Evidence cited:
-- Former legal high-seas fisheries (Greenland, Faroe, Norwegian Sea) demonstrably reduced adult returns across the North Atlantic
-- After fishery closures in the 1980s–1990s, lack of surveillance outside EEZs creates conditions for undetected IUU exploitation
-- The spatial pattern of collapse (earliest near the NASpG feeding grounds) is consistent with high-seas exploitation
-- Flatline abundance and reduced adult size are characteristic signatures of overexploited fish stocks
+### Hatchery return rates (Figure 7 — post-1985 collapse)
+
+| Stock | Before 1985 | After 1985 |
+|-------|-------------|------------|
+| Mactaquac 2SW | 0.35–1.5% | collapsed |
+| Mactaquac 1SW | 0.9–4.5% | ~0.5–1.0% |
+| Penobscot 2SW | 0.2–1.3% | collapsed |
+
+Enhancement, commercial closures, and angling restrictions **did not** restore cycles — implying a persistent **marine** driver.
+
+---
+
+## Why lice/aquaculture is argued insufficient
+
+- Remote rivers **without farms** collapsed
+- Timing/geography of collapse **does not match** farm expansion alone
+- Juvenile production often **stable until adults nearly gone**
+- Paper acknowledges lice papers (e.g. Vollset et al. 2016) but treats them as **local**, not sufficient for **trans-Atlantic synchrony**
+
+---
+
+## IUU hypothesis (core argument)
+
+- Former **legal** high-seas fisheries (Greenland, Faroes, Norwegian Sea) demonstrably reduced returns continent-wide
+- After **1980s–1990s** agreements, **surveillance outside EEZs** weak → opportunity for undetected **paired-trawl** and intercept fisheries
+- Flatline + smaller adults match **overfishing** signatures
+- Combined with climate stress and long **post-smolt migration mortality** in distant stocks
+
+**Limitation:** IUU mortality is **not directly measured**.
+
+---
+
+## Conflict of interest (from paper)
+
+Authors: **Acadia University**, **UNB**, **Marine Institute (Ireland)**, **University of Glasgow**. Contact: Michael Dadswell, Acadia. **No competing interest statement** in extracted front matter.
+
+---
 
 ## Relevance to this corpus
 
-This review is the primary counter-position in the corpus to the claim that lice from aquaculture are the dominant driver of Atlantic salmon population decline (Q9). It argues that even where salmon lice cause individual mortality, this is insufficient to explain the North Atlantic-wide collapse, and that the regulatory focus on aquaculture management may be addressing the wrong cause.
+| Role | Note |
+|------|------|
+| **Q9 counterweight** | Challenges lice-as-primary-population-driver framing |
+| **Policy** | Implies TLS/farm-focused regulation may miss main marine mortality for oceanic stocks |
+| **Pair with** | Forseth et al. 2017 (Norway threats), Bøhn 2020 (fjord lice mortality), Johnsen 2021 (TLS) |
+
+Use as **contested interpretive review**, not as refutation of fjord-scale lice experiments.
+
+---
 
 ## Limitations
 
-- The IUU hypothesis is largely indirect and cannot be directly tested with available data
-- The review presents a strong interpretive case for IUU, but does not fully quantify potential mortality from this source
-- Some aquaculture-specific evidence (particularly for Norwegian fjord populations) may not be adequately weighted
+- Indirect IUU evidence
+- May underweight **Norwegian** and **BC** aquaculture-zone studies
+- No quantitative attribution matrix across stressors

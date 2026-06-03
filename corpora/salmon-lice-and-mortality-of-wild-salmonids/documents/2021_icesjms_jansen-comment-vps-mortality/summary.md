@@ -1,32 +1,90 @@
-# Jansen & Gjerde 2021 — Comment on "Salmon lice-induced mortality of Atlantic salmon post-smolt during migration in Norway" by Johnsen et al. (2021)
+# Summary: Jansen & Gjerde (2021)
 
-## Background
-Johnsen et al. (2021) developed a virtual post-smolt (VPS) model predicting lice-induced mortality of Atlantic salmon migrating from 401 Norwegian rivers. The model predicted >30% mortality for 82 rivers, contributing to mandatory production reductions in management areas 4 and 5. Jansen & Gjerde present a validation analysis comparing VPS mortality predictions against observed mortality estimates from trawled post-smolts in corresponding fjord areas.
-
-## Methods
-Post-smolt trawling data from 2017-2020 were downloaded from the Norwegian Marine Data Centre (NMDC; N=7929 fish). Mortality of trawled post-smolts was estimated using the same methods as Johnsen et al. (2021): negative binomial distribution of lice per fish, 20g assumed weight, and identical mortality thresholds (100% at >6 lice, 50% at 4-6, 20% at 2-3, 0% at 0-1 harmful lice). VPS mortality from rivers draining into corresponding fjords was compared with trawl-derived mortality for 27 area-year comparisons.
-
-## Key Findings
-- VPS mortality was higher than trawl-estimated mortality in 26 of 27 area-year comparisons.
-- The difference was especially pronounced at low mortality levels.
-- The chi-squared test showed significant differences between trawl and VPS mortality class distributions (p=0.003).
-- Even after adjusting for further lice infestation on remaining migration pathway, VPS mortality was still overestimated for 22 of 27 comparisons (p=0.023).
-- The analysis contradicts Johnsen et al.'s conclusion that modelled lice levels "coincide with" observed levels.
-
-## Uncertainty and Limitations
-- Assumes trawled post-smolts are representative of those migrating from inner fjord rivers.
-- Does not account for potential lice accumulation on remaining migration pathway to open sea.
-- Cannot explain the reasons for systematic overestimation due to model complexity.
-- Uses average VPS mortality from rivers, which may not represent trawl catch composition.
-
-## Relevance to Corpus
-A critical validation study directly challenging the VPS model outputs used in the TLS for regulatory decisions. Demonstrates a systematic bias toward overestimation of lice-induced mortality, directly relevant to Q5, Q7, Q8, Q10.
-
-## Relation to Other Documents
-- Directly critiques Johnsen et al. 2021 VPS model (basis for TLS assessments).
-- Supports the uncertainty concerns raised by Eliasen et al. 2021 about model validation.
-- Aligns with Van Nes et al. 2024 critique of TLS overestimation.
-- Jansen is first author on both this comment and Jansen et al. 2025, which takes the population-level analysis further.
-- Stige et al. 2022 addresses calibration sensitivity from the model developers' perspective.
+**Full title:** Comment on "Salmon lice-induced mortality of Atlantic salmon post-smolt during migration in Norway" by Johnsen et al. (2021)
+**Journal:** ICES Journal of Marine Science, 78(10): 3847–3851
+**DOI:** 10.1093/icesjms/fsab206
+**Document type:** Comment (peer-reviewed)
+**Priority questions:** Q5, Q7, Q8, Q10
 
 ---
+
+## What this paper does
+
+Validates the **IMR Virtual Post-Smolt (VPS)** model (Johnsen et al. 2021) by comparing **the same mortality algorithm** applied to:
+1. **Observed** lice on **NALO trawl** post-smolts (outer fjords, 2017–2020)
+2. **Mean predicted VPS mortality** from rivers draining into those fjords
+
+**Dataset:** **N = 7,929** Atlantic salmon post-smolts (5–50 g, wild); excluded **339** tagged and **326** with scale-loss comments (lower mean lice: 1.9 vs 3.05).
+
+**Mortality steps (identical to Johnsen et al.):**
+- Mean lice × **0.6** → harmful lice count
+- Negative binomial, dispersion **= 0.3695**
+- Assume **20 g** fish
+- Thresholds: **>6** lice → 100% mortality; **4–6** → 50%; **2–3** → 20%; **0–1** → 0%
+
+---
+
+## Main findings
+
+### Headline comparison
+
+- VPS mortality **higher than trawl** in **26 of 27** area-year pairs (Figure 1)
+- Gap largest when trawl mortality is **low** (low mean lice abundance)
+
+### Mortality class distribution (Table 2)
+
+| Class | Trawl area-years | VPS area-years |
+|-------|------------------|----------------|
+| **M > 30%** | 4 | **13** |
+| 10% < M < 30% | 5 | 8 |
+| M < 10% | 18 | 6 |
+
+**χ²(2, N=54) = 11.46, p = 0.003**
+
+### Example area-years (Table 1 excerpt)
+
+| Area | Year | Trawl N | Trawl M (%) | VPS mean M (%) | VPS range |
+|------|------|---------|-------------|----------------|-----------|
+| MA4-1 | 2017 | 187 | 52.8 | 59.5 | 49–64 |
+| MA5 | 2017 | 413 | 6.0 | 24.7 | 7–36 |
+| MA6-2 | 2017 | 228 | 0.3 | 8.2 | 3–26 |
+| MA4-1 | 2020 | 241 | 10.1 | 39.2 | 30–43 |
+
+### Supplementary: remaining migration pathway
+
+Critics argued trawled fish accumulate more lice **after** the trawl station. Authors regressed lice vs relative distance toward open ocean (**RD**): significant positive RD in **11/27** area-years. Adjusted trawl mortalities rise, but VPS still higher in **22/27** comparisons (**χ² p = 0.023**).
+
+### Policy link
+
+Johnsen et al. **2019** VPS results (**>30%** mortality for **82 rivers**) contributed to **mandatory production reductions** in **MAs 4 and 5**. This comment argues the model **overstates** mortality vs trawl-consistent estimates.
+
+---
+
+## Conflict of interest (from paper)
+
+- **Peder A. Jansen** — **INAQ AS** (consultancy)
+- **Bjarne Gjerde** — **Nofima**
+- No specific grant declared
+- Jansen is co-author of the **NVI** VPS framework that competes with IMR's model in TLS assessments
+
+Open access CC BY 4.0.
+
+---
+
+## Relevance to this corpus
+
+| Question | Contribution |
+|----------|----------------|
+| **Q5** | Tests whether modelled infestation/mortality matches observed trawl lice loads |
+| **Q7–Q8** | Same Taranger thresholds — shows conversion step yields higher VPS than trawl |
+| **Q10** | Direct evidence of systematic bias in TLS input model |
+
+**Always read with** `2021_icesjms_johnsen-vps-mortality-norway` and **Stige et al. 2022** (trawl vs cage calibration).
+
+---
+
+## Limitations
+
+- Mean VPS across rivers ≠ trawl catch mix
+- Cannot attribute overestimation to specific sub-model
+- Origin-of-trawl-fish assumption debated but defended via genetics and VPS routing rules

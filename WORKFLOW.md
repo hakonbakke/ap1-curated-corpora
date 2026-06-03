@@ -55,11 +55,15 @@ inclusion/exclusion decisions before proceeding.
 **Goal**: Generate a human-readable AI summary of the document.
 
 **Actions**:
-- Give Claude the PDF with the instruction: "Write a structured summary of this document for a scientific evidence corpus. Include: Background, Methods, Key Findings, Uncertainty and Limitations, Relevance to corpus, and Relation to other documents."
-- Save output as `summary.md` in the document folder
+- Run OpenDataLoader PDF on the source PDF (recommended — preserves tables and structure):
+  ```powershell
+  python scripts/convert_pdfs_odl.py --doc YYYY_journal_keyword
+  ```
+  This writes `documents/<doc_id>/extracted.md` from `documents/PDFs/*.pdf`.
+- Use `extracted.md` (not raw PDF in chat) when drafting `summary.md` and `metadata.yaml`
 - Flag any content extraction issues (scanned PDFs, non-English text)
 
-**Output**: `summary.md` alongside `original.pdf`
+**Output**: `extracted.md` + `summary.md` (PDF remains in SharePoint / `documents/PDFs/`, not in git)
 
 ---
 

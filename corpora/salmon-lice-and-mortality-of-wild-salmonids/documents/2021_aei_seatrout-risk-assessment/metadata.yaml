@@ -40,7 +40,9 @@ causal_chain_stage:
   - "host_exposure"
   - "infestation"
   - "physiological_effects"
+  - "behaviour"
   - "population_impacts"
+  - "regulatory_assessment"
 
 host_species:
   - "sea_trout"
@@ -63,6 +65,7 @@ geography:
   - "Norway_PO3"
   - "Norway_PO5"
   - "Hardangerfjord"
+  - "Romsdalsfjord"
 
 time_period: "2018–2019"
 
@@ -82,12 +85,12 @@ study_design:
 
 data_source:
   - "farm_lice_counts"
-  - "sentinel_cages"
   - "hydrodynamic_model_output"
 
 model_type:
   - "lice_particle_tracking_model"
   - "infestation_model"
+  - "risk_assessment_model"
 
 observation_unit:
   - "river"
@@ -102,107 +105,119 @@ outcome_domain:
   - "behaviour_change"
   - "population_abundance"
 
-primary_endpoint: "reduced marine living area (RML)"
+primary_endpoint: "Reduced marine living area (RML, %)"
 secondary_endpoints:
-  - "reduced marine feeding time (RMT)"
+  - "Reduced marine feeding time (RMT, days vs 70 d baseline)"
+  - "River-specific RML/RMT (Oselvo, Etne, Eira, Rauma)"
 
 # DEL C — FUNN OG BEVIS
 evidence_direction: supports_effect
+
 effect_scale: population_level
+
 uncertainty_emphasis: moderate
 
 main_uncertainty_sources:
   - "infestation_to_mortality_thresholds"
   - "migration_timing"
-  - "sampling_representativeness"
+  - "model_structure"
+  - "parameter_uncertainty"
 
 key_claims:
-  - "Sea trout in PO3 Hardangerfjord may lose 49-66% of marine living area depending on migration timing"
-  - "Within-production-area variation is dramatic: Oselvo trout lose 94-98% of habitat while Etne trout lose 0-68%"
-  - "Late-migrating sea trout are consistently more affected by lice than early migrants"
-  - "The proposed RML and RMT indices are scalable to all production areas and rivers"
+  - "RML = ([red] + 0.5×[yellow])/total area; RMT = days until RML>30% − 70 d; 70 d marine residence, 60 g smolt, 20 km radius, 2 m depth"
+  - "Impact matrix (Taranger 2015 adjusted): 100% at >30 mobile lice, 50% at 10-30, 0% at ≤10; ROC calibrated to Hardanger sentinel cages 2012-2017 (>18 / 6-18 / <6 mobile lice zones)"
+  - "PO3 area-wide RML: early migrants 32%, intermediate (May 15) 49%, late (June 5) 66%"
+  - "PO3 rivers: Oselvo RML 94/97/98% (early/int/late); Etne 0/17/68%; Oselvo RMT −30/−46/−56 d; Etne late only RMT −16 d"
+  - "PO5 area-wide RML: 34% early → 45% intermediate → 59% late"
+  - "PO5 rivers: Eira RML 83/87/85%, RMT −19/−35/−50 d; Rauma 40/43/48%, RMT −6/−24/−40 d"
+  - "Late migrants (June 5) always more affected than April 24 or May 15 across POs"
+  - "Proposed TLS-style RML limits for sea trout: high >30%, moderate 10-30%, low <10% (parallel to salmon mortality bands)"
+  - "~430 mapped sea trout rivers in Norway; method scalable to all POs; 160×160 m grid (vs 800×800 m standard)"
 
 claims_about_uncertainty:
-  - "Critical lice thresholds for sea trout are based on limited laboratory studies and may not reflect field conditions"
-  - "Higher resolution model (160m) not yet as widely validated as the standard 800m grid"
+  - "Thresholds from Taranger et al. laboratory work may not reflect wild field conditions; 40% sessile-to-mobile survival assumed"
+  - "Fixed 60 g size; assumes no return to sea after premature freshwater return"
 
 claims_about_policy_or_management:
-  - "A holistic view of environmental interactions between aquaculture and all wild species is necessary"
-  - "Proposed setting RML limit values equivalent to salmon mortality limits (>30% = high, 10-30% = moderate, <10% = low)"
+  - "Holistic assessment needed for aquaculture impacts on sea trout — not salmon-only TLS focus"
+  - "Inner-fjord rivers can show low RML in method while outer-fjord habitat loss still matters for stock connectivity"
 
 methodological_limitations:
-  - "Does not directly model mortality — uses habitat loss as proxy"
-  - "Fixed 60g fish size does not capture population-level size variation"
-  - "Assumes no return to sea after premature freshwater return"
+  - "Proxy indicators (RML/RMT), not direct mortality modelling"
+  - "160 m grid less widely validated than 800 m grid"
+  - "Does not quantify predation cost of surface refuge behaviour"
 
 rag_summary: >
-  Proposes reduced marine living area (RML) and reduced marine feeding time (RMT) as sustainability
-  indicators for sea trout in the Norwegian Traffic Light System. Uses a bio-hydrodynamic model at
-  160m resolution to estimate salmon lice impact on sea trout habitat in PO3 (Hardangerfjord) and PO5
-  (Romsdalsfjord). Found dramatic potential impacts: 49-98% habitat loss depending on river location
-  and migration timing. Late-migrating trout consistently more affected. Method scalable to all
-  Norwegian production areas. Does not model mortality directly but estimates habitat loss as proxy.
+  Finstad et al. (2021, AEI 13:133-144, open access) propose Reduced Marine Living Area (RML) and
+  Reduced Marine Feeding Time (RMT) for first-time migrant sea trout using 160 m bio-hydrodynamic lice
+  model (PO3 Hardanger, PO5 Romsdal). Late migration (June 5) worst: PO3 RML 32-66% by timing;
+  Oselvo 94-98% vs Etne 0-68%. PO5 Eira loses up to 71% marine time (50 of 70 d). ROC thresholds
+  >30/10-30/≤10 lice from Taranger index. Suggests RML bands matching salmon TLS (>30% high). DNV
+  funding to first author; ExpGrp/TLS steering acknowledged.
 
 coi_declared: yes
+
 coi_notes: >
-  Funded by Ministry of Trade, Industry and Fisheries, Norwegian Environment Agency, and multiple
-  Norwegian research institutions. First author acknowledges DNV funding. Several authors are
-  members of the TLS Expert Group or closely affiliated institutions.
+  Funded by Ministry of Trade Industry and Fisheries, Environment Agency, Food Safety Authority,
+  IMR, NINA, Veterinary Institute, NORCE, Rådgivende Biologer, NTNU. **Bengt Finstad also acknowledges
+  financial support from DNV (Det Norske Veritas).** Authors include TLS expert group members
+  (named in acknowledgements: Næsje, Boxaspen, Hjeltnes, Nilsen, Ellingsen, Helgesen, Qviller,
+  Dalvin, Myksvoll, Jansen, Kristoffersen, etc.). Open access CC BY.
 
 # DEL D — SYNTESE OG PLASSERING I LITTERATUREN
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
 consensus_signal: moderate_agreement
+
 quality_signal: strong
+
 quality_rationale: >
-  Well-documented model methodology building on validated bio-hydrodynamic framework.
-  Clear sensitivity analysis with multiple migration timings and rivers. Peer-reviewed
-  in Aquaculture Environment Interactions. Limitation is proxy approach (habitat loss
-  rather than direct mortality).
+  Peer-reviewed extension of TLS bio-hydrodynamic framework to sea trout with explicit equations,
+  ROC validation, and four river exemplars. Limitation: habitat-loss proxy, not measured mortality.
 
 controversy_role: supportive
+
 relevance_signal: medium
+
 relevance_rationale: >
-  Extends the corpus focus to sea trout, which shares lice exposure pathways with salmon.
-  Demonstrates the spatial and temporal variability in lice impact within production areas,
-  relevant for understanding model uncertainty in the TLS.
+  Shows extreme spatial heterogeneity within single POs — relevant to Q1-Q3 exposure and TLS
+  spatial-resolution debates. Complements salmon VPS papers.
 
 transferability: medium
+
 transferability_notes: >
-  Method applicable wherever bio-hydrodynamic lice models exist. Sea trout biology
-  parameters would need adjustment for other regions.
+  Applicable where lakselus.no-style models exist; sea trout life-history parameters need local tuning.
 
 # DEL E — RELASJONER OG KURATORKOMMENTARER
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
 included_because: >
-  Demonstrates the methodological framework for estimating lice impact on sea trout, extending
-  the TLS approach. Shows dramatic within-production-area variation in lice exposure, which is
-  central to understanding the spatial resolution challenges of the regulatory system.
+  First peer-reviewed sea-trout TLS indicator method (RML/RMT), demonstrating order-of-magnitude
+  variation between rivers in the same production area — critical for corpus coverage beyond Atlantic salmon.
 
 related_documents_supporting:
-  - "Stige et al. 2022 (10.3354/aei00443) — calibration sensitivity applies to same model framework"
+  - "2022_aei_stige-model-sensitivity-calibration"
+  - "2021_icesjms_johnsen-vps-mortality-norway"
 
 related_documents_contrasting: []
 
 related_documents_reply_to: []
 
 should_be_read_with:
-  - "Eliasen et al. 2021 — evaluates the same modelling framework this study extends"
+  - "2021_rcn_traffic-light-evaluation"
+  - "2024_ecosphere_hawley-anadromy-lice-mortality-trout"
 
 retrieval_tags:
   - "sea trout"
-  - "habitat loss"
   - "RML"
   - "RMT"
-  - "bio-hydrodynamic model"
-  - "Hardangerfjord"
-  - "migration timing"
+  - "PO3"
+  - "Oselvo"
+  - "Etne"
+  - "ROC"
+  - "160m grid"
+  - "migration June 5"
 
 curator_note: >
-  Open access. Several authors are TLS Expert Group members. The evaluation committee
-  (Eliasen et al. 2021) noted this method existed but was not yet peer-reviewed at time
-  of their evaluation; it was published in May 2021.
+  ODL refresh 2026-06-03 from extracted.md. Added PO3/PO5 RML-RMT tables, Taranger threshold matrix,
+  and DNV funding to coi_notes. EvalComm (2021) noted method as appendix before peer review.
 
-# KURATERSTATUS
 curator_review_status: pending
 added_by: "Claude"
-added_date: "2026-03-23"
+added_date: "2026-06-03"

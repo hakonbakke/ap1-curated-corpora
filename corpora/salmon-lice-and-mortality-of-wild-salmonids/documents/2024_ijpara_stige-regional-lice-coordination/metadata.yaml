@@ -118,11 +118,11 @@ main_uncertainty_sources:
   - "profitability_and_feasibility_not_modelled"
 
 key_claims:
-  - "Estimated salmon louse-induced post-smolt mortality in the Nordfjord study area has averaged ~20% in recent years — roughly double the TLS green-light target (<10%)."
-  - "The virtual post-smolt model implies adult female farm lice in spring must be halved (~0.3 million females) to reach acceptable (green-light) mortality levels in Nordfjord."
-  - "Hindcast simulation of coordinated production and fallowing (zonation) reduced mean lice levels and treatments overall but increased interannual spring variability, with unacceptably high lice in even years when many farms are in year two of production."
-  - "Only measures that reduced density of farmed salmonids in open cages — stocking ≥1 kg fish, closed/semi-closed production, or fewer fish — brought spring lice below the ~0.3 million threshold in even years."
-  - "Coordinated highly effective spring treatment transiently reached the threshold but did not persist into summer; net benefit of the proposed zonation scheme alone is questionable."
+  - "VPS model: ~10% post-smolt mortality ≈ 0.3 million spring adult female lice (weeks 16–21 average, 19 farms, 2012–2022); Nordfjord recent average ~20% (~2× green-light target)"
+  - "Zonation hindcast (2015–2022): mean adult females −12% (1.36→1.20 M), treatments −11% (8.5→7.6% cages/week); spring odd years 0.54→0.06 M but even years 0.73→1.06 M"
+  - "Week 15 coordinated 98% treatment: spring lice −66% to 0.37 M (still above 0.3 M goal); week 12 98% + 0.1 threshold: 0.42 M spring, 0.34 M weeks 13–39"
+  - "Stock 1 kg: spring even-year lice −75% to 0.27 M (below goal); closed half of farms: −63% to 0.40 M; skirt all −29% to 0.84 M — insufficient alone"
+  - "89% of infestation pressure originated within study area; simulated lice counts averaged 17% above reported historic data"
 
 claims_about_uncertainty:
   - "90% simulation intervals reflect stochasticity in lice dynamics and, for closed-cage scenarios, random farm subset selection."
@@ -217,7 +217,7 @@ retrieval_tags:
   - "TLS green light"
 
 curator_note: >
-  Open access. Case study in PA4 (Vestland). Cited by Jansen et al. (2025). PDF in documents/PDFs/.
+  ODL refresh 2026-06-03 from extracted.md. Open access (CC BY). Nordfjord/PA4 case; 19 farm locations; 100 stochastic replicates per scenario; NVI VPS + Aldrin farm lice model.
 
 curator_review_status: pending
 added_by: "Claude"

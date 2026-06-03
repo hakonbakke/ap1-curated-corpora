@@ -120,11 +120,12 @@ main_uncertainty_sources:
   - parameter_uncertainty
 
 key_claims:
-  - "Escaped farmed salmon is ranked as the single largest current threat to Norwegian Atlantic salmon populations, classified as an 'expanding population threat'."
-  - "Salmon lice from fish farms is ranked as the second largest threat, also classified as an 'expanding population threat' — meaning it may cause populations to become critically endangered or lost, with a high likelihood of further expansion."
-  - "Both escaped farmed salmon and salmon lice affect populations to the extent that they may be critically endangered or lost, unlike other threats that cause reduction in adult returns but not population viability threats."
-  - "Gyrodactylus salaris, freshwater acidification, and hydropower regulation are classified as 'stabilized population threats' — formerly major causes of decline but now managed."
-  - "Overexploitation is no longer considered an important impact factor following introduction of conservation limits and fishing restrictions."
+  - "Semi-quantitative 2D ranking (effect × development, 2015): escaped farmed salmon highest on both axes (~0.83 effect, ~0.80 development)—largest expanding population threat."
+  - "Salmon lice second expanding population threat (~0.70 effect, ~0.58 development); may render populations critically endangered (>75% adult reduction or >10% farm introgression) with high likelihood of further loss."
+  - "2015 Norway: ~382 million farmed salmon vs ~522,000 wild spawners (~732:1); worst-case >1 billion lice larvae day⁻¹ possible under regulations (Taranger et al. 2015)."
+  - "Experimental smolt protection studies: additional marine mortality from lice 0.6–39% across sites/years; large reductions in returning adults in affected populations (>25% typical)."
+  - "Stabilized threats: G. salaris, acidification, hydropower/habitat alteration; overexploitation downgraded after conservation-limit management."
+  - "51/109 Norwegian populations show significant farm introgression (mean 6.4%, max 42%; Karlsson et al. 2016); lice risk moderate–high on parts of coast per national risk assessments."
 
 claims_about_uncertainty:
   - "The 2D classification system involves expert judgment and is semi-quantitative; exact placement of threats involves uncertainty."
@@ -140,12 +141,12 @@ methodological_limitations:
   - "The classification focuses on Norwegian populations; ranking may differ for other North Atlantic regions."
 
 rag_summary: >
-  Forseth et al. (2017) developed a semi-quantitative 2D classification system to rank 15 anthropogenic threat factors to Norwegian Atlantic salmon populations. Escaped farmed salmon was identified as the largest current threat, followed by salmon lice from aquaculture — both classified as 'expanding population threats' capable of causing populations to become critically endangered or lost. Gyrodactylus salaris, acidification, and hydropower were ranked as 'stabilized threats'. The paper provides the authoritative Norwegian scientific consensus on the relative importance of aquaculture-related threats to wild Atlantic salmon, and serves as the foundational reference for the claim that salmon farming poses an existential risk to some Norwegian salmon populations.
+  Forseth et al. (2017) report the Norwegian Scientific Advisory Committee for Atlantic Salmon Management ranking of 15 anthropogenic impacts on >400 Norwegian salmon rivers using a continuous effect×development matrix. Escaped farmed salmon scores highest (expanding population threat), followed by salmon lice—both capable of pushing populations past critical thresholds (>75% spawner loss or >10% farm gene introgression). Lice effects synthesise 0.6–39% experimentally estimated extra smolt mortality, regional/national infestation patterns, and escalating farm biomass (~732× wild spawner abundance in 2015). Gyrodactylus salaris, acidification and hydropower are stabilised threats with mitigation in place; overexploitation is no longer ranked major. The framework supports national prioritisation and underpins lice-focused regulation (traffic-light system). Open Access CC BY 4.0; multi-agency public research authorship.
 
 coi_declared: no
 
 coi_notes: >
-  Authors are from Norwegian Institute for Nature Research (NINA), Uni Research, Institute of Marine Research (IMR), Norwegian Institute for Water Research (NIVA), Norwegian Veterinary Institute, UiT, and University of Oslo. These institutions form the core of the Norwegian Atlantic Salmon Committee. No industry funding declared. Open access article.
+  Open Access (CC BY 4.0). Authors represent NINA, Uni Research, IMR, NIVA, Norwegian Veterinary Institute, UiT and University of Oslo—the Atlantic Salmon Committee advisory group. No industry funding or conflict-of-interest statement in the paper.
 
 
 # ======================================================================
@@ -206,7 +207,7 @@ retrieval_tags:
   - "Norwegian expert group"
 
 curator_note: >
-  [UNVERIFIED: Del D og E] This is the formal output of Norway's national salmon scientific advisory committee. Expert should confirm that the current state of knowledge (post-2017) has not significantly revised the ranking of threats. Ragnar Tveterås may have specific views on how this relates to the TLS evidence base.
+  [UNVERIFIED: Del D og E] This is the formal output of Norway's national salmon scientific advisory committee. Expert should confirm that the current state of knowledge (post-2017) has not significantly revised the ranking of threats. Ragnar Tveterås may have specific views on how this relates to the TLS evidence base. ODL refresh 2026-06-03 from extracted.md (composite scores, farm:wild ratios, lice mortality range, introgression statistics).
 
 
 # ======================================================================

@@ -17,7 +17,7 @@ journal: "Journal of Fish Diseases"
 publisher: "John Wiley & Sons Ltd"
 language: english
 source_type: peer_reviewed
-document_type: commentary
+document_type: research_article
 abstract_available: yes
 
 # DEL B - KONTEKST OG STUDIEDESIGN
@@ -90,10 +90,13 @@ main_uncertainty_sources:
   - "Only 2 years post-complete-removal (2023-2024)"
 key_claims:
   - "Sea lice infestations on juvenile chum and pink salmon persisted in the Discovery Islands despite zero Atlantic salmon aquaculture production from 2022 onwards"
-  - "In 2024, lice prevalence and mean abundance on pink salmon exceeded levels measured in 2017-2019 (pre-removal peak era), despite continued absence of aquaculture"
-  - "A previously reported 96% decline in sea lice (2020-2022) attributed to aquaculture removal (Routledge and Morton 2023) was not sustained; 2024 data showed rebound to levels similar to or exceeding pre-removal years"
-  - "5,967 juvenile salmon examined across 16 sites from 2017-2024; prevalence on chum salmon ranged 2.9% (2023) to 26.9% (2019); on pink salmon 0% (2023) to 17.1% (2020)"
-  - "Natural reservoirs (resident Pacific salmon, herring, stickleback) are candidate sources of persistent lice infestations independent of aquaculture"
+  - "In 2024 (0 MT biomass), pink mean total abundance 0.18±0.03 exceeded all 2017–2019; chum 0.15±0.02 exceeded 2017 (0.09) and 2018 (0.06); pink 2023 had 0 lice of either species"
+  - "Chum mean weight 0.89 g (2017) to 1.79 g (2019); pink 0.33 g (2023) to 1.22 g (2024); BC-CAHS microscopic ID to species and stage (Kabata 1972; Hamre et al. 2013)"
+  - "Table 2: farm biomass peaked at 18,126 MT (2020) then fell to 0 MT from 2022; 2024 lice rebound occurred with 0 MT production — aquaculture biomass did not track post-2022 infestation levels"
+  - "A previously reported 96% decline in sea lice (2020-2022) attributed to aquaculture removal (Routledge and Morton 2023) was not sustained; 2024 prevalence/abundance rebounded"
+  - "5,967 juvenile salmon examined (3,481 chum, 2,486 pink) at 16 beach-seine sites, 2017-2024; chum prevalence 2.9% (2023) to 26.9% (2019); pink 0% (2023, no lice detected) to 17.1% (2020)"
+  - "L. salmonis comprised 57.3% of all lice on chum (range 25.0–74.2%) and 44.2% on pink (22.7–61.4%); authors argue northwesterly flow reduces contribution from adjacent active farms"
+  - "Authors state reported aquaculture biomass did not adequately account for likely source infestation magnitude; call for improved environmental monitoring"
 claims_about_uncertainty:
   - "The relative magnitude of aquaculture vs. natural reservoir contributions to sea lice infestations remains uncertain due to limited information on natural infestations"
   - "Environmental factors appear to drive inter-annual variability in lice levels, complicating causal attribution to aquaculture removal"
@@ -105,27 +108,26 @@ methodological_limitations:
   - "No formal statistical modelling of aquaculture-lice relationship"
   - "No concurrent sampling of reservoir host species to quantify natural lice sources"
   - "Beach seine sampling may not capture all salmon size classes equally"
+  - "Adjacent active Atlantic salmon facilities excluded from biomass totals — northwesterly flow argument"
 
 rag_summary: >
-  Jones, Revie and Stewardson (2025) report a longitudinal natural experiment in the Discovery Islands (DI),
-  British Columbia, Canada, examining sea lice infestations on juvenile chum and pink salmon (n=5,967) from
-  2017 to 2024, spanning the full removal of 15 Atlantic salmon aquaculture facilities between 2020 and 2022.
-  The study found that despite zero Atlantic salmon aquaculture production since 2022, sea lice infestations
-  (L. salmonis and C. clemensi) persisted and rebounded in 2024 to levels similar to or exceeding those
-  measured in pre-removal years (2017-2019). Specifically, lice prevalence on pink salmon in 2024 exceeded
-  all years measured in 2017-2019, and mean abundance on chum salmon returned to above 2017-2018 levels.
-  The paper directly challenges an earlier claim (Routledge and Morton 2023) that a 96% decline in sea lice
-  in 2020-2022 was attributable to aquaculture removal, arguing instead that natural reservoir hosts and
-  environmental variability are primary drivers. The key limitation is the absence of reservoir host sampling
-  to quantify non-farm lice sources, and only two post-removal years are available (2023-2024).
+  Jones, Revie and Stewardson (2025, J Fish Dis, e14136) report 8-year beach-seine monitoring of juvenile
+  chum (n=3,481) and pink salmon (n=2,486) at 16 Discovery Islands sites (BC, 2017-2024) through complete
+  removal of 15 Atlantic salmon farms (0 MT biomass from 2022). Despite zero production, 2024 mean total lice
+  abundance on pink salmon (0.18±0.03) exceeded all 2017-2019 values; on chum (0.15±0.02) exceeded 2017-2018.
+  Farm biomass peaked at 18,126 MT in 2020 but did not track post-2022 lice levels. Replicates Routledge &
+  Morton (2023) 96% decline finding for 2020-2022 but shows rebound in 2024, implicating environmental factors
+  and natural reservoirs (resident Pacific salmon, herring, stickleback). Corresponding author has ongoing
+  aquaculture-industry sampling contract (declared COI). Companion DAO paper on Broughton Archipelago.
 
 coi_declared: yes
 coi_notes: >
-  Authors declare no specific funding for this work. Simon R. M. Jones is affiliated with Fisheries and
-  Oceans Canada (government science agency); Crawford W. Revie with University of Strathclyde (UK);
-  Lance Stewardson with Mainstream Biological Consulting (private sector, Campbell River BC). Stewardson
-  is corresponding author and has commercial consulting background, which warrants transparency in
-  interpretation. No funding from aquaculture industry is declared.
+  No specific funding declared. Lance Stewardson (Mainstream Biological Consulting, corresponding author)
+  has an ongoing annual contract with BC aquaculture producers (Cermaq Canada, Grieg Seafood BC, MOWI
+  Canada West) to sample wild juvenile salmon for sea lice assessment under licence conditions or
+  environmental certification programmes — material industry-linked COI for interpretation. Acknowledges
+  support/data access from Grieg, MOWI, and Cermaq. Jones (Fisheries and Oceans Canada); Revie
+  (University of Strathclyde). Open access CC BY.
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: contested
@@ -197,11 +199,7 @@ retrieval_tags:
   - "natural_reservoir"
   - "Q1_attribution"
 
-curator_note: >
-  Open access paper (Creative Commons Attribution License). Downloaded via Norwegian Institute of
-  Public Health (Wiley Online Library, accessed 28/05/2025). Short communication format (4 pages).
-  This is a direct challenge to the Routledge and Morton (2023) paper. Published in Journal of Fish
-  Diseases (Wiley). Companion paper: Jones et al. 2025 in Diseases of Aquatic Organisms (DAO).
+curator_note: "ODL refresh 2026-06-03 from extracted.md"
 
 curator_review_status: pending
 added_by: "Claude"

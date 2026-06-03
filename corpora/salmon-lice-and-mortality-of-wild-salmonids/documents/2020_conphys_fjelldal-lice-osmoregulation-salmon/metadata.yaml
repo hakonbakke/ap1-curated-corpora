@@ -86,14 +86,11 @@ main_uncertainty_sources:
   - "Threshold values derived from regression, not established by controlled dose-response titration"
   - "Only 28-day observation period — longer infections may shift thresholds"
 key_claims:
-  - "Infected post-smolts had mean infection intensity of 0.38 mobile lice g-1 fish weight (range 0.07-0.9) at 28 days post-infection"
-  - "Specific growth rate was significantly lower in infected fish (0.4% day-1) than controls (1.0% day-1)"
-  - "Infected fish showed elevated plasma Na+, Cl- and osmolality, indicating osmoregulatory impairment"
-  - "SGR correlated negatively with plasma Na+, Cl-, osmolality and cortisol in infected fish but not in controls"
-  - "Threshold values for osmoregulatory response: 0.18 lice g-1 for plasma Cl-, and 0.22 lice g-1 for plasma Na+"
-  - "Moribund infected fish occurred at infection intensities above 0.2 lice g-1 and showed extreme plasma Cl-, Na+, osmolality and cortisol levels"
-  - "No moribund fish in control group; 29 infected fish died during the 28-day experiment"
-  - "Plasma cortisol correlated positively with plasma Na+, Cl- and osmolality in infected fish"
+  - "F1 River Etne wild-origin post-smolts (~40 g): 4290 copepodids added; mean 0.38 mobile lice g⁻¹ at day 30 (range 0.07–0.9), ~17 mobile lice fish⁻¹, 100% prevalence."
+  - "SGR 0.42 vs 0.95% day⁻¹ (infected vs control); infected fish shorter/lighter with lower CF (nested ANOVA p<0.05)."
+  - "Plasma thresholds (normal fish, n=35): Cl⁻ response 0.18 lice g⁻¹, Na⁺ 0.22 lice g⁻¹ (control mean+2 SD); moribund above ~0.2 lice g⁻¹ with extreme ions/cortisol."
+  - "Mortality 23.6% infected vs 12.7% control (Vibrio lesions in two control tanks); lice deaths days 22–30, total impact mortality 29.7% including moribund."
+  - "SGR negatively correlated with Na⁺, Cl⁻, osmolality, cortisol in infected fish (R² 0.48–0.65); infection intensity R² 0.47 vs Cl⁻, 0.36 vs SGR."
 claims_about_uncertainty:
   - "The lice infection intensity threshold values for physiological responses remain to be fully identified across the range of natural fish sizes and conditions"
   - "Threshold values derived here are specific to ~40 g post-smolts and may not directly apply to smaller wild smolts"
@@ -101,30 +98,18 @@ claims_about_policy_or_management:
   - "Provides threshold values that can be used to define lice intensity limits in monitoring and conservation of wild Atlantic salmon populations affected by aquaculture-driven infestations"
   - "The Norwegian salmon lice risk index and TLS parameterise risk using registered lice infection intensity — this study provides physiological validation of the thresholds underlying those models"
 methodological_limitations:
-  - "Laboratory challenge does not replicate field conditions (open water, multiple stressors, natural behavior)"
-  - "Lice strain from farmed outbred population — may not represent virulence of wild-origin lice"
-  - "Relatively small sample sizes per group (n=45 for plasma analysis)"
-  - "Only mobile lice counted; lice stages not separated, precluding analysis of which stage drives effects"
-  - "F1 wild fish reared under artificial conditions — immune history differs from field fish"
-  - "Single infection dose experiment rather than multi-dose titration"
+  - "IMR Matre lab: 9°C, 34 ppt, 28-day challenge; copepodids from outbred IMR lice strain (~69% attachment success)."
+  - "n=55 fish/tank, plasma n=45/group; mobile lice only—stages not distinguished; moribund (n=10) analysed separately."
+  - "Control mortality partly Vibrio in two tanks (days 15–22), not lice-related; limits background mortality comparison."
+  - "Single exposure (~26 copepodids fish⁻¹); thresholds from regression vs control+2 SD, not multi-dose titration."
+  - "F1 hatchery-reared Etne fish—differs from wild-caught smolts in immune and stress history."
 
 rag_summary: >
-  Fjelldal et al. (2020) conducted a controlled laboratory challenge in which ~40 g F1 wild-origin Atlantic
-  salmon post-smolts (River Etne broodstock, n=330) were infected with Lepeophtheirus salmonis copepodids
-  or left as uninfected controls. At 28 days post-infection, infected fish had a mean of 0.38 mobile lice
-  per gram fish weight (range 0.07-0.9). Infected fish had specific growth rates of 0.4% day-1 versus 1.0%
-  day-1 in controls, and elevated plasma Na+, Cl- and osmolality indicating osmoregulatory failure. Threshold
-  values for osmoregulatory response were 0.18 lice g-1 (Cl-) and 0.22 lice g-1 (Na+); moribund fish
-  occurred above 0.2 lice g-1. These data provide physiological dose-response values relevant to lice
-  intensity thresholds used in Norwegian TLS risk assessments. Key limitation: laboratory conditions
-  and outbred lice strain may not replicate field virulence and multi-stressor exposure.
+  Fjelldal et al. (2020) infect ~40 g F1 Atlantic salmon post-smolts (River Etne) with L. salmonis copepodids at IMR Matre (9°C, 34 ppt). After 28 days, infected fish average 0.38 mobile lice g⁻¹, grow half as fast (SGR 0.42 vs 0.95% day⁻¹), and show elevated Na⁺, Cl⁻, osmolality and cortisol versus controls. Regression thresholds for ion disruption are 0.18 (Cl⁻) and 0.22 (Na⁺) lice g⁻¹; moribund fish appear >0.2 lice g⁻¹. Total infected mortality/moribundity ~30% vs 13% controls (partly Vibrio in controls). Results support Norwegian lice risk-index and TLS intensity assumptions for small post-smolts. Open Access CC BY 4.0; IMR internal project 14650-05.
 
 coi_declared: yes
 coi_notes: >
-  Authors affiliated with Institute of Marine Research (IMR), Matre Aquaculture Research Station and IMR
-  Bergen. IMR is a Norwegian government research institute involved in salmon lice monitoring and advisory
-  processes. No commercial conflicts declared. Open access article published under Creative Commons
-  Attribution License.
+  Open Access (CC BY 4.0). Funding: Institute of Marine Research internal project Populasjonseffekter (14650-05). Authors IMR Matre/Bergen; Norwegian Food Safety Authority research permit 14982. No commercial COI declared.
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: moderate_agreement
@@ -191,7 +176,7 @@ curator_note: >
   0.2 lice g-1 for moribund onset) are specific quantitative anchors for Q7 queries and should be
   retrieved whenever the corpus is queried about lice intensity thresholds, physiological effects, or
   the biological basis for regulatory thresholds. Note the fish were from the same broodstock source
-  (River Etne) as the Bøhn et al. 2020 experimental fish, which is contextually useful.
+  (River Etne) as the Bøhn et al. 2020 experimental fish, which is contextually useful. ODL refresh 2026-06-03 from extracted.md (Tables 1–8, mortality timeline, copepodid counts).
 
 curator_review_status: pending
 added_by: "Claude"

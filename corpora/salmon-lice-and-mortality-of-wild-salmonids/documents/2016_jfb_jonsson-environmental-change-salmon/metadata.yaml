@@ -95,12 +95,11 @@ main_uncertainty_sources:
   - "Inability to disentangle contributions of specific environmental drivers (temperature vs. zooplankton vs. food web restructuring)"
   - "Lack of direct measurement of prey availability in oceanic feeding areas"
 key_claims:
-  - "Wild 1SW Atlantic salmon returning to River Imsa decreased in mean total length from 63 to 54 cm between 1976 and 2010 cohorts, corresponding to a 40% decline in individual mass (from 2.0 to 1.2 kg)"
-  - "The reduction in body size correlated negatively with near-surface temperatures in the eastern Norwegian Sea (the main feeding area of this stock)"
-  - "Post-smolt growth and marine survival both showed significant positive correlations — larger post-smolts had higher survival rates back to the River Imsa for spawning"
-  - "Hatchery fish reared from parental River Imsa fish exhibited similar declining trends from 1981 onwards, indicating environmental rather than genetic causation"
-  - "The proportion of cohorts maturing as 1SW fish was lower in the 1970s and after 2000 than in the 1980s-1990s, associated with gradual decline in post-smolt growth and lower energy reserves"
-  - "Changes attributed primarily to ecosystem-level restructuring in the North Atlantic: collapse/rebuilding of pelagic fish stocks, gradual decline in zooplankton abundance, and climate-driven sea surface warming"
+  - "Wild 1SW River Imsa salmon: mean LT fell 63→54 cm (1976–2010 regressions, r²≈0.51), ~40% mass decline (2.0→1.2 kg); hatchery releases show parallel trends (r²≈0.36 for LT)."
+  - "1SW LT negatively correlated with Norwegian Sea summer/winter SST (e.g. wild summer slope −28.6 mm °C⁻¹, p<0.05) but temperature explains only modest variance (r²≈0.13–0.32)."
+  - "36,201 wild smolts (1976–2010), 2.9% adult return; 182,740 hatchery smolts (1981–2010), 1.5% return—hatchery mirrors wild life-history shifts (LT, K, G, %1SW: r² 0.37–0.71)."
+  - "Post-smolt growth (G) positively linked to adult LT and wild marine survival (S); proportion maturing as 1SW peaks mid-series (Weibull fits) and tracks condition factor in hatchery fish."
+  - "Authors attribute trends to North Atlantic food-web restructuring (pelagic collapse/rebuild, zooplankton decline) plus ~1°C SST rise—not direct lice or aquaculture effects."
 claims_about_uncertainty:
   - "It is not possible to disentangle the individual contributions of temperature, zooplankton decline, and food web restructuring to the observed life-history changes"
   - "The generalisability of single-river findings to the broader Norwegian or North Atlantic salmon population is uncertain"
@@ -116,20 +115,7 @@ methodological_limitations:
   - "Excludes MSW fish for most analyses due to small sample sizes, potentially biasing inferences"
 
 rag_summary: >
-  Jonsson, Jonsson and Albretsen (2016) present a 35-year time series analysis (1976-2010) of Atlantic
-  salmon (Salmo salar) life-history traits from the River Imsa, south-western Norway. Wild 1SW salmon
-  declined in mean total length from 63 to 54 cm, with a corresponding 40% decline in individual mass
-  (2.0 to 1.2 kg) across cohorts migrating to sea over this period. The decline correlated negatively
-  with near-surface temperatures in the eastern Norwegian Sea (the stock's main feeding area), and
-  post-smolt growth was positively associated with marine survival. Hatchery fish from the same
-  population showed identical trends from 1981 onwards, ruling out genetic change as the cause.
-  The authors attribute the observed changes to large-scale ecosystem restructuring in the North
-  Atlantic — including the collapse and rebuilding of pelagic fish stocks, declining zooplankton
-  abundance, and climate-driven sea surface warming — concluding that Atlantic salmon life-history
-  changes are primarily driven by shifts in the pelagic food web. This paper is relevant to Q9 in the
-  corpus as it provides quantitative evidence that non-lice oceanographic and food-web factors drive
-  large declines in Atlantic salmon marine survival, which is essential context for attributing
-  population-level mortality to sea lice specifically.
+  Jonsson, Jonsson and Albretsen (2016) analyse 35 years (1976–2010) of trap data from River Imsa, SW Norway, plus hatchery smolt releases from 1981. Wild 1SW adults shrank ~40% in mass (63→54 cm LT) while Norwegian Sea SST rose ~1°C; post-smolt growth and condition fell and correlated with survival and maturation strategy (%1SW). Hatchery cohorts track the same environmental trajectory (high r² for LT, K, %1SW), arguing against genetic drift. Temperature–size regressions are significant but explain limited variance; authors emphasise pelagic food-web change (mackerel/herring dynamics, zooplankton) as the primary driver. No lice or farm metrics—essential Q9 baseline showing large marine mortality and growth trends independent of aquaculture parasites.
 
 coi_declared: unclear
 coi_notes: >
@@ -221,7 +207,7 @@ curator_note: >
   but provides essential oceanographic baseline context for the corpus. Note: the copyright notice
   in the extracted text attributes copyright to the World Health Organization 'as submitted for
   publication' — this is likely a journal archiving convention and does not reflect the paper's
-  content or funding.
+  content or funding. ODL refresh 2026-06-03 from extracted.md (trap counts, regression coefficients, hatchery–wild concordance).
 
 curator_review_status: pending
 added_by: "Claude"

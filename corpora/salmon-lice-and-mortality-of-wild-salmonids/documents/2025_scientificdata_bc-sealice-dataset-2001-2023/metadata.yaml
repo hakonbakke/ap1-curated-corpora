@@ -1,5 +1,7 @@
 # ======================================================================
 # METADATA — Crawford et al. 2025
+# Corpus: salmon-lice-and-mortality-of-wild-salmonids
+# Document: 2025_scientificdata_bc-sealice-dataset-2001-2023
 # ======================================================================
 
 title: "Sea lice infestation dataset for wild and farmed salmon populations on the Pacific coast of Canada (2001–2023)"
@@ -14,201 +16,205 @@ authors:
 journal: "Scientific Data"
 publisher: "Nature Portfolio"
 language: english
-
 source_type: peer_reviewed
-
 document_type: dataset_description
-
 abstract_available: yes
 
-
-# ======================================================================
 # DEL B — KONTEKST OG STUDIEDESIGN
-# ======================================================================
-
 corpus: salmon-lice-and-mortality-of-wild-salmonids
 
 priority_questions:
-  - Q1
-  - Q5
+  - "Q1"
+  - "Q5"
 
 causal_chain_stage:
-  - farm_lice_abundance
-  - host_exposure
-  - infestation
-  - model_validation
+  - "farm_lice_abundance"
+  - "host_exposure"
+  - "infestation"
+  - "model_validation"
 
 host_species:
-  - atlantic_salmon
-  - pacific_salmon
-  - mixed_salmonids
+  - "atlantic_salmon"
+  - "pacific_salmon"
+  - "chum_salmon"
+  - "pink_salmon"
+  - "coho_salmon"
+  - "chinook_salmon"
+  - "sockeye_salmon"
+  - "threespine_stickleback"
+  - "pacific_herring"
 
 wild_or_farmed_focus: both
 
 life_stage:
-  - juvenile
-  - mixed
+  - "juvenile"
+  - "mixed"
 
 parasite_species:
-  - lepeophtheirus_salmonis
-  - caligus_clemensi
-  - mixed_lice
+  - "lepeophtheirus_salmonis"
+  - "caligus_clemensi"
 
 environment:
-  - coastal
-  - archipelago
-  - fjord
+  - "coastal"
+  - "archipelago"
+  - "fjord"
 
 geography:
-  - British_Columbia
-  - Discovery_Islands
-  - Broughton_Archipelago
+  - "British_Columbia"
+  - "Discovery_Islands"
+  - "Broughton_Archipelago"
+  - "Clayoquot_Sound"
 
 time_period: "2001–2023"
 
 seasonality_focus:
-  - full_year
+  - "spring"
+  - "migration_period"
 
 regulatory_context:
-  - Canada_management
+  - "Canada_management"
 
 evidence_type: empirical_observational
 
 study_design:
-  - farm_monitoring
-  - field_sampling
-  - wild_fish_sampling
+  - "farm_monitoring"
+  - "field_sampling"
+  - "wild_fish_sampling"
+  - "data_harmonisation"
 
 data_source:
-  - farm_lice_counts
-  - wild_fish_sampling
+  - "farm_lice_counts"
+  - "wild_fish_sampling"
+  - "government_monitoring"
+  - "industry_MERP"
+  - "NGO_programmes"
 
 model_type:
-  - none
+  - "none"
 
 observation_unit:
-  - individual_fish
-  - farm_month
-  - site
+  - "individual_fish"
+  - "sampling_event"
+  - "farm_month"
+  - "fish_health_zone"
 
 comparison_type:
-  - among_years
-  - among_regions
+  - "among_years"
+  - "among_regions"
+  - "lethal_vs_non_lethal_protocol"
 
 outcome_domain:
-  - lice_abundance_on_farms
-  - infestation_on_wild_fish
+  - "lice_abundance_on_farms"
+  - "infestation_on_wild_fish"
+  - "lice_load_by_zone"
 
-primary_endpoint: "Mean sea lice burden on wild salmonids and farmed Atlantic salmon across seven fish health sub-zones in British Columbia, 2001–2023"
+primary_endpoint: "Harmonised sea lice records from ~96 Atlantic salmon farms and wild Pacific salmonid monitoring along seven DFO fish health sub-zones (2.3, 2.4, 3.1–3.5), 2001–2023"
 secondary_endpoints:
-  - "Spatial variability in lice infestation patterns across BC zones"
-  - "Temporal trends in sea lice abundance on farms and wild fish"
-  - "Changes in lice monitoring following aquaculture policy decisions"
+  - "Weighted mean L. salmonis motile abundance on farms March–June (sensitive period) by zone/year"
+  - "Wild fish infestation prevalence and abundance by species, protocol and programme"
+  - "Zone-level median sea lice 'load' (abundance × inventory)"
 
-
-# ======================================================================
 # DEL C — FUNN OG BEVIS
-# ======================================================================
-
 evidence_direction: not_applicable
-
 effect_scale: not_applicable
-
 uncertainty_emphasis: moderate
 
 main_uncertainty_sources:
-  - sampling_representativeness
-  - observational_bias
-  - none_highlighted
+  - "heterogeneous_protocols_over_time"
+  - "sampling_representativeness"
+  - "non_standardised_wild_sampling_design"
+  - "early_years_limited_species_resolution"
 
 key_claims:
-  - "The dataset covers ~10,000 mean monthly sea lice estimates from almost 100 salmon farms across seven BC fish health sub-zones spanning 2001–2023."
-  - "Wild fish data cover over 365,000 individual host observations from ~17,000 sampling events."
-  - "Temporal coverage varies by zone; recent policy changes (Discovery Islands, Broughton Archipelago) led to declines in farm-level monitoring from 2021/2022 onward."
-  - "Early wild fish data have limited sea lice species resolution; field-observed fish less detailed than lethally sampled fish."
+  - "Five CSV files on figshare (doi:10.6084/m9.figshare.28078100): 16,920 wild sampling events; 376,764 assessed wild fish rows; 96 farm facility records; 10,159 monthly farm abundance records; 1,527 zone median load records"
+  - "~10,000 mean monthly farm abundance estimates from ~100 farms; ~1M wild fish caught but protocol caps mean only ~25% assessed for lice"
+  - "Wild sampling: 12,465 events with fish (25% of events caught zero target fish); chum+pink = 93% of 376,764 fish; >90% of events April–June"
+  - "Ten source programmes (SCS, MK, Hak, Kit, DFO, BAMP, MERP, MBC, Pacif, etc.) with lethal vs non-lethal vs mixed protocols; early years poor copepodid/chalimus species ID"
+  - "28% of assessed wild fish had any sea louse; ~1% had >10 lice; median wild fish length 47 mm"
+  - "Farm monitoring: 40–60 fish/week, 2–3 pens; motile lice identified to species; chalimus grouped; weighted zonal means in Table 2 (March–June L. salmonis motile)"
+  - "2015 coast-wide elevated farm motile lice (warm blob) in all zones except 2.3 and 3.1; farm event counts declined in 3.2 (Discovery Islands) and 3.3 (Broughton) from ~2021/2022 after policy-driven farm reductions"
+  - "Dataset created to counter small-scale/anecdotal claims about BC coast; supports policy analysis of farm closure effects"
 
 claims_about_uncertainty:
-  - "Species identification of lice was limited in early monitoring years, particularly for copepodites and chalimus."
-  - "Changes in reporting format over time (monthly vs. weekly averages, farm-level vs. pen-level) reduce long-term comparability."
+  - "DFO public data switched monthly→weekly means (2013) and farm-level→pen-level reporting — reduces strict long-term comparability"
+  - "Commercial sensitivity prevents disclosure of farm-level inventories; zone load uses median of farm abundance × unreported inventory"
+  - "Non-lethal field protocols under-resolve chalimus to species; pre-2014 chalimus stage nomenclature updated to two-stage system"
 
 claims_about_policy_or_management:
-  - "Recent government policy has led to significant reductions in salmon farms in at least two zones (Discovery Islands, Broughton Archipelago), whose effects can be studied using this dataset."
-  - "The dataset can support evidence-based policy on lice risk management on the BC coast."
+  - "Explicit use case: evaluating impacts of Canadian government reductions in salmon farms (Discovery Islands, Broughton Archipelago)"
+  - "Table 2 weighted March–June motile L. salmonis abundances align with DFO sensitive-period regulations for wild juvenile migration"
 
 methodological_limitations:
-  - "Wild fish sampling design is not standardised across zones or time, limiting direct spatial and temporal comparisons."
-  - "The dataset does not include individual-level physiological data, migration tracking, or mortality outcomes."
+  - "Data descriptor only — no causal farm-to-wild transmission analysis"
+  - "Wild programmes differ in spatial coverage (e.g. SCS/MK concentrated in 3.3; CC limited 2018–2021 in 2.3)"
+  - "2003 anomalous species mix due to different DFO protocol that year"
+  - "No individual fish migration, physiology or mortality outcomes"
 
 rag_summary: >
-  Crawford et al. (2025) describe a publicly released dataset of sea lice infestation records from Atlantic salmon farms and wild Pacific salmonids along the British Columbia (BC) coast, spanning 2001–2023. The dataset comprises ~10,000 mean monthly lice estimates from ~100 farms and ~365,000 individual wild fish observations across seven fish health sub-zones. Data quality varies over time due to changes in monitoring protocols and species identification capabilities. The dataset enables long-term analysis of spatial and temporal patterns, including the consequences of farm closures in the Discovery Islands and Broughton Archipelago following policy changes from ~2021. It is a valuable empirical foundation for evaluating the relationship between farm-origin lice and wild salmonid infestation on the Pacific coast.
+  Crawford et al. (2025, Sci Data, s41597-025-05653-x) release harmonised BC coast sea lice data
+  (2001–2023): 16,920 wild events, 376,764 fish assessments, 96 farms, 10,159 monthly farm records.
+  Seven DFO sub-zones; chum/pink dominate wild samples; 28% of fish infested. Documents protocol
+  heterogeneity (lethal lab ID vs non-lethal field), 2015 warm-blob farm lice peak, and post-2021
+  monitoring decline where farms were removed. figshare + GitHub (modailmara/BCSalmonData). Stewardson
+  (Mainstream Biological Consulting) co-author — industry-linked wild sampling context.
 
 coi_declared: no
-
 coi_notes: >
-  No competing interest declared. Authors are from University of Strathclyde, University of Prince Edward Island, and Mainstream Biological Consulting. No industry or regulatory funding is indicated in the published paper.
+  No competing interest declared in paper. Stewardson operates Mainstream Biological Consulting and
+  conducts industry-associated wild juvenile lice monitoring in BC (see also Jones et al. 2025 JFD).
 
-
-# ======================================================================
 # DEL D — SYNTESE
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
-# ======================================================================
-
 consensus_signal: high_agreement
-
 quality_signal: medium
-
 quality_rationale: >
-  The paper provides a comprehensive, long-term dataset from an authoritative monitoring programme. The main limitations are the heterogeneous data quality across time and space, inconsistent species identification in early years, and absence of mortality or population outcomes. As a data descriptor, the scientific contribution is the dataset itself, which scores highly on breadth and temporal range.
+  Authoritative long-term harmonisation of fragmented BC monitoring with documented field schemas
+  and validation (Table 6 size seasonality vs Jones & Hargreaves 2007). Value is breadth and
+  reproducibility, not causal inference. Heterogeneity limits simple trend conclusions.
 
 controversy_role: foundational
-
 relevance_signal: medium
-
 relevance_rationale: >
-  Directly relevant to Q1 (are wild salmon infested by farm-origin lice?) and Q5 (how well can infestation pressure be characterised?) in a Pacific Canadian context. Provides the largest publicly available lice monitoring dataset for BC, enabling spatial and temporal comparisons that were previously limited to smaller studies. Relevance to the Norwegian corpus focus is indirect but methodologically informative.
+  Largest open BC farm–wild lice dataset — enables Q1 attribution studies and Q5 pressure-model
+  validation at coast-wide scale. Indirect but methodologically informative for Norwegian TLS
+  monitoring debates.
 
 transferability: medium
-
 transferability_notes: >
-  BC context (Pacific salmon, Atlantic salmon farms, Canadian regulatory framework) differs from Norwegian TLS context, but long-term monitoring methodology and the challenge of relating farm lice abundance to wild fish infestation are directly analogous.
+  Pacific hosts and Canadian regulation differ from Norway, but harmonisation approach, weighted
+  zonal farm metrics, and protocol-documentation lessons transfer to multi-source lice monitoring design.
 
-
-# ======================================================================
 # DEL E — RELASJONER
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
-# ======================================================================
-
 included_because: >
-  Provides the largest publicly available long-term dataset linking sea lice on Atlantic salmon farms to infestation of wild Pacific salmonids on the BC coast. Important as a methodological reference for monitoring design and as empirical context for the debate on farm-to-wild lice transmission. Complements Norwegian monitoring data with a Pacific perspective.
+  Foundational empirical resource for BC farm–wild lice patterns over two decades, including periods
+  before and after major aquaculture removals — supports corpus Q1/Q5 with data rather than small
+  single-region studies.
 
 related_documents_supporting:
-  - "2022_aei_stige-model-sensitivity-calibration"
+  - "2025_jfd_jones-pacific-lice-cessation-bc"
+  - "2025_dao_jones-broughton-lice-unchanged"
 
 related_documents_contrasting: []
 
 related_documents_reply_to: []
 
 should_be_read_with:
-  - "2017_icesjms_forseth-major-threats-norway"
+  - "2025_jfd_jones-pacific-lice-cessation-bc"
+  - "2025_dao_jones-broughton-lice-unchanged"
+  - "2022_aei_stige-model-sensitivity-calibration"
 
 retrieval_tags:
-  - "British Columbia"
-  - "Pacific salmon"
-  - "long-term monitoring"
-  - "sea lice dataset"
-  - "farm-wild interaction"
-  - "Broughton Archipelago"
-  - "Discovery Islands"
-  - "Canada"
+  - "British_Columbia"
+  - "dataset"
+  - "long_term_monitoring"
+  - "figshare"
+  - "fish_health_zones"
+  - "Broughton_Archipelago"
+  - "Discovery_Islands"
+  - "farm_wild_lice"
+  - "harmonised_monitoring"
 
-curator_note: >
-  This is a data descriptor, not a primary research article drawing causal conclusions. It was removed as a test article in an earlier curation round but has been re-included as a selected publication for its value as a reference dataset.
-
-
-# ======================================================================
-# KURATERSTATUS
-# ======================================================================
+curator_note: "ODL refresh 2026-06-03 from extracted.md"
 
 curator_review_status: pending
 added_by: Claude
-added_date: "2026-03-27"
+added_date: "2026-06-03"

@@ -96,9 +96,11 @@ main_uncertainty_sources:
   - "No direct empirical mortality observations to validate model outputs"
   - "Potential for behavioral avoidance to reduce actual exposure below modelled values"
 key_claims:
-  - "Fraction of total mortality attributed to lice was 25.3% for long-distance migrant smolts vs 14.7% for inner-fjord smolts"
-  - "Fraction of total mortality attributed to lice was 14.8% for long-distance veteran migrants vs 1.7% for inner-fjord veterans"
-  - "Total lice-attributed mortality ranged from 3.3% to 34.3% across the 5 studied populations"
+  - "Lice-attributed share of total sea-sojourn mortality: long-distance smolts 25.3% vs inner-fjord smolts 14.7%; veteran migrants 14.8% vs 1.7% inner-fjord"
+  - "Population-level lice-attributed mortality ranged 3.3%–34.3% across five Sognefjorden rivers despite shared lice field — driven by individual migration distance"
+  - "N = 8,049 simulated trajectories (4,234 smolts, 3,815 veterans) from acoustic telemetry of N = 517 fish (175 smolts, 342 veterans); 2013–2015"
+  - "Outer-fjord lice densities highest near farms (>67,000 t salmon biomass ~3.6M fish in 2015); inner fjord protected since National Salmon Fjord designation 2007"
+  - "Minimum migration to mid-fjord: 8.5–48.8 km by population; mid fjord 75.2 km / 376 km², outer 93.3 km / 1,041 km² — most trout now remain ≤ mid-fjord vs >200 km historically"
   - "Individual migration trajectory selection — not population-level average exposure — is the primary driver of differential lice-induced mortality"
   - "Most brown trout remained in the inner fjord (protected from aquaculture), keeping population-average infestation below critical mortality thresholds"
   - "Lice densities were highest in the outer fjord near aquaculture facilities; limited year-to-year variation was observed 2013-2015"
@@ -178,7 +180,7 @@ retrieval_tags:
   - "behavioral plasticity"
 
 curator_note: >
-  Open access article (CC BY). Downloaded from Wiley Online Library via Norwegian Institute of Public Health subscription (per download header). The paper is notable for its explicit focus on individual-level heterogeneity in migration patterns as the driver of lice exposure variance — not just population averages. This is a key conceptual contribution for the TLS debate. The Sognefjorden context (protected inner fjord) may limit direct comparison to more exposed fjord systems.
+  ODL refresh 2026-06-03 from extracted.md. Open access (CC BY). Individual-trajectory VPS-style analysis for sea trout; funders include Mowi, Osland Havbruk, Sulefisk. Key splits: 25.3% vs 14.7% smolt lice-mortality fraction (outer vs inner migration).
 
 curator_review_status: pending
 added_by: "Claude"

@@ -116,11 +116,11 @@ main_uncertainty_sources:
   - observational_bias
 
 key_claims:
-  - "Cross-validation of the Myksvoll et al. (2018) dataset shows that Predicted Mean Lice Density (PMLD) from the hydrodynamic model is a very poor predictor of observed mean lice burden (OMLB) on sea trout (RPD = 1.18–1.19; r² ≈ 0.30)."
-  - "The 95% confidence interval of predicted lice burden from Model 1 spans about one unit along the entire range of PMLD — approximately three times the span of the mortality risk criteria (0–0.3 lice/g) used in the TLS classification."
-  - "Using a single 15×15 km grid cell (144 km²), the model cannot reliably classify a production zone as Green vs. Yellow or Yellow vs. Red."
-  - "Reliable Green/Yellow classification requires PMLD data from a sea area of at least 28,800 km² — larger than most of the 13 Norwegian production zones (the largest is ~15,784 km²)."
-  - "Myksvoll et al. (2018) overstated the model's reliability by using Spearman rank correlation without cross-validation; the Kendall correlation (more appropriate) is only 0.52."
+  - "Cross-validation (102 locations, 5,211 sea trout, 2015–2017): PMLD explains ~30% of OMLB variance (r = 0.52–0.55, RPD 1.18–1.19 = very poor); all four linear + logistic + threshold models converge"
+  - "95% CI of predicted lice burden spans ~1.0 lice g⁻¹ across full PMLD range — ~3× the entire TLS risk band (0–0.3 lice g⁻¹ for 0/20/50/100% mortality steps)"
+  - "TLS colour classification accuracy 63%; Green TPR 0.67/FPR 0.10, Yellow TPR 0.43/FPR 0.16, Red TPR 0.57/FPR 0.23 — unreliable at production-zone scale"
+  - "Green vs Yellow needs ≥200 grid cells (28,800 km²) PMLD data; largest Norwegian PZ ~15,784 km² — most zones too small for statistically defensible classification"
+  - "Myksvoll et al. (2018) Spearman 0.72 inflated by tied zeros; Kendall τ = 0.52; no cross-validation in original paper"
 
 claims_about_uncertainty:
   - "The poor predictive power is not a function of the statistical model chosen — all four linear regression models, the non-linear logistic model, and the threshold model give very similar, very low predictive power."
@@ -204,7 +204,7 @@ retrieval_tags:
   - "hydrodynamic model"
 
 curator_note: >
-  [UNVERIFIED: Del D og E] Note the declared conflict of interest (industry court witness). Ragnar Tveterås should be consulted on whether this paper's conclusions are accepted in the Norwegian scientific community or are considered contested. The court outcome (farmers lost) does not resolve the statistical merits of Gjerde's cross-validation.
+  ODL refresh 2026-06-03 from extracted.md. Gjerde expert witness in 2020/2021 farmer lawsuits (both lost). Reanalysis of Myksvoll 2018: 102 sites, 5211 trout, RPD ~1.19, accuracy 0.63 for TLS colours.
 
 
 # ======================================================================

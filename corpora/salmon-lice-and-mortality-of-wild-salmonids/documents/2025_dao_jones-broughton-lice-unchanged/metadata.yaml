@@ -96,11 +96,11 @@ main_uncertainty_sources:
   - "Reduced sample size per site in 2019-2024 (15 vs 30 fish per site)"
   - "Phased rather than abrupt aquaculture removal makes causal inference more complex"
 key_claims:
-  - "In 2024, with aquaculture reduced to 614 metric tonnes in 2 facilities (from 21,645 t in 17 facilities in 2019), prevalence of L. salmonis and C. clemensi on chum and pink salmon increased to levels similar to or higher than values measured between 2016 and 2021"
-  - "In 2024, prevalence of all lice on chum salmon was 40.7% and on pink salmon 40.3% — higher than most preceding years despite near-total aquaculture removal"
-  - "Prevalence of L. salmonis on chum salmon in 2024 was 21.3% (up from 8.6% in 2023) and on pink salmon 12.4% (up from 2.3% in 2023)"
-  - "Prevalence of C. clemensi on chum salmon in 2024 was 28.7% and on pink salmon 32.6%, compared to 2023 lows of 3.9% and 5.1% respectively"
-  - "A total of 2,868 juvenile salmon (1,463 chum; 1,405 pink) from 14 fixed sites were examined over 9 years"
+  - "2016–2024: n = 2,868 juvenile salmon (1,463 chum, 1,405 pink) at 14 fixed beach-seine sites; farm biomass 21,645 t (17 sites, 2019) → 614 t (2 sites, 2024), a 97% reduction"
+  - "2024 all-lice prevalence: chum 40.7%, pink 40.3% — similar to or above 2016–2021 full-aquaculture years; 2023 lows chum 12.5%, pink 7.3%"
+  - "L. salmonis 2024: chum prevalence 21.3% (8.6% in 2023), pink 12.4% (2.3%); C. clemensi 2024: chum 28.7% (3.9% in 2023), pink 32.6% (5.1%)"
+  - "Mean intensity (infested fish only): chum 1.2–2.5 lice fish⁻¹ (max 8 in 2019); pink 1.2–2.2 (max 7 in 2019); pooled L. salmonis share 41.9% chum, 37.1% pink over series"
+  - "2016–2021 mean farm biomass ~14,903 t (14–17 facilities); prevalence peaked 2022 (chum 53.7%, pink 62.9%) then crashed 2023 and rebounded 2024 with near-zero farms"
   - "The Broughton Archipelago has been a focus of sea lice research for ~25 years; this dataset represents the most comprehensive before/after aquaculture removal dataset in the region"
 claims_about_uncertainty:
   - "Little is known about the distribution and abundance of natural sources of L. salmonis in coastal BC during early spring juvenile salmon migration"
@@ -216,11 +216,7 @@ retrieval_tags:
   - "finfish_aquaculture"
 
 curator_note: >
-  Published in Diseases of Aquatic Organisms (Inter-Research), Volume 163: 107-112, August 2025.
-  The dataset draws partly on industry monitoring data (Mowi and Cermaq public sustainability
-  reporting) in addition to independent research sampling, which should be noted. The Broughton
-  Archipelago has ~25 years of sea lice monitoring history; this paper represents the most
-  up-to-date synthesis. Companion paper: Jones et al. 2025 in Journal of Fish Diseases (JFD).
+  ODL refresh 2026-06-03 from extracted.md. DAO 163:107–112 (Aug 2025). Industry data (Mowi/Cermaq); sample 15 fish/site from 2019. Companion: 2025_jfd_jones-pacific-lice-cessation-bc.
 
 curator_review_status: pending
 added_by: "Claude"

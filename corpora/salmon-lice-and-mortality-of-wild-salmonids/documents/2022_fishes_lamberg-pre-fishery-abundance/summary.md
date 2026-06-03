@@ -12,7 +12,7 @@
 
 Lamberg and Imsland (2022) tackle a practical problem in Norwegian salmonid management: how do we know if conservation measures — including aquaculture lice regulations under the Traffic Light System (TLS) — are actually working at the population level? Current management relies almost exclusively on Atlantic salmon population metrics (pre-fishery abundance, PFA; spawning targets), but these single-species metrics miss anadromous brown trout (sea trout), which may be equally or more sensitive to salmon lice from farms.
 
-The paper proposes merging salmon and sea trout PFA data into a single regional indicator, standardised by hydrogeographic factors (river length, area, mean discharge, precipitation field) and mean smolt age, to enable ecologically fair comparisons across Norwegian regions. In 2019, the authors collected population data from 27 rivers in 8 coastal river regions stretching from Bjerkreimselva (58.6°N, southwest Norway) to Målselva (69.0°N, northern Norway), using a combination of underwater video surveillance in fish ladders, snorkelling surveys, and catch statistics.
+The paper proposes merging salmon and sea trout PFA data into a single regional indicator, standardised by hydrogeographic factors (accessible river area 26.4–112.2 km², river length 17–171 km, mean discharge 1.54–5.00×10⁶ m³/s, precipitation field 374–3,051 km²) and mean smolt age (2.3–4.1 years, increasing with latitude, R² ≈ 0.70). In 2019, population data came from **27 rivers** in **8 regions** (Bjerkreimselva 58.6°N to Målselva 69.0°N) via underwater video, snorkelling, and catch statistics (plus VRL sea-catch estimates).
 
 The merged PFA is then compared to the conventional single-species PFA across regions to assess whether including sea trout meaningfully changes the picture of population status. The broader argument is that if sea trout serve as a "lice proxy" — i.e., their populations are more responsive to fjord-level lice intensity than salmon because of their prolonged coastal residence — monitoring their joint PFA with salmon could help detect management impacts earlier and more reliably.
 
@@ -20,9 +20,9 @@ The merged PFA is then compared to the conventional single-species PFA across re
 
 ## Main findings
 
-- **Merged vs single-species PFA:** In most of the 8 study regions, the standardised merged PFA (salmon + sea trout) differed substantially from the conventional salmon-only PFA. The difference was primarily driven by variation in sea trout population sizes across regions.
+- **Merged vs single-species rankings:** Regional ranks from merged PFA vs spawning-target (ST) approach **did not correlate** (Spearman **rs = −0.071**, n = 8, **p = 0.882**). Only region 1 had the same rank; PFA ranked regions 3, 5, and 6 higher than ST, and 2, 4, 7, and 8 lower — mainly because of sea trout.
 
-- **Inter-regional variation:** The highest standardised merged PFA was approximately **four times higher** than the lowest across the 8 regions, suggesting large regional differences in salmonid production that are masked by salmon-only assessments.
+- **Inter-regional variation:** Standardised merged PFA in regions **1, 3, and 6** was **2–4×** that of other regions; overall highest vs lowest exceeded **4×**, indicating large salmonid-production differences masked by salmon-only ST assessments.
 
 - **Sea trout population status is poorly characterised:** Despite monitoring methods being available and widely used in Norway for 20+ years, no national management model based on sea trout population data has been established — in contrast to the Atlantic salmon spawning target model.
 

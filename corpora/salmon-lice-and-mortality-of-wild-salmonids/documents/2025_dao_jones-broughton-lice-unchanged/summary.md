@@ -28,7 +28,9 @@ The study covers three analytically distinct phases: extensive aquaculture (2016
 
 - **All-time lows occurred in 2023** — not 2024. The steep decline in 2023 was followed by an equally sharp rebound in 2024, despite virtually no aquaculture in either year. This pattern strongly implicates environmental and natural reservoir dynamics rather than aquaculture as the driver.
 
-- **Aquaculture biomass** declined from a peak of 21,645 metric tonnes in 2019 to 614 t in 2024 — a 97% reduction — yet this did not produce a sustained reduction in lice infestations on wild fish.
+- **Aquaculture biomass** declined from a peak of **21,645 t** (17 sites, 2019) to **614 t** (2 sites, 2024) — **97%** reduction — with **no sustained** lice reduction on wild fish. Mean biomass **~14,903 t** (14–17 sites) during 2016–2021.
+
+- **Mean intensity** on infested fish: chum **1.2–2.5** lice fish⁻¹ (max **8**, 2019); pink **1.2–2.2** (max **7**, 2019). Fish weights ~**0.61–2.05 g** chum, **0.61–1.93 g** pink by year.
 
 - **High proportions of *C. clemensi*** were observed in years of both high and low aquaculture presence (2017, 2020, 2024 on chum; 2017, 2018, 2024 on pink), consistent with this species drawing on non-salmonid reservoir hosts (herring, stickleback) that are unrelated to aquaculture.
 

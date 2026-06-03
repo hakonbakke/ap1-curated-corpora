@@ -44,6 +44,7 @@ study_design:
   - "expert_assessment"
 data_source:
   - "published_literature"
+  - "expert_group_reports"
 model_type:
   - "none"
 observation_unit:
@@ -53,7 +54,7 @@ comparison_type:
 outcome_domain:
   - "model_performance"
   - "regulatory_classification"
-primary_endpoint: "defense of critical review findings"
+primary_endpoint: "Defense of Van Nes et al. (2024) critical review against Expert Group comment"
 secondary_endpoints: []
 evidence_direction: critiques_methodology
 effect_scale: both
@@ -62,60 +63,68 @@ main_uncertainty_sources:
   - "calibration_data"
   - "migration_timing"
   - "infestation_to_mortality_thresholds"
+  - "farm_larvae_production_estimates"
 key_claims:
-  - "Acoustic telemetry data on migration timing are NOT included in TLS estimates, contrary to Stige et al.'s claim"
-  - "If both input and calibration data are unreliable, the calibration compensation argument is negated"
-  - "5 of 7 TLS endpoints still assume 100% lice survival post-attachment"
-  - "The review's conclusions align with the Evaluation Committee and the EG's own reports"
+  - "Review (raq.12953) peer-reviewed with five reviewers; Stige et al. claims of bias and 'misunderstanding' are not scientifically justified"
+  - "TLS migration timing uses 25% emigration criterion + fixed 40-day period (Vollset et al. 2021; EG reports 2017, 2022) — acoustic telemetry in review (earlier, shorter migration) not incorporated into TLS estimates"
+  - "Calibration compensation fails if both larvae-production inputs and observational calibration data are unreliable — uncertainties do not cancel"
+  - "Review explicitly discusses calibration uncertainty; contradicts Stige claim it 'fails to mention' scaling"
+  - "Post-attachment lice loss: EG recently added 40% correction to NVI model acknowledging need, but 5 of 7 TLS mortality endpoints still assume 100% lice survival after attachment"
+  - "Findings align with Eliasen et al. (2021) Evaluation Committee and EG's own annual reports on migration-timing uncertainty"
+  - "All COI disclosed in publication process; Stige allegation of hidden conflicts is unwarranted"
 claims_about_uncertainty:
-  - "The EG's own practice of implementing a 40% lice loss correction validates the review's concerns"
+  - "Migration timing/duration is key TLS unreliability source — acknowledged in EG reports and Vollset et al. (2021) basis paper"
+  - "EG reports describe calibration data variability impairing model product quality (Eliasen et al. 2021)"
 claims_about_policy_or_management:
-  - "Current TLS practice will contribute to overestimates of lice-induced smolt mortality"
+  - "Current TLS practice contributes to overestimation of lice-induced smolt mortality until post-attachment loss applied consistently across all assessment endpoints"
 methodological_limitations:
-  - "Short letter format limits depth of argumentation"
-  - "Same conflict of interest context as the original review"
+  - "Two-page letter — limited technical depth"
+  - "Authors affiliated with Marine Prospects, Akvaplan-niva, DFO — industry/regional critique context"
 rag_summary: >
-  Response by Van Nes, Imsland and Jones to the Expert Group's comment on their 2024 critical
-  review. Defends key claims: acoustic telemetry migration data are not included in TLS estimates;
-  calibration compensation fails if calibration data themselves are unreliable; 5 of 7 endpoints
-  assume 100% lice survival. Notes that findings align with the independent evaluation committee
-  and the EG's own reports. Rejects allegations of bias and undisclosed conflicts of interest.
+  Van Nes, Imsland & Jones (2025, Rev Aquacult e70050) reply to Stige et al. (e70040). Defend
+  raq.12953 review: TLS migration model excludes acoustic telemetry showing earlier/shorter migration;
+  unreliable inputs plus unreliable calibration negate scaling argument; 40% NVI correction vs
+  100% survival assumption on five other endpoints. Cite Eliasen (2021) and EG reports as supporting
+  original critique. Reject bias/COI allegations.
 coi_declared: yes
 coi_notes: >
-  Same as Van Nes et al. 2024. First author board member of Nova Sea.
-  Salmon Tracking 2030 funded by aquaculture industry.
+  van Nes (Marine Prospects AS); Imsland (Akvaplan-niva, UiB); Jones (DFO Canada). Same disclosure
+  context as Van Nes et al. (2024) — Salmon Tracking 2030 industry funding and Nova Sea board
+  noted in Stige comment, disputed here as fully disclosed in review publication process.
 consensus_signal: contested
 quality_signal: medium
 quality_rationale: >
-  Focused response addressing specific points. Short format limits depth.
+  Focused rebuttal on discrete methodological disputes; short format. High corpus value as
+  debate closure, not as new evidence.
 controversy_role: rebuttal
 relevance_signal: high
 relevance_rationale: >
-  Closing piece of the debate chain. Essential for complete representation of the scientific exchange.
+  Third paper in Van Nes ↔ EG exchange; essential for Q5/Q10 TLS methodology controversy and
+  retrieval of both positions.
 transferability: low
 transferability_notes: >
-  Specific to the Norwegian TLS debate.
+  Norway TLS-specific.
 included_because: >
-  Closing piece of a three-paper debate chain central to this corpus. Demonstrates the
-  contested nature of TLS methodology and the scientific exchange between critics and defenders.
+  Completes three-paper Reviews in Aquaculture debate chain (review → EG comment → author response)
+  on TLS scientific basis.
 related_documents_supporting:
-  - "Van Nes et al. 2024 (10.1111/raq.12953)"
-  - "Eliasen et al. 2021"
+  - "2024_raq_vannes-critical-review-tls"
+  - "2021_rcn_traffic-light-evaluation"
 related_documents_contrasting:
-  - "Stige et al. 2025 (10.1111/raq.70040)"
+  - "2025_raq_stige-comment-vannes"
 related_documents_reply_to:
-  - "Stige et al. 2025 (10.1111/raq.70040)"
+  - "2025_raq_stige-comment-vannes"
 should_be_read_with:
-  - "Van Nes et al. 2024 — the original review"
-  - "Stige et al. 2025 — the comment being responded to"
+  - "2024_raq_vannes-critical-review-tls"
+  - "2025_raq_stige-comment-vannes"
 retrieval_tags:
-  - "response"
-  - "TLS critique"
-  - "debate chain"
-  - "calibration"
-  - "migration timing"
-curator_note: >
-  Open access. Final piece of three-paper debate chain in Reviews in Aquaculture.
+  - "TLS_critique"
+  - "debate_chain"
+  - "migration_timing"
+  - "calibration_data"
+  - "post_attachment_loss"
+  - "Expert_Group_response"
+curator_note: "ODL refresh 2026-06-03 from extracted.md"
 curator_review_status: pending
 added_by: "Claude"
-added_date: "2026-03-23"
+added_date: "2026-06-03"

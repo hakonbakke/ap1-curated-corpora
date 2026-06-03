@@ -62,74 +62,84 @@ comparison_type:
 outcome_domain:
   - "model_performance"
   - "regulatory_classification"
-primary_endpoint: "rebuttal of overestimation claims"
-secondary_endpoints: []
+primary_endpoint: "Expert Group rebuttal of Van Nes et al. (2024) TLS overestimation claims"
+secondary_endpoints:
+  - "Clarification of migration-timing, calibration, Allee effect, salinity and mortality-threshold arguments"
 evidence_direction: mixed_within_study
 effect_scale: both
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
   - "calibration_data"
   - "infestation_to_mortality_thresholds"
+  - "institutional_position_of_authors"
 key_claims:
-  - "Model calibration compensates for overestimated larvae production — so it is unlikely to bias mortality estimation"
-  - "Van Nes et al. only highlights overestimation factors while ignoring underestimation factors"
-  - "Sentinel cages underestimate infestation by an order of magnitude compared to trawl data"
-  - "Available evidence suggests mortality thresholds should be lower than claimed by Van Nes et al."
-  - "Van Nes et al. failed to disclose relevant conflicts of interest"
+  - "Van Nes et al. (raq.12953) welcomed for highlighting uncertainties but argued biased toward low-impact evidence"
+  - "Migration timing: five acoustic-telemetry river-years insufficient vs 343+ river-years in Vollset et al. (2021) model; EG does not assume 28-day coastal residence — VPS models use swimming speeds implying shorter residence for most rivers"
+  - "Farm larvae 'overestimation' unlikely to bias mortality because models calibrate calculated infestation pressure to observed smolt lice counts (scaling factor absorbs systematic error)"
+  - "Underestimation factors omitted in review: trawl index covers only inner fjord segment; sentinel cages underestimate ~10× vs trawl (Stige et al. 2022); assessment is expert elicitation not mean of seven indices"
+  - "Sea trout–salmon correlation misrepresented: Vollset et al. (2017) r=0.71 for trout index vs log salmon abundance — not 'poor correlation'"
+  - "Allee effect critique rebutted: female sperm storage, male host-switching, farm spread models show Allee only at impractically low densities (Aldrin et al. 2017, 2023)"
+  - "Salinity inclusion in Stige et al. (2021) increased not decreased prediction uncertainty; temperature infectivity included in both NVI and IMR VPS models"
+  - "Mortality thresholds: Grimnes & Jakobsen (1996) could not test adult-stage tolerance; Holst et al. field data suggest threshold <10 mobile lice; Fjelldal et al. moribund fish below experimental lethal dose"
+  - "Release experiments: Vollset et al. (2023) lice resistance to emamectin benzoate not mentioned; Slice toxicity in treated groups (Lennox et al. 2020) could underestimate lice mortality"
+  - "COI disclosure: Van Nes et al. omitted Salmon Tracking 2030 industry funding (PO3–4) and first author Nova Sea board role"
 claims_about_uncertainty:
-  - "Post-attachment lice loss ranges from near-zero to >80% with unknown reasons for variation"
-  - "Different models use different assumptions about uncertain parameters, reflecting uncertainty similar to climate projections"
+  - "Post-attachment lice loss 0–80% in experiments with unknown field relevance; 40% correction ≈ chalimus→pre-adult transition; handling loss before counts biases opposite direction"
+  - "Multiple VPS models with differing assumptions reflect parametric uncertainty (climate-model analogy)"
 claims_about_policy_or_management:
-  - "Assessment is not an average of seven indices but expert elicitation considering strengths and limitations of each"
+  - "TLS mandate unchanged: assess lice-induced mortality of out-migrating post-smolts per production area for biennial capacity decisions"
+  - "Sea trout lice indicate susceptibility of smolts in area but cannot directly estimate smolt mortality (EG's own wording, cited in review)"
 methodological_limitations:
-  - "Authors are current EG members with potential institutional bias"
-  - "Comment format limits depth of rebuttal on complex technical points"
+  - "Letter + appendix format — not new primary data"
+  - "All nine authors are current TLS Expert Group members with court-case expert-witness history (2021–2022)"
 rag_summary: >
-  Comment by the TLS Expert Group responding to Van Nes et al. (2024) critical review. Key
-  counter-arguments: model calibration compensates for larvae overestimation; Van Nes et al.
-  selectively highlights overestimation while ignoring underestimation factors (trawl captures
-  only partial migration, sentinel cages underestimate by order of magnitude); mortality
-  thresholds should be lower than claimed; and relevant conflicts of interest were not disclosed.
-  Authored by 9 current EG members from NVI, IMR, NORCE, NINA, SINTEF, and UiB.
+  Stige et al. (2025, Rev Aquacult e70040) — nine current TLS Expert Group authors — rebut Van Nes et al.
+  (2024) critical review. Core arguments: calibration neutralises farm-larvae bias; review ignores
+  underestimation pathways; misstates migration model inputs and trout–salmon correlation (r=0.71);
+  mortality thresholds lower than review claims; challenges Van Nes COI transparency (Salmon Tracking
+  2030, Nova Sea). Appendix covers trawl timing, sentinel cages, salinity modelling, Allee effect,
+  post-attachment loss and release-study interpretation.
 coi_declared: yes
 coi_notes: >
-  Authors are current EG members. Vollset is member of VRL. Karlsen leads NALO surveillance
-  programme. Vollset, Karlsen, Nilsen, and Qviller gave expert witness testimony in TLS court
-  case 2021-2022.
+  Authors are current EG members. Vollset: VRL and 2021–2022 TLS court expert witness. Karlsen: NALO
+  surveillance lead. Vollset, Karlsen, Nilsen, Qviller: expert witnesses TLS court case. Funded by
+  NVI, IMR, NINA.
 consensus_signal: moderate_agreement
 quality_signal: medium
 quality_rationale: >
-  Clear, point-by-point rebuttal with specific references. Appendix addresses additional
-  technical points. However, authors have institutional stake in the TLS methodology
-  they defend.
+  Detailed point-by-point rebuttal with citations and technical appendix. Institutional stake in
+  defended methodology limits neutrality; no new empirical data.
 controversy_role: rebuttal
 relevance_signal: high
 relevance_rationale: >
-  Direct counter to the most comprehensive TLS critique. Essential for balanced representation
-  of the scientific debate.
+  Official defender position in central corpus debate on TLS reliability (Q5, Q7, Q8, Q10). Required
+  pairing with Van Nes review and response for balanced retrieval.
 transferability: low
 transferability_notes: >
-  Specific to the Norwegian TLS debate context.
+  Norway TLS-specific institutional and methodological context.
 included_because: >
-  Direct Expert Group response to the most comprehensive TLS critique. Essential for representing
-  both sides of the scientific debate on TLS accuracy and reliability.
+  Expert Group response to the most comprehensive published TLS methodology critique — essential
+  for representing both sides of the calibration/migration/mortality-threshold controversy.
 related_documents_supporting:
-  - "Stige et al. 2022 (10.3354/aei00443)"
+  - "2022_aei_stige-model-sensitivity-calibration"
+  - "2021_icesjms_johnsen-vps-mortality-norway"
+  - "2021_rcn_traffic-light-evaluation"
 related_documents_contrasting:
-  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+  - "2024_raq_vannes-critical-review-tls"
 related_documents_reply_to:
-  - "Van Nes et al. 2024 (10.1111/raq.12953)"
+  - "2024_raq_vannes-critical-review-tls"
 should_be_read_with:
-  - "Van Nes et al. 2024 — the review being commented on"
-  - "Van Nes et al. 2025 — response to this comment"
+  - "2024_raq_vannes-critical-review-tls"
+  - "2025_raq_vannes-response-to-stige"
 retrieval_tags:
-  - "EG response"
-  - "TLS defense"
-  - "calibration"
-  - "rebuttal"
-  - "conflict of interest"
-curator_note: >
-  Open access. Middle piece of debate chain. All 9 authors are current TLS Expert Group members.
+  - "Expert_Group"
+  - "TLS_defense"
+  - "calibration_scaling"
+  - "migration_timing"
+  - "sentinel_cages"
+  - "mortality_threshold"
+  - "debate_chain"
+curator_note: "ODL refresh 2026-06-03 from extracted.md"
 curator_review_status: pending
 added_by: "Claude"
-added_date: "2026-03-23"
+added_date: "2026-06-03"

@@ -35,166 +35,199 @@ corpus: salmon-lice-and-mortality-of-wild-salmonids
 priority_questions:
   - "Q4"
   - "Q8"
+  - "Q10"
 
 causal_chain_stage:
   - "host_exposure"
+  - "infestation"
   - "individual_mortality"
   - "population_impacts"
+  - "regulatory_assessment"
 
 host_species:
-  - "Salmo salar"
+  - "atlantic_salmon"
+
 wild_or_farmed_focus: wild
+
 life_stage:
-  - "postsmolt"
+  - "smolt"
+  - "post_smolt"
+
 parasite_species:
-  - "Lepeophtheirus salmonis"
+  - "lepeophtheirus_salmonis"
+
 environment:
   - "fjord"
-  - "coastal marine"
+  - "coastal"
+
 geography:
   - "Hardangerfjord, Norway"
   - "River Etne, Hordaland"
+  - "National Salmon Fjord"
+
 time_period: "2013-2017"
+
 seasonality_focus:
   - "spring"
   - "early summer"
+  - "migration_period"
+
 regulatory_context:
-  - "Norwegian Traffic Light System"
-  - "National Salmon Fjord"
+  - "Norway_TLS"
+
 evidence_type: empirical_experimental
+
 study_design:
-  - "randomized controlled trial"
-  - "mark-recapture"
-  - "four RCTs nested 2x2 (year x release timing)"
+  - "randomized_controlled_trial"
+  - "mark_recapture"
+  - "sentinel_cage"
+  - "hydrodynamic_modelling"
+
 data_source:
-  - "coded wire tag mark-recapture"
-  - "sentinel cage lice monitoring"
-  - "hydrodynamic lice dispersion model (lakseslus.no)"
+  - "coded_wire_tag_mark_recapture"
+  - "sentinel_cages"
+  - "hydrodynamic_model_output"
+
+model_type:
+  - "hydrodynamic_model"
+  - "statistical_regression_model"
+
 observation_unit:
-  - "individual fish"
+  - "individual_fish"
+
 comparison_type:
-  - "treated (SubEX prophylaxis) vs. sham control"
-  - "low-lice year (2013, farms fallowed) vs. high-lice year (2014, full production)"
-  - "early release (May) vs. late release (June)"
+  - "treated_vs_untreated"
+  - "among_years"
+  - "before_after"
+
 outcome_domain:
   - "survival"
-  - "return rate"
-  - "body growth"
+  - "marine_survival"
+  - "infestation_pressure"
+  - "behaviour_change"
+
 primary_endpoint: "Return rate (recapture proportion) of tagged smolts after 1-4 years at sea"
 secondary_endpoints:
-  - "Body length and weight at return"
-  - "Sex ratio at return"
-  - "Risk ratio (treated vs. control) by lice infestation pressure group"
+  - "Risk ratio (treated vs. control) by release trial"
+  - "Lice infestation pressure (14-day sentinel cage means)"
+  - "Body weight at return"
 
 # DEL C - FUNN OG BEVIS
 evidence_direction: supports_effect
-effect_scale: individual
+
+effect_scale: both
+
 uncertainty_emphasis: moderate
+
 main_uncertainty_sources:
-  - "Hatchery-reared smolts may differ from wild smolts in lice susceptibility"
-  - "Lice infestation pressure estimated from sentinel cages and models, not directly on released fish"
-  - "Confounding: high-lice year (2014) also differed in other environmental conditions"
-  - "Multiple marine stressors (predation, starvation) cannot be separated from lice effect"
+  - "migration_timing"
+  - "calibration_data"
+  - "sampling_representativeness"
+  - "transferability"
+
 key_claims:
-  - "Return rate of untreated fish in the highest-lice trial (June 2014) was only 0.03%, versus 1.86% in the prophylactically treated group — a >50-fold mortality risk differential"
-  - "In most experimental groups 1-2.5% of fish were recaptured; the June 2014 control group was a catastrophic outlier"
-  - "High lice density can cause more than 50 times higher mortality risk in Atlantic salmon during sea migration, even within a protected National Salmon Fjord"
-  - "Timing of smolt migration relative to seasonal lice peak is decisive — late-migrating fish (June) experienced far higher lice pressure than early migrants (May)"
-  - "Hardangerfjord held 80,000-95,000 metric tonnes of farmed salmon in 2013-2014, providing a major lice reservoir; the 2013 fallow (near-zero lice) vs 2014 full production contrast demonstrated the aquaculture-driven mechanism"
+  - "Four RCTs released n=29,817 tagged postsmolts (Table 1: 2013 May 3,791+3,972; June 3,801+3,868; 2014 May 3,819+3,818; June 3,770+2,978); n=559 recaptured over 1-4 sea winters"
+  - "June 2014 controls: 1 fish returned of 2,978 (0.03%) vs 70 of 3,770 treated (1.86%); RR=55.3 (95% CI 7.7-398) — >50-fold mortality risk differential cited in abstract"
+  - "Most groups 1-2.5% return; May 2013 controls returned more than treated (RR=0.52, 95% CI 0.35-0.76); June 2013 and May 2014 RR ~1.05-1.13 (NS)"
+  - "Table 2 GLM: lice infestation pressure negative on return (estimate -2.76, p<0.0001); treatment positive (0.66, p<0.0001); significant lice×treatment interaction (2.71, p<0.0001)"
+  - "Sentinel Lice Infestation Pressure: ~10-fold May→June 2013 (0.06→0.66 lice/fish/14d); ~25-fold 2014 (0.37→8.87); 2013 fallow reduced pressure 84-92% vs 2014 full production"
+  - "Hydrodynamic maps: low <1, medium 1-10, high >10 lice/fish along migration corridor; June 2014 outer Hardangerfjord full production with high red-zone coverage"
+  - "Hardanger standing stock ~80,000-95,000 t farmed salmon 2013-2014; outer farms fallowed March 2013, full production 2014"
+  - "Norwegian TLS thresholds referenced: green 0-10%, yellow 10-30%, red >30% lice-induced mortality; June 2014 untreated scenario exceeds red threshold"
+  - "386 million farmed vs ~0.5 million wild returning salmon (Jan 2017 stats cited); political aim +500% production by 2050 noted as scaling risk"
+
 claims_about_uncertainty:
-  - "Conflicting earlier RCT evidence is partly explained by the timing variable: lice effects are only detectable when baseline infestation pressure is high"
-  - "Fine-tuned, hard-to-predict year-to-year differences in timing of wild smolt migration and lice population build-up make it difficult to manage risk proactively"
+  - "Conflicting prior RCTs partly explained by timing: meta-analysis RR 1.77 when baseline mortality high, ~1.00 when low (Vollset et al. 2016)"
+  - "Fine-tuned year-to-year timing of wild smolt migration vs lice build-up makes proactive risk management difficult"
+
 claims_about_policy_or_management:
-  - "Spatial segregation of farmed fish from smolt migration corridors (e.g. closed containment, farm relocation) may be needed for sustainable coexistence of wild and farmed Atlantic salmon"
-  - "The study provides direct empirical calibration for TLS thresholds, with the June 2014 untreated group far exceeding the red-light threshold of >30% lice-induced mortality"
+  - "Spatial segregation (closed pens) and/or relocating farms from smolt corridors may be needed for sustainable wild-farmed coexistence"
+  - "Synchronized fallowing in Hardanger 2010-2017 used as management experiment; results support timing-sensitive lice risk"
+
 methodological_limitations:
-  - "Hatchery-reared F1 fish used as surrogates for wild smolts"
-  - "Lice infestation pressure not measured directly on experimental fish during migration"
-  - "Cannot separate lice-induced from predation-induced and starvation mortality in the marine environment"
-  - "Single fjord system (Hardangerfjord) — generalizability to lower-density aquaculture regions uncertain"
-  - "SubEX prophylaxis protects for ~16 weeks; some control vs. treated asymmetry may develop after this window"
+  - "Hatchery-reared F1 Etne broodstock surrogates for wild smolts"
+  - "Lice pressure from sentinel cages/models, not direct counts on released fish during migration"
+  - "Marine mortality multi-causal; only treated-control differential attributable to lice prophylaxis"
+  - "SubEX prophylaxis ~16 weeks; sham controls identical except active compound"
+  - "Etne trap ~90% capture efficiency (Skaala et al. 2015) reduces recapture bias"
 
 rag_summary: >
-  Bøhn et al. (2020) conducted four large-scale randomized controlled trials in Hardangerfjord, Norway,
-  releasing n=29,817 tagged Atlantic salmon postsmolts (half treated with SubEX lice prophylaxis, half
-  sham controls) across May and June in 2013 (low-lice year, farms fallowed) and 2014 (high-lice year,
-  full production). Of 559 fish recaptured over 1-4 years, return rates in most groups were 1-2.5%, but
-  the untreated June 2014 group returned at only 0.03% versus 1.86% in the treated group — a >50-fold
-  mortality risk differential. The study demonstrates that migration timing relative to the seasonal lice
-  peak is decisive, and that catastrophic mortality events can occur even within a National Salmon Fjord.
-  Key limitations: hatchery-reared smolts used as surrogates; lice exposure estimated from sentinel cages
-  rather than direct measurement on released fish.
+  Bøhn et al. (2020, J Appl Ecol 57:1149-1160) ran four large RCTs in Hardangerfjord releasing
+  n=29,817 CWT-tagged postsmolts (50% SubEX prophylaxis) in May/June 2013 (fallowed farms,
+  low lice) vs 2014 (full production, high lice). Sentinel 14-day Lice Infestation Pressure rose
+  ~25-fold May→June 2014 (0.37→8.87 lice/fish); 2013 fallow cut pressure 84-92% vs 2014. Returns:
+  typical 1-2.5% except June 2014 controls 0.03% (1/2978) vs treated 1.86% (70/3770), RR=55.3.
+  GLM confirms lice pressure reduces return probability with prophylaxis benefit at high pressure.
+  Directly relevant to Norwegian TLS red threshold (>30% mortality) and Q4 migration timing.
 
 coi_declared: yes
+
 coi_notes: >
-  Funded by Norwegian Institute of Nature Research (grant 160022/F40), Norwegian Research Council
-  (grant 221404), and Institute of Marine Research (grant 14650). All authors affiliated with Norwegian
-  public research institutions (IMR, NINA, UiT). No commercial conflicts declared. Open access article.
+  Funding: NINA grant 160022/F40, Norwegian Research Council 221404, IMR grant 14650 (stated in
+  paper). Authors from IMR, NINA, UiT, NTNU — Norwegian public research institutions; no industry
+  funding declared. Open access CC BY. Co-author Ove T. Skilbrei deceased (†).
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
-consensus_signal: strong_agreement
-quality_signal: strong
-quality_rationale: >
-  Large-scale (n=29,817) randomized controlled trial with balanced design, four independent trials across
-  contrasting lice environments, and high-efficiency recapture trap (~90% efficiency). One of the most
-  methodologically rigorous field experiments on salmon lice mortality in the published literature.
-  Results replicated across years strengthen causal inference.
+consensus_signal: moderate_agreement
 
-controversy_role: supports_effect
+quality_signal: strong
+
+quality_rationale: >
+  Large balanced RCT (n≈30k releases, 559 returns), four nested trials, ~90% trap efficiency,
+  sentinel + lakseslus.no hydrodynamic validation. Among strongest field experiments on lice
+  mortality; 2013 low-lice year shows prophylaxis can hurt returns (RR<1), supporting context-
+  dependence. Single fjord limits geographic generalisation.
+
+controversy_role: supportive
 
 relevance_signal: high
+
 relevance_rationale: >
-  Provides the most striking direct quantitative evidence for Q4 (smolt exposure timing) and Q8 (fraction
-  of smolts dying from lice), with an empirical extreme case far exceeding TLS thresholds. Directly
-  relevant to Norwegian regulatory debates about farm location and fallow regimes.
+  Extreme empirical calibration point for Q8 and migration-timing Q4; explicitly discusses TLS
+  colour thresholds. Complements VPS/modelling papers with field mortality under known lice contrast.
 
 transferability: medium
+
 transferability_notes: >
-  Conducted in Hardangerfjord, one of Norway's most intensive aquaculture fjords. The extreme mortality
-  observed likely reflects unusually high farm density; results should be interpreted with caution when
-  extrapolating to lower-density production regions or to fully wild smolt populations.
+  Hardanger is among Norway's highest aquaculture-density fjords; catastrophic June 2014 result
+  may not transfer to lower-density regions or fully wild smolt populations.
 
 # DEL E - RELASJONER OG KURATORKOMMENTARER
 included_because: >
-  This paper provides the strongest single-study field-experimental evidence for catastrophic smolt
-  mortality from salmon lice, demonstrating a >50-fold survival differential when migration coincides
-  with peak lice density. It fills a critical gap for Q4 and Q8 with RCT-quality evidence and directly
-  calibrates TLS thresholds with empirical return data.
+  Provides RCT-quality evidence that lice timing and farm-driven infestation pressure can cause
+  near-total smolt mortality when late migration coincides with peak lice — a concrete empirical
+  anchor for TLS threshold debates and Q4/Q8 in the corpus.
 
 related_documents_supporting:
-  - "Kristoffersen et al. 2018 (risk model parameterization used in TLS)"
-  - "Vollset et al. 2016 (meta-analysis of Norwegian RCTs confirming lice effect when pressure is high)"
+  - "Kristoffersen et al. 2018"
+  - "Vollset et al. 2016"
 
 related_documents_contrasting:
-  - "Skilbrei et al. 2013 (earlier RCT in lower-lice conditions showing weaker effects)"
+  - "Skilbrei et al. 2013"
 
 related_documents_reply_to: []
 
 should_be_read_with:
   - "2020_conphys_fjelldal-lice-osmoregulation-salmon"
   - "2015_aei_helland-monitoring-lice-challenges"
+  - "2021_icesjms_johnsen-vps-mortality-norway"
 
 retrieval_tags:
-  - "randomized controlled trial"
-  - "mark-recapture"
-  - "smolt survival"
-  - "migration timing"
-  - "lice infestation pressure"
+  - "RCT"
   - "Hardangerfjord"
-  - "prophylactic treatment"
+  - "Etne"
   - "SubEX"
-  - "mortality risk ratio"
   - "return rate"
-  - "Traffic Light System"
-  - "fallow"
+  - "risk ratio 55"
   - "June 2014"
+  - "fallow"
+  - "sentinel cage"
+  - "TLS threshold"
+  - "migration timing"
 
 curator_note: >
-  Open access article. The June 2014 result (0.03% vs 1.86% return) is one of the most striking
-  individual data points in the entire salmon lice mortality literature and should be prominently
-  featured in RAG retrieval for Q8 queries. The paper explicitly discusses TLS thresholds, making
-  it directly relevant for Q10 queries as well. Note that co-author Ove T. Skilbrei is deceased
-  (marked with dagger in the original publication).
+  ODL refresh 2026-06-03 from extracted.md. Open access. Table 1 release counts and Table 2 GLM
+  coefficients added from ODL extract. June 2014 (0.03% vs 1.86%) remains a flagship data point for Q8.
 
 curator_review_status: pending
 added_by: "Claude"
