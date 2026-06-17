@@ -65,6 +65,15 @@ inclusion/exclusion decisions before proceeding.
 
 **Output**: `extracted.md` + `summary.md` (PDF remains in SharePoint / `documents/PDFs/`, not in git)
 
+Optional — expand `summary.md` into a full evidence brief for synthesis (keeps `rag_summary` short for retrieval):
+
+```powershell
+python scripts/expand_summaries_from_extract.py --min-chars 4500
+python scripts/ingest.py
+```
+
+The Streamlit app passes `summary.md` (as `summary_text` in parquet) to GPT at answer time; embeddings still use `rag_summary` + `key_claims`.
+
 ---
 
 ## Stage 4: CURATE

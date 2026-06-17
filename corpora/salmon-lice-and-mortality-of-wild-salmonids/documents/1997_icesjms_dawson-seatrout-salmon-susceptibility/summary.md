@@ -1,53 +1,58 @@
-# Summary: Dawson et al. (1997)
+# Summary: Dawson et al. 1997 Comparison of the susceptibility of sea trout and Atlantic salmon to sea lice infections
 
 **Full title:** Comparison of the susceptibility of sea trout (*Salmo trutta*) and Atlantic salmon (*Salmo salar*) to sea lice (*Lepeophtheirus salmonis*) infections  
 **Journal:** ICES Journal of Marine Science, 54: 1129–1139  
-**URL:** https://doi.org/10.1006/jmsc.1997.0309  
+**DOI / URL:** https://doi.org/10.1006/jmsc.1997.0309  
 **Document type:** Research article (experimental)  
 **Priority questions:** Q4, Q6  
-**Funding:** BBSRC CASE award to L. Dawson (University of Aberdeen / SOAEFD Marine Laboratory)
+**Funding / COI:** Funded by a BBSRC CASE studentship; University of Aberdeen and SOAEFD Marine Laboratory authors.
 
 ---
 
 ## What this paper does
 
-Controlled laboratory comparison of hatchery sea trout and Atlantic salmon challenged with ~4800 *L. salmonis* copepodids per tank (eggs from west-coast farmed salmon), in quadruplicate single-species and mixed-species groups (n=8 fish/tank), weekly monitoring for 8 weeks (Oct–Dec 1996; 7.9–11.4°C, 32‰).
+Dawson et al. (1997) investigate the susceptibility of hatchery-reared sea trout (*Salmo trutta*) and Atlantic salmon (*Salmo salar*) to infections by sea lice (*Lepeophtheirus salmonis*). This study is significant as it provides a controlled laboratory comparison of these two salmonid species, which are both economically important and ecologically relevant in marine environments. The research was conducted in Scotland, specifically utilizing copepodids sourced from farmed salmon, and took place over an eight-week period from October to December 1996, under conditions of natural seawater temperature (7.9–11.4°C) and salinity (32‰).
 
-## Experimental design
+The findings contribute to understanding the host-parasite dynamics of sea lice, which have been a growing concern in aquaculture and wild fish populations. By elucidating differences in susceptibility and immune responses between these species, the study informs management strategies for controlling sea lice infestations, particularly in the context of salmon farming and the use of sea trout as sentinel species in monitoring programs.
 
-| Element | Detail |
-|--------|--------|
-| Fish | Sea trout 431–511 g; Atlantic salmon 413–499 g |
-| Tanks | 400 L, 1 m diameter; 3-week acclimation |
-| Infection | ~4800 copepodids, 3 h, high aeration |
-| Scoring | Seven body regions; dorsal fin erosion (4 categories); head/dorsal/anal skin damage (5 categories) |
+## Methods and data
 
-## Key findings (quantitative)
+The experimental design involved quadruplicate groups of sea trout (431–511 g) and Atlantic salmon (413–499 g) held in 400 L circular tanks. Each tank contained eight fish, and the fish were acclimated for three weeks before being challenged with approximately 4800 *L. salmonis* copepodids for three hours. The study monitored lice abundance and skin damage weekly for eight weeks, assessing seven body regions for lice attachment and lesions. Statistical analyses included one-way ANOVA and Mann-Whitney U-tests to compare lice numbers and skin damage across different groups.
 
-**Mean lice abundance (Table 3, lice fish⁻¹ ± SE):**
+Key definitions included:
+- **Lice abundance:** Measured as the number of lice per fish.
+- **Skin damage categories:** Defined based on the extent of lesions and fin erosion, with specific thresholds for categorization.
+
+## Key findings
+
+- **Mean lice abundance (Table 3, lice fish⁻¹ ± SE):**
 
 | Week | Sea trout (single) | Atlantic salmon (single) |
 |------|-------------------|-------------------------|
-| 1 | 188.0 (2.7) | 165.8 (10.2) |
-| 4 | 40.2 (5.6) | 69.9 (8.3) — salmon peak |
-| 8 | 20.0 (5.0) | 6.8 (2.1) |
+| 1    | 188.0 (2.7)       | 165.8 (10.2)           |
+| 4    | 40.2 (5.6)        | 69.9 (8.3) — salmon peak |
+| 8    | 20.0 (5.0)        | 6.8 (2.1)              |
 
-- Week 1: all sea trout groups > all salmon (p=0.039).
-- Week 8: all sea trout > all salmon (p=0.012); lice survival from week 1 only 10.6% (trout) vs 4.1% (salmon) in single-species tanks.
-- Copepodids from farmed salmon did not show preferential settlement; higher early chalimus on trout reflects differential survival/clearance.
-- Lesions: more Atlantic salmon category 3 head lesions weeks 3–5 (p=0.036); more sea trout category 3 anal lesions weeks 7–8 (p=0.04).
-- **No infection-related mortality**; antibody response stronger in salmon.
+- At week 1, sea trout had significantly higher lice abundance than Atlantic salmon (p=0.039).
+- By week 8, sea trout retained roughly threefold more lice than salmon (20.0 vs 6.8, p=0.012).
+- Survival rates from week 1 to week 8 showed 10.6% for sea trout and 4.1% for Atlantic salmon.
+- Skin lesions were more severe in Atlantic salmon during weeks 3–5, while sea trout exhibited more severe anal lesions in weeks 7–8 (p=0.04).
+- No lice-induced mortality was observed in either species.
 
-## Mechanistic interpretation
+## Limitations and caveats
 
-Atlantic salmon appear to use immunological clearance; sea trout may be a more suitable long-term host (coastal residency, possible premature freshwater return). Relevant to why sea trout are used as lice sentinels in Norwegian monitoring.
+The study's limitations include the use of hatchery-reared fish, which may not fully represent wild populations. The copepodids used were sourced from farmed salmon, potentially influencing settlement behavior. The experiment lasted only eight weeks, which may not capture long-term host-parasite dynamics. Additionally, the absence of osmotic or field migration contexts limits the applicability of findings to natural environments.
+
+## What this paper does not claim
+
+The authors do not claim that the observed differences in susceptibility and immune response are universally applicable to all populations of sea trout and Atlantic salmon. They also do not assert that their findings can be directly extrapolated to wild fish populations without considering environmental and ecological variables.
 
 ## Relevance to this corpus
 
-**Q4 / Q6:** Baseline host-specific susceptibility and skin-damage patterns under controlled infection—context for sentinel species use and physiological thresholds, though fish size and absence of mortality differ from wild post-smolts.
+This study addresses priority questions Q4 and Q6 regarding host-specific susceptibility and skin damage patterns under controlled infection conditions. It provides a baseline for understanding physiological thresholds and the use of sentinel species in monitoring programs, particularly in relation to sea lice management in aquaculture.
 
-## Limitations
+## Related evidence in corpus
 
-Hatchery fish; farm-origin copepodids; 8 weeks only; no osmotic or field migration context.
+While the extract does not explicitly mention other related documents, the findings may connect with studies examining the ecological impacts of sea lice on wild salmonid populations and the effectiveness of various management strategies in aquaculture settings.
 
-*ODL refresh 2026-06-03 from extracted.md*
+*Expanded from extracted.md 2023-10-03 for synthesis context.*

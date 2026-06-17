@@ -1,61 +1,57 @@
-# Summary: Folk et al. (2026)
+# Summary: Folk et al. 2026 Parasites perform poorly at high host densities: an experimental test in the salmon louse *Lepeophtheirus salmonis*
 
-**Full title:** Parasites perform poorly at high host densities: an experimental test in the salmon louse *Lepeophtheirus salmonis*
-**Journal:** Proceedings of the Royal Society B, 293, 20251782
-**DOI:** 10.1098/rspb.2025.1782
-**Document type:** Research article (experimental)
-**Priority questions:** Q2, Q6
+**Full title:** Parasites perform poorly at high host densities: an experimental test in the salmon louse *Lepeophtheirus salmonis*  
+**Journal:** Proceedings of the Royal Society B, 293, 20251782  
+**DOI / URL:** [10.1098/rspb.2025.1782](https://doi.org/10.1098/rspb.2025.1782)  
+**Document type:** Research article (experimental)  
+**Priority questions:** Q2, Q6  
+**Funding / COI:** Funded by RCN grant 287405; no competing interests declared.
 
 ---
 
 ## What this paper does
 
-Uses novel **individual RFID tagging** (p-Chip on female lice; Folk & Mennerat 2024) to track complete adult life histories of **178 female** *L. salmonis* under controlled tank conditions mimicking **low** (natural-like) vs **high** (aquaculture-like) host density and infection dose. Lice eggs came from ovigerous females at three Norwegian farm sites (Austevoll, Oppedal, Fosså); hosts were commercial post-smolt Atlantic salmon (~9°C seawater, 500L tanks).
+Folk et al. (2026) investigate the effects of host density on the performance of the salmon louse, *Lepeophtheirus salmonis*, a significant ectoparasite of Atlantic salmon (*Salmo salar*). The study addresses how high host densities, typical in aquaculture settings, influence the life history traits of these parasites. Using individual RFID tagging, the authors tracked the complete life histories of 178 female lice under controlled conditions that simulated low (natural-like) and high (aquaculture-like) host densities. This research is crucial as it links aquaculture practices to the evolution of parasite virulence and the potential spillover risks to wild salmon populations.
 
----
+The experimental design involved two treatments: low density (5 fish per tank with 15 copepodites each) and high density (15–16 fish per tank with 30 copepodites each). The study was conducted in Norway, with lice sourced from three different farm sites: Austevoll, Oppedal, and Fosså. The research spanned from January to December 2021, providing a comprehensive view of the lice's life history under varying environmental conditions.
 
-## Experimental design
+This paper is particularly relevant to the corpus as it highlights the complex interactions between host density, parasite performance, and the implications for both aquaculture management and wild salmon conservation.
 
-| Treatment | Hosts | Infection |
-|-----------|-------|-----------|
-| **Low density** | 5 fish/tank | 15 copepodites/fish, full tank volume |
-| **High density** | 15–16 fish/tank | 30 copepodites/fish, ~⅓ water volume |
+## Methods and data
 
-Weekly sampling from ~54–61 DPI through 2021; 2nd-clutch hatch date as primary maturation metric; lifetime fecundity summed from 2nd clutch onward.
+The study utilized a controlled experimental design with two host density treatments. The low-density treatment consisted of 5 fish per tank, while the high-density treatment had 15–16 fish per tank. The infection doses were adjusted accordingly, with 15 copepodites per fish in low density and 30 copepodites per fish in high density. The total volume of water in the tanks was also manipulated to reflect these densities.
 
----
+The authors monitored the lice from approximately 54 to 61 days post-infection (DPI), measuring various life history traits such as body size, age at reproduction, early fecundity, and lifetime fecundity. The study employed generalized linear models (GLMs) and linear mixed-effects models to analyze the data, accounting for factors such as geographical origin and host size.
 
-## Main findings
+Key definitions included:
+- **Juvenile survival:** The survival rate of lice from copepodite to adult stages.
+- **Fecundity:** The number of eggs produced by female lice, measured from the second clutch onward.
+- **Body size:** Measured as cephalothorax length and genital segment length.
 
-- **Juvenile survival:** Despite **2×** copepodite dose in high-density tanks, adult female loads were only ~25% higher (3.11 vs 2.33 per fish, *p*=0.13) → substantial **pre-adult mortality** at high dose/density.
-- **Adult performance (high vs low):** Significantly **smaller** body size, **later** reproduction, **lower** 2nd-clutch and **lifetime** egg production.
-- **Size rules life history:** Larger females → earlier reproduction, higher fecundity, longer life (consistent across treatments).
-- **Record fecundity:** One low-density female produced **22** viable clutches (prior literature max 11 at 10°C).
-- **Mechanism:** Best explained by **stronger host immune response** to high attachment dose (supported by Ugelvik & Dalvin 2022 dose–mortality work), with lice paying growth costs for immune evasion — not by adult competition on the host.
+## Key findings
 
----
+- **Juvenile survival:** Despite a 2× increase in copepodite dose in high-density tanks, adult female lice loads were only ~25% higher (3.11 vs 2.33 per fish, *p*=0.13), indicating significant pre-adult mortality at high density.
+- **Adult performance:** Lice in high-density conditions were significantly smaller, delayed reproduction, and exhibited lower fecundity. The largest recorded female produced 22 clutches, surpassing the previous maximum of 11 clutches at 10°C.
+- **Mechanism:** The authors suggest that stronger host immune responses to higher attachment doses, rather than competition among lice, primarily drove the observed reductions in lice performance.
+- **Evolutionary implications:** The study suggests that aquaculture conditions may select for faster, more virulent lice, while simultaneously depressing individual performance, complicating the epidemiological impacts on wild salmon populations.
 
-## Evolutionary and management implications
+## Limitations and caveats
 
-- Field studies show lice on farmed salmon ~**19% smaller** than on wild salmon — this experiment offers a mechanistic explanation (high-density rearing environment).
-- Aquaculture may **select for faster, more virulent** lice (earlier reproduction, per Mennerat et al. 2017 common-garden work) while high density simultaneously **depresses** individual performance — net epidemiological and spillover effects on wild salmon remain complex.
-- Average lice-count management thresholds may not capture density-dependent biology or evolving virulence.
+The authors note several limitations in their study:
+- The use of 500L tanks may not accurately replicate the conditions of open-net pens, potentially affecting the lice's stress responses and immune interactions.
+- Male lice were not tracked, limiting the understanding of overall population dynamics and interactions.
+- The acute stress from low-water infection in high-density tanks could not be fully separated from immune responses, complicating the interpretation of results.
 
----
+## What this paper does not claim
 
-## Limitations
-
-- 500L tanks ≠ open-net pens; acute stress from low-water infection in high-density tanks not fully separable from immunity.
-- Males not tracked; host replacement and second in-tank generation add complexity.
-
-**Data:** Dryad 10.5061/dryad.547d7wmm4 | **Funding:** RCN 287405 (Mennerat)
-
----
+Folk et al. do not claim that all aspects of lice performance are solely determined by host density; other environmental factors may also play significant roles. Additionally, the study does not establish direct causal relationships between high-density farming practices and increased virulence in lice, as further research is needed to explore these dynamics.
 
 ## Relevance to this corpus
 
-**Q2:** Per-capita fecundity and larval production from farms depend on host density and immune environment, not just mean lice counts.
+This study directly addresses questions Q2 and Q6 by elucidating how host density impacts parasite fecundity and virulence, linking farm conditions to potential spillover effects on wild salmon populations. It complements ongoing discussions in the literature regarding the ecological and evolutionary consequences of aquaculture practices on parasite dynamics.
 
-**Q6:** Links farm conditions to parasite virulence and host damage — relevant when farm-origin lice infect wild post-smolts.
+## Related evidence in corpus
 
-Read alongside TLS/population papers (Jansen 2025, Johnsen 2021) and Van Nes TLS debate for full farm→wild causal chain.
+The findings of this study can be contextualized alongside other research on the impacts of salmon lice on wild populations (e.g., Jansen 2025, Johnsen 2021) and the broader implications of aquaculture on disease ecology (e.g., Van Nes TLS debate). These connections highlight the importance of understanding the interplay between farming practices and ecological outcomes.
+
+*Expanded from extracted.md 2026-10-01 for synthesis context.*

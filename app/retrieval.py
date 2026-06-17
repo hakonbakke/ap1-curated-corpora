@@ -20,17 +20,34 @@ DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "corpus.parquet"
 EMBEDDING_MODEL = "text-embedding-3-large"
 
 
-@st.cache_resource(show_spinner=False)
-def load_corpus() -> pd.DataFrame:
-    """Load the parquet file once and cache for the session."""
+def corpus_parquet_mtime() -> float:
+    """Modification time of corpus.parquet — used to invalidate Streamlit cache after ingest."""
     if not DATA_FILE.exists():
         raise FileNotFoundError(
             f"Corpus not found at {DATA_FILE}. Run: python scripts/ingest.py"
         )
+    return DATA_FILE.stat().st_mtime
+
+
+@st.cache_resource(show_spinner=False)
+def _load_corpus_cached(corpus_mtime: float) -> pd.DataFrame:
+    """Load parquet; cache key includes file mtime so re-ingest is picked up automatically."""
     df = pd.read_parquet(DATA_FILE)
-    # Parse embedding column from JSON string to numpy arrays
-    df["_embedding"] = df["embedding"].apply(lambda x: np.array(json.loads(x), dtype=np.float32))
+    df["_embedding"] = df["embedding"].apply(
+        lambda x: np.array(json.loads(x), dtype=np.float32)
+    )
     return df
+
+
+def load_corpus() -> pd.DataFrame:
+    """Load corpus from disk (cached until corpus.parquet changes)."""
+    return _load_corpus_cached(corpus_parquet_mtime())
+
+
+def reload_corpus() -> pd.DataFrame:
+    """Force reload from disk (e.g. after manual cache confusion)."""
+    _load_corpus_cached.clear()
+    return load_corpus()
 
 
 def get_embedding(client: OpenAI, text: str) -> np.ndarray:

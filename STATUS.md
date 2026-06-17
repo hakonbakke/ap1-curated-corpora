@@ -50,6 +50,7 @@ Then hard refresh browser with `Ctrl + F5`.
 - Retrieval quality depends mostly on `rag_summary` + `key_claims` quality.
 - New papers (2026-06-03 batch) added by agent with `curator_review_status: pending` — subject to expert QA.
 - **2026-06-03 ODL pass:** All 27 PDFs converted via `scripts/convert_pdfs_odl.py` → `documents/*/extracted.md`; metadata + summaries refreshed from extracts (tables, COI, quantitative detail). Re-run `python scripts/ingest.py` after further edits.
+- **Long evidence briefs:** `summary.md` expanded (~4.5–6.5k chars/doc) via `scripts/expand_summaries_from_extract.py`; synthesis passes `summary_text` to GPT (5k cap/doc); retrieval embeddings unchanged (`rag_summary` + `key_claims`).
 
 ### 2026-06-03 corpus expansion (+11 papers)
 | Folder | Paper | Key Q |
@@ -75,9 +76,9 @@ Then hard refresh browser with `Ctrl + F5`.
 4. Verify paper count and retrieval behavior in app.
 
 ## Immediate next priorities
-1. Metadata QA pass on highest-impact papers (TLS/model-debate core set).
-2. Query smoke tests (English and Norwegian, structured and free text).
-3. Decide deploy readiness criteria, then push and deploy to Streamlit Cloud.
+1. **Deploy to Streamlit Cloud** for board demo — see [`DEPLOY.md`](DEPLOY.md).
+2. Metadata QA pass on highest-impact papers (TLS/model-debate core set).
+3. Query smoke tests (English and Norwegian, structured and free text).
 
 ## Suggested smoke-test queries
 - How robust is the Norwegian Traffic Light System as a regulatory framework?
