@@ -496,6 +496,13 @@ if run and query.strip():
                 status_label = CURATOR_STATUS_LABELS.get(lang, {}).get(status, status)
                 st.caption(tr(lang, "Curation: ", "Kuratering: ") + status_label)
 
+            decided_by = (r.get("inclusion_decided_by") or "").strip()
+            if decided_by:
+                st.caption(
+                    tr(lang, "Inclusion decided by: ", "Inklusjon besluttet av: ")
+                    + decided_by
+                )
+
             if r["related_contrasting"]:
                 st.caption(tr(lang, "Contrasts with: ", "Kontrasterer med: ") + ", ".join(r["related_contrasting"]))
 

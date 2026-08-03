@@ -216,7 +216,7 @@ curator_note: >
   retrieved alongside papers discussing TLS thresholds and their empirical foundations. ODL refresh 2026-06-03 from extracted.md (Table 1 GLMM coefficients, dataset composition, 2013 programme changes).
 
 curator_review_status: ai_verified
-added_by: "Claude"
+added_by: ai_curate_pipeline
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
-inclusion_decided_by: ""
+inclusion_decided_by: Ragnar Tveterås
