@@ -31,41 +31,61 @@ from openai import OpenAI
 
 load_dotenv()
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-CORPUS_DIR = REPO_ROOT / "corpora" / "salmon-lice-and-mortality-of-wild-salmonids" / "documents"
-DATA_FILE = REPO_ROOT / "data" / "corpus.parquet"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from corpus_paths import (  # noqa: E402
+    DATA_FILE,
+    DOCS_DIR,
+    doc_dir as corpus_doc_dir,
+    list_doc_ids,
+    strip_yaml_comments,
+)
+
 EMBEDDING_MODEL = "text-embedding-3-large"
 EMBEDDING_DIM = 3072
+QA_INGEST_SKIPPED = DATA_FILE.parent / "qa_ingest_skipped.csv"
+
+# Fields that feed build_retrieval_text (and thus embeddings).
+# Imported by sync_metadata_to_parquet.py to detect stale embeddings.
+RETRIEVAL_TEXT_FIELDS = frozenset(
+    {
+        "rag_summary",
+        "key_claims",
+        "claims_about_uncertainty",
+        "claims_about_policy_or_management",
+        "title",
+        "year",
+        "summary_text",
+    }
+)
 
 
-def load_document(doc_dir: Path) -> dict | None:
-    """Load metadata.yaml and summary.md for one document folder."""
-    meta_path = doc_dir / "metadata.yaml"
-    summary_path = doc_dir / "summary.md"
+def load_document(folder: Path) -> tuple[dict | None, str | None]:
+    """Load metadata.yaml and summary.md for one document folder.
+
+    Returns (doc, skip_reason). On success skip_reason is None.
+    """
+    meta_path = folder / "metadata.yaml"
+    summary_path = folder / "summary.md"
 
     if not meta_path.exists():
-        print(f"  SKIP {doc_dir.name}: no metadata.yaml")
-        return None
+        reason = "no metadata.yaml"
+        print(f"  SKIP {folder.name}: {reason}")
+        return None, reason
 
-    with open(meta_path, encoding="utf-8") as f:
-        raw = f.read()
-
-    # Strip YAML comment lines so pyyaml doesn't choke
-    clean = "\n".join(
-        line for line in raw.splitlines()
-        if not line.lstrip().startswith("#") or line.strip() == "#"
-    )
+    raw = meta_path.read_text(encoding="utf-8")
+    clean = strip_yaml_comments(raw)
     try:
         meta = yaml.safe_load(clean) or {}
     except yaml.YAMLError as e:
-        print(f"  SKIP {doc_dir.name}: YAML parse error — {e}")
-        return None
+        reason = f"YAML parse error — {e}"
+        print(f"  SKIP {folder.name}: {reason}")
+        return None, reason
 
     summary_text = ""
     if summary_path.exists():
         summary_text = summary_path.read_text(encoding="utf-8").strip()
 
-    return {"doc_id": doc_dir.name, "meta": meta, "summary_text": summary_text}
+    return {"doc_id": folder.name, "meta": meta, "summary_text": summary_text}, None
 
 
 def build_retrieval_text(doc: dict) -> str:
@@ -200,6 +220,11 @@ def main() -> int:
         "--dry-run", action="store_true",
         help="Parse and print documents without calling the API or writing output."
     )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Allow a full rebuild that drops documents present in the existing parquet.",
+    )
     args = parser.parse_args()
 
     api_key = os.environ.get("OPENAI_API_KEY", "").strip()
@@ -209,28 +234,27 @@ def main() -> int:
 
     client = OpenAI(api_key=api_key) if not args.dry_run else None
 
-    # Find document folders to process
+    # Find document folders to process (aligned with corpus_paths.list_doc_ids)
     if args.doc:
-        target = CORPUS_DIR / args.doc
+        target = corpus_doc_dir(args.doc)
         if not target.is_dir():
             print(f"ERROR: Document folder not found: {target}", file=sys.stderr)
             return 1
         doc_dirs = [target]
     else:
-        doc_dirs = sorted(
-            d for d in CORPUS_DIR.iterdir()
-            if d.is_dir() and not d.name.startswith(".")
-        )
+        doc_dirs = [corpus_doc_dir(doc_id) for doc_id in list_doc_ids()]
 
-    print(f"Processing {len(doc_dirs)} document(s)...")
+    print(f"Processing {len(doc_dirs)} document(s) from {DOCS_DIR}...")
 
-    # Load and parse
-    docs = []
+    docs: list[dict] = []
+    skipped: list[tuple[str, str]] = []
     for d in doc_dirs:
-        doc = load_document(d)
+        doc, reason = load_document(d)
         if doc:
             docs.append(doc)
             print(f"  loaded  {d.name}")
+        elif reason:
+            skipped.append((d.name, reason))
 
     if not docs:
         print("No documents loaded. Nothing to do.")
@@ -242,6 +266,28 @@ def main() -> int:
             print(build_retrieval_text(doc)[:400])
         return 0
 
+    existing = load_existing()
+    if existing is not None and not args.doc and len(docs) < len(existing):
+        existing_ids = set(existing["doc_id"].astype(str))
+        loaded_ids = {d["doc_id"] for d in docs}
+        dropped = sorted(existing_ids - loaded_ids)
+        # Also record parse skips among expected folders
+        rows = [{"doc_id": doc_id, "reason": reason} for doc_id, reason in skipped]
+        for doc_id in dropped:
+            if doc_id not in {r["doc_id"] for r in rows}:
+                rows.append({"doc_id": doc_id, "reason": "missing from successful load (dropped on rebuild)"})
+        pd.DataFrame(rows).to_csv(QA_INGEST_SKIPPED, index=False)
+        print(
+            f"ERROR: full rebuild would drop {len(dropped)} document(s) "
+            f"({len(existing)} → {len(docs)}). Wrote {QA_INGEST_SKIPPED}. "
+            "Re-run with --force to overwrite anyway.",
+            file=sys.stderr,
+        )
+        for doc_id in dropped[:20]:
+            print(f"  would drop: {doc_id}", file=sys.stderr)
+        if not args.force:
+            return 1
+
     # Embed
     print(f"\nEmbedding {len(docs)} document(s) with {EMBEDDING_MODEL}...")
     texts = [build_retrieval_text(doc) for doc in docs]
@@ -249,19 +295,14 @@ def main() -> int:
     embeddings = embed_texts(client, texts)
     print(f"  done in {time.time() - t0:.1f}s")
 
-    # Build rows
     new_rows = [row_from_doc(doc, emb) for doc, emb in zip(docs, embeddings)]
     new_df = pd.DataFrame(new_rows)
 
-    # Upsert into existing parquet
-    existing = load_existing()
     if existing is not None and args.doc:
-        # Remove the old row for this doc and append the new one
         existing = existing[existing["doc_id"] != args.doc].copy()
         final_df = pd.concat([existing, new_df], ignore_index=True)
         print(f"Upserted {args.doc} into existing store ({len(final_df)} total).")
     elif existing is not None and not args.doc:
-        # Full rebuild: replace everything
         final_df = new_df
         print(f"Full rebuild: {len(final_df)} documents.")
     else:
