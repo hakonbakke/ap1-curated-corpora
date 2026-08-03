@@ -23,3 +23,8 @@ venv/
 _odl_output/
 _tmp_extracts/
 
+# Validator / sync QA outputs (regenerated locally)
+qa_vocabulary_violations.csv
+data/stale_embeddings.txt
+data/qa_ingest_skipped.csv
+
