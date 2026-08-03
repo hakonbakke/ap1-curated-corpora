@@ -26,13 +26,18 @@ Status: **27/27 `ai_verified`**. Validator exit 0. Routing eval 5/5.
 - Stale-embedding warning in sync; ingest drop-guard + `list_doc_ids`
 - Docs accuracy (README/WORKFLOW/requirements/welfare stub); P0-2 rejected
 - Curate prompt: `controversy_role` ≠ `evidence_direction`
-- `inclusion_decided_by` filled; app caption ready
-- `eval/benchmark_protocol_v2.md` + `scripts/eval_retrieval.py` (ready; **not run** — API)
+- `inclusion_decided_by` filled (human-confirmed); app caption ready
+- `eval/benchmark_protocol_v2.md` retargeted at the Streamlit app; `scripts/eval_retrieval.py` added
+- One-shot migration scripts archived to `_archive/scripts/`
 
 ## Eval status
 - `eval_routing.py`: **5/5** (API-free)
-- `eval_retrieval.py`: **5/5** (2026-08-03; ~5 embedding calls) — must_include_any hits in top-k; BM25/rerank stays deferred with evidence
-- Benchmark capture (Task 7c): not run (synthesis + NotebookLM / frontier+search)
+- `eval_retrieval.py`: **5/5** (run 2026-08-03, ~5 embedding calls) — `must_include_any` hits in top-k
+- Benchmark capture (Task 7c): **not run** — needs treatment synthesis plus NotebookLM / frontier+search baselines
+
+Re-runs write a timestamped result file to `eval/recall_runs/`, so this claim is
+checkable rather than asserted. The 2026-08-03 run predates that, so there is no
+artifact for it — re-run before citing the number anywhere external.
 
 ## Parquet update rule
 - Metadata / status / rationale only → `python scripts/sync_metadata_to_parquet.py`
@@ -43,11 +48,12 @@ Status: **27/27 `ai_verified`**. Validator exit 0. Routing eval 5/5.
 streamlit run app/app.py --server.fileWatcherType none
 python scripts/validate_corpus.py
 python scripts/eval_routing.py
-# when willing to spend ~5 embedding calls:
-# python scripts/eval_retrieval.py
+python scripts/eval_retrieval.py   # ~5 embedding calls; writes eval/recall_runs/
 ```
 
 ## Next
 1. Redeploy Streamlit Cloud so Ragnar sees routing, confidence, inclusion caption
-2. When API budget allows: `eval_retrieval.py` then optional B1–B4/C1 benchmark capture
-3. Hybrid BM25 only if retrieval recall fails with evidence
+2. Re-run `eval_retrieval.py` to leave a saved artifact behind the 5/5 claim
+3. Optional B1–B4/C1 benchmark capture (`eval/benchmark_protocol_v2.md`) — the
+   only evidence that would settle whether this beats a general model
+4. Hybrid BM25 only if retrieval recall fails with evidence

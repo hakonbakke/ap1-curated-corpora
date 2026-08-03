@@ -39,12 +39,23 @@ To improve the live app, edit `documents/*/metadata.yaml` (`rag_summary`, `key_c
 
 ---
 
-## `scripts/regrade_qa_reports.py`
+## `scripts/`
 
-One-shot migration (2026-08): moved COI/funding false-positive `critical_issues`
-in `qa_report.json` to `soft_issues` and refreshed `curator_review_status`.
-Archived after confirming zero remaining COI items in `critical_issues` across
-all 27 documents. Do not run against a clean corpus.
+One-shot migrations from the 2026-08 maintenance pass. All completed and
+verified; `scripts/validate_corpus.py` now enforces the end state they produced.
+**Do not run any of these against a clean corpus** — they assume the pre-migration
+data and are not idempotent.
+
+| Script | What it did |
+|---|---|
+| `regrade_qa_reports.py` | Moved COI/funding false-positive `critical_issues` in `qa_report.json` to `soft_issues` and refreshed `curator_review_status`. Archived after confirming zero remaining COI items in `critical_issues` across all 27 documents. |
+| `apply_tasks_drift_fixes.py` | Applied the named per-document taxonomy fixes: `quality_signal` `moderate`→`medium` (5 docs), `consensus_signal` (3 docs), `controversy_role` (9 docs, where `evidence_direction` values had leaked in). |
+| `normalize_remaining_vocab.py` | Normalised `life_stage` hyphenation, `geography` and `regulatory_context` to canonical tokens (original prose preserved into `retrieval_tags`), free-text `causal_chain_stage`, and added missing `model_type` keys. |
+| `apply_inclusion_decided_by.py` | Populated `inclusion_decided_by` across all 27 documents after human confirmation of who selected each paper. |
+
+Kept rather than deleted so the corpus's edit history is reconstructable — the
+metadata changes they made are curatorial, and the reasoning should stay
+auditable. See `vocabulary.json` for the vocabulary they normalised to.
 
 ---
 
