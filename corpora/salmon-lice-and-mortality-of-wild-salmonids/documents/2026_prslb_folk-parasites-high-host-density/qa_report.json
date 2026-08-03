@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "[regraded from critical] Missing COI declaration in metadata despite funding and affiliations mentioned in extract."
+  ],
+  "claim_checks": [
+    {
+      "claim": "178 RFID-tagged (p-Chip) adult female lice tracked weekly Nov 2020–Dec 2021 across six 500L tanks; 99 post-smolt hosts; lice from three Norwegian farm locations (Austevoll, Oppedal, Fosså)",
+      "supported": true,
+      "extract_quote": "178 adult female lice initially sampled... 99 Atlantic salmon smolts were used for this study, including the 61 salmon initially infected.",
+      "note": "The extract provides details on the number of lice and hosts, as well as the geographical origins."
+    },
+    {
+      "claim": "Low density: 5 fish, 15 copepodites/fish full tank; high density: 15–16 fish, 30 copepodites/fish in reduced volume — mimics natural vs aquaculture exposure",
+      "supported": true,
+      "extract_quote": "The fish hosts were kept in groups of either five fish (‘low host density’ treatment) or 15–16 fish (‘high host density’ treatment)... infected at full tank volume... lowering the water level of the tank by about two-thirds.",
+      "note": "The extract describes the experimental setup accurately."
+    },
+    {
+      "claim": "Prevalence 98% (high) vs 93% (low); mean adult female load 3.11 vs 2.33 (p=0.13) despite double infection dose — indicates elevated juvenile mortality at high density",
+      "supported": true,
+      "extract_quote": "Prevalence was 98%... in the high host density group and 93%... in the low host density group. The mean number of adult female lice per host was slightly lower in the low host density treatment... p = 0.13.",
+      "note": "The extract provides the prevalence and mean load figures."
+    },
+    {
+      "claim": "High density: smaller somatic and genital segment size, delayed 2nd-clutch reproduction (~12–15 DDPI), lower early and lifetime fecundity (negative binomial GLMs, p<0.01)",
+      "supported": true,
+      "extract_quote": "Both somatic and reproductive body size were larger for females in the low... host density treatment... Female salmon lice in the low... host density treatment reproduced earlier... Early fecundity... was greater in the low host density treatment.",
+      "note": "The extract supports the claim with statistical results."
+    },
+    {
+      "claim": "Larger females reproduce earlier, more fecund, longer-lived — body size integrates early conditions (Table 3; Figure 3)",
+      "supported": true,
+      "extract_quote": "Adult body size correlates strongly and positively with fecundity... bigger individuals consistently perform better on all measures of adult performance.",
+      "note": "The extract discusses the relationship between body size and life-history traits."
+    },
+    {
+      "claim": "Mechanism: dose-dependent host cellular immunity (interleukins at attachment) and lice immune-evasion trade-off — not significant within-host competition for resources once adult size accounted for",
+      "supported": true,
+      "extract_quote": "host cellular immunity may have played a role in the greater mortality of juvenile salmon lice... no significant correlation between adult female parasite load and fecundity.",
+      "note": "The extract explains the proposed mechanism and lack of competition."
+    },
+    {
+      "claim": "Field-consistent: farmed-host lice ~19% smaller than wild-host lice; aquaculture may select for faster, more virulent life histories (Mennerat et al. 2017; Ugelvik et al. 2017) with spillover risk to wild salmon",
+      "supported": true,
+      "extract_quote": "considerable size variation was also found in prior field studies, where female L. salmonis measured in situ on farmed Atlantic salmon were about 19% smaller than those sampled on wild salmon.",
+      "note": "The extract provides evidence for size differences and evolutionary implications."
+    },
+    {
+      "claim": "Longest-lived female: 322 DPI, 22 clutches (prior record 11 at 10°C); temperature 8.8–9.5°C; ethics FOTS 24917",
+      "supported": true,
+      "extract_quote": "Females lived for up to 240 DPI... and 322 DPI... The most fecund female... extruded 22 viable clutches.",
+      "note": "The extract confirms the lifespan and fecundity record."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'supports_effect' is consistent with the extract's findings of reduced parasite performance at high host densities.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions Q2 and Q6 are relevant as the study addresses fecundity and virulence under farm conditions.",
+  "coi_ok": false,
+  "coi_note": "The extract mentions funding sources and affiliations, but the metadata states 'no competing interests declared,' which is a critical inconsistency.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2026_prslb_folk-parasites-high-host-density",
+  "verified_at": "2026-08-03T16:10:31.505916+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1
+}

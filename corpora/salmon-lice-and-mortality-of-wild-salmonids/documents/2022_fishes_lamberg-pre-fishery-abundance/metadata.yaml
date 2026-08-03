@@ -177,6 +177,7 @@ retrieval_tags:
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access (CC BY, MDPI). Methodological paper — not direct lice-mortality measurement. Key numbers: 27 rivers, 8 regions, 2019 only; Spearman rs = −0.071 (ST vs merged PFA ranks); >4× PFA range; smolt age 2.3–4.1 yr.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

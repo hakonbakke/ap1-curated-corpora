@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "[regraded from critical] Missing COI declaration: The metadata states 'no competing interest statement' but the extract does not mention any COI declaration, which is a critical failure."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Since ~1985 cyclic adult returns ceased across much of NA and Europe; remote pristine rivers without farms also collapsed",
+      "supported": true,
+      "extract_quote": "Adult returns to many Atlantic salmon wild and hatchery stocks of the North Atlantic have declined or collapsed since 1985.",
+      "note": "The extract supports the claim about the cessation of cyclic returns and collapse in remote rivers."
+    },
+    {
+      "claim": "Four collapse signatures: (1) cycles stop, (2) abundance flatlines, (3) mean adult size declines, (4) earliest collapse farthest from NASpG",
+      "supported": true,
+      "extract_quote": "The decline and collapse of stocks has common characteristics: 1) cyclic annual adult returns cease, 2) annual adult returns flatline, 3) adult mean size declines, and 4) stock collapses occurred earliest among watersheds distant from the North Atlantic Sub-polar Gyre (NASpG).",
+      "note": "The extract clearly lists these four characteristics."
+    },
+    {
+      "claim": "Figure 8 / ICES: NA 1SW pre-fishery abundance fell ~85% (700-800k to 110-150k 1990s); NA 2SW ~90% (900k to 100k); southern Europe ~70% total decline",
+      "supported": true,
+      "extract_quote": "The estimated abundance of North American 1SW salmon collapsed from 700,000 to 800,000 before 1980 to 110,000–150,000 during the 1990s, an 85% decline.",
+      "note": "The extract provides specific figures supporting the claim."
+    },
+    {
+      "claim": "Pre-1985 North Atlantic PFA estimated 6-9 million salmon; ~2500 historical stocks",
+      "supported": true,
+      "extract_quote": "The total, annual prefishery abundance (PFA) of Atlantic salmon in the North Atlantic before 1985 was estimated at 6–9 million fish.",
+      "note": "The extract supports the claim with specific numbers."
+    },
+    {
+      "claim": "Hatchery: Mactaquac 2SW returns 0.35-1.5% before 1985 → collapsed after; 1SW 0.9-4.5% → low; Penobscot 2SW 0.2-1.3% similar pattern (Figure 7)",
+      "supported": true,
+      "extract_quote": "Between the early 1970s and until 1985, two sea-winter (2SW) return rates varied between 0.35 and 1.5% to the Mactaquac hatchery on the Saint John River, Canada and 0.2–1.3% for the Penobscot River, Maine.",
+      "note": "The extract provides the return rates and notes the collapse."
+    },
+    {
+      "claim": "Rejects single-cause explanations: climate, aquaculture/lice, prey, predators — stocks near NASpG persist with cycling; lice cannot explain farm-remote collapses",
+      "supported": true,
+      "extract_quote": "Multiple studies have postulated that the recent widespread occurrence of low adult returns may be caused by climate change, salmon farming, food availability at sea, or marine predators but these possibilities are unsupported by stocks that persist near historic levels, loss of stocks remote from farm sites.",
+      "note": "The extract supports the rejection of single-cause explanations."
+    },
+    {
+      "claim": "Primary hypothesis: IUU high-seas fisheries (paired trawl, Greenland intercept, post-1985 surveillance gaps outside EEZs)",
+      "supported": true,
+      "extract_quote": "We contend that the main driver of the decline and impending collapse of the North Atlantic salmon population is probably IUU overexploitation.",
+      "note": "The extract supports the IUU hypothesis as the primary driver."
+    },
+    {
+      "claim": "Legal high-seas fisheries (Greenland, Faroes, Norwegian Sea) historically reduced returns; closures 1980s-1990s but monitoring gaps remain",
+      "supported": true,
+      "extract_quote": "The legal, high-seas commercial fishery for salmon that developed off western Greenland, around the Faroes and in the Norwegian Sea and which had depressed adult return rates in North America and Europe, was limited after 1980.",
+      "note": "The extract supports the historical impact and closure of legal fisheries."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'contradicts_effect' is consistent with the extract's argument against single-cause explanations like aquaculture/lice.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority question Q9 is relevant as the paper challenges the lice-dominance narrative.",
+  "coi_ok": false,
+  "coi_note": "The metadata states 'no competing interest statement' but the extract does not mention any COI declaration, which is a critical failure.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2021_rfsa_dadswell-atlantic-salmon-collapse",
+  "verified_at": "2026-08-03T16:02:18.643776+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1
+}

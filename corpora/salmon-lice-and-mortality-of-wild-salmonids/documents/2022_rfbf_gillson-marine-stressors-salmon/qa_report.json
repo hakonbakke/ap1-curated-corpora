@@ -1,0 +1,53 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus signal is marked as 'context_dependent' which is ambiguous given the extract's focus on specific geographic context.",
+    "[regraded from critical] Missing COI: The extract clearly states 'Crown copyright; CEFAS/Environment Agency authors. No industry funding declared.' but the metadata does not mention this.",
+    "[offline_accept] Evidence direction mismatch: The metadata states 'mixed_within_study' but the extract predominantly discusses the impacts of stressors without indicating mixed results."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Climate change and predation are the dominant expanding high-impact marine stressors for English Atlantic salmon.",
+      "supported": true,
+      "extract_quote": "Climate change and predation were identified as the biggest threats at present and over the next decade."
+    },
+    {
+      "claim": "Poor water quality and bycatch are high-impact but stabilised.",
+      "supported": true,
+      "extract_quote": "Poor water quality and bycatch were classified as relatively high impact stressors, but with a lower likelihood of becoming more prevalent in the future due to available mitigation measures."
+    },
+    {
+      "claim": "Salmon mariculture is a stabilised LOW-impact stressor for England.",
+      "supported": true,
+      "extract_quote": "Salmon mariculture represented stabilised low impact stressors with relatively low scores on both axes."
+    },
+    {
+      "claim": "Global farmed salmon ~1.5 million t in 2018 (Norway 81%, Scotland 10%); England has negligible production.",
+      "supported": true,
+      "extract_quote": "Farmed salmon production has increased rapidly since the early-1980s, with over 1.5 million tonnes of salmon farmed in the North Atlantic in 2018."
+    },
+    {
+      "claim": "Post-smolt lice mortality can reduce adult returns 0.6–39% near farms.",
+      "supported": true,
+      "extract_quote": "Mortality of post-smolts due to sea lice infestations can cause sizeable (0.6–39%) reductions in adult returns."
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract does not clearly indicate mixed evidence; it primarily discusses the impacts of stressors.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The focus on geographic context and salmon lice aligns with Q9.",
+  "coi_ok": false,
+  "coi_note": "The extract mentions 'Crown copyright; CEFAS/Environment Agency authors. No industry funding declared.' which is missing in the metadata.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2022_rfbf_gillson-marine-stressors-salmon",
+  "verified_at": "2026-08-03T16:04:42.130815+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

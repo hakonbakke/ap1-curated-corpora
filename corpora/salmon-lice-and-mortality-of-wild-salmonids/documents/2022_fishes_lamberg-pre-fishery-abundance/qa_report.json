@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus signal is marked as 'unclear' in the metadata, which could be debated given the methodological nature of the paper.",
+    "[regraded from critical] Missing COI: The extract clearly states funding sources and declares no conflict of interest, but the metadata.yaml does not mention this.",
+    "[offline_accept] Evidence direction: The metadata states 'not_applicable' for evidence_direction, but the extract discusses the potential benefits of the merged PFA approach, suggesting a positive direction."
+  ],
+  "claim_checks": [
+    {
+      "claim": "In 2019, standardised merged PFA (salmon + sea trout) in regions 1, 3, and 6 was 2–4× higher than in other regions; total inter-regional range was >4× between highest and lowest",
+      "supported": true,
+      "extract_quote": "Three of the river regions, i.e., regions 1, 3, and 6 have a total PFA that is in the range of two to four times higher than in the other regions.",
+      "note": null
+    },
+    {
+      "claim": "Spearman rank correlation between ST-based and merged-PFA regional rankings was non-significant (rs = −0.071, n = 8, p = 0.882); only region 1 shared the same rank under both approaches",
+      "supported": true,
+      "extract_quote": "There was no correlation between the PFA rank and the ST rank (Spearman: rs = −0.071, n = 8, p = 0.882, Figure 5).",
+      "note": null
+    },
+    {
+      "claim": "PFA approach upgraded regional status vs ST in regions 3, 5, and 6; downgraded in regions 2, 4, 7, and 8 — differences driven mainly by sea trout contribution",
+      "supported": true,
+      "extract_quote": "In some regions, the PFA approach gives higher ranks (regions 3, 6, and 5). In the other regions the PFA approach results in a lower rank than the ST approach (regions 2, 4, 7, and 8).",
+      "note": null
+    },
+    {
+      "claim": "Atlantic salmon spawning-target (ST) biomass per area was highest in region 5 (Orkla) and lowest in region 7; 2019 observed female spawner biomass exceeded ST most in regions 1, 2, and 6, lowest in region 5",
+      "supported": true,
+      "extract_quote": "The highest value was found for region 5, Orkla, and the lowest for region 7 (Figure 2). In 2019 the recorded biomass of females in the spawning populations that year were measured in a proportion (%) of the spawning target (conservation limit = 100%). Of the eight regions the proportion was highest in regions 1, 2, and 6 and lowest in region 5 (Figure 3).",
+      "note": null
+    },
+    {
+      "claim": "Mean smolt age across regions ranged 2.3–4.1 years (R² ≈ 0.70 with latitude); 27 rivers monitored by video and/or snorkelling — no national sea-trout spawning target exists",
+      "supported": true,
+      "extract_quote": "The average smolt age registered in the eight studied regions varied from 2.3 to 4.1 years (Table 2).",
+      "note": null
+    },
+    {
+      "claim": "Authors propose merged PFA as better input for TLS/VRL validation because sea trout overwinter in fjords and may proxy lice severity better than salmon-only metrics",
+      "supported": true,
+      "extract_quote": "If the anadromous brown trout can be seen as a proxy for the severity of the lice situation in the fjord system, then one would expect an increased population growth if the lice situation were to improve.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract suggests a positive direction for the merged PFA approach, contrary to 'not_applicable' in metadata.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The paper addresses Q9 and Q10 by proposing a new monitoring framework relevant to population-level impacts and TLS robustness.",
+  "coi_ok": false,
+  "coi_note": "The extract mentions funding sources and declares no conflict of interest, which is missing in the metadata.yaml.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2022_fishes_lamberg-pre-fishery-abundance",
+  "verified_at": "2026-08-03T16:03:42.188266+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

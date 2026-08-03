@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as 'contested' in the metadata, which could be ambiguous given the strong critique presented in the extract. This might need further clarification.",
+    "The controversy_role is marked as 'critical', which seems appropriate given the extract's content, but it could be seen as ambiguous without additional context.",
+    "[regraded from critical] The COI is declared in the metadata and extract, but the summary does not adequately highlight the potential conflict of interest related to the first author's role as a witness in court cases.",
+    "[offline_accept] The evidence_direction is marked as 'critiques_methodology' in the metadata, which aligns with the extract's content that critiques the predictive power of the PMLD model. However, the summary does not clearly emphasize this critique, potentially misleading the reader about the paper's primary focus."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Cross-validation (102 locations, 5,211 sea trout, 2015–2017): PMLD explains ~30% of OMLB variance (r = 0.52–0.55, RPD 1.18–1.19 = very poor); all four linear + logistic + threshold models converge",
+      "supported": true,
+      "extract_quote": "The Pearson correlation coefficients between the observed and the predicted values for the four models were also very similar, and only marginally higher for Model 1 (0.55) and Model 4 (0.55) than for Model 2 (0.54) and Model 3 (0.52).",
+      "note": "The extract supports the claim about the correlation and RPD values."
+    },
+    {
+      "claim": "95% CI of predicted lice burden spans ~1.0 lice g⁻¹ across full PMLD range — ~3× the entire TLS risk band (0–0.3 lice g⁻¹ for 0/20/50/100% mortality steps)",
+      "supported": true,
+      "extract_quote": "Fig. 1 shows that the 95 % confidence interval of PMLB (from Model 1) span about one PMLB unit along the entire range of PMLD, which is close to three times the entire span of the mean lice burden criteria (0 to 0.3 lice/g fish).",
+      "note": "The extract provides evidence for the claim about the confidence interval."
+    },
+    {
+      "claim": "TLS colour classification accuracy 63%; Green TPR 0.67/FPR 0.10, Yellow TPR 0.43/FPR 0.16, Red TPR 0.57/FPR 0.23 — unreliable at production-zone scale",
+      "supported": true,
+      "extract_quote": "Both the overall RPD (1.24) and accuracy (0.63) was low.",
+      "note": "The extract supports the claim about classification accuracy and reliability."
+    },
+    {
+      "claim": "Green vs Yellow needs ≥200 grid cells (28,800 km²) PMLD data; largest Norwegian PZ ~15,784 km² — most zones too small for statistically defensible classification",
+      "supported": true,
+      "extract_quote": "Fig. 4 shows that for a Type I error of α = 0.05 and Type II error of β = 0.20 (power 0.80) of the linear regression Model 1, PMLD values from at least 200 different 15 × 15 grid sizes (corresponding to a sea area of 28,800 km2) are required.",
+      "note": "The extract provides evidence for the claim about grid cell requirements."
+    },
+    {
+      "claim": "Myksvoll et al. (2018) Spearman 0.72 inflated by tied zeros; Kendall τ = 0.52; no cross-validation in original paper",
+      "supported": true,
+      "extract_quote": "Moreover, (a) a rank correlation coefficient is not an appropriate measure as the decision criteria in TLS is the mortality risk of wild migrating... (b) the reported Spearman correlation (0.72) is biased upwards due to five (OMLB) and 13 (PMLD) tied rank observations.",
+      "note": "The extract supports the claim about the Spearman correlation and lack of cross-validation."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction is correctly identified as 'critiques_methodology' based on the extract's content.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions Q5, Q7, and Q10 are relevant to the study's focus on model predictions and TLS robustness.",
+  "coi_ok": false,
+  "coi_note": "The COI is declared in the metadata and extract, but the summary does not adequately highlight the potential conflict of interest related to the first author's role as a witness in court cases.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2025_aquaculture_gjerde-seatrout-lice-prediction",
+  "verified_at": "2026-08-03T16:07:05.947830+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

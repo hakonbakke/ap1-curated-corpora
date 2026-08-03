@@ -87,7 +87,7 @@ secondary_endpoints:
   - "Comparison of lice levels across three aquaculture phases"
 
 # DEL C - FUNN OG BEVIS
-evidence_direction: no_significant_effect
+evidence_direction: no_effect_detected
 effect_scale: population_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
@@ -218,6 +218,7 @@ retrieval_tags:
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. DAO 163:107–112 (Aug 2025). Industry data (Mowi/Cermaq); sample 15 fish/site from 2019. Companion: 2025_jfd_jones-pacific-lice-cessation-bc.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: regraded → ai_verified (moved_coi=1, critical=0)

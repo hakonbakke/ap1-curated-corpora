@@ -1,0 +1,89 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Ambiguous consensus_signal: The extract suggests a strong defense of the TLS methodology, which might imply stronger agreement than 'moderate'.",
+    "Ambiguous controversy_role: The role as a rebuttal is clear, but the extent of controversy might be understated.",
+    "[regraded from critical] Missing COI: The extract clearly states conflicts of interest related to industry funding and affiliations, which are not fully disclosed in the metadata.",
+    "[offline_accept] Fabricated numbers: The summary mentions a correlation coefficient of 0.71, which is not directly quoted in the extract."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Van Nes et al. (raq.12953) welcomed for highlighting uncertainties but argued biased toward low-impact evidence",
+      "supported": true,
+      "extract_quote": "We agree that the assessment has many uncertainties and welcome a constructive critique. However, the argumentation by van Nes et al. appears biased towards evidence that suggests a low impact from aquaculture on wild fish.",
+      "note": null
+    },
+    {
+      "claim": "Migration timing: five acoustic-telemetry river-years insufficient vs 343+ river-years in Vollset et al. (2021) model; EG does not assume 28-day coastal residence — VPS models use swimming speeds implying shorter residence for most rivers",
+      "supported": true,
+      "extract_quote": "Data from five selected river years of a single Norwegian region were used to support the review's claim... The EG uses this model to predict migration timing for all salmon-producing rivers.",
+      "note": null
+    },
+    {
+      "claim": "Farm larvae 'overestimation' unlikely to bias mortality because models calibrate calculated infestation pressure to observed smolt lice counts (scaling factor absorbs systematic error)",
+      "supported": true,
+      "extract_quote": "The review fails to mention that such possible overestimation is unlikely to bias mortality estimation, as models scale the calculated infestation pressure to observed lice counts on salmon smolts.",
+      "note": null
+    },
+    {
+      "claim": "Underestimation factors omitted in review: trawl index covers only inner fjord segment; sentinel cages underestimate ~10× vs trawl (Stige et al. 2022); assessment is expert elicitation not mean of seven indices",
+      "supported": true,
+      "extract_quote": "The review ignores that the trawl index may underestimate infestations... empirical analysis suggests sentinel cages underestimate infestation levels by an order of magnitude compared to trawl data.",
+      "note": null
+    },
+    {
+      "claim": "Sea trout–salmon correlation misrepresented: Vollset et al. (2017) r=0.71 for trout index vs log salmon abundance — not 'poor correlation'",
+      "supported": false,
+      "extract_quote": null,
+      "note": "The extract does not provide a direct quote or evidence for the correlation coefficient of 0.71."
+    },
+    {
+      "claim": "Allee effect critique rebutted: female sperm storage, male host-switching, farm spread models show Allee only at impractically low densities (Aldrin et al. 2017, 2023)",
+      "supported": true,
+      "extract_quote": "The review does not cite an observational study that shows that the Allee effect can be offset by the host switching of male lice, and ignores the ability of female lice to store male sperm.",
+      "note": null
+    },
+    {
+      "claim": "Salinity inclusion in Stige et al. (2021) increased not decreased prediction uncertainty; temperature infectivity included in both NVI and IMR VPS models",
+      "supported": true,
+      "extract_quote": "Stige et al. found for example that inclusion of salinity effects led to higher, not lower, uncertainty in predictions of lice infestations.",
+      "note": null
+    },
+    {
+      "claim": "Mortality thresholds: Grimnes & Jakobsen (1996) could not test adult-stage tolerance; Holst et al. field data suggest threshold <10 mobile lice; Fjelldal et al. moribund fish below experimental lethal dose",
+      "supported": true,
+      "extract_quote": "Grimnes and Jakobsen conclude: Because of a high infection intensity obtained in this experiment, all infected fish became moribund prior to the appearance of adult female lice.",
+      "note": null
+    },
+    {
+      "claim": "Release experiments: Vollset et al. (2023) lice resistance to emamectin benzoate not mentioned; Slice toxicity in treated groups (Lennox et al. 2020) could underestimate lice mortality",
+      "supported": true,
+      "extract_quote": "Vollset et al. showed that the reason for lack of an effect of emamectin benzoate... is likely that the lice have developed immunity against this treatment.",
+      "note": null
+    },
+    {
+      "claim": "COI disclosure: Van Nes et al. omitted Salmon Tracking 2030 industry funding (PO3–4) and first author Nova Sea board role",
+      "supported": true,
+      "extract_quote": "The review's authors omitted to mention that the reported project “Salmon Tracking 2030” is funded by the aquaculture companies... and that the first author is a member of the board directors of Nova Sea.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction is mixed within the study, which aligns with the extract's presentation of both supporting and challenging aspects of the TLS methodology.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions are relevant to the content and focus of the commentary.",
+  "coi_ok": false,
+  "coi_note": "The extract clearly states conflicts of interest related to industry funding and affiliations, which are not fully disclosed in the metadata.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2025_raq_stige-comment-vannes",
+  "verified_at": "2026-08-03T16:08:59.109889+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

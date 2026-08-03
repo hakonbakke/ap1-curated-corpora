@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus signal and quality signal are marked as moderate, which could be ambiguous given the high uncertainty and methodological focus.",
+    "[regraded from critical] Missing COI: The extract clearly states funding sources and mentions no commercial COI, but the summary omits this detail.",
+    "[offline_accept] Evidence direction mismatch: The metadata states 'supports_effect', but the extract emphasizes challenges and limitations, suggesting a more nuanced or uncertain conclusion."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Binary GLMM (N=4890 fish, 244 occasions, 52 fjord×year random groups): lice presence increases with fish length (+0.003 mm⁻¹), farm infestation pressure (+1.245 on standardized IP), temperature (+0.314), and decreases with freshwater influence (−134.1); T×IP interaction −0.075 (all p<0.001 except where noted).",
+      "supported": true,
+      "extract_quote": "According to the final model with the binary response variable, all explanatory variables had a statistical influence on the probability of presence of lice on wild sea trout (Table 1).",
+      "note": "The extract provides detailed statistical results supporting this claim."
+    },
+    {
+      "claim": "Farm pressure remains significant after temperature correction—first Norwegian demonstration that aquaculture pressure elevates wild infestation probability with environmental covariates in the model.",
+      "supported": true,
+      "extract_quote": "It is therefore noteworthy that even after correcting for the temperature effect, our results show that infestation pressure from salmon farms significantly increases the probability of wild sea trout having salmon lice.",
+      "note": "The extract supports this claim with specific emphasis on the significance of farm pressure."
+    },
+    {
+      "claim": "Proportional models (>0.025, >0.05, >0.1 lice g⁻¹ on trout <200 g, N=2250): temperature and freshwater effects robust; farm pressure significant only at 0.025 lice g⁻¹ threshold (p=0.016), not at 0.05 or 0.1.",
+      "supported": true,
+      "extract_quote": "While temperature and salinity were strongly significant independent of which threshold level that was used, the increasing effect of infestation pressure was statistically significant only when using the proportion of individuals with >0.025 lice g−1 and not at threshold levels of 0.05 or 0.1 lice g−1.",
+      "note": "The extract provides specific results for different thresholds, supporting the claim."
+    },
+    {
+      "claim": "Monitoring 2004–2010: 4610 trout + 280 char, 41 sites, 15 fjords; 66% chalimus, 17% pre-adults, 16% adults; 99% L. salmonis; 39% zero lice, 9% one louse, max 586 fish⁻¹; ZINB models on counts failed to converge.",
+      "supported": true,
+      "extract_quote": "In total, the dataset consists of 244 unique sample occasions and 4890 individual fish... Approximately 39% of the individuals in the dataset had no lice, while 9% had only 1 louse, and the highest number of lice recorded on 1 fish was 586.",
+      "note": "The extract provides detailed data supporting this claim."
+    },
+    {
+      "claim": "Programme shifted after Helland et al. (2012) report: from 2013 fewer sites, fyke nets (live catch), four model fjords with richer environmental data.",
+      "supported": true,
+      "extract_quote": "After the methodological challenges of analysing the monitoring data were reported to the management authorities (Helland et al. 2012), the sampling design of the Norwegian monitoring programme changed in 2013.",
+      "note": "The extract confirms changes in the monitoring programme post-2012."
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract emphasizes challenges and limitations, suggesting a more nuanced or uncertain conclusion than 'supports_effect'.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The paper addresses Q5 and Q10 as it discusses model predictions of infestation and TLS robustness.",
+  "coi_ok": false,
+  "coi_note": "The summary omits detailed COI information present in the extract.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2015_aei_helland-monitoring-lice-challenges",
+  "verified_at": "2026-08-03T15:54:26.373792+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

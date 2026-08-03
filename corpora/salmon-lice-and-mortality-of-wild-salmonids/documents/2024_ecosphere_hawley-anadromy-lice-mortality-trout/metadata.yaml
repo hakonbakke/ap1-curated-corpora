@@ -182,6 +182,7 @@ retrieval_tags:
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access (CC BY). Individual-trajectory VPS-style analysis for sea trout; funders include Mowi, Osland Havbruk, Sulefisk. Key splits: 25.3% vs 14.7% smolt lice-mortality fraction (outer vs inner migration).
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: regraded → ai_verified (moved_coi=1, critical=0)

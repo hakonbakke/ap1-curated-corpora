@@ -1,0 +1,78 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal and controversy_role fields are marked as moderate_agreement and supportive, respectively. These could be considered ambiguous given the complexity and variability in the study's findings and the broader scientific debate on the topic."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Four RCTs released n=29,817 tagged postsmolts (Table 1: 2013 May 3,791+3,972; June 3,801+3,868; 2014 May 3,819+3,818; June 3,770+2,978); n=559 recaptured over 1-4 sea winters",
+      "supported": true,
+      "extract_quote": "In this study, n = 29,817 tagged Atlantic salmon were studied in four release trials... n = 559 Atlantic salmon were recaptured after spending 1–4 years at sea.",
+      "note": null
+    },
+    {
+      "claim": "June 2014 controls: 1 fish returned of 2,978 (0.03%) vs 70 of 3,770 treated (1.86%); RR=55.3 (95% CI 7.7-398) — >50-fold mortality risk differential cited in abstract",
+      "supported": true,
+      "extract_quote": "In contrast, only a single fish (0.03%) returned from the control group... the RR was exceptionally high and significant (RR = 55.3, 95% CI: 7.7–398)",
+      "note": null
+    },
+    {
+      "claim": "Most groups 1-2.5% return; May 2013 controls returned more than treated (RR=0.52, 95% CI 0.35-0.76); June 2013 and May 2014 RR ~1.05-1.13 (NS)",
+      "supported": true,
+      "extract_quote": "From the May 2013 release, about twice as many salmon from the control group returned as compared to the treated salmon (RR = 0.52, 95% CI: 0.35–0.76)... RR = 1.05 and 1.13 (95% CI: 0.81–1.42 and 0.85–1.50) respectively",
+      "note": null
+    },
+    {
+      "claim": "Table 2 GLM: lice infestation pressure negative on return (estimate -2.76, p<0.0001); treatment positive (0.66, p<0.0001); significant lice×treatment interaction (2.71, p<0.0001)",
+      "supported": true,
+      "extract_quote": "Lice Infestation Pressure, Treatment and the interaction between these were all significantly contributing to the probability of return of adult salmon (p < 0.0001 for all, Table 2).",
+      "note": null
+    },
+    {
+      "claim": "Sentinel Lice Infestation Pressure: ~10-fold May→June 2013 (0.06→0.66 lice/fish/14d); ~25-fold 2014 (0.37→8.87); 2013 fallow reduced pressure 84-92% vs 2014 full production",
+      "supported": true,
+      "extract_quote": "Data from the sentinel cages showed that the lice infestation pressure increased about 10-fold from May to June (0.06–0.66 lice per fish after 14 days; average values from all locations) in 2013, and about 25-fold from May to June (0.37–8.87 lice per fish after 14 days) in 2014 respectively.",
+      "note": null
+    },
+    {
+      "claim": "Hydrodynamic maps: low <1, medium 1-10, high >10 lice/fish along migration corridor; June 2014 outer Hardangerfjord full production with high red-zone coverage",
+      "supported": true,
+      "extract_quote": "To visualize the spatial distribution of lice infestation pressure in the whole area of interest... the lice densities from the hydrodynamic lice dispersion model... were low (<1 lice per fish), medium (1–10 lice per fish) or high (>10 lice per fish).",
+      "note": null
+    },
+    {
+      "claim": "Hardanger standing stock ~80,000-95,000 t farmed salmon 2013-2014; outer farms fallowed March 2013, full production 2014",
+      "supported": true,
+      "extract_quote": "The Hardangerfjord is among the most intensively used areas on the Norwegian coast for salmon production, with a standing stock of farmed Atlantic salmon of about 80,000 and 95,000 metric tonnes in 2013 and 2014 respectively.",
+      "note": null
+    },
+    {
+      "claim": "Norwegian TLS thresholds referenced: green 0-10%, yellow 10-30%, red >30% lice-induced mortality; June 2014 untreated scenario exceeds red threshold",
+      "supported": true,
+      "extract_quote": "‘Green light’ is used when 0%–10% of the wild population of salmon is likely to die because of lice, ‘yellow light’ is used at mortality rates from 10% to 30% and ‘red light’ is used at mortality rates >30%.",
+      "note": null
+    },
+    {
+      "claim": "386 million farmed vs ~0.5 million wild returning salmon (Jan 2017 stats cited); political aim +500% production by 2050 noted as scaling risk",
+      "supported": true,
+      "extract_quote": "With an estimated stock of 386 million farmed salmon (January 2017; Statistics Norway, 2017), compared to about 0.5 million returning wild Atlantic salmon (Anon, 2018)... the stated political aim is to increase the production of Atlantic salmon and trout with 500% by 2050.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction supports the effect of salmon lice on mortality, consistent with the extract.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions Q4, Q8, and Q10 are relevant and supported by the study's focus on timing, lice density, and survival impacts.",
+  "coi_ok": true,
+  "coi_note": "The COI is declared, with funding sources and affiliations clearly stated, and no industry funding involved.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2020_jae_bohn-timing-survival-postsmolts",
+  "verified_at": "2026-08-03T15:58:26.874648+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 0
+}

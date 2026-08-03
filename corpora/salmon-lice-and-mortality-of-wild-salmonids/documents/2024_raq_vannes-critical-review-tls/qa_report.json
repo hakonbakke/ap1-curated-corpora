@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The COI is marked as unclear, but the funding sources are mentioned in the extract.",
+    "The summary does not mention the specific recommendation to use more realistic assumptions concerning lice-induced mortality thresholds."
+  ],
+  "claim_checks": [
+    {
+      "claim": "The TLS overestimates lice larvae production from farms.",
+      "supported": true,
+      "extract_quote": "production of lice larvae from farmed salmon is overestimated",
+      "note": "The extract clearly states this finding."
+    },
+    {
+      "claim": "Assumptions about smolt migration timing lead to unreliable infection pressure estimates.",
+      "supported": true,
+      "extract_quote": "assumed timing and duration of smolt migration contribute to unreliable observational and modelled data and overestimates of infection pressure",
+      "note": "The extract supports this claim."
+    },
+    {
+      "claim": "Lice-associated mortality in wild salmon smolts is likely overestimated.",
+      "supported": true,
+      "extract_quote": "lice-associated mortality in wild salmon smolts may be overestimated",
+      "note": "The extract supports this claim."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'critiques_methodology' is consistent with the extract's focus on critiquing the TLS methodology.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The summary addresses the robustness of the TLS and the translation of infestation levels to mortality estimates, aligning with Q7 and Q10.",
+  "coi_ok": true,
+  "coi_note": "The COI is marked as unclear, but funding sources are mentioned, which does not constitute a critical issue.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2024_raq_vannes-critical-review-tls",
+  "verified_at": "2026-08-03T16:44:31.064405+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified"
+}

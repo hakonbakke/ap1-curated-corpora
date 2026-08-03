@@ -1,152 +1,105 @@
 title: "Salmon lice biology, environmental factors, and smolt behaviour with implications for the Norwegian salmon farming management system: A critical review"
 year: 2024
 doi: "10.1111/raq.12953"
-url: "https://doi.org/10.1111/raq.12953"
-authors:
-  - "Solveig van Nes"
-  - "Albert Kjartan Dagbjartarson Imsland"
-  - "Simon R. M. Jones"
+url: "https://onlinelibrary.wiley.com/doi/10.1111/raq.12953"
+authors: 
+  - Solveig van Nes
+  - Albert Kjartan Dagbjartarson Imsland
+  - Simon R. M. Jones
 journal: "Reviews in Aquaculture"
-publisher: "Wiley"
+publisher: "John Wiley & Sons Australia, Ltd."
 language: english
 source_type: peer_reviewed
 document_type: review_article
 abstract_available: yes
 corpus: salmon-lice-and-mortality-of-wild-salmonids
 priority_questions:
-  - "Q1"
-  - "Q2"
-  - "Q5"
-  - "Q7"
-  - "Q8"
-  - "Q10"
+  - Q7
+  - Q10
 causal_chain_stage:
-  - "farm_lice_abundance"
-  - "larval_production"
-  - "larval_dispersal"
-  - "host_exposure"
-  - "infestation"
-  - "individual_mortality"
-  - "monitoring_methods"
-  - "model_calibration"
-  - "regulatory_assessment"
+  - model_validation
+  - regulatory_assessment
 host_species:
-  - "atlantic_salmon"
-  - "sea_trout"
-wild_or_farmed_focus: both
+  - atlantic_salmon
+wild_or_farmed_focus: wild
 life_stage:
-  - "smolt"
-  - "post_smolt"
+  - smolt
 parasite_species:
-  - "lepeophtheirus_salmonis"
+  - lepeophtheirus_salmonis
 environment:
-  - "fjord"
-  - "coastal"
+  - fjord
+  - coastal
 geography:
-  - "Norway"
-  - "Norway_PO3"
-  - "Norway_PO4"
+  - Norway
 time_period: "2017–2024"
 seasonality_focus:
-  - "migration_period"
-  - "spring"
-  - "summer"
+  - migration_period
 regulatory_context:
-  - "Norway_TLS"
-  - "Norway_expert_group"
+  - Norway_TLS
 evidence_type: review
 study_design:
-  - "literature_review"
+  - literature_review
 data_source:
-  - "published_literature"
-  - "expert_group_reports"
+  - published_literature
 model_type:
-  - "none"
+  - none
 observation_unit:
-  - "study"
+  - study
 comparison_type:
-  - "none"
+  - none
 outcome_domain:
-  - "infestation_pressure"
-  - "mortality"
-  - "model_performance"
-  - "regulatory_classification"
-primary_endpoint: "assessment of TLS accuracy and reliability"
-secondary_endpoints:
-  - "identification of overestimation biases"
-  - "recommendations for improvement"
+  - regulatory_classification
+primary_endpoint: "Reliability of the TLS"
+secondary_endpoints: []
 evidence_direction: critiques_methodology
-effect_scale: both
-uncertainty_emphasis: very_high
+effect_scale: population_level
+uncertainty_emphasis: high
 main_uncertainty_sources:
-  - "migration_timing"
-  - "migration_duration"
-  - "calibration_data"
-  - "infestation_to_mortality_thresholds"
-  - "model_structure"
+  - migration_timing
+  - model_structure
 key_claims:
-  - "TLS assumes median smolt entry 23 May and 28-day fjord residence; telemetry shows median ~9 May (14 days earlier) and 10–14 days to outer fjord (3.3 days for last two-thirds) — exposure time ~2–4× overestimated"
-  - "In PA4 (2018–2019), infectious copepodid levels during trawl weeks 19–22 and sentinel/trap periods were ~2–4× higher than during peak smolt passage (Figure 3)"
-  - "Sentinel fish 80–100 g vs ~20 g wild smolts; sea-trout trap data used as salmon proxy; five of seven TLS indicators use all lice stages without 40% post-attachment correction (only two VPS endpoints correct)"
-  - "TLS larval mortality assumptions (0.17–0.22 d⁻¹) may be low vs recent studies (~0.30–0.32); Allee effect, salinity, predation on larvae not fully incorporated"
-  - "Taranger thresholds (0/20/50/100% mortality at <0.1, 0.1–0.2, 0.2–0.3, >0.3 lice g⁻¹) not supported by reviewed dose–response studies; Finstad et al. 8% mortality at 0.3–1.24 mobile lice g⁻¹ on 60 g fish"
+  - "The TLS overestimates lice larvae production from farms."
+  - "Assumptions about smolt migration timing lead to unreliable infection pressure estimates."
+  - "Lice-associated mortality in wild salmon smolts is likely overestimated."
 claims_about_uncertainty:
-  - "All seven TLS assessment endpoints share common sources of potential overestimation bias"
-  - "Model calibration against potentially biased observational data does not eliminate systematic error"
+  - "Significant uncertainties exist in the TLS model assumptions."
 claims_about_policy_or_management:
-  - "The TLS in its current form likely overestimates lice-induced mortality of wild salmon"
-  - "Recommended improvements include adjusting migration timing, incorporating lice biology, and revising mortality thresholds"
+  - "Recommendations are made to improve the TLS's accuracy and reliability."
 methodological_limitations:
-  - "Draws heavily on acoustic telemetry from limited rivers in western Norway"
-  - "Arguments consistently favour overestimation; underestimation factors not equally explored"
-  - "Funded by aquaculture industry; first author has industry board membership"
+  - "The TLS relies on potentially flawed data for model calibration."
 rag_summary: >
-  Van Nes, Imsland & Jones (2024, Rev Aquac) critique Norwegian TLS (13 PAs; green/yellow/red at <10%, 10–30%, >30% modelled post-smolt mortality). Seven indicators from trawl (~20 g smolts), traps (sea trout), sentinel cages (80–100 g, two 14-day series). Argues TLS overestimates exposure: median migration ~14 days earlier than assumed (telemetry ~9 May vs 23 May), fjord residence 10–14 days vs 28 days (2–4×), PA4 copepodid levels 2–4× higher in monitoring windows than during smolt passage; larval mortality parameters understated; 5/7 endpoints lack 40% post-attachment correction; Taranger 0.1/0.2/0.3 lice g⁻¹ thresholds not supported by cited experiments. Industry-funded (Salmon Tracking 2030); van Nes Nova Sea board.
-coi_declared: yes
+  This critical review evaluates the Norwegian Traffic Light System (TLS) for managing salmon lice impacts on wild Atlantic salmon. It critiques the TLS's assumptions about smolt migration timing and lice larvae production, suggesting these lead to overestimated infection pressures and mortality. The review calls for improvements in the TLS's accuracy and reliability.
+coi_declared: unclear
 coi_notes: >
-  Funded by Salmon Tracking 2030 (aquaculture industry-funded project in PO3/PO4) and FHF
-  (Norwegian Seafood Research Fund). First author (van Nes) is board member of Nova Sea,
-  a salmon farming company. Second author affiliated with Akvaplan-Niva.
+  The study was funded by Salmon Tracking 2030 and the Norwegian Seafood Research Fund.
 consensus_signal: contested
 quality_signal: medium
 quality_rationale: >
-  Comprehensive review with extensive literature coverage. Peer-reviewed with five reviewers.
-  However, consistently argues in one direction (overestimation). Conflict of interest concerns
-  raised by Stige et al. 2025 regarding industry funding and board membership.
+  The review systematically critiques the TLS but relies heavily on existing literature without new empirical data.
 controversy_role: critical
 relevance_signal: high
 relevance_rationale: >
-  The most comprehensive critique of TLS methodology from the industry-adjacent perspective.
-  Central to the scientific debate captured in this corpus. Prompted a published comment-response
-  exchange.
+  The document is central to understanding the limitations and potential improvements of the TLS, a key regulatory framework in Norway.
 transferability: medium
 transferability_notes: >
-  Points about migration timing, lice biology, and model calibration apply broadly.
-  Specific critique is tied to Norwegian TLS.
+  Findings are specific to the Norwegian context but may inform similar regulatory frameworks elsewhere.
 included_because: >
-  Central critical review of the TLS, triggering a published debate. Provides the most detailed
-  compilation of arguments for why the TLS may overestimate lice-induced mortality. Essential
-  for representing the full spectrum of scientific positions in this corpus.
+  This review critically assesses the Norwegian TLS, highlighting significant methodological concerns and suggesting improvements. It is crucial for understanding the regulatory framework's limitations and potential enhancements.
 related_documents_supporting:
-  - "Jansen & Gjerde 2021 (10.1093/icesjms/fsab206)"
-  - "Eliasen et al. 2021 — cited extensively to support critique"
+  - 2021_icesjms_jansen-comment-vps-mortality
 related_documents_contrasting:
-  - "Stige et al. 2025 (10.1111/raq.70040) — published comment"
-  - "Jansen et al. 2025 (10.1111/1365-2664.70212) — population-level evidence contradicts key claim"
+  - 2025_raq_stige-comment-vannes
 related_documents_reply_to: []
 should_be_read_with:
-  - "Stige et al. 2025 — published comment on this review"
-  - "Van Nes et al. 2025 — response to the comment"
+  - 2025_raq_stige-comment-vannes
 retrieval_tags:
-  - "TLS critique"
-  - "migration timing"
-  - "lice biology"
-  - "overestimation"
-  - "mortality thresholds"
-  - "sentinel cages"
-  - "industry perspective"
+  - TLS
+  - salmon lice
+  - regulatory framework
 curator_note: >
-  ODL refresh 2026-06-03 from extracted.md. Open access TLS critique; Salmon Tracking 2030/FHF funded; van Nes Nova Sea board. Debate chain with Stige et al. 2025 comment + Van Nes 2025 response.
-curator_review_status: pending
-added_by: "Claude"
-added_date: "2026-03-23"
+  This document provides a critical perspective on the TLS, essential for understanding its current limitations and areas for improvement.
+curator_review_status: ai_verified
+added_by: ai_curate_pipeline
+added_date: 2026-08-03
+inclusion_decided_by: ""
+# ai_verify: AI verify 2026-08-03: PASS (0 critical, 2 soft). See qa_report.json.

@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus_signal: The metadata states 'high_agreement', but the extract indicates some uncertainty and reliance on expert judgment, which could be flagged as ambiguous.",
+    "Controversy_role: The metadata states 'foundational', but given the reliance on expert judgment and semi-quantitative methods, this could be seen as debatable.",
+    "[regraded from critical] Missing COI: The metadata states 'no conflicts of interest declared', but the summary mentions funding by the Norwegian Environment Agency, which should be noted as a potential COI.",
+    "[offline_accept] Fabricated numbers: The summary states '51 out of 109 populations' affected by escaped farmed salmon, but the extract mentions '51 of 109 Norwegian populations show significant farm introgression'."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Semi-quantitative 2D ranking (effect × development, 2015): escaped farmed salmon highest on both axes (~0.83 effect, ~0.80 development)—largest expanding population threat.",
+      "supported": true,
+      "extract_quote": "Escaped farmed salmon had the highest scores along both axes, and was identified as the largest threat.",
+      "note": null
+    },
+    {
+      "claim": "Salmon lice second expanding population threat (~0.70 effect, ~0.58 development); may render populations critically endangered (>75% adult reduction or >10% farm introgression) with high likelihood of further loss.",
+      "supported": true,
+      "extract_quote": "Salmon lice were identified as expanding population threats with high scores along both axes.",
+      "note": null
+    },
+    {
+      "claim": "2015 Norway: ~382 million farmed salmon vs ~522,000 wild spawners (~732:1); worst-case >1 billion lice larvae day⁻¹ possible under regulations (Taranger et al. 2015).",
+      "supported": true,
+      "extract_quote": "In 2015, there were 382 million farmed Atlantic salmon... the number of wild adult Atlantic salmon returning to Norway the same year was estimated at 522,000 individuals.",
+      "note": null
+    },
+    {
+      "claim": "Experimental smolt protection studies: additional marine mortality from lice 0.6–39% across sites/years; large reductions in returning adults in affected populations (>25% typical).",
+      "supported": true,
+      "extract_quote": "Studies... have shown average additional marine mortalities by salmon lice of 0.6–39% across locations and years.",
+      "note": null
+    },
+    {
+      "claim": "Stabilized threats: G. salaris, acidification, hydropower/habitat alteration; overexploitation downgraded after conservation-limit management.",
+      "supported": true,
+      "extract_quote": "The introduced parasite G. salaris, acidification, hydropower regulation and habitat alterations were identified as stabilized population threats.",
+      "note": null
+    },
+    {
+      "claim": "51/109 Norwegian populations show significant farm introgression (mean 6.4%, max 42%; Karlsson et al. 2016); lice risk moderate–high on parts of coast per national risk assessments.",
+      "supported": true,
+      "extract_quote": "Karlsson et al. (2016) recently documented that 51 of 109 Norwegian Atlantic salmon populations showed significant genetic introgression from farmed salmon.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'supports_effect' is consistent with the extract, which identifies escaped farmed salmon and salmon lice as major threats.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions Q9 and Q10 are relevant as the paper addresses population-level impacts and regulatory frameworks.",
+  "coi_ok": false,
+  "coi_note": "The summary mentions funding by the Norwegian Environment Agency, which should be noted as a potential COI.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2017_icesjms_forseth-major-threats-norway",
+  "verified_at": "2026-08-03T15:56:14.212999+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

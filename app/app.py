@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from retrieval import load_corpus, reload_corpus, retrieve, build_debate_map
+from retrieval import load_corpus, reload_corpus, retrieve_routed, build_debate_map
 from synthesis import synthesise
 
 # ── i18n helpers ──────────────────────────────────────────────────────────────
@@ -56,9 +56,29 @@ DIRECTION_COLOUR = {
     "weak_support": "🟡",
     "mixed_within_study": "🟡",
     "no_effect_detected": "⚪",
+    "no_significant_effect": "⚪",  # legacy alias → taxonomy: no_effect_detected
     "contradicts_effect": "🔴",
     "critiques_methodology": "🔵",
     "not_applicable": "⚪",
+}
+
+CURATOR_STATUS_LABELS = {
+    "en": {
+        "ai_verified": "AI-verified",
+        "ai_draft": "AI draft",
+        "expert_approved": "Expert-approved",
+        "pending": "AI draft (legacy)",
+        "reviewed": "Reviewed (legacy)",
+        "approved": "Approved (legacy)",
+    },
+    "no": {
+        "ai_verified": "AI-verifisert",
+        "ai_draft": "AI-utkast",
+        "expert_approved": "Ekspertgodkjent",
+        "pending": "AI-utkast (eldre)",
+        "reviewed": "Gjennomgått (eldre)",
+        "approved": "Godkjent (eldre)",
+    },
 }
 
 QUALITY_BADGE = {"strong": "●●●", "medium": "●●○", "weak": "●○○"}
@@ -387,7 +407,7 @@ if run and query.strip():
         st.stop()
 
     with st.spinner(tr(lang, "Retrieving relevant documents...", "Henter relevante dokumenter...")):
-        results = retrieve(
+        results, routed_qs = retrieve_routed(
             client,
             query.strip(),
             top_k=top_k,
@@ -397,6 +417,15 @@ if run and query.strip():
     if not results:
         st.warning(tr(lang, "No relevant documents found for this query.", "Ingen relevante dokumenter funnet for dette spørsmålet."))
         st.stop()
+
+    if routed_qs:
+        st.caption(
+            tr(
+                lang,
+                f"Question routing: preferred priority questions {' · '.join(routed_qs)}",
+                f"Spørsmåls-routing: prioriterte spørsmål {' · '.join(routed_qs)}",
+            )
+        )
 
     with st.spinner(tr(lang, "Synthesising evidence...", "Syntetiserer evidens...")):
         output_language = "Norwegian (Bokmål)" if lang == "no" else "English"
@@ -461,6 +490,11 @@ if run and query.strip():
             tags = r["priority_questions"]
             if tags:
                 st.caption(tr(lang, "Priority questions: ", "Prioriterte spørsmål: ") + " · ".join(tags))
+
+            status = (r.get("curator_review_status") or "").strip()
+            if status:
+                status_label = CURATOR_STATUS_LABELS.get(lang, {}).get(status, status)
+                st.caption(tr(lang, "Curation: ", "Kuratering: ") + status_label)
 
             if r["related_contrasting"]:
                 st.caption(tr(lang, "Contrasts with: ", "Kontrasterer med: ") + ", ".join(r["related_contrasting"]))

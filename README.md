@@ -23,6 +23,7 @@ ap1-curated-corpora/
 ├── CORPUS_CRITERIA.md      ← rules governing document inclusion
 ├── TAXONOMY.md             ← shared tagging vocabulary across all corpora
 ├── WORKFLOW.md             ← step-by-step curation and synthesis workflow
+├── possible_improvements/  ← optional methods backlog (not committed work)
 │
 ├── corpora/
 │   ├── salmon-lice-and-mortality-of-wild-salmonids/   ← active

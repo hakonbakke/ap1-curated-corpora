@@ -1,0 +1,71 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as 'contested,' which could be ambiguous given the extract's emphasis on defending against bias claims.",
+    "The controversy_role is marked as 'rebuttal,' which is appropriate but could be seen as ambiguous given the broader context of the debate.",
+    "[regraded from critical] The summary states 'All relevant interests disclosed; no competing interests reported,' but the extract mentions 'All relevant potential conflicts of interest have been honestly and openly stated in the process of publication.' This discrepancy suggests a potential COI issue.",
+    "[offline_accept] The evidence_direction is marked as 'critiques_methodology,' but the extract emphasizes defending the original review against claims of bias and misunderstanding, which may not align with a purely methodological critique."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Review (raq.12953) peer-reviewed with five reviewers; Stige et al. claims of bias and 'misunderstanding' are not scientifically justified",
+      "supported": true,
+      "extract_quote": "the Review [1] was subject to extensive scientific peer review prior to publication. Hence, our main findings are scientifically justified and the claim in the Comment [4] that the Review [1] appears ‘biassed’ in evidence and is based on apparent ‘misunderstanding of the literature and the methodology’ is neither scientifically justified nor does it contribute to a constructive scientific debate.",
+      "note": "The extract supports the claim about peer review and rejection of bias claims."
+    },
+    {
+      "claim": "TLS migration timing uses 25% emigration criterion + fixed 40-day period (Vollset et al. 2021; EG reports 2017, 2022) — acoustic telemetry in review (earlier, shorter migration) not incorporated into TLS estimates",
+      "supported": true,
+      "extract_quote": "the modelled migration time applied by the EG is derived from selected data limited to observations of 25% smolt emigration [6] and from duration of the migration period being set/fixed to 40 days for all rivers [2, 3].",
+      "note": "The extract confirms the claim about migration timing and the exclusion of acoustic telemetry data."
+    },
+    {
+      "claim": "Calibration compensation fails if both larvae-production inputs and observational calibration data are unreliable — uncertainties do not cancel",
+      "supported": true,
+      "extract_quote": "if both input data to the models (estimated lice larvae) and the model calibration data (lice counts on fish) have several sources of unreliability, any counteracting effect as claimed in the Comment [4], would be negated.",
+      "note": "The extract supports the claim about calibration compensation failure."
+    },
+    {
+      "claim": "Review explicitly discusses calibration uncertainty; contradicts Stige claim it 'fails to mention' scaling",
+      "supported": true,
+      "extract_quote": "this claim is incorrect since quite the contrary, the Review [1] elaborates on this and highlights calibration (observational-) data as a point of uncertainty.",
+      "note": "The extract supports the claim about discussing calibration uncertainty."
+    },
+    {
+      "claim": "Post-attachment lice loss: EG recently added 40% correction to NVI model acknowledging need, but 5 of 7 TLS mortality endpoints still assume 100% lice survival after attachment",
+      "supported": true,
+      "extract_quote": "the EG itself implemented a 40% correction/reduction in the NVI model only recently as an improvement of the model... in the remaining five assessment end points of lice-induced mortality assumes that 100% of the infesting lice will stay attached/survive.",
+      "note": "The extract supports the claim about post-attachment lice loss."
+    },
+    {
+      "claim": "Findings align with Eliasen et al. (2021) Evaluation Committee and EG's own annual reports on migration-timing uncertainty",
+      "supported": true,
+      "extract_quote": "Uncertainty in the TLS model products in relation to calibration data is also highlighted by the external evaluation committee, which state that some of the calibration data ‘demonstrate high levels of variability and uncertainty’",
+      "note": "The extract supports the claim about alignment with Eliasen et al. (2021)."
+    },
+    {
+      "claim": "All COI disclosed in publication process; Stige allegation of hidden conflicts is unwarranted",
+      "supported": true,
+      "extract_quote": "All relevant potential conflicts of interest have been honestly and openly stated in the process of publication.",
+      "note": "The extract supports the claim about COI disclosure."
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The evidence_direction marked as 'critiques_methodology' does not fully capture the defensive nature of the response against bias claims.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions align with the content of the extract, focusing on TLS methodology and related uncertainties.",
+  "coi_ok": false,
+  "coi_note": "The summary's statement 'no competing interests reported' contradicts the extract's mention of disclosed COI, indicating a potential issue.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2025_raq_vannes-response-to-stige",
+  "verified_at": "2026-08-03T16:09:16.108678+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

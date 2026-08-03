@@ -4,15 +4,20 @@ This document describes the step-by-step process for adding documents
 to a corpus and producing structured synthesis outputs.
 
 The workflow applies to all three corpora. It follows Bjelland (2026)'s
-pipeline principle: defined phases with explicit inputs and outputs,
-human checkpoints at each stage boundary.
+pipeline principle: defined phases with explicit inputs and outputs.
+
+**Trust model (2026-08):** The only required human checkpoint is **paper
+selection (inclusion)**. Extraction, metadata, summary, and verification
+against `extracted.md` are AI-driven (`scripts/add_paper.py`). Expert
+sign-off (`expert_approved`) is optional, not a gate for corpus use.
 
 ---
 
 ## Overview
 
 ```
-IDENTIFY → FETCH → CONVERT → CURATE → VALIDATE → INDEX → SYNTHESISE
+IDENTIFY → FETCH → CONVERT → AI-CURATE → AI-VERIFY → INDEX → SYNTHESISE
+                ↑ human: select paper only
 ```
 
 ---
@@ -50,63 +55,48 @@ inclusion/exclusion decisions before proceeding.
 
 ---
 
-## Stage 3: CONVERT AND SUMMARISE
+## Stage 3–5: EXTRACT → AI-CURATE → AI-VERIFY (one command)
 
-**Goal**: Generate a human-readable AI summary of the document.
+**Goal**: From selected PDF to indexed, checker-audited corpus record.
 
-**Actions**:
-- Run OpenDataLoader PDF on the source PDF (recommended — preserves tables and structure):
-  ```powershell
-  python scripts/convert_pdfs_odl.py --doc YYYY_journal_keyword
-  ```
-  This writes `documents/<doc_id>/extracted.md` from `documents/PDFs/*.pdf`.
-- Use `extracted.md` (not raw PDF in chat) when drafting `summary.md` and `metadata.yaml`
-- Flag any content extraction issues (scanned PDFs, non-English text)
+**Preferred command**:
 
-**Output**: `extracted.md` + `summary.md` (PDF remains in SharePoint / `documents/PDFs/`, not in git)
+```powershell
+python scripts/add_paper.py --doc YYYY_journal_keyword --pdf path\to\paper.pdf
+```
 
-Optional — expand `summary.md` into a full evidence brief for synthesis (keeps `rag_summary` short for retrieval):
+This runs:
+
+1. **EXTRACT** — OpenDataLoader PDF → `extracted.md`
+2. **AI-CURATE** — `scripts/ai_curate_document.py` → `summary.md` + `metadata.yaml` (`ai_draft`)
+3. **AI-VERIFY** — `scripts/ai_verify_document.py` → `qa_report.json`; status `ai_verified` or `ai_draft`
+4. **INDEX** — `scripts/ingest.py --doc …` → `data/corpus.parquet`
+
+**Outputs per document folder**:
+`extracted.md`, `summary.md`, `metadata.yaml`, `qa_report.json`
+
+**Status values** (`curator_review_status`):
+
+| Status | Meaning |
+|--------|---------|
+| `ai_draft` | AI-filled; checker not passed |
+| `ai_verified` | Checker passed against extract |
+| `expert_approved` | Optional human expert sign-off |
+| `pending` | Legacy (= treat as `ai_draft`) |
+
+**Human checkpoint**: Inclusion only (Stage 1–2). Spot-check `qa_report.json`
+when adding high-stakes TLS/debate papers. Expert approval is bonus capacity,
+not a required gate.
+
+Optional — expand `summary.md` into a longer evidence brief:
 
 ```powershell
 python scripts/expand_summaries_from_extract.py --min-chars 4500
 python scripts/ingest.py
 ```
 
-The Streamlit app passes `summary.md` (as `summary_text` in parquet) to GPT at answer time; embeddings still use `rag_summary` + `key_claims`.
-
----
-
-## Stage 4: CURATE
-
-**Goal**: Complete the metadata record and document the inclusion decision.
-
-**Actions**:
-- Copy the corpus-specific `metadata_template.yaml` to `documents/YYYY_journal_keyword/metadata.yaml`
-- Give Claude the template and the PDF; Claude fills all fields as a first draft
-- Del A–C: Claude extracts from the document directly
-- Del D–E: Claude provides an informed first draft; a human or expert reviews and corrects
-- Record inclusion decision in `inclusion_log.md`
-
-**Output**: Completed `metadata.yaml` with `curator_review_status: pending`
-
-**Human checkpoint**: Review Del D (`consensus_signal`, `quality_signal`,
-`controversy_role`) and Del E (`included_because`, `related_documents_*`)
-before setting `curator_review_status: reviewed`. Expert sign-off sets it to `approved`.
-
----
-
-## Stage 5: VALIDATE
-
-**Goal**: Quality-check the metadata record before it enters the corpus.
-
-**Actions**:
-- Verify that `key_claims` accurately reflect the document content
-- Check that `consensus_signal` is consistent with other documents
-  on the same question
-- Confirm `coi_declared` against the document's funding statement
-- A second reviewer checks the record where possible
-
-**Output**: Validated `metadata.yaml`, noted in `inclusion_log.md`
+The Streamlit app passes `summary.md` (as `summary_text`) to GPT at answer time;
+embeddings still use `rag_summary` + `key_claims`.
 
 ---
 

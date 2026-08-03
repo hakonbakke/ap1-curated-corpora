@@ -1,146 +1,108 @@
 # Slik legger du til et dokument
 
-> Guiden for deg som legger til artikler i korpuset.
-> Du trenger kun denne filen, `KEYWORDS.md` og `PRIORITY_QUESTIONS.md`.
+> **Tillitsmodell:** Mennesket velger papirer. AI ekstraherer, kuraterer og verifiserer mot kildetekst.
+> Du trenger `KEYWORDS.md`, `PRIORITY_QUESTIONS.md`, og kommandoene under.
 
 ---
 
-## Workflow
+## Workflow (anbefalt)
 
 ```
-1. Finn artikkel (Google Scholar / Scopus / Web of Science)
+1. Finn artikkel (Scholar / Scopus / WoS) — sjekk Q1–Q10
       ↓
-2. Last opp PDF til SharePoint → Publications_candidates
+2. Last opp PDF til SharePoint → Publications_selected
       ↓
-3. Flytt til Publications_selected (når den er vurdert relevant)
+3. Velg stabil doc_id: YYYY_journal_keyword
       ↓
-4. Gi Claude PDF + template → får summary.md og metadata.yaml
+4. Kjør AI-pipeline (extract → curate → verify → ingest)
       ↓
-5. Last opp summary.md og metadata.yaml til GitHub
-      ↓
-6. Logg i inclusion_log.md
+5. Les qa_report.json (spot-check). Logg i inclusion_log.md
 ```
 
 ---
 
-## Steg 1: Finn en relevant artikkel
+## Steg 1–2: Velg papir (eneste menneskesteg som er påkrevd)
 
-Bruk søkeordene i `KEYWORDS.md` mot Google Scholar, Scopus eller
-Web of Science.
-
-Sjekk at artikkelen bidrar til minst ett av spørsmålene Q1–Q10
-i `PRIORITY_QUESTIONS.md`.
-
-Minstekrav: peer-reviewed artikkel, instituttrapport eller tilsvarende.
-Ikke medieartikler eller presentasjoner uten metode.
+- Bruk `KEYWORDS.md` og minst ett spørsmål i `PRIORITY_QUESTIONS.md`.
+- Minstekrav: peer-reviewed / instituttrapport e.l. — ikke medieartikler.
+- PDF i SharePoint-gruppen **RAG_Salmon lice and wild salmonid mortality**
+  (`Publications_selected`). PDF skal **ikke** committes til GitHub.
 
 ---
 
-## Steg 2–3: SharePoint
+## Steg 3–4: Kjør pipeline
 
-Last opp PDF-en til SharePoint-gruppen
-**RAG_Salmon lice and wild salmonid mortality**:
+Fra repo-roten, med `OPENAI_API_KEY` satt (`.env`):
 
-- `Publications_candidates` — artikler du vurderer
-- `Publications_selected` — artikler besluttet inkludert
+```powershell
+cd "c:\Users\ThordHåkonBakke\OneDrive - Blue Planet AS\Koding\ap1-curated-corpora"
 
-> Hvis Ragnar er tilgjengelig, kan han se over kandidatene
-> i `Publications_candidates` før du velger ut.
+# Ny artikkel fra lokal PDF-kopi
+python scripts/add_paper.py --doc 2025_journal_keyword --pdf "C:\path\to\paper.pdf"
 
-PDF-ene lagres i SharePoint — de skal **ikke** lastes opp til GitHub.
-
----
-
-## Steg 4: Lag summary og metadata med Claude
-
-Åpne claude.ai og send **én melding** med to oppgaver:
-
+# Eller: PDF allerede i documents/PDFs/ og mappet i convert_pdfs_odl.py
+python scripts/add_paper.py --doc 2025_journal_keyword
 ```
-Du er kurator for et vitenskapelig evidenskorpus om lakselus og villaks.
-Jeg gir deg et dokument og en metadata-template.
 
-Oppgave 1: Skriv et strukturert sammendrag (summary.md) med seksjonene:
-- Bakgrunn
-- Metode
-- Hovedfunn
-- Usikkerhet og begrensninger
-- Relevans for dette korpuset
-- Relasjon til andre dokumenter
-Merk sammendraget som AI-generert.
+Pipeline-steg:
 
-Oppgave 2: Fyll ut ALLE felt i metadata-templaten.
-Del A, B og C fyller du direkte fra dokumentet.
-Del D og E fyller du som et informert faglig førsteutkast.
-Hvis du er usikker på et felt, skriv "unclear".
+| Steg | Script | Output |
+|------|--------|--------|
+| Extract | ODL (`convert_pdfs_odl` / `--pdf`) | `extracted.md` |
+| Curate | `ai_curate_document.py` | `summary.md`, `metadata.yaml` (`ai_draft`) |
+| Verify | `ai_verify_document.py` | `qa_report.json` → `ai_verified` eller `ai_draft` |
+| Index | `ingest.py` | oppdaterer `data/corpus.parquet` |
 
-Her er metadata-templaten:
-[lim inn hele innholdet fra metadata_template.yaml]
+Nyttige flagg:
 
-Her er dokumentet:
-[legg ved PDF-en]
+```powershell
+python scripts/add_paper.py --doc ID --force-curate   # overskriv summary/metadata
+python scripts/add_paper.py --doc ID --verify-only    # kun checker
+python scripts/add_paper.py --doc ID --skip-ingest
 ```
 
 ---
 
-**Les gjennom før du laster opp:**
+## Steg 5: Spot-check og logg
 
-- **`key_claims`** — presise og nøytrale?
-- **`coi_notes`** — sjekk finansiering (se bakerst i PDF-en)
-- **`evidence_direction`** — støtter, utfordrer eller kritiserer studien?
-- **`consensus_signal`** og **`controversy_role`** — rimelig plassering?
+Les `documents/<doc_id>/qa_report.json`:
 
-> Del D og E er Claude sitt førsteutkast — ikke fasit.
-> Sett `curator_review_status: reviewed` når du har lest gjennom.
+- `pass: true` + `final_status: ai_verified` → klar for bruk i RAG
+- `pass: false` → se `critical_issues`; kjør `--force-curate` på nytt eller rett YAML manuelt
 
----
+Logg i `inclusion_log.md`:
 
-## Steg 5: Last opp til GitHub
-
-Gå til: `corpora/salmon-lice-and-mortality-of-wild-salmonids/documents/`
-
-Klikk **Add file → Create new file**
-
-Opprett `summary.md` med filnavnet:
 ```
-2021_jfd_delousing-mortality/summary.md
-```
-
-Gjenta for `metadata.yaml`:
-```
-2021_jfd_delousing-mortality/metadata.yaml
-```
-
-Skriv en kort commit-melding:
-```
-Add 2021 JFD delousing mortality (Q7, Q8)
+| 2026-08-03 | Forfatter et al. 2025 – tittel | INCLUDED | Q9 | Thord | ai_verified |
 ```
 
 ---
 
-## Steg 6: Logg beslutningen
+## Statusverdier (`curator_review_status`)
 
-Legg til en rad i `inclusion_log.md`:
-
-```
-| 2026-03-10 | Forfatter et al. 2021 – tittel | INCLUDED | Relevant for Q7 | Erik |
-```
+| Status | Mening |
+|--------|--------|
+| `ai_draft` | AI-fylt; ikke checker-godkjent (eller checker feilet) |
+| `ai_verified` | Checker passerte mot `extracted.md` |
+| `expert_approved` | Valgfri menneskelig ekspertgodkjenning (bonus) |
+| `pending` | Eldre synonym for `ai_draft` (eksisterende 27 papirer) |
 
 ---
 
-## Mappestruktur per dokument i GitHub
+## Mappestruktur
 
 ```
 documents/
-└── 2021_jfd_delousing-mortality/
-    ├── summary.md        ← AI-generert sammendrag
-    └── metadata.yaml     ← fylt ut av Claude, verifisert av deg
+└── 2025_journal_keyword/
+    ├── extracted.md      ← fra PDF (ODL)
+    ├── summary.md        ← AI
+    ├── metadata.yaml     ← AI (+ status fra verify)
+    └── qa_report.json    ← AI checker-rapport
 ```
-
-PDF-en ligger i SharePoint under `Publications_selected`.
 
 ---
 
 ## Spørsmål?
 
-Se `PRIORITY_QUESTIONS.md` for spørsmålene Q1–Q10.
-Se `KEYWORDS.md` for søkeord til å finne nye artikler.
+Se `PRIORITY_QUESTIONS.md`, `KEYWORDS.md`, og `WORKFLOW.md`.
+Pipeline-detaljer: `possible_improvements/ai-curation-pipeline.md`.

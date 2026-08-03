@@ -200,6 +200,7 @@ retrieval_tags:
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Comparative review — English 2018 threat scores; mariculture stabilised-low vs Norway high. 250+ refs; 13 stressors scored 0–3 on effects and development axes.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: Claude
 added_date: "2026-03-27"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

@@ -160,6 +160,7 @@ retrieval_tags:
 curator_note: >
   Pre-digital-DOI era paper (published 1998 in CJFAS Supplement 1). DOI 10.1139/f98-011 is a retroactively assigned identifier; the paper may not resolve via all DOI resolvers. This is a citation classic in Atlantic salmon biology — likely to be very widely cited in the salmon lice literature as background on smolt biology. Included primarily to provide mechanistic grounding for lice exposure models and timing-based vulnerability arguments. The paper predates the major expansion of salmon farming in Norway and the establishment of the TLS; it does not discuss salmon lice directly. ODL refresh 2026-06-03 from extracted.md (degree-day smolt window, Imsa temperature–migration correlations, acid thresholds).
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

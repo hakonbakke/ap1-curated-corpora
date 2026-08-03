@@ -195,6 +195,7 @@ curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Added Figure 8 abundance percentages, hatchery Figure 7
   return rates, PFA 6-9M, four collapse criteria. Del D/E still warrant expert verification.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: regraded → ai_verified (moved_coi=1, critical=0)

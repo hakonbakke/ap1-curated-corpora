@@ -191,6 +191,7 @@ curator_note: >
   systematic critique of the monitoring data quality that feeds into TLS decisions. Should be
   retrieved alongside papers discussing TLS thresholds and their empirical foundations. ODL refresh 2026-06-03 from extracted.md (Table 1 GLMM coefficients, dataset composition, 2013 programme changes).
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

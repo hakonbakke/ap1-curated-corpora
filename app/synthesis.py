@@ -320,6 +320,41 @@ def evidence_block_intro(n: int, answer_format: str) -> str:
     )
 
 
+CONFIDENCE_RULES = """\
+## Confidence calibration (mandatory)
+- Rate confidence **High / Medium / Low** only as allowed below.
+- If any central retrieved source has `evidence_direction: critiques_methodology`,
+  or `consensus_signal: contested`, or the query is about disagreement / robustness /
+  Traffic Light legitimacy: **do not conclude High**. Use **Medium** or **Low**,
+  and name the disagreement explicitly.
+- Distinguish evidence levels: lab / individual ≠ modelled smolt mortality ≠ population /
+  adult returns. Do not treat model outputs as observed stock decline.
+- If the query asks about population / bestand / adult returns, prioritise Q9-tagged
+  sources in the argument; do not let peripheral physiology papers dominate the conclusion.
+- Cite only studies present in the retrieved evidence block. If evidence is thin, say so.
+"""
+
+
+def confidence_guidance(results: list[dict]) -> str:
+    """Extra prompt constraints derived from retrieved metadata."""
+    directions = {r.get("evidence_direction") for r in results}
+    consensus = {r.get("consensus_signal") for r in results}
+    contested = (
+        "critiques_methodology" in directions
+        or "contested" in consensus
+        or "contradicts_effect" in directions
+        or "no_effect_detected" in directions
+        or "no_significant_effect" in directions
+    )
+    if contested:
+        return (
+            CONFIDENCE_RULES
+            + "\n**This retrieval set is contested or mixed.** "
+            + "Maximum confidence for a unified causal claim: **Medium**.\n"
+        )
+    return CONFIDENCE_RULES + "\n"
+
+
 def synthesise(
     client: OpenAI,
     query: str,
@@ -344,7 +379,8 @@ def synthesise(
     n = len(results)
     compact = answer_format == "freeform"
     evidence_body = build_evidence_block(results, compact=compact)
-    evidence_block = evidence_block_intro(n, answer_format) + evidence_body
+    guidance = confidence_guidance(results)
+    evidence_block = guidance + evidence_block_intro(n, answer_format) + evidence_body
 
     if mode == "researcher":
         depth = DEPTH_FREEFORM_RESEARCHER if answer_format == "freeform" else DEPTH_RESEARCHER

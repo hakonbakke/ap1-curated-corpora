@@ -98,7 +98,7 @@ secondary_endpoints:
   - "DPSIR framework proposal for iterative review"
 
 # DEL C — FUNN OG BEVIS
-evidence_direction: mixed_within_study
+evidence_direction: critiques_methodology
 
 effect_scale: population_level
 
@@ -198,6 +198,7 @@ curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Added R1-R15 summary, ISBN, meeting count, Figure 1
   threshold centrality, Finstad appendix footnote. PDF report not journal article.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

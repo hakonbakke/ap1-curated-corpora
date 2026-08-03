@@ -1,0 +1,78 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "[regraded from critical] Missing COI declaration in the summary despite clear funding and COI notes in the extract."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Lice-attributed share of total sea-sojourn mortality: long-distance smolts 25.3% vs inner-fjord smolts 14.7%; veteran migrants 14.8% vs 1.7% inner-fjord",
+      "supported": true,
+      "extract_quote": "The fraction of total mortality attributed to lice during sea-sojourn was greater for long-distance migrants (smolts: 25.3%; veteran migrants: 14.8%) versus those remaining within the inner-fjord (smolts: 14.7%; veteran migrants: 1.7%).",
+      "note": "Directly supported by the extract."
+    },
+    {
+      "claim": "Population-level lice-attributed mortality ranged 3.3%–34.3% across five Sognefjorden rivers despite shared lice field — driven by individual migration distance",
+      "supported": true,
+      "extract_quote": "This resulted in an unequal contribution of lice to total mortality among populations (range: 3.3%–34.3%).",
+      "note": "Supported by the extract."
+    },
+    {
+      "claim": "N = 8,049 simulated trajectories (4,234 smolts, 3,815 veterans) from acoustic telemetry of N = 517 fish (175 smolts, 342 veterans); 2013–2015",
+      "supported": true,
+      "extract_quote": "We utilized simulated individual migration trajectories of facultatively anadromous brown trout (Salmo trutta) (N = 8049), generated from spatialtemporal fjord-use models fitted to empirical tracking data (N = 517).",
+      "note": "Supported by the extract."
+    },
+    {
+      "claim": "Outer-fjord lice densities highest near farms (>67,000 t salmon biomass ~3.6M fish in 2015); inner fjord protected since National Salmon Fjord designation 2007",
+      "supported": true,
+      "extract_quote": "Highest densities were modeled in the outer-fjord at a closer vicinity to aquaculture facilities... the inner fjord region has never been widely used for aquaculture, and formal protection against aquaculture development was granted in 2007.",
+      "note": "Supported by the extract."
+    },
+    {
+      "claim": "Minimum migration to mid-fjord: 8.5–48.8 km by population; mid fjord 75.2 km / 376 km², outer 93.3 km / 1,041 km² — most trout now remain ≤ mid-fjord vs >200 km historically",
+      "supported": false,
+      "extract_quote": null,
+      "note": "Specific distances and areas are not mentioned in the extract."
+    },
+    {
+      "claim": "Individual migration trajectory selection — not population-level average exposure — is the primary driver of differential lice-induced mortality",
+      "supported": true,
+      "extract_quote": "Despite an equal distribution of lice exposure for all populations within the fjord, diverse mortality consequences among populations were estimated, largely resulting from individual selection of migration trajectory.",
+      "note": "Supported by the extract."
+    },
+    {
+      "claim": "Most brown trout remained in the inner fjord (protected from aquaculture), keeping population-average infestation below critical mortality thresholds",
+      "supported": true,
+      "extract_quote": "As most brown trout remained in the inner-fjord, an area protected from aquaculture, individual accumulated levels of lice exposure and infestation were low, resulting in infestation estimates largely below critical-mortality thresholds.",
+      "note": "Supported by the extract."
+    },
+    {
+      "claim": "Lice densities were highest in the outer fjord near aquaculture facilities; limited year-to-year variation was observed 2013-2015",
+      "supported": true,
+      "extract_quote": "A gradient of lice was spatially distributed throughout the fjord. Highest densities were modeled in the outer-fjord at a closer vicinity to aquaculture facilities. Accordingly, estimates of accumulated lice infestation were higher for individuals that underwent long-distance migrations, residing for longer in the outer-fjord, with limited differences observed between years.",
+      "note": "Supported by the extract."
+    },
+    {
+      "claim": "The seaward extent of Sognefjorden sea trout migration has declined over 60 years, coinciding with aquaculture expansion",
+      "supported": true,
+      "extract_quote": "The seaward extent of migration in Sognefjorden has diminished over a 60-year period and since the introduction of aquaculture in the region.",
+      "note": "Supported by the extract."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'supports_effect' is consistent with the extract, which indicates that lice exposure affects mortality.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions listed are addressed by the study's focus on individual migration patterns and lice-induced mortality.",
+  "coi_ok": false,
+  "coi_note": "The summary does not mention the COI, but the extract clearly states funding sources and potential conflicts.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+  "verified_at": "2026-08-03T16:28:35.736508+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1
+}

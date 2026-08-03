@@ -105,7 +105,7 @@ secondary_endpoints:
   - "Interannual variability in spring lice abundance under zonation"
 
 # DEL C — FUNN OG BEVIS
-evidence_direction: supports_effect
+evidence_direction: mixed_within_study
 
 effect_scale: population_level
 
@@ -219,6 +219,7 @@ retrieval_tags:
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access (CC BY). Nordfjord/PA4 case; 19 farm locations; 100 stochastic replicates per scenario; NVI VPS + Aldrin farm lice model.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-05-20"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

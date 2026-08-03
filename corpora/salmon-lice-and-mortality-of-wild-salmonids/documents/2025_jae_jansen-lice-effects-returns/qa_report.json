@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The summary does not mention the significant positive effect on three SW salmon, though from low numbers, which is a minor omission."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Salmon lice from farms significantly reduce the returns of one-sea-winter salmon.",
+      "supported": true,
+      "extract_quote": "There was a significant negative effect of PIM on returns of one SW salmon."
+    },
+    {
+      "claim": "The effect of lice on two-sea-winter salmon is negative but not significant.",
+      "supported": true,
+      "extract_quote": "a negative but non-significant effect on returns of two SW salmon."
+    },
+    {
+      "claim": "Lice exposure alters the size distribution of returning salmon populations.",
+      "supported": true,
+      "extract_quote": "louse infestation from farms may reduce returns of spawners and re-structure the size distribution of mature river populations of Atlantic salmon."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'supports_effect' is consistent with the findings of significant negative effects on one SW salmon and alterations in size distribution.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The study addresses the impact of aquaculture-derived salmon lice on wild salmonid populations, relevant to Q7 and Q9.",
+  "coi_ok": true,
+  "coi_note": "No conflicts of interest were declared, and the funding sources do not imply a conflict.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2025_jae_jansen-lice-effects-returns",
+  "verified_at": "2026-08-03T16:41:07.911643+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified"
+}

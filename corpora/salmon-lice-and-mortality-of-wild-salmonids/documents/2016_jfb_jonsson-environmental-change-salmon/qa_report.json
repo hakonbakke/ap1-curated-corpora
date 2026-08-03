@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus signal and controversy role are marked as strong agreement and neutral, respectively, but the extract mentions potential contributions from sea lice, which could introduce some controversy.",
+    "[regraded from critical] Missing COI: The summary states funding sources, but the extracted text does not mention these explicitly.",
+    "[offline_accept] Evidence direction mismatch: The summary emphasizes environmental changes as the primary driver, but the extract also mentions the potential role of sea lice, which is not highlighted in the summary."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Wild 1SW River Imsa salmon: mean LT fell 63→54 cm (1976–2010 regressions, r²≈0.51), ~40% mass decline (2.0→1.2 kg); hatchery releases show parallel trends (r²≈0.36 for LT).",
+      "supported": true,
+      "extract_quote": "Annual mean total length (LT) of wild one-sea-winter (1SW) Atlantic salmon Salmo salar of the Norwegian River Imsa decreased from 63 to 54cm with a corresponding decrease in condition factor (K) for cohorts migrating to sea from 1976 to 2010.",
+      "note": null
+    },
+    {
+      "claim": "1SW LT negatively correlated with Norwegian Sea summer/winter SST (e.g. wild summer slope −28.6 mm °C⁻¹, p<0.05) but temperature explains only modest variance (r²≈0.13–0.32).",
+      "supported": true,
+      "extract_quote": "The LT of 1SW fish decreased with increasing ocean temperature. The slope of the regression was steeper for hatchery than wild S. salar [Table II(a); summer temperature: F1,57 =8⋅8, P<0⋅01].",
+      "note": null
+    },
+    {
+      "claim": "36,201 wild smolts (1976–2010), 2.9% adult return; 182,740 hatchery smolts (1981–2010), 1.5% return—hatchery mirrors wild life-history shifts (LT, K, G, %1SW: r² 0.37–0.71).",
+      "supported": true,
+      "extract_quote": "From 1976 to 2010, 36201 wild smolts migrated from the river to the sea, and tagging studies suggest that they fed in the north Norwegian Sea... Of these, 2⋅9% returned to the trap in the river as adults.",
+      "note": null
+    },
+    {
+      "claim": "Post-smolt growth (G) positively linked to adult LT and wild marine survival (S); proportion maturing as 1SW peaks mid-series (Weibull fits) and tracks condition factor in hatchery fish.",
+      "supported": true,
+      "extract_quote": "In wild S. salar, there was a positive association between post-smolt growth and the sea survival back to the River Imsa for spawning.",
+      "note": null
+    },
+    {
+      "claim": "Authors attribute trends to North Atlantic food-web restructuring (pelagic collapse/rebuild, zooplankton decline) plus ~1°C SST rise—not direct lice or aquaculture effects.",
+      "supported": false,
+      "extract_quote": "An additional possible reason for the decrease in growth and K with time could be the recent increase in abundance of sea lice Lepeophtheirus salmonis, which can affect post-smolt growth and survival negatively.",
+      "note": "The extract mentions sea lice as a potential factor, which contradicts the summary's claim that lice are not considered."
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The summary emphasizes environmental changes as the primary driver, but the extract also mentions potential contributions from sea lice, which is not highlighted in the summary.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The focus on environmental drivers and population impacts aligns with the priority question Q9.",
+  "coi_ok": false,
+  "coi_note": "The summary states funding sources, but the extracted text does not mention these explicitly.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2016_jfb_jonsson-environmental-change-salmon",
+  "verified_at": "2026-08-03T15:55:09.091044+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

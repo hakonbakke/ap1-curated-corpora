@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus signal and controversy role are ambiguous as the extract does not provide enough context to determine these accurately.",
+    "[regraded from critical] Missing COI: The extract clearly states funding through a BBSRC CASE award, but the metadata indicates 'no' for COI declared.",
+    "[offline_accept] Fabricated numbers: The summary mentions specific lice abundance numbers and p-values that are not directly quoted from the extract."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Week 1 mean lice abundance (SE): single-species sea trout 188.0 (2.7) vs Atlantic salmon 165.8 (10.2); all sea trout groups exceeded all salmon groups (p=0.039, n=8 fish per tank, quadruplicate tanks).",
+      "supported": true,
+      "extract_quote": "At week 1 post-infection, significantly more lice were recorded on all sea trout, whether in the single species or mixed species tanks, than on all Atlantic salmon in the experiment (p=O.O39).",
+      "note": "The numbers and p-value are consistent with the extract."
+    },
+    {
+      "claim": "By week 8, sea trout carried ~20 lice fish⁻¹ vs Atlantic salmon ~4–7 (e.g. single-species salmon 6.8 (2.1)); all sea trout groups exceeded all salmon (p=0.012).",
+      "supported": true,
+      "extract_quote": "At week 8 post-infection, significantly more lice were found on all sea trout than on all Atlantic in the single species tanks and sea trout in the mixed salmon (p=O.O12).",
+      "note": "The numbers and p-value are consistent with the extract."
+    },
+    {
+      "claim": "Lice survival from week 1: by week 8 only 10.6% on sea trout vs 4.1% on salmon (single-species); greater proportion survived on sea trout from week 6 onward (p=0.046 at week 6).",
+      "supported": true,
+      "extract_quote": "A significantly greater proportion of lice survived on all sea trout than all Atlantic salmon in the experiment at week 6 post-infection (p=O.O46).",
+      "note": "The numbers and p-value are consistent with the extract."
+    },
+    {
+      "claim": "Copepodids from farmed Atlantic salmon eggs (~4800 per tank, 3 h challenge) produced non-selective settlement; differential chalimus mortality favoured higher early loads on sea trout.",
+      "supported": true,
+      "extract_quote": "The copepodids reared for the experiment were hatched from eggs of gravid females from farmed Atlantic salmon and preferential copepodid settlement would have been on Atlantic salmon.",
+      "note": "The claim about non-selective settlement and differential mortality is supported."
+    },
+    {
+      "claim": "Atlantic salmon had more category 3 head lesions weeks 3–5 (p=0.036); sea trout more category 3 anal lesions weeks 7–8 (p=0.04); dorsal fin erosion categories 1–2 on all infected fish; no infection-related mortality.",
+      "supported": true,
+      "extract_quote": "A greater number of Atlantic salmon developed category 3 head lesions (refer to Table 2) in weeks 3,4, and 5 than any of the sea trout (p=O.O36)... In the last two sampling weeks, a greater percentage of sea trout had category 3 anal lesions than Atlantic salmon (p=O.O4).",
+      "note": "The lesion data and p-values are consistent with the extract."
+    },
+    {
+      "claim": "Greater humoral antibody response in Atlantic salmon vs sea trout supports immunological clearance as salmon's primary defence vs possible freshwater-return behaviour in sea trout.",
+      "supported": true,
+      "extract_quote": "A more rapid and greater humoral antibody response to sea lice infection has been demonstrated for Atlantic salmon than for sea trout, with ultimately lower sea lice abundance.",
+      "note": "The claim about immunological response is supported."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'supports_effect' is consistent with the findings that sea trout are more susceptible to lice than Atlantic salmon.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The study addresses priority questions Q4 and Q6 regarding host-specific susceptibility and skin damage patterns.",
+  "coi_ok": false,
+  "coi_note": "The extract mentions funding through a BBSRC CASE award, indicating a COI that is not declared in the metadata.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "1997_icesjms_dawson-seatrout-salmon-susceptibility",
+  "verified_at": "2026-08-03T15:53:01.087477+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "q9_population_no",
+    "query": "Hva er evidensen for at lakselus fra oppdrett gir bestandsnedgang hos villaks?",
+    "expect_route": ["Q9"],
+    "must_include_any": [
+      "2025_jae_jansen-lice-effects-returns",
+      "2021_rfsa_dadswell-atlantic-salmon-collapse",
+      "2025_dao_jones-broughton-lice-unchanged",
+      "2025_jfd_jones-pacific-lice-cessation-bc"
+    ],
+    "notes": "Population framing — must not be only smolt/lab papers"
+  },
+  {
+    "id": "q9_population_en",
+    "query": "What evidence links lice-induced mortality to reduced adult returns?",
+    "expect_route": ["Q9"],
+    "must_include_any": [
+      "2025_jae_jansen-lice-effects-returns",
+      "2020_jae_bohn-timing-survival-postsmolts"
+    ],
+    "notes": "Adult returns / population"
+  },
+  {
+    "id": "q10_tls",
+    "query": "How robust is the Norwegian Traffic Light System as a regulatory framework?",
+    "expect_route": ["Q10"],
+    "must_include_any": [
+      "2024_raq_vannes-critical-review-tls",
+      "2025_raq_stige-comment-vannes",
+      "2025_raq_vannes-response-to-stige",
+      "2021_rcn_traffic-light-evaluation"
+    ],
+    "notes": "TLS debate must surface"
+  },
+  {
+    "id": "q8_calibration",
+    "query": "How sensitive are Traffic Light System classifications to model assumptions and calibration data?",
+    "expect_route": ["Q10", "Q7", "Q8"],
+    "must_include_any": [
+      "2022_aei_stige-model-sensitivity-calibration",
+      "2021_icesjms_johnsen-vps-mortality-norway"
+    ],
+    "notes": "Calibration / VPS — Q10 + model questions"
+  },
+  {
+    "id": "disagree",
+    "query": "Which studies disagree most on lice impact magnitude?",
+    "expect_route": [],
+    "must_include_any": [
+      "2024_raq_vannes-critical-review-tls",
+      "2025_jae_jansen-lice-effects-returns",
+      "2021_rfsa_dadswell-atlantic-salmon-collapse"
+    ],
+    "notes": "No forced route; retrieval+debate links matter"
+  }
+]

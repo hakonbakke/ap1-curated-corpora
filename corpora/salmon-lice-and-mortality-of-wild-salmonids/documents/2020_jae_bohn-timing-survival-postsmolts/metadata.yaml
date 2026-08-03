@@ -229,6 +229,7 @@ curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access. Table 1 release counts and Table 2 GLM
   coefficients added from ODL extract. June 2014 (0.03% vs 1.86%) remains a flagship data point for Q8.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: regraded → ai_verified (moved_coi=0, critical=0)

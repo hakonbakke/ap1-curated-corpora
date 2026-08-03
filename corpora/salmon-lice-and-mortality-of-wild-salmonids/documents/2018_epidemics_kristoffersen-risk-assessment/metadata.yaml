@@ -211,6 +211,7 @@ retrieval_tags:
 curator_note: >
   Open access under CC BY-NC-ND 4.0. This is the NVI model paper for the Norwegian TLS, published in 2018 before the IMR VPS model (Johnsen et al. 2021). The paper predates the TLS implementation and was developed as part of the scientific basis for the system. Key structural difference from the Johnsen VPS model: migration routing is shortest-path (not hydrodynamic), calibration uses sentinel cages (not genetic assignment), and the infestation model is an empirical kernel-density function (not a mechanistic larval dispersal model). Peder Andreas Jansen is both a co-author here and the lead author of the 2021 critique of the IMR model, making this paper an important reference point for understanding the NVI-IMR model debate within the Norwegian TLS scientific process. ODL refresh 2026-06-03 from extracted.md (zone mortality ranges, sentinel model coefficients, sensitivity design).
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

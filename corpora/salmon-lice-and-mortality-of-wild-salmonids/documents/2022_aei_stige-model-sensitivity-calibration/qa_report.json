@@ -1,0 +1,83 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as 'contested', which could be ambiguous as the extract does not explicitly discuss consensus or controversy.",
+    "The controversy_role is marked as 'critical', which may not be clearly supported by the extract.",
+    "[regraded from critical] The COI is declared as 'yes', but the extract does not explicitly mention a conflict of interest, only institutional affiliations. This is a critical issue as it misrepresents the extract.",
+    "[offline_accept] The evidence_direction is marked as 'critiques_methodology', but the extract does not clearly support this as the primary focus. The extract discusses sensitivity to calibration data and model assumptions rather than a direct critique of methodology."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Table 1 sensitivity axes: A1 trawl vs sentinel cage calibration; A2 speed 7 vs 10 km d⁻¹; A3 estimated vs fixed slope β1=1 (density dependence)",
+      "supported": true,
+      "extract_quote": "We aimed to investigate the sensitivity of calculated infestation levels and mortality to 3 model assumptions that differ among models. We did so by considering the implications of 2 alternative modelling choices for each of 3 assumptions in the NVI model (Table 1): (A1) use of trawl or sentinel cage data for calibration, (A2) migration speed of seaward-migrating salmon and (A3) the relationship between infestation pressure and infestation rate.",
+      "note": null
+    },
+    {
+      "claim": "Farm data 2012-2021: mean 636 active salmonid farms; weekly lice/temp, monthly biomass (BarentsWatch)",
+      "supported": true,
+      "extract_quote": "We used data from January 2012 to December 2021, comprising on average 636 active salmonid (Atlantic salmon and rainbow trout) farms at any given time.",
+      "note": null
+    },
+    {
+      "claim": "Sentinel cages: 26697 fish, 1048 cages (2012-2021), 49-206 cages/yr, ~16 d exposure, 37 MA×year combos (MA2-7,12)",
+      "supported": true,
+      "extract_quote": "The data represented 37 combinations of year and aquaculture MA (among MAs 2–7 and 12).",
+      "note": null
+    },
+    {
+      "claim": "Trawl 2017-2021: 3502 fish, 555 hauls, 49 rivers, assignment P>0.80; 22 MA×year combos (14 overlap with cages)",
+      "supported": true,
+      "extract_quote": "The analysed data included a total of 3502 fish from 555 trawl hauls assigned to 49 rivers of origin.",
+      "note": null
+    },
+    {
+      "claim": "~10× higher infestation rate on trawl vs cage fish at same infestation pressure (β2 in mixed NB model)",
+      "supported": true,
+      "extract_quote": "The infestation rate on salmon post-smolts in sentinel cages was estimated to be only 10.2% of that on wild-caught post-smolts.",
+      "note": null
+    },
+    {
+      "claim": "Mortality estimates more sensitive to A1 (calibration type) than A2 (migration speed); A3 interacts strongly when calibrated to trawl",
+      "supported": true,
+      "extract_quote": "Mortality estimates calibrated to trawl data are more sensitive to assumptions about possible density dependence in lice infestation rate than to assumptions about migration speed.",
+      "note": null
+    },
+    {
+      "claim": "Explains IMR > NVI/SINTEF mortality: IMR uses trawl calibration, NVI/SINTEF historically sentinel cages; IMR ~12 km d⁻¹ vs NVI 7 km d⁻¹",
+      "supported": true,
+      "extract_quote": "The different models use the same input data to calculate infestation pressure but different calibration data (IMR’s model: trawl data, NVI’s and SINTEF’s models: sentinel cage data) and make different assumptions about e.g. post-smolt migration speed (IMR: around 12 km d−1; NVI: 7 km d−1; SINTEF: not reported).",
+      "note": null
+    },
+    {
+      "claim": "Farmed fish ~98% of ovigerous female lice in Norwegian coastal waters (Dempster et al. 2021 cited)",
+      "supported": true,
+      "extract_quote": "Farmed salmonids contribute around 98% of mated (ovigerous) female salmon lice in Norwegian coastal waters (Dempster et al. 2021).",
+      "note": null
+    },
+    {
+      "claim": "Responds to Eliasen EvalComm 2021 call for TLS parameter sensitivity demonstration",
+      "supported": true,
+      "extract_quote": "As pointed out in an international evaluation of the traffic light management system, it is critical to demonstrate the sensitivity of modelled outputs to shifts around assumptions made about uncertain parameters (Eliasen et al. 2021).",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The evidence direction is marked as 'critiques_methodology', but the extract does not clearly support this as the primary focus. The extract discusses sensitivity to calibration data and model assumptions rather than a direct critique of methodology.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions align with the study's focus on calibration and mortality estimation.",
+  "coi_ok": false,
+  "coi_note": "The COI is declared as 'yes', but the extract does not explicitly mention a conflict of interest, only institutional affiliations. This is a critical issue as it misrepresents the extract.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2022_aei_stige-model-sensitivity-calibration",
+  "verified_at": "2026-08-03T16:03:03.981053+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

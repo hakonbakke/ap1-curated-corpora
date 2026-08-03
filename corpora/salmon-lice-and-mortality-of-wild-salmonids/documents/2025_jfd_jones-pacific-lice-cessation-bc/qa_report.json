@@ -1,0 +1,78 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as 'contested' which is ambiguous given the extract's emphasis on environmental factors and natural reservoirs as significant contributors to lice levels.",
+    "The controversy_role is marked as 'challenges_effect', which could be seen as ambiguous since the study challenges the assumption that aquaculture removal alone reduces lice levels.",
+    "[regraded from critical] The COI is declared in the metadata, but the extract provides more detailed information about the ongoing contract with aquaculture producers, which is a critical COI that should be emphasized.",
+    "[taxonomy note] The evidence_direction is marked as 'no_significant_effect' in the metadata, but the extract indicates a rebound in lice levels post-aquaculture removal, suggesting a significant effect of environmental factors and natural reservoirs.",
+    "[taxonomy note] TAXONOMY: evidence_direction is no_significant_effect; use no_effect_detected"
+  ],
+  "claim_checks": [
+    {
+      "claim": "Sea lice infestations on juvenile chum and pink salmon persisted in the Discovery Islands despite zero Atlantic salmon aquaculture production from 2022 onwards",
+      "supported": true,
+      "extract_quote": "A key finding of this study was the persistence of sea lice infestations on juvenile chum salmon and pink salmon in the DI despite the absence of Atlantic salmon aquaculture production between 2022 and 2024.",
+      "note": null
+    },
+    {
+      "claim": "In 2024 (0 MT biomass), pink mean total abundance 0.18±0.03 exceeded all 2017–2019; chum 0.15±0.02 exceeded 2017 (0.09) and 2018 (0.06); pink 2023 had 0 lice of either species",
+      "supported": true,
+      "extract_quote": "in the continued absence of salmon aquaculture in 2024, the prevalence and mean abundance increased on pink salmon to levels greater than measured between 2017 and 2019, and on chum salmon to levels greater than measured in 2017 and 2018.",
+      "note": null
+    },
+    {
+      "claim": "Chum mean weight 0.89 g (2017) to 1.79 g (2019); pink 0.33 g (2023) to 1.22 g (2024); BC-CAHS microscopic ID to species and stage (Kabata 1972; Hamre et al. 2013)",
+      "supported": true,
+      "extract_quote": "The mean weight of chum salmon ranged from 0.89 g (2017) to 1.79 g (2019) and of pink salmon from 0.33 g (2023) to 1.22 g (2024).",
+      "note": null
+    },
+    {
+      "claim": "Table 2: farm biomass peaked at 18,126 MT (2020) then fell to 0 MT from 2022; 2024 lice rebound occurred with 0 MT production — aquaculture biomass did not track post-2022 infestation levels",
+      "supported": true,
+      "extract_quote": "Atlantic salmon biomass peaked at 18,126 MT (2020, 9 active facilities) then fell to 0 MT from 2022, yet 2024 lice levels rebounded.",
+      "note": null
+    },
+    {
+      "claim": "A previously reported 96% decline in sea lice (2020-2022) attributed to aquaculture removal (Routledge and Morton 2023) was not sustained; 2024 prevalence/abundance rebounded",
+      "supported": true,
+      "extract_quote": "Previously, a 96% decline in sea lice abundance on juvenile chum salmon and pink salmon from the DI between 2020 and 2022 was attributed to the removal of salmon aquaculture in the region (Routledge and Morton 2023). The present study revealed a similar reduction... However, in the continued absence of salmon aquaculture in 2024, the prevalence and mean abundance increased.",
+      "note": null
+    },
+    {
+      "claim": "5,967 juvenile salmon examined (3,481 chum, 2,486 pink) at 16 beach-seine sites, 2017-2024; chum prevalence 2.9% (2023) to 26.9% (2019); pink 0% (2023, no lice detected) to 17.1% (2020)",
+      "supported": true,
+      "extract_quote": "A total of 5967 juvenile salmon from the DI were examined for sea lice between 2017 and 2024... The prevalence of all sea lice infestations on chum salmon ranged from 2.9% (2023) to 26.9% (2019) and on pink salmon from 0% (2023) to 17.1% (2020).",
+      "note": null
+    },
+    {
+      "claim": "L. salmonis comprised 57.3% of all lice on chum (range 25.0–74.2%) and 44.2% on pink (22.7–61.4%); authors argue northwesterly flow reduces contribution from adjacent active farms",
+      "supported": true,
+      "extract_quote": "The overall proportion of L. salmonis as a percentage of all sea lice on chum salmon was 57.3% (25.0%–74.2%) and 44.2% on pink salmon (22.7%–61.4%).",
+      "note": null
+    },
+    {
+      "claim": "Authors state reported aquaculture biomass did not adequately account for likely source infestation magnitude; call for improved environmental monitoring",
+      "supported": true,
+      "extract_quote": "The aquaculture biomass reported in the present study did not appear to adequately account for the likely source infestation magnitude. This study provides additional rationale for improved environmental monitoring.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract indicates a significant effect of environmental factors and natural reservoirs on lice levels, contradicting the 'no_significant_effect' direction in the metadata.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions are relevant and supported by the extract, which addresses the attribution of lice to aquaculture and the implications for management systems.",
+  "coi_ok": false,
+  "coi_note": "The extract provides detailed COI information about Lance Stewardson's contract with aquaculture producers, which is critical and should be emphasized more in the metadata.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2025_jfd_jones-pacific-lice-cessation-bc",
+  "verified_at": "2026-08-03T16:08:35.349895+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [
+    "TAXONOMY: evidence_direction is no_significant_effect; use no_effect_detected"
+  ],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1
+}

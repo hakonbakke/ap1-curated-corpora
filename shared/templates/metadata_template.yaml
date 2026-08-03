@@ -119,7 +119,8 @@ rag_summary: >
 # CURATOR STATUS
 # --------------------------------------------------
 
-curator_review_status: pending
+curator_review_status: ai_draft
+# ai_draft | ai_verified | expert_approved (legacy: pending | reviewed | approved)
 # pending | reviewed | approved
 
 added_by: ""

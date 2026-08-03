@@ -1,0 +1,85 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "[regraded from critical] Missing explicit competing-interest declaration in the summary despite COI being noted in the metadata.",
+    "[regraded from critical] The summary states 'No explicit competing-interest declaration noted,' which contradicts the metadata's COI declaration."
+  ],
+  "claim_checks": [
+    {
+      "claim": "2019 mortality for 401 rivers: <10% = 179 rivers, 10-30% = 140, >30% = 82 (Figure 4; equal river weighting)",
+      "supported": true,
+      "extract_quote": "aquaculture-produced salmon lice-induced mortality of wild salmon post-smolts was estimated as <10% for 179 rivers, 10–30% for 140 rivers, and >30% for 82 rivers in 2019.",
+      "note": "The claim is directly supported by the extract."
+    },
+    {
+      "claim": "2019 MA means (river-weighted): high >30% in MA3-4; moderate 10-30% in MA2,5-7,10; low elsewhere",
+      "supported": true,
+      "extract_quote": "average mortality was high in 2019 (>30%) in MA3 and 4, moderate (10–30%) in MA 2, 5, 6, 7, and 10, and low (<10%) in the remaining areas (MA1, 8, 9, 11, 12, and 13).",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "1000 VPS simulated per river; 40 d migration window (start 10 d before, end 30 d after 25% migration date)",
+      "supported": true,
+      "extract_quote": "A total of 1,000 VPS were simulated per river annually, with a migration time window of 40 days.",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "Calibration: genetically assigned trawl post-smolts 2015-2019 (MA2-5); GLMM NB with river+year random effects; 446/2125 discarded (no matching VPS)",
+      "supported": true,
+      "extract_quote": "The model's calibration involved 2,125 wild post-smolts, with 446 discarded due to lack of matching VPS.",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "Infestation model: log(λ)=intercept + offset log(IP) + random effects; dispersion h≈0.3695; 60% lice survive to harmful mobile stages",
+      "supported": true,
+      "extract_quote": "Dispersion was estimated to h = 0.3695. Experimental studies have shown that between 30 and 50% of the newly attached salmon lice die before reaching the mobile stages that cause the heaviest damage to the host fish.",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "Table 1 normal mortality (20 g, Taranger 2015): 0-1 lice 0%, 2-3 → 20%, 4-6 → 50%, >6 → 100%; low/high variants shift MA classifications (4/13 MAs reclassified 2019)",
+      "supported": true,
+      "extract_quote": "The limits correspond to the tolerance limit for a 20g post-smolt in accordance to Taranger et al (2015).",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "VPS fjord-index routing: 5× probability move toward ocean vs stay/up-fjord; median speed 0.14 m s⁻¹; Etne migration 6.7 d, Opo 17.6 d to ocean",
+      "supported": true,
+      "extract_quote": "The modelled progression speed of VPS corresponds to a median value of 0.14m s 1. The shortest migration distances between the river and the ocean were 79km for Etne and 224km for Opo, giving average modelled migration times of 6.7 and 17.6d, respectively.",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "Lice copepodids may drift >100 km; migration typically 3-7 weeks, majority within 1-2 weeks per river",
+      "supported": true,
+      "extract_quote": "The first three stages of the salmon louse life cycle are planktonic. Thus, depending on the prevailing conditions and temperatures, larvae may drift 100km or more from their source of origin.",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "Inner-fjord rivers consistently higher mortality than outer/coastal rivers within same MA",
+      "supported": true,
+      "extract_quote": "salmon originating from inner-fjord rivers always displayed a higher lice-induced mortality compared to the outer-fjord or coastal rivers.",
+      "note": "The claim is supported by the extract."
+    },
+    {
+      "claim": "2012-2019 trend: fewer low-mortality rivers in MA2-6; MA3 only area with declining >30% river share since 2016 peak",
+      "supported": true,
+      "extract_quote": "The simulations from 2012 to 2019 reveal that the proportion of rivers with low mortality (<10%) in MA 2–6 has decreased since 2012 and 2013. MA3 is the only area with decreasing number of highly influenced rivers (mortality >30%) from 100% influenced rivers in 2016.",
+      "note": "The claim is supported by the extract."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'supports_effect' is consistent with the extract, which discusses the impact of salmon lice on mortality.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions listed in the metadata are relevant to the study's focus on salmon lice-induced mortality and its implications.",
+  "coi_ok": false,
+  "coi_note": "The summary incorrectly states 'No explicit competing-interest declaration noted,' while the metadata indicates a COI declaration.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2021_icesjms_johnsen-vps-mortality-norway",
+  "verified_at": "2026-08-03T16:00:27.803818+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 2
+}

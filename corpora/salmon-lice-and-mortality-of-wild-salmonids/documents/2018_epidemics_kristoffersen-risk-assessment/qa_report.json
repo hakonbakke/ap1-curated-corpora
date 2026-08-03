@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as 'moderate_agreement', but the extract discusses significant uncertainties and limitations, which could suggest a more ambiguous consensus.",
+    "The controversy_role is marked as 'supports_effect', but given the uncertainties and limitations discussed, this could be more nuanced.",
+    "[regraded from critical] The summary states 'Authors declare no conflicts of interest; supported by expert-group work.' However, the extract mentions 'The authors have no conflicts of interest to declare.' This discrepancy in COI declaration is a critical issue.",
+    "[offline_accept] The evidence_direction in the metadata is 'supports_effect', but the extract emphasizes large uncertainties and the model's suitability for assessing relative risks rather than absolute effects. This could be a misalignment."
+  ],
+  "claim_checks": [
+    {
+      "claim": "TLS-oriented model for 401 rivers, 13 production zones, 2014–2016: farm egg output per biomass varies up to 8.1× (zones 3 vs 13); Pearson r=0.70 with local biomass density (p=0.008).",
+      "supported": true,
+      "extract_quote": "The estimated production of salmon louse eggs per mean standing stock of farmed salmonids (Eggs per bio.; Table 1) varied by a factor of 1.22/ 0.15 = 8.1 and was significantly correlated to LBD (Pearson r = 0.70, df = 11, p = 0.008).",
+      "note": null
+    },
+    {
+      "claim": "Sentinel-cage calibration (N=7911 fish, 329 trials): log(IP) coefficient 0.843 (p<0.001), theta=2.733, ICC=0.551; explains ~39% log-scale variation (adj. R²).",
+      "supported": true,
+      "extract_quote": "The random effect in the mixed model gave an intraclass correlation coefficient (ICC, (Dohoo et al., 2003)) equal to 0.551. The mixed effect negative binomial dispersion parameter theta was estimated to 2.733, yielding quantiles of the distribution of lice numbers as in Fig. 6.",
+      "note": null
+    },
+    {
+      "claim": "Highest expected lice loads and mortality in production zone 3 (west); zone 6 second-highest proportional mortality 2016 despite lower per-river infestation than zone 3.",
+      "supported": true,
+      "extract_quote": "The estimated proportional louse-induced mortality was highest in production zone 3, with the basic scenario varying from 2–17% and the worst case scenario varying between 10–72%, between rivers in 2016.",
+      "note": null
+    },
+    {
+      "claim": "2016 basic scenario river mortality ~2–17% (zone 3), worst-case ~10–72%; overall higher risk in 2016 than 2014–2015; progression 8.2 cm s⁻¹, 20 g smolts, Taranger et al. (2015) mortality steps.",
+      "supported": true,
+      "extract_quote": "The estimated proportional louse-induced mortality was highest in production zone 3, with the basic scenario varying from 2–17% and the worst case scenario varying between 10–72%, between rivers in 2016.",
+      "note": null
+    },
+    {
+      "claim": "Sensitivity: migration timing ±2–4 weeks, period 20–80 days, progression 4.25–12.75 cm s⁻¹, and infestation random effects dominate uncertainty; shortest-path routing assumed.",
+      "supported": true,
+      "extract_quote": "Sensitivity analyses focusing on the processes we regard to potentially be critical to the outcome of the risk model were conducted by varying model parameters one-at-a-time.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract emphasizes large uncertainties and the model's suitability for assessing relative risks rather than absolute effects, which may not fully align with 'supports_effect'.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions listed in the metadata are consistent with the focus of the study as described in the extract.",
+  "coi_ok": false,
+  "coi_note": "The summary states 'Authors declare no conflicts of interest; supported by expert-group work.' However, the extract mentions 'The authors have no conflicts of interest to declare.' This discrepancy in COI declaration is a critical issue.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2018_epidemics_kristoffersen-risk-assessment",
+  "verified_at": "2026-08-03T15:57:04.523234+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

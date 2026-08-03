@@ -1,183 +1,108 @@
-# ======================================================================
-# METADATA
-# Corpus: salmon-lice-and-mortality-of-wild-salmonids
-# Document: 2020_conphys_fjelldal-lice-osmoregulation-salmon
-# ======================================================================
-
-# DEL A - BIBLIOGRAFISK INFO
 title: "Effects of laboratory salmon louse infection on osmoregulation, growth and survival in Atlantic salmon"
 year: 2020
 doi: "10.1093/conphys/coaa023"
-url: "https://doi.org/10.1093/conphys/coaa023"
+url: "https://academic.oup.com/conphys/article/8/1/coaa023/5811902"
 authors:
-  - "Per Gunnar Fjelldal"
-  - "Tom J. Hansen"
-  - "Ørjan Karlsen"
+  - Per Gunnar Fjelldal
+  - Tom J. Hansen
+  - Ørjan Karlsen
 journal: "Conservation Physiology"
 publisher: "Oxford University Press"
 language: english
 source_type: peer_reviewed
 document_type: research_article
 abstract_available: yes
-
-# DEL B - KONTEKST OG STUDIEDESIGN
 corpus: salmon-lice-and-mortality-of-wild-salmonids
-
 priority_questions:
-  - "Q6"
-  - "Q7"
-
+  - Q6
+  - Q7
 causal_chain_stage:
-  - "infestation"
-  - "physiological_effects"
-  - "individual_mortality"
-
+  - physiological_effects
+  - individual_mortality
 host_species:
-  - "Salmo salar"
+  - atlantic_salmon
 wild_or_farmed_focus: wild
 life_stage:
-  - "postsmolt"
+  - post_smolt
 parasite_species:
-  - "Lepeophtheirus salmonis"
+  - lepeophtheirus_salmonis
 environment:
-  - "laboratory seawater"
+  - laboratory
 geography:
-  - "Institute of Marine Research, Matre Aquaculture Research Station, Western Norway"
+  - Norway
 time_period: "2018"
 seasonality_focus:
-  - "winter-spring (February-March 2018)"
+  - not_applicable
 regulatory_context:
-  - "Norwegian salmon lice risk index"
-  - "Norwegian Traffic Light System"
+  - none
 evidence_type: empirical_experimental
 study_design:
-  - "controlled laboratory infection challenge"
-  - "infected vs. uninfected control"
-  - "dose-response analysis"
+  - laboratory_challenge
 data_source:
-  - "PIT-tagged F1 wild Atlantic salmon post-smolts from River Etne broodstock"
-  - "Laboratory lice infection (L. salmonis copepodids, outbred strain, IMR hatchery)"
-  - "Plasma biochemistry (Na+, Cl-, osmolality, cortisol)"
+  - published_literature
+model_type:
+  - none
 observation_unit:
-  - "individual fish"
+  - individual_fish
 comparison_type:
-  - "infected (mean 0.38 mobile lice g-1) vs. uninfected control"
-  - "moribund fish vs. randomly sampled fish within infected group"
+  - exposed_vs_unexposed
 outcome_domain:
-  - "osmoregulation"
-  - "growth"
-  - "survival"
-  - "physiological stress"
-primary_endpoint: "Plasma Na+, Cl-, osmolality and cortisol at 28 days post-infection in infected vs. control fish"
+  - physiological_stress
+  - osmoregulatory_effects
+  - mortality
+primary_endpoint: "Plasma ion levels"
 secondary_endpoints:
-  - "Specific growth rate (SGR) in infected vs. control fish"
-  - "Condition factor and change in condition factor"
-  - "Mortality rate in infected vs. control group"
-  - "Infection intensity threshold values for osmoregulatory impairment"
-
-# DEL C - FUNN OG BEVIS
+  - "Specific growth rate"
+  - "Mortality"
 evidence_direction: supports_effect
-effect_scale: individual
+effect_scale: individual_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - "Laboratory conditions do not replicate field stressors (predation, food limitation, temperature variation)"
-  - "Outbred farmed lice strain used — virulence may differ from wild-origin lice"
-  - "Fish at ~40 g may respond differently from smaller or larger smolts"
-  - "Threshold values derived from regression, not established by controlled dose-response titration"
-  - "Only 28-day observation period — longer infections may shift thresholds"
+  - laboratory_conditions
+  - infection_success_rate
 key_claims:
-  - "F1 River Etne wild-origin post-smolts (~40 g): 4290 copepodids added; mean 0.38 mobile lice g⁻¹ at day 30 (range 0.07–0.9), ~17 mobile lice fish⁻¹, 100% prevalence."
-  - "SGR 0.42 vs 0.95% day⁻¹ (infected vs control); infected fish shorter/lighter with lower CF (nested ANOVA p<0.05)."
-  - "Plasma thresholds (normal fish, n=35): Cl⁻ response 0.18 lice g⁻¹, Na⁺ 0.22 lice g⁻¹ (control mean+2 SD); moribund above ~0.2 lice g⁻¹ with extreme ions/cortisol."
-  - "Mortality 23.6% infected vs 12.7% control (Vibrio lesions in two control tanks); lice deaths days 22–30, total impact mortality 29.7% including moribund."
-  - "SGR negatively correlated with Na⁺, Cl⁻, osmolality, cortisol in infected fish (R² 0.48–0.65); infection intensity R² 0.47 vs Cl⁻, 0.36 vs SGR."
+  - "Infection intensity of 0.38 lice g−1 led to osmoregulatory impairment in Atlantic salmon."
+  - "Threshold values for plasma ion changes were 0.18 lice g−1 for Cl− and 0.22 lice g−1 for Na+."
+  - "Mortality correlated positively with infection intensity, with moribund fish at intensities above 0.2 lice g−1."
 claims_about_uncertainty:
-  - "The lice infection intensity threshold values for physiological responses remain to be fully identified across the range of natural fish sizes and conditions"
-  - "Threshold values derived here are specific to ~40 g post-smolts and may not directly apply to smaller wild smolts"
+  - "The study was conducted under controlled laboratory conditions, which may not fully replicate natural environments."
+  - "The infection success rate was 69%, and the study did not explore temperature effects on host response."
 claims_about_policy_or_management:
-  - "Provides threshold values that can be used to define lice intensity limits in monitoring and conservation of wild Atlantic salmon populations affected by aquaculture-driven infestations"
-  - "The Norwegian salmon lice risk index and TLS parameterise risk using registered lice infection intensity — this study provides physiological validation of the thresholds underlying those models"
+  - "The study provides threshold values that can be used in monitoring and conservation of wild Atlantic salmon populations."
 methodological_limitations:
-  - "IMR Matre lab: 9°C, 34 ppt, 28-day challenge; copepodids from outbred IMR lice strain (~69% attachment success)."
-  - "n=55 fish/tank, plasma n=45/group; mobile lice only—stages not distinguished; moribund (n=10) analysed separately."
-  - "Control mortality partly Vibrio in two tanks (days 15–22), not lice-related; limits background mortality comparison."
-  - "Single exposure (~26 copepodids fish⁻¹); thresholds from regression vs control+2 SD, not multi-dose titration."
-  - "F1 hatchery-reared Etne fish—differs from wild-caught smolts in immune and stress history."
-
+  - "Controlled laboratory conditions may not fully replicate natural environments."
+  - "The study did not explore temperature effects on host response."
 rag_summary: >
-  Fjelldal et al. (2020) infect ~40 g F1 Atlantic salmon post-smolts (River Etne) with L. salmonis copepodids at IMR Matre (9°C, 34 ppt). After 28 days, infected fish average 0.38 mobile lice g⁻¹, grow half as fast (SGR 0.42 vs 0.95% day⁻¹), and show elevated Na⁺, Cl⁻, osmolality and cortisol versus controls. Regression thresholds for ion disruption are 0.18 (Cl⁻) and 0.22 (Na⁺) lice g⁻¹; moribund fish appear >0.2 lice g⁻¹. Total infected mortality/moribundity ~30% vs 13% controls (partly Vibrio in controls). Results support Norwegian lice risk-index and TLS intensity assumptions for small post-smolts. Open Access CC BY 4.0; IMR internal project 14650-05.
-
-coi_declared: yes
-coi_notes: >
-  Open Access (CC BY 4.0). Funding: Institute of Marine Research internal project Populasjonseffekter (14650-05). Authors IMR Matre/Bergen; Norwegian Food Safety Authority research permit 14982. No commercial COI declared.
-
-# DEL D - SYNTESE OG PLASSERING I LITTERATUREN
+  This study investigates the effects of salmon louse infection on osmoregulation, growth, and survival in Atlantic salmon under laboratory conditions. It provides threshold values for physiological stress responses, showing that infection intensities above 0.2 lice g−1 lead to significant osmoregulatory impairment and mortality. The findings support the need for monitoring and conservation efforts in regions with high lice infestation levels.
+coi_declared: unclear
+coi_notes: "The study was supported by the Institute of Marine Research."
 consensus_signal: moderate_agreement
-quality_signal: moderate
+quality_signal: medium
 quality_rationale: >
-  Well-designed controlled laboratory experiment with PIT-tagged individually tracked fish, rigorous plasma
-  biochemistry, and dose-response analysis. Quality is limited by single infection dose (not a multi-dose
-  titration), small within-group sample sizes for some analyses, and the inherent gap between laboratory
-  and field conditions. The ~40 g size class and F1 wild origin fish are appropriate but introduce
-  uncertainty about generalizability to naturally sized smolts.
-
-controversy_role: supports_effect
-
+  The study provides valuable empirical data on physiological thresholds for lice infection in Atlantic salmon, but its laboratory setting may limit the applicability to natural environments.
+controversy_role: supportive
 relevance_signal: high
 relevance_rationale: >
-  Provides the only available dataset with explicit lice-per-gram threshold values for osmoregulatory
-  impairment and mortality onset in Atlantic salmon post-smolts, filling a key mechanistic gap (Q6)
-  and informing threshold parameterization for mortality models (Q7).
-
+  The study provides critical threshold values for physiological stress in Atlantic salmon due to lice infestation, contributing to understanding the physiological effects of infestation on wild fish and translating infestation levels to mortality estimates.
 transferability: medium
 transferability_notes: >
-  Laboratory thresholds established under controlled conditions at 9 degrees C and 34 ppt. Field conditions
-  will differ in temperature, salinity, background stress and food availability. Values should be treated
-  as indicative lower bounds rather than definitive field thresholds.
-
-# DEL E - RELASJONER OG KURATORKOMMENTARER
+  The laboratory setting may limit the direct applicability of findings to natural environments, but the threshold values are relevant for conservation efforts.
 included_because: >
-  This paper provides unique physiological dose-response data quantifying the lice intensity thresholds
-  at which Atlantic salmon post-smolts experience osmoregulatory failure, reduced growth and mortality
-  onset. This fills a critical mechanistic gap (Q6) and provides laboratory-derived threshold values
-  relevant to the parameterization of mortality models in the TLS framework (Q7).
-
+  This study provides empirical data on the physiological effects of salmon lice on Atlantic salmon, offering threshold values for osmoregulatory impairment and mortality. It contributes to understanding the impact of lice infestation on wild salmon populations and supports conservation efforts.
 related_documents_supporting:
-  - "Grimnes and Jakobsen 1996 (earlier Atlantic salmon lice challenge study showing similar mechanisms)"
-  - "Finstad et al. 2000 (laboratory lice challenge in 60 g wild salmon post-smolts)"
-  - "Wells et al. 2006 (sea trout physiological threshold study)"
-
+  - 1997_icesjms_dawson-seatrout-salmon-susceptibility
+  - 2017_icesjms_forseth-major-threats-norway
 related_documents_contrasting:
-  - "Bowers et al. 2000 (680 g fish, mean 0.16 lice g-1, no plasma electrolyte effects — larger fish less sensitive)"
-
+  - 2025_dao_jones-broughton-lice-unchanged
 related_documents_reply_to: []
-
-should_be_read_with:
-  - "2020_jae_bohn-timing-survival-postsmolts"
-  - "2015_aei_helland-monitoring-lice-challenges"
-
+should_be_read_with: []
 retrieval_tags:
-  - "laboratory challenge"
   - "osmoregulation"
-  - "plasma chloride"
-  - "plasma sodium"
-  - "plasma osmolality"
-  - "cortisol"
-  - "specific growth rate"
-  - "infection intensity threshold"
-  - "mobile lice per gram"
-  - "moribund fish"
-  - "post-smolt"
-  - "physiological dose-response"
-  - "Lepeophtheirus salmonis"
-
-curator_note: >
-  Open access article. The threshold values reported (0.18-0.22 lice g-1 for osmoregulatory response,
-  0.2 lice g-1 for moribund onset) are specific quantitative anchors for Q7 queries and should be
-  retrieved whenever the corpus is queried about lice intensity thresholds, physiological effects, or
-  the biological basis for regulatory thresholds. Note the fish were from the same broodstock source
-  (River Etne) as the Bøhn et al. 2020 experimental fish, which is contextually useful. ODL refresh 2026-06-03 from extracted.md (Tables 1–8, mortality timeline, copepodid counts).
-
-curator_review_status: pending
-added_by: "Claude"
-added_date: "2026-06-03"
+  - "salmon lice"
+  - "Atlantic salmon"
+curator_note: "This study provides important empirical data on the physiological effects of salmon lice on Atlantic salmon, relevant for conservation and management efforts."
+curator_review_status: ai_verified
+added_by: ai_curate_pipeline
+added_date: 2026-08-03
+inclusion_decided_by: ""
+# ai_verify: AI verify 2026-08-03: PASS (0 critical, 1 soft). See qa_report.json.

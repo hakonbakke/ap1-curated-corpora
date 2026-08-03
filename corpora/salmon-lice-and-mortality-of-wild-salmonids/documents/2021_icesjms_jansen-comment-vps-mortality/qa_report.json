@@ -1,0 +1,76 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as 'contested' in the metadata, which is reasonable given the critique nature of the commentary, but this could be seen as ambiguous without further context.",
+    "[regraded from critical] The COI is declared in the metadata, but the summary does not mention Jansen's co-development of a competing framework, which is a critical COI detail.",
+    "[offline_accept] The evidence_direction is marked as 'critiques_methodology' in the metadata, which aligns with the extract's content that critiques the VPS model's overestimation of mortality. However, the summary does not explicitly state this direction, which could lead to misinterpretation."
+  ],
+  "claim_checks": [
+    {
+      "claim": "N=7929 trawled post-smolts (2017-2020 NMDC); excluded 339 tagged, 326 scale-loss (mean lice 1.9 vs 3.05 without)",
+      "supported": true,
+      "extract_quote": "The total number of trawled post-smolt salmon in the resulting dataset was 7929.",
+      "note": "The extract provides detailed support for the numbers and exclusions mentioned."
+    },
+    {
+      "claim": "Same mortality formula as Johnsen et al.: NB dispersion 0.3695, ×0.6 harmful lice, 20 g fish; >6=100%, 4-6=50%, 2-3=20%, 0-1=0%",
+      "supported": true,
+      "extract_quote": "The probability of mortality for each area/year sample of post-smolts was then calculated assuming 100% mortality for smolt with more than six lice...",
+      "note": "The extract confirms the use of the same mortality formula."
+    },
+    {
+      "claim": "VPS mortality higher than trawl in 26/27 area-year comparisons (Figure 1); especially when trawl mortality low",
+      "supported": true,
+      "extract_quote": "The estimated mortality of post-smolts caught by trawling were lower than the average of predicted mortalities for the VPS from rivers draining into the corresponding fjords for 26 out of 27 year by area comparisons.",
+      "note": "The extract supports this claim with specific data."
+    },
+    {
+      "claim": "Table 2 mortality classes: trawl 4 high / 5 medium / 18 low vs VPS 13 / 8 / 6 — χ²(2,N=54)=11.46, p=0.003",
+      "supported": true,
+      "extract_quote": "For the number of year by area samples falling into the three mortality classes >30%, 10–30%, or < 10%, there was a significant difference between the trawled post-smolts and VPS (X2 (2, N = 54) = 11.46, p = 0.003; Table 2).",
+      "note": "The extract provides the exact statistical results mentioned."
+    },
+    {
+      "claim": "Example Table 1: MA4-1 2017 trawl M=52.8% (N=187, LPS=26.2) vs VPS mean 59.5% (range 49-64%); MA5 2017 trawl 6.0% vs VPS 24.7%",
+      "supported": true,
+      "extract_quote": "MA4-1 2017 187 26.2 75 52.8 10 59.5 49 64",
+      "note": "The extract includes the specific examples and data."
+    },
+    {
+      "claim": "Supplementary RD adjustment: 11/27 area-years significant lice increase toward ocean; still VPS overestimates 22/27, χ² p=0.023",
+      "supported": true,
+      "extract_quote": "Significant positive effects of RD on lice intensities were found in 11 out of 27 year by area samples... mean of the per river VPS mortality, however, was still overestimated for 22 out of the 27 year by area comparisons.",
+      "note": "The extract confirms the supplementary analysis results."
+    },
+    {
+      "claim": "Johnsen 2019 VPS predictions (>30%: 82 rivers) drove mandatory production cuts in MAs 4 and 5",
+      "supported": true,
+      "extract_quote": "These predictions have contributed to mandatory reductions in the production of farmed salmon in MAs 4 and 5.",
+      "note": "The extract supports the claim about the impact of predictions."
+    },
+    {
+      "claim": "Contradicts Johnsen conclusion that modelled and observed lice levels 'coincide'",
+      "supported": true,
+      "extract_quote": "The present analysis contradicts the concluding remark in Johnsen et al. (2021), that: “The estimated lice level on modelled post-smolts is shown to coincide with the level observed on captured wild post-smolt”.",
+      "note": "The extract explicitly states this contradiction."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction is correctly identified as 'critiques_methodology' based on the extract's content.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions are relevant and supported by the extract's focus on model validation and mortality estimation.",
+  "coi_ok": false,
+  "coi_note": "The summary omits the critical detail of Jansen's involvement in a competing framework, which is a significant COI.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2021_icesjms_jansen-comment-vps-mortality",
+  "verified_at": "2026-08-03T15:59:30.200514+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

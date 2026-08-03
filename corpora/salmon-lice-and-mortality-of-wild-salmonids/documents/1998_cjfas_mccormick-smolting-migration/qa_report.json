@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus_signal: The metadata states 'strong_agreement,' but the extract discusses variability and uncertainty in smolt migration and survival, which could suggest a more nuanced consensus.",
+    "Controversy_role: The metadata states 'neutral,' but the extract discusses significant impacts of anthropogenic activities, which could imply some level of controversy.",
+    "[regraded from critical] Missing COI: The metadata states 'No funding or conflict-of-interest statement in the extract,' but the extract mentions 'organization and support of the workshop held in Braemar, Scotland in March 1997.'",
+    "[offline_accept] Fabricated numbers: The summary mentions specific numbers for adult returns (~166 vs ~94) and smolt migration timing correlation (91–95%) that are not directly quoted or clearly supported by the extract."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Smolting coordinates salinity tolerance (gill Na⁺,K⁺-ATPase, chloride cells), porphyropsin→rhodopsin shift, adult hemoglobins, buoyancy, loss of rheotaxis/territoriality, and schooling—primarily driven by photoperiod with temperature modulating pace.",
+      "supported": true,
+      "extract_quote": "Smolting is an adaptive specialization for downstream migration, seawater entry, and marine residence... Physiological changes include increased salinity tolerance, olfactory sensitivity, metabolic rate, scope for growth, and altered hemoglobin and visual pigments.",
+      "note": "The extract supports the physiological and behavioral changes during smolting."
+    },
+    {
+      "claim": "Physiological smolt window: retained smolts desmolt; gill Na⁺,K⁺-ATPase declines ~80% within ~400 degree-days after peak—window narrows in warmer water and with migration delays (e.g. dams).",
+      "supported": true,
+      "extract_quote": "there is an 80% loss in enzyme activity (equivalent to parr levels) 400 degree-days after the peak in gill Na+, K+-ATPase activity.",
+      "note": "The extract provides specific details about the physiological smolt window."
+    },
+    {
+      "claim": "Ecological smolt window: synchrony of migration timing with temperature, food and predators strongly affects adult returns; Fig. 3 simulation shows ~166 vs ~94 returns when peaks align vs shift 2 weeks.",
+      "supported": false,
+      "extract_quote": null,
+      "note": "The extract does not provide specific numbers for adult returns or a detailed description of Fig. 3."
+    },
+    {
+      "claim": "Migration initiation: increasing spring temperature (often ~10°C) and high discharge trigger descent; River Imsa smolt run timing correlated 91–95% with April–May warming (5.8–11.2°C start range).",
+      "supported": false,
+      "extract_quote": null,
+      "note": "The extract mentions temperature ranges but does not provide specific correlation percentages."
+    },
+    {
+      "claim": "Acid exposure as short as 12 h (pH 5.2, 31 µg L⁻¹ Al) can abolish smolt salinity tolerance; acid in May more damaging than April; Norwegian acid rivers showed ~10× lower adult returns vs limed sites.",
+      "supported": true,
+      "extract_quote": "exposures as short as 12 h to relatively mild acidity (pH 5.2, 31 g L–1) aluminum) can compromise salinity tolerance.",
+      "note": "The extract supports the claim about acid exposure effects."
+    },
+    {
+      "claim": "Hatchery smolt survival ~half wild (River Imsa); smolts more sensitive than parr to handling; mainstems/estuaries bear dams, pollution, acid—highest anthropogenic impact on the life cycle.",
+      "supported": true,
+      "extract_quote": "Experiments carried out in the River Imsa show that the average survival rate of hatchery-reared smolts was only half that of wild fish.",
+      "note": "The extract supports the claim about hatchery smolt survival."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction is marked as 'not_applicable,' which is consistent with the review nature of the paper.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The paper is relevant to Q4 as it provides foundational knowledge on smolt migration timing and physiology.",
+  "coi_ok": false,
+  "coi_note": "The extract mentions workshop support, which should be noted as a potential COI.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "1998_cjfas_mccormick-smolting-migration",
+  "verified_at": "2026-08-03T15:53:45.633534+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

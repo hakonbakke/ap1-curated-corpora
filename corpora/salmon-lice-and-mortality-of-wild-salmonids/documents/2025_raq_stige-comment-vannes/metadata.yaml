@@ -140,6 +140,7 @@ retrieval_tags:
   - "mortality_threshold"
   - "debate_chain"
 curator_note: "ODL refresh 2026-06-03 from extracted.md"
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)

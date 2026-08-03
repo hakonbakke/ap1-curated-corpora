@@ -1,0 +1,89 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Consensus signal is marked as high_agreement, but the extract indicates significant issues with the TLS, which could suggest ambiguity.",
+    "Controversy role is marked as foundational, but the extract suggests the report is critical of the TLS, which might imply a more challenging role.",
+    "[regraded from critical] Missing COI details: The extract clearly states the Evaluation Committee was appointed by the Research Council of Norway at the request of the Ministry of Trade, Industry and Fisheries, but the summary omits this detail.",
+    "[offline_accept] Evidence direction mismatch: The metadata states 'mixed_within_study', but the extract emphasizes critical weaknesses and lack of empirical basis, suggesting a more negative direction."
+  ],
+  "claim_checks": [
+    {
+      "claim": "TLS 'probably the most sophisticated salmon risk assessment in operation around the globe' — but not the only feasible approach",
+      "supported": true,
+      "extract_quote": "our assessment of the TLS is that it is probably the most sophisticated salmon risk assessment in operation around the globe",
+      "note": null
+    },
+    {
+      "claim": "Reviewed >1000 pages from nearly 100 documents; 14 online meetings Nov 2020-Dec 2021; Interim Report July 2021",
+      "supported": true,
+      "extract_quote": "This documentation ran to over 1,000 pages, from nearly 100 documents... conducted 14 on-line meetings",
+      "note": null
+    },
+    {
+      "claim": "Figure 1: Taranger et al. (2011) mortality thresholds (orange oval) feed ALL sea lice impact indexes — single largest dependence among 7 assessment endpoints",
+      "supported": true,
+      "extract_quote": "The sea lice mortality thresholds are central for the whole TLS process since all sea lice impact indexes depend on them",
+      "note": null
+    },
+    {
+      "claim": "Three model streams (IMR, NVI, SINTEF) state-of-the-art but calibration data variable/uncertain",
+      "supported": true,
+      "extract_quote": "the system of models in the TLS are state-of-the-art... model products are heavily reliant on calibration data, some of which demonstrate high levels of variability and uncertainty",
+      "note": null
+    },
+    {
+      "claim": "Solid empirical basis for mortality thresholds NOT demonstrated; thresholds unchanged since TLS inception; ExpGrp 2019 subgroup found no basis to change",
+      "supported": true,
+      "extract_quote": "The EvalComm is of the view that a solid empirical basis for the thresholds has not been provided to date",
+      "note": null
+    },
+    {
+      "claim": "Uncertainty insufficiently quantified, propagated, and communicated; risk of over-confidence in complex models",
+      "supported": true,
+      "extract_quote": "It is our observation that the ExpGrp reports lack a clear description of uncertainty estimation",
+      "note": null
+    },
+    {
+      "claim": "Expert elicitation critical but poorly documented vs best practice; qualitative judgement in final green/yellow/red step",
+      "supported": true,
+      "extract_quote": "the practical implementation of expert elicitation, and the process used to derive conclusions from it, is poorly documented",
+      "note": null
+    },
+    {
+      "claim": "Sea trout/Arctic char outside EvalComm remit (Finstad method appendix cited, not peer-reviewed at evaluation time)",
+      "supported": true,
+      "extract_quote": "evaluations and recommendations related to sea trout and Arctic char were outside the scope of the work it was to undertake",
+      "note": null
+    },
+    {
+      "claim": "No TLS system performance / conservation effectiveness assessment undertaken",
+      "supported": true,
+      "extract_quote": "there has been no such analysis or review of the TLS classification, which we have referred to as the Traffic Light 'systems performance'",
+      "note": null
+    },
+    {
+      "claim": "15 recommendations include R5-R6 (reassess thresholds, in situ studies), R7-R10 (sensitivity & IPCC-style uncertainty language), R14 external validation, R15 DPSIR iterative framework",
+      "supported": true,
+      "extract_quote": "Table of Recommendations... R5... R6... R7... R8... R9... R10... R14... R15",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract emphasizes critical weaknesses and lack of empirical basis, suggesting a more negative direction than 'mixed_within_study'.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions Q7, Q8, Q9, Q10 are relevant to the evaluation of the TLS as described in the extract.",
+  "coi_ok": false,
+  "coi_note": "The summary omits the detail that the Evaluation Committee was appointed by the Research Council of Norway at the request of the Ministry of Trade, Industry and Fisheries.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2021_rcn_traffic-light-evaluation",
+  "verified_at": "2026-08-03T16:01:21.171525+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

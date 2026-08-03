@@ -219,9 +219,8 @@ coi_notes: >
 
 # ======================================================================
 # DEL D — SYNTESE OG PLASSERING I LITTERATUREN
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
-# Claude gjør et informert førsteutkast. Fagperson bør lese gjennom
-# og korrigere — særlig consensus_signal og controversy_role.
+# [AI DRAFT — verified against extract by ai_verify_document.py]
+# Judgement fields; AI checker flags ambiguity. Expert review optional.
 # ======================================================================
 
 consensus_signal: ""
@@ -259,10 +258,7 @@ transferability_notes: >
 
 # ======================================================================
 # DEL E — RELASJONER OG KURATORKOMMENTARER
-# [CLAUDE — BØR VERIFISERES AV FAGPERSON]
-# Claude foreslår koblinger basert på kjennskap til feltet.
-# Kurator / fagperson bør supplere og korrigere etter hvert som
-# korpuset vokser.
+# [AI DRAFT — link suggestions; prefer existing corpus doc_ids]
 # ======================================================================
 
 included_because: >
@@ -293,10 +289,15 @@ curator_note: >
 # KURATERSTATUS
 # ======================================================================
 
-curator_review_status: pending
-# pending   = Claude har fylt ut, ikke faglig verifisert
-# reviewed  = kurator / fagperson har lest gjennom og korrigert Del D og E
-# approved  = fagperson har godkjent alle fire deler
+curator_review_status: ai_draft
+# Trust model (human selects papers; AI curates + verifies):
+#   ai_draft         = AI-filled; not yet checker-passed (or checker failed)
+#   ai_verified      = AI checker passed against extracted.md (see qa_report.json)
+#   expert_approved  = optional human expert sign-off (bonus, not required)
+# Legacy (treat as ai_draft unless migrated):
+#   pending | reviewed | approved
 
-added_by: ""
-added_date: ""   # YYYY-MM-DD
+added_by: ""          # e.g. ai_curate_pipeline | human name
+added_date: ""        # YYYY-MM-DD
+inclusion_decided_by: ""  # human who selected the paper for the corpus
+

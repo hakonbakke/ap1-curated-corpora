@@ -1,0 +1,40 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The COI is marked as 'unclear' in metadata, but the extract mentions funding by the Institute of Marine Research, which is not a critical issue but could be noted for transparency."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Infection intensity of 0.38 lice g−1 led to osmoregulatory impairment in Atlantic salmon.",
+      "supported": true,
+      "extract_quote": "infected post-smolts had a mean of 0.38 (range of 0.07–0.9) mobile lice g−1 fish weight. Higher plasma Na+, Cl− and osmolality in infected fish also indicate osmoregulatory impairment.",
+      "note": null
+    },
+    {
+      "claim": "Threshold values for plasma ion changes were 0.18 lice g−1 for Cl− and 0.22 lice g−1 for Na+.",
+      "supported": true,
+      "extract_quote": "Calculated lice intensity threshold values for changes in plasma ions were 0.18 lice g−1 for plasma Cl−, and 0.22 lice g−1 for plasma Na+.",
+      "note": null
+    },
+    {
+      "claim": "Mortality correlated positively with infection intensity, with moribund fish at intensities above 0.2 lice g−1.",
+      "supported": true,
+      "extract_quote": "Infection intensity (lice g−1 fish) correlated positively with mortality rate... Moribund infected fish occurred at infection intensities above 0.2 lice g−1.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "The evidence direction 'supports_effect' is consistent with the findings in the extract, which indicate osmoregulatory impairment and increased mortality with higher infection intensities.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The study addresses physiological effects and individual mortality, aligning with the priority questions.",
+  "coi_ok": true,
+  "coi_note": "The COI is marked as 'unclear', but the funding source is mentioned as the Institute of Marine Research, which does not indicate a conflict of interest.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2020_conphys_fjelldal-lice-osmoregulation-salmon",
+  "verified_at": "2026-08-03T16:42:39.946041+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified"
+}

@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as moderate_agreement, but the extract suggests significant variability and uncertainty, which could imply a more ambiguous consensus.",
+    "The controversy_role is marked as practical_implications, but given the variability and questionable net benefit, it might also involve scientific debate.",
+    "[regraded from critical] The COI is marked as unclear in the metadata, but the extract clearly states funding sources, which should have been noted as a COI.",
+    "[offline_accept] The evidence_direction is marked as 'supports_effect', but the extract indicates that the net benefit of zonation alone is questionable, suggesting a more nuanced or mixed direction."
+  ],
+  "claim_checks": [
+    {
+      "claim": "VPS model: ~10% post-smolt mortality ≈ 0.3 million spring adult female lice (weeks 16–21 average, 19 farms, 2012–2022); Nordfjord recent average ~20% (~2× green-light target)",
+      "supported": true,
+      "extract_quote": "The relationship between the total number of salmon lice in the farms in the area in spring and average salmon louse-induced mortality...suggests that to reduce salmon louse-induced mortality to lower than 10%, the total number of adult female salmon lice in spring has to be reduced to lower than approximately 0.3 million.",
+      "note": null
+    },
+    {
+      "claim": "Zonation hindcast (2015–2022): mean adult females −12% (1.36→1.20 M), treatments −11% (8.5→7.6% cages/week); spring odd years 0.54→0.06 M but even years 0.73→1.06 M",
+      "supported": true,
+      "extract_quote": "The comparison of the ‘Zonation’ scenario with the historic scenario quantified the effects of coordinated production and fallowing. The results showed that this strategy reduced the total number of adult female salmon lice by 12%, from an overall average of 1.36 million to 1.20 million adult females.",
+      "note": null
+    },
+    {
+      "claim": "Week 15 coordinated 98% treatment: spring lice −66% to 0.37 M (still above 0.3 M goal); week 12 98% + 0.1 threshold: 0.42 M spring, 0.34 M weeks 13–39",
+      "supported": true,
+      "extract_quote": "If all farms conducted a salmon louse treatment with 98% effect in week 15 in even-numbered years, the salmon louse abundance in weeks 16–21 in spring was reduced by 66% to 0.37 million adult females.",
+      "note": null
+    },
+    {
+      "claim": "Stock 1 kg: spring even-year lice −75% to 0.27 M (below goal); closed half of farms: −63% to 0.40 M; skirt all −29% to 0.84 M — insufficient alone",
+      "supported": true,
+      "extract_quote": "Stocking at 1 kg reduced the salmon louse level in spring in even-numbered years by 75% to 0.27 million adult females.",
+      "note": null
+    },
+    {
+      "claim": "89% of infestation pressure originated within study area; simulated lice counts averaged 17% above reported historic data",
+      "supported": true,
+      "extract_quote": "89% of the infestation pressure originating from farms within the study area (average for years 2015–2022, evaluated at the 19 farm locations).",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract suggests that the net benefit of zonation alone is questionable, indicating a more mixed or nuanced evidence direction than 'supports_effect'.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions align with the study's focus on regional coordination and its impact on infestation pressure and mortality.",
+  "coi_ok": false,
+  "coi_note": "The extract mentions funding from the Norwegian Seafood Research Fund and Vestland County Council, which should have been noted as a COI.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2024_ijpara_stige-regional-lice-coordination",
+  "verified_at": "2026-08-03T16:05:22.241822+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1,
+  "offline_accepted": true,
+  "offline_accept_reason": "soft_critical_only"
+}

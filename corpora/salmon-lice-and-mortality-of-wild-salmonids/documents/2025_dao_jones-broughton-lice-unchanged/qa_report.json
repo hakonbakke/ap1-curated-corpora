@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The consensus_signal is marked as 'contested' in the metadata, which could be ambiguous given the extract's emphasis on the importance of natural reservoirs over aquaculture.",
+    "[regraded from critical] The COI is declared in the metadata, but the extract does not mention any COI or funding sources, which is a critical mismatch.",
+    "[taxonomy note] The evidence_direction is marked as 'no_significant_effect' in the metadata, but the extract indicates that sea lice prevalence increased in 2024 to levels similar to or higher than during full aquaculture years, suggesting a significant effect of natural reservoirs.",
+    "[taxonomy note] TAXONOMY: evidence_direction is no_significant_effect; use no_effect_detected"
+  ],
+  "claim_checks": [
+    {
+      "claim": "2016–2024: n = 2,868 juvenile salmon (1,463 chum, 1,405 pink) at 14 fixed beach-seine sites; farm biomass 21,645 t (17 sites, 2019) → 614 t (2 sites, 2024), a 97% reduction",
+      "supported": true,
+      "extract_quote": "A total of 2868 salmon were collected by beach seine from 14 sites between 2016 and 2024... production of Atlantic salmon in open netpens in the BA declined from a high of 21645 metric tonnes (t) in 17 facilities in 2019 to 614 t in 2 facilities in 2024.",
+      "note": null
+    },
+    {
+      "claim": "2024 all-lice prevalence: chum 40.7%, pink 40.3% — similar to or above 2016–2021 full-aquaculture years; 2023 lows chum 12.5%, pink 7.3%",
+      "supported": true,
+      "extract_quote": "The prevalence of all lice increased in 2024 to 40.7 and 40.3% for chum salmon and pink salmon, respectively.",
+      "note": null
+    },
+    {
+      "claim": "L. salmonis 2024: chum prevalence 21.3% (8.6% in 2023), pink 12.4% (2.3%); C. clemensi 2024: chum 28.7% (3.9% in 2023), pink 32.6% (5.1%)",
+      "supported": true,
+      "extract_quote": "The prevalence of Lepeophtheirus salmonis on chum salmon... increased from 8.6% in 2023 to 21.3% in 2024. The prevalence on pink salmon... increasing to 12.4% in 2024.",
+      "note": null
+    },
+    {
+      "claim": "Mean intensity (infested fish only): chum 1.2–2.5 lice fish⁻¹ (max 8 in 2019); pink 1.2–2.2 (max 7 in 2019); pooled L. salmonis share 41.9% chum, 37.1% pink over series",
+      "supported": true,
+      "extract_quote": "The mean intensity of all lice on chum salmon ranged between 1.2 and 2.5 lice fish–1 with a maximum of 3 in 2023 and of 8 in 2019.",
+      "note": null
+    },
+    {
+      "claim": "2016–2021 mean farm biomass ~14,903 t (14–17 facilities); prevalence peaked 2022 (chum 53.7%, pink 62.9%) then crashed 2023 and rebounded 2024 with near-zero farms",
+      "supported": true,
+      "extract_quote": "The annual number of spatially relevant aquaculture facilities ranged from 14 to 17 between 2016 and 2021. During this time the estimated mean biomass was 14903 metric tonnes (t)...",
+      "note": null
+    },
+    {
+      "claim": "The Broughton Archipelago has been a focus of sea lice research for ~25 years; this dataset represents the most comprehensive before/after aquaculture removal dataset in the region",
+      "supported": true,
+      "extract_quote": "For almost 25 yr, the BA has been the focus of a robust scientific effort to understand sea lice interactions between cultured and wild juvenile salmon.",
+      "note": null
+    }
+  ],
+  "evidence_direction_ok": false,
+  "evidence_direction_note": "The extract suggests a significant effect of natural reservoirs on sea lice prevalence, contradicting the 'no_significant_effect' direction in the metadata.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "The priority questions align with the study's focus on aquaculture's impact on sea lice infestations.",
+  "coi_ok": false,
+  "coi_note": "The extract does not mention any COI or funding sources, which is a critical mismatch with the metadata.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "medium",
+  "doc_id": "2025_dao_jones-broughton-lice-unchanged",
+  "verified_at": "2026-08-03T16:07:29.748827+00:00",
+  "verify_model": "gpt-4o",
+  "rule_precheck_issues": [
+    "TAXONOMY: evidence_direction is no_significant_effect; use no_effect_detected"
+  ],
+  "final_status": "ai_verified",
+  "regraded": true,
+  "regrade_moved_coi_critical_to_soft": 1
+}

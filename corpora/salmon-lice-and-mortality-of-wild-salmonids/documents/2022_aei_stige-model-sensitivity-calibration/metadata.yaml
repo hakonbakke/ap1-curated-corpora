@@ -204,6 +204,7 @@ curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Added Table 1, farm/cage/trawl sample sizes, β2 interpretation,
   Dempster 98% farm lice share. Pair with Johnsen 2021 + Jansen 2021.
 
-curator_review_status: pending
+curator_review_status: ai_verified
 added_by: "Thord"
 added_date: "2026-06-03"
+# ai_verify: offline_accept → ai_verified (soft_critical_only)
