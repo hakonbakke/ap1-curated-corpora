@@ -9,6 +9,12 @@ schema (see `corpora/salmon-lice-and-mortality-of-wild-salmonids/metadata_templa
 with corpus-specific fields including `causal_chain_stage`, `host_species`,
 `evidence_direction`, `controversy_role`, and others documented below.
 
+**Enforcement:** for the wild-salmonids corpus, machine-readable allowed values live in
+`corpora/salmon-lice-and-mortality-of-wild-salmonids/vocabulary.json`. Run
+`python scripts/validate_corpus.py` to check documents against that vocabulary
+(and the corpus metadata template). If taxonomy docs and the template disagree,
+fix the prose here and keep `vocabulary.json` / the template in sync.
+
 Refer to `shared/tagging_guide.md` for guidance on applying ambiguous tags.
 
 ---
@@ -50,6 +56,10 @@ Refer to `shared/tagging_guide.md` for guidance on applying ambiguous tags.
 
 ## `production_stage`
 
+**Scope:** farmed-salmon corpora only
+(`salmon-lice-and-farmed-salmon-welfare-and-mortality`, `salmon-mortality`).
+The wild-salmonids corpus uses `life_stage` instead; do not expect this field there.
+
 | Value | Description |
 |---|---|
 | `broodstock` | Broodfish |
@@ -64,6 +74,10 @@ Refer to `shared/tagging_guide.md` for guidance on applying ambiguous tags.
 
 ## `system_type`
 
+**Scope:** farmed-salmon corpora only
+(`salmon-lice-and-farmed-salmon-welfare-and-mortality`, `salmon-mortality`).
+The wild-salmonids corpus uses `environment` instead; do not expect this field there.
+
 | Value | Description |
 |---|---|
 | `open_cage` | Traditional open net-pen in sea |
@@ -77,11 +91,16 @@ Refer to `shared/tagging_guide.md` for guidance on applying ambiguous tags.
 
 ## `geography`
 
-Free text, but use standardised terms where possible:
-- Country: `Norway`, `Scotland`, `Canada`, `Chile`, etc.
-- Norwegian production areas: `PO1` through `PO13`
-  (matching the traffic light system zones)
-- Region: `Northern Norway`, `Western Norway`, `Mid-Norway`, etc.
+List-valued controlled field for the wild-salmonids corpus. Canonical tokens
+(template + `vocabulary.json` win over older `PO1`–`PO13` shorthand):
+
+`Norway`, `Norway_PO1` … `Norway_PO13`, `Hardangerfjord`, `British_Columbia`,
+`Discovery_Islands`, `Broughton_Archipelago`, `Scotland`, `Ireland`,
+`North_Atlantic`, `Pacific_Canada`, `England`, `not_applicable`
+
+Add a new token only when a real corpus value cannot be expressed with the
+existing set, and record the addition in `vocabulary.json`. Put non-canonical
+place-name prose into `retrieval_tags` so it stays searchable.
 
 ---
 
