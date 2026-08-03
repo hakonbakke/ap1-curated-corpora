@@ -52,6 +52,13 @@ Rules (MUST follow):
    supports_effect | weak_support | mixed_within_study | no_effect_detected |
    contradicts_effect | critiques_methodology | not_applicable
    (use no_effect_detected, never no_significant_effect)
+5b. controversy_role is a DIFFERENT axis from evidence_direction — never copy
+   evidence_direction values into it. controversy_role is the paper's position
+   in a scientific debate, not its substantive finding on lice effects.
+   Allowed: foundational | supportive | critical | rebuttal |
+   bridge_between_positions | peripheral | not_applicable
+   Do NOT invent values such as challenges_effect, supports_effect, or
+   mixed_within_study for controversy_role.
 6. priority_questions must be a subset of Q1–Q10 justified by the paper's content.
 7. related_documents_* must use existing corpus doc_ids from the provided list when possible;
    otherwise leave empty rather than inventing links.

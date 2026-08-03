@@ -5,3 +5,4 @@ numpy>=1.26.0
 pyyaml>=6.0
 python-dotenv>=1.0.0
 streamlit>=1.35.0
+opendataloader-pdf>=2.4.7

@@ -48,10 +48,14 @@ inclusion/exclusion decisions before proceeding.
 **Actions**:
 - Download PDF from DOI, publisher, or open repository
 - For paywalled content: use institutional access or contact authors
-- Store PDF in SharePoint under `Publications_selected`
+- Store the PDF under
+  `corpora/salmon-lice-and-mortality-of-wild-salmonids/documents/PDFs/`
+  (gitignored; synced via OneDrive). Optional SharePoint mirror under
+  `Publications_selected` is fine, but the working copy for extract/ingest
+  is the local `documents/PDFs/` folder.
 - Generate a stable identifier (folder name = `YYYY_journal_keyword`)
 
-**Output**: PDF in SharePoint; document folder created in GitHub
+**Output**: PDF in `documents/PDFs/`; document folder created in the repo
 
 ---
 
@@ -71,6 +75,13 @@ This runs:
 2. **AI-CURATE** — `scripts/ai_curate_document.py` → `summary.md` + `metadata.yaml` (`ai_draft`)
 3. **AI-VERIFY** — `scripts/ai_verify_document.py` → `qa_report.json`; status `ai_verified` or `ai_draft`
 4. **INDEX** — `scripts/ingest.py --doc …` → `data/corpus.parquet`
+5. **VALIDATE** — `python scripts/validate_corpus.py` (or `--doc …`)
+
+**Decision rule (parquet updates):**
+- Metadata, status, or rationale edits → `python scripts/sync_metadata_to_parquet.py`
+  (no API). If the sync warns about stale embeddings, re-embed those docs.
+- Edits to `rag_summary` or `key_claims`, or any new/removed document →
+  `python scripts/ingest.py --doc <id>` (costs API).
 
 **Outputs per document folder**:
 `extracted.md`, `summary.md`, `metadata.yaml`, `qa_report.json`
@@ -142,7 +153,7 @@ by a human curator before being treated as corpus outputs.
 | Document folder | `YYYY_journal-abbrev_keyword` | `2021_jfd_delousing-mortality` |
 | AI summary | `summary.md` | — |
 | Metadata | `metadata.yaml` | — |
-| Original PDF | Stored in SharePoint `Publications_selected` | — |
+| Original PDF | `documents/PDFs/` (gitignored; OneDrive) | — |
 | Synthesis output | `YYYY-MM-DD_Q[n]_[topic].md` | `2026-03-01_Q1_lice-smolt-mortality.md` |
 
 ---

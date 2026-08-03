@@ -44,15 +44,17 @@ Core questions:
 
 ## Document inventory
 
+No documents have been added yet. This corpus is a stub pending a mandate
+decision (whether it is in scope for AP1).
+
 | ID | Title | Year | Type | Q |
 |---|---|---|---|---|
-| 2021_jfd_delousing-mortality | Estimating cage-level mortality distributions following different delousing treatments | 2021 | peer_reviewed | Q1 |
-| 2025_jfd_post-delousing-mortality | *(to be confirmed)* | 2025 | peer_reviewed | Q1 |
+| — | — | — | — | — |
 
 ---
 
 ## Status
 
-`Active — initial documents added, corpus under development`
+`Stub — empty; awaiting inclusion decision`
 
-See `inclusion_log.md` for curation history.
+See `inclusion_log.md` for curation history (once documents are added).

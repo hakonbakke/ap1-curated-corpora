@@ -39,6 +39,15 @@ To improve the live app, edit `documents/*/metadata.yaml` (`rag_summary`, `key_c
 
 ---
 
+## `scripts/regrade_qa_reports.py`
+
+One-shot migration (2026-08): moved COI/funding false-positive `critical_issues`
+in `qa_report.json` to `soft_issues` and refreshed `curator_review_status`.
+Archived after confirming zero remaining COI items in `critical_issues` across
+all 27 documents. Do not run against a clean corpus.
+
+---
+
 ## `reference_materials/`
 
 `reference_materials/` — methodology notes (e.g. Karpathy knowledge-base transcript). Not part of the evidence corpus.

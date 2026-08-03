@@ -5,7 +5,7 @@ Priorities are relative to **current phase:** deployable AP1 demo + curator QA o
 | ID | Item | Priority | Status | Effort | Notes |
 |----|------|----------|--------|--------|-------|
 | P0-1 | Streamlit Cloud deploy | P0 | done | Low | Deployed and shared with Ragnar; confirm still live + document URL |
-| P0-2 | Expert QA on TLS core | P0 | deferred | Medium | Capacity blocked; replaced by AI verify trust model |
+| P0-2 | Expert QA on TLS core | P0 | rejected | — | No expert field-by-field QA capacity exists or is expected; available expert capacity is paper selection only. AI verify + offline accept is the trust model. |
 | P0-2b | AI curation pipeline (add_paper / curate / verify) | P0 | done | Medium | See `ai-curation-pipeline.md`; human=select only |
 | P0-2c | Backfill verify + offline accept all 27 | P0 | done | Low | 27/27 `ai_verified`; parquet sync without re-embed |
 | P0-3 | RAG smoke-test protocol (EN/NO, 4 queries) | P0 | idea | Low | Document pass/fail; see `rag-retrieval-synthesis.md` |
