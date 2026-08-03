@@ -50,10 +50,9 @@ environment:
   - "laboratory"
 
 geography:
-  - "Norway"
-  - "Austevoll"
-  - "Oppedal"
-  - "Rogaland"
+  - Norway
+  - Austevoll
+  - Rogaland
 
 time_period: "2020–2021"
 
@@ -66,30 +65,26 @@ regulatory_context:
 evidence_type: empirical_experimental
 
 study_design:
-  - "laboratory_challenge"
-  - "controlled_experiment"
+  - laboratory_challenge
 
 data_source:
-  - "laboratory_challenge"
+  - wild_fish_sampling
 
 model_type:
-  - "statistical_regression_model"
-  - "cox_proportional_hazards"
-  - "generalized_linear_mixed_model"
+  - statistical_regression_model
 
 observation_unit:
-  - "individual_parasite"
-  - "individual_fish"
+  - individual_fish
 
 comparison_type:
   - "high_vs_low_infestation"
   - "among_regions"
 
 outcome_domain:
-  - "lice_abundance_on_farms"
-  - "physiological_stress"
-  - "fecundity"
-  - "survival"
+  - lice_abundance_on_farms
+  - physiological_stress
+  - population_abundance
+  - survival
 
 primary_endpoint: "Individual female L. salmonis life history (somatic/reproductive size, age at 2nd-clutch reproduction, early and lifetime fecundity, lifespan) under low vs high host density × infection dose"
 secondary_endpoints:
@@ -103,9 +98,8 @@ effect_scale: individual_level
 uncertainty_emphasis: moderate
 
 main_uncertainty_sources:
-  - "transferability"
-  - "tank_vs_open_pen_conditions"
-  - "host_stress_vs_immunity_confounding"
+  - transferability
+  - none_highlighted
 
 key_claims:
   - "178 RFID-tagged (p-Chip) adult female lice tracked weekly Nov 2020–Dec 2021 across six 500L tanks; 99 post-smolt hosts; lice from three Norwegian farm locations (Austevoll, Oppedal, Fosså)"
@@ -189,6 +183,14 @@ retrieval_tags:
   - "immune_response"
   - "Lepeophtheirus_salmonis"
   - "aquaculture_spillover"
+  - Oppedal
+  - cox_proportional_hazards
+  - generalized_linear_mixed_model
+  - "controlled_experiment"
+  - "laboratory_challenge"
+  - "individual_parasite"
+  - "tank_vs_open_pen_conditions"
+  - "host_stress_vs_immunity_confounding"
 
 curator_note: "ODL refresh 2026-06-03 from extracted.md"
 
@@ -196,3 +198,4 @@ curator_review_status: ai_verified
 added_by: Claude
 added_date: "2026-06-03"
 # ai_verify: regraded → ai_verified (moved_coi=1, critical=0)
+inclusion_decided_by: ""

@@ -69,9 +69,9 @@ evidence_direction: mixed_within_study
 effect_scale: both
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - "calibration_data"
-  - "infestation_to_mortality_thresholds"
-  - "institutional_position_of_authors"
+  - calibration_data
+  - infestation_to_mortality_thresholds
+  - none_highlighted
 key_claims:
   - "Van Nes et al. (raq.12953) welcomed for highlighting uncertainties but argued biased toward low-impact evidence"
   - "Migration timing: five acoustic-telemetry river-years insufficient vs 343+ river-years in Vollset et al. (2021) model; EG does not assume 28-day coastal residence — VPS models use swimming speeds implying shorter residence for most rivers"
@@ -139,8 +139,10 @@ retrieval_tags:
   - "sentinel_cages"
   - "mortality_threshold"
   - "debate_chain"
+  - "institutional_position_of_authors"
 curator_note: "ODL refresh 2026-06-03 from extracted.md"
 curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

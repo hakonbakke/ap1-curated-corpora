@@ -94,10 +94,27 @@ retrieval_tags:
   - salmon_lice
   - Atlantic_salmon
   - aquaculture_impact
+  - "population-level impact"
 curator_note: >
   This study is a valuable addition to the corpus, providing insights into the population-level impacts of salmon lice from aquaculture on wild salmonids. It highlights the need for targeted management strategies to mitigate these effects.
+secondary_endpoints:
+  - "Effect by sea-age class (1SW, 2SW, 3SW)"
+  - "Predicted reduction in total returns at given PIM levels"
+
+primary_endpoint: "Association between TLS/PIM estimates and observed adult salmon returns"
+
 curator_review_status: ai_verified
 added_by: ai_curate_pipeline
 added_date: 2026-08-03
 inclusion_decided_by: ""
 # ai_verify: AI verify 2026-08-03: PASS (0 critical, 1 soft). See qa_report.json.
+comparison_type:
+  - observed_vs_modelled
+  - among_regions
+  - among_years
+outcome_domain:
+  - adult_returns
+  - mortality
+  - population_abundance
+  - model_performance
+

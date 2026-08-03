@@ -35,50 +35,47 @@ host_species:
 
 wild_or_farmed_focus: wild
 life_stage:
-  - "post-smolt"
+  - post_smolt
   - "adult"
 parasite_species: []
 environment:
-  - "marine"
-  - "Norwegian Sea"
-  - "North Atlantic"
+  - coastal
+  - shelf_sea
+  - open_ocean
 geography:
-  - "River Imsa, Norway (Boknafjorden, south-western Norway)"
-  - "Eastern Norwegian Sea"
-  - "North Atlantic Ocean"
+  - Norway
+  - Eastern_Norwegian_Sea
+  - North_Atlantic
 time_period: "1976-2010"
 seasonality_focus:
-  - "spring"
-  - "summer"
-  - "annual"
+  - spring
+  - summer
+  - full_year
 regulatory_context:
   - "none"
 
 evidence_type: empirical_observational
 
 study_design:
-  - "long_term_time_series"
-  - "wild_and_hatchery_comparison"
-  - "regression_analysis"
-  - "backcalculation_from_scales"
+  - field_sampling
+  - statistical_analysis
 data_source:
-  - "fish_trap_monitoring_River_Imsa"
-  - "hatchery_release_and_recapture"
-  - "scale_backcalculation"
-  - "Norwegian_Sea_surface_temperature_records"
+  - trap_net_data
+  - wild_fish_sampling
+  - published_literature
 observation_unit:
-  - "cohort"
-  - "individual_fish"
+  - fish_group
+  - individual_fish
 comparison_type:
-  - "wild_vs_hatchery"
-  - "temporal_trend_regression"
-  - "environmental_correlation"
+  - mixed
+  - among_years
 outcome_domain:
-  - "marine_survival"
-  - "body_size_at_maturity"
-  - "post-smolt_growth"
-  - "age_at_maturity"
-  - "condition_factor"
+  - marine_survival
+  - population_abundance
+  - physiological_stress
+model_type:
+  - none
+
 primary_endpoint: "Temporal trends in total length, mass, condition factor and marine survival of River Imsa 1SW Atlantic salmon 1976-2010, and correlation with North Atlantic sea surface temperature"
 secondary_endpoints:
   - "Proportion of cohort maturing as 1SW vs MSW fish"
@@ -90,10 +87,7 @@ evidence_direction: supports_effect
 effect_scale: population_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - "Confounding between multiple concurrent environmental changes (temperature, food web, climate)"
-  - "Scale of generalisation from single Norwegian river (River Imsa) to broader Atlantic salmon populations"
-  - "Inability to disentangle contributions of specific environmental drivers (temperature vs. zooplankton vs. food web restructuring)"
-  - "Lack of direct measurement of prey availability in oceanic feeding areas"
+  - none_highlighted
 key_claims:
   - "Wild 1SW River Imsa salmon: mean LT fell 63→54 cm (1976–2010 regressions, r²≈0.51), ~40% mass decline (2.0→1.2 kg); hatchery releases show parallel trends (r²≈0.36 for LT)."
   - "1SW LT negatively correlated with Norwegian Sea summer/winter SST (e.g. wild summer slope −28.6 mm °C⁻¹, p<0.05) but temperature explains only modest variance (r²≈0.13–0.32)."
@@ -127,7 +121,7 @@ coi_notes: >
   submitted for publication, which is unusual and may reflect journal archiving conventions.
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
-consensus_signal: strong_agreement
+consensus_signal: high_agreement
 quality_signal: strong
 quality_rationale: >
   Exceptionally long (35-year) time series from a well-studied and intensively monitored Norwegian
@@ -139,7 +133,7 @@ quality_rationale: >
   consistent with other long-term studies of Atlantic salmon marine survival in Norway and the
   North Atlantic.
 
-controversy_role: neutral
+controversy_role: peripheral
 
 relevance_signal: medium
 relevance_rationale: >
@@ -199,6 +193,33 @@ retrieval_tags:
   - "non-lice_mortality"
   - "Q9_population_impacts"
   - "oceanographic_drivers"
+  - "population-level impact"
+  - "River Imsa, Norway (Boknafjorden, south-western Norway)"
+  - "Eastern Norwegian Sea"
+  - "North Atlantic Ocean"
+  - "marine"
+  - "Norwegian Sea"
+  - "North Atlantic"
+  - "annual"
+  - "long_term_time_series"
+  - "wild_and_hatchery_comparison"
+  - "regression_analysis"
+  - "backcalculation_from_scales"
+  - "fish_trap_monitoring_River_Imsa"
+  - "hatchery_release_and_recapture"
+  - "scale_backcalculation"
+  - "Norwegian_Sea_surface_temperature_records"
+  - "cohort"
+  - "wild_vs_hatchery"
+  - "temporal_trend_regression"
+  - "environmental_correlation"
+  - "body_size_at_maturity"
+  - "age_at_maturity"
+  - "condition_factor"
+  - "Confounding between multiple concurrent environmental changes (temperature, food web, climate)"
+  - "Scale of generalisation from single Norwegian river (River Imsa) to broader Atlantic salmon populations"
+  - "Inability to disentangle contributions of specific environmental drivers (temperature vs. zooplankton vs. food web restructuring)"
+  - "Lack of direct measurement of prey availability in oceanic feeding areas"
 
 curator_note: >
   Published in Journal of Fish Biology 2016, 88: 618-637. Authors are from Norwegian Institute
@@ -213,3 +234,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

@@ -32,7 +32,7 @@ causal_chain_stage:
   - "farm_lice_abundance"
   - "host_exposure"
   - "infestation"
-  - "management_intervention"
+  - regulatory_assessment
   - "regulatory_assessment"
 
 host_species:
@@ -44,12 +44,12 @@ wild_or_farmed_focus: wild
 life_stage:
   - "juvenile"
 parasite_species:
-  - "Lepeophtheirus salmonis"
-  - "Caligus clemensi"
+  - lepeophtheirus_salmonis
+  - caligus_clemensi
 environment:
-  - "coastal_marine"
+  - coastal
 geography:
-  - "Discovery Islands, British Columbia, Canada"
+  - Discovery_Islands
 time_period: "2017-2024"
 seasonality_focus:
   - "spring"
@@ -59,21 +59,20 @@ regulatory_context:
 evidence_type: empirical_observational
 
 study_design:
-  - "longitudinal_time_series"
-  - "natural_experiment"
-  - "before_after_aquaculture_removal"
+  - field_sampling
 data_source:
-  - "beach_seine_sampling"
-  - "microscopic_lice_enumeration"
+  - wild_fish_sampling
 observation_unit:
-  - "individual_fish"
-  - "site_year"
+  - individual_fish
+  - site
 comparison_type:
-  - "pre_post_aquaculture_removal"
-  - "temporal_trend"
+  - farm_present_vs_removed
+  - among_years
 outcome_domain:
-  - "sea_lice_prevalence"
-  - "sea_lice_abundance"
+  - infestation_on_wild_fish
+model_type:
+  - none
+
 primary_endpoint: "Mean abundance and prevalence of L. salmonis and C. clemensi on juvenile chum and pink salmon 2017-2024"
 secondary_endpoints:
   - "Relative proportions of lice species by year"
@@ -84,10 +83,8 @@ evidence_direction: no_effect_detected
 effect_scale: population_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - "Unknown contribution of natural reservoir hosts (resident Pacific salmon, herring, stickleback)"
-  - "Inter-annual environmental variability confounding attribution"
-  - "Limited spatial coverage of wild reservoir host sampling"
-  - "Only 2 years post-complete-removal (2023-2024)"
+  - none_highlighted
+  - sampling_representativeness
 key_claims:
   - "Sea lice infestations on juvenile chum and pink salmon persisted in the Discovery Islands despite zero Atlantic salmon aquaculture production from 2022 onwards"
   - "In 2024 (0 MT biomass), pink mean total abundance 0.18±0.03 exceeded all 2017–2019; chum 0.15±0.02 exceeded 2017 (0.09) and 2018 (0.06); pink 2023 had 0 lice of either species"
@@ -131,7 +128,7 @@ coi_notes: >
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: contested
-quality_signal: moderate
+quality_signal: medium
 quality_rationale: >
   Short communication with a robust 8-year observational time series and rigorous standardised methods
   (DFO beach seine protocols, microscopic lice enumeration). The natural experiment design is valuable,
@@ -139,7 +136,7 @@ quality_rationale: >
   communication limit the depth of causal inference. Direct rebuttal of Routledge and Morton (2023)
   using the same dataset extended by two additional years.
 
-controversy_role: challenges_effect
+controversy_role: critical
 
 relevance_signal: high
 relevance_rationale: >
@@ -198,6 +195,24 @@ retrieval_tags:
   - "farm_lice_contribution"
   - "natural_reservoir"
   - "Q1_attribution"
+  - management_intervention
+  - "Discovery Islands, British Columbia, Canada"
+  - "Lepeophtheirus salmonis"
+  - "Caligus clemensi"
+  - "coastal_marine"
+  - "longitudinal_time_series"
+  - "before_after_aquaculture_removal"
+  - "beach_seine_sampling"
+  - "microscopic_lice_enumeration"
+  - "site_year"
+  - "pre_post_aquaculture_removal"
+  - "temporal_trend"
+  - "sea_lice_prevalence"
+  - "sea_lice_abundance"
+  - "Unknown contribution of natural reservoir hosts (resident Pacific salmon, herring, stickleback)"
+  - "Inter-annual environmental variability confounding attribution"
+  - "Limited spatial coverage of wild reservoir host sampling"
+  - "Only 2 years post-complete-removal (2023-2024)"
 
 curator_note: "ODL refresh 2026-06-03 from extracted.md"
 
@@ -205,3 +220,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: regraded → ai_verified (moved_coi=1, critical=0)
+inclusion_decided_by: ""

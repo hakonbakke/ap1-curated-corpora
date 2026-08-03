@@ -58,8 +58,7 @@ evidence_direction: supports_effect
 effect_scale: individual_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - laboratory_conditions
-  - infection_success_rate
+  - none_highlighted
 key_claims:
   - "Infection intensity of 0.38 lice g−1 led to osmoregulatory impairment in Atlantic salmon."
   - "Threshold values for plasma ion changes were 0.18 lice g−1 for Cl− and 0.22 lice g−1 for Na+."
@@ -100,6 +99,8 @@ retrieval_tags:
   - "osmoregulation"
   - "salmon lice"
   - "Atlantic salmon"
+  - "laboratory_conditions"
+  - "infection_success_rate"
 curator_note: "This study provides important empirical data on the physiological effects of salmon lice on Atlantic salmon, relevant for conservation and management efforts."
 curator_review_status: ai_verified
 added_by: ai_curate_pipeline

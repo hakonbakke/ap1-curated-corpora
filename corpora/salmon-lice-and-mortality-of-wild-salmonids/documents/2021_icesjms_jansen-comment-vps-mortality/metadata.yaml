@@ -100,10 +100,10 @@ effect_scale: population_level
 uncertainty_emphasis: high
 
 main_uncertainty_sources:
-  - "calibration_data"
-  - "model_structure"
-  - "sampling_representativeness"
-  - "migration_duration"
+  - calibration_data
+  - model_structure
+  - sampling_representativeness
+  - migration_timing
 
 key_claims:
   - "N=7929 trawled post-smolts (2017-2020 NMDC); excluded 339 tagged, 326 scale-loss (mean lice 1.9 vs 3.05 without)"
@@ -189,6 +189,7 @@ retrieval_tags:
   - "p=0.003"
   - "INAQ"
   - "MA4 MA5"
+  - "migration_duration"
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Table 1 area-year examples and Table 2 class counts added.
@@ -198,3 +199,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

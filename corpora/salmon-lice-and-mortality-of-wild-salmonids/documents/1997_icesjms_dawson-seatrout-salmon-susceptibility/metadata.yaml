@@ -206,3 +206,4 @@ curator_review_status: ai_verified
 added_by: Claude
 added_date: "2026-03-27"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

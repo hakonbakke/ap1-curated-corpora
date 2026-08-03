@@ -205,6 +205,7 @@ retrieval_tags:
   - "Atlantic salmon conservation"
   - "classification system"
   - "Norwegian expert group"
+  - "population-level impact"
 
 curator_note: >
   [UNVERIFIED: Del D og E] This is the formal output of Norway's national salmon scientific advisory committee. Expert should confirm that the current state of knowledge (post-2017) has not significantly revised the ranking of threats. Ragnar Tveterås may have specific views on how this relates to the TLS evidence base. ODL refresh 2026-06-03 from extracted.md (composite scores, farm:wild ratios, lice mortality range, introgression statistics).
@@ -218,3 +219,4 @@ curator_review_status: ai_verified
 added_by: Claude
 added_date: "2026-03-27"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

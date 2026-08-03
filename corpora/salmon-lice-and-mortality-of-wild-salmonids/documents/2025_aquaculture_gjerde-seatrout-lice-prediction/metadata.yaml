@@ -88,7 +88,6 @@ comparison_type:
 
 outcome_domain:
   - infestation_on_wild_fish
-  - infestation_pressure
   - model_performance
   - regulatory_classification
 
@@ -202,6 +201,8 @@ retrieval_tags:
   - "TLS model performance"
   - "Myksvoll"
   - "hydrodynamic model"
+  - infestation_pressure
+  - "infestation"
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Gjerde expert witness in 2020/2021 farmer lawsuits (both lost). Reanalysis of Myksvoll 2018: 102 sites, 5211 trout, RPD ~1.19, accuracy 0.63 for TLS colours.
@@ -215,3 +216,4 @@ curator_review_status: ai_verified
 added_by: Claude
 added_date: "2026-03-27"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

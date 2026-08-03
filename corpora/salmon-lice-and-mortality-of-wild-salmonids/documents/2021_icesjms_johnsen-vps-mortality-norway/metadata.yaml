@@ -222,3 +222,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: regraded → ai_verified (moved_coi=2, critical=0)
+inclusion_decided_by: ""

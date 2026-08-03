@@ -62,7 +62,7 @@ environment:
   - modelled_environment
 
 geography:
-  - "Norway (nationwide, 13 production zones, 401 rivers)"
+  - Norway
 
 time_period: "2014-2016"
 
@@ -87,16 +87,19 @@ data_source:
   - wild_fish_sampling
 
 model_type:
-  - "Quantitative risk assessment model: (1) farm egg production from reported adult female lice counts and temperature; (2) empirical kernel-density spatial infestation pressure model calibrated against sentinel cages; (3) shortest-path migration routing from river outlets to open sea at constant progression rate; (4) weight-dependent lice-induced mortality from Taranger et al. (2015) thresholds"
+  - risk_assessment_model
+  - infestation_model
+  - statistical_regression_model
 
 observation_unit:
-  - "individual post-smolt; river-level mortality estimate aggregated to production zone"
+  - mixed
 
 comparison_type:
-  - "River-level and production-zone-level risk estimates across 13 zones for 2014-2016; best-case vs. worst-case scenario comparisons; sensitivity analyses for key parameters"
+  - among_regions
+  - among_years
 
 outcome_domain:
-  - "Lice-induced mortality fraction of seaward-migrating post-smolts; production-zone biomass-adjusted louse egg output"
+  - mortality
 
 primary_endpoint: "Estimated proportion of Atlantic salmon post-smolts from 401 Norwegian rivers dying from salmon louse infestation during seaward migration, years 2014-2016"
 secondary_endpoints:
@@ -113,12 +116,11 @@ effect_scale: population_level
 uncertainty_emphasis: high
 
 main_uncertainty_sources:
-  - "Lice tolerance thresholds (Taranger et al. 2015) used for mortality conversion are acknowledged to be poorly documented"
-  - "Many processes in the chain of events are poorly documented; the model chains multiple uncertain estimates"
-  - "Post-smolt body weight assumption (20 g) may not reflect actual population variation"
-  - "Shortest-path migration routing is a simplification; actual routes may differ due to fjord topology and current patterns"
-  - "Sentinel cage calibration data used to parameterise infestation model may not represent all coastal habitats"
-  - "Migration timing from river outlets based on limited data for many rivers"
+  - infestation_to_mortality_thresholds
+  - model_structure
+  - none_highlighted
+  - migration_timing
+  - calibration_data
 
 key_claims:
   - "TLS-oriented model for 401 rivers, 13 production zones, 2014–2016: farm egg output per biomass varies up to 8.1× (zones 3 vs 13); Pearson r=0.70 with local biomass density (p=0.008)."
@@ -155,12 +157,12 @@ coi_notes: >
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: moderate_agreement
 
-quality_signal: moderate
+quality_signal: medium
 
 quality_rationale: >
   Published in Epidemics, a respected peer-reviewed journal for infectious disease modelling. The paper is methodologically transparent and includes sensitivity analyses. However, the authors themselves acknowledge that many processes in the causal chain are poorly documented, and the model relies on several simplifying assumptions (shortest-path routing, constant progression rate, sentinel cage calibration) that were later identified as limitations relative to the IMR approach. The paper's use for official regulatory purposes (Norwegian TLS) implies external scrutiny, but its core assumptions remain contested.
 
-controversy_role: supports_effect
+controversy_role: foundational
 
 relevance_signal: high
 
@@ -200,13 +202,25 @@ retrieval_tags:
   - "sentinel_cage"
   - "shortest_path_migration"
   - "kernel_density"
-  - "infestation_pressure"
+  - infestation
   - "lice_induced_mortality"
   - "post_smolt_migration"
   - "density_dependence"
   - "401_rivers"
   - "aquaculture_regulation"
   - "louse_egg_production"
+  - infestation_pressure
+  - "Norway (nationwide, 13 production zones, 401 rivers)"
+  - "Quantitative risk assessment model: (1) farm egg production from reported adult female lice counts and temperature; (2) empirical kernel-density spatial infestation pressure model "
+  - "individual post-smolt; river-level mortality estimate aggregated to production zone"
+  - "Lice-induced mortality fraction of seaward-migrating post-smolts; production-zone biomass-adjusted louse egg output"
+  - "River-level and production-zone-level risk estimates across 13 zones for 2014-2016; best-case vs. worst-case scenario co"
+  - "Lice tolerance thresholds (Taranger et al. 2015) used for mortality conversion are acknowledged to be poorly documented"
+  - "Many processes in the chain of events are poorly documented; the model chains multiple uncertain estimates"
+  - "Post-smolt body weight assumption (20 g) may not reflect actual population variation"
+  - "Shortest-path migration routing is a simplification; actual routes may differ due to fjord topology and current patterns"
+  - "Sentinel cage calibration data used to parameterise infestation model may not represent all coastal habitats"
+  - "Migration timing from river outlets based on limited data for many rivers"
 
 curator_note: >
   Open access under CC BY-NC-ND 4.0. This is the NVI model paper for the Norwegian TLS, published in 2018 before the IMR VPS model (Johnsen et al. 2021). The paper predates the TLS implementation and was developed as part of the scientific basis for the system. Key structural difference from the Johnsen VPS model: migration routing is shortest-path (not hydrodynamic), calibration uses sentinel cages (not genetic assignment), and the infestation model is an empirical kernel-density function (not a mechanistic larval dispersal model). Peder Andreas Jansen is both a co-author here and the lead author of the 2021 critique of the IMR model, making this paper an important reference point for understanding the NVI-IMR model debate within the Norwegian TLS scientific process. ODL refresh 2026-06-03 from extracted.md (zone mortality ranges, sentinel model coefficients, sensitivity design).
@@ -215,3 +229,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

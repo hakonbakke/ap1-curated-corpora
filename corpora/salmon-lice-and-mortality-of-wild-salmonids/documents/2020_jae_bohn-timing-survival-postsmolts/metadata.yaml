@@ -61,16 +61,15 @@ environment:
   - "coastal"
 
 geography:
-  - "Hardangerfjord, Norway"
-  - "River Etne, Hordaland"
-  - "National Salmon Fjord"
+  - Hardangerfjord
+  - Norway
 
 time_period: "2013-2017"
 
 seasonality_focus:
-  - "spring"
-  - "early summer"
-  - "migration_period"
+  - spring
+  - summer
+  - migration_period
 
 regulatory_context:
   - "Norway_TLS"
@@ -78,15 +77,15 @@ regulatory_context:
 evidence_type: empirical_experimental
 
 study_design:
-  - "randomized_controlled_trial"
-  - "mark_recapture"
-  - "sentinel_cage"
-  - "hydrodynamic_modelling"
+  - laboratory_challenge
+  - field_sampling
+  - sentinel_cage
+  - hydrodynamic_modelling
 
 data_source:
-  - "coded_wire_tag_mark_recapture"
-  - "sentinel_cages"
-  - "hydrodynamic_model_output"
+  - wild_fish_sampling
+  - sentinel_cages
+  - hydrodynamic_model_output
 
 model_type:
   - "hydrodynamic_model"
@@ -101,10 +100,10 @@ comparison_type:
   - "before_after"
 
 outcome_domain:
-  - "survival"
-  - "marine_survival"
-  - "infestation_pressure"
-  - "behaviour_change"
+  - survival
+  - marine_survival
+  - infestation_on_wild_fish
+  - behaviour_change
 
 primary_endpoint: "Return rate (recapture proportion) of tagged smolts after 1-4 years at sea"
 secondary_endpoints:
@@ -224,6 +223,14 @@ retrieval_tags:
   - "sentinel cage"
   - "TLS threshold"
   - "migration timing"
+  - infestation_pressure
+  - "Hardangerfjord, Norway"
+  - "River Etne, Hordaland"
+  - "National Salmon Fjord"
+  - "early summer"
+  - "randomized_controlled_trial"
+  - "mark_recapture"
+  - "coded_wire_tag_mark_recapture"
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access. Table 1 release counts and Table 2 GLM
@@ -233,3 +240,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: regraded → ai_verified (moved_coi=0, critical=0)
+inclusion_decided_by: ""

@@ -27,58 +27,50 @@ priority_questions:
   - "Q10"
 
 causal_chain_stage:
-  - "population-level impact of lice-induced mortality"
-  - "monitoring and validation of management effectiveness"
-
+  - population_impacts
+  - monitoring_methods
+  - model_validation
 host_species:
-  - "Salmo salar (Atlantic salmon)"
-  - "Salmo trutta (anadromous brown trout / sea trout)"
+  - atlantic_salmon
+  - sea_trout
 wild_or_farmed_focus: wild
 life_stage:
-  - "adult (returning spawners)"
-  - "smolt (smolt age used for standardization)"
+  - returning_adult
+  - smolt
 parasite_species:
   - "not_specified"
 environment:
-  - "river"
-  - "coastal fjord"
+  - freshwater
+  - fjord
 geography:
-  - "Norway (8 river regions from 58.6N to 69.0N)"
-  - "Bjerkreimselva (Region 1)"
-  - "Frafjord area (Region 2)"
-  - "Hardanger area (Region 3)"
-  - "Sunnfjord (Region 4)"
-  - "Orkla/Trondheimsfjord (Region 5)"
-  - "Nordfjord area (Region 6)"
-  - "Salten (Region 7)"
-  - "Malselva/Troms (Region 8)"
+  - Norway
+  - Hardangerfjord
+  - Nordfjord
 time_period: "2019"
 seasonality_focus:
-  - "not_specified"
+  - not_applicable
 regulatory_context:
-  - "Norwegian Traffic Light System (TLS)"
-  - "Norwegian Scientific Committee for Salmon Management (VRL)"
-  - "Spawning target (ST) management model"
+  - Norway_TLS
+  - Norway_expert_group
+  - none
 evidence_type: methods
 study_design:
-  - "comparative cross-regional methods study"
-  - "multi-river population monitoring"
+  - statistical_analysis
+  - field_sampling
 data_source:
-  - "underwater video surveillance systems (fish ladders)"
-  - "snorkelling surveys of spawning populations"
-  - "catch statistics"
-  - "hydrogeographic data (river length, area, mean discharge, precipitation field)"
+  - wild_fish_sampling
+  - published_literature
 observation_unit:
-  - "river region (N=8 regions)"
-  - "individual river (N=27 rivers)"
+  - production_area
+  - river
 comparison_type:
-  - "merged PFA (salmon + trout) vs single-species PFA (salmon only)"
-  - "comparison across 8 Norwegian river regions"
-  - "standardized vs raw PFA values"
+  - mixed
+  - among_regions
 outcome_domain:
-  - "pre-fishery abundance (PFA)"
-  - "population status assessment"
-  - "regional variation in salmonid populations"
+  - population_abundance
+model_type:
+  - statistical_regression_model
+
 primary_endpoint: "Standardised merged pre-fishery abundance (PFA) of Atlantic salmon and anadromous brown trout combined, per river region"
 secondary_endpoints:
   - "Single-species PFA (Atlantic salmon only)"
@@ -90,11 +82,8 @@ evidence_direction: not_applicable
 effect_scale: population_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - "Unknown interspecific competition between salmon and sea trout not accounted for in spawning target models"
-  - "PFA estimates from video and snorkelling have variable precision depending on river conditions"
-  - "Catch statistics are subject to variable fishing effort and unknown catchability"
-  - "Spatial straying between rivers (especially sea trout) complicates single-river population definition"
-  - "Data from a single year (2019) limits temporal generalizability"
+  - model_structure
+  - none_highlighted
 key_claims:
   - "In 2019, standardised merged PFA (salmon + sea trout) in regions 1, 3, and 6 was 2–4× higher than in other regions; total inter-regional range was >4× between highest and lowest"
   - "Spearman rank correlation between ST-based and merged-PFA regional rankings was non-significant (rs = −0.071, n = 8, p = 0.882); only region 1 shared the same rank under both approaches"
@@ -124,12 +113,12 @@ coi_notes: >
   Authors declare no conflict of interest. Funded by Norwegian Seafood Research Fund (SALT2020, 901575), Vestland Fylkeskommune (306-2020), and POP-Kunnskapsinkubator (Salmon Tracking 2020). Lamberg (Skandinavisk Naturovervåking); Imsland (Akvaplan-niva, UiB).
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
-consensus_signal: unclear
-quality_signal: moderate
+consensus_signal: insufficient_evidence
+quality_signal: medium
 quality_rationale: >
   Methodological paper presenting a reasonable and practical framework for improving salmonid population monitoring in Norway. The study uses real monitoring data from 27 rivers across 8 regions, with sensible standardisation methods. However, the analysis is cross-sectional (single year), the regional coverage is convenience-based, and the proposed metric has not been prospectively validated. Published in MDPI Fishes (open access), which has lower impact than specialist fisheries journals; peer review quality is variable. The core methodological proposal is sound and practically motivated.
 
-controversy_role: practical_implications
+controversy_role: peripheral
 
 relevance_signal: medium
 relevance_rationale: >
@@ -173,6 +162,46 @@ retrieval_tags:
   - "snorkelling survey"
   - "interspecific competition"
   - "smolt age standardisation"
+  - "adult (returning spawners)"
+  - "smolt (smolt age used for standardization)"
+  - "population-level impact"
+  - "population-level impact of lice-induced mortality"
+  - "monitoring and validation of management effectiveness"
+  - "Norway (8 river regions from 58.6N to 69.0N)"
+  - "Bjerkreimselva (Region 1)"
+  - "Frafjord area (Region 2)"
+  - "Hardanger area (Region 3)"
+  - "Sunnfjord (Region 4)"
+  - "Orkla/Trondheimsfjord (Region 5)"
+  - "Nordfjord area (Region 6)"
+  - "Salten (Region 7)"
+  - "Malselva/Troms (Region 8)"
+  - "Norwegian Traffic Light System (TLS)"
+  - "Norwegian Scientific Committee for Salmon Management (VRL)"
+  - "Spawning target (ST) management model"
+  - "Salmo salar (Atlantic salmon)"
+  - "Salmo trutta (anadromous brown trout / sea trout)"
+  - "river"
+  - "coastal fjord"
+  - "comparative cross-regional methods study"
+  - "multi-river population monitoring"
+  - "underwater video surveillance systems (fish ladders)"
+  - "snorkelling surveys of spawning populations"
+  - "catch statistics"
+  - "hydrogeographic data (river length, area, mean discharge, precipitation field)"
+  - "river region (N=8 regions)"
+  - "individual river (N=27 rivers)"
+  - "merged PFA (salmon + trout) vs single-species PFA (salmon only)"
+  - "comparison across 8 Norwegian river regions"
+  - "standardized vs raw PFA values"
+  - "pre-fishery abundance (PFA)"
+  - "population status assessment"
+  - "regional variation in salmonid populations"
+  - "Unknown interspecific competition between salmon and sea trout not accounted for in spawning target models"
+  - "PFA estimates from video and snorkelling have variable precision depending on river conditions"
+  - "Catch statistics are subject to variable fishing effort and unknown catchability"
+  - "Spatial straying between rivers (especially sea trout) complicates single-river population definition"
+  - "Data from a single year (2019) limits temporal generalizability"
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access (CC BY, MDPI). Methodological paper — not direct lice-mortality measurement. Key numbers: 27 rivers, 8 regions, 2019 only; Spearman rs = −0.071 (ST vs merged PFA ranks); >4× PFA range; smolt age 2.3–4.1 yr.
@@ -181,3 +210,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

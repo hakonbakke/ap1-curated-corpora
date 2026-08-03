@@ -60,10 +60,10 @@ evidence_direction: critiques_methodology
 effect_scale: both
 uncertainty_emphasis: high
 main_uncertainty_sources:
-  - "calibration_data"
-  - "migration_timing"
-  - "infestation_to_mortality_thresholds"
-  - "farm_larvae_production_estimates"
+  - calibration_data
+  - migration_timing
+  - infestation_to_mortality_thresholds
+  - none_highlighted
 key_claims:
   - "Review (raq.12953) peer-reviewed with five reviewers; Stige et al. claims of bias and 'misunderstanding' are not scientifically justified"
   - "TLS migration timing uses 25% emigration criterion + fixed 40-day period (Vollset et al. 2021; EG reports 2017, 2022) — acoustic telemetry in review (earlier, shorter migration) not incorporated into TLS estimates"
@@ -124,8 +124,10 @@ retrieval_tags:
   - "calibration_data"
   - "post_attachment_loss"
   - "Expert_Group_response"
+  - "farm_larvae_production_estimates"
 curator_note: "ODL refresh 2026-06-03 from extracted.md"
 curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

@@ -32,7 +32,7 @@ causal_chain_stage:
   - "farm_lice_abundance"
   - "host_exposure"
   - "infestation"
-  - "management_intervention"
+  - regulatory_assessment
   - "regulatory_assessment"
 
 host_species:
@@ -44,15 +44,15 @@ wild_or_farmed_focus: wild
 life_stage:
   - "juvenile"
 parasite_species:
-  - "Lepeophtheirus salmonis"
-  - "Caligus clemensi"
+  - lepeophtheirus_salmonis
+  - caligus_clemensi
 environment:
-  - "coastal_marine"
+  - coastal
 geography:
-  - "Broughton Archipelago, British Columbia, Canada"
-  - "Tribune Channel"
-  - "Fife Sound"
-  - "Knight Inlet"
+  - Broughton_Archipelago
+  - Tribune_Channel
+  - Fife_Sound
+  - Knight_Inlet
 time_period: "2016-2024"
 seasonality_focus:
   - "spring"
@@ -62,24 +62,22 @@ regulatory_context:
 evidence_type: empirical_observational
 
 study_design:
-  - "longitudinal_time_series"
-  - "natural_experiment"
-  - "before_after_aquaculture_removal"
-  - "before_after_3_phases"
+  - field_sampling
 data_source:
-  - "beach_seine_sampling"
-  - "microscopic_lice_enumeration"
-  - "industry_biomass_records"
+  - wild_fish_sampling
+  - farm_lice_counts
 observation_unit:
-  - "individual_fish"
-  - "site_year"
+  - individual_fish
+  - site
 comparison_type:
-  - "pre_post_aquaculture_removal"
-  - "temporal_trend"
-  - "three_phase_comparison"
+  - farm_present_vs_removed
+  - among_years
+  - before_after
 outcome_domain:
-  - "sea_lice_prevalence"
-  - "sea_lice_intensity"
+  - infestation_on_wild_fish
+model_type:
+  - none
+
 primary_endpoint: "Annual prevalence and intensity of L. salmonis and C. clemensi on juvenile chum and pink salmon 2016-2024"
 secondary_endpoints:
   - "Relative species proportions of lice"
@@ -91,10 +89,8 @@ evidence_direction: no_effect_detected
 effect_scale: population_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - "Unknown natural reservoir host abundance and lice burden in BA"
-  - "Environmental drivers of inter-annual lice variability unquantified"
-  - "Reduced sample size per site in 2019-2024 (15 vs 30 fish per site)"
-  - "Phased rather than abrupt aquaculture removal makes causal inference more complex"
+  - none_highlighted
+  - sampling_representativeness
 key_claims:
   - "2016–2024: n = 2,868 juvenile salmon (1,463 chum, 1,405 pink) at 14 fixed beach-seine sites; farm biomass 21,645 t (17 sites, 2019) → 614 t (2 sites, 2024), a 97% reduction"
   - "2024 all-lice prevalence: chum 40.7%, pink 40.3% — similar to or above 2016–2021 full-aquaculture years; 2023 lows chum 12.5%, pink 7.3%"
@@ -141,7 +137,7 @@ coi_notes: >
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: contested
-quality_signal: moderate
+quality_signal: medium
 quality_rationale: >
   Strong study design as a natural experiment with the longest available before/during/after time
   series for the Broughton Archipelago (9 years, 14 fixed sites). However, the study is descriptive
@@ -150,7 +146,7 @@ quality_rationale: >
   post-removal comparisons. The Broughton Archipelago is the most thoroughly studied sea lice system
   in BC, making this high-value evidence despite these limitations.
 
-controversy_role: challenges_effect
+controversy_role: critical
 
 relevance_signal: high
 relevance_rationale: >
@@ -214,6 +210,30 @@ retrieval_tags:
   - "farm_lice_contribution"
   - "Q1_attribution"
   - "finfish_aquaculture"
+  - management_intervention
+  - "Broughton Archipelago, British Columbia, Canada"
+  - "Tribune Channel"
+  - "Fife Sound"
+  - "Knight Inlet"
+  - "Lepeophtheirus salmonis"
+  - "Caligus clemensi"
+  - "coastal_marine"
+  - "longitudinal_time_series"
+  - "before_after_aquaculture_removal"
+  - "before_after_3_phases"
+  - "beach_seine_sampling"
+  - "microscopic_lice_enumeration"
+  - "industry_biomass_records"
+  - "site_year"
+  - "pre_post_aquaculture_removal"
+  - "temporal_trend"
+  - "three_phase_comparison"
+  - "sea_lice_prevalence"
+  - "sea_lice_intensity"
+  - "Unknown natural reservoir host abundance and lice burden in BA"
+  - "Environmental drivers of inter-annual lice variability unquantified"
+  - "Reduced sample size per site in 2019-2024 (15 vs 30 fish per site)"
+  - "Phased rather than abrupt aquaculture removal makes causal inference more complex"
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. DAO 163:107–112 (Aug 2025). Industry data (Mowi/Cermaq); sample 15 fish/site from 2019. Companion: 2025_jfd_jones-pacific-lice-cessation-bc.
@@ -222,3 +242,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: regraded → ai_verified (moved_coi=1, critical=0)
+inclusion_decided_by: ""

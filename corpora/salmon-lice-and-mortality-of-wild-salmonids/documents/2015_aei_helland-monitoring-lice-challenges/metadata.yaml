@@ -36,53 +36,46 @@ causal_chain_stage:
   - "infestation"
 
 host_species:
-  - "Salmo salar"
-  - "Salmo trutta"
-  - "Salvelinus alpinus"
+  - atlantic_salmon
+  - sea_trout
+  - arctic_char
 wild_or_farmed_focus: wild
 life_stage:
-  - "sea trout (resident fjord phase)"
-  - "postsmolt"
+  - adult
+  - post_smolt
 parasite_species:
-  - "Lepeophtheirus salmonis"
-  - "Caligus elongatus"
+  - lepeophtheirus_salmonis
+  - caligus_elongatus
 environment:
-  - "fjord"
-  - "coastal marine"
+  - fjord
+  - coastal
 geography:
-  - "Norwegian coast (15 fjords)"
-  - "Norway"
+  - Norway
 time_period: "2004-2010"
 seasonality_focus:
   - "summer"
 regulatory_context:
-  - "Norwegian national salmon lice monitoring programme"
-  - "Norwegian Traffic Light System"
+  - none
+  - Norway_TLS
 evidence_type: mixed
 study_design:
-  - "observational longitudinal monitoring"
-  - "statistical modelling"
-  - "mixed-effects regression"
+  - field_sampling
+  - statistical_analysis
 data_source:
-  - "Norwegian national salmon lice monitoring programme gill-net sampling (2004-2010)"
-  - "Salmon farm infestation pressure data (lusedata.no)"
-  - "Fjord surface temperature data (monthly county means)"
-  - "River discharge as freshwater proxy"
+  - wild_fish_sampling
+  - farm_lice_counts
+  - published_literature
 model_type:
-  - "generalized linear mixed model"
-  - "zero-inflated count model"
-  - "binomial logistic regression"
+  - statistical_regression_model
 observation_unit:
-  - "individual fish"
-  - "sampling occasion"
+  - individual_fish
+  - site
 comparison_type:
-  - "inner fjord vs. outer fjord (farm density gradient)"
-  - "high vs. low infestation pressure years"
-  - "temperature x farm pressure interaction"
+  - among_regions
+  - high_vs_low_infestation
+  - mixed
 outcome_domain:
-  - "lice infestation prevalence"
-  - "lice abundance"
-  - "lice intensity"
+  - infestation_on_wild_fish
 primary_endpoint: "Probability of lice infestation in wild salmonids as a function of farm infestation pressure, temperature, salinity and fish body length"
 secondary_endpoints:
   - "Interaction between temperature and farm infestation pressure"
@@ -94,11 +87,9 @@ evidence_direction: supports_effect
 effect_scale: population_level
 uncertainty_emphasis: high
 main_uncertainty_sources:
-  - "Zero-inflation and overdispersion in lice count data reduce statistical power"
-  - "Coarse spatial resolution of temperature data (county-level means)"
-  - "Salinity measured only as river discharge proxy, not directly"
-  - "Salmon migration timing uncertain — gill-net trout data used as proxy for salmon exposure"
-  - "Uneven sampling effort across sites and years"
+  - none_highlighted
+  - migration_timing
+  - sampling_representativeness
 key_claims:
   - "Binary GLMM (N=4890 fish, 244 occasions, 52 fjord×year random groups): lice presence increases with fish length (+0.003 mm⁻¹), farm infestation pressure (+1.245 on standardized IP), temperature (+0.314), and decreases with freshwater influence (−134.1); T×IP interaction −0.075 (all p<0.001 except where noted)."
   - "Farm pressure remains significant after temperature correction—first Norwegian demonstration that aquaculture pressure elevates wild infestation probability with environmental covariates in the model."
@@ -129,7 +120,7 @@ coi_notes: >
 
 # DEL D - SYNTESE OG PLASSERING I LITTERATUREN
 consensus_signal: moderate_agreement
-quality_signal: moderate
+quality_signal: medium
 quality_rationale: >
   Well-designed statistical analysis of a large monitoring dataset with appropriate methods for
   zero-inflated count data. However, the observational design and measurement limitations (coarse
@@ -137,7 +128,7 @@ quality_rationale: >
   primarily methodological rather than providing new biological findings, and its value lies in
   systematically characterising the limits of the monitoring system.
 
-controversy_role: methodological
+controversy_role: critical
 
 relevance_signal: high
 relevance_rationale: >
@@ -184,6 +175,39 @@ retrieval_tags:
   - "Traffic Light System"
   - "sampling design"
   - "measurement error"
+  - "sea trout (resident fjord phase)"
+  - "Norwegian coast (15 fjords)"
+  - "Norwegian national salmon lice monitoring programme"
+  - "Norwegian Traffic Light System"
+  - "generalized linear mixed model"
+  - "zero-inflated count model"
+  - "binomial logistic regression"
+  - "Salmo salar"
+  - "Salmo trutta"
+  - "Salvelinus alpinus"
+  - "Lepeophtheirus salmonis"
+  - "Caligus elongatus"
+  - "coastal marine"
+  - "observational longitudinal monitoring"
+  - "statistical modelling"
+  - "mixed-effects regression"
+  - "Norwegian national salmon lice monitoring programme gill-net sampling (2004-2010)"
+  - "Salmon farm infestation pressure data (lusedata.no)"
+  - "Fjord surface temperature data (monthly county means)"
+  - "River discharge as freshwater proxy"
+  - "individual fish"
+  - "sampling occasion"
+  - "inner fjord vs. outer fjord (farm density gradient)"
+  - "high vs. low infestation pressure years"
+  - "temperature x farm pressure interaction"
+  - "lice infestation prevalence"
+  - "lice abundance"
+  - "lice intensity"
+  - "Zero-inflation and overdispersion in lice count data reduce statistical power"
+  - "Coarse spatial resolution of temperature data (county-level means)"
+  - "Salinity measured only as river discharge proxy, not directly"
+  - "Salmon migration timing uncertain — gill-net trout data used as proxy for salmon exposure"
+  - "Uneven sampling effort across sites and years"
 
 curator_note: >
   Open access, published in Inter-Research's Aquaculture Environment Interactions. Designated a
@@ -195,3 +219,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

@@ -32,53 +32,50 @@ priority_questions:
   - "Q9"
 
 causal_chain_stage:
-  - "smolt exposure to lice"
-  - "translating infestation to mortality"
-  - "fraction dying from lice"
-  - "population-level impact"
-
+  - host_exposure
+  - individual_mortality
+  - model_calibration
+  - individual_mortality
+  - population_impacts
 host_species:
-  - "Salmo trutta (brown trout / sea trout)"
+  - sea_trout
 wild_or_farmed_focus: wild
 life_stage:
   - "smolt"
-  - "veteran migrant (repeat sea-sojourner)"
+  - adult
 parasite_species:
-  - "Lepeophtheirus salmonis"
+  - lepeophtheirus_salmonis
 environment:
-  - "fjord (marine and brackish)"
-  - "inner fjord (protected from aquaculture)"
-  - "outer fjord (near aquaculture facilities)"
+  - fjord
 geography:
-  - "Sognefjorden, Norway"
+  - Sognefjorden
 time_period: "2013-2015"
 seasonality_focus:
   - "spring"
   - "summer"
 regulatory_context:
-  - "Norwegian Traffic Light System (TLS)"
-  - "Norwegian National Salmon Fjord designation"
+  - Norway_TLS
+  - none
 evidence_type: model
 study_design:
-  - "individual-based simulation model"
-  - "spatial-temporal superimposition of trajectories and lice densities"
-  - "empirically-fitted fjord-use models"
+  - population_modelling
+  - statistical_analysis
 data_source:
-  - "acoustic telemetry tracking data (N=517 individual sea trout)"
-  - "open-access spatial-temporal modelled lice density data (Sandvik et al. 2020; Stige et al. 2021)"
-  - "simulated individual trajectories (N=8049)"
+  - telemetry_tracking
+  - particle_tracking_output
 observation_unit:
-  - "individual fish (simulated trajectory)"
-  - "population (N=5 populations)"
+  - individual_fish
+  - mixed
 comparison_type:
-  - "inner-fjord vs outer-fjord migrants"
-  - "smolts vs veteran migrants"
-  - "across years (2013, 2014, 2015)"
-  - "across populations (N=5)"
+  - among_regions
+  - mixed
+  - among_years
 outcome_domain:
-  - "lice infestation level"
-  - "lice-induced mortality probability"
-  - "fraction of total mortality attributed to lice"
+  - infestation_on_wild_fish
+  - mortality
+model_type:
+  - population_model
+
 primary_endpoint: "Fraction of total sea-sojourn mortality attributed to salmon lice infestation, by population, year, and life-stage"
 secondary_endpoints:
   - "Accumulated individual lice infestation during sea-sojourn"
@@ -87,14 +84,12 @@ secondary_endpoints:
 
 # DEL C - FUNN OG BEVIS
 evidence_direction: supports_effect
-effect_scale: individual
+effect_scale: individual_level
 uncertainty_emphasis: moderate
 main_uncertainty_sources:
-  - "Simulated (not directly observed) individual trajectories, despite empirical calibration"
-  - "Reliance on modelled (not measured in situ) lice density fields"
-  - "Lice transmission and mortality dose-response functions derived from Atlantic salmon literature, applied to brown trout"
-  - "No direct empirical mortality observations to validate model outputs"
-  - "Potential for behavioral avoidance to reduce actual exposure below modelled values"
+  - calibration_data
+  - model_structure
+  - none_highlighted
 key_claims:
   - "Lice-attributed share of total sea-sojourn mortality: long-distance smolts 25.3% vs inner-fjord smolts 14.7%; veteran migrants 14.8% vs 1.7% inner-fjord"
   - "Population-level lice-attributed mortality ranged 3.3%–34.3% across five Sognefjorden rivers despite shared lice field — driven by individual migration distance"
@@ -133,7 +128,7 @@ quality_signal: strong
 quality_rationale: >
   High-quality modelling study grounded in large-scale empirical telemetry data (N=517 individuals across multiple populations and years). Published in Ecosphere (ESA journal), open access, peer reviewed. Clear model structure with stated assumptions. The limitation that dose-response functions are borrowed from Atlantic salmon rather than brown trout is acknowledged. The lack of empirical mortality validation is an important caveat but is inherent to the approach. Overall the study design is rigorous and the analysis transparent.
 
-controversy_role: supports_effect
+controversy_role: supportive
 
 relevance_signal: high
 relevance_rationale: >
@@ -178,6 +173,39 @@ retrieval_tags:
   - "Lepeophtheirus salmonis"
   - "smolt window"
   - "behavioral plasticity"
+  - "veteran migrant (repeat sea-sojourner)"
+  - "smolt exposure to lice"
+  - "fraction dying from lice"
+  - "translating infestation to mortality"
+  - "population-level impact"
+  - "Sognefjorden, Norway"
+  - "Norwegian Traffic Light System (TLS)"
+  - "Norwegian National Salmon Fjord designation"
+  - "Salmo trutta (brown trout / sea trout)"
+  - "fjord (marine and brackish)"
+  - "inner fjord (protected from aquaculture)"
+  - "outer fjord (near aquaculture facilities)"
+  - "individual-based simulation model"
+  - "spatial-temporal superimposition of trajectories and lice densities"
+  - "empirically-fitted fjord-use models"
+  - "acoustic telemetry tracking data (N=517 individual sea trout)"
+  - "open-access spatial-temporal modelled lice density data (Sandvik et al. 2020; Stige et al. 2021)"
+  - "simulated individual trajectories (N=8049)"
+  - "individual fish (simulated trajectory)"
+  - "population (N=5 populations)"
+  - "inner-fjord vs outer-fjord migrants"
+  - "smolts vs veteran migrants"
+  - "across years (2013, 2014, 2015)"
+  - "across populations (N=5)"
+  - "lice infestation level"
+  - "lice-induced mortality probability"
+  - "fraction of total mortality attributed to lice"
+  - "individual"
+  - "Simulated (not directly observed) individual trajectories, despite empirical calibration"
+  - "Reliance on modelled (not measured in situ) lice density fields"
+  - "Lice transmission and mortality dose-response functions derived from Atlantic salmon literature, applied to brown trout"
+  - "No direct empirical mortality observations to validate model outputs"
+  - "Potential for behavioral avoidance to reduce actual exposure below modelled values"
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access (CC BY). Individual-trajectory VPS-style analysis for sea trout; funders include Mowi, Osland Havbruk, Sulefisk. Key splits: 25.3% vs 14.7% smolt lice-mortality fraction (outer vs inner migration).
@@ -186,3 +214,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: regraded → ai_verified (moved_coi=1, critical=0)
+inclusion_decided_by: ""

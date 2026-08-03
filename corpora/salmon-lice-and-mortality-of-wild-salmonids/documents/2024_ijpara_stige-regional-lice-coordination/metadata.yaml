@@ -31,11 +31,10 @@ priority_questions:
 
 causal_chain_stage:
   - "farm_lice_abundance"
-  - "infestation_pressure"
+  - infestation
   - "individual_mortality"
   - "regulatory_assessment"
-  - "management_intervention"
-
+  - regulatory_assessment
 host_species:
   - "atlantic_salmon"
 
@@ -52,9 +51,9 @@ environment:
   - "coastal"
 
 geography:
-  - "Norway"
-  - "Nordfjord"
-  - "Production_area_4"
+  - Norway
+  - Nordfjord
+  - Norway_PO4
 
 time_period: "2015–2022"
 
@@ -68,35 +67,30 @@ regulatory_context:
 evidence_type: model
 
 study_design:
-  - "hindcast_scenario"
-  - "virtual_post_smolt_modelling"
-  - "farm_lice_dynamics_model"
+  - virtual_post_smolt_modelling
 
 data_source:
-  - "farm_lice_counts"
-  - "farm_production_data"
-  - "ocean_model_salinity"
+  - farm_lice_counts
+  - hydrodynamic_model_output
 
 model_type:
-  - "virtual_post_smolt_model"
-  - "stage_structured_lice_model"
-  - "scenario_simulation"
+  - virtual_post_smolt_model
+  - infestation_model
+  - population_model
 
 observation_unit:
-  - "production_area"
-  - "farm_network"
-  - "river"
+  - production_area
+  - farm
+  - river
 
 comparison_type:
-  - "scenario_vs_baseline"
-  - "among_years"
-  - "coordinated_vs_uncoordinated"
+  - mixed
+  - among_years
 
 outcome_domain:
-  - "mortality"
-  - "farm_lice_abundance"
-  - "treatment_frequency"
-  - "management_effectiveness"
+  - mortality
+  - lice_abundance_on_farms
+  - regulatory_classification
 
 primary_endpoint: "Salmon louse-induced mortality of wild Atlantic salmon post-smolts from nine Nordfjord rivers (NVI virtual post-smolt model)"
 secondary_endpoints:
@@ -112,10 +106,8 @@ effect_scale: population_level
 uncertainty_emphasis: moderate
 
 main_uncertainty_sources:
-  - "model_structure"
-  - "scenario_assumptions"
-  - "stochastic_lice_dynamics"
-  - "profitability_and_feasibility_not_modelled"
+  - model_structure
+  - none_highlighted
 
 key_claims:
   - "VPS model: ~10% post-smolt mortality ≈ 0.3 million spring adult female lice (weeks 16–21 average, 19 farms, 2012–2022); Nordfjord recent average ~20% (~2× green-light target)"
@@ -165,7 +157,7 @@ quality_rationale: >
   systematic scenario matrix; peer-reviewed; open access. Case-study scope and reliance on VPS
   mortality estimates limit generalisability.
 
-controversy_role: practical_implications
+controversy_role: supportive
 
 relevance_signal: high
 
@@ -215,6 +207,23 @@ retrieval_tags:
   - "stocking weight"
   - "management measures"
   - "TLS green light"
+  - infestation_pressure
+  - management_intervention
+  - Production_area_4
+  - stage_structured_lice_model
+  - scenario_simulation
+  - "hindcast_scenario"
+  - "farm_lice_dynamics_model"
+  - "farm_production_data"
+  - "ocean_model_salinity"
+  - "farm_network"
+  - "scenario_vs_baseline"
+  - "coordinated_vs_uncoordinated"
+  - "treatment_frequency"
+  - "management_effectiveness"
+  - "scenario_assumptions"
+  - "stochastic_lice_dynamics"
+  - "profitability_and_feasibility_not_modelled"
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Open access (CC BY). Nordfjord/PA4 case; 19 farm locations; 100 stochastic replicates per scenario; NVI VPS + Aldrin farm lice model.
@@ -223,3 +232,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-05-20"
 # ai_verify: offline_accept → ai_verified (soft_critical_only)
+inclusion_decided_by: ""

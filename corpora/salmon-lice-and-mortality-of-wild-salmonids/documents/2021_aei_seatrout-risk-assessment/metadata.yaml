@@ -101,9 +101,9 @@ comparison_type:
   - "among_years"
 
 outcome_domain:
-  - "infestation_pressure"
-  - "behaviour_change"
-  - "population_abundance"
+  - infestation_on_wild_fish
+  - behaviour_change
+  - population_abundance
 
 primary_endpoint: "Reduced marine living area (RML, %)"
 secondary_endpoints:
@@ -213,6 +213,7 @@ retrieval_tags:
   - "ROC"
   - "160m grid"
   - "migration June 5"
+  - infestation_pressure
 
 curator_note: >
   ODL refresh 2026-06-03 from extracted.md. Added PO3/PO5 RML-RMT tables, Taranger threshold matrix,
@@ -222,3 +223,4 @@ curator_review_status: ai_verified
 added_by: "Claude"
 added_date: "2026-06-03"
 # ai_verify: regraded → ai_verified (moved_coi=0, critical=0)
+inclusion_decided_by: ""
