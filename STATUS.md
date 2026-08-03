@@ -29,12 +29,10 @@ Status: **27/27 `ai_verified`**. Validator exit 0. Routing eval 5/5.
 - `inclusion_decided_by` filled; app caption ready
 - `eval/benchmark_protocol_v2.md` + `scripts/eval_retrieval.py` (ready; **not run** — API)
 
-## Intentionally not run (API reserved for testers)
-| Item | Why |
-|------|-----|
-| `eval_retrieval.py` | Needs ~5 query embedding calls |
-| Benchmark capture (Task 7c) | Treatment synthesis + external baselines (NotebookLM / frontier+search) |
-| Full re-embed / ingest | Costs API; metadata sync used instead |
+## Eval status
+- `eval_routing.py`: **5/5** (API-free)
+- `eval_retrieval.py`: **5/5** (2026-08-03; ~5 embedding calls) — must_include_any hits in top-k; BM25/rerank stays deferred with evidence
+- Benchmark capture (Task 7c): not run (synthesis + NotebookLM / frontier+search)
 
 ## Parquet update rule
 - Metadata / status / rationale only → `python scripts/sync_metadata_to_parquet.py`
