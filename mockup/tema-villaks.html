@@ -3,20 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lakselus og dødelighet hos ville laksefisk</title>
+<title>AP1 · Lakselus og dødelighet hos ville laksefisk</title>
 <style>
   :root {
-    --bg: #f7f6f3;
-    --surface: #fff;
-    --ink: #1a1a1a;
-    --muted: #5a5a5a;
-    --line: #d8d4cc;
-    --accent: #0b3d4a;
-    --soft: #f0eee8;
-    --ok: #1e4d2b;
-    --ok-bg: #e7f0e9;
-    --warn: #5a4a1a;
-    --warn-bg: #f3efe3;
+    --bg: #eef3f7;
+    --surface: #ffffff;
+    --ink: #15232b;
+    --muted: #5b6b75;
+    --line: #d5dee6;
+    --accent: #005f73;
+    --accent-soft: #e6f2f5;
+    --soft: #f4f7fa;
+    --ok: #1e5a35;
+    --ok-bg: #e5f3ea;
+    --warn: #6a5218;
+    --warn-bg: #f6f0dd;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(21, 35, 43, 0.04), 0 8px 24px rgba(21, 35, 43, 0.05);
   }
   * { box-sizing: border-box; }
   body {
@@ -24,215 +27,426 @@
     font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
     color: var(--ink);
     background: var(--bg);
-    line-height: 1.5;
+    line-height: 1.55;
     font-size: 16px;
   }
   a { color: var(--accent); }
-  .wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 56px; }
-  h1 { font-size: 1.7rem; margin: 0 0 8px; letter-spacing: -0.02em; }
-  h2 { font-size: 1.2rem; margin: 0 0 12px; color: var(--accent); }
-  h3 { font-size: 1.05rem; margin: 0 0 10px; }
-  p { margin: 0 0 10px; }
-  .muted { color: var(--muted); }
-  .small { font-size: 0.9rem; }
-  .tiny { font-size: 0.8rem; }
+  .topbar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .topbar-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .top-nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    font-size: 0.92rem;
+  }
+  .top-nav a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .top-nav a:hover { color: var(--accent); }
+  .ask-pill {
+    background: var(--accent);
+    color: #fff !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .wrap {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 28px 28px 72px;
+  }
   .note {
     font-size: 0.8rem;
     color: var(--muted);
-    margin-bottom: 20px;
+    margin: 0 0 18px;
   }
-  .header { margin-bottom: 28px; }
-  .chips { margin: 14px 0 8px; }
+  .hero {
+    display: grid;
+    grid-template-columns: 1.5fr 0.9fr;
+    gap: 20px;
+    margin-bottom: 28px;
+    align-items: stretch;
+  }
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .top-nav { display: none; }
+  }
+  .hero-main h1 {
+    font-size: clamp(1.8rem, 2.6vw, 2.35rem);
+    margin: 0 0 10px;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+  .hero-main .lede {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 46rem;
+    margin: 0 0 16px;
+  }
+  .chips { margin: 4px 0 0; }
   .chip {
     display: inline-block;
     text-decoration: none;
     border: 1px solid var(--line);
     background: var(--surface);
     color: var(--ink);
-    padding: 4px 11px;
-    font-size: 0.82rem;
-    margin: 0 6px 6px 0;
+    padding: 7px 14px;
+    font-size: 0.85rem;
+    margin: 0 8px 8px 0;
+    border-radius: 999px;
   }
-  .chip:hover { border-color: var(--accent); }
-  .meta { font-size: 0.85rem; color: var(--muted); }
-  .section { margin: 32px 0; }
+  .chip:hover, .chip.on {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .stats {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 18px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 10px;
+  }
+  .stat strong {
+    display: block;
+    font-size: 1.45rem;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+  }
+  .stat span {
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .section { margin: 36px 0; }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: 1.35rem;
+    margin: 0;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
   .tag {
     display: inline-block;
     font-size: 0.7rem;
-    text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 0.04em;
-    color: var(--muted);
-    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
   }
   .card {
     background: var(--surface);
     border: 1px solid var(--line);
-    padding: 16px 18px;
-    margin: 0 0 12px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px 24px;
+    margin: 0 0 14px;
   }
-  .cols { display: flex; gap: 14px; }
-  .cols > * { flex: 1; min-width: 0; }
-  @media (max-width: 720px) { .cols { flex-direction: column; } }
+  .muted { color: var(--muted); }
+  .small { font-size: 0.92rem; }
+  .tiny { font-size: 0.8rem; }
+  .prose p { margin: 0 0 14px; }
+  .prose p:last-child { margin-bottom: 0; }
+  .figure { margin: 18px 0 12px; }
+  .figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+  .figure figcaption {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .placeholder {
+    background: var(--soft);
+    border: 1px dashed #b7c2cc;
+    color: var(--muted);
+    padding: 10px 12px;
+    margin: 12px 0 0;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+  .debate-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .card h3 {
+    font-size: 1.12rem;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
   .side {
     background: var(--soft);
-    padding: 10px 12px;
-    font-size: 0.92rem;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 0.94rem;
   }
   .side-label {
     font-size: 0.72rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: var(--muted);
     margin-bottom: 6px;
   }
-  .papers { margin: 10px 0 8px; }
+  .papers { margin: 12px 0 8px; }
   .paper {
     display: inline-block;
     font-family: ui-monospace, Consolas, monospace;
     font-size: 0.72rem;
-    background: var(--soft);
-    border: 1px solid var(--line);
-    padding: 2px 7px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 3px 8px;
     margin: 0 4px 4px 0;
   }
   .badge {
     display: inline-block;
     font-size: 0.72rem;
-    padding: 2px 8px;
+    font-weight: 600;
+    padding: 3px 9px;
     margin-left: 8px;
+    border-radius: 999px;
     vertical-align: middle;
   }
   .badge-ok { background: var(--ok-bg); color: var(--ok); }
   .badge-warn { background: var(--warn-bg); color: var(--warn); }
-  .caveat { font-size: 0.85rem; color: var(--muted); font-style: italic; margin: 8px 0 12px; }
+  .caveat {
+    font-size: 0.86rem;
+    color: var(--muted);
+    font-style: italic;
+    margin: 8px 0 14px;
+  }
   .btn {
     appearance: none;
-    border: 1px solid var(--accent);
+    border: 0;
     background: var(--accent);
     color: #fff;
-    padding: 8px 12px;
+    padding: 9px 16px;
     font: inherit;
     font-size: 0.9rem;
+    font-weight: 600;
     cursor: pointer;
+    border-radius: 999px;
   }
-  .btn.ghost { background: #fff; color: var(--accent); }
-  .placeholder {
-    background: var(--soft);
-    border: 1px dashed #b9b5aa;
-    color: var(--muted);
-    padding: 8px 10px;
-    margin: 6px 0;
-    font-size: 0.9rem;
-  }
-  .bullets { padding-left: 1.2em; margin: 0; }
-  .bullets li { margin-bottom: 8px; }
-  textarea {
-    width: 100%;
-    min-height: 70px;
-    font: inherit;
-    padding: 10px;
-    border: 1px solid var(--line);
+  .btn.ghost {
     background: #fff;
-    resize: vertical;
+    color: var(--accent);
+    border: 1px solid var(--accent);
   }
-  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 12px 0; }
-  .toggle { display: inline-flex; border: 1px solid var(--line); }
-  .toggle button {
-    border: 0; background: #fff; padding: 7px 12px; font: inherit; cursor: pointer;
-  }
-  .toggle button.on { background: var(--accent); color: #fff; }
-  .answer {
+  .ask-box {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
     background: var(--surface);
     border: 1px solid var(--line);
-    padding: 14px 16px;
-    margin-top: 10px;
+    border-radius: 999px;
+    padding: 8px 8px 8px 18px;
+    box-shadow: var(--shadow);
+  }
+  .ask-box textarea {
+    flex: 1;
+    border: 0;
+    resize: none;
+    min-height: 44px;
+    max-height: 120px;
+    padding: 10px 0;
+    font: inherit;
+    background: transparent;
+    outline: none;
+  }
+  .ask-box .btn { align-self: center; }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 14px 0;
+  }
+  .toggle {
+    display: inline-flex;
+    background: var(--soft);
+    border-radius: 999px;
+    padding: 3px;
+  }
+  .toggle button {
+    border: 0;
+    background: transparent;
+    padding: 7px 14px;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 999px;
+    color: var(--muted);
+  }
+  .toggle button.on {
+    background: var(--accent);
+    color: #fff;
+  }
+  .answer {
+    background: var(--soft);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-top: 12px;
   }
   .footer {
-    margin-top: 40px;
-    padding-top: 16px;
+    margin-top: 48px;
+    padding-top: 18px;
     border-top: 1px solid var(--line);
     font-size: 0.82rem;
     color: var(--muted);
   }
-  .figure {
-    margin: 16px 0 8px;
+  .two-col {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 16px;
   }
-  .figure img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border: 1px solid var(--line);
-    background: #fff;
-  }
-  .figure figcaption {
-    font-size: 0.8rem;
-    color: var(--muted);
-    margin-top: 8px;
-    line-height: 1.4;
-  }
-  .prose p { margin: 0 0 12px; }
-  .prose p:last-child { margin-bottom: 0; }
+  @media (max-width: 960px) { .two-col { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#topp">
+      <span class="brand-mark">AP1</span>
+      <span>Evidence Corpus</span>
+    </a>
+    <nav class="top-nav">
+      <a href="#a">Introduksjon</a>
+      <a href="#b">Regulering</a>
+      <a href="#c">Omstridte punkter</a>
+      <a href="#d">Gå dypere</a>
+    </nav>
+    <a class="ask-pill" href="#d">Spør korpuset</a>
+  </div>
+</header>
+
 <div class="wrap">
+  <p class="note">Mockup av temaside · ikke live Streamlit · åpne gjerne med wifi av</p>
 
-  <p class="note">Mockup · ikke live app · åpne gjerne med wifi av</p>
-
-  <!-- Above the fold -->
-  <header class="header" id="topp">
-    <h1>Lakselus og dødelighet hos ville laksefisk</h1>
-    <p class="muted">Norge begrenser oppdrettskapasitet delvis ut fra estimert luseindusert dødelighet hos villaks — denne siden viser kjeden, uenigheten og evidensen.</p>
-    <div class="chips">
-      <a class="chip" href="#a">Introduksjon</a>
-      <a class="chip" href="#b">Regulering</a>
-      <a class="chip" href="#c">Omstridte punkter</a>
+  <section class="hero" id="topp">
+    <div class="hero-main">
+      <h1>Kunnskapsrom: Lakselus og dødelighet hos ville laksefisk</h1>
+      <p class="lede">
+        Norge begrenser oppdrettskapasitet delvis ut fra estimert luseindusert dødelighet hos villaks.
+        Her får du orientering, rammeverk og hvor den vitenskapelige uenigheten står — før du spør korpuset.
+      </p>
+      <div class="chips">
+        <a class="chip on" href="#a">Introduksjon</a>
+        <a class="chip" href="#b">Regulering</a>
+        <a class="chip" href="#c">Omstridte punkter</a>
+      </div>
     </div>
-    <p class="meta">27 dokumenter · 1997–2026 · Sist gjennomgått: <strong>2026-08-04</strong></p>
-  </header>
+    <aside class="stats" aria-label="Korpusstatus">
+      <div class="stat"><strong>27</strong><span>artikler i korpuset</span></div>
+      <div class="stat"><strong>1997–2026</strong><span>tidsrom</span></div>
+      <div class="stat"><strong>5</strong><span>åpne feillinjer</span></div>
+      <div class="stat"><strong>04.08</strong><span>sist gjennomgått</span></div>
+    </aside>
+  </section>
 
   <!-- A -->
   <section class="section" id="a">
-    <p class="tag">Redaksjonell oversikt</p>
-    <h2>A — Introduksjon</h2>
+    <div class="section-head">
+      <h2>A — Introduksjon</h2>
+      <span class="tag">Redaksjonell oversikt</span>
+    </div>
     <div class="card prose">
-      <p>
-        Lakselus (<em>Lepeophtheirus salmonis</em>) er en naturlig marin parasitt hos laksefisk.
-        Den fester seg på huden, lever av slim, hud og blod, og kan ved høye tettheter svekke
-        fiskens evne til å holde saltbalansen i sjøvann. Det er særlig den utvandrende smolten —
-        ung fisk på vei fra elv til hav — som er sårbar, fordi den er liten og møter sjøen for første gang.
-      </p>
-      <p>
-        Oppdrett endrer premissene. Når mange tusen laks holdes samlet i merder, kan lokal
-        reproduksjon av lus stige langt over naturlig bakgrunn. De planktoniske larvene driver
-        med strømmen og kan møte ville smolt som hvert år trekker ut gjennom de samme fjordene.
-        Om skaden blir stor, avgjøres ikke bare av hvor mye lus som produseres, men av om
-        utvandringen overlapper med høyt larvepress — i både tid og rom.
-      </p>
-      <figure class="figure">
-        <img src="figur-smolt-lus.png" alt="Skisse: smolt vandrer fra elv til sjø, møter lusetrykk ved oppdrettsmerder, og vender tilbake som 1SW–3SW.">
-        <figcaption>
-          Figur. Utvandring og mulig parasittindusert dødelighet langs kysten: smolt utvandrer år <em>t</em>,
-          møter lus i sjøen, og kan vende tilbake som smålaks (1SW) året etter.
-          Illustrasjonen er hentet fra Jansen et al. (gjengitt i Blue Planets underlagsmateriale) og
-          viser logikken bak lag-1-koblingen mellom lusepress og innsig — ikke et empirisk resultat i seg selv.
-        </figcaption>
-      </figure>
-      <p>
-        Sjøørret påvirkes annerledes: den blir værende mer kystnært enn laksen, og er derfor
-        eksponert over lengre tid. Derfor brukes den ofte som overvåkingssentinel. For villaks
-        er det politiske og forvaltningsmessige spørsmålet skarpere: når estimert lusedødelighet
-        hos utvandrende smolt blir høy i et område, kan det begrense hvor mye oppdrett som tillates.
-        Det er denne kjeden — fra lus på merd, via modeller og felt, til regional kapasitet —
-        som temaet og korpuset handler om.
-      </p>
+      <div class="two-col">
+        <div>
+          <p>
+            Lakselus (<em>Lepeophtheirus salmonis</em>) er en naturlig marin parasitt hos laksefisk.
+            Den fester seg på huden, lever av slim, hud og blod, og kan ved høye tettheter svekke
+            fiskens evne til å holde saltbalansen i sjøvann. Det er særlig den utvandrende smolten —
+            ung fisk på vei fra elv til hav — som er sårbar, fordi den er liten og møter sjøen for første gang.
+          </p>
+          <p>
+            Oppdrett endrer premissene. Når mange tusen laks holdes samlet i merder, kan lokal
+            reproduksjon av lus stige langt over naturlig bakgrunn. De planktoniske larvene driver
+            med strømmen og kan møte ville smolt som hvert år trekker ut gjennom de samme fjordene.
+            Om skaden blir stor, avgjøres ikke bare av hvor mye lus som produseres, men av om
+            utvandringen overlapper med høyt larvepress — i både tid og rom.
+          </p>
+          <p>
+            Sjøørret påvirkes annerledes: den blir værende mer kystnært enn laksen, og er derfor
+            eksponert over lengre tid. Derfor brukes den ofte som overvåkingssentinel. For villaks
+            er det forvaltningsmessige spørsmålet skarpere: når estimert lusedødelighet hos
+            utvandrende smolt blir høy i et område, kan det begrense hvor mye oppdrett som tillates.
+          </p>
+        </div>
+        <figure class="figure" style="margin:0">
+          <img src="figur-smolt-lus.png" alt="Skisse: smolt vandrer fra elv til sjø, møter lusetrykk ved oppdrettsmerder, og vender tilbake som 1SW–3SW.">
+          <figcaption>
+            Utvandring år <em>t</em> → mulig parasittindusert dødelighet → innsig som 1SW året etter
+            (Jansen et al., gjengitt i underlagsmateriale). Viser logikken, ikke et empirisk resultat.
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
   <!-- B -->
   <section class="section" id="b">
-    <p class="tag">Reguleringskontekst — ikke korpussyntese</p>
-    <h2>B — Gjeldende norsk rammeverk</h2>
+    <div class="section-head">
+      <h2>B — Gjeldende norsk rammeverk</h2>
+      <span class="tag">Reguleringskontekst</span>
+    </div>
     <div class="card prose">
       <p>
         Norge regulerer vekst i lakseoppdrett blant annet gjennom <strong>trafikklyssystemet</strong>.
@@ -245,174 +459,179 @@
         Fargene er knyttet til estimert postsmolt-dødelighet, ofte omtalt i bånd rundt
         &lt;10&nbsp;%, 10–30&nbsp;% og &gt;30&nbsp;%. En ekspertgruppe vurderer kunnskapsgrunnlaget
         for hvert område; den endelige kapasitetsbeslutningen fattes politisk/forvaltningsmessig.
-        Parallelt gjelder egne regler for lus på oppdrettsfisk (tellinger og tiltakskrav) —
-        det er et annet spor enn den regionale fargeleggingen.
+        Parallelt gjelder egne regler for lus på oppdrettsfisk — et annet spor enn den regionale fargeleggingen.
       </p>
       <figure class="figure">
-        <img src="figur-trafikklys.png" alt="Kart over Norges 13 produksjonsområder fargelagt grønn, gul og rød for periodene 2018–2019, 2020–2022, 2022–2023 og 2024–2025.">
+        <img src="figur-trafikklys.png" alt="Kart over Norges 13 produksjonsområder fargelagt grønn, gul og rød for fire perioder.">
         <figcaption>
-          Figur. Trafikklyssystemet over tid: PO1–PO13 med grønn / gul / rød for fire vurderingsperioder
-          (kilder angitt i figuren: Regjeringen og Styringsgruppen). Vestlandet (særlig PO3–PO4)
-          har over tid vært under strengest trykk; i 2024–2025 er flere midt- og nordlige områder gul.
+          Trafikklyssystemet over tid (Regjeringen / Styringsgruppen). Vestlandet (særlig PO3–PO4)
+          har vært under strengest trykk; 2024–2025 viser flere gule områder lenger nord.
         </figcaption>
       </figure>
       <p>
         Kartene viser at systemet ikke er statisk. PO3 har vært rød i alle viste perioder, mens
-        flere områder har skiftet mellom grønt og gult. For den siste runden som er synlig her
-        (2024–2025 / Styringsgruppen) er bildet mer gult langs deler av kysten enn i tidlige år —
-        samtidig som de hardeste områdene på Vestlandet fortsatt skiller seg ut.
+        flere områder har skiftet mellom grønt og gult. For 2024–2025 er bildet mer gult langs
+        deler av kysten enn i tidlige år — samtidig som de hardeste områdene på Vestlandet fortsatt skiller seg ut.
       </p>
       <p class="small">
-        <strong>Sjekket 2026-07-27:</strong> Styringsgruppen vurderte PO3 som høy og PO4 som moderat
-        for 2024–25. NFD 2026: PO3 rød med −6&nbsp;% kapasitet; PO4 gul.
-        (Kilder: trafikklyssystemet.no / regjeringen.no, via intern audit.)
+        <strong>Sjekket 2026-07-27:</strong> Styringsgruppen: PO3 høy, PO4 moderat (2024–25).
+        NFD 2026: PO3 rød (−6&nbsp;% kapasitet), PO4 gul.
       </p>
-      <div class="placeholder">[må hentes fra Lovdata] produksjonsområdeforskriften · lakselusforskriften · akvakulturloven — lenker, eksakte terskler og beslutningssyklus</div>
-      <p class="tiny muted">Sist gjennomgått (denne blokken): <strong>2026-07-27</strong> · hvem eier neste oppdatering etter ny fargelegging: uavklart</p>
+      <div class="placeholder">[må hentes fra Lovdata] produksjonsområdeforskriften · lakselusforskriften · akvakulturloven</div>
+      <p class="tiny muted" style="margin-top:10px">Sist gjennomgått: <strong>2026-07-27</strong> · eierskap for neste oppdatering: uavklart</p>
     </div>
   </section>
 
   <!-- C -->
   <section class="section" id="c">
-    <p class="tag">Fra kuratert korpus</p>
-    <h2>C — Hvor diskusjonen står</h2>
-    <p class="muted small">Fem feillinjer. Les dem før du spør. «Spør om dette» fyller boksen under.</p>
-
-    <div class="card">
-      <h3>1. Forsvinner lusa hvis oppdrettet forsvinner?
-        <span class="badge badge-warn">Ikke verifisert</span>
-      </h3>
-      <div class="cols">
-        <div class="side">
-          <div class="side-label">A</div>
-          Norske modeller antar i stor grad at oppdrettsoriginert lus dominerer infestasjonspresset på villfisk.
-        </div>
-        <div class="side">
-          <div class="side-label">B</div>
-          To BC-studier (2025): lus på juvenil vill stillehavslaks forble uendret — eller høyere — etter nesten total fjerning av lokal oppdrettsbiomasse.
-        </div>
-      </div>
-      <div class="papers">
-        <span class="paper">2025_dao_jones-broughton-lice-unchanged</span>
-        <span class="paper">2025_jfd_jones-pacific-lice-cessation-bc</span>
-        <span class="paper">2025_scientificdata_bc-sealice-dataset-2001-2023</span>
-      </div>
-      <p class="caveat">Overførbarhet omstridt (andre arter; <em>Caligus clemensi</em> viktig i BC, ikke i Norge).</p>
-      <button class="btn" type="button" onclick="ask(0)">Spør om dette</button>
+    <div class="section-head">
+      <h2>C — Hvor diskusjonen står</h2>
+      <span class="tag">Fra kuratert korpus</span>
     </div>
+    <p class="muted small" style="margin:-4px 0 14px">Fem feillinjer. Les dem før du spør. «Spør om dette» fyller boksen under.</p>
 
-    <div class="card">
-      <h3>2. Er dødelighetsmodellen kalibrert på riktige data?
-        <span class="badge badge-ok">Verifisert</span>
-      </h3>
-      <div class="cols">
-        <div class="side">
-          <div class="side-label">A · Stige mfl.</div>
-          Estimatene er svært følsomme for kalibreringskilde (trål vs. sentinel). Kalibrering hevdes å kompensere for skjevheter i rådata.
+    <div class="debate-grid">
+      <div class="card">
+        <h3>1. Forsvinner lusa hvis oppdrettet forsvinner?
+          <span class="badge badge-warn">Ikke verifisert</span>
+        </h3>
+        <div class="cols">
+          <div class="side">
+            <div class="side-label">A</div>
+            Norske modeller antar i stor grad at oppdrettsoriginert lus dominerer infestasjonspresset på villfisk.
+          </div>
+          <div class="side">
+            <div class="side-label">B</div>
+            To BC-studier (2025): lus på juvenil vill stillehavslaks forble uendret — eller høyere — etter nesten total fjerning av lokal oppdrettsbiomasse.
+          </div>
         </div>
-        <div class="side">
-          <div class="side-label">B · Van Nes mfl.</div>
-          Systematisk overestimering via migrasjonstid, lusebiologi, kalibrering og terskler; kalibreringsdataene selv kritiseres som upålitelige.
+        <div class="papers">
+          <span class="paper">2025_dao_jones-broughton-lice-unchanged</span>
+          <span class="paper">2025_jfd_jones-pacific-lice-cessation-bc</span>
+          <span class="paper">2025_scientificdata_bc-sealice-dataset-2001-2023</span>
         </div>
+        <p class="caveat">Overførbarhet omstridt (andre arter; <em>Caligus clemensi</em> viktig i BC, ikke i Norge).</p>
+        <button class="btn" type="button" onclick="ask(0)">Spør om dette</button>
       </div>
-      <div class="papers">
-        <span class="paper">2022_aei_stige-model-sensitivity-calibration</span>
-        <span class="paper">2024_raq_vannes-critical-review-tls</span>
-        <span class="paper">2025_raq_stige-comment-vannes</span>
-        <span class="paper">2025_raq_vannes-response-to-stige</span>
-      </div>
-      <p class="caveat">COI-argumenter finnes i utvekslingen — her vises bare det vitenskapelige innholdet.</p>
-      <button class="btn" type="button" onclick="ask(1)">Spør om dette</button>
-    </div>
 
-    <div class="card">
-      <h3>3. Treffer modellene det som faktisk observeres?
-        <span class="badge badge-ok">Verifisert</span>
-      </h3>
-      <div class="cols">
-        <div class="side">
-          <div class="side-label">A · Johnsen 2021</div>
-          Operativ VPS-modell for 401 elver, kalibrert mot trålfanget postsmolt.
+      <div class="card">
+        <h3>2. Er dødelighetsmodellen kalibrert på riktige data?
+          <span class="badge badge-ok">Verifisert</span>
+        </h3>
+        <div class="cols">
+          <div class="side">
+            <div class="side-label">A · Stige mfl.</div>
+            Estimatene er svært følsomme for kalibreringskilde (trål vs. sentinel). Kalibrering hevdes å kompensere for skjevheter i rådata.
+          </div>
+          <div class="side">
+            <div class="side-label">B · Van Nes mfl.</div>
+            Systematisk overestimering via migrasjonstid, lusebiologi, kalibrering og terskler; kalibreringsdataene selv kritiseres som upålitelige.
+          </div>
         </div>
-        <div class="side">
-          <div class="side-label">B · Jansen/Gjerde · Gjerde 2025</div>
-          VPS overestimerer mot trål i 26/27 område×år. PMLD har svært dårlig prediksjonskraft (RPD ≈ 1,18).
+        <div class="papers">
+          <span class="paper">2022_aei_stige-model-sensitivity-calibration</span>
+          <span class="paper">2024_raq_vannes-critical-review-tls</span>
+          <span class="paper">2025_raq_stige-comment-vannes</span>
+          <span class="paper">2025_raq_vannes-response-to-stige</span>
         </div>
+        <p class="caveat">COI-argumenter finnes i utvekslingen — her vises bare det vitenskapelige innholdet.</p>
+        <button class="btn" type="button" onclick="ask(1)">Spør om dette</button>
       </div>
-      <div class="papers">
-        <span class="paper">2021_icesjms_johnsen-vps-mortality-norway</span>
-        <span class="paper">2021_icesjms_jansen-comment-vps-mortality</span>
-        <span class="paper">2025_aquaculture_gjerde-seatrout-lice-prediction</span>
-      </div>
-      <button class="btn" type="button" onclick="ask(2)">Spør om dette</button>
-    </div>
 
-    <div class="card">
-      <h3>4. Gir smoltdødelighet færre voksne tilbake?
-        <span class="badge badge-ok">Verifisert</span>
-      </h3>
-      <div class="cols">
-        <div class="side">
-          <div class="side-label">A · Jansen 2025</div>
-          Signifikant negativ PIM→1SW i 104 elver — men PIM er ikke den dominerende kovariaten.
+      <div class="card">
+        <h3>3. Treffer modellene det som faktisk observeres?
+          <span class="badge badge-ok">Verifisert</span>
+        </h3>
+        <div class="cols">
+          <div class="side">
+            <div class="side-label">A · Johnsen 2021</div>
+            Operativ VPS-modell for 401 elver, kalibrert mot trålfanget postsmolt.
+          </div>
+          <div class="side">
+            <div class="side-label">B · Jansen/Gjerde · Gjerde 2025</div>
+            VPS overestimerer mot trål i 26/27 område×år. PMLD har svært dårlig prediksjonskraft (RPD ≈ 1,18).
+          </div>
         </div>
-        <div class="side">
-          <div class="side-label">B · Dadswell · Jonsson · Gillson</div>
-          Andre marine drivere (IUU, klima, næring) kan dominere innsigsnedgang; lus ikke nødvendigvis hovedforklaring.
+        <div class="papers">
+          <span class="paper">2021_icesjms_johnsen-vps-mortality-norway</span>
+          <span class="paper">2021_icesjms_jansen-comment-vps-mortality</span>
+          <span class="paper">2025_aquaculture_gjerde-seatrout-lice-prediction</span>
         </div>
+        <button class="btn" type="button" onclick="ask(2)">Spør om dette</button>
       </div>
-      <div class="papers">
-        <span class="paper">2025_jae_jansen-lice-effects-returns</span>
-        <span class="paper">2021_rfsa_dadswell-atlantic-salmon-collapse</span>
-        <span class="paper">2016_jfb_jonsson-environmental-change-salmon</span>
-        <span class="paper">2022_rfbf_gillson-marine-stressors-salmon</span>
-      </div>
-      <p class="caveat">Additiv vs. kompensatorisk dødelighet er ikke avgjort.</p>
-      <button class="btn" type="button" onclick="ask(3)">Spør om dette</button>
-    </div>
 
-    <div class="card">
-      <h3>5. Holder laboratorieterskler i naturen?
-        <span class="badge badge-ok">Verifisert</span>
-      </h3>
-      <div class="cols">
-        <div class="side">
-          <div class="side-label">A · Fjelldal · Bøhn</div>
-          Lab: ~0,38 mobile lus/g koblet til redusert vekst. Felt: dramatisk lavere overlevelse når utvandring treffer høyt lusetrykk (RR = 55,3).
+      <div class="card">
+        <h3>4. Gir smoltdødelighet færre voksne tilbake?
+          <span class="badge badge-ok">Verifisert</span>
+        </h3>
+        <div class="cols">
+          <div class="side">
+            <div class="side-label">A · Jansen 2025</div>
+            Signifikant negativ PIM→1SW i 104 elver — men PIM er ikke den dominerende kovariaten.
+          </div>
+          <div class="side">
+            <div class="side-label">B · Dadswell · Jonsson · Gillson</div>
+            Andre marine drivere (IUU, klima, næring) kan dominere innsigsnedgang; lus ikke nødvendigvis hovedforklaring.
+          </div>
         </div>
-        <div class="side">
-          <div class="side-label">B · Van Nes · Hawley</div>
-          Ekstrapolering fra lab til felt utfordres. Hawley (sjøørret): enorm heterogenitet mellom populasjoner — én terskel skjuler variasjon.
+        <div class="papers">
+          <span class="paper">2025_jae_jansen-lice-effects-returns</span>
+          <span class="paper">2021_rfsa_dadswell-atlantic-salmon-collapse</span>
+          <span class="paper">2016_jfb_jonsson-environmental-change-salmon</span>
+          <span class="paper">2022_rfbf_gillson-marine-stressors-salmon</span>
         </div>
+        <p class="caveat">Additiv vs. kompensatorisk dødelighet er ikke avgjort.</p>
+        <button class="btn" type="button" onclick="ask(3)">Spør om dette</button>
       </div>
-      <div class="papers">
-        <span class="paper">2020_conphys_fjelldal-lice-osmoregulation-salmon</span>
-        <span class="paper">2020_jae_bohn-timing-survival-postsmolts</span>
-        <span class="paper">2024_raq_vannes-critical-review-tls</span>
-        <span class="paper">2024_ecosphere_hawley-anadromy-lice-mortality-trout</span>
-        <span class="paper">1997_icesjms_dawson-seatrout-salmon-susceptibility</span>
+
+      <div class="card">
+        <h3>5. Holder laboratorieterskler i naturen?
+          <span class="badge badge-ok">Verifisert</span>
+        </h3>
+        <div class="cols">
+          <div class="side">
+            <div class="side-label">A · Fjelldal · Bøhn</div>
+            Lab: ~0,38 mobile lus/g koblet til redusert vekst. Felt: dramatisk lavere overlevelse når utvandring treffer høyt lusetrykk (RR = 55,3).
+          </div>
+          <div class="side">
+            <div class="side-label">B · Van Nes · Hawley</div>
+            Ekstrapolering fra lab til felt utfordres. Hawley (sjøørret): enorm heterogenitet mellom populasjoner — én terskel skjuler variasjon.
+          </div>
+        </div>
+        <div class="papers">
+          <span class="paper">2020_conphys_fjelldal-lice-osmoregulation-salmon</span>
+          <span class="paper">2020_jae_bohn-timing-survival-postsmolts</span>
+          <span class="paper">2024_raq_vannes-critical-review-tls</span>
+          <span class="paper">2024_ecosphere_hawley-anadromy-lice-mortality-trout</span>
+          <span class="paper">1997_icesjms_dawson-seatrout-salmon-susceptibility</span>
+        </div>
+        <p class="caveat">Hawley = sjøørret, ikke laks. Dawson: terskler er ikke utbyttbare mellom arter.</p>
+        <button class="btn" type="button" onclick="ask(4)">Spør om dette</button>
       </div>
-      <p class="caveat">Hawley = sjøørret, ikke laks. Dawson: terskler er ikke utbyttbare mellom arter.</p>
-      <button class="btn" type="button" onclick="ask(4)">Spør om dette</button>
     </div>
   </section>
 
   <!-- D -->
   <section class="section" id="d">
-    <p class="tag">Syntetisert fra kilder · demo</p>
-    <h2>D — Gå dypere</h2>
+    <div class="section-head">
+      <h2>D — Gå dypere</h2>
+      <span class="tag">Syntetisert fra kilder · demo</span>
+    </div>
     <div class="card">
-      <label class="tiny muted" for="q">Spørsmål</label>
-      <textarea id="q" placeholder="Klikk «Spør om dette» på et kort, eller skriv selv…"></textarea>
+      <p class="muted small">Samme idé som i Streamlit-appen: still et spørsmål til korpuset. Her er svaret et forhåndsskrevet <strong>eksempelsvar</strong> — ikke live API.</p>
+      <div class="ask-box">
+        <textarea id="q" placeholder="Hva er evidensen for …"></textarea>
+        <button class="btn" type="button" onclick="showAns()">Spør</button>
+      </div>
       <div class="row">
         <div class="toggle">
           <button type="button" id="t-f" class="on" onclick="setMode('f')">Forsker</button>
           <button type="button" id="t-i" onclick="setMode('i')">Ikke-forsker</button>
         </div>
-        <button class="btn ghost" type="button" onclick="showAns()">Vis eksempelsvar</button>
+        <span class="tiny muted">Speiler appens målgruppe-toggle</span>
       </div>
       <div id="ans" class="answer" hidden>
-        <p class="tiny"><strong>Eksempelsvar</strong> — ikke live API. I appen genereres dette fra hentede kilder.</p>
+        <p class="tiny"><strong>Eksempelsvar</strong> — i live-appen genereres dette fra hentede kilder.</p>
         <div id="ans-f">
           <p>Evidensen for at luseindusert smoltdødelighet gir færre voksne tilbake er <strong>omstridt</strong>.</p>
           <p>Jansen et al. 2025 finner signifikant negativ PIM→1SW i 104 elver, men PIM er ikke den dominerende kovariaten (TS/CGW forklarer mer). Dadswell, Jonsson og Gillson plasserer hovedvekten på andre marine drivere. Additiv vs. kompensatorisk dødelighet er ikke avgjort i korpuset.</p>
@@ -426,7 +645,7 @@
   </section>
 
   <footer class="footer">
-    Mockup av AP1-temaside · Fil: <code>mockup/tema-villaks.html</code> · Streamlit-appen er urørt.
+    Mockup av AP1-temaside · visuell retning nær Bluetalk kunnskapsrom + eksisterende Spør-flyt · Streamlit-appen er urørt.
   </footer>
 </div>
 
