@@ -357,6 +357,150 @@
     gap: 16px;
   }
   @media (max-width: 960px) { .two-col { grid-template-columns: 1fr; } }
+  .app-shell {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  @media (max-width: 1000px) {
+    .app-shell { grid-template-columns: 1fr; }
+  }
+  .sidebar {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px;
+    position: sticky;
+    top: 72px;
+  }
+  .sidebar h4 {
+    margin: 14px 0 8px;
+    font-size: 0.92rem;
+  }
+  .sidebar h4:first-child { margin-top: 0; }
+  .sidebar .hint {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  .field-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+  .seg {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 4px;
+  }
+  .seg label {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 0.88rem;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--soft);
+  }
+  .seg label:has(input:checked) {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .seg input { margin-top: 3px; }
+  .slider-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .slider-row output {
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 1.5rem;
+    text-align: right;
+  }
+  input[type="range"] { width: 100%; accent-color: var(--accent); }
+  .paper-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 8px 0;
+  }
+  .paper-actions button {
+    border: 1px solid var(--line);
+    background: var(--soft);
+    border-radius: 8px;
+    padding: 7px 8px;
+    font: inherit;
+    font-size: 0.82rem;
+    cursor: pointer;
+  }
+  .paper-actions button:hover { border-color: var(--accent); color: var(--accent); }
+  .paper-list {
+    max-height: 280px;
+    overflow: auto;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    padding: 6px;
+  }
+  .paper-list label {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 0.78rem;
+    padding: 6px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .paper-list label:hover { background: var(--soft); }
+  .paper-list input { margin-top: 2px; }
+  .active-count {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .active-count.warn { color: #9a3412; font-weight: 600; }
+  .main-pane .card { margin-bottom: 0; }
+  .sources-mock {
+    margin-top: 16px;
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+  .sources-mock h4 { margin: 0 0 10px; font-size: 0.95rem; }
+  .source-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.88rem;
+  }
+  .source-item:last-child { border-bottom: 0; }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex: 0 0 auto;
+  }
+  .dot.g { background: #22c55e; }
+  .dot.y { background: #eab308; }
+  .dot.b { background: #3b82f6; }
+  .dot.r { background: #ef4444; }
+  .caption-route {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
 </style>
 </head>
 <body>
@@ -615,30 +759,78 @@
   <section class="section" id="d">
     <div class="section-head">
       <h2>D — Gå dypere</h2>
-      <span class="tag">Syntetisert fra kilder · demo</span>
+      <span class="tag">Speiler Streamlit-appen · demo</span>
     </div>
-    <div class="card">
-      <p class="muted small">Samme idé som i Streamlit-appen: still et spørsmål til korpuset. Her er svaret et forhåndsskrevet <strong>eksempelsvar</strong> — ikke live API.</p>
-      <div class="ask-box">
-        <textarea id="q" placeholder="Hva er evidensen for …"></textarea>
-        <button class="btn" type="button" onclick="showAns()">Spør</button>
-      </div>
-      <div class="row">
-        <div class="toggle">
-          <button type="button" id="t-f" class="on" onclick="setMode('f')">Forsker</button>
-          <button type="button" id="t-i" onclick="setMode('i')">Ikke-forsker</button>
+    <p class="muted small" style="margin:-4px 0 14px">
+      Samme kontroller som i live-appen: målgruppe, svarformat, antall dokumenter (k) og hvilke artikler som er aktive.
+      Svaret under er fortsatt et <strong>eksempelsvar</strong> — ingen API.
+    </p>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <h4>Målgruppe</h4>
+        <div class="seg" id="mode-seg">
+          <label><input type="radio" name="mode" value="forsker" checked> Forsker / fagperson<br><span class="hint">Teknisk språk, fulle referanser</span></label>
+          <label><input type="radio" name="mode" value="ikke"> Interessert ikke-spesialist<br><span class="hint">Enkelt språk, uten unødig jargon</span></label>
         </div>
-        <span class="tiny muted">Speiler appens målgruppe-toggle</span>
-      </div>
-      <div id="ans" class="answer" hidden>
-        <p class="tiny"><strong>Eksempelsvar</strong> — i live-appen genereres dette fra hentede kilder.</p>
-        <div id="ans-f">
-          <p>Evidensen for at luseindusert smoltdødelighet gir færre voksne tilbake er <strong>omstridt</strong>.</p>
-          <p>Jansen et al. 2025 finner signifikant negativ PIM→1SW i 104 elver, men PIM er ikke den dominerende kovariaten (TS/CGW forklarer mer). Dadswell, Jonsson og Gillson plasserer hovedvekten på andre marine drivere. Additiv vs. kompensatorisk dødelighet er ikke avgjort i korpuset.</p>
-          <p class="muted small">Konfidens: middels.</p>
+
+        <h4>Svarformat</h4>
+        <div class="seg">
+          <label><input type="radio" name="fmt" value="free" checked> Fritekst — formes etter spørsmålet</label>
+          <label><input type="radio" name="fmt" value="struct"> Strukturert — faste seksjoner</label>
         </div>
-        <div id="ans-i" hidden>
-          <p>Forskerne er <strong>ikke enige</strong>. Én stor norsk studie finner sammenheng mellom lusepress og færre smålaks tilbake — men andre faktorer forklarer mer, og andre forskere peker på klima og fiske i havet. Saken er ikke avgjort; derfor ligger papirene side om side her.</p>
+
+        <h4>Antall dokumenter å hente (k)</h4>
+        <div class="slider-row">
+          <span class="hint" style="margin:0">3–12</span>
+          <output id="k-out" for="k">8</output>
+        </div>
+        <input type="range" id="k" min="3" max="12" value="8" oninput="onK()">
+
+        <h4>Artikler i korpuset</h4>
+        <p class="hint" id="paper-caption">27 artikler i databasen</p>
+        <div class="paper-actions">
+          <button type="button" onclick="selectAll(true)">Velg alle</button>
+          <button type="button" onclick="selectAll(false)">Tøm</button>
+        </div>
+        <div class="paper-list" id="paper-list"></div>
+        <p class="active-count" id="active-count">27 / 27 aktive artikler</p>
+      </aside>
+
+      <div class="main-pane">
+        <div class="card">
+          <h3 style="margin:0 0 8px;font-size:1.15rem">AP1 evidenssyntese</h3>
+          <p class="muted small" id="main-blurb">
+            Still et omstridt, vitenskapelig spørsmål om lakselus og dødelighet hos vill laksefisk.
+            Verktøyet henter fra det kuraterte korpuset og returnerer en syntese uten å skjule uenighet.
+          </p>
+
+          <div class="ask-box">
+            <textarea id="q" placeholder="Hva er evidensen for …"></textarea>
+            <button class="btn" type="button" onclick="showAns()">Spør</button>
+          </div>
+
+          <div id="ans" hidden style="margin-top:16px">
+            <p class="caption-route" id="route-cap">Spørsmåls-routing: prioriterte spørsmål Q9</p>
+            <div class="answer">
+              <p class="tiny"><strong>Eksempelsvar</strong> — i live-appen genereres dette fra hentede kilder med valgt k og papirutvalg.</p>
+              <div id="ans-f">
+                <p>Evidensen for at luseindusert smoltdødelighet gir færre voksne tilbake er <strong>omstridt</strong>.</p>
+                <p>Jansen et al. 2025 finner signifikant negativ PIM→1SW i 104 elver, men PIM er ikke den dominerende kovariaten (TS/CGW forklarer mer). Dadswell, Jonsson og Gillson plasserer hovedvekten på andre marine drivere. Additiv vs. kompensatorisk dødelighet er ikke avgjort i korpuset.</p>
+                <p class="muted small">Konfidens: middels · format: <span id="fmt-label">fritekst</span> · k = <span id="k-label">8</span></p>
+              </div>
+              <div id="ans-i" hidden>
+                <p>Forskerne er <strong>ikke enige</strong>. Én stor norsk studie finner sammenheng mellom lusepress og færre smålaks tilbake — men andre faktorer forklarer mer, og andre forskere peker på klima og fiske i havet. Saken er ikke avgjort; derfor ligger papirene side om side her.</p>
+                <p class="muted small">Konfidens: middels · k = <span id="k-label-i">8</span></p>
+              </div>
+            </div>
+
+            <div class="sources-mock">
+              <h4>Hentede kilder (<span id="src-n">8</span>)</h4>
+              <p class="tiny muted" style="margin:0 0 8px">Demo: viser opptil k treff blant de artiklene du har huket av (ikke live embedding-søk).</p>
+              <div id="src-list"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -657,25 +849,143 @@ const Q = [
   "Gir luseindusert smoltdødelighet færre voksne tilbake, og hvordan står det mot andre dødsårsaker i havet?",
   "Ved hvilke lusenivåer dør postsmolt faktisk, og hvor godt er den terskelen etablert?"
 ];
-let mode = "f";
+
+/* Demo retrieval order for Q9-style question (card 4) — subset of real corpus labels */
+const DEMO_HITS = [
+  { id: "2025_jae_jansen-lice-effects-returns", label: "Jansen 2025 — Effects of salmon lice on numbers and size…", dir: "g" },
+  { id: "2021_rfsa_dadswell-atlantic-salmon-collapse", label: "Dadswell 2021 — The Decline and Impending Collapse…", dir: "r" },
+  { id: "2016_jfb_jonsson-environmental-change-salmon", label: "Jonsson 2016 — Environmental change influences…", dir: "y" },
+  { id: "2022_rfbf_gillson-marine-stressors-salmon", label: "Gillson 2022 — A review of marine stressors…", dir: "y" },
+  { id: "2017_icesjms_forseth-major-threats-norway", label: "Forseth 2017 — The major threats to Atlantic salmon…", dir: "g" },
+  { id: "2024_ecosphere_hawley-anadromy-lice-mortality-trout", label: "Hawley 2024 — Individual patterns of anadromy…", dir: "y" },
+  { id: "2020_jae_bohn-timing-survival-postsmolts", label: "Bøhn 2020 — Timing is everything…", dir: "g" },
+  { id: "2025_dao_jones-broughton-lice-unchanged", label: "Jones 2025 — Trends in sea lice infestations…", dir: "b" },
+  { id: "2025_jfd_jones-pacific-lice-cessation-bc", label: "Jones 2025 — Trends in Abundance of Sea Lice…", dir: "b" },
+  { id: "2024_raq_vannes-critical-review-tls", label: "Van Nes 2024 — Salmon lice biology…", dir: "b" },
+  { id: "2021_icesjms_jansen-comment-vps-mortality", label: "Jansen 2021 — Comment on VPS mortality…", dir: "b" },
+  { id: "2022_aei_stige-model-sensitivity-calibration", label: "Stige 2022 — Modelling salmon lice-induced mortality…", dir: "y" },
+];
+
+const PAPERS = [
+  ["1997_icesjms_dawson-seatrout-salmon-susceptibility", "Dawson 1997 — Comparison of the susceptibility of sea trout…"],
+  ["1998_cjfas_mccormick-smolting-migration", "McCormick 1998 — Movement, migration, and smolting…"],
+  ["2015_aei_helland-monitoring-lice-challenges", "Helland 2015 — Statistical and ecological challenges…"],
+  ["2016_jfb_jonsson-environmental-change-salmon", "Jonsson 2016 — Environmental change influences…"],
+  ["2017_icesjms_forseth-major-threats-norway", "Forseth 2017 — The major threats to Atlantic salmon…"],
+  ["2018_epidemics_kristoffersen-risk-assessment", "Kristoffersen 2018 — Quantitative risk assessment…"],
+  ["2020_conphys_fjelldal-lice-osmoregulation-salmon", "Fjelldal 2020 — Effects of laboratory salmon louse…"],
+  ["2020_jae_bohn-timing-survival-postsmolts", "Bøhn 2020 — Timing is everything…"],
+  ["2021_aei_seatrout-risk-assessment", "Finstad 2021 — Development of a risk assessment method…"],
+  ["2021_icesjms_jansen-comment-vps-mortality", "Jansen 2021 — Comment on VPS mortality…"],
+  ["2021_icesjms_johnsen-vps-mortality-norway", "Johnsen 2021 — Salmon lice-induced mortality…"],
+  ["2021_rcn_traffic-light-evaluation", "Eliasen 2021 — Evaluation of the TLS scientific basis…"],
+  ["2021_rfsa_dadswell-atlantic-salmon-collapse", "Dadswell 2021 — Decline and impending collapse…"],
+  ["2022_aei_stige-model-sensitivity-calibration", "Stige 2022 — Modelling salmon lice-induced mortality…"],
+  ["2022_fishes_lamberg-pre-fishery-abundance", "Lamberg 2022 — Using Merged Pre-Fishery Abundance…"],
+  ["2022_rfbf_gillson-marine-stressors-salmon", "Gillson 2022 — A review of marine stressors…"],
+  ["2024_ecosphere_hawley-anadromy-lice-mortality-trout", "Hawley 2024 — Individual patterns of anadromy…"],
+  ["2024_ijpara_stige-regional-lice-coordination", "Stige 2024 — Effects of regional coordination…"],
+  ["2024_raq_vannes-critical-review-tls", "Van Nes 2024 — Salmon lice biology…"],
+  ["2025_aquaculture_gjerde-seatrout-lice-prediction", "Gjerde 2025 — Prediction of salmon lice density…"],
+  ["2025_dao_jones-broughton-lice-unchanged", "Jones 2025 — Trends in sea lice infestations…"],
+  ["2025_jae_jansen-lice-effects-returns", "Jansen 2025 — Effects of salmon lice on returns…"],
+  ["2025_jfd_jones-pacific-lice-cessation-bc", "Jones 2025 — Trends in Abundance of Sea Lice…"],
+  ["2025_raq_stige-comment-vannes", "Stige 2025 — Comment on Van Nes et al.…"],
+  ["2025_raq_vannes-response-to-stige", "Van Nes 2025 — Response to Stige et al.…"],
+  ["2025_scientificdata_bc-sealice-dataset-2001-2023", "Revie 2025 — Sea lice infestation dataset…"],
+  ["2026_prslb_folk-parasites-high-host-density", "Folk 2026 — Parasites perform poorly at high host densities…"],
+];
 
 function ask(i) {
   document.getElementById("q").value = Q[i];
   document.getElementById("d").scrollIntoView({ behavior: "smooth", block: "start" });
   document.getElementById("q").focus();
 }
-function setMode(m) {
-  mode = m;
-  document.getElementById("t-f").classList.toggle("on", m === "f");
-  document.getElementById("t-i").classList.toggle("on", m === "i");
-  if (!document.getElementById("ans").hidden) showAns();
+
+function buildPaperList() {
+  const box = document.getElementById("paper-list");
+  box.innerHTML = PAPERS.map(([id, label]) =>
+    `<label><input type="checkbox" class="paper-cb" value="${id}" checked onchange="updateActiveCount()">` +
+    `<span>${label}</span></label>`
+  ).join("");
+  updateActiveCount();
 }
+
+function selectAll(on) {
+  document.querySelectorAll(".paper-cb").forEach((cb) => { cb.checked = on; });
+  updateActiveCount();
+}
+
+function selectedIds() {
+  return [...document.querySelectorAll(".paper-cb:checked")].map((cb) => cb.value);
+}
+
+function updateActiveCount() {
+  const n = selectedIds().length;
+  const total = PAPERS.length;
+  const el = document.getElementById("active-count");
+  el.textContent = `${n} / ${total} aktive artikler`;
+  el.classList.toggle("warn", n === 0);
+  document.getElementById("paper-caption").textContent = `${total} artikler i databasen`;
+}
+
+function onK() {
+  const k = document.getElementById("k").value;
+  document.getElementById("k-out").textContent = k;
+  if (!document.getElementById("ans").hidden) renderSources();
+}
+
+function currentMode() {
+  return document.querySelector('input[name="mode"]:checked').value;
+}
+
+function currentFmt() {
+  return document.querySelector('input[name="fmt"]:checked').value;
+}
+
+function renderSources() {
+  const k = parseInt(document.getElementById("k").value, 10);
+  const active = new Set(selectedIds());
+  const hits = DEMO_HITS.filter((h) => active.has(h.id)).slice(0, k);
+  document.getElementById("src-n").textContent = String(hits.length);
+  document.getElementById("k-label").textContent = String(k);
+  document.getElementById("k-label-i").textContent = String(k);
+  document.getElementById("fmt-label").textContent =
+    currentFmt() === "struct" ? "strukturert" : "fritekst";
+  document.getElementById("src-list").innerHTML = hits.length
+    ? hits.map((h) =>
+        `<div class="source-item"><span class="dot ${h.dir}"></span>` +
+        `<div><strong>${h.label}</strong><div class="tiny muted">${h.id}</div></div></div>`
+      ).join("")
+    : `<p class="tiny warn" style="color:#9a3412">Ingen artikler valgt — huk av minst én i sidepanelet.</p>`;
+}
+
 function showAns() {
-  if (!document.getElementById("q").value.trim()) document.getElementById("q").value = Q[3];
+  if (!document.getElementById("q").value.trim()) {
+    document.getElementById("q").value = Q[3];
+  }
+  if (selectedIds().length === 0) {
+    updateActiveCount();
+    alert("Velg minst én artikkel før du spør (som i Streamlit-appen).");
+    return;
+  }
+  const forsker = currentMode() === "forsker";
   document.getElementById("ans").hidden = false;
-  document.getElementById("ans-f").hidden = mode !== "f";
-  document.getElementById("ans-i").hidden = mode !== "i";
+  document.getElementById("ans-f").hidden = !forsker;
+  document.getElementById("ans-i").hidden = forsker;
+  document.getElementById("main-blurb").textContent = forsker
+    ? "Still et omstridt, vitenskapelig spørsmål om lakselus og dødelighet hos vill laksefisk. Verktøyet henter fra det kuraterte korpuset og returnerer en teknisk syntese uten å skjule uenighet."
+    : "Still et spørsmål om oppdrett og villfisk — med enkelt språk. Verktøyet forklarer hva forskningen viser, uten at du trenger forkunnskaper.";
+  renderSources();
 }
+
+document.querySelectorAll('input[name="mode"], input[name="fmt"]').forEach((el) => {
+  el.addEventListener("change", () => {
+    if (!document.getElementById("ans").hidden) showAns();
+  });
+});
+
+buildPaperList();
 </script>
 </body>
 </html>
