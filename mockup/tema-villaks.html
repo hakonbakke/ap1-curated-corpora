@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temaside — Lakselus og dødelighet hos ville laksefisk (mockup)</title>
+<style>
+  :root {
+    --bg: #f6f5f2;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --muted: #5c5c5c;
+    --line: #d9d6cf;
+    --accent: #0b3d4a;
+    --warn-bg: #f3efe3;
+    --warn-ink: #5a4a1a;
+    --ok-bg: #e8f0ea;
+    --ok-ink: #1e4d2b;
+    --err-bg: #f5e8e6;
+    --err-ink: #6b2a22;
+    --placeholder-bg: #eceae4;
+    --max: 1080px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.45;
+    font-size: 16px;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 24px 20px 64px; }
+  h1 { font-size: 1.75rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.25rem; margin: 0 0 10px; color: var(--accent); }
+  h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  p { margin: 0 0 10px; }
+  .muted { color: var(--muted); }
+  .small { font-size: 0.875rem; }
+  .tiny { font-size: 0.8rem; }
+  .banner {
+    background: var(--warn-bg);
+    border: 1px solid #ddd3b0;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 16px 18px;
+    margin-bottom: 16px;
+  }
+  .cols { display: flex; gap: 14px; }
+  .cols > * { flex: 1; min-width: 0; }
+  @media (max-width: 900px) { .cols { flex-direction: column; } }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    background: #fff;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    margin: 0 6px 6px 0;
+  }
+  .pill.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .label {
+    display: inline-block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    margin-bottom: 8px;
+  }
+  .label-redaksjon { background: #eef2f4; }
+  .label-korpus { background: var(--ok-bg); color: var(--ok-ink); border-color: #c5d8ca; }
+  .label-syntese { background: #e9e7f2; color: #332a55; border-color: #cdc8e0; }
+  .hero-bad { background: var(--err-bg); border-color: #e0c4bf; }
+  .hero-good { background: var(--ok-bg); border-color: #c5d8ca; }
+  .hero-kicker { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; font-weight: 600; }
+  .quote {
+    font-style: italic;
+    border-left: 3px solid var(--line);
+    padding: 6px 0 6px 12px;
+    margin: 10px 0;
+    color: #222;
+  }
+  .btn {
+    appearance: none;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 12px;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .btn.secondary { background: #fff; color: var(--accent); }
+  .btn:disabled { opacity: 0.5; cursor: default; }
+  .chip-row { margin: 10px 0; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+  .placeholder {
+    background: var(--placeholder-bg);
+    border: 1px dashed #b9b5aa;
+    padding: 10px 12px;
+    margin: 6px 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  details.claim {
+    border: 1px solid var(--line);
+    background: #fafaf8;
+    padding: 8px 10px;
+    margin: 8px 0;
+  }
+  details.claim summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.9rem;
+  }
+  details.claim summary::-webkit-details-marker { display: none; }
+  details.claim summary::before { content: "▸ "; color: var(--accent); }
+  details.claim[open] summary::before { content: "▾ "; }
+  .v-ok { color: var(--ok-ink); font-weight: 600; }
+  .v-raw { color: var(--warn-ink); font-weight: 600; }
+  .card-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; flex-wrap: wrap; }
+  .pos-box { background: #fafaf8; border: 1px solid var(--line); padding: 10px; }
+  .pos-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+  .caveat { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-top: 8px; }
+  .docid { font-family: ui-monospace, Consolas, monospace; font-size: 0.75rem; }
+  .toggle { display: inline-flex; border: 1px solid var(--line); }
+  .toggle button {
+    border: 0; background: #fff; padding: 7px 12px; font: inherit; cursor: pointer;
+  }
+  .toggle button.active { background: var(--accent); color: #fff; }
+  textarea {
+    width: 100%; min-height: 72px; font: inherit; padding: 10px;
+    border: 1px solid var(--line); resize: vertical; background: #fff;
+  }
+  .answer-box { background: #fafaf8; border: 1px solid var(--line); padding: 14px; margin-top: 10px; }
+  table.simple { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  table.simple th, table.simple td { border-top: 1px solid var(--line); padding: 8px 6px; text-align: left; vertical-align: top; }
+  table.simple th { color: var(--muted); font-weight: 600; font-size: 0.8rem; }
+  .section { margin-top: 28px; }
+  .footer-note { margin-top: 32px; font-size: 0.85rem; color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="banner">
+    <strong>Mockup for møte 2026-08-05</strong> —
+    klikkbar prototype, ikke live app. Ingen nettverkskall. Tomme seksjoner er bevisste.
+    Live Streamlit-app er urørt.
+  </div>
+
+  <!-- Trust legend -->
+  <div class="panel" id="tillit">
+    <h2>Tillitsmerker</h2>
+    <p class="small muted">Må være synlige på siden — ikke bare i designnotatet.</p>
+    <table class="simple">
+      <thead><tr><th>Merke</th><th>Gjelder</th><th>Hva leseren kan stole på</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="label label-redaksjon">Redaksjonell oversikt</span></td>
+          <td>Orientering, rammeverk</td>
+          <td>Skrevet og vedlikeholdt av prosjektet. Siterer lov/offisielle kilder — ikke korpuset.</td>
+        </tr>
+        <tr>
+          <td><span class="label label-korpus">Fra kuratert korpus</span></td>
+          <td>Debattkort, usikkerhet</td>
+          <td>Hver påstand kan spores til en inkludert artikkel med DOI og navngitt selektor.</td>
+        </tr>
+        <tr>
+          <td><span class="label label-syntese">Syntetisert fra kilder</span></td>
+          <td>Svar i «Gå dypere»</td>
+          <td>Generert fra korpuset alene (her: forhåndsskrevet eksempelsvar, merket som sådan).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 5.1 Hero -->
+  <div class="panel" id="hvorfor">
+    <span class="label label-korpus">Fra kuratert korpus · egen feilfangst</span>
+    <h2>Hvorfor dette finnes</h2>
+    <p class="muted small">Det mest overbevisende argumentet på siden: en reell feil i eget utkast, fanget før juridisk bruk.</p>
+    <div class="cols">
+      <div class="panel hero-bad" style="margin:0">
+        <div class="hero-kicker" style="color:var(--err-ink)">Hva et generelt utkast skrev (notat v0.4)</div>
+        <p>2024-fallet i innsig ble tilskrevet «marine forhold», ikke lus.</p>
+        <p class="tiny muted">Kilde: Blue Planets eget underlagsutkast — ikke en ekstern chatbot.</p>
+      </div>
+      <div class="panel hero-good" style="margin:0">
+        <div class="hero-kicker" style="color:var(--ok-ink)">Hva artikkelen faktisk sier</div>
+        <p>2024 fanges av en <strong>egen årsfaktor</strong> i modellen. Teoretisk smoltproduksjon og tidligere generasjons fangst (TS/CGW) var dominerende forklaringsvariabler — ikke lus alene, og ikke «marine forhold» som eksplisitt forklaring på 2024-fallet.</p>
+      </div>
+    </div>
+    <details class="claim" open>
+      <summary>Åpne verifisert sitat · Jansen et al. 2025</summary>
+      <div class="quote">«significant negative effect of year 2024… 1- exp(−0.45)=36% fewer returning salmon in 2024 compared to 2019»</div>
+      <p class="tiny"><span class="docid">2025_jae_jansen-lice-effects-returns</span> · §3 Results</p>
+      <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span> · <code>Villlaks_analyse/docs/litteratur_verifisering.md</code></p>
+      <p class="tiny muted">Fanget 2026-07-07. Korrigert i notat v0.5 før dokumentet ble sendt.</p>
+      <p class="tiny muted">Anbefalt formulering (samme fil): «Jansen et al. fant et signifikant årseffekt for 2024 (~36 % færre tilbakevandrende enn referanseåret 2019), modellert som egen årsfaktor uavhengig av PIM. Teoretisk smoltproduksjon og tidligere generasjons fangst (TS/CGW) var dominerende forklaringsvariabler — ikke lus alene.»</p>
+    </details>
+  </div>
+
+  <!-- 5.2 Header -->
+  <div class="panel" id="topp">
+    <h1>Lakselus og dødelighet hos ville laksefisk</h1>
+    <p class="muted">Norge begrenser oppdrettskapasitet delvis ut fra estimert luseindusert dødelighet hos villaks. Denne siden viser hva den resonneringskjeden er, hvor den vitenskapelige uenigheten ligger, og hva evidensbasen faktisk inneholder.</p>
+    <div class="meta-row">
+      <div class="chip-row">
+        <a class="pill" href="#orientering">Vitenskap</a>
+        <a class="pill" href="#rammeverk">Regulering</a>
+        <a class="pill active" href="#debatt">Omstridte punkter</a>
+      </div>
+      <p class="tiny muted" style="margin:0">27 dokumenter · 1997–2026 · Sist gjennomgått: <strong>2026-08-04</strong> (mockup)</p>
+    </div>
+    <p class="tiny muted">Ingen spørsmålsboks over folden. Leseren får terrenget først.</p>
+  </div>
+
+  <!-- 5.8 A -->
+  <div class="section" id="orientering">
+    <div class="panel">
+      <span class="label label-redaksjon">Redaksjonell oversikt</span>
+      <h2>A — Orientering</h2>
+      <p class="small muted">Struktur klar; prosa ikke skrevet til denne demoen. Synlig tomhet er bevisst.</p>
+      <div class="placeholder">[innhold mangler] 1. Hva er lakselus, og hva gjør den med verten?</div>
+      <div class="placeholder">[innhold mangler] 2. Hvorfor kan oppdrett heve lokalt lusetrykk?</div>
+      <div class="placeholder">[innhold mangler] 3. Hvorfor er smoltens utvandringstid kritisk?</div>
+      <div class="placeholder">[innhold mangler] 4. Hvorfor brukes sjøørret som overvåkingssentinel?</div>
+      <div class="placeholder">[innhold mangler] 5. Hva er trafikklyskjeden fra merdlus til regional farge?</div>
+    </div>
+  </div>
+
+  <!-- 5.8 B -->
+  <div class="section" id="rammeverk">
+    <div class="panel">
+      <span class="label label-redaksjon">Redaksjonell oversikt</span>
+      <h2>B — Gjeldende rammeverk</h2>
+      <p class="small muted">Bare to fakta er tillatt i denne mockupen (eksternt sjekket 2026-07-27). Resten er plassholdere — spørsmålet til Ragnar: <em>hvem eier gjennomgangsdatoen når 2026-fargene erstattes?</em></p>
+      <table class="simple">
+        <thead><tr><th>Faktum</th><th>Kilde / status</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Styringsgruppen vurderte <strong>PO3 høy</strong> og <strong>PO4 moderat</strong> for 2024–25.</td>
+            <td class="tiny">trafikklyssystemet.no · sjekket 2026-07-27 · <code>audit_rettsrapport_forsvar.md</code> §2.5</td>
+          </tr>
+          <tr>
+            <td>NFDs 2026-beslutning: <strong>PO3 rød, −6&nbsp;% kapasitet</strong>; <strong>PO4 gul</strong>.</td>
+            <td class="tiny">regjeringen.no · sjekket 2026-07-27 · samme audit</td>
+          </tr>
+          <tr><td colspan="2" class="placeholder" style="margin:0">[må hentes fra Lovdata] Når ble prinsippet om miljøindikator-styrt vekst etablert? (Meld. St. …)</td></tr>
+          <tr><td colspan="2" class="placeholder" style="margin:0">[må hentes fra Lovdata] Formell definisjon av 13 produksjonsområder</td></tr>
+          <tr><td colspan="2" class="placeholder" style="margin:0">[må hentes fra Lovdata] Grønne / gule / røde kapasitetskonsekvenser i forskrift</td></tr>
+          <tr><td colspan="2" class="placeholder" style="margin:0">[må hentes fra Lovdata] Om &lt;10&nbsp;% / 10–30&nbsp;% / &gt;30&nbsp;% er formelle terskler eller modellkategorier</td></tr>
+          <tr><td colspan="2" class="placeholder" style="margin:0">[må hentes fra Lovdata] Ekspertgruppens mandat og rapporteringsrytme</td></tr>
+          <tr><td colspan="2" class="placeholder" style="margin:0">[må hentes fra Lovdata] Lakselusforskriftens merdgrenser</td></tr>
+        </tbody>
+      </table>
+      <p class="tiny muted" style="margin-top:10px">Sist gjennomgått (rammeverkblokk): <strong>2026-07-27</strong> — eierskap uavklart.</p>
+    </div>
+  </div>
+
+  <!-- 5.3 Debate cards -->
+  <div class="section" id="debatt">
+    <div class="panel" style="border-width:2px; border-color: var(--accent);">
+      <span class="label label-korpus">Fra kuratert korpus</span>
+      <h2>C — Hvor diskusjonen står</h2>
+      <p class="muted small">Synlig før spørsmålsboks. Kortene er struktur over papirene — ikke et generert svar. Ulike verifikasjonsstatuser er bevisste.</p>
+    </div>
+
+    <!-- Card 1 unverified -->
+    <div class="panel" id="kort1">
+      <div class="card-head">
+        <h3>1. Forsvinner lusa hvis oppdrettet forsvinner?</h3>
+        <span class="pill" style="background:var(--warn-bg);border-color:#ddd3b0">3 papers · Q1, Q9 · <span class="v-raw">Uttrukket, ikke verifisert</span></span>
+      </div>
+      <p class="tiny muted">Expected disagreement (Q1): Attribution is methodologically difficult… Background lice pressure in the absence of farms is poorly known.</p>
+      <div class="cols">
+        <div class="pos-box">
+          <div class="pos-label">Én posisjon</div>
+          <p class="small">Norske modeller antar i stor grad at oppdrettsoriginert lus dominerer infestasjonspresset på villfisk langs kysten — og tilskriver villfiskens luselast i hovedsak nærliggende akvakultur.</p>
+        </div>
+        <div class="pos-box">
+          <div class="pos-label">Motposisjon</div>
+          <p class="small">To 2025-studier fra British Columbia fant at luseprevalens/-intensitet på juvenil vill stillehavslaks forble på samme nivå — eller høyere — etter at nesten all lokal oppdrettsbiomasse var fjernet.</p>
+          <details class="claim">
+            <summary>Sitat (uttrekk)</summary>
+            <div class="quote">«This study provides clear evidence that the prevalence and intensity of sea lice infestations on juvenile salmon in the BA in the virtual absence of salmon aquaculture occur at levels equal to or greater than those observed during full-scale production.»</div>
+            <p class="tiny"><span class="docid">2025_dao_jones-broughton-lice-unchanged</span> · Discussion</p>
+            <p class="tiny"><span class="v-raw">Uttrukket, ikke verifisert</span> · ikke i <code>litteratur_verifisering.md</code></p>
+          </details>
+        </div>
+      </div>
+      <p class="tiny"><span class="docid">2025_dao_jones-broughton-lice-unchanged</span> ·
+        <span class="docid">2025_jfd_jones-pacific-lice-cessation-bc</span> ·
+        <span class="docid">2025_scientificdata_bc-sealice-dataset-2001-2023</span></p>
+      <p class="caveat">Kuratorforbehold: Overførbarhet er omstridt. Andre vertsarter; <em>Caligus clemensi</em> er en viktig bidragsyter i BC, men ikke i Norge.</p>
+      <button class="btn" type="button" onclick="prefill(0)">Spør om dette</button>
+    </div>
+
+    <!-- Card 2 verified -->
+    <div class="panel" id="kort2">
+      <div class="card-head">
+        <h3>2. Er dødelighetsmodellen kalibrert på riktige data?</h3>
+        <span class="pill" style="background:var(--ok-bg);border-color:#c5d8ca">4 papers · Q5, Q7, Q8, Q10 · <span class="v-ok">Verifisert mot kilde</span></span>
+      </div>
+      <p class="tiny muted">Expected disagreement (Q8/Q10): sensitivity to calibration data and migration assumptions; central regulatory controversy.</p>
+      <div class="cols">
+        <div class="pos-box">
+          <div class="pos-label">Én posisjon (Stige mfl.)</div>
+          <p class="small">Modellert dødelighet er svært følsom for hvilken kalibreringsdatakilde som brukes — trål versus sentinelbur — mer enn for migrasjonshastighet. Ekspertgruppen argumenterer at kalibrering kompenserer for skjevheter kritikerne peker på.</p>
+          <details class="claim">
+            <summary>Verifisert sitat · Stige 2022</summary>
+            <div class="quote">Tittel/påstand: «highly sensitive to calibration data»; A1: kalibrering mot «trawl data» vs «Sentinel cage data».</div>
+            <p class="tiny"><span class="docid">2022_aei_stige-model-sensitivity-calibration</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+          </details>
+          <details class="claim">
+            <summary>Uttrekk · Stige 2025 (kommentar)</summary>
+            <div class="quote">«these potential biases in the raw data are corrected for when using the data to calibrate models… If, for example, the concentration of infective lice larvae was generally only half as high as calculated, this would be compensated for by a doubling of the calibration factor»</div>
+            <p class="tiny"><span class="docid">2025_raq_stige-comment-vannes</span></p>
+            <p class="tiny"><span class="v-raw">Uttrukket, ikke verifisert</span> (papiret ikke i verifikasjonsfilen)</p>
+          </details>
+        </div>
+        <div class="pos-box">
+          <div class="pos-label">Motposisjon (Van Nes mfl.)</div>
+          <p class="small">Systematisk overestimering via migrasjonstidspunkt, lusebiologi, kalibrering og terskler. Responsen fastholder at kalibreringsdataene selv er upålitelige, og at luselast ligger til grunn for dødelighetsestimater i alle syv TLS-endepunkter.</p>
+          <details class="claim">
+            <summary>Verifisert sitat · Van Nes 2024</summary>
+            <div class="quote">«median migration date… 9 May… 14 days earlier than practiced by the TLS»; «likely contribute to an overestimate of lice-induced mortalities»</div>
+            <p class="tiny"><span class="docid">2024_raq_vannes-critical-review-tls</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+          </details>
+          <details class="claim">
+            <summary>Uttrekk · Van Nes 2025 (respons)</summary>
+            <div class="quote">«observed and modelled lice loads form the basis of mortality estimates in all seven assessment end points of the TLS»</div>
+            <p class="tiny"><span class="docid">2025_raq_vannes-response-to-stige</span></p>
+            <p class="tiny"><span class="v-raw">Uttrukket, ikke verifisert</span></p>
+          </details>
+        </div>
+      </div>
+      <p class="tiny"><span class="docid">2022_aei_stige-model-sensitivity-calibration</span> ·
+        <span class="docid">2024_raq_vannes-critical-review-tls</span> ·
+        <span class="docid">2025_raq_stige-comment-vannes</span> ·
+        <span class="docid">2025_raq_vannes-response-to-stige</span></p>
+      <p class="caveat">Kuratorforbehold: Utvekslingen inneholder også interessekonflikt-argumenter. Her vises bare det vitenskapelige innholdet — ingen vurdering av COI.</p>
+      <button class="btn" type="button" onclick="prefill(1)">Spør om dette</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="panel" id="kort3">
+      <div class="card-head">
+        <h3>3. Treffer modellene det som faktisk observeres?</h3>
+        <span class="pill" style="background:var(--ok-bg);border-color:#c5d8ca">3 papers · Q5, Q8, Q10 · <span class="v-ok">Verifisert mot kilde</span></span>
+      </div>
+      <p class="tiny muted">Expected disagreement (Q5): Model–observation agreement assessed differently by different groups.</p>
+      <div class="cols">
+        <div class="pos-box">
+          <div class="pos-label">Én posisjon</div>
+          <p class="small">Johnsen et al. 2021 presenterer den operative VPS-modellen brukt i TLS-vurderinger for 401 elver, kalibrert mot lus på genetisk tilordnet trålfanget postsmolt.</p>
+          <details class="claim">
+            <summary>Verifisert sitat · Johnsen 2021</summary>
+            <div class="quote">«401 rivers»; «calibrated… lice level observed on the wild salmon post-smolts captured by trawling»; 2019: «179 rivers… 140… 82 rivers» i &lt;10 / 10–30 / &gt;30&nbsp;%.</div>
+            <p class="tiny"><span class="docid">2021_icesjms_johnsen-vps-mortality-norway</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+          </details>
+        </div>
+        <div class="pos-box">
+          <div class="pos-label">Motposisjon</div>
+          <p class="small">Jansen &amp; Gjerde 2021: VPS overestimerer systematisk mot trålbaserte estimater i 26 av 27 område×år-sammenligninger. Gjerde &amp; Aslam 2025: PMLD har svært dårlig prediksjonskraft for observert luseintensitet (RPD ≈ 1,18).</p>
+          <details class="claim">
+            <summary>Verifisert sitat · Jansen &amp; Gjerde 2021</summary>
+            <div class="quote">«systematically overestimates lice-induced mortality for VPS compared to estimates from trawled smolt»; «26 out of 27 year by area comparisons»</div>
+            <p class="tiny"><span class="docid">2021_icesjms_jansen-comment-vps-mortality</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+          </details>
+          <details class="claim">
+            <summary>Uttrekk · Gjerde &amp; Aslam 2025</summary>
+            <div class="quote">«low and very similar RPD values (1.178 to 1.189) and thus very poor predictive power (Williams, 2014)»</div>
+            <p class="tiny"><span class="docid">2025_aquaculture_gjerde-seatrout-lice-prediction</span></p>
+            <p class="tiny"><span class="v-raw">Uttrukket, ikke verifisert</span> · tall kopiert eksakt fra uttrekk (ikke «r² ≈ 0,30»)</p>
+          </details>
+        </div>
+      </div>
+      <p class="tiny"><span class="docid">2021_icesjms_johnsen-vps-mortality-norway</span> ·
+        <span class="docid">2021_icesjms_jansen-comment-vps-mortality</span> ·
+        <span class="docid">2025_aquaculture_gjerde-seatrout-lice-prediction</span></p>
+      <p class="caveat">Kuratorforbehold: Validering forutsetter at observasjonsdataene er representative — Helland et al. 2015 viser at det er statistisk vanskelig i seg selv.</p>
+      <button class="btn" type="button" onclick="prefill(2)">Spør om dette</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="panel" id="kort4">
+      <div class="card-head">
+        <h3>4. Gir smoltdødelighet færre voksne tilbake?</h3>
+        <span class="pill" style="background:var(--ok-bg);border-color:#c5d8ca">4 papers · Q9 · <span class="v-ok">Verifisert mot kilde</span></span>
+      </div>
+      <p class="tiny muted">Expected disagreement (Q9): oceanic factors vs additive lice mortality — one of the most contested questions.</p>
+      <div class="cols">
+        <div class="pos-box">
+          <div class="pos-label">Én posisjon</div>
+          <p class="small">Jansen et al. 2025 kobler modellert infestasjonspress (PIM) til observert innsig i 104 norske elver og finner signifikant negativ effekt på 1SW-laks — men PIM er ikke den dominerende kovariaten.</p>
+          <details class="claim">
+            <summary>Verifisert sitat · Jansen 2025</summary>
+            <div class="quote">«104 rivers and 396 river-years»; PIM:1SW β₁=2.883, p&lt;0.0005; «PIM was not the dominant covariate… theoretical smolt production and recreational catches… provided most of the information»</div>
+            <p class="tiny"><span class="docid">2025_jae_jansen-lice-effects-returns</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+          </details>
+        </div>
+        <div class="pos-box">
+          <div class="pos-label">Motposisjon</div>
+          <p class="small">Dadswell et al. 2021 peker på IUU-fiske på åpent hav som sannsynlig hoveddriver for kollaps i innsig. Jonsson et al. 2016: lus «appears not be a major contributor» til observert størrelsesfall. Gillson et al. 2022: marikultur kan være lav-påvirkning der oppdrett mangler.</p>
+          <details class="claim">
+            <summary>Verifisert sitat · Jonsson 2016</summary>
+            <div class="quote">«L. salmonis appears not be a major contributor to the observed decrease in size»</div>
+            <p class="tiny"><span class="docid">2016_jfb_jonsson-environmental-change-salmon</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+          </details>
+          <details class="claim">
+            <summary>Uttrekk · Dadswell 2021</summary>
+            <div class="quote">«we will propose and examine a further possibility for marine mortality… illegal, unreported, and unregulated (IUU) exploitation»</div>
+            <p class="tiny"><span class="docid">2021_rfsa_dadswell-atlantic-salmon-collapse</span></p>
+            <p class="tiny"><span class="v-raw">Uttrukket, ikke verifisert</span></p>
+          </details>
+        </div>
+      </div>
+      <p class="tiny"><span class="docid">2025_jae_jansen-lice-effects-returns</span> ·
+        <span class="docid">2021_rfsa_dadswell-atlantic-salmon-collapse</span> ·
+        <span class="docid">2016_jfb_jonsson-environmental-change-salmon</span> ·
+        <span class="docid">2022_rfbf_gillson-marine-stressors-salmon</span></p>
+      <p class="caveat">Kuratorforbehold: Kjernespørsmålet er om lusedødelighet er additiv eller kompensatorisk. Ikke la en syntese kollapse det til ett tall.</p>
+      <button class="btn" type="button" onclick="prefill(3)">Spør om dette</button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="panel" id="kort5">
+      <div class="card-head">
+        <h3>5. Holder laboratorieterskler i naturen?</h3>
+        <span class="pill" style="background:var(--ok-bg);border-color:#c5d8ca">5 papers · Q6, Q7 · <span class="v-ok">Verifisert mot kilde</span> (delvis)</span>
+      </div>
+      <p class="tiny muted">Expected disagreement (Q6/Q7): extrapolation from challenge studies to field is contested.</p>
+      <div class="cols">
+        <div class="pos-box">
+          <div class="pos-label">Én posisjon</div>
+          <p class="small">Fjelldal et al. 2020: laboratorie-utfordring med snitt 0,38 mobile lus/g ga redusert vekst og osmoregulatorisk belastning. Bøhn et al. 2020: dramatisk lavere overlevelse når utvandring faller sammen med høyt lusetrykk (RR = 55,3).</p>
+          <details class="claim">
+            <summary>Uttrekk · Fjelldal 2020</summary>
+            <div class="quote">«infected post-smolts had a mean of 0.38 (range of 0.07–0.9) mobile lice g−1 fish weight»; SGR 0.42 ± 0.04 (infisert) vs 0.95 ± 0.03 (kontroll)</div>
+            <p class="tiny"><span class="docid">2020_conphys_fjelldal-lice-osmoregulation-salmon</span></p>
+            <p class="tiny"><span class="v-raw">Uttrukket, ikke verifisert</span> (ikke i verifikasjonsfilen)</p>
+          </details>
+          <details class="claim">
+            <summary>Verifisert sitat · Bøhn 2020</summary>
+            <div class="quote">«RR = 55.3, 95% CI: 7.7–398» (June 2014); «only a single fish (0.03%) returned from the control group… (1.86%) returned in the treated group»</div>
+            <p class="tiny"><span class="docid">2020_jae_bohn-timing-survival-postsmolts</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+          </details>
+        </div>
+        <div class="pos-box">
+          <div class="pos-label">Motposisjon</div>
+          <p class="small">Van Nes et al. 2024 utfordrer ekstrapolering fra lab til felt. Hawley et al. 2024 (sjøørret) viser enorm heterogenitet i lus-andel av dødelighet mellom populasjoner — én terskel skjuler stor variasjon.</p>
+          <details class="claim">
+            <summary>Verifisert sitat · Hawley 2024</summary>
+            <div class="quote">«N = 8049»; ZSL for smolt varierer sterkt mellom populasjoner/soner (f.eks. 3.0–43.8 % i tekst §Results).</div>
+            <p class="tiny"><span class="docid">2024_ecosphere_hawley-anadromy-lice-mortality-trout</span></p>
+            <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+            <p class="tiny" style="color:var(--err-ink)"><strong>Merk:</strong> Studien gjelder <em>sjøørret</em>, ikke villaks — analogi for variabel eksponering, ikke direkte overførbar.</p>
+          </details>
+        </div>
+      </div>
+      <p class="tiny"><span class="docid">2020_conphys_fjelldal-lice-osmoregulation-salmon</span> ·
+        <span class="docid">2020_jae_bohn-timing-survival-postsmolts</span> ·
+        <span class="docid">2024_raq_vannes-critical-review-tls</span> ·
+        <span class="docid">2024_ecosphere_hawley-anadromy-lice-mortality-trout</span> ·
+        <span class="docid">1997_icesjms_dawson-seatrout-salmon-susceptibility</span></p>
+      <p class="caveat">Kuratorforbehold: Dawson et al. 1997 viser at sjøørret og laks ikke har samme mottakelighet — terskler er ikke utbyttbare mellom arter.</p>
+      <button class="btn" type="button" onclick="prefill(4)">Spør om dette</button>
+    </div>
+  </div>
+
+  <!-- 5.8 E -->
+  <div class="section" id="endring">
+    <div class="panel">
+      <span class="label label-korpus">Fra kuratert korpus</span>
+      <h2>E — Hva ville endret bildet</h2>
+      <p class="small muted">Tre spor fra usikkerhetsfeltene i PRIORITY_QUESTIONS / metadata — ikke en full syntese.</p>
+      <div class="placeholder">Direkte observasjon av smoltens migrasjonstid og -varighet (Q4: små endringer → store endringer i estimert luselast).</div>
+      <div class="placeholder">Feltvalidering av dose–respons utenfor laboratorium (Q7: «one of the largest sources of uncertainty»).</div>
+      <div class="placeholder">Kalibrering som ikke avhenger av trål-versus-sentinel-valget (Stige et al. 2022).</div>
+    </div>
+  </div>
+
+  <!-- 5.5 Dig deeper -->
+  <div class="section" id="dypere">
+    <div class="panel">
+      <span class="label label-syntese">Syntetisert fra kilder</span>
+      <h2>D — Gå dypere</h2>
+      <p class="small muted">Nederst på siden. «Spør om dette» fyller boksen. Svaret under er et <strong>Eksempelsvar</strong> — ikke live API.</p>
+
+      <label class="tiny muted" for="qbox">Spørsmål</label>
+      <textarea id="qbox" placeholder="Velg et debattkort eller skriv…"></textarea>
+
+      <div style="margin:12px 0; display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+        <div class="toggle" role="group" aria-label="Register">
+          <button type="button" id="btn-forsker" class="active" onclick="setRegister('forsker')">Forsker</button>
+          <button type="button" id="btn-ikke" onclick="setRegister('ikke')">Ikke-forsker</button>
+        </div>
+        <button class="btn secondary" type="button" onclick="showAnswer()">Vis eksempelsvar</button>
+        <span class="pill">Eksempelsvar · kort 4</span>
+      </div>
+
+      <div id="answer" class="answer-box" hidden>
+        <p class="tiny"><strong>Eksempelsvar</strong> — forhåndsskrevet for demo. I live-appen genereres dette fra hentede kilder.</p>
+        <div id="ans-forsker">
+          <p>Evidensen for at luseindusert smoltdødelighet gir færre voksne tilbake er <strong>omstridt</strong>, ikke avgjort.</p>
+          <p>Jansen et al. 2025 kobler TLS-PIM til observert innsig i 104 elver og finner signifikant negativ effekt på 1SW (β₁=2.883, p&lt;0.0005), men PIM er ikke den dominerende kovariaten — teoretisk smoltproduksjon og fangster forklarer mer
+            <details class="claim" style="display:inline-block;margin-left:6px;min-width:220px">
+              <summary>Jansen 2025</summary>
+              <div class="quote">«PIM was not the dominant covariate… theoretical smolt production and recreational catches… provided most of the information»</div>
+              <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span> · <span class="docid">2025_jae_jansen-lice-effects-returns</span></p>
+            </details>.
+          </p>
+          <p>Mot dette står studier som plasserer hovedvekten på andre marine drivere: Dadswell et al. 2021 (IUU på åpent hav), Jonsson et al. 2016 (klima/størrelse; lus ikke hovedårsak til størrelsesfall
+            <details class="claim" style="display:inline-block;margin-left:6px;min-width:220px">
+              <summary>Jonsson 2016</summary>
+              <div class="quote">«L. salmonis appears not be a major contributor to the observed decrease in size»</div>
+              <p class="tiny"><span class="v-ok">Verifisert mot kilde 2026-07-07</span></p>
+            </details>),
+            og Gillson et al. 2022 (kontekstavhengig trusselbilde).</p>
+          <p class="muted small">Konfidens: middels — uenigheten er reell, og additiv vs. kompensatorisk dødelighet er ikke avgjort i korpuset.</p>
+        </div>
+        <div id="ans-ikke" hidden>
+          <p>Kort sagt: forskerne er <strong>ikke enige</strong> om lus fra oppdrett er hovedgrunnen til at færre voksenlaks kommer tilbake.</p>
+          <p>Én stor norsk studie (Jansen 2025) finner at mer lusepress henger sammen med færre smålaks tilbake til 104 elver — men andre faktorer i elva og fangsten forklarer mer av bildet enn lus alene
+            <details class="claim" style="display:inline-block;margin-left:6px;min-width:200px">
+              <summary>kilde</summary>
+              <div class="quote">«PIM was not the dominant covariate…»</div>
+              <p class="tiny"><span class="v-ok">Verifisert 2026-07-07</span></p>
+            </details>.</p>
+          <p>Andre forskere peker på klima, næring i havet og ulovlig fiske som viktigere forklaringer på nedgangen i Nord-Atlanteren.</p>
+          <p class="muted small">Vi kan ikke si at saken er avgjort. Det er nettopp derfor disse papirene ligger side om side i korpuset.</p>
+        </div>
+      </div>
+
+      <hr>
+      <p class="tiny muted">Startspørsmål (fyller boksen):</p>
+      <ol class="small" id="starters"></ol>
+    </div>
+  </div>
+
+  <!-- 5.7 Disclosure -->
+  <div class="section" id="apent">
+    <div class="panel">
+      <h2>Åpenhet</h2>
+      <ul class="small">
+        <li>Jansen et al. 2025 i dette korpuset er finansiert av <strong>PO3/4 Kunnskapsinkubator</strong> (funding-linje i artikkelen; bekreftet i <code>litteratur_verifisering.md</code>).</li>
+        <li>Blue Planets egen analyse på dette spørsmålet er knyttet til <strong>samme PO3/4-bestilling</strong> (<code>Villlaks_analyse/STATUS.md</code>, 2026-07-07).</li>
+        <li>Blue Planet har levert <strong>evidensnotat til rettslig bruk</strong> på et beslektet spørsmål (Cap Mare / underlagsnotat; samme STATUS).</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer-note">
+    Fil: <code>mockup/tema-villaks.html</code> · Ingen CDN · Ingen API · Åpne med wifi av for å verifisere.
+    Live app under <code>app/</code> er ikke endret.
+  </p>
+</div>
+
+<script>
+const QUESTIONS = [
+  "Hva skjedde med lus på villaks etter at oppdrett ble fjernet i British Columbia, og er det overførbart til Norge?",
+  "Hva er det egentlig Van Nes et al. og Stige et al. er uenige om når det gjelder kalibrering?",
+  "Hvor godt treffer de operative lusemodellene det som faktisk måles på villfisk?",
+  "Gir luseindusert smoltdødelighet færre voksne tilbake, og hvordan står det mot andre dødsårsaker i havet?",
+  "Ved hvilke lusenivåer dør postsmolt faktisk, og hvor godt er den terskelen etablert?"
+];
+
+let register = "forsker";
+
+function prefill(i) {
+  const box = document.getElementById("qbox");
+  box.value = QUESTIONS[i];
+  box.focus();
+  document.getElementById("dypere").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function setRegister(mode) {
+  register = mode;
+  document.getElementById("btn-forsker").classList.toggle("active", mode === "forsker");
+  document.getElementById("btn-ikke").classList.toggle("active", mode === "ikke");
+  const show = document.getElementById("answer").hidden === false;
+  if (show) showAnswer();
+}
+
+function showAnswer() {
+  document.getElementById("answer").hidden = false;
+  document.getElementById("ans-forsker").hidden = register !== "forsker";
+  document.getElementById("ans-ikke").hidden = register !== "ikke";
+  if (!document.getElementById("qbox").value.trim()) {
+    document.getElementById("qbox").value = QUESTIONS[3];
+  }
+}
+
+(function initStarters() {
+  const ol = document.getElementById("starters");
+  QUESTIONS.forEach((q, i) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "#dypere";
+    a.textContent = q;
+    a.onclick = function (e) { e.preventDefault(); prefill(i); };
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>
