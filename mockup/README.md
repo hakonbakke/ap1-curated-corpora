@@ -1,9 +1,9 @@
 # Theme page mockup (lean)
 
-Open: `mockup/tema-villaks.html` (double-click / Ctrl+O). No server.
+Open: `mockup/tema-villaks.html` (double-click / Ctrl+O). Keep `figur-*.png` beside the HTML.
 
-**Shape:** A Orientering → B Rammeverk → C Debattkort → D Gå dypere.
+**Shape:** A Introduksjon → B Rammeverk (+ kart) → C Debattkort → D Gå dypere.
 
-Deliberately simple for the 2026-08-05 meeting. Live Streamlit app untouched.
+Figures: `figur-smolt-lus.png` (A), `figur-trafikklys.png` (B).
 
-What is fake: Section D answer is canned (`Eksempelsvar`). Most of Section B is still Lovdata placeholders except two checked PO3/PO4 facts.
+Section D answer is canned (`Eksempelsvar`). Lovdata links in B still placeholders.

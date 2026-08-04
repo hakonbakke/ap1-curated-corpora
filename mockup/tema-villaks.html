@@ -154,6 +154,24 @@
     font-size: 0.82rem;
     color: var(--muted);
   }
+  .figure {
+    margin: 16px 0 8px;
+  }
+  .figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+  .figure figcaption {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  .prose p { margin: 0 0 12px; }
+  .prose p:last-child { margin-bottom: 0; }
 </style>
 </head>
 <body>
@@ -166,7 +184,7 @@
     <h1>Lakselus og dødelighet hos ville laksefisk</h1>
     <p class="muted">Norge begrenser oppdrettskapasitet delvis ut fra estimert luseindusert dødelighet hos villaks — denne siden viser kjeden, uenigheten og evidensen.</p>
     <div class="chips">
-      <a class="chip" href="#a">Vitenskap</a>
+      <a class="chip" href="#a">Introduksjon</a>
       <a class="chip" href="#b">Regulering</a>
       <a class="chip" href="#c">Omstridte punkter</a>
     </div>
@@ -176,16 +194,38 @@
   <!-- A -->
   <section class="section" id="a">
     <p class="tag">Redaksjonell oversikt</p>
-    <h2>A — Hva skjer her</h2>
-    <div class="card">
-      <ul class="bullets">
-        <li><strong>Lakselus</strong> (<em>Lepeophtheirus salmonis</em>) er en naturlig marin parasitt. Ved høye tettheter skader den hud og saltbalanse hos laksesmolt.</li>
-        <li><strong>Oppdrett</strong> samler svært mange verter på ett sted og kan heve lokal larveproduksjon langt over bakgrunnsnivå. Larvene driver med strømmen.</li>
-        <li><strong>Vill smolt</strong> vandrer ut gjennom de samme fjordene hver vår. Skade avhenger av om migrasjonen overlapper — i tid og rom — med høyt larvepress.</li>
-        <li><strong>Sjøørret</strong> blir værende kystnært og er derfor mer langvarig eksponert; den brukes som overvåkingssentinel.</li>
-        <li><strong>Hvorfor det betyr noe:</strong> Norge styrer regional kapasitet delvis ut fra <em>estimert</em> luseindusert smoltdødelighet. Kjeden fra merdtelling til farge på et produksjonsområde er det dette korpuset undersøker.</li>
-      </ul>
-      <p class="tiny muted">Kort orientering — ikke korpussyntese. Kan senere utvides til 250–400 ord med kildehenvisninger.</p>
+    <h2>A — Introduksjon</h2>
+    <div class="card prose">
+      <p>
+        Lakselus (<em>Lepeophtheirus salmonis</em>) er en naturlig marin parasitt hos laksefisk.
+        Den fester seg på huden, lever av slim, hud og blod, og kan ved høye tettheter svekke
+        fiskens evne til å holde saltbalansen i sjøvann. Det er særlig den utvandrende smolten —
+        ung fisk på vei fra elv til hav — som er sårbar, fordi den er liten og møter sjøen for første gang.
+      </p>
+      <p>
+        Oppdrett endrer premissene. Når mange tusen laks holdes samlet i merder, kan lokal
+        reproduksjon av lus stige langt over naturlig bakgrunn. De planktoniske larvene driver
+        med strømmen og kan møte ville smolt som hvert år trekker ut gjennom de samme fjordene.
+        Om skaden blir stor, avgjøres ikke bare av hvor mye lus som produseres, men av om
+        utvandringen overlapper med høyt larvepress — i både tid og rom.
+      </p>
+      <figure class="figure">
+        <img src="figur-smolt-lus.png" alt="Skisse: smolt vandrer fra elv til sjø, møter lusetrykk ved oppdrettsmerder, og vender tilbake som 1SW–3SW.">
+        <figcaption>
+          Figur. Utvandring og mulig parasittindusert dødelighet langs kysten: smolt utvandrer år <em>t</em>,
+          møter lus i sjøen, og kan vende tilbake som smålaks (1SW) året etter.
+          Illustrasjonen er hentet fra Jansen et al. (gjengitt i Blue Planets underlagsmateriale) og
+          viser logikken bak lag-1-koblingen mellom lusepress og innsig — ikke et empirisk resultat i seg selv.
+        </figcaption>
+      </figure>
+      <p>
+        Sjøørret påvirkes annerledes: den blir værende mer kystnært enn laksen, og er derfor
+        eksponert over lengre tid. Derfor brukes den ofte som overvåkingssentinel. For villaks
+        er det politiske og forvaltningsmessige spørsmålet skarpere: når estimert lusedødelighet
+        hos utvandrende smolt blir høy i et område, kan det begrense hvor mye oppdrett som tillates.
+        Det er denne kjeden — fra lus på merd, via modeller og felt, til regional kapasitet —
+        som temaet og korpuset handler om.
+      </p>
     </div>
   </section>
 
@@ -193,16 +233,42 @@
   <section class="section" id="b">
     <p class="tag">Reguleringskontekst — ikke korpussyntese</p>
     <h2>B — Gjeldende norsk rammeverk</h2>
-    <div class="card">
-      <ul class="bullets">
-        <li>Kysten er delt i <strong>13 produksjonsområder</strong> som vurderes som enhet.</li>
-        <li><strong>Grønn / gul / rød</strong> styrer om kapasitet kan øke, stå stille eller må reduseres.</li>
-        <li>Fargene er knyttet til <strong>estimert luseindusert postsmolt-dødelighet</strong> (ofte omtalt i bånd rundt &lt;10&nbsp;% / 10–30&nbsp;% / &gt;30&nbsp;% — formell forskriftstekst må bekreftes).</li>
-        <li>En <strong>ekspertgruppe</strong> vurderer dødelighet per område og rapporterer inn i beslutningsgrunnlaget.</li>
-      </ul>
-      <p class="small"><strong>Sjekket 2026-07-27:</strong> Styringsgruppen: PO3 høy, PO4 moderat (2024–25). NFD 2026: PO3 rød (−6&nbsp;% kapasitet), PO4 gul.</p>
-      <div class="placeholder">[må hentes fra Lovdata] produksjonsområdeforskriften · lakselusforskriften · akvakulturloven — lenker og eksakte terskler</div>
-      <p class="tiny muted">Sist gjennomgått (denne blokken): <strong>2026-07-27</strong> · eierskap for neste TLS-runde: uavklart</p>
+    <div class="card prose">
+      <p>
+        Norge regulerer vekst i lakseoppdrett blant annet gjennom <strong>trafikklyssystemet</strong>.
+        Kysten er delt i <strong>13 produksjonsområder (PO)</strong>. Hvert område vurderes ut fra
+        estimert risiko for luseindusert dødelighet hos utvandrende villaks-smolt, og får en farge
+        som styrer kapasiteten: <strong>grønn</strong> kan åpne for vekst, <strong>gul</strong> innebærer
+        i hovedsak status quo, og <strong>rød</strong> normalt krav om reduksjon.
+      </p>
+      <p>
+        Fargene er knyttet til estimert postsmolt-dødelighet, ofte omtalt i bånd rundt
+        &lt;10&nbsp;%, 10–30&nbsp;% og &gt;30&nbsp;%. En ekspertgruppe vurderer kunnskapsgrunnlaget
+        for hvert område; den endelige kapasitetsbeslutningen fattes politisk/forvaltningsmessig.
+        Parallelt gjelder egne regler for lus på oppdrettsfisk (tellinger og tiltakskrav) —
+        det er et annet spor enn den regionale fargeleggingen.
+      </p>
+      <figure class="figure">
+        <img src="figur-trafikklys.png" alt="Kart over Norges 13 produksjonsområder fargelagt grønn, gul og rød for periodene 2018–2019, 2020–2022, 2022–2023 og 2024–2025.">
+        <figcaption>
+          Figur. Trafikklyssystemet over tid: PO1–PO13 med grønn / gul / rød for fire vurderingsperioder
+          (kilder angitt i figuren: Regjeringen og Styringsgruppen). Vestlandet (særlig PO3–PO4)
+          har over tid vært under strengest trykk; i 2024–2025 er flere midt- og nordlige områder gul.
+        </figcaption>
+      </figure>
+      <p>
+        Kartene viser at systemet ikke er statisk. PO3 har vært rød i alle viste perioder, mens
+        flere områder har skiftet mellom grønt og gult. For den siste runden som er synlig her
+        (2024–2025 / Styringsgruppen) er bildet mer gult langs deler av kysten enn i tidlige år —
+        samtidig som de hardeste områdene på Vestlandet fortsatt skiller seg ut.
+      </p>
+      <p class="small">
+        <strong>Sjekket 2026-07-27:</strong> Styringsgruppen vurderte PO3 som høy og PO4 som moderat
+        for 2024–25. NFD 2026: PO3 rød med −6&nbsp;% kapasitet; PO4 gul.
+        (Kilder: trafikklyssystemet.no / regjeringen.no, via intern audit.)
+      </p>
+      <div class="placeholder">[må hentes fra Lovdata] produksjonsområdeforskriften · lakselusforskriften · akvakulturloven — lenker, eksakte terskler og beslutningssyklus</div>
+      <p class="tiny muted">Sist gjennomgått (denne blokken): <strong>2026-07-27</strong> · hvem eier neste oppdatering etter ny fargelegging: uavklart</p>
     </div>
   </section>
 
