@@ -9,7 +9,7 @@
       "2025_dao_jones-broughton-lice-unchanged",
       "2025_jfd_jones-pacific-lice-cessation-bc"
     ],
-    "notes": "Population framing — must not be only smolt/lab papers"
+    "notes": "Baseline. Population framing — must not be only smolt/lab. Label: existing smoke set."
   },
   {
     "id": "q9_population_en",
@@ -19,7 +19,7 @@
       "2025_jae_jansen-lice-effects-returns",
       "2020_jae_bohn-timing-survival-postsmolts"
     ],
-    "notes": "Adult returns / population"
+    "notes": "Baseline. Adult returns / population."
   },
   {
     "id": "q10_tls",
@@ -31,7 +31,7 @@
       "2025_raq_vannes-response-to-stige",
       "2021_rcn_traffic-light-evaluation"
     ],
-    "notes": "TLS debate must surface"
+    "notes": "Baseline. TLS debate must surface."
   },
   {
     "id": "q8_calibration",
@@ -41,7 +41,7 @@
       "2022_aei_stige-model-sensitivity-calibration",
       "2021_icesjms_johnsen-vps-mortality-norway"
     ],
-    "notes": "Calibration / VPS — Q10 + model questions"
+    "notes": "Baseline. Calibration / VPS."
   },
   {
     "id": "disagree",
@@ -52,6 +52,120 @@
       "2025_jae_jansen-lice-effects-returns",
       "2021_rfsa_dadswell-atlantic-salmon-collapse"
     ],
-    "notes": "No forced route; retrieval+debate links matter"
+    "notes": "Baseline. No forced route; retrieval+debate links matter."
+  },
+  {
+    "id": "fault1_bc_origin_no",
+    "query": "Hva skjedde med lus på villaks etter at oppdrett ble fjernet i British Columbia, og er det overførbart til Norge?",
+    "expect_route": ["Q1"],
+    "must_include_any": [
+      "2025_dao_jones-broughton-lice-unchanged",
+      "2025_jfd_jones-pacific-lice-cessation-bc",
+      "2025_scientificdata_bc-sealice-dataset-2001-2023"
+    ],
+    "notes": "Fault line 1 (origin). Draft must_include — confirm with Ragnar. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "fault1_bc_origin_en",
+    "query": "Did sea lice on wild Pacific salmon decline after aquaculture was removed in British Columbia?",
+    "expect_route": ["Q1"],
+    "must_include_any": [
+      "2025_dao_jones-broughton-lice-unchanged",
+      "2025_jfd_jones-pacific-lice-cessation-bc"
+    ],
+    "notes": "Fault line 1 EN. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "fault2_calibration_no",
+    "query": "Hva er Van Nes et al. og Stige et al. egentlig uenige om når det gjelder kalibrering av lusemodeller?",
+    "expect_route": ["Q8", "Q10"],
+    "must_include_any": [
+      "2024_raq_vannes-critical-review-tls",
+      "2022_aei_stige-model-sensitivity-calibration",
+      "2025_raq_stige-comment-vannes",
+      "2025_raq_vannes-response-to-stige"
+    ],
+    "notes": "Fault line 2. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "fault3_vps_fit_no",
+    "query": "Hvor godt treffer de operative lusemodellene det som faktisk måles på villfisk?",
+    "expect_route": ["Q7", "Q8"],
+    "must_include_any": [
+      "2021_icesjms_johnsen-vps-mortality-norway",
+      "2021_icesjms_jansen-comment-vps-mortality",
+      "2025_aquaculture_gjerde-seatrout-lice-prediction"
+    ],
+    "notes": "Fault line 3 (model vs observation). Label: Thord 2026-08-11."
+  },
+  {
+    "id": "fault3_vps_overestimate_en",
+    "query": "Does the virtual post-smolt model overestimate lice-induced mortality compared with trawl observations?",
+    "expect_route": ["Q7", "Q8"],
+    "must_include_any": [
+      "2021_icesjms_jansen-comment-vps-mortality",
+      "2021_icesjms_johnsen-vps-mortality-norway",
+      "2025_aquaculture_gjerde-seatrout-lice-prediction"
+    ],
+    "notes": "Fault line 3 EN. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "fault4_returns_no",
+    "query": "Gir luseindusert smoltdødelighet færre voksne tilbake, og hvordan står det mot andre dødsårsaker i havet?",
+    "expect_route": ["Q9"],
+    "must_include_any": [
+      "2025_jae_jansen-lice-effects-returns",
+      "2021_rfsa_dadswell-atlantic-salmon-collapse",
+      "2016_jfb_jonsson-environmental-change-salmon",
+      "2022_rfbf_gillson-marine-stressors-salmon"
+    ],
+    "notes": "Fault line 4. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "fault5_thresholds_no",
+    "query": "Ved hvilke lusenivåer dør postsmolt faktisk, og hvor godt er den terskelen etablert fra lab til felt?",
+    "expect_route": ["Q6", "Q7"],
+    "must_include_any": [
+      "2020_conphys_fjelldal-lice-osmoregulation-salmon",
+      "2020_jae_bohn-timing-survival-postsmolts",
+      "2024_raq_vannes-critical-review-tls",
+      "2024_ecosphere_hawley-anadromy-lice-mortality-trout"
+    ],
+    "notes": "Fault line 5. Hawley = sea trout caveat. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "fault5_species_transfer_en",
+    "query": "Can laboratory lice mortality thresholds for salmon be transferred to sea trout in the field?",
+    "expect_route": ["Q6", "Q7"],
+    "must_include_any": [
+      "1997_icesjms_dawson-seatrout-salmon-susceptibility",
+      "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+      "2020_conphys_fjelldal-lice-osmoregulation-salmon"
+    ],
+    "notes": "Fault line 5 species transfer. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "trap_other_drivers_no",
+    "query": "Hvilke andre marine faktorer enn lakselus kan forklare nedgang i villaksinnsiger?",
+    "expect_route": ["Q9"],
+    "must_include_any": [
+      "2021_rfsa_dadswell-atlantic-salmon-collapse",
+      "2016_jfb_jonsson-environmental-change-salmon",
+      "2022_rfbf_gillson-marine-stressors-salmon",
+      "2017_icesjms_forseth-major-threats-norway"
+    ],
+    "notes": "Trap: must not return only lice-lab/VPS papers. Label: Thord 2026-08-11."
+  },
+  {
+    "id": "q10_tls_no",
+    "query": "Hvor robust er det norske Trafikklyssystemet som kunnskapsgrunnlag for kapasitetsregulering?",
+    "expect_route": ["Q10"],
+    "must_include_any": [
+      "2024_raq_vannes-critical-review-tls",
+      "2021_rcn_traffic-light-evaluation",
+      "2025_raq_stige-comment-vannes",
+      "2022_aei_stige-model-sensitivity-calibration"
+    ],
+    "notes": "Norwegian TLS phrasing (demo language). Label: Thord 2026-08-11."
   }
 ]

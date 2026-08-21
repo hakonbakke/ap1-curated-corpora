@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AP1 · Lakselus og dødelighet hos ville laksefisk</title>
+<title>Lakselus og villaks · Havbruksløftets Evidensrom</title>
 <style>
   :root {
     --bg: #eef3f7;
@@ -63,9 +63,20 @@
     color: #fff;
     display: grid;
     place-items: center;
-    font-size: 0.85rem;
+    font-size: 0.72rem;
     font-weight: 700;
+    letter-spacing: -0.02em;
   }
+  .brand-text { display: flex; flex-direction: column; gap: 1px; line-height: 1.2; }
+  .brand-text strong { font-size: 0.95rem; }
+  .brand-text span { font-size: 0.72rem; font-weight: 500; color: var(--muted); }
+  .crumb {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  .crumb a { text-decoration: none; }
+  .crumb a:hover { text-decoration: underline; }
   .top-nav {
     display: flex;
     gap: 18px;
@@ -219,33 +230,30 @@
     font-size: 0.9rem;
     border-radius: 10px;
   }
-  .debate-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
   .card h3 {
     font-size: 1.12rem;
     margin: 0 0 12px;
     letter-spacing: -0.01em;
   }
-  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
-  .side {
-    background: var(--soft);
-    padding: 12px 14px;
-    border-radius: 10px;
-    font-size: 0.94rem;
+  .fault {
+    border-top: 1px solid var(--line);
+    padding: 16px 0 4px;
+    margin-top: 14px;
   }
-  .side-label {
-    font-size: 0.72rem;
+  .fault h3 {
+    font-size: 1.02rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .fault .n {
+    display: inline-block;
+    min-width: 1.4em;
+    color: var(--accent);
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--muted);
-    margin-bottom: 6px;
   }
-  .papers { margin: 12px 0 8px; }
+  .fault[hidden] { display: none !important; }
+  .fault-actions { margin-top: 14px; }
+  .papers { margin: 10px 0 0; }
   .paper {
     display: inline-block;
     font-family: ui-monospace, Consolas, monospace;
@@ -256,22 +264,36 @@
     padding: 3px 8px;
     margin: 0 4px 4px 0;
   }
-  .badge {
-    display: inline-block;
-    font-size: 0.72rem;
-    font-weight: 600;
-    padding: 3px 9px;
-    margin-left: 8px;
-    border-radius: 999px;
-    vertical-align: middle;
-  }
-  .badge-ok { background: var(--ok-bg); color: var(--ok); }
-  .badge-warn { background: var(--warn-bg); color: var(--warn); }
   .caveat {
     font-size: 0.86rem;
     color: var(--muted);
     font-style: italic;
-    margin: 8px 0 14px;
+    margin: 8px 0 0;
+  }
+  .q-select-wrap {
+    margin: 0 0 14px;
+  }
+  .q-select-wrap label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .q-select {
+    width: 100%;
+    font: inherit;
+    font-size: 0.9rem;
+    color: var(--ink);
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+  }
+  .q-select:focus {
+    outline: 2px solid var(--accent-soft);
+    border-color: var(--accent);
   }
   .btn {
     appearance: none;
@@ -501,20 +523,73 @@
     color: var(--muted);
     margin: 0 0 10px;
   }
+  details.more {
+    margin-top: 12px;
+    border-top: 1px solid var(--line);
+    padding-top: 10px;
+  }
+  details.more > summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.92rem;
+    user-select: none;
+  }
+  details.more > summary::-webkit-details-marker { display: none; }
+  details.more > summary::after { content: " ▾"; font-weight: 400; }
+  details.more[open] > summary::after { content: " ▴"; }
+  details.more .more-body { margin-top: 12px; }
+  .chain {
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+  .chain li {
+    position: relative;
+    padding: 8px 0 8px 36px;
+    border-left: 2px solid var(--accent-soft);
+    margin-left: 10px;
+    font-size: 0.92rem;
+  }
+  .chain li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: -12px;
+    top: 8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+  }
 </style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="#topp">
-      <span class="brand-mark">AP1</span>
-      <span>Evidence Corpus</span>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HL</span>
+      <span class="brand-text">
+        <strong>Havbruksløftets Evidensrom</strong>
+        <span>Evidensrom · lakselus og villaks</span>
+      </span>
     </a>
     <nav class="top-nav">
+      <a href="index.html">Alle rom</a>
       <a href="#a">Introduksjon</a>
       <a href="#b">Regulering</a>
-      <a href="#c">Omstridte punkter</a>
+      <a href="#c">Uenighetskart</a>
       <a href="#d">Gå dypere</a>
     </nav>
     <a class="ask-pill" href="#d">Spør korpuset</a>
@@ -522,26 +597,28 @@
 </header>
 
 <div class="wrap">
-  <p class="note">Mockup av temaside · ikke live Streamlit · åpne gjerne med wifi av</p>
+  <p class="note">Mockup · ikke live Streamlit · åpne gjerne med wifi av</p>
+  <p class="crumb"><a href="index.html">Havbruksløftets Evidensrom</a> · Lakselus og dødelighet hos ville laksefisk</p>
 
   <section class="hero" id="topp">
     <div class="hero-main">
-      <h1>Kunnskapsrom: Lakselus og dødelighet hos ville laksefisk</h1>
+      <h1>Lakselus og dødelighet hos ville laksefisk</h1>
       <p class="lede">
-        Villaks dør av mange årsaker. Kjernespørsmålet her er hvor mye lakselus fra oppdrett bidrar —
-        hva vi vet, hva som er omstridt, og hvor datahullene er. Deretter: rammeverk, debatt og korpus.
+        Villaks dør av mange årsaker. Kjernespørsmålet her er hvor mye lakselus fra oppdrett bidrar.
+        Her kartlegges hva akademiske publikasjoner sier, hvor de er uenige, og hvor datahullene er.
+        Deretter: rammeverk, uenighetskart og Ask.
       </p>
       <div class="chips">
         <a class="chip on" href="#a">Introduksjon</a>
         <a class="chip" href="#b">Regulering</a>
-        <a class="chip" href="#c">Omstridte punkter</a>
+        <a class="chip" href="#c">Uenighetskart</a>
       </div>
     </div>
     <aside class="stats" aria-label="Korpusstatus">
       <div class="stat"><strong>27</strong><span>artikler i korpuset</span></div>
       <div class="stat"><strong>1997–2026</strong><span>tidsrom</span></div>
-      <div class="stat"><strong>5</strong><span>åpne feillinjer</span></div>
-      <div class="stat"><strong>04.08</strong><span>sist gjennomgått</span></div>
+      <div class="stat"><strong>5</strong><span>åpne skillelinjer</span></div>
+      <div class="stat"><strong>06.08</strong><span>sist gjennomgått</span></div>
     </aside>
   </section>
 
@@ -555,46 +632,49 @@
       <div class="two-col">
         <div>
           <p>
-            Ville laksefisk dør av mange årsaker underveis fra elv til hav og tilbake: klima og
-            temperatur i sjøen, næringstilgang, predasjon, sykdom, forurensning, vassdragsinngrep,
-            fiske (inklusive ulovlig og uregulert fiske på åpent hav) — og parasitter som lakselus.
-            Temaet her er ikke «dør villaks av lus?», men det snevrere og vanskeligere spørsmålet:
-            <strong>hvor stor andel av dødeligheten hos villaks kan rimelig tilskrives lakselus fra
-            oppdrett</strong> — og hvor sikre er vi på det?
+            Ville laksefisk dør av mange årsaker: klima og temperatur, næring, predasjon, sykdom,
+            fiske, vassdragsinngrep — og parasitter som lakselus. Temaet her er det snevrere
+            spørsmålet: <strong>hvor stor andel av dødeligheten hos villaks kan rimelig tilskrives
+            lakselus fra oppdrett</strong> — og hvor sikre er vi på det?
           </p>
           <p>
-            Lakselus (<em>Lepeophtheirus salmonis</em>) er en naturlig marin parasitt. Ved høye
-            tettheter skader den hud og saltbalanse, særlig hos den utvandrende smolten. Oppdrett
-            endrer premissene: mange verter på ett sted kan heve lokal larveproduksjon over naturlig
-            bakgrunn. Larvene driver med strømmen og kan møte ville smolt som trekker ut gjennom
-            de samme fjordene. Om skaden blir stor, avgjøres av overlapping i <em>tid og rom</em> —
-            ikke bare av hvor mye lus som finnes i området.
+            Oppdrett kan heve lokal lusereproduksjon; larvene driver med strømmen og kan møte
+            utvandrende smolt. Skaden avgjøres av overlapping i tid og rom. Det korpuset synliggjør,
+            er både det vi har støtte for, og der modellene, observasjonene og tolkningene divergerer.
           </p>
-          <p>
-            Det vi typisk <strong>vet eller har god støtte for</strong>, er at lus kan skade og drepe
-            individuelt under høyt trykk, at oppdrett kan øke lokal infestasjonspress, og at norske
-            forvaltningsmodeller omsetter dette til estimert smoltdødelighet som brukes i
-            trafikklyssystemet. Det som er <strong>mer usikkert</strong> — og som korpuset er bygget
-            for å synliggjøre — er blant annet: hvor stor andel av lusa på villfisk som faktisk
-            kommer fra oppdrett; hvor godt modellene treffer det som observeres; om smoltdødelighet
-            slår ut i færre voksne tilbake (additiv vs. kompensatorisk dødelighet); og hvordan lus
-            står mot andre marine dødsårsaker i det samme bildet.
-          </p>
-          <p>
-            <strong>Kunnskapshull</strong> som går igjen, er direkte observasjon av migrasjonstid og
-            -rute, feltvalidering av dose–respons utenfor laboratoriet, og kalibrering som ikke
-            henger på valg mellom trål og sentinelbur. Sjøørret brukes ofte som sentinel fordi den
-            blir værende kystnært lenger enn laksen — men terskler og funn er ikke automatisk
-            overførbare mellom arter. Introduksjonen her er orientering; uenigheten og evidensen
-            ligger i debattkortene og korpuset under.
-          </p>
+          <details class="more">
+            <summary>Les mer om dødelighetsbildet og kunnskapshull</summary>
+            <div class="more-body">
+              <p>
+                Lakselus (<em>Lepeophtheirus salmonis</em>) er en naturlig marin parasitt. Ved høye
+                tettheter skader den hud og saltbalanse, særlig hos den utvandrende smolten. Når mange
+                verter holdes samlet i merder, kan lokal larveproduksjon stige over naturlig bakgrunn.
+              </p>
+              <p>
+                Det vi typisk <strong>vet eller har god støtte for</strong>: lus kan skade og drepe
+                individuelt under høyt trykk; oppdrett kan øke lokal infestasjonspress; norske
+                forvaltningsmodeller omsetter dette til estimert smoltdødelighet brukt i
+                trafikklyssystemet.
+              </p>
+              <p>
+                Det som er <strong>mer usikkert</strong>: hvor stor andel av lusa på villfisk som
+                faktisk kommer fra oppdrett; hvor godt modellene treffer observasjoner; om
+                smoltdødelighet slår ut i færre voksne tilbake (additiv vs. kompensatorisk); og
+                hvordan lus står mot andre marine dødsårsaker.
+              </p>
+              <p>
+                <strong>Kunnskapshull</strong> som går igjen: direkte observasjon av migrasjonstid og
+                -rute, feltvalidering av dose–respons utenfor laboratoriet, og kalibrering som ikke
+                henger på valg mellom trål og sentinelbur. Sjøørret brukes ofte som sentinel, men
+                terskler er ikke automatisk overførbare til laks.
+              </p>
+            </div>
+          </details>
         </div>
         <figure class="figure" style="margin:0">
           <img src="figur-smolt-lus.png" alt="Skisse: smolt vandrer fra elv til sjø, møter lusetrykk ved oppdrettsmerder, og vender tilbake som 1SW–3SW.">
           <figcaption>
-            Én mulig mekanisme: utvandring år <em>t</em> → lusepress nær merder → innsig som 1SW
-            året etter (Jansen et al., skisse). Figuren viser <em>en</em> dødsårsakskjede — ikke
-            hele dødelighetsbildet for villaks.
+            Én mekanisme — ikke hele dødelighetsbildet (Jansen et al., skisse).
           </figcaption>
         </figure>
       </div>
@@ -609,155 +689,162 @@
     </div>
     <div class="card prose">
       <p>
-        Norge regulerer vekst i lakseoppdrett blant annet gjennom <strong>trafikklyssystemet</strong>.
-        Kysten er delt i <strong>13 produksjonsområder (PO)</strong>. Hvert område vurderes ut fra
-        estimert risiko for luseindusert dødelighet hos utvandrende villaks-smolt, og får en farge
-        som styrer kapasiteten: <strong>grønn</strong> kan åpne for vekst, <strong>gul</strong> innebærer
-        i hovedsak status quo, og <strong>rød</strong> normalt krav om reduksjon.
-      </p>
-      <p>
-        Fargene er knyttet til estimert postsmolt-dødelighet, ofte omtalt i bånd rundt
-        &lt;10&nbsp;%, 10–30&nbsp;% og &gt;30&nbsp;%. En ekspertgruppe vurderer kunnskapsgrunnlaget
-        for hvert område; den endelige kapasitetsbeslutningen fattes politisk/forvaltningsmessig.
-        Parallelt gjelder egne regler for lus på oppdrettsfisk — et annet spor enn den regionale fargeleggingen.
-      </p>
-      <figure class="figure">
-        <img src="figur-trafikklys.png" alt="Kart over Norges 13 produksjonsområder fargelagt grønn, gul og rød for fire perioder.">
-        <figcaption>
-          Trafikklyssystemet over tid (Regjeringen / Styringsgruppen). Vestlandet (særlig PO3–PO4)
-          har vært under strengest trykk; 2024–2025 viser flere gule områder lenger nord.
-        </figcaption>
-      </figure>
-      <p>
-        Kartene viser at systemet ikke er statisk. PO3 har vært rød i alle viste perioder, mens
-        flere områder har skiftet mellom grønt og gult. For 2024–2025 er bildet mer gult langs
-        deler av kysten enn i tidlige år — samtidig som de hardeste områdene på Vestlandet fortsatt skiller seg ut.
+        Norge regulerer vekst i lakseoppdrett blant annet gjennom <strong>trafikklyssystemet (TLS)</strong>.
+        Kysten er delt i <strong>13 produksjonsområder</strong>. Hvert område får
+        <strong>grønn / gul / rød</strong> ut fra estimert risiko for luseindusert dødelighet hos
+        utvandrende villaks-smolt — med konsekvenser for om kapasitet kan øke, stå stille eller
+        må reduseres. Fargene knyttes ofte til bånd rundt &lt;10&nbsp;%, 10–30&nbsp;% og &gt;30&nbsp;%
+        estimert postsmolt-dødelighet.
       </p>
       <p class="small">
         <strong>Sjekket 2026-07-27:</strong> Styringsgruppen: PO3 høy, PO4 moderat (2024–25).
         NFD 2026: PO3 rød (−6&nbsp;% kapasitet), PO4 gul.
       </p>
-      <div class="placeholder">[må hentes fra Lovdata] produksjonsområdeforskriften · lakselusforskriften · akvakulturloven</div>
-      <p class="tiny muted" style="margin-top:10px">Sist gjennomgått: <strong>2026-07-27</strong> · eierskap for neste oppdatering: uavklart</p>
+      <figure class="figure">
+        <img src="figur-trafikklys.png" alt="Kart over Norges 13 produksjonsområder fargelagt grønn, gul og rød for fire perioder.">
+        <figcaption>
+          TLS over tid (Regjeringen / Styringsgruppen). PO3 har vært rød i alle viste perioder;
+          2024–2025 viser flere gule områder lenger nord.
+        </figcaption>
+      </figure>
+
+      <details class="more">
+        <summary>Les mer om hva TLS faktisk bygges på</summary>
+        <div class="more-body">
+          <p>
+            TLS er ikke én måling. Det er en <strong>kunnskapskjede</strong> som kombinerer
+            oppdrettstall, modeller, felt og ekspertvurdering — og det er nettopp leddene i denne
+            kjeden korpuset diskuterer.
+          </p>
+          <ol class="chain">
+            <li><strong>Lus og biomasse på oppdrett</strong> — rapporterte lusemengder og fisk i merd gir grunnlag for estimert larveproduksjon.</li>
+            <li><strong>Hydrodynamikk og partikkelspredning</strong> — modeller for hvordan infeksiøse larver transporteres langs kyst og fjord.</li>
+            <li><strong>Smoltens utvandring</strong> — antatt eller modellert tid, varighet og rute for postsmolt (ofte «virtuell postsmolt» / VPS).</li>
+            <li><strong>Infestasjon → dødelighet</strong> — dose–respons / terskler som omsetter luselast til estimert dødelighet.</li>
+            <li><strong>Kalibrering og felt</strong> — modeller justeres mot trål, sentinelbur, genetisk tilordning m.m.; ulike datakilder gir ulike utfall.</li>
+            <li><strong>Ekspertgruppe + beslutning</strong> — samlet vurdering per PO; kapasitetsvedtak fattes forvaltningsmessig/politisk.</li>
+          </ol>
+          <p>
+            Flere modellfamilier inngår i det norske bildet (bl.a. IMR VPS og NVI-risikovurderingsmodeller
+            omtalt i korpuset). De er ment å <em>utfylle</em> feltobservasjoner fordi full dekning i
+            tid og rom er umulig. Samtidig er det her uenigheten ligger: kalibrering, migrasjonsantakelser,
+            terskler og hvor godt prediksjonene treffer det som måles på villfisk.
+          </p>
+          <p>
+            Parallelt — men ikke det samme som TLS-fargen — gjelder egne regler for lus <em>på
+            oppdrettsfisk</em> (tellinger og tiltakskrav). Det er et operativt spor; TLS er det
+            regionale kapasitetssporet.
+          </p>
+          <div class="placeholder">[må hentes fra Lovdata] produksjonsområdeforskriften · lakselusforskriften · akvakulturloven — lenker og eksakte terskler</div>
+          <p class="tiny muted" style="margin-top:10px">Sist gjennomgått: <strong>2026-07-27</strong> · eierskap for neste oppdatering: uavklart</p>
+        </div>
+      </details>
     </div>
   </section>
 
   <!-- C -->
   <section class="section" id="c">
     <div class="section-head">
-      <h2>C — Hvor diskusjonen står</h2>
-      <span class="tag">Fra kuratert korpus</span>
+      <h2>C — Hvor korpuset er uenig</h2>
+      <span class="tag">Redaksjonelt uenighetskart</span>
     </div>
-    <p class="muted small" style="margin:-4px 0 14px">Fem feillinjer. Les dem før du spør. «Spør om dette» fyller boksen under.</p>
+    <div class="card prose">
+      <p>
+        Korpuset er ikke splittet på om lakselus <em>kan</em> skade utvandrende smolt under høyt press.
+        Uenigheten ligger i det som styrer forvaltning og tolkning. Velg en skillelinje under for å se
+        hvor evidensen divergerer — ikke en fasit.
+      </p>
 
-    <div class="debate-grid">
-      <div class="card">
-        <h3>1. Forsvinner lusa hvis oppdrettet forsvinner?
-          <span class="badge badge-warn">Ikke verifisert</span>
-        </h3>
-        <div class="cols">
-          <div class="side">
-            <div class="side-label">A</div>
-            Norske modeller antar i stor grad at oppdrettsoriginert lus dominerer infestasjonspresset på villfisk.
-          </div>
-          <div class="side">
-            <div class="side-label">B</div>
-            To BC-studier (2025): lus på juvenil vill stillehavslaks forble uendret — eller høyere — etter nesten total fjerning av lokal oppdrettsbiomasse.
-          </div>
-        </div>
+      <div class="q-select-wrap">
+        <label for="fault-select">Skillelinje / omstridt spørsmål</label>
+        <select id="fault-select" class="q-select" onchange="onFaultSelect()">
+          <option value="0">1. Opphav — forsvinner «oppdrettslusa» hvis oppdrettet forsvinner?</option>
+          <option value="1">2. Kalibrering — er dødelighetsmodellen justert på riktige data?</option>
+          <option value="2">3. Treffsikkerhet — treffer modellene det som observeres?</option>
+          <option value="3">4. Fra smolt til innsig — blir det færre voksne?</option>
+          <option value="4">5. Terskler — holder lab i felt?</option>
+        </select>
+      </div>
+
+      <div class="fault" data-fault="0">
+        <h3><span class="n">1</span> Opphav — forsvinner «oppdrettslusa» hvis oppdrettet forsvinner?</h3>
+        <p>
+          Norske modeller antar i stor grad at oppdrettsoriginert lus dominerer infestasjonspresset på
+          villfisk. To BC-studier (2025) rapporterer at lus på juvenil vill stillehavslaks ble værende
+          uendret — eller høyere — etter nesten total fjerning av lokal oppdrettsbiomasse.
+        </p>
+        <p class="caveat">Overførbarhet til Norge er omstridt (andre arter; <em>Caligus clemensi</em> viktig i BC).</p>
         <div class="papers">
           <span class="paper">2025_dao_jones-broughton-lice-unchanged</span>
           <span class="paper">2025_jfd_jones-pacific-lice-cessation-bc</span>
           <span class="paper">2025_scientificdata_bc-sealice-dataset-2001-2023</span>
         </div>
-        <p class="caveat">Overførbarhet omstridt (andre arter; <em>Caligus clemensi</em> viktig i BC, ikke i Norge).</p>
-        <button class="btn" type="button" onclick="ask(0)">Spør om dette</button>
+        <div class="fault-actions">
+          <button class="btn ghost" type="button" onclick="ask(0)">Spør om dette i D</button>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>2. Er dødelighetsmodellen kalibrert på riktige data?
-          <span class="badge badge-ok">Verifisert</span>
-        </h3>
-        <div class="cols">
-          <div class="side">
-            <div class="side-label">A · Stige mfl.</div>
-            Estimatene er svært følsomme for kalibreringskilde (trål vs. sentinel). Kalibrering hevdes å kompensere for skjevheter i rådata.
-          </div>
-          <div class="side">
-            <div class="side-label">B · Van Nes mfl.</div>
-            Systematisk overestimering via migrasjonstid, lusebiologi, kalibrering og terskler; kalibreringsdataene selv kritiseres som upålitelige.
-          </div>
-        </div>
+      <div class="fault" data-fault="1" hidden>
+        <h3><span class="n">2</span> Kalibrering — er dødelighetsmodellen justert på riktige data?</h3>
+        <p>
+          Stige mfl.: estimatene er svært følsomme for kalibreringskilde (trål vs. sentinel); kalibrering
+          hevdes å kompensere for skjevheter. Van Nes mfl.: systematisk overestimering via migrasjonstid,
+          lusebiologi, kalibrering og terskler — og kalibreringsdataene selv kritiseres.
+        </p>
+        <p class="caveat">COI-argumenter finnes i utvekslingen; her vises bare det vitenskapelige innholdet.</p>
         <div class="papers">
           <span class="paper">2022_aei_stige-model-sensitivity-calibration</span>
           <span class="paper">2024_raq_vannes-critical-review-tls</span>
           <span class="paper">2025_raq_stige-comment-vannes</span>
           <span class="paper">2025_raq_vannes-response-to-stige</span>
         </div>
-        <p class="caveat">COI-argumenter finnes i utvekslingen — her vises bare det vitenskapelige innholdet.</p>
-        <button class="btn" type="button" onclick="ask(1)">Spør om dette</button>
+        <div class="fault-actions">
+          <button class="btn ghost" type="button" onclick="ask(1)">Spør om dette i D</button>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>3. Treffer modellene det som faktisk observeres?
-          <span class="badge badge-ok">Verifisert</span>
-        </h3>
-        <div class="cols">
-          <div class="side">
-            <div class="side-label">A · Johnsen 2021</div>
-            Operativ VPS-modell for 401 elver, kalibrert mot trålfanget postsmolt.
-          </div>
-          <div class="side">
-            <div class="side-label">B · Jansen/Gjerde · Gjerde 2025</div>
-            VPS overestimerer mot trål i 26/27 område×år. PMLD har svært dårlig prediksjonskraft (RPD ≈ 1,18).
-          </div>
-        </div>
+      <div class="fault" data-fault="2" hidden>
+        <h3><span class="n">3</span> Treffsikkerhet — treffer modellene det som observeres?</h3>
+        <p>
+          Johnsen 2021 beskriver en operativ VPS-modell for mange elver, kalibrert mot trålfanget postsmolt.
+          Jansen/Gjerde og Gjerde 2025: VPS overestimerer mot trål i 26/27 område×år; PMLD har svært dårlig
+          prediksjonskraft.
+        </p>
         <div class="papers">
           <span class="paper">2021_icesjms_johnsen-vps-mortality-norway</span>
           <span class="paper">2021_icesjms_jansen-comment-vps-mortality</span>
           <span class="paper">2025_aquaculture_gjerde-seatrout-lice-prediction</span>
         </div>
-        <button class="btn" type="button" onclick="ask(2)">Spør om dette</button>
+        <div class="fault-actions">
+          <button class="btn ghost" type="button" onclick="ask(2)">Spør om dette i D</button>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>4. Gir smoltdødelighet færre voksne tilbake?
-          <span class="badge badge-ok">Verifisert</span>
-        </h3>
-        <div class="cols">
-          <div class="side">
-            <div class="side-label">A · Jansen 2025</div>
-            Signifikant negativ PIM→1SW i 104 elver — men PIM er ikke den dominerende kovariaten.
-          </div>
-          <div class="side">
-            <div class="side-label">B · Dadswell · Jonsson · Gillson</div>
-            Andre marine drivere (IUU, klima, næring) kan dominere innsigsnedgang; lus ikke nødvendigvis hovedforklaring.
-          </div>
-        </div>
+      <div class="fault" data-fault="3" hidden>
+        <h3><span class="n">4</span> Fra smolt til innsig — blir det færre voksne?</h3>
+        <p>
+          Jansen 2025: signifikant negativ PIM→1SW i 104 elver — men PIM er ikke den dominerende kovariaten.
+          Dadswell, Jonsson og Gillson legger mer vekt på andre marine drivere. Additiv vs. kompensatorisk
+          dødelighet er ikke avgjort.
+        </p>
         <div class="papers">
           <span class="paper">2025_jae_jansen-lice-effects-returns</span>
           <span class="paper">2021_rfsa_dadswell-atlantic-salmon-collapse</span>
           <span class="paper">2016_jfb_jonsson-environmental-change-salmon</span>
           <span class="paper">2022_rfbf_gillson-marine-stressors-salmon</span>
         </div>
-        <p class="caveat">Additiv vs. kompensatorisk dødelighet er ikke avgjort.</p>
-        <button class="btn" type="button" onclick="ask(3)">Spør om dette</button>
+        <div class="fault-actions">
+          <button class="btn ghost" type="button" onclick="ask(3)">Spør om dette i D</button>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>5. Holder laboratorieterskler i naturen?
-          <span class="badge badge-ok">Verifisert</span>
-        </h3>
-        <div class="cols">
-          <div class="side">
-            <div class="side-label">A · Fjelldal · Bøhn</div>
-            Lab: ~0,38 mobile lus/g koblet til redusert vekst. Felt: dramatisk lavere overlevelse når utvandring treffer høyt lusetrykk (RR = 55,3).
-          </div>
-          <div class="side">
-            <div class="side-label">B · Van Nes · Hawley</div>
-            Ekstrapolering fra lab til felt utfordres. Hawley (sjøørret): enorm heterogenitet mellom populasjoner — én terskel skjuler variasjon.
-          </div>
-        </div>
+      <div class="fault" data-fault="4" hidden>
+        <h3><span class="n">5</span> Terskler — holder lab i felt?</h3>
+        <p>
+          Fjelldal / Bøhn knytter lab- og feltfunn til skade og lav overlevelse ved høyt press. Van Nes
+          utfordrer ekstrapolering; Hawley (sjøørret) viser stor heterogenitet mellom populasjoner.
+          Terskler er ikke automatisk utbyttbare mellom arter (Dawson).
+        </p>
         <div class="papers">
           <span class="paper">2020_conphys_fjelldal-lice-osmoregulation-salmon</span>
           <span class="paper">2020_jae_bohn-timing-survival-postsmolts</span>
@@ -765,9 +852,14 @@
           <span class="paper">2024_ecosphere_hawley-anadromy-lice-mortality-trout</span>
           <span class="paper">1997_icesjms_dawson-seatrout-salmon-susceptibility</span>
         </div>
-        <p class="caveat">Hawley = sjøørret, ikke laks. Dawson: terskler er ikke utbyttbare mellom arter.</p>
-        <button class="btn" type="button" onclick="ask(4)">Spør om dette</button>
+        <div class="fault-actions">
+          <button class="btn ghost" type="button" onclick="ask(4)">Spør om dette i D</button>
+        </div>
       </div>
+
+      <p class="tiny muted" style="margin-top:16px">
+        Redaksjonell tekst · sist gjennomgått: <strong>2026-08-07</strong> · Ask i D søker i hele det aktive korpuset
+      </p>
     </div>
   </section>
 
@@ -778,8 +870,8 @@
       <span class="tag">Speiler Streamlit-appen · demo</span>
     </div>
     <p class="muted small" style="margin:-4px 0 14px">
-      Samme kontroller som i live-appen: målgruppe, svarformat, antall dokumenter (k) og hvilke artikler som er aktive.
-      Svaret under er fortsatt et <strong>eksempelsvar</strong> — ingen API.
+      Fritekst formet etter spørsmålet. Velg målgruppe, k og aktive artikler.
+      Svaret under er et <strong>eksempelsvar</strong> — ingen API.
     </p>
 
     <div class="app-shell">
@@ -788,12 +880,6 @@
         <div class="seg" id="mode-seg">
           <label><input type="radio" name="mode" value="forsker" checked> Forsker / fagperson<br><span class="hint">Teknisk språk, fulle referanser</span></label>
           <label><input type="radio" name="mode" value="ikke"> Interessert ikke-spesialist<br><span class="hint">Enkelt språk, uten unødig jargon</span></label>
-        </div>
-
-        <h4>Svarformat</h4>
-        <div class="seg">
-          <label><input type="radio" name="fmt" value="free" checked> Fritekst — formes etter spørsmålet</label>
-          <label><input type="radio" name="fmt" value="struct"> Strukturert — faste seksjoner</label>
         </div>
 
         <h4>Antall dokumenter å hente (k)</h4>
@@ -817,9 +903,15 @@
         <div class="card">
           <h3 style="margin:0 0 8px;font-size:1.15rem">AP1 evidenssyntese</h3>
           <p class="muted small" id="main-blurb">
-            Still et omstridt, vitenskapelig spørsmål om lakselus og dødelighet hos vill laksefisk.
-            Verktøyet henter fra det kuraterte korpuset og returnerer en syntese uten å skjule uenighet.
+            Still et spørsmål mot det kuraterte korpuset. Svaret er fritekst — uenighet skjules ikke.
           </p>
+
+          <div class="q-select-wrap">
+            <label for="q-select">Eksempelspørsmål (speiler skillelinjene i C)</label>
+            <select id="q-select" class="q-select" onchange="onExampleQ()">
+              <option value="">— Velg et spørsmål —</option>
+            </select>
+          </div>
 
           <div class="ask-box">
             <textarea id="q" placeholder="Hva er evidensen for …"></textarea>
@@ -833,7 +925,7 @@
               <div id="ans-f">
                 <p>Evidensen for at luseindusert smoltdødelighet gir færre voksne tilbake er <strong>omstridt</strong>.</p>
                 <p>Jansen et al. 2025 finner signifikant negativ PIM→1SW i 104 elver, men PIM er ikke den dominerende kovariaten (TS/CGW forklarer mer). Dadswell, Jonsson og Gillson plasserer hovedvekten på andre marine drivere. Additiv vs. kompensatorisk dødelighet er ikke avgjort i korpuset.</p>
-                <p class="muted small">Konfidens: middels · format: <span id="fmt-label">fritekst</span> · k = <span id="k-label">8</span></p>
+                <p class="muted small">Konfidens: middels · format: fritekst · k = <span id="k-label">8</span></p>
               </div>
               <div id="ans-i" hidden>
                 <p>Forskerne er <strong>ikke enige</strong>. Én stor norsk studie finner sammenheng mellom lusepress og færre smålaks tilbake — men andre faktorer forklarer mer, og andre forskere peker på klima og fiske i havet. Saken er ikke avgjort; derfor ligger papirene side om side her.</p>
@@ -853,7 +945,7 @@
   </section>
 
   <footer class="footer">
-    Mockup av AP1-temaside · visuell retning nær Bluetalk kunnskapsrom + eksisterende Spør-flyt · Streamlit-appen er urørt.
+    Havbruksløftets Evidensrom · evidensrom lakselus/villaks · mockup · Streamlit urørt
   </footer>
 </div>
 
@@ -914,8 +1006,44 @@ const PAPERS = [
 
 function ask(i) {
   document.getElementById("q").value = Q[i];
+  document.getElementById("q-select").value = String(i);
+  const fs = document.getElementById("fault-select");
+  if (fs) {
+    fs.value = String(i);
+    onFaultSelect();
+  }
   document.getElementById("d").scrollIntoView({ behavior: "smooth", block: "start" });
   document.getElementById("q").focus();
+}
+
+function onFaultSelect() {
+  const v = document.getElementById("fault-select").value;
+  document.querySelectorAll(".fault[data-fault]").forEach((el) => {
+    el.hidden = el.getAttribute("data-fault") !== v;
+  });
+}
+
+function onExampleQ() {
+  const v = document.getElementById("q-select").value;
+  if (v === "") return;
+  const i = parseInt(v, 10);
+  document.getElementById("q").value = Q[i];
+  const fs = document.getElementById("fault-select");
+  if (fs) {
+    fs.value = String(i);
+    onFaultSelect();
+  }
+  document.getElementById("q").focus();
+}
+
+function buildQSelect() {
+  const sel = document.getElementById("q-select");
+  Q.forEach((text, i) => {
+    const opt = document.createElement("option");
+    opt.value = String(i);
+    opt.textContent = `${i + 1}. ${text}`;
+    sel.appendChild(opt);
+  });
 }
 
 function buildPaperList() {
@@ -955,10 +1083,6 @@ function currentMode() {
   return document.querySelector('input[name="mode"]:checked').value;
 }
 
-function currentFmt() {
-  return document.querySelector('input[name="fmt"]:checked').value;
-}
-
 function renderSources() {
   const k = parseInt(document.getElementById("k").value, 10);
   const active = new Set(selectedIds());
@@ -966,8 +1090,6 @@ function renderSources() {
   document.getElementById("src-n").textContent = String(hits.length);
   document.getElementById("k-label").textContent = String(k);
   document.getElementById("k-label-i").textContent = String(k);
-  document.getElementById("fmt-label").textContent =
-    currentFmt() === "struct" ? "strukturert" : "fritekst";
   document.getElementById("src-list").innerHTML = hits.length
     ? hits.map((h) =>
         `<div class="source-item"><span class="dot ${h.dir}"></span>` +
@@ -990,17 +1112,18 @@ function showAns() {
   document.getElementById("ans-f").hidden = !forsker;
   document.getElementById("ans-i").hidden = forsker;
   document.getElementById("main-blurb").textContent = forsker
-    ? "Still et omstridt, vitenskapelig spørsmål om lakselus og dødelighet hos vill laksefisk. Verktøyet henter fra det kuraterte korpuset og returnerer en teknisk syntese uten å skjule uenighet."
-    : "Still et spørsmål om oppdrett og villfisk — med enkelt språk. Verktøyet forklarer hva forskningen viser, uten at du trenger forkunnskaper.";
+    ? "Still et spørsmål mot det kuraterte korpuset. Svaret er fritekst — uenighet skjules ikke."
+    : "Still et spørsmål om oppdrett og villfisk — med enkelt språk. Uenighet skjules ikke.";
   renderSources();
 }
 
-document.querySelectorAll('input[name="mode"], input[name="fmt"]').forEach((el) => {
+document.querySelectorAll('input[name="mode"]').forEach((el) => {
   el.addEventListener("change", () => {
     if (!document.getElementById("ans").hidden) showAns();
   });
 });
 
+buildQSelect();
 buildPaperList();
 </script>
 </body>

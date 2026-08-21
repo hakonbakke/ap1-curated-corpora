@@ -1,32 +1,39 @@
 # Deploy AP1 Evidence App (Streamlit Cloud)
 
-Use this for sharing the app with colleagues (e.g. board demo). Takes ~15 minutes.
+Share the live Evidensrom with colleagues (Ragnar only needs a browser).
 
 ## Prerequisites
 
-- GitHub repo pushed: `hakonbakke/ap1-curated-corpora` on branch `main`
+- GitHub repo: `hakonbakke/ap1-curated-corpora` on `main`
 - OpenAI API key with billing enabled
-- Streamlit Cloud account (free): https://share.streamlit.io
+- Streamlit Cloud account: https://share.streamlit.io (sign in with GitHub)
 
 ## 1. Push latest code
 
-From repo root:
+Cloud reads `data/corpus.parquet` from GitHub. No separate database.
 
 ```powershell
 git push origin main
 ```
 
-Cloud reads `data/corpus.parquet` from the repo — no separate database.
+## 2. Create or update the app
 
-## 2. Create the app on Streamlit Cloud
+**First time:** open this prefilled deploy page (sign in with GitHub if asked):
 
-1. Go to https://share.streamlit.io → **Create app**
-2. **Repository:** `hakonbakke/ap1-curated-corpora`
-3. **Branch:** `main`
-4. **Main file path:** `app/app.py`
-5. **App URL:** choose something short (e.g. `ap1-evidence`)
+https://share.streamlit.io/deploy?repository=hakonbakke/ap1-curated-corpora&branch=main&mainModule=app/app.py&subdomain=ap1-evidensrom
 
-Click **Deploy**. First build may take 2–5 minutes.
+Confirm:
+
+- Repository: `hakonbakke/ap1-curated-corpora`
+- Branch: `main`
+- Main file: `app/app.py`
+- App URL: `ap1-evidensrom` so the link becomes `https://ap1-evidensrom.streamlit.app`
+
+Click **Deploy**. First build takes a few minutes.
+
+**Later updates:** `git push origin main`. Cloud redeploys from `main` automatically. Reboot only if secrets or a stuck build need a kick.
+
+The home page lists evidence rooms. Open **Lakselus og villaks** for orientation (A-C) plus live Ask (D).
 
 ## 3. Add secrets (required)
 
@@ -46,7 +53,7 @@ Public URL format:
 
 `https://<your-app-name>.streamlit.app`
 
-Send that link to Ragnar. He only needs a browser — no login for viewers on Community Cloud.
+Send that link to Ragnar. He only needs a browser. Viewers on Community Cloud do not log in.
 
 ## 5. Demo tips for a board meeting
 
@@ -80,4 +87,4 @@ Each question calls OpenAI (embeddings + synthesis). Typical query: a few cents 
 |--|-------|-----------------|
 | API key | `.env` | Secrets in Cloud UI |
 | Corpus | `data/corpus.parquet` | Same file from GitHub |
-| Updates | `git push` + Reboot app | |
+| Updates | `git push origin main` (Cloud redeploys) |

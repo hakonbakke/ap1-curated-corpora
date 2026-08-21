@@ -1,0 +1,128 @@
+{
+  "run_utc": "2026-08-11T125000Z",
+  "purpose": "silent-failure spotcheck: non-expert freeform keeps disagreement",
+  "n_cases": 4,
+  "results": [
+    {
+      "id": "fault2_calibration_no",
+      "query": "Hva er Van Nes et al. og Stige et al. egentlig uenige om når det gjelder kalibrering av lusemodeller?",
+      "routes": [
+        "Q10",
+        "Q7",
+        "Q8"
+      ],
+      "retrieved": [
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2025_raq_vannes-response-to-stige",
+        "2025_raq_stige-comment-vannes",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2015_aei_helland-monitoring-lice-challenges",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2021_rcn_traffic-light-evaluation",
+        "2024_raq_vannes-critical-review-tls"
+      ],
+      "must_include_any": [
+        "2024_raq_vannes-critical-review-tls",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2025_raq_stige-comment-vannes",
+        "2025_raq_vannes-response-to-stige"
+      ],
+      "mode": "non_researcher",
+      "answer_format": "freeform",
+      "output_language": "Norwegian Bokmål",
+      "answer": "Når det gjelder kalibrering av lusemodeller i norsk lakseoppdrett, er det en betydelig uenighet mellom forskere, spesielt mellom Van Nes et al. og Stige et al. Denne uenigheten dreier seg hovedsakelig om hvordan man best kan kalibrere modellene for å forutsi dødelighet hos villaks som følge av lakselusinfeksjoner.\n\nPå den ene siden har vi Van Nes og kolleger (2025), som kritiserer metodene brukt av Stige et al. De hevder at kalibreringen av modellene, som for eksempel den som brukes i det norske Trafikklyssystemet (TLS), ikke tar tilstrekkelig hensyn til usikkerheter i biologiske og økologiske data. Van Nes et al. mener at modellene overestimerer infeksjonstrykket fra lakselus og dermed også dødeligheten hos villaks. De argumenterer for at modellene ikke inkluderer viktige data fra akustisk telemetri, som viser at laksens migrasjon skjer tidligere og over kortere tid enn modellene antar. Dette kan føre til feilaktige estimater av lusebelastning og dødelighet.\n\nPå den andre siden står Stige og kolleger (2022, 2025), som forsvarer kalibreringsmetodene de har brukt. De mener at deres modeller, som inkluderer data fra både trålfangst og såkalte \"sentinel cages\" (bur med laks plassert i sjøen for å måle luseinfeksjon), gir en mer nøyaktig representasjon av lusebelastningen. Stige et al. hevder at deres kalibreringsmetoder nøytraliserer eventuelle skjevheter i dataene om lakselus fra oppdrettsanlegg. De påpeker at deres modeller tar høyde for variasjoner i laksens svømmehastighet og migrasjonsmønstre, og at disse modellene er mer følsomme for kalibreringsdata enn for andre parametere.\n\nUenigheten mellom disse to forskergruppene illustrerer en dypere konflikt i forskningsmiljøet om hvordan man best kan modellere og forutsi effektene av lakselus på villaks. Mens Van Nes et al. mener at eksisterende modeller er forenklede og ikke tar tilstrekkelig hensyn til biologisk variasjon, mener Stige et al. at deres metoder gir en robust og pålitelig vurdering av risikoen for villaks.\n\nDenne debatten er viktig fordi den påvirker hvordan oppdrettsindustrien reguleres i Norge, spesielt gjennom TLS, som bruker disse modellene til å bestemme produksjonsnivåer basert på risikoen for lakselusinfeksjoner. Uenigheten om kalibrering av modellene har derfor direkte implikasjoner for både miljøpolitikk og oppdrettsindustriens praksis.\n\nVår tillit til en samlet årsakssammenheng er **medium**, fordi det fortsatt er betydelig uenighet om metodene og dataene som brukes i modellene. For å forbedre situasjonen, ville det være nyttig med mer omfattende feltstudier som kan gi mer presise data om laksens migrasjonsmønstre og lusebelastning, samt en mer transparent og grundig dokumentasjon av kalibreringsprosessen i modellene."
+    },
+    {
+      "id": "fault4_returns_no",
+      "query": "Gir luseindusert smoltdødelighet færre voksne tilbake, og hvordan står det mot andre dødsårsaker i havet?",
+      "routes": [
+        "Q9"
+      ],
+      "retrieved": [
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2017_icesjms_forseth-major-threats-norway",
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2021_rcn_traffic-light-evaluation",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2020_jae_bohn-timing-survival-postsmolts"
+      ],
+      "must_include_any": [
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2022_rfbf_gillson-marine-stressors-salmon"
+      ],
+      "mode": "non_researcher",
+      "answer_format": "freeform",
+      "output_language": "Norwegian Bokmål",
+      "answer": "Lakseoppdrett og dets påvirkning på villaksbestander er et tema som skaper betydelig debatt blant forskere og miljøforkjempere. En av de mest omdiskuterte aspektene er effekten av lakselus, en parasitt som ofte finnes i oppdrettsanlegg, på overlevelsen av villaks. Det er enighet om at lakselus kan føre til økt dødelighet blant smolt (unge laks som migrerer til havet), men det er uenighet om hvor stor denne effekten er sammenlignet med andre dødsårsaker i havet.\n\nEn gruppe forskere, inkludert Forseth og kolleger (2017), hevder at lakselus fra oppdrettsanlegg er en betydelig trussel mot villaksbestander i Norge. De rapporterer at lakselus kan føre til ekstra dødelighet på mellom 0,6 % og 39 % for smolt, avhengig av lokalitet og år. Dette kan resultere i betydelige reduksjoner i antall voksne laks som vender tilbake til elvene for å gyte. Forseth og kolleger fremhever også at lakselus, sammen med rømt oppdrettslaks, utgjør de største ekspanderende truslene mot villaksbestander, noe som har ført til innføring av reguleringer som trafikklyssystemet for å håndtere disse truslene.\n\nPå den andre siden finner vi forskere som Dadswell og kolleger (2021), som argumenterer for at lakselus og oppdrett ikke kan være de eneste eller primære årsakene til nedgangen i villaksbestander. De peker på at også avsidesliggende bestander uten nærhet til oppdrettsanlegg har opplevd kollaps, noe som tyder på at andre faktorer, som ulovlig fiske på det åpne hav, kan spille en større rolle. Dadswell og kolleger mener at lakselus alene ikke kan forklare de brede mønstrene av nedgang i laksbestander over hele Nord-Atlanteren.\n\nVidere viser studier som de av Jonsson et al. (2016) at miljøforandringer, som økte havtemperaturer og endringer i næringsnettverket i Nord-Atlanteren, også har en betydelig innvirkning på villaksens livshistorie og overlevelse. Disse forskerne peker på at slike miljøfaktorer kan forklare mye av den observerte nedgangen i laksestørrelse og overlevelse, uavhengig av lakselus og oppdrett.\n\nDet er også viktig å nevne at noen studier, som de av Jones et al. (2025), ikke finner noen direkte sammenheng mellom opphør av oppdrettsaktivitet og reduksjon i lakselusnivåer på villaks i visse områder, noe som antyder at det kan være andre naturlige reservoarer for lakselus som også må vurderes.\n\nSamlet sett er det klart at lakselus fra oppdrettsanlegg kan ha en negativ effekt på villaksbestander, men det er betydelig uenighet om hvor stor denne effekten er i forhold til andre faktorer som klimaendringer, ulovlig fiske, og naturlige miljøforandringer. Forskningen på dette området er kompleks og ofte motstridende, noe som gjør det vanskelig å komme til en endelig konklusjon.\n\nBasert på den tilgjengelige forskningen kan vi si at vår tillit til en enkeltstående årsak til nedgangen i villaksbestander er **medium**. For å få et klarere bilde, ville det være nødvendig med mer omfattende studier som ser på samspillet mellom lakselus, miljøforandringer, og andre potensielle trusler mot villaks. Slike studier bør også inkludere direkte feltobservasjoner og eksperimentelle data for å validere modellbaserte funn."
+    },
+    {
+      "id": "trap_other_drivers_no",
+      "query": "Hvilke andre marine faktorer enn lakselus kan forklare nedgang i villaksinnsiger?",
+      "routes": [
+        "Q9"
+      ],
+      "retrieved": [
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2017_icesjms_forseth-major-threats-norway",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2025_jae_jansen-lice-effects-returns",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2022_fishes_lamberg-pre-fishery-abundance",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2021_rcn_traffic-light-evaluation",
+        "2020_jae_bohn-timing-survival-postsmolts",
+        "2021_icesjms_jansen-comment-vps-mortality"
+      ],
+      "must_include_any": [
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2017_icesjms_forseth-major-threats-norway"
+      ],
+      "mode": "non_researcher",
+      "answer_format": "freeform",
+      "output_language": "Norwegian Bokmål",
+      "answer": "Når vi ser på nedgangen i villaksbestander, er det flere faktorer enn lakselus som kan spille en rolle. Forskningen på dette området er imidlertid delt, og det er viktig å forstå hvor uenigheten ligger.\n\nEn gruppe forskere, som Forseth og kolleger (2017), peker på lakselus som en betydelig trussel mot villaksbestander i Norge. De hevder at lakselus fra oppdrettsanlegg kan føre til betydelig dødelighet blant lakseungene, spesielt når de svømmer ut i havet. Forseth og kolleger rangerer lakselus som den nest største trusselen etter rømt oppdrettslaks, og de mener at lus kan redusere antall voksne laks som vender tilbake for å gyte med opptil 39% i noen områder. Dette er basert på eksperimentelle studier som viser økt dødelighet hos laks som er eksponert for høye nivåer av lakselus.\n\nPå den andre siden har vi forskere som Dadswell og kolleger (2021) som argumenterer for at lakselus og oppdrett ikke kan forklare nedgangen i laksbestandene alene. De peker på at også laks i avsidesliggende elver uten oppdrettsanlegg har opplevd betydelig nedgang. Dadswell og kolleger foreslår at ulovlig fiske på det åpne havet kan være en hovedårsak til nedgangen, og de mener at dette er en mer sannsynlig forklaring enn lakselus, spesielt i områder langt fra oppdrettsanlegg.\n\nEn annen viktig faktor som trekkes frem er klimaendringer. Jonsson og kolleger (2016) har vist at endringer i havtemperaturer og mattilgang i det nordlige Atlanterhavet kan påvirke laksens vekst og overlevelse. De fant at stigende havtemperaturer korrelerer med redusert størrelse og kondisjon hos laks, noe som igjen kan påvirke overlevelsen deres. Dette peker mot at klimaendringer kan ha en indirekte, men betydelig effekt på laksbestandene.\n\nDet er også viktig å nevne at noen studier, som den av Gillson og kolleger (2022), fremhever at forskjellige stressfaktorer kan ha ulik betydning avhengig av geografisk kontekst. I England, for eksempel, er lakselus fra oppdrett en mindre trussel sammenlignet med Norge, på grunn av den lave tettheten av oppdrettsanlegg langs den engelske kysten.\n\nForskningen er altså ikke entydig, og det er flere faktorer som kan spille inn i nedgangen av villaksbestander. Mens lakselus er en betydelig trussel i områder med høy tetthet av oppdrettsanlegg, kan klimaendringer og ulovlig fiske være viktigere faktorer i andre områder. \n\nVår konfidens i en samlet årsak til nedgangen i villaksbestander er **medium**. Dette skyldes de ulike og til dels motstridende funnene i forskningen, samt den komplekse samspillet mellom naturlige og menneskeskapte faktorer. For å få en klarere forståelse, ville det være nyttig med mer omfattende studier som kan kvantifisere bidraget fra hver enkelt faktor i ulike geografiske områder."
+    },
+    {
+      "id": "q10_tls_no",
+      "query": "Hvor robust er det norske Trafikklyssystemet som kunnskapsgrunnlag for kapasitetsregulering?",
+      "routes": [
+        "Q10"
+      ],
+      "retrieved": [
+        "2021_rcn_traffic-light-evaluation",
+        "2024_raq_vannes-critical-review-tls",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2025_raq_vannes-response-to-stige",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2025_raq_stige-comment-vannes"
+      ],
+      "must_include_any": [
+        "2024_raq_vannes-critical-review-tls",
+        "2021_rcn_traffic-light-evaluation",
+        "2025_raq_stige-comment-vannes",
+        "2022_aei_stige-model-sensitivity-calibration"
+      ],
+      "mode": "non_researcher",
+      "answer_format": "freeform",
+      "output_language": "Norwegian Bokmål",
+      "answer": "Trafikklyssystemet (TLS) i Norge er et verktøy utviklet for å regulere kapasiteten til lakseoppdrettsanlegg basert på risikoen for lakselusindusert dødelighet hos villaks. Systemet bruker en fargekode (grønn, gul, rød) for å indikere hvor mye produksjonen kan økes eller må reduseres i ulike områder. Men hvor robust er egentlig dette systemet som kunnskapsgrunnlag? Forskere er uenige om dette, og det er flere kritiske punkter som har blitt reist.\n\nPå den ene siden er det forskere som støtter TLS som en avansert metode for risikovurdering. For eksempel, Johnsen og kolleger (2021) bruker en modell kalt Virtual Post-Smolt (VPS) for å simulere lakselusens påvirkning på villaks under migrasjon. De hevder at modellens prediksjoner om lakselusinfeksjoner stemmer overens med observasjoner av trålte fisk, noe som gir grunnlag for TLS' beslutninger om oppdrettskapasitet. Kristoffersen et al. (2018) har også brukt lignende modeller for å vurdere risikoen for lakselusdødelighet i ulike norske elver, og de mener at systemet fanger opp relative romlige og tidsmessige risikoer.\n\nPå den andre siden er det flere forskere som kritiserer TLS for å ha metodologiske svakheter. Eliasen og kolleger (2021) påpeker at de dødelighetstersklene som brukes i TLS mangler et solid empirisk grunnlag. De hevder at usikkerheten i modellene ikke er tilstrekkelig kvantifisert eller kommunisert, noe som kan føre til overkonfidens i systemets evne til å forutsi risiko. Videre kritiserer Nes et al. (2024) TLS for å overvurdere produksjonen av lakseluslarver fra oppdrettsanlegg, noe som kan føre til feilaktige estimater av infeksjonstrykket på villaks.\n\nGjerde og Aslam (2025) utførte en kryssvalidering av en hydrodynamisk modell som brukes i TLS, og fant at modellen bare forklarte omtrent 30% av variasjonen i observerte lakselusmengder på vill sjøørret. Dette indikerer at modellen kan være upålitelig i å forutsi lakselusinfeksjoner, noe som igjen kan påvirke TLS' fargeklassifiseringer.\n\nEn annen kritikk kommer fra Stige et al. (2022), som viser at modellene er svært sensitive for kalibreringsdata. De fant at dødelighetsestimatene var mer følsomme for hvilken type data som ble brukt til kalibrering enn for andre faktorer som migrasjonshastighet. Dette kan forklare hvorfor det er uenigheter mellom ulike institusjoner som bruker forskjellige kalibreringsmetoder.\n\nSå, hvor står vi? Det er klart at TLS er et system med både styrker og svakheter. På den ene siden gir det en strukturert tilnærming til å håndtere lakselusproblematikken i oppdrettsnæringen. På den andre siden er det betydelige metodologiske utfordringer og usikkerheter som må adresseres for å forbedre systemets nøyaktighet og pålitelighet.\n\nBasert på den tilgjengelige forskningen, kan vi konkludere med en medium grad av tillit til TLS som et robust kunnskapsgrunnlag for kapasitetsregulering. For å styrke systemet ytterligere, vil det være viktig å forbedre de empiriske grunnlagene for modellene, kvantifisere usikkerheten bedre, og sikre at kalibreringsmetodene er pålitelige og konsistente. Dette vil kreve mer omfattende feltstudier og en åpen dialog mellom forskere, myndigheter og oppdrettsnæringen."
+    }
+  ]
+}

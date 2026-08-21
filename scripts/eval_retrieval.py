@@ -34,7 +34,7 @@ sys.path.insert(0, str(REPO / "app"))
 
 from retrieval import retrieve_routed  # noqa: E402
 
-load_dotenv()
+load_dotenv(REPO / ".env", override=True)
 SMOKE = REPO / "eval" / "smoke_queries.json"
 RUNS_DIR = REPO / "eval" / "recall_runs"
 

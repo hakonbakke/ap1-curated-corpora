@@ -1,0 +1,492 @@
+{
+  "run_utc": "2026-08-11T123621Z",
+  "top_k": 8,
+  "cases_total": 15,
+  "cases_asserting_recall": 15,
+  "passed": 15,
+  "failed": 0,
+  "results": [
+    {
+      "id": "q9_population_no",
+      "query": "Hva er evidensen for at lakselus fra oppdrett gir bestandsnedgang hos villaks?",
+      "routes": [
+        "Q9",
+        "Q1"
+      ],
+      "retrieved": [
+        "2025_jae_jansen-lice-effects-returns",
+        "2017_icesjms_forseth-major-threats-norway",
+        "2021_aei_seatrout-risk-assessment",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2021_rcn_traffic-light-evaluation"
+      ],
+      "must_include_any": [
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2025_jfd_jones-pacific-lice-cessation-bc"
+      ],
+      "hits": [
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2025_jfd_jones-pacific-lice-cessation-bc"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "q9_population_en",
+      "query": "What evidence links lice-induced mortality to reduced adult returns?",
+      "routes": [
+        "Q9"
+      ],
+      "retrieved": [
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2025_jae_jansen-lice-effects-returns",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2017_icesjms_forseth-major-threats-norway",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2022_fishes_lamberg-pre-fishery-abundance",
+        "1998_cjfas_mccormick-smolting-migration",
+        "2021_icesjms_jansen-comment-vps-mortality"
+      ],
+      "must_include_any": [
+        "2025_jae_jansen-lice-effects-returns",
+        "2020_jae_bohn-timing-survival-postsmolts"
+      ],
+      "hits": [
+        "2025_jae_jansen-lice-effects-returns"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "q10_tls",
+      "query": "How robust is the Norwegian Traffic Light System as a regulatory framework?",
+      "routes": [
+        "Q10"
+      ],
+      "retrieved": [
+        "2021_rcn_traffic-light-evaluation",
+        "2024_raq_vannes-critical-review-tls",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2017_icesjms_forseth-major-threats-norway",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2025_raq_vannes-response-to-stige",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2025_raq_stige-comment-vannes"
+      ],
+      "must_include_any": [
+        "2024_raq_vannes-critical-review-tls",
+        "2025_raq_stige-comment-vannes",
+        "2025_raq_vannes-response-to-stige",
+        "2021_rcn_traffic-light-evaluation"
+      ],
+      "hits": [
+        "2024_raq_vannes-critical-review-tls",
+        "2025_raq_stige-comment-vannes",
+        "2025_raq_vannes-response-to-stige",
+        "2021_rcn_traffic-light-evaluation"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "q8_calibration",
+      "query": "How sensitive are Traffic Light System classifications to model assumptions and calibration data?",
+      "routes": [
+        "Q10",
+        "Q7",
+        "Q8"
+      ],
+      "retrieved": [
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2024_raq_vannes-critical-review-tls",
+        "2021_rcn_traffic-light-evaluation",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2015_aei_helland-monitoring-lice-challenges",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2025_raq_stige-comment-vannes"
+      ],
+      "must_include_any": [
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2021_icesjms_johnsen-vps-mortality-norway"
+      ],
+      "hits": [
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2021_icesjms_johnsen-vps-mortality-norway"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "disagree",
+      "query": "Which studies disagree most on lice impact magnitude?",
+      "routes": [],
+      "retrieved": [
+        "2026_prslb_folk-parasites-high-host-density",
+        "2025_jae_jansen-lice-effects-returns",
+        "2015_aei_helland-monitoring-lice-challenges",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2025_raq_stige-comment-vannes",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2024_raq_vannes-critical-review-tls",
+        "2020_jae_bohn-timing-survival-postsmolts"
+      ],
+      "must_include_any": [
+        "2024_raq_vannes-critical-review-tls",
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse"
+      ],
+      "hits": [
+        "2024_raq_vannes-critical-review-tls",
+        "2025_jae_jansen-lice-effects-returns"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault1_bc_origin_no",
+      "query": "Hva skjedde med lus på villaks etter at oppdrett ble fjernet i British Columbia, og er det overførbart til Norge?",
+      "routes": [
+        "Q1",
+        "Q6",
+        "Q7"
+      ],
+      "retrieved": [
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2024_raq_vannes-critical-review-tls",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2020_conphys_fjelldal-lice-osmoregulation-salmon",
+        "1997_icesjms_dawson-seatrout-salmon-susceptibility",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2025_raq_stige-comment-vannes",
+        "2021_aei_seatrout-risk-assessment"
+      ],
+      "must_include_any": [
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2025_scientificdata_bc-sealice-dataset-2001-2023"
+      ],
+      "hits": [
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2025_jfd_jones-pacific-lice-cessation-bc"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault1_bc_origin_en",
+      "query": "Did sea lice on wild Pacific salmon decline after aquaculture was removed in British Columbia?",
+      "routes": [
+        "Q1"
+      ],
+      "retrieved": [
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2025_scientificdata_bc-sealice-dataset-2001-2023",
+        "2021_aei_seatrout-risk-assessment",
+        "2025_jae_jansen-lice-effects-returns",
+        "1997_icesjms_dawson-seatrout-salmon-susceptibility",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2015_aei_helland-monitoring-lice-challenges",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2021_rcn_traffic-light-evaluation",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout"
+      ],
+      "must_include_any": [
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2025_jfd_jones-pacific-lice-cessation-bc"
+      ],
+      "hits": [
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2025_jfd_jones-pacific-lice-cessation-bc"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault2_calibration_no",
+      "query": "Hva er Van Nes et al. og Stige et al. egentlig uenige om når det gjelder kalibrering av lusemodeller?",
+      "routes": [
+        "Q10",
+        "Q7",
+        "Q8"
+      ],
+      "retrieved": [
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2025_raq_vannes-response-to-stige",
+        "2025_raq_stige-comment-vannes",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2015_aei_helland-monitoring-lice-challenges",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2021_rcn_traffic-light-evaluation",
+        "2024_raq_vannes-critical-review-tls"
+      ],
+      "must_include_any": [
+        "2024_raq_vannes-critical-review-tls",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2025_raq_stige-comment-vannes",
+        "2025_raq_vannes-response-to-stige"
+      ],
+      "hits": [
+        "2024_raq_vannes-critical-review-tls",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2025_raq_stige-comment-vannes",
+        "2025_raq_vannes-response-to-stige"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault3_vps_fit_no",
+      "query": "Hvor godt treffer de operative lusemodellene det som faktisk måles på villfisk?",
+      "routes": [
+        "Q7",
+        "Q8"
+      ],
+      "retrieved": [
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2021_aei_seatrout-risk-assessment",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2021_rcn_traffic-light-evaluation"
+      ],
+      "must_include_any": [
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction"
+      ],
+      "hits": [
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault3_vps_overestimate_en",
+      "query": "Does the virtual post-smolt model overestimate lice-induced mortality compared with trawl observations?",
+      "routes": [
+        "Q7",
+        "Q8"
+      ],
+      "retrieved": [
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2024_raq_vannes-critical-review-tls",
+        "2021_rcn_traffic-light-evaluation",
+        "2025_jae_jansen-lice-effects-returns"
+      ],
+      "must_include_any": [
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction"
+      ],
+      "hits": [
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault4_returns_no",
+      "query": "Gir luseindusert smoltdødelighet færre voksne tilbake, og hvordan står det mot andre dødsårsaker i havet?",
+      "routes": [
+        "Q9"
+      ],
+      "retrieved": [
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2017_icesjms_forseth-major-threats-norway",
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2021_rcn_traffic-light-evaluation",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2020_jae_bohn-timing-survival-postsmolts"
+      ],
+      "must_include_any": [
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2022_rfbf_gillson-marine-stressors-salmon"
+      ],
+      "hits": [
+        "2025_jae_jansen-lice-effects-returns",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2022_rfbf_gillson-marine-stressors-salmon"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault5_thresholds_no",
+      "query": "Ved hvilke lusenivåer dør postsmolt faktisk, og hvor godt er den terskelen etablert fra lab til felt?",
+      "routes": [
+        "Q6",
+        "Q7"
+      ],
+      "retrieved": [
+        "2020_conphys_fjelldal-lice-osmoregulation-salmon",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2024_raq_vannes-critical-review-tls",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2026_prslb_folk-parasites-high-host-density",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2025_raq_stige-comment-vannes",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2021_rcn_traffic-light-evaluation"
+      ],
+      "must_include_any": [
+        "2020_conphys_fjelldal-lice-osmoregulation-salmon",
+        "2020_jae_bohn-timing-survival-postsmolts",
+        "2024_raq_vannes-critical-review-tls",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout"
+      ],
+      "hits": [
+        "2020_conphys_fjelldal-lice-osmoregulation-salmon",
+        "2024_raq_vannes-critical-review-tls"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "fault5_species_transfer_en",
+      "query": "Can laboratory lice mortality thresholds for salmon be transferred to sea trout in the field?",
+      "routes": [
+        "Q6",
+        "Q7"
+      ],
+      "retrieved": [
+        "1997_icesjms_dawson-seatrout-salmon-susceptibility",
+        "2020_conphys_fjelldal-lice-osmoregulation-salmon",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2026_prslb_folk-parasites-high-host-density",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2021_aei_seatrout-risk-assessment",
+        "2025_dao_jones-broughton-lice-unchanged",
+        "2022_fishes_lamberg-pre-fishery-abundance"
+      ],
+      "must_include_any": [
+        "1997_icesjms_dawson-seatrout-salmon-susceptibility",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2020_conphys_fjelldal-lice-osmoregulation-salmon"
+      ],
+      "hits": [
+        "1997_icesjms_dawson-seatrout-salmon-susceptibility",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2020_conphys_fjelldal-lice-osmoregulation-salmon"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "trap_other_drivers_no",
+      "query": "Hvilke andre marine faktorer enn lakselus kan forklare nedgang i villaksinnsiger?",
+      "routes": [
+        "Q9"
+      ],
+      "retrieved": [
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2017_icesjms_forseth-major-threats-norway",
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2025_jae_jansen-lice-effects-returns",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2022_fishes_lamberg-pre-fishery-abundance",
+        "2024_ecosphere_hawley-anadromy-lice-mortality-trout",
+        "2025_jfd_jones-pacific-lice-cessation-bc",
+        "2021_rcn_traffic-light-evaluation",
+        "2020_jae_bohn-timing-survival-postsmolts",
+        "2021_icesjms_jansen-comment-vps-mortality"
+      ],
+      "must_include_any": [
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2017_icesjms_forseth-major-threats-norway"
+      ],
+      "hits": [
+        "2021_rfsa_dadswell-atlantic-salmon-collapse",
+        "2016_jfb_jonsson-environmental-change-salmon",
+        "2022_rfbf_gillson-marine-stressors-salmon",
+        "2017_icesjms_forseth-major-threats-norway"
+      ],
+      "passed": true,
+      "asserted": true
+    },
+    {
+      "id": "q10_tls_no",
+      "query": "Hvor robust er det norske Trafikklyssystemet som kunnskapsgrunnlag for kapasitetsregulering?",
+      "routes": [
+        "Q10"
+      ],
+      "retrieved": [
+        "2021_rcn_traffic-light-evaluation",
+        "2024_raq_vannes-critical-review-tls",
+        "2025_aquaculture_gjerde-seatrout-lice-prediction",
+        "2018_epidemics_kristoffersen-risk-assessment",
+        "2022_aei_stige-model-sensitivity-calibration",
+        "2024_ijpara_stige-regional-lice-coordination",
+        "2025_raq_vannes-response-to-stige",
+        "2021_icesjms_jansen-comment-vps-mortality",
+        "2021_icesjms_johnsen-vps-mortality-norway",
+        "2025_raq_stige-comment-vannes"
+      ],
+      "must_include_any": [
+        "2024_raq_vannes-critical-review-tls",
+        "2021_rcn_traffic-light-evaluation",
+        "2025_raq_stige-comment-vannes",
+        "2022_aei_stige-model-sensitivity-calibration"
+      ],
+      "hits": [
+        "2024_raq_vannes-critical-review-tls",
+        "2021_rcn_traffic-light-evaluation",
+        "2025_raq_stige-comment-vannes",
+        "2022_aei_stige-model-sensitivity-calibration"
+      ],
+      "passed": true,
+      "asserted": true
+    }
+  ]
+}

@@ -21,6 +21,22 @@ from openai import OpenAI
 DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "corpus.parquet"
 EMBEDDING_MODEL = "text-embedding-3-large"
 
+# Cosine similarity floor for "in scope". Spot-checked 2026-08-12:
+# on-topic golden queries top1 ≈ 0.42–0.69; clear off-topic top1 ≈ 0.05–0.19.
+OUT_OF_SCOPE_SCORE_THRESHOLD = 0.28
+
+
+def best_retrieval_score(results: list[dict]) -> float:
+    """Highest cosine similarity among retrieved docs (ignore missing/zero debate fillers)."""
+    if not results:
+        return 0.0
+    return max(float(r.get("score") or 0.0) for r in results)
+
+
+def is_out_of_scope(results: list[dict], threshold: float = OUT_OF_SCOPE_SCORE_THRESHOLD) -> bool:
+    """True when retrieval is empty or the best hit is below the in-scope floor."""
+    return best_retrieval_score(results) < threshold
+
 
 def corpus_parquet_mtime() -> float:
     """Modification time of corpus.parquet — used to invalidate Streamlit cache after ingest."""
@@ -73,6 +89,7 @@ def json_list_contains(json_str: str, values: list[str]) -> bool:
 
 
 # Query → priority-question routing (boost, not hard-only filter)
+# Order: more specific population/regulation cues before generic physiology.
 _ROUTE_RULES: list[tuple[list[str], list[str]]] = [
     # Population / adult returns (Q9) — must win over smolt/physiology wording
     (
@@ -80,6 +97,8 @@ _ROUTE_RULES: list[tuple[list[str], list[str]]] = [
             "bestand", "bestandsnedgang", "population", "adult return", "adult returns",
             "returning adult", "stock decline", "stock collapse", "pre-fishery",
             "pfa", "gytebestand", "returns to spawn", "wild salmon stock",
+            "voksne tilbake", "innsig", "innsiger", "dødsårsaker i havet",
+            "andre marine", "marine faktorer", "marine stressors",
         ],
         ["Q9"],
     ),
@@ -88,16 +107,39 @@ _ROUTE_RULES: list[tuple[list[str], list[str]]] = [
         [
             "trafikklys", "traffic light", "tls", "produksjonsområde", "production area",
             "capacity regulation", "kapasitetsregulering", "klassifisering",
-            "regulatory framework", "ekspertgruppe",
+            "regulatory framework", "ekspertgruppe", "kunnskapsgrunnlag for kapasitet",
+            "van nes", "stige et al", "stige mfl",
         ],
         ["Q10"],
+    ),
+    # Attribution / farm origin (Q1) — BC cessation natural experiments
+    (
+        [
+            "british columbia", "broughton", "oppdrett ble fjernet",
+            "aquaculture was removed", "aquaculture removal", "farm removal",
+            "lice unchanged", "pacific salmon", "stillehavslaks",
+            "opphav", "attribution of lice", "farm-origin", "fra oppdrett",
+        ],
+        ["Q1"],
+    ),
+    # Physiology / thresholds / lab–field (Q6) — often with Q7
+    (
+        [
+            "terskel", "terskler", "threshold", "thresholds", "lusnivå", "lusenivå",
+            "lab til felt", "laboratory", "osmoregulation", "osmoregulering",
+            "dose–respons", "dose-response", "sea trout susceptibility",
+            "overførbar", "transferred to sea trout",
+        ],
+        ["Q6", "Q7"],
     ),
     # Model / PIM / VPS / calibration (Q7–Q8)
     (
         [
             "pim", "vps", "kalibrering", "calibration", "modelldødelighet",
-            "model mortality", "sentinel cage", "virtual postsmolt",
+            "model mortality", "sentinel cage", "virtual postsmolt", "virtual post-smolt",
             "smolt mortality estimate", "postsmolt mortality",
+            "lusemodell", "operative lusemodell", "overestimate", "overestimer",
+            "trawl observation", "trålfanget", "måles på villfisk", "treffer",
         ],
         ["Q7", "Q8"],
     ),
@@ -145,6 +187,8 @@ def _row_to_result(row: pd.Series) -> dict:
         "included_because": row["included_because"],
         "coi_declared": row["coi_declared"],
         "curator_review_status": row.get("curator_review_status", "") or "",
+        "inclusion_decided_by": row.get("inclusion_decided_by", "") or "",
+        "added_as_debate_link": False,
         "score": round(float(row["_score"]), 4),
     }
 
@@ -265,7 +309,11 @@ def _expand_debate_links(
     results: list[dict],
     selected_doc_ids: list[str] | None,
 ) -> list[dict]:
-    """Ensure related_contrasting / should_read_with docs in corpus enter the set if space."""
+    """Append up to 3 related_contrasting / should_read_with docs beyond top_k.
+
+    These extras are marked added_as_debate_link so the UI can separate them
+    from similarity hits. They still enter synthesis.
+    """
     df = load_corpus()
     have = {r["doc_id"] for r in results}
     allowed = set(selected_doc_ids) if selected_doc_ids is not None else None
@@ -283,7 +331,6 @@ def _expand_debate_links(
     if not extras:
         return results
 
-    # Append missing linked docs (capped) with score 0 placeholder from corpus row
     id_to_row = {row["doc_id"]: row for _, row in df.iterrows()}
     for doc_id in extras[:3]:
         if doc_id in have:
@@ -291,10 +338,11 @@ def _expand_debate_links(
         row = id_to_row.get(doc_id)
         if row is None:
             continue
-        # Minimal score so they sort after semantic hits but still enter synthesis
         row = row.copy()
         row["_score"] = 0.0
-        results.append(_row_to_result(row))
+        extra = _row_to_result(row)
+        extra["added_as_debate_link"] = True
+        results.append(extra)
         have.add(doc_id)
     return results
 

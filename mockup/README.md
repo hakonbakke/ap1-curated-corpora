@@ -1,9 +1,18 @@
-# Theme page mockup (lean)
+# Havbruksløftets Evidensrom (mockup)
 
-Open: `mockup/tema-villaks.html` (double-click / Ctrl+O). Keep `figur-*.png` beside the HTML.
+**Start her:** åpne `index.html` (dobbelklikk / Ctrl+O).
 
-**Shape:** A Introduksjon → B Rammeverk (+ kart) → C Debattkort → D Gå dypere.
+Hold `figur-*.png` i samme mappe som HTML-filene.
 
-Figures: `figur-smolt-lus.png` (A), `figur-trafikklys.png` (B).
+## Struktur
+
+| Fil | Rolle |
+|-----|--------|
+| `index.html` | Forside: Havbruksløftets Evidensrom, liste over evidensrom |
+| `tema-villaks.html` | Aktivt rom: lakselus og villaks (A→D) |
+
+**Rom-flyt:** A Introduksjon (Les mer) → B Rammeverk (+ kart, Les mer) → C Fritekst-uenighetskart → D Ask (fritekst + eksempelspørsmål i nedtrekk).
 
 Section D answer is canned (`Eksempelsvar`). Lovdata links in B still placeholders.
+
+På forsiden: villaks (aktiv), velferd/avlusning og produksjonsdødelighet (AP1-stubs), pluss areal i havbruk (planlagt).

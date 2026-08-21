@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Havbruksløftets Evidensrom</title>
+<style>
+  :root {
+    --bg: #eef3f7;
+    --surface: #ffffff;
+    --ink: #15232b;
+    --muted: #5b6b75;
+    --line: #d5dee6;
+    --accent: #005f73;
+    --accent-soft: #e6f2f5;
+    --soft: #f4f7fa;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(21, 35, 43, 0.04), 0 8px 24px rgba(21, 35, 43, 0.05);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background:
+      radial-gradient(ellipse 80% 50% at 10% -10%, #c5dde4 0%, transparent 55%),
+      radial-gradient(ellipse 60% 40% at 90% 0%, #d8e8ef 0%, transparent 50%),
+      var(--bg);
+    line-height: 1.55;
+    font-size: 16px;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); }
+  .topbar {
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .topbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .brand-sub {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 28px 72px;
+  }
+  .note {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0 0 22px;
+  }
+  .hero {
+    margin-bottom: 36px;
+    max-width: 40rem;
+  }
+  .eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-size: clamp(2rem, 3.2vw, 2.75rem);
+    margin: 0 0 12px;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+  }
+  .lede {
+    color: var(--muted);
+    font-size: 1.08rem;
+    margin: 0;
+  }
+  .rooms-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+  .rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 640px) {
+    .rooms { grid-template-columns: 1fr; }
+  }
+  .room {
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px 24px;
+    text-decoration: none;
+    color: inherit;
+    min-height: 200px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  a.room:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 95, 115, 0.12);
+  }
+  .room.soon {
+    opacity: 0.85;
+    background: var(--soft);
+  }
+  .room-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .status {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .status-on {
+    background: #e5f3ea;
+    color: #1e5a35;
+  }
+  .status-soon {
+    background: #f6f0dd;
+    color: #6a5218;
+  }
+  .room h2 {
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+  .room p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    flex: 1;
+  }
+  .room-meta {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    font-size: 0.82rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .room-cta {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .room.soon .room-cta { color: var(--muted); font-weight: 500; }
+  .footer {
+    margin-top: 48px;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HL</span>
+      <span>
+        Havbruksløftets Evidensrom
+        <span class="brand-sub">Kuraterte korpus · synlig uenighet</span>
+      </span>
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+  <p class="note">Mockup · offline · åpne gjerne med wifi av</p>
+
+  <section class="hero">
+    <p class="eyebrow">Havbruksløftet · AP1</p>
+    <h1>Havbruksløftets Evidensrom</h1>
+    <p class="lede">
+      Velg et evidensrom. Hvert rom kartlegger hva akademiske publikasjoner sier om et tema.
+      Korpuset er kuratert, og faglig uenighet skjules ikke.
+    </p>
+  </section>
+
+  <p class="rooms-label">Evidensrom</p>
+  <div class="rooms">
+    <a class="room" href="tema-villaks.html">
+      <div class="room-top">
+        <span class="status status-on">Aktiv</span>
+      </div>
+      <h2>Lakselus og dødelighet hos ville laksefisk</h2>
+      <p>
+        Hva akademiske publikasjoner sier om hvor mye lakselus fra oppdrett
+        bidrar til dødelighet hos villaks. Hvor evidensen er uenig, og hvor datahullene er.
+      </p>
+      <div class="room-meta">
+        <span>27 artikler · 1997–2026</span>
+        <span class="room-cta">Åpne rom →</span>
+      </div>
+    </a>
+
+    <div class="room soon" aria-disabled="true">
+      <div class="room-top">
+        <span class="status status-soon">Under oppbygging</span>
+      </div>
+      <h2>Lakselus, velferd og dødelighet hos oppdrettslaks</h2>
+      <p>
+        Effekter av lus og avlusingsmetoder på velferd og overlevelse hos oppdrettslaks.
+        Korpus stub i AP1 — ingen artikler lagt inn ennå.
+      </p>
+      <div class="room-meta">
+        <span>0 artikler · stub</span>
+        <span class="room-cta">Kommer</span>
+      </div>
+    </div>
+
+    <div class="room soon" aria-disabled="true">
+      <div class="room-top">
+        <span class="status status-soon">Under oppbygging</span>
+      </div>
+      <h2>Produksjonsdødelighet hos oppdrettslaks</h2>
+      <p>
+        Dødelighet i produksjon fra alle årsaker — sykdom, håndtering, miljø og system —
+        som bredere kontekst for lus-spesifikke funn.
+      </p>
+      <div class="room-meta">
+        <span>0 artikler · stub</span>
+        <span class="room-cta">Kommer</span>
+      </div>
+    </div>
+
+    <div class="room soon" aria-disabled="true">
+      <div class="room-top">
+        <span class="status status-soon">Under oppbygging</span>
+      </div>
+      <h2>Areal i havbruk</h2>
+      <p>
+        Evidensbaserte avveininger når areal i kystsonen fordeles til havbruk.
+        Ønsket tema — eget korpus ikke opprettet ennå.
+      </p>
+      <div class="room-meta">
+        <span>0 artikler · planlagt</span>
+        <span class="room-cta">Kommer</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Havbruksløftets Evidensrom · mockup · Streamlit-appen er urørt · kan på sikt inngå i Bluetalk
+  </footer>
+</div>
+
+</body>
+</html>

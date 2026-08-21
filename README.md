@@ -9,6 +9,8 @@ aquaculture and its interactions with fish health, welfare, and wild populations
 
 **For current project state, app setup, and agent handoff:** read [`STATUS.md`](STATUS.md) first.
 
+**Agent / engineering standard:** [`SENIOR_RAG_ENGINEER.md`](SENIOR_RAG_ENGINEER.md) (Senior RAG lessons mapped to AP1).
+
 ---
 
 ## Repository structure
