@@ -22,6 +22,7 @@ venv/
 # Local conversion / extraction scratch (not part of corpus)
 _odl_output/
 _tmp_extracts/
+**/_odl_tmp/
 
 # Validator / sync QA outputs (regenerated locally)
 qa_vocabulary_violations.csv

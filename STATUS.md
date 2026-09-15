@@ -124,7 +124,7 @@ Standing leftovers:
 2. Re-run recall after any retrieval change; compare to `2026-08-11T123621Z_recall.json`
 3. Hybrid BM25 only if a future recall run shows clear misses
 4. Source panel items 7-10 (group by direction, camp summary, clickable citations, merge debate map)
-5. Orientation figures (`mockup/figur-*.png`) still missing from the repo
+5. Areal-specific orientation figures are still not integrated into the room; the existing villaks figures remain under `mockup/`
 
 ## Parquet update rule
 - Metadata / status / rationale only → `python scripts/sync_metadata_to_parquet.py`

@@ -438,40 +438,60 @@ with st.sidebar:
         ):
             df = reload_corpus(AREAL_DATA_FILE)
             st.rerun()
-        doc_options = {}
+        # Use stable document IDs as widget values. Display labels are not
+        # unique (the two retained Kvalvik records describe the same paper),
+        # so using labels as keys silently dropped one record.
+        option_rows = []
         for _, row in df.sort_values(["year", "doc_id"]).iterrows():
             first_author = _last_name(row.get("authors", ""))
             title = str(row.get("title") or row["doc_id"])
             label = f"{first_author} {row['year']} · {title[:55]}"
-            doc_options[label] = row["doc_id"]
-        all_labels = list(doc_options.keys())
+            option_rows.append((str(row["doc_id"]), label))
+        label_counts = {}
+        for _, label in option_rows:
+            label_counts[label] = label_counts.get(label, 0) + 1
+        doc_options = {
+            doc_id: (f"{label} · {doc_id}" if label_counts[label] > 1 else label)
+            for doc_id, label in option_rows
+        }
+        all_doc_ids = list(doc_options)
         if "areal_selected" not in st.session_state:
-            st.session_state["areal_selected"] = all_labels
+            st.session_state["areal_selected"] = all_doc_ids
+        else:
+            # Migrate a pre-fix session that stored display labels. If no
+            # stable IDs survive, restore the safe all-documents default.
+            stored_ids = st.session_state.get("areal_selected") or []
+            valid_ids = [doc_id for doc_id in stored_ids if doc_id in doc_options]
+            if stored_ids and not valid_ids:
+                st.session_state["areal_selected"] = all_doc_ids
         col_sel, col_clr = st.columns(2)
         if col_sel.button(tr(lang, "Select all", "Velg alle"), width="stretch"):
-            st.session_state["areal_selected"] = all_labels
+            st.session_state["areal_selected"] = all_doc_ids
         if col_clr.button(tr(lang, "Clear all", "Tøm"), width="stretch"):
             st.session_state["areal_selected"] = []
-        selected_labels = st.multiselect(
+        selected_doc_ids = st.multiselect(
             tr(lang, "Include these papers", "Inkluder disse artiklene"),
-            options=all_labels,
-            default=[l for l in st.session_state.get("areal_selected", all_labels) if l in doc_options],
+            options=all_doc_ids,
+            default=[
+                doc_id
+                for doc_id in st.session_state.get("areal_selected", all_doc_ids)
+                if doc_id in doc_options
+            ],
+            format_func=lambda doc_id: doc_options[doc_id],
             label_visibility="collapsed",
         )
-        st.session_state["areal_selected"] = selected_labels
-        selected_doc_ids = [doc_options[l] for l in selected_labels] if selected_labels else None
-        if not selected_labels:
+        st.session_state["areal_selected"] = selected_doc_ids
+        if not selected_doc_ids:
             st.warning(tr(lang, "Select at least one document.", "Velg minst ett dokument."))
         else:
             st.caption(
                 tr(
                     lang,
-                    f"{len(selected_labels)} / {n_total} documents active",
-                    f"{len(selected_labels)} / {n_total} aktive dokumenter",
+                    f"{len(selected_doc_ids)} / {n_total} documents active",
+                    f"{len(selected_doc_ids)} / {n_total} aktive dokumenter",
                 )
             )
     else:
-        selected_labels = []
         selected_doc_ids = None
 
     st.divider()
@@ -1048,8 +1068,8 @@ with st.container(border=True):
         st.caption(
             tr(
                 lang,
-                f"Retrieves up to k = {top_k} by similarity among {len(selected_labels) if selected_labels else 0} active documents.",
-                f"Henter opptil k = {top_k} etter likhet blant {len(selected_labels) if selected_labels else 0} aktive dokumenter.",
+                f"Retrieves up to k = {top_k} by similarity among {len(selected_doc_ids) if selected_doc_ids else 0} active documents.",
+                f"Henter opptil k = {top_k} etter likhet blant {len(selected_doc_ids) if selected_doc_ids else 0} aktive dokumenter.",
             )
         )
 
@@ -1057,7 +1077,7 @@ if run and query.strip():
     if not corpus_ready:
         st.error(tr(lang, "Corpus not ready.", "Korpuset er ikke klart."))
         st.stop()
-    if not selected_labels:
+    if not selected_doc_ids:
         st.error(
             tr(
                 lang,
