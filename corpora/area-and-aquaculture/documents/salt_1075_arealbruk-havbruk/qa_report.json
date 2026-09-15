@@ -1,0 +1,91 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figures A-D and 1-47 are images. Area shares, boxplots and maps used in claims are taken from surrounding prose, not from figure pixels.",
+    "Table 6 (traffic-light colours by production area and year) is an image. Colour cells were not readable and are not claimed as specific 2017-2022 colours.",
+    "Chapter 4.2.1 first says median mean depth is between 50 and 100 m in all production areas, then lists 125 m or 150 m medians in named areas. Both sentences are in the extract. Curation records the contradiction and uses the named per-area figures as the more specific list, not as a resolved truth.",
+    "Distance-from-land bins on page 54 (130 of 1000 at 0-100 m, 766 at 100-500 m, 234 beyond 500 m) sum to 1130, not 1000. Counts are not used as exclusive shares.",
+    "Blue-mussel 2022 sales are 2612 t in Table 9 and the chapter 8.3.2 body, and 1967 t in Table 10. Curation uses 2612 from Table 9 and the body. Table 10 has other likely OCR digit issues (comma versus thousand-separator on cod).",
+    "Purpose section 1.2 says model area use in 2030. Chapter 6 models salmonids to 2050. Chapter 8 models new species to 2032.",
+    "Cover OCR writes Delraport. Running title uses Delrapport.",
+    "Chapter 7 prints interview summaries, not full transcripts. Industry interviews were noted, not recorded."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Part 2 of an FHF compilation dated 13 October 2023. Part 1 covered fisheries. This part describes aquaculture sea-area use today and possible future need. Land-based hatcheries, on-growing, slaughter and land-based salmon grow-out are out of scope. The authors do not assess environmental impacts other than area.",
+      "supported": true,
+      "extract_quote": "Prosjektet avgrenses til å beskrive havbruksnæringens arealbruk i sjø."
+    },
+    {
+      "claim": "Aquaculture is the inverse of fisheries: all production is forbidden unless permitted. The Planning and Building Act applies to one nautical mile beyond the baselines. Municipal coastal plans decide which sea can be used. A locality also needs county permission under the Aquaculture Act after the Food Safety Authority, County Governor, Coastal Administration and Fisheries Directorate have consented. The first offshore locality clearance outside the baseline is dated 25 September 2023. That offshore track is not treated in the legal chapter.",
+      "supported": true,
+      "extract_quote": "I fiskeri er det arealmessige utgangspunktet at alt fiske tillatt med mindre det er forbudt, mens all produksjon av akvakultur er forbudt med mindre den er tillatt."
+    },
+    {
+      "claim": "Two municipal planning approaches appear in practice. Some municipalities allow aquaculture only in single-use zones. Others use larger multi-use zones (often called the reverse planning principle), sometimes together with single-use aquaculture zones. The Lurøy sea plan (Kystplan Helgeland, adopted 3 April 2019) is the worked example. The Varpets site later received 3120 tonnes locality MTB (Nordland county, 25 May 2020).",
+      "supported": true,
+      "extract_quote": "Det å avsette slike flerbruksområder omtales ofte som «det omvendte planprinsipp»."
+    },
+    {
+      "claim": "Company licences and locality licences are separate. A standard company MTB was 780 tonnes, or 945 tonnes in Troms and Finnmark. As of 31 December 2022 there were 1135 salmonid sea company licences and 989 grow-out sea localities. Locality MTB is absolute. Figures from 2017 showed about 3.9 times as much locality biomass cleared as company biomass. Shared biomass caps can cross two adjacent production areas, or four for some processors.",
+      "supported": true,
+      "extract_quote": "Tall fra 2017 viste f.eks. at det var klarert lokaliteter for 3,9 ganger så mye biomasse som det var gitt selskapstillatelse til."
+    },
+    {
+      "claim": "National production capacity is also steered by the 2017 traffic-light system in 13 production areas. At the time of writing the only environmental indicator is lice on wild salmonids. The department's powers are \"may\" rules. In the first colouring (2017) red areas were not reduced. Later colourings did reduce red areas, so far by 6 percent. The area scenarios assume 6 percent up or down and ignore exception growth under production-area regulation section 12 and cross-area surplus biomass.",
+      "supported": true,
+      "extract_quote": "Siden de fullmakter departementet er gitt til å regulere produksjonskapasiteten er «kan»-bestemmelser, ligger det innenfor departementets skjønn å velge om det vil benytte adgangen til å gi vekst, holde den uendret og/eller å redusere kapasiteten."
+    },
+    {
+      "claim": "Combined locality area for salmon, trout and rainbow trout is given as 94 km2, or 123 km2 and 261 km2 with 20 m and 100 m buffers. Anchors are not in those figures. The largest blocks are in production area 6 (Nordmøre and Sør-Trøndelag, up toward 15 km2) and areas 3 and 4. With illustrative safety radii (2.5 km for fish farms, 1.5 km for other sites, none for seabed ranching) occupied share of sea is highest in areas 2 and 3. Prose says those two areas can reach about 30 and 50 percent of sea inside the radii.",
+      "supported": true,
+      "extract_quote": "Det samlede arealet for alle lokaliteter til laks, ørret og regnbueørret er 94 km2. Medregnet buffersoner på 20 meter og 100 meter er arealbruken henholdsvis 123 og 261 km2."
+    },
+    {
+      "claim": "Other uses stated: algae about 8 km2, blue mussels about 5 km2, lobster seabed ranching 23 km2, scallop ranching 3 km2, and about 2 km2 each for cod, a mixed group, and other molluscs, crustaceans and echinoderms (excluding scallop and mussel). Table 1 counts include 1000 salmonid sites, 33 cod, 8 halibut, 77 algae, 121 molluscs or crustaceans or echinoderms, 21 special licences and 40 slaughter pens. Seabed ranching is not allowed north of Vestfjorden. Large scallop ranching is also barred from the Swedish border to Hå municipality.",
+      "supported": true,
+      "extract_quote": "Det gis ikke tillatelse til å drive havbeite nord for Vestfjorden og det skal ikke gis tillatelse til havbeite av stort kamskjell fra Svenskegrensen og til Hå kommune i Rogaland."
+    },
+    {
+      "claim": "Salmon localities have grown in surface size and depth, with a tendency farther from land and a northward shift in new clearances. Chapter 4.2.1 first repeats a 50 to 100 m median-depth band, then lists medians of 125 m or 150 m in several production areas. Of 1000 salmonid localities, 129 had mean depth 55 m or shallower and 102 deeper than 200 m. Depth is generated from 50 m isolines. Deleted-site species are inferred from capacity unit. 517 Trøndelag deletions in 2018 look like a register cleanup.",
+      "supported": true,
+      "extract_quote": "Av de 1 000 lokalitetene med laks, var det 129 med gjennomsnittsdybde på 55 meter eller grunnere, og 102 med gjennomsnittsdybde dypere enn 200 meter."
+    },
+    {
+      "claim": "Three scenarios to 2050: continuing the last-ten-year area-growth rate (about a doubling versus today), 6 percent capacity growth every other year if all lights stay green (about 126 percent area growth if volume maps to area, doubling by 2046), and growth following past traffic-light outcomes (about 44 percent from 2022 to 2050). Under the third scenario, areas 3 to 5 shrink and areas 6, 9 and 12 become the largest. That path is said to reach 64 percent of the all-green area in 2050. New technology could break the volume-to-area link.",
+      "supported": true,
+      "extract_quote": "Dersom veksten i noen områder begrenses av røde og gule lys i trafikklyssystemet, tilsvarende resultatene hittil, vil veksten i areal kunne være 44 % i perioden fra 2022 og fram til 2050."
+    },
+    {
+      "claim": "Twenty-four development-licence awards are cited (scheme closed 2017). Technologies are submersible, semi-closed, closed and offshore, plus an \"other\" group. No offshore farm was yet on its intended offshore site. The three areas under investigation are Trænabanken, Frøyabanken and Norskerenna. Two of those overlap wind-power investigations. Industry interviews (four, one per technology) and administration interviews (NFD, Fisheries Directorate, Food Safety Authority) treat new technology as a complement to open pens. Submersible pens were already in commercial use. Closed systems typically need power near land.",
+      "supported": true,
+      "extract_quote": "Per i dag er befinner ingen av offshore-anleggene seg på tiltenkte offshore-lokaliteter"
+    },
+    {
+      "claim": "Six new sea species are taken forward from an Akvaplan-niva 2019 score above 2: scallop, blue mussel, halibut, sea urchin, cod and sugar kelp. Cod growth in open pens is said to be bottlenecked by missing knowledge on escape, spawning in cages and spawning fields (HI 2022 quote). Kelp is treated as the most horizontally area-demanding. Negative new-species growth paths are discarded as unlikely.",
+      "supported": true,
+      "extract_quote": "Begrenset tilgang til areal og nye lokaliteter, i hovedsak på grunn av manglende kunnskap knyttet til rømming, gyting i merd og påvirkning på gytefelt og gyteområder, ser derfor på kort og mellomlang sikt ut til å være en flaskehals for ytterligere vekst av torskeoppdrett i åpne merder"
+    },
+    {
+      "claim": "Atlantic water off the Norwegian coast is said to have warmed by about 1 °C since the 1980s. Salmon comfort is given as 8 to 14 °C. Infection pressure is said to roughly double from 9 °C to 11 °C. Southern production areas already see summer temperatures above the comfort band. ClimeFish is cited as finding limited positive effects versus higher risk and lower production. High-resolution coastal climate projections and continuous farm time series are named as missing.",
+      "supported": true,
+      "extract_quote": "Også det totale infeksjonspresset øker gradvis med økende temperatur, med en estimert dobling hvis temperaturen stiger fra 9°C til 11°C"
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The report compiles area use, rules, scenarios and interviews. It does not claim or contest a stated causal effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 and A5 remain core. After the full walk A2 (company versus locality licences, county clearance) is present in chapter 2. A3 (fisheries, shrimp fields, recreation, wind overlap) is present in chapter 7.5.3. A4 (NorKyst drop-outs, deleted-site inference, climate knowledge gaps, HI 2022 cod quote) is present in chapters 4, 5, 8 and 9. A6 municipal incentive or area-rent language is not present.",
+  "coi_ok": true,
+  "coi_note": "Funding by FHF is stated (contact Eirik Ruud Sigstadstø). Quality control Kjersti E.T. Busch. No competing-interest statement found.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "salt_1075_arealbruk-havbruk",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": 119,
+  "extract_coverage": "All 119 page markers walked. Figures A-D and 1-47 are image-only. Table 6 colour cells unread. Chapter 7 interview summaries now read. Chapter 6 scenario tables and chapter 8 species paths now read."
+}

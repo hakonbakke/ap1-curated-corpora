@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Several survey bar charts are images, so some Likert category counts are incomplete in the extract."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Area collaboration is defined as cooperation between two or more aquaculture firms in a defined sea area. The main finding is that it should as far as possible be voluntary.",
+      "supported": true,
+      "extract_quote": "Et hovedfunn er at områdesamarbeid i norsk havbruk bør i størst mulig graf være frivillig.",
+      "note": "Cover summary has a typo (graf for grad). Methods 2.1 restrict the object to næringsaktører."
+    },
+    {
+      "claim": "The 2018 mapping used 37 informants from industry, authorities and organisations. It found voluntary, mandated, and voluntary-under-compulsion forms.",
+      "supported": true,
+      "extract_quote": "Denne kartleggingen var basert på spørreundersøkelse/intervju med 37 informanter fra havbruk, forvaltning og næringslivsorganisasjoner",
+      "note": "This N=37 is not the same sample as the 2019 farmer survey."
+    },
+    {
+      "claim": "The 2019 Norstat survey of 37 farmers found extensive neighbour cooperation. About two thirds also cooperate with authorities beyond mandatory requirements. Twenty-eight of 37 cooperate to cut disease and parasite risk.",
+      "supported": true,
+      "extract_quote": "cirka 2/3 samarbeider med forvaltningen utenom hva som anses som lovpålagte krav",
+      "note": "Twenty-eight of 37 is stated in section 4.1.4."
+    },
+    {
+      "claim": "Twenty-three of 37 agreed that increased competition for sites limits operational and preparedness cooperation. Conflicts rise with density and many firms.",
+      "supported": true,
+      "extract_quote": "23 av informantene er helt og delvis enige i at økt konkurranse om lokaliteter begrenser samarbeidet om drift og beredskap",
+      "note": "Eight disagreed. A Food Safety Authority informant named area access as the main barrier."
+    },
+    {
+      "claim": "Twenty-five informants said the Food Safety Authority requires coordinated fallowing when approving operating plans. About half did not treat coordinated delousing as central.",
+      "supported": true,
+      "extract_quote": "25 informanter mener at Mattilsynet krever koordinerte brakkleggingssoner ved godkjenning av driftsplanene",
+      "note": "Delousing finding is in section 4.2.2."
+    },
+    {
+      "claim": "The 2019 algae bloom is used to show limits of site-level preparedness. A companion report is cited for about 13 400 tonnes and about 8 million fish lost among 14 farmers.",
+      "supported": true,
+      "extract_quote": "Under denne krisen tapte oppdretterne cirka 13 400 tonn fisk (6 600 tonn i Nordland og",
+      "note": "Figures are cited from Karlsen et al. 2019 and the Directorate of Fisheries, not newly counted in this report."
+    },
+    {
+      "claim": "Guarracino et al. 2018 raise doubt that joint fallowing affects lice. The authors call for scientific clarification. The June 2019 fallowing map is a snapshot.",
+      "supported": true,
+      "extract_quote": "Funn fra Veterinærinstituttet sår tvil om felles brakklegging har effekt på lusesituasjonen (Guarracino et al., 2018).",
+      "note": "Recommendation 7 repeats the same citation."
+    },
+    {
+      "claim": "Recommendations include voluntary collaboration, clearer contracts with sanctions, well-boat rules, conflict handling, emergency sites per production area, and digital tools.",
+      "supported": true,
+      "extract_quote": "Områdesamarbeidet i norsk havbruk bør i størst mulig grad være frivillig.",
+      "note": "Emergency sites are recommendation 6. Ostrom conditions are in chapter 3 and recommendation 3."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The report maps collaboration forms and recommends voluntary organisation. It does not test a stated causal siting effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A3 (firm-to-firm trade-offs, site competition, externalities) and A5 (density, fallowing, lice, emergency sites). A1 not tagged. Municipal sea planning is background.",
+  "coi_ok": true,
+  "coi_note": "FHF 901391 funding is stated. NSD approval is stated. No competing-interest statement. coi_declared remains unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2019_karlsen_omradesamarbeid",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: cover and sammendrag, methods and area definitions, theory (Ostrom), survey and interview results, algae preparedness, fallowing digitisation, bioeconomic sketch, summary, ten recommendations, references and annex intro."
+}

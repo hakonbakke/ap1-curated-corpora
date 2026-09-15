@@ -1,0 +1,77 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "A6 added after the full walk because chapters 3.3 and 5.2 treat municipal payment as a standing constraint. First-pass tags were A1 and A2 only.",
+    "MTB for Troms and Finnmark is stated as 900 tonnes at conversion (2005) and later as 945 tonnes. Both figures appear in the extract. The 945 figure is the later expansion.",
+    "Chapter 4 is a cost-of-regulation framework, not a measured cost account. No processing-time statistics are added.",
+    "should_be_read_with includes later licensing and county papers. Only Gullestad 2011 is cited by name as Arealutvalget."
+  ],
+  "claim_checks": [
+    {
+      "claim": "First report from FHF project 900902 on impacts of the legal framework and possible simplification. Nofima report 29/2015, dated 12 June 2015, 57 pages. The extract maps the administrative set-up, main statutes, licences and local spatial plans, and names obstacles.",
+      "supported": true,
+      "extract_quote": "This is the first report from the project “Impacts of the legal framework on the aquaculture industry – simplification of regulations”, funded by The Norwegian Seafood Research Fund (FHF)."
+    },
+    {
+      "claim": "The system is described as sectorised, fragmented and complex. Aquaculture Act section 6 gives the Food Safety Authority, pollution authority, Coastal Administration and (for freshwater) NVE an effective veto on site clearance. Section 15 lets municipalities close sea area through plans.",
+      "supported": true,
+      "extract_quote": "Forvaltningssystemet er sektorisert, fragmentert og komplekst."
+    },
+    {
+      "claim": "Two governance systems meet: instrumental state sector administration (for example lice rules) and negotiated municipal area planning. Poor fit between them is named as a barrier to better site use and site structure. After the 2010 reform, locality decisions sit with the counties. The Trøndelag model (2002-2009) that transferred decision authority to the Fisheries Directorate is said not to have been repeated.",
+      "supported": true,
+      "extract_quote": "Havbruksnæringen omfattes altså av to ulike forvaltningssystemer, som baserer seg på ulike forvaltningsmodeller; den statlige instrumentelle sektorforvaltningen og den kommunale forhandlingsbaserte arealforvaltningen."
+    },
+    {
+      "claim": "No authority is assigned to make an overall weighing of interests for and against a site. A refusal on one sector ground can stop a site even if a joint view would allow it. County governors' nature advice under the Nature Diversity Act is not a veto. How often counties follow that advice is left unknown.",
+      "supported": true,
+      "extract_quote": "Etter dagens system er ingen myndighet tildelt oppgaven med å foreta en helhetlig vurdering av alle interesser som taler for og mot etablering."
+    },
+    {
+      "claim": "Impact-assessment rules do not require inclusion of aquaculture's positive effects. Relevant aquaculture KU guidance is described as missing. The 2015 KU revision is said to drop the old 3 600 MTB size trigger and to follow EU influence rather than farm size. Small pen or site adjustments still require a full site application (often 75 to 150 pages).",
+      "supported": true,
+      "extract_quote": "Bestemmelsen for konsekvensutredninger innebærer ikke krav om å inkludere havbruksnæringens positive effekter."
+    },
+    {
+      "claim": "Municipalities can close sea area to aquaculture through plans. Many municipalities have been reluctant to free more area, citing low local return. NFKK has pressed for a production or area fee. Government instead steered parts of new-licence fees to counties (2009) or host municipalities (2013-2014).",
+      "supported": true,
+      "extract_quote": "De kommuner som ikke ønsker etablering av akvakultur kan således gjennom plansystemet hindre at det gis mulighet til etablering."
+    },
+    {
+      "claim": "Green licences in 2014 are stated to send 480 million kroner to municipalities (15 auctioned at 55-65 million, 30 at 10 million). The 45 licences are estimated at about 55 000 tonnes, or about 5 percent of 2014 production. The authors list weaknesses of one-off fee shares: irregular rounds, no payment for existing sites, problems for fire-break municipalities, and room for hidden bargaining.",
+      "supported": true,
+      "extract_quote": "I tilknytning til utdeling av 45 grønne konsesjoner i 2014 innebærer det at kommunene skal tildeles i alt 480 millioner kr"
+    },
+    {
+      "claim": "Hersoug et al. (2014) are cited: 87 percent of farmers agreed that a fixed annual municipal payment would ease access to new area. A company survey in this report says 63 percent agree that access to deep, well-flushed, sheltered sites is the main challenge, and 37 percent name area access as the largest growth constraint.",
+      "supported": true,
+      "extract_quote": "var 87 prosent av oppdretterne enig i at det vil lette tilgangen på nye arealer om kommunene får et fast, årlig vederlag for bruken av \"sine\" områder."
+    },
+    {
+      "claim": "Physical occupation including moorings is given as 420 km2, or less than five per thousand of the area inside the baseline (Andreassen et al., 2010). Approved sites fell from 1 806 in 2000 to 946 in 2015, with about 550 to 600 in use. Sites above 3 600 MTB rose from 2 percent in 2006 to 30 percent in January 2015. Recommended Food Safety Authority distances are 2.5 km, or 5 km firebreaks, from guidance rather than statute.",
+      "supported": true,
+      "extract_quote": "Næringens samlede arealbeslag er da på 420 km2 eller mindre enn fem promille av området innenfor grunnlinja."
+    },
+    {
+      "claim": "The 2015 white-paper traffic-light proposal is described as still unresolved, earliest 2017. If licence MTB grows, locality MTB may become the binding limit. Directorate of Fisheries is quoted as saying production areas would be hard to run with today's fragmented administration.",
+      "supported": true,
+      "extract_quote": "Her framgår det at et nytt regime tidligst kan innføres fra starten av 2017."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. Legal and administrative status map. It does not claim or contest a causal farm-to-wild-fish effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1, A2, and A6. A6 added after chapters 3.3 and 5.2 on municipal payment. A4 is not added. The KU chapter names missing guidance but is not a knowledge-infrastructure study. A5 is not added. Sanitary distances are described, not tested.",
+  "coi_ok": true,
+  "coi_note": "coi_declared is unclear. FHF project 900902 with an industry steering and reference group. No competing-interest statement in the extract.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2015_rettslig_rammeverk-havbruk",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "no page markers",
+  "extract_coverage": "forord, sammendrag, chapters 1-6 including 3.2 growth and licences, 3.3 area and sites, 3.4 KU, 3.5 white paper, 4 consequences, 5 synthesis, literature."
+}

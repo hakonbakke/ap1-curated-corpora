@@ -1,0 +1,54 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The authors list spatial planning among keywords. The analysis is still a lice-network simulation, not a coastal-plan or licence study."
+  ],
+  "claim_checks": [
+    {
+      "claim": "This is a stochastic lice simulation in PA3, not a coastal-plan or licensing study. PA3 is 3646 km2 with 147 active farms in 2014-2017. Average standing stock 544 000 fish.",
+      "supported": true,
+      "extract_quote": "PA3 covers an area of 3646 km2, and includes 147 farms that were actively producing salmonids during the study period (January 2014–December 2017).",
+      "note": "The paper's keywords include spatial planning. The object remains lice on historic production."
+    },
+    {
+      "claim": "The lice model is Aldrin et al. 2019. Biomass from closed farms is moved to matching cohorts. Nine scenarios: baseline, random 20-50 percent, strategic 20-50 percent. 45 000 simulations.",
+      "supported": true,
+      "extract_quote": "The results from all 45 000 simulations are summarized as yearly averages for each of the 9 scenarios",
+      "note": "The downward-trend parameter from Aldrin 2019 was set to zero."
+    },
+    {
+      "claim": "Closing farms reduced simulated adult-female lice by 4-15 percent, other motiles by 6-23 percent, and treatments by 6-25 percent. Strategic 50 percent: median 15, 23 and 25 percent.",
+      "supported": true,
+      "extract_quote": "the average number of AF and OM sal mon lice was reduced by 4–15 and 6–23%, respectively",
+      "note": "Scenario 9 medians are stated in the results section."
+    },
+    {
+      "claim": "Random-removal treatments fell by 6-17 percent. Strategic-removal treatments fell by 14-25 percent. Strategic removal outperformed random removal.",
+      "supported": true,
+      "extract_quote": "the average fish experience between 6 and 17% less treatments in the random removal scenarios, and between 14 and 25% less treatments in the strategic removal scenarios.",
+      "note": "The authors treat this as network fragmentation, not a siting recipe."
+    },
+    {
+      "claim": "Some farms exceed 5 million fish, maximum 18.2 million, outside the fitted range. Methods are not a procedure to optimise farm structure in PA3.",
+      "supported": true,
+      "extract_quote": "the farms grew to become unrealistically large, with a few farms in the most radical scenarios exceeding 5 million fish, and a maximum of 18.2 million fish",
+      "note": "Four numbered caveats are in the discussion."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "supports_effect is defensible for the paper's own claim that redistributing the same biomass onto fewer, more distant farms reduces simulated lice and treatments.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A5 only (density, farm structure, lice). A3 not tagged. Trade-offs here are lice versus network structure, not coastal coexistence.",
+  "coi_ok": true,
+  "coi_note": "Funding is RCN 254830/E40 plus NVI and IMR. No competing-interest statement. coi_declared remains unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2024_qviller_geographic-redistribution",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: title and abstract, introduction (national host density), methods (PA3, Aldrin 2019, nine scenarios), results, discussion caveats, acknowledgements, and references."
+}

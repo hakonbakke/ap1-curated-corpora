@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "No competing-interest statement in the extract. Funding is RFF Nord AIMCOAST 239144.",
+    "One map figure is an image placeholder and was not read as data."
+  ],
+  "claim_checks": [
+    {
+      "claim": "KPH (2012-2019) involved 13 municipalities, later 11 after Brønnøy and Vefsn left. Plan area about 10 000 km2, about 5 percent of Norway's coastline. Steering group had no delegated pbl 9-3 authority.",
+      "supported": true,
+      "extract_quote": "et interkommunalt plansamarbeid mellom 13 kommuner på Helgeland som varte fra 2012 til 2019 ... Planområdet er på nesten 10 000 km2 ... tilsvarende ca. 5 % av Norges kystlinje ... styringsgruppa ikke fikk overført myndighet til å styre planprosessene (jf. pbl § 9.3)",
+      "note": "Island and coastline counts (12 500 and 9 800 km) are in the same paragraph."
+    },
+    {
+      "claim": "Reversed method first excludes aquaculture, then opens most remaining sea as SOSI 6001. First draft 83 percent, special reasons to refuse. Areas under 20 m (13 percent) banned food-fish but opened for new technology. Those openings were later dropped.",
+      "supported": true,
+      "extract_quote": "I det første høringsutkastet utgjorde dette hele 83 % av sjøarealet, og man hadde en generell bestemmelse om at det her skal foreligge «særlige grunner» for å avslå etablering av akvakultur. Man la også inn et forbud mot matfiskoppdrett i områder grunnere enn 20 meter – et område som utgjorde 13 % av sjøarealet.",
+      "note": "Later text states the shallow-water openings and the phrase omvendt metodikk were removed."
+    },
+    {
+      "claim": "First hearing: 56 objections, 39 planning-defect notes, 70 advices. All municipalities got objections to the special-reasons rule and weak KU of national and regional values.",
+      "supported": true,
+      "extract_quote": "De 13 kommunene mottok til sammen 56 innsigelser, 39 påpekninger av planfaglige mangler og 70 planfaglige råd. ... Alle kommunene fikk innsigelse på den generelle bestemmelsen ... «særlige grunner» ... Alle fikk også innsigelser på at KU-ene for registrerte nasjonale og regionale viktige verdier var mangelfulle",
+      "note": "Seabirds, traffic and recreation are named. Reindeer routes and NVE quick-clay are in a footnote."
+    },
+    {
+      "claim": "Result is standardised, aquaculture-oriented plans, not holistic inter-municipal planning. Informant: consistent and homogeneous, not holistic. Multi-use zones treated as search areas. Sequence rules and cumulative-load tools were not used.",
+      "supported": true,
+      "extract_quote": "planen er ikke helhetlig, men konsistent og homogen ... Flerbruksområdene ble av flere sentrale informanter omtalt som «leteområder» ... I KPH ble slike styringsmuligheter ikke benyttet.",
+      "note": "Sequence rules, number, distance, species and cumulative load are the unused tools named just above that sentence."
+    },
+    {
+      "claim": "Conflict clearance moved to Aquaculture Act locality processing. County Governor objection power is limited to the plan phase. Burden of proof falls on the County Governor.",
+      "supported": true,
+      "extract_quote": "den endelige konfliktavklaringen ikke lenger ville skje i den kommunale planleggingen, men av fylkeskommune og statlige sektoretater i lokalitetsbehandlingen etter akvakulturloven ... innsigelsesretten etter pbl og naturmangfoldloven er begrenset til planfasen ... «bevisbyrden» i planprosessen vil i praksis tilfalle Fylkesmannen.",
+      "note": "Pollution-permit comment-right nuance is in the same footnote block."
+    },
+    {
+      "claim": "Brønnøy left because sea was not planned with land. Vefsn left citing lack of a holistic view and wanting a less farm-friendly approach. Inner-fjord municipalities were less farm-friendly than outer-coast ones.",
+      "supported": true,
+      "extract_quote": "Brønnøy kommunestyre valgte våren 2017 å gå ut av KPH fordi planen ikke så sjøområdene i sammenheng med landsiden ... Vefsn brukte mangelen på helhetlig blikk ... og ønsket i tillegg også en mindre oppdrettsvennlig tilnærming ... Kommunene lokalisert i fjorder og indre deler av kysten er gjennomgående mindre oppdrettsvennlige",
+      "note": "Straitjacket wording is in the same section."
+    },
+    {
+      "claim": "Fisheries generally received large reserved areas. Passive-gear grounds were mainly opened for aquaculture. Several informants said environment, recreation and tourism got little space. The Stokke and Arnesen hope that reversed planning can strengthen other interests was not observed.",
+      "supported": true,
+      "extract_quote": "fiskeriinteressene generelt har fått god arealavklaring i planen ... Fiskeplasser for passive redskaper er i hovedsak åpnet for akvakultur. ... I KPH ser man så langt ingen slike effekter, men flere involverte informanter mener at miljøinteresser, friluftsliv og reiseliv har fått liten plass.",
+      "note": "Stokke and Arnesen (2004) are cited immediately before that caveat."
+    },
+    {
+      "claim": "Final compromise kept large multi-use zones, dropped omvendt metodikk, and added a bar where consequences are substantial or uncertain. The add-on is treated as probably weak.",
+      "supported": true,
+      "extract_quote": "Etablering av akvakultur er ikke tillatt hvis dette har vesentlig negativ konsekvens for registrerte nasjonale eller regionale interesser […] eller der konsekvensene av en slik etablering er usikker ... har dette kompromisset trolig liten betydning ettersom det forblir uklart hvem som skal ivareta vurderingen",
+      "note": "Dropping the method label is stated in the 2018-2019 mediation paragraph."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper is a planning-process case, not a causal effect study.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 designation and reversed zoning, A4 knowledge and postponed KU, A3 added because fisheries, wild salmon, recreation and tourism trade-offs are analysed in the interest-balancing section.",
+  "coi_ok": true,
+  "coi_note": "No competing-interest statement. Funding is RFF Nord AIMCOAST 239144. Status left as unclear, which matches the extract.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2021_sandersen_kystsone-helgeland",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all (linear walk, no page markers)",
+  "extract_coverage": "Read the full extracted.md linearly from abstract through references. One map image unread. Farm-company experiences are explicitly outside the paper's scope."
+}

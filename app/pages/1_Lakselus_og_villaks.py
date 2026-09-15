@@ -528,12 +528,11 @@ with hero_left:
             '<h1 class="hl-h1">Salmon lice and wild salmonid mortality</h1>'
             '<p class="hl-lede">Wild salmon die for many reasons. The core question here is how much '
             'farm-origin salmon lice contribute. This room maps what academic publications say, '
-            'where they disagree, and where the data gaps are. The page then moves through the '
-            'regulatory framework, a disagreement map and Ask.</p>',
+            'where they disagree, and where the data gaps are.</p>',
             '<h1 class="hl-h1">Lakselus og dødelighet hos ville laksefisk</h1>'
             '<p class="hl-lede">Villaks dør av mange årsaker. Kjernespørsmålet her er hvor mye lakselus '
             'fra oppdrett bidrar. Her kartlegges hva akademiske publikasjoner sier, hvor de er uenige, '
-            'og hvor datahullene er. Deretter følger norsk rammeverk, et uenighetskart og Ask.</p>',
+            'og hvor datahullene er.</p>',
         ),
         unsafe_allow_html=True,
     )
@@ -823,22 +822,22 @@ with st.container(border=True):
     paper_chips(FAULT_PAPERS[fault_idx])
 
     st.write("")
-    if st.button(tr(lang, "Ask about this in D ↓", "Spør om dette i D ↓")):
+    if st.button(tr(lang, "Ask the sources about this ↓", "Spør kildene om dette ↓")):
         st.session_state["user_query"] = FAULTS[lang][fault_idx][2]
         st.rerun()
 
 st.caption(
     tr(
         lang,
-        "Editorial orientation · last reviewed 2026-08-07 · Ask in D searches the whole active corpus.",
-        "Redaksjonell orientering · sist gjennomgått 2026-08-07 · Ask i D søker i hele det aktive korpuset.",
+        "Editorial orientation · last reviewed 2026-08-07 · Ask the sources searches the whole active corpus.",
+        "Redaksjonell orientering · sist gjennomgått 2026-08-07 · Spør kildene søker i hele det aktive korpuset.",
     )
 )
 
 # ── D: Ask (handlingsflate, live RAG) ─────────────────────────────────────────
 
 section_header(
-    tr(lang, "D · Go deeper (Ask)", "D · Gå dypere (Ask)"),
+    tr(lang, "D · Ask the sources", "D · Spør kildene"),
     tr(lang, "Live synthesis", "Live syntese"),
 )
 

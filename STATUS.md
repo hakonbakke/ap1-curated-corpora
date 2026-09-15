@@ -1,6 +1,6 @@
 # STATUS - AP1 Curated Corpora
 
-Last updated: 2026-08-21 (Streamlit Cloud share)  
+Last updated: 2026-09-15 (Areal lede tightened, D labelled Spør kildene)  
 Owner: Thord Hakon Bakke
 
 ## Purpose of this file
@@ -71,12 +71,60 @@ Items 1-6 shipped in `app/pages/1_Lakselus_og_villaks.py`. Retrieval ranking unc
 
 Deferred (7-10): group list by evidence direction, camp summary above the list, clickable citations in synthesis, merge debate map into cards.
 
+### Areal draft (2026-09-13)
+Thord included the full received set (33) as a first draft. Working questions A0 plus A1-A6 are unconfirmed.
+
+Selected by (Thord confirmed 2026-09-13, from SharePoint Endret av):
+- Ragnar Tveterås 16
+- Marit Schei Olsen 11
+- Tonje Osmundsen 6
+- Source: `corpora/area-and-aquaculture/filed_by.json`. That name is `inclusion_decided_by`.
+
+Full Cursor curate (2026-09-13): `extracted.md` already existed for all 33. `metadata.yaml` and `summary.md` rewritten from extracts. Status `ai_draft`. No `qa_report` verify pass yet.
+
+Priority questions rewritten 2026-09-13 after page-verify, then rebalanced 2026-09-14: disagreement about the conflict leads, gaps are the second beat. A0 is the lead Ask (what is actually scarce). It is not a metadata tag. A1-A6 stay as tags. Existing tags on the 33 files were not changed. Room page, home card and areal synthesis frame updated. Not confirmed by the three selectors.
+- PDFs: `corpora/area-and-aquaculture/documents/PDFs/`
+- Isolated parquet: `data/area-and-aquaculture.parquet` (39 rows after 2026-09-15 ingest of six Thord-added papers; 33 rows were the 2026-09-13 set). Villaks `data/corpus.parquet` still 27 rows.
+- Room: `app/pages/2_Areal_og_havbruk.py` now mirrors villaks A-C plus Ask as D: introduction and three diagnoses, stacked Norwegian framework, five dividing lines, then live Ask. Ask still uses `retrieve`, not lice routing. No orientation figures yet.
+- First-pass metadata was `ai_draft` from front matter. That pass is superseded.
+- Extract: OpenDataLoader failed on many Windows filenames with special characters. Those (and the large reports) were taken out with PyMuPDF. `convert_one` now copies to `source.pdf` first so a later ODL pass is safer.
+- Retrieval smoke (siting/licensing question): top hits were Mikkelsen 2019, rettslig rammeverk 2015, Gullestad 2011, SALT 1075, Sand 2025, Hersoug 2022. In scope. Do not run villaks `add_paper.py` on these PDFs.
+- Two Kvalvik/Robertsen 2017 PDFs were both kept. Curate gave them the same title.
+- Eight large area reports rewritten 2026-09-13 (Gullestad 2011, SALT 1065/1075/1110, Sand 2025 pair, bærekraftig 2023, Evenset 2023). Gold style, `ai_draft`, `inclusion_decided_by` from the map. `extracted.md` not edited. Folder `undated_baerekraftig-arealbruk-havbruk` is dated 20 November 2023 in the preface.
+- Seven more rewritten 2026-09-13 (Osmundsen 2025 county evaluation, Rosendal 2025 municipalities, Kulmambetova 2025 density, Qviller 2024 lice redistribution, Gismervik 2020 welfare law, Metier 2023 marine maps, Mikkelsen 2025 cumulative north). Gold style. Gismervik and Qviller filed as adjacent, not siting papers.
+
+### Areal page-verify (2026-09-13, done)
+All 33 documents have `qa_report.json` (`verify_model: cursor_grok_page_verify`) and `curator_review_status: ai_verified`. Claims were walked against `extracted.md`, not against sammendrag alone. `extracted.md` was not edited. API `ai_verify_document.py` was not used for this pass (it still caps extract length).
+
+Ingest: `python scripts/ingest.py --corpus area-and-aquaculture` wrote 33 rows to `data/area-and-aquaculture.parquet`. Villaks parquet still 27 rows.
+
+YAML footgun: `strip_yaml_comments` drops lines that start with `#`, including a `# ai_verify` line left inside a quoted `curator_note`. That uncloses the quote. Stamps now sit after the quoted block. Unquoted `word:` inside list items also breaks parse. Ingest dry-run before a full rebuild.
+
+Unread remnants: image-only figures and some table colour cells. SALT 1110 Table 7. HI Table 1.1 colours. Metier tornado bars.
+
+### Areal add (2026-09-15)
+Thord dropped six PDFs in `corpora/area-and-aquaculture/documents/`. Copied to `PDFs/`. Extracted with PyMuPDF. Gold curate plus Cursor page-verify (`verify_model: cursor_grok_page_verify`). `inclusion_decided_by: Thord Håkon Bakke`. Original 33 not retagged.
+
+Filename trap: `Sandersen and Kvalvik_ 2014_ Challenges and Myths...pdf` is Jentoft and Buanes 2005. Keep `2015_sandersen_access-to-sites` as the area-rent paper. Hammer article filename year 2023, publication 2024. Dissertation Paper II is that article. Both folders kept. Meld. St. 35 is a partial walk (sammendrag, sea/coast, fisheries-aquaculture, traffic-light subsection).
+
+The high A0 (Norway allocating land, sea and living resources, aquaculture as one use) was rejected. Room object stays aquaculture's claim on coastal area. Working precision sheet: `corpora/area-and-aquaculture/PRIORITY_QUESTIONS_PRECISION.md`. Sentences accepted as good for now and written into `PRIORITY_QUESTIONS.md` (Norwegian plus English). Original 33 not retagged.
+
+A-C rewritten 2026-09-15 for Friday demo: hero and home card drop the land-and-sea allocation lede. Intro uses four scarcity answers (unused sea as myth, licences and traffic-light, municipal designation, biology). Framework stack keeps TLS as a capacity lid here. C has seven dividing lines A0-A6 with locked question sentences. New papers named where they belong (Jentoft, Sandersen 2014, Schütz, Sørdahl, Meld. St. 35). Hero lede tightened again the same afternoon. D is labelled **Spør kildene** (English: Ask the sources) in both rooms, not Ask.
+
+AREA_ROOM_FRAME and areal freeform prompts rewritten the same day. Traffic-light is a growth lid. Do not open as a wild-fish impact controversy. Second Ask smoke `eval/areal_smoke_runs/2026-09-15T132500Z_areal_ask_smoke.json`: FAIL 0, WARN 2 (A0, A4 coverage), PASS 5. All seven `opener_drift=false`. A2 now opens on licences and where the case dies, with lice and traffic-light as a capacity lid. A4 still likes to wrap the file question in the four scarcity diagnoses before it reaches knowledge. One extra FRAME line added after that run: answer the question asked, do not default every query to the four forks.
+
+Standing split (Thord 2026-09-15): wild salmon is in this room when it gates expansion, above all via the traffic-light on 13 production areas and via lice as a reason for site refusal. The villaks room keeps the causal chain from lice on out-migrating smolt to mortality estimates. Do not strip TLS from areal answers. Do not let every areal question open as the wild-fish impact controversy.
+
 ### Next
-1. Streamlit Cloud: create `ap1-evidensrom` from `main` (see `DEPLOY.md`); share `https://ap1-evidensrom.streamlit.app` with Ragnar
+1. Cloud before Friday 2026-09-18 still open. Do not retag the original 33
+2. After the demo: selectors on A1-A6 tags. Retrieval of Jentoft and Sørdahl only if the same questions still miss them
+
+Standing leftovers:
+1. Cloud share: app was `ap1-curated-corpora-test.streamlit.app` (Aug 21). Confirm secrets and send Ragnar the live URL
 2. Re-run recall after any retrieval change; compare to `2026-08-11T123621Z_recall.json`
-3. Optional: hybrid BM25 only if a future recall run shows clear misses
-4. Items 7-10 when you want the list grouped and tied to the synthesis
-5. Orientation figures (`mockup/figur-*.png`) are missing from the repo; A/B images will not show until they are added
+3. Hybrid BM25 only if a future recall run shows clear misses
+4. Source panel items 7-10 (group by direction, camp summary, clickable citations, merge debate map)
+5. Orientation figures (`mockup/figur-*.png`) still missing from the repo
 
 ## Parquet update rule
 - Metadata / status / rationale only → `python scripts/sync_metadata_to_parquet.py`

@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The extract is word-broken across about 14 800 lines. Formula pages were walked for methods and results, not re-derived equation by equation."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Stage-structured Bayesian hierarchical lice model at individual farms. Ecological Modelling 359 (2017) 333-348. Open access CC BY 4.0.",
+      "supported": true,
+      "extract_quote": "we present a fully mechanistic stage-structured population model for the salmon louse, also allowing for complexities involved in the hierarchical structure of full scale salmon farming.",
+      "note": "Journal, volume, pages, and CC BY 4.0 are on the title page."
+    },
+    {
+      "claim": "Cage-level data on 32 marine farms. Twelve sit just north of Frøya. Stocked 2011-2013, slaughtered 2012-2014. Last 3-11 months for five farms held out.",
+      "supported": true,
+      "extract_quote": "The main body of data in the present study consist of cage-level data from 32 marine salmon farms in Norway, of which 12 farms are aggregated just north of the island Frøya in Mid-Norway",
+      "note": "Stocking and slaughter years are in the same data paragraph."
+    },
+    {
+      "claim": "External recruitment uses g(d) = exp(-0.618 d^0.568) from Aldrin et al. 2013, not re-estimated. That earlier kernel used more than eight years of data on about 1400 farms.",
+      "supported": true,
+      "extract_quote": "This distance function is taken from Aldrin et al. (2013), and is based on a data-driven model for lice abundance estimated from more than eight years of data on all 1400 Norwegian salmon farms",
+      "note": "Equation (38) prints g(d) = exp(-0.618d^0.568)."
+    },
+    {
+      "claim": "Neighbouring adult females are assumed to be at stage-age 10. The authors call that choice rather arbitrary and say results were insensitive to it.",
+      "supported": true,
+      "extract_quote": "The assumed stage-age of 10 is rather arbitrary, but the results are insensitive to this choice.",
+      "note": "Stated in the external-recruitment methods."
+    },
+    {
+      "claim": "Internal recruitment averaged 25 percent (interval 23-26 percent), median 19 percent, farm range about 4 to 73 percent. Sixteen of 32 farms had a neighbour within 3.54 km seaway.",
+      "supported": true,
+      "extract_quote": "On average over all farms, this proportion is 25% (C.I. 23–26%), with a median of 19.",
+      "note": "Farm range 4 to 73 percent and the 3.54 km split of 16 plus 16 farms are in the same results block."
+    },
+    {
+      "claim": "Expected values fitted chalimus, adult female, and other mobile stages reasonably well. Held-out months were consistent with observations.",
+      "supported": true,
+      "extract_quote": "The model generated expected values that fitted the observed infection levels of the chalimus, adult female and other mobile stages of salmon lice, reasonably well.",
+      "note": "Held-out consistency is in the abstract."
+    },
+    {
+      "claim": "At 10 degrees C, ten days after bath treatment, expected cumulative mortality was 0.99 for hydrogen peroxide, 0.94 for deltamethrin or cypermethrin, and 0.75 for azamethiphos. No Allee effect: reproduction-rate parameter 493 (interval 482-498). Cleaner-fish daily mortality 0.028. At 10 percent ratio, daily lice mortality 0.079 and adult-lice life expectancy 8.2 to 5.2 days.",
+      "supported": true,
+      "extract_quote": "the estimated expected cumulative mortality of lice (found by simulation) in the PA or A stages due to bath treatments (i.e. non-feed) ten days post treatment at 10 ◦C, were high for hydrogen peroxide (0.99, C.I. 0.97–1.00)",
+      "note": "Azamethiphos, Allee-effect, and cleaner-fish paragraphs are in the same results and discussion block."
+    },
+    {
+      "claim": "Host-density dependence in the introduction is cited from earlier work. This paper does not analyse coastal plans or municipal siting.",
+      "supported": true,
+      "extract_quote": "Large-scale host density dependence acting on pathogen transmission has been demonstrated in salmon farming production systems",
+      "note": "Citations are Aldrin, Jansen, Kristoffersen and related papers. No planning analysis in the extract."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper estimates a farm lice population model. It does not claim a causal policy or siting effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A5 only. Neighbourhood seaway distance and internal versus external recruitment speak to density and biosecurity. Not A1, A2, A3 or A6. Adjacent, not a siting paper.",
+  "coi_ok": true,
+  "coi_note": "No competing-interests statement. Funding is FHF 900970. Marine Harvest, Salmar and Måsøval supplied data. coi_declared remains unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2017_aldrin_lice-farm-model",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: title page and abstract, introduction and density citations, data (32 farms, Frøya, 2011-2014), stage-structured methods including the imported kernel and stage-age 10, results on fit, internal recruitment, treatments and Allee effect, discussion, acknowledgements and funding. Formula pages were read for methods and results, not re-derived."
+}

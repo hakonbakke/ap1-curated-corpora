@@ -1,0 +1,133 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Table 2.4.1 lists 54.9 million sea-dead salmon. Sammendrag and chapter 2.4 prose use 54.8 million. Curation uses the sammendrag figure.",
+    "Chapter 14 uses 12.8 million registered dead cleaner fish. Sammendrag and table 2.4.6 use 12.7 million. Curation uses 12.7.",
+    "Chapter 2.4 prose once attributes 20.1 percent salmon mortality to 2024. Table 2.4.2 places 20.2 percent in 2024 and 20.1 percent in 2025. Curation follows the table and sammendrag.",
+    "Most maps and charts are images and are unreadable in the extract. Numbers are taken from surrounding prose and tables.",
+    "Chapter 5 has one bullet on planning new localities. Chapter 12 has one sentence on coastal-zone planning. Those do not make A1 or A2 extract-supported as main tags.",
+    "Preface 43 percent figure on whether fish-health advice is followed is stated in the preface only. It is not retabulated in the survey appendices in this walk."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Official Veterinærinstituttet yearbook of fish health in Norway for 2025 (rapportserie 5a/2026). Redaksjon ended 11.03.2026. Published 11.03.2026 on vetinst.no. Chapter authors are credited per chapter. Named title-page persons are the editorial group and the citation authors. Exceptions named on the title pages: NIVA wrote chapter 11.5 (water quality), NOFIMA contributed to chapter 5 (climate), and Pharmaq Analytic contributed to chapter 8.8 (mycobacteriosis).",
+      "supported": true,
+      "extract_quote": "Veterinærinstituttet rapportserie nr 5a/2026 ... Forfattere er kreditert i hvert kapittel. Alle forfattere er tilsatt ved Veterinærinstituttet med unntak av Kapittel 11.5 «Vannkvalitet» som er skrevet av ansatte ved Norsk institutt for vannforskning (NIVA), Kapittel 5 «Klima og fiskehelse» med bidrag fra NOFIMA og Kapittel 8.8 «Mykobakteriose» med bidrag fra ansatte ved Pharmaq Analytic AS. ... Redaksjonen avsluttet: 11.03.2026 ... Publisert 11.03.2026 på vetinst.no",
+      "note": "Front matter. Soft hyphenation in extract collapsed here."
+    },
+    {
+      "claim": "Calculated annual sea-phase mortality risk in 2025 was 14.2 percent for salmon (1.2 percentage points below 2024, lowest in at least five years), 17.0 percent for rainbow trout (up 2.0 percentage points), and 20.4 percent for cod (down 1.8 percentage points, still above 2021-2023). Completed salmon production cycles that ended in 2025 had 14.7 percent mortality risk (down 0.7 percentage points).",
+      "supported": true,
+      "extract_quote": "Beregnet årlig dødelighetsrisiko i sjøfasen var 14,2 % for laks, 17,0 % for regnbueørret og 20,4 % for torsk. Dette er en nedgang på 1,2 prosentpoeng for laks sammenlignet med 2024, mens det er økning på 2,0 prosentpoeng for regnbueørret.",
+      "note": "Sammendrag also states the 1.8 point cod decline and the 14.7 percent cycle figure. Preface calls 14.2 percent the lowest in at least five years."
+    },
+    {
+      "claim": "Land-based deaths of fish over 3 grams: 43.3 million salmon, 2.84 million rainbow trout, 2.44 million cod. Salmon and rainbow-trout land deaths fell from 2024. Cod land deaths rose, especially in the 36-155 gram class. Sea-phase dead fish: 54.8 million salmon, 3.2 million rainbow trout, 2.4 million cod. Sea-phase losses including other categories: 67.5 million salmon.",
+      "supported": true,
+      "extract_quote": "Antall døde settefisk (over 3 gram) ble i 2025 rapportert å være 43,3 millioner laks, 2,84 millioner regnbueørret og 2,44 millioner torsk. ... i 2025 utgjorde dette 67,5 millioner laks ... «dødfisk» ... 54,8 millioner laks, 3,2 millioner regnbueørret og 2,4 millioner torsk.",
+      "note": "Table 2.4.1 lists 54.9 million sea-dead salmon. Soft issue only."
+    },
+    {
+      "claim": "Geographic differences are large. For salmon, production area 4 had 20.1 percent mortality risk. Areas 12-13 combined had 9.4 percent. Area 6 fell by almost 8 percentage points from 22.3 percent in 2024. Area 9 rose by about 7 percentage points to 16.1 percent, linked in the text to six confirmed ISA outbreaks, one ISA suspicion, and an algal bloom, despite relatively low biomass density. Area 1-2 rose from 13.6 to 18.2 percent, linked in the text to non-medicinal delousing.",
+      "supported": true,
+      "extract_quote": "For laks kommer produksjonsområde 4 (PO4) dårligst ut med 20,1 %, mens PO12-PO13, som vurderes samlet, kom best ut med 9,4 %. ... PO9 hadde størst økning fra 2024 til 2025, noe som kan ha sammenheng både med flere ILA-utbrudd og algeoppblomstring i fjor vår.",
+      "note": "Chapter 2.4 and table 2.4.2 add the 16.1 percent, almost 8 point PO6 drop, 13.6 to 18.2 percent PO1-PO2, and six ISA plus algae in PO9."
+    },
+    {
+      "claim": "ISA was confirmed at 18 sea sites in 2025 (one in area 4, two in 6, four in 7, six in 9, one in 10, two in 11, two in 12), with suspicion at three more sea sites and an unresolved land-based broodstock suspicion from January 2024. A large share of confirmed outbreaks was in Vesterålen. The text states that suspected infected fish were moved from one site to another, and that infection is otherwise assumed to have occurred between neighbouring sites. Several outbreaks may relate to ILAV HPR0 in the hatchery phase (HPR0 detected at 78 sites). Seven of 18 confirmed outbreaks were at sites with ISA-vaccinated fish.",
+      "supported": true,
+      "extract_quote": "Infeksiøs lakseanemi (ILA) ble stadfestet på 18 sjølokaliteter i 2025, og i tillegg oppstod mistanke om ILA på tre sjølokaliteter i løpet av året. ... Antatt smittet fisk ble flyttet fra en lokalitet til en annen, og ellers antas smitte å ha skjedd mellom nabolokaliteter.",
+      "note": "Chapter 7 opening and 7.2 give the PO split, HPR0 at 78 sites, and seven vaccinated sites."
+    },
+    {
+      "claim": "PD was detected in 44 new cases, all inside the endemic zone (31 SAV3 in areas 3-4, 13 SAV2 in areas 5-6). No new PD in area 2 since 2022. The restriction zone after SAV2 in area 8 in autumn 2023 was lifted in November 2025. Official PD counts exclude infected fish still at sea from the prior year.",
+      "supported": true,
+      "extract_quote": "I 2025 ble det påvist 44 tilfeller. Alle fjorårets tilfeller var innenfor endemisk sone, med 31 tilfeller forårsaket av SAV3 i PO3 og PO4 og 13 tilfeller forårsaket av SAV2 i PO5 og PO6.",
+      "note": "Chapter 7.1 states the November 2025 lift and that prior-year infected fish are excluded."
+    },
+    {
+      "claim": "From 2017 the report presents most figures by the 13 production areas in the production-area regulation, not by county. Areas 1 and 13 are merged with neighbours for some non-listed-disease tables to protect confidentiality. Official listed-disease counts are new detections on a site after fallowing.",
+      "supported": true,
+      "extract_quote": "Definisjonen av begrepet «offisielle data» i Fiskehelserapporten er antall nye påvisninger på en lokalitet etter brakklegging. Det betyr at det reelle antall infiserte lokaliteter kan være høyere fordi det kan stå igjen smittet fisk i sjøen fra året før.",
+      "note": "Chapter 1 also states the PO reporting shift from 2017 and the PO1/PO13 merges."
+    },
+    {
+      "claim": "833 salmon sea sites and 85 rainbow-trout sea sites were active in at least one month of 2025. Mean monthly salmon biomass was about 876,000 tonnes (875,687 in table 2.1.3), the highest in the five-year series shown. About 405.3 million salmon under 500 grams were put to sea.",
+      "supported": true,
+      "extract_quote": "Totalt 833 lokaliteter med atlantisk laks og 85 lokaliteter med regnbueørret ... var aktive i minst én måned i 2025. ... Gjennomsnittlig månedlig biomasse i 2025 var på ca. 876 000 tonn for laks",
+      "note": "Table 2.1.3 has 875,687 tonnes and 405.3 million salmon put to sea."
+    },
+    {
+      "claim": "The preface describes Meld. St. 24 (2024-2025) as a proposed shift toward a management system based on measurable environmental impact, including lice-larva emission quotas and a fee on lost fish. A Storting majority backed the direction but put the most extensive measures on hold pending more studies. The animal-welfare white paper is cited for a five-percent mortality ambition. Those instruments are described, not independently evaluated.",
+      "supported": true,
+      "extract_quote": "Meldingens overordnede mål er «et nytt, helhetlig forvaltningssystem for havbruk, som regulerer næringen ut fra faktisk og målbare miljøpåvirkning». Med en omlegging fra volumbegrensninger i tillatt biomasse, til et kvotesystem for utslipp av lakseluslarver og forslag om avgift på tapt fisk (dødelighet)",
+      "note": "Preface also states the Storting hold and the five-percent ambition in Meld. St. 8."
+    },
+    {
+      "claim": "Salmon-lice larval output from farms in the spring period with the lower lice limit rose from 2024 to 2025 in ten of the 13 production areas. Non-medicinal delousing weeks reached 3918, a 24 percent rise from 3163 in 2024, the highest recorded in the series. Adult female lice totals by production area are said to be driven largely by trends in farmed-fish numbers.",
+      "supported": true,
+      "extract_quote": "Utslippet av lakseluslarver fra oppdrettsanlegg i perioden med lavere lusegrense om våren økte fra 2024 til 2025 i ti av de 13 produksjonsområdene.",
+      "note": "Chapter 6.6 states 3918 weeks versus 3163. Chapter 10.1 states the adult-female driver."
+    },
+    {
+      "claim": "AquaCloud cause-of-death data in 2025 cover 408 sites, about 49 percent of salmon sea sites. National shares in that sample: injuries 33.5 percent, infectious disease 28.1 percent, unknown 27.4 percent. Injuries rose in importance relative to 2024. HSMB and CMS rose as shares among infections. HSMB was detected at 167 sites and CMS at 114 (up from 115 and 78 in 2024). IPN was detected at 40 sites, about three times 2024.",
+      "supported": true,
+      "extract_quote": "I 2025 ble det registrert data fra 408 lokaliteter, noe som representerer nær halvparten av alle sjølokaliteter med laks. Hovedårsakene til dødelighet registrert på nasjonalt nivå var «Skader (traumer)» med 33,5 %, «Infeksjonssykdommer» med 28,1 % og «Ukjent årsak» med 27,4 %.",
+      "note": "Table 7.1 has CMS 114, HSMB 167, IPN 40. Chapter 1 states AquaCloud 49 percent."
+    },
+    {
+      "claim": "Open cages create two-way farmed-wild infection risk. High numbers and density of susceptible hosts on a site allow pathogen amplification and spill-back to wild fish. For BKD, wild salmonids are treated as the likely source of introductions, while spread inside farming raises pressure back on wild fish. Culture of the bacterium from 2025 PCR-positive wild and escaped fish in Orkla did not succeed.",
+      "supported": true,
+      "extract_quote": "Samtidig vil det høye antallet og den store tettheten av mottakelige verter i en merd og på en oppdrettslokalitet legge til rette for oppformering av smittestoff. Dette medfører økt smittepress tilbake på miljø og villfisk.",
+      "note": "Chapter 4.4 also states the BKD wild-reservoir assumption and failed culture from Orkla PCR positives."
+    },
+    {
+      "claim": "Chapter 5 (first climate chapter, with NOFIMA) states that knowledge is not good enough to say how climate change will affect commercial fish health. Adaptation bullets include area management: planning of new localities should include expected temperature development, local ecosystem dynamics, potential infection or lice pressure, and species tolerance. That is a recommendation, not a coastal-plan analysis.",
+      "supported": true,
+      "extract_quote": "Arealforvaltning og regulering: Planlegging av nye lokaliteter bør inkludere forventet temperaturutvikling, lokal økosystemdynamikk, potensielt smittepress/lusepress, samt toleransegrenser og behovskartlegging for artene som skal etableres.",
+      "note": "Opening of chapter 5 also states the knowledge gap and names NOFIMA."
+    },
+    {
+      "claim": "Area, density, and siting are not the main object. The report is national fish health and welfare. Production-area geography, neighbour-site ISA, endemic PD zones, lice larval output, and a few planning sentences sit next to the area room. They do not make this a siting paper.",
+      "supported": true,
+      "extract_quote": "Den årlige Fiskehelserapporten har gjennom to tiår samlet inn og sammenstilt data for å kunne gi et faktabasert kunnskapsgrunnlag om helsesituasjonen til oppdrettsfisk og villfisk.",
+      "note": "Curator bound, not a paper result. Extract object is the health yearbook. No municipal plan or licence analysis found in the walk."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The yearbook compiles 2025 health, mortality and disease counts. It does not claim or contest a single causal farm-to-wild effect as its result.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A5 is the main hook (production-area geography, neighbour-site ISA, endemic PD zones, lice larval output, host density and spill-back). A3 is added for farmed-wild infection, traffic-light wild-smolt lice pressure, and cleaner-fish genetic notes. A1 and A2 are not tagged. One climate bullet and one cod-planning sentence are not a coastal-plan or licence study.",
+  "coi_ok": true,
+  "coi_note": "Institute report. NIVA, NOFIMA, Pharmaq Analytic and private labs are named. No competing-interest statement. coi_declared is unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2026_moldal_fiskehelserapporten",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "no page markers in extract; front matter through Takk (about 11740 lines)",
+  "extract_coverage": [
+    "front matter (5a/2026, redaksjon 11.03.2026, NIVA/NOFIMA/Pharmaq)",
+    "Er vi på rett vei nå? (Sommerset preface)",
+    "Sammendrag (Moldal)",
+    "1 Datagrunnlag",
+    "2 Dødelighet i fiskeoppdrett (2.1-2.5)",
+    "3 Fiskehelseøkonomi",
+    "4 Biosikkerhet (incl. 4.4 farmed-wild)",
+    "5 Klima og fiskehelse",
+    "6 Fiskevelferd (incl. 6.6 lice treatment and traffic light)",
+    "7 Virussykdommer (PD, ILA, IPN, HSMB, CMS, VHS/IHN)",
+    "8 Bakteriesykdommer (opening plus listed-disease counts)",
+    "9 Soppsykdommer",
+    "10 Parasittsykdommer (lice, Caligus, parvicapsulosis, AGD)",
+    "11 Andre helseproblem (gill, smolt, nephrocalcinosis, HSS, water, algae)",
+    "12 Helse og velferd hos torsk",
+    "13 Helsesituasjonen hos andre marine arter",
+    "14 Helse og velferd hos rensefisk",
+    "Appendiks A1-E2 (survey ranks, listed)",
+    "Takk"
+  ]
+}

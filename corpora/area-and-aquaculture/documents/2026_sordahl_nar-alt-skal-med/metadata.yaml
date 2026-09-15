@@ -1,0 +1,114 @@
+title: 'Nar alt skal med. En studie av helhetlig planlegging av kystsonen i Norge i motet mellom politikk og forvaltning'
+year: 2026
+doi: ''
+url: ''
+authors:
+- Patrick Berg Sørdahl
+journal: ''
+publisher: UiT Norges arktiske universitet
+language: norwegian
+source_type: thesis
+document_type: thesis
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A3
+- A4
+geography:
+- Norway
+environment:
+- coastal_zone
+- municipality
+time_period: c. 1991-2026
+regulatory_context:
+- municipal_coastal_plan
+- Norway_Planning_Building_Act
+- mixed
+evidence_type: policy_assessment
+study_design:
+- document_analysis
+- case_study
+- literature_review
+data_source:
+- published_literature
+- mixed
+wild_or_farmed_focus: both
+outcome_domain:
+- coastal_planning
+- coexistence_tradeoffs
+- knowledge_in_decisions
+- area_allocation
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- kappa plus three articles, transferability discussed by the author
+- this curation did not re-walk every appended article page
+key_claims:
+- The dissertation studies how integrated coastal-zone planning is created as a concept and as tools, at the intersection of politics and administration. Empirical focus is nearshore sea in Norway.
+- Area is a limited good. Fisheries, aquaculture, tourism, energy and nature conservation compete for much the same water.
+- There is more agreement that holism is the goal than on what it means. Catchwords can have political recognition and little administrative content.
+- Two approaches to holism sit in tension. A scientific one simplifies and standardises. A political one expands what planning must include. Holism is normative, not a technical solution.
+- Bringing more themes under one umbrella breeds more complexity. Decisions still happen, so conflicts can be handled without the conflict picture disappearing. Final municipal competence sits with the municipal council. Planning as technique cannot deliver holism by itself.
+- Holism can still serve as a shared flexible frame if ambitions stay sober. The same breadth makes it dangerous because it looks unifying and legitimate.
+claims_about_uncertainty:
+- Section 7.3 discusses transferability and further research. This curation did not re-walk every page of the appended articles.
+claims_about_policy_or_management:
+- Institutional sustainability is named as a fourth sustainability dimension: clear roles, predictability, participation, and decisions that give direction. A lasting gap between holism as goal and the need to prioritise may weaken that.
+methodological_limitations:
+- Article-based PhD. Paper II is also filed separately. Kappa walk is the basis for this record.
+rag_summary: >
+  Sørdahl (2026) is a UiT dissertation on how integrated coastal-zone planning
+  is made, in the meeting of politics and administration. Coastal area is
+  limited. Many uses compete. Holism is widely named as the solution and poorly
+  agreed as a meaning. A scientific drive to standardise sits against a
+  political drive to include ever more. More themes under one umbrella breed
+  more complexity. Municipal councils still decide. Planning as a technical
+  tool cannot deliver holism alone. The concept can still be a shared frame if
+  ambitions stay sober.
+coi_declared: unclear
+coi_notes: >
+  No separate competing-interest page in the pages walked. Author affiliation
+  is Nofima and UiT. Paper II states RCN 294799 and CLEAN funding.
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: >
+  Examined PhD with three articles and a kappa that states the paradox in
+  plain language. This record rests on summary, introduction and chapter 7,
+  not a page-complete walk of every appendix article.
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: >
+  Strongest statement in the new set that coastal allocation is political
+  weighing, and that holism can hide who yields.
+included_because: >
+  Added by Thord Håkon Bakke on 2026-09-15. Doctoral thesis on holistic
+  coastal-zone planning in Norway.
+related_documents_supporting:
+- 2024_sordahl_when-all-you-have-is-a-hammer
+- 2005_jentoft_challenges-myths-czm
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2024_sordahl_when-all-you-have-is-a-hammer
+- 2014_sandersen_administrative-reform
+- 2025_osmundsen_fylkeskommune-akvakulturloven
+- salt_1065_ku-arealplanlegging
+retrieval_tags:
+- integrated_planning
+- holism
+- municipal_planning
+- dissertation
+curator_note: >
+  Extract walked 2026-09-15 on title pages, Norwegian and English summaries,
+  table of contents, introduction and chapter 7. Appended articles were not
+  re-walked in full. Title in YAML uses Nar without stroke-o and motet without
+  slash-o to avoid YAML parse issues. Live title is Når alt skal med.
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-15'
+inclusion_decided_by: Thord Håkon Bakke
+source_pdf: Sørdahl 2026 Når alt skal med_ doktoravhandling.pdf
+
+# ai_verify: Cursor page verify 2026-09-15: PASS. See qa_report.json.

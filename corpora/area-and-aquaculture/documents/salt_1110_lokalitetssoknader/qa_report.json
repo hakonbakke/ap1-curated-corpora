@@ -1,0 +1,77 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Table 7 (refusals by county and authority) is an image. Cell counts were not readable and are not claimed.",
+    "Figures 1-14 are images. County and year totals used in claims are taken from surrounding prose, not from figure pixels.",
+    "OCR in chapter 1 writes 98 of 149 FAKS cases as '984 av 149' and about 20 appeal decisions as '205'. Curation uses the footnote expansions, not the garbled main-text digits.",
+    "One footnote dates a Nordland recipient refusal 27 June 2026, after the report date of 22 May 2026. Treated as [OCR] and not used as a year claim."
+  ],
+  "claim_checks": [
+    {
+      "claim": "FHF project 901972 (AKVAFAGJUS), dated 22 May 2026, 139 pages. Purpose is to map refusal grounds on aquaculture locality applications and how law, professional judgement and discretion appear in decisions.",
+      "supported": true,
+      "extract_quote": "Dato 22.05.2026 Antall sider 139 Oppdragsgivers referanse FHF 901972"
+    },
+    {
+      "claim": "A dataset of 251 refusal cases from 2020-2025 covers full or partial county refusals of new sites, biomass or area changes, species changes and purpose changes. 149 cases come from the FAKS database. Co-location cases are excluded. Most cases are sea sites for salmon, trout and rainbow trout (192), then sea sites for cod (51).",
+      "supported": true,
+      "extract_quote": "Datagrunnlaget består av totalt 251 saker i perioden 2020–2025, hvorav 149 saker er identifisert gjennom FAKS-databasen"
+    },
+    {
+      "claim": "Refusal counts by year in chapter 3 are 31 (2020), 46 (2021), 36 (2022), 39 (2023), 31 (2024) and 62 (2025), plus six sector-only cases without a county year. Nordland has 72 cases, Vestland and Trøndelag 54 each. Mattilsynet is the most frequent refusing authority (142 recorded, 137 after five later changes). The county refused 44 cases. Kystverket refused six.",
+      "supported": true,
+      "extract_quote": "Etter 31 registrerte saker i 2020 økte antallet til 46 saker i 2021, før det var 36 saker i 2022 og 39 saker i 2023. I 2024 ble det registrert 31 saker, før antallet økte markant til 62 saker i 2025."
+    },
+    {
+      "claim": "Some decisions have clear refusal grounds. In others it is hard to say what was decisive, because facts, professional assessment and discretion run together. Some decisions rest only to a limited extent on site-specific impact and instead use general statements about possible harm and uncertainty.",
+      "supported": true,
+      "extract_quote": "I flere vedtak glir beskrivelse av faktum, faglige vurderinger og skjønnsutøvelse over i hverandre, noe som gjør det vanskelig å identifisere hva faktisk er det avgjørende avslagsgrunnlaget."
+    },
+    {
+      "claim": "Use of the precautionary principle varies across cases and authorities. The authors say it is not meant to be applied for safety's sake. Documentation and survey requirements also differ by case and region.",
+      "supported": true,
+      "extract_quote": "Det er ikke slik føre-var-prinsippet er ment å brukes."
+    },
+    {
+      "claim": "County refusals under the Aquaculture Act environmental-soundness test include 14 coastal-cod cases and five wild-salmonid cases. Six of the 14 sit in a mapped spawning field or area and are refused by definition. Mattilsynet issued 11 wild-cod infection refusals from 2023. For marine species the locality application is also a company-biomass application.",
+      "supported": true,
+      "extract_quote": "Det er 14 saker som ved utgangen av 2025 var avslått ut ifra hensynet til kysttorsk."
+    },
+    {
+      "claim": "Coral and sponge are the largest nature-diversity refusal theme after pollution law (21 of the coded nature cases in table 5). Hard-bottom coral-forest density thresholds in use range from 1-2 to more than 10 colonies per 100 m2. One Åkerblå grid would be 28 percent of the survey area at two or more colonies per 100 m2 and under 2 percent at the later HI Sognefjorden threshold of more than 10.",
+      "supported": true,
+      "extract_quote": "Det ble funnet til sammen 73 ruter á 100 m² med to eller flere kolonier av hornkorall. Dette utgjør 7300 m², eller 28 % av undersøkelsesområdet på 26 000 m²."
+    },
+    {
+      "claim": "Mattilsynet lice refusals dominate that agency's grounds (68 of the table 6 counts). After the 1 September 2024 reorganisation, 32 first-instance refusals were issued in 2025. The appeal unit upheld all 18 cases decided from the reorganisation to the end of 2025. Historical lice-limit breaches, including the 2024 marine heatwave, are often treated as proof of weak internal control rather than as an extraordinary event.",
+      "supported": true,
+      "extract_quote": "Mattilsynets tilsynsdivisjon fattet 32 avslag i 2025."
+    },
+    {
+      "claim": "The legal review is not a full evaluation. It sampled 98 of 149 FAKS cases (all of Nordland, Vestland, Møre og Romsdal, Troms and Finnmark, but only 10 of 50 Trøndelag cases), about 20 appeal decisions, and six granted permits. There is some room to tighten legal reasoning, but the authors call for much more research on how the law is used in practice.",
+      "supported": true,
+      "extract_quote": "Alle saker i Nordland (30), Vestland (31), Møre og Romsdal (9), Troms (6) og Finnmark (12) er gjennomgått summarisk, mens det kun er gjennomgått 10 av 50 saker i Trøndelag."
+    },
+    {
+      "claim": "Suitable localities are called a scarce good. The project is placed after MILJØREG (FHF 901738) and ran in parallel with sister project ÅRSAK (FHF 901995). Combined results are to appear in a separate short report.",
+      "supported": true,
+      "extract_quote": "Tilgangen til egnede lokaliteter er imidlertid et knapphetsgode"
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The report maps refusal practice and knowledge needs. It does not claim or contest a stated causal effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A2 and A4 remain core. After the full walk A3 (coral, seabird, wild-fish trade-offs) and A5 (lice, distances, biomass and infection load) are present in chapters 4 and 5. A1 plan cases are named then skipped. A6 municipal incentive language is not present.",
+  "coi_ok": true,
+  "coi_note": "Funding by FHF is stated. Henrik Hareide is disclosed as having worked for aquaculture actors in several studied cases. Metadata records that disclosure.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "salt_1110_lokalitetssoknader",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": 141,
+  "extract_coverage": "All 141 page markers walked. Table 7 and figures 1-14 are image-only. Table 7 cells unread. Chapter 4 case law and chapter 5 legal analysis now read."
+}

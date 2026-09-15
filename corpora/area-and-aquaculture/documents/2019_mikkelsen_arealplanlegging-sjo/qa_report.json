@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Several 2017 biomass-share figures are images, so exact percentages beyond the stated ranges are not readable in the extract."
+  ],
+  "claim_checks": [
+    {
+      "claim": "The report is part of FHF project Havbruksforvaltning 2030 (901391), Nofima 11/2019, 60 pages, dated 31 March 2019.",
+      "supported": true,
+      "extract_quote": "Oppdragsgiver: Fiskeri- og havbruksnæringens forskningsfinansiering (FHF)|Oppdragsgivers ref.: FHF 901391",
+      "note": "Cover also states Rapportnr. 11/2019, 60 pages, 31.mars 2019."
+    },
+    {
+      "claim": "In a 2015 industry survey, more than 60 percent named access to area as the largest problem (cited from Hersoug et al. 2014). Volume in 2016-2017 was lower than in 2015.",
+      "supported": true,
+      "extract_quote": "I en spørreundersøkelse i 2015 svarte over 60% av respondentene fra næringen at det var det største problemet de sto overfor (Hersoug m.fl. 2014).",
+      "note": "The extract cites a 2014 report for a 2015 survey. Both dates are kept as stated."
+    },
+    {
+      "claim": "In 2017 Hordaland used 99 percent of approved sites. Other counties left about 10 to 30 percent unused. Monthly use was about 50 to 70 percent. Hordaland density more than 8 times Finnmark.",
+      "supported": true,
+      "extract_quote": "i 2017 skilte Hordaland seg ut, ved at praktisk talt alle godkjente lokaliteter (99 %) var i bruk i løpet av året",
+      "note": "Eight-times density and Møre og Romsdal MTB-share ranking are in the same scarcity section."
+    },
+    {
+      "claim": "The three northern counties hold more than 60 percent of coastal-zone sea area, and with Trøndelag more than 75 percent. Nordland has almost twice the coastal-zone area of Finnmark.",
+      "supported": true,
+      "extract_quote": "De tre nordnorske fylkene har over 60 % av kystsonearealet til Norge, og sammen med Trøndelag blir det over 75 %.",
+      "note": "Coastal zone is defined as sea surface to 1 nautical mile outside the baseline."
+    },
+    {
+      "claim": "Richardsen et al. (2018) are cited for a little over 33 000 value-chain årsverk in 2016, about 21 percent in aquaculture itself. Property tax about 26 500 kr per approved locality at the 7 per mille maximum.",
+      "supported": true,
+      "extract_quote": "Det er beregnet at det var litt over 33 tusen årsverk i verdikjeden knyttet til havbruk i 2016 (Richardsen m. fl. 2018).",
+      "note": "Property-tax figure is cited from Isaksen et al. 2012, not newly measured here."
+    },
+    {
+      "claim": "Havbruksfondet and 2018 capacity sales more than 3.9 billion kroner. State 20 percent, municipalities and counties 80 percent (7/8 to municipalities). About 3 million kroner per locality to municipalities for 2018-2019.",
+      "supported": true,
+      "extract_quote": "Særlig fra 2018, etter innføring av trafikklyssystemet og Havbruksfondet, og salg til fastpris og på auksjon av kapasitetsøkning, som til sammen ga over 3,9 milliarder kroner i 2018",
+      "note": "The authors say they cannot conclude who has the strongest incentive."
+    },
+    {
+      "claim": "Few assessed changes give more aquaculture area with certainty or high probability. Three candidates: larger plan areas, auction of pre-screened blocks, and marine industrial parks.",
+      "supported": true,
+      "extract_quote": "Rapporten identifiserer tre endringer som sannsynligvis kan øke arealtilgangen for havbruk",
+      "note": "Hovedfunn lists større planområder, auksjon of areal-blokker, and marine industriparker."
+    },
+    {
+      "claim": "Other changes aim at more predictable trade-offs: equal treatment of regional and state interests, and knowledge collected outside plan processes. Requiring inter-municipal plans or binding regional plans is judged politically unlikely in the near term.",
+      "supported": true,
+      "extract_quote": "så er det lite trolig at dette er et politisk akseptabelt alternativ med det første",
+      "note": "The quote refers to making regional coastal plans legally binding after the 2019 Municipalities Act."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. This is a policy-options paper, not a test of a stated causal effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (plan area, authority, form), A4 (knowledge collected outside processes), A6 (Havbruksfondet, property tax, jobs). A5 not tagged: county density figures are area-scarcity context. A2 and A3 not tagged: licence and trade-off text is background or method options, not a siting or coexistence study.",
+  "coi_ok": true,
+  "coi_note": "FHF 901391 funding is stated. No competing-interest statement. coi_declared remains unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: cover and sammendrag, forord, introduction and area-scarcity statistics, planning theory, incentives chapter (jobs, tax, Havbruksfondet, environment, politics), current administration, all six reform aspects, summary and hovedfunn, references."
+}

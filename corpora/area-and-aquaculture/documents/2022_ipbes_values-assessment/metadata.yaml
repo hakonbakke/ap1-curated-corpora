@@ -1,0 +1,148 @@
+title: Methodological Assessment Report on the Diverse Values and Valuation of Nature
+year: 2022
+doi: 10.5281/zenodo.6522522
+url: https://doi.org/10.5281/zenodo.6522522
+authors:
+- Patricia Balvanera
+- Unai Pascual
+- Michael Christie
+- Brigitte Baptiste
+- David González-Jiménez
+journal: ''
+publisher: IPBES secretariat
+language: english
+source_type: expert_group_report
+document_type: policy_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A3
+geography:
+- global
+environment:
+- not_applicable
+time_period: assessment accepted July 2022 (IPBES 9)
+regulatory_context:
+- none
+evidence_type: review
+study_design:
+- literature_review
+- expert_assessment
+data_source:
+- published_literature
+wild_or_farmed_focus: not_applicable
+outcome_domain:
+- nature_values
+evidence_direction: not_applicable
+effect_scale: not_applicable
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- IPBES confidence terms vary by finding (well established, established but incomplete, unresolved, inconclusive)
+- documented valuation uptake is rare and power in selective uptake is a research blindspot
+- IPLC valuation is poorly represented in academic English sources
+- futures work covering marine environments is described as very weak
+- aquaculture and Norwegian farm siting are not assessment objects
+key_claims:
+- This file is the full digital IPBES Values Assessment (ISBN 978-3-947851-29-4), edited by Balvanera, Pascual, Christie, Baptiste and González-Jiménez. The Plenary accepted the chapters and approved the SPM at IPBES 9 in Bonn, 3-9 July 2022. Suggested citation DOI 10.5281/zenodo.6522522.
+- The typology used across the SPM and chapters 1-2 is layered, not a single slogan. It covers world-views and knowledge systems, broad values (life goals and principles), specific values grouped as instrumental, relational and intrinsic, and biophysical, monetary or sociocultural indicators. People also relate to nature through life frames of living from, with, in and as nature.
+- Whose values are typically ignored or down-weighted: indigenous peoples and local communities, values that are hard to price (especially relational and intrinsic), minority groups when individual values are summed, and future generations when outcomes are discounted. Chapter 3 reports that more than half of valuation studies are not explicit about whose values they represent, and only 1 percent document how power asymmetry was handled.
+- More than 50 valuation methods are grouped into four families (nature-based, statement-based, behaviour-based, integrated). In the chapter 3 review, nature-based methods dominate the literature (68 percent), instrumental values dominate what is elicited (74 percent), justice is a stated goal in 4 percent of valuations, and 77 percent of studies use only one main method. Robustness standards are not universal across disciplines. Aggregation of individual values to a social value has no agreed best practice.
+- KM6 and chapter 4 finding 10 state that less than 5 percent of published valuation studies report uptake in policy decisions, and that documented uptake has not risen with the growth of the literature. Chapter 4 adds that valuation is relevant but insufficient for public decisions, and that the role of power in selective uptake remains a blindspot the SPM wording does not carry at the same strength.
+- Policy implications in the extract are institutional, not site-specific. Predominant political and economic decisions have privileged market-based instrumental values (A9, well established). Four values-based leverage points are named: undertake valuation, embed values in decisions, reform policy, and shift societal goals. Chapter 5 reviews four contested pathways (green economy, degrowth, earth stewardship, nature protection) and marks constructive dialogue among them unresolved. No single path is presented as universally superior.
+- Box 2.8 (chapter 2) is a United Kingdom coastal and marine values case (144 Community Voice video interviews). Named debates are depleted fish stocks, marine protected areas, coastal community regeneration, and access to the coast. Policy framing changed which life frames people emphasised. It is not a Norwegian aquaculture or coastal-plan case.
+- Box 4.3 (chapter 4) is the one Norway-specific body case. Drawing on Winge (2017), it treats implicit valuation in administrative procedures under the Planning and Building Act and sector acts. The figure names the Aquaculture Act among those acts. The prose conclusion is that politically dictated practice implicitly valued nature lower than local development, which was in turn subordinate to energy-sector interests, and that the Nature Diversity Act sits in the weakest category. This is a legal-hierarchy illustration, not an aquaculture siting study.
+- Other marine or aquaculture statements in later chapters stay illustrative. Figure SPM.3 and Figure 3.11 list aquaculture as one ecological-context or habitat category among forests, coastal areas, deep sea and others. Chapter 3 cites Custódio et al. (2020) as an example of replacement-cost and production-function valuation of ecosystem services provided by aquaculture. Chapter 5 maps Aichi Target 7 (sustainable agriculture, aquaculture and forestry) in a policy table. Chapter 6 states that increasing monetization, for example shrimp aquaculture in mangroves, can erode social value, and lists marine spatial planning, marine protected areas, and locally managed marine areas among marine policy options.
+- Chapter-level caveats the SPM smooths over include: chapter 1 source bias (about 96 percent of cited sources in English, about 73 percent of first authors affiliated in the Western Europe and Others Group); chapter 3 finding that published valuations are rarely linked to live decisions and that IPLC valuation was only scratched; chapter 4 language bias and missing consultancy or EIA databases; chapter 5 weak coverage of marine futures and limited reporting of trade-offs and winners or losers; chapter 6 finding that socio-cultural and customary-rights instruments are used less than legal and economic ones, and that place-based projects operationalise fewer value dimensions than international initiatives claim.
+claims_about_uncertainty:
+- Messages and chapter findings carry IPBES confidence terms (well established, established but incomplete, unresolved, inconclusive). Those terms are not re-scored here.
+- Chapter 3 states that best practices for robustness and for aggregation are not universally accepted, and that resource costs of valuation are rarely reported.
+- Chapter 4.7 states that evidence on uptake is limited by English-language bias and by commissioned valuations that are not in the public domain, and that few studies track valuation through a full policy cycle to outcomes.
+- Chapter 5 states that futures covering marine environments are very weak, that 92 of 257 reviewed futures gave no explicit trade-off information, and that whose values are promoted in those futures is often unknown.
+- Figure SPM.3 prints habitat shares as a bar chart. Forests are labelled 25 percent. An exact aquaculture percentage was not recovered as a standalone numeric table in the extract.
+claims_about_policy_or_management:
+- The assessment offers a typology, method guidance, and options for embedding diverse values in decision-making toward just and sustainable futures and the post-2020 global biodiversity framework. It does not set Norwegian coastal-zone or farm-siting rules.
+- Box 4.3 recommends strengthening the role of the Planning and Building Act so sector interests are balanced through public hearing. That recommendation is Winge-based commentary in the assessment, not a finding about farm placement.
+- Chapter 6 lists marine spatial planning, marine protected areas, and locally managed marine areas as marine, coastal and fisheries options, and warns that catch-all labels such as nature-based solutions can dilute indigenous and local voices if used loosely.
+- A majority of countries had not progressed fast enough to meet Aichi Target 2 (integrating biodiversity values into strategies, planning and accounting) by 2020. Progress was weaker on Aichi Goals A and B (underlying drivers and cross-sector power) than on targets mainly inside environment ministries.
+methodological_limitations:
+- Intergovernmental methodological assessment. About 100 selected experts and about 200 contributing authors analysed more than 13,000 publications plus indigenous and local knowledge. The assessment synthesises existing knowledge and does not generate new global value numbers.
+- Primary evidence is a global academic literature (heavily English) and a limited ILK body, not a Norway area corpus.
+- Chapter 3 used 1,163 in-depth studies drawn from a much larger English-indexed corpus. Grey literature, consultancy valuations, and non-English work are under-represented.
+- The SPM is duplicated inside this file. Use 2022_ipbes_spm-values for the short approved text alone.
+rag_summary: 'IPBES (2022) Methodological Assessment Report on the Diverse Values
+  and Valuation of Nature is the full digital volume (SPM plus six chapters), accepted
+  at IPBES 9. Nature’s values are organised as world-views, broad values, and specific
+  instrumental, relational and intrinsic values, plus life frames of living from, with,
+  in and as nature. Political and economic decisions have privileged a narrow, often
+  market, set of values. More than 50 valuation methods exist, but most studies elicit
+  instrumental values, use one method, and less than 5 percent report policy uptake.
+  Chapter 4 treats valuation as relevant but insufficient and names power in uptake
+  as a blindspot. Whose values are typically ignored include indigenous and local communities,
+  hard-to-price relational and intrinsic values, minorities under aggregation, and
+  future generations. Box 2.8 is a UK coastal and fisheries values case. Box 4.3 uses
+  Norwegian planning and sector law (Winge 2017), naming the Aquaculture Act in a
+  hierarchy figure, as implicit valuation that ranked nature below local development
+  and energy. Aquaculture otherwise appears as a valuation-study habitat and in examples
+  (Custódio 2020; shrimp aquaculture and social-value loss). Marine futures coverage
+  is weak. This is the long assessment. 2022_ipbes_spm-values is the short SPM.
+
+  '
+coi_declared: unclear
+coi_notes: 'Intergovernmental assessment. Trust-fund donors include many governments
+  (Norway among them). Earmarked French support and in-kind hosting by UNAM for the
+  technical support unit. David N. Barton (NINA, Norway) is a coordinating lead author
+  of chapter 4. Arild Vatn is a chapter 1 lead author. No personal competing-interests
+  statement was found in the pages walked.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Plenary-accepted full assessment with traceable accounts, chapter
+  executive findings, and explicit knowledge-gap sections. Curation walked SPM key
+  messages and each numbered chapter’s findings, caveats and coastal or aquaculture
+  hits. Still a global values assessment, not an aquaculture planning study. Source
+  base is English-heavy and IPLC valuation remains thinly documented.
+
+  '
+controversy_role: peripheral
+relevance_signal: low
+relevance_rationale: 'Peripheral as a siting or licensing source. The object is diverse
+  values of nature in global decision-making (A3 trade-offs). The extract’s Norway
+  hit is Box 4.3 on implicit valuation in planning versus sector acts, not farm placement.
+  Coastal and aquaculture wording elsewhere is a UK fisheries box, a habitat category,
+  or an illustrative mangrove or valuation-method example.
+
+  '
+included_because: 'Selected by Ragnar Tveterås together with the SPM. Keep it as the
+  long values assessment in the same pair. Do not collapse it into the SPM, and do
+  not retag it as an aquaculture area paper.
+
+  '
+related_documents_supporting:
+- 2022_ipbes_spm-values
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2022_ipbes_spm-values
+retrieval_tags:
+- IPBES
+- nature_values
+- full_assessment
+- valuation_methods
+- implicit_valuation
+- peripheral_to_area
+curator_note: 'Chapters walked 2026-09-13. Front matter, SPM key and background messages,
+  and executive findings plus caveats for chapters 1-6 were read in body. Box 2.8
+  and Box 4.3 were re-read. Searches covered aquaculture, coastal, marine, fishery,
+  trade-off, valuation, indigenous, uncertainty, limitation, confidence, dissent, majority.
+  Annex glossary and most annex case files were not read as body. Partner statements
+  remain front matter, not key messages.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: 2022 IPBES_ASSESSMENT ON VALUES_DIGITAL_27022023.pdf
+
+# ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.

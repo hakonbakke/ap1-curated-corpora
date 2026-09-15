@@ -1,0 +1,112 @@
+title: 'Challenges and Myths in Norwegian Coastal Zone Management'
+year: 2005
+doi: 10.1080/08920750590917567
+url: https://doi.org/10.1080/08920750590917567
+authors:
+- Svein Jentoft
+- Arild Buanes
+journal: Coastal Management
+publisher: Taylor and Francis
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A3
+- A4
+geography:
+- Norway
+environment:
+- coastal_zone
+- municipality
+time_period: c. 1985-2004
+regulatory_context:
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+- mixed
+evidence_type: commentary
+study_design:
+- literature_review
+data_source:
+- published_literature
+wild_or_farmed_focus: both
+outcome_domain:
+- area_allocation
+- coastal_planning
+- coexistence_tradeoffs
+- knowledge_in_decisions
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- essay without a new occupancy census
+- myths are argued as common images, not counted in a sample of plans
+key_claims:
+- Coastal-zone management must handle diversity, complexity, dynamics and risk. Managers often postpone hard decisions and rationalise non-decision with three myths.
+- Myth 1 is that space is unlimited. The coastline is stated as 83 000 km. From the air pens look like a few dots. On the ground the zone is crowded. Security zones and alternative locations make aquaculture space-consuming. New uses are often assumed to be addable. When areas are taken, development can become zero-sum.
+- Myth 2 is that spatial delimitation is all that coastal-zone planning requires. The Planning and Building Act of 1985 makes demarcation the primary instrument. Boundaries do not replace conflict-resolution institutions or cooperative links between fisheries, aquaculture and tourism.
+- Myth 3 is that coastal culture always self-heals. Small-scale fisheries depend on community knowledge and moral standards that are not self-sustaining and sit outside the usual fisheries-authority toolbox.
+- Government required a coastal-zone plan as a condition for new fish-farming licences. Many municipalities produced documents quickly. Quality was such that many soon had to be revised. Aquaculture demand often outran the plans.
+- The authors argue that a more realistic ambition is risk-management, avoiding worst-case scenarios, rather than aiming for some positively defined ideal state of the coastal zone.
+claims_about_uncertainty:
+- The four features (diversity, complexity, dynamics, risk) are presented as inherent, not as quantified scores.
+- Science cannot always be trusted on risk. Oil-shipping from Kola is used as a feared analog to the Prestige spill, not as a measured probability.
+claims_about_policy_or_management:
+- Simple standard fixes fit for all situations are not available. Management systems should be diverse, complex and dynamic enough for the case.
+- Sector management of fisheries and aquaculture is not targeted at creating territorial symbioses.
+methodological_limitations:
+- Conceptual essay. No independent measurement of occupation or of how often the three myths appear in named plans.
+rag_summary: >
+  Jentoft and Buanes (2005) argue that Norwegian coastal-zone management faces
+  diversity, complexity, dynamics and risk, and that managers often postpone hard
+  choices by invoking three myths: space is unlimited, spatial delimitation is all
+  it takes, and coastal culture takes care of itself. The coastline looks empty from
+  the air. On the ground, aquaculture security zones make the industry space-consuming
+  and new uses can become zero-sum. The 1985 Planning and Building Act makes
+  demarcation the main tool, which they say is not enough. They prefer avoiding
+  worst cases to planning an ideal coast. This is an essay, not a new occupancy census.
+coi_declared: false
+coi_notes: >
+  No competing-interest statement in the extract. Funding is not stated beyond
+  the authors' affiliations (University of Tromso and NORUT).
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: >
+  Peer-reviewed conceptual essay with named legal and geographic examples. Does
+  not measure occupation or count the myths in a plan sample.
+controversy_role: foundational
+relevance_signal: high
+relevance_rationale: >
+  Names the empty-sea myth that later area papers keep returning to, and treats
+  aquaculture security zones as the occupation that the aerial view hides.
+included_because: >
+  Added by Thord Håkon Bakke on 2026-09-15. The PDF filename said Sandersen and
+  Kvalvik 2014. The article is Jentoft and Buanes 2005. It is a named argument
+  that usable coastal space is not the empty map.
+related_documents_supporting:
+- 2020_hersoug_whats-the-clue
+- 2011_gullestad_arealbruk-havbruk
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2014_sandersen_administrative-reform
+- 2015_sandersen_access-to-sites
+retrieval_tags:
+- empty_sea_myth
+- coastal_zone_management
+- security_zones
+- hard_choices
+curator_note: >
+  Extract walked 2026-09-15 (page markers). PDF was dropped as Sandersen and
+  Kvalvik 2014 Challenges and Myths. Title page and running head are Jentoft and
+  Buanes, Coastal Management 33(2) 2005. Figures not read as data. One DOI line
+  on the landing page is truncated. Full DOI is on the article page.
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-15'
+inclusion_decided_by: Thord Håkon Bakke
+source_pdf: Sandersen and Kvalvik_ 2014_ Challenges and Myths in Norwegian Coastal Zone Management.pdf
+
+# ai_verify: Cursor page verify 2026-09-15: PASS. See qa_report.json.

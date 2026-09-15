@@ -1,0 +1,224 @@
+title: Risikorapport norsk fiskeoppdrett 2026
+year: 2026
+doi: ''
+url: ''
+authors:
+- Ellen Sofie Grefsrud
+- Lasse Berg Andersen
+- Katherine Mary Dunlop
+- Bjørn Einar Grøsvik
+- Rita Hannisdal
+- Vivian Husa
+- Nina Sandlund
+- Rasmus Skern
+- Monica F. Solberg
+- Lars Helge Stien
+journal: Rapport fra havforskningen
+publisher: Havforskningsinstituttet
+language: norwegian
+source_type: government_report
+document_type: risk_assessment
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A3
+- A5
+geography:
+- Norway
+environment:
+- coastal_zone
+- sea_area
+time_period: through 2025, published February 2026
+regulatory_context:
+- mixed
+evidence_type: mixed
+study_design:
+- expert_assessment
+- statistical_analysis
+data_source:
+- official_statistics
+- mixed
+wild_or_farmed_focus: both
+outcome_domain:
+- fish_health_welfare
+- disease_or_lice
+- mixed
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- limited knowledge of carrying capacity for environmental effects in each production
+  area
+- limited knowledge of how future marine heatwaves will affect lice transmission
+- nutrient models sometimes indicate risk that measurements do not support
+- colour cells in Table 1.1 and the 13 risk-map figures are not readable
+- this volume prints PO summaries only. Full argument sits in the 2025 report
+- hard-bottom monitoring methods are incomplete
+- wild-smolt migration routes are poorly known in several areas
+key_claims:
+- Official Havforskningsinstituttet risk report on production mortality in farmed
+  fish and environmental effects of Norwegian fish farming (Rapport fra havforskningen
+  2026-10, 76 pages, dated 11 February 2026). Few risk conclusions changed from 2025,
+  so this volume prints only the 13 production-area summaries. Readers are sent to
+  the 2025 report for the full argument. A climate-focused assessment is planned
+  before summer 2026. Separate coastal-cod risk notes are published elsewhere.
+- Norwegian aquaculture production rose by about 200,000 tonnes from 2024 to 2025,
+  described as the largest annual growth since 1980. Salmon accounted for 182,000
+  tonnes, rainbow trout about 13,000, and cod about 5,500 (slaughter 20,130 tonnes).
+  Table 1.2 gives 1,838,665 tonnes of grow-out production in 2025. Salmon export
+  rose from 1.25 to 1.41 million tonnes. Mean monthly standing salmon fell from 459
+  million in 2024 to 445 million in 2025.
+- Two-year means from 2018-2019 to 2024-2025 rose in every production area except
+  area 1. Red areas 3 and 4 added about 67,000 tonnes despite three company-MAB cuts
+  in area 4 and two in area 3. Yellow areas 2 and 5-8 added about 243,000 tonnes.
+  Green areas 1 and 9-13 added about 135,500 tonnes. Area 4, red since the first traffic-light
+  round, had the second-largest rise (about 42,000 tonnes). Areas 6-8 added about
+  75,000 tonnes while yellow. The authors ask whether that rise is environmentally
+  sustainable given lice pressure, especially for sea trout.
+- Poor farmed-fish welfare and lice effects on wild fish are stated as the main obstacles
+  to sustainability. High water temperature, more fish in the sea, and more frequent
+  delousing are said to have worsened the situation. Welfare scoring uses total loss
+  (dead, discard, escape, other, excluding count error) because loss categories are
+  used differently across areas. National year-class loss sits at about 16-18 percent.
+  About 17 percent is treated as moderate. High welfare risk is stated for seven of
+  13 areas (1-6 and 12). Only area 8 is low. Rainbow-trout welfare risk rose from
+  moderate to high in area 3.
+- Lice-induced mortality in wild salmon smolts. Two production areas high, eight
+  moderate, three low. Chapter 3 prose (not Table 1.1 colours) places high in areas
+  3 and 4, moderate in 2 and 5-11, and low in 1, 12 and 13. For sea trout and Arctic
+  char the text states nine high, two moderate, two low. High risk from Karmøy to
+  Senja (areas 2-10). Area 6 genetic-introgression risk is raised from last year.
+  Area 9 genetic risk is lowered.
+- About 900 aquaculture sites in Norway. Submerged cages rose from about 10 sites
+  in 2023 and 20 in 2024 to about 40 in 2025, in areas 3-9 and 11. More than 30 million
+  salmon have been harvested from submerged cages. One submerged site has produced
+  rainbow trout to harvest. Open cages, the amount of farmed salmonids, and tight
+  infection coupling between sites are said to make low lice levels very hard to
+  keep.
+- Nutrient emissions are assessed as low risk in all areas. Estimated 2025 dissolved
+  releases are 70,665 tonnes nitrogen and 9,377 tonnes phosphorus (38.4 kg N and
+  5.1 kg P per tonne produced). Areas 2 and 3 have the highest release per sea area.
+  Theoretical phytoplankton response in 2024 is 17.6 percent in area 2 and 19.1 percent
+  in area 3. Modelled area means are 5.8 and 6.1 percent. Local pockets can reach
+  30-50 percent. More monitoring is recommended where aquaculture activity is high.
+- Seabed risk under cages is largely unchanged. Area 4 is moved from moderate to
+  low after better B and C surveys. National B-surveys in 2024-2025, 838 sites, 9.8
+  percent poor or very poor. C-surveys 2021-2025, 746 sites, 7.9 percent moderate
+  or worse. Mean influence area (site plus 1 km) is 4 percent of production-area
+  sea. Area 3 influence is about 15 percent of that area's sea. Hard-bottom methods
+  are incomplete.
+- Copper use on nets was 564 tonnes in 2024, up 84 percent from 306 tonnes in 2023
+  and 67 percent below 1,698 tonnes in 2019. Tralopyril was 108 tonnes. Current delousing-chemical
+  use is assessed as low risk for serious effects on other marine species. Wild wrasse
+  catch fell from about 9.9 million in 2024 to about 5.4 million in 2025. 2026 is
+  the last year with a separate cleaner-fish score if harvest stays low.
+- Coastal-zone planning, municipal designation of sea area, and site-application
+  process are not the main object of the report.
+claims_about_uncertainty:
+- The authors state that little is known about carrying capacity for the various environmental
+  effects of aquaculture in the different production areas. Coastal water has already
+  warmed about 1-2 °C since 1935.
+- Knowledge of how future marine heatwaves will affect lice transmission is described
+  as limited. Risk scores for lice are said to be largely unchanged from the previous
+  year. Migration routes for wild smolts are poorly known in several areas.
+- Nutrient models in some cases show possible risk not supported by measurements.
+  Theoretical phytoplankton response is higher than the ecosystem model.
+- Each score is presented with a stated knowledge-strength ring. Those ring colours,
+  Table 1.1 cell colours, and figures 3.1-3.13 are not recoverable as cell values
+  in the extract.
+- Welfare scores are relative to other areas and earlier year-classes, not an ethical
+  judgement. Areas with few sites (1, 13, rainbow trout in 3 and 5) are sensitive
+  to single events.
+claims_about_policy_or_management:
+- The report describes traffic-light capacity rules (green 6 percent growth, yellow
+  no growth, red possible 6 percent cut) and notes that production still rose after
+  cuts, via higher utilisation, exception growth, cross-area company MTB, and larger
+  post-smolt. The 2024 decision was estimated to allow about 21,000 tonnes of capacity
+  growth. Salmonid production still rose by just over 197,000 tonnes.
+- A December 2024 proposal and an October 2025 rule allow reduced traffic-light capacity
+  to be used in closed units if documentation is accepted by the Directorate of Fisheries.
+  The text frames this as an incentive to break the link between produced volume
+  and lice infection pressure in an area.
+- Government welfare target is about 5 percent production mortality (monthly cage
+  mortality under 0.3 percent). Mattilsynet, the Directorate, Veterinærinstituttet
+  and HI aim for more consistent mortality reporting by 2027.
+- Three offshore areas are named (Norskerenna sør, Frøyabanken nord, Trænabanken).
+  No full-scale offshore plants exist yet. Antifoulant use must be registered from
+  February 2026, but public-register guidelines are missing.
+- NOU 2023:23 and Meld. St. 24 (2024-2025) are named as a wider management review,
+  including proposed lice-emission quotas. Those documents are not evaluated here.
+methodological_limitations:
+- Expert risk scoring on monitoring, models, and official statistics. This is not
+  a new primary experiment. Method is Andersen et al. (2022). There are no objective
+  risk numbers.
+- This 2026 volume prints production-area summaries only. Full argument sits in the
+  2025 report, which does not include 2025 figures.
+- Table 1.1 colour codes and figures 3.1-3.13 did not survive as readable cell values.
+  Per-area lice scores used in claims come from chapter 3 prose.
+- No DOI in the extract. ISSN 1893-4536. Project 16358.
+rag_summary: 'Havforskningsinstituttet (2026) is the official risk report on production
+  mortality and environmental effects of Norwegian fish farming. It scores nine unwanted
+  events across 13 production areas. This volume prints area summaries only. Stated
+  main obstacles are poor farmed-fish welfare and lice effects on wild salmonids.
+  Production rose by about 200,000 tonnes from 2024 to 2025, including in red and
+  yellow traffic-light areas. About 900 sites. Submerged cages at about 40 sites.
+  High lice-smolt risk in areas 3 and 4. High sea-trout risk from Karmøy to Senja.
+  Nutrients low in all areas. Seabed largely unchanged, area 4 moved to low. Municipal
+  coastal planning is not the object.
+
+  '
+coi_declared: unclear
+coi_notes: 'Government institute report. Project 16358, programme Environmental effects
+  of aquaculture. Approved by research director Geir Lasse Taranger. Programme leader
+  Mari Skuggedal Myksvoll. Many named chapter authors beyond the listed editors, including
+  NINA affiliates on some names. No competing-interests statement in the extract.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Official national risk assessment with stated method, production-area
+  scores, and knowledge-strength language. Carrying-capacity and heatwave limits are
+  acknowledged. This volume is a summary edition. Not a planning study.
+
+  '
+controversy_role: peripheral
+relevance_signal: medium
+relevance_rationale: 'Adjacent. Production areas, traffic-light capacity, site counts,
+  more fish in the sea, and infection coupling between sites touch density and siting.
+  The main object remains national environmental and welfare risk, not coastal-zone
+  planning.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. The file is the 2026 HI risk report,
+  filed into an area room. Keep it as an official risk product that uses production
+  areas and site coupling. Do not treat it as a core planning text.
+
+  '
+related_documents_supporting:
+- 2026_moldal_fiskehelserapporten
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2026_moldal_fiskehelserapporten
+- undated_baerekraftig-arealbruk-havbruk
+retrieval_tags:
+- HI_risk_report
+- production_areas
+- traffic_light
+- fish_welfare
+- adjacent_not_planning
+curator_note: 'Editors listed as authors. The extract also names a longer forfatter
+  list (HI and some NINA). Subtitle: Produksjonsdødelighet hos oppdrettsfisk og miljøeffekter
+  av norsk fiskeoppdrett. Full page walk 2026-09-13 of all 76 markers, including chapter
+  2 methods and all 13 production-area summaries. Remaining unread: Table 1.1 colour
+  cells, summary figure colours, figures 1.1-1.5, 2.1-2.9 and 3.1-3.13 (image-only
+  risk maps). Table 1.2 and tables 2.1-2.2 cells are readable. One sentence on rainbow-trout
+  stocking (26 million in 2026) looks garbled and is not used.
+
+  # ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: HI_2026_Risikorapport norsk fiskeoppdrett 2026.pdf

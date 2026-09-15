@@ -1,0 +1,168 @@
+title: Spatial density, externalities, and productivity of salmon aquaculture farms
+year: 2025
+doi: 10.1080/13657305.2025.2456072
+url: https://doi.org/10.1080/13657305.2025.2456072
+authors:
+- Kamila Kulmambetova
+- Ragnar Tveterås
+journal: Aquaculture Economics & Management
+publisher: Taylor & Francis
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A5
+geography:
+- Norway
+environment:
+- coastal
+- sea_area
+time_period: 2012-2020
+regulatory_context:
+- Norway_Aquaculture_Act
+- locality_licence
+evidence_type: empirical_observational
+study_design:
+- statistical_analysis
+data_source:
+- farm_data
+- public_registers
+wild_or_farmed_focus: farmed
+outcome_domain:
+- spatial_density_productivity
+- disease_or_lice
+evidence_direction: supports_effect
+effect_scale: both
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- cost models include feed, labour, and capital, not total operating cost
+- proximity is associated with cost, not a randomised location experiment
+- technical-change bias toward proximity is not statistically significant
+- summary-statistics table lists 720 observations while the reported elasticities use
+  712
+key_claims:
+- Open-cage salmon farms cause and face spatial externalities (diseases and salmon
+  lice). Hydrodynamics and farm density influence transmission. Highest infection
+  risk is described as within a 20 km radius, citing Aldrin epidemiological work,
+  not a new distance estimate in this paper.
+- 'The paper estimates a translog cost function on a Norwegian farm-firm panel (119
+  firms). Two proximity indicators are used: mean distance to the nearest farm, and
+  mean number of farms within 20 km, each averaged across a firm’s sites. Likelihood-ratio
+  tests favour firm fixed effects over pooled models. Reported elasticities use those
+  fixed-effect models (712 observations). Table 3 lists 720 observations for the same
+  119 firms.'
+- Increased proximity is associated with higher production cost. For the sample-mean
+  firm, doubling mean distance to the nearest farm is associated with an 8.7 percent
+  cost reduction (elasticity -0.087, p=0.001). Doubling the number of farms within
+  20 km is associated with an 18.3 percent cost increase (elasticity 0.183, p<0.001).
+- Sample means in Table 3 are about 5.08 km to the nearest farm and about 9.78 farms
+  within 20 km. The October 2018 registry map used in the paper shows 620 production
+  sites. The authors say location structure changed little in the data period.
+- Industry indexes for 2012-2020 (2012=100) are stated as follows. Active farms up 16 percent,
+  production up 25 percent, fish loss (mostly mortality) up 35 percent, adult-female
+  lice prevalence down about 30 percent, lice treatments up 98 percent, and inflation-adjusted
+  production costs up 57 percent. Treatment’s share of cost rose from 10 percent in
+  2006 to 16 percent in 2018, while feed fell from 56 to 47 percent.
+- Annual technical change is about 3.2 percent (model A) and 3.1 percent (model B).
+  In this cost specification a positive rate means costs shifted upwards. The authors
+  say innovations did not offset rising biological problems. Interaction terms that
+  would show technical change reducing the proximity penalty are not statistically
+  significant (p=0.229 and p=0.490).
+- The authors state there is a noticeable lack of rules on site distribution. Food
+  Safety Authority minimum distances are described as 5 km for new facilities, and
+  2.5 km for facilities up to 3,600 tons MTB (5 km above that). Earlier rules are
+  cited as 200 metres in the 1970s and 1 km by the late 1980s.
+- 'Policy implication stated in the paper: avoid further increased spatial density
+  of open-cage farms. Tools named are location-structure regulation, biosecurity
+  (including coordinated fallowing and treatment), emission quotas, and innovation
+  policy, including semi-closed and deep farming. The paper cites Qviller et al. (2024)
+  for epidemiological support that increasing production at fewer sites with more
+  distance can lower disease and lice transmission risk.'
+claims_about_uncertainty:
+- The authors ask for future work that estimates proximity, disease and lice, treatments,
+  cost, and profit in one chain. They do not claim those links are identified here.
+- Likelihood-ratio tests favour firm fixed effects. Reported elasticities come from
+  those models (712 observations).
+- Table 1 on production-area intensity and mortality is descriptive. The authors say
+  mortality tends to be positively associated with higher production per km2. That
+  is not the cost-function claim.
+claims_about_policy_or_management:
+- A firm has a company MAB usable at several sites, a site licence, a location MAB
+  based on local carrying capacity, and a maximum adult-female lice count per fish.
+- Traffic-light zones use lice-induced wild-salmonid mortality (green below 10 percent
+  with 6 percent MAB increase, yellow 10-30 percent, red above 30 percent with 6 percent
+  MAB cut).
+- The paper cites Qviller et al. (2024) for epidemiological support that increasing
+  production at fewer sites with more distance can lower disease and lice transmission
+  risk.
+methodological_limitations:
+- Observational cost function. Location is not experimentally assigned.
+- Cost components in the plotted unit-cost figures are only feed, labour, and capital.
+- Maps of 620 sites are from the October 2018 registry. The authors say location structure
+  changed little in the data period.
+- Technical-change bias toward proximity is not statistically significant.
+rag_summary: 'Kulmambetova and Tveterås (2025) estimate how spatial proximity among
+  Norwegian open-cage salmon farms relates to firm production cost. A translog cost
+  function on a 2012-2020 panel of 119 firms uses two density measures: mean distance
+  to the nearest farm and mean number of farms within 20 km. Doubling nearest neighbour
+  distance is associated with 8.7 percent lower cost. Doubling neighbour count within
+  20 km is associated with 18.3 percent higher cost. Over the same years, industry
+  indexes show more treatments, higher fish loss, and 57 percent higher inflation-adjusted
+  cost. The authors treat the firm-level result as evidence of spatial biological
+  externalities and argue against further densification of open cages. This is an
+  association from a cost model, not a siting experiment.
+
+  '
+coi_declared: yes
+coi_notes: 'Both authors acknowledge Research Council of Norway project 320612. Tveterås
+  also acknowledges projects 328724 and 353039. Disclosure: Tveterås is a board member
+  of the non-profit Blue Planet, a member of the SalmonTracking steering group, and
+  has consultancy for companies and public organisations.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Peer-reviewed firm-level cost models with two proximity measures
+  and firm fixed effects. The design is observational. Plotted costs omit some operating
+  items. Table 3 and Table 4 disagree on observation count (720 versus 712).
+
+  '
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: 'Core empirical paper on spatial density of farms and productivity,
+  which is the area-use question in economic form.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. Firm-level evidence that closer open-cage
+  neighbours are associated with higher salmon production cost, which is the density-and-area
+  question in this room.
+
+  '
+related_documents_supporting:
+- 2024_qviller_geographic-redistribution
+- 2017_aldrin_lice-farm-model
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2020_hersoug_whats-the-clue
+retrieval_tags:
+- spatial_density
+- cost_productivity
+- externalities
+- farm_proximity
+curator_note: 'Full extract walked 2026-09-13. Published online 29 January 2025. University
+  of Stavanger School of Business and Law. Descriptive Table 1 on production-area
+  intensity and mortality is not the causal claim. Aldrin (2010) and Aldrin (2019)
+  cited in the extract are not the 2011 ISA or 2015 PD papers in this corpus. The
+  20 km radius is taken from cited epidemiology, not re-estimated here.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Kulmambetova and Tveterås_2025_Spatial density  externalities  and productivity
+  of salmon aquaculture farms.pdf
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 2 soft). See qa_report.json.

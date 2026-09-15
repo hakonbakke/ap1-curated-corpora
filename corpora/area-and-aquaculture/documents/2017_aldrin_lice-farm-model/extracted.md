@@ -1,0 +1,14806 @@
+<!-- page 1 -->
+Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+Contents
+ lists
+ available
+ at
+ ScienceDirect
+Ecological
+ Modelling
+journa
+ l
+ h
+ om
+ epa
+ ge:
+ www.elsevier.com/locate/ecolmodel
+A
+ stage-structured
+ Bayesian
+ hierarchical
+ model
+ for
+ salmon
+ lice
+populations
+ at
+ individual
+ salmon
+ farms
+ –
+ Estimated
+ from
+ multiple
+farm
+ data
+ sets
+M.
+ Aldrin a,∗, R.B.
+ Huseby a, A. Stien b, R.N.
+ Grøntvedt c, H. Viljugrein d, P.A.
+ Jansen d
+a Norwegian
+ Computing
+ Center,
+ P.O.
+ Box
+ 114
+ Blindern,
+ NO-0314
+ Oslo,
+ Norway
+b Norwegian
+ Institute
+ for
+ Nature
+ Research,
+ P.O.
+ Box
+ 6606
+ Langnes,
+ 9296
+ Tromsø,
+ Norway
+c INAQ
+ AS,
+ P.O.
+ Box
+ 1223
+ Sluppen,
+ NO-7462
+ Trondheim,
+ Norway
+d Norwegian
+ Veterinary
+ Institute,
+ P.O.
+ Box
+ 750
+ Sentrum,
+ NO-0106
+ Oslo,
+ Norway
+a
+ r
+ t i c l e 
+i n
+ f o
+Article
+ history:
+Received
+ 11
+ January
+ 2017
+Received
+ in
+ revised
+ form
+ 18
+ May
+ 2017
+Accepted
+ 23
+ May
+ 2017
+Available
+ online
+ 23
+ June
+ 2017
+Keywords:
+Population
+ model
+Aquaculture
+Stochastic
+ model
+Sea
+ lice
+ counts
+a
+ b
+ s t r
+ a c t
+Salmon
+ farming
+ has become
+ a prosperous
+ international
+ industry
+ over the last decades.
+ Along with growth
+in
+ the production
+ farmed salmon,
+ however,
+ an increasing
+ threat by pathogens
+ has
+ emerged.
+ Of special
+concern
+ is the propagation
+ and spread of the salmon
+ louse,
+ Lepeophtheirus
+ salmonis.
+ To gain insight
+ into
+this
+ parasite’s
+ population
+ dynamics
+ in large scale
+ salmon
+ farming
+ system,
+ we present
+ a fully mechanistic
+stage-structured
+ population
+ model
+ for the salmon
+ louse,
+ also
+ allowing
+ for complexities
+ involved
+ in the
+hierarchical
+ structure
+ of full scale salmon
+ farming.
+ The model
+ estimates
+ parameters
+ controlling
+ a
+ wide
+range
+ of processes,
+ including
+ temperature
+ dependent
+ demographic
+ rates, ﬁsh size and abundance
+ effects
+on
+ louse transmission
+ rates, effect sizes of various
+ salmon
+ louse
+ control measures,
+ and distance
+ based
+between
+ farm transmission
+ rates. Model
+ parameters
+ were
+ estimated
+ from data including
+ 32 salmon
+farms,
+ except
+ the last production
+ months
+ for ﬁve farms, which were used to evaluate
+ model predictions.
+We
+ used a Bayesian
+ estimation
+ approach,
+ combining
+ the prior distributions
+ and the data likelihood
+ into
+a
+ joint
+ posterior
+ distribution
+ for all model
+ parameters.
+ The model generated expected
+ values that
+ ﬁt-
+ted
+ the observed
+ infection
+ levels of the chalimus,
+ adult female and other mobile
+ stages
+ of salmon
+ lice,
+reasonably
+ well. Predictions
+ for the periods
+ not used for ﬁtting the model were also
+ consistent
+ with
+the
+ observational
+ data. We argue that the present
+ model for the population
+ dynamics
+ of the salmon
+louse
+ in aquaculture
+ farm systems
+ may contribute
+ to resolve
+ the complexity
+ of processes
+ that
+ drive this
+host-parasite
+ relationship,
+ and hence
+ may improve
+ strategies
+ to control
+ the parasite in this production
+system.
+©
+ 2017 The Authors.
+ Published
+ by Elsevier
+ B.V. This is an open
+ access article under
+ the CC
+ BY license
+(http://creativecommons.org/licenses/by/4.0/).
+1.
+ Introduction
+Salmon
+ farming
+ has
+ become
+ a
+ large
+ and
+ economically
+ prosper-
+ous
+ international
+ industry
+ over
+ the
+ last
+ decades.
+ Norway
+ holds
+ a
+leading
+ position
+ as
+ a
+ producer
+ of
+ farmed
+ salmonids
+ with
+ an
+ annual
+production
+ of
+ about
+ 1.2
+ million
+ tonnes,
+ which
+ is
+ roughly
+ half
+ of
+the
+ worldwide
+ production
+ (Anonymous,
+ 2015).
+ Further
+ growth
+ in
+the
+ production
+ of
+ salmonids
+ is
+ in
+ demand
+ (Anonymous,
+ 2015),
+ but
+this
+ will
+ come
+ at
+ the
+ cost
+ of
+ increasing
+ risks
+ of
+ pathogen
+ propaga-
+tion
+ and
+ transmission.
+ Large-scale
+ host
+ density
+ dependence
+ acting
+on
+ pathogen
+ transmission
+ has
+ been
+ demonstrated
+ in
+ salmon
+ farm-
+ing
+ production
+ systems,
+ both
+ for
+ macro
+ parasites
+ (Aldrin
+ et
+ al.,
+∗Corresponding
+ author.
+E-mail
+ address:
+ magne.aldrin@nr.no
+ (M.
+ Aldrin).
+2013;
+ Jansen
+ et
+ al.,
+ 2012;
+ Kristoffersen
+ et
+ al.,
+ 2014)
+ and
+ viruses
+(Aldrin
+ et
+ al.,
+ 2011,
+ 2010;
+ Kristoffersen
+ et
+ al.,
+ 2009).
+ Of
+ special
+concern,
+ is
+ the
+ propagation
+ and
+ spread
+ of
+ the
+ salmon
+ louse,
+ Lep-
+eophtheirus
+ salmonis,
+ which
+ is
+ implicitly
+ responsible
+ for
+ regulating
+the
+ salmon
+ farming
+ industry
+ through
+ density
+ dependent
+ host
+ para-
+site
+ interactions
+ (Frazer
+ et
+ al.,
+ 2012;
+ Jansen
+ et
+ al.,
+ 2012;
+ Groner
+ et
+ al.,
+2016b) Consequently,
+ this
+ parasite
+ plays
+ a
+ dominant
+ role
+ in
+ the
+ for-
+mulation
+ of
+ management
+ policies
+ (Anonymous,
+ 2015),
+ dominates
+among
+ salmon
+ pathogens
+ in
+ the
+ scientiﬁc
+ literature
+ (Murray
+ et
+ al.,
+2016) and
+ is
+ perceived
+ as
+ a
+ major
+ threat
+ to
+ wild
+ salmon
+ populations
+(Taranger
+ et
+ al.,
+ 2015;
+ Vollset
+ et
+ al.,
+ 2015;
+ Forseth
+ et
+ al.,
+ 2017),
+ all
+testifying
+ to
+ the
+ gravity
+ of
+ detrimental
+ effects
+ of
+ the
+ salmon
+ louse
+on
+ salmon
+ farming.
+Mathematical
+ and
+ statistical
+ models
+ are
+ increasingly
+ being
+ used
+to
+ evaluate
+ infection
+ pathways
+ and
+ risk
+ factors
+ for
+ pathogen
+ prop-
+agation
+ and
+ disease
+ development,
+ both
+ in
+ aquatic
+ and
+ terrestrial
+http://dx.doi.org/10.1016/j.ecolmodel.2017.05.019
+0304-3800/©
+ 2017
+ The
+ Authors.
+ Published
+ by
+ Elsevier
+ B.V.
+ This
+ is
+ an
+ open
+ access
+ article
+ under
+ the
+ CC
+ BY
+ license
+ (http://creativecommons.org/licenses/by/4.0/).
+
+
+<!-- page 2 -->
+334
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+animal
+ farming
+ (Aldrin
+ et
+ al.,
+ 2013,
+ 2011,
+ 2010;
+ Salama
+ and
+ Murray,
+2013;
+ Murray
+ and
+ Salama,
+ 2016;
+ Jonkers
+ et
+ al.,
+ 2010;
+ Diggle,
+ 2006;
+Höhle,
+ 2009;
+ Keeling
+ et
+ al.,
+ 2001;
+ Scheel
+ et
+ al.,
+ 2007).
+ When
+ such
+models
+ are
+ capable
+ to
+ reproduce
+ the
+ main
+ patterns
+ in
+ the
+ host-
+pathogen
+ population
+ dynamics,
+ including
+ the
+ spread
+ within
+ and
+between
+ farms,
+ they
+ can
+ be
+ used
+ to
+ predict
+ future
+ infection
+ levels
+as
+ well
+ as
+ simulate
+ the
+ outcomes
+ of
+ disease
+ mitigation
+ scenarios,
+examples
+ being
+ interventions
+ to
+ mitigate
+ bovine
+ tuberculosis
+ in
+Great
+ Britain
+ (Brooks-Pollock
+ et
+ al.,
+ 2014) and
+ long
+ term
+ effects
+ of
+infection
+ control
+ measurements
+ to
+ mitigate
+ salmonid
+ alphavirus
+(SAV)
+ incidences
+ causing
+ pancreas
+ disease
+ (PD)
+ outbreaks
+ (Aldrin
+et
+ al.,
+ 2015).
+ The
+ Norwegian
+ salmonid
+ production
+ system
+ is
+ excep-
+tionally
+ well
+ suited
+ for
+ developing
+ models
+ for
+ salmon
+ lice
+ infection
+dynamics
+ because
+ of
+ the
+ wealth
+ of
+ surveillance
+ time-series
+ that
+document
+ both
+ the
+ spatial
+ locations
+ and
+ population
+ sizes
+ of
+ host
+populations
+ at
+ risk
+ of
+ infection,
+ as
+ well
+ as
+ salmon
+ lice
+ abundances
+in
+ these
+ host
+ populations.
+ Coupling
+ these
+ host
+ and
+ parasite
+ pop-
+ulation
+ data
+ have
+ provided
+ insights
+ into
+ e.g.
+ how
+ salmon
+ lice
+spread
+ between
+ farms
+ depending
+ on
+ between-farm
+ distances,
+ and
+how
+ transmission
+ and
+ parasite
+ abundances
+ depend
+ on
+ local
+ host
+biomasses
+ (Jansen
+ et
+ al.,
+ 2012;
+ Aldrin
+ et
+ al.,
+ 2013;
+ Kristoffersen
+et
+ al.,
+ 2014).
+ However,
+ previous
+ models
+ that
+ describe
+ both
+ between
+and
+ within
+ farm
+ parasite
+ population
+ dynamics
+ have
+ for
+ simplicity
+typically
+ been
+ autoregressive
+ statistical
+ models
+ focusing
+ on
+ sin-
+gle
+ aggregated
+ measures
+ of
+ parasite
+ infection
+ levels
+ (Jansen
+ et
+ al.,
+2012;
+ Aldrin
+ et
+ al.,
+ 2013;
+ Kristoffersen
+ et
+ al.,
+ 2013,
+ 2014).
+ Alterna-
+tively,
+ models
+ have
+ been
+ developed
+ for
+ simulation
+ purposes
+ only
+(Groner
+ et
+ al.,
+ 2014)
+ or
+ focused
+ on
+ the
+ population
+ dynamics
+ on
+ sin-
+gle
+ farms
+ over
+ a
+ limited
+ period
+ (Krkoˇsek
+ et
+ al.,
+ 2010).
+ Most
+ of
+ these
+approaches
+ have
+ relied
+ heavily
+ on
+ estimates
+ of
+ demographic
+ rates
+obtained
+ in
+ the
+ laboratory
+ (Stien
+ et
+ al.,
+ 2005;
+ Revie
+ et
+ al.,
+ 2005;
+Gettinby
+ et
+ al.,
+ 2011;
+ Groner
+ et
+ al.,
+ 2013,
+ 2016a;
+ Rittenhouse
+ et
+ al.,
+2016).
+The
+ aim
+ of
+ the
+ present
+ paper
+ is
+ to
+ formulate
+ a
+ fully
+ mechanis-
+tic
+ stage-structured
+ population
+ model
+ for
+ the
+ salmon
+ louse,
+ that
+also
+ allows
+ for
+ the
+ complexities
+ inherent
+ in
+ full
+ scale
+ salmon
+ farm-
+ing.
+ Furthermore,
+ the
+ model
+ accounts
+ for
+ the
+ hierarchical
+ structure
+of
+ the
+ data
+ obtained
+ from
+ the
+ production
+ system
+ where
+ salmon
+lice
+ are
+ counted
+ on
+ subsamples
+ of
+ ﬁsh,
+ the
+ ﬁsh
+ being
+ aggregated
+into
+ separate
+ cages
+ and
+ the
+ cages
+ being
+ aggregated
+ to
+ farm.
+ The
+model
+ estimates
+ parameters
+ controlling
+ a
+ wide
+ range
+ of
+ processes,
+including
+ effects
+ of
+ temperature
+ on
+ demographic
+ rates,
+ ﬁsh
+ size
+ and
+abundance
+ effects
+ on
+ transmission
+ rates,
+ the
+ different
+ effect
+ sizes,
+temporal
+ and
+ stage
+ speciﬁc
+ effects
+ of
+ a
+ wide
+ range
+ of
+ salmon
+ lice
+control
+ measures,
+ and
+ distance-based
+ transmission
+ rates
+ between
+farms.
+ The
+ objectives
+ for
+ developing
+ such
+ a
+ complex
+ population
+model
+ for
+ the
+ salmon
+ louse
+ was
+ to
+ cover
+ several
+ needs
+ in
+ modern
+salmon
+ farming:
+ (1)
+ To
+ develop
+ a
+ tool
+ that
+ keeps
+ account
+ of
+ the
+salmon
+ louse
+ populations
+ at
+ the
+ production
+ unit
+ level
+ in
+ salmon
+farms,
+ based
+ on
+ the
+ successive
+ counting
+ of
+ salmon
+ louse
+ infections,
+and
+ produce
+ more
+ reliable
+ estimates
+ of
+ salmon
+ louse
+ population
+sizes
+ at
+ any
+ point
+ in
+ time
+ than
+ the
+ individual
+ salmon
+ louse
+ counts.
+(2)
+ To
+ produce
+ short
+ term
+ predictions
+ of
+ future
+ salmon
+ louse
+ infec-
+tion
+ levels
+ to
+ enable
+ proactive
+ use
+ of
+ salmon
+ louse
+ management
+actions.
+ (3)
+ To
+ evaluate
+ the
+ efﬁciency
+ of
+ different
+ control
+ measures.
+(4)
+ To
+ evaluate
+ whether
+ estimates
+ of
+ demographic
+ rates
+ obtained
+ in
+the
+ laboratory
+ seems
+ applicable
+ in
+ full
+ scale
+ production
+ settings.
+ (5)
+To
+ explore
+ importance
+ of
+ different
+ sources
+ of
+ infection
+ (e.g.
+ inter-
+nal
+ versus
+ external
+ sources).
+ (6)
+ Finally,
+ to
+ develop
+ a
+ sufﬁciently
+realistic
+ model
+ that
+ can
+ be
+ used
+ for
+ scenario-simulations
+ exploring
+the
+ effects
+ of
+ various
+ parasite
+ control
+ strategies.
+ In
+ this
+ paper,
+ we
+describe
+ the
+ model
+ in
+ detail
+ and
+ discuss
+ the
+ results
+ in
+ relation
+ to
+the
+ ﬁrst
+ ﬁve
+ objectives.
+ Scenario
+ simulations
+ from
+ the
+ model
+ will
+be
+ the
+ focus
+ in
+ later
+ work.
+2.
+ Materials
+ and
+ methods
+2.1.
+ Data
+Farm
+ production
+ of
+ salmon
+ comprises
+ a
+ freshwater
+ juvenile
+phase,
+ being
+ followed
+ by
+ a
+ marine
+ grow
+ out
+ phase,
+ the
+ latter
+ which
+is
+ the
+ focus
+ of
+ this
+ study.
+ The
+ production
+ of
+ salmon
+ on
+ a
+ Norwe-
+gian
+ marine
+ farm
+ is
+ initiated
+ by
+ stocking
+ juvenile
+ smolts
+ to
+ cages
+(or
+ net-pens)
+ either
+ in
+ spring
+ or
+ in
+ autumn.
+ Salmon
+ are
+ kept
+ in
+ the
+marine
+ farms
+ for
+ about
+ 1.5
+ years
+ after
+ which
+ they
+ are
+ slaughtered
+for
+ food
+ consumption.
+ In
+ Norway,
+ only
+ ﬁsh
+ of
+ the
+ same
+ year
+ class
+of
+ age
+ are
+ kept
+ on
+ a
+ given
+ farm
+ and
+ we term
+ this
+ a
+ cohort
+ through-
+out
+ the
+ present
+ paper.
+ After
+ slaughtering,
+ it
+ is
+ mandatory
+ to
+ fallow
+the
+ farm
+ for
+ a
+ period
+ of
+ at
+ least
+ two
+ months
+ before
+ stocking
+ a
+ new
+cohort
+ of
+ salmon.
+The
+ main
+ body
+ of
+ data
+ in
+ the
+ present
+ study
+ consist
+ of
+ cage-level
+data
+ from
+ 32
+ marine
+ salmon
+ farms
+ in
+ Norway,
+ of
+ which
+ 12
+ farms
+ are
+aggregated
+ just
+ north
+ of
+ the
+ island
+ Frøya
+ in
+ Mid-Norway
+ (Fig.
+ 1).
+ For
+each
+ farm,
+ the
+ data
+ covers
+ a
+ full
+ production
+ cycle
+ for
+ farmed
+ salmon,
+from
+ stocking
+ as
+ smolts
+ to
+ slaughtering
+ as
+ adult
+ Atlantic
+ salmon
+(Salmo
+ salar
+ L.),
+ including
+ ﬁsh
+ production
+ data,
+ lice
+ counts,
+ tem-
+peratures
+ and
+ louse
+ control
+ efforts.
+ Salmon
+ were
+ stocked
+ between
+2011
+ and
+ 2013
+ and
+ slaughtered
+ about
+ 1
+ 1/2
+ year
+ after
+ stocking,
+between
+ 2012
+ and
+ 2014.
+ The
+ number
+ of
+ production
+ units
+ (cages)
+per
+ farm
+ varied
+ from
+ 3
+ to
+ 12,
+ but
+ were
+ usually
+ around
+ 8
+ (mean
+ 7.7).
+For
+ 9
+ farms,
+ the
+ ﬁsh
+ were
+ moved
+ between
+ cages
+ within
+ the
+ farm
+during
+ the
+ production
+ period.
+Seawater
+ temperatures
+ were
+ measured
+ at
+ 3
+ m
+ depth
+ at
+ the
+farms.
+ The
+ average
+ temperature
+ was
+ 9.1 ◦C,
+ and
+ 95%
+ of
+ the
+ tem-
+peratures
+ were
+ between
+ 3.6
+ and
+ 15.0 ◦C.
+ Data
+ on
+ salinity
+ were
+unavailable
+ in
+ sufﬁcient
+ detail
+ and
+ have
+ therefore
+ not
+ been
+ used.
+The
+ production
+ data
+ consist
+ of
+ daily
+ numbers
+ and
+ mean
+ weights
+of
+ salmon
+ per
+ cage
+ during
+ the
+ production
+ period,
+ information
+ on
+movement
+ of
+ salmon
+ between
+ cages
+ within
+ farms
+ and
+ information
+on
+ antiparasitic
+ lice
+ treatment
+ using
+ chemotherapeutic
+ medicals
+(day
+ of
+ application
+ and
+ type
+ of
+ medical).
+ Furthermore,
+ the
+ data
+contain
+ information
+ on
+ stocking
+ of
+ cleaner
+ ﬁsh
+ (day
+ and
+ number
+of
+ cleaner
+ ﬁsh
+ stocked),
+ but
+ with
+ limited
+ information
+ on
+ their
+ mor-
+tality,
+ and
+ hence
+ on
+ the
+ number
+ of
+ cleaner
+ ﬁsh
+ present
+ at
+ a
+ given
+day.
+ The
+ cleaner
+ ﬁsh
+ are
+ usually
+ either
+ lumpsuckers
+ (Cyclopterus
+lumpus),
+ ballan
+ wrasses
+ (Labrus
+ bergylta)
+ or
+ goldsinny
+ wrasses
+(Ctenolabrus
+ rupestris)
+ or
+ a
+ mix
+ of
+ these,
+ but
+ we do
+ not
+ distinguish
+between
+ various
+ species
+ of
+ cleaner
+ ﬁsh
+ in
+ the
+ model.
+The
+ production
+ cycles
+ lasted
+ on
+ average
+ 16.5
+ months
+ per
+ cage,
+with
+ on
+ average
+ 140
+ 000
+ ﬁsh
+ per
+ cage,
+ typically
+ more
+ in
+ the
+ begin-
+ning
+ of
+ a
+ production
+ cycle
+ and
+ less
+ towards
+ the
+ end.
+ The
+ average
+minimum
+ and
+ maximum
+ ﬁsh
+ weights
+ during
+ a
+ production
+ cycle
+was
+ 140
+ g
+ and
+ 5.7
+ kg,
+ respectively.
+ 89%
+ of
+ the
+ cages
+ contained
+cleaner
+ ﬁsh
+ in
+ parts
+ of
+ the
+ production
+ period.
+As
+ a
+ main
+ rule,
+ lice
+ counts
+ were
+ performed
+ on
+ a
+ sample
+ of
+ at
+least
+ 10
+ ﬁsh
+ every
+ second
+ week
+ for
+ each
+ cage.
+ The
+ salmon
+ lice
+ were
+divided
+ into
+ three
+ categories
+ according
+ to
+ developmental
+ stages,
+i.e.
+ (i)
+ chalimus
+ (CH),
+ (ii)
+ other
+ mobiles
+ (OM),
+ which
+ consist
+ of
+ pre-
+adults
+ of
+ both
+ sexes
+ and
+ adult
+ males,
+ and
+ (iii)
+ adult
+ females
+ (AF).
+There
+ were
+ on
+ average
+ 41
+ dates
+ with
+ lice
+ counts
+ per
+ cage,
+ with
+averages
+ (abundance)
+ of
+ 0.23
+ CH,
+ 0.76
+ OM
+ and
+ 0.18
+ AF
+ per
+ ﬁsh.
+ Six
+different
+ types
+ of
+ antiparasitic
+ medicals
+ were
+ used
+ (Table
+ 1),
+ and
+there
+ were
+ on
+ average
+ 4.6
+ events
+ of
+ medical
+ treatments
+ per
+ cage.
+The
+ medicals
+ emamectin
+ benzoate
+ and
+ diﬂubenzuron
+ are
+ given
+through
+ the
+ feed,
+ typically
+ over
+ a
+ period
+ of
+ around
+ two
+ weeks.
+ These
+treatments
+ have
+ a
+ relatively
+ low
+ daily
+ effect,
+ but
+ effects
+ last
+ over
+a
+ prolonged
+ period.
+ The
+ other
+ medicals
+ are
+ applied
+ as
+ bath
+ treat-
+ments
+ over
+ a
+ duration
+ of
+ a
+ few
+ hours,
+ with
+ a
+ larger
+ daily
+ effect,
+ but
+lasting
+ over
+ a
+ shorter
+ period
+ (see
+ Section
+ 2.2.3).
+In
+ addition
+ to
+ the
+ detailed
+ cage-level
+ data
+ on
+ the
+ 32
+ farms,
+ we
+have
+ more
+ aggregated
+ data
+ on
+ all
+ other
+ Norwegian
+ marine
+ salmon
+
+
+<!-- page 3 -->
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+ 
+335
+Fig.
+ 1.
+ Geographical
+ positions
+ of
+ the
+ 32
+ salmon
+ farms
+ on
+ the
+ West
+ coast
+ of
+ Norway
+ (green
+ circles).
+ The
+ highlighted
+ area
+ contains
+ the
+ 12
+ farms
+ north
+ of
+ the
+ island
+ Frøya.
+ (For
+interpretation
+ of
+ the
+ references
+ to
+ colour
+ in
+ this
+ ﬁgure
+ legend,
+ the
+ reader
+ is
+ referred
+ to
+ the
+ web
+ version
+ of
+ this
+ article.)
+Table
+ 1
+Overview
+ of
+ types
+ of
+ medical
+ treatments
+ used.
+ Codes:
+ Y
+ =
+ yes,
+ N
+ = no,
+ NA
+ =
+ missing
+ information.
+ The
+ table
+ content
+ is
+ based
+ on
+ information
+ in
+ Nygaard
+ (2010)
+ and
+ Ottesen
+et
+ al.
+ (2012). The
+ delay
+ del and
+ the
+ duration
+ constant
+ dur are
+ deﬁned
+ in
+ Section
+ 2.2.3. For
+ hydrogen
+ peroxide,
+ the
+ unit
+ for
+ ıdur is
+ days.
+Medical
+ 
+Product
+ name
+ 
+Delay
+ del (days)
+ 
+Duration
+ constant
+ıdur (◦C·days
+ or
+days)
+Temperature
+dependency
+Effect
+ on
+ CH
+ 
+Effect
+ on
+ PA
+ 
+Effect
+ on
+ A
+ 
+Effect
+ on
+ egg
+Hydrogen
+peroxide
+(H2O2)
+0
+ 
+7
+ 
+N
+ 
+N
+ 
+Y
+ 
+Y
+ 
+NA
+Deltamethrin
+ 
+Alphamax
+ 
+2
+ 
+84
+ 
+Y
+ 
+Y
+ 
+Y
+ 
+Y
+ 
+N
+Cypermethrin
+ 
+Betamax
+ 
+2
+ 
+84
+ 
+Y
+ 
+Y
+ 
+Y
+ 
+Y
+ 
+N
+Azamethiphos
+ 
+Salmosan
+ 
+1
+ 
+42
+ 
+Y
+ 
+N
+ 
+Y
+ 
+Y
+ 
+N
+Emamectin
+benzoate
+Slice
+ 
+5
+ 
+210
+ 
+Y
+ 
+Y
+ 
+Y
+ 
+Y
+ 
+NA
+Diﬂubenzuron
+ 
+Releeze
+ 
+10
+ 
+126
+ 
+Y
+ 
+Y
+ 
+Y
+ 
+N
+ 
+N
+farms.
+ For
+ a
+ farm
+ f′ at
+ day
+ t,
+ we
+ know
+ the
+ number
+ of
+ salmon,
+ denoted
+by
+ NSAL
+tf ′ .
+ We also
+ have
+ an
+ estimate ˆAAF
+tf ′ of
+ the
+ abundance
+ of
+ AF
+ lice
+at
+ the
+ farm,
+ based
+ on
+ weekly
+ lice
+ counts
+ on
+ a
+ sample
+ of
+ ﬁsh,
+ and
+therefore
+ also
+ an
+ estimate
+ of
+ the
+ total
+ number
+ of
+ AF
+ lice,
+ given
+ by
+ˆNAF
+tf ′ = ˆAAF
+tf ′ NSAL
+tf ′ . Finally,
+ we
+ have
+ the
+ seaway
+ distances
+ between
+ all
+farms,
+ and
+ we
+ let
+ dff ′ denote
+ the
+ seaway
+ distance
+ between
+ a
+ farm
+ f
+and
+ another
+ farm
+ f′. These
+ data
+ were
+ used
+ to
+ calculate
+ an
+ external
+infection
+ pressure
+ index(see
+ Section
+ 2.2.9).
+Fig.
+ 2
+ shows
+ the
+ most
+ relevant
+ data
+ for
+ one
+ cage
+ at
+ one
+ farm.
+ The
+upper
+ panel
+ shows
+ time
+ plots
+ of
+ the
+ seawater
+ temperature
+ (on
+ the
+left
+ y-axis)
+ and
+ the
+ external
+ infection
+ pressure
+ index.
+ In
+ addition,
+the
+ ﬁrst
+ stocking
+ of
+ salmon
+ in
+ this
+ cage
+ is
+ indicated
+ by
+ the
+ vertical
+pink
+ line
+ and
+ the
+ various
+ medical
+ treatments
+ are
+ shown
+ as
+ blue
+vertical
+ lines.
+ Finally,
+ the
+ stocking
+ of
+ cleaner
+ ﬁsh
+ is
+ also
+ shown
+ as
+vertical
+ lines.
+ The
+ vertical
+ extension
+ of
+ these
+ lines
+ is
+ proportional
+ to
+the
+ stocked
+ cleaner
+ ﬁsh
+ ratio
+ (on
+ the
+ right
+ y-axis),
+ i.e.
+ the
+ number
+of
+ stocked
+ cleaner
+ ﬁsh
+ divided
+ by
+ the
+ number
+ of
+ salmon.
+ The
+ lower
+three
+ panels
+ show
+ the
+ counted
+ abundance
+ of
+ lice
+ in
+ the
+ CH,
+ OM
+ and
+AF
+ categories.
+
+
+<!-- page 4 -->
+336
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+Fig.
+ 2.
+ Counted
+ lice
+ abundance
+ and
+ other
+ information
+ for
+ one
+ cage
+ at
+ one
+ farm.
+ Upper
+ panel:
+ Seawater
+ temperature
+ (green
+ line),
+ external
+ infection
+ pressure
+ index
+ (red
+ dotted
+curve),
+ time
+ of
+ stocking
+ (pink
+ vertical
+ line),
+ treatments
+ (blue
+ vertical
+ lines)
+ and
+ stocked
+ cleaner
+ ﬁsh
+ ratio
+ (black
+ vertical
+ lines).
+ Three
+ lower
+ panels:
+ Counts
+ of
+ chalimi,
+ other
+mobiles
+ or
+ adult
+ females
+ shown
+ as
+ green
+ circles
+ connected
+ by
+ straight
+ lines.
+ (For
+ interpretation
+ of
+ the
+ references
+ to
+ colour
+ in
+ this
+ ﬁgure
+ legend,
+ the
+ reader
+ is
+ referred
+ to
+ the
+web
+ version
+ of
+ this
+ article.)
+2.2.
+ Model
+ framework
+2.2.1.
+ Modelling
+ background
+ and
+ overview
+Many
+ authors
+ have
+ previously
+ presented
+ models
+ for
+ salmon
+louse
+ population
+ dynamics.
+ Most
+ of
+ these
+ models
+ use
+ parame-
+ter
+ values
+ obtained
+ in
+ a
+ laboratory
+ (Stien
+ et
+ al.,
+ 2005;
+ Groner
+et
+ al.,
+ 2013,
+ 2016a)
+ or
+ from
+ small
+ scale
+ experimental
+ units
+ in
+ the
+marine
+ environment
+ (Krkoˇsek
+ et
+ al.,
+ 2009).
+ When
+ full
+ scale
+ farm-
+production
+ data
+ have
+ been
+ used
+ for
+ estimation,
+ these
+ have
+ been
+aggregated
+ and
+ only
+ a
+ few
+ of
+ the
+ model
+ parameters
+ were
+ esti-
+mated
+ from
+ these
+ data
+ (Revie
+ et
+ al.,
+ 2005;
+ Gettinby
+ et
+ al.,
+ 2011).
+The
+ present
+ estimating
+ approach
+ is
+ fundamentally
+ different.
+ All
+ the
+parameters
+ are
+ estimated
+ by
+ ﬁtting
+ our
+ model
+ to
+ the
+ individual
+lice
+ counts
+ collected
+ through
+ the
+ production
+ period
+ in
+ commercial
+ﬁsh
+ farms.
+ However,
+ to
+ ensure
+ that
+ the
+ ﬁnal
+ parameter
+ values
+ are
+within
+ biological
+ plausible
+ ranges,
+ we
+ use
+ laboratory
+ data,
+ mostly
+those
+ summarised
+ in
+ Stien
+ et
+ al.
+ (2005), to
+ specify
+ informative
+prior
+ distributions
+ for
+ many
+ of
+ the
+ parameters.
+ The
+ priors
+ are
+ then
+updated
+ to
+ posterior
+ distributions
+ by
+ the
+ full
+ scale
+ farm
+ data
+ using
+Bayesian
+ methods.
+Since
+ the
+ model
+ is
+ estimated
+ on
+ real
+ data
+ from
+ many
+ different
+farms
+ under
+ various
+ conditions,
+ it
+ must
+ simultaneously
+ incorpo-
+rate
+ many
+ features
+ to
+ handle
+ activities
+ or
+ events
+ that
+ affect
+ lice
+abundance,
+ including
+ various
+ types
+ of
+ treatments,
+ external
+ infec-
+tion
+ from
+ neighbouring
+ farms
+ and
+ the
+ movement
+ of
+ ﬁsh
+ (and
+ then
+also
+ lice)
+ between
+ cages
+ at
+ the
+ same
+ farm.
+ Our
+ model
+ is
+ therefore
+more
+ complex
+ than
+ the
+ aforementioned
+ models.
+Biologically,
+ the
+ life
+ cycle
+ of
+ the
+ salmon
+ louse
+ consists
+ of
+ eight
+developmental
+ stages
+ (Hamre
+ et
+ al.,
+ 2013).
+ These
+ are
+ aggregated
+into
+ the
+ following
+ ﬁve
+ stages
+ in
+ our
+ model:
+ (i)
+ recruits
+ (R,
+ eggs
+ and
+nauplii
+ larvae),
+ (ii)
+ copepodids
+ (CO,
+ infective
+ planktonic
+ larvae),
+ (iii)
+chalimi
+ (CH,
+ sessile
+ lice
+ on
+ ﬁsh),
+ (iv)
+ pre-adults
+ (PA,
+ mobile
+ lice
+ on
+ﬁsh)
+ and
+ (v)
+ adults
+ (A,
+ also
+ mobile
+ lice
+ on
+ ﬁsh).
+ The
+ adults
+ are
+ further
+divided
+ into
+ adult
+ females
+ (AF)
+ and
+ adult
+ males
+ (AM).
+The
+ main
+ stage
+ structure
+ and
+ the
+ focus
+ on
+ temperature
+ depen-
+dencies
+ in
+ development
+ and
+ recruitment
+ are
+ aspects
+ of
+ the
+ model
+that
+ are
+ inspired
+ by
+ the
+ model
+ in
+ Stien
+ et
+ al.
+ (2005). Stien
+ et
+ al.
+(2005)
+ suggest
+ a
+ delay
+ integro-differential
+ equation
+ model,
+ a
+ model
+structure
+ commonly
+ used
+ for
+ parasitic
+ gastrointestinal
+ nematodes
+of
+ farm
+ animals
+ (e.g.
+ Grenfell
+ et
+ al.,
+ 1987) and
+ free
+ living
+ insects
+ pop-
+ulations
+ (e.g.
+ Nisbet
+ and
+ Gurney,
+ 1983;
+ Nelson
+ et
+ al.,
+ 2013).
+ We have
+chosen
+ a
+ discrete
+ time
+ version
+ that
+ uses
+ a
+ one
+ day
+ time
+ step.
+ This
+could
+ indicate
+ that
+ matrix
+ models
+ and
+ associated
+ methods
+ and
+ the-
+ory
+ could
+ be
+ used
+ to
+ analyse
+ the
+ model
+ (Caswell,
+ 2001).
+ However,
+
+
+<!-- page 5 -->
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+ 
+337
+Table
+ 2
+Overview
+ of
+ the
+ model
+ notation.
+ When
+ relevant,
+ quantities
+ may
+ be
+ used
+ with
+ sub-
+scripts
+ f,
+ t,
+ a
+ and
+ c,
+ and
+ with
+ superscripts
+ R,
+ CO, CH, PA, AF
+ or
+ AM.
+f 
+index
+ for
+ farm
+t
+ 
+index
+ for
+ time
+ (day)
+a
+ 
+index
+ for
+ stage-age
+c
+ 
+index
+ for
+ cage
+NR
+total
+ number
+ of
+ lice
+ recruits
+NCO
+total
+ number
+ of
+ copepodids
+NCH
+total
+ number
+ of
+ chalimus
+ larvae
+ on
+ ﬁsh
+ in
+ a
+ given
+ cage
+NPA
+total
+ number
+ of
+ pre-adult
+ lice
+ on
+ ﬁsh
+ in
+ a
+ given
+ cage
+NAF
+total
+ number
+ of
+ adult
+ female
+ lice
+ on
+ ﬁsh
+ in
+ a
+ given
+ cage
+NAM
+total
+ number
+ of
+ adult
+ male
+ lice
+ on
+ ﬁsh
+ in
+ a
+ given
+ cage
+s
+ 
+survival
+ rate
+ (proportion
+ per
+ day)
+m
+ 
+mortality
+ rate
+ (m
+ =
+ 1
+ −
+ s)
+d
+ 
+development
+ rate
+ (proportion
+ per
+ day)
+r
+ 
+reproduction
+ rate
+ (numbers
+ per
+ day
+ and
+ per
+ AF
+ lice)
+eExt
+modifying
+ factor
+ for
+ external
+ recruitment
+NSAL
+number
+ of
+ salmon
+W
+ 
+average
+ weight
+ of
+ salmon
+MSAL
+c′c
+number
+ of
+ salmon
+ moved
+ from
+ cage
+ c′ to
+ cage
+ c
+wc′c
+proportion
+ of
+ salmon
+ moved,
+ MSAL
+c′c /NSAL
+c′
+A
+ =
+ NAF/NSAL
+abundance
+ of
+ adult
+ female
+ lice
+ on
+ ﬁsh
+ in
+ a
+ given
+ cage
+NCLF
+number
+ of
+ cleaner
+ ﬁsh
+SCLF
+number
+ of
+ cleaner
+ ﬁsh
+ stocked
+Y
+ 
+Number
+ of
+ lice
+ counted
+ on
+ a sample
+ of
+ n
+ ﬁsh
+
+ 
+parameters
+ related
+ to
+ mortality
+ı
+ 
+parameters
+ related
+ to
+ development
+
+ 
+expected
+ values
+ˇ,
+ ,
+ ,
+ 
+ 
+various
+ parameters
+2
+variances
+z
+ 
+autoregressive
+ processes
+	
+ 
+autoregressive
+ coefﬁcients
+the
+ strong
+ temperature
+ dependence
+ in
+ development
+ and
+ recruit-
+ment
+ rates
+ makes
+ this
+ difﬁcult.
+ As
+ the
+ temperature
+ varies
+ through
+the
+ year,
+ the
+ temperature
+ lice
+ experience
+ while
+ at
+ a
+ given
+ stage
+needs
+ to
+ be
+ kept
+ account
+ of.
+ Accordingly,
+ we
+ will
+ use
+ the
+ expres-
+sion
+ “stage-age”
+ throughout
+ the
+ manuscript
+ to
+ denote
+ that
+ the
+ age
+of
+ a
+ cohort
+ of
+ salmon
+ lice
+ within
+ a
+ stage
+ is
+ kept
+ track
+ of
+ throughout,
+and
+ used
+ to
+ determine
+ development
+ rates
+ to
+ the
+ next
+ stage.
+The
+ general
+ idea
+ is
+ that
+ for
+ stage-age
+ a
+ =
+ 0,
+ the
+ lice
+ have
+ devel-
+oped
+ into
+ the
+ given
+ stage
+ from
+ the
+ previous
+ stage,
+ and
+ that
+ for
+ a
+ >
+ 0,
+the
+ lice
+ can
+ develop
+ into
+ the
+ subsequent
+ stage.
+ We further
+ assume
+that
+ within
+ a
+ day,
+ in
+ the
+ following
+ order;
+(i)
+ lice
+ may
+ be
+ counted
+ on
+ a
+ sample
+ of
+ ﬁsh,
+(ii)
+ lice
+ may
+ die
+ due
+ to
+ natural
+ mortality
+ or
+ treatment,
+(iii)
+ the
+ surviving
+ lice
+ might
+ develop
+ to
+ the
+ next
+ stage,
+ and
+ ﬁnally,
+(iv)
+ ﬁsh,
+ including
+ their
+ sessile
+ and
+ mobile
+ lice,
+ can
+ be
+ moved
+ to
+another
+ cage
+ within
+ the
+ farm
+ or
+ be
+ removed
+ from
+ the
+ farm.
+Removement
+ of
+ ﬁsh
+ from
+ the
+ farm
+ may
+ be
+ due
+ to
+ slaughter,
+ﬁsh
+ mortality
+ of
+ other
+ reasons
+ or,
+ occasionally,
+ movement
+ of
+ ﬁsh
+to
+ another
+ farm.
+ Note
+ that
+ we
+ have
+ data
+ on
+ stocking
+ of
+ ﬁsh,
+ on
+movement
+ of
+ ﬁsh
+ between
+ cages
+ within
+ the
+ farm
+ and
+ on
+ removal
+of
+ ﬁsh
+ from
+ the
+ farm,
+ and
+ there
+ is
+ therefore
+ no
+ need
+ to
+ model
+ the
+population
+ dynamics
+ of
+ the
+ farmed
+ salmonids
+ themselves.
+ When
+ﬁsh
+ are
+ stocked
+ to
+ marine
+ farms
+ as
+ smolt,
+ they
+ are
+ free
+ of
+ lice,
+ and
+hence
+ the
+ initial
+ lice
+ transmission
+ is
+ caused
+ by
+ external
+ infections.
+Not
+ until
+ some
+ lice
+ at
+ the
+ farm
+ have
+ developed
+ into
+ adults,
+ can
+ the
+internal
+ infection
+ process
+ start.
+ The
+ population
+ model
+ for
+ a
+ farm
+with
+ two
+ cages
+ is
+ illustrated
+ in
+ Fig.
+ 3. In
+ the
+ R
+ and
+ CO
+ stages,
+ the
+lice
+ are
+ associated
+ with
+ the
+ farm,
+ but
+ not
+ with
+ any
+ speciﬁc
+ cage.
+From
+ the
+ CH
+ stage
+ and
+ beyond,
+ however,
+ the
+ lice
+ have
+ infected
+ the
+ﬁsh
+ and
+ are
+ therefore
+ associated
+ with
+ speciﬁc
+ cages.
+ In
+ the
+ follow-
+ing
+ subsections
+ we
+ describe
+ the
+ various
+ aspects
+ of
+ the
+ population
+model
+ and
+ how
+ the
+ model
+ is
+ related
+ to
+ lice
+ count
+ data.
+ Table
+ 2
+ gives
+an
+ overview
+ of
+ the
+ main
+ notation
+ we
+ use.
+2.2.2.
+ Population
+ model
+Below,
+ we
+ present
+ the
+ population
+ model
+ for
+ lice
+ at
+ a
+ given
+ farm
+(but
+ for
+ simplicity
+ without
+ the
+ farm
+ index
+ f).
+ The
+ model
+ consists
+of
+ two
+ equations
+ per
+ stage.
+ The
+ ﬁrst
+ equation
+ handles
+ lice
+ entering
+a
+ given
+ stage
+ at
+ stage-age
+ 0,
+ typically
+ from
+ the
+ preceding
+ model
+stage.
+ The
+ second
+ per-stage
+ equation
+ handles
+ lice
+ ageing
+ into
+ higher
+stage-ages
+ without
+ developing
+ into
+ another
+ stage.
+The
+ submodels
+ for
+ survival,
+ development
+ and
+ reproduction
+rates
+ are
+ presented
+ later
+ in
+ Sections
+ 2.2.3–2.2.6.
+Model
+ for
+ the
+ recruitment
+ stage
+At
+ the
+ R
+ stage,
+ lice
+ are
+ not
+ associated
+ with
+ a
+ speciﬁc
+ cage,
+ but
+rather
+ seen
+ as
+ a
+ reservoir
+ of
+ recruits
+ with
+ the
+ potential
+ to
+ infect
+ a
+ﬁsh
+ host
+ at
+ the
+ farm
+ in
+ question
+ in
+ the
+ future.
+ The
+ model
+ is:
+NR
+t(a=0) =
+ eExt
+t
+NAFExt
+t−1 rExt
+t−1 +
+
+c
+
+a′
+[NAF
+(t−1)a′csAF
+(t−1)a′cr(t−1)a′c],
+(1)
+NR
+t(a>0) =
+ NR
+(t−1)(a−1)sR
+(t−1)(a−1)[1
+ −
+ dR
+(t−1)(a−1)].
+ 
+(2)
+The
+ ﬁrst
+ term
+ in
+ Eq.
+ (1)
+ represents
+ recruitment
+ (into
+ stage-age
+ 0)
+from
+ neighbouring
+ farms,
+ also
+ called
+ external
+ recruitment.
+ Here,
+NAFExt
+t−1
+is
+ a
+ weighted
+ sum
+ of
+ adult
+ females
+ at
+ neighbouring
+ farms
+at
+ time
+ t
+ −
+ 1
+ (deﬁned
+ in
+ Section
+ 2.2.9).
+ Furthermore,
+ we
+ assume
+that
+ these
+ reproduce
+ with
+ a
+ rate
+ rExt
+t−1 (see
+ Section
+ 2.2.7).
+ Then,
+NAFExt
+t−1 rExt
+(t−1) can
+ be
+ interpreted
+ as
+ a
+ preliminary
+ estimate
+ of
+ the
+ num-
+ber
+ of
+ external
+ recruits
+ reaching
+ the
+ farm.
+ However,
+ this
+ accounts
+for
+ seaway
+ distances
+ to
+ neighbouring
+ farms,
+ but
+ not
+ for
+ the
+ sea
+currents
+ in
+ the
+ area
+ that
+ may
+ be
+ more
+ or
+ less
+ favourable
+ for
+ a
+ given
+farm,
+ and
+ which
+ also
+ may
+ vary
+ over
+ time.
+ Therefore,
+ we
+ have
+ intro-
+duced
+ the
+ modifying
+ factor
+ eExt
+t
+, which
+ is
+ a
+ farm-dependent
+ and
+time
+ varying
+ modifying
+ factor,
+ see
+ Section
+ 2.2.8
+ for
+ an
+ exact
+ def-
+inition.
+ Note
+ that
+ Eq.
+ (1)
+ only
+ takes
+ into
+ account
+ infections
+ from
+salmon
+ lice
+ on
+ farmed
+ ﬁsh.
+ One
+ could
+ include
+ an
+ extra
+ term
+ to
+account
+ for
+ infections
+ from
+ wild
+ salmon
+ and
+ trout,
+ but
+ these
+ are
+so
+ few
+ compared
+ to
+ the
+ farmed
+ ﬁsh
+ that
+ they
+ can
+ be
+ neglected
+(Johansen
+ et
+ al.,
+ 2011).
+The
+ second
+ term
+ in
+ (1)
+ represents
+ recruitment
+ (into
+ stage-age
+ 0)
+from
+ adult
+ female
+ lice
+ at
+ the
+ same
+ farm,
+ also
+ called
+ internal
+ recruit-
+ment.
+ The
+ product
+ NAF
+(t−1)a′csAF
+(t−1)a′c is
+ the
+ number
+ of
+ adult
+ females
+at
+ stage-age
+ a′ in
+ cage
+ c
+ that
+ survives
+ at
+ time
+ t −
+ 1 and
+ they
+ repro-
+duce
+ with
+ a
+ rate
+ r(t−1)a′c (see
+ Section
+ 2.2.6).
+ The
+ new
+ recruits
+ are
+summed
+ over
+ all
+ possible
+ stage-ages
+ of
+ the
+ adult
+ females
+ and
+ over
+all
+ cages.
+Eq.
+ (2)
+ keeps
+ track
+ of
+ the
+ number
+ of
+ recruits
+ of
+ stage-age
+ a
+ >
+ 0
+that
+ (i)
+ survives
+ from
+ the
+ previous
+ time
+ point
+ with
+ survival
+ rate
+sR
+(t−1)(a−1) (see
+ Section
+ 2.2.3) and
+ (ii)
+ do
+ not
+ develop
+ into
+ the
+ infec-
+tive
+ CO
+ stage,
+ where
+ dR
+(t−1)(a−1) is
+ the
+ development
+ rate,
+ i.e.
+ the
+proportion
+ of
+ recruits
+ that
+ develop
+ into
+ the
+ CO
+ stage
+ (see
+ Section
+2.2.4).
+The
+ equations
+ for
+ the
+ next
+ stages
+ use
+ similar
+ notation
+ for
+ sur-
+vival
+ rates,
+ development
+ rates
+ and
+ numbers
+ of
+ lice.
+Model
+ for
+ the
+ copepodid
+ stage
+NCO
+t(a=0) =
+
+a′
+NR
+(t−1)a′sR
+(t−1)a′dR
+(t−1)a′,
+ 
+(3)
+NCO
+t(a>0) =
+ NCO
+(t−1)(a−1)sCO
+(t−1)(a−1)[1
+ −
+
+c
+dCO
+(t−1)(a−1)c].
+ 
+(4)
+Here,
+ the
+ development
+ rate
+ dCO
+(t−1)(a−1)c (see
+ Section
+ 2.2.5)
+ rep-
+resents
+ the
+ infection
+ rate,
+ i.e.
+ the
+ proportion
+ of
+ the
+ available
+copepodids
+ that
+ during
+ a
+ day
+ infect
+ ﬁsh
+ in
+ cage
+ c
+ and
+ thus
+ enter
+ the
+CH
+ stage.
+ The
+ sum
+ over
+ cages,
+ dCO
+(t−1)(a−1) = 
+cdCO
+(t−1)(a−1)c is
+ then
+the
+ total
+ infection
+ rate
+ at
+ the
+ farm.
+ This
+ is
+ modelled
+ as
+ independent
+of
+ stage-age.
+ We note
+ that
+ when
+ an
+ infective
+ copepodid
+ (stage
+ CO)
+attaches
+ to
+ a
+ ﬁsh
+ host,
+ it
+ takes
+ approximately
+ 24
+ hours
+ before
+ it
+
+
+<!-- page 6 -->
+338
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+Fig.
+ 3.
+ Overview
+ of
+ the
+ population
+ model
+ for
+ the
+ salmon
+ louse.
+ Lice
+ in
+ the
+ orange,
+ red
+ and
+ green
+ stages
+ are
+ counted,
+ whereas
+ lice
+ in
+ the
+ blue
+ stages
+ are
+ not
+ counted.
+ Lice
+are
+ associated
+ with
+ a cage
+ from
+ the
+ chalimus
+ stage,
+ here
+ illustrated
+ by
+ a
+ farm
+ with
+ two
+ cages.
+ The
+ d-s,
+ m-s
+ and
+ r-s
+ symbolise
+ development,
+ mortality
+ and
+ recruitment,
+respectively.
+ (For
+ interpretation
+ of
+ the
+ references
+ to
+ colour
+ in
+ this
+ ﬁgure
+ legend,
+ the
+ reader
+ is
+ referred
+ to
+ the
+ web
+ version
+ of
+ this
+ article.)
+moults
+ into
+ the
+ CH
+ stage
+ (Krkoˇsek
+ et
+ al.,
+ 2009).
+ However,
+ in
+ the
+model
+ we
+ ignore
+ this
+ short
+ period
+ and
+ assume
+ that
+ a
+ copepodid
+enters
+ the
+ CH
+ stage
+ immediately
+ upon
+ attachment
+ to
+ a
+ ﬁsh
+ host.
+Model
+ for
+ the
+ chalimus
+ stage
+NCH
+t(a=0)c =
+
+a′
+NCO
+(t−1)a′sCO
+(t−1)a′dCO
+(t−1)a′c,
+ 
+(5)
+NCH
+t(a>0)c =
+
+c′
+NCH
+(t−1)(a−1)c′sCH
+(t−1)(a−1)c′[1
+ −
+ dCH
+(t−1)(a−1)].
+ 
+(6)
+From
+ the
+ CH
+ stage
+ on,
+ the
+ lice
+ are
+ attached
+ to
+ a
+ ﬁsh,
+ and
+ therefore
+associated
+ with
+ a
+ speciﬁc
+ cage.
+ We assume
+ that
+ the
+ attached
+ lice
+follow
+ the
+ ﬁsh
+ if
+ the
+ ﬁsh
+ are
+ moved
+ to
+ another
+ cage
+ or
+ if
+ the
+ ﬁsh
+ are
+removed
+ from
+ the
+ farm
+ (including
+ slaughtering
+ and
+ other
+ ﬁsh
+ mor-
+tality).
+ To
+ handle
+ this,
+ the
+ equations
+ given
+ here
+ for
+ the
+ CH,
+ PA
+ and
+ AF
+stages
+ are
+ extended
+ slightly
+ (see
+ Section
+ 1.2
+ in
+ the
+ Supplementary
+material).
+Model
+ for
+ the
+ pre-adult
+ stage
+NPA
+t(a=0)c =
+
+a′
+
+c′
+NCH
+(t−1)a′c′sCH
+(t−1)a′c′dCH
+(t−1)a′,
+ 
+(7)
+NPA
+t(a>0)c =
+
+c′
+NPA
+(t−1)(a−1)c′sPA
+(t−1)(a−1)c′[1
+ −
+ dPA
+(t−1)(a−1)].
+ 
+(8)
+Model
+ for
+ the
+ adult
+ stages
+For
+ the
+ adult
+ stage,
+ we distinguish
+ in
+ principle
+ between
+ males
+and
+ females.
+ However,
+ we
+ assume
+ that
+ males
+ and
+ females
+ have
+ the
+same
+ survival
+ and
+ development
+ rates
+ and
+ therefore
+ each
+ constitute
+50
+ %
+ of
+ the
+ adults.
+ The
+ main
+ reason
+ for
+ this
+ is
+ that
+ we
+ do
+ not
+ have
+data
+ on
+ the
+ number
+ of
+ adult
+ males
+ on
+ the
+ ﬁsh,
+ and
+ therefore
+ do
+ not
+have
+ the
+ information
+ necessary
+ for
+ separate
+ estimation
+ of
+ adult
+male
+ demographic
+ rates.
+ The
+ equations
+ for
+ adult
+ females
+ are
+ then
+NAF
+t(a=0)c =
+ 0.5
+
+a′
+NPA
+(t−1)a′c′sPA
+(t−1)a′c′dPA
+(t−1)a′,
+ 
+(9)
+NAF
+t(a>0)c =
+
+c′
+NAF
+(t−1)(a−1)c′sAF
+(t−1)(a−1)c′,
+ 
+(10)
+while
+ the
+ number
+ of
+ adult
+ males
+ is
+ equal
+ to
+ the
+ number
+ of
+ adult
+females:
+NAM
+tac =
+ NAF
+tac. 
+(11)
+2.2.3.
+ Survival
+ rates
+We
+ assume
+ that
+ the
+ survival
+ rates
+ may
+ be
+ farm-speciﬁc
+ for
+ some
+stages,
+ and
+ therefore
+ use
+ the
+ index
+ f when
+ convenient,
+ but
+ we
+sometimes
+ drop
+ the
+ superscript
+ that
+ indicates
+ the
+ stage
+ name.
+ We
+assume
+ that
+ the
+ total
+ survival
+ rate
+ is
+ the
+ product
+ of
+ three
+ terms;
+stfac =
+ snat
+tfac · sclf
+tfac ·
+ scht
+tfac =
+ (1
+ −
+ mnat
+tfac)
+ ·
+ (1
+ −
+ mclf
+tfac)
+ · (1
+ −
+ mcht
+tfac),
+ 
+(12)
+where
+ snat
+tfac is
+ survival
+ after
+ natural
+ mortality,
+ sclf
+tfc is
+ survival
+ after
+additional
+ mortality
+ due
+ to
+ cleaner
+ ﬁsh
+ predation
+ (independent
+of
+ stage-age)
+ and
+ scht
+tfc is
+ survival
+ after
+ additional
+ mortality
+ due
+ to
+chemotherapeutic
+ treatment
+ (independent
+ of
+ stage-age).
+ The
+ m-s
+denote
+ the
+ corresponding
+ mortalities.
+ The
+ two
+ latter
+ terms
+ are
+ rel-
+evant
+ only
+ for
+ the
+ CH,
+ PA
+ and
+ A
+ stages.
+ All
+ the
+ three
+ mortality
+ (and
+survival)
+ terms
+ must
+ lie
+ between
+ 0
+ and
+ 1,
+ but
+ they
+ have
+ different
+structures.
+Natural
+ mortality
+For
+ the
+ R
+ and
+ CO
+ stages,
+ we
+ simply
+ assume
+ that
+ the
+ natural
+mortality
+ is
+ a
+ constant
+ that
+ is
+ common
+ for
+ both
+ stages,
+ i.e.
+mRnat
+tfac =
+ mRnat =
+ RCOnat,
+ 
+(13)
+mCOnat
+tfac
+=
+ mCOnat =
+ RCOnat
+(14)
+For
+ each
+ of
+ the
+ CH,
+ PA
+ and
+ A
+ stages,
+ we
+ assume
+ that
+ the
+ natural
+mortalities
+ are
+ stochastic
+ processes
+ that
+ can
+ vary
+ over
+ time
+ and
+between
+ farms,
+ but
+ are
+ common
+ for
+ all
+ cages
+ within
+ a
+ farm
+ and
+independent
+ of
+ stage-age.
+ This
+ may
+ account
+ for
+ factors
+ that
+ differ
+between
+ farms
+ and
+ change
+ over
+ time,
+ for
+ instance
+ salinity,
+ which
+is
+ not
+ included
+ in
+ the
+ model.
+ Furthermore,
+ including
+ these
+ mortal-
+ities
+ as
+ farm-speciﬁc
+ and
+ time-varying
+ terms
+ improves
+ the
+ ﬁt
+ of
+the
+ model
+ to
+ data.
+ For
+ each
+ farm
+ and
+ louse
+ stage,
+ the
+ mortality
+ is
+assumed
+ to
+ follow
+ an
+ autoregressive
+ model
+ of
+ order
+ 1
+ (AR(1))
+ on
+the
+ logit-scale
+ as
+mnat
+tfac =
+ mnat
+tf
+=
+ exp(znat
+tf /(1
+ +
+ exp(znat
+tf )),
+ 
+(15)
+(znat
+tf
+−
+ nat
+0 ) =
+ 	nat · (znat
+(t−1)f −
+ nat
+0 )
+ +
+ εnat
+tf , 
+(16)
+Var(εnat
+tf )
+ =
+ (nat)
+2. 
+(17)
+Here
+ znat
+tf
+=
+ logit(mnat
+tf )
+ =
+ log(mnat
+tf /(1
+ −
+ mnat
+tf )).
+ Furthermore,
+ nat
+0
+is
+the
+ expected
+ value
+ on
+ the
+ logit-scale,
+ 	nat an
+ autoregressive
+ coef-
+ﬁcient
+ and
+ εnat
+tf
+a
+ white
+ noise
+ process
+ with
+ variance
+ (nat)2. These
+
+
+<!-- page 7 -->
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+ 
+339
+parameters
+ have
+ separate
+ values
+ for
+ each
+ stage.
+ In
+ addition,
+ the
+time-varying
+ mortalities
+ mnat
+tfac are
+ restricted
+ to
+ lie
+ within
+ speciﬁed
+intervals,
+ which
+ are
+ (0.0006–0.02)
+ for
+ CH,
+ (0.002–0.21)
+ for
+ PA
+ and
+(0.0003–0.70)
+ for
+ A.
+ These
+ limits
+ are
+ motivated
+ from
+ the
+ various
+studies
+ summarised
+ in
+ Stien
+ et
+ al.
+ (2005), and
+ are
+ simply
+ the
+ most
+extreme
+ limits
+ of
+ the
+ intervals
+ given
+ in
+ their
+ Table
+ 4.
+In
+ addition,
+ we
+ assume
+ m
+ =
+ 1
+ from
+ stage-age
+ 80
+ days
+ for
+ adults
+and
+ from
+ stage-age
+ 60
+ days
+ for
+ the
+ other
+ stages.
+ This
+ is
+ an
+ approx-
+imation
+ made
+ to
+ save
+ computer
+ time.
+Mortality
+ due
+ to
+ cleaner
+ ﬁsh
+We
+ assume
+ that
+ cleaner
+ ﬁsh
+ feed
+ on
+ lice
+ at
+ the
+ PA
+ and
+ A
+ stages
+only
+ (Leclercq
+ et
+ al.,
+ 2014),
+ and
+ that
+ the
+ corresponding
+ mortality
+for
+ these
+ two
+ stages
+ are
+ equal.
+ Let
+ xclf
+tfc =
+ NCLF
+tfc /NSAL
+tfc
+be
+ the
+ ratio
+ of
+the
+ number
+ of
+ cleaner
+ ﬁsh
+ to
+ the
+ number
+ of
+ salmon
+ in
+ cage
+ c,
+ at
+farm
+ f and
+ time
+ t.
+ This
+ ratio
+ depends
+ among
+ others
+ on
+ the
+ mortality
+of
+ cleaner
+ ﬁsh,
+ which
+ has
+ to
+ be
+ estimated,
+ and
+ the
+ model
+ for
+ this
+is
+ described
+ later
+ in
+ Section
+ 2.2.10. Lice
+ mortality
+ in
+ the
+ PA
+ and
+ A
+stages
+ due
+ to
+ cleaner
+ ﬁsh
+ is
+ then
+ given
+ by
+mclf
+tfac =
+ mclf
+tfc =
+ 1
+ −
+ exp(−clf xclf
+tfc),
+(18)
+where
+ the
+ parameter
+ clf is
+ non-negative,
+ such
+ that
+ the
+ mortality
+always
+ is
+ between
+ 0 and
+ 1.
+ One
+ reason
+ for
+ assuming
+ such
+ a
+ simple
+model
+ for
+ the
+ effect
+ of
+ cleaner
+ ﬁsh
+ (as
+ opposed
+ to
+ the
+ effect
+ of
+ med-
+ical
+ treatments
+ discussed
+ below)
+ is
+ that
+ we
+ also
+ must
+ estimate
+ the
+cleaner
+ ﬁsh
+ ratio,
+ which
+ is
+ multiplied
+ by
+ the
+ cleaner
+ ﬁsh
+ effect.
+Mortality
+ due
+ to
+ chemotherapeutic
+ treatment
+We
+ assume
+ that
+ the
+ chemotherapeutic
+ treatments
+ introduce
+extra
+ mortality
+ of
+ lice
+ in
+ some
+ or
+ all
+ the
+ stages
+ CH,
+ PA
+ and
+ A,
+ depend-
+ing
+ on
+ the
+ type
+ of
+ treatment.
+ However,
+ for
+ simplicity
+ we
+ assume
+that
+ lice
+ are
+ only
+ affected
+ as
+ long
+ as
+ they
+ stay
+ in
+ the
+ stage
+ they
+ were
+at
+ the
+ time
+ of
+ treatment.
+ If
+ they
+ manage
+ to
+ develop
+ to
+ the
+ next
+ stage,
+they
+ are
+ clear
+ of
+ the
+ treatment
+ effect.
+ Let
+ the
+ set
+ of
+ subscripts
+ fcbi
+denote
+ the
+ ith
+ application
+ of
+ a
+ chemotherapeutic
+ of
+ type
+ b
+ in
+ cage
+c
+ at
+ farm
+ f.
+ Assuming
+ that
+ this
+ treatment
+ was
+ given
+ at
+ time
+ t0
+fcbi,
+ we
+deﬁne
+ an
+ indicator
+ variable
+ xcht
+tfacbi that
+ is
+ 1
+ when
+ the
+ treatment
+ is
+active
+ (a
+ period
+ after
+ the
+ treatment
+ is
+ given)
+ for
+ lice
+ at
+ stage-age
+ a,
+i.e.
+ when
+t
+ ∈
+ [t0
+fcbi +
+ del
+b ,
+ t0
+fcbi +
+ del
+b
++
+ dur
+fcbi) −
+ 1]anda ≥
+ t
+ −
+ t0
+fcbi. 
+(19)
+Here
+ del is
+ a
+ time
+ delay
+ (in
+ days)
+ from
+ application
+ until
+ a
+ treatment
+gives
+ a
+ visible
+ effect,
+ which
+ varies
+ between
+ treatments
+ (Table
+ 1).
+Furthermore,
+ dur is
+ the
+ duration
+ of
+ the
+ effect,
+ which
+ depends
+ on
+the
+ seawater
+ temperature
+ according
+ to
+dur =
+ ıdur/Tt0, 
+(20)
+where
+ ıdur is
+ a
+ constant
+ (with
+ unit
+ degree
+ days,
+ i.e. ◦C·days)
+ given
+in
+ Table
+ 1
+ and
+ Tt0 is
+ the
+ seawater
+ temperature
+ when
+ the
+ medical
+is
+ applied.
+ One
+ exception
+ is
+ when
+ hydrogen
+ peroxide
+ was
+ applied,
+for
+ which
+ dur is
+ temperature
+ independent
+ and
+ given
+ by
+ dur =
+ ıdur
+(in
+ days).
+The
+ mortality
+ due
+ to
+ chemotherapeutic
+ treatment
+ is
+ given
+ by
+mcht
+tfac =
+ 1
+ −
+ exp(
+
+b
+−
+ ucht
+fcbixcht
+tfacbi),
+(21)
+where
+ ucht
+fcbi is
+ a
+ regression
+ coefﬁcient
+ expressing
+ the
+ effect
+ of
+ the
+speciﬁc
+ application
+ of
+ the
+ treatment.
+ These
+ regression
+ coefﬁcients
+vary
+ systematically
+ between
+ treatment
+ types,
+ accounting
+ for
+ vary-
+ing
+ efﬁciency
+ of
+ different
+ types
+ of
+ treatments.
+ In
+ addition,
+ they
+ vary
+randomly
+ between
+ different
+ applications
+ of
+ the
+ same
+ treatment
+type,
+ which
+ for
+ instance
+ may
+ be
+ due
+ to
+ a
+ varying
+ degree
+ of
+ resis-
+tance
+ in
+ the
+ lice
+ populations
+ (Jansen
+ et
+ al.,
+ 2016).
+ This
+ is
+ handled
+by
+ the
+ following
+ formulation
+ucht
+fcbi =
+ log(1
+ +
+ exp(ucht∗
+fcbi )),
+ 
+(22)
+ucht∗
+fcbi ∼N(cht,
+ (cht)
+2).
+ 
+(23)
+In
+ general,
+ the
+ parameters
+ cht and
+ cht differ
+ between
+ various
+ types
+of
+ treatment,
+ but
+ are
+ set
+ equal
+ for
+ some
+ treatment
+ types.
+ These
+parameters
+ are
+ equal
+ for
+ the
+ stages
+ for
+ which
+ a
+ treatment
+ has
+ effect,
+but
+ the
+ effect
+ of
+ a
+ speciﬁc
+ treatment
+ fcbi, represented
+ by
+ the
+ ran-
+dom
+ coefﬁcient
+ ucht
+fcbi, may
+ vary
+ between
+ stages
+ (this
+ is
+ for
+ simplicity
+omitted
+ from
+ the
+ notation
+ above).
+We
+ assume
+ that
+ the
+ effects
+ of
+ deltamethrin
+ and
+ cypermethrin
+are
+ equal,
+ since
+ these
+ are
+ similar
+ compounds.
+ Furthermore,
+ when
+azamethiphos
+ is
+ used
+ in
+ combination
+ with
+ deltamethrin
+ or
+ cyper-
+methrin,
+ we assume
+ it
+ has
+ the
+ same
+ effect
+ as
+ using
+ deltamethrin
+ or
+cypermethrin
+ alone,
+ since
+ this
+ combination
+ is
+ used
+ when
+ reduced
+treatment
+ effect
+ is
+ expected
+ due
+ to
+ resistance
+ towards
+ the
+ medicals.
+2.2.4.
+ Development
+ rates
+We
+ consider
+ here
+ the
+ development
+ rate
+ from
+ one
+ stage
+ to
+ the
+next,
+ for
+ the
+ stages
+ R,
+ CH
+ and
+ PA.
+ The
+ development
+ rate
+ for
+ CO
+ can
+be
+ interpreted
+ as
+ an
+ infection
+ rate,
+ and
+ is
+ treated
+ in
+ the
+ next
+ sub-
+section.
+ In
+ all
+ the
+ population
+ models
+ for
+ lice
+ that
+ we mentioned
+ in
+the
+ introduction,
+ the
+ development
+ rate
+ is
+ 0
+ until
+ some,
+ minimum
+stage-age
+ and
+ afterwards
+ positive
+ and
+ constant.
+ In
+ our
+ opinion,
+ the
+concept
+ of
+ a
+ strict
+ and
+ absolute
+ minimum
+ development
+ time
+ can
+be
+ questioned
+ in
+ a
+ population
+ with
+ millions
+ of
+ individuals,
+ and
+ the
+assumption
+ of
+ a
+ constant
+ development
+ thereafter
+ may
+ be
+ unrealis-
+tic.
+ We have
+ chosen
+ to
+ consider
+ the
+ development
+ to
+ the
+ next
+ stage
+as
+ a
+ time-to-event
+ process,
+ and
+ model
+ it
+ as
+ a
+ discretised
+ version
+of
+ a
+ Weibull
+ distribution.
+ The
+ Weibull
+ distribution
+ is
+ widely
+ used
+in
+ statistical
+ models
+ for
+ time-to-event
+ or
+ survival
+ analysis
+ (Aalen
+et
+ al.,
+ 2008).
+ It
+ also
+ gave
+ a
+ better
+ ﬁt
+ to
+ our
+ data
+ than
+ the
+ minimum
+development
+ time
+ model
+ mentioned
+ above
+ (data
+ not
+ shown).
+When
+ the
+ time
+ to
+ an
+ event
+ is
+ continuous
+ and
+ Weibull
+ dis-
+tributed,
+ the
+ event
+ rate
+ (often
+ called
+ hazard
+ in
+ survival
+ analysis)
+ is
+(ısc)−ısısaıs−1, where
+ a
+ is
+ the
+ stage-age
+ or
+ time,
+ ıs is
+ a
+ shape
+ param-
+eter
+ and
+ ısc is
+ a
+ scale
+ parameter
+ (sometimes
+ (ısc)−ıs is
+ termed
+ the
+scale
+ parameter).
+ In
+ our
+ case,
+ it
+ is
+ convenient
+ to
+ re-parameterise
+this
+ as
+ a
+ function
+ of
+ the
+ median
+ time
+ to
+ event,
+ ım, and
+ the
+ shape
+parameter.
+ The
+ event
+ rate
+ then
+ becomes
+ log(2)(ım)−ısısaıs−1, since
+the
+ median
+ in
+ the
+ Weibull
+ distribution
+ is
+ ısc(log(2))(1/ıs).
+We
+ use
+ a
+ discretised
+ version
+ of
+ this,
+ i.e.
+ our
+ development
+ rate
+is
+ the
+ probability
+ to
+ develop
+ to
+ the
+ next
+ stage
+ within
+ a
+ day,
+ and
+it
+ must
+ therefore
+ also
+ be
+ restricted
+ to
+ be
+ at
+ most
+ one.
+ We assume
+that
+ the
+ median
+ time
+ to
+ develop
+ may
+ vary
+ over
+ time
+ and
+ between
+farms,
+ and
+ introduce
+ therefore
+ the
+ subscripts
+ tfa
+ on
+ it.
+ The
+ model
+for
+ the
+ development
+ rate
+ is
+ then
+dtfa =
+ min(log(2)(ım
+tfa)−ıs
+ısaıs−1, 1)fora =
+ 0,
+ 1,
+ . .
+ ..
+ 
+(24)
+We
+ further
+ assume
+ that
+ the
+ median
+ development
+ time
+ depends
+on
+ the
+ temperature
+ history
+ as
+ ım
+tfa =
+ c/(¯Ttfa)
+ıp
+, where ¯Ttfa is
+ the
+ aver-
+age
+ temperature
+ that
+ lice
+ at
+ stage-age
+ a
+ at
+ farm
+ f have
+ experienced,
+i.e.
+ the
+ average
+ temperature
+ from
+ time
+ t
+ −
+ a
+ to
+ time
+ t,
+ c
+ is
+ a
+ constant
+and
+ ıp is
+ another
+ constant
+ that
+ performs
+ a
+ power
+ transformation
+ of
+¯Ttfa. To
+ get
+ a
+ more
+ clear
+ interpretation
+ of
+ the
+ constant
+ c,
+ we
+ param-
+eterise
+ it
+ as
+ a
+ function
+ of
+ the
+ median
+ development
+ time
+ at
+ 10 ◦C,
+denoted
+ by
+ ım10.
+ The
+ ﬁnal
+ model
+ for
+ the
+ median
+ development
+ time
+then
+ becomes
+ım
+tfa =
+ (10ıpım10)/(¯Ttfa)
+ıp
+=
+ ım10(10/¯Ttfa)
+ıp
+. 
+(25)
+The
+ development
+ rate
+ deﬁned
+ by
+ Eqs.
+ (24)
+ and
+ (25)
+ also
+ depends
+ on
+the
+ stage
+ in
+ the
+ way
+ that
+ the
+ parameters
+ ım10, ıs and
+ ıp are
+ stage-
+speciﬁc.
+ One
+ motivation
+ for
+ introducing
+ ım10 as
+ a
+ basic
+ parameter
+ is
+that
+ we use
+ results
+ on
+ development
+ times
+ around
+ 10 ◦C
+ from
+ other
+studies
+ as
+ prior
+ information,
+ to
+ ensure
+ that
+ our
+ estimates
+ are
+ within
+biological
+ plausible
+ ranges.
+ For
+ the
+ R
+ stage,
+ which
+ consists
+ of
+ eggs
+
+
+<!-- page 8 -->
+340
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+and
+ nauplii,
+ this
+ prior
+ information
+ is
+ given
+ separate
+ for
+ eggs
+ and
+nauplii.
+ Therefore,
+ for
+ the
+ R
+ stage,
+ ıRm10 is
+ the
+ sum
+ of
+ one
+ parameter
+ıEm10 for
+ eggs
+ and
+ another
+ quantity
+ ıNm10 for
+ nauplii,
+ i.e.
+ıRm10 =
+ ıEm10 +
+ ıNm10, 
+(26)
+and
+ ıEm10 is
+ also
+ contained
+ in
+ the
+ reproduction
+ rate
+ introduced
+ later
+in
+ Section
+ 2.2.6.
+In
+ the
+ estimation,
+ we
+ restrict
+ ıs to
+ be
+ larger
+ than
+ 1,
+ and
+ the
+ devel-
+opment
+ rate
+ will
+ then
+ be
+ 0
+ at
+ stage-age
+ 0
+ and
+ then
+ increase
+ by
+increasing
+ stage-age.
+ Furthermore,
+ the
+ larger
+ ıs is,
+ the
+ more
+ steep
+will
+ the
+ development
+ rate
+ increase
+ from
+ 0
+ to
+ 1
+ around
+ the
+ median.
+When
+ ıs >
+ 2,
+ the
+ difference
+ between
+ the
+ mean
+ and
+ the
+ median
+ will
+be
+ less
+ than
+ 7
+ %.
+ It
+ should
+ further
+ be
+ noted
+ that
+ the
+ parameter
+ım10 is
+ only
+ approximately
+ the
+ median
+ development
+ time,
+ since
+we
+ consider
+ a
+ time-discrete
+ version
+ of
+ the
+ Weibull
+ distribution.
+Assuming
+ a
+ constant
+ temperature
+ T,
+ Stien
+ et
+ al.
+ (2005)
+ modelled
+the
+ minimum
+ development
+ time
+ as
+ c1/(T
+ +
+ c2)c3, where
+ c1, c2 and
+c3 are
+ constants.
+ They
+ further
+ assumed
+ that
+ c3 =
+ 2
+ and
+ estimated
+ c1
+and
+ c2. We use
+ a
+ similar
+ formulation
+ for
+ the
+ median
+ development
+time,
+ but
+ assume
+ c2 =
+ 0
+ and
+ estimate
+ c1 and
+ c3. In
+ practice,
+ these
+two
+ formulations
+ are
+ quite
+ similar
+ for
+ the
+ relevant
+ temperatures
+and
+ for
+ the
+ estimated
+ values
+ of
+ c3 =
+ ıp (between
+ 0.4 ◦C
+ and
+ 1.3 ◦C,
+see
+ Table
+ 4).
+2.2.5.
+ Infection
+ rate
+The
+ infection
+ rate
+ is
+ the
+ proportion
+ of
+ the
+ copepodids
+ that
+ infect
+ﬁsh
+ during
+ a
+ day
+ and
+ thus
+ develop
+ into
+ the
+ CH
+ stage.
+ It
+ is
+ farm-
+ and
+cage-dependent,
+ but
+ does
+ not
+ depend
+ on
+ stage-age
+ a,
+ except
+ that
+we
+ assume
+ that
+ development
+ may
+ only
+ happen
+ for
+ a
+ ≥
+ 1.
+ This
+ is
+modelled
+ as
+dCO
+tfc =
+ exp(CO
+tfc )/(1
+ +
+
+c
+exp(CO
+tfc )),
+ 
+(27)
+where
+CO
+tfc =
+ ıCO
+0fc +
+ log(NSAL
+tfc )
+ +
+ ıCO
+1 (log(Wtfc)
+ −
+ 0.55).
+ 
+(28)
+Here
+ NSAL
+tfc
+and
+ Wtfc are
+ the
+ number
+ (in
+ millions)
+ and
+ the
+ average
+weight
+ (in
+ kg),
+ respectively,
+ of
+ ﬁsh
+ in
+ cage
+ c
+ at
+ farm
+ f and
+ time
+ t,
+and
+ 0.55
+ is
+ roughly
+ the
+ mean
+ of
+ the
+ natural
+ logarithm
+ of
+ the
+ weight
+of
+ ﬁsh.
+ With
+ this
+ formulation,
+ dCO
+tf
+= 
+cdCO
+tfc will
+ be
+ the
+ proportion
+of
+ copepodids
+ that
+ infect
+ ﬁsh
+ in
+ any
+ cage
+ during
+ day
+ t,
+ and
+ this
+ will
+always
+ be
+ between
+ 0
+ and
+ 1.
+ Furthermore,
+ when
+ the
+ proportions
+ or
+rates
+ are
+ small,
+ the
+ rate
+ dCO
+tfac for
+ each
+ cage
+ will
+ approximately
+ be
+proportional
+ to
+ the
+ number
+ of
+ ﬁsh
+ NSAL
+tfc in
+ the
+ cage
+ and
+ to
+ W
+ıCO
+1
+tfc .
+The
+ parameter
+ ıCO
+0fc controls
+ the
+ magnitude
+ of
+ the
+ infection
+ rate
+conditioned
+ on
+ the
+ number
+ and
+ weight
+ of
+ ﬁsh
+ within
+ a
+ given
+ cage.
+In
+ our
+ model
+ ıCO
+0fc depends
+ on
+ cage
+ and
+ farm,
+ reﬂecting
+ that
+ some
+farms
+ or
+ cages
+ may
+ be
+ more
+ exposed
+ to
+ infection
+ than
+ others
+ due
+ to
+for
+ instance
+ sea
+ current
+ conditions.
+ This
+ is
+ handled
+ by
+ the
+ following
+hierarchical
+ structure:
+ıCO
+0fc∼N(ıCO
+0f , (COdf )
+2),
+ 
+(29)
+ıCO
+0f ∼N(ıCO
+0 ,
+ (COd)
+2),
+ 
+(30)
+where
+ ıCO
+0f is
+ a
+ farm-speciﬁc
+ mean
+ and
+ ıCO
+0
+an
+ overall
+ mean.
+ Fur-
+thermore,
+ COdf reﬂects
+ the
+ variability
+ between
+ cages
+ at
+ the
+ same
+farm,
+ whereas
+ COd reﬂects
+ the
+ variability
+ between
+ farms.
+2.2.6.
+ Reproduction
+ rate
+The
+ recruitment
+ model,
+ Eq.
+ (1), includes
+ the
+ internal
+ reproduc-
+tion
+ rate
+ rtac, which
+ is
+ modelled
+ taking
+ into
+ account
+ the
+ following
+factors:
+ Female
+ adults
+ extrude
+ pairs
+ of
+ egg
+ strings.
+ They
+ can
+ extrude
+a
+ new
+ set
+ of
+ egg
+ strings
+ within
+ 24
+ hour
+ after
+ the
+ previous
+ set
+ was
+hatched,
+ but
+ hatching
+ can
+ take
+ several
+ days
+ (Stien
+ et
+ al.,
+ 2005).
+ The
+number
+ of
+ eggs
+ per
+ string
+ may
+ increase
+ for
+ each
+ consecutive
+ extru-
+sion,
+ which
+ we
+ approximate
+ with
+ stage-age.
+ Finally,
+ not
+ all
+ eggs
+ are
+viable.
+ In
+ addition,
+ we allow
+ for
+ density
+ dependence
+ in
+ recruitment,
+due
+ to
+ potentially
+ reduced
+ probability
+ of
+ mate
+ ﬁnding
+ at
+ low
+ lice
+abundance,
+ as
+ suggested
+ by
+ Stormoen
+ et
+ al.
+ (2013), Krkoˇsek
+ et
+ al.
+(2012)
+ and
+ Groner
+ et
+ al.
+ (2014).
+The
+ reproduction
+ rate
+ rtac for
+ internal
+ recruitment
+ at
+ time
+ t,
+stage-age
+ a
+ and
+ cage
+ c
+ is
+ thus
+ modelled
+ as
+rtac =
+ ˇr
+0 · (a
+ +
+ 1)ˇr
+1 ·
+ 1/(ıEm
+t
++
+ 1)
+ ·
+ (1
+ −
+ exp(−r · Atc)).
+ 
+(31)
+The
+ ﬁrst
+ term
+ in
+ Eq.
+ (31), ˇr
+0, represents
+ the
+ number
+ of
+ viable
+ eggs
+for
+ the
+ ﬁrst
+ extrusion.
+ The
+ next
+ term,
+ (a
+ +
+ 1)ˇr
+1 models
+ how
+ the
+number
+ of
+ viable
+ eggs
+ per
+ extrusion
+ increases
+ by
+ stage-age.
+ The
+third
+ term,
+ 1/(ıEm
+t
++
+ 1),
+ represents
+ the
+ rate
+ of
+ pairs
+ of
+ egg
+ strings
+produced
+ per
+ day,
+ which
+ is
+ the
+ inverse
+ of
+ average
+ time
+ between
+each
+ egg
+ extrusion,
+ which
+ further
+ is
+ approximately
+ the
+ median
+hatching
+ time
+ plus
+ one
+ day
+ for
+ developing
+ new
+ egg
+ strings.
+ The
+median
+ hatching
+ time
+ is
+ given
+ by
+ıEm
+t
+=
+ ıEm10(10/Tt)ıRp,
+ 
+(32)
+where
+ Tt is
+ the
+ seawater
+ temperature
+ and
+ ıEm10 and
+ ıRp are
+ param-
+eters
+ deﬁned
+ in
+ Section
+ 2.2.4.
+ Finally,
+ the
+ term
+ (1
+ −
+ exp(−r · Atc))
+allows
+ for
+ density
+ dependent
+ recruitment.
+ Here,
+ Atc =
+ NAF
+tc /NSAL
+tc
+is
+the
+ abundance
+ of
+ adult
+ females
+ in
+ cage
+ c
+ at
+ time
+ t.
+ A
+ very
+ large
+ value
+of
+ r corresponds
+ to
+ a
+ model
+ without
+ density
+ dependent
+ recruit-
+ment.
+ Of
+ the
+ parameters
+ involved
+ in
+ Eq.
+ (31), we
+ estimate
+ ım10E, ıpR
+and
+ r and
+ ﬁx
+ ˇr
+0 and
+ ˇr
+1 to
+ 172.5
+ and
+ 0.2,
+ respectively
+ (see
+ Section
+2.5
+ in
+ the
+ Supplementary
+ material
+ for
+ a
+ motivation
+ of
+ these
+ values).
+2.2.7.
+ Reproduction
+ rate
+ for
+ external
+ recruitment
+The
+ reproduction
+ rate
+ rExt
+t
+for
+ external
+ recruitment
+ in
+ Eq.
+ (1)
+ is
+similar
+ to
+ the
+ internal
+ one,
+ but
+ the
+ female
+ lice
+ abundance
+ Atc in
+Eq.
+ (31)
+ is
+ replaced
+ by
+ a
+ weighted
+ average
+ of
+ the
+ counted
+ abun-
+dance
+ at
+ neighbouring
+ farms,
+ AAFExt
+t
+(Section
+ 2.2.9).
+ Furthermore,
+we
+ assume
+ that
+ all
+ these
+ female
+ lice
+ at
+ neighbouring
+ farms
+ are
+ at
+stage-age
+ a
+ =
+ 10.
+ The
+ assumed
+ stage-age
+ of
+ 10
+ is
+ rather
+ arbitrary,
+but
+ the
+ results
+ are
+ insensitive
+ to
+ this
+ choice.
+2.2.8.
+ Modifying
+ factor
+ in
+ the
+ external
+ recruitment
+The
+ modifying
+ factor
+ eExt
+t
+for
+ external
+ recruitment
+ is
+ farm-
+speciﬁc,
+ so
+ we include
+ the
+ farm
+ index
+ f as
+ well.
+ At
+ the
+ log-scale,
+it
+ varies
+ over
+ time
+ around
+ a
+ farm-speciﬁc
+ level
+ according
+ to
+ the
+following
+ AR(1)
+ model:
+eExt
+tf
+=
+ exp(zExt
+tf ),
+ 
+(33)
+(zExt
+tf
+−
+ Ext
+f
+) =
+ 	Ext · (zExt
+(t−1)f −
+ Ext
+f
+)
+ +
+ εExt
+tf ,
+ 
+(34)
+(εExt
+tf )∼N(0, (Extar)
+2),
+ 
+(35)
+Ext
+f
+∼N(Ext,
+ (Ext)
+2).
+(36)
+Here,
+ Ext
+f
+is
+ the
+ farm-speciﬁc
+ expected
+ value
+ on
+ the
+ log-scale,
+ 	Ext
+the
+ autoregressive
+ coefﬁcient
+ and
+ (Extar)
+2 the
+ residual
+ variance.
+Furthermore,
+ Ext is
+ the
+ overall
+ expected
+ value
+ and
+ (Ext)
+2 the
+between-farm
+ variance
+ of
+ Ext
+f
+.
+2.2.9.
+ Deﬁnitions
+ of
+ NAFExt
+tf
+and
+ AAFExt
+tf
+The
+ weighted
+ sum
+ of
+ adult
+ females
+ at
+ neighbouring
+ farms
+ used
+in
+ Eq.
+ (2), denoted
+ by
+ NAFExt
+tf
+for
+ farm
+ f at
+ time
+ t,
+ is
+ given
+ by
+NAFExt
+tf
+=
+
+f ′ /= f
+g(dff ′) ˆNAF
+tf ′ , 
+(37)
+
+
+<!-- page 9 -->
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+ 
+341
+where
+ g(·)
+ is
+ a
+ function
+ decreasing
+ by
+ increasing
+ distance
+ given
+ by
+g(d)
+ =
+ exp(−0.618d0.568).
+ 
+(38)
+This
+ distance
+ function
+ is
+ taken
+ from
+ Aldrin
+ et
+ al.
+ (2013), and
+ is
+ based
+on
+ a
+ data-driven
+ model
+ for
+ lice
+ abundance
+ estimated
+ from
+ more
+than
+ eight
+ years
+ of
+ data
+ on
+ all
+ 1400
+ Norwegian
+ salmon
+ farms
+ that
+were
+ active
+ in
+ the
+ data
+ period.
+We
+ have
+ also
+ calculated
+ a
+ corresponding
+ weighted
+ average
+ of
+the
+ counted
+ abundance
+ of
+ adult
+ females
+ at
+ neighbouring
+ farms,
+AAFExt
+tf
+, which
+ replaces
+ Atc in
+ Eq.
+ (31)
+ when
+ the
+ reproduction
+ rate
+rExt
+t
+for
+ external
+ recruitment
+ is
+ computed
+ (Section
+ 2.2.7).
+ It
+ is
+ given
+by
+AAFExt
+tf
+=
+
+f ′ /= f
+g(dff ′)ˆAAF
+tf ′ /
+
+f ′ /= f
+g(dff ′).
+(39)
+2.2.10.
+ Cleaner
+ ﬁsh
+ model
+Let
+ Sclf
+tc denote
+ the
+ number
+ of
+ cleaner
+ ﬁsh
+ stocked
+ and
+ Nclf
+tc the
+total
+ number
+ of
+ cleaner
+ ﬁsh
+ in
+ cage
+ c
+ at
+ time
+ t.
+ Sclf
+tc is
+ observed,
+whereas
+ Nclf
+tc is
+ unknown
+ and
+ modelled
+ as
+Nclf
+tc =
+ Nclf
+(t−1)c(1
+ −
+ clf ) +
+ Sclf
+tc , 
+(40)
+where
+ clf is
+ the
+ daily
+ constant
+ mortality
+ rate
+ of
+ cleaner
+ ﬁsh,
+ com-
+mon
+ for
+ all
+ farms.
+2.2.11.
+ Data
+ model
+ and
+ model
+ ﬁtting
+In
+ this
+ subsection,
+ we
+ describe
+ how
+ the
+ population
+ model
+ is
+related
+ to
+ the
+ lice
+ count
+ data.
+ Let
+ YCG
+tc be
+ the
+ number
+ of
+ lice
+ in
+ count
+group
+ CG
+ found
+ on
+ ntc counted
+ ﬁsh
+ at
+ time
+ t
+ and
+ cage
+ c,
+ where
+ the
+count
+ groups
+ are
+ either
+ chalimus
+ (CH),
+ adult
+ females
+ (AF) or
+ other
+mobiles
+ (OM, i.e,
+ pre-adults
+ and
+ adult
+ males).
+ We assume
+ that
+ these
+follow
+ a
+ negative
+ binomial
+ distribution
+ with
+ mean
+ CG
+tc =
+ E(YCG
+tc )
+and
+ a
+ heterogeneity
+ or
+ aggregation
+ parameter
+ ntcCG, such
+ that
+ the
+variance
+ of
+ YCG
+tc
+is
+ CG
+tc +
+ (CG
+tc )
+2/(ntcCG).
+ Deleting
+ the
+ superscript
+CG
+ and
+ subscript
+ tc
+ for
+ a
+ moment,
+ the
+ probability
+ distribution
+ of
+ Y
+is
+P(Y
+ =
+ y)
+ = (y
+ +
+ n)
+y!(n)
+
+n
+n
+ +
+ 
+n
+
+n
+ +
+ 
+y
+. 
+(41)
+We
+ get
+ the
+ total
+ likelihood
+ for
+ each
+ count
+ group
+ by
+ multiplying
+over
+ all
+ counts,
+ cages
+ and
+ farms.
+ We further
+ assume
+ independence
+between
+ count
+ groups
+ and
+ get
+ the
+ total
+ likelihood
+ by
+ multiplying
+the
+ contribution
+ from
+ each
+ count
+ group.
+The
+ expected
+ numbers
+ of
+ the
+ various
+ YCG
+tc ’s
+ are
+ given
+ from
+ the
+population
+ model
+ as
+E(YCH
+tc ) =
+ ntc ·
+ pCHcount
+tc
+·
+ NCH
+tc /NSAL
+tc ,
+ 
+(42)
+E(YAF
+tc )
+ =
+ ntc ·
+ NAF
+tc /NSAL
+tc , 
+(43)
+E(YOM
+tc
+) =
+ ntc · (NPA
+tc +
+ NAM
+tc )/NSAL
+tc ,
+ 
+(44)
+where
+ the
+ role
+ of
+ the
+ factor
+ pCHcount
+tc
+is
+ to
+ adjust
+ for
+ under-reporting
+of
+ CH
+ lice,
+ since
+ they
+ are
+ very
+ small
+ and
+ difﬁcult
+ to
+ count,
+ espe-
+cially
+ on
+ large
+ ﬁsh.
+ We assume
+ that
+ this
+ factor
+ is
+ farm-speciﬁc
+ (for
+instance,
+ the
+ staff
+ at
+ some
+ farms
+ may
+ be
+ more
+ trained
+ or
+ motivated
+than
+ staff
+ at
+ other
+ farms),
+ and
+ we
+ introduce
+ from
+ now
+ on
+ the
+ index
+f
+ for
+ farm.
+ Then,
+ the
+ model
+ for
+ pCHcount
+tfc
+is
+pCHcount
+tfc
+=
+ exp(CHcount
+tfc
+)/(1
+ +
+ exp(CHcount
+tfc
+)),
+ 
+(45)
+where
+CHcount
+tfc
+=
+ ˇCHcount
+0f
++
+ ˇCHcount
+1
+(Wftc −
+ 0.1),
+(46)
+where
+ Wftc as
+ before
+ is
+ the
+ mean
+ weight
+ of
+ ﬁsh
+ in
+ cage
+ c
+ at
+ farm
+ f at
+time
+ t.
+ The
+ constant
+ 0.1
+ is
+ chosen
+ to
+ make
+ it
+ easier
+ to
+ specify
+ prior
+distributions
+ for
+ ˇCHcount
+0f
+and
+ ˇCHcount
+1
+. Here,
+ ˇCHcount
+1
+is
+ common
+for
+ all
+ farms,
+ but
+ ˇCHcount
+0f
+varies
+ between
+ farms
+ according
+ to
+ the
+following
+ hierarchical
+ model:
+ˇCHcount
+0f
+∼N(ˇCHcount
+0
+, (CHcount)
+2).
+ 
+(47)
+The
+ model
+ was
+ estimated
+ from
+ the
+ data
+ including
+ 32
+ farms,
+ except
+the
+ last
+ months
+ (3–11)
+ of
+ data
+ for
+ ﬁve
+ of
+ the
+ farms
+ that
+ were
+ used
+for
+ evaluating
+ conditional
+ predictions.
+ We used
+ a
+ Bayesian
+ esti-
+mation
+ approach,
+ combining
+ the
+ prior
+ distributions
+ and
+ the
+ data
+likelihood
+ into
+ a
+ joint
+ posterior
+ distribution
+ for
+ all
+ model
+ parame-
+ters.
+ Many
+ of
+ the
+ prior
+ distributions
+ used
+ were
+ informative,
+ based
+on
+ results
+ from
+ laboratory
+ experiments,
+ e.g.
+ those
+ reported
+ in
+ Stien
+et
+ al.
+ (2005). For
+ some
+ priors,
+ however,
+ we
+ use
+ more
+ vague
+ set-
+tings
+ (see
+ Section
+ 2
+ in
+ the
+ Supplementary
+ material
+ for
+ details).
+ The
+model
+ was
+ ﬁtted
+ to
+ data
+ using
+ Markov
+ Chain
+ Monte
+ Carlo
+ (MCMC)
+simulations
+ (Gilks
+ et
+ al.,
+ 1996).
+ First,
+ several
+ initial
+ chains
+ were
+ run
+to
+ identify
+ a
+ rough
+ range
+ for
+ plausible
+ parameter
+ values.
+ Then
+ four
+independent
+ chains
+ were
+ started
+ from
+ slightly
+ different
+ starting
+values
+ within
+ this
+ range.
+ The
+ ﬁrst
+ 25000
+ iterations
+ were
+ used
+ as
+burn-in
+ to
+ establish
+ convergence,
+ and
+ the
+ posterior
+ distributions
+were
+ calculated
+ by
+ combining
+ 100
+ thinned
+ samples
+ from
+ the
+ last
+14
+ 000
+ iterations
+ from
+ each
+ of
+ the
+ chains.
+ See
+ Section
+ 4 in
+ the
+ Sup-
+plementary
+ Material
+ for
+ more
+ details
+ on
+ the
+ MCMC
+ algorithm.
+3.
+ Results
+ and
+ discussion
+3.1.
+ Fitted
+ and
+ predicted
+ values
+The
+ model
+ generated
+ expected
+ values
+ that
+ ﬁtted
+ the
+ observed
+infection
+ levels
+ of
+ chalimus
+ (CH),
+ adult
+ female
+ (AF)
+ and
+ other
+mobile
+ stages
+ (OM)
+ well
+ (Table
+ 3, Fig.
+ 4, and
+ Section
+ 3
+ in
+ the
+ Supple-
+mentary
+ material
+ with
+ results
+ for
+ seven
+ other
+ farms).
+ Predictions
+for
+ the
+ periods
+ not
+ used
+ for
+ ﬁtting
+ the
+ model
+ were
+ also
+ consistent
+with
+ the
+ data
+ with
+ respect
+ to
+ the
+ timing
+ of
+ population
+ growth
+ of
+adult
+ female
+ (AF)
+ and
+ other
+ mobile
+ stages
+ (OM)
+ (Fig.
+ 4, and
+ Fig-
+ure
+ 1–5
+ in
+ Section
+ 3
+ in
+ the
+ Supplementary
+ material),
+ even
+ though
+the
+ prediction
+ errors
+ naturally
+ tend
+ to
+ be
+ larger
+ in
+ the
+ prediction
+periods
+ than
+ in
+ the
+ estimation
+ periods
+ (Table
+ 3).
+ These
+ results
+ sup-
+port
+ the
+ notion
+ that
+ there
+ is
+ a
+ substantial
+ deterministic
+ component
+in
+ the
+ transmission
+ pathways
+ and
+ population
+ dynamics
+ of
+ salmon
+lice
+ in
+ ﬁsh
+ farms.
+ This
+ emphasises
+ a
+ potential
+ for
+ utilising
+ the
+ mas-
+sive
+ body
+ of
+ data
+ gathered
+ by
+ the
+ salmon
+ farming
+ industry
+ to
+ gain
+control
+ of
+ salmon
+ louse
+ infections
+ in
+ farms,
+ which
+ is
+ a
+ prerequisite
+for
+ sustainable
+ growth
+ in
+ Norwegian
+ salmon
+ farming
+ (Anonymous,
+2015).
+For
+ periods
+ with
+ elevated
+ predicted
+ population
+ sizes,
+ however,
+abundances
+ of
+ salmon
+ lice
+ were
+ sometimes
+ over-estimated
+ (e.g.
+AF
+ abundance
+ in
+ August
+ 2013,
+ Figure
+ 3,
+ Section
+ 3
+ in
+ Supplemen-
+tary
+ material)
+ and
+ sometimes
+ under-estimated
+ (e.g.
+ AF
+ and
+ OM in
+ﬁrst
+ part
+ of
+ September
+ 2013,
+ Fig.
+ 4).
+ These
+ large
+ deviations
+ in
+ some
+predictions
+ are
+ likely
+ to
+ reﬂect
+ (1)
+ that
+ there
+ are
+ predictor
+ variables
+that
+ have
+ not
+ been
+ included
+ in
+ the
+ present
+ model
+ (e.g.
+ salinity),
+ (2)
+substantial
+ uncertainty
+ in
+ some
+ predictor
+ variables
+ like
+ the
+ abun-
+dance
+ of
+ cleaner
+ ﬁsh
+ in
+ the
+ cages,
+ and
+ (3)
+ that
+ stochasticity,
+ in
+particular
+ with
+ respect
+ to
+ the
+ infection
+ process,
+ limits
+ our
+ ability
+to
+ make
+ precise
+ predictions.
+ Accordingly,
+ also
+ the
+ credible
+ inter-
+vals
+ for
+ the
+ predictions
+ were
+ wide
+ when
+ elevated
+ abundances
+ of
+infection
+ were
+ predicted
+ (e.g.
+ Fig.
+ 4).
+ The
+ credible
+ intervals
+ were
+well
+ calibrated
+ in
+ the
+ estimation
+ periods
+ for
+ all
+ three
+ counting
+ cat-
+egories
+ of
+ lice.
+ This
+ was
+ also
+ the
+ case
+ for
+ AF
+ and
+ OM
+ in
+ the
+ ﬁrst
+month
+ of
+ each
+ prediction
+ period,
+ in
+ that
+ the
+ actual
+ coverage
+ was
+close
+ to
+ the
+ nominal
+ 95%
+ (Table
+ 3).
+ However,
+ for
+ predictions
+ more
+than
+ one
+ month
+ ahead,
+ the
+ actual
+ coverage
+ was
+ slightly
+ too
+ low,
+indicating
+ that
+ the
+ credible
+ intervals
+ for
+ long
+ term
+ forecasts
+ were
+slightly
+ too
+ narrow.
+
+
+<!-- page 10 -->
+342
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+Table 3
+Mean
+ absolute
+ percentage
+ error
+ (MAPE)
+ and
+ percentage
+ coverage
+ of
+ the
+ 95%
+ credible
+ intervals
+ for
+ lice
+ counts
+ in
+ the
+ CH,
+ OM
+ and
+ AF
+ categories,
+ over
+ (i)
+ the
+ estimation
+ periods,
+(ii)
+ the
+ ﬁrst
+ 30
+ days
+ of
+ the
+ ﬁve
+ prediction
+ periods
+ and
+ (iii)
+ the
+ remaining
+ parts
+ of
+ the
+ prediction
+ periods.
+ MAPE
+ is
+ here
+ deﬁned
+ as
+i|Yi −ˆYi|/
+i
+ˆ
+(Y)i)
+ where
+ Yi is
+ an
+ observed
+lice
+ abundance
+ and ˆYi is
+ the
+ corresponding
+ ﬁtted
+ or
+ predicted
+ abundance,
+ and
+ the
+ sum
+ is
+ taken
+ over
+ all
+ farms,
+ cages
+ and
+ times
+ with
+ observations.
+ The
+ percentage
+ coverage
+is
+ the
+ percentage
+ of
+ observations
+ at
+ or
+ within
+ the
+ outer
+ intervals
+ (the
+ outer
+ limits
+ of
+ the
+ grey
+ areas)
+ in
+ Fig.
+ 4
+ and
+ similar
+ ﬁgures.
+MAPE
+ 
+Coverage
+ (%)
+Stage
+ 
+Estimation
+ periods
+ 
+First
+ 30
+ days
+ of
+each
+ prediction
+periods
+Remaining
+ parts
+ of
+prediction
+ periods
+Estimation
+ periods
+ 
+First
+ 30
+ days
+ of
+each
+ prediction
+periods
+Remaining
+ parts
+ of
+prediction
+ periods
+CH
+ 
+83
+ 
+262
+ 
+199
+ 
+97
+ 
+84
+ 
+87
+OM
+ 
+47
+ 
+76
+ 
+96
+ 
+96
+ 
+94
+ 
+86
+AF
+ 
+76
+ 
+74
+ 
+104
+ 
+98
+ 
+97
+ 
+87
+Fig.
+ 4.
+ Fitted
+ (until
+ 15
+ May
+ 2013)
+ and
+ predicted
+ (from
+ 16
+ May
+ 2013)
+ values
+ for
+ the
+ lice
+ and
+ the
+ cleaner
+ ﬁsh
+ populations.
+ Symbols
+ are
+ as
+ given
+ in
+ Fig.
+ 2 with
+ the
+ following
+additions:
+ Upper
+ panel:
+ Fitted
+ (posterior
+ mean)
+ cleaner
+ ﬁsh
+ ratio
+ (dotted
+ black
+ curve).
+ Three
+ lower
+ panels:
+ (i)
+ ﬁtted
+ values
+ (red
+ curves
+ to
+ the
+ left
+ of
+ the
+ vertical
+ black
+ dotted
+line),
+ (ii)
+ predictions
+ conditioned
+ on
+ known
+ temperature,
+ external
+ infection
+ pressure
+ index
+ and
+ number
+ and
+ weight
+ of
+ salmon
+ (red
+ curves
+ to
+ the
+ right
+ of
+ the
+ vertical
+ black
+dotted
+ line),
+ (iii)
+ corresponding
+ 95%
+ credible
+ interval
+ for
+ the
+ lice
+ population
+ (pink
+ area)
+ and
+ iv)
+ additional
+ 95%
+ credible
+ interval
+ for
+ lice
+ counts
+ (grey
+ area),
+ i.e.
+ including
+ the
+randomness
+ in
+ the
+ negative
+ binomial
+ distribution
+ for
+ lice
+ counts.
+ (For
+ interpretation
+ of
+ the
+ references
+ to
+ colour
+ in
+ this
+ ﬁgure
+ legend,
+ the
+ reader
+ is
+ referred
+ to
+ the
+ web
+ version
+of
+ this
+ article.)
+There
+ was
+ substantial
+ underreporting
+ of
+ the
+ number
+ of
+ lice
+ at
+the
+ CH
+ stage.
+ Depending
+ on
+ the
+ size
+ of
+ the
+ ﬁsh,
+ the
+ model
+ esti-
+mates
+ suggested
+ that
+ on
+ average
+ only
+ 9%
+ to
+ 19%
+ of
+ the
+ CH
+ lice
+ were
+counted
+ (Fig.
+ 5).
+ In
+ addition,
+ there
+ was
+ substantial
+ between
+ farm
+variability
+ in
+ this
+ counting
+ error
+ (Fig.
+ 5).
+ The
+ relationship
+ between
+observed
+ abundances
+ of
+ lice
+ at
+ the
+ CH
+ stage
+ and
+ predicted
+ values
+was
+ poorer
+ than
+ for
+ the
+ other
+ stages
+ (OM
+ and
+ AF),
+ even
+ when
+ the
+underreporting
+ was
+ accounting
+ for
+ (the
+ grey
+ “counting
+ error”
+ area
+for
+ CH
+ in
+ Fig.
+ 4
+ is
+ wide
+ and
+ includes
+ zero).
+ This
+ can
+ be
+ quanti-
+ﬁed
+ by
+ the
+ elevated
+ prediction
+ error,
+ especially
+ in
+ the
+ prediction
+periods
+ (Table
+ 3)
+ and
+ by
+ the
+ aggregation
+ parameter
+ ,
+ which
+ was
+50–75%
+ lower
+ than
+ for
+ OM
+ and
+ AF
+ (Table
+ 4).
+ This
+ indicates
+ that
+ the
+information
+ content
+ in
+ the
+ counts
+ of
+ CH
+ stage
+ lice
+ is
+ limited.
+
+
+<!-- page 11 -->
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+ 
+343
+Table
+ 4
+Posterior
+ means
+ with
+ 95%
+ credible
+ intervals
+ of
+ parameters
+ in
+ the
+ static
+ parts
+ of
+ the
+ model.
+Part
+ of
+ model
+ 
+Stage
+ 
+Parameter
+ interpretation
+ 
+Parameter
+ symbol
+ 
+Section
+ 
+Posterior
+ mean
+ 
+95%
+ C.I.
+ lower
+ 
+95%
+ C.I.
+ upper
+Natural
+ mortality
+ 
+R,CO
+ 
+Mortality
+ rate
+ 
+RCOnat
+2.2.3
+ 
+0.302
+ 
+0.287
+ 
+0.315
+Mortality
+ cl.ﬁsh
+ 
+PA,
+ A
+ 
+Regression
+ coeff.
+ 
+clf
+2.2.3
+ 
+0.823
+ 
+0.620
+ 
+1.046
+Development
+ 
+Egg
+ 
+Median
+ at
+ 10 ◦C
+ 
+ıEm10
+2.2.4
+ 
+4.866
+ 
+4.432
+ 
+5.728
+Development
+ 
+Nauplii
+ 
+Median
+ at
+ 10 ◦C
+ 
+ıNm10
+2.2.4
+ 
+3.948
+ 
+3.088
+ 
+4.422
+Development
+ 
+R
+ 
+Shape
+ parameter
+ 
+ıRs
+2.2.4
+ 
+18.869
+ 
+15.915
+ 
+19.975
+Development
+ 
+R
+ 
+Power
+ parameter
+ 
+ıRp
+2.2.4
+ 
+0.401
+ 
+0.400
+ 
+0.405
+Development
+ 
+CH
+ 
+Median
+ at
+ 10 ◦C
+ 
+ıCHm10
+2.2.4
+ 
+18.934
+ 
+18.314
+ 
+19.487
+Development
+ 
+CH
+ 
+Shape
+ parameter
+ 
+ıCHs
+2.2.4
+ 
+7.945
+ 
+6.999
+ 
+9.022
+Development
+ 
+CH
+ 
+Power
+ parameter
+ıCHp
+2.2.4
+ 
+1.305
+ 
+1.257
+ 
+1.354
+Development
+ 
+PA
+ 
+Median
+ at
+ 10 ◦C
+ 
+ıPAm10
+2.2.4
+ 
+10.742
+ 
+10.174
+ 
+11.322
+Development
+ 
+PA
+ 
+Shape
+ parameter
+ 
+ıPAs
+2.2.4
+ 
+1.643
+ 
+1.430
+ 
+1.898
+Development
+ 
+PA
+ 
+Power
+ parameter
+ 
+ıPAp
+2.2.4
+ 
+0.866
+ 
+0.784
+ 
+0.950
+Development
+ 
+CO
+ 
+Expectation
+ 
+ıCO
+0
+2.2.5
+ 
+−2.576
+ 
+−2.958
+ 
+−2.207
+Development
+ 
+CO
+ 
+Regression
+ coeff.
+ıCO
+1
+2.2.5
+ 
+0.082
+ 
+0.040
+ 
+0.120
+Development
+ 
+CO
+ 
+Variance
+ within
+ farm
+ 
+(COdf )
+2
+2.2.5
+ 
+0.035
+ 
+0.026
+ 
+0.044
+Development
+ 
+CO
+ 
+Variance
+ between
+ farms
+ 
+(COd)
+2
+2.2.5
+ 
+0.357
+ 
+0.206
+ 
+0.606
+Reproduction
+ 
+AF
+ to
+ R
+ 
+Basic
+ number
+ of
+ eggs
+ 
+ˇr
+0
+2.2.6
+ 
+172.500
+ 
+Fixed
+Reproduction
+ 
+AF
+ to
+ R
+Age
+ dependence
+ 
+ˇr
+1
+2.2.6
+ 
+0.200
+ 
+Fixed
+Reproduction
+ 
+AF
+ to
+ R
+ 
+Density
+ dependence
+ 
+r
+2.2.6
+ 
+493
+ 
+482
+ 
+498
+Cleaner
+ ﬁsh
+ model
+ 
+Mortality
+ rate
+ 
+clf
+2.2.10
+ 
+0.028
+ 
+0.022
+ 
+0.034
+Data
+ model
+ 
+CH
+ 
+Aggregation
+ parameter
+ 
+CH
+2.2.11
+ 
+0.051
+ 
+0.048
+ 
+0.054
+Data
+ model
+ 
+OM
+ =
+ PA
+ +
+ AM
+ 
+Aggregation
+ parameter
+ 
+OM
+2.2.11
+ 
+0.194
+ 
+0.181
+ 
+0.207
+Data model
+AF
+ 
+Aggregation
+ parameter
+AF
+2.2.11
+ 
+0.120
+ 
+0.109
+ 
+0.132
+Data model
+ 
+CH
+ 
+Expectation
+ 
+ˇCHcount
+0
+2.2.11
+ 
+−1.566
+ 
+−1.819
+ 
+−1.339
+Data model
+ 
+CH
+ 
+Variance
+ 
+(CHcount)
+2
+2.2.11
+ 
+0.411
+ 
+0.238
+ 
+0.682
+Data model
+CH
+ 
+Regression
+ coeff.
+ 
+ˇCHcount
+1
+2.2.11
+ 
+−0.164
+ 
+−0.188
+ 
+−0.136
+Fig.
+ 5.
+ Posterior
+ mean
+ of
+ the
+ proportion
+ of
+ true
+ CH
+ lice
+ counted
+ as
+ a function
+ of
+ ﬁsh
+weight,
+ on
+ average
+ over
+ all
+ farms
+ (solid
+ line)
+ and
+ 95%
+ limits
+ for
+ the
+ between-farm
+variability
+ (dashed
+ lines).
+3.2.
+ Parameter
+ estimates
+Posterior
+ mean
+ estimates
+ and
+ credible
+ intervals
+ for
+ parameters
+in
+ the
+ model
+ are
+ given
+ in
+ Tables
+ 4
+ and
+ 5. Note
+ that
+ for
+ those
+ parts
+of
+ the
+ model
+ where
+ we have
+ no
+ data,
+ covariation
+ between
+ param-
+eters
+ in
+ the
+ model
+ may
+ lead
+ to
+ potential
+ bias,
+ i.e.
+ high
+ estimates
+ of
+one
+ parameter
+ may
+ be
+ compensated
+ for
+ by
+ an
+ associated
+ change
+ in
+the
+ value
+ of
+ another
+ parameter.
+ An
+ example
+ of
+ this
+ is
+ that
+ mortality
+and
+ development
+ rates
+ for
+ the
+ R
+ and
+ CO
+ stages
+ and
+ the
+ reproduc-
+tion
+ rate
+ are
+ related,
+ but
+ without
+ relevant
+ observations
+ to
+ tease
+them
+ apart.
+ For
+ instance,
+ if
+ the
+ reproduction
+ rate
+ is
+ overestimated,
+this
+ can
+ be
+ compensated
+ either
+ by
+ increasing
+ the
+ mortality
+ in
+ the
+R
+ and
+ CO
+ stages
+ (RCOnat) or
+ by
+ reducing
+ the
+ infection
+ rate
+ (ıCO
+0 ,
+which
+ controls
+ the
+ development
+ from
+ CO
+ to
+ CH).
+ Also,
+ for
+ a
+ given
+reproduction
+ rate,
+ an
+ increase
+ in
+ RCOnat can
+ be
+ compensated
+ by
+ an
+increase
+ in
+ ıCO
+0 , which
+ is
+ conﬁrmed
+ by
+ a
+ correlation
+ of
+ 0.70
+ between
+the
+ estimates
+ of
+ these
+ parameters.
+ Another
+ obvious
+ example
+ is
+ the
+development
+ time
+ parameters
+ ıEm10 and
+ ıNm10 for
+ the
+ egg
+ and
+ nau-
+plii
+ stages,
+ which
+ were
+ negatively
+ correlated
+ (-0.98)
+ and
+ can
+ not
+separated
+ by
+ the
+ data,
+ only
+ by
+ the
+ priors.
+When
+ compared
+ to
+ previously
+ published
+ estimates
+ on
+ stage-
+speciﬁc
+ mortality,
+ there
+ are
+ some
+ notable
+ differences
+ (Table
+ 6).
+ The
+estimate
+ of
+ the
+ mean
+ mortality
+ rate
+ common
+ to
+ the
+ R
+ and
+ CO
+ stages
+(RCOnat)
+ was
+ higher
+ than
+ the
+ previous
+ estimate
+ (Table
+ 6).
+ However,
+note
+ that
+ in
+ our
+ model,
+ this
+ quantity
+ also
+ accounts
+ for
+ nauplii
+ and
+copepodids
+ that
+ drift
+ away
+ from
+ the
+ farm,
+ in
+ addition
+ to
+ the
+ pure
+natural
+ mortality.
+ For
+ the
+ CH,
+ PA
+ and
+ A
+ stages,
+ the
+ mortality
+ rates
+vary
+ over
+ time,
+ but
+ we
+ calculated
+ their
+ overall
+ expectations
+ (aver-
+ages
+ in
+ the
+ long
+ run)
+ by
+ simulation.
+ The
+ overall
+ expectation
+ for
+the
+ mortality
+ rates
+ of
+ the
+ CH
+ and
+ PA
+ stages
+ tended
+ to
+ be
+ lower
+than
+ previous
+ estimates,
+ while
+ the
+ estimate
+ for
+ the
+ adult
+ stage
+was
+ within
+ the
+ range
+ of
+ previous
+ studies
+ (Table
+ 6).
+ These
+ estimates
+must
+ be
+ interpreted
+ with
+ caution
+ since
+ the
+ model
+ assumes
+ equal
+development
+ rates
+ between
+ genders
+ and,
+ furthermore,
+ since
+ adult
+males
+ are
+ pooled
+ with
+ the
+ PA
+ stages
+ in
+ the
+ observational
+ data.
+ More
+detailed
+ ﬁgures
+ on
+ mortality,
+ including
+ parameter
+ uncertainties,
+are
+ presented
+ in
+ Figures
+ 9–13
+ in
+ the
+ Supplementary
+ material.
+We
+ also
+ used
+ simulations
+ to
+ ﬁnd
+ the
+ estimated
+ median
+ develop-
+ment
+ times,
+ since
+ the
+ ım10 parameters
+ given
+ in
+ Table
+ 4
+ have
+ exact
+interpretations
+ only
+ in
+ the
+ continuous
+ Weibull
+ distribution.
+ Esti-
+mated
+ median
+ development
+ times
+ at
+ 10 ◦C
+ were
+ similar
+ to
+ mean
+and
+ minimum
+ estimates
+ from
+ previous
+ studies
+ (Table
+ 7),
+ although
+with
+ a
+ slightly
+ higher
+ estimate
+ at
+ the
+ CH
+ stage
+ and
+ fairly
+ low
+ esti-
+mate
+ for
+ the
+ PA
+ stage.
+ Panel
+ (a)
+ in
+ Fig.
+ 6
+ show
+ how
+ the
+ estimated
+development
+ rates
+ increase
+ by
+ stage-age
+ at
+ a
+ temperature
+ of
+ 10 ◦C.
+These
+ curves
+ differ
+ in
+ principle
+ from
+ the
+ development
+ rates
+ used
+in
+ all
+ population
+ models
+ mentioned
+ in
+ Section
+ 2.2.1, since
+ all
+ these
+models
+ use
+ step
+ functions
+ with
+ a
+ development
+ rate
+ of
+ 0
+ until
+ a
+ min-
+imum
+ development
+ time
+ and
+ then
+ a
+ constant
+ rate
+ afterwards.
+ For
+the
+ R
+ and
+ CH
+ stages,
+ however,
+ the
+ estimated
+ cumulative
+ proportion
+of
+ lice
+ developed
+ to
+ the
+ next
+ stage
+ (panel
+ b)
+ in
+ Fig.
+ 6)
+ resemble
+ these
+step
+ functions.
+ For
+ the
+ PA
+ stage,
+ however,
+ the
+ estimated
+ devel-
+
+
+<!-- page 12 -->
+344
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+Table 5
+Posterior
+ means
+ with
+ 95%
+ credible
+ intervals
+ of
+ parameters
+ in
+ the
+ time-varying
+ parts
+ of
+ the
+ model.
+Part
+ of
+ model
+ 
+Stage
+ 
+Parameter
+ interpretation
+ 
+Parameter
+ symbol
+ 
+Section
+ 
+Posterior
+ mean
+ 
+95%
+ C.I.
+ lower
+ 
+95%
+ C.I.
+ upper
+Natural
+ mortality
+ 
+CH
+ 
+Expectation
+ in
+ AR(1)
+ 
+CHnat
+0
+2.2.3
+ 
+−6.953
+ 
+−7.076
+ 
+−6.842
+Natural
+ mortality
+ 
+CH
+ 
+Coefﬁcient
+ in
+ AR(1)
+ 
+	CHnat
+2.2.3
+ 
+0.012
+ 
+0.001
+ 
+0.028
+Natural
+ mortality
+ 
+CH
+ 
+Variance
+ in
+ AR(1)
+ 
+(CHnat)
+2
+2.2.3
+ 
+0.018
+ 
+0.010
+ 
+0.026
+Natural
+ mortality
+PA
+ 
+Expectation
+ in
+ AR(1)
+PAnat
+0
+2.2.3
+ 
+−5.011
+ 
+−5.234
+ 
+−4.725
+Natural
+ mortality
+ 
+PA
+ 
+Coefﬁcient
+ in
+ AR(1)
+ 
+	PAnat
+2.2.3
+ 
+0.036
+ 
+0.001
+ 
+0.092
+Natural
+ mortality
+PA
+ 
+Variance
+ in
+ AR(1)
+(PAnat)
+2
+2.2.3
+ 
+0.114
+ 
+0.073
+ 
+0.171
+Natural
+ mortality
+ 
+A
+ 
+Expectation
+ in
+ AR(1)
+ 
+Anat
+0
+2.2.3
+ 
+−2.408
+ 
+−2.487
+ 
+−2.342
+Natural
+ mortality
+ 
+A
+ 
+Coefﬁcient
+ in
+ AR(1)
+ 
+	Anat
+2.2.3
+ 
+0.693
+ 
+0.676
+ 
+0.707
+Natural
+ mortality
+ 
+A
+ 
+Variance
+ in
+ AR(1)
+ 
+(Anat)
+2
+2.2.3
+ 
+0.728
+ 
+0.686
+ 
+0.772
+Mortality
+ ch.tr.
+ 
+CH,
+ PA,
+ A
+ 
+Expectation,
+ deltamethrin
+ 
+DMcht
+2.2.3
+ 
+2.434
+ 
+1.574
+ 
+3.354
+Mortality
+ ch.tr.
+ 
+CH,
+ PA,
+ A
+ 
+Variance,
+ deltamethrin
+ 
+(DMcht)
+2
+2.2.3
+ 
+9.084
+ 
+5.905
+ 
+12.565
+Mortality
+ ch.tr.
+ 
+PA,
+ A
+ 
+Expectation,
+ azamethiphos
+ 
+AZcht
+2.2.3
+ 
+0.158
+ 
+−0.755
+ 
+1.106
+Mortality
+ ch.tr.
+ 
+PA,
+ A
+ 
+Variance,
+ azamethiphos
+ 
+(AZcht)
+2
+2.2.3
+ 
+(DMcht)
+2
+Mortality
+ ch.tr.
+ 
+PA,
+ A
+ 
+Expectation,
+ H2O2
+HPcht
+2.2.3
+ 
+4.034
+ 
+3.119
+ 
+5.071
+Mortality
+ ch.tr.
+ 
+PA,
+ A
+ 
+Variance,
+ H2O2
+(HPcht)
+2
+2.2.3
+ 
+(DMcht)
+2
+Mortality
+ ch.tr.
+ 
+CH,
+ PA,
+ A
+ 
+Expectation,
+ emamectin
+ 
+EMcht
+2.2.3
+ 
+−4.786
+ 
+−5.589
+ 
+−4.251
+Mortality
+ ch.tr.
+ 
+CH,
+ PA,
+ A
+ 
+Variance,
+ emamectin
+ 
+(EMcht)
+2
+2.2.3
+ 
+1.912
+ 
+0.908
+ 
+4.004
+Mortality
+ ch.tr.
+ 
+CH,
+ PA
+ 
+Expectation,
+ diﬂubenzuron
+ 
+DIcht
+2.2.3
+ 
+−8.399
+ 
+−12.702
+ 
+−5.099
+Mortality
+ ch.tr.
+ 
+CH,
+ PA
+ 
+Variance,
+ diﬂubenzuron
+ 
+(DIcht)
+2
+2.2.3
+ 
+(EMcht)
+2
+External
+ recr.
+ 
+AF
+ to
+ R
+ 
+Expectation
+ in
+ AR(1)
+ 
+Ext
+2.2.8
+ 
+0.301
+ 
+0.177
+ 
+0.410
+External
+ recr.
+ 
+AF
+ to
+ R
+ 
+Coefﬁcient
+ in
+ AR(1)
+ 
+	Ext
+2.2.8
+ 
+0.934
+ 
+0.925
+ 
+0.945
+External
+ recr.
+ 
+AF
+ to
+ R
+ 
+Variance
+ in
+ AR(1)
+ 
+(Extar)
+2
+2.2.8
+ 
+0.163
+ 
+0.152
+ 
+0.174
+External
+ recr.
+ 
+AF
+ to
+ R
+ 
+Variance
+ 
+(Ext)
+2
+2.2.8
+ 
+0.007
+ 
+0.001
+ 
+0.028
+Table
+ 6
+Posterior
+ means
+ with
+ 95%
+ credible
+ intervals
+ of
+ daily
+ mortality
+ from
+ this
+ study
+ together
+ with
+ point
+ estimates
+ or
+ ranges
+ from
+ previous
+ studies.
+Stage
+ 
+Point
+ estimate
+ or
+ range
+ 
+95%
+ C.I.
+ 
+Sex
+ 
+Comment
+ 
+Reference
+Nauplii
+ 
+0.30
+ 
+0.29–0.32
+ 
+For
+ R
+ =
+ eggs
+ +
+ nauplii,
+ includes
+ drifting
+ away
+ 
+This
+ paper
+0.17
+ 
+“Plausible
+ value”
+ 
+Stien
+ et
+ al.
+ (2005)
+CO
+ 
+0.30
+ 
+0.29–0.32
+ 
+The
+ same
+ as
+ for
+ R 
+This
+ paper
+0.22
+ 
+“Plausible
+ values”
+ 
+Stien
+ et
+ al.
+ (2005)
+CH
+ 
+0.0010
+ 
+0.0008–0.0011
+ 
+This
+ paper
+0.002–0.01
+ 
+“Plausible
+ values”
+ 
+Stien
+ et
+ al.
+ (2005)
+0.0006–0.020
+ 
+Outer
+ interval
+ limits
+ from
+ 4
+ reported
+ studies
+ 
+Stien
+ et
+ al.
+ (2005)
+0.0002–0.026
+ 
+Range
+ over
+ 7
+ trials
+ on
+ juvenile
+ Paciﬁc
+ salmon
+ 
+Krkoˇsek
+ et
+ al.
+ (2009)
+PA
+ 
+0.0071
+ 
+0.0055–0.0095
+ 
+This
+ paper
+0.02–0.18
+Males
+ 
+“Plausible
+ values”
+ 
+Stien
+ et
+ al.
+ (2005)
+0.002–0.21
+ 
+Males
+ 
+Outer
+ interval
+ limits
+ from
+ 4
+ reported
+ studies
+ 
+Stien
+ et
+ al.
+ (2005)
+0.03–0.07
+ 
+Females
+ 
+“Plausible
+ values”
+ 
+Stien
+ et
+ al.
+ (2005)
+0.011–0.102
+ 
+Females
+ 
+Outer
+ interval
+ limits
+ from
+ 4
+ reported
+ studies
+ 
+Stien
+ et
+ al.
+ (2005)
+0.14–0.34
+ 
+PA
+ +
+ A
+ combined,range
+ over
+ 7
+ trials
+ 
+Krkoˇsek
+ et
+ al.
+ (2009)
+on
+ juvenile
+ Paciﬁc
+ salmon
+A
+ 
+0.12
+ 
+0.11–0.13
+ 
+This
+ paper
+0.03–0.06
+ 
+Males
+ 
+“Plausible
+ values”
+ 
+Stien
+ et
+ al.
+ (2005)
+0.008–0.26
+ 
+Males
+ 
+Outer
+ interval
+ limits
+ from
+ 4
+ reported
+ studies
+ 
+Stien
+ et
+ al.
+ (2005)
+0.02–0.04
+ 
+Females
+ 
+“Plausible
+ values”
+ 
+Stien
+ et
+ al.
+ (2005)
+0.003–0.70
+ 
+Females
+ 
+Outer
+ interval
+ limits
+ from
+ 3
+ reported
+ studies
+ 
+Stien
+ et
+ al.
+ (2005)
+0.14–0.34
+ 
+PA
+ +
+ A
+ combined,range
+ over
+ 7
+ trials
+ 
+Krkoˇsek
+ et
+ al.
+ (2009)
+on
+ juvenile
+ Paciﬁc
+ salmon
+Table
+ 7
+Posterior
+ means
+ with
+ 95%
+ credible
+ intervals
+ of
+ development
+ times
+ (in
+ days)
+ at
+ 10 ◦C
+ from
+ this
+ study
+ together
+ with
+ point
+ estimates
+ or
+ ranges
+ from
+ previous
+ studies.
+Stage
+ 
+Point
+ estimate
+ or
+ range
+ 
+95%
+ C.I.
+ 
+Estimate
+ of
+ what
+ 
+Sex
+ 
+Comment
+ 
+Reference
+Eggs
+ 
+5.0
+ 
+4.5–5.8
+ 
+Median
+ 
+This
+ paper
+8.8
+ 
+Minimum
+ 
+From
+ their
+ Eq.
+ (8)
+ and
+ Table
+ 3
+ 
+Stien
+ et
+ al.
+ (2005)
+4.6
+ 
+Mean
+ 
+Samsing
+ et
+ al.
+ (2016)
+Nauplii
+ 
+4.0
+ 
+3.2–4.5
+ 
+Median
+ 
+This
+ paper
+3.6
+ 
+Minimum
+ 
+From
+ their
+ Eq.
+ (8)
+ and
+ Table
+ 3
+ 
+Stien
+ et
+ al.
+ (2005)
+3.8
+ 
+Mean
+ 
+Samsing
+ et
+ al.
+ (2016)
+CH
+ 
+18.8
+ 
+18.0–19.0
+ 
+Median
+ 
+This
+ paper
+15.4
+ 
+Minimum
+ 
+Males
+ 
+From
+ their
+ Eq.
+ (8)
+ and
+ Table
+ 3
+ 
+Stien
+ et
+ al.
+ (2005)
+16.5
+ 
+Minimum
+ 
+Females
+ 
+From
+ their
+ Eq.
+ (8)
+ and
+ Table
+ 3
+ 
+Stien
+ et
+ al.
+ (2005)
+11–13
+ 
+Range
+ 
+Males
+ 
+Eichner
+ et
+ al.
+ (2015)
+13–15
+ 
+Range
+ 
+Females
+ 
+Eichner
+ et
+ al.
+ (2015)
+11–14
+ 
+Minimum
+ 
+5
+ trials
+ on
+ juvenile
+ Paciﬁc
+ salmon
+ at
+ 9–11 ◦C 
+Krkoˇsek
+ et
+ al.
+ (2009)
+PA
+ 
+10.5
+ 
+10.0–11.0
+ 
+Median
+ 
+This
+ paper
+10.4
+ 
+Minimum
+ 
+Males
+ 
+Calculated
+ as
+ difference
+ of
+ their
+ time
+ 
+Stien
+ et
+ al.
+ (2005)
+from
+ CH
+ to
+ A
+ and
+ from
+ CH
+ to
+ PA
+15.4
+ 
+Minimum
+ 
+Females
+ 
+Calculated
+ as
+ difference
+ of
+ their
+ time
+ 
+Stien
+ et
+ al.
+ (2005)
+from
+ CH
+ to
+ A
+ and
+ from
+ CH
+ to
+ PA
+
+
+<!-- page 13 -->
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+ 
+345
+Fig.
+ 6.
+ Posterior
+ means
+ of
+ daily
+ development
+ (a)
+ and
+ cumulative
+ proportion
+ developed
+ to
+ next
+ stage
+ (b)
+ at
+ temperature
+ 10 ◦C for
+ stages
+ R,
+ CH
+ and
+ PA.
+ The
+ curves
+ are
+ the
+posterior
+ means
+ of
+ the
+ development
+ rates,
+ conditioned
+ on
+ each
+ stage-age,
+ and
+ may
+ therefore
+ be
+ slightly
+ different
+ from
+ curves
+ based
+ the
+ posterior
+ means
+ of
+ the
+ parameter
+values plugged
+ into
+ Eq.
+ (24).
+Fig.
+ 7.
+ Posterior
+ mean
+ and
+ 95%
+ credible
+ intervals
+ for
+ the
+ total
+ mortality
+ for
+ the
+ PA
+and
+ A
+ stages
+ when
+ the
+ cleaner
+ ﬁsh
+ ratio
+ is
+ increased
+ from
+ 0
+ (only
+ natural
+ mortality)
+to
+ 10%.
+opment
+ rate
+ is
+ fundamentally
+ different
+ from
+ those
+ used
+ in
+ other
+models,
+ since
+ the
+ estimated
+ development
+ rate
+ for
+ PA
+ is
+ non-zero
+already
+ after
+ one
+ day.
+ This
+ implies
+ that
+ some
+ lice
+ in
+ the
+ PA
+ stage
+may develop
+ to
+ the
+ A
+ stage
+ very
+ quickly
+ in
+ the
+ present
+ model.
+Note
+ that
+ these
+ curves
+ ignore
+ mortality,
+ and
+ the
+ cumulative
+mortalities
+ may
+ be
+ high
+ for
+ stage-ages
+ where
+ the
+ development
+rates
+ still
+ are
+ quite
+ low,
+ especially
+ at
+ low
+ temperatures.
+ More
+detailed
+ ﬁgures
+ on
+ development
+ times,
+ including
+ parameter
+ uncer-
+tainties
+ and
+ for
+ different
+ temperatures
+ (5,
+ 10
+ and
+ 15 ◦C),
+ are
+presented
+ in
+ Figures
+ 14–16
+ in
+ the
+ Supplementary
+ material.
+We obtain
+ an
+ estimate
+ of
+ the
+ daily
+ cleaner
+ ﬁsh
+ mortality
+ of
+ 0.028
+(C.I.
+ 0.022–0.034,
+ Table
+ 4).
+ This
+ suggests
+ that
+ the
+ cleaner
+ ﬁsh
+ popu-
+lation
+ is
+ reduced
+ to
+ its
+ half
+ about
+ 1
+ month
+ after
+ release.
+ The
+ model
+conﬁrms
+ that
+ there
+ is
+ increased
+ mortality
+ of
+ lice
+ associated
+ with
+the
+ use
+ of
+ cleaner
+ ﬁsh
+ (Fig.
+ 7
+ and
+ Table
+ 4).
+ With
+ a
+ 10%
+ cleaner
+ ﬁsh
+to
+ salmon
+ ratio,
+ the
+ estimated
+ daily
+ lice
+ mortality
+ due
+ to
+ the
+ use
+of
+ cleaner
+ ﬁsh,
+ is
+ 0.079
+ (C.I.
+ 0.060–0.099).
+ This
+ implies
+ a
+ reduction
+in
+ the
+ life
+ expectancy
+ for
+ adult
+ lice
+ from
+ 8.2
+ to
+ 5.2
+ days
+ with
+ an
+increase
+ in
+ cleaner
+ ﬁsh
+ ratio
+ from
+ 0
+ to
+ 10%,
+ and
+ a
+ decrease
+ in
+ the
+life
+ expectancy
+ for
+ pre-adult
+ lice
+ (PA)
+ going
+ from
+ 141
+ days
+ to
+ 12
+days
+ for
+ the
+ same
+ change
+ in
+ cleaner
+ ﬁsh
+ ratio.
+ Therefore,
+ in
+ par-
+ticular
+ for
+ PA
+ lice,
+ the
+ use
+ of
+ cleaner
+ ﬁsh
+ is
+ estimated
+ to
+ have
+ a
+substantial
+ effect
+ on
+ lice
+ survival.
+ However,
+ in
+ the
+ present
+ data,
+ the
+estimated
+ cleaner
+ ﬁsh
+ ratio
+ seldom
+ amounted
+ to
+ more
+ than
+ 5%.
+ This
+seems
+ to
+ be
+ too
+ low
+ to
+ avoid
+ additional
+ treatments,
+ since
+ medical
+treatments
+ were
+ applied
+ in
+ almost
+ all
+ cages
+ in
+ the
+ data
+ set.
+ Hence,
+given
+ the
+ estimated
+ rates
+ of
+ decay
+ of
+ the
+ populations,
+ cleaner
+ ﬁsh
+louse
+ control
+ demands
+ large
+ numbers
+ of
+ ﬁsh.
+ Clearly,
+ this
+ raises
+many
+ sustainability
+ issues,
+ for
+ example
+ with
+ regard
+ to
+ the
+ welfare
+of
+ cleaner
+ ﬁsh
+ in
+ salmon
+ farms
+ and
+ the
+ resilience
+ of
+ wild
+ cleaner
+ﬁsh
+ populations
+ to
+ ﬁshery
+ (Halvorsen
+ et
+ al.,
+ 2017;
+ Skiftesvik
+ et
+ al.,
+2014).
+The
+ effects
+ of
+ the
+ various
+ chemotherapeutic
+ treatments
+ are
+ dif-
+ﬁcult
+ to
+ compare
+ since
+ the
+ assumed
+ duration
+ of
+ the
+ effects
+ varies
+between
+ treatments
+ and
+ by
+ temperature,
+ and
+ because
+ they
+ affect
+different
+ stages
+ of
+ lice.
+ Furthermore,
+ since
+ lice
+ develop
+ resistance
+towards
+ such
+ treatments
+ (Aaen
+ et
+ al.,
+ 2015;
+ Jansen
+ et
+ al.,
+ 2016),
+we
+ expect
+ that
+ the
+ effect
+ will
+ decrease
+ over
+ time.
+ Nevertheless,
+ the
+estimated
+ expected
+ cumulative
+ mortality
+ of
+ lice
+ (found
+ by
+ simula-
+tion)
+ in
+ the
+ PA
+ or
+ A
+ stages
+ due
+ to
+ bath
+ treatments
+ (i.e.
+ non-feed)
+ten
+ days
+ post
+ treatment
+ at
+ 10 ◦C,
+ were
+ high
+ for
+ hydrogen
+ per-
+oxide
+ (0.99,
+ C.I.
+ 0.97–1.00),
+ and
+ deltamethrin/cypermethrin
+ (0.94,
+C.I.
+ 0.89–0.98)
+ and
+ somewhat
+ lower
+ for
+ azamethiphos
+ (0.75,
+ C.I.
+0.64–0.86).
+ The
+ ﬁrst
+ two
+ of
+ these
+ are
+ similar
+ to
+ what
+ others
+ have
+reported
+ for
+ non-resistant
+ lice
+ populations,
+ being
+ 99%
+ for
+ hydrogen
+peroxide
+ (Groner
+ et
+ al.,
+ 2013)
+ and
+ 95%
+ for
+ deltamethrin
+ and
+ cyper-
+methrin
+ (Revie
+ et
+ al.,
+ 2005).
+ The
+ estimated
+ effects
+ of
+ all
+ treatment
+types
+ are
+ further
+ illustrated
+ in
+ Figures
+ 9–13
+ in
+ the
+ Supplementary
+material.
+Both
+ external
+ and
+ internal
+ recruitment
+ varied
+ substantially
+ over
+time,
+ and
+ one
+ of
+ the
+ two
+ may
+ dominate
+ the
+ other
+ in
+ certain
+ peri-
+ods.
+ The
+ estimated
+ proportion
+ of
+ internal
+ recruitment
+ for
+ each
+ farm
+averaged
+ over
+ the
+ whole
+ production
+ cycle
+ varies
+ from
+ about
+ 4
+ to
+73%.
+ On
+ average
+ over
+ all
+ farms,
+ this
+ proportion
+ is
+ 25%
+ (C.I.
+ 23–26%),
+with
+ a
+ median
+ of
+ 19.
+ When
+ the
+ abundance
+ of
+ adult
+ female
+ lice
+ was
+low
+ in
+ farms,
+ naturally
+ internal
+ recruitment
+ tended
+ to
+ be
+ low.
+ Inter-
+nal
+ recruitment
+ was,
+ however,
+ estimated
+ to
+ be
+ very
+ important
+ in
+farms
+ with
+ a
+ high
+ abundance
+ of
+ adult
+ females,
+ especially
+ for
+ farms
+without
+ any
+ neighbouring
+ farms
+ (Fig.
+ 8).
+ The
+ present
+ proportion
+of
+ internal
+ recruitment
+ is
+ substantially
+ below
+ the
+ estimates
+ pre-
+sented
+ by
+ Aldrin
+ et
+ al.
+ (2013). This
+ model,
+ however,
+ did
+ not
+ tease
+apart
+ actual
+ new
+ recruitment
+ and
+ the
+ contribution
+ to
+ lice
+ numbers
+from
+ lice
+ surviving
+ over
+ monthly
+ time
+ increments.
+ Furthermore,
+ it
+was
+ ﬁtted
+ to
+ farm
+ level
+ data
+ originating
+ from
+ different
+ reporting
+requirements.
+ Therefore,
+ we have
+ more
+ conﬁdence
+ in
+ the
+ present
+
+
+<!-- page 14 -->
+346
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+Fig.
+ 8.
+ Posterior
+ mean
+ of
+ the
+ average
+ proportion
+ of
+ recruitment
+ that
+ has
+ an
+ internal
+source
+ as
+ a
+ function
+ of
+ abundance
+ of
+ adult
+ females,
+ averaged
+ over
+ all
+ time
+ points
+and
+ for
+ (i)
+ the
+ 16
+ farms
+ with
+ at
+ least
+ one
+ neighbour
+ within
+ 3.54
+ km
+ (black
+ curve)
+ and
+(ii)
+ the
+ 16
+ farms
+ with
+ more
+ than
+ 3.54
+ km
+ to
+ its
+ nearest
+ neighbour
+ (red
+ curve).
+ (For
+interpretation
+ of
+ the
+ references
+ to
+ colour
+ in
+ this
+ ﬁgure
+ legend,
+ the
+ reader
+ is
+ referred
+to the
+ web
+ version
+ of
+ this
+ article.)
+results,
+ which
+ are
+ also
+ in
+ accordance
+ with
+ results
+ in ˚Adlandsvik
+(2015).
+ This
+ report
+ presented
+ a
+ median
+ of
+ 18%
+ for
+ the
+ proportion
+of
+ internal
+ recruitment,
+ based
+ on
+ a
+ simulation
+ of
+ the
+ spread
+ of
+ lice
+larvae
+ between
+ 591
+ farms
+ using
+ a
+ hydrodynamic
+ model
+ accounting
+for
+ sea
+ currents
+ (Johnsen
+ et
+ al.,
+ 2014).
+ The
+ importance
+ of
+ internal
+versus
+ external
+ recruitment
+ of
+ lice
+ has
+ been
+ under
+ considerable
+debate
+ in
+ the
+ salmon
+ farming
+ industry,
+ probably
+ since
+ it
+ has
+ direct
+bearings
+ on
+ the
+ motivation
+ for
+ controlling
+ abundances
+ of
+ adult
+female
+ lice
+ at
+ the
+ farm
+ level.
+Concerning
+ the
+ reproduction
+ rate,
+ we
+ notice
+ that
+ the
+ estimate
+of
+ r
+0 is
+ 493
+ (C.I
+ 482–498).
+ In
+ practice,
+ this
+ means
+ that
+ there
+ is
+no
+ evidence
+ of
+ density
+ dependent
+ reproductive
+ rates
+ (Allee
+ effect)
+in
+ the
+ estimated
+ model,
+ contrary
+ to
+ the
+ hypothesis
+ suggested
+ by
+Stormoen
+ et
+ al.
+ (2013), Krkoˇsek
+ et
+ al.
+ (2012)
+ and
+ Groner
+ et
+ al.
+(2014).
+ One
+ reason
+ for
+ this
+ discrepancy
+ is
+ that
+ recruitment
+ from
+external
+ sources
+ is
+ not
+ considered
+ in
+ the
+ aforementioned
+ models.
+In
+ our
+ model,
+ internal
+ recruitment
+ is
+ on
+ average
+ of
+ less
+ importance
+than
+ external
+ recruitment
+ at
+ low
+ abundances
+ of
+ AF
+ lice.
+ Reduced
+reproductive
+ rates
+ at
+ low
+ abundances
+ of
+ infection
+ are
+ therefore
+likely
+ to
+ be
+ masked
+ by
+ external
+ recruitment.
+The
+ role
+ of
+ the
+ modifying
+ factors
+ eExt
+t
+in
+ Eq.
+ (1)
+ is
+ to
+ adjust
+the
+ preliminary
+ estimates
+ of
+ external
+ recruits,
+ which
+ are
+ based
+ on
+distances
+ to
+ neighbouring
+ farms,
+ and
+ then
+ indirectly
+ taking
+ into
+account
+ local
+ hydrodynamics.
+ Averaging
+ the
+ estimates
+ of
+ these
+ fac-
+tors
+ over
+ time
+ within
+ each
+ farm
+ gives
+ a
+ farm-wise
+ index
+ for
+ how
+exposed
+ each
+ farm
+ is
+ to
+ external
+ infection.
+ The
+ largest
+ farm-wise
+factor
+ was
+ 61%
+ higher
+ than
+ the
+ smallest
+ one,
+ indicating
+ that
+ there
+are
+ local
+ variations
+ that
+ cannot
+ be
+ explained
+ by
+ distances
+ to
+ the
+neighbouring
+ farms
+ alone.
+ Furthermore,
+ the
+ cage-speciﬁc
+ param-
+eters
+ ıCO
+0fc from
+ Eq.
+ (28)
+ are
+ related
+ both
+ to
+ local
+ hydrodynamics
+and
+ how
+ cages
+ are
+ located
+ relative
+ to
+ each
+ other,
+ and
+ exp(ıCO
+0fc)
+ can
+serve
+ as
+ a
+ cage-wise
+ exposure
+ index.
+ The
+ most
+ exposed
+ cage
+ within
+a
+ farm
+ was
+ between
+ 17%
+ and
+ 203%
+ more
+ exposed
+ than
+ the
+ least
+exposed
+ cage
+ in
+ the
+ same
+ farm,
+ and
+ 48%
+ more
+ exposed
+ on
+ average
+over
+ all
+ farms.
+As
+ pointed
+ out
+ previously,
+ count
+ data
+ are
+ missing
+ completely
+for
+ the
+ R
+ stage
+ of
+ the
+ model,
+ aggregated
+ for
+ the
+ PA
+ and
+ AM
+ stages,
+and
+ biased
+ towards
+ low
+ numbers
+ for
+ the
+ CH
+ stage.
+ Therefore,
+ some
+of
+ the
+ model
+ parameters
+ cannot
+ be
+ estimated
+ from
+ the
+ data,
+ and
+to
+ overcome
+ this
+ we have
+ chosen
+ to
+ set
+ some
+ of
+ the
+ parameters
+ to
+ﬁxed
+ values.
+ The
+ most
+ important
+ is
+ probably
+ that
+ we have
+ set
+ the
+proportion
+ of
+ females
+ among
+ the
+ adults
+ to
+ 50%,
+ which
+ may
+ inﬂu-
+ence
+ estimates
+ of
+ other
+ parameters.
+ In
+ addition,
+ we
+ have
+ simpliﬁed
+the
+ model
+ and
+ assumed
+ that
+ the
+ development
+ times
+ from
+ PA
+ to
+ A
+and
+ adult
+ mortality
+ are
+ the
+ same
+ for
+ both
+ sexes.
+ These
+ simpliﬁ-
+cations
+ contradict
+ observations
+ of
+ somewhat
+ shorter
+ development
+times
+ for
+ AM
+ than
+ AF
+ lice
+ (Stien
+ et
+ al.,
+ 2005;
+ Eichner
+ et
+ al.,
+ 2015).
+We
+ could
+ have
+ chosen
+ other
+ ways
+ to
+ handle
+ this,
+ but
+ it
+ would
+ any-
+ways
+ have
+ been
+ necessary
+ with
+ strong
+ prior
+ assumptions
+ to
+ be
+ able
+to
+ estimate
+ gender
+ differences
+ in
+ the
+ model.
+In
+ total,
+ the
+ model
+ contains
+ 44
+ parameters
+ that
+ are
+ common
+ for
+all
+ farms
+ and
+ cages
+ and
+ that
+ are
+ estimated
+ from
+ the
+ data.
+ A
+ few
+ of
+these
+ are
+ confounded,
+ as
+ pointed
+ out
+ in
+ the
+ beginning
+ of
+ this
+ sec-
+tion,
+ but
+ most
+ of
+ them
+ are
+ estimated
+ with
+ credible
+ intervals
+ much
+tighter
+ than
+ the
+ corresponding
+ intervals
+ given
+ by
+ the
+ prior
+ distri-
+butions.
+ The
+ large
+ number
+ of
+ parameters
+ on
+ different
+ hierarchical
+levels
+ in
+ the
+ model
+ gives
+ a
+ possibility
+ for
+ overﬁtting.
+ However,
+ the
+size
+ of
+ prediction
+ errors
+ in
+ the
+ prediction
+ intervals
+ were
+ reasonable
+compared
+ to
+ those
+ in
+ the
+ estimation
+ periods,
+ at
+ least
+ for
+ the
+ AF
+ and
+OM
+ categories,
+ and
+ did
+ not
+ indicate
+ dramatic
+ overﬁtting
+ (Table
+ 3).
+ A
+more
+ informal
+ indication
+ of
+ a
+ balanced
+ ﬁt
+ was
+ given
+ by
+ the
+ farmers
+at
+ four
+ of
+ the
+ farms:
+ The
+ cage-wise
+ exposure
+ indexes
+ were
+ shown
+to
+ these
+ farmers,
+ and
+ they
+ concluded
+ that
+ the
+ estimates
+ were
+ con-
+sistent
+ with
+ their
+ own
+ experience
+ on
+ exposure
+ differences
+ between
+cages.
+4.
+ Conclusion
+The
+ presented
+ process
+ model
+ for
+ the
+ population
+ dynamics
+ of
+salmon
+ lice
+ in
+ aquaculture
+ farm
+ systems
+ combine
+ (1)
+ a
+ model
+for
+ the
+ main
+ stage
+ structure
+ of
+ salmon
+ lice;
+ (2)
+ model
+ terms
+ that
+describe
+ internal
+ and
+ external
+ recruitment
+ of
+ salmon
+ lice
+ to
+ the
+farms;
+ (3)
+ models
+ for
+ the
+ impact
+ of
+ management
+ strategies
+ adopted
+to
+ control
+ salmon
+ lice
+ infection
+ levels;
+ and
+ (4)
+ allows
+ for
+ stochastic-
+ity
+ in
+ aspects
+ of
+ these
+ processes.
+ In
+ addition,
+ we
+ describe
+ a
+ model
+ for
+the
+ link
+ between
+ the
+ process
+ model
+ and
+ data
+ collected
+ on
+ a
+ routine
+basis
+ in
+ modern
+ aquaculture.
+ This
+ allows
+ the
+ process
+ model
+ to
+ be
+ﬁtted
+ to
+ data
+ and
+ updated
+ when
+ new
+ production
+ and
+ salmon
+ lice
+data
+ from
+ ﬁsh
+ farms
+ become
+ available.
+ The
+ model
+ produces
+ esti-
+mates
+ of
+ lice
+ abundances
+ in
+ ﬁsh
+ farms
+ that
+ correspond
+ well
+ with
+observed
+ infection
+ levels.
+ Furthermore,
+ it
+ allows
+ reasonable
+ predic-
+tions
+ of
+ pre-adult
+ and
+ adult
+ sea
+ lice
+ infection
+ levels
+ to
+ be
+ made
+ for
+several
+ weeks
+ into
+ the
+ future
+ (Fig.
+ 4).
+ We
+ note,
+ however,
+ that
+ the
+observational
+ data
+ on
+ the
+ number
+ of
+ lice
+ at
+ the
+ chalimus
+ stage
+ vary
+substantially,
+ and
+ is
+ underestimated
+ to
+ varying
+ degrees
+ between
+ﬁsh
+ farms.
+ This
+ suggests
+ that
+ the
+ data
+ collected
+ on
+ the
+ abundance
+of
+ lice
+ at
+ the
+ chalimus
+ stages
+ contain
+ limited
+ information
+ in
+ terms
+of
+ real
+ infection
+ levels
+ in
+ the
+ farms.
+ Nevertheless,
+ observation
+ of
+chalimus
+ stage
+ larvae
+ may
+ give
+ salmon
+ farmers
+ early
+ warnings
+ of
+pre-adult
+ and
+ adult
+ lice
+ abundances
+ to
+ come,
+ even
+ though
+ their
+quantiﬁcation
+ is
+ uncertain.
+The
+ model
+ generates
+ stage
+ speciﬁc
+ estimates
+ of
+ development
+and
+ mortality
+ rates
+ based
+ on
+ real
+ production
+ data.
+ For
+ the
+ plank-
+tonic
+ stages,
+ the
+ estimates
+ of
+ mortality
+ rates
+ were
+ high
+ relative
+ to
+earlier
+ ﬁeld
+ and
+ laboratory
+ studies,
+ but
+ these
+ are
+ not
+ directly
+ com-
+parable,
+ since
+ our
+ deﬁnition
+ of
+ mortality
+ include
+ lice
+ that
+ drift
+ away
+from
+ the
+ farm.
+ For
+ the
+ chalimus
+ and
+ pre-adult
+ stages,
+ the
+ mortality
+rates
+ were
+ low
+ compared
+ to
+ previous
+ studies,
+ while
+ it
+ was
+ rather
+high
+ for
+ the
+ adult
+ stage.
+ One
+ reason
+ could
+ be
+ the
+ poor
+ data
+ support
+for
+ the
+ early
+ life
+ stages,
+ since
+ we
+ have
+ no
+ data
+ on
+ the
+ planktonic
+stages
+ and
+ poor
+ data
+ on
+ the
+ chalimus
+ stages.
+ The
+ poor
+ support
+by
+ data
+ makes
+ it
+ difﬁcult
+ to
+ separate
+ survival-estimates
+ at
+ these
+
+
+<!-- page 15 -->
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+ 
+347
+stages
+ from
+ other
+ parameters
+ in
+ the
+ model,
+ and
+ this
+ problem
+ may
+also
+ propagate
+ to
+ the
+ pre-adult
+ stage.
+ The
+ median
+ development
+times
+ for
+ all
+ stages
+ seem
+ reasonable.
+ However,
+ we
+ note
+ that
+ the
+distribution
+ of
+ development
+ times
+ from
+ the
+ pre-adult
+ to
+ the
+ adult
+stages
+ include
+ the
+ possibility
+ of
+ very
+ short
+ development
+ times.
+ It
+ is
+unclear
+ why
+ this
+ happens,
+ but
+ one
+ possible
+ explanation
+ could
+ be
+movement
+ of
+ adult
+ lice
+ between
+ cages
+ within
+ a
+ ﬁsh
+ farm.
+ Another
+explanation
+ could
+ be
+ that
+ some
+ of
+ the
+ non-gravid
+ female
+ adults
+have
+ been
+ mis-classiﬁed
+ as
+ pre-adults
+ in
+ the
+ lice
+ count
+ data.
+The
+ model
+ is
+ well
+ suited
+ to
+ quantify
+ the
+ effect
+ of
+ different
+treatments
+ on
+ lice
+ infection
+ levels.
+ This
+ aspect
+ may
+ be
+ useful
+ in
+monitoring
+ development
+ of
+ resistance
+ to
+ treatments
+ in
+ sea
+ lice
+ pop-
+ulations.
+ Furthermore,
+ to
+ our
+ knowledge
+ this
+ is
+ a
+ ﬁrst
+ data-based
+quantiﬁcation
+ of
+ the
+ effect
+ of
+ using
+ cleaner
+ ﬁsh
+ to
+ manage
+ lice
+ levels
+in
+ full
+ scale
+ salmon
+ farms.
+The
+ model
+ allows
+ both
+ internal
+ and
+ external
+ infection
+ processes
+to
+ be
+ quantiﬁed.
+ When
+ there
+ are
+ no
+ adult
+ female
+ lice
+ in
+ a
+ ﬁsh
+ farm,
+all
+ new
+ infections
+ will
+ necessarily
+ come
+ from
+ external
+ sources.
+When
+ reproducing
+ adult
+ female
+ lice
+ are
+ present,
+ however,
+ they
+may
+ contribute
+ substantially
+ to
+ infection
+ pressure
+ at
+ the
+ farm.
+ Their
+impact
+ on
+ local
+ recruitment
+ will
+ depend
+ both
+ on
+ their
+ numbers
+ and
+their
+ reproductive
+ rate,
+ but
+ also
+ on
+ the
+ external
+ infection
+ pressure.
+The
+ emphasis
+ on
+ salmon
+ louse
+ control
+ in
+ salmon
+ farming
+ has
+been
+ intensiﬁed
+ in
+ later
+ years,
+ resulting
+ in
+ the
+ implementation
+ of
+a
+ variety
+ of
+ innovative
+ control
+ methods.
+ Some
+ of
+ these
+ methods
+aim
+ to
+ reduce
+ salmon
+ louse
+ recruitment
+ from
+ external
+ sources,
+whereas
+ other
+ methods
+ aim
+ at
+ increasing
+ the
+ mortality
+ of
+ para-
+sitic
+ stages
+ of
+ the
+ lice,
+ such
+ as
+ the
+ use
+ of
+ cleaner
+ ﬁsh.
+ To
+ tease
+ out
+actual
+ effects
+ of
+ such
+ control
+ efforts
+ at
+ farm
+ levels,
+ or
+ more
+ so
+ for
+farms
+ in
+ a
+ production
+ area,
+ is
+ not
+ a
+ simple
+ task,
+ given
+ the
+ inter-
+connected
+ production-system
+ of
+ ﬁsh
+ farms
+ and
+ planktonic
+ spread
+of
+ this
+ parasite.
+ The
+ present
+ model
+ for
+ the
+ population
+ dynamics
+of
+ salmon
+ lice
+ in
+ aquaculture
+ farm
+ systems
+ may
+ resolve
+ the
+ com-
+plexity
+ of
+ processes
+ to
+ a
+ degree
+ that
+ will
+ improve
+ evaluations
+ of
+effects
+ of
+ various
+ control
+ efforts
+ at
+ farm
+ levels.
+ We believe
+ that
+using
+ the
+ model
+ as
+ “mathematical
+ laboratory”
+ to
+ explore
+ effects
+ of
+different
+ salmon
+ louse
+ control
+ strategies
+ in
+ interconnected
+ farms
+in
+ production
+ areas
+ has
+ a
+ large
+ potential
+ for
+ rationalising
+ area-wise
+control
+ strategies
+ in
+ an
+ informed
+ manner.
+ Models
+ for
+ scenario
+ sim-
+ulations
+ have
+ previously
+ been
+ used
+ to
+ investigate
+ effects
+ of
+ various
+measures
+ to
+ control
+ foot-and-mouth
+ disease
+ (Tildesley
+ et
+ al.,
+ 2012)
+or
+ bovine
+ tuberculosis
+ Brooks-Pollock
+ et
+ al.
+ (2014)
+ in
+ cattle,
+ and
+lately
+ also
+ for
+ controlling
+ the
+ spread
+ of
+ pancreas
+ disease
+ in
+ salmon
+farming
+ (Pettersen
+ et
+ al.,
+ 2016).
+Acknowledgements
+This
+ work
+ was
+ funded
+ by
+ the
+ Norwegian
+ Seafood
+ Research
+ Fund
+through
+ the
+ project
+ FHF
+ 900970
+ “Populasjonsmodell
+ for
+ lakselus
+på
+ merd
+ og
+ lokalitetsnivå”.
+ We thank
+ the
+ ﬁsh
+ farming
+ companies
+Marine
+ Harvest,
+ Salmar
+ and
+ Måsøval
+ for
+ supplying
+ us
+ with
+ their
+detailed
+ production
+ and
+ lice
+ count
+ data.
+Appendix
+ A.
+ Supplementary
+ data
+Supplementary
+ data
+ associated
+ with
+ this
+ article
+ can
+ be
+ found,
+ in
+the
+ online
+ version,
+ at
+ http://dx.doi.org/10.1016/j.ecolmodel.2017.
+05.019.
+References
+Aaen,
+ S.,
+ Helgesen,
+ K.,
+ Bakke,
+ M.,
+ Kaur,
+ K.,
+ Horsberg,
+ T.,
+ 2015.
+ Drug
+ resistance
+ in
+ sea
+lice: a
+ threat
+ to
+ salmonid
+ aquaculture.
+ Trends
+ Parasitol.
+ 31,
+ 72–81.
+Aalen,
+ O.,
+ Borgan
+ Ø,
+ Gjessing,
+ H.,
+ 2008.
+ Survival
+ and
+ Event
+ History
+ Analysis
+ –
+ A
+Process
+ Point
+ of
+ View.
+ Springer,
+ New
+ York.
+˚Adlandsvik,
+ B.,
+ 2015.
+ Forslag
+ til
+ produksjonsområder
+ (in
+ Norwegian).
+ Tech.
+ rep.
+Institute
+ of
+ Marine
+ Research,
+ Bergen,
+ Norway,
+ report
+ from
+ IMR
+ no.
+ 20-2015.
+Aldrin,
+ M.,
+ Huseby,
+ R.,
+ Jansen,
+ P.,
+ 2015.
+ Space-time
+ modelling
+ of
+ the
+ spread
+ of
+pancreas
+ disease
+ (PD)
+ within
+ and
+ between
+ Norwegian
+ marine
+ salmonid
+ farms.
+Prev.
+ Vet.
+ Med.
+ 121,
+ 132–141.
+Aldrin,
+ M.,
+ Lyngstad,
+ T.,
+ Kristoffersen,
+ A.,
+ Storvik,
+ B.,
+ Borgan
+ Ø,
+ Jansen,
+ P.,
+ 2011.
+Modelling
+ the
+ spread
+ of
+ infectious
+ salmon
+ anaemia
+ (ISA)
+ among
+ salmon
+ farms
+based
+ on
+ seaway
+ distances
+ between
+ farms
+ and
+ genetic
+ relationships
+ between
+ISA virus
+ isolates.
+ J.
+ R.
+ Soc.
+ Interface
+ 8,
+ 1346–1356.
+Aldrin,
+ M.,
+ Storvik,
+ B.,
+ Frigessi,
+ A.,
+ Viljugrein,
+ H.,
+ Jansen,
+ P.,
+ 2010.
+ A stochastic
+ model
+for the
+ assessment
+ of
+ the
+ transmission
+ pathways
+ of
+ heart
+ and
+ skeleton
+ muscle
+inﬂammation,
+ pancreas
+ disease
+ and
+ infectious
+ salmon
+ anaemia
+ in
+ marine
+ ﬁsh
+farms
+ in
+ Norway.
+ Prev.
+ Vet.
+ Med.
+ 93,
+ 51–61.
+Aldrin,
+ M.,
+ Storvik,
+ B.,
+ Kristoffersen,
+ A.,
+ Jansen,
+ P.,
+ 2013.
+ Space-time
+ modelling
+ of
+the
+ spread
+ of
+ salmon
+ lice
+ between
+ and
+ within
+ Norwegian
+ marine
+ salmon
+farms.
+ PLoS
+ ONE
+ 8,
+ e64039.
+Anonymous,
+ 2015.
+ Forutsigbar
+ og
+ miljømessig
+ bærekraftig
+ vekst
+ i norsk
+ lakse-
+ og
+ørretoppdrett
+ (in
+ Norwegian).
+ Tech.
+ rep.
+ Ministry
+ of
+ Trade,
+ Industry
+ and
+Fisheries,
+ Oslo,
+ Norway,
+ meld.
+ St
+ 16
+ (2014-2015).
+Brooks-Pollock,
+ E.,
+ Roberts,
+ G.,
+ Keeling,
+ M.,
+ 2014.
+ A
+ dynamic
+ model
+ of
+ bovine
+tuberculosis
+ spread
+ and
+ control
+ in
+ Great
+ Britain.
+ Nature
+ 511,
+ 228–231.
+Caswell,
+ H.,
+ 2001.
+ Matrix
+ Population
+ Models:
+ Construction,
+ Analysis
+ and
+Interpretation,
+ 2nd
+ ed.
+ Sinauer
+ Associates
+ Inc.,
+ Sunderland.
+Diggle,
+ P.,
+ 2006.
+ Spatio-temporal
+ point
+ processes,
+ partial
+ likelihood,
+ foot
+ and
+mouth
+ disease.
+ Stat.
+ Methods
+ Med.
+ Res.
+ 15,
+ 325–336.
+Eichner,
+ C.,
+ Hamre,
+ L.,
+ Nilsen,
+ F.,
+ 2015.
+ Instar
+ growth
+ and
+ molt
+ increments
+ in
+Lepeophtheirus
+ salmonis
+ (Copepoda:
+ Caligidae)
+ chalimus
+ larvae.
+ Parasitol.
+ Int.
+64,
+ 86–96.
+Forseth,
+ T.,
+ Barlaup,
+ B.,
+ Finstad,
+ B.,
+ Fiske,
+ P.,
+ Gjøsæter,
+ H.,
+ Falkegård,
+ M.,
+ Hindar,
+ A.,
+Mo,
+ T.,
+ Rikardsen,
+ A.,
+ Thorstad,
+ E.,
+ Vøllestad,
+ L.,
+ Wennevik,
+ V.,
+ 2017.
+ The
+ major
+threats
+ to
+ Atlantic
+ salmon
+ in
+ Norway.
+ ICES
+ J.
+ Mar.
+ Sci.
+ fsx020.
+Frazer,
+ L.,
+ Morton,
+ A.,
+ Krkoˇsek,
+ M.,
+ 2012.
+ Critical
+ thresholds
+ in
+ sea
+ lice
+ epidemics:
+evidence,
+ sensitivity
+ and
+ subcritical
+ estimation.
+ Proc.
+ Biol.
+ Sci.
+ 279,
+ 1950–1958.
+Gettinby,
+ G.,
+ Robbins,
+ C.,
+ Lees,
+ F.,
+ Heuch,
+ P.,
+ Finstad,
+ B.,
+ Malkenes,
+ R.,
+ Revie,
+ C.,
+ 2011.
+Use
+ of
+ a
+ mathematical
+ model
+ to
+ describe
+ the
+ epidemiology
+ of
+ Lepeophtheirus
+salmonis
+ on
+ farmed
+ Atlantic
+ salmon
+ Salmo
+ Salar
+ in
+ the
+ Hardangerford,
+ Norway.
+Aquaculture
+ 320,
+ 164–170.
+Gilks,
+ W.,
+ Richardson,
+ S.,
+ Spiegelhalter
+ De,
+ 1996.
+ Markov
+ Chain
+ Monte
+ Carlo
+ in
+Practice.
+ Chapman
+ &
+ Hall/CRC,
+ Boca
+ Raton.
+Grenfell,
+ B.T.,
+ Smith,
+ G.,
+ Anderson,
+ R.M.,
+ 1987.
+ A
+ mathematical
+ model
+ of
+ the
+population
+ biology
+ of
+ Ostertagia
+ ostertagi
+ in
+ calves
+ and
+ yearlings.
+ Parasitology
+95, 389–406.
+Groner,
+ M.,
+ Cox,
+ R.,
+ Gettinby,
+ G.,
+ Revie,
+ C.,
+ 2013.
+ Use
+ of
+ agent-based
+ modelling
+ to
+predict
+ beneﬁts
+ of
+ cleaner
+ ﬁsh
+ in
+ controlling
+ sea
+ lice,
+ Lepeophtheirus
+ salmonis,
+infestations
+ on
+ farmed
+ Atlantic
+ salmon,
+ Salmo
+ Salar
+ L.
+ J.
+ Fish
+ Dis.
+ 36,
+ 195–208.
+Groner,
+ M.,
+ Gettinby,
+ G.,
+ Stormoen,
+ M.,
+ Revie,
+ C.,
+ Cox,
+ R.,
+ 2014.
+ Modelling
+ the
+impact
+ of
+ temperature-induced
+ life
+ history
+ plasticity
+ and
+ mate
+ limitation
+ on
+the epidemic
+ potential
+ of
+ a
+ marine
+ ectoparasite.
+ PLoS
+ ONE
+ 9,
+ e88465.
+Groner,
+ M.,
+ McEwan,
+ G.,
+ Rees,
+ E.,
+ Gettinby,
+ G.,
+ Revie,
+ C.,
+ 2016a.
+ Quantifying
+ the
+inﬂuence
+ of
+ salinity
+ and
+ temperature
+ on
+ the
+ population
+ dynamics
+ of
+ a
+ marine
+ectoparasite.
+ Can.
+ J.
+ Fish.
+ Aquatic
+ Sci.
+ 73,
+ 1–11.
+Groner,
+ M.,
+ Rogers,
+ L.,
+ Bateman,
+ A.,
+ Connors,
+ B.,
+ Frazer,
+ L.,
+ Godwin,
+ S.,
+ Krkosek,
+ M.,
+Lewis,
+ M.,
+ Peacock,
+ S.,
+ Rees,
+ E.,
+ Revie,
+ C.,
+ Schlagel,
+ U.,
+ 2016b.
+ Lessons
+ from
+ sea
+louse
+ and
+ salmon
+ epidemiology.
+ Philos.
+ Trans.
+ R.
+ Soc.
+ B:
+ Biol.
+ Sci.
+ 371,
+20150203.
+Halvorsen,
+ K.,
+ Larsen,
+ T.,
+ Sørdalen,
+ T.,
+ Vøllestad,
+ L.,
+ Knutsen,
+ H.,
+ Olsen,
+ E.,
+ 2017.
+Impact
+ of
+ harvesting
+ cleaner
+ ﬁsh
+ for
+ salmonid
+ aquaculture
+ assessed
+ from
+replicated
+ coastal
+ marine
+ protected
+ areas.
+ Mar.
+ Biol.
+ Res.
+ 0,
+ 1–11.
+Hamre,
+ L.,
+ Eichner,
+ C.,
+ Caipang,
+ C.,
+ Dalvin,
+ S.,
+ Bron,
+ J.,
+ Nilsen,
+ F.,
+ Boxshall,
+ G.,
+Skern-Mauritzen,
+ R.,
+ 2013.
+ The
+ salmon
+ louse
+ Lepeophtheirus
+ salmonis
+(Copepoda:Caligidae)
+ life
+ cycle
+ has
+ only
+ two
+ chalimus
+ stages.
+ PLoS
+ ONE
+ 8,
+e73539.
+Höhle,
+ M.,
+ 2009.
+ Additive-multiplicative
+ regression
+ models
+ for
+ spatio-temporal
+epidemics.
+ Biom.
+ J.
+ 51,
+ 961–978.
+Jansen,
+ P.,
+ Grøntvedt,
+ R.,
+ Tarpai,
+ A.,
+ Helgesen,
+ K.,
+ Horsberg,
+ T.,
+ 2016.
+ Surveillance
+ of
+the
+ sensitivity
+ towards
+ antiparasitic
+ bath-treatments
+ in
+ the
+ salmon
+ louse
+(Lepeophtheirus
+ salmonis).
+ PLOS
+ ONE
+ 11,
+ e0149006.
+Jansen,
+ P.,
+ Kristoffersen,
+ A.,
+ Viljugrein,
+ H.,
+ Jimenez,
+ D.,
+ Aldrin,
+ M.,
+ Stien,
+ A.,
+ 2012.
+Sea
+ lice
+ as
+ a
+ density
+ dependent
+ constraint
+ to
+ salmonid
+ farming.
+ Proc.
+ R.
+ Soc.
+ B
+279,
+ 2330–2338.
+Johansen,
+ L.,
+ Jensen,
+ I.,
+ Mikkelsen,
+ H.,
+ Bjørn,
+ P.,
+ Jansen,
+ P.,
+ Bergh,
+ Ø.,
+ 2011.
+ Disease
+interaction
+ and
+ pathogen
+ exchange
+ between
+ wild
+ and
+ farmed
+ ﬁsh
+ populations
+with special
+ reference
+ to
+ Norway.
+ Aquaculture
+ 315,
+ 167–186.
+Johnsen,
+ I.,
+ Fiksen,
+ O.,
+ Sandvik,
+ A.,
+ Asplin,
+ L.,
+ 2014.
+ Vertical
+ salmon
+ lice
+ behaviour
+ as
+a
+ response
+ to
+ environmental
+ conditions
+ and
+ its
+ inﬂuence
+ on
+ regional
+dispersion
+ in
+ a
+ fjord
+ system.
+ Aquacult.
+ Environ.
+ Interact.
+ 5,
+ 127–141.
+Jonkers,
+ A.,
+ Sharkey,
+ K.,
+ Thrush,
+ M.,
+ Turnbull,
+ J.,
+ Morgan,
+ K.,
+ 2010.
+ Epidemics
+ and
+control
+ strategies
+ for
+ diseases
+ of
+ farmed
+ salmonids:
+ a parameter
+ study.
+Epidemics
+ 2,
+ 195–206.
+Keeling,
+ M.,
+ Woolhouse,
+ M.,
+ Shaw,
+ D.,
+ Matthews,
+ L.,
+ Chase-Topping,
+ M.,
+ Haydon,
+ D.,
+Cornell,
+ S.,
+ Kappey,
+ J.,
+ Wilesmith,
+ J.,
+ Grenfell,
+ B.,
+ 2001.
+ Dynamics
+ of
+ the
+ 2001
+ UK
+foot
+ and
+ mouth
+ epidemic:
+ stochastic
+ dispersal
+ in
+ a
+ heterogeneous
+ landscape.
+Science
+ 294,
+ 813–817.
+Kristoffersen,
+ A.D.J.,
+ Viljugrein,
+ H.,
+ Grøntvedt,
+ R.,
+ Stien,
+ A.,
+ Jansen,
+ P.,
+ 2014.
+ Large
+scale modelling
+ of
+ salmon
+ lice
+ (Lepeophtheirus
+ salmonis)
+ infection
+ pressure
+based
+ on
+ lice
+ monitoring
+ data
+ from
+ Norwegian
+ salmonid
+ farms.
+ Epidemics
+ 9,
+31–39.
+
+
+<!-- page 16 -->
+348
+ 
+M.
+ Aldrin
+ et
+ al.
+ / Ecological
+ Modelling
+ 359
+ (2017)
+ 333–348
+Kristoffersen,
+ A.,
+ Rees,
+ E.,
+ Stryhn,
+ H.R.I.,
+ Campisto,
+ J.,
+ Revie,
+ C.,
+ St-Hilaire,
+ S.,
+ 2013.
+Understanding
+ sources
+ of
+ sea
+ lice
+ for
+ salmon
+ farms
+ in
+ Chile.
+ Prev.
+ Vet.
+ Med.
+111, 165–175.
+Kristoffersen,
+ A.,
+ Viljugrein,
+ H.,
+ Kongtorp,
+ R.,
+ Brun,
+ E.,
+ Jansen,
+ P.,
+ 2009.
+ Risk
+ factors
+for
+ pancreas
+ disease
+ (PD)
+ outbreaks
+ in
+ farmed
+ Atlantic
+ salmon
+ and
+ rainbow
+trout
+ in
+ Norway
+ during
+ 2003–2007.
+ Prev.
+ Vet.
+ Med.
+ 90,
+ 127–136.
+Krkoˇsek,
+ M.,
+ Bateman,
+ A.,
+ Proboszcz,
+ S.,
+ Orr,
+ C.,
+ 2010.
+ Dynamics
+ of
+ outbreak
+ and
+control
+ of
+ salmon
+ lice
+ on
+ two
+ salmon
+ farms
+ in
+ the
+ Broughton
+ Archipelago.
+Aquacult.
+ Environ.
+ Interact.
+ 1,
+ 137–146.
+Krkoˇsek,
+ M.,
+ Connors,
+ B.,
+ Lewis,
+ M.,
+ Poulin,
+ R.,
+ 2012.
+ Allee
+ effects
+ may
+ slow
+ the
+spread
+ of
+ parasites
+ in
+ a
+ coastal
+ marine
+ ecosystem.
+ Am.
+ Nat.
+ 179,
+ 401–412.
+Krkoˇsek,
+ M.,
+ Morton,
+ A.,
+ Volpe,
+ J.,
+ Lewis,
+ M.,
+ 2009.
+ Sea
+ lice
+ and
+ salmon
+ population
+dynamics:
+ effects
+ of
+ exposure
+ time
+ for
+ migratory
+ ﬁsh.
+ Proc.
+ Biol.
+ Sci.
+ 276,
+2819–2828.
+Leclercq,
+ E.,
+ Davie,
+ A.,
+ Migaud,
+ H.,
+ 2014.
+ Delousing
+ efﬁciency
+ of
+ farmed
+ ballan
+wrasse
+ (Labrus
+ bergylta)
+ against
+ Lepeophtheirus
+ salmonis
+ infecting
+ Atlantic
+salmon
+ (Salmo
+ salar)
+ post-smolts.
+ Pest
+ Manag.
+ Sci.
+ 70,
+ 1274–1282.
+Murray,
+ A.,
+ Salama,
+ N.,
+ 2016.
+ A
+ simple
+ model
+ of
+ the
+ role
+ of
+ area
+ management
+ in
+ the
+control
+ of
+ sea
+ lice.
+ Ecol.
+ Model.
+ 337,
+ 39–47.
+Murray,
+ A.,
+ Wardeh,
+ M.,
+ McIntyre,
+ K.,
+ 2016.
+ Using
+ the
+ H-index
+ to
+ assess
+ disease
+priorities
+ for
+ salmon
+ aquaculture.
+ Prev.
+ Vet.
+ Med.
+ 126,
+ 199–207.
+Nelson,
+ W.A.,
+ Bjørnstad,
+ O.N.,
+ Yamanaka,
+ T.,
+ 2013.
+ Recurrent
+ insect
+ outbreaks
+caused
+ by
+ temperature-driven
+ changes
+ in
+ system
+ stability.
+ Science
+ 341,
+796–799.
+Nisbet,
+ R.M.,
+ Gurney,
+ W.S.C.,
+ 1983.
+ The
+ systematic
+ formulation
+ of
+ population
+models
+ for
+ insects
+ with
+ dynamically
+ varying
+ instar
+ duration.
+ Theor.
+ Popul.
+ Biol.
+23, 114–135.
+Nygaard,
+ S.,
+ 2010.
+ Slides
+ -
+ Lusekurs
+ for
+ røktere
+ -
+ Bokn
+ 26.
+ mars
+ 2010.
+ Tech.
+ rep.
+Fiskehelse
+ og
+ Miljø
+ AS.
+Ottesen,
+ K.,
+ Rykhus,
+ K.,
+ et
+ al.,
+ 2012.
+ Terapiveileder
+ -
+ Medikamentell
+ behandling
+mot
+ lakselus,
+ revidert
+ utgave
+ våren
+ 2012,
+ Tech.
+ rep.
+ Arbeidsgruppe.
+Pettersen,
+ J.,
+ Brynildsrud,
+ O.,
+ Huseby,
+ R.,
+ Rich,
+ K.,
+ Aunsmo,
+ A.,
+ Jensen,
+ B.,
+ Aldrin,
+ M.,
+2016.
+ The
+ epidemiological
+ and
+ economic
+ effects
+ from
+ systematic
+ depopulation
+of
+ Norwegian
+ marine
+ salmon
+ farms
+ infected
+ with
+ pancreas
+ disease
+ virus.
+ Prev.
+Vet. Med.
+ 132,
+ 113–124.
+Revie,
+ C.,
+ Robbins,
+ C.,
+ Gettinby,
+ G.,
+ Kelly,
+ L.,
+ Treasurer,
+ J.,
+ 2005.
+ A
+ mathematical
+model
+ of
+ the
+ growth
+ of
+ sea
+ lice,
+ Lepeophtheirus
+ salmonis,
+ populations
+ on
+farmed
+ Atlantic
+ salmon,
+ Salmo
+ Salar
+ L.,
+ in
+ Scotland
+ and
+ its
+ use
+ in
+ the
+assessment
+ of
+ treatment
+ strategies.
+ J.
+ Fish
+ Dis.
+ 28,
+ 603–613.
+Rittenhouse,
+ M.,
+ Revie,
+ C.,
+ Hurford,
+ A.,
+ 2016.
+ A
+ model
+ for
+ sea
+ lice
+ (Lepeophtheirus
+salmonis)
+ dynamics
+ in
+ a seasonally
+ changing
+ environment.
+ Epidemics
+ 16,
+ 8–16.
+Salama,
+ N.,
+ Murray,
+ A.,
+ 2013.
+ A
+ comparison
+ of
+ modelling
+ approaches
+ to
+ assess
+ the
+transmission
+ of
+ pathogens
+ between
+ Scottish
+ ﬁsh
+ farms:
+ the
+ role
+ of
+hydrodynamics
+ and
+ site
+ biomass.
+ Prev.
+ Vet.
+ Med.
+ 108,
+ 285–293.
+Samsing,
+ F.,
+ Oppedal,
+ F.,
+ Dalvin,
+ S.,
+ Johnsen,
+ I.,
+ Vågseth,
+ T.,
+ Dempster,
+ T.,
+ 2016.
+Salmon
+ lice
+ (Lepeophtheirus
+ salmonis)
+ development
+ times,
+ body
+ size,
+ and
+reproductive
+ outputs
+ follow
+ universal
+ models
+ of
+ temperature
+ dependence.
+Can.
+ J.
+ Fish.
+ Aquatic
+ Sci.
+ 73,
+ 1841–1851.
+Scheel,
+ I.,
+ Aldrin,
+ M.,
+ Frigessi,
+ A.,
+ Jansen,
+ P.,
+ 2007.
+ A
+ stochastic
+ model
+ for
+ infectious
+salmon
+ anemia
+ (ISA)
+ in
+ Atlantic
+ salmon
+ farming.
+ J.
+ R.
+ Soc.
+ Interface
+ 4,
+ 699–706.
+Skiftesvik,
+ A.,
+ Blom,
+ G.,
+ Agnalt,
+ A.B.,
+ Durif,
+ C.,
+ HI,
+ B.,
+ Bjelland,
+ R.,
+ Harkestad,
+ L.,
+Farestveit,
+ E.,
+ Paulsen,
+ O.,
+ Fauske,
+ M.,
+ Havelin,
+ T.,
+ Johnsen,
+ K.,
+ Mortensen,
+ S.,
+2014.
+ Wrasse
+ (Labridae)
+ as
+ cleaner
+ ﬁsh
+ in
+ salmonid
+ aquaculture
+ –
+ the
+Hardangerfjord
+ as
+ a case
+ study.
+ Mar.
+ Biol.
+ Res.
+ 10
+ (3),
+ 289–300.
+Stien,
+ A.,
+ Bjørn,
+ P.,
+ Heuch,
+ P.,
+ Elston,
+ D.,
+ 2005.
+ Population
+ dynamics
+ of
+ salmon
+ lice
+Lepeophtheirus
+ salmonis
+ on
+ Atlantic
+ salmon
+ and
+ sea
+ trout.
+ Mar.
+ Ecol.
+ Prog.
+ Ser.
+290, 263–275.
+Stormoen,
+ M.,
+ Skjerve,
+ E.,
+ Aunsmo,
+ A.,
+ 2013.
+ Modelling
+ salmon
+ lice,
+ Lepeophtheirus
+salmonis, reproduction
+ on
+ farmed
+ Atlantic
+ salmon,
+ Salmo
+ salar
+ L. J.
+ Fish
+ Dis.
+ 36,
+25–33.
+Taranger,
+ G.,
+ Karlsen,
+ O.,
+ Bannister,
+ R.,
+ Glover,
+ K.,
+ Husa,
+ V.,
+ Karlsbakk,
+ E.,
+ Kvamme,
+B.,
+ Boxaspen,
+ K.,
+ Bjørn,
+ P.,
+ Finstad,
+ B.,
+ Madhun,
+ A.,
+ HC,
+ M.,
+ Svasand,
+ T.,
+ 2015.
+Risk
+ assessment
+ of
+ the
+ environmental
+ impact
+ of
+ Norwegian
+ Atlantic
+ salmon
+farming.
+ ICES
+ J.
+ Mar.
+ Sci.
+ 72,
+ 997–1021.
+Tildesley,
+ M.,
+ Smith,
+ G.,
+ Keeling,
+ M.,
+ 2012.
+ Modeling
+ the
+ spread
+ and
+ control
+ of
+foot-and-mouth
+ disease
+ in
+ Pennsylvania
+ following
+ its
+ discovery
+ and
+ options
+for control.
+ Prev.
+ Vet.
+ Med.
+ 104,
+ 224–239.
+Vollset,
+ K.,
+ Krontveit,
+ R.,
+ Jansen,
+ P.,
+ Finstad,
+ B.,
+ Barlaup,
+ B.,
+ Skilbrei,
+ O.,
+ Krkoˇsek,
+ M.,
+Romunstad,
+ P.,
+ Aunsmo,
+ A.,
+ Jensen,
+ A.,
+ Dohoo,
+ I.,
+ 2015.
+ Impacts
+ of
+ parasites
+ on
+marine
+ survival
+ of
+ Atlantic
+ salmon:
+ a meta-analysis.
+ Fish
+ Fish.
+ 17,
+ 714–730.

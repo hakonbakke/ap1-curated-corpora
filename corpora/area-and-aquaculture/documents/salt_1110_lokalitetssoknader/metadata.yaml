@@ -1,0 +1,212 @@
+title: 'Kartlegging av kunnskapsbehov for behandling av lokalitetssøknader til akvakultur:
+  En akvakulturfaglig og juridisk analyse (AKVAFAGJUS)'
+year: 2026
+doi: ''
+url: ''
+authors:
+- Guri Hjallen Eriksen
+- Henrik Hareide
+- Tale Skrove
+journal: ''
+publisher: Salt Research AS
+language: norwegian
+source_type: report
+document_type: legal_analysis
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A2
+- A3
+- A4
+- A5
+geography:
+- Norway
+environment:
+- coastal_zone
+- sea_area
+- municipality
+- county
+time_period: Refusal cases 2020-2025, project November 2024 to May 2026
+regulatory_context:
+- Norway_Aquaculture_Act
+- locality_licence
+- county_aquaculture_authority
+- mixed
+evidence_type: mixed
+study_design:
+- document_analysis
+- legal_doctrinal
+- statistical_analysis
+data_source:
+- public_registers
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- licensing_access
+- knowledge_in_decisions
+- area_allocation
+- nature_values
+- disease_or_lice
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- variation in how refusals are written
+- precautionary principle applied differently
+- coral density definitions and influence-area mapping not standardised
+- lice refusals treated mechanically from historical exceedances
+- Trøndelag under-sampled in the legal chapter
+- Table 7 cell counts unreadable in the extract
+key_claims:
+- FHF project 901972 (AKVAFAGJUS), dated 22 May 2026, 139 pages. Purpose is to map
+  refusal grounds on aquaculture locality applications and how law, professional judgement
+  and discretion appear in decisions.
+- A dataset of 251 refusal cases from 2020-2025 covers full or partial county refusals
+  of new sites, biomass or area changes, species changes and purpose changes. 149
+  cases come from the FAKS database. Co-location cases are excluded. Most cases are
+  sea sites for salmon, trout and rainbow trout (192), then sea sites for cod (51).
+- Refusal counts by year in chapter 3 are 31 (2020), 46 (2021), 36 (2022), 39 (2023),
+  31 (2024) and 62 (2025), plus six sector-only cases without a county year. Nordland
+  has 72 cases, Vestland and Trøndelag 54 each. Mattilsynet is the most frequent
+  refusing authority (142 recorded, 137 after five later changes). The county refused
+  44 cases. Kystverket refused six.
+- Some decisions have clear refusal grounds. In others it is hard to say what was
+  decisive, because facts, professional assessment and discretion run together. Some
+  decisions rest only to a limited extent on site-specific impact and instead use
+  general statements about possible harm and uncertainty.
+- Use of the precautionary principle varies across cases and authorities. The authors
+  say it is not meant to be applied for safety's sake. Documentation and survey
+  requirements also differ by case and region.
+- County refusals under the Aquaculture Act environmental-soundness test include 14
+  coastal-cod cases and five wild-salmonid cases. Six of the 14 sit in a mapped spawning
+  field or area and are refused by definition. Mattilsynet issued 11 wild-cod infection
+  refusals from 2023. For marine species the locality application is also a company-biomass
+  application.
+- Coral and sponge are the largest nature-diversity refusal theme after pollution
+  law (21 of the coded nature cases in table 5). Hard-bottom coral-forest density
+  thresholds in use range from 1-2 to more than 10 colonies per 100 m2. One Åkerblå
+  grid would be 28 percent of the survey area at two or more colonies per 100 m2
+  and under 2 percent at the later HI Sognefjorden threshold of more than 10.
+- Mattilsynet lice refusals dominate that agency's grounds (68 of the table 6 counts).
+  After the 1 September 2024 reorganisation, 32 first-instance refusals were issued
+  in 2025. The appeal unit upheld all 18 cases decided from the reorganisation to
+  the end of 2025. Historical lice-limit breaches, including the 2024 marine heatwave,
+  are often treated as proof of weak internal control rather than as an extraordinary
+  event.
+- The legal review is not a full evaluation. It sampled 98 of 149 FAKS cases (all
+  of Nordland, Vestland, Møre og Romsdal, Troms and Finnmark, but only 10 of 50
+  Trøndelag cases), about 20 appeal decisions, and six granted permits. There is
+  some room to tighten legal reasoning, but the authors call for much more research
+  on how the law is used in practice.
+- Suitable localities are called a scarce good. The project is placed after MILJØREG
+  (FHF 901738) and ran in parallel with sister project ÅRSAK (FHF 901995). Combined
+  results are to appear in a separate short report.
+claims_about_uncertainty:
+- Trend statements from a first national refusal dataset should be read with caution.
+  Methods were adjusted during the project. Not every theme was analysed in depth.
+- Institute of Marine Research risk reports and the Fish Health Report are described
+  as diagnoses of knowledge status, not operational plans for closing gaps. The authors
+  ask whether uncertainty is socially amplified into decision-relevant risk.
+- HI 2021 mapping guidance (4 percent of the influence area, 1000 m downstream) rests
+  largely on one 2018-2019 Lophelia transplant study (Kutti et al. 2022). Observed
+  effects vary by species and distance. Coral-forest definitions are not settled.
+- Genetic risk from farmed to wild cod is said to rest on potential for effect (spawning
+  and egg spread) more than documented recruitment or introgression.
+claims_about_policy_or_management:
+- Provisional recommendations include more first-instance dialogue, shared guidance
+  and decision templates across regions, written reasons when the precautionary principle
+  is used, a public decision database, and lawyer involvement in first-instance work.
+- County refusals based on political interest-weighing under the Aquaculture Act should
+  meet a high standard of reasons. Applicants are asked to use appeals when the dispute
+  is about law or knowledge, not only about how interests were weighed.
+- The Food Safety Authority is said to have come furthest in publishing broad case-processing
+  guidelines. Distance recommendations in those guidelines are 5 km, 2.5 km and 1.5
+  km. They are not to be decisive on their own.
+- From 2 February 2024 the general discharge-permit duty was replaced by standardised
+  environmental requirements, with an exception route in forurensningsforskriften
+  section 34-2. Much of the studied practice is still under the older Pollution Control
+  Act section 11.
+- Political county bodies can refuse after all sector authorities have granted, or
+  grant after the administration has refused. FAKS templates are voluntary because
+  of county autonomy.
+methodological_limitations:
+- New mixed method on a large document set. Not every theme was analysed in depth.
+  A few sector-only refusals without a county refusal are included. Co-location is
+  excluded.
+- FAKS was incomplete and not updated for all of 2024. Legal chapter 5 under-represents
+  Trøndelag (10 of 50 FAKS cases). ChatGPT was used as support for quality-assuring
+  assessments and conclusions.
+- Table 7 (refusals by county and authority) is an image in the extract. Cell counts
+  were not readable. Figures 1-14 are also images.
+- Henrik Hareide is disclosed as having worked for aquaculture parties in several
+  of the studied cases.
+rag_summary: 'SALT report 1110 (22 May 2026) by Eriksen, Hareide and Skrove for FHF.
+  AKVAFAGJUS maps 251 aquaculture locality refusals from 2020-2025 under the Aquaculture
+  Act and sector laws. Mattilsynet is the most frequent refuser, mainly on lice infection
+  risk. County environmental-soundness refusals concentrate on coastal cod and, less
+  often, wild salmonids and birds. Pollution-law refusals turn on recipient capacity
+  (50 coded cases, 29 in Nordland) and nature, especially coral. Facts, judgement
+  and precaution often merge. Coral-forest density and lice-breach counting are not
+  standardised. The legal sample under-represents Trøndelag. Table 7 cells are unreadable
+  in the extract. This is a first national refusal dataset, not a finished doctrine
+  of when a site must be refused.
+
+  '
+coi_declared: true
+coi_notes: 'Funded by FHF. Prepared by Salt Research AS and Aqknowledge AS. Quality
+  control Kjersti E. T. Busch. Footnote: Henrik Hareide worked for aquaculture actors
+  in several of the cases studied.
+
+  '
+consensus_signal: moderate_agreement
+quality_signal: strong
+quality_rationale: 'Large named dataset, printed Norwegian and English summaries,
+  and separate professional and legal chapters. The authors mark the work as methodologically
+  new and incomplete on single themes. One author has prior client roles in the case
+  set. Table 7 cells are unreadable in the extract.
+
+  '
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: 'Shows how locality access is refused in practice, which is the
+  operational end of the area challenge.
+
+  '
+included_because: 'Selected by Marit Schei Olsen. It is a legal and aquaculture analysis
+  of locality refusals and knowledge needs, written to follow MILJØREG, not a general
+  environmental review. The room needs this refusal practice layer beside planning
+  and footprint reports.
+
+  '
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2023_evenset_sameksistens
+- salt_1065_ku-arealplanlegging
+- 2025_osmundsen_fylkeskommune-akvakulturloven
+- 2026_hi_risikorapport
+retrieval_tags:
+- locality_licence
+- refusal_practice
+- precautionary_principle
+- knowledge_in_decisions
+- coral
+- lice
+- coastal_cod
+curator_note: 'Full page walk 2026-09-13 of all 141 extract markers (cover plus 139
+  printed pages). Claims now include chapter 3 counts, chapter 4 case themes (cod,
+  wild salmon, hubro, coral density, recipient capacity, seabird, Mattilsynet lice
+  and wild-cod practice), and chapter 5 legal limits (political county refusals,
+  Fiskeridirektoratet dual role, Nature Diversity Act section 9, water-framework
+  question left open). Table 7 and figures 1-14 are image-only. Do not guess table
+  7 cells from the caption. ChatGPT is named as QA support. Sister project ÅRSAK
+  (FHF 901995) is not this report.
+'
+curator_review_status: ai_verified
+# ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Marit Schei Olsen
+source_pdf: salt-rapport-1110-kartlegging av kunnskapsbehov for behandling av lokalitetssøknader
+  til akvakutlur.pdf

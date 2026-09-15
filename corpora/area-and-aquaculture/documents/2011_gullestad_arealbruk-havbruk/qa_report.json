@@ -1,0 +1,124 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "extracted.md has no page markers. Verification is against sequential extract chunks, not printed page numbers.",
+    "Many maps and figures exist only as images (1.1, 2.1-2.7, 3.1-3.7, 4.1-4.2, 5.1-5.7, 6.1-6.4, 7.1-7.4, 8.1-8.7, 9.1-9.2, 10.1-10.3, plus photos). Captions and nearby prose were used. Plot internals were not visually interpreted.",
+    "Table 2.2 surface area (40.2 km2) is an estimate from 825 sites with defined outer points, then scaled. The metadata states that calculation, not a surveyed cadastral total.",
+    "Chapter 6 quotes the Scientific Council at length. Claims treat those figures as the committee's adopted line, which the extract states, not as new primary estimates by Gullestad et al.",
+    "First curation inferred that later traffic-light practice follows this report. That room-context sentence is now only in relevance_rationale. The document claim is the committee's own trafikklysprinsipp for a future lice rule."
+  ],
+  "claim_checks": [
+    {
+      "claim": "The committee's mandate was to propose a new overarching area structure so aquaculture uses coastal space efficiently, with least possible environmental impact and infection risk, and balanced coexistence with other coastal interests.",
+      "supported": true,
+      "extract_quote": "Ekspertutvalget for effektiv og bærekraftig arealbruk i havbruksnæringen har hatt som mandat å komme med forslag til en ny overordnet arealstruktur. En struktur som kan bidra til at akvakulturnæringen utnytter areal på en bærekraftig og effektiv måte, med minst mulig miljøpåvirkninger og smitterisiko. Fremtidens arealstruktur skal også bidra til en balansert sameksistens med andre interesser i kystsonen.",
+      "note": null
+    },
+    {
+      "claim": "Production is stated as growing from 531 tonnes in 1971 to about 1 million tonnes in 2010. Table 2.2 (31 December 2010) lists 966 salmon and rainbow trout licences, 785 643 tonnes MTB, 1 093 localities, about 40.2 km2 of calculated surface, and 12.3 tonnes sold per km2 of sea nationally (Hordaland 42.9, Finnmark 2.5). Productive coastal area is called a main Norwegian competitive advantage that is no longer a surplus resource.",
+      "supported": true,
+      "extract_quote": "Med en vekst i produksjon fra beskjedne 531 tonn i 1971 til ca. 1 million tonn i 2010",
+      "note": "Table 2.2 also states totalt 966 tillatelser, 785 643 mtb tonn, 1093 lokaliteter, 40,2 areal km2, 12,3 tonn per km2, Finnmark 2,5, Hordaland 42,9. Sammendrag: tilgangen på gode oppdrettslokaliteter er en knapphetsfaktor."
+    },
+    {
+      "claim": "The sammendrag compares farm surface to about 80 000 km2 of sea inside the baselines. Table 3.1 totals 76 410 km2 from Vest-Agder to Finnmark. The committee says area must include the water column, the bottom, environmental effects, infection between farms, and wellboat transport.",
+      "supported": true,
+      "extract_quote": "Av et samlet sjøareal innenfor grunnlinjen på nærmere 80 000 km2 utgjør anleggenes overflateareal kun brøkdeler av en promille",
+      "note": "Table 3.1 totals 76 410 km2. Chapter 1.3 also names water column, bottom, environmental effects, infection between farms, and transport of smolt and slaughter fish."
+    },
+    {
+      "claim": "Challenges over the next ten years are said to concern mainly salmon and rainbow trout. The largest growth potential is placed in the north. The south has the highest intensity and the largest environmental problems. Short-term economic growth there is tied more to lower losses and more efficient use of existing sites than to new space.",
+      "supported": true,
+      "extract_quote": "Det største potensialet for vekst vil ligge i nord. I sør, der intensiteten er størst, finnes de største miljøutfordringene. Her vil på kort og mellomlang sikt potensialet for økonomisk vekst i første rekke være knyttet til reduserte tap i produksjonen og en mer effektiv arealutnyttelse.",
+      "note": null
+    },
+    {
+      "claim": "Three linked disease and environment challenges are sea lice, escapes, and production losses. Area measures can help but cannot solve them alone. A fourth challenge is weaker municipal anchoring as firms and slaughterhouses consolidate. A fifth is planning competence and inter-municipal coastal plans.",
+      "supported": true,
+      "extract_quote": "De tre hovedutfordringene er lakselus, rømming og tap i produksjonen. [...] tiltak på arealsiden vil kunne bidra, men ikke alene løse dem.",
+      "note": "Fourth and fifth challenges are stated in the sammendrag immediately after that paragraph."
+    },
+    {
+      "claim": "Chapter 5 says current direction and speed describe infection risk better than symmetric sea distance. Coordinated fallowing of a whole stocking zone for at least one month is proposed (each site still two months). Except a sufficient biomass cut or full infection isolation, no single measure solves lice. Wellboat transport rules were not assessed because the Food Safety Authority already had a separate assignment.",
+      "supported": true,
+      "extract_quote": "Bortsett fra reduksjon av biomasse i tilstrekkelig grad eller full smitteadskillelse, finnes det ikke ett tiltak som kan løse problemet alene.",
+      "note": "Also: 'strømretning og hastighet er en bedre parameter enn avstand for å beskrive risiko' and 'Siden det er gitt et konkret oppdrag til Mattilsynet [...] har utvalget ikke gått nærmere inn på konkrete forslag til tiltak på dette området.'"
+    },
+    {
+      "claim": "Chapter 6 adopts the Scientific Council line that lice and escaped farmed salmon are the only clearly unstabilized existential threats to wild salmon, and that measures so far are not enough. The committee says lice and genetic effects must be acceptable before MAB increases are considered. National disagreement on coastal eutrophication led to a Hardanger and Bokna expert group. Farm effects on seabirds are called poorly known. Cod can spawn in pens, and the Institute of Marine Research is cited as expecting large negative effects if farmed-cod genes mix into coastal stocks.",
+      "supported": true,
+      "extract_quote": "Lakselus og rømt oppdrettslaks ble vurdert som de eneste klart ikke-stabiliserte eksistensielle truslene mot villaks.",
+      "note": "Committee adoption: 'tiltakene mot lakselus og rømming som er satt i verk så langt, ikke er tilstrekkelige' and 'disse påvirkningene må være på et akseptabelt nivå før eventuelle økninger i MTB vurderes.' Seabirds: 'Det er lite kunnskap om mulige effekter av ulike former for akvakultur på sjøfugl.' Cod: 'Torsk kan gyte i merdene'."
+    },
+    {
+      "claim": "Chapter 7 calls official turnover-loss (mean 9.5 percent, 1986-2009) misleadingly low. Production loss averaged 23.0 percent and generation loss 25.2 percent. For 1998-2009, Mid-Nord (Trøndelag and Nordland) averaged 16.2 percent, south and north about 22 percent (Tukey HSD p < 0.003). Dead fish plus slaughter reject are about 85 percent of loss. In 2008 the production loss was 49.3 million fish, with potential first-hand income loss about 4.9 billion kroner against 16.9 billion first-hand value.",
+      "supported": true,
+      "extract_quote": "den nåværende modellen med omløpstap per kalenderår de laveste verdiene med en gjennomsnittsverdi på 9,5 % per år i perioden 1986–2009. Tilsvarende tall for produksjonstap var 23,0 %. Tap per generasjon etter utsettsår var gjennomsnittlig 25,2 %",
+      "note": "Also 16,2 % Midt-Nord versus vel 22 % i nord og i sør; 49,3 millioner fisk; 4,9 milliarder; 16,9 milliarder. Measure 10.9 calls omløpstap 'urealistisk lave' and 'misvisende'."
+    },
+    {
+      "claim": "Chapter 8 maps conflicts with shipping and fairways, fisheries (including the Ryfylke saithe case and possible effects on coastal-cod spawning), recreation and tourism, other aquaculture types, protection and biodiversity mapping, plus wind, cables, defence areas and reindeer swim routes. Physical surface conflicts in the south are described as more modest after farms moved seaward. Ecological and biological conflicts are expected to grow, especially in the north. Many municipal plans use multi-use FFFNA designations and give little real allocation.",
+      "supported": true,
+      "extract_quote": "Den såkalte «seisaken» i Ryfylke viser hvor utfordrende slike problemstillinger kan bli.",
+      "note": "Chapters 8.1-8.7 cover the listed uses. FFFNA: 'Større flerbruksområder med flere arealkategorier (FFFNA – fiske, ferdsel, friluftsliv, naturvern og akvakultur) framstår i dag som det foretrukne'."
+    },
+    {
+      "claim": "Chapter 9 keeps municipal plans under the Planning and Building Act as the local arena for aquaculture sea. Production areas are not meant to override those plans, national salmon fjords or fairways. Municipal interest in hosting is described as declining after ownership and slaughterhouse consolidation. Knowledge of currents, topography and other uses is incomplete. Inter-municipal and regional plans are needed because administrative borders rarely match ecology. Sami rights and consultation can affect northward relocation.",
+      "supported": true,
+      "extract_quote": "Inndeling av kysten i produksjonsområder med tilhørende utsettssoner er på ingen måte ment å overstyre annen planlegging og disponering av kystsonen; kommunenes arealdisponering etter plan- og bygningsloven, nasjonale laksefjorder, seilingsleder osv.",
+      "note": "Chapter 9.3: 'Kommunenes interesse i å tilrettelegge for akvakultur har i de senere år vært dalende.' Sámi: 'Samiske interesser har med andre ord sterke juridiske virkemidler tilgjengelige til å påvirke og kanskje blokkere en flytting av akvakulturvirksomhet nordover.'"
+    },
+    {
+      "claim": "The structural proposal (measures 10.4 and 10.5) divides the coast into production areas with firebreaks and, ideally, four stocking zones on a two-year cycle. A permit should belong to one production area only. Starting geography is the 23 areas used when assessing new licences in 2009. Natural barriers are preferred over municipal or county lines. Ideal four-zone cycling is called hard under the then locality structure, with Hardanger 2010 as an example. A firm with five to ten permits in an area, or equivalent cooperation, is assumed able to run that cycle cost-effectively.",
+      "supported": true,
+      "extract_quote": "Utvalget vil på denne bakgrunn foreslå at det tas utgangspunkt i de 23 områdene som kysten ble delt inn i forbindelse med vurdering av egnede områder for tildeling av nye tillatelser i 2009.",
+      "note": "Also one permit one area, Hardanger 2010, and 'et selskap som disponerer fem–ti tillatelser'."
+    },
+    {
+      "claim": "Measures 10.11 to 10.14 propose action rules. A production-loss indicator would cut regional MAB if the two-generation average exceeds an unspecified threshold a, allow an increase if below b, and permit permanent environmental relocation from high-loss to low-loss areas. For lice the committee wants total adult female lice visible by site, zone and area, then a future multi-level traffic-light principle once counting methods exist. For escapes it wants a genetic-effect indicator in important rivers, then a collective industry duty in that production area to remove first-generation farmed fish from the river in the spawning period, plus adipose-fin clipping. Trigger numbers for the loss rule are left to politics. The legal basis for the collective escape duty is not fully investigated.",
+      "supported": true,
+      "extract_quote": "Utvalget ser for seg at en fremtidig handlingsregel bør bygges opp slik at det kan settes inn tiltak på flere nivåer, avhengig av hvor stor overskridelsen av en fastsatt indikator er. Med andre ord at regelen bygger på et «trafikklysprinsipp».",
+      "note": "10.12 leaves a, b, x, y unspecified. 10.14: 'Utvalget har ikke utredet nærmere om bestemmelsen faktisk gir den nødvendige hjemmelen.'"
+    },
+    {
+      "claim": "Measure 10.15 recommends no new salmon licences and no general MAB increase until production areas exist. Measures 10.16 and 10.17 recommend freer closed sea farms (own licence category, exempt from numbered grow-out licences) and land-based grow-out, and repeal of the 250 g smolt cap. Closed farms are still said to discharge nutrients and to raise welfare and density issues.",
+      "supported": true,
+      "extract_quote": "Utvalget vil derfor anbefale at det foreløpig ikke tillates ytterligere vekst verken gjennom tildeling av nye tillatelser eller gjennom generelle økninger av MTB knyttet til allerede gitte tillatelser.",
+      "note": "10.16 and 10.17 state the closed-farm and 250 g proposals, including nutrient discharge and welfare caveats."
+    },
+    {
+      "claim": "Other measures include a national current catalogue (about 10 million kroner to establish), a study of mandatory industry hydrographic observations, coastal mapping, power to order relocation under Aquaculture Act section 16 third paragraph (industry to bear costs), crisis localities, repeal of the 4-6 locality rule, a switch of official statistics to generation loss, mandatory reporting of smolt origin, stronger monitoring of large sites and clusters, faster hatchery applications, a permanent joint industry organization per area, state planning expectations, pilot coastal plans (Hardanger named), an aquaculture planning guide, evaluation of municipal property tax after areas exist (the committee did not re-open area-fee design), and research priorities including a before-after study in inner Ofotfjorden.",
+      "supported": true,
+      "extract_quote": "Ca. 10 millioner kr er antydet for etableringen.",
+      "note": "The listed items are the titles and operative sentences of measures 10.1-10.3, 10.6-10.10 and 10.18-10.25. Hardanger is named under 10.22. Ofotfjorden under 10.25. Area-fee: 'har utvalget ikke funnet grunn til å vurdere arealavgift nærmere'."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "Policy report and expert synthesis. No primary causal effect estimate is claimed as the document's own result. not_applicable is the correct value.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 and A2 are spoken to in chapters 9 and 10.4-10.6. A3 is chapter 8 plus wild-fish and municipal-anchoring trade-offs. A4 is chapters 3.6, 5.6, 9.3 and measures 10.1-10.3, 10.13-10.14 and 10.25. A5 is chapters 5-7 and 10.4-10.15. A6 is municipal anchoring, property tax and the unused area-fee discussion in 10.24. A3 and A4 were added after the Del 2-3 walk.",
+  "coi_ok": true,
+  "coi_note": "No separate competing-interest statement in the extract. Affiliations are listed. The ministry appointed the committee. coi_declared remains unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2011_gullestad_arealbruk-havbruk",
+  "verified_at": "2026-09-13T13:24:00+02:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "full extract, no page markers (about 4308 lines, sequential Read chunks covering the whole file)",
+  "extract_coverage": [
+    "sammendrag",
+    "1 innledning (1.1-1.5)",
+    "2 utvikling og status (2.1-2.11)",
+    "3 kyst- og fjordmiljø (3.1-3.7)",
+    "4 utviklingstrekk 5-10 ar (4.1-4.4)",
+    "5 helse velferd sykdom (5.1-5.7)",
+    "6 miljo (6.1-6.5)",
+    "7 tap i produksjonen (7.1-7.9)",
+    "8 arealkonflikter (8.1-8.7)",
+    "9 plan- og soknad (9.1-9.3)",
+    "10.1-10.25 tiltaksforslag"
+  ]
+}

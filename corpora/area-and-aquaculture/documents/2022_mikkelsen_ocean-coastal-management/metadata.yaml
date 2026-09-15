@@ -1,0 +1,198 @@
+title: Transparent and consistent? Aquaculture impact assessments and trade-offs in
+  coastal zone planning in Norway
+year: 2022
+doi: 10.1016/j.ocecoaman.2022.106150
+url: https://doi.org/10.1016/j.ocecoaman.2022.106150
+authors:
+- Eirik Mikkelsen
+- Patrick Berg Sørdahl
+- Ann-Magnhild Solås
+journal: Ocean and Coastal Management
+publisher: Elsevier
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A3
+- A4
+geography:
+- Nord_Norge
+- Norway
+environment:
+- coastal_zone
+- municipality
+time_period: 2013-2016
+regulatory_context:
+- intermunicipal_coastal_plan
+- municipal_coastal_plan
+- Norway_Planning_Building_Act
+- Norway_Aquaculture_Act
+- locality_licence
+- mixed
+evidence_type: empirical_observational
+study_design:
+- document_analysis
+- statistical_analysis
+- case_study
+data_source:
+- spatial_data
+- interviews
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coastal_planning
+- knowledge_in_decisions
+- coexistence_tradeoffs
+evidence_direction: not_applicable
+effect_scale: regional_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- whether planners consciously used the decision rules inferred from probit models
+- whether verbal-summary bias changed political decisions
+- small samples relative to the number of SEA themes
+- whether theme scores are comparable across themes
+key_claims:
+- Four intermunicipal coastal plans ran in Troms in 2013-2016 (22 of 23 coastal municipalities).
+  This paper codes strategic environmental assessments (SEAs) of 143 proposed aquaculture
+  areas in the two largest processes (18 municipalities), Mid and South Troms, and
+  the Tromsø region.
+- Municipalities are planning authority for nearshore sea (within 1 nautical mile from
+  the baselines). The Aquaculture Act says site licences may not be granted against
+  an adopted plan unless the planning authority consents. The municipal council makes
+  the final plan decision. A later site licence still needs sector permissions (pollution,
+  food safety, marine traffic). The authors cite that environmental impact assessments
+  at the licence stage are rarely made.
+- 'Mid and South Troms: 13 municipalities, about 3800 km2 sea, about 55 000 people,
+  70 000 tonnes salmon (about half of county production), 85 approved localities (61
+  salmon). 109 proposed aquaculture areas (101 salmon: 41 new, 60 expansions). Municipal
+  planners scored 22 themes. The SEA recommended 89 allow and 20 disallow. Politicians
+  later turned down 8 SEA recommendations and allowed 5 areas the SEA had not recommended.'
+- 'Tromsø region: 5 municipalities, about 5100 km2 sea, about 88 000 people, 22 approved
+  salmon localities. 34 proposed areas (33 salmon: 31 new, 2 expansions). One consultant
+  scored five themes (plus verbal-only themes). Jobs or income were not an explicit
+  scored theme. The SEA recommended 15 allow and 19 disallow. Politicians later turned
+  down 4 recommendations and allowed 4 areas the SEA had not recommended.'
+- Both SEAs list similar external data sources (46 listings in Mid and South Troms,
+  51 in the Tromsø region). National databases are listed most often, usually only
+  by name, not the exact dataset. Mid and South Troms listed public meetings or stakeholder
+  input twice as often. Most value and impact scores rest on discretionary judgement.
+  In Mid and South Troms only six of 22 themes had a clearly stated value-score rule,
+  and only two themes had clear rules for both value and impact. Neither SEA states
+  general criteria for recommend or not recommend.
+- Probit models suggest Tromsø-region SEA recommendations tracked the sum of consequence
+  scores more consistently than Mid and South Troms, where extreme theme scores fit
+  better. Political decisions went against 24 percent of Tromsø recommendations and
+  12 percent of Mid and South Troms recommendations. Some models did not converge.
+  The authors note that theme scores may not be comparable across themes.
+- Verbal summaries often understated negative scores. In Mid and South Troms, 108 of
+  110 summaries had discrepancies (mean 4.3, highest 13). Ninety percent of those
+  discrepancies made consequences look less negative. The theme most often misstated
+  was stocks of anadromous salmonids (65 percent of summaries), then spawning areas
+  (38 percent) and landscape (35 percent). In the Tromsø region, 19 of 34 summaries
+  had discrepancies (mean 0.8, highest 2), and all of them made consequences look
+  less negative (landscape 24 percent, nature diversity and cultural heritage 21 percent
+  each).
+- The authors treat SEAs as value-laden, not only technical. More explicit trade-off
+  rules would raise transparency and could raise consistency, but rigid standardisation
+  can miss local context. Verbal summaries should be quality-assured. Municipal self-rule
+  is described as recently strengthened (Constitution 2016, Municipalities Act 2020),
+  so shifting national and regional trade-offs away from municipalities is judged unlikely.
+claims_about_uncertainty:
+- The authors cannot tell from the data whether local politicians influenced Mid and
+  South Troms recommendations.
+- They did not interview planners about whether inferred decision rules were used
+  consciously. Some probit models did not converge. Supplementary tables are cited
+  but not in the extract.
+- If only large theme scores drive decisions, small consequences that add up across
+  many areas may be ignored. If the sum of scores drives decisions, a single theme
+  of very large importance may not trump the rest.
+- Participation in SEA processes was not studied. Interviews inform context and are
+  not used as coded data.
+claims_about_policy_or_management:
+- Being more explicit about trade-off rules would raise transparency and could raise
+  consistency, but rigid standardisation can miss local context.
+- Verbal summaries should be quality-assured because politicians and the public often
+  rely on them.
+- Municipal self-rule is described as recently strengthened, so shifting national
+  and regional trade-offs away from municipalities is judged unlikely.
+- Formal objections from sector agencies must be resolved before a plan can be passed.
+  If parties cannot agree, the Ministry of Local Government and Modernisation decides.
+methodological_limitations:
+- Two cases in one county. Interviews used for context, not as coded data. Participation
+  in SEA processes was not studied. Theme scores across themes may not be comparable.
+- Mid and South Troms is described as a nationally cited good example. The Tromsø
+  consultant model is described as common. Neither claim is a national census of SEA
+  practice.
+- Some probit models had few observations relative to variables, omitted themes that
+  predicted outcomes perfectly, or did not converge.
+rag_summary: 'Mikkelsen, Sørdahl and Solås (2022) analyse transparency and consistency
+  of strategic environmental assessments in two Troms inter-municipal coastal plans
+  covering 143 proposed aquaculture areas. Methods are document coding of knowledge
+  sources and scoring rules, probit models of recommend or allow decisions, and comparison
+  of verbal summaries with theme scores. They find similar external data lists, heavy
+  use of discretion, no stated general decision rule, more consistent Tromsø-region
+  recommendations (one consultant, sum of scores) than Mid and South Troms (13 municipal
+  planners, extreme scores), and widespread positive bias in verbal summaries, especially
+  on wild salmon. Political councils overturned some recommendations in both processes
+  (24 percent in the Tromsø region, 12 percent in Mid and South Troms). The paper
+  treats SEAs as value-laden, not only technical.
+
+  '
+coi_declared: no
+coi_notes: 'Authors declare no known competing financial interests or personal relationships.
+  Funded by the Research Council of Norway (grants 254850, 255767 and 294799) and
+  the FRAM centre. Open access CC BY. Corresponding author Eirik Mikkelsen, Nofima,
+  Tromsø.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Peer-reviewed coding of two complete SEA sets with stated statistical
+  method and a clear bound (two cases, interviews not used as data). Supplementary
+  material is cited for some tables and is not in the extract.
+
+  '
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: 'Shows how aquaculture area is actually scored and traded off
+  inside inter-municipal plans, and where legitimacy of those trade-offs is weak.
+
+  '
+included_because: 'Selected by Tonje Osmundsen. The paper is a named study of aquaculture
+  SEAs and trade-offs in coastal plans, not a general planning theory piece.
+
+  '
+related_documents_supporting:
+- 2017_kvalvik_intermunicipal-coastal-planning
+- 2017_kvalvik_ocean-coastal-management
+- 2020_hersoug_whats-the-clue
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2019_mikkelsen_arealplanlegging-sjo
+- 2017_kvalvik_intermunicipal-coastal-planning
+retrieval_tags:
+- strategic_environmental_assessment
+- transparency
+- consistency
+- trade_offs
+- verbal_summaries
+curator_note: 'Full extract walked 2026-09-13. Hersoug, Mikkelsen and Osmundsen is
+  cited as 2021 for What''s the clue. That paper is filed in this corpus as 2020_hersoug_whats-the-clue.
+  Production stated as more than 1.3 million tonnes in 2019 at around 1000 approved
+  sites. Volume is described as virtually unchanged between 2012 and 2019, mainly due
+  to sea lice and escaped farmed salmon. Mid and South Troms verbal summaries are
+  counted as 110 against 109 proposed areas in the case description. Both figures
+  are kept as stated. Theme codes NM1/NM2/KM3 in the results section match ND1/ND2/CH3
+  in Table 1.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Tonje Osmundsen
+source_pdf: Mikkelsen et al 2022 Ocean and coastal management.pdf
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 1 soft). See qa_report.json.

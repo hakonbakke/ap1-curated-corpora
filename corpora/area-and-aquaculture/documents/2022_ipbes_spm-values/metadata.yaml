@@ -1,0 +1,184 @@
+title: Summary for Policymakers of the Methodological Assessment Report on the Diverse
+  Values and Valuation of Nature
+year: 2022
+doi: 10.5281/zenodo.6522392
+url: https://doi.org/10.5281/zenodo.6522392
+authors:
+- Unai Pascual
+- Patricia Balvanera
+- Michael Christie
+- Brigitte Baptiste
+- David González-Jiménez
+- Christopher B. Anderson
+- Simone Athayde
+- David N. Barton
+- Rebecca Chaplin-Kramer
+- Sander Jacobs
+- Eszter Kelemen
+- Ritesh Kumar
+- Elena Lazos
+- Adrian Martin
+- Tuyeni H. Mwampamba
+- Barbara Nakangu
+- Patrick O'Farrell
+- Christopher M. Raymond
+- Suneetha M. Subramanian
+- Mette Termansen
+- Meine van Noordwijk
+- Arild Vatn
+journal: ''
+publisher: IPBES secretariat
+language: english
+source_type: expert_group_report
+document_type: policy_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A3
+geography:
+- global
+environment:
+- not_applicable
+time_period: assessment approved July 2022 (IPBES 9)
+regulatory_context:
+- none
+evidence_type: review
+study_design:
+- literature_review
+- expert_assessment
+data_source:
+- published_literature
+wild_or_farmed_focus: not_applicable
+outcome_domain:
+- nature_values
+evidence_direction: not_applicable
+effect_scale: not_applicable
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- confidence language (well established, established but incomplete) varies by message
+- aquaculture and coastal use appear only as examples or figure categories
+- Figure SPM 3 ecological-context bars are printed as a chart. Exact aquaculture share is not a readable numeric table
+key_claims:
+- This file is the IPBES Summary for Policymakers (SPM) of the Values Assessment,
+  approved by the Plenary of 139 member States at IPBES 9 in Bonn, 3-9 July 2022.
+  It is not the full chapter volume.
+- 'KM1: causes of the biodiversity crisis, and chances to address them, are tightly
+  linked to how nature is valued in political and economic decisions. Unsustainable
+  use and unequal access to nature''s contributions are tied to a narrow, often market,
+  set of values.'
+- 'KM2: most policymaking has prioritized a narrow set of values at the expense of
+  nature, society, and future generations, and has often ignored values associated
+  with indigenous peoples'' and local communities'' world-views. GDP-style indicators
+  generally capture only market values of nature.'
+- 'KM3: a typology of nature''s values can help decision makers engage with diverse
+  people-nature relations. Specific values are grouped as instrumental, relational,
+  and intrinsic. People may live from, with, in, and as nature. Those frames can
+  overlap.'
+- 'KM5: more than 50 valuation methods exist. They are grouped into four method families
+  (nature-based, statement-based, behaviour-based, and integrated). Choice involves
+  trade-offs among relevance, robustness, and resources. There is no one-size-fits-all
+  method.'
+- 'KM6 and C3: less than 5 percent of published valuation studies report uptake in
+  policy decisions. A majority of countries had not met Aichi Target 2 on integrating
+  biodiversity values into strategies, planning, and accounting by 2020.'
+- 'KM7 to KM9: institutions shape which values count. Transformative change is said
+  to need a shift away from short-term individual material gains toward sustainability-aligned
+  values. Four leverage points are named: undertaking valuation, embedding values
+  in decisions, reforming policy, and shifting societal goals.'
+- 'A9: predominant economic and political decisions have prioritized market-based
+  instrumental values, often at the expense of non-market instrumental, relational,
+  and intrinsic values.'
+- Figure SPM 3 characterises 1,163 in-depth valuation studies after sampling from
+  about 79,000 identified studies. Forests are stated as 25 percent of ecological
+  contexts. Aquaculture appears as one listed context among forests, cultivated areas,
+  coastal areas, deep sea, and more. The extract prints the remaining context shares
+  as a bar chart. An exact aquaculture percentage is not filed here.
+- A8 gives local and indigenous institutions for protecting forests and coastal ecosystems
+  as an example of norms that emphasise responsibility for nature. That is a general
+  institutional example, not an aquaculture case.
+claims_about_uncertainty:
+- Messages carry IPBES confidence terms (well established, established but incomplete).
+  Those terms are not re-scored here.
+- The extract's figure percentages for ecological contexts other than forests are
+  printed as a bar chart. Exact aquaculture percentages were not read as a separate
+  numeric table.
+- A value-action gap is named. Values alone do not fully explain behaviour.
+claims_about_policy_or_management:
+- The SPM offers a values typology and guidance for embedding diverse values in decision-making.
+  It does not prescribe Norwegian coastal-zone instruments or farm siting rules.
+- Conservation policies that focus on biodiversity for its own sake may downplay
+  other values and exclude local populations that depend on nature for livelihoods.
+- Uptake of valuation is more likely when the process fits the policy cycle and is
+  sufficiently resourced. Co-production, guidance, and participatory methods are named
+  as helps. Knowledge and capacity gaps are more prevalent in developing countries.
+methodological_limitations:
+- Intergovernmental summary of a multi-chapter assessment (about 100 selected experts,
+  about 200 contributing authors, more than 13,000 publications analysed, plus indigenous
+  and local knowledge). Primary Norwegian aquaculture evidence is not the object.
+- Partner statements (UNESCO, FAO, UNEP, UNDP, CBD) are front matter, not key messages.
+- Figure SPM 1 and parts of Figure SPM 3 are OCR-garbled in the extract. Claims
+  that depend on unread bar heights are left empty.
+rag_summary: 'IPBES (2022) Summary for Policymakers of the Methodological Assessment
+  on the Diverse Values and Valuation of Nature, approved at IPBES 9 in Bonn. Key
+  messages tie biodiversity loss to political and economic decisions that privilege
+  a narrow, often market, set of nature values. Less than 5 percent of published
+  valuation studies report policy uptake. The SPM offers a values typology (instrumental,
+  relational, intrinsic) and four valuation method families. Aquaculture appears as
+  one ecological context in a global figure of 1,163 in-depth valuation studies.
+  The SPM does not analyse Norwegian coastal planning or aquaculture siting. This
+  file is the short approved summary. The companion values-assessment file is the
+  full report.
+
+  '
+coi_declared: unclear
+coi_notes: 'Intergovernmental assessment. Funded through the IPBES trust fund (many
+  governments, including Norway) plus earmarked French support and in-kind hosting
+  by the National Autonomous University of Mexico. ISBN 978-3-947851-28-7. No personal
+  competing-interests statement in the extract.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Plenary-approved SPM with traceable accounts into chapters. Global
+  values assessment, not an aquaculture or coastal-planning study.
+
+  '
+controversy_role: peripheral
+relevance_signal: low
+relevance_rationale: 'Peripheral in this room. Nature values are the object. Aquaculture
+  and coastal ecosystems appear only as a figure category or a general institutional
+  example. No Norwegian siting analysis.
+
+  '
+included_because: 'Selected by Ragnar Tveterås as nature-values background. Keep the
+  SPM as a global values brief sitting next to the area room. Do not treat it as evidence
+  about coastal planning or farm placement.
+
+  '
+related_documents_supporting:
+- 2022_ipbes_values-assessment
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2022_ipbes_values-assessment
+retrieval_tags:
+- IPBES
+- nature_values
+- SPM
+- peripheral_to_area
+- valuation_uptake
+curator_note: 'Full walk 2026-09-13. All 52 page markers read. Suggested citation
+  lists Pascual, Balvanera, Christie, Baptiste, González-Jiménez and further editors.
+  David N. Barton and Arild Vatn are among the named authors and have Norwegian affiliations.
+  That does not make the SPM a Norway aquaculture paper. Figure SPM 3 lists aquaculture
+  as a context. Bar-chart percentages after forests (25 percent) are not mapped to
+  a clean table in the extract. No aquaculture share is invented.
+
+  # ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: IPBES_2022_Summary for Policymakers of the Methodological Assessment Report
+  on the Diverse Values and Valuation of Nature.pdf

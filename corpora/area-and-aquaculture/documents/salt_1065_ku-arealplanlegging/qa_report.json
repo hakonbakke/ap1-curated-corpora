@@ -1,0 +1,78 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figures 1-9 are images. Placement maps and KU scorecards used in claims are taken from surrounding prose, not from figure pixels.",
+    "Table 6 and table 7 are the authors' judgement of theme coverage after mapping plan categories onto the regulation list. They are not scored metrics.",
+    "Cover states 74 pages of written text. The extract has 90 page markers including contents, tables, references and appendices.",
+    "Kvænangen and Lundevågen had no plan-side interview. Later application files (about 18) were found via eInnsyn, case officers and newspaper reports, not a complete file.",
+    "Project-leader hire for Nordmøre is dated autumn 2023 in the extract. The plan was adopted in 2018. Treated as [OCR] and not used as a year claim."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Commissioned by the Ministry of Local Government and Regional Development (KDD, case 22/813) so later sea-planning guidance can rest on whether recent plans actually settle aquaculture versus other uses, and on the quality of impact assessments. Dated 20 March 2023. Cover states 74 pages of written text plus contents, figure list and references. An extra assignment during the project is folded into the same report.",
+      "supported": true,
+      "extract_quote": "Oppdragsgivers referanse Sak 22/813"
+    },
+    {
+      "claim": "Method is a qualitative governance study of seven adopted plans: three inter-municipal coastal-zone plans (Helgeland except Vega, Romsdalsfjorden, Nordmøre), two municipal sea-area plans (Lebesby, Kvænangen), and two zoning plans (Syltefjorden in Båtsfjord for sea aquaculture, Lundevågen in Farsund for land-based salmon). Documents, eight semi-structured interviews plus one group interview (nine plan-side informants in five of the seven plans), three county and two County Governor staff, one researcher, a 16-person digital meeting on 18 January 2023, and about 18 later aquaculture applications.",
+      "supported": true,
+      "extract_quote": "Dokumentanalysen ble fulgt opp med åtte semi-strukturerte intervju med planleggere, andre administrativt ansatte og personer som på ulike måter har vært tett involvert i planprosessene i fem av planene"
+    },
+    {
+      "claim": "The authors conclude that planning clarifications between aquaculture and other interests can still be better. Some dispensation cases look like rematches or applications on sea not designated for aquaculture. Some operators appear to wait for dispensation rather than propose sites into the plan. Dispensations that only move moorings or correct map errors are treated as a different class.",
+      "supported": true,
+      "extract_quote": "oppdretterne ser ut til å sette sin lit til at søknad om nye lokaliteter blir positivt behandlet som dispensasjon fra eksisterende plan."
+    },
+    {
+      "claim": "Selected impact-assessment themes are often described well, but assessments of environmental effects are weaker. It is hard from the documents to see how themes were scoped, how interests were weighed, and how uncertainty was handled. Municipal decision papers should state more clearly how the impact-assessment regulations, Nature Diversity Act sections 8-12, and the Water Regulations were applied. Water environment is marked as not described or assessed in the municipal-plan column of table 6.",
+      "supported": true,
+      "extract_quote": "En generell tendens i alle konsekvensutredningene er at tema beskrives godt, men at tiltakets virkninger for miljøet blir noe mer beskjedent behandlet"
+    },
+    {
+      "claim": "Most of the municipal and inter-municipal processes took a long time, around six years for Helgeland, Romsdalsfjorden and Nordmøre. Knowledge can go stale and aquaculture applications appear while the plan is still open. Nature diversity is the knowledge gap named most often.",
+      "supported": true,
+      "extract_quote": "Et fellestrekk er at alle planprosessene, med unntak av reguleringsplanen for oppdrett på land i Farsund kommune, har tatt lang tid."
+    },
+    {
+      "claim": "Helgeland used the reverse planning principle plus some single-use aquaculture zones. Fourteen municipalities started. Alstahaug, Brønnøy and Vefsn left. Vega is excluded because of World Heritage questions. Rødøy still sits on a 2001 plan. A 20 m depth rule was the compromise that allowed multi-use aquaculture. After adoption, Varpet was licensed after an earlier dispensation was overturned. Risvær was refused despite being in the plan (eagle owl). A Lyng cod application split Lurøy (conflict with fishing) from Nordland county (provision treated as guidance).",
+      "supported": true,
+      "extract_quote": "som et kompromiss ble det laget en generell planbestemmelse om at det ikke tillates akvakultur i alle flerbruksarealer som er grunnene enn 20 meter."
+    },
+    {
+      "claim": "Romsdalsfjorden used single-use zones and reduced total aquaculture area. A later closed-pen salmon site at Geilbukta needed dispensation because the zone had been set for marine species. Nordmøre used multi-use only (one leftover single-use zone in Aure), barred new anadromous farms in two fjord areas, and limited two threshold fjords to aquaculture without feed or discharge. A site later proved ice-covered in winter because one municipality skipped a public meeting.",
+      "supported": true,
+      "extract_quote": "Til sammen førte dette til en reduksjon i totalt areal avsatt til akvakultur i planområdet."
+    },
+    {
+      "claim": "Lebesby moved from multi-use to single-use zones, required zoning plans for six new aquaculture areas, and asked for year-long current measurements. A Sámi objection was settled by KDD on 16 February 2021 with a mapping clause for coastal Sámi fishing. Parallel zoning and Aquaculture Act treatment then met two applicants. The Act is not first-in-time. Kvænangen allows salmonids only. Spildra øst was taken out of the plan, then given dispensation, then overturned as undermining the new plan. An ILA 10 km zone in 2019 drove later dispensation attempts.",
+      "supported": true,
+      "extract_quote": "akvakulturlovens system ikke er basert på først i tid, best i rett, men på en samlet interesseavveining etter akvakulturloven § 16."
+    },
+    {
+      "claim": "Syltefjorden is a private SalMar zoning case. Only landscape and nature diversity were formally assessed. An appeal from hunters and river owners was not upheld on 24 January 2022. The locality licence was still pending. Lundevågen is land-based. The zoning map and provisions are called incomplete. Alternatives covered intake and outfall, not location. A 24 000 tonne a year permit was issued on 21 December 2021. Construction was later delayed.",
+      "supported": true,
+      "extract_quote": "Søknaden omfattet en årlig produksjon på inntil 24 000 tonn fordelt på smolt, postsmolt og matfisk av laks."
+    },
+    {
+      "claim": "Two Parliamentary Ombudsman statements (SOM-2022/1374 Brønnøy and SOM-2022/1377 Alver) are cited as saying municipal-plan environmental assessment of aquaculture cannot be postponed to Aquaculture Act licensing, and that the traffic-light system is not a substitute. Multiconsult 2021 is cited for only 13 formal impact assessments among about 1200 aquaculture sites.",
+      "supported": true,
+      "extract_quote": "I begge sakene peker Sivilombudet også på at de overordnede vurderingene av miljøvirkningene av akvakultur i arealene ikke kan skyves på til konsesjonsbehandlingen etter akvakulturloven."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The report is a qualitative governance study of plans and knowledge use. It does not claim or contest a stated causal effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 and A4 remain core. After the full walk A2 (plan versus Aquaculture Act, first-in-time, zoning versus licence) is present in chapters 3.4 and 5.3. A3 (fisheries, Sámi fishing, wild salmon, recreation) is present in the case narratives. A5 (ILA zone, recommended distances, 3.9 times locality versus company biomass) is present in chapters 2.3 and 3.5. A6 is a short recommendation that Havbruksfondet or resource-rent tax could be earmarked for planning competence, not a study of municipal incentives.",
+  "coi_ok": true,
+  "coi_note": "Client is KDD. Quality control Kjersti E.T. Busch and Joan Fabres. No competing-interest statement found.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "salt_1065_ku-arealplanlegging",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": 90,
+  "extract_coverage": "All 90 page markers walked. Figures 1-9 are image-only. Tables 1-7 have readable cell text. Chapter 3 case narratives and chapter 5 recommendations now read. Appendices are method templates."
+}

@@ -1,0 +1,61 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "PDF filename said Sandersen and Kvalvik 2014. Title page and running head are Jentoft and Buanes 2005.",
+    "Figures were not read as data. One DOI line on the landing page is truncated."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Coastal-zone management must handle diversity, complexity, dynamics and risk. Managers often postpone hard decisions and rationalise non-decision with three myths.",
+      "supported": true,
+      "extract_quote": "we contend that coastal zone managers in Norway and elsewhere must relate to four major environmental ecological and social characteristics: diversity, complexity, dynamics, and risk. ... a tendency to rationalize management non-decision by invoking some widespread assumptions or myths",
+      "note": "Abstract and introduction both name the four features and the myths."
+    },
+    {
+      "claim": "Myth 1 is that space is unlimited. The coastline is stated as 83 000 km. From the air pens look like a few dots. Security zones and alternative locations make aquaculture space-consuming. When areas are taken, development can become zero-sum.",
+      "supported": true,
+      "extract_quote": "The Norwegian State Mapping Authority (Statens Kartverk) has estimated the coastline—islands and fjords included—to be 83,000 kilometers ... fish pens in the ocean: there are just a few dots here and there. ... with the demands for security zones and alternative locations for aquaculture installations, this industry has become quite space consuming. ... When the areas are already taken, however, development could easily become a zero-sum game.",
+      "note": "Aerial view versus ground crowding is the same section."
+    },
+    {
+      "claim": "Myth 2 is that spatial delimitation is all that coastal-zone planning requires. The Planning and Building Act of 1985 makes demarcation the primary instrument.",
+      "supported": true,
+      "extract_quote": "According to the Planning and Building Act of 1985, this is indeed also its primary instrument. The expectation is that if we can only avoid simultaneously overlapping usages, by separating them using clear boundaries, conflicts will be eliminated",
+      "note": "Section titled Space Is All."
+    },
+    {
+      "claim": "Myth 3 is that coastal culture always self-heals. Small-scale fisheries depend on community knowledge and moral standards that are not self-sustaining.",
+      "supported": true,
+      "extract_quote": "the third that “coastal culture takes care of itself.” ... Then, coastal zone managers could not assume that coastal culture would take care of itself",
+      "note": "Abstract uses self-heal. Body uses take care of itself and self-sustained."
+    },
+    {
+      "claim": "Government required a coastal-zone plan as a condition for new fish-farming licences. Many municipalities produced documents quickly. Quality was such that many soon had to be revised.",
+      "supported": true,
+      "extract_quote": "When the government, as a condition for obtaining new fish farming licenses, required municipal authorities to develop a coastal zone management plan ... For many municipalities, it did not take long to produce a document of this kind. The quality, however, was such that many of them soon had to be revised.",
+      "note": "Introduction. The later claim that aquaculture demand often outran the plans is in the same opening stretch plus notes."
+    },
+    {
+      "claim": "A more realistic ambition is risk-management, avoiding worst-case scenarios, rather than aiming for some positively defined ideal state of the coastal zone.",
+      "supported": true,
+      "extract_quote": "managers should concentrate on avoiding worst-case scenarios rather than planning for an ideal state of affairs in the coastal zone.",
+      "note": "Repeated in the closing argument."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. Conceptual essay, not a stated causal effect of farms on wild fish.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (planning and designation, 1985 Act), A3 (uses and non-human uses crowded on the ground), A4 (myths postpone knowledge and hard choices). A0 is not a tag.",
+  "coi_ok": true,
+  "coi_note": "No competing-interest statement in the extract. Funding beyond affiliations not stated.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2005_jentoft_challenges-myths-czm",
+  "verified_at": "2026-09-15T10:30:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "linear walk of extracted.md (page markers)",
+  "extract_coverage": "Read extracted.md from header through references. Figures unread as images. PDF dropped under a 2014 Sandersen filename. Article is Jentoft and Buanes 2005."
+}

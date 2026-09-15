@@ -1,0 +1,188 @@
+title: What's the clue; better planning, new technology or just more money? - The
+  area challenge in Norwegian salmon farming
+year: 2020
+doi: 10.1016/j.ocecoaman.2020.105415
+url: https://doi.org/10.1016/j.ocecoaman.2020.105415
+authors:
+- Bjørn Hersoug
+- Eirik Mikkelsen
+- Tonje C. Osmundsen
+journal: Ocean and Coastal Management
+publisher: Elsevier
+language: english
+source_type: peer_reviewed
+document_type: review_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A2
+- A3
+- A5
+- A6
+geography:
+- Norway
+environment:
+- coastal_zone
+- fjord
+time_period: c. 1970-2020
+regulatory_context:
+- Norway_Aquaculture_Act
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+- locality_licence
+- mixed
+evidence_type: mixed
+study_design:
+- literature_review
+- expert_assessment
+data_source:
+- published_literature
+- public_registers
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- area_allocation
+- coastal_planning
+- licensing_access
+- coexistence_tradeoffs
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- future technology mix (land-based, offshore, closed pens, large smolt)
+- political cost of changing planning
+- OCR damage in extract tables and some numbers
+key_claims:
+- A 2014 survey of farmers is cited as finding lack of available sea area the greatest
+  challenge for continued growth. The authors still conclude that the current limitation
+  is primarily on production-licence capacity and the traffic-light growth rule, not
+  on sea space as such, though some regions are full.
+- Physical occupation of pens is described as small (about 59 km2 for 900 licences
+  in 2010). With transport and fishing buffers the extract gives a larger but still
+  modest figure that is [OCR] damaged. Anchoring-area occupation is given as around
+  420 km2, later updated toward about 520 km2, or slightly more than 0.5 percent of
+  inshore coastal area.
+- The binding spatial constraint is sanitary distance (Food Safety Authority, at least
+  2.5 km to the next farm and 5 km to a processing plant). An illustrative 5 km zone
+  around localities occupies about 20 percent of coastal-zone waters. Other legitimate
+  users and sector vetoes further shrink usable sea.
+- A locality licence requires municipal plan accordance and permissions under several
+  sector laws. Counties coordinate. Food Safety Authority, Fisheries Directorate and
+  Coastal Administration can block. Municipal plans apply to one nautical mile beyond
+  the baselines.
+- Production rose from 474 000 tons in 1999 to 1 350 000 tons in 2019 on 966 localities.
+  The 1999 locality count and the in-year active-use count are [OCR] damaged. Hordaland
+  used 99 percent of approved localities over the year.
+  Finnmark used 73 percent. Density is given as more than four localities per 100
+  km2 in Hordaland versus 0.5 in Finnmark. If production were as area-intensive as
+  in Hordaland, national production could have increased 3.3 times.
+- About 900 localities are restricted to a total of about 3 million tons MAB. With
+  around one third of localities fallow at any time, actual potential is around 2
+  million tons MAB. The licensed production-capacity figure in the extract is [OCR]
+  damaged. Doubling by 2030 is called impossible under the then present licence-growth
+  regime, while a doubling is theoretically possible within already allocated areas
+  if the existing production model continues.
+- Central government could prioritise aquaculture access only by overhauling allocation
+  and challenging municipal planning democracy, which the authors call unlikely. Of
+  many possible planning changes, only three are judged likely to increase aquaculture
+  area (larger planning areas, auctioned area blocks, marine industrial parks). Inter-municipal
+  planning is called the most promising inside-the-box option.
+- Industry options left are reducing lice, emissions and escapes, raising legitimacy,
+  and giving municipalities a larger share of value creation. After a rejected 40
+  percent resource-rent proposal, government offered a production fee of NOK 0.40
+  per kg. The Aquaculture Fund key was changed so municipalities receive 40 percent
+  of payments for new capacity and the state 60 percent. Resource rent is cited from
+  NOU 2019 as about 20 billion NOK per year in recent years.
+- Competing uses named include coastal fisheries, shipping, tourism (fishing-tourism
+  companies later registered above 1100), recreation, marine conservation (about 3
+  percent of the coastal zone, ambition 7 percent), 53 national salmon rivers and
+  27 national salmon fjords, pipelines and emerging offshore wind, and military use
+  (Navy exclusive rights to about 30 percent of inshore area in Troms).
+claims_about_uncertainty:
+- How much land-based, offshore, closed pens and large smolt will cut coastal-area
+  demand is left qualitative. Closed pens are described as economically uncertain
+  with then current solutions.
+- OCR and extract gaps exist in Table 1 county figures, some percentages, and a few
+  licence counts.
+- Whether the production fee and the changed Fund key will actually unlock more space
+  is left open. A cited study says even with Fund transfers, some local ownership
+  may still be needed for net local benefits to outweigh valued environmental harm.
+claims_about_policy_or_management:
+- From 2017, production growth is tied to the traffic-light system and a lice indicator
+  in 13 production zones (green plus 6 percent, yellow stable, red minus 6 percent).
+  About 950 commercial licences are stated for March 2020.
+- Inter-municipal coastal plans are described as improving quality and scale while
+  remaining open to stakeholders.
+- Land-based licences are in principle free. A standard sea licence price is given
+  as about 150 to 200 million NOK (15 to 20 million USD) for 780 tons MAB. Development
+  licences were granted free and convertible. The extract says 100 standard licences
+  had been granted to a [OCR] number of projects, with two still in the pipeline.
+  Salmar and Nordlaks flagship projects were still inside the baselines.
+methodological_limitations:
+- Mix of review and qualitative assessment of governance, technology and incentives.
+  No new causal estimate of area shortage.
+- County table numbers in the extract are heavily damaged and should not be reused
+  without the PDF table.
+rag_summary: 'Hersoug, Mikkelsen and Osmundsen (2020) review the Norwegian salmon
+  area challenge: why farmers report space shortage on a long coast. They combine
+  prior research with qualitative assessment of planning, new production models and
+  municipal incentives. Physical farm footprints are small. Distance rules, other
+  coastal uses and sector vetoes shrink what is usable. Locality licensing sits under
+  the Aquaculture Act, sector laws and municipal plans. The authors say the binding
+  limit at the time was mainly production licences and traffic-light growth, not empty
+  sea, though Hordaland was nearly full. They doubt a full central takeover of planning.
+  They point to legitimacy, lice and emissions control, municipal benefit-sharing,
+  and uncertain relief from land-based, offshore and closed systems.
+
+  '
+coi_declared: false
+coi_notes: 'Authors declare that they have no conflicts of interest. Funding from
+  the Research Council of Norway, grant 267572 E40, and the Norwegian Seafood Research
+  Fund, grant 901391. Affiliations Nofima and NTNU Samfunnsforskning.
+
+  '
+consensus_signal: moderate_agreement
+quality_signal: strong
+quality_rationale: 'Peer-reviewed synthesis by authors who have worked the topic for
+  years. Distinguishes physical area, sanitary area and licence-capacity constraints.
+  Some extract numbers are garbled.
+
+  '
+controversy_role: foundational
+relevance_signal: high
+relevance_rationale: 'Names planning, technology and money as the three levers of
+  the area challenge, which is the spine of this room.
+
+  '
+included_because: 'Selected by Tonje Osmundsen. The paper is a full treatment of area
+  access, locality licensing and municipal incentives, not a lice-mortality paper.
+
+  '
+related_documents_supporting:
+- 2015_sandersen_access-to-sites
+- 2019_mikkelsen_arealplanlegging-sjo
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2022_hersoug_ten-licensing-systems
+- 2011_gullestad_arealbruk-havbruk
+retrieval_tags:
+- area_challenge
+- locality_licence
+- sanitary_distance
+- municipal_incentives
+curator_note: 'Full extract walked 2026-09-13 (linear walk, no page markers). Heavy
+  OCR damage in the DOI line, Table 1 county figures, some licence counts, and several
+  proper names. Four figures are image placeholders and were not read as data. DOI
+  reconstructed from the visible 10.1016/j.ocecoaman.2020.105415 string. Competing-interest
+  and funding statements sit at the end of the extract.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Tonje Osmundsen
+source_pdf: Whats the clue 2020 Hersoug, Mikkelsen, Osmundsen.pdf
+
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 3 soft). See qa_report.json.

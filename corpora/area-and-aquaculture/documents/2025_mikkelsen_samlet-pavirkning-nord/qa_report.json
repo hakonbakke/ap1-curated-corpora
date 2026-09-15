@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Chapter 4 writes 46 percent for large or very large cumulative assessment. Chapter 5 writes 45 percent. Both are filed.",
+    "Figures 6-17 hold survey distributions and are images. Exact bar heights are not re-read as a table.",
+    "Filled legal-coding sheets are available from the authors. Appendix Table 4 is the empty English template.",
+    "knowledge_in_decisions added to outcome_domain after the walk. Priority tags stay A3 and A4."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Nofima report 11/2025 (12 February 2025) from the CLEAN project. Two tasks: map legal and plan requirements for cumulative-impact assessment in five northern cases, and report a 2024 survey of practice.",
+      "supported": true,
+      "extract_quote": "Dato: 12. februar 2025"
+    },
+    {
+      "claim": "Cases are Svalbard, the Barents Sea and Lofoten waters, Nord-Norge coastal and fjord areas, terrestrial Nord-Norge, and the Pasvik watercourse. The authors distinguish two meanings of cumulative impact: several stressors on one nature object, and one activity (for example aquaculture) with many pressures.",
+      "supported": true,
+      "extract_quote": "vurderer dette for fem casestudier: Svalbard, Barentshavet og havområdene ved Lofoten, kystområdene i Nord-Norge, terrestriske områder i Nord-Norge, og Pasvikvassdraget i Øst-Finnmark."
+    },
+    {
+      "claim": "Naturmangfoldloven section 10 and the impact-assessment regulation require cumulative load or combined effects. Those rules are guidelines. A missing section 7 assessment can be a procedural error (Sivilombudet). Many sector laws do not say cumulative. Of 18 laws and regulations scored, 6 use cumulative-impact or ecosystem-based language. Another 6 use looser terms such as holistic or sustainable.",
+      "supported": true,
+      "extract_quote": "så er det snakk om totalt 6 av 18 lover og forskrifter som nevner enten «samlet påvirkning» eller «økosystembasert»."
+    },
+    {
+      "claim": "The Aquaculture Act requires environmentally sound production and holistic weighing of area needs and interests, inside and outside aquaculture. The authors say it has no explicit requirement to assess cumulative impact. For the coast they conclude that planning and water law are the clearer cumulative instruments, and that aquaculture has implicit holistic duties without practical guidance.",
+      "supported": true,
+      "extract_quote": "Det er imidlertid ikke eksplisitte krav i loven og forskrifter etter den om å vurdere samlet påvirkning."
+    },
+    {
+      "claim": "Aquaculture is used as an example of one activity with many pressures (nutrients, lice, escapees, lice medicines, light, sound), citing Evenset et al. (2023). A single new farm is treated as an extra load on already used water, not as a stand-alone case.",
+      "supported": true,
+      "extract_quote": "Havbruk vil eksempelvis kunne påvirke marine fiskebestander, villaks, bunnfauna og krepsdyr i sjøen gjennom utslipp av næringsstoffer, økt antall lakselus, rømminger, og utslipp av lusemidler, lys og lyd (Evenset m.fl., 2023)."
+    },
+    {
+      "claim": "Barents Sea management plans are described as holistic and ecosystem-based, but not legally binding. Sectors remain free to interpret their own contribution. Nature Diversity Act applies only in part beyond 12 nautical miles.",
+      "supported": true,
+      "extract_quote": "Denne er imidlertid ikke juridisk bindende og fungerer som et politisk styringsdokument over juridisk forankret sektorforvaltning"
+    },
+    {
+      "claim": "Svalbard environmental law section 8 is the only provision the Svalbard chapter calls an explicit cumulative-load rule in that case. Nature Diversity Act chapter II does not apply on Svalbard. The Svalbard environmental law was amended from 1 January 2025 to limit traffic pressure.",
+      "supported": true,
+      "extract_quote": "Svalbardmiljøloven § 8 er den eneste bestemmelsen som eksplisitt nevner begrepet «samlet belastning»."
+    },
+    {
+      "claim": "Survey: 370 persons contacted in November 2024, 76 respondents (state 33, municipality 27, county 8, consultants 8). 46 percent said they assess cumulative impact to a large or very large degree (45 percent in the closing chapter). Including medium answers gives 78 percent.",
+      "supported": true,
+      "extract_quote": "Totalt 76 personer deltok i undersøkelsen. Disse representerte stat (N:33), kommune (N: 27), fylke (N: 8) og konsulentselskap (N: 8)."
+    },
+    {
+      "claim": "Respondents split between single-project and multi-activity cumulative assessment. Most used discretion for stressor interactions (72 percent on the last case). 58 percent said they use guides for cumulative assessment. 63 percent reported medium, low, or very little knowledge of how stressors interact. Data gaps were more often a medium or smaller problem than interaction-knowledge gaps.",
+      "supported": true,
+      "extract_quote": "den klare majoriteten (72 %) svarer at sist de gjorde en vurdering av interaksjoner mellom påvirkningsfaktorer så gjorde de en skjønnsmessig vurdering."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. Management-and-law report on cumulative-impact duties and practice. It does not claim or contest a causal farm-to-wild-fish effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A3 and A4. The report states trade-offs and what knowledge is required or missing in cumulative assessment. It is not a siting, licensing-access, density, or municipal-incentive paper.",
+  "coi_ok": true,
+  "coi_note": "coi_declared is unclear. CLEAN is funded through Framsenteret, mainly by the Ministry of Climate and Environment. Client line is Klima- og miljødepartementet (2022/5555 CLEAN). No personal competing-interest statement.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2025_mikkelsen_samlet-pavirkning-nord",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "no page markers",
+  "extract_coverage": "forord, introduction (DAPSIR and legal §10), methods, chapter 3 cases (Barents, coast, terrestrial, Pasvik, Svalbard, cross-case table), survey chapter 4, chapter 5, references, appendix coding template."
+}

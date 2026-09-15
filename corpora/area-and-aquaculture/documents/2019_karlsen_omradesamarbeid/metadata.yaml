@@ -1,0 +1,192 @@
+title: Områdesamarbeid i norsk havbruk
+year: 2019
+doi: ''
+url: ''
+authors:
+- Kine Mari Karlsen
+- Roy Robertsen
+- Bjørn Hersoug
+- Ragnar Tveterås
+- Tonje Osmundsen
+journal: ''
+publisher: Nofima
+language: norwegian
+source_type: report
+document_type: policy_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A3
+- A5
+geography:
+- Norway
+environment:
+- coastal_zone
+- fjord
+- municipality
+time_period: 2018-2019
+regulatory_context:
+- Norway_Aquaculture_Act
+- locality_licence
+- mixed
+evidence_type: mixed
+study_design:
+- interview_study
+- document_analysis
+- expert_assessment
+data_source:
+- interviews
+- public_registers
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coexistence_tradeoffs
+- disease_or_lice
+- area_allocation
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- survey response during the 2019 algae bloom may have reduced participation
+- fallowing-area map is a snapshot
+- bioeconomic model lacks quantitative epidemiological parameters
+- hard to conclude whether large or small firms cooperate more
+- respondents disagree on whether authorities should own the cooperation
+key_claims:
+- Area collaboration is defined as cooperation between two or more aquaculture firms
+  in a defined sea area. The main stated finding is that such collaboration should
+  as far as possible be voluntary. The report is Nofima 34/2019 (37 pages plus annex),
+  part of FHF project 901391.
+- An initial 2018 mapping (Karlsen et al. 2018) used interviews or a survey with 37
+  informants from industry, authorities and organisations. It found voluntary, mandated,
+  and 'voluntary under compulsion' forms. Mandated themes include fallowing, zone
+  cooperation, fish health, lice and disease, joint operation and co-location, and
+  regional planning strategy. Two Food Safety Authority staff were interviewed in
+  autumn 2018.
+- A 2019 Norstat survey of 37 salmon and trout farmers (phone and web, NSD-approved)
+  found extensive cooperation on operations and preparedness with neighbours. About
+  two thirds also cooperate with authorities beyond mandatory requirements. Twenty-eight
+  of 37 cooperate to reduce disease and parasite risk. Over half reported good cooperation
+  with both large and small firms (23 of 37). Two reported poor cooperation. Two were
+  alone in their zone.
+- Conflicts are reported more often where many firms share an area and sites are dense.
+  Twenty-three of 37 agreed (wholly or in part) that increased competition for sites
+  limits operational and preparedness cooperation. Eight disagreed. A Food Safety
+  Authority informant named access to area as the main barrier. Firms hold on to sites,
+  so fallowing areas stay small.
+- Twenty-five informants said the Food Safety Authority requires coordinated fallowing
+  zones when approving operating plans. Practice is described as varying between Food
+  Safety Authority regions. Over half of respondents treated coordinated stocking and
+  fallowing as important for production. About half did not treat coordinated delousing
+  as central, possibly because cleaner fish and other lice methods are chosen firm
+  by firm.
+- The 2019 toxic algae bloom in Nordland and Troms is used to show limits of site-level
+  preparedness when many farms need the same local suppliers at once. A companion
+  Nofima report (Karlsen et al. 2019) is cited for about 13 400 tonnes and about 8
+  million fish lost among 14 farmers. The authors recommend a minimum of emergency
+  sites in each production area as a public-good task for counties, municipalities,
+  the Food Safety Authority and the Directorate of Fisheries.
+- Veterinary Institute work is cited as raising doubt that joint fallowing affects
+  lice (Guarracino et al. 2018). The authors call for scientific clarification and
+  for knowledge on what an optimal number of fallowing areas would be. Mattilsynet
+  internal data were digitised as a June 2019 snapshot. Some fallowing areas are described
+  as very small.
+- Recommendations also include clearer contracts with visible actions and sanctions
+  (Ostrom-style), better well-boat and dead-fish transport rules, a conflict-handling
+  arrangement, and digital tools for combined impacts and fallowing maps. Respondents
+  disagree on whether authorities should own the cooperation and on whether it should
+  stay voluntary.
+claims_about_uncertainty:
+- The authors say it is hard to conclude whether large or small firms cooperate most,
+  or who gains most.
+- Respondents disagree on whether authorities should own the cooperation and on whether
+  it should be voluntary.
+- The bioeconomic sketch (Misund et al. 2019) lacks quantitative epidemiological parameters
+  and assumes full information. It is an analytical frame, not an estimated result.
+- Some 2030 ranking answers were dropped because the authors suspected respondents
+  answered about the project, not about future zone cooperation.
+claims_about_policy_or_management:
+- The Food Safety Authority is reported to encourage voluntary coordinated fallowing
+  and infection control, with mandated fallowing as a backup. Minimum fallowing after
+  a cycle is two months. A site clearance can be withdrawn if activity stays below
+  one third of the permitted level for two years.
+- Counties, municipalities, the Food Safety Authority and the Directorate of Fisheries
+  should jointly develop a minimum of emergency sites per production area.
+- Closed cages, offshore systems and company-owned fjords are named as possible later
+  changes to the need for neighbour cooperation, not as findings.
+- Municipal sea planning (to the baseline plus 1 nautical mile) is described as in
+  principle voluntary. About 164 municipalities had salmon farming. Kvalvik and Robertsen
+  (2017) are cited for 60 municipalities in inter-municipal plan cooperation by 2017.
+methodological_limitations:
+- National survey N=37. Some farmers were reluctant during the algae bloom. Several
+  survey figures in the extract are images, so some category counts are incomplete.
+  The bioeconomic model is a sketch, not an estimated result.
+- Two N=37 samples exist. The 2018 mapping (mixed informants) and the 2019 farmer
+  survey. They must not be collapsed.
+- The water-region chapter is institutional context. The authors say the Water Framework
+  Regulation had not yet been used to limit aquaculture.
+rag_summary: 'Karlsen, Robertsen, Hersoug, Tveterås and Osmundsen (Nofima report 34/2019)
+  map area collaboration among Norwegian salmon farmers. Methods are a 2018 mapping,
+  two Food Safety Authority interviews, a 2019 survey of 37 farmers, and a June 2019
+  snapshot of fallowing areas. Most cooperation is voluntary or voluntary under compulsion.
+  Farmers cooperate mainly on operations and preparedness to cut disease and parasite
+  risk. Twenty-three of 37 said site competition limits that cooperation. Conflicts
+  rise with density. The 2019 algae bloom (about 13 400 tonnes lost) is used to argue
+  for emergency sites as a public good. The authors recommend keeping collaboration
+  voluntary, writing clearer contracts, and treating joint fallowing as scientifically
+  unsettled (Guarracino et al. 2018). A journal version of much of this material is
+  Osmundsen et al. (2021).
+
+  '
+coi_declared: unclear
+coi_notes: 'Funded by FHF project 901391 (Havbruksforvaltning 2030). Authors at Nofima,
+  University of Stavanger (Tveterås) and NTNU Samfunnsforskning (Osmundsen). Survey
+  approved by NSD. No separate competing-interest statement in the extract.
+
+  '
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: 'Open report with a stated national farmer survey and authority
+  interviews. N is modest. Some figures are not fully readable in the extract. Recommendations
+  mix survey findings with Ostrom-style argument.
+
+  '
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: 'States how shared water is coordinated between firms, and why
+  site competition can block that coordination.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. The report is a named study of area
+  collaboration among farmers, including when cooperation should stay voluntary and
+  when emergency sites need public design.
+
+  '
+related_documents_supporting:
+- 2017_kvalvik_intermunicipal-coastal-planning
+- 2017_kvalvik_ocean-coastal-management
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2021_osmundsen_shared-waters
+- 2019_mikkelsen_arealplanlegging-sjo
+retrieval_tags:
+- area_collaboration
+- fallowing
+- emergency_sites
+- voluntary_cooperation
+- algae_bloom
+curator_note: 'Full extract walked 2026-09-13. Cover English title: Area collaboration
+  in Norwegian aquaculture. ISBN 978-82-8296-613-9. Dated 29 November 2019. 37 pages
+  plus annex. Osmundsen et al. (2021) states that the in-depth survey results were
+  summarised in this report. Some survey bar counts are garbled in the extract tables.
+  Algae-loss figures are cited from Karlsen et al. (2019) and the Directorate of Fisheries,
+  not newly counted here. A1 is not tagged. Municipal sea planning is background.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Karlsen mfl_2019_Områdesamarbeid i norsk havbruk.pdf
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 1 soft). See qa_report.json.

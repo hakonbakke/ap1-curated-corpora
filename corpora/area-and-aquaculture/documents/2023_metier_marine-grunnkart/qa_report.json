@@ -1,0 +1,67 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The sammendrag once writes 34 033 mrd. kr. Table 1 and later million-NOK language use million. Metadata and summary file the table unit.",
+    "Table 6 annual sum is 6 684 million NOK including kelp (936) and ripple (1 806 to 1 809). NPV uses 3 939 million priced benefit. Both figures are now distinguished.",
+    "Figure 1, tornado diagrams, and several benefit tables are images. Bar heights are not re-read as a numeric table.",
+    "should_be_read_with points to later planning-knowledge files in this room. The extract does not cite those doc_ids."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Version 3.0 (9 November 2023) is a cost-benefit analysis of full mapping and data access for Marine grunnkart i kystsonen, owned by Kartverket, NGU, and Havforskningsinstituttet. Earlier versions were 15 October 2021 and 19 October 2022. Version 3 presents only the full-mapping alternative (former Tiltak 3).",
+      "supported": true,
+      "extract_quote": "Versjon 3.0 09.11.23"
+    },
+    {
+      "claim": "The analysed coast is land to one nautical mile outside the baseline, 93 825 km2. The measure maps 80 percent of that coast (75 000 km2, including pilot areas). Offshore farming, oil and gas, and Svalbard are outside the scope.",
+      "supported": true,
+      "extract_quote": "Kysten er her definert som området fra land og ut til én nautisk mil utenfor grunnlinjen, totalt 93 825 km2."
+    },
+    {
+      "claim": "Table 1 states expected net present value of 34 033 million NOK (2023 kroner) for full mapping and access. Version 1.0 was 24 647 million (2021 kroner). The extract also writes 34 033 billion NOK once. The table, figure parts, and later million-NOK language are the consistent unit.",
+      "supported": true,
+      "extract_quote": "Versjon 3.0 (2023), 2023-kr|34 033"
+    },
+    {
+      "claim": "Six priced benefit items enter the NPV. Annual benefit at assumed optimal mapping (80 percent mapped, plus seamless infrastructure) is 3 939 million NOK. Cost NPV is 4 458 million NOK, of which mapping is 2 340 million and a 20 percent tax-financing cost is 743 million. Analysis life is 40 years (2025-2064) at a 4 percent discount rate.",
+      "supported": true,
+      "extract_quote": "samlet forventet årlig nytte på 3 939 mill.kr"
+    },
+    {
+      "claim": "The two largest priced aquaculture items are a one-off 3 percent production increase (3 030 million NOK per year from 2021-2022 first-hand value and volume) and a cost cut from more suitable sites (4 percent of volume moved from poor to good sites, 10 000 NOK per ton, 659 million NOK per year). Reduced application costs are 9 million NOK per year (50 percent fewer refusals, 0.5 million NOK per application, about 36 refusals a year from FAKS 2021-2022).",
+      "supported": true,
+      "extract_quote": "I denne analysen har vi valgt å sette en 3 % produksjonsøkning i forhold til dagens produksjonsnivå."
+    },
+    {
+      "claim": "Table 6 also prices kelp restoration (936 million NOK per year from a 3 percent restoration of 2 000 km2 urchin-grazed kelp) and economy-wide ripple (1 806 to 1 809 million NOK per year). Chapter 7.1 keeps both out of the NPV because of a long or unclear cause chain and the one-step rule in circular R 109/14.",
+      "supported": true,
+      "extract_quote": "Restaurering av tareskog, se Miljø og ressursforvaltning under kapittel 4, inkluderes ikke i sammenstillingen av samfunnsøkonomisk lønnsomhet som følge av lang årsak-virknings-kjede"
+    },
+    {
+      "claim": "Non-priced effects scored ++++ include growth industries and coastal-area planning (higher-quality plans under the Planning and Building Act). Inter-municipal coastal planning and shorter processing are scored +++. Chapter 4.6 uses Stavanger, Herøy, and Statsforvalteren in Rogaland as pilot examples, and the Husevågøy cauliflower-coral case as a conflict that maps might have avoided.",
+      "supported": true,
+      "extract_quote": "De to ikkeprissatte virkningene som har blitt vurdert til å ha spesielt stor effekt er «Vekstnæringer og nye næringer» og «Arealplanlegging i kystnære områder»."
+    },
+    {
+      "claim": "Kartverket is stated as having mapped about 35 percent of the coast, NGU 10 percent, and HI 5 percent. Mapping is assumed to ramp from 1 percent in 2025 to 5 percent a year from 2029, reaching 80 percent in 2040. Benefits are assumed to start two years after mapping. The first five years (priority areas, about 15 percent of the coast) are assumed to give about 50 percent more return.",
+      "supported": true,
+      "extract_quote": "Kartverket har kun kartlagt ca. 35 % av kysten, NGU har kartlagt 10 % og HI har kartlagt 5 %."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The report is a cost-benefit case for mapping. It assumes aquaculture production and cost effects of maps. It does not claim or contest a causal farm-to-wild-fish effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A4 only. The object is knowledge infrastructure for coastal plans and locality choice. Chapter 4.6 discusses plan quality, but the report does not evaluate how municipalities designate sea. A1 is not added.",
+  "coi_ok": true,
+  "coi_note": "coi_declared is unclear. Metier states independence beyond the assignment. Estimates use client and user-group input. No personal competing-interest statement. Cover is exempt from public access under offentleglova section 22.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2023_metier_marine-grunnkart",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "no page markers",
+  "extract_coverage": "sammendrag, chapters 1-8 (methods, problem, measure, priced and non-priced effects, society effects, uncertainty, NPV, real options), annexes 1-5 (interviews, 2021 uncertainty workshops, effect map, bibliography)."
+}

@@ -1,0 +1,66 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Value-creation figures differ: 17.2 billion kroner first-hand in 2023, 17.7 billion including ripples in 2022, and about 16 billion in chapter 7. All three are now stated.",
+    "A3 is added after the full chapter 6 walk. The annex remains industry-perspective (controversy_role supportive).",
+    "Core 0.2-0.4 percent and 20 percent figures are imported from Skrove et al. 2023, not recomputed here."
+  ],
+  "claim_checks": [
+    {
+      "claim": "SINTEF report 2025:01117, version 1.3, dated 31 October 2025, 29 pages. ISBN 978-82-14-07347-8. Companion delrapport to Sand et al. 2025:00943 for Trøndelag County Municipality. Written from the industry side of that assignment.",
+      "supported": true,
+      "extract_quote": "Denne delrapporten er en arealbruksbeskrivelse for havbruk i Trøndelag med vekt på havbruksnæringas perspektiver."
+    },
+    {
+      "claim": "Physical occupation of production area in the sea is first stated as less than one percent of Trøndelag coastal zones. Chapter 5, citing Skrove et al. 2023, calculates salmon farm occupation at 15-42 km2 or 0.2-0.4 percent, and about 0.5 percent if other species and a 100 m fishing ban are included. Chapter 7 restates a half percent.",
+      "supported": true,
+      "extract_quote": "Dagens direkte fysiske arealbeslag fra lakseoppdrettsanlegg i sjø kan utfra Skrove m. fl. (2023) kalkuleres til å bruke 15 – 42 km2 eller 0,2 – 0,4 prosent av kystsonearealet i Trøndelag."
+    },
+    {
+      "claim": "With Food Safety Authority-style radii (2.5 km for fish, 1.5 km for other species) the same source is used to say today's farming takes about 20 percent of sea area in production areas 6 and 7. The authors call that a coarse pointer, not a map of suitability or other users. Remaining sea is used for conservation, defence and, not least, fisheries.",
+      "supported": true,
+      "extract_quote": "Med denne tilnærmingen anslås det at dagens oppdrett tar opp 20 prosent av sjøarealet i produksjonsområde 6 og 7 (Skrove m. fl. 2023)."
+    },
+    {
+      "claim": "Trøndelag is given about 19 percent of national grow-out capacity. Seafood was 61 percent of regional exports in 2022. In 2023 about 243 100 tonnes were slaughtered, first-hand value 17.2 billion kroner, of which only about 3 300 tonnes and 119 million kroner were not salmon. Chapter 4.1 estimates 11 400 jobs and 17.7 billion kroner value creation including ripples in 2022. Chapter 7 restates about 16 billion kroner.",
+      "supported": true,
+      "extract_quote": "I 2023 ble det slakta om lag 243 100 tonn fisk til en førstehåndsverdi på 17,2 milliarder kroner i Trøndelag."
+    },
+    {
+      "claim": "SSB 2024 figures in the report: 42 190 km2 land including freshwater, 10 856 km2 coastal-zone sea in municipal plans, about 15 200 km2 to the territorial limit. Municipalities have set aside 4 650 km2 or 43 percent of the coastal zone to combined purposes that can include aquaculture. Osen has 10 km2 set aside for aquaculture alone, but sits at the top of a production area and a sanitary zone. Applications there have often been refused.",
+      "supported": true,
+      "extract_quote": "SSBs arealstatistikk for 2024 viser at kommunene i Trøndelag har satt av 4650 km2 eller 43 prosent av kystsonearealet til såkalte kombinerte formål der havbruk kan inngå."
+    },
+    {
+      "claim": "Sites are concentrated around Hitra/Frøya and Nærøysund and otherwise spread along the coast. An inter-municipal coastal plan for the southern coast up to Osen was adopted in 2015. An attempt for Namdalen and Fosen failed. In production areas 6 and 7, company capacity was 205 000 tonnes at 31.12.2023 while cleared locality capacity exceeded 870 000 tonnes, of which 79 percent was in Trøndelag. Trøndelag is described as a yellow traffic-light zone.",
+      "supported": true,
+      "extract_quote": "I produksjonsområde 6 og 7 var det 31.12.2023 en maksimal selskapskapasitet på 205 000 tonn, mens den klarerte lokalitetskapasiteten var over 870 000 tonn, hvorav 79 prosent av dette er i Trøndelag."
+    },
+    {
+      "claim": "Main constraints on today's open-pen system are lice, disease and escapes, plus weaker social acceptance and harder area access. Submersible pens and more closed systems are described as under investment. Land-based grow-out is treated as possible but politically gated. A temporary halt on land-based permits from 2022 is said to have been lifted from summer 2025. Ten plants like the planned Kvidul site are said to be in the same order of magnitude as today's Trøndelag salmon output. More than 10-20 such plants is called unrealistic.",
+      "supported": true,
+      "extract_quote": "Det er ikke realistisk med mer enn 10-20 slike anlegg i Trøndelag, ut fra den samlede produksjonskapasiteten."
+    },
+    {
+      "claim": "Chapter 6 conflict types: inside the sector (salmon versus cod, recommended 5 km distances, PD zones), wild salmon (lice and escapees) and wild coastal cod (spawning in pens, HI advice of very cautious cod-farm growth until 2025/2026 knowledge), kelp (current about 1.2 km2, potential 82 km2 or about 2 percent after conflict areas are removed), land-based irreversible works and power demand, offshore (Frøyabanken Nord and Trænabanken), feed-crop competition with agriculture, and visual, noise, defence and marine-protection interests. Corals, coralline algae and sponge areas are named as knowledge-poor risk objects (Grefsrud et al. 2025).",
+      "supported": true,
+      "extract_quote": "Før nytt kunnskapsgrunnlag er på plass i 2025/2026, anbefaler derfor Havforskningsinstituttet en svært forsiktig vekst i torskeoppdrett (Grefsrud m. fl. 2025)."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The report describes area need, occupation percentages and conflict types. It does not itself estimate a causal farm-lice effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (municipal and inter-municipal plans, 43 percent mixed zoning), A3 (chapter 6 conflicts), A5 (physical versus sanitary occupation, company versus locality capacity). A4 is touched (knowledge in plans) but not added.",
+  "coi_ok": true,
+  "coi_note": "Client, quality control and industry informants are named. No competing-interest statement. coi_declared is unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "1-29",
+  "extract_coverage": "all 29 page markers. Introduction, chapters 2-5, previously unread chapter 6, chapter 7, references."
+}

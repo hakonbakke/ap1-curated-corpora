@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "One figure is an image placeholder and was not read as data.",
+    "Endnotes 9 and 10 repeat the same hydropower revenue paragraph."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Municipal coastal-zone planning since the 1989 Planning and Building Act revision gives municipalities a gatekeeper role. Of 276 coastal municipalities, 160 hosted salmon farms.",
+      "supported": true,
+      "extract_quote": "The municipalities has since the 1989 revision of the Planning and Building Act ... Of the 276 coastal municipalities in Norway, 160 currently are hosting salmon farms",
+      "note": "Gatekeeper wording and 160 of 276 are both in the extract."
+    },
+    {
+      "claim": "The policy dilemma is analysed as a wicked problem. Consensus on problem definition is high. Wickedness lies mainly in the area-rent solution. Not classified as super-wicked.",
+      "supported": true,
+      "extract_quote": "the consensus between the parties regarding problem definition ... is rather high. The wickedness lies in the solution ... the problem should not be classified as ‘super-wicked’.",
+      "note": "Matches abstract and conclusion."
+    },
+    {
+      "claim": "Production municipalities receive fewer benefits than base and processing municipalities. Five listed companies owned more than 50 percent of licences. Plants fell from 250 to 50.",
+      "supported": true,
+      "extract_quote": "Five listed companies with headquarters in main Norwegian cities today own more than 50 per cent of the licenses ... landing and processing plants has been reduced from 250 to 50",
+      "note": "Production versus base and processing municipalities is stated in the same section."
+    },
+    {
+      "claim": "Property tax (max 7 percent, low valuation not including fish) and one-off licence-fee shares replaced area rent. NFKK grew from 20 to 56 members and treats the substitutes as insufficient.",
+      "supported": true,
+      "extract_quote": "the maximum tax rate is 7 % and the value set on the installations at sea (not the fish in the net) is quite low ... in 2009 a ‘Network for fjord and coastal municipalities’ (NFKK) was established by 20 small coastal municipalities. ... Today the network has 56 members",
+      "note": "One-off fee share and municipal dissatisfaction are also stated."
+    },
+    {
+      "claim": "Industry support for rent was conditional on municipal destination and no rise in total tax. FHL proposed a 3 to 5 percent growth fee. Government preferred paying for growth (fee share 40 to 50 percent).",
+      "supported": true,
+      "extract_quote": "the aquaculture industry now increasingly supports an area rent, but on the condition that it goes directly to the municipalities and that the total tax burden of the industry does not increase ... annual fee ... based on an annual growth in production of 3–5 % ... compensation to the municipalities should therefore be increased from 40 to 50 per cent of the fee",
+      "note": "Government preference for paying to stimulate growth is restated in the wrap-up."
+    },
+    {
+      "claim": "Area rent may not deliver preferred sites. Licence politics, MTB and environmental rules are nearer-term limits. Worst case: municipalities take rent and stop expanding. Debate may delay sites (Alta, Tysnes).",
+      "supported": true,
+      "extract_quote": "an area rent does not necessarily give the aquaculture industry access to its preferred production sites ... the main obstacle to continued growth, at least in the short run, is not access to new production sites but rather government license politics, MTB limits and environmental regulations ... A worst-case scenario ... municipalities, once they obtain an area rent, may conclude that they have already allocated sufficient area ... as seen in the cases of Alta and Tysnes municipalities.",
+      "note": "All four caveats sit in the same analysis section."
+    },
+    {
+      "claim": "Sites fell from about 1400 (1990) and about 1800 (2000) to about 950. Occupied area including anchoring is 0.5 percent. South more occupied, north generally more space.",
+      "supported": true,
+      "extract_quote": "In 1990 there were about 1,400 sites. In 2000 the number peaked at about 1,800 sites ... Today there are about 950 sites. ... amounts to only 0.5 per cent of the Norwegian coastal areas inside the baseline",
+      "note": "Geographic south versus north difference is in endnote 2."
+    },
+    {
+      "claim": "Nationally area-rent and environmental debates run in parallel. An area rent could weaken non-commercial interests and less profitable aquaculture, and could undermine allemannsrett.",
+      "supported": true,
+      "extract_quote": "in the national public debate of area rent and environmental concerns are rather two parallel discourses ... An area rent may therefore not only change the tax system but also impact the deeply rooted coastal regime.",
+      "note": "Cod, shellfish and sea ranching not being able to bear an extra tax is in the same section."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper analyses a governance stalemate, not a stated causal effect of aquaculture on wild fish or the environment.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (municipal designation), A2 (licences and MTB as access limits), A3 (competing uses and environmental trade-offs), A6 (area rent, property tax, fee shares). A3 added because the paper treats competing uses, environmental concerns and democratic implications of rent as central, not peripheral.",
+  "coi_ok": true,
+  "coi_note": "Authors declare no competing interests. Funding is Research Council of Norway project 225076.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2015_sandersen_access-to-sites",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all (linear walk, no page markers)",
+  "extract_coverage": "Read the full extracted.md linearly from header through references. One figure image unread. Endnotes and competing-interest plus funding statements included."
+}

@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The discussion rounds the cull reduction as approximately 60 percent. The results table remains 57 percent (interval 24-90). Both are kept as the extract states them."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Bayesian space-time PD model with a within-farm SIR process and four between-farm pathways. Data: 1412 farms, 4332 cohorts, February 2003 to February 2012, 588 outbreaks.",
+      "supported": true,
+      "extract_quote": "Our data consist of information on all 1412 Norwegian marine farms producing salmonids in any month from February 2003 to February 2012.",
+      "note": "4332 cohorts and 588 outbreaks are in the same data section."
+    },
+    {
+      "claim": "Farms had on average 6.3 other farms within 10 km seaway and 1.2 within 3 km. Active farms ranged from 471 to 706. 96 percent of outbreaks were south of Hustadvika, where 46 percent of cohorts were farmed.",
+      "supported": true,
+      "extract_quote": "The various farms had on average 6.3 other farms within a seaway distance of 10 km, and 1.2 farms within a distance of 3 km.",
+      "note": "Hustadvika 96 percent and 46 percent of cohorts are in the outbreak paragraph."
+    },
+    {
+      "claim": "Contact network is farms sharing a concession identity. 62 408 farm-months. 73 percent of cohorts were smolts.",
+      "supported": true,
+      "extract_quote": "Fish farms sharing a common concession identity in the aquaculture licence register were defined to constitute a local contact network",
+      "note": "Farm-month and smolt shares are in the data section."
+    },
+    {
+      "claim": "Neighbourhood seaway infection accounts for 87.8 percent of infection events (interval 81.1-94.2). Contact network 5.6, previous cohorts 2.8, other 2.3, at stocking about 1.5 percent.",
+      "supported": true,
+      "extract_quote": "Infection from infected neighbouring farms is by far the most important source of infection, accounting for 87.8% (95% C.I. 81.1–94.2%) of the infection events.",
+      "note": "The other shares and intervals are in the same results paragraph."
+    },
+    {
+      "claim": "About 20.3 percent of cohorts were estimated infected versus 13.6 percent with a detected outbreak. About one third of infected cohorts had no detected outbreak. Mean delay 3.6 months.",
+      "supported": true,
+      "extract_quote": "We estimate that 20.3% of all cohorts were infected (C.I. 18.9–21.7%), even though an outbreak was only detected in 13.6% of the cohorts in the data set.",
+      "note": "One-third and 3.6 months follow in the same paragraph."
+    },
+    {
+      "claim": "Nationwide cull within a month of detection reduced later detected outbreaks by 57 percent (24-90), or 42 per year (18-69), at 174 farm-months lost per year (4-331).",
+      "supported": true,
+      "extract_quote": "Compared to the strategy followed in reality, this was a reduction of 57% (C.I. 24–90%).",
+      "note": "42 per year and 174 farm-months with intervals are in the same scenario paragraph."
+    },
+    {
+      "claim": "Ten-fold cross-validation selected two sine and cosine seasonal pairs plus fish numbers and weights. 23 parameters. Simulated outbreaks were less clustered than observations.",
+      "supported": true,
+      "extract_quote": "The model with seasonal SIR transmission rate described by two pairs of sine and cosine functions, and including both numbers and weights of ﬁsh in the susceptibility and infectiousness factors, has the highest predictive log likelihood",
+      "note": "23 parameters are in the notation section. Weaker clustering is in the discussion."
+    },
+    {
+      "claim": "The paper does not analyse municipal coastal plans or site designation. Re-location of farms is named as a possible scenario type and is not run.",
+      "supported": true,
+      "extract_quote": "Alternative strategies may for instance involve re-location of farms, vaccination or slaughtering strategies.",
+      "note": "Only the cull comparison is simulated. No planning analysis."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper attributes infection pathways and simulates a cull rule. It does not claim a causal siting or planning effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A5 only. Seaway neighbourhood, farm counts within 3 km and 10 km, and contact-network biosecurity. Not A1 or A3. Adjacent, not a siting paper.",
+  "coi_ok": true,
+  "coi_note": "No competing-interests statement. Funding is RCN 190484/S40, 194067/F40 and 218985/E40. coi_declared remains unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2015_aldrin_pd-space-time",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: abstract, introduction, data and farm neighbourhoods, model framework and 23 parameters, cross-validation and Ripley K check, results on pathway shares and hidden infection, cull scenario, discussion limitations, acknowledgements and funding."
+}

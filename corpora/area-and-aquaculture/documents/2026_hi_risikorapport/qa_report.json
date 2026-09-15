@@ -1,0 +1,79 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Table 1.1 colour cells are empty in the extract. Per-area lice scores used in claims come from chapter 3 prose and from the national counts in the sammendrag, not from table colours.",
+    "Figures 1.1-1.5, 2.1-2.9 and 3.1-3.13 are image-only. Knowledge-strength rings and risk-map arrows are not readable as cell values.",
+    "This 2026 volume prints production-area summaries only. Full argument sits in the 2025 report. Curation does not invent 2025-report numbers that are absent here.",
+    "One sentence on rainbow-trout stocking ('26 millioner i 2026') looks garbled. That figure is not used.",
+    "Active-site counts in chapter 3 sum to 845 reporting localities in 2025. The sammendrag says around 900 sites. Both figures are kept. The difference is not explained in the extract.",
+    "Page 10 OCR splits Table 1.2 totals across lines. The reconstructed 2025 total 1,838,665 tonnes matches the later prose on record production."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Official Havforskningsinstituttet risk report on production mortality in farmed fish and environmental effects of Norwegian fish farming (Rapport fra havforskningen 2026-10, 76 pages, dated 11 February 2026). Few risk conclusions changed from 2025, so this volume prints only the 13 production-area summaries. Readers are sent to the 2025 report for the full argument. A climate-focused assessment is planned before summer 2026. Separate coastal-cod risk notes are published elsewhere.",
+      "supported": true,
+      "extract_quote": "Vi har derfor valgt å bare inkludere oppsummeringene for hvert av de 13 produksjonsområdene i årets rapport."
+    },
+    {
+      "claim": "Norwegian aquaculture production rose by about 200,000 tonnes from 2024 to 2025, described as the largest annual growth since 1980. Salmon accounted for 182,000 tonnes, rainbow trout about 13,000, and cod about 5,500 (slaughter 20,130 tonnes). Table 1.2 gives 1,838,665 tonnes of grow-out production in 2025. Salmon export rose from 1.25 to 1.41 million tonnes. Mean monthly standing salmon fell from 459 million in 2024 to 445 million in 2025.",
+      "supported": true,
+      "extract_quote": "Norsk akvakulturproduksjon økte kraftig fra 2024 til 2025 – med drøyt 200 000 tonn. Dette er den største årlige veksten i perioden 1980-2025."
+    },
+    {
+      "claim": "Two-year means from 2018-2019 to 2024-2025 rose in every production area except area 1. Red areas 3 and 4 added about 67,000 tonnes despite three company-MAB cuts in area 4 and two in area 3. Yellow areas 2 and 5-8 added about 243,000 tonnes. Green areas 1 and 9-13 added about 135,500 tonnes. Area 4, red since the first traffic-light round, had the second-largest rise (about 42,000 tonnes). Areas 6-8 added about 75,000 tonnes while yellow. The authors ask whether that rise is environmentally sustainable given lice pressure, especially for sea trout.",
+      "supported": true,
+      "extract_quote": "Matfiskproduksjonen har økt i dette tidsrommet med drøyt 67 000 tonn i områder som stort sett har vært røde i perioden (PO3+PO4), med nesten 243 000 tonn i områder som har vært gule de siste årene (PO2+PO5-8), og 135 500 tonn i områder som har vært grønne de siste årene (PO1+PO9-13)."
+    },
+    {
+      "claim": "Poor farmed-fish welfare and lice effects on wild fish are stated as the main obstacles to sustainability. High water temperature, more fish in the sea, and more frequent delousing are said to have worsened the situation. Welfare scoring uses total loss (dead, discard, escape, other, excluding count error) because loss categories are used differently across areas. National year-class loss sits at about 16-18 percent. About 17 percent is treated as moderate. High welfare risk is stated for seven of 13 areas (1-6 and 12). Only area 8 is low. Rainbow-trout welfare risk rose from moderate to high in area 3.",
+      "supported": true,
+      "extract_quote": "Det var kun området PO8 fra Helgeland til Bodø som ble vurdert å ha lav risiko for dårlig dyrevelferd."
+    },
+    {
+      "claim": "Lice-induced mortality in wild salmon smolts: two production areas high, eight moderate, three low. Chapter 3 prose (not Table 1.1 colours) places high in areas 3 and 4, moderate in 2 and 5-11, and low in 1, 12 and 13. For sea trout and Arctic char the text states nine high, two moderate, two low. High risk from Karmøy to Senja (areas 2-10). Area 6 genetic-introgression risk is raised from last year. Area 9 genetic risk is lowered.",
+      "supported": true,
+      "extract_quote": "to produksjonsområder har høy risiko for lakselusindusert dødelighet hos vill laksesmolt, åtte har moderat risiko og tre har lav."
+    },
+    {
+      "claim": "About 900 aquaculture sites in Norway. Submerged cages rose from about 10 sites in 2023 and 20 in 2024 to about 40 in 2025, in areas 3-9 and 11. More than 30 million salmon have been harvested from submerged cages. One submerged site has produced rainbow trout to harvest. Open cages, the amount of farmed salmonids, and tight infection coupling between sites are said to make low lice levels very hard to keep.",
+      "supported": true,
+      "extract_quote": "i 2023 var det omtrent 10 lokaliteter med nedsenkede merder, i 2024 cirka 20, og i 2025 omtrent 40."
+    },
+    {
+      "claim": "Nutrient emissions are assessed as low risk in all areas. Estimated 2025 dissolved releases are 70,665 tonnes nitrogen and 9,377 tonnes phosphorus (38.4 kg N and 5.1 kg P per tonne produced). Areas 2 and 3 have the highest release per sea area. Theoretical phytoplankton response in 2024 is 17.6 percent in area 2 and 19.1 percent in area 3. Modelled area means are 5.8 and 6.1 percent. Local pockets can reach 30-50 percent. More monitoring is recommended where aquaculture activity is high.",
+      "supported": true,
+      "extract_quote": "Produksjonen av laksefisk i 2025 vil gi estimerte utslipp på 70 665 tonn løst nitrogen og 9377 tonn løst fosfor"
+    },
+    {
+      "claim": "Seabed risk under cages is largely unchanged. Area 4 is moved from moderate to low after better B and C surveys. National B-surveys in 2024-2025: 838 sites, 9.8 percent poor or very poor. C-surveys 2021-2025: 746 sites, 7.9 percent moderate or worse. Mean influence area (site plus 1 km) is 4 percent of production-area sea. Area 3 influence is about 15 percent of that area's sea. Hard-bottom methods are incomplete.",
+      "supported": true,
+      "extract_quote": "Det ble totalt utført B-undersøkelsene på 838 lokaliteter i 2024 og 2025 på landsbasis opp til 15.12.2025. 756 var i tilstandsklasse «Meget god» eller «God» og var 71 «Dårlig» og 11 «Meget dårlig» tilstandsklasser. Dette gir et gjennomsnitt på 9,8 % dårlige B-undersøkelser for hele landet."
+    },
+    {
+      "claim": "Copper use on nets was 564 tonnes in 2024, up 84 percent from 306 tonnes in 2023 and 67 percent below 1,698 tonnes in 2019. Tralopyril was 108 tonnes. Current delousing-chemical use is assessed as low risk for serious effects on other marine species. Wild wrasse catch fell from about 9.9 million in 2024 to about 5.4 million in 2025. 2026 is the last year with a separate cleaner-fish score if harvest stays low.",
+      "supported": true,
+      "extract_quote": "I 2024, som er siste året vi har data på forbruk, ble det registrert 564 tonn kobber til bruk som groehemmende middel i akvakultur."
+    },
+    {
+      "claim": "Coastal-zone planning, municipal designation of sea area, and site-application process are not the main object of the report.",
+      "supported": true,
+      "extract_quote": "I årets \"Risikorapport norsk fiskeoppdrett\" er det valgt ut ni overordnede uønskede hendelser (figur 1.5) som, dersom disse inntreffer, kan gi et spekter av alvorlige konsekvenser som resulterer i «Redusert bærekraft med hensyn til miljø og dyrevelferd i et produksjonsområde»."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable for this corpus. The report scores farm-lice pathways to wild salmonids from prior HI work. It does not newly estimate a causal effect for area planning.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A5 remains core (open-cage density, infection coupling, influence area, traffic-light biomass). After the full walk A3 is added (wild-fish and environmental trade-offs by production area). A1, A2, A4 and A6 are not tagged. Planning, locality clearance, and municipal incentives are not the object. Knowledge-strength language is national risk scoring, not knowledge in coastal plans or applications.",
+  "coi_ok": true,
+  "coi_note": "Government institute report. Editors and a longer author list including NINA names. No competing-interest box. Metadata records the institute commission.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2026_hi_risikorapport",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": 76,
+  "extract_coverage": "All 76 page markers walked. Preface, methods, chapters 2.1-2.8, and all 13 production-area summaries. Table 1.1 colours and figures 1.1-1.5, 2.1-2.9 and 3.1-3.13 are image-only. Table 1.2 and tables 2.1-2.2 cells are readable."
+}

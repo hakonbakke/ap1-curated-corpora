@@ -1,0 +1,251 @@
+title: Fiskehelserapporten 2025
+year: 2026
+doi: ''
+url: https://vetinst.no
+authors:
+- Torfinn Moldal
+- Jannicke Wiik-Nielsen
+- Victor Henrique Silva de Oliveira
+- Julie Svendsen
+- Asle Haukaas
+- Ingunn Sommerset
+journal: Veterinærinstituttets rapportserie
+publisher: Veterinærinstituttet
+language: norwegian
+source_type: government_report
+document_type: monitoring_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A5
+- A3
+geography:
+- Norway
+environment:
+- coastal
+time_period: 2025 (published 11 March 2026)
+regulatory_context:
+- mixed
+evidence_type: empirical_observational
+study_design:
+- statistical_analysis
+- expert_assessment
+- mixed
+data_source:
+- official_statistics
+- farm_data
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- fish_health_welfare
+- disease_or_lice
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- no fish-group traceability from hatchery to slaughter in public registers
+- official listed-disease counts are new detections after fallowing, so remaining infected fish from the prior year are not in the year total
+- AquaCloud cause-of-death data cover about half of salmon sea sites
+- non-listed diseases depend on voluntary company data and can be under-reported
+- cleaner-fish loss categories do not separate death from removal
+- report written mainly without in-text references
+key_claims:
+- Official Veterinærinstituttet yearbook of fish health in Norway for 2025 (rapportserie
+  5a/2026). Redaksjon ended 11.03.2026. Published 11.03.2026 on vetinst.no. Chapter
+  authors are credited per chapter. Named title-page persons are the editorial group
+  and the citation authors. Exceptions named on the title pages. NIVA wrote chapter
+  11.5 (water quality), NOFIMA contributed to chapter 5 (climate), and Pharmaq Analytic
+  contributed to chapter 8.8 (mycobacteriosis).
+- Calculated annual sea-phase mortality risk in 2025 was 14.2 percent for salmon (1.2
+  percentage points below 2024, lowest in at least five years), 17.0 percent for rainbow
+  trout (up 2.0 percentage points), and 20.4 percent for cod (down 1.8 percentage points,
+  still above 2021-2023). Completed salmon production cycles that ended in 2025 had
+  14.7 percent mortality risk (down 0.7 percentage points).
+- 'Land-based deaths of fish over 3 grams: 43.3 million salmon, 2.84 million rainbow
+  trout, 2.44 million cod. Salmon and rainbow-trout land deaths fell from 2024. Cod
+  land deaths rose, especially in the 36-155 gram class. Sea-phase dead fish: 54.8
+  million salmon, 3.2 million rainbow trout, 2.4 million cod. Sea-phase losses including
+  other categories: 67.5 million salmon.'
+- Geographic differences are large. For salmon, production area 4 had 20.1 percent
+  mortality risk. Areas 12-13 combined had 9.4 percent. Area 6 fell by almost 8 percentage
+  points from 22.3 percent in 2024. Area 9 rose by about 7 percentage points to 16.1
+  percent, linked in the text to six confirmed ISA outbreaks, one ISA suspicion, and
+  an algal bloom, despite relatively low biomass density. Area 1-2 rose from 13.6 to
+  18.2 percent, linked in the text to non-medicinal delousing.
+- ISA was confirmed at 18 sea sites in 2025 (one in area 4, two in 6, four in 7, six
+  in 9, one in 10, two in 11, two in 12), with suspicion at three more sea sites and
+  an unresolved land-based broodstock suspicion from January 2024. A large share of
+  confirmed outbreaks was in Vesterålen. The text states that suspected infected fish
+  were moved from one site to another, and that infection is otherwise assumed to have
+  occurred between neighbouring sites. Several outbreaks may relate to ILAV HPR0 in
+  the hatchery phase (HPR0 detected at 78 sites). Seven of 18 confirmed outbreaks were
+  at sites with ISA-vaccinated fish.
+- PD was detected in 44 new cases, all inside the endemic zone (31 SAV3 in areas 3-4,
+  13 SAV2 in areas 5-6). No new PD in area 2 since 2022. The restriction zone after
+  SAV2 in area 8 in autumn 2023 was lifted in November 2025. Official PD counts exclude
+  infected fish still at sea from the prior year.
+- From 2017 the report presents most figures by the 13 production areas in the production-area
+  regulation, not by county. Areas 1 and 13 are merged with neighbours for some non-listed-disease
+  tables to protect confidentiality. Official listed-disease counts are new detections
+  on a site after fallowing.
+- 833 salmon sea sites and 85 rainbow-trout sea sites were active in at least one
+  month of 2025. Mean monthly salmon biomass was about 876,000 tonnes (875,687 in table
+  2.1.3), the highest in the five-year series shown. About 405.3 million salmon under
+  500 grams were put to sea.
+- The preface describes Meld. St. 24 (2024-2025) as a proposed shift toward a management
+  system based on measurable environmental impact, including lice-larva emission quotas
+  and a fee on lost fish. A Storting majority backed the direction but put the most
+  extensive measures on hold pending more studies. The animal-welfare white paper is
+  cited for a five-percent mortality ambition. Those instruments are described, not
+  independently evaluated.
+- Salmon-lice larval output from farms in the spring period with the lower lice limit
+  rose from 2024 to 2025 in ten of the 13 production areas. Non-medicinal delousing
+  weeks reached 3918, a 24 percent rise from 3163 in 2024, the highest recorded in
+  the series. Adult female lice totals by production area are said to be driven largely
+  by trends in farmed-fish numbers.
+- AquaCloud cause-of-death data in 2025 cover 408 sites, about 49 percent of salmon
+  sea sites. National shares in that sample. Injuries 33.5 percent, infectious disease
+  28.1 percent, unknown 27.4 percent. Injuries rose in importance relative to 2024.
+  HSMB and CMS rose as shares among infections. HSMB was detected at 167 sites and
+  CMS at 114 (up from 115 and 78 in 2024). IPN was detected at 40 sites, about three
+  times 2024.
+- Open cages create two-way farmed-wild infection risk. High numbers and density of
+  susceptible hosts on a site allow pathogen amplification and spill-back to wild fish.
+  For BKD, wild salmonids are treated as the likely source of introductions, while
+  spread inside farming raises pressure back on wild fish. Culture of the bacterium
+  from 2025 PCR-positive wild and escaped fish in Orkla did not succeed.
+- Chapter 5 (first climate chapter, with NOFIMA) states that knowledge is not good
+  enough to say how climate change will affect commercial fish health. Adaptation bullets
+  include area management. Planning of new localities should include expected temperature
+  development, local ecosystem dynamics, potential infection or lice pressure, and
+  species tolerance. That is a recommendation, not a coastal-plan analysis.
+- Area, density, and siting are not the main object. The report is national fish health
+  and welfare. Production-area geography, neighbour-site ISA, endemic PD zones, lice
+  larval output, and a few planning sentences sit next to the area room. They do not
+  make this a siting paper.
+claims_about_uncertainty:
+- Public hatchery and sea registers cannot be joined at fish-group level, so production
+  mortality from first feeding to slaughter is not stated as a single linked rate.
+- A fall in sea-phase annual mortality does not necessarily mean lower full-lifecycle
+  mortality. Longer land phase and larger smolt change time at sea and the weight mix
+  that the 12-month rate does not adjust for.
+- AquaCloud cause-of-death data in 2025 cover 408 sites, about 49 percent of salmon
+  sea sites. National shares apply to that sample.
+- Official listed-disease totals count new detections after fallowing. Remaining infected
+  fish from the prior year can make the true number of infected sites higher.
+- Non-listed disease counts come from about 24 companies plus institute labs. They
+  can include the same generation counted in two calendar years. Field diagnoses without
+  laboratory confirmation are under-counted.
+- Cleaner-fish losses are not split by cause. Registered deaths fell with releases
+  (18.9 million released, 12.7 million registered dead). The text says data quality
+  does not allow a claim that the death share fell. Chapter 14 also uses 12.8 million.
+- Whether lower mortality in northern production areas reflects climate or lower production
+  density is left open.
+- The report is written mainly without references in the text. Readers are told to
+  contact chapter authors for sources. Chapter 5 is an exception and lists references.
+- Survey sent to 361 people, completed by 143 (40 percent). Rankings are expert perception,
+  not a census.
+claims_about_policy_or_management:
+- Sommerset's preface cites a five-percent mortality ambition in the animal-welfare
+  white paper and the postponed Havbruksmeldingen instruments (lice-larva quotas and
+  a fee on lost fish). Those are described, not independently evaluated.
+- Mortality is treated as one health indicator. The text states that it misses non-fatal
+  disease, function loss, and poor welfare.
+- Chapter 3 treats early slaughter of PD in a non-endemic area as a collective-action
+  problem (area-level gain versus site-level cost of waiting). A short-run area estimate
+  for SAV2 control in area 8 is given as 521 million kroner versus doing nothing if
+  slaughter is prompt. That estimate is preliminary and short-run.
+- Chapter 6 states that the traffic-light system as now designed challenges farmed-fish
+  welfare, because growth into yellow and red increases treatment pressure. The welfare
+  chapter proposes a welfare clearance of localities using mortality, non-medicinal
+  treatments, cleaner-fish care, reported welfare events, and slaughter quality. That
+  is a proposal, not adopted policy.
+- Chapter 12 states that interspecies pathogen transfer (illustrated with IPNV from
+  cod to other species in a cohabitation trial) should be considered when planning
+  multi-species sites, biosecurity measures, and coastal-zone planning. That is one
+  sentence, not a planning study.
+methodological_limitations:
+- Compiled official reports, laboratory detections, a 40 percent survey of fish-health
+  personnel, and voluntary industry data. Not a new epidemiological model of area use
+  or licensing.
+- Written mainly without in-text references except the climate chapter and a few named
+  papers.
+- Most maps and charts in the extract are images and are unreadable here. Numbers
+  are taken from surrounding prose and tables.
+- Chapter walk used the full extract (front matter, chapters 1-14, appendices A1-E2,
+  acknowledgements). Figures remain unreadable.
+rag_summary: 'Moldal et al. (2026) is Veterinærinstituttet''s Fish Health Report for
+  2025 (5a/2026). Sea-phase mortality risk was 14.2 percent for salmon (down 1.2 points,
+  lowest in at least five years), with large production-area differences (20.1 percent
+  in area 4, 9.4 percent in areas 12-13). Area 9 rose to 16.1 percent with ISA and
+  an algal bloom (about two million fish dead, Fiskeridirektoratet). ISA at 18 sea
+  sites is linked in the text to fish moves and infection between neighbouring sites.
+  PD (44 cases) stayed inside the endemic zone. Lice larval output rose in ten of 13
+  areas in the spring low-limit period. Non-medicinal delousing weeks reached 3918
+  (up 24 percent). Open cages and host density are described as amplifying farmed-wild
+  infection. National fish health is the object. Coastal planning and site designation
+  are not.
+
+  '
+coi_declared: unclear
+coi_notes: 'Government veterinary institute report. Published 11 March 2026 on vetinst.no.
+  ISSN 1890-3290 and 1893-1480 (electronic). Most authors are institute staff. Named
+  exceptions: NIVA on water quality, Nofima on the climate chapter, Pharmaq Analytic
+  on mycobacteriosis. Private labs (PatoGen, Pharmaq Analytiq, Blue Analytics) and
+  AquaCloud supplied detection and cause-of-death lists. No competing-interests statement
+  in the extract.
+
+  '
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: 'Official national monitoring yearbook with stated registers and
+  production-area breakdowns. Written mainly without in-text references. Cause-of-death
+  coverage is partial. Official disease counts are new detections after fallowing.
+  Not a planning study.
+
+  '
+controversy_role: peripheral
+relevance_signal: low
+relevance_rationale: 'Adjacent through production-area geography, neighbour-site ISA,
+  endemic PD zones, lice larval output by area, farmed-wild density wording, and a
+  few sentences on locality planning under climate and multi-species biosecurity. Area
+  is not the main object.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. Keep the file as the official 2025
+  fish health yearbook sitting next to the area room, not as a core text on coastal
+  planning or site access.
+
+  '
+related_documents_supporting:
+- 2026_hi_risikorapport
+- 2011_aldrin_isa-farm-spread
+- 2015_aldrin_pd-space-time
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2026_hi_risikorapport
+- 2011_aldrin_isa-farm-spread
+- 2020_gismervik_welfare-regulatory-frameworks
+retrieval_tags:
+- fish_health_report
+- mortality
+- production_areas
+- ISA_neighbour_sites
+- lice_larval_output
+- farmed_wild_biosecurity
+- adjacent_not_planning
+curator_note: 'Chapters walked 2026-09-13. Citation in the extract: Moldal T, Wiik-Nielsen
+  J, Oliveira VHS, Svendsen JC and Sommerset I. Haukaas is in the editorial group.
+  Chapter authors are credited in each chapter. Sammendrag sea-dead salmon 54.8 million
+  versus table 2.4.1 54.9 million. Cleaner-fish dead 12.7 million in table 2.4.6 versus
+  12.8 million in chapter 14. Chapter 2.4 prose once attributes 20.1 percent to 2024;
+  table 2.4.2 places 20.1 percent in 2025.
+
+  '
+curator_review_status: ai_verified
+# ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Moldal et al_2026_Fiskehelserapporten 2025.pdf

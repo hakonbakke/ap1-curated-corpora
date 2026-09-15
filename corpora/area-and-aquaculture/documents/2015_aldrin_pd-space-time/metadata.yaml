@@ -1,0 +1,170 @@
+title: Space-time modelling of the spread of pancreas disease (PD) within and between
+  Norwegian marine salmonid farms
+year: 2015
+doi: 10.1016/j.prevetmed.2015.06.005
+url: https://doi.org/10.1016/j.prevetmed.2015.06.005
+authors:
+- M. Aldrin
+- R. B. Huseby
+- P. A. Jansen
+journal: Preventive Veterinary Medicine
+publisher: Elsevier
+language: english
+source_type: peer_reviewed
+document_type: modelling_study
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A5
+geography:
+- Norway
+environment:
+- coastal
+- modelled_environment
+time_period: February 2003 to February 2012
+regulatory_context:
+- none
+evidence_type: model
+study_design:
+- modelling
+- statistical_analysis
+data_source:
+- farm_data
+- public_registers
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- disease_or_lice
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- unobserved infection times and within-farm infected fractions
+- simulated outbreaks less clustered than observed data
+- vaccination not identified by cohort
+- other-pathway term estimated from endemic data
+key_claims:
+- The paper is a Bayesian space-time model of pancreas disease (salmonid alphavirus)
+  within and between Norwegian marine salmonid farms, with a within-farm SIR process
+  and four between-farm pathways. Preventive Veterinary Medicine 121 (2015) 132-141.
+- Data cover all 1412 marine farms that produced salmonids in any month from February
+  2003 to February 2012, 4332 cohorts, 62 408 farm-months of cohort production, seaway
+  distances truncated at 100 km, and 588 detected PD outbreaks (monthly mean 5.4,
+  range 0-22). 645 cohorts had unknown stocking times and 519 had unknown removal
+  times. 73 percent of cohorts were smolts, the rest relocated.
+- Farms had on average 6.3 other farms within 10 km seaway and 1.2 within 3 km. Active
+  farms per month ranged from 471 to 706. Mean fish number was 785 000 (maximum 6.5
+  million, minimum 100). Mean weight over cohort-months was 2.0 kg. Mean seawater
+  temperature was 8.9 degrees C. 96 percent of detected outbreaks were south of Hustadvika
+  (62 degrees 57 minutes N), where 46 percent of cohorts were farmed.
+- Local contact network is defined as farms sharing a concession identity in the aquaculture
+  licence register, not as measured sharing of staff or equipment.
+- Neighbourhood infection related to seaway distance accounts for 87.8 percent of
+  infection events (95 percent credible interval 81.1-94.2 percent). Other attributed
+  shares, same local contact network 5.6 percent (0.9-10.6), previous infected cohort
+  at the same farm 2.8 percent (0.3-6.2), other non-specified sources 2.3 percent
+  (1.0-3.9), already infected at stocking about 1.5 percent (0.2-3.4).
+- About 20.3 percent of cohorts were estimated infected (interval 18.9-21.7), while
+  an outbreak was detected in 13.6 percent of cohorts. About one third of infected
+  cohorts had no detected outbreak (posterior mean 33.4 percent, interval 28.8-37.9).
+  Mean time from infection to detection was 3.6 months (3.1-4.2) among detected outbreaks.
+- A scenario that removes infected cohorts within a month of a detected outbreak on
+  all Norwegian farms, compared with practice resembling no such rule south of Hustadvika,
+  reduced detected outbreaks by 57 percent (interval 24-90 percent) in the last five
+  simulated years, or 42 outbreaks per year (18-69), at a loss of 174 farm-months
+  of production per year (interval 4-331). The discussion rounds the outbreak reduction
+  as approximately 60 percent.
+- Ten-fold cross-validation selected a seasonal SIR transmission rate with two pairs
+  of sine and cosine terms plus fish numbers and weights. The selected model had
+  23 parameters. Predictive power versus a naive baseline was clear (p1/p0 about 7.6),
+  but Ripley's K-style clustering of simulated outbreaks was weaker than in the observed
+  data.
+claims_about_uncertainty:
+- Cross-validation showed predictive power, but Ripley's K-style clustering of simulated
+  outbreaks was weaker than in the observed data. The authors name unknown extra clustering
+  factors, including possible increased diagnostic awareness near a first PD diagnosis.
+- The other-pathway term is estimated from endemic data and may not apply to introduction
+  into a disease-free area.
+- PD vaccination increased during the study. The model has a declining baseline hazard
+  but no cohort-level vaccine indicator.
+- Cohort fish numbers trended up, which the authors say may help explain rising observed
+  and simulated outbreak counts.
+- The discussion mentions re-location of farms as one possible scenario type. That
+  scenario is not run here. The paper does not analyse municipal coastal plans or
+  site designation.
+claims_about_policy_or_management:
+- The culling scenario is compared with a rule already used north of Hustadvika from
+  2008 (remove after PD detection) versus no such restriction south of that line.
+- The authors present the outbreak reduction and the production-month cost as inputs
+  to industry-level cost-benefit discussion. They do not analyse municipal coastal
+  plans or site designation.
+methodological_limitations:
+- 23 parameters in the final model, estimated with MCMC and latent infection times.
+  Infection and outbreak processes are separate.
+- Local contact network is defined by shared concession identity, not by measured
+  sharing of staff or equipment.
+- No hydrodynamic distance. Seaway distance is used, as in the authors' earlier ISA
+  work.
+- No coastal-planning or licensing analysis.
+rag_summary: 'Aldrin, Huseby and Jansen (2015) fit a Bayesian space-time model of
+  pancreas disease within and between Norwegian marine salmonid farms. Data cover
+  1412 farms and 4332 cohorts from 2003 to 2012, with seaway distances and a concession-based
+  contact network. Neighbourhood infection related to seaway distance accounts for
+  about 88 percent of infection events. A simulated nationwide cull after detected
+  outbreaks reduced later detected outbreaks by 57 percent, at a cost of 174 farm-months
+  of production per year. Simulated outbreaks were less clustered than the real series.
+  The object is PD dynamics and control, not municipal area designation.
+
+  '
+coi_declared: unclear
+coi_notes: 'No competing-interests statement in the extract. Funded by the Research
+  Council of Norway, projects 190484/S40, 194067/F40 and 218985/E40 (MOLTRAQ / EMIDA).
+  Authors at Norwegian Computing Center, Norwegian Veterinary Institute, and University
+  of Oslo.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Peer-reviewed national farm panel with model selection by cross-validation
+  and a stated simulation check. Clustering is under-reproduced. The paper does not
+  test planning law or site access.
+
+  '
+controversy_role: peripheral
+relevance_signal: medium
+relevance_rationale: 'Adjacent because the extract uses seaway distance, neighbourhood
+  farms, a local contact network, and farm counts within 3 km and 10 km. The object
+  remains PD spread and culling, not coastal-zone planning.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. The room link is spatial epidemiology
+  (distance-related PD spread and farm neighbourhoods), not a claim that this is a
+  planning or area-rent paper.
+
+  '
+related_documents_supporting:
+- 2011_aldrin_isa-farm-spread
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2011_aldrin_isa-farm-spread
+retrieval_tags:
+- pancreas_disease
+- seaway_distance
+- neighbourhood_farms
+- farm_epidemiology
+- adjacent_not_planning
+curator_note: 'Full extract walked 2026-09-13. Preventive Veterinary Medicine 121
+  (2015) 132-141. Received 5 January 2015, accepted 2 June 2015. Published title uses
+  a space-time dash in the journal PDF. Supplementary material is cited and was not
+  curated separately. Discussion rounds the cull reduction as approximately 60 percent.
+  The numeric result remains 57 percent (interval 24-90).
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Aldrin et al_2015_Space–time modelling of the spread of pancreas disease
+  (PD) within and between Norwegian marine salmonid farms.pdf
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 1 soft). See qa_report.json.

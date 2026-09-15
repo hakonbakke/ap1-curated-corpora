@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Table 3 lists 720 observations while Table 4 and the results text use 712. Both figures are kept as the extract states them.",
+    "The 20 km infection-risk radius is cited from Aldrin epidemiology, not estimated in this paper."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Highest infection risk is described as within a 20 km radius, citing Aldrin work. The paper estimates a translog cost function with two proximity indicators on a 119-firm panel.",
+      "supported": true,
+      "extract_quote": "the highest risk for negative spatial biological externalities from other farms related to fish diseases and salmon lice seems to be within 20 km radius of the farm.",
+      "note": "119 firms are in Table 3."
+    },
+    {
+      "claim": "Reported elasticities use firm fixed-effect models (712 observations). Table 3 lists 720 observations for the same 119 firms.",
+      "supported": true,
+      "extract_quote": "No. of observations is 712.",
+      "note": "Table 3 says 720 observations. Soft inconsistency, not a fabricated number."
+    },
+    {
+      "claim": "Doubling mean nearest-farm distance is associated with an 8.7 percent cost reduction. Doubling farms within 20 km is associated with an 18.3 percent cost increase.",
+      "supported": true,
+      "extract_quote": "For the sample mean firm, doubling the mean distance to the nearest farm is associated with an 8.7% reduction in production costs.",
+      "note": "Table 4 elasticities are -0.087 (p=0.001) and 0.183 (p<0.001)."
+    },
+    {
+      "claim": "Sample means are about 5.08 km to the nearest farm and about 9.78 farms within 20 km. The October 2018 map shows 620 sites.",
+      "supported": true,
+      "extract_quote": "Figure 2 displays the distribution of 620 salmon aquaculture production sites along the coastline of Norway, as recorded in the October 2018 aquaculture registry.",
+      "note": "Table 3 means: 5.078588 km and 9.783691 farms."
+    },
+    {
+      "claim": "Industry indexes 2012-2020: farms up 16 percent, production up 25 percent, fish loss up 35 percent, lice prevalence down about 30 percent, treatments up 98 percent, inflation-adjusted costs up 57 percent.",
+      "supported": true,
+      "extract_quote": "the number of active farms and production has increased by 16 and 25% during the time period 2012–2020.",
+      "note": "Loss, lice, treatments and cost figures are in the same industry-index paragraphs."
+    },
+    {
+      "claim": "Annual technical change about 3.2 percent (A) and 3.1 percent (B), interpreted as costs shifting upwards. Proximity-bias terms are not statistically significant.",
+      "supported": true,
+      "extract_quote": "The derived estimate of annual technical change (TC) is around 3.2% in Model A and 3.1% in Model B. Hence, both models imply that costs shifted upwards",
+      "note": "Table 5 bias p-values are 0.229 and 0.490."
+    },
+    {
+      "claim": "Food Safety Authority minimum distances are 5 km for new facilities, and 2.5 km for facilities up to 3,600 tons MTB (5 km above that).",
+      "supported": true,
+      "extract_quote": "presently stands at 5 km for new facilities. In 2018, facilities with a Maximum Allowed Biomass (MTB) of up to 3,600 tons were required to maintain a minimum distance of 2.5 km",
+      "note": "The authors also state a noticeable lack of rules on site distribution."
+    },
+    {
+      "claim": "Policy implication: avoid further increased spatial density of open-cage farms. Tools named include location-structure regulation, biosecurity, emission quotas, and innovation policy. Qviller et al. 2024 is cited.",
+      "supported": true,
+      "extract_quote": "they imply that one should avoid further increased spatial density of open cage farms.",
+      "note": "Qviller citation is in the same concluding section."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "supports_effect is defensible. The paper claims and estimates that greater proximity is associated with higher production cost, treated as spatial biological externalities.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A5 only (density, productivity, biosecurity). A3 not tagged. Wild-salmon licence-to-grow text is a concluding implication, not a coexistence study.",
+  "coi_ok": true,
+  "coi_note": "A disclosure statement is present. coi_declared set to yes. Funding is RCN 320612, 328724 and 353039. Tveterås lists Blue Planet board, SalmonTracking, and consultancy.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2025_kulmambetova_spatial-density-productivity",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: abstract, introduction, spatial-externality review, 620-site maps, Table 1, regulation and 2012-2020 industry indexes, methods (translog, 119 firms), results (elasticities, technical change), conclusion, notes, acknowledgements, disclosure, and references."
+}

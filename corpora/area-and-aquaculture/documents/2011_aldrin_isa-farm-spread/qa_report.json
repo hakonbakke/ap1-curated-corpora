@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The discussion once says nearly half of infections from January 2003 to August 2009. The 43 percent figure and Table 1 use January 2004 to August 2009. Both wordings are kept as the extract states them.",
+    "The extract prints 'pairs of arms' where the sense is pairs of farms. Treated as [OCR], not copied into claims."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Stochastic ISA infection-rate model with seaway distance, genetic distance, cohort size, and a constant other-pathway term. Data: 1201 farms, 3202 cohorts, February 2003 to August 2009, 72 diagnoses (63 from 2004).",
+      "supported": true,
+      "extract_quote": "The present data include all 1201 Norwegian marine salmon farms with a standing stock of Atlantic salmon in any month from February 2003 to August 2009.",
+      "note": "3202 cohorts and 72 diagnoses (63 from 2004) are in the same data section."
+    },
+    {
+      "claim": "Seaway distances truncated at 100 km. Farms had 0 to 27 other farms within 10 km (median 5). Isolate-pair genetic distances: 6 percent at 0, 6 percent at 1, 7 percent at 2, 81 percent at 3 to 384.",
+      "supported": true,
+      "extract_quote": "The various salmon farms had between 0 and 27 other salmon farms within a seaway distance of 10 km (median 5 farms).",
+      "note": "Genetic-distance pair shares are in the sequencing paragraph."
+    },
+    {
+      "claim": "Seaway parameter f = 0.095 (interval 0.046-0.145) implies about a 60 percent risk drop from 0 to 10 km. Genetic parameter v = 1.42 implies about a 75 percent drop from genetic distance 0 to 1.",
+      "supported": true,
+      "extract_quote": "The estimated value of fwas 0.095, implying that the risk of infection from a neighbourhood farm decreases by about 60 per cent",
+      "note": "v = 1.42 and the 75 percent genetic drop are in the same results paragraph."
+    },
+    {
+      "claim": "About 43 percent of infections from January 2004 to August 2009 are attributed to neighbourhood farms (Table 1 interval 40-64). Without genes the share is 47 percent. The 2004-2007 no-gene share was 22 percent.",
+      "supported": true,
+      "extract_quote": "This average implies that the source of infection is attributed to neighbourhood infectiousfarmsforabout43percentoftheinfectedfarms.",
+      "note": "Table 1 prints 43 (40-64), 47 (43-62) and 22 (21-37). Genes changed the overall share only slightly."
+    },
+    {
+      "claim": "Troms cluster after June 2007: one farm to 16 others within two years. Fifteen of 17 farms had identical genotypes.",
+      "supported": true,
+      "extract_quote": "the epidemic started at one farm (in blue), with ISA recorded in June 2007, and was further spread to 16 other farms within 2 years.",
+      "note": "Identical genotypes on 15 farms are in the same paragraph."
+    },
+    {
+      "claim": "Some pathways with probability above 0.9 exceed 20 km. One southern example is about 30 km (probability 0.87). Two of three pairs beyond 20 km had shared a well boat and a dive team. NFSA zones were 5 km and 10 km.",
+      "supported": true,
+      "extract_quote": "This farm was estimated to have been infected by a farm located about 30 km to the north, with a probability of 0.87.",
+      "note": "Well-boat and diver follow-up, and the 5 km and 10 km zones, are in the discussion."
+    },
+    {
+      "claim": "Stocking category was not significant. Susceptibility rose with cohort size. Infectiousness p-value 0.06 in the full model. Ten of 63 infection times were set to stocking.",
+      "supported": true,
+      "extract_quote": "There were no signiﬁcant effects of the stocking categories of the ﬁsh cohorts",
+      "note": "p-value 0.06 and the 10 of 63 stocking rule are in the results."
+    },
+    {
+      "claim": "The paper does not analyse coastal-zone plans or site licensing. Control implications stay at surveillance radius and early removal.",
+      "supported": true,
+      "extract_quote": "The present study suggests that such a control measure could be more efﬁcient by intensifying ISAV surveillance in ﬁsh farms surrounding infected farms, and where the surroundings are extended to 20–30 km surveillance zones.",
+      "note": "No municipal planning or licence-geography analysis."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper estimates associations and attributes infection sources. It does not claim a causal siting or planning effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A5 only. Seaway neighbourhood, farm counts within 10 km, and control-zone radii. Not A1 or A3. Adjacent, not a siting paper.",
+  "coi_ok": true,
+  "coi_note": "No competing-interests statement. Funding is FHF 199734 and RCN 185262/S40 and 186951/I30. coi_declared remains unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2011_aldrin_isa-farm-spread",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: abstract, introduction, data and seaway or gene distances, infection-rate model, Table 1, Troms pathways, discussion of control zones and well boats, model criticism, funding. Electronic supplementary material was not curated separately."
+}

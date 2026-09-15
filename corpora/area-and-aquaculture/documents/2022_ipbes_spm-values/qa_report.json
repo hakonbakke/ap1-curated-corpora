@@ -1,0 +1,75 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figure SPM 3 ecological-context bars after forests (25 percent) are not a clean numeric table in the extract. Aquaculture is listed as a context. No aquaculture percentage is filed.",
+    "Figure SPM 1 is OCR-garbled. Structure is taken from the caption and key-message list, not from unread figure text."
+  ],
+  "claim_checks": [
+    {
+      "claim": "This file is the IPBES Summary for Policymakers (SPM) of the Values Assessment, approved by the Plenary of 139 member States at IPBES 9 in Bonn, 3-9 July 2022. It is not the full chapter volume.",
+      "supported": true,
+      "extract_quote": "Its chapters were accepted, and its summary for policymakers was approved, by the IPBES Plenary composed of 139 member States at its ninth session held from 3rd to 9th July 2022 in Bonn, Germany."
+    },
+    {
+      "claim": "KM1: causes of the biodiversity crisis, and chances to address them, are tightly linked to how nature is valued in political and economic decisions. Unsustainable use and unequal access to nature's contributions are tied to a narrow, often market, set of values.",
+      "supported": true,
+      "extract_quote": "The causes of the global biodiversity crisis and the opportunities to address them are tightly linked to the ways in which nature is valued in political and economic decisions at all levels"
+    },
+    {
+      "claim": "KM2: most policymaking has prioritized a narrow set of values at the expense of nature, society, and future generations, and has often ignored values associated with indigenous peoples' and local communities' world-views. GDP-style indicators generally capture only market values of nature.",
+      "supported": true,
+      "extract_quote": "most policymaking approaches have prioritized a narrow set of values at the expense of both nature and society, as well as of future generations, and have often ignored values associated with indigenous peoples' and local communities' world-views"
+    },
+    {
+      "claim": "KM3: a typology of nature's values can help decision makers engage with diverse people-nature relations. Specific values are grouped as instrumental, relational, and intrinsic. People may live from, with, in, and as nature. Those frames can overlap.",
+      "supported": true,
+      "extract_quote": "People conceive of or relate to nature in multiple and often complementary ways: living from, with, in, and as nature."
+    },
+    {
+      "claim": "KM5: more than 50 valuation methods exist. They are grouped into four method families (nature-based, statement-based, behaviour-based, and integrated). Choice involves trade-offs among relevance, robustness, and resources. There is no one-size-fits-all method.",
+      "supported": true,
+      "extract_quote": "More than 50 valuation methods and approaches, originating from diverse disciplines and knowledge systems, are available to date to assess nature's values; choosing appropriate and complementary methods requires assessing trade-offs between their relevance, robustness and resource requirements"
+    },
+    {
+      "claim": "KM6 and C3: less than 5 percent of published valuation studies report uptake in policy decisions. A majority of countries had not met Aichi Target 2 on integrating biodiversity values into strategies, planning, and accounting by 2020.",
+      "supported": true,
+      "extract_quote": "less than 5 per cent of published valuation studies report its uptake in policy decisions"
+    },
+    {
+      "claim": "KM7 to KM9: institutions shape which values count. Transformative change is said to need a shift away from short-term individual material gains toward sustainability-aligned values. Four leverage points are named: undertaking valuation, embedding values in decisions, reforming policy, and shifting societal goals.",
+      "supported": true,
+      "extract_quote": "Working with a combination of four values-based leverage points (i.e., undertaking valuation, embedding values in decision-making, reforming policy and shifting societal goals) may catalyse transformation towards sustainable and just futures"
+    },
+    {
+      "claim": "A9: predominant economic and political decisions have prioritized market-based instrumental values, often at the expense of non-market instrumental, relational, and intrinsic values.",
+      "supported": true,
+      "extract_quote": "Predominant economic and political decisions have prioritized certain values of nature, particularly market-based instrumental values, often at the expense of non-market instrumental, relational and intrinsic values"
+    },
+    {
+      "claim": "Figure SPM 3 characterises 1,163 in-depth valuation studies after sampling from about 79,000 identified studies. Forests are stated as 25 percent of ecological contexts. Aquaculture appears as one listed context among forests, cultivated areas, coastal areas, deep sea, and more. The extract prints the remaining context shares as a bar chart. An exact aquaculture percentage is not filed here.",
+      "supported": true,
+      "extract_quote": "Of the 79,000 studies identified, around 48,000 provided explicit geo-referenced information (depicted in the map). From these, stratified random sampling, based on relevant criteria, was conducted for studies from 2010 to 2020 across all IPBES regions. Then, valuation studies that considered the decision-making purpose were selected for in-depth review {3.2.1}, resulting in 1,163 studies"
+    },
+    {
+      "claim": "A8 gives local and indigenous institutions for protecting forests and coastal ecosystems as an example of norms that emphasise responsibility for nature. That is a general institutional example, not an aquaculture case.",
+      "supported": true,
+      "extract_quote": "Although some norms and legal rules emphasize broad values like responsibility for nature (e.g., local and indigenous institutions for protecting forests and coastal ecosystems, laws for ecosystem protection), others drive negative impacts on nature"
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The SPM is a global values assessment. It does not claim or contest a causal effect of farms on wild fish or a siting outcome.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A3 only. The SPM speaks to values that enter trade-offs. It is not a planning, licensing, knowledge-infrastructure, density, or municipal-incentive paper.",
+  "coi_ok": true,
+  "coi_note": "coi_declared is unclear. The extract names trust-fund governments (including Norway), French earmarked support, and UNAM hosting. No personal competing-interests statement.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2022_ipbes_spm-values",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "1-52",
+  "extract_coverage": "all 52 page markers. Front matter, KM1-KM10, background A-D, figures, appendix on confidence."
+}

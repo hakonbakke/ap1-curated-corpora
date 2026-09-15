@@ -1,0 +1,113 @@
+title: 'Barekraftig bruk og bevaring av natur. Norsk handlingsplan for naturmangfold'
+year: 2024
+doi: ''
+url: ''
+authors: []
+journal: ''
+publisher: Klima- og miljodepartementet
+language: norwegian
+source_type: government_report
+document_type: policy_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A3
+- A5
+geography:
+- Norway
+environment:
+- coastal_zone
+- sea_area
+- municipality
+time_period: 2023-2024
+regulatory_context:
+- Norway_Planning_Building_Act
+- Norway_Aquaculture_Act
+- municipal_coastal_plan
+- mixed
+evidence_type: policy_assessment
+study_design:
+- document_analysis
+data_source:
+- mixed
+wild_or_farmed_focus: both
+outcome_domain:
+- area_allocation
+- coastal_planning
+- coexistence_tradeoffs
+- nature_values
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- government action plan, not an independent empirical study
+- this curation walked sammendrag, sea/coast status, fisheries-aquaculture sector and the aquaculture area subsection, not every land chapter
+- upcoming aquaculture white paper and 2026 sea-trout traffic-light are stated intentions
+key_claims:
+- Meld. St. 35 (2023-2024) is Norway's biodiversity action plan following the December 2022 global nature agreement. It covers sustainable use and conservation on land and at sea.
+- Area change on land and at sea is named as the largest negative driver of nature loss in Norway. The sum of small actions can exceed what nature can tolerate.
+- Tools emphasised include a nature account, menus of ecosystem measures, a target to reduce development of especially important nature areas, and principles for sustainable area management. The 30 percent area goal is named.
+- Fisheries, catch and aquaculture are presented as food and value creation that depend on functioning ecosystems. A main aquaculture-management goal is greatest possible value creation within sustainable frames. NOU 2023:23 is cited for later follow-up in an aquaculture white paper.
+- Municipal plans with impact assessment are described as important for locating aquaculture and for use versus protection. The government wants better coastal-zone planning guidance.
+- The traffic-light system has one indicator, lice-induced mortality of out-migrating salmon smolts, and 13 production areas. An expert group found that traffic-light thresholds and the quality standard for wild salmon do not steer toward the same goal. Sea trout is intended in colouring from 2026. Cod farming in spawning areas and fields was clarified as prohibited in 2024.
+claims_about_uncertainty:
+- The paper says it does not present all measures or all answers. Intentions for a later aquaculture white paper are not results.
+claims_about_policy_or_management:
+- Nationwide area management already exists through the Planning and Building Act, ocean and water plans, and the Nature Diversity Act beside sector laws.
+methodological_limitations:
+- Government white paper. Figures and most land chapters unread in this pass.
+rag_summary: >
+  Meld. St. 35 (2023-2024) is the Norwegian government's nature-diversity action
+  plan for land and sea. Area change is named as the largest driver of nature
+  loss. Aquaculture is one food-and-value sector that must stay inside
+  sustainable frames. Municipal plans locate sites. The traffic-light system's
+  lice indicator is stated not to match the wild-salmon quality standard. This
+  is policy, not a new empirical occupancy study. This curation walked the
+  summary, sea/coast status, the fisheries-aquaculture sector and the
+  aquaculture area subsection.
+coi_declared: false
+coi_notes: >
+  Government white paper. No competing-interest statement. Responsible ministry
+  is named on the cover as the nature action plan to the Storting.
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: >
+  Authoritative policy source with named instruments and an expert-group
+  finding on traffic-light versus quality standard. Not independent research.
+  Partial extract walk.
+controversy_role: foundational
+relevance_signal: high
+relevance_rationale: >
+  The only document in this addition that states national land-and-sea nature
+  allocation, with aquaculture as one sector inside it.
+included_because: >
+  Added by Thord Håkon Bakke on 2026-09-15. Storting white paper on sustainable
+  use and conservation of nature, including aquaculture area management.
+related_documents_supporting:
+- 2025_sand_arealbruk-bionaringer-trondelag
+- 2025_mikkelsen_samlet-pavirkning-nord
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2011_gullestad_arealbruk-havbruk
+- 2020_hersoug_whats-the-clue
+- 2022_ipbes_spm-values
+retrieval_tags:
+- nature_agreement
+- arealendring
+- traffic_light
+- white_paper
+curator_note: >
+  Extract walked 2026-09-15 on TOC, chapter 1 sammendrag, chapter 2 policy
+  emphasis, 3.2.1 sea and coast, 5.5.2 fisheries and aquaculture, and the
+  aquaculture area/traffic-light subsection. Title in YAML uses Barekraftig
+  without stroke-ae. Live title is Bærekraftig bruk og bevaring av natur.
+  Publisher spelled without o-slash. Many figures unread.
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-15'
+inclusion_decided_by: Thord Håkon Bakke
+source_pdf: Meld st 35 2023_2024_Bærekraftig bruk og bevaring av natur.pdf
+
+# ai_verify: Cursor page verify 2026-09-15: PASS. See qa_report.json.

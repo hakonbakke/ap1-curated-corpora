@@ -1,0 +1,67 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figures 1 to 8 are image placeholders. Survey distributions beyond the text counts were not read as data.",
+    "Pages 22 to 24 are mostly references. They were walked for completeness."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Private self-regulation cannot work in isolation. The looming shadow of the state is a prerequisite. Area cooperation should as far as possible be industry-initiated and voluntary.",
+      "supported": true,
+      "extract_quote": "such arrangements cannot work in isolation and need to be aligned with the role and functioning of public authorities. In fact, the looming shadow of the state is an important prerequisite ... Area cooperation in the Norwegian aquaculture industry should as far as possible be initiated by the industry itself, and be voluntary.",
+      "note": "Ostrom warning against imposed cooperation is in the theory and discussion sections."
+    },
+    {
+      "claim": "Initial mapping N=22 (16 industry, 6 authorities). In-depth survey N=37 (about 35 to 40 percent of about 100 farmers in 2019). Seventeen algae interviews. Two FSA interviews autumn 2018.",
+      "supported": true,
+      "extract_quote": "In total 22 respondents participated in this initial study, 16 from the aquaculture industry and 6 from public authorities. ... The number of respondents was 37 Norwegian fish farmers. This represents approximately 35–40% of salmon and trout farmers in Norway, the total in 2019 being approximately 100 ... 17 interviews ... Two respondents from the Food Safety Authority were interviewed in the fall of 2018.",
+      "note": "Karlsen et al. (2019) is cited as the earlier Norwegian summary."
+    },
+    {
+      "claim": "All 37 cooperate on operations and emergency preparedness. Main motives are disease and parasite risk, then environment, then profit. Fallowing and sea transfer rank above coordinated delousing.",
+      "supported": true,
+      "extract_quote": "all of the respondents cooperate with other fish farmers in their areas concerning operation activity and emergency preparedness (N ¼ 37). ... reduce the risk for diseases and parasites, secondly to reduce negative environmental impacts and thirdly to improve the profitability ... cooperation regarding coordinated delousing is regarded as less important than the other two topics.",
+      "note": "Cleaner-fish explanation is in the same paragraph."
+    },
+    {
+      "claim": "Thirteen of 37 say authorities should establish cooperation. Twenty-one say it should be voluntary. Twenty-three report good cooperation. Seven only small companies, three only large, two no good cooperation, two alone.",
+      "supported": true,
+      "extract_quote": "Only 13 (of 37) of the respondents state they agree this should be a responsibility for the public authorities. ... 21 respondents respond that this should be voluntary ... The majority (23 of 37) of the informants report that they cooperate well ... only includes either just the small companies (7 informants) or the large companies (3 informants). Two of the informants state that they do not have good cooperation ... two reports that they are all alone",
+      "note": "Page 13."
+    },
+    {
+      "claim": "Conflicts are more common in dense areas. FSA names site access as the main barrier. Unwritten non-compete for sites does not apply everywhere. Reluctance to give up sites can make fallowing zones too small. FSA says cooperation is unrewarded and increasingly mandates coordinated fallowing via operation plans.",
+      "supported": true,
+      "extract_quote": "the main challenge toward establishing good cooperation between fish farmers is access to sites. ... unwritten rule between the farmers about not competing with each other on access to sites. However, there is reason to believe that this does not apply everywhere ... some of the fallowing zones becomes too small. ... cooperation and willingness to share resources and coordinate with others is not rewarded.",
+      "note": "Mandated coordinated fallowing via operation-plan approval is on page 10."
+    },
+    {
+      "claim": "The 2019 bloom hit 14 farms. Loss 8 million salmon (14 000 tonnes). Some lost up to 85 percent. None faced bankruptcy after five profitable years. Response was farmer-led. Site plans assumed the same suppliers and were exceeded. Improvisation included purse seiners and the Coast Guard as a sea lab.",
+      "supported": true,
+      "extract_quote": "14 Norwegian salmon farms ... lost 8 million salmon ... a total of 14,000 tons. ... some losing up to 85% ... none were threatened by bankruptcy ... All the fish farmers had emergency preparedness plans that involved the same suppliers ... the Coast Guard was brought in, as they had test material onboard and could function as a lab on sea.",
+      "note": "Processing-plant unemployment over two years is in the same section."
+    },
+    {
+      "claim": "Emergency sites and collective preparedness cannot be solved by companies alone. Smaller farmers needed authorities to make sites available. Counties, municipalities, FSA and the Directorate should develop a minimum of ancillary emergency sites in each production area. Collective plans are not in all regions. Exercises appear very rare.",
+      "supported": true,
+      "extract_quote": "The counties in collaboration with the municipalities, the Norwegian Food Safety Authority and the Directorate of Fisheries should jointly develop a minimum of ancillary emergency sites in each production area. ... collective emergency preparedness plans have in some areas been established ... but not in all regions. Also, practical emergency exercises ... appear to be very rare.",
+      "note": "Smaller-farmer dependence on authorities for unused sites is on page 17."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper studies self-governance arrangements. It does not claim a measured causal effect of cooperation on lice or disease.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A3 trade-offs in shared water, A5 density and biosecurity. A2 added because site access, operation-plan approval and public emergency sites are treated as binding public tasks, not only farmer culture.",
+  "coi_ok": true,
+  "coi_note": "Authors declare no competing financial interests or personal relationships. Funding is FHF 901391, Seafood Federation 12820, and RCN 267572.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2021_osmundsen_shared-waters",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all (pages 1-24)",
+  "extract_coverage": "Walked every <!-- page N --> block from page 1 through page 24. Figures 1 to 8 unread as images. Survey counts taken from running text, not from figure pixels."
+}

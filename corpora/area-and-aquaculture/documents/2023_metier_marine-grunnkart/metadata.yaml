@@ -1,0 +1,188 @@
+title: Samfunnsøkonomisk analyse Marine grunnkart i kystsonen
+year: 2023
+doi: ''
+url: ''
+authors:
+- Metier AS
+journal: ''
+publisher: Kartverket
+language: norwegian
+source_type: report
+document_type: policy_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A4
+geography:
+- Norway
+environment:
+- coastal_zone
+time_period: Versions 2021-2023. Analysis life 2025-2064. Mapping assumed to reach
+  80 percent in 2040
+regulatory_context:
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+- intermunicipal_coastal_plan
+- mixed
+evidence_type: policy_assessment
+study_design:
+- expert_assessment
+- interview_study
+data_source:
+- official_statistics
+- interviews
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- knowledge_in_decisions
+- coastal_planning
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- few realised-benefit observations from marine base maps
+- aquaculture production-growth and cost-cut percentages are assumed
+- estimates draw on Kartverket, HI, NGU, and user groups
+- 40-year horizon, political and technological change, and whether maps are actually used
+- tornado diagram names the 3 percent production item as a main uncertainty driver
+key_claims:
+- Version 3.0 (9 November 2023) is a cost-benefit analysis of full mapping and data
+  access for Marine grunnkart i kystsonen, owned by Kartverket, NGU, and Havforskningsinstituttet.
+  Earlier versions were 15 October 2021 and 19 October 2022. Version 3 presents only
+  the full-mapping alternative (former Tiltak 3).
+- The analysed coast is land to one nautical mile outside the baseline, 93 825 km2.
+  The measure maps 80 percent of that coast (75 000 km2, including pilot areas). Offshore
+  farming, oil and gas, and Svalbard are outside the scope.
+- Table 1 states expected net present value of 34 033 million NOK (2023 kroner) for
+  full mapping and access. Version 1.0 was 24 647 million (2021 kroner). The extract
+  also writes 34 033 billion NOK once. The table, figure parts, and later million-NOK
+  language are the consistent unit.
+- Six priced benefit items enter the NPV. Annual benefit at assumed optimal mapping
+  (80 percent mapped, plus seamless infrastructure) is 3 939 million NOK. Cost NPV
+  is 4 458 million NOK, of which mapping is 2 340 million and a 20 percent tax-financing
+  cost is 743 million. Analysis life is 40 years (2025-2064) at a 4 percent discount
+  rate.
+- The two largest priced aquaculture items are a one-off 3 percent production increase
+  (3 030 million NOK per year from 2021-2022 first-hand value and volume) and a cost
+  cut from more suitable sites (4 percent of volume moved from poor to good sites,
+  10 000 NOK per ton, 659 million NOK per year). Reduced application costs are 9 million
+  NOK per year (50 percent fewer refusals, 0.5 million NOK per application, about 36
+  refusals a year from FAKS 2021-2022).
+- Table 6 also prices kelp restoration (936 million NOK per year from a 3 percent
+  restoration of 2 000 km2 urchin-grazed kelp) and economy-wide ripple (1 806 to 1
+  809 million NOK per year). Chapter 7.1 keeps both out of the NPV because of a long
+  or unclear cause chain and the one-step rule in circular R 109/14.
+- Non-priced effects scored ++++ include growth industries and coastal-area planning
+  (higher-quality plans under the Planning and Building Act). Inter-municipal coastal
+  planning and shorter processing are scored +++. Chapter 4.6 uses Stavanger, Herøy,
+  and Statsforvalteren in Rogaland as pilot examples, and the Husevågøy cauliflower-coral
+  case as a conflict that maps might have avoided.
+- Kartverket is stated as having mapped about 35 percent of the coast, NGU 10 percent,
+  and HI 5 percent. Mapping is assumed to ramp from 1 percent in 2025 to 5 percent
+  a year from 2029, reaching 80 percent in 2040. Benefits are assumed to start two
+  years after mapping. The first five years (priority areas, about 15 percent of the
+  coast) are assumed to give about 50 percent more return.
+claims_about_uncertainty:
+- Metier states independence from the client beyond the assignment, and also that
+  cost and benefit estimates rest on input from Kartverket, HI, NGU, and user groups.
+  Method and lack of experience figures imply large uncertainty.
+- Benefit uncertainty analysis reports expected benefit 7 107 million NOK with standard
+  deviation 2 217 million (relative standard deviation 31 percent). The tornado diagram
+  names the aquaculture production item, ripple, and kelp restoration as the largest
+  contributors. A pessimistic production case is that maps are unused and do not solve
+  lice.
+- The 3 percent production increase is an assumption (new permits, expansions, and
+  higher use of existing MAB), not a measured effect of maps. NIVA is cited as saying
+  as much as 60 percent of today's sites may be less than optimal for carrying capacity.
+  That figure is used to support the 4 percent move assumption, not as a measured
+  map effect.
+- User cost of capturing the priced benefits is not included. After 20 years of mapping,
+  annual benefit is assumed to fall linearly toward zero in 2063 as maps age.
+claims_about_policy_or_management:
+- The report is written as decision support for a state-budget bid. Version 3 presents
+  only the full-mapping alternative that Kartverket wants to take forward.
+- Maps are described as letting planners see the seabed before opening an area to
+  fishing, aquaculture, industry, or protection. Municipalities designate coastal-plan
+  area. Counties adopt regional sea-area plans.
+- NOU 2023:23 is listed among updated normative needs. The extract restates that report's
+  point that farms affect each other over larger areas and that there is no national
+  or regional area-use plan.
+- Chapter 8 concludes that real-option value is limited and should not change a decision
+  on extra appropriation. Only two private firms are said to be certified for official
+  sea surveying. The analysis assumes more firms will seek approval if a national
+  programme is decided.
+methodological_limitations:
+- Consultant CBA for Kartverket. Not an empirical test that maps caused aquaculture
+  growth. No experience figures are said to transfer directly.
+- Cover page marks the report exempt from public access under offentleglova section
+  22.
+- User-cost of achieving the priced benefits is not included in priced benefit. Figure
+  1 and several tables are images. Exact tornado-bar heights are not readable as a
+  table.
+- Annexes 2 and 3 reprint the May 2021 uncertainty workshops. Uncertainty ranges from
+  2021 are carried forward after a 2023 price update.
+rag_summary: 'Metier (2023, version 3.0) is a socio-economic analysis of full coastal
+  mapping and a shared marine-map infrastructure (Marine grunnkart i kystsonen). Expected
+  NPV in Table 1 is 34 033 million NOK. Most of the priced benefit is an assumed 3
+  percent aquaculture production increase (3 030 million NOK a year) and a 4 percent
+  shift to better sites (659 million). Kelp restoration and ripple effects are calculated
+  but kept out of the NPV. Non-priced coastal-planning effects are scored as especially
+  large. The authors state high uncertainty and few realised-benefit observations.
+  This is a mapping-investment case, not a farm-siting study.
+
+  '
+coi_declared: unclear
+coi_notes: 'Commissioned by Kartverket. Metier states the assessments are independent
+  beyond the assignment text. Estimates use input from Kartverket, HI, NGU, and user
+  groups. Annex 1 lists named interviewees from agencies, counties, municipalities,
+  and industry. No competing-interest statement found. Cover marks the report exempt
+  from public access (offentleglova section 22).
+
+  '
+consensus_signal: unclear
+quality_signal: medium
+quality_rationale: 'Structured DFØ-style CBA with an uncertainty chapter and named
+  interviews. Aquaculture benefit percentages are assumptions. One extract line writes
+  billion where the table uses million. Inner chapters 4, 6 and 7 now walked.
+
+  '
+controversy_role: supportive
+relevance_signal: medium
+relevance_rationale: 'Knowledge infrastructure for coastal planning and locality choice.
+  Chapter 4.6 gives pilot examples of plan quality and processing. It does not evaluate
+  how municipalities or counties actually allocate sea area.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. Cost-benefit case for marine base
+  maps as a shared fact base for coastal plans and aquaculture siting. Adjacent infrastructure,
+  not a study of who gets which site.
+
+  '
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2019_mikkelsen_arealplanlegging-sjo
+- salt_1065_ku-arealplanlegging
+retrieval_tags:
+- marine_base_maps
+- cost_benefit
+- coastal_planning
+- mapping
+- knowledge_infrastructure
+curator_note: 'Full walk 2026-09-13. No page markers. Walked sammendrag, chapters
+  1 to 8, and annexes 1 to 5 by heading. No named individual authors. No DOI. Version
+  3.0 dated 09.11.23. The phrase 34 033 mrd. kr on the summary page conflicts with
+  Table 1 (mill.kr) and with figure parts that sum to about 34 billion NOK. File the
+  table unit. Distinguish Table 6 annual sum 6 684 million (includes kelp and ripple)
+  from the 3 939 million that enter NPV. Hersoug and Johnsen (2012) are cited for
+  conflicting coastal uses. NOU 2023:23 is a normative source, not a file in this
+  room.
+
+  # ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Metier_2023_Samfunnsøkonomisk analyse av Marine Grunnkart.pdf

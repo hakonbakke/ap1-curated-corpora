@@ -1,0 +1,157 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Chapter 3 executive summary says about 20 papers each for noise, light and artificial structure. Body QSR counts are 10, 1 environmental paper, and 11. Metadata now reports both and follows the body.",
+    "Contaminant section says almost 50 percent of articles (164) concerned delousing, while 256 papers were included after full-text screen (164 of 256 is about 64 percent). Both author figures are kept. No invented reconciliation.",
+    "Extract has no page markers. Coverage is by chapter and section, not PDF page number.",
+    "Title-page English OCR reads coexcisting. Metadata keeps the intended English cover title and notes the Norwegian title.",
+    "Chapter 5 author line uses Katrine Eriksen. Title-page author list used in metadata keeps Kristine Eriksen as on the cover block.",
+    "Regional nutrient picture is not uniform. Hardangerfjord (Husa et al. 2014) is the little-regional-impact case. Rogaland (Økland et al. 2022) reported eutrophication signs that the authors attribute to a mixed climate-and-nutrient cause. Summary now states both."
+  ],
+  "claim_checks": [
+    {
+      "claim": "FHF project MILJØREG, Akvaplan-niva report 2023 63547.01, dated 15 May 2023, 502 pages, open. Collaboration of Akvaplan-niva, NIVA and Nofima.",
+      "supported": true,
+      "extract_quote": "Dato 15.05.2023 Rapport nr. 2023 63547.01 Antall sider 502 Distribusjon Åpen",
+      "note": "Preface names MILJØREG, FHF funding, and the three institutes."
+    },
+    {
+      "claim": "Chapters 3-4 use a Quick Scoping Review. A QSR is not a full systematic review and does not critically appraise study quality.",
+      "supported": true,
+      "extract_quote": "It, however, does not conduct a critical assessment of the quality of evidence, which overall reduces time and costs of ER production",
+      "note": "Collins et al. 2015 definition is quoted in 3.1.2. Chapter 2 also says a full comprehensive review or risk assessment of each stressor was not carried out."
+    },
+    {
+      "claim": "Included QSR volumes: organic waste 112; dissolved nutrients 41; contaminants 256 with 164 on delousing; escapes 237; noise 10; light 1 environmental QSR paper; artificial structure 11. Chapter 3 exec summary said about 20 each for noise, light and structure.",
+      "supported": true,
+      "extract_quote": "Three relevant publications were added post-screening, which increased the number of total records included to 112.",
+      "note": "Nutrients 28 plus 13 added; contaminants 256 included and 164 delousing; escapes 237 retained; noise 10 of 256; light one environmental paper; structure 11. Exec summary: about 20 papers addressing noise, light and artificial structure."
+    },
+    {
+      "claim": "Soft-bottom organic waste is well studied and monitored under NS 9410:2016. Hard-bottom effects lack standardised Norwegian monitoring. Dispersive sites can show effects out to 600-1000 m, with knowledge-gap text citing up to 1.5 km.",
+      "supported": true,
+      "extract_quote": "Contrarily the footprint of high dispersive sites have been shown to be more diffuse, but spatially larger with effects detected out to 600-1000 m.",
+      "note": "Knowledge-gap paragraph also states a diffuse large impact area (up to 1.5 km). NS9410:2016 and missing hard-bottom standards are in 3.3.1.5."
+    },
+    {
+      "claim": "Dissolved-nutrient effects are mostly within about 500 m. Hardangerfjord work found little regional aquaculture nutrient impact. TEOTIL2 2021 attributes about 84 percent of anthropogenic coastal P and 60 percent of anthropogenic N to aquaculture.",
+      "supported": true,
+      "extract_quote": "In 2021, the input of phosphorous from aquaculture was approximately 84% of the anthropogenic sources (excluding background fluxes), while the input of nitrogen was approximately 60% of the anthropogenic sources.",
+      "note": "Chapter 3.3.2 conclusions: spatial extent mostly limited to 500 m. Husa et al. 2014: little evidence of a regional impact in Hardangerfjord. SINTEF natural DIN input 5-20 times aquaculture is in 4.2.3.3."
+    },
+    {
+      "claim": "Delousing agents dominate the contaminant set. Bath treatments can be toxic over several kilometres. They are not in the traffic-light system. Norwegian near- and far-field EQS exist only for flubenzurones.",
+      "supported": true,
+      "extract_quote": "Delousing agents are not considered in the \"traffic light system\" which is the method developed by Institute of Marine Research (IMR) to decide if a farm should be allowed to increase their production.",
+      "note": "Also: toxic concentrations could reach several kilometres; one study spreading up to 32 kilometres (deltamethrin). No accepted Norwegian thresholds except flubenzorones."
+    },
+    {
+      "claim": "Copper antifoulant use was 1539 tonnes in 2020 and is declining. Impact is mostly local. Substitute biocides such as tralopyril lack robust marine ERAs.",
+      "supported": true,
+      "extract_quote": "In 2020, 1539 tonnes of copper were registered to be used as antifoulants for aquaculture in Norway (Grøsvik et al. 2022).",
+      "note": "Conclusion: impact mostly local and long-lasting. Robust ERAs on substitutes such as tralopyril are required."
+    },
+    {
+      "claim": "Escapes retain 237 items. Salmon is well covered. Cod and cleaner fish are thinner and unmonitored. 2021 river monitoring: 79 percent low occurrence, 8 percent high.",
+      "supported": true,
+      "extract_quote": "A total of 441 entries were obtained after duplicates removal and 237 research items were retained after complete process of data collection on this QSR",
+      "note": "2021 monitoring bullets: 140 rivers (79%) low, 14 rivers (8%) high. No monitoring programme for escaped cod or cleaner fish."
+    },
+    {
+      "claim": "More than half of disease-and-parasite impact studies concern sea lice. Farm-driven lice levels are strongly supported. Population mortality estimates vary widely. Other pathogens have limited wild-fish evidence.",
+      "supported": true,
+      "extract_quote": "More than half of the studies reporting impacts of pathogens released from fish farms to the environment focus on sea lice.",
+      "note": "Conclusions: strong evidence farms increase lice; large uncertainty on degree of lice-induced mortality; limited evidence for other pathogens on wild fish."
+    },
+    {
+      "claim": "Noise, light and structure have thin aquaculture-specific evidence. Noise is unlikely to cause permanent injury except powerful ADDs on marine mammals. Light and structure footprints and long-term effects remain poorly measured.",
+      "supported": true,
+      "extract_quote": "only 10 papers were explicitly related to impacts from aquaculture on the environment",
+      "note": "Light: only one paper related to environmental effects in the QSR. Structure: 11 papers. Noise conclusions match the unlikely-permanent-harm wording."
+    },
+    {
+      "claim": "Macroalgae small-scale effects are mostly little to none. Alien species, genes and pathogens are scored large or unknown because effects could be regional and irreversible.",
+      "supported": true,
+      "extract_quote": "The risk associated with spread of alien species and genetic material, and disease and parasites were considered large or unknown, because the potential effect is regional and irreversible (Norderhaug et al. 2021).",
+      "note": "Conclusions also: most studies indicate little to no negative impact of small-scale production."
+    },
+    {
+      "claim": "Chapter 4 literature collection gave no results for direct impacts of other industries on aquaculture. Where shares could be compared (nutrients, pesticides, copper), aquaculture is the largest anthropogenic coastal input. Nanoplastics is the only pressure marked possible for farmed-fish and consumer health.",
+      "supported": true,
+      "extract_quote": "The literature collection gave no results for direct impacts of other industries on aquaculture.",
+      "note": "Discussion 4.2.4 repeats no published direct or indirect risk information, then expert table 4.17. Plastic (nano plastics) is the only pressure identified as a possible overlapping risk for farmed fish health and human consumption."
+    },
+    {
+      "claim": "GIS CIA development for the Norwegian coastline or local focus areas is limited or not feasible with currently available open data. GeoNorge and Marine grunnkart are named as possible bases.",
+      "supported": true,
+      "extract_quote": "The scope for the development of CIA models for the Norwegian coastline or more localised focus areas with the currently available database is limited or implementation is not feasible.",
+      "note": "Executive summary and 4.4 name GeoNorge and Marine Grunnkart."
+    },
+    {
+      "claim": "Management is a value-based social process. Discretion should remain. The weakest shared gap is the activity-stressor-impact link, including combined effects. Municipal plans legally place farms.",
+      "supported": true,
+      "extract_quote": "There are therefore limits to how much the environmental management of aquaculture should be standardized and made into a technical exercise. There should be room for subjective assessment and local adaptations.",
+      "note": "Chapter 5: aquaculture locations must be placed in areas set aside for aquaculture. Largest knowledge gaps are for the connection between human activity, stressors and environmental impact."
+    },
+    {
+      "claim": "Stressors that should enter management more fully: hard-bottom organics, escaped cleaner fish, copper, lice and delousing agents. New concepts with documented lower impact than inshore net pens could allow growth without a larger total footprint.",
+      "supported": true,
+      "extract_quote": "The project has identified several stressors that should be included in the management to a greater extent: particulate organic waste on hard/mixed bottoms, escaped cleaning fish, anti-fouling agents (copper), lice (well covered, but still not good enough) and de-licing agents.",
+      "note": "Same list in Norwegian sammendrag and chapter 6. Growth-without-larger-footprint wording is in the overall conclusions."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. This is a scoping review and management analysis, not a single causal-effect paper. The authors compile mixed, stressor-specific findings and do not state one overall farm-effect verdict.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A3 and A4 remain core (coexistence, knowledge in decisions). A1 is warranted by chapter 5.5 on legally binding municipal A-areas and the Tromsø coastal-plan case. A5 is warranted by disease and lice results, farm-distance practice, overlapping organic-waste footprints, and FAD or parasite-transfer discussion. A2 is adjacent via locality clearance but is not the report's centre. A6 is not a body theme.",
+  "coi_ok": true,
+  "coi_note": "FHF client and contact Kjell Maroni are on the title block. Quality control is named by chapter. No competing-interest statement was found. coi_declared false matches the extract. Funding acknowledgement is not treated as a hidden industry conflict.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2023_evenset_sameksistens",
+  "verified_at": "2026-09-13T13:24:00+02:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "502 (title block). Extract has no page markers. Walked sequentially by chapter and section across the ~9878-line extracted.md.",
+  "extract_coverage": {
+    "preface": "yes",
+    "sammendrag_og_konklusjoner": "yes",
+    "summary_and_conclusions": "yes",
+    "ch1_introduction": "yes",
+    "ch2_methods": "yes",
+    "ch3_executive_summary": "yes",
+    "ch3_sammendrag": "yes",
+    "3.1_background_scope_objectives": "yes",
+    "3.2_methods": "yes",
+    "3.3.1_organic_waste_particulate": "yes",
+    "3.3.2_dissolved_nutrients": "yes",
+    "3.3.3_environmental_contaminants": "yes",
+    "3.3.3.2_pesticides_delousing": "yes",
+    "3.3.3.3_plastics": "yes",
+    "3.3.3.4_antifoulants_copper": "yes",
+    "3.3.3.5_pharmaceuticals_antibiotics": "yes",
+    "3.3.3.6_oil": "yes",
+    "3.3.3.7_nanoparticles": "yes",
+    "3.3.3.8_other_organics": "yes",
+    "3.3.4_escapes": "yes",
+    "3.3.5_disease_parasites": "yes",
+    "3.3.6_noise": "yes",
+    "3.3.7_light": "yes",
+    "3.3.8_artificial_structure": "yes",
+    "3.4_macroalgae": "yes",
+    "ch4_executive_summary": "yes",
+    "ch4_sammendrag": "yes",
+    "4.2_literature_assessment_body": "yes",
+    "4.2.4_discussion_table_4.17": "yes",
+    "4.3_gis_case_discussion": "yes",
+    "4.4_research_needs": "yes",
+    "ch5_sammendrag_and_english_exec": "yes",
+    "ch5_body_planning_water_management": "yes",
+    "ch6_sammendrag_and_english_exec": "yes",
+    "6.3.1_stressor_tables": "yes",
+    "6.4.3_growth_discussion": "yes",
+    "reference_lists": "skimmed"
+  }
+}

@@ -1,0 +1,192 @@
+title: 'Sustainable salmon farming in Norwegian coastal municipalities: Can the environment
+  beat the economy?'
+year: 2025
+doi: 10.1016/j.aquaculture.2025.742494
+url: https://doi.org/10.1016/j.aquaculture.2025.742494
+authors:
+- G. Kristin Rosendal
+- Lars H. Gulbrandsen
+- Mari Lie Larsen
+- Jon Birger Skjærseth
+- Malene Tonheim
+- Irja Vormedal
+journal: Aquaculture
+publisher: Elsevier
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A3
+- A6
+geography:
+- Norway
+environment:
+- municipality
+- coastal_zone
+time_period: 2019-2022
+regulatory_context:
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+- locality_licence
+evidence_type: empirical_observational
+study_design:
+- case_study
+- interview_study
+data_source:
+- interviews
+- public_registers
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- municipal_economy_environment
+- area_allocation
+- coastal_planning
+evidence_direction: mixed_within_study
+effect_scale: municipal_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- ten-municipality case design, not a statistical sample
+- environmental scores cover a limited set of problems and use reported lice data
+- authors state findings are tentative indicators
+key_claims:
+- Municipalities designate or restrict coastal areas for salmon farming in the land-use
+  part of the municipal master plan under the Planning and Building Act. The county
+  is the coordinating agency for localisation permits. The Aquaculture Registry is
+  cited as showing 145 of 276 coastal municipalities hosting salmonid farming and
+  related supply-chain activities.
+- The authors propose that municipalities hosting strong aquaculture industry clusters
+  (AC) will be positive to expansion, regardless of environmental problems. They treat
+  this as a classic economy-environment conflict.
+- Ten municipalities were selected for variation in positions across five large aquaculture
+  counties and eight of 13 production areas. Methods are 39 semi-structured interviews
+  (three to five per municipality, 45 to 90 minutes, online) plus binary scores on
+  five environmental indicators and five AC-dependency indicators. Interviewees are
+  anonymous. Political issues were described as not subject to much controversy.
+- AC dependency almost, but not fully, accounts for variation in positions. Environmental
+  problems appear less likely than AC dependency to predict positions. Many high-AC
+  municipalities stay positive despite environmental problems.
+- Four municipalities score high on both environment and cluster. Three of those (Steigen,
+  Solund, Flatanger) are positive. Osterøy is the main deviant case. High AC dependency,
+  high environmental problems, and a negative position on salmon expansion. Osterøy
+  is in a red production area, close to Vossalaks. It has shifted toward farmed trout
+  and demanded closed cages for salmon. Interviewees there did not view environmental
+  problems as serious, but used lice to justify no new salmon sites. Alta interviewees
+  cite Osterøy as a role model.
+- Hareid is placed as high environment and low AC dependency. It was positive until
+  2021, then turned negative after large external companies sought major new facilities
+  in popular coastal areas. Hareid has no salmon farming sites in operation and received
+  no Aquaculture Fund revenue. Tourism, fisheries and shipyards are described as able
+  to flourish without direct salmon-farming ties.
+- Solund and Flatanger stay positive despite high environmental scores and County
+  Governor advice to restrain growth. Both use more flexible multi-use areas to keep
+  future farm space. Solund (population 742) is top of the set on Fund revenue per
+  person (NOK 21 187). Flatanger interviewees say the local firm Bjørøya provides
+  more local benefits than Mowi and Salmar. Steigen is positive but less adamant.
+  Interviewees say Cermaq asked for twin sites to rotate, then used both to maximise
+  production. Steigen was negative to multi-use areas, calling them expansion in disguise,
+  and said the small municipality lacks competence to assess cumulative effects.
+- Hammerfest, Frøya and Smøla combine low environmental scores, high AC dependency,
+  and a positive position. Frøya is said to deliver 20 percent of Norwegian salmon
+  supply. A comparison with Hitra puts the local-headquarters tax difference at about
+  NOK 200 million. Smøla and Hammerfest host large external firms and still plan for
+  expansion. Both were criticised by County Governors for planning into protected
+  areas. The TLS Expert Group still deemed them moderate lice-mortality risk despite
+  green area lights.
+- Alta and Tromsø combine low cluster dependency, low environmental scores, and a
+  negative position. The authors tie Alta to wild-salmon identity (the Alta River)
+  and a hydropower conflict history, plus dwindling trust after Cermaq moved its headquarters.
+  Tromsø is a large municipality with fisheries, tourism and concern for Balsfjord
+  biodiversity.
+- The AC effect is described as weaker where companies are large and externally based,
+  and weaker in larger, more economically diverse municipalities. Small, growth-oriented
+  municipalities show a strong AC effect even with external firms. The authors say
+  the local farming company, more than the wider cluster, anchors support. If consolidation
+  continues, coastal municipalities could become more negative to area expansion.
+  They also state that environmental arguments are sometimes used strategically to
+  defend other interests.
+claims_about_uncertainty:
+- The authors say the interview case method is less suited to generalisation than
+  a statistical survey. Findings are tentative indicators of trends.
+- Environmental assessments may be biased. The study covers a limited range of problems.
+  Several indicators use reported lice counts.
+- Interview names are confidential. Data are not available for ethical reasons.
+- Figure 1 (TLS map) is an image placeholder in this extract.
+claims_about_policy_or_management:
+- National growth is regulated by the traffic-light system. A national growth permit
+  still needs a locality permit, and municipalities control area designation.
+- Aquaculture Fund transfers to municipalities in 2022 are stated as 3 billion NOK
+  (250 million pounds).
+- The authors call for more research on how municipalities use environmental assessments,
+  and on Sami, tourism, wild-catch, wild-salmon, and NGO interests.
+methodological_limitations:
+- Qualitative comparative scoring of ten cases. Not a causal identification design.
+- Municipal selection followed a scoping review that already indicated positive and
+  negative positions.
+- Hareid environmental scores are incomplete (N.A. on several lice and seabed indicators).
+  The high environment score for Hareid rests on two of five indicators.
+rag_summary: 'Rosendal and colleagues (2025) study how ten Norwegian coastal municipalities
+  position themselves on salmon-farming area expansion. Municipalities plan coastal
+  land use under the Planning and Building Act. The paper tests whether strong local
+  aquaculture clusters outweigh local environmental problems. Interviews with 39 municipal
+  representatives are combined with scored environmental and cluster-dependency indicators.
+  Cluster dependency explains most, not all, of the positions. Osterøy (trout and
+  closed-cage demand) and Hareid (no sites, no Fund, shift after external firms entered)
+  deviate. External ownership and larger, more diverse municipalities weaken the cluster
+  effect. Solund and Flatanger stay positive and use multi-use zoning against County
+  Governor restraint advice. The authors treat the results as tentative.
+
+  '
+coi_declared: false
+coi_notes: 'Funded by the Research Council of Norway. All authors declare no conflict
+  of interest. Affiliations are Fridtjof Nansen Institute. No project number is stated
+  in the extract.
+
+  '
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: 'Peer-reviewed case comparison with transparent indicator tables.
+  n equals 10, selection was informed by prior position signals, and the authors themselves
+  limit causal claims.
+
+  '
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: 'Direct evidence on when municipalities open or close coastal
+  area for salmon farming, which is the local gate after national traffic-light growth.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. Empirical account of municipal area
+  positions when local aquaculture income meets lice, seabed, and wild-salmon concerns.
+
+  '
+related_documents_supporting:
+- 2019_mikkelsen_arealplanlegging-sjo
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2022_hersoug_ten-licensing-systems
+- 2020_hersoug_whats-the-clue
+retrieval_tags:
+- municipal_positions
+- aquaculture_cluster
+- environment_economy
+- area_expansion
+curator_note: 'Full extract walked 2026-09-13 (pages 1 to 11). One extract line writes
+  Solun. Tables use Solund. Figure 1 is an image placeholder and was not read as data.
+  Pages 10 to 11 are mostly references. Aquaculture 605 (2025) 742494. Received 12
+  April 2024, accepted 26 March 2025. Cites Hersoug (2022), Hersoug, Mikkelsen and
+  Osmundsen (2021), and Mikkelsen, Karlsen and Osmundsen (2019). Appendix interview
+  guide and PA map are not in the extract.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Rosendal et al_2025_Sustainable salmon farming in Norwegian coastal municipalities
+  - Can the environment beat the economy.pdf
+
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 3 soft). See qa_report.json.

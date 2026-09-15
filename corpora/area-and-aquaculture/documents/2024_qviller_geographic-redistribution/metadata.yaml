@@ -1,0 +1,161 @@
+title: Geographic redistribution of farmed salmonids reduces salmon lice infestations
+  and treatment frequency in a simulation study
+year: 2024
+doi: 10.3354/aei00473
+url: https://doi.org/10.3354/aei00473
+authors:
+- Lars Qviller
+- Katharine Rose Dean
+- Mats Huserbråten
+- Ingrid Askeland Johnsen
+- Britt Bang Jensen
+journal: Aquaculture Environment Interactions
+publisher: Inter-Research
+language: english
+source_type: peer_reviewed
+document_type: modelling_study
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A5
+geography:
+- Norway
+environment:
+- fjord
+- modelled_environment
+time_period: 2014-2017
+regulatory_context:
+- mixed
+evidence_type: model
+study_design:
+- modelling
+data_source:
+- farm_data
+- spatial_data
+wild_or_farmed_focus: farmed
+outcome_domain:
+- disease_or_lice
+- spatial_density_productivity
+evidence_direction: supports_effect
+effect_scale: regional_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- simulated farms become unrealistically large
+- treatment efficacy set at 75 percent, above Aldrin et al. 2019 estimates
+- model fitted inside historical farm-size range, then extrapolated
+- site carrying capacity and wellboat logistics not modelled
+key_claims:
+- This is a stochastic simulation of lice on historic production in production area
+  PA3 (Bjørnafjorden and Hardangerfjorden), not a coastal-plan or licensing study.
+  The authors' own keywords include spatial planning. The analysis remains a lice-network
+  model.
+- PA3 is stated as 3646 km2 with 147 active salmonid farms in January 2014 to December
+  2017. Average standing stock in PA3 farms was 544 000 fish (5-95 percent 64 000
+  to 1 084 000). National background in the introduction includes a monthly average
+  standing stock of 713 000 fish per farm in 2014-2017 and a farmed-to-wild host
+  ratio cited from Dempster et al. (2021).
+- 'The lice model is Aldrin et al. (2019), run on weekly steps after a 16-week spin-up.
+  The historical downward-trend parameter from that fit was set to zero. Biomass from
+  closed farms is moved to remaining farms with matching cohorts so total host biomass
+  is held constant. Nine scenarios: baseline, random removal of 20-50 percent of farms
+  (10 random draws each, 10 000 simulations), and strategic removal of the most connected
+  farms (Huserbråten connectivity network, 1000 simulations each). Total stated as
+  45 000 simulations.'
+- 'Closing farms and relocating biomass reduced simulated adult-female lice by 4-15
+  percent, other motile lice by 6-23 percent, and annual fish treatments by 6-25
+  percent versus baseline. Strategic removal outperformed random removal. The strongest
+  stated case is strategic removal of 50 percent of farms: median cuts of 15 percent
+  adult females, 23 percent other motiles, and 25 percent treatments. Random-removal
+  treatments fell by 6-17 percent. Strategic-removal treatments fell by 14-25 percent.'
+- The authors say fewer, larger, more distant farms can fragment the lice transmission
+  network. They also say the methods are not a straightforward procedure to optimise
+  farm structure in the study area. Adult-female reductions look smaller because
+  treatment is triggered by adult-female counts.
+claims_about_uncertainty:
+- Some redistributed farms exceed 5 million fish, with a maximum of 18.2 million.
+  Those sizes lie outside the data used to fit the model.
+- Treatment in the model cuts lice by 75 percent the week after the threshold is crossed.
+  Aldrin et al. (2019) estimated 44-47 percent. The authors chose a value closer to
+  azamethiphos in Aldrin et al. (2017).
+- The simulation does not test whether remaining sites can hold the extra biomass,
+  or whether wellboats and equipment would be available. Background infestation from
+  wild sources remains.
+- The seaway-distance lice simulator and the hydrodynamic targeting list are not the
+  same network. The authors argue that strategic removal still beats random removal
+  across that mismatch.
+claims_about_policy_or_management:
+- 'Core mechanisms named for regional production planning and allocation of production
+  concessions: host density, between-farm distance, and removal of highly connected
+  farms as firebreaks.'
+- 'Lice legislation cited: 0.2 adult females per fish in spring smolt migration (weeks
+  16-21), 0.5 otherwise. Traffic-light regulation of intensity by production area
+  is background, not the object of the simulation.'
+- Marine production cycle is described as 14-19 months, one generation per cycle,
+  then about 2 months fallowing.
+methodological_limitations:
+- Simulation on one production area and one historic period. Qualitative direction
+  is what the authors stand behind, not a ready siting recipe.
+- Seaway-distance lice model and hydrodynamic connectivity network are not the same.
+  The authors argue that strategic removal still beats random removal across that
+  mismatch.
+- Farm sizes in the 50 percent scenarios are far outside the fitted range.
+rag_summary: 'Qviller and colleagues (2024) simulate salmon-lice dynamics in Norwegian
+  production area PA3 after moving the same farmed biomass onto fewer, larger farms.
+  They use the Aldrin et al. (2019) lice model on 2014-2017 production data. Random
+  or strategic farm closures reduce simulated lice and treatments. Strategic removal
+  of the most connected farms does more. The largest scenario (50 percent of farms
+  closed) is also the least realistic on farm size. This is a lice-network model,
+  adjacent to area questions, not a municipal siting or licensing paper.
+
+  '
+coi_declared: unclear
+coi_notes: 'Partly funded by Research Council of Norway project 254830/E40, and by
+  the Norwegian Veterinary Institute and the Institute of Marine Research. No competing-interest
+  statement found in the extract. Affiliations are NVI, IMR, and DTU. Thanks to Magne
+  Aldrin and Ragnar Bang Huseby for the 2019 simulation software.
+
+  '
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: 'Peer-reviewed simulation with many runs and a clear baseline.
+  The authors list large caveats on farm size, treatment timing, and extrapolation.
+
+  '
+controversy_role: supportive
+relevance_signal: medium
+relevance_rationale: 'Adjacent to this room. It treats farm location structure as
+  a lice-control lever. It does not analyse coastal planning, municipal designation,
+  or locality licensing.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. Lice and biomass-redistribution model
+  for PA3. Adjacent to area because it asks what happens if the same biomass sits
+  on fewer sites. It is not a siting or planning paper.
+
+  '
+related_documents_supporting:
+- 2017_aldrin_lice-farm-model
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2025_kulmambetova_spatial-density-productivity
+retrieval_tags:
+- salmon_lice
+- redistribution
+- farm_structure
+- PA3
+- simulation
+curator_note: 'Full extract walked 2026-09-13. Aquacult Environ Interact 16: 59-69,
+  published 15 February 2024. Open access. The 2019 Aldrin abundance model used as
+  the simulator is not a separate document in this corpus. Kulmambetova and Tveterås
+  (2025) cite this paper. This extract does not cite Kulmambetova (2025). A3 is not
+  tagged. Trade-offs here are lice versus farm-network structure, not coastal coexistence.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Qviller et al_2024_Geographic redistribution of farmed salmonids reduces
+  salmon lice infestations and treatment.pdf
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 1 soft). See qa_report.json.

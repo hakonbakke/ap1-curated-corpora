@@ -1,0 +1,224 @@
+title: Kartlegging av bruk av kunnskapsgrunnlag i konsekvensutredninger og arealplanlegging
+  i sjø. En kvalitativ styringsanalyse.
+year: 2023
+doi: ''
+url: ''
+authors:
+- Guri Hjallen Eriksen
+- Tale Skrove
+- Tomas Brage
+journal: ''
+publisher: SALT Lofoten AS
+language: norwegian
+source_type: report
+document_type: evaluation_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+geography:
+- Norway
+- Helgeland
+- Nord_Norge
+environment:
+- coastal_zone
+- sea_area
+- municipality
+- county
+time_period: Plans mainly 2012-2019, studied September 2022 to March 2023
+regulatory_context:
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+- intermunicipal_coastal_plan
+- Norway_Aquaculture_Act
+- locality_licence
+- mixed
+evidence_type: mixed
+study_design:
+- case_study
+- document_analysis
+- interview_study
+data_source:
+- interviews
+- public_registers
+- published_literature
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coastal_planning
+- knowledge_in_decisions
+- area_allocation
+- coexistence_tradeoffs
+- licensing_access
+evidence_direction: not_applicable
+effect_scale: municipal_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- seven qualitative cases, not a national census of plans
+- hard to see from plan documents how themes were scoped and how uncertainty was handled
+- Table 6 and 7 are the authors' judgement of theme coverage, not scored metrics
+- Sámi coastal-fishing definition left open
+key_claims:
+- Commissioned by the Ministry of Local Government and Regional Development (KDD,
+  case 22/813) so later sea-planning guidance can rest on whether recent plans actually
+  settle aquaculture versus other uses, and on the quality of impact assessments. Dated
+  20 March 2023. Cover states 74 pages of written text plus contents, figure list and
+  references. An extra assignment during the project is folded into the same report.
+- 'Method is a qualitative governance study of seven adopted plans: three inter-municipal
+  coastal-zone plans (Helgeland except Vega, Romsdalsfjorden, Nordmøre), two municipal
+  sea-area plans (Lebesby, Kvænangen), and two zoning plans (Syltefjorden in Båtsfjord
+  for sea aquaculture, Lundevågen in Farsund for land-based salmon). Documents, eight
+  semi-structured interviews plus one group interview (nine plan-side informants in
+  five of the seven plans), three county and two County Governor staff, one researcher,
+  a 16-person digital meeting on 18 January 2023, and about 18 later aquaculture applications.'
+- The authors conclude that planning clarifications between aquaculture and other
+  interests can still be better. Some dispensation cases look like rematches or applications
+  on sea not designated for aquaculture. Some operators appear to wait for dispensation
+  rather than propose sites into the plan. Dispensations that only move moorings or
+  correct map errors are treated as a different class.
+- Selected impact-assessment themes are often described well, but assessments of environmental
+  effects are weaker. It is hard from the documents to see how themes were scoped,
+  how interests were weighed, and how uncertainty was handled. Municipal decision papers
+  should state more clearly how the impact-assessment regulations, Nature Diversity
+  Act sections 8-12, and the Water Regulations were applied. Water environment is
+  marked as not described or assessed in the municipal-plan column of table 6.
+- Most of the municipal and inter-municipal processes took a long time, around six
+  years for Helgeland, Romsdalsfjorden and Nordmøre. Knowledge can go stale and aquaculture
+  applications appear while the plan is still open. Nature diversity is the knowledge
+  gap named most often.
+- Helgeland used the reverse planning principle plus some single-use aquaculture zones.
+  Fourteen municipalities started. Alstahaug, Brønnøy and Vefsn left. Vega is excluded
+  because of World Heritage questions. Rødøy still sits on a 2001 plan. A 20 m depth
+  rule was the compromise that allowed multi-use aquaculture. After adoption, Varpet
+  was licensed after an earlier dispensation was overturned. Risvær was refused despite
+  being in the plan (eagle owl). A Lyng cod application split Lurøy (conflict with
+  fishing) from Nordland county (provision treated as guidance).
+- Romsdalsfjorden used single-use zones and reduced total aquaculture area. A later
+  closed-pen salmon site at Geilbukta needed dispensation because the zone had been
+  set for marine species. Nordmøre used multi-use only (one leftover single-use zone
+  in Aure), barred new anadromous farms in two fjord areas, and limited two threshold
+  fjords to aquaculture without feed or discharge. A site later proved ice-covered
+  in winter because one municipality skipped a public meeting.
+- Lebesby moved from multi-use to single-use zones, required zoning plans for six
+  new aquaculture areas, and asked for year-long current measurements. A Sámi objection
+  was settled by KDD on 16 February 2021 with a mapping clause for coastal Sámi fishing.
+  Parallel zoning and Aquaculture Act treatment then met two applicants. The Act is
+  not first-in-time. Kvænangen allows salmonids only. Spildra øst was taken out of
+  the plan, then given dispensation, then overturned as undermining the new plan.
+  An ILA 10 km zone in 2019 drove later dispensation attempts.
+- Syltefjorden is a private SalMar zoning case. Only landscape and nature diversity
+  were formally assessed. An appeal from hunters and river owners was not upheld on
+  24 January 2022. The locality licence was still pending. Lundevågen is land-based.
+  The zoning map and provisions are called incomplete. Alternatives covered intake
+  and outfall, not location. A 24 000 tonne a year permit was issued on 21 December
+  2021. Construction was later delayed.
+- Two Parliamentary Ombudsman statements (SOM-2022/1374 Brønnøy and SOM-2022/1377
+  Alver) are cited as saying municipal-plan environmental assessment of aquaculture
+  cannot be postponed to Aquaculture Act licensing, and that the traffic-light system
+  is not a substitute. Multiconsult 2021 is cited for only 13 formal impact assessments
+  among about 1200 aquaculture sites.
+claims_about_uncertainty:
+- The authors say some knowledge and assessments cannot realistically be expected
+  from municipalities at municipal-plan level. Total lice load, genetic change in
+  wild salmon, and total nutrient load in a fjord system are placed with other authorities.
+  Distance to salmon rivers and poorly flushed water bodies can still be checked in
+  the plan.
+- Sámi coastal fishing lacks a working definition of who speaks for the interest.
+  The Fisheries Directorate told the January 2023 meeting that map data were under
+  discussion with the Sámi Parliament.
+- Table 6 and table 7 are judgement calls where plan categories were mapped onto the
+  regulation list. Figures 1-9 are images.
+claims_about_policy_or_management:
+- Recommendations include more resources and state help for coastal-zone planning,
+  better process organisation and openness, and examples of plan provisions. The main
+  planning recommendation is to designate single-use aquaculture zones large enough
+  for later technology. Multi-use should not be used to postpone conflict. Informants
+  named Havbruksfondet or resource-rent tax as possible earmarks for planning competence.
+- They ask KDD to examine whether planning plus aquaculture administration together
+  meet EU strategic and project-level assessment duties, including how production
+  areas and the traffic-light system fit the planning system. They also ask whether
+  zoning plans should give the first applicant an option on a site, given Aquaculture
+  Act section 16.
+- They want a stronger environmental knowledge base (including marine base maps) and
+  more standardised guidance for impact assessment at sea. A Tromsø-region 25-year
+  time limit on new aquaculture areas is cited as neither heard nor recommended.
+- Operational technology or emission rules in municipal plans should be guidelines,
+  not binding provisions, under circular H-6/18.
+methodological_limitations:
+- Seven purposive cases, document analysis, semi-structured interviews, and one digital
+  meeting with sector authorities. Not a statistical sample of all Norwegian sea plans.
+  Kvænangen and Lundevågen had no plan-side interview.
+- A mapping form was adapted to available documents and analyst judgement. About 18
+  later applications were found via eInnsyn, case officers and newspaper reports,
+  not a complete file.
+- Cover page count is 74 written pages. The extract has 90 page markers including
+  contents, tables, references and appendices.
+rag_summary: 'SALT report 1065 for KDD (20 March 2023). Eriksen, Skrove and Brage
+  study seven coastal and sea plans to see whether recent practice really settles
+  aquaculture versus other interests, and how knowledge is used in impact assessments.
+  They find incomplete clarifications, dispensation rematches, and weak write-up of
+  environmental effects, scoping and uncertainty. Helgeland and Nordmøre used multi-use
+  (reverse planning). Romsdalsfjorden and Lebesby used single-use zones. Lebesby and
+  Kvænangen show Sámi and ILA aftermaths. Syltefjorden and Lundevågen are zoning cases
+  (one sea, one land). Recommendations cover process capacity, what to assess at municipal
+  versus licence level, and whether production areas and traffic lights fit EU assessment
+  duties. The study is qualitative, not a national census.
+
+  '
+coi_declared: false
+coi_notes: 'Client is the Ministry of Local Government and Regional Development. Quality
+  control named as Kjersti E.T. Busch and Joan Fabres. Copyright SALT Lofoten AS.
+  No competing-interest statement found in the pages read.
+
+  '
+consensus_signal: moderate_agreement
+quality_signal: medium
+quality_rationale: 'Transparent qualitative design with named cases, interview counts,
+  table 5 process lengths, and printed recommendations. No quantitative scoring of
+  assessment quality across all municipalities. Table 6 and 7 are author judgements.
+
+  '
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: 'Shows how municipal and inter-municipal sea plans do or do not
+  settle aquaculture area, which is the daily mechanism of access in this room.
+
+  '
+included_because: 'Selected by Marit Schei Olsen. The report is a governance study
+  of knowledge use in sea-area impact assessment and coastal planning, aimed at KDD
+  guidance, not a biology paper. It names the gap between plan designation and later
+  aquaculture applications.
+
+  '
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- salt_1110_lokalitetssoknader
+- salt_1075_arealbruk-havbruk
+- 2019_mikkelsen_arealplanlegging-sjo
+- 2015_sandersen_access-to-sites
+retrieval_tags:
+- coastal_planning
+- impact_assessment
+- knowledge_in_decisions
+- intermunicipal_plans
+- dispensation
+- sami_interests
+curator_note: 'Full page walk 2026-09-13 of all 90 page markers. Remaining unread:
+  figures 1-9 (image-only). Tables 1-7 have readable cell text. Chapter 3 case narratives
+  and chapter 5 recommendations now read. Appendices are the document-analysis form
+  and interview templates.
+'
+curator_review_status: ai_verified
+# ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Marit Schei Olsen
+source_pdf: SALT-rapport-1065_kartlegging av bruk av kunnskapsgrunnlag i konsekvensutredninger
+  og arealplanlegging i sjø.pdf

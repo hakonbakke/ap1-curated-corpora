@@ -123,27 +123,53 @@ def build_mapping() -> dict[str, Path]:
 
 
 def convert_one(pdf: Path, out_md: Path) -> None:
+    """Convert one PDF to extracted.md via OpenDataLoader.
+
+    Copy the PDF to a plain `source.pdf` first. ODL names the markdown after the
+    input file, and Windows/OneDrive often cannot reopen files whose names keep
+    en-dashes or other title characters from the original PDF.
+    """
+    import shutil
+
     import opendataloader_pdf
 
     out_md.parent.mkdir(parents=True, exist_ok=True)
     tmp = out_md.parent / "_odl_tmp"
+    if tmp.exists():
+        shutil.rmtree(tmp, ignore_errors=True)
     tmp.mkdir(exist_ok=True)
+    simple_pdf = tmp / "source.pdf"
+    shutil.copy2(pdf, simple_pdf)
     opendataloader_pdf.convert(
-        input_path=[str(pdf)],
+        input_path=[str(simple_pdf)],
         output_dir=str(tmp),
         format="markdown",
         quiet=True,
     )
-    md_files = list(tmp.glob("*.md"))
-    if not md_files:
-        raise RuntimeError(f"No markdown output for {pdf}")
-    out_md.write_text(md_files[0].read_text(encoding="utf-8"), encoding="utf-8")
-    for f in tmp.iterdir():
-        if f.is_file():
-            f.unlink()
-        elif f.is_dir():
-            import shutil
-            shutil.rmtree(f, ignore_errors=True)
+    md = tmp / "source.md"
+    if not md.exists():
+        md_files = [p for p in tmp.iterdir() if p.is_file() and p.suffix.lower() == ".md"]
+        if not md_files:
+            raise RuntimeError(f"No markdown output for {pdf}")
+        md = md_files[0]
+    out_md.write_text(md.read_text(encoding="utf-8", errors="replace"), encoding="utf-8")
+    shutil.rmtree(tmp, ignore_errors=True)
+
+
+def convert_one_pymupdf(pdf: Path, out_md: Path) -> None:
+    """Plain-text fallback when OpenDataLoader fails or the PDF is very large."""
+    import fitz
+
+    doc = fitz.open(pdf)
+    parts = []
+    for i, page in enumerate(doc):
+        parts.append(f"<!-- page {i + 1} -->\n{page.get_text()}")
+    doc.close()
+    text = "\n\n".join(parts).strip()
+    if len(text) < 80:
+        raise RuntimeError(f"PyMuPDF extracted too little text from {pdf}")
+    out_md.parent.mkdir(parents=True, exist_ok=True)
+    out_md.write_text(text + "\n", encoding="utf-8")
 
 
 def main() -> int:

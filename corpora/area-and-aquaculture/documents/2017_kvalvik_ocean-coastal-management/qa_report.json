@@ -1,0 +1,68 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figures 1 and 2 and journal chrome are image placeholders and were not read as data.",
+    "No competing-interest statement. Funding is FHF 900911 and RCN 255767.",
+    "One sentence labels Fensfjorden as number 1. Table 3 numbers it as process 3. Claims use the table numbering."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Nine processes in six counties, 65 municipalities, up to October 2016. Production in 170 of 276 coastal municipalities. About half of coastal plans were being revised.",
+      "supported": true,
+      "extract_quote": "This study analysis all the nine inter-municipal coastal zone planning processes up to October 2016. ... Production takes place in 170 of the 276 coastal municipalities. ... About half of the municipal plans have therefore recently been or are in the process of being revised",
+      "note": "Verified against this folder's compact extract."
+    },
+    {
+      "claim": "Municipal councils keep the final planning decision. Seven of nine boards were delegated process authority. Helgeland and Tromsø were not.",
+      "supported": true,
+      "extract_quote": "each municipal council shall make ﬁnal planning decisions for its area ... In seven of the projects the board was delegated planning authority ... In the two projects that did not delegate authority, Helgeland and Tromsø",
+      "note": "Same wording as the sister extract."
+    },
+    {
+      "claim": "All nine processes showed high policy cooperation and high policy coordination.",
+      "supported": true,
+      "extract_quote": "In all nine processes, we see, as expected, a high degree of policy cooperation ... We also see a high degree of policy coordination",
+      "note": "Level-one and level-two findings."
+    },
+    {
+      "claim": "Full content coordination in four small processes (Lyngenfjord, Fensfjord, Romsdalsfjord, Nord-Troms), 15 of 65 municipalities. Fensfjord jointly chose not to designate new aquaculture, reducing the aquaculture-clarified count to 10.",
+      "supported": true,
+      "extract_quote": "Only in four of the processes, the Lyngenfjord, Fensfjord, the Romsdalsfjord and the Nord-Troms ... agreed to prioritise shipping and not to designate new area for aquaculture ... in total they amount to 15 of the 65 municipalities involved ... reducing the number of municipalities to 10.",
+      "note": "Fensfjord is process 3 in Table 3."
+    },
+    {
+      "claim": "Remaining processes often fell back to each municipality. Sør-Trøndelag produced guidelines and set areas under 25 m as non-aquaculture. Helgeland used inverse planning. Nordmøre jointly protected salmon-river areas but designated new aquaculture separately. Tromsø and South and Mid Troms split on a shared national salmon fjord.",
+      "supported": true,
+      "extract_quote": "all areas shallower than 25 m were deﬁned as non-aquaculture areas ... inverse planning principle ... hosting salmon rivers or waterways, and together agreed not to allocate new areas for aquaculture in these areas. ... the latter did not designate areas for aquaculture, considering the risk to wild salmon in this national salmon fjord too high, while the former designated areas on the south side",
+      "note": "Helgeland stopped at county level as of 2016 is in the Helgeland paragraph of this extract."
+    },
+    {
+      "claim": "Inter-municipal planning remedies only some of the piece-by-piece problem, but is still a better tool than single-municipality planning. More level-three cases than expected. Only Fensfjorden had formal post-plan procedures.",
+      "supported": true,
+      "extract_quote": "inter-municipal coastal zone planning is a better tool for coastal zone planning than the traditional single municipal planning ... We however ﬁnd more cases of level three of policy integration than expected. ... Only one inter-municipal coastal zone project, however, Fensfjorden",
+      "note": "Closing section of this extract."
+    },
+    {
+      "claim": "Occupied area including anchoring is 0.5 percent. Sites fell from about 1800 to about 1000. Production per site rose from 278 to 1303 tonnes. Distances 2.5 km and 5 km. MTB 945 tons in Finnmark and Troms, 780 tons further south.",
+      "supported": true,
+      "extract_quote": "It amounts to only 0.5 per cent of Norwegian coastal areas inside the baseline when including safety and anchoring areas ... 1800 sites to its current level of about 1000 sites ... from 278 to 1303 tonnes per site ... generally is 2.5 km between farms, 5 km between farm and slaugthery ... MTB in Finnmark and Troms is 945 tons, while it is 780 tons in the remaining counties further south.",
+      "note": "Last-four-years no growth is in the same section of this extract."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper codes planning integration. It does not claim a causal production effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 is the core. A3 added because competing uses, national salmon fjords, shipping priority in Fensfjord, and wild-salmon split decisions are part of the findings, not only background.",
+  "coi_ok": true,
+  "coi_note": "No competing-interest statement. Funding is FHF 900911 and RCN 255767. Status left as unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2017_kvalvik_ocean-coastal-management",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all (linear walk, no page markers)",
+  "extract_coverage": "Read this folder's extracted.md linearly from header through references. Verified against this extract only. Five image placeholders unread. Sister folder 2017_kvalvik_intermunicipal-coastal-planning holds the same article with page markers."
+}

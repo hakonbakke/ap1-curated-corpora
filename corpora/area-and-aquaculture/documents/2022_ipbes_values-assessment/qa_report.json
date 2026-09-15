@@ -1,0 +1,167 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figure SPM.3 prints habitat shares as a bar chart. Forests are labelled 25 percent. An exact aquaculture percentage was not recovered as a standalone number, so metadata does not invent one.",
+    "Annex glossary, most annex case files (including Annex 2.4 beyond the Box 2.8 summary), and the closing author-list pages were not read as body findings.",
+    "Partner statements (UNESCO, FAO, UNEP, UNDP, CBD) remain front matter and were not treated as key messages.",
+    "Box 4.3 figure labels are OCR-broken. The Aquaculture Act is named in the figure. Rank relative to other sector acts is not restated beyond the prose conclusion about nature, local development and energy."
+  ],
+  "claim_checks": [
+    {
+      "claim": "This file is the full digital IPBES Values Assessment (ISBN 978-3-947851-29-4), edited by Balvanera, Pascual, Christie, Baptiste and González-Jiménez. The Plenary accepted the chapters and approved the SPM at IPBES 9 in Bonn, 3-9 July 2022. Suggested citation DOI 10.5281/zenodo.6522522.",
+      "supported": true,
+      "extract_quote": "SUGGESTED CITATION IPBES (2022). Methodological Assessment Report on the Diverse Values and Valuation of Nature of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services. Balvanera P., Pascual U., Christie M., Baptiste B., González-Jiménez D.(eds.). IPBES secretariat, Bonn, Germany. https://doi.org/10.5281/zenodo.6522522",
+      "note": "ISBN 978-3-947851-29-4 is on the copyright page. Foreword states chapters accepted and SPM approved at IPBES 9, 3-9 July 2022, Bonn."
+    },
+    {
+      "claim": "The typology used across the SPM and chapters 1-2 is layered, not a single slogan. It covers world-views and knowledge systems, broad values (life goals and principles), specific values grouped as instrumental, relational and intrinsic, and biophysical, monetary or sociocultural indicators. People also relate to nature through life frames of living from, with, in and as nature.",
+      "supported": true,
+      "extract_quote": "A typology of nature’s values (Figure SPM.2) requires value perspectives that encompass the richness of people’s relationships with nature, including: (i) world-views, the ways in which people conceive and interact with the world; (ii) knowledge systems, bodies of knowledge, practices and beliefs such as academic, indigenous and local knowledge systems embodied in world-views; (iii) broad values, the moral principles and life goals that guide people-nature interactions; (iv) specific values, judgements regarding the importance of nature in particular contexts, grouped into instrumental values (i.e., means to a desired end often associated with the notion of “ecosystem services”), relational values (i.e., the meaningfulness of human-nature interactions), and intrinsic values (i.e., independent of people as valuers); and (v) value indicators, the quantitative measures and qualitative descriptors used to denote nature’s importance in terms of biophysical, monetary or sociocultural metrics.",
+      "note": "Life frames living from, with, in and as nature are stated in KM3 and chapter 2 finding 7."
+    },
+    {
+      "claim": "Whose values are typically ignored or down-weighted: indigenous peoples and local communities, values that are hard to price (especially relational and intrinsic), minority groups when individual values are summed, and future generations when outcomes are discounted. Chapter 3 reports that more than half of valuation studies are not explicit about whose values they represent, and only 1 percent document how power asymmetry was handled.",
+      "supported": true,
+      "extract_quote": "In more than half of the studies, authors were not explicit about whose values are represented in the study.",
+      "note": "KM2 covers ignored IPLC world-views. Chapter 2 finding 8 covers minority masking and discounting of future generations. Chapter 3 finding 11: few studies document how power asymmetry is accounted for (1 percent of studies in a systematic review)."
+    },
+    {
+      "claim": "More than 50 valuation methods are grouped into four families (nature-based, statement-based, behaviour-based, integrated). In the chapter 3 review, nature-based methods dominate the literature (68 percent), instrumental values dominate what is elicited (74 percent), justice is a stated goal in 4 percent of valuations, and 77 percent of studies use only one main method. Robustness standards are not universal across disciplines. Aggregation of individual values to a social value has no agreed best practice.",
+      "supported": true,
+      "extract_quote": "More than 50 clearly distinct valuation methods are identifiable from the last four decades of valuation research and practice",
+      "note": "Figure 3.2 labels nature-based valuation (68 percent). Finding 9: instrumental 74 percent. Finding 1: justice 4 percent. Finding 13: 77 percent only one main method. Finding 10: robustness best practices not universally accepted. Finding 12: no consensus on best practice for aggregation."
+    },
+    {
+      "claim": "KM6 and chapter 4 finding 10 state that less than 5 percent of published valuation studies report uptake in policy decisions, and that documented uptake has not risen with the growth of the literature. Chapter 4 adds that valuation is relevant but insufficient for public decisions, and that the role of power in selective uptake remains a blindspot the SPM wording does not carry at the same strength.",
+      "supported": true,
+      "extract_quote": "scientific literature for the period 1990-2020 reports uptake of this valuation knowledge in decisionmaking in less than 5% of published studies",
+      "note": "Chapter 4 finding 10 also: documented uptake has not increased. Section 4.2.1: valuation is relevant but insufficient. Finding 12: role of power in selective uptake continues to be a blindspot."
+    },
+    {
+      "claim": "Policy implications in the extract are institutional, not site-specific. Predominant political and economic decisions have privileged market-based instrumental values (A9, well established). Four values-based leverage points are named: undertake valuation, embed values in decisions, reform policy, and shift societal goals. Chapter 5 reviews four contested pathways (green economy, degrowth, earth stewardship, nature protection) and marks constructive dialogue among them unresolved. No single path is presented as universally superior.",
+      "supported": true,
+      "extract_quote": "Predominant economic and political decisions have prioritized certain values of nature, particularly market-based instrumental values, often at the expense of non-market instrumental, relational and intrinsic values (well established).",
+      "note": "KM9 lists the four leverage points. Chapter 5 findings 20-23 name the four pathways and mark constructive dialogue unresolved. Finding 20: there is no single pathway."
+    },
+    {
+      "claim": "Box 2.8 (chapter 2) is a United Kingdom coastal and marine values case (144 Community Voice video interviews). Named debates are depleted fish stocks, marine protected areas, coastal community regeneration, and access to the coast. Policy framing changed which life frames people emphasised. It is not a Norwegian aquaculture or coastal-plan case.",
+      "supported": true,
+      "extract_quote": "This case considers local knowledge across United Kingdom coastal communities, based on 144 ethnographic video interviews following the Community Voice approach",
+      "note": "Box 2.8 also names depleted fish stocks, protected areas, regeneration of coastal communities, and equitable access. No Norway aquaculture content in the box."
+    },
+    {
+      "claim": "Box 4.3 (chapter 4) is the one Norway-specific body case. Drawing on Winge (2017), it treats implicit valuation in administrative procedures under the Planning and Building Act and sector acts. The figure names the Aquaculture Act among those acts. The prose conclusion is that politically dictated practice implicitly valued nature lower than local development, which was in turn subordinate to energy-sector interests, and that the Nature Diversity Act sits in the weakest category. This is a legal-hierarchy illustration, not an aquaculture siting study.",
+      "supported": true,
+      "extract_quote": "In conclusion, where there was a conflict of interest in Norway between national legislation and local development interest, politically dictated administrative practice and precedence implicitly valued nature interest lower than local development interests, which in turn was subordinate to energy sector interests.",
+      "note": "The box cites Winge (2017) and lists Aquaculture Act in the figure. Surrounding text calls it a case study in Norway on value conflicts in sector and planning legislation."
+    },
+    {
+      "claim": "Other marine or aquaculture statements in later chapters stay illustrative. Figure SPM.3 and Figure 3.11 list aquaculture as one ecological-context or habitat category among forests, coastal areas, deep sea and others. Chapter 3 cites Custódio et al. (2020) as an example of replacement-cost and production-function valuation of ecosystem services provided by aquaculture. Chapter 5 maps Aichi Target 7 (sustainable agriculture, aquaculture and forestry) in a policy table. Chapter 6 states that increasing monetization, for example shrimp aquaculture in mangroves, can erode social value, and lists marine spatial planning, marine protected areas, and locally managed marine areas among marine policy options.",
+      "supported": true,
+      "extract_quote": "replacement cost has been used in some cases to value ecosystem services provided by aquaculture (Custódio et al., 2020)",
+      "note": "Also supported by Figure SPM.3 habitat list including Aquaculture, chapter 5 Aichi Target 7 row, and chapter 6 sentence on shrimp aquaculture in mangroves plus Table 6.1 marine options."
+    },
+    {
+      "claim": "Chapter-level caveats the SPM smooths over include: chapter 1 source bias (about 96 percent of cited sources in English, about 73 percent of first authors affiliated in the Western Europe and Others Group); chapter 3 finding that published valuations are rarely linked to live decisions and that IPLC valuation was only scratched; chapter 4 language bias and missing consultancy or EIA databases; chapter 5 weak coverage of marine futures and limited reporting of trade-offs and winners or losers; chapter 6 finding that socio-cultural and customary-rights instruments are used less than legal and economic ones, and that place-based projects operationalise fewer value dimensions than international initiatives claim.",
+      "supported": true,
+      "extract_quote": "A large share of the sources cited in the assessment (96%) were published in English",
+      "note": "Chapter 1 also: 73 percent first authors WEOG. Chapter 3.5: published valuations rarely linked to active decisions; IPLC valuation only scratched. Chapter 4.7: English bias and missing consultancy or EIA databases. Chapter 5 finding 7: marine environments very weak. Chapter 6 findings 4-5: socio-cultural instruments used less; 23 percent of place-based projects address all three value dimensions versus 91 percent of international initiatives fostering diverse-values tools."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. This is a global methodological values assessment, not a causal effect study. Taxonomy value no_significant_effect was not used.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A3 only. The volume is about which values enter decisions and trade-offs. It is not retagged as A1 planning, A2 licensing, A5 density, or A6 municipal incentives.",
+  "coi_ok": true,
+  "coi_note": "coi_declared is unclear, which matches the extract: trust-fund donors (Norway among governments) and UNAM hosting are stated, and Barton and Vatn have Norwegian affiliations, but no personal competing-interests statement was found.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2022_ipbes_values-assessment",
+  "verified_at": "2026-09-13T13:24:00+02:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "Front matter and citation (ISBN, DOI 10.5281/zenodo.6522522, Balvanera et al., IPBES 9). SPM key messages KM1-KM10 and background A-D plus confidence appendix. Chapter 1 body: purpose, typology, plurality limits (Figure 1.10). Chapter 2 executive findings 1-15, Box 2.8, Box 2.15. Chapter 3 executive findings 1-15, method-family limits, section 3.5 gaps. Chapter 4 executive findings 1-13, Box 4.3, section 4.7 gaps. Chapter 5 executive findings 1-23 and introduction on justice, futures and pathways. Chapter 6 executive findings 1-15, Table 6.1 marine options, shrimp-aquaculture sentence. Targeted searches: aquaculture, coastal, marine, fishery, trade-off, valuation, indigenous, uncertainty, limitation, confidence, dissent, majority. Annex glossary and most annex files not read as body.",
+  "extract_coverage": {
+    "front_matter_and_citation": {
+      "read_in_body": true,
+      "extract_lines": "1-250",
+      "notes": "Copyright, ISBN, suggested citation, editors, trust-fund donors including Norway, TSU at UNAM, IPBES 9 acceptance."
+    },
+    "table_of_contents": {
+      "read_in_body": true,
+      "extract_lines": "72-142",
+      "notes": "SPM plus chapters 1-6 and annexes listed. Chapter page numbers recovered."
+    },
+    "spm_key_messages": {
+      "read_in_body": true,
+      "extract_lines": "310-1308",
+      "notes": "KM1-KM10 walked in this file, not only the companion SPM folder."
+    },
+    "spm_background_and_confidence": {
+      "read_in_body": true,
+      "extract_lines": "1334-3786",
+      "notes": "Background A-D including A8-A9, B1-B2, C1, C3, D-gaps. Four-box confidence model. Figure SPM.3 aquaculture category."
+    },
+    "chapter_1": {
+      "read_in_body": true,
+      "extract_lines": "3796-5428",
+      "notes": "Purpose, methods as synthesis not new data, typology, audience, Figure 1.10 plurality limits (96 percent English, 73 percent WEOG first authors). Chapter has no separate executive-summary numbered list. Introduction, limits and roadmap read."
+    },
+    "chapter_2": {
+      "read_in_body": true,
+      "extract_lines": "5429-8354",
+      "notes": "Executive findings 1-15, life frames, GDP box, Box 2.8 UK coast, Box 2.15 knowledge gaps. References after 8354 not treated as findings."
+    },
+    "chapter_3": {
+      "read_in_body": true,
+      "extract_lines": "10157-10740, 11290-11359, 12040-12066, 15155-15185",
+      "notes": "Executive findings 1-15, Figure 3.2 and 3.11, Custódio aquaculture valuation, section 3.5 conclusions and gaps."
+    },
+    "chapter_4": {
+      "read_in_body": true,
+      "extract_lines": "16898-17410, 17850-17880, 18270-18300, 20129-20208",
+      "notes": "Executive findings 1-13, relevant-but-insufficient section, Aichi Target 7 table row, Box 4.3 Norway, section 4.7 gaps including power blindspot."
+    },
+    "chapter_5": {
+      "read_in_body": true,
+      "extract_lines": "21926-22380",
+      "notes": "Executive findings 1-23, justice and sustainability definitions, four pathways, marine-futures weakness, trade-off reporting gap."
+    },
+    "chapter_6": {
+      "read_in_body": true,
+      "extract_lines": "26510-26960, 27560-27580",
+      "notes": "Executive findings 1-15, Table 6.1 including marine, coastal and fisheries options, locally managed marine areas and shrimp aquaculture sentence."
+    },
+    "boxes_read_in_body": [
+      "Box 2.8 UK coast life frames (re-read)",
+      "Box 2.15 chapter 2 knowledge and capacity gaps",
+      "Box 4.3 Norway implicit valuation in administrative procedures (re-read)",
+      "Box SPM.1 typology definitions (SPM)",
+      "Box 5.1 facts, values and norms (chapter 5 introduction)"
+    ],
+    "boxes_toc_only_or_not_fully_read": [
+      "Boxes 2.1-2.7, 2.9-2.14 (TOC plus some in-text mentions, not full box re-read)",
+      "Boxes 3.1-3.7 (TOC and finding cross-refs)",
+      "Boxes 4.1, 4.2, 4.4, 4.7 (4.1-4.2 adjacent to 4.3 were seen; 4.4 and 4.7 not walked as findings)",
+      "Annex 2.4 UK fisheries spotlight (cited from Box 2.8, annex body not read)"
+    ],
+    "search_hits_followed": [
+      "aquaculture",
+      "coastal",
+      "marine",
+      "ocean",
+      "fishery / fisheries",
+      "trade-off",
+      "valuation",
+      "indigenous",
+      "uncertainty",
+      "limitation",
+      "confidence",
+      "dissent / unresolved",
+      "majority"
+    ],
+    "chapters_not_recovered": []
+  }
+}

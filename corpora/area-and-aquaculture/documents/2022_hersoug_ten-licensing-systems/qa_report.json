@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figure 1 is an image placeholder and was not read as data.",
+    "First-pass metadata treated COI as unclear. Page 10 states no conflict of interests and names RCN and FHF."
+  ],
+  "claim_checks": [
+    {
+      "claim": "From one commercial regime in 1973 the system grew to ten systems. Ten companies were responsible for about 70 percent of production.",
+      "supported": true,
+      "extract_quote": "Originally there was one licensing regime for commercial production of salmon and trout, while today there are ten different systems. ... ten companies are currently responsible for about 70% of total production",
+      "note": "Special-purpose schemes are described as often created on industry request."
+    },
+    {
+      "claim": "A farm needs a production licence and a locality licence. Ordinary growth is under the traffic-light system. Special-purpose licences sit outside that logic and can be placed in a red area without a red-area MAB cut.",
+      "supported": true,
+      "extract_quote": "several of the special purpose licenses are not part of the traffic light system. There is no ceiling on the number of licenses, and they are not bound by the status of the production area. For example, a new research license may well be placed in a red production area.",
+      "note": "Twofold licence definition is in section 2."
+    },
+    {
+      "claim": "Special-purpose licences served collective needs and also acted as a cheaper backdoor. October 2020 Table 1: 280 special licences and 207 836 tons MAB (21 percent of numbers, 17 percent of MAB) versus 1057 commercial licences and 1 016 540 tons MAB. Commercial licences trade around USD 15 to 20 million for 780 tons MAB.",
+      "supported": true,
+      "extract_quote": "the special licenses make up 21% of the total number of licenses, and 17% of the total MAB capacity. ... Total special purpose 280 207,836 ... Total commercial 1057 1016,540 ... ordinary commercial licenses now are traded in the range of USD 15–20 million for a standard license of 780 tons",
+      "note": "Table 1 snapshot is October 2020."
+    },
+    {
+      "claim": "Green licences were 45 in three groups and later summed up as never again. TLS uses one lice indicator. Thresholds under 10, 10 to 30, over 30 percent. Plus or minus 6 percent. Red cuts waived in 2017, applied from 2020. PA4 sued and lost. A minister changed one area from yellow to green.",
+      "supported": true,
+      "extract_quote": "three different groups of licenses (A, B and C), altogether 45 licenses. ... “Green licenses never again!” ... In the first round, the Minister of Fisheries changed the color of a production area (from yellow to green) ... all salmon farmers in production area 4 decided to sue the state",
+      "note": "10/30 percent thresholds and the 2017 trial waiver are in sections 5 and 10."
+    },
+    {
+      "claim": "Development licences drew 104 applications for 892 standard units. Twenty companies received about 80 000 tons MAB. Conversion at NOK 10 million. No duty to keep the technology after conversion. Licence-value test rose from about NOK 50 million to about NOK 150 million after June 2018.",
+      "supported": true,
+      "extract_quote": "the Directorate of Fisheries had received 104 applications requesting 892 standard licenses ... 20 companies had received development licenses for a total capacity of 80,000 tons of MAB ... convert this into a commercial license at a fixed price of NOK 10 million. ... does not oblige farmers to operate with the technology that was developed after a possible conversion.",
+      "note": "June 2018 value change and 82 rejections / 70 appeals are in section 7."
+    },
+    {
+      "claim": "Allocation became more objective, but political and administrative discretion remains large. Reform attempts have largely been unsuccessful.",
+      "supported": true,
+      "extract_quote": "In spite of turning the allocation of licenses into a more objective process, there is still a large degree of political and administrative discretion involved. ... Attempts of reforming the system have so far largely been unsuccessful.",
+      "note": "Section 10 lists colour thresholds, carrying capacity, greatest-need site ranking, and development-licence tests."
+    },
+    {
+      "claim": "Municipalities and counties receive an annual production fee and 40 percent of new-capacity payments. Social acceptance problems remain.",
+      "supported": true,
+      "extract_quote": "have now received an annual production fee as well as 40% of the payments for new capacity to the Aquaculture Fund. Nevertheless, the industry has significant problems with social acceptance",
+      "note": "Coastal contest described as more acute in the same introduction block."
+    },
+    {
+      "claim": "The industry is subject to 344 paragraphs. Special schemes except development licences largely went under the radar until 2015. Violations of original special-licence conditions are said never to have been sanctioned.",
+      "supported": true,
+      "extract_quote": "the aquaculture industry is subject to 344 paragraphs in different laws and regulations ... The special schemes have, except for the latest (development licenses), largely \"gone under the radar\" ... Violations of the original conditions have never been sanctioned",
+      "note": "Research-licence transparency critique is in the same special-purpose discussion."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper reviews licensing architecture and discretion, not a stated causal effect of farms on wild fish.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A2 is the core (production versus locality licences, TLS, special-purpose schemes). A6 added because the production fee and the 40 percent Fund share are stated as the current municipal compensation.",
+  "coi_ok": true,
+  "coi_note": "Author declares no conflict of interests. Financed by the Norwegian Research Council and FHF.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2022_hersoug_ten-licensing-systems",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all (pages 1-11)",
+  "extract_coverage": "Walked every <!-- page N --> block from page 1 through page 11, including methods, history, TLS, special-purpose table, development licences, discretion, tragedy of administration, reform, COI and references. Figure 1 unread as an image."
+}

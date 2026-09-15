@@ -1,0 +1,112 @@
+title: 'When all you have is a hammer - integration challenges in coastal zone planning'
+year: 2024
+doi: 10.1007/s40152-024-00381-1
+url: https://doi.org/10.1007/s40152-024-00381-1
+authors:
+- Patrick Berg Sørdahl
+- Ingrid Kvalvik
+journal: Maritime Studies
+publisher: Springer
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A3
+- A4
+geography:
+- Norway
+- Nord_Norge
+environment:
+- coastal_zone
+- municipality
+time_period: 1991-2022
+regulatory_context:
+- municipal_coastal_plan
+- intermunicipal_coastal_plan
+- Norway_Planning_Building_Act
+- mixed
+evidence_type: policy_assessment
+study_design:
+- document_analysis
+- case_study
+data_source:
+- published_literature
+- mixed
+wild_or_farmed_focus: not_applicable
+outcome_domain:
+- coastal_planning
+- knowledge_in_decisions
+- coexistence_tradeoffs
+evidence_direction: not_applicable
+effect_scale: municipal_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- single region case (Tromso and neighbours)
+- document reading, not a measured conflict-reduction test
+key_claims:
+- The paper studies five generations of Tromso coastal-zone plans over 35 years and asks how government frames the need for integration and how that framing changes.
+- Integration is fluid. Previous spatial dispositions become later problems. Ambitions for comprehensive planning can obscure purpose and increase complexity.
+- Vocabulary shifted from coordination (2000, 2008) to comprehensiveness and integration (2015) and almost solely comprehensive in 2022. Plan descriptions grew. The 2015 description was twice the 2000 plan. The 2022 plan was triple. Later plans are more standardised.
+- Tourism and recreation moved conflict lines closer to land. The Water Regulation (to one nautical mile from the baseline) was added as an integration tool and as a new coordination demand.
+- Paradox of integration: seeing more things in unison does not necessarily reduce complexity. Comprehensiveness is called intuitively positive but hollow. Failure to hinder spatial conflicts becomes an argument for yet more comprehensiveness, not a test of whether integration is the right ambition.
+claims_about_uncertainty:
+- The paper does not measure whether thicker plans reduced user conflict.
+claims_about_policy_or_management:
+- Coordination and cooperation are described as more precise terms than comprehensiveness. Integration can be co-opted by vested interests.
+methodological_limitations:
+- Governmentality reading of one region's plan series. Competing-interest statement uses singular author.
+rag_summary: >
+  Sørdahl and Kvalvik (2024) read five generations of Tromso coastal-zone plans
+  (1991-2022). Integration is not a fixed tool. Plans grew thicker, more
+  comprehensive and more standardised, while vocabulary shifted from
+  coordination to comprehensiveness. The authors argue that treating
+  integration as the undisputed answer to coastal conflict makes failure into
+  a reason for yet more integration. Comprehensiveness is described as a
+  positive but hollow term. This is a document study, not a test of whether
+  thicker plans reduced conflict.
+coi_declared: false
+coi_notes: >
+  Authors declare no competing financial interests. Funding: RCN grant 294799
+  and CLEAN (FRAM). SIKT ethics approval. Open access. One declaration
+  sentence uses singular author.
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: >
+  Peer-reviewed 35-year plan series with named documents and a bounded
+  argument. Single-region case.
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: >
+  Names the risk that holistic coastal planning hides priorities and grows
+  complexity, which is central to A1 and A4 in this room.
+included_because: >
+  Added by Thord Håkon Bakke on 2026-09-15. Journal article on integration in
+  Norwegian municipal coastal plans. Filename year 2023 is the received date.
+  Publication year is 2024.
+related_documents_supporting:
+- 2026_sordahl_nar-alt-skal-med
+- 2017_kvalvik_intermunicipal-coastal-planning
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2026_sordahl_nar-alt-skal-med
+- salt_1065_ku-arealplanlegging
+- 2021_sandersen_kystsone-helgeland
+retrieval_tags:
+- integration
+- municipal_coastal_plan
+- governmentality
+- Tromso
+curator_note: >
+  Extract walked 2026-09-15. PDF filename says 2023. Journal volume is 2024.
+  This article is Paper II in 2026_sordahl_nar-alt-skal-med. Both folders kept.
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-15'
+inclusion_decided_by: Thord Håkon Bakke
+source_pdf: Sørdahl og Kvalvik 2023_ when all you have is a hammer.pdf
+
+# ai_verify: Cursor page verify 2026-09-15: PASS. See qa_report.json.

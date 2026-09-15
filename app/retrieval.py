@@ -19,6 +19,7 @@ import streamlit as st
 from openai import OpenAI
 
 DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "corpus.parquet"
+AREAL_DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "area-and-aquaculture.parquet"
 EMBEDDING_MODEL = "text-embedding-3-large"
 
 # Cosine similarity floor for "in scope". Spot-checked 2026-08-12:
@@ -38,34 +39,36 @@ def is_out_of_scope(results: list[dict], threshold: float = OUT_OF_SCOPE_SCORE_T
     return best_retrieval_score(results) < threshold
 
 
-def corpus_parquet_mtime() -> float:
-    """Modification time of corpus.parquet — used to invalidate Streamlit cache after ingest."""
-    if not DATA_FILE.exists():
+def corpus_parquet_mtime(data_file: Path | None = None) -> float:
+    """Modification time of a corpus parquet. Used to invalidate Streamlit cache after ingest."""
+    path = Path(data_file) if data_file is not None else DATA_FILE
+    if not path.exists():
         raise FileNotFoundError(
-            f"Corpus not found at {DATA_FILE}. Run: python scripts/ingest.py"
+            f"Corpus not found at {path}. Run ingest for that corpus."
         )
-    return DATA_FILE.stat().st_mtime
+    return path.stat().st_mtime
 
 
 @st.cache_resource(show_spinner=False)
-def _load_corpus_cached(corpus_mtime: float) -> pd.DataFrame:
-    """Load parquet; cache key includes file mtime so re-ingest is picked up automatically."""
-    df = pd.read_parquet(DATA_FILE)
+def _load_corpus_cached(path_str: str, corpus_mtime: float) -> pd.DataFrame:
+    """Load parquet; cache key includes path and mtime so rooms stay isolated."""
+    df = pd.read_parquet(path_str)
     df["_embedding"] = df["embedding"].apply(
         lambda x: np.array(json.loads(x), dtype=np.float32)
     )
     return df
 
 
-def load_corpus() -> pd.DataFrame:
-    """Load corpus from disk (cached until corpus.parquet changes)."""
-    return _load_corpus_cached(corpus_parquet_mtime())
+def load_corpus(data_file: Path | None = None) -> pd.DataFrame:
+    """Load a corpus parquet (cached until that file changes)."""
+    path = Path(data_file) if data_file is not None else DATA_FILE
+    return _load_corpus_cached(str(path), corpus_parquet_mtime(path))
 
 
-def reload_corpus() -> pd.DataFrame:
+def reload_corpus(data_file: Path | None = None) -> pd.DataFrame:
     """Force reload from disk (e.g. after manual cache confusion)."""
     _load_corpus_cached.clear()
-    return load_corpus()
+    return load_corpus(data_file)
 
 
 def get_embedding(client: OpenAI, text: str) -> np.ndarray:
@@ -202,6 +205,7 @@ def retrieve(
     filter_quality: list[str] | None = None,
     selected_doc_ids: list[str] | None = None,
     query_embedding: np.ndarray | None = None,
+    data_file: Path | None = None,
 ) -> list[dict]:
     """
     Retrieve the top_k most relevant documents for a query.
@@ -209,7 +213,7 @@ def retrieve(
     Returns a list of dicts with document metadata + similarity score,
     sorted by descending relevance.
     """
-    df = load_corpus()
+    df = load_corpus(data_file)
     query_vec = query_embedding if query_embedding is not None else get_embedding(client, query)
 
     # Metadata pre-filtering
@@ -248,6 +252,7 @@ def retrieve_routed(
     query: str,
     top_k: int = 8,
     selected_doc_ids: list[str] | None = None,
+    data_file: Path | None = None,
 ) -> tuple[list[dict], list[str]]:
     """
     Two-pass retrieval: prefer docs tagged with inferred priority questions,
@@ -265,6 +270,7 @@ def retrieve_routed(
             top_k=top_k,
             selected_doc_ids=selected_doc_ids,
             query_embedding=query_vec,
+            data_file=data_file,
         ), routed_qs
 
     # Pass 1: metadata-boosted pool
@@ -275,9 +281,10 @@ def retrieve_routed(
         filter_priority_questions=routed_qs,
         selected_doc_ids=selected_doc_ids,
         query_embedding=query_vec,
+        data_file=data_file,
     )
     if len(primary) >= top_k:
-        return _expand_debate_links(primary[:top_k], selected_doc_ids), routed_qs
+        return _expand_debate_links(primary[:top_k], selected_doc_ids, data_file), routed_qs
 
     # Pass 2: fill from full corpus (exclude already picked)
     have = {r["doc_id"] for r in primary}
@@ -287,6 +294,7 @@ def retrieve_routed(
         top_k=top_k,
         selected_doc_ids=selected_doc_ids,
         query_embedding=query_vec,
+        data_file=data_file,
     )
     for r in filler:
         if r["doc_id"] not in have:
@@ -302,19 +310,20 @@ def retrieve_routed(
         return (-match, -r["score"])
 
     primary = sorted(primary[:top_k], key=sort_key)
-    return _expand_debate_links(primary, selected_doc_ids), routed_qs
+    return _expand_debate_links(primary, selected_doc_ids, data_file), routed_qs
 
 
 def _expand_debate_links(
     results: list[dict],
     selected_doc_ids: list[str] | None,
+    data_file: Path | None = None,
 ) -> list[dict]:
     """Append up to 3 related_contrasting / should_read_with docs beyond top_k.
 
     These extras are marked added_as_debate_link so the UI can separate them
     from similarity hits. They still enter synthesis.
     """
-    df = load_corpus()
+    df = load_corpus(data_file)
     have = {r["doc_id"] for r in results}
     allowed = set(selected_doc_ids) if selected_doc_ids is not None else None
     extras: list[str] = []

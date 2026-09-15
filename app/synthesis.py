@@ -46,6 +46,13 @@ DEPTH_FREEFORM_NON_RESEARCHER = """\
 - Group ideas: what most evidence points to, where serious researchers disagree, and why we cannot be sure yet."""
 
 
+AREA_DEPTH_FREEFORM_NON_RESEARCHER = """\
+**Depth:** Tell one clear explanation that keeps competing diagnoses visible — not a list of studies, and not a smoothed consensus.
+- Aim for roughly **550–900 words** for broad questions.
+- **Do not walk through every paper one by one.** Name the main diagnoses with 3–5 concrete examples. If two diagnoses conflict, keep both even if that makes the story messier.
+- Group ideas: what the question is actually about, where the texts disagree on the problem definition, and why the file does not close it.
+- Do not recast every answer as researcher camps on whether farming threatens wild fish."""
+
 # ── Researcher: freeform (question-shaped) ───────────────────────────────────
 
 RESEARCHER_FREEFORM_PROMPT = """\
@@ -357,6 +364,152 @@ def confidence_guidance(results: list[dict]) -> str:
     return CONFIDENCE_RULES + "\n"
 
 
+AREA_ROOM_FRAME = """\
+**Room:** Area and aquaculture (Areal og havbruk).
+The object is aquaculture's claim on coastal sea. Other uses and living
+nature enter only when they block, compete with, or force a trade-off of
+that claim. This room maps disputed diagnoses of what binds growth and
+coexistence for farms. It is not a causal chain.
+
+Answer the question that was asked. If it is about plans, licences, the
+case file, money, density, or whose use must yield, lead with that
+disagreement. The four scarcity answers are for scarcity questions. Do
+not use them as a default template for every query.
+
+Lead with disagreement about the conflict. When the question is scarcity,
+keep four answers visible: lack of unused sea surface; production and
+locality licences together with the traffic-light rule on 13 production
+areas; municipal designation of usable sea; or biology (lice, disease,
+density, welfare). Physical pen area is treated as small in several core
+texts. Empty-looking fjord is a management myth in Jentoft and Buanes
+(2005), not the national limit in Hersoug, Mikkelsen and Osmundsen (2020).
+
+The traffic-light system belongs here as a lid on capacity growth in a
+production area (green, yellow or red). Lice can also be a ground for
+refusing a locality. Wild salmon belongs in the answer in those roles.
+Do not open as a debate about whether salmon farming threatens wild fish,
+and do not walk mortality-estimate camps, unless the question itself is
+that debate. The causal chain from lice on out-migrating smolt to
+mortality estimates sits in the salmon-lice / wild-salmon room.
+
+Also keep competing answers to whose use and values must give way, how
+knowledge is used or postponed in the file, whether density means more
+area is the wrong move, and whether money opens the municipal gate.
+Papers in this room often write past one another on the problem
+definition. Name those diagnoses. Do not force two scientific camps on
+one estimate. Do not collapse them into consensus.
+
+Gaps come second. If knowledge is postponed, unused, or unevenly applied
+in plans and locality files, say that after the disagreement is on the
+table. Do not invent a research agenda the papers did not state.
+Do not use Traffic Light Q9 confidence rules.
+Adjacent files (farm-to-farm disease models, national fish-health
+yearbooks, welfare law, IPBES values) are in the set. Say when a hit is
+adjacent, not a siting study.
+"""
+
+
+AREA_RESEARCHER_FREEFORM_PROMPT = """\
+You are an evidence synthesis assistant for contested questions about \
+aquaculture's claim on Norwegian coastal sea area.
+
+Your role follows the Honest Broker principle: present the range of evidence and positions clearly, without advocating for any regulatory or policy outcome.
+
+{output_language_rule}
+
+{depth}
+
+## Retrieved evidence
+
+{evidence_block}
+
+## Query
+
+{query}
+
+## How to write the answer
+
+Write **one coherent essay** that answers the question. The reader should feel you **thought across the evidence**, not that you **reported each file in turn**.
+
+### Anti-pattern (do NOT do this)
+- One paragraph per author in retrieval order
+- Mentioning every retrieved document because it appeared in the bundle
+- Repeating the same conclusion from several similar studies in separate paragraphs
+- Opening as a wild-fish impact controversy when the question is about plans, licences, the case file, money, density, or what binds growth
+
+### Good pattern
+- **Paragraph 1:** Direct answer to the query in 2–4 sentences (what is supported, what is contested). If wild salmon or the traffic-light binds capacity or a locality, say that as a growth lid, not as the mortality-chain debate.
+- **Middle paragraphs:** Develop the argument by **theme or diagnosis** (licences, municipal designation, biology, competing use, knowledge in the file). Within each paragraph, **combine** studies that support the same point; **contrast** studies that tension each other.
+- **Final paragraph:** Confidence (**High / Medium / Low**) and what would change your assessment — woven into prose, not a labelled box.
+
+Use **parenthetical citations** (Hersoug et al. 2020) inside sentences.
+
+**Selectivity:** {n} documents were retrieved; you need not name all {n}. Prioritise studies that directly address the query.
+
+**Evidence levels:** When citing models, say they are model outputs and note assumptions. When citing legal or policy texts, do not treat them as field measurements.
+
+Headings are optional — use at most 2–3, only when the topic genuinely shifts.
+
+## Rules
+- Use ONLY the retrieved evidence; do not invent studies or findings.
+- Preserve genuine disagreement — do not paper over it.
+- Distinguish empirical findings, model outputs, and normative/policy claims.
+- No bullet lists unless comparing 3+ numeric results in one glance.
+"""
+
+
+AREA_NON_RESEARCHER_FREEFORM_PROMPT = """\
+You are a science communicator explaining contested research on aquaculture's \
+claim on Norwegian coastal sea to a general audience with no scientific background.
+
+Your job is an honest broker for non-experts: make disagreement about the conflict \
+understandable. The live fight in this room is what binds or opens growth and \
+coexistence for farms. Never invent a middle ground that the studies do not support. \
+If diagnoses conflict, say so in plain words.
+
+This is not the salmon-lice / wild-salmon mortality room. Wild salmon belongs in \
+the answer when it gates expansion: the traffic-light colours 13 production areas \
+and can freeze, cut or allow capacity growth; lice can also be a reason to refuse \
+a locality. Do not open with a debate about whether salmon farming threatens wild \
+fish, and do not invent two researcher camps on that question, unless the user \
+actually asked that.
+
+{output_language_rule}
+
+{depth}
+
+## Retrieved evidence (from scientific studies)
+
+{evidence_block}
+
+## Question asked
+
+{query}
+
+## How to write the answer
+
+Write **flowing prose** — like a short feature article — that answers the question in plain language.
+
+**Do NOT** go through each study in order ("First, Smith and colleagues … Then, Jones and colleagues …"). That reads like a list, not an explanation.
+
+Instead:
+- Start with a **plain answer to the question that was asked**. If the retrieved papers disagree, state the competing diagnoses in the first paragraph. Do **not** open with false consensus phrases like "there is agreement that…" / «det er enighet om…» when the retrieved evidence is contested.
+- Do **not** open with stock phrases such as "The debate about salmon farming and its impact on wild fish" / «Debatten om lakseoppdrett og påvirkningen på villfisk» when the question is about plans, licences, the case file, money, density, or what binds growth.
+- Build **2–4 paragraphs** by idea. When papers write past one another, give **one full paragraph to the competing diagnosis** (what they claim is scarce, what must yield, or where the case dies). Do not force a wild-fish impact camp if those papers are not in the retrieved set.
+- Name **both sides** with concrete examples. You may group similar papers, but **do not** fold a conflicting paper into "other research."
+- Keep disagreement inside the narrative. Make the diagnoses impossible to miss (e.g. "One group of studies says the limit is licences and the traffic-light … Another group says the municipality will not designate usable sea …").
+- End with **High / Medium / Low** confidence, a simple reason, and **one concrete thing that would change the picture**.
+
+## Rules
+- Use ONLY the retrieved evidence; do not make up studies.
+- Preserve real disagreement — do not paper it over or invent a compromise.
+- Cite as "Researcher Name and colleagues (year)" when naming a study.
+- Say when a result is from a plan study, a legal review, a computer model, or field data; do not treat them as the same kind of proof.
+- No unexplained jargon — spell out terms on first use.
+- Do not argue that aquaculture is good or bad overall.
+"""
+
+
 def synthesise(
     client: OpenAI,
     query: str,
@@ -365,6 +518,7 @@ def synthesise(
     answer_format: str = "freeform",
     output_language: str = "English",
     model: str = "gpt-4o",
+    room: str = "villaks",
 ) -> str:
     """
     Call GPT-4o with the retrieved evidence and return a synthesis.
@@ -381,16 +535,26 @@ def synthesise(
     n = len(results)
     compact = answer_format == "freeform"
     evidence_body = build_evidence_block(results, compact=compact)
-    guidance = confidence_guidance(results)
+    if room == "areal":
+        guidance = AREA_ROOM_FRAME + "\n"
+    else:
+        guidance = confidence_guidance(results)
     evidence_block = guidance + evidence_block_intro(n, answer_format) + evidence_body
 
-    if mode == "researcher":
-        depth = DEPTH_FREEFORM_RESEARCHER if answer_format == "freeform" else DEPTH_RESEARCHER
+    if room == "areal" and answer_format == "freeform":
+        if mode == "researcher":
+            depth = DEPTH_FREEFORM_RESEARCHER
+            prompt_template = AREA_RESEARCHER_FREEFORM_PROMPT
+        else:
+            depth = AREA_DEPTH_FREEFORM_NON_RESEARCHER
+            prompt_template = AREA_NON_RESEARCHER_FREEFORM_PROMPT
     else:
-        depth = DEPTH_FREEFORM_NON_RESEARCHER if answer_format == "freeform" else DEPTH_NON_RESEARCHER
+        if mode == "researcher":
+            depth = DEPTH_FREEFORM_RESEARCHER if answer_format == "freeform" else DEPTH_RESEARCHER
+        else:
+            depth = DEPTH_FREEFORM_NON_RESEARCHER if answer_format == "freeform" else DEPTH_NON_RESEARCHER
+        prompt_template = PROMPTS.get((mode, answer_format), RESEARCHER_FREEFORM_PROMPT)
     lang_rule = OUTPUT_LANGUAGE_RULE.format(output_language=output_language)
-
-    prompt_template = PROMPTS.get((mode, answer_format), RESEARCHER_FREEFORM_PROMPT)
     prompt = prompt_template.format(
         evidence_block=evidence_block,
         query=query,

@@ -1,0 +1,113 @@
+title: 'From strategic marine planning to project licences - Striking a balance between predictability and adaptability in the management of aquaculture and offshore wind farms'
+year: 2019
+doi: 10.1016/j.marpol.2019.103556
+url: https://doi.org/10.1016/j.marpol.2019.103556
+authors:
+- Sigrid Eskeland Schutz
+- Anne-Michelle Slater
+journal: Marine Policy
+publisher: Elsevier
+language: english
+source_type: peer_reviewed
+document_type: legal_analysis
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A2
+- A3
+geography:
+- Norway
+- mixed
+environment:
+- coastal_zone
+- sea_area
+- municipality
+- county
+time_period: c. 2006-2019
+regulatory_context:
+- Norway_Aquaculture_Act
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+- locality_licence
+- mixed
+evidence_type: legal_analysis
+study_design:
+- legal_doctrinal
+data_source:
+- published_literature
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coastal_planning
+- licensing_access
+- coexistence_tradeoffs
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- brief comparison, nuances lost
+- no new licence-outcome dataset
+- Norwegian offshore wind still without farms under construction at time of writing
+key_claims:
+- The paper compares Norway and Scotland on aquaculture and offshore wind through strategic plans, marine spatial planning and licensing, asking how predictability and adaptability are balanced.
+- Both jurisdictions use a patchwork of national, regional and local competences plus licences. One-size-fits-all policies are judged ineffective because the sectors grew in different policy frames. The two countries nonetheless took parallel approaches to aquaculture and to offshore energy.
+- Norwegian aquaculture is described as inshore. Production areas are said to raise predictability for farmers, while what will be decisive in a given case can remain unpredictable.
+- Municipal land-use planning under the Planning and Building Act coordinates aquaculture with other uses. Integrated large-ecosystem management plans in Norway are described as lacking the same legal binding force as some Scottish instruments.
+- Licensing can be clearly worded (predictability) and still use open tests such as significant effects (adaptability, and sometimes unpredictability). System change in mature aquaculture is slow and grounded in statute, which the authors treat as broader predictability.
+claims_about_uncertainty:
+- No wind farms were under construction in Norway at the time of writing. Scottish project delivery also depended on factors beyond MSP, including the Crown Estate lease role.
+claims_about_policy_or_management:
+- Multi-use feasibility is described as project-dependent. Norwegian land-use planning already has dispensation traces.
+methodological_limitations:
+- Functional legal comparison, not an empirical siting census. Supplementary appendix not in this extract.
+rag_summary: >
+  Schutz and Slater (2019) compare Norwegian and Scottish governance of
+  aquaculture and offshore wind through strategic plans, marine spatial planning
+  and licensing. They ask how legal systems keep investment predictable while
+  staying adaptable. Aquaculture is the mature inshore sector. Offshore wind is
+  the emerging one. Both countries use a multi-level patchwork. Production
+  areas and municipal plans raise predictability in Norway, while open licence
+  tests and non-binding ocean management plans leave room to adapt. This is a
+  legal review, not a new occupancy study.
+coi_declared: unclear
+coi_notes: >
+  No competing-interest statement in the extract. Funded by the Research
+  Council of Norway, grant 255586.
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: >
+  Peer-reviewed legal comparison with named statutes and a clear value tension.
+  Brief by design.
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: >
+  Places aquaculture beside offshore wind in the same legal allocation problem,
+  which this room otherwise mostly names rather than analyses.
+included_because: >
+  Added by Thord Håkon Bakke on 2026-09-15. The paper is a named comparison of
+  aquaculture and offshore-wind planning and licensing, not a side mention of
+  energy.
+related_documents_supporting:
+- 2015_rettslig_rammeverk-havbruk
+- 2022_hersoug_ten-licensing-systems
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- salt_1075_arealbruk-havbruk
+- 2020_hersoug_whats-the-clue
+retrieval_tags:
+- offshore_wind
+- predictability
+- marine_spatial_planning
+- licensing
+curator_note: >
+  Extract walked 2026-09-15. Filename uses Schuts. Article byline is Sigrid
+  Eskeland Schutz, email schytz@uib.no. YAML author spelled Schutz without
+  umlaut. Title hyphen in YAML is a single hyphen.
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-15'
+inclusion_decided_by: Thord Håkon Bakke
+source_pdf: Schuts and Slater 2019 From strategic marine planning to project licenses.pdf
+
+# ai_verify: Cursor page verify 2026-09-15: PASS. See qa_report.json.

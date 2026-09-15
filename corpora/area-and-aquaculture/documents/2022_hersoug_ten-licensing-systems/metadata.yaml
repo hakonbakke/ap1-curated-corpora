@@ -1,0 +1,173 @@
+title: One country, ten systems - The use of different licensing systems in Norwegian
+  aquaculture
+year: 2022
+doi: 10.1016/j.marpol.2021.104902
+url: https://doi.org/10.1016/j.marpol.2021.104902
+authors:
+- Bjørn Hersoug
+journal: Marine Policy
+publisher: Elsevier
+language: english
+source_type: peer_reviewed
+document_type: review_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A2
+- A6
+geography:
+- Norway
+environment:
+- coastal_zone
+time_period: 1973-2021
+regulatory_context:
+- Norway_Aquaculture_Act
+- locality_licence
+- mixed
+evidence_type: policy_assessment
+study_design:
+- literature_review
+- document_analysis
+data_source:
+- published_literature
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- licensing_access
+- area_allocation
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- how special-purpose licences affect the traffic-light growth system
+- whether converted development licences keep the new technology
+key_claims:
+- From one commercial salmon and trout licensing regime in 1973 the system grew to
+  ten systems, with emphasis on special-purpose licences often created on industry
+  request. Ten companies were responsible for about 70 percent of production.
+- A farm needs both a production licence (MAB) and a site (locality) licence. Ordinary
+  commercial growth is regulated by the traffic-light system. Special-purpose licences
+  sit outside that growth logic. They are not number-capped, can be placed in a red
+  production area, and are not subject to a red-area MAB cut.
+- Special-purpose licences have served education, research and innovation, and have
+  also acted as a cheaper backdoor. Table 1 (October 2020) states 280 special-purpose
+  licences and 207 836 tons MAB (21 percent of licence numbers, 17 percent of MAB)
+  against 1057 commercial licences and 1 016 540 tons MAB. Ordinary commercial licences
+  are stated as traded around USD 15 to 20 million (NOK 150 to 200 million) for 780
+  tons MAB.
+- Green licences (45 licences in three groups) were an administrative experiment that
+  leading politicians later summed up as never again. The traffic-light system from
+  2017 uses one lice indicator and 13 areas. Green means less than 10 percent chance
+  of negatively affecting wild salmon, yellow 10 to 30 percent, red above 30 percent.
+  Growth is plus 6 percent, stable, or minus 6 percent every other year. The 2017
+  trial did not require red-area cuts. Full implementation from 2020 did. Farmers
+  in production area 4 sued the state and lost. A minister changed one area from yellow
+  to green on a socio-economic assessment. Environmentalists wanted more indicators
+  than lice.
+- Development licences (2015-2017 applications) drew 104 applications requesting 892
+  standard licences (about 85 percent of then total capacity). By end of 2020, 20
+  companies had received about 80 000 tons MAB (Table 1 has 103 plus 2 licences, 80 340
+  tons). Conversion to a commercial licence was at a fixed NOK 10 million. After conversion
+  there is no duty to keep the developed technology. Of 104 applications, 82 were
+  rejected and 70 appealed. The estimated commercial-licence value used in investment
+  tests rose from about NOK 50 million to about NOK 150 million after June 2018, after
+  the deadline.
+- Allocation became more objective, but political and administrative discretion remains
+  large. Examples include the traffic-light thresholds themselves, IMR colour advice
+  subject to political review, County Governor carrying-capacity figures, county ranking
+  of competing site applicants by greatest need, and development-licence innovation
+  tests. Reform attempts have largely been unsuccessful.
+- Municipalities and counties now receive an annual production fee and 40 percent
+  of payments for new capacity to the Aquaculture Fund, while social acceptance problems
+  remain. The coastal-zone contest is described as more acute than when the industry
+  started.
+- The industry is described as subject to 344 paragraphs that interfere with establishment
+  and operation. Special schemes except development licences largely went under the
+  radar until 2015. Violations of original special-licence conditions are said never
+  to have been sanctioned. Research licences are more controversial than education
+  licences because research institutions control only a small part and transparency
+  has been weak.
+claims_about_uncertainty:
+- Effects of special-purpose licences on the ordinary traffic-light system are described
+  as largely underestimated. Environmental effects after possible conversion of development
+  licences are called highly uncertain.
+- Whether imposed MAB cuts will stand in the courts in later rounds is left open.
+  The traffic-light system is described as still lacking general legitimacy.
+claims_about_policy_or_management:
+- Authorities kept and reinforced licensing rather than abandoning it as the industry
+  industrialised. Reasons given include licence value on company balance sheets, flexibility
+  to drop poor sites, a backup production-limit tool in trade shocks, fiscal revenue,
+  and political-administrative entrenchment.
+- Green licences, development licences, and schemes for land-based, post-smolt and
+  offshore production are part of the ten-system landscape. Land-based licences are
+  free and uncapped in number. Thirty-one land-based projects were being planned at
+  the time of writing. Salmar and Nordlaks flagship projects were still inside the
+  baselines.
+- Reform ideas reviewed include a separate aquaculture directorate, one ministry
+  with final say and no sector veto, a new closed-technology licence round, time-limited
+  licences, municipal technology requirements, and new area boards. Time limits and
+  municipal environmental races to the bottom won little support in Aquaculture Management
+  2030. Inter-municipal planning and voluntary farmer cooperation are pointed to instead.
+methodological_limitations:
+- Historical-administrative review. Not a statistical test of discretion versus objective
+  criteria.
+- Table 1 is a snapshot (October 2020). Special-licence counts change as licences
+  expire or are renewed.
+rag_summary: 'Hersoug (2022) reviews Norwegian aquaculture licensing from 1973 to
+  2021. One commercial regime became ten systems. The paper separates production
+  licences from locality licences and ordinary traffic-light growth from special-purpose
+  schemes (broodstock, education, research, exhibition, development, land-based, post-smolt,
+  offshore). Special-purpose licences met collective industry needs and also became
+  a cheaper entry. In October 2020 they were 21 percent of licence numbers and 17
+  percent of MAB. They sit outside traffic-light caps and red-area cuts. Discretion
+  remains in colouring, site ranking and development-licence tests. Reform has largely
+  failed. Coastal value-sharing improved, social acceptance did not.
+
+  '
+coi_declared: false
+coi_notes: 'Author declares no conflict of interests. Financed by the Norwegian Research
+  Council and by FHF. Affiliations NCFS, UiT and Nofima.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Peer-reviewed long review by a specialist on the licence history.
+  Price and count figures are as stated in the paper, not independently checked here.
+
+  '
+controversy_role: critical
+relevance_signal: high
+relevance_rationale: 'Explains how production rights and site rights are different
+  instruments, which is required to understand access to area.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. Full account of licence systems that
+  gate who may use coastal sites.
+
+  '
+related_documents_supporting:
+- 2020_hersoug_whats-the-clue
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2015_sandersen_access-to-sites
+- 2025_osmundsen_fylkeskommune-akvakulturloven
+retrieval_tags:
+- licensing
+- special_purpose_licences
+- traffic_light
+- discretion
+curator_note: 'Full extract walked 2026-09-13 (pages 1 to 11). Figure 1 is an image
+  placeholder and was not read as data. Two Kvalvik 2017 PDFs in this corpus are a
+  different topic (inter-municipal planning), not a reply to this article. Competing-interest
+  and funding statements sit on page 10.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Hersoug_2022_One country, ten systems - The use of different licensing
+  systems in Norwegian aquaculture.pdf
+
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 2 soft). See qa_report.json.

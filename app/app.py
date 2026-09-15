@@ -56,12 +56,14 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ── Aktivt rom (primært) ─────────────────────────────────────────────────────
-st.markdown('<p class="hl-label">Aktivt evidensrom</p>', unsafe_allow_html=True)
+# ── Aktive rom ───────────────────────────────────────────────────────────────
+st.markdown('<p class="hl-label">Aktive evidensrom</p>', unsafe_allow_html=True)
 
-with st.container(border=True):
-    st.markdown(
-        """
+active_cols = st.columns(2)
+with active_cols[0]:
+    with st.container(border=True):
+        st.markdown(
+            """
 <div class="hl-feature-marker"></div>
 <span class="hl-status hl-status-on">Aktiv</span>
 <h3 class="hl-room-title">Lakselus og dødelighet hos ville laksefisk</h3>
@@ -71,13 +73,36 @@ with st.container(border=True):
 </p>
 <div class="hl-room-meta">27 artikler · 1997-2026</div>
 """,
-        unsafe_allow_html=True,
-    )
-    st.page_link(
-        "pages/1_Lakselus_og_villaks.py",
-        label="Åpne rom →",
-        icon="📗",
-    )
+            unsafe_allow_html=True,
+        )
+        st.page_link(
+            "pages/1_Lakselus_og_villaks.py",
+            label="Åpne rom →",
+            icon="📗",
+        )
+
+with active_cols[1]:
+    with st.container(border=True):
+        st.markdown(
+            """
+<div class="hl-feature-marker"></div>
+<span class="hl-status hl-status-on">Utkast</span>
+<h3 class="hl-room-title">Areal og havbruk</h3>
+<p class="hl-room-desc">
+  Havbrukets krav på sjøareal. Hva publikasjonene sier binder vekst: ledig
+  sjøflate, tillatelser og trafikklys, kommunal utpeking, eller biologi.
+  Villaks hører hjemme når den er lokk på vekst. Der saksfilen er tom, sier
+  vi det. Utkast.
+</p>
+<div class="hl-room-meta">39 dokumenter · utkast</div>
+""",
+            unsafe_allow_html=True,
+        )
+        st.page_link(
+            "pages/2_Areal_og_havbruk.py",
+            label="Åpne rom →",
+            icon="📘",
+        )
 
 # ── Kommende rom (sekundært) ─────────────────────────────────────────────────
 st.markdown(
@@ -100,16 +125,9 @@ COMING = [
         "0 artikler · stub",
         "soon_mortality",
     ),
-    (
-        "Areal i havbruk",
-        "Hvordan evidens kan brukes når areal i kystsonen fordeles til havbruk. "
-        "Temaet er planlagt. Eget korpus er ikke opprettet ennå.",
-        "0 artikler · planlagt",
-        "soon_areal",
-    ),
 ]
 
-cols = st.columns(3)
+cols = st.columns(len(COMING))
 for col, (title, desc, meta, key) in zip(cols, COMING):
     with col:
         with st.container(border=True):

@@ -1,0 +1,62 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Partial extract walk: TOC, chapter 1 sammendrag, chapter 2 policy emphasis, 3.2.1 sea and coast, 5.5.2 fisheries and aquaculture, and the aquaculture area and traffic-light subsection. Many figures and most land chapters unread as data.",
+    "Upcoming aquaculture white paper and 2026 sea-trout traffic-light inclusion are government intentions, not results.",
+    "YAML title uses Barekraftig without stroke-ae to reduce parse risk. Live title is Bærekraftig bruk og bevaring av natur."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Meld. St. 35 (2023-2024) is Norway's biodiversity action plan following the December 2022 global nature agreement. It covers sustainable use and conservation on land and at sea.",
+      "supported": true,
+      "extract_quote": "Også i Norge er arealendringer den største negative påvirkningsfaktoren, selv om Norge generelt har en bedre tilstand på naturen enn mange andre land.",
+      "note": "Cover and sammendrag name the action plan and the nature agreement. Area change as largest driver is in the same sammendrag block as land and sea drivers."
+    },
+    {
+      "claim": "Area change on land and at sea is named as the largest negative driver of nature loss in Norway. The sum of small actions can exceed what nature can tolerate.",
+      "supported": true,
+      "extract_quote": "Arealendringer på land og i hav ... Også i Norge er arealendringer den største negative påvirkningsfaktoren ... Hver enkelt handling kan være liten, nødvendig eller ønskelig, men hvis vi ikke følger godt med kan summen av påvirkningene bli for mye for naturen.",
+      "note": "Sammendrag, same opening stretch."
+    },
+    {
+      "claim": "Nationwide area management already exists through the Planning and Building Act, ocean and water plans, and the Nature Diversity Act beside sector laws.",
+      "supported": true,
+      "extract_quote": "Vi har en heldekkende arealforvaltning gjennom plan- og bygningsloven og hav- og vannforvaltningsplanene. Naturmangfoldloven virker sammen med en rekke lover og regler for ulike næringer og sektorer.",
+      "note": "Sammendrag, Hva har vi gjort i Norge allerede."
+    },
+    {
+      "claim": "Municipal plans with impact assessment are described as important for locating aquaculture and for use versus protection. The government wants better coastal-zone planning guidance.",
+      "supported": true,
+      "extract_quote": "Helhetlige arealplaner med konsekvensutredninger etter plan- og bygningsloven er viktig for å avklare forholdet mellom bruk og vern av arealene og for å lokalisere områder for akvakultur. Regjeringen ønsker å forbedre veiledningen om planlegging i kystsonen, og se nærmere på rammene for planlegging av akvakultur.",
+      "note": "Akvakultur subsection."
+    },
+    {
+      "claim": "The traffic-light system has one indicator, lice-induced mortality of out-migrating salmon smolts, and 13 production areas. An expert group found that traffic-light thresholds and the quality standard for wild salmon do not steer toward the same goal.",
+      "supported": true,
+      "extract_quote": "norskekysten delt inn i 13 produksjonsområder. ... Trafikklyssystemet har per i dag én miljøindikator, som er dødelighet hos utvandrende laksesmolt som følge av lakselus. ... arbeidsgruppen ... konkluderte med at det ikke er samsvar mellom grenseverdiene for lakselus i dagens trafikklyssystem og kvalitetsnormen for villaks. ... Trafikklyssystemet og kvalitetsnorm for villaks styrer derfor ikke mot samme mål for villaksbestandene.",
+      "note": "Same subsection. Yellow light and no capacity change can still breach the quality standard when marine survival is moderate to low."
+    },
+    {
+      "claim": "NOU 2023:23 is cited for later follow-up in an aquaculture white paper. Sea trout is intended in colouring from 2026. Cod farming in spawning areas and fields was clarified as prohibited in 2024.",
+      "supported": true,
+      "extract_quote": "NOU 2023: 23 Helhetlig forvaltning av akvakultur for bærekraftig verdiskaping vil vurderes og følges opp i ulike prosesser, blant annet gjennom den nye stortingsmeldingen om havbruk. ... Målet er at sjøørreten skal være med i fargeleggingene etter trafikklyssystemet fra og med 2026. ... tydeliggjorde regjeringen vinteren 2024 forbudet mot oppdrett av torsk i gyteområder og gytefelt for villtorsk gjennom en forskriftsendring.",
+      "note": "Intentions and a 2024 regulation change, not empirical occupancy results."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. Government action plan, not a new causal estimate of farm effects.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (plans locate aquaculture), A3 (use versus conservation, wild salmon as a living nature claim), A5 (traffic-light lice indicator versus density and carrying capacity). Do not treat this as a second villaks room.",
+  "coi_ok": true,
+  "coi_note": "Government white paper. No competing-interest statement. Responsible ministry on the cover.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+  "verified_at": "2026-09-15T10:30:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "TOC, ch 1, ch 2 policy emphasis, 3.2.1 sea and coast, 5.5.2 fisheries and aquaculture, aquaculture area and traffic-light subsection",
+  "extract_coverage": "Partial on a long extract. Land chapters and figures largely unread. Claims above are from walked sections only."
+}

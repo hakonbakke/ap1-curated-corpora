@@ -1,0 +1,244 @@
+title: Bærekraftig arealbruk i havbruksnæringen
+year: 2023
+doi: ''
+url: ''
+authors:
+- Ragnar Tveterås
+journal: ''
+publisher: ''
+language: norwegian
+source_type: report
+document_type: policy_report
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A2
+- A4
+- A5
+- A6
+geography:
+- Norway
+environment:
+- coastal_zone
+- fjord
+- sea_area
+time_period: Locality and production series 2006-2022, regressions 2012-2022
+regulatory_context:
+- Norway_Aquaculture_Act
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+- locality_licence
+- mixed
+evidence_type: mixed
+study_design:
+- statistical_analysis
+- expert_assessment
+- literature_review
+data_source:
+- official_statistics
+- public_registers
+- published_literature
+- interviews
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- area_allocation
+- spatial_density_productivity
+- licensing_access
+- fish_health_welfare
+- disease_or_lice
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- immature closed and deep-farming technology
+- whether density-mortality links can be broken by new practice
+- ground-rent tax effects on investment
+- conversion-model assumptions (cash flow, capex, required return, salmon price)
+- pre-1999 locality counts estimated, not observed
+- chapter 3.4 inverts the MTB-to-sea-area ratio for four municipalities
+- most figures are images
+key_claims:
+- Industry- and municipality-funded report for BluePlanet. Preface dated Stavanger,
+  20 November 2023. Ragnar Tveterås is named as project leader. The preface speaks
+  of report authors in the plural. No other author names appear on the title, preface,
+  contents or later pages of the extract.
+- The report asks whether a large increase of salmon and trout production in sheltered
+  coastal waters (100, 200 or 300 percent, or a widely stated 5 million tonnes by
+  2050) is possible and sustainable. It says this is not possible with 2023 knowledge,
+  technology and practice from egg to harvest.
+- Production of salmonids is stated as rising from 150 000 tonnes in 1990 to 1 650
+  563 tonnes round weight in 2022. Chapter 2 also gives FAO series of 4 000 tonnes
+  of salmon in 1980, 146 000 in 1990, 440 000 in 2000, 940 000 in 2010 and about 1
+  550 000 in 2022, plus about 85 000 tonnes of rainbow trout. Approved grow-out localities
+  fell from over 1 100 to a little over 900 after 2006, while locality MAB rose from
+  2.1 to 3.5 million tonnes. Chapter 3 registers 1 164 localities in 2006 and 969
+  in 2022, and locality MAB of 2 176 681 tonnes rising to 3 521 311 tonnes.
+- Density of localities and of live biomass per km2 is highest in areas 2 and 3. Northern
+  areas have lower density. At the end of 2022 about 436 million farmed salmon are
+  said to have stood in the sea, against an estimated 458 000 returning wild salmon.
+  About one third of localities are said to be fallow at any time.
+- Chapter 3 is not a set of municipal case narratives. It is register analysis. Almost
+  300 new localities arrived after 2012 and replaced a similar number removed. Of
+  957 existing commercial localities, about 60 percent gained MAB (average about 2
+  750 tonnes). The 20 largest companies accounted for 74.94 percent of the MAB increase
+  and about 45.37 percent of the fall in locality numbers. After 2017, Trøndelag and
+  counties further north supplied 87 percent of national production growth. Vestland
+  still grew 22 percent in 2017-2022 despite one or two company-MAB cuts in areas
+  3 and 4. Area 13 is the exception with no rise in total locality MAB. Mean distance
+  between active sites stays about 3-5 km in most areas.
+- Among the 20 largest farming municipalities, Flatanger and Rødøy have the highest
+  locality-MAB per inhabitant. Kvinnherad and Austevoll barely raised locality MAB
+  from 2006 to 2022. Samnanger is given a locality-MAB to sea-area ratio of 148.57.
+  Træna has the lowest such ratio. The prose on Karlsøy, Tromsø, Rødøy and Steigen
+  contradicts itself on whether a ratio under 60 means high or low MAB per km2.
+- Regressions on 2012-2022 data are reported as showing that mortality, economic feed
+  factor and adult-female lice counts rise significantly with locality density and
+  biomass per km2 of sea. Production cost per kg rises with area density, while cost
+  is stable or falls with more biomass on the individual locality. Operating margin
+  falls with area density and rises with locality biomass. The authors say economics
+  therefore favour fewer, larger localities, while biology punishes area-level concentration
+  under 2012-2022 technology. Tables 5.1-5.3 report signs, not coefficients.
+- They recommend an MAB conversion scheme toward closed MAB. In the executive summary
+  the simulated conversion factor that leaves firms indifferent sits between 2 and
+  5 at 10-16 percent required return. Chapter 7.1's base case is 3 tonnes closed MAB
+  per tonne open MAB (NPV 119.09 versus 39.73 kroner per kg MAB). Sensitivity spans
+  about 1.2 to 32 depending on cash flow, capex and required return. Chapter 7.2 says
+  closing the 10 percent of sites with the highest lice infection pressure can raise
+  production, cut area mortality, and double remaining open-pen operating margin from
+  about 15 to over 30 percent, with diminishing returns after that. At a 1:1 conversion
+  the closed-pen NPV is negative unless the long-run salmon price exceeds 100 kroner
+  per kg HOG at a 10 percent required return.
+- Sector vetoes in locality clearance are described as producing a lowest-common-denominator
+  outcome and slow, unpredictable siting. They want clearer sector roles, state planning
+  guidelines that ease dispensation from old municipal plans, easier new sites and
+  capacity in green traffic-light areas, and they want shared and inter-regional biomass
+  caps kept. As of April 2023 no state planning guideline on aquaculture priorities
+  existed. Company-level permit capacity and locality capacity are said not to hang
+  together. Chapter 9.3 says locality capacity is almost four times company capacity.
+- They criticise parts of the 2023 Aquaculture Committee (Havbruksutvalget) for over-central
+  planning that ignores the Planning and Building Act's all-interests logic, and for
+  suggesting an end to shared biomass caps across production areas without studying
+  the extra locality need. They support removing traffic-light capacity cuts, and
+  they support a licence-leasing idea. They treat firebreaks as having a debated biosecurity
+  effect.
+claims_about_uncertainty:
+- The authors stress that the regressions are average associations from 2012-2022
+  practice. Some high-biomass localities and some dense areas still have good biological
+  results.
+- Closed and deep-farming concepts are called early, with mixed experience and investment
+  tickets from about 100 million kroner to well over one billion kroner. Thirteen closed
+  or semi-closed plants are said to have held live fish. Economic results of closed
+  plants are called a large knowledge hole.
+- Ground-rent tax implementation is said to have cut investment, including in lower-emission
+  technology. How long that lasts is left open.
+- Conversion and partial-closure results are conceptual. Chapter 7 says they depend
+  on chosen models, variables and coefficients, and that a lice tax is hard because
+  lice are treated as non-point source pollution.
+- Locality counts before 1999 are estimated (one site per permit to the early 1990s,
+  then two times the number of permits in 1991-1998). The authors call that estimate
+  uncertain.
+claims_about_policy_or_management:
+- A national biosecurity strategy, data sharing, and incentives for best practice
+  are treated as conditions for sustainable coastal-area use.
+- They support removing traffic-light capacity cuts as a tool, on the argument that
+  repeated cuts have not improved modelled lice outcomes in some areas and lose legitimacy.
+- They want MAB conversion to closed systems, a documentation research programme,
+  use of cut MAB in closed units, and risk relief rather than a lice tax.
+- They want Mattilsynet to ease movement of clinically healthy fish and to weigh industry
+  and fish-health-network views more in coordinated fallowing. They want state planning
+  guidelines that ease dispensation and stop temporary bans under Planning and Building
+  Act section 13-1 while plans are revised. A single aquaculture directorate is named
+  as a long political path.
+- The printed recommendations (veikart) cover biology and welfare, MAB conversion,
+  epidemiological models, municipal income and planning, and business-model innovation.
+  Chapter 11 points back to the executive summary.
+methodological_limitations:
+- Mix of Fisheries Directorate series, regressions reported as signs, conceptual conversion
+  models, technology discussion and legal-policy commentary. Full author list is not
+  in the extract. Client and funders are aquaculture companies, banks, municipalities,
+  Sjømat Norge and related funds.
+- Most figures are images. Tables 5.1-5.3 give signs only. One appendix sentence on
+  four-site capacity utilisation is unfinished.
+- Interviews and meetings are mentioned in the preface. No interview transcripts or
+  informant counts appear later.
+rag_summary: 'BluePlanet-commissioned report dated 20 November 2023, led by Ragnar
+  Tveterås. It asks how to grow inshore salmon and trout without today''s health and
+  lice limits. Locality numbers fell after 2006 (1 164 to 969) while locality MAB
+  rose to 3.52 million tonnes, especially in the north. The 20 largest firms took
+  most of that MAB rise. Regressions for 2012-2022 link higher area density to worse
+  biology and cost, and higher site biomass to better economics. Chapter 7 puts a
+  base closed-to-open conversion factor at 3, and says closing the 10 percent of sites
+  with the highest lice pressure can help remaining open pens. The authors want MAB
+  conversion, clearer siting rules, and they dispute parts of the 2023 Aquaculture
+  Committee. Other authors are not named in the extract. Funders are mainly industry
+  and coastal municipalities.
+
+  '
+coi_declared: unclear
+coi_notes: 'Client BluePlanet. Funders named: Akva Group, Bremnes Seashore, DnB, Eidsfjord
+  Sjøfarm, Hofseth Aqua, Grieg Seafood, NFKK, Mowi, Rogaland County Municipality,
+  Salmar, Sjømat Norge, Stavanger Municipality, and the Ulla-Førre fund project on
+  aquaculture technology. Authors say they alone are responsible. No separate competing-interest
+  box found.
+
+  '
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: 'Long report with named official statistics, signed regression
+  tables, and a stated conversion design. Author list is incomplete in the extract.
+  Funding is concentrated in the industry whose growth the report seeks. Most figures
+  are images. Conversion results are conceptual.
+
+  '
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: 'Ties coastal-area use to density, biosecurity, technology choice
+  and siting rules, which is the room''s core triangle of planning, technology and
+  money.
+
+  '
+included_because: 'Selected by Tonje Osmundsen. It is a full inshore-growth and area-use
+  argument from the Tveterås group, not a lice-mortality paper. The room needs this
+  industry-near synthesis beside Gullestad and Hersoug.
+
+  '
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2011_gullestad_arealbruk-havbruk
+- 2020_hersoug_whats-the-clue
+- salt_1075_arealbruk-havbruk
+- salt_1065_ku-arealplanlegging
+- 2025_osmundsen_fylkeskommune-akvakulturloven
+- 2026_hi_risikorapport
+retrieval_tags:
+- inshore_growth
+- locality_structure
+- closed_containment
+- biosecurity
+- traffic_light
+- municipal_planning
+- conversion_scheme
+curator_note: 'Folder id is undated_baerekraftig-arealbruk-havbruk. The preface dates
+  the report 20 November 2023, so year is 2023. Title is taken from the source PDF
+  name. No formal title page and no full author list appear anywhere in the 129-page
+  extract. Full page walk 2026-09-13. Chapter 3 is register analysis of municipalities
+  and the 20 largest companies, not qualitative case studies. Chapter 7 conversion
+  models and appendix 7.4 on MAB utilisation were read. Remaining unread: image-only
+  figures (1-13, 2.1-2.9, 3.1-3.21, 4.1-4.3, 5.1-5.8, 6.1-6.8, 7.1-7.20, 8.1, 10.1-10.4).
+  Table 5.1-5.3 cells are readable as signs. Table 7.1-7.3 and 8.1 are readable. One
+  appendix sentence on four-site utilisation is unfinished and is not used as a number.
+  Chapter 3.4''s ratio gloss for Karlsøy, Tromsø, Rødøy and Steigen contradicts the
+  later Samnanger and Træna gloss. Figure numbers 6.5 and 6.8 appear where 5.5 and
+  5.8 are meant.
+
+  # ai_verify: Cursor page verify 2026-09-13: PASS. See qa_report.json.
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Tonje Osmundsen
+source_pdf: Rapport_Baerekraftig-arealbruk-i-havbruksnaeringen.pdf

@@ -1,0 +1,61 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figures 1 and 2 are images and were not read as data.",
+    "This is an initial study of possible effects, not a later FAKS process evaluation."
+  ],
+  "claim_checks": [
+    {
+      "claim": "The 2010 administrative reform moved selected aquaculture planning, coordinating and decision-making tasks from the Directorate of Fisheries regional offices to County Councils.",
+      "supported": true,
+      "extract_quote": "On January 1, 2010, a reform of government administration (“forvaltningsreformen”) was adopted. ... selected planning, coordinating, and decision-making tasks were transferred from the regional offices of the Directorate of Fisheries to the regional County Councils",
+      "note": "Abstract and page 3 both state the transfer."
+    },
+    {
+      "claim": "Counts at the time of writing include 17 sea-bordering counties and 276 sea-bordering municipalities, of which 14 and 160 had salmon and trout licences. Decision units went from 7 Directorate offices to 14 coastal County Councils.",
+      "supported": true,
+      "extract_quote": "there are 17 sea-bordering counties and 276 sea-bordering municipalities, of which 14 and 160, respectively, have licenses for production of salmon and trout ... increase in the number of decision-making units from the Directorate’s seven regional offices to the fourteen coastal County Councils",
+      "note": "Counts and the 7-to-14 shift sit in the same opening section."
+    },
+    {
+      "claim": "International ICZM and EBM trends pointed toward larger geographic units and more integrated ecosystem management. The paper treats that opposition as the dilemma.",
+      "supported": true,
+      "extract_quote": "In contrast to this Norwegian shift toward increased regional autonomy and self-governance, there has been a concurrent international trend in marine and coastal management towards more integrated and ecosystem-based management approaches that advocate larger geographical scales",
+      "note": "Abstract names the ICZM versus EBM dilemma."
+    },
+    {
+      "claim": "De facto transfer of decision-making authority is limited, mainly administrative tasks. Specialised sector agencies remain largely unchanged. Horizontal coordination between counties is more likely to fall because units are smaller and more numerous.",
+      "supported": true,
+      "extract_quote": "The reform implies a very limited de facto transfer of decision-making authority that can be described as the mere delegation of administrative tasks. ... the role of the specialized sectors remains largely unchanged ... the horizontal coordination at the regional level between the counties is more likely to be reduced. Because the reform makes territorial units smaller and more numerous",
+      "note": "Conclusion section."
+    },
+    {
+      "claim": "For EBM the reform may hamper larger connected ecological areas. For local ICZM a small increase in municipal coordination is a step forward. Real devolution of authority to counties is said not to have occurred.",
+      "supported": true,
+      "extract_quote": "In terms of the goals of EBM, the reform may hamper the prospects of achieving a sustainable aquaculture industry, as it contravenes the need for larger, connected, ecologically sound areas ... Considering the reform in terms of local or regional ICZM, the small, but possibly significant, increase in horizontal coordination between the municipalities is a step forward ... it has not involved any real devolution of authority to the counties.",
+      "note": "Conclusion and the following page."
+    },
+    {
+      "claim": "Green-licence awards are cited as an example where biological expertise and coalition politics largely bypassed the county level.",
+      "supported": true,
+      "extract_quote": "the government’s announcement in 2013 of 45 so-called “green” salmon licenses ... assessment and allocation of applications for licenses are to be carried out by a centrally appointed expert group, and not by the counties. ... Strong biological expertise is required to assess the “green” applications, which partly explains the disregard of the county level in this process. The handing out of “green” licenses also has to be viewed in light of a disagreement within the governing coalition",
+      "note": "Body plus endnote 8."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. Governance assessment, not a stated farm-to-wild causal effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (municipal ICZM, county coordination of plans), A2 (county tasks under the Aquaculture Act after 2010). A6 not tagged: this paper is not the area-rent text (that is Sandersen 2015).",
+  "coi_ok": true,
+  "coi_note": "No competing-interest statement found. Corresponding author Ingrid Kvalvik, Nofima.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2014_sandersen_administrative-reform",
+  "verified_at": "2026-09-15T10:30:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "linear walk of extracted.md (page markers)",
+  "extract_coverage": "Read extracted.md from header through references. Figures 1 and 2 unread as images. Distinct from 2015_sandersen_access-to-sites."
+}

@@ -1,0 +1,80 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Figure 1 (TLS map) is an image placeholder and was not read as data.",
+    "Appendix interview guide and PA map are not in the extract.",
+    "One extract line writes Solun. Tables use Solund. Claims use Solund."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Municipalities designate or restrict coastal areas in the land-use part of the municipal master plan. The county coordinates localisation permits. 145 of 276 coastal municipalities host salmonid farming and related supply-chain activities.",
+      "supported": true,
+      "extract_quote": "municipalities are granted responsibility for coastal area planning ... authorized to restrict or expand specific coastal areas for salmon farming activities in the land-use section of their municipal master plans ... There are 145 out of 276 Norwegian coastal municipalities that host salmonid farming and related supply-chain activities",
+      "note": "County as coordinating agency is in the same opening section."
+    },
+    {
+      "claim": "The authors propose that municipalities hosting strong aquaculture clusters will be positive to expansion, regardless of environmental problems.",
+      "supported": true,
+      "extract_quote": "municipalities hosting strong aquaculture industry clusters (ACs) are likely to be positive to expansion, regardless of the environmental problems related to aquaculture.",
+      "note": "Stated as the main proposition P."
+    },
+    {
+      "claim": "Ten municipalities, 39 interviews (three to five each), five environmental indicators and five AC indicators, collapsed to a four-cell table.",
+      "supported": true,
+      "extract_quote": "We selected ten municipalities ... a total of 39 municipal representatives (three to five within each municipality). ... half, or more than half positive scores on the five indicators will result in high dependency",
+      "note": "Interview length 45 to 90 minutes and online format are on page 3."
+    },
+    {
+      "claim": "AC dependency almost, but not fully, accounts for positions. Environmental problems appear less predictive. Many high-AC municipalities stay positive despite environmental problems.",
+      "supported": true,
+      "extract_quote": "These results indicate that AC dependency almost, but not fully, accounts for the variation in municipal positions. It follows that environmental problems seem less likely than AC dependency to predict positions",
+      "note": "Page 6 wrap of Tables 2 to 4."
+    },
+    {
+      "claim": "Osterøy is the main high-AC, high-environment, negative-on-salmon case. It is in a red PA, close to Vossalaks, and has shifted toward trout and closed cages.",
+      "supported": true,
+      "extract_quote": "Osterøy alone is negative. ... Osterøy is situated in the innermost area of a fjord within a red production area ... close to Vossalaks ... decided to go for farmed trout. ... demand that salmon farming must take place only in closed cages.",
+      "note": "Interviewees did not view environmental problems as serious but used lice to justify no new salmon sites."
+    },
+    {
+      "claim": "Hareid is high environment, low AC. It turned negative in 2021 after large external companies entered popular coastal areas. It has no operating salmon sites and no Fund revenue.",
+      "supported": true,
+      "extract_quote": "the municipal attitudes changed abruptly in 2021 with the entry of several large-scale aquaculture companies ... there are no salmon farming sites in operation in Hareid. ... the local community receives no revenues from the Aquaculture Fund",
+      "note": "Table 4 places Hareid in Ed. Table 3 scores Fund as 0, low."
+    },
+    {
+      "claim": "Solund and Flatanger stay positive despite high environment scores and County Governor restraint advice, and use multi-use areas. Steigen is positive but less adamant, negative to multi-use, and describes Cermaq using both twin sites.",
+      "supported": true,
+      "extract_quote": "their positive stance on aquaculture expansion goes against the advice of the Country Governor ... resorted to allowing “multi-use areas” ... Cermaq is instead utilizing both areas to maximize production. ... Steigen was also negative to plan for “multi-use areas”, arguing that these were allowing aquaculture expansion in disguise.",
+      "note": "Country Governor is the paper's wording for County Governor."
+    },
+    {
+      "claim": "Frøya, Hammerfest and Smøla are low environment, high AC, positive. Frøya is said to deliver 20 percent of Norwegian salmon. Hitra comparison is about NOK 200 million. Alta and Tromsø are low AC, low environment, negative, tied to wild-salmon identity and a diverse local economy.",
+      "supported": true,
+      "extract_quote": "The local industry delivers 20 % of the Norwegian salmon supply ... The difference is about NOK 200 million in tax revenues ... Part of the explanation appear to lie in Alta’s historical ties to wild salmon fishing in the iconic Alta River. ... Tromsø, the negative position is not based on reported salmon lice problems. Rather, it appears to stem from the plurality of economic interests",
+      "note": "Smøla and Hammerfest County Governor criticism of protected-area planning is on page 9."
+    },
+    {
+      "claim": "The AC effect is weaker with large external firms and in larger diverse municipalities. The local farming company, more than the wider cluster, anchors support. If consolidation continues, municipalities could become more negative. Environmental arguments are sometimes used strategically.",
+      "supported": true,
+      "extract_quote": "it is the local salmon farming company itself that represents the anchor of support ... If the structural trends in aquaculture persist, with consolidation and increasingly large and centralised corporations, coastal municipalities could become increasingly negative ... environmental problems is still strategically drawn upon to legitimize opposition to aquaculture expansions that might negatively affect other interests",
+      "note": "Small growth-oriented municipalities are described as showing a strong AC effect regardless of AC type."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "mixed_within_study is used for the paper's own proposition that cluster dependency outweighs environmental problems. The proposition mostly holds, with Osterøy and Hareid as stated deviations. It does not refer to a farm-to-wild mortality effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A3 trade-offs and A6 municipal incentives remain. A1 added because multi-use zoning, master-plan designation, and County Governor plan objections are empirical findings, not only legal background.",
+  "coi_ok": true,
+  "coi_note": "All authors declare no conflict of interest. Funding is the Research Council of Norway. No project number in the extract. coi_declared set to false (no COI declared), matching the rest of this batch.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2025_rosendal_municipal-environment-economy",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all (pages 1-11)",
+  "extract_coverage": "Walked every <!-- page N --> block from page 1 through page 11, including framework, Tables 2 to 4, all case discussions, conclusion, funding, COI and references. Figure 1 unread as an image. Appendix not in extract."
+}

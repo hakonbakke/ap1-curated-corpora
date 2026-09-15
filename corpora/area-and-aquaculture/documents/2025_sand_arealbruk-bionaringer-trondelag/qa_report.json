@@ -1,0 +1,71 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "The section 3.2 aquaculture digest uses about 16 billion kroner. Table 1 uses 18.2 billion. Both are in the extract. Metadata and summary now distinguish them.",
+    "Annexes 1 to 5 are listed but not reproduced in this extract. Sector detail beyond the chapter 3 digests is not independently checked here.",
+    "A4 is added after the full walk because chapters 2 and 4 treat missing suitability knowledge as a main finding. The tag is conservative and extract-supported."
+  ],
+  "claim_checks": [
+    {
+      "claim": "SINTEF report 2025:00943, version 1.1, dated 31 October 2025, 52 pages plus five sector annexes. Client: Trøndelag County Municipality. ISBN 978-82-14-07302-7.",
+      "supported": true,
+      "extract_quote": "Rapportnummer 2025:00943 Versjon Versjon 1.1 7 av 52"
+    },
+    {
+      "claim": "The five bio-based industries are fisheries, aquaculture, agriculture, forestry and reindeer husbandry. The aim is a knowledge base for industrial policy so these industries keep necessary production area.",
+      "supported": true,
+      "extract_quote": "Denne rapporten diskuterer arealbruk, arealbehov, interessekonflikter og politiske dilemma i og rundt de fem biobaserte næringene fiskeri, havbruk, jordbruk, skogbruk og reindrift i Trøndelag."
+    },
+    {
+      "claim": "Trøndelag is given as about 42 200 km2 land, 10 860 km2 sea inside the baselines (16 percent of the national figure), and about 15 200 km2 sea out to the territorial limit. About 487 000 inhabitants (1.1.2025). Regional value creation 268 billion kroner in 2022 (latest county national accounts).",
+      "supported": true,
+      "extract_quote": "Trøndelag har om lag 42 200 kvadratkilometer med landareal, 10 860 kvadratkilometer med sjøareal innenfor grunnlinjen, og et samla sjøareal på om lag 15 200 kvadratkilometer om man går ut til territorialgrensen"
+    },
+    {
+      "claim": "Table 1 estimates the five industries plus processing and other ripples at 40.1 billion kroner, or 15.0 percent of regional value creation, and 34 480 jobs (13.6 percent of employment). Aquaculture is the largest value-creation sector in that table (18.2 billion kroner, 11 400 jobs). Agriculture is the largest employer (14 700 jobs, 13.6 billion kroner). The section 3.2 aquaculture digest instead uses about 16 billion kroner, which is the companion delrapport chapter 7 figure.",
+      "supported": true,
+      "extract_quote": "Verdikjedens verdiskaping som andel av samla verdiskaping i regionen 5,1 % 2,2 % 0,0 % 0,9 % 6,8 % 15,0 %"
+    },
+    {
+      "claim": "Table 2 states today's area pattern as intensive exclusive aquaculture on 0.5 percent (50 km2) of the coastal zone, intensive exclusive agriculture on 4 percent (1 630 km2) of land, forestry on about 9 percent (3 600 km2), reindeer extensive use on about 70 percent of land, and fisheries extensive use of almost all sea area.",
+      "supported": true,
+      "extract_quote": "Havbruk • Bruker 0,5 % (50 km2) av kystsonen til intensiv/eksklusiv oppdrett"
+    },
+    {
+      "claim": "Informants in every sector worry about future production-area access, mainly against other land- and sea-demanding public purposes. On land the largest conflicts over productive bio-industry area are said to come from outside the five sectors. At sea the same pattern includes petroleum, energy, shipping, tourism and nature. In addition, fisheries and aquaculture disagree on how precautionary one should be about aquaculture's effect on marine ecosystems that fisheries depend on.",
+      "supported": true,
+      "extract_quote": "Informanter fra samtlige bionæringer uttrykker bekymring for framtidig tilgang til produksjonsareal, først og fremst i møte med andre arealkrevende samfunnshensyn."
+    },
+    {
+      "claim": "Chapter 4 states that regional aquaculture growth is stopped first by environmental and fish-health problems in today's systems, not by a shortage of area for pens or regional feed. The authors repeat the companion figure that about 20 percent of sea in production areas 6 and 7 is occupied once sanitary distances are included (Skrove et al. 2023).",
+      "supported": true,
+      "extract_quote": "Regional vekst i havbruket stoppes ikke først og fremst av arealmangel, verken til anlegg eller til regional produksjon av fôr, men av miljø- og fiskehelseproblemer ved dagens driftsformer og teknologi."
+    },
+    {
+      "claim": "Table 4 growth ambitions named by informants: agriculture about 20 percent more food, forestry double harvest in Trøndelag, aquaculture a fivefold national production aim, fisheries maintain or slightly increase, reindeer maintain today's level.",
+      "supported": true,
+      "extract_quote": "Havbruk • Femdoble produksjonen på landsbasis, og øke fiskeforbruket nasjonalt"
+    },
+    {
+      "claim": "The authors propose building area work on the county bioeconomy coordination group, if all five industries are represented. Reindeer husbandry is named as missing from that group. They warn against placing working bio-production in the same rhetorical box as permanently lost built nature. Chapter 5.5 treats social licence, including Osen as a lice and disease buffer with little compensation.",
+      "supported": true,
+      "extract_quote": "Med unntak av reindriftsnæringa er alle bionæringer med i samordningsgruppa med en eller flere av sine interesseorganisasjoner."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable. The report maps area use, conflicts and county tools. It does not claim or contest a single causal farm-to-wild-fish effect as its result.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (regional and municipal area plans), A3 (cross-sector trade-offs), A4 (uneven suitability knowledge). A5 and A6 are touched (sanitary share, social licence, Osen) but are not the report's main object.",
+  "coi_ok": true,
+  "coi_note": "Client and quality-control names are stated. No competing-interest statement. coi_declared is unclear.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+  "verified_at": "2026-09-13T00:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "1-52",
+  "extract_coverage": "all 52 page markers. Sammendrag, methods, chapter 3 sector digests, chapters 4-5 (previously unread), references. Annexes 1-5 listed only."
+}

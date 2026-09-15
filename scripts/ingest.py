@@ -32,17 +32,12 @@ from openai import OpenAI
 load_dotenv()
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from corpus_paths import (  # noqa: E402
-    DATA_FILE,
-    DOCS_DIR,
-    doc_dir as corpus_doc_dir,
-    list_doc_ids,
-    strip_yaml_comments,
-)
+from corpus_paths import DEFAULT_SLUG, get_corpus, strip_yaml_comments  # noqa: E402
 
 EMBEDDING_MODEL = "text-embedding-3-large"
 EMBEDDING_DIM = 3072
-QA_INGEST_SKIPPED = DATA_FILE.parent / "qa_ingest_skipped.csv"
+def _qa_skipped_path(parquet: Path) -> Path:
+    return parquet.parent / f"qa_ingest_skipped_{parquet.stem}.csv"
 
 # Fields that feed build_retrieval_text (and thus embeddings).
 # Imported by sync_metadata_to_parquet.py to detect stale embeddings.
@@ -198,16 +193,16 @@ def row_from_doc(doc: dict, embedding: list[float]) -> dict:
     }
 
 
-def load_existing() -> pd.DataFrame | None:
-    if DATA_FILE.exists():
-        return pd.read_parquet(DATA_FILE)
+def load_existing(data_file: Path) -> pd.DataFrame | None:
+    if data_file.exists():
+        return pd.read_parquet(data_file)
     return None
 
 
-def save(df: pd.DataFrame) -> None:
-    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(DATA_FILE, index=False)
-    print(f"\nSaved {len(df)} documents -> {DATA_FILE}")
+def save(df: pd.DataFrame, data_file: Path) -> None:
+    data_file.parent.mkdir(parents=True, exist_ok=True)
+    df.to_parquet(data_file, index=False)
+    print(f"\nSaved {len(df)} documents -> {data_file}")
 
 
 def main() -> int:
@@ -225,7 +220,15 @@ def main() -> int:
         action="store_true",
         help="Allow a full rebuild that drops documents present in the existing parquet.",
     )
+    parser.add_argument(
+        "--corpus",
+        default=DEFAULT_SLUG,
+        help="Corpus slug under corpora/ (default: villaks). Writes that corpus parquet only.",
+    )
     args = parser.parse_args()
+    paths = get_corpus(args.corpus)
+    data_file = paths.parquet
+    qa_skipped = _qa_skipped_path(data_file)
 
     api_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not api_key and not args.dry_run:
@@ -236,15 +239,15 @@ def main() -> int:
 
     # Find document folders to process (aligned with corpus_paths.list_doc_ids)
     if args.doc:
-        target = corpus_doc_dir(args.doc)
+        target = paths.doc_dir(args.doc)
         if not target.is_dir():
             print(f"ERROR: Document folder not found: {target}", file=sys.stderr)
             return 1
         doc_dirs = [target]
     else:
-        doc_dirs = [corpus_doc_dir(doc_id) for doc_id in list_doc_ids()]
+        doc_dirs = [paths.doc_dir(doc_id) for doc_id in paths.list_doc_ids()]
 
-    print(f"Processing {len(doc_dirs)} document(s) from {DOCS_DIR}...")
+    print(f"Processing {len(doc_dirs)} document(s) from {paths.docs_dir} ({paths.slug})...")
 
     docs: list[dict] = []
     skipped: list[tuple[str, str]] = []
@@ -266,7 +269,7 @@ def main() -> int:
             print(build_retrieval_text(doc)[:400])
         return 0
 
-    existing = load_existing()
+    existing = load_existing(data_file)
     if existing is not None and not args.doc and len(docs) < len(existing):
         existing_ids = set(existing["doc_id"].astype(str))
         loaded_ids = {d["doc_id"] for d in docs}
@@ -276,10 +279,10 @@ def main() -> int:
         for doc_id in dropped:
             if doc_id not in {r["doc_id"] for r in rows}:
                 rows.append({"doc_id": doc_id, "reason": "missing from successful load (dropped on rebuild)"})
-        pd.DataFrame(rows).to_csv(QA_INGEST_SKIPPED, index=False)
+        pd.DataFrame(rows).to_csv(qa_skipped, index=False)
         print(
             f"ERROR: full rebuild would drop {len(dropped)} document(s) "
-            f"({len(existing)} → {len(docs)}). Wrote {QA_INGEST_SKIPPED}. "
+            f"({len(existing)} → {len(docs)}). Wrote {qa_skipped}. "
             "Re-run with --force to overwrite anyway.",
             file=sys.stderr,
         )
@@ -309,7 +312,7 @@ def main() -> int:
         final_df = new_df
         print(f"Created new store: {len(final_df)} documents.")
 
-    save(final_df)
+    save(final_df, data_file)
     return 0
 
 

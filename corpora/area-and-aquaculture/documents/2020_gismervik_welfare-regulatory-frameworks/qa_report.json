@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "A2 is a thin tag. County licence allocation is institutional background, and localisation appears only as a closing recommendation. The paper is not a siting study."
+  ],
+  "claim_checks": [
+    {
+      "claim": "This review compares Norwegian health and welfare law for broiler chickens and farmed salmon. It is not a siting paper. 66 552 000 broilers and over 872 631 000 farmed fish in 2018.",
+      "supported": true,
+      "extract_quote": "This review compares the Norwegian legal health and welfare frameworks for broiler chickens and farmed salmon",
+      "note": "Production counts are in the introduction."
+    },
+    {
+      "claim": "Chicken farmers face the Animal Welfare Act and the Food Act. Salmon farmers must also relate to the Aquaculture Act, several ministries, and several agencies.",
+      "supported": true,
+      "extract_quote": "The salmon farmers must in addition relate to the Aquaculture Act, different ministries and several agencies with different objec-",
+      "note": "Ministries named are NFD, LMD and HOD."
+    },
+    {
+      "claim": "The Aquaculture Act aims to promote profitability inside the limits of sustainability. It has no direct health and welfare text except that farms can be ordered to move if environment and fish health require it.",
+      "supported": true,
+      "extract_quote": "The aim of this law is to promote the profitability of the aquaculture industry inside the limitations of sustainability.",
+      "note": "The move-order exception is in the same paragraph."
+    },
+    {
+      "claim": "The authors identify 36 regulations. Salmon regulation is more complex, with potentially conflicting aims and less positive welfare phrasing.",
+      "supported": true,
+      "extract_quote": "We have identiﬁed altogether 36 regulations (Table 1)",
+      "note": "Complexity and conflicting aims are in the abstract and discussion."
+    },
+    {
+      "claim": "Salmon rules are less strict on daily securing and mortality recording. There is no specified slaughterhouse control of high-density salmon production comparable to broilers above 33 kg per m2.",
+      "supported": true,
+      "extract_quote": "When producing more than 200 chickens with a higher animal density than 33 kg m−2, it is mandatory to control the number of reported mortalities",
+      "note": "Salmon 'increased mortality' is defined as significantly more than normal."
+    },
+    {
+      "claim": "Chicken welfare courses require approval and name infection prevention. Salmon courses must be repeated at least every fifth year. Neither requires senior leaders to take a course.",
+      "supported": true,
+      "extract_quote": "Salmon producers must repeat the course when needed, at least every 5th year, which is not specified for chicken producers.",
+      "note": "Key findings on courses are in the welfare-course section."
+    },
+    {
+      "claim": "The Animal Welfare Act has no dispensation paragraph. The Food Act does. Future frameworks should avoid unintended downgrading of fish health and welfare.",
+      "supported": true,
+      "extract_quote": "the Animal Welfare Act has no possibility of dispensation, meaning exceptions, and treats fish and other animals equally.",
+      "note": "Food Act dispensation is stated in the introduction."
+    },
+    {
+      "claim": "County municipalities allocate aquaculture licences (new sites, size changes) after consulting other bodies. Closing pages recommend that welfare inform licences and localisation.",
+      "supported": true,
+      "extract_quote": "the most relevant is allocation of aquaculture licenses (new sites, size changes, etc.), which they decide after consulting other governmental bodies",
+      "note": "This is background, not a locality-clearance analysis."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. This is a legal comparison, not a causal-effect study.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A2 only, and thinly. County licence allocation and a closing localisation recommendation. Not A1, A3 or A5. The paper is welfare law, not siting.",
+  "coi_ok": true,
+  "coi_note": "Authors declare no conflict of interest. Funding is RCN 267664 REGFISHWELH. coi_declared set to no.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2020_gismervik_welfare-regulatory-frameworks",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md: abstract, introduction and production counts, three-law institutional map, 36-regulation table, daily care and mortality, courses, slaughterhouse density rules, breeding and light, discussion recommendations, acknowledgements, and no-conflict declaration."
+}

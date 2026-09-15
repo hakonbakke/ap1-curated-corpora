@@ -1,0 +1,80 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Heavy OCR damage in Table 1 and some licence-count and capacity figures. Those values were omitted or marked [OCR] rather than reconstructed.",
+    "Four figures are image placeholders and were not read as data.",
+    "First-pass metadata had treated COI as unclear. The extract end states no conflicts of interest and names RCN 267572 and FHF 901391."
+  ],
+  "claim_checks": [
+    {
+      "claim": "A 2014 farmer survey named lack of sea area as the greatest growth challenge. The authors still say the current limit is mainly production licences and traffic-light growth, not sea space as such.",
+      "supported": true,
+      "extract_quote": "the large majority of salmon farmers maintained that lack of available space was the biggest problem ... the current limitation is primarily on the number of production licenses and the strict regime established by the traffic light system, not on the available sea space as such",
+      "note": "Both the survey citation and the later bound sit in the extract."
+    },
+    {
+      "claim": "Physical pens are small (about 59 km2 in 2010). Anchoring occupation is about 420 km2, later about 520 km2, slightly more than 0.5 percent of inshore coastal area.",
+      "supported": true,
+      "extract_quote": "a marginal area occupation of approximately 59 km2 for the 900 licenses (in 2010) ... the total equals around 420 km2 or less than 0.5% ... A more recent update shows that the area occupation as per 2020 seems to be around 520 km2 ... or slightly more than 0.5%",
+      "note": "Transport and fishing-buffer figure is [OCR] damaged and was not used as a hard number."
+    },
+    {
+      "claim": "Sanitary distance (2.5 km between farms, 5 km to a plant) is the binding spatial constraint. An illustrative 5 km zone occupies about 20 percent of coastal-zone waters.",
+      "supported": true,
+      "extract_quote": "each farm should have at least 2.5 km to the next farm and minimum 5 km distance to a processing plant ... all 900 localities were shown with a sanitary 5 km zone. This implies an area occupation of 20% of the waters in the coastal zone, and this is, in other words, t e most important restriction on furt er growt",
+      "note": "OCR damage in the last clause does not change the 20 percent figure."
+    },
+    {
+      "claim": "A locality licence needs municipal plan accordance and sector permissions. Counties coordinate. FSA, Fisheries Directorate and Coastal Administration can block.",
+      "supported": true,
+      "extract_quote": "The counties coordinate and grant the locality permit and the full aquaculture license. However, a locality can only be allocated if permissions are granted according to different sector laws. This gives some sector directorates a de facto veto right",
+      "note": "Municipal plans to one nautical mile beyond baselines are stated in the same section."
+    },
+    {
+      "claim": "Production rose from 474 000 tons (1999) to 1 350 000 tons (2019) on 966 localities. Hordaland used 99 percent of approved localities, Finnmark 73 percent. Density more than four versus 0.5 per 100 km2. A Hordaland-intensity coast could raise national production 3.3 times.",
+      "supported": true,
+      "extract_quote": "In 1999, total production was 474,000 tons ... In 2019, total production was 1350,000 tons, spread over 966 localities ... Hordaland was top of the list, with 99% of approved localities used over the year, and Finnmark at the bottom, with 73% ... from more than four per 100 km2 in Hordaland, to 0.5 per 100 km2 in Finnmark ... could have increased 3.3, times if the production across the country was as area-intensive as in Hordaland.",
+      "note": "1999 locality count and in-year active-use count left as [OCR]."
+    },
+    {
+      "claim": "About 900 localities total about 3 million tons MAB. With about one third fallow, potential is about 2 million tons MAB. Doubling by 2030 is impossible under then growth rules, but theoretically possible within already allocated areas.",
+      "supported": true,
+      "extract_quote": "the 900 localities are restricted to a total production of ca. 3 million tons MAB ... around 1 3 of the present localities must lay fallow at any given time, which means that the actual production potential is around 2 million tons MAB ... doubling within ten years is impossible with the present regime.",
+      "note": "Discussion restates that a doubling is theoretically possible within already allocated areas."
+    },
+    {
+      "claim": "A full central overhaul of planning is called unlikely. Only three planning changes are judged likely to increase aquaculture area. Inter-municipal planning is the most promising inside-the-box option.",
+      "supported": true,
+      "extract_quote": "this would imply a full-scale overhaul of the present allocation system, as well as a dramatic change of the current planning system ... not a very likely development ... only three of the possible changes are likely to increase the areas set aside for aquaculture ... increased inter-municipal planning seems the most promising.",
+      "note": "The three options are larger planning areas, auctioned blocks, and marine industrial parks."
+    },
+    {
+      "claim": "After a rejected 40 percent resource-rent proposal, government offered NOK 0.40 per kg and cut the municipal Fund share to 40 percent (state 60 percent). Resource rent is cited as about 20 billion NOK per year.",
+      "supported": true,
+      "extract_quote": "the government decided to offer the municipalities a production fee of NO  0.40 per kg of salmon ... municipalities now shall receive only 40% of the income paid for new licenses and new capacity, while the state retain 60% ... generating a resource rent ... of ca. 20 billion NO  per year",
+      "note": "The 40 percent resource-tax proposal is the NOU 2019 suggestion rejected by governing parties."
+    },
+    {
+      "claim": "Competing uses include fisheries, shipping, tourism, recreation, marine conservation (about 3 percent, ambition 7 percent), 53 national salmon rivers and 27 fjords, energy, and military use (about 30 percent of Troms inshore).",
+      "supported": true,
+      "extract_quote": "the Navy have exclusive rights to ca. 30% of the inshore coastal area ... only 3% of the coastal zone is protected ... ambition is to increase this to 7% ... 53 national salmon rivers and 27 national salmon fjords",
+      "note": "Fishing-tourism registration above 1100 is also in the extract."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper maps constraints and policy options. It does not claim or contest a stated causal effect of farms on wild fish.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 planning, A2 licences and locality clearance, A3 competing coastal uses, A5 sanitary density, A6 municipal fees and Fund. A3 added because other users and vetoes are a main explanation of the paradox.",
+  "coi_ok": true,
+  "coi_note": "Authors declare no conflicts of interest. Funding is RCN 267572 E40 and FHF 901391.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2020_hersoug_whats-the-clue",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all (linear walk, no page markers)",
+  "extract_coverage": "Read the full extracted.md linearly from header through references. Table 1 and some counts treated as [OCR]. Four figure images unread."
+}

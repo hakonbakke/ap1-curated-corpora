@@ -1,0 +1,113 @@
+title: 'Sustainable Governance of Norwegian Aquaculture and the Administrative Reform: Dilemmas and Challenges'
+year: 2014
+doi: 10.1080/08920753.2014.942028
+url: https://doi.org/10.1080/08920753.2014.942028
+authors:
+- Hakan T. Sandersen
+- Ingrid Kvalvik
+journal: Coastal Management
+publisher: Taylor and Francis
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A2
+geography:
+- Norway
+environment:
+- coastal_zone
+- county
+- municipality
+time_period: 2010-2014
+regulatory_context:
+- county_aquaculture_authority
+- municipal_coastal_plan
+- Norway_Aquaculture_Act
+- Norway_Planning_Building_Act
+- mixed
+evidence_type: policy_assessment
+study_design:
+- document_analysis
+- literature_review
+data_source:
+- published_literature
+- mixed
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coastal_planning
+- licensing_access
+- area_allocation
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- initial study of possible effects, not a later process evaluation
+- green-licence example is political as well as institutional
+key_claims:
+- The 2010 administrative reform moved selected aquaculture planning, coordinating and decision-making tasks from the Directorate of Fisheries regional offices to County Councils, aiming at self-governance through decentralisation.
+- International ICZM and EBM trends pointed the other way, toward larger geographic units and more integrated ecosystem management. The paper treats that opposition as the dilemma.
+- Counts at the time of writing include 17 sea-bordering counties and 276 sea-bordering municipalities, of which 14 and 160 had salmon and trout licences. Decision units went from 7 Directorate offices to 14 coastal County Councils.
+- De facto transfer of decision-making authority is described as limited, mainly administrative tasks. Specialised sector agencies remain largely unchanged. Horizontal coordination between counties is more likely to fall because units are smaller and more numerous.
+- For EBM the reform may hamper larger connected ecological areas. For local ICZM a small increase in municipal coordination is a step forward. Real devolution of authority to counties is said not to have occurred.
+- Conclusion: the reform is more likely to improve municipal-level ICZM and less likely to facilitate larger cross-county EBM. Counties as broad democratic institutions may still help coordinate municipal coastal plans.
+claims_about_uncertainty:
+- Effects are assessed as possible consequences, not measured processing times or later FAKS statistics.
+claims_about_policy_or_management:
+- Green-licence awards are cited as an example where biological expertise and coalition politics largely bypassed the county level.
+- A further step toward ICZM would require greater delegation of authority to County Councils, preferably in units that match ecological production zones.
+methodological_limitations:
+- Theory-led initial study. Figures 1 and 2 are images. Not a 15-year evaluation of the 2010 transfer.
+rag_summary: >
+  Sandersen and Kvalvik (2014) assess the 2010 Norwegian administrative reform
+  that moved selected aquaculture tasks from the Directorate of Fisheries to
+  County Councils. The reform aimed at regional self-governance. International
+  ecosystem-based coastal management was moving toward larger units. They find
+  limited real devolution, a risk of more fragmented aquaculture management
+  because decision units multiplied from 7 to 14, a possible gain for municipal
+  ICZM, and a weaker prospect for cross-county EBM. This is an initial
+  document-and-theory study, not a later process evaluation.
+coi_declared: unclear
+coi_notes: >
+  No competing-interest statement found in the extract. Corresponding author
+  is Ingrid Kvalvik, Nofima.
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: >
+  Peer-reviewed governance analysis with named legal counts and a clear
+  dilemma. Does not measure later county performance.
+controversy_role: foundational
+relevance_signal: high
+relevance_rationale: >
+  States the 2010 county-versus-sector dilemma that Osmundsen and Olsen 2025
+  later evaluate in practice.
+included_because: >
+  Added by Thord Håkon Bakke on 2026-09-15. The paper is the named 2010-reform
+  text on aquaculture and coastal governance, not a side mention of counties.
+related_documents_supporting:
+- 2025_osmundsen_fylkeskommune-akvakulturloven
+- 2005_jentoft_challenges-myths-czm
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2025_osmundsen_fylkeskommune-akvakulturloven
+- 2015_sandersen_access-to-sites
+- 2011_gullestad_arealbruk-havbruk
+retrieval_tags:
+- administrative_reform_2010
+- county_council
+- EBM
+- ICZM
+curator_note: >
+  Extract walked 2026-09-15. First author appears as Hakan T. Sandersen in
+  YAML ascii. Extract header uses Haakan with ring-A. Figures 1 and 2 unread
+  as images. Expert Committee 2011 is Gullestad in this room.
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-15'
+inclusion_decided_by: Thord Håkon Bakke
+source_pdf: Sustainable Governance of Norwegian Aquaculture and the Administrative Reform  Dilemmas and Challenges (1).pdf
+
+# ai_verify: Cursor page verify 2026-09-15: PASS. See qa_report.json.

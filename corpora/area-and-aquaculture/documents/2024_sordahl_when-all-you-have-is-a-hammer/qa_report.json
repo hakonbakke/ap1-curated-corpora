@@ -1,0 +1,56 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "PDF filename year 2023 is the received date. Journal volume is 2024.",
+    "Competing-interest statement uses singular author.",
+    "Single-region case. The paper does not measure whether thicker plans reduced user conflict."
+  ],
+  "claim_checks": [
+    {
+      "claim": "The paper studies five generations of Tromso coastal-zone plans over 35 years and asks how government frames the need for integration.",
+      "supported": true,
+      "extract_quote": "planning in Norway, spanning 35 years and five generations ... in 19911, 2000, 20082, 2015 and 2022.",
+      "note": "Abstract and methods. Tromso spelling in YAML is ascii."
+    },
+    {
+      "claim": "Vocabulary shifted from coordination (2000, 2008) to comprehensiveness and integration (2015) and almost solely comprehensive in 2022.",
+      "supported": true,
+      "extract_quote": "In the plans adopted in 2000 and 2008, the terms comprehensiveness or integration were not used. Rather, these plans talked about the need for coordination. In 2015, however, comprehensiveness was introduced along with integration, and in 2022, comprehensive almost became the sole term used.",
+      "note": "Discussion of the five generations."
+    },
+    {
+      "claim": "The 2015 plan description was twice the 2000 plan. The 2022 plan was triple. Later plans are more standardised.",
+      "supported": true,
+      "extract_quote": "the plan description of 2015 was twice the size of that of the 2000 plan, and that of the 2022 plan was triple its size. ... The most recent generations of the plan are also more standardised",
+      "note": "Same paragraph."
+    },
+    {
+      "claim": "Tourism and recreation moved conflict lines closer to land. The Water Regulation (to one nautical mile from the baseline) was added as an integration tool and as a new coordination demand.",
+      "supported": true,
+      "extract_quote": "The commercial tourist industry and recreational use are an increasing concern, where the shore areas have become more important and have moved the conflict lines closer to land. The incorporation of the Water Regulation (the Norwegian implementation of the Water Framework Directive) in the municipal planning was also addressed as a tool for more integrated use and protection of the water resources (including marine water within one nautical mile from the baseline), but also required coordination with a new regulation and institutional setup.",
+      "note": "Same stretch as the vocabulary shift."
+    },
+    {
+      "claim": "Paradox of integration: seeing more things in unison does not necessarily reduce complexity. Failure to hinder spatial conflicts becomes an argument for yet more comprehensiveness. Comprehensiveness is intuitively positive but hollow.",
+      "supported": true,
+      "extract_quote": "The planning systems’ difficulty of hindering spatial conflicts in the coastal zone becomes not a basis for a discussion on whether ‘comprehensiveness’ is a fruitful ideal ... Rather, it becomes a foundation for yet more ‘comprehensiveness’ and for more topics to be included in the planning systems’ fold. ... ‘comprehensiveness’ (or ‘integration’) is an intuitively positive, yet hollow, term",
+      "note": "Hollow-term sentence is a few paragraphs earlier. Paradox is named in the paper title and abstract."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. Document study of planning frames, not a farm-to-wild causal claim.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (municipal and inter-municipal plans), A3 (conflict lines, tourism, water protection), A4 (integration as the knowledge-and-ambition frame that postpones testing whether the tool works).",
+  "coi_ok": true,
+  "coi_note": "Authors declare no competing financial interests. Funding RCN 294799 and CLEAN. One sentence uses singular author.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2024_sordahl_when-all-you-have-is-a-hammer",
+  "verified_at": "2026-09-15T10:30:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "linear walk of extracted.md (page markers)",
+  "extract_coverage": "Read extracted.md from header through references. This article is Paper II in 2026_sordahl_nar-alt-skal-med. Both folders kept."
+}

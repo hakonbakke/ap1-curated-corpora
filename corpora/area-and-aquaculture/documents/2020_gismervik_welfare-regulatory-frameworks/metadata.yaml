@@ -1,0 +1,154 @@
+title: Comparison of Norwegian health and welfare regulatory frameworks in salmon
+  and chicken production
+year: 2020
+doi: 10.1111/raq.12440
+url: https://doi.org/10.1111/raq.12440
+authors:
+- Kristine Gismervik
+- Brit Tørud
+- Tore S. Kristiansen
+- Tonje Osmundsen
+- Kristine Vedal Størkersen
+- Christian Medaas
+- Marianne Elisabeth Lien
+- Lars Helge Stien
+journal: Reviews in Aquaculture
+publisher: John Wiley & Sons
+language: english
+source_type: peer_reviewed
+document_type: review_article
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A2
+geography:
+- Norway
+environment:
+- not_applicable
+time_period: 1974-2020
+regulatory_context:
+- Norway_Aquaculture_Act
+evidence_type: review
+study_design:
+- literature_review
+- legal_doctrinal
+data_source:
+- published_literature
+wild_or_farmed_focus: farmed
+outcome_domain:
+- fish_health_welfare
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- legal comparison, not an empirical welfare outcome study
+- slaughterhouse rules for the two sectors are not fully compared
+- regulations change, so the snapshot is dated to about 2019-2020
+key_claims:
+- This review compares Norwegian health and welfare law for broiler chickens and farmed
+  salmon. It is not a siting, locality, or coastal-planning paper. Reviews in Aquaculture
+  (2020) 12, 2396-2410. Open access.
+- Norway produced 66 552 000 broiler chickens in 2018 and over 872 631 000 farmed
+  fish. Cleaner fish are out of scope. The introduction contrasts 74 serious terrestrial
+  infectious-disease outbreaks in 2018 with 163 new pancreas-disease cases and 13
+  infectious salmon anaemia outbreaks in aquaculture the same year.
+- Chicken farmers must comply with the Animal Welfare Act and the Food Act, described
+  as governed by the same ministry family and supervised by the Food Safety Authority.
+  Salmon farmers must also relate to the Aquaculture Act, several ministries (Trade,
+  Industry and Fisheries; Agriculture and Food; Health and Care Services), and several
+  agencies with different aims.
+- The Aquaculture Act is stated as aiming to promote profitability inside the limits
+  of sustainability. It has no direct references to animal health and welfare, except
+  that farms can be ordered to move if environment and fish health require it.
+- The authors identify 36 regulations based on the three laws. Salmon regulation is
+  described as more complex, with potentially conflicting aims and less positive welfare
+  phrasing.
+- Compared with chicken, salmon rules are less strict on daily securing of animals
+  and on mortality recording and definition. Chicken rules define mortality (including
+  euthanasia) and ask for cause of death where possible. Salmon 'increased mortality'
+  is 'significantly more than normal.' There is no specified slaughterhouse control
+  of high-density salmon production of the kind described for broilers above 33 kg
+  per m2 (chicken maximum 36 kg per m2).
+- Mandatory welfare courses differ. Chicken courses require approval and state infection
+  prevention as a topic. Salmon courses must be repeated at least every fifth year.
+  Neither rule requires high-level company leaders to take a welfare course.
+- The Animal Welfare Act has no dispensation paragraph and treats fish and other animals
+  equally. The Food Act does have a dispensation paragraph. The authors say future
+  farmed-fish frameworks should avoid unintended downgrading of fish health and welfare.
+- County municipalities are mentioned as allocating aquaculture licences (new sites,
+  size changes) after consulting other bodies. That is background institutional fact,
+  not an analysis of area designation. The closing pages recommend that welfare and
+  health measures inform licences, production changes, and localisation.
+claims_about_uncertainty:
+- A full comparison of slaughterhouse rules is stated as out of scope.
+- What counts as good welfare and health for salmon is described as lacking consensus.
+- The incoming EU animal-health law (2021) is described as focused on disease prevention
+  and as not covering welfare.
+claims_about_policy_or_management:
+- The Food Safety Authority should be present where decisions affect infection pressure
+  and fish welfare, including industry growth, infrastructure, and technology.
+- The salmon lice regulation is based only on the Food Act. Treatment evaluation focuses
+  on treatment success and resistance, not fish-welfare outcome.
+- The closing pages say welfare and health measures could inform licences, production
+  changes, and localisation. That is a recommendation, not a siting study.
+methodological_limitations:
+- Narrative legal comparison. Not a coded systematic review of outcomes.
+- Cleaner fish are explicitly out of scope.
+- EU Animal Health law is discussed as incoming (2021) and as not covering welfare.
+rag_summary: 'Gismervik and colleagues (2020) compare Norwegian health and welfare
+  regulation for farmed salmon and broiler chickens. Salmon producers face three laws
+  and several agencies. The Aquaculture Act is described as a profitability-and-sustainability
+  statute with almost no welfare text. Daily care, mortality recording, high-density
+  slaughterhouse control, and welfare-course content are stricter or more specific
+  for chicken. The paper is animal-health and welfare law. It is adjacent to this
+  area room only because the same Aquaculture Act and county licence role sit beside
+  site decisions. It is not a siting paper.
+
+  '
+coi_declared: no
+coi_notes: 'Funded by Research Council of Norway project 267664 REGFISHWELH. The authors
+  declare no conflict of interest. Thanks to Steinar Johnsen at the Food Safety Authority
+  for advice on interpreting the framework.
+
+  '
+consensus_signal: mixed
+quality_signal: medium
+quality_rationale: 'Peer-reviewed open-access legal comparison with a regulation table.
+  It does not measure welfare outcomes or area decisions.
+
+  '
+controversy_role: peripheral
+relevance_signal: medium
+relevance_rationale: 'Adjacent. Useful as context for how the Aquaculture Act and
+  multi-agency control treat fish welfare. It does not analyse access to sites, municipal
+  plans, or locality clearance.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. Animal health and welfare regulation,
+  salmon versus chicken. Adjacent to area because the Aquaculture Act and county licence
+  role appear in the institutional map. It is not a siting or coastal-planning paper.
+
+  '
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- animal_welfare
+- Aquaculture_Act
+- legal_comparison
+- chicken
+curator_note: 'Full extract walked 2026-09-13. Reviews in Aquaculture (2020) 12, 2396-2410.
+  Received 6 January 2020, accepted 30 April 2020. Open access. Production counts
+  for 2018 (66 552 000 broilers, over 872 631 000 farmed fish) are as stated, not
+  checked here. A2 is kept only for the county licence role and the closing recommendation
+  that welfare inform licences and localisation. This is not a siting paper.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Gismervik_2020_Comparison of Norwegian health and welfare regulatory frameworks
+  in salmon and chicken production.pdf
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 1 soft). See qa_report.json.

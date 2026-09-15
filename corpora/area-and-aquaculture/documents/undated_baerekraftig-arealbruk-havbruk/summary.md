@@ -1,0 +1,27 @@
+### Background
+BluePlanet commissioned this report on sustainable area use for inshore salmon and trout. The preface is dated Stavanger, 20 November 2023. Ragnar Tveterås is named as project leader. The preface speaks of authors in the plural, but no other names appear anywhere in the extract. Funders include aquaculture companies, DnB, Sjømat Norge, Rogaland County Municipality, Stavanger Municipality and a related technology fund. The authors say a large production increase (including a widely stated 5 million tonnes by 2050) is not possible with 2023 knowledge, technology and practice.
+
+### Methods
+The report mixes Fisheries Directorate and aquaculture-register series on localities and biomass (2006, 2012, 2017, 2022), a long historical regulation table, a biology chapter built on published health and lice literature, regressions on biological and economic outcomes for 2012-2022, conceptual conversion and partial-closure models, and legal-policy commentary on siting and the 2023 Aquaculture Committee. Meetings and interviews with industry and administration are mentioned in the preface. No interview transcripts or informant counts appear later. Chapter 11 refers readers back to the executive summary. Other authors are not named on the pages read.
+
+### Main findings
+Salmonid production is stated as rising from 150 000 tonnes in 1990 to 1 650 563 tonnes round weight in 2022. After 2006, approved grow-out localities fell from 1 164 to 969, while locality MAB rose from 2 176 681 to 3 521 311 tonnes, fastest in the north. Almost 300 new localities arrived after 2012 and replaced a similar number removed. The 20 largest companies accounted for 74.94 percent of the MAB increase. Density of sites and of live biomass per km2 is highest in production areas 2 and 3. Mean distance between active sites stays about 3-5 km in most areas. About one third of localities are said to be fallow at any time.
+
+Chapter 3's municipal section is register comparison, not qualitative case studies. Flatanger and Rødøy have the highest locality-MAB per inhabitant among the 20 largest farming municipalities. Kvinnherad and Austevoll barely raised locality MAB from 2006 to 2022. After 2017, Trøndelag and counties further north supplied 87 percent of national production growth. Vestland still grew 22 percent despite company-MAB cuts in areas 3 and 4.
+
+Intensification in open pens is tied to high mortality, handling for delousing, bacterial and gill disease, and lice effects on wild salmon that vary along the coast. About 436 million farmed salmon in the sea at the end of 2022 are set against 458 000 estimated returning wild salmon. Thirteen closed or semi-closed plants are said to have held live fish. Experience is mixed.
+
+Regressions are reported as showing worse mortality, feed factor and lice with higher area density, higher cost per kg with area density, and better margins with more biomass on the individual locality. Tables give signs, not coefficients. The authors say economics favour fewer, larger sites, while 2012-2022 technology punishes area-level concentration.
+
+They recommend converting open MAB to closed MAB. The chapter 7.1 base case is 3 tonnes closed MAB per tonne open MAB. Closing the 10 percent of sites with the highest lice infection pressure is modelled as raising remaining open-pen margins from about 15 to over 30 percent, with diminishing returns after that. At a 1:1 conversion the closed-pen NPV is negative unless the long-run salmon price exceeds 100 kroner per kg HOG at a 10 percent required return. They argue new knowledge and practice must break those average links.
+
+On law they want clearer sector roles in siting, state planning guidelines that ease dispensation from old municipal plans, easier sites in green traffic-light areas, and they want shared biomass caps kept. Company permit capacity and locality capacity are said not to hang together. Locality capacity is almost four times company capacity. They criticise Havbruksutvalget for over-central, sector-only planning and for questioning shared biomass caps without studying extra locality need. They also argue that repeated traffic-light cuts have not improved modelled lice outcomes in some areas. They support a licence-leasing idea. Firebreaks are treated as having a debated biosecurity effect.
+
+### Uncertainty and limitations
+Regressions are averages from past practice. Closed and deep-farming systems are early and expensive. Conversion results are conceptual and sensitive to cash flow, capex, required return and salmon price. Locality counts before 1999 are estimated. Chapter 3.4's gloss on MTB-to-sea-area ratios contradicts itself for four municipalities. Most figures are images. Funding is concentrated in the industry. The extract has no formal title page and no full author list.
+
+### Relevance to this corpus
+It is the inshore-growth text that treats area, density, biosecurity and incentives as one problem. Chapter 8 speaks to planning and locality clearance (A1, A2). Chapter 3 and 5 speak to density (A5). Tax, municipal income and local ownership speak to A6. Missing cage-type data and immature closed technology speak to A4.
+
+### Relation to other documents
+Should be read with Gullestad 2011 (area structure), Hersoug et al. 2020 (planning, technology, money), SALT 1075 and 1065 (area use and coastal plans), Osmundsen and Olsen 2025 (county clearance), and HI 2026 (risk scores). It comments directly on the 2023 Aquaculture Committee.

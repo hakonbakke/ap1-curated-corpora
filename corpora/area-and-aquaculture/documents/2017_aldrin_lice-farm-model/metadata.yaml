@@ -1,0 +1,170 @@
+title: A stage-structured Bayesian hierarchical model for salmon lice
+  populations at individual salmon farms. Estimated from multiple farm data sets
+year: 2017
+doi: 10.1016/j.ecolmodel.2017.05.019
+url: https://doi.org/10.1016/j.ecolmodel.2017.05.019
+authors:
+- M. Aldrin
+- R. B. Huseby
+- A. Stien
+- R. N. Grøntvedt
+- H. Viljugrein
+- P. A. Jansen
+journal: Ecological Modelling
+publisher: Elsevier
+language: english
+source_type: peer_reviewed
+document_type: modelling_study
+abstract_available: true
+corpus: area-and-aquaculture
+priority_questions:
+- A5
+geography:
+- Norway
+environment:
+- modelled_environment
+time_period: 2011-2014 (stocked 2011-2013, slaughtered 2012-2014)
+regulatory_context:
+- none
+evidence_type: model
+study_design:
+- modelling
+data_source:
+- farm_data
+wild_or_farmed_focus: farmed
+outcome_domain:
+- disease_or_lice
+evidence_direction: not_applicable
+effect_scale: site_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- distance kernel imported from Aldrin et al. 2013 rather than re-estimated
+- 32 farms, not the full national farm set
+- assumed stage-age of neighbouring adult females
+- salinity unused because detail was insufficient
+key_claims:
+- The paper estimates a mechanistic stage-structured Bayesian hierarchical model of
+  salmon lice (Lepeophtheirus salmonis) at individual salmon farms, including the
+  hierarchical structure of full-scale farming. Ecological Modelling 359 (2017) 333-348.
+  Open access under CC BY 4.0.
+- Parameters were estimated from cage-level production and lice-count data on 32 marine
+  salmon farms in Norway. Twelve of those farms sit just north of Frøya in Mid-Norway.
+  Salmon were stocked between 2011 and 2013 and slaughtered about one and a half years
+  later, between 2012 and 2014. Cages per farm ranged from 3 to 12 (mean 7.7). The
+  last 3-11 months of data for five farms were held out to evaluate conditional
+  predictions.
+- External recruitment uses a seaway-distance-weighted sum of adult female lice at
+  neighbouring farms. The distance function g(d) = exp(-0.618 d^0.568) is taken from
+  Aldrin et al. (2013), which the authors say was estimated from more than eight years
+  of data on all 1400 Norwegian salmon farms active in that earlier period. The kernel
+  is not re-estimated here.
+- Neighbouring adult females are assumed to be at stage-age 10. The authors call that
+  choice rather arbitrary and say results were insensitive to it.
+- The average proportion of recruitment that is internal is 25 percent (credible interval
+  23-26 percent), median 19 percent, farm range about 4 to 73 percent. Internal recruitment
+  was more important where adult-female abundance was high, especially on farms without
+  neighbouring farms. Sixteen of the 32 farms had at least one neighbour within 3.54 km
+  seaway. The authors say this internal share is below Aldrin et al. (2013) and is
+  closer to a median of 18 percent in Adlandsvik (2015), a hydrodynamic simulation
+  of 591 farms.
+- Expected values fitted observed chalimus, adult female, and other mobile stages
+  reasonably well. Predictions for the held-out months were consistent with the observational
+  data.
+- At 10 degrees C, ten days after bath treatment, expected cumulative mortality in
+  pre-adult or adult stages was 0.99 for hydrogen peroxide (interval 0.97-1.00), 0.94
+  for deltamethrin or cypermethrin (0.89-0.98), and 0.75 for azamethiphos (0.64-0.86).
+  The authors say they found no evidence of density-dependent reproductive rates (Allee
+  effect). The reproduction-rate parameter they report is 493 (interval 482-498). Daily
+  cleaner-fish mortality is 0.028 (interval 0.022-0.034), implying about a one-month
+  half-life. At a 10 percent cleaner-fish to salmon ratio, daily lice mortality from
+  cleaner fish is 0.079 (0.060-0.099), and adult-lice life expectancy falls from 8.2
+  to 5.2 days.
+- The introduction cites earlier work that large-scale host density dependence of
+  pathogen transmission has been shown in salmon farming. Those density statements
+  are citations, not new national density estimates in this extract. The paper does
+  not analyse coastal plans or municipal siting.
+claims_about_uncertainty:
+- The assumed stage-age of 10 for neighbouring adult females is described as rather
+  arbitrary. The authors say results were insensitive to that choice.
+- Internal recruitment here is lower than in Aldrin et al. (2013). The authors attribute
+  part of the difference to model structure and to different reporting-based farm
+  data in the earlier paper.
+- Salinity was unused because the authors say it was unavailable in sufficient detail.
+- Treatment effects are hard to compare because assumed duration varies by treatment
+  and temperature, and because lice develop resistance.
+claims_about_policy_or_management:
+- The authors argue the model may improve strategies to control the parasite, including
+  by quantifying cleaner-fish effect in full-scale farms. They do not analyse coastal
+  plans, licences, or municipal siting.
+- They note that the internal-versus-external recruitment debate has a bearing on
+  motivation for controlling adult-female lice at the farm level.
+methodological_limitations:
+- Open-access farm-level Bayesian model on 32 farms supplied by three companies, not
+  a census of all Norwegian sites.
+- Between-farm pressure uses a previously published distance kernel.
+- No coastal-planning, licence, or area-allocation analysis.
+rag_summary: 'Aldrin et al. (2017) estimate a stage-structured Bayesian hierarchical
+  model of salmon lice at individual farms from cage-level data on 32 Norwegian farms
+  (stocked 2011-2013, slaughtered 2012-2014). Twelve farms sit just north of Frøya.
+  The seaway-distance kernel is taken from Aldrin et al. (2013). Internal recruitment
+  averaged 25 percent of recruitment (interval 23-26 percent) and mattered more on
+  farms with high adult-female abundance and few neighbours. Held-out months matched
+  observations reasonably well. The paper is a farm lice population model, not a coastal-planning
+  study.
+
+  '
+coi_declared: unclear
+coi_notes: 'No competing-interests statement in the extract. Open access under CC
+  BY 4.0. Funded by the Norwegian Seafood Research Fund, FHF 900970 (population model
+  for salmon lice at cage and site level). Marine Harvest, Salmar and Måsøval supplied
+  production and lice-count data. Authors at Norwegian Computing Center, NINA, INAQ
+  AS, and Norwegian Veterinary Institute.
+
+  '
+consensus_signal: mixed
+quality_signal: strong
+quality_rationale: 'Peer-reviewed mechanistic model with a held-out prediction check
+  and stated posterior intervals for internal recruitment and treatment mortality.
+  The distance kernel is inherited. Sample is 32 farms. Not a planning evaluation.
+
+  '
+controversy_role: peripheral
+relevance_signal: medium
+relevance_rationale: 'Adjacent because the extract uses seaway distances, neighbouring
+  farms, and a distance-based external infection pressure. The object is lice counts
+  at the farm, not who designates coastal area.
+
+  '
+included_because: 'Selected by Ragnar Tveterås. The room link is between-farm lice
+  pressure that declines with seaway distance. This is not a retagging as a planning
+  or site-access paper.
+
+  '
+related_documents_supporting:
+- 2011_aldrin_isa-farm-spread
+- 2015_aldrin_pd-space-time
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2015_aldrin_pd-space-time
+- 2011_aldrin_isa-farm-spread
+retrieval_tags:
+- salmon_lice
+- seaway_distance
+- neighbourhood_farms
+- farm_population_model
+- adjacent_not_planning
+curator_note: 'Full extract walked 2026-09-13. Ecological Modelling 359 (2017) 333-348.
+  Received 11 January 2017, accepted 23 May 2017, available online 23 June 2017. Published
+  title joins the subtitle with a dash after farms. Formula pages were walked for
+  methods and results, not re-derived. Adlandsvik (2015) is cited for an 18 percent
+  hydrodynamic comparison, not as a planning analysis in this paper.
+
+  '
+curator_review_status: ai_verified
+added_by: cursor_grok_curate
+added_date: '2026-09-13'
+inclusion_decided_by: Ragnar Tveterås
+source_pdf: Aldrin et al_2017_A stage-structured Bayesian hierarchical model for salmon
+  licepopulations at individual salmon farms.pdf
+# ai_verify: Cursor page verify 2026-09-13: PASS (0 critical, 1 soft). See qa_report.json.

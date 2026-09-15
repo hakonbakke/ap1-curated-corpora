@@ -1,0 +1,62 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "This curation walked title pages, Norwegian and English summaries, table of contents, introduction and chapter 7. Appended articles were not re-walked page by page.",
+    "Paper II is also filed as 2024_sordahl_when-all-you-have-is-a-hammer.",
+    "YAML title uses ascii Nar and motet to avoid parse issues. Live title is Når alt skal med."
+  ],
+  "claim_checks": [
+    {
+      "claim": "The dissertation studies how integrated coastal-zone planning is created as a concept and as tools, at the intersection of politics and administration. Empirical focus is nearshore sea in Norway.",
+      "supported": true,
+      "extract_quote": "Denne avhandlingen undersøker hvordan konseptet helhetlig planlegging skapes, og hvordan det utvikler seg fra en idé til noe som kommer til uttrykk gjennom konkrete planverktøy. Empirisk tar avhandlingen utgangspunkt i norsk kystsoneplanlegging, og er forankret i en kritisk tilnærming til planlegging som en aktivitet i skjæringspunktet mellom politikk og forvaltning.",
+      "note": "Norwegian sammendrag. English summary restates the same."
+    },
+    {
+      "claim": "Area is a limited good. Fisheries, aquaculture, tourism, energy and nature conservation compete for much the same water.",
+      "supported": true,
+      "extract_quote": "Areal er et begrenset gode, og når mange ulike bruksområder skal benytte seg av mer eller mindre de samme områdene så er en konsekvens voksende spenninger og flere konflikter mellom forskjellige typer aktiviteter. Det kan være aktiviteter som fiskeri (både rekreasjons- og kommersielt), akvakultur, turisme, energiproduksjon og naturvern, for å nevne noe.",
+      "note": "Introduction."
+    },
+    {
+      "claim": "Two approaches to holism sit in tension. A scientific one simplifies and standardises. A political one expands what planning must include. Holism is normative, not a technical solution.",
+      "supported": true,
+      "extract_quote": "Avhandlingen viser hvordan det oppstår spenninger mellom to ulike tilnærminger til helhet. En vitenskapelig, som søker å forenkle og standardisere, og en politisk, som stadig utvider hva planleggingen skal favne. ... Helhet må forstås som noe normativt, og ikke som en nøytral eller teknisk løsning.",
+      "note": "Sammendrag."
+    },
+    {
+      "claim": "Bringing more themes under one umbrella breeds more complexity. Decisions still happen, so conflicts can be handled without the conflict picture disappearing. Final municipal competence sits with the municipal council. Planning as a technical tool cannot deliver holism by itself.",
+      "supported": true,
+      "extract_quote": "vedtak fattes og etableringer skjer tross alt selv om det er konflikter. Sett i et slikt lys kan det sies at konfliktene håndteres selv om konfliktbildet består. ... ligger den endelige vedtakskompetansen på det politiske nivået, altså kommunestyret i tilfellet kommunal planlegging. Planlegging som et teknisk instrument kan ikke levere helheten selv. Planlegging er også politikk.",
+      "note": "Chapter 7 closing."
+    },
+    {
+      "claim": "Holism can still serve as a shared flexible frame if ambitions stay sober. The same breadth makes it dangerous because it looks unifying and legitimate.",
+      "supported": true,
+      "extract_quote": "Likevel er det er nødvendig med en viss edruelighet når det kommer til ambisjonene om hva helhet skal bidra med. Samtidig er det også denne bredden i forståelsen av konseptet som gjør helhet farlig, ikke først og fremst fordi begrepet er uklart, men fordi det virker samlende, positivt og legitimt.",
+      "note": "Chapter 7 defence of the concept."
+    },
+    {
+      "claim": "Institutional sustainability is named as a fourth sustainability dimension: clear roles, predictability, participation, and decisions that give direction. A lasting gap between holism as goal and the need to prioritise may weaken that.",
+      "supported": true,
+      "extract_quote": "den fjerde, og hittil kanskje litt oversette bærekraftsdimensjonen, nemlig institusjonell bærekraft. Institusjonell bærekraft innebærer i grove trekk stabile, legitime og læringsdyktige institusjoner ... tydelige roller mellom stat, fylke, kommune og sektorer, forutsigbarhet, medvirkning, og at (mer eller mindre) omforente planvedtak fattes som gir retning til framtidig utvikling. Kan det være at et vedvarende gap mellom mål og resultat, her forstått som målet om helhet versus de reelle forutsetningene hvor avveininger må gjøres, kan bidra til å svekke den institusjonelle bærekraften til planleggingen?",
+      "note": "Chapter 7. The last sentence is posed as a question, which metadata files as such."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. Article-based PhD on planning concepts, not a stated farm-to-wild causal effect.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (municipal coastal planning), A3 (competing uses of limited sea), A4 (holism as the frame that postpones naming who yields). A0 is not a tag.",
+  "coi_ok": true,
+  "coi_note": "No separate competing-interest page in the pages walked. Author affiliation Nofima and UiT. Paper II states RCN 294799 and CLEAN.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2026_sordahl_nar-alt-skal-med",
+  "verified_at": "2026-09-15T10:30:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "title pages, Norwegian and English summaries, TOC, introduction, chapter 7",
+  "extract_coverage": "Partial. Kappa walk as stated. Appended articles not re-walked in full. Paper II is curated separately."
+}

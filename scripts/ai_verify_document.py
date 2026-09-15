@@ -8,8 +8,13 @@ Writes documents/<doc_id>/qa_report.json and updates curator_review_status:
 Usage:
     python scripts/ai_verify_document.py --doc 2025_jae_jansen-lice-effects-returns
     python scripts/ai_verify_document.py --all
+    python scripts/ai_verify_document.py --corpus area-and-aquaculture --all
 
 Does NOT invent new claims — only audits existing curation against the extract.
+
+Default corpus is villaks. Pass --corpus area-and-aquaculture for the Areal room.
+The API path still caps extract length (AP1_VERIFY_EXTRACT_CHARS). Large Areal
+reports need a Cursor page walk, not this truncated API check.
 """
 
 from __future__ import annotations
@@ -30,10 +35,11 @@ from openai import RateLimitError
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from corpus_paths import (  # noqa: E402
+    DEFAULT_SLUG,
     STATUS_AI_DRAFT,
     STATUS_AI_VERIFIED,
-    doc_dir,
-    list_doc_ids,
+    CorpusPaths,
+    get_corpus,
     strip_yaml_comments,
 )
 
@@ -196,8 +202,15 @@ def _set_status_in_yaml(raw: str, status: str) -> str:
     return raw.rstrip() + f"\n\ncurator_review_status: {status}\n"
 
 
-def verify_document(client: OpenAI, doc_id: str, write_status: bool = True) -> dict:
-    d = doc_dir(doc_id)
+def verify_document(
+    client: OpenAI,
+    doc_id: str,
+    write_status: bool = True,
+    paths: CorpusPaths | None = None,
+) -> dict:
+    if paths is None:
+        paths = get_corpus()
+    d = paths.doc_dir(doc_id)
     extract_path = d / "extracted.md"
     meta_path = d / "metadata.yaml"
     summary_path = d / "summary.md"
@@ -302,6 +315,11 @@ def main() -> int:
         help="With --all: skip docs that already have qa_report.json",
     )
     parser.add_argument("--no-write-status", action="store_true")
+    parser.add_argument(
+        "--corpus",
+        default=DEFAULT_SLUG,
+        help="Corpus slug (default: villaks). Use area-and-aquaculture for Areal.",
+    )
     args = parser.parse_args()
 
     if not args.doc and not args.all:
@@ -311,12 +329,13 @@ def main() -> int:
         print("ERROR: OPENAI_API_KEY not set", file=sys.stderr)
         return 1
 
+    paths = get_corpus(args.corpus)
     client = OpenAI()
-    docs = [args.doc] if args.doc else list_doc_ids()
+    docs = [args.doc] if args.doc else paths.list_doc_ids()
     failed = 0
     ok = 0
     for i, doc_id in enumerate(docs):
-        d = doc_dir(doc_id)
+        d = paths.doc_dir(doc_id)
         if not (d / "extracted.md").exists() or not (d / "metadata.yaml").exists():
             if args.all:
                 print(f"SKIP {doc_id}: missing extract or metadata")
@@ -326,7 +345,10 @@ def main() -> int:
             continue
         try:
             report = verify_document(
-                client, doc_id, write_status=not args.no_write_status
+                client,
+                doc_id,
+                write_status=not args.no_write_status,
+                paths=paths,
             )
             if not report.get("pass"):
                 failed += 1

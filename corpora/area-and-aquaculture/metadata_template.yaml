@@ -1,0 +1,131 @@
+# METADATA TEMPLATE
+# Corpus: area-and-aquaculture (Areal og havbruk)
+#
+# Fill from extracted.md only. Do not invent DOI, numbers, authors, or findings.
+# If a value is not in the extract, leave empty, use unclear, or omit the list item.
+# Prefix uncertain free text with [UNVERIFIED].
+# Priority questions are filled in a second pass after the question set is written.
+
+title: ""
+year: null
+doi: ""
+url: ""
+authors: []
+journal: ""
+publisher: ""
+language: ""
+# english | norwegian | other
+
+source_type: ""
+# peer_reviewed | report | government_report | expert_group_report
+# white_paper | thesis | conference_paper | dataset | commentary | response
+
+document_type: ""
+# research_article | review_article | systematic_review | modelling_study
+# methods_paper | commentary | policy_report | risk_assessment
+# monitoring_report | legal_analysis | evaluation_report
+
+abstract_available: unclear
+# yes | no | unclear
+
+corpus: area-and-aquaculture
+
+priority_questions: []
+# A1-A6 only. A0 is the lead Ask, not a tag, until selectors confirm.
+
+geography: []
+# Norway | Trondelag | Helgeland | Nord_Norge | British_Columbia | global | mixed
+
+environment: []
+# coastal | fjord | coastal_zone | sea_area | municipality | county | modelled_environment | not_applicable
+
+time_period: ""
+
+regulatory_context: []
+# Norway_Aquaculture_Act | Norway_Planning_Building_Act | municipal_coastal_plan
+# intermunicipal_coastal_plan | county_aquaculture_authority | locality_licence
+# none | mixed
+
+evidence_type: ""
+# empirical_observational | empirical_experimental | review | model
+# methods | commentary | policy_assessment | legal_analysis | mixed
+
+study_design: []
+# statistical_analysis | case_study | interview_study | document_analysis
+# literature_review | expert_assessment | modelling | legal_doctrinal | mixed
+
+data_source: []
+# published_literature | interviews | public_registers | spatial_data
+# farm_data | official_statistics | mixed
+
+wild_or_farmed_focus: ""
+# farmed | wild | both | not_applicable
+
+outcome_domain: []
+# area_allocation | coastal_planning | licensing_access | coexistence_tradeoffs
+# knowledge_in_decisions | spatial_density_productivity | disease_or_lice
+# municipal_economy_environment | fish_health_welfare | nature_values | mixed
+
+evidence_direction: not_applicable
+# supports_effect | weak_support | mixed_within_study | no_effect_detected
+# contradicts_effect | critiques_methodology | not_applicable
+# Use not_applicable unless the paper claims or contests a stated causal effect.
+
+effect_scale: ""
+# site_level | municipal_level | regional_level | national_level | both | not_applicable
+
+uncertainty_emphasis: ""
+# low | moderate | high | very_high | not_stated
+
+main_uncertainty_sources: []
+
+key_claims: []
+claims_about_uncertainty: []
+claims_about_policy_or_management: []
+methodological_limitations: []
+
+rag_summary: >
+  Neutral retrieval paragraph. What the document is, method, main stated findings
+  about area, aquaculture, planning, licensing, or adjacent dilemmas, and a bound.
+
+coi_declared: unclear
+# yes | no | unclear
+
+coi_notes: >
+  Only what the extract states about funding or affiliations.
+
+consensus_signal: ""
+quality_signal: ""
+# strong | medium | weak
+
+quality_rationale: >
+  Method strengths and limits visible in the extract.
+
+controversy_role: ""
+# foundational | supportive | critical | rebuttal | bridge_between_positions
+# peripheral | not_applicable
+
+relevance_signal: ""
+# high | medium | low
+
+relevance_rationale: >
+  Role in an area-and-aquaculture room.
+
+included_because: >
+  Why a named human selected this file into the room, in two or three sentences.
+  Do not only restate the abstract.
+
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags: []
+
+curator_note: >
+
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: "2026-09-13"
+inclusion_decided_by: ""
+# Ragnar Tveterås | Marit Schei Olsen | Tonje Osmundsen
+source_pdf: ""

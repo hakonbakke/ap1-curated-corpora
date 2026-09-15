@@ -1,0 +1,317 @@
+{
+  "created_at": "2026-09-15T132500Z",
+  "parquet": "C:\\Users\\ThordHåkonBakke\\OneDrive - Blue Planet AS\\Koding\\ap1-curated-corpora\\data\\area-and-aquaculture.parquet",
+  "n_docs": 39,
+  "top_k": 8,
+  "oos_threshold": 0.28,
+  "mode": "non_researcher",
+  "room": "areal",
+  "cases": [
+    {
+      "id": "A0",
+      "query": "Hva begrenser vekst i havbruk på norskekysten: mangel på ledig sjøflate, produksjons- og lokalitetstillatelser, kommunal utpeking av brukbar sjø, eller biologi (lus, sykdom, tetthet, velferd)?",
+      "status": "WARN",
+      "top_k": [
+        "2020_hersoug_whats-the-clue",
+        "salt_1075_arealbruk-havbruk",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "2015_rettslig_rammeverk-havbruk",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "2025_sand_arealbruk-bionaringer-trondelag",
+        "2022_hersoug_ten-licensing-systems",
+        "salt_1110_lokalitetssoknader"
+      ],
+      "scores": {
+        "2020_hersoug_whats-the-clue": 0.6095,
+        "salt_1075_arealbruk-havbruk": 0.5724,
+        "2025_sand_havbrukets-arealbehov-trondelag": 0.5708,
+        "2015_rettslig_rammeverk-havbruk": 0.5685,
+        "2019_mikkelsen_arealplanlegging-sjo": 0.5559,
+        "2025_sand_arealbruk-bionaringer-trondelag": 0.5469,
+        "2022_hersoug_ten-licensing-systems": 0.5361,
+        "salt_1110_lokalitetssoknader": 0.5291
+      },
+      "best_score": 0.6095,
+      "out_of_scope": false,
+      "must_hits": [
+        "2020_hersoug_whats-the-clue",
+        "2025_sand_havbrukets-arealbehov-trondelag"
+      ],
+      "must_misses": [
+        "2015_sandersen_access-to-sites",
+        "2011_gullestad_arealbruk-havbruk",
+        "2025_kulmambetova_spatial-density-productivity",
+        "undated_baerekraftig-arealbruk-havbruk",
+        "2025_osmundsen_fylkeskommune-akvakulturloven",
+        "2005_jentoft_challenges-myths-czm"
+      ],
+      "coverage": 0.25,
+      "adjacent_in_topk": [],
+      "synthesis": "Havbrukets vekst langs norskekysten er et komplekst tema som involverer flere faktorer, og det er uenighet blant forskere om hva som faktisk begrenser denne veksten. Det er fire hoveddiagnoser som ofte trekkes frem i litteraturen: mangel på ledig sjøflate, produksjons- og lokalitetstillatelser, kommunal utpeking av brukbar sjø, og biologiske faktorer som lus, sykdom, tetthet og velferd.\n\nEn gruppe studier, inkludert Hersoug og kolleger (2020), argumenterer for at den største begrensningen ikke er mangel på ledig sjøflate, men heller produksjons- og lokalitetstillatelser, samt trafikklyssystemet. Trafikklyssystemet, som ble innført i 2017, regulerer veksten i 13 produksjonsområder basert på lakselusnivåer og deres potensielle påvirkning på villaks. Dette systemet kan begrense kapasiteten i områder som får rød status, noe som betyr at veksten stoppes eller reduseres. Hersoug og kolleger peker også på at fysisk plassbehov for oppdrettsanlegg er relativt lite, og at det er sanitære avstandsregler som ofte begrenser hvor nye lokaliteter kan etableres.\n\nPå den andre siden argumenterer Skrove og kolleger (2023) for at kommunal utpeking av brukbar sjø er en betydelig flaskehals. Kommunene har stor makt over hvilke områder som kan brukes til havbruk gjennom sine kystsoneplaner. Noen kommuner er tilbakeholdne med å avsette mer sjøareal til oppdrett på grunn av lav lokal økonomisk avkastning og andre konkurrerende interesser som turisme, fiskeri og naturvern. Dette skaper en situasjon der selv om det finnes ledig sjøflate, kan den ikke nødvendigvis brukes til havbruk.\n\nBiologiske faktorer som lakselus, sykdommer, og fiskens velferd er også viktige begrensninger. Sand og Misund (2025) understreker at disse faktorene ofte er de mest umiddelbare hindringene for vekst i dagens åpne merdsystemer. Lakselus er en spesielt kritisk faktor, da høye lusenivåer kan føre til at lokaliteter får rødt lys i trafikklyssystemet, noe som igjen begrenser produksjonskapasiteten.\n\nDet er også en diskusjon om hvorvidt nye teknologier, som lukkede systemer eller offshore oppdrett, kan løse noen av disse problemene. Mikkelsen og kolleger (2019) antyder at slike teknologier kan være komplementære til åpne merder, men at de ennå ikke er i en posisjon til å erstatte dagens systemer fullt ut. De peker også på at politiske og miljømessige betingelser kan hindre en rask overgang til slike nye teknologier.\n\nTil slutt er det viktig å nevne at kunnskap ofte blir utsatt eller ujevnt anvendt i planleggingen og behandling av lokalitetssøknader, som Eriksen og kolleger (2026) påpeker. Dette kan føre til at beslutninger om lokaliteter ikke alltid er basert på en helhetlig vurdering av interesser og kunnskap.\n\nSamlet sett er det høy grad av usikkerhet om hva som mest effektivt kan løsne flaskehalsene for vekst i havbruk. En konkret endring som kunne endre bildet, ville være en reform av trafikklyssystemet for å inkludere flere miljøindikatorer enn bare lakselus, noe som kunne gi en mer nyansert vurdering av miljøpåvirkningen og dermed muligens åpne for mer differensiert vekst.",
+      "villaks_pattern_in_synth": false,
+      "villaks_debate_opener": false
+    },
+    {
+      "id": "A1",
+      "query": "Når kommunen peker ut, eller nekter å peke ut, sjøareal til havbruk, hva avgjør dette: selve plankartet, senere dispensasjon, eller innsigelse og avslag fra sektormyndighet etter at kartet er vedtatt?",
+      "status": "PASS",
+      "top_k": [
+        "salt_1065_ku-arealplanlegging",
+        "salt_1110_lokalitetssoknader",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "2015_rettslig_rammeverk-havbruk",
+        "2021_sandersen_kystsone-helgeland",
+        "salt_1075_arealbruk-havbruk",
+        "2025_sand_arealbruk-bionaringer-trondelag",
+        "2017_kvalvik_ocean-coastal-management"
+      ],
+      "scores": {
+        "salt_1065_ku-arealplanlegging": 0.5622,
+        "salt_1110_lokalitetssoknader": 0.5496,
+        "2019_mikkelsen_arealplanlegging-sjo": 0.5485,
+        "2015_rettslig_rammeverk-havbruk": 0.533,
+        "2021_sandersen_kystsone-helgeland": 0.5142,
+        "salt_1075_arealbruk-havbruk": 0.4933,
+        "2025_sand_arealbruk-bionaringer-trondelag": 0.4912,
+        "2017_kvalvik_ocean-coastal-management": 0.4828
+      },
+      "best_score": 0.5622,
+      "out_of_scope": false,
+      "must_hits": [
+        "2017_kvalvik_intermunicipal-coastal-planning or 2017_kvalvik_ocean-coastal-management",
+        "2021_sandersen_kystsone-helgeland",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "salt_1065_ku-arealplanlegging",
+        "2015_rettslig_rammeverk-havbruk"
+      ],
+      "must_misses": [
+        "2025_osmundsen_fylkeskommune-akvakulturloven",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "2024_sordahl_when-all-you-have-is-a-hammer"
+      ],
+      "coverage": 0.625,
+      "adjacent_in_topk": [],
+      "synthesis": "Når en kommune skal peke ut eller nekte å peke ut sjøareal til havbruk, er det flere faktorer som spiller inn. Det er ikke enighet om hva som er den avgjørende faktoren, og ulike studier peker på forskjellige elementer som kan være avgjørende i denne prosessen. \n\nEn viktig faktor er selve plankartet, som er en del av kommunens arealplanlegging. Ifølge Solås og kolleger (2015) kan kommunene gjennom sine planer stenge sjøareal for havbruk. Dette betyr at hvis et område ikke er avsatt til havbruk i plankartet, kan det være vanskelig å få tillatelse til å etablere en oppdrettslokalitet der. Kommunene har ofte vært tilbakeholdne med å avsette mer areal til havbruk, delvis på grunn av lav lokal økonomisk avkastning fra slike prosjekter.\n\nPå den annen side er det også dispensasjoner som kan spille en rolle. Eriksen og kolleger (2023) påpeker at det noen ganger gis dispensasjoner fra planene, noe som kan tillate havbruk i områder som opprinnelig ikke var avsatt til dette formålet. Dette kan skape en situasjon der aktører venter på dispensasjon i stedet for å foreslå nye lokaliteter i planene. Slike dispensasjoner kan imidlertid være kontroversielle og føre til konflikter med andre interesser.\n\nInnsigelser og avslag fra sektormyndigheter er en tredje faktor som kan påvirke utfallet. Ifølge Eriksen og kolleger (2026) er Mattilsynet den mest hyppige avslagsmyndigheten, ofte på grunn av risiko for lakselusinfeksjoner. Andre sektormyndigheter kan også komme med innsigelser basert på miljøhensyn, som for eksempel beskyttelse av kysttorsk eller villaks. Disse innsigelsene kan være avgjørende for om en lokalitet får tillatelse eller ikke, selv om området er avsatt til havbruk i plankartet.\n\nDet er også en diskusjon rundt hvorvidt mangelen på tilgjengelig sjøareal faktisk er en begrensende faktor for vekst i havbruksnæringen. Mikkelsen og kolleger (2019) argumenterer for at det er andre faktorer, som lakselus og sykdommer, som i større grad begrenser veksten enn selve tilgangen på areal. Dette synet støttes av Sand og kolleger (2025), som hevder at miljø- og fiskehelseproblemer er de største hindringene for vekst i regionen Trøndelag, snarere enn mangel på sjøareal.\n\nSamlet sett er det klart at det er flere faktorer som kan påvirke hvorvidt et sjøareal blir avsatt til havbruk. Kommunenes plankart, muligheten for dispensasjoner, og innsigelser fra sektormyndigheter spiller alle en rolle, men det er ikke enighet om hvilken faktor som er mest avgjørende. Det er også viktig å merke seg at miljømessige og helsemessige utfordringer ofte blir sett på som større hindringer for vekst enn selve tilgangen på areal.\n\nKonklusjonen er at det er medium tillit til at ingen enkeltfaktor alene avgjør om et sjøareal blir avsatt til havbruk. For å få en klarere forståelse av hva som faktisk er avgjørende, ville det være nyttig med mer forskning på hvordan disse faktorene samhandler i praksis, samt en grundigere evaluering av hvordan sektormyndigheters innsigelser påvirker beslutningsprosessen.",
+      "villaks_pattern_in_synth": false,
+      "villaks_debate_opener": false
+    },
+    {
+      "id": "A2",
+      "query": "Hvordan former produksjonstillatelse, lokalitetstillatelse og fylkesbehandling etter akvakulturloven hvem som får en lokalitet, og hvor i den stabelen saken dør?",
+      "status": "PASS",
+      "top_k": [
+        "salt_1110_lokalitetssoknader",
+        "2015_rettslig_rammeverk-havbruk",
+        "2025_osmundsen_fylkeskommune-akvakulturloven",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "salt_1065_ku-arealplanlegging",
+        "2022_hersoug_ten-licensing-systems",
+        "salt_1075_arealbruk-havbruk",
+        "2025_sand_arealbruk-bionaringer-trondelag"
+      ],
+      "scores": {
+        "salt_1110_lokalitetssoknader": 0.5808,
+        "2015_rettslig_rammeverk-havbruk": 0.5674,
+        "2025_osmundsen_fylkeskommune-akvakulturloven": 0.5486,
+        "2019_mikkelsen_arealplanlegging-sjo": 0.5334,
+        "salt_1065_ku-arealplanlegging": 0.5261,
+        "2022_hersoug_ten-licensing-systems": 0.521,
+        "salt_1075_arealbruk-havbruk": 0.5013,
+        "2025_sand_arealbruk-bionaringer-trondelag": 0.4911
+      },
+      "best_score": 0.5808,
+      "out_of_scope": false,
+      "must_hits": [
+        "2022_hersoug_ten-licensing-systems",
+        "2025_osmundsen_fylkeskommune-akvakulturloven",
+        "salt_1110_lokalitetssoknader",
+        "2015_rettslig_rammeverk-havbruk"
+      ],
+      "must_misses": [
+        "2020_hersoug_whats-the-clue",
+        "2011_gullestad_arealbruk-havbruk",
+        "2014_sandersen_administrative-reform",
+        "2019_schutz_strategic-marine-planning"
+      ],
+      "coverage": 0.5,
+      "adjacent_in_topk": [],
+      "synthesis": "Akvakulturens krav på norsk kystnære havområder er et komplekst og omstridt tema, der flere faktorer spiller inn når det gjelder hvem som får tillatelse til å etablere oppdrettsanlegg, og hvor i prosessen en søknad kan stoppe opp. Det er flere konkurrerende forklaringer på hva som begrenser vekst og sameksistens for oppdrettsanlegg, og disse forklaringene er ofte i konflikt med hverandre.\n\nEn av de sentrale utfordringene er knyttet til mangel på tilgjengelige sjøarealer som er egnet for akvakultur. Ifølge Eriksen og kolleger (2026) er egnede lokaliteter en knapp ressurs, og produksjonsambisjoner stopper ofte opp på grunn av utfordringer med å få godkjent lokalitetssøknader. Dette kan skyldes flere faktorer, inkludert biologiske bekymringer som lakselus og sykdom, samt kommunale planer som begrenser hvilke områder som kan brukes til akvakultur. I tillegg kan det være juridiske hindringer, der ulike myndigheter har vetorett over lokalitetsgodkjenninger, som beskrevet av Solås og kolleger (2015).\n\nEn annen forklaring peker på at det ikke nødvendigvis er mangel på fysisk plass som er problemet, men heller hvordan arealene er regulert og forvaltet. Hersoug og kolleger (2020) argumenterer for at den faktiske fysiske okkupasjonen av sjøarealene er relativt liten, og at det er forvaltningen og reguleringene som skaper flaskehalser. De påpeker at systemet er fragmentert og komplekst, med mange aktører som har innflytelse på beslutningsprosessen, noe som kan føre til ineffektivitet og forsinkelser.\n\nDet er også en diskusjon om hvorvidt kommunene har tilstrekkelige insentiver til å tilrettelegge for akvakultur. Ifølge Mikkelsen og kolleger (2019) er det kommunale insentivsystemet svakt, og mange kommuner er tilbakeholdne med å avsette mer areal til oppdrett på grunn av lav lokal avkastning. Selv om det finnes økonomiske ordninger som Havbruksfondet, er disse ofte uregelmessige og gir ikke nødvendigvis en stabil inntekt for kommunene.\n\nI tillegg til disse strukturelle og økonomiske faktorene, spiller også biologiske hensyn en stor rolle. Mattilsynet er ofte den myndigheten som oftest avslår søknader, hovedsakelig på grunn av risiko for lakselusinfeksjoner, som nevnt av Eriksen og kolleger (2026). Luseproblematikken er også en del av det nasjonale trafikklyssystemet, som regulerer produksjonskapasiteten i ulike områder basert på risikoen for negativ påvirkning på villaks.\n\nTil slutt er det en pågående debatt om hvordan kunnskap brukes i planleggingsprosesser. Eriksen og kolleger (2023) peker på at det ofte er ufullstendige avklaringer mellom akvakultur og andre interesser, og at miljøpåvirkninger ikke alltid blir tilstrekkelig vurdert i konsekvensutredninger. Dette kan føre til at søknader blir avslått eller forsinket, da det er uklart hvordan ulike interesser skal veies mot hverandre.\n\nSamlet sett er det flere konkurrerende forklaringer på hva som begrenser vekst og sameksistens for akvakultur i Norge. Det er ikke en enkel løsning, og ulike aktører har forskjellige syn på hva som er de største hindringene. Vår tillit til disse forklaringene er middels, da det er betydelig uenighet og kompleksitet i problemstillingen. En konkret endring som kunne forbedre situasjonen, ville være en mer helhetlig og forutsigbar forvaltning av sjøarealene, som tar hensyn til både økonomiske, biologiske og samfunnsmessige faktorer.",
+      "villaks_pattern_in_synth": false,
+      "villaks_debate_opener": false
+    },
+    {
+      "id": "A3",
+      "query": "Når sjø går til havbruksanlegg, hva må vike (annen bruk, levende natur, eller anlegget), og hvordan tas samlet belastning inn når merden kommer i sjø som allerede brukes?",
+      "status": "PASS",
+      "top_k": [
+        "salt_1075_arealbruk-havbruk",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "salt_1065_ku-arealplanlegging",
+        "2015_rettslig_rammeverk-havbruk",
+        "2025_mikkelsen_samlet-pavirkning-nord",
+        "2025_sand_arealbruk-bionaringer-trondelag",
+        "2024_meldst35_baerekraftig-bruk-natur"
+      ],
+      "scores": {
+        "salt_1075_arealbruk-havbruk": 0.52,
+        "2019_mikkelsen_arealplanlegging-sjo": 0.5103,
+        "2025_sand_havbrukets-arealbehov-trondelag": 0.5077,
+        "salt_1065_ku-arealplanlegging": 0.5045,
+        "2015_rettslig_rammeverk-havbruk": 0.498,
+        "2025_mikkelsen_samlet-pavirkning-nord": 0.4971,
+        "2025_sand_arealbruk-bionaringer-trondelag": 0.4931,
+        "2024_meldst35_baerekraftig-bruk-natur": 0.4913
+      },
+      "best_score": 0.52,
+      "out_of_scope": false,
+      "must_hits": [
+        "2025_mikkelsen_samlet-pavirkning-nord",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "2025_sand_arealbruk-bionaringer-trondelag",
+        "salt_1075_arealbruk-havbruk",
+        "2024_meldst35_baerekraftig-bruk-natur"
+      ],
+      "must_misses": [
+        "2023_evenset_sameksistens",
+        "2015_sandersen_access-to-sites",
+        "2019_schutz_strategic-marine-planning"
+      ],
+      "coverage": 0.625,
+      "adjacent_in_topk": [],
+      "synthesis": "Når havbruksanlegg etableres i sjøområder, må ofte andre bruksområder eller levende natur vike. Dette skaper en kompleks situasjon der ulike interesser og behov må balanseres. Det er flere konkurrerende diagnoser om hva som begrenser vekst og sameksistens for havbruk, og disse må forstås for å få et klart bilde av situasjonen.\n\nEn hoveddiagnose peker på mangel på tilgjengelig sjøareal som en begrensende faktor. Ifølge Skrove og kolleger (2023) er det kun 94 km² som er direkte brukt til lakseoppdrett, men når man tar hensyn til sikkerhetssoner og sanitære avstander, kan opptil 30-50 prosent av sjøarealet i enkelte produksjonsområder være opptatt. Dette gir et bilde av at det ikke nødvendigvis er fysiske arealer som er den største begrensningen, men heller hvordan disse arealene er regulert og brukt.\n\nEn annen diagnose, som Mikkelsen og kolleger (2019) fremhever, er at det er de juridiske og administrative prosessene som skaper flaskehalser. Kommunale planer bestemmer hvilke områder som kan brukes til havbruk, og disse planene kan være restriktive. Kommunene kan være tilbakeholdne med å avsette nye områder til havbruk på grunn av lav lokal økonomisk avkastning og konflikter med andre interesser som fiskeri og turisme.\n\nVidere peker Sand og kolleger (2025) på biologiske faktorer som lakselus, sykdommer og rømming som betydelige begrensninger for havbruksvekst. Disse miljømessige og helseutfordringene skaper behov for strenge reguleringer, noe som igjen kan begrense hvor og hvordan nye anlegg kan etableres.\n\nNår det gjelder samlet belastning, er det enighet om at dette er en utfordring som ikke alltid blir tilstrekkelig vurdert. Mikkelsen og kolleger (2025) viser til at selv om det finnes krav om å vurdere kumulativ miljøpåvirkning, er praksisen ofte skjønnsmessig og inkonsekvent. Dette kan føre til at nye anlegg legger ytterligere press på allerede belastede økosystemer uten at dette blir tilstrekkelig vurdert i beslutningsprosessen.\n\nTil slutt er det også økonomiske insentiver som spiller en rolle. Ifølge Solås og kolleger (2015) er det økonomiske insentiver som kan motivere kommuner til å tillate flere havbruksanlegg, men disse insentivene er ofte ikke nok til å oppveie de lokale bekymringene for miljøpåvirkning og brukskonflikter.\n\nSamlet sett er det tydelig at det ikke finnes en enkel løsning på hvordan havbruk kan utvides uten å komme i konflikt med andre bruksområder eller naturverdier. Diagnosene varierer fra mangel på fysisk areal, juridiske og administrative begrensninger, biologiske utfordringer, til økonomiske insentiver. Høyere presisjon i planlegging og bedre integrasjon av kunnskap om miljøpåvirkninger kan være nøkkelen til å løse disse utfordringene.\n\n**Konfidens: Medium**. Dette skyldes de mange konkurrerende diagnosene og den varierende praksisen i vurderingen av samlet miljøpåvirkning. En mer konsekvent anvendelse av kumulative vurderinger og bedre integrering av miljøhensyn i planleggingsprosesser kan endre bildet betydelig.",
+      "villaks_pattern_in_synth": false,
+      "villaks_debate_opener": false
+    },
+    {
+      "id": "A4",
+      "query": "Hvilken kunnskap brukes, mangler, utsettes eller brukes skjevt i plan, KU og lokalitetsbehandling av havbruk, og hvordan skal usikkerhet og føre var inn i vedtaket?",
+      "status": "WARN",
+      "top_k": [
+        "salt_1065_ku-arealplanlegging",
+        "salt_1110_lokalitetssoknader",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "2015_rettslig_rammeverk-havbruk",
+        "2022_mikkelsen_ocean-coastal-management",
+        "2021_sandersen_kystsone-helgeland",
+        "2025_sand_arealbruk-bionaringer-trondelag",
+        "salt_1075_arealbruk-havbruk"
+      ],
+      "scores": {
+        "salt_1065_ku-arealplanlegging": 0.6626,
+        "salt_1110_lokalitetssoknader": 0.63,
+        "2019_mikkelsen_arealplanlegging-sjo": 0.6094,
+        "2015_rettslig_rammeverk-havbruk": 0.5817,
+        "2022_mikkelsen_ocean-coastal-management": 0.5803,
+        "2021_sandersen_kystsone-helgeland": 0.5785,
+        "2025_sand_arealbruk-bionaringer-trondelag": 0.5728,
+        "salt_1075_arealbruk-havbruk": 0.5671
+      },
+      "best_score": 0.6626,
+      "out_of_scope": false,
+      "must_hits": [
+        "salt_1065_ku-arealplanlegging",
+        "salt_1110_lokalitetssoknader",
+        "2021_sandersen_kystsone-helgeland"
+      ],
+      "must_misses": [
+        "2023_evenset_sameksistens",
+        "2025_mikkelsen_samlet-pavirkning-nord",
+        "2023_metier_marine-grunnkart",
+        "2024_sordahl_when-all-you-have-is-a-hammer",
+        "2026_sordahl_nar-alt-skal-med"
+      ],
+      "coverage": 0.375,
+      "adjacent_in_topk": [],
+      "synthesis": "Konflikten rundt havbrukets krav på norske kystområder er et komplekst tema med mange lag av uenighet. Når vi ser på hvilke faktorer som begrenser vekst og sameksistens for oppdrettsanlegg, er det flere konkurrerende diagnoser som fremheves i forskningen. En gruppe studier peker på at begrensningen ligger i lisenser og trafikklyssystemet, som regulerer kapasiteten i 13 produksjonsområder. Andre studier hevder at det er kommunenes manglende vilje til å avsette brukbart sjøareal som er den største hindringen. Videre er det biologiske faktorer som lakselus, sykdommer og dyrevelferd som også nevnes som avgjørende begrensninger for vekst.\n\nEn av de sentrale uenighetene handler om hvordan kunnskap brukes, mangler, utsettes eller brukes skjevt i planlegging, konsekvensutredninger (KU) og lokalitetsbehandling av havbruk. Eriksen og kolleger (2023) påpeker at det er betydelige svakheter i hvordan miljøeffekter vurderes i kommunale beslutningsprosesser, og at naturmangfold ofte er en kunnskapsmangel. De fremhever også at planprosesser kan ta lang tid, noe som kan føre til at kunnskap blir utdatert før beslutninger tas.\n\nPå den andre siden viser Mikkelsen og kolleger (2022) til at strategiske miljøvurderinger i Troms-regionen ofte er preget av skjønn og mangel på klare beslutningsregler, noe som kan føre til inkonsistens i anbefalingene. De finner også at politiske beslutninger ofte går imot faglige anbefalinger. Dette peker på en utfordring med å sikre at kunnskap blir brukt på en transparent og konsistent måte i planleggingen.\n\nNår det gjelder juridiske aspekter, viser Solås og kolleger (2015) til at det norske systemet for havbruksforvaltning er fragmentert og komplekst, med flere sektorer som har vetorett over lokaliteter. Dette kan føre til at en enkelt sektor kan stoppe en lokalitet selv om en samlet vurdering ville tillatt den. Dette fragmenterte systemet gjør det vanskelig å gjennomføre en helhetlig vurdering av interesser for og mot en lokalitet.\n\nI tillegg til disse strukturelle og juridiske utfordringene, er det også en diskusjon om hvordan føre-var-prinsippet skal anvendes i beslutningsprosesser. Eriksen og kolleger (2026) peker på at bruken av føre-var-prinsippet varierer mellom saker og myndigheter, og at det ofte ikke er ment å brukes for sikkerhetens skyld alene. Dette skaper usikkerhet om hvordan prinsippet skal integreres i beslutninger om lokaliteter.\n\nSamlet sett er det tydelig at det er betydelige uenigheter om hvordan havbrukets krav på kystområder skal håndteres, både når det gjelder bruk av kunnskap og juridiske rammeverk. Dette gjør det utfordrende å finne en enhetlig tilnærming til planlegging og forvaltning. \n\nMed høy tillit kan vi si at en mer konsistent og transparent bruk av kunnskap i planleggingsprosesser, samt en klarere anvendelse av føre-var-prinsippet, ville kunne endre bildet betydelig. Dette vil kreve bedre integrasjon av vitenskapelig kunnskap i beslutningsprosesser og en mer helhetlig tilnærming til forvaltning av kystområder.",
+      "villaks_pattern_in_synth": false,
+      "villaks_debate_opener": false
+    },
+    {
+      "id": "A5",
+      "query": "Hva følger av hvor og hvor tett havbruksanleggene ligger for produktivitet, sykdom, lus og belastning, og er «mer areal» feil grep hvis avstand og biologi binder først?",
+      "status": "PASS",
+      "top_k": [
+        "2025_sand_arealbruk-bionaringer-trondelag",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "2025_kulmambetova_spatial-density-productivity",
+        "salt_1075_arealbruk-havbruk",
+        "2020_hersoug_whats-the-clue",
+        "2019_karlsen_omradesamarbeid",
+        "2015_rettslig_rammeverk-havbruk"
+      ],
+      "scores": {
+        "2025_sand_arealbruk-bionaringer-trondelag": 0.5969,
+        "2025_sand_havbrukets-arealbehov-trondelag": 0.592,
+        "2019_mikkelsen_arealplanlegging-sjo": 0.591,
+        "2025_kulmambetova_spatial-density-productivity": 0.5909,
+        "salt_1075_arealbruk-havbruk": 0.5904,
+        "2020_hersoug_whats-the-clue": 0.5901,
+        "2019_karlsen_omradesamarbeid": 0.5735,
+        "2015_rettslig_rammeverk-havbruk": 0.5603
+      },
+      "best_score": 0.5969,
+      "out_of_scope": false,
+      "must_hits": [
+        "2025_kulmambetova_spatial-density-productivity",
+        "2020_hersoug_whats-the-clue",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "salt_1075_arealbruk-havbruk"
+      ],
+      "must_misses": [
+        "2011_gullestad_arealbruk-havbruk",
+        "undated_baerekraftig-arealbruk-havbruk",
+        "2026_hi_risikorapport"
+      ],
+      "coverage": 0.5714285714285714,
+      "adjacent_in_topk": [],
+      "synthesis": "Havbruk i Norge står overfor en kompleks utfordring når det gjelder arealbruk langs kysten. Det er en pågående debatt om hva som egentlig begrenser vekst og sameksistens for oppdrettsanleggene. Det er flere motstridende diagnoser om hva som er den reelle begrensningen for havbrukets ekspansjon: er det mangel på tilgjengelig sjøareal, er det lisenssystemet, kommunal planlegging, eller er det biologiske faktorer som sykdom og lakselus?\n\nEn gruppe studier, inkludert Hersoug, Mikkelsen og Osmundsen (2020), hevder at den primære begrensningen for vekst i havbruket ikke er mangel på fysisk sjøareal, men heller produksjonslisenser og trafikklyssystemet. Trafikklyssystemet, som er delt inn i 13 produksjonsområder, styrer produksjonskapasiteten basert på miljøindikatorer som lakselus på villaks. Dette systemet kan begrense vekst i områder som er merket rødt, mens grønne områder tillater vekst. Denne tilnærmingen fokuserer på å beskytte villaksen mot påvirkning fra oppdrettsanleggene.\n\nPå den andre siden peker studier som Sand et al. (2025) på at det er biologiske faktorer som lakselus, sykdom og fiskevelferd som først og fremst stopper vekst. Disse faktorene kan føre til at selv om det finnes tilgjengelig sjøareal, er det ikke alltid mulig å utvide produksjonen uten å øke risikoen for biologiske problemer. Kulmambetova og Tveterås (2025) viser at tettheten av oppdrettsanlegg kan føre til høyere produksjonskostnader på grunn av biologiske eksternaliteter som sykdom og lus. De argumenterer for at økt avstand mellom anleggene kan redusere disse kostnadene, noe som antyder at mer areal kan være nødvendig for å oppnå en bærekraftig produksjonsøkning.\n\nKommunal planlegging spiller også en betydelig rolle i denne diskusjonen. Mikkelsen et al. (2019) fremhever at kommunene har stor innflytelse på hvilke områder som kan brukes til havbruk gjennom sine kystsoneplaner. Noen kommuner er tilbakeholdne med å avsette mer areal til havbruk på grunn av lav lokal økonomisk avkastning fra industrien. Dette skaper en situasjon hvor selv om det finnes fysisk tilgjengelig areal, kan det være politiske og økonomiske barrierer som hindrer utnyttelse.\n\nTil slutt er det også økonomiske insentiver og lokale interesser som påvirker arealbruken. Solås et al. (2015) peker på at dagens system med engangsavgifter fra nye lisenser ikke gir kommunene en stabil inntektskilde, noe som kan redusere deres vilje til å tilrettelegge for havbruk. Dette kan føre til at kommuner prioriterer andre interesser fremfor havbruk når de planlegger arealbruk.\n\nSamlet sett er det klart at det ikke finnes en enkel løsning på utfordringene knyttet til havbrukets arealbruk i Norge. Begrensningene er et resultat av en kompleks sammensetning av biologiske, juridiske og økonomiske faktorer. For å endre bildet, kan det være nødvendig med en helhetlig tilnærming som inkluderer bedre koordinering mellom statlige og kommunale myndigheter, samt en vurdering av hvordan biologiske utfordringer kan håndteres mer effektivt.\n\n**Konfidensnivå: Medium**. Denne vurderingen er basert på en rekke studier med forskjellige perspektiver og metoder, men det er fortsatt betydelig uenighet om hva som er den mest kritiske faktoren. En konkret endring som kunne gi mer klarhet, ville være en omfattende studie som integrerer biologiske, økonomiske og juridiske aspekter for å gi en mer helhetlig forståelse av arealutfordringene i havbruket.",
+      "villaks_pattern_in_synth": false,
+      "villaks_debate_opener": false
+    },
+    {
+      "id": "A6",
+      "query": "Hvordan påvirker skatt, fond og arealavgiftsdebatten kommunenes vilje til å huse havbruksanlegg, og kan kommunen ta pengene uten å åpne mer sjøareal?",
+      "status": "PASS",
+      "top_k": [
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "2015_sandersen_access-to-sites",
+        "2025_rosendal_municipal-environment-economy",
+        "2020_hersoug_whats-the-clue",
+        "2015_rettslig_rammeverk-havbruk",
+        "salt_1075_arealbruk-havbruk",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "2011_gullestad_arealbruk-havbruk"
+      ],
+      "scores": {
+        "2019_mikkelsen_arealplanlegging-sjo": 0.6258,
+        "2015_sandersen_access-to-sites": 0.5829,
+        "2025_rosendal_municipal-environment-economy": 0.5741,
+        "2020_hersoug_whats-the-clue": 0.564,
+        "2015_rettslig_rammeverk-havbruk": 0.5637,
+        "salt_1075_arealbruk-havbruk": 0.555,
+        "2025_sand_havbrukets-arealbehov-trondelag": 0.5489,
+        "2011_gullestad_arealbruk-havbruk": 0.5362
+      },
+      "best_score": 0.6258,
+      "out_of_scope": false,
+      "must_hits": [
+        "2015_sandersen_access-to-sites",
+        "2020_hersoug_whats-the-clue",
+        "2025_rosendal_municipal-environment-economy",
+        "2015_rettslig_rammeverk-havbruk",
+        "2019_mikkelsen_arealplanlegging-sjo"
+      ],
+      "must_misses": [
+        "2025_osmundsen_fylkeskommune-akvakulturloven",
+        "undated_baerekraftig-arealbruk-havbruk"
+      ],
+      "coverage": 0.7142857142857143,
+      "adjacent_in_topk": [],
+      "synthesis": "Når vi ser på hvordan skatt, fond og debatten om arealavgift påvirker kommunenes vilje til å huse havbruksanlegg, er det flere konkurrerende diagnoser som kommer frem i forskningen. På den ene siden hevder noen studier at kommunenes vilje til å åpne mer sjøareal for havbruk er begrenset av økonomiske insentiver. For eksempel peker Mikkelsen et al. (2019) på at kommuner mottar en del av inntektene fra Havbruksfondet, men at dette i seg selv ikke nødvendigvis er nok til å motivere dem til å utvide havbruksarealet. De økonomiske insentivene, som eiendomsskatt på oppdrettsanlegg og engangsinntekter fra lisensavgifter, blir ofte sett på som utilstrekkelige for å oppveie de potensielle miljømessige og sosiale kostnadene ved å utvide havbruksområder.\n\nPå den andre siden finner Sandersen et al. (2015) at selv om det er en viss enighet om at kommunal vennlighet er nødvendig for vekst i havbruksnæringen, er løsningen på problemet, som ofte foreslås som en arealavgift, politisk blokkert. Dette skyldes blant annet frykt for at det vil sette presedens for andre ressurser og forstyrre skattesystemet. De advarer også om at selv om en arealavgift kunne gi kommunene mer penger, er det ikke sikkert at det ville sikre de mest ønskede lokalitetene for oppdrettsanlegg, da andre faktorer som veterinære avstandsregler og naturvern fortsatt ville begrense tilgangen.\n\nEn annen viktig faktor er hvordan kommunene vurderer de lokale miljøproblemene i forhold til økonomiske fordeler. Rosendal et al. (2025) viser at kommuner med sterke akvakulturklynger ofte er positive til utvidelse, selv når det er betydelige miljøproblemer. Dette tyder på at økonomiske interesser ofte veier tyngre enn miljøhensyn. Likevel er det også eksempler på kommuner som, til tross for høy økonomisk avhengighet av havbruk, velger å begrense utvidelsen på grunn av miljøproblemer, som i tilfelle Osterøy.\n\nTil slutt, spørsmålet om kommunene kan ta pengene uten å åpne mer sjøareal er komplisert. Hersoug et al. (2020) antyder at mens det er teoretisk mulig for kommuner å motta økonomiske fordeler uten å utvide arealet, er det usannsynlig at dette vil skje uten betydelige endringer i hvordan insentivene er strukturert. De peker på at en fullstendig sentralisering av planleggingen ville utfordre den kommunale planleggingsdemokratiet, noe som anses som lite sannsynlig.\n\nSamlet sett er det høy grad av uenighet om hvordan økonomiske insentiver påvirker kommunenes beslutninger om havbruksareal. En konkret endring som kunne gi et klarere bilde, ville være en omfattende evaluering av hvordan ulike økonomiske insentiver faktisk påvirker kommunenes beslutningsprosesser, inkludert en vurdering av hvordan disse insentivene kan justeres for å balansere økonomiske og miljømessige hensyn. Konfidensnivået i denne analysen er medium, da det er betydelig variasjon i hvordan kommunene reagerer på økonomiske insentiver, og det er behov for mer empirisk forskning for å forstå disse dynamikkene fullt ut.",
+      "villaks_pattern_in_synth": false,
+      "villaks_debate_opener": false
+    }
+  ]
+}

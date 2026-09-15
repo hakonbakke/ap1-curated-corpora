@@ -1,0 +1,72 @@
+{
+  "pass": true,
+  "critical_issues": [],
+  "soft_issues": [
+    "Mid and South Troms case text says 109 proposed areas, while the verbal-summary analysis counts 110 summaries. Both figures are kept as the extract states them."
+  ],
+  "claim_checks": [
+    {
+      "claim": "Four intermunicipal coastal plans ran in Troms in 2013-2016 (22 of 23 coastal municipalities). This paper codes SEAs of 143 proposed aquaculture areas in the two largest processes (18 municipalities).",
+      "supported": true,
+      "extract_quote": "This resulted in four intermunicipal planning processes undertaken during the years 2013–2016, involving 22 of the county’s 23 coastal municipalities",
+      "note": "143 areas and 18 municipalities are stated in the abstract and introduction."
+    },
+    {
+      "claim": "Municipalities plan nearshore sea within 1 nautical mile from the baselines. Site licences may not be granted against an adopted plan unless the planning authority consents. EIAs at the licence stage are rarely made.",
+      "supported": true,
+      "extract_quote": "they are the planning authority for near shore sea space (within 1 nautical mile from the base lines)",
+      "note": "EIA rarity is cited from Robertsen et al. 2016 in the extract, not a new count."
+    },
+    {
+      "claim": "Mid and South Troms: 13 municipalities, about 3800 km2 sea, 109 proposed areas (101 salmon: 41 new, 60 expansions). SEA recommended 89 allow and 20 disallow. Politicians turned down 8 recommendations and allowed 5 not recommended.",
+      "supported": true,
+      "extract_quote": "The SEA recommendation was to allow 89 of the proposed aquaculture areas and disallow 20. Subsequently, the politicians changed these by turning down 8 of the SEA recommendations, and on the other hand, allowed five of the areas that were not recommended",
+      "note": "70 000 tonnes, 85 localities and 61 salmon also stated in section 3.1."
+    },
+    {
+      "claim": "Tromsø region: 5 municipalities, about 5100 km2, 34 proposed areas (33 salmon). SEA recommended 15 allow and 19 disallow. Politicians turned down 4 and allowed 4 not recommended. Jobs or income were not an explicit scored theme.",
+      "supported": true,
+      "extract_quote": "The SEA recommendation was to allow 15 aquaculture areas and to disallow 19. Subsequently, the politicians turned down four of the SEA recommendations, and on the other hand allowed four of the areas that were not recommended.",
+      "note": "No explicit positive employment theme is stated in section 3.2 and again in the discussion."
+    },
+    {
+      "claim": "Both SEAs list similar external sources. Most scores rest on discretion. Mid and South Troms: only six of 22 themes had a clear value-score rule, and only two themes had clear rules for both value and impact. Neither SEA states general recommend criteria.",
+      "supported": true,
+      "extract_quote": "Only two themes had clearly stated scoring rules for both value and impact",
+      "note": "Table 3 totals 46 and 51 source listings. Conclusion repeats the missing general trade-off rule."
+    },
+    {
+      "claim": "Tromsø-region SEA recommendations tracked the sum of consequence scores more consistently. Mid and South Troms fit better with extreme theme scores. Political decisions went against 24 percent of Tromsø recommendations and 12 percent of Mid and South Troms recommendations.",
+      "supported": true,
+      "extract_quote": "For the Tromsø region, the political decisions went against 24% of the recommendations, and for Mid and South Troms 12%.",
+      "note": "Decision-rule interpretation is in sections 5.2 and 6.2."
+    },
+    {
+      "claim": "Verbal summaries understated negative scores. Mid and South Troms: 108 of 110 summaries had discrepancies (mean 4.3). Ninety percent made consequences look less negative. Anadromous salmonids misstated in 65 percent. Tromsø: 19 of 34, all less negative.",
+      "supported": true,
+      "extract_quote": "For Mid and South Troms, 108 of the 110 verbal summaries for the proposed aquaculture areas had discrepancies with the SEA theme scores",
+      "note": "Tromsø 19 of 34 and all-less-negative pattern is in the same subsection."
+    },
+    {
+      "claim": "More explicit trade-off rules would raise transparency and could raise consistency, but rigid standardisation can miss local context. Verbal summaries should be quality-assured. Municipal self-rule is described as recently strengthened.",
+      "supported": true,
+      "extract_quote": "the municipal selfrule has been strengthened in Norway recently (Hersoug et al., 2021), through changes to the Norwegian Constitution from 2016 (§49), to the Municipalities’ Act from 2020",
+      "note": "Quality-assurance of verbal summaries is in the conclusion."
+    }
+  ],
+  "evidence_direction_ok": true,
+  "evidence_direction_note": "not_applicable is correct. The paper analyses SEA transparency and consistency, not a stated causal effect of a siting policy.",
+  "priority_questions_ok": true,
+  "priority_questions_note": "A1 (intermunicipal designation and SEA), A3 (trade-offs among uses and values), A4 (knowledge sources, scoring rules, verbal summaries). A2 not tagged. Licence-stage EIA is background only.",
+  "coi_ok": true,
+  "coi_note": "Declaration of no competing financial interests or personal relationships is present. coi_declared set to no. Funding is RCN 254850, 255767, 294799 and the FRAM centre.",
+  "recommended_status": "ai_verified",
+  "summary_faithfulness": "high",
+  "doc_id": "2022_mikkelsen_ocean-coastal-management",
+  "verified_at": "2026-09-13T12:00:00+00:00",
+  "verify_model": "cursor_grok_page_verify",
+  "rule_precheck_issues": [],
+  "final_status": "ai_verified",
+  "pages_reviewed": "all",
+  "extract_coverage": "Walked the full extracted.md (title through references): abstract, introduction, planning law, both cases, methods, results (knowledge base, probit tables, verbal summaries), discussion, conclusion, competing-interest declaration, acknowledgements."
+}
