@@ -92,7 +92,7 @@ FAULTS = {
             "bildet av nesten ubegrenset kystplass en myte: fra luften er merdene prikker, "
             "på bakken gjør sikkerhetssoner næringen plasskrevende. Diagnosene er skrevet "
             "forbi hverandre. Ingen tekst prøver dem mot samme kyst og samme år.",
-            "Hva er det som begrenser vekst i havbruk på norskekysten?",
+            "Hva begrenser vekst i havbruk på norskekysten: mangel på sjøflate, tillatelser, kommunal utpeking, eller biologi?",
         ),
         (
             "2. Plan: hva avgjør utpekingen av sjøareal?",
@@ -106,7 +106,7 @@ FAULTS = {
             "ikke i seg selv hvilken sjø som pekes ut. Det åpne spørsmålet er hvor saken "
             "stopper etter at kommunen har sagt ja eller nei: i kartet, i senere "
             "dispensasjon, eller i innsigelse og avslag.",
-            "Hva avgjør utpekingen av sjøareal til havbruk?",
+            "Hva avgjør utpekingen av sjøareal til havbruk: plankartet, senere dispensasjon, eller avslag etter vedtak?",
         ),
         (
             "3. Tillatelser: hvor i stabelen dør saken?",
@@ -121,7 +121,7 @@ FAULTS = {
             "Schütz og Slater (2019) beskriver produksjonsområder og veien fra plan til "
             "tillatelse som et forutsigbarhetsproblem. Det åpne spørsmålet er om saken dør i "
             "tildelingsrunder, i smitteavstand, eller i ugjennomsiktige avslag.",
-            "Hvor i tillatelsesstabelen dør en lokalitetssak?",
+            "Hvor i tillatelsesstabelen dør en lokalitetssak: tildeling, smitteavstand, eller sektoravslag?",
         ),
         (
             "4. Avveiing: hvilken bruk og hvilke verdier skal vike?",
@@ -137,7 +137,7 @@ FAULTS = {
             "som én sektor i bruk og bevaring av natur, og sier at trafikklys og "
             "kvalitetsnorm for villaks ikke styrer mot samme mål. Dette er en strid om "
             "bruk og verdier, ikke et andre villaks-rom.",
-            "Når sjø går til havbruk, hva må vike?",
+            "Når sjø går til havbruk, hva må vike: annen bruk, levende natur, eller anlegget?",
         ),
         (
             "5. Saksfilen: hvordan brukes, mangler eller utsettes kunnskap?",
@@ -152,7 +152,7 @@ FAULTS = {
             "belastning som manglende kunnskap og svak praksis. Hullet er hvordan "
             "usikkerhet og føre var skal inn i vedtaket. Det er ikke først et spørsmål "
             "om hvilken studie som mangler.",
-            "Hvordan brukes kunnskap i plan og lokalitetsbehandling av havbruk?",
+            "Hvordan brukes, mangler eller utsettes kunnskap i plan og lokalitetsbehandling av havbruk?",
         ),
         (
             "6. Tetthet: er «mer areal» feil grep hvis biologien begrenser?",
@@ -167,7 +167,7 @@ FAULTS = {
             "setning. Trafikklyset er da et lokk på vekst, ikke et argument for mer "
             "sjøflate. Aldrin (2011-2017), Qviller (2024) og Moldal (2026) ligger i "
             "mappen som nabotekster om spredning.",
-            "Er mer areal feil grep hvis tetthet og biologi begrenser?",
+            "Er mer areal feil grep hvis tetthet og biologi begrenser først?",
         ),
         (
             "7. Penger: åpner skatt og fond den kommunale porten?",
@@ -180,7 +180,7 @@ FAULTS = {
             "produksjonsavgift og Havbruksfondet (Hersoug 2020). Rosendal (2025) kobler "
             "kommunal økonomi til miljøhensyn. Om penger faktisk åpner mer sjøareal, har "
             "ingen av tekstene testet.",
-            "Åpner skatt og fond mer sjøareal i kommunene?",
+            "Åpner skatt og fond mer sjøareal i kommunene, eller kan de ta pengene uten å peke ut mer?",
         ),
     ],
     "en": [
@@ -200,7 +200,7 @@ FAULTS = {
             "pens are dots, on the ground security zones make aquaculture "
             "space-consuming. The diagnoses are written past one another. No text tests "
             "them on the same coast and the same years.",
-            "What limits aquaculture growth on the Norwegian coast?",
+            "What limits aquaculture growth on the Norwegian coast: unused sea, licences, municipal designation, or biology?",
         ),
         (
             "2. Plans: what decides designation of sea area?",
@@ -215,7 +215,7 @@ FAULTS = {
             "which sea is designated. The open question is where the case stops after the "
             "municipality has said yes or no: in the map, in later dispensation, or in "
             "objection and refusal.",
-            "What decides which sea is designated for aquaculture?",
+            "What decides designation of sea for aquaculture: the plan map, later dispensation, or refusal after the map?",
         ),
         (
             "3. Licences: where in the stack does the case die?",
@@ -231,7 +231,7 @@ FAULTS = {
             "areas and the path from plan to permit as a predictability problem. The "
             "open question is whether the case dies in allocation rounds, in sanitary "
             "spacing, or in opaque refusals.",
-            "Where in the permit stack does a locality case die?",
+            "Where in the permit stack does a locality case die: allocation, sanitary spacing, or sector refusal?",
         ),
         (
             "4. Trade-off: whose use and which values must give way?",
@@ -248,7 +248,7 @@ FAULTS = {
             "conservation of nature, and says that the traffic-light and the quality "
             "standard for wild salmon do not steer toward the same goal. This is a "
             "dispute over use and values, not a second wild-salmon room.",
-            "When sea goes to aquaculture, what has to give way?",
+            "When sea goes to aquaculture, what must yield: other use, living nature, or the farm?",
         ),
         (
             "5. The case file: how is knowledge used, missing, or postponed?",
@@ -263,7 +263,7 @@ FAULTS = {
             "Evenset (2023) both point to cumulative load as missing knowledge and weak "
             "practice. The gap is how uncertainty and precaution should enter the "
             "decision. It is not first a question of which study is missing.",
-            "How is knowledge used in plans and locality processing of aquaculture?",
+            "How is knowledge used, missing or postponed in plans and locality processing of aquaculture?",
         ),
         (
             "6. Density: is more area the wrong move if biology limits growth?",
@@ -278,7 +278,7 @@ FAULTS = {
             "policy sentence. The traffic-light is then a lid on growth, not an argument "
             "for more sea surface. Aldrin (2011-2017), Qviller (2024) and Moldal (2026) "
             "sit in the file as neighbouring texts on spread.",
-            "Is more area the wrong move if density and biology limit growth?",
+            "Is more area the wrong move if density and biology limit growth first?",
         ),
         (
             "7. Money: do tax and funds open the municipal gate?",
@@ -292,7 +292,7 @@ FAULTS = {
             "followed (Hersoug 2020). Rosendal (2025) links municipal finances to "
             "environmental concern. Whether money actually opens more sea area is "
             "something none of the texts has tested.",
-            "Do tax and funds open more sea area in the municipalities?",
+            "Do tax and funds open more sea area in municipalities, or can they take the money without designating more?",
         ),
     ],
 }
@@ -1016,8 +1016,8 @@ with st.container(border=True):
         value=st.session_state.get("areal_query", ""),
         placeholder=tr(
             lang,
-            "e.g. What limits aquaculture growth on the Norwegian coast?",
-            "f.eks. Hva er det som begrenser vekst i havbruk på norskekysten?",
+            "e.g. What limits aquaculture growth on the Norwegian coast: unused sea, licences, municipal designation, or biology?",
+            "f.eks. Hva begrenser vekst i havbruk på norskekysten: mangel på sjøflate, tillatelser, kommunal utpeking, eller biologi?",
         ),
         height=90,
     )
