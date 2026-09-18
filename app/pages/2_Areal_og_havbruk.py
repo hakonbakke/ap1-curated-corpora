@@ -79,7 +79,7 @@ def _last_name(authors: str) -> str:
 FAULTS = {
     "no": [
         (
-            "1. Knapphet: hva er det som begrenser vekst?",
+            "1. Hva begrenser vekst i havbruk på norskekysten: mangel på sjøflate, tillatelser, kommunal utpeking, eller biologi?",
             "Hvis merden tar så lite plass, hva er det da som mangler? Hersoug, Mikkelsen "
             "og Osmundsen (2020) svarer at grensen nasjonalt går ved produksjonstillatelser "
             "og trafikklys, ikke ved mangel på ledig sjøflate, selv om noen regioner er "
@@ -95,7 +95,7 @@ FAULTS = {
             "Hva begrenser vekst i havbruk på norskekysten: mangel på sjøflate, tillatelser, kommunal utpeking, eller biologi?",
         ),
         (
-            "2. Plan: hva avgjør utpekingen av sjøareal?",
+            "2. Hva avgjør utpekingen av sjøareal til havbruk: plankartet, senere dispensasjon, eller avslag etter vedtak?",
             "Siden 1989-revisjonen er det kommunen som peker ut sjøareal til havbruk. Vedtatt "
             "plankart er likevel ikke siste ord. Kvalvik og Robertsen (2017) og SALT 1065 "
             "viser at dispensasjon og daglig forvaltning kan åpne sjø planen ikke pekte "
@@ -109,7 +109,7 @@ FAULTS = {
             "Hva avgjør utpekingen av sjøareal til havbruk: plankartet, senere dispensasjon, eller avslag etter vedtak?",
         ),
         (
-            "3. Tillatelser: hvor i stabelen dør saken?",
+            "3. Hvor i tillatelsesstabelen dør en lokalitetssak: tildeling, smitteavstand, eller sektoravslag?",
             "Et anlegg trenger produksjonstillatelse og lokalitetstillatelse. Fra 2010 "
             "samordner fylkeskommunen lokalitetssaken. Sandersen og Kvalvik (2014) "
             "beskriver den reformen som oppgaver uten reell myndighet: flere og mindre "
@@ -124,7 +124,7 @@ FAULTS = {
             "Hvor i tillatelsesstabelen dør en lokalitetssak: tildeling, smitteavstand, eller sektoravslag?",
         ),
         (
-            "4. Avveiing: hvilken bruk og hvilke verdier skal vike?",
+            "4. Når sjø går til havbruk, hva må vike: annen bruk, levende natur, eller anlegget?",
             "Når sjø går til anlegg, må noe annet vike: en annen bruk (fiskeri, ferdsel, "
             "friluftsliv, forsvar, havvind), eller villaks, kysttorsk og natur på bunnen som "
             "allerede er der. Noen ganger er det anlegget som må vike. Evenset og "
@@ -140,7 +140,7 @@ FAULTS = {
             "Når sjø går til havbruk, hva må vike: annen bruk, levende natur, eller anlegget?",
         ),
         (
-            "5. Saksfilen: hvordan brukes, mangler eller utsettes kunnskap?",
+            "5. Hvordan brukes, mangler eller utsettes kunnskap i plan og lokalitetsbehandling av havbruk?",
             "Hvis det er omstridt hva som er knapt, er planen og søknaden stedet der "
             "striden skulle avgjøres. Ofte skjer det ikke der. SALT 1065 skiller mellom "
             "det som hører hjemme i kommunens konsekvensutredning og det som hører hjemme "
@@ -155,7 +155,7 @@ FAULTS = {
             "Hvordan brukes, mangler eller utsettes kunnskap i plan og lokalitetsbehandling av havbruk?",
         ),
         (
-            "6. Tetthet: er «mer areal» feil grep hvis biologien begrenser?",
+            "6. Er mer areal feil grep hvis tetthet og biologi begrenser først?",
             "Smitteavstand og smitte mellom naboanlegg legger beslag på langt mer "
             "sjø enn merden, og både Hersoug (2020) og Sand (2025) gjentar det. "
             "Kulmambetova og Tveterås (2025) finner at tettere naboer henger sammen med "
@@ -170,7 +170,7 @@ FAULTS = {
             "Er mer areal feil grep hvis tetthet og biologi begrenser først?",
         ),
         (
-            "7. Penger: åpner skatt og fond den kommunale porten?",
+            "7. Åpner skatt og fond mer sjøareal i kommunene, eller kan de ta pengene uten å peke ut mer?",
             "Kommunen peker ut sjøen, så nasjonale vekstmål hviler på lokal vilje. Penger "
             "er grepet som oftest foreslås. Sandersen og Kvalvik (2015) kaller "
             "arealavgiften et wicked problem: miljøkonflikt, annen bruk og lav lokal "
@@ -185,7 +185,7 @@ FAULTS = {
     ],
     "en": [
         (
-            "1. Scarcity: what is it that limits growth?",
+            "1. What limits aquaculture growth on the Norwegian coast: unused sea, licences, municipal designation, or biology?",
             "If the pen takes so little room, what is it that runs out? Hersoug, "
             "Mikkelsen and Osmundsen (2020) answer that the national limit sits with "
             "production licences and the traffic-light rule, not with a lack of unused "
@@ -203,7 +203,7 @@ FAULTS = {
             "What limits aquaculture growth on the Norwegian coast: unused sea, licences, municipal designation, or biology?",
         ),
         (
-            "2. Plans: what decides designation of sea area?",
+            "2. What decides designation of sea for aquaculture: the plan map, later dispensation, or refusal after the map?",
             "Since the 1989 revision it is the municipality that designates sea area for "
             "aquaculture. An adopted plan map is still not the last word. Kvalvik and Robertsen "
             "(2017) and SALT 1065 show that dispensation and day-to-day management can "
@@ -218,7 +218,7 @@ FAULTS = {
             "What decides designation of sea for aquaculture: the plan map, later dispensation, or refusal after the map?",
         ),
         (
-            "3. Licences: where in the stack does the case die?",
+            "3. Where in the permit stack does a locality case die: allocation, sanitary spacing, or sector refusal?",
             "A farm needs a production licence and a locality licence. From 2010 the "
             "county coordinates the locality case. Sandersen and Kvalvik (2014) describe "
             "that reform as tasks without real authority: more units, and smaller ones. "
@@ -234,7 +234,7 @@ FAULTS = {
             "Where in the permit stack does a locality case die: allocation, sanitary spacing, or sector refusal?",
         ),
         (
-            "4. Trade-off: whose use and which values must give way?",
+            "4. When sea goes to aquaculture, what must yield: other use, living nature, or the farm?",
             "When sea goes to a farm, something else has to yield: another use "
             "(fisheries, shipping, recreation, defence, offshore wind), or wild salmon, "
             "coastal cod and seabed nature already living there. Sometimes it is the "
@@ -251,7 +251,7 @@ FAULTS = {
             "When sea goes to aquaculture, what must yield: other use, living nature, or the farm?",
         ),
         (
-            "5. The case file: how is knowledge used, missing, or postponed?",
+            "5. How is knowledge used, missing or postponed in plans and locality processing of aquaculture?",
             "If what is scarce is disputed, the plan and the application are where that "
             "dispute should be settled. Often it is not settled there. SALT 1065 "
             "separates what belongs in the municipal impact assessment from what belongs "
@@ -266,7 +266,7 @@ FAULTS = {
             "How is knowledge used, missing or postponed in plans and locality processing of aquaculture?",
         ),
         (
-            "6. Density: is more area the wrong move if biology limits growth?",
+            "6. Is more area the wrong move if density and biology limit growth first?",
             "Sanitary distances and infection between neighbouring farms claim far more "
             "sea than the pen, and both Hersoug (2020) and Sand (2025) repeat the point. "
             "Kulmambetova and Tveterås (2025) find that closer neighbours are associated "
@@ -281,7 +281,7 @@ FAULTS = {
             "Is more area the wrong move if density and biology limit growth first?",
         ),
         (
-            "7. Money: do tax and funds open the municipal gate?",
+            "7. Do tax and funds open more sea area in municipalities, or can they take the money without designating more?",
             "The municipality designates the sea, so national growth targets rest on "
             "local will. Money is the fix most often proposed. Sandersen and Kvalvik "
             "(2015) call the area rent a wicked problem: environmental conflict, other "
@@ -940,10 +940,9 @@ with st.container(border=True):
         tr(lang, "Open question", "Åpent spørsmål"),
         options=list(range(len(fault_labels))),
         format_func=lambda i: fault_labels[i],
-        key=f"areal_fault_{lang}",
+        key=f"areal_fault_long_{lang}",
     )
 
-    st.markdown(f"**{fault_labels[fault_idx]}**")
     st.markdown(FAULTS[lang][fault_idx][1])
     paper_chips(FAULT_PAPERS[fault_idx])
 
@@ -1006,7 +1005,7 @@ with st.container(border=True):
         ),
         options=examples,
         format_func=lambda q: tr(lang, "Choose a question", "Velg et spørsmål") if q == "" else q,
-        key=f"areal_example_{lang}",
+        key=f"areal_example_long_{lang}",
     )
     if pick and st.session_state.get("_areal_example") != pick:
         st.session_state["areal_query"] = pick

@@ -1,6 +1,6 @@
 # STATUS - AP1 Curated Corpora
 
-Last updated: 2026-09-18 (push areal room to Streamlit Cloud via main)  
+Last updated: 2026-09-18 (C dropdown now shows the same forked questions as D)  
 Owner: Thord Hakon Bakke
 
 ## Purpose of this file
@@ -121,7 +121,7 @@ AREA_ROOM_FRAME and areal freeform prompts rewritten the same day. Traffic-light
 Standing split (Thord 2026-09-15): wild salmon is in this room when it gates expansion, above all via the traffic-light on 13 production areas and via lice as a reason for site refusal. The villaks room keeps the causal chain from lice on out-migrating smolt to mortality estimates. Do not strip TLS from areal answers. Do not let every areal question open as the wild-fish impact controversy.
 
 ### Next
-1. Cloud share: `https://ap1-evidensrom.streamlit.app` tracks `main`. Confirm OpenAI secret after this push, then send the live URL. Do not retag the original 33
+1. Cloud share: `https://ap1-evidensrom.streamlit.app` tracks `main`. C dropdown titles now match the D example questions (forked, not the old short labels). Confirm OpenAI secret, then send the live URL. Do not retag the original 33
 2. After the demo: selectors on A1-A6 tags. Retrieval of Jentoft and Sørdahl only if the same questions still miss them
 
 Standing leftovers:
