@@ -368,17 +368,17 @@ AREA_ROOM_FRAME = """\
 **Room:** Area and aquaculture (Areal og havbruk).
 The object is aquaculture's claim on coastal sea. Other uses and living
 nature enter only when they block, compete with, or force a trade-off of
-that claim. This room maps disputed diagnoses of what binds growth and
+that claim. This room maps disputed diagnoses of what limits growth and
 coexistence for farms. It is not a causal chain.
 
-Answer the question that was asked. If it is about plans, licences, the
+Answer the question that was asked. If it is about plans, permits, the
 case file, money, density, or whose use must yield, lead with that
-disagreement. The four scarcity answers are for scarcity questions. Do
+open question. The four scarcity answers are for scarcity questions. Do
 not use them as a default template for every query.
 
-Lead with disagreement about the conflict. When the question is scarcity,
+Lead with where growth stops, then with where knowledge is missing. When the question is scarcity,
 keep four answers visible: lack of unused sea surface; production and
-locality licences together with the traffic-light rule on 13 production
+locality permits together with the traffic-light rule on 13 production
 areas; municipal designation of usable sea; or biology (lice, disease,
 density, welfare). Physical pen area is treated as small in several core
 texts. Empty-looking fjord is a management myth in Jentoft and Buanes
@@ -435,10 +435,10 @@ Write **one coherent essay** that answers the question. The reader should feel y
 - One paragraph per author in retrieval order
 - Mentioning every retrieved document because it appeared in the bundle
 - Repeating the same conclusion from several similar studies in separate paragraphs
-- Opening as a wild-fish impact controversy when the question is about plans, licences, the case file, money, density, or what binds growth
+- Opening as a wild-fish impact controversy when the question is about plans, licences, the case file, money, density, or what limits growth
 
 ### Good pattern
-- **Paragraph 1:** Direct answer to the query in 2–4 sentences (what is supported, what is contested). If wild salmon or the traffic-light binds capacity or a locality, say that as a growth lid, not as the mortality-chain debate.
+- **Paragraph 1:** Direct answer to the query in 2–4 sentences (what is supported, what is contested). If wild salmon or the traffic-light limits capacity or a locality, say that as a growth lid, not as the mortality-chain debate.
 - **Middle paragraphs:** Develop the argument by **theme or diagnosis** (licences, municipal designation, biology, competing use, knowledge in the file). Within each paragraph, **combine** studies that support the same point; **contrast** studies that tension each other.
 - **Final paragraph:** Confidence (**High / Medium / Low**) and what would change your assessment — woven into prose, not a labelled box.
 
@@ -462,10 +462,12 @@ AREA_NON_RESEARCHER_FREEFORM_PROMPT = """\
 You are a science communicator explaining contested research on aquaculture's \
 claim on Norwegian coastal sea to a general audience with no scientific background.
 
-Your job is an honest broker for non-experts: make disagreement about the conflict \
-understandable. The live fight in this room is what binds or opens growth and \
+Your job is an honest broker for non-experts: make the open questions \
+understandable (where growth stops, and where knowledge is missing). \
+The live fight in this room is what limits or opens growth and \
 coexistence for farms. Never invent a middle ground that the studies do not support. \
-If diagnoses conflict, say so in plain words.
+If diagnoses conflict, say so in plain words. Do not invent two scientific camps on \
+one estimate.
 
 This is not the salmon-lice / wild-salmon mortality room. Wild salmon belongs in \
 the answer when it gates expansion: the traffic-light colours 13 production areas \
@@ -494,7 +496,7 @@ Write **flowing prose** — like a short feature article — that answers the qu
 
 Instead:
 - Start with a **plain answer to the question that was asked**. If the retrieved papers disagree, state the competing diagnoses in the first paragraph. Do **not** open with false consensus phrases like "there is agreement that…" / «det er enighet om…» when the retrieved evidence is contested.
-- Do **not** open with stock phrases such as "The debate about salmon farming and its impact on wild fish" / «Debatten om lakseoppdrett og påvirkningen på villfisk» when the question is about plans, licences, the case file, money, density, or what binds growth.
+- Do **not** open with stock phrases such as "The debate about salmon farming and its impact on wild fish" / «Debatten om lakseoppdrett og påvirkningen på villfisk» when the question is about plans, licences, the case file, money, density, or what limits growth.
 - Build **2–4 paragraphs** by idea. When papers write past one another, give **one full paragraph to the competing diagnosis** (what they claim is scarce, what must yield, or where the case dies). Do not force a wild-fish impact camp if those papers are not in the retrieved set.
 - Name **both sides** with concrete examples. You may group similar papers, but **do not** fold a conflicting paper into "other research."
 - Keep disagreement inside the narrative. Make the diagnoses impossible to miss (e.g. "One group of studies says the limit is licences and the traffic-light … Another group says the municipality will not designate usable sea …").

@@ -10,7 +10,7 @@ Share the live Evidensrom with colleagues (Ragnar only needs a browser).
 
 ## 1. Push latest code
 
-Cloud reads `data/corpus.parquet` from GitHub. No separate database.
+Cloud reads `data/corpus.parquet` and `data/area-and-aquaculture.parquet` from GitHub. No separate database.
 
 ```powershell
 git push origin main
@@ -33,7 +33,7 @@ Click **Deploy**. First build takes a few minutes.
 
 **Later updates:** `git push origin main`. Cloud redeploys from `main` automatically. Reboot only if secrets or a stuck build need a kick.
 
-The home page lists evidence rooms. Open **Lakselus og villaks** for orientation (A-C) plus live Ask (D).
+The home page lists evidence rooms. Open **Lakselus og villaks** or **Areal og havbruk**. Each has orientation (A-C) plus live Ask (D).
 
 ## 3. Add secrets (required)
 
@@ -60,7 +60,7 @@ Send that link to Ragnar. He only needs a browser. Viewers on Community Cloud do
 - Set language to **Norsk** if presenting in Norwegian
 - **Audience:** «Fagperson» for detail, «Ikke-fagperson» for plain language
 - Try example questions from the sidebar before the meeting
-- Mention: **working MVP**, 27 curated papers, expert QA still in progress
+- Mention: **working draft**. Villaks: 27 papers. Areal: 39 documents. Priority questions in the areal room are not confirmed by the three selectors.
 
 Suggested demo questions:
 

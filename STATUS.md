@@ -1,6 +1,6 @@
 # STATUS - AP1 Curated Corpora
 
-Last updated: 2026-09-15 (Areal lede tightened, D labelled Spør kildene)  
+Last updated: 2026-09-18 (push areal room to Streamlit Cloud via main)  
 Owner: Thord Hakon Bakke
 
 ## Purpose of this file
@@ -13,11 +13,16 @@ Agents in this repo act as **Senior RAG Engineers** — see `SENIOR_RAG_ENGINEER
 | Role | Responsibility |
 |------|----------------|
 | Human | Inclusion (which PDFs enter) — recorded in `inclusion_decided_by` |
-| AI / Cursor | Extract, curate, verify, offline accept |
+| AI / Cursor | Extract, curate, verify against the fail-closed gate |
 | OpenAI API key | **RAG runtime only** (embeddings + synthesis for testers) |
-| Expert | Optional `expert_approved` |
+| Expert | Optional named override or sign-off as `expert_approved` |
 
-Status: **27/27 `ai_verified`**. Validator exit 0. Routing eval 5/5.
+Before hardening, all 27 villaks records were labelled `ai_verified`. The known
+Jonsson discrepancy is corrected and now `ai_draft`; its runtime record was re-embedded.
+The 2026-09-15 hardened-gate audit flags 14 additional villaks records for source
+review without silently reclassifying them. It also flags 3/39 area records for
+incomplete claim checks. Use `ai_verify_document.py --audit-existing` to reproduce
+the read-only audit.
 
 ### Inclusion accountability
 - **26/27** selected by **Ragnar Tveterås**
@@ -109,22 +114,24 @@ Filename trap: `Sandersen and Kvalvik_ 2014_ Challenges and Myths...pdf` is Jent
 
 The high A0 (Norway allocating land, sea and living resources, aquaculture as one use) was rejected. Room object stays aquaculture's claim on coastal area. Working precision sheet: `corpora/area-and-aquaculture/PRIORITY_QUESTIONS_PRECISION.md`. Sentences accepted as good for now and written into `PRIORITY_QUESTIONS.md` (Norwegian plus English). Original 33 not retagged.
 
-A-C rewritten 2026-09-15 for Friday demo: hero and home card drop the land-and-sea allocation lede. Intro uses four scarcity answers (unused sea as myth, licences and traffic-light, municipal designation, biology). Framework stack keeps TLS as a capacity lid here. C has seven dividing lines A0-A6 with locked question sentences. New papers named where they belong (Jentoft, Sandersen 2014, Schütz, Sørdahl, Meld. St. 35). Hero lede tightened again the same afternoon. D is labelled **Spør kildene** (English: Ask the sources) in both rooms, not Ask.
+A-C rewritten 2026-09-15 for Friday demo, then A-B rewritten again 2026-09-16 from Thord's introduction draft. A was rewritten again 2026-09-17 from Thord's own full intro. Visible A is the paradox and the three area quantities. Split governance, three growth diagnoses, uneven trade-off knowledge, municipal will and where cases die sit behind **Les mer**. The villaks Typisk god støtte block and the competing-use inventory are out of A. SNL left-panel excerpt remains as figure. C is **Åpne spørsmål**. Subtitle: der veksten stopper, og der kunnskapen mangler. UI Ask example questions shortened 2026-09-17. Canonical A0-A6 sentences stay in `PRIORITY_QUESTIONS.md`. B treats good sites as one diagnosis, names the case-file gap, and states that Havbruksfondet and the production fee are untested as a gate. Wild-salmon expander is gate and lid only. Soy/feed cut from A. D remains **Spør kildene**.
 
 AREA_ROOM_FRAME and areal freeform prompts rewritten the same day. Traffic-light is a growth lid. Do not open as a wild-fish impact controversy. Second Ask smoke `eval/areal_smoke_runs/2026-09-15T132500Z_areal_ask_smoke.json`: FAIL 0, WARN 2 (A0, A4 coverage), PASS 5. All seven `opener_drift=false`. A2 now opens on licences and where the case dies, with lice and traffic-light as a capacity lid. A4 still likes to wrap the file question in the four scarcity diagnoses before it reaches knowledge. One extra FRAME line added after that run: answer the question asked, do not default every query to the four forks.
 
 Standing split (Thord 2026-09-15): wild salmon is in this room when it gates expansion, above all via the traffic-light on 13 production areas and via lice as a reason for site refusal. The villaks room keeps the causal chain from lice on out-migrating smolt to mortality estimates. Do not strip TLS from areal answers. Do not let every areal question open as the wild-fish impact controversy.
 
 ### Next
-1. Cloud before Friday 2026-09-18 still open. Do not retag the original 33
+1. Cloud share: `https://ap1-evidensrom.streamlit.app` tracks `main`. Confirm OpenAI secret after this push, then send the live URL. Do not retag the original 33
 2. After the demo: selectors on A1-A6 tags. Retrieval of Jentoft and Sørdahl only if the same questions still miss them
 
 Standing leftovers:
-1. Cloud share: app was `ap1-curated-corpora-test.streamlit.app` (Aug 21). Confirm secrets and send Ragnar the live URL
+1. Cloud share: `https://ap1-evidensrom.streamlit.app` (tracks `main`). Confirm secrets after push and send Ragnar the live URL
 2. Re-run recall after any retrieval change; compare to `2026-08-11T123621Z_recall.json`
 3. Hybrid BM25 only if a future recall run shows clear misses
 4. Source panel items 7-10 (group by direction, camp summary, clickable citations, merge debate map)
-5. Areal-specific orientation figures are still not integrated into the room; the existing villaks figures remain under `mockup/`
+5. Areal A is Thord's own intro (2026-09-17). Visible: paradox plus labeled merd/lokalitet/plan. Les mer has four headings (governance, three answers, knowledge, municipal will). SNL/KF left-panel excerpt remains as figure (`mockup/figur-arealbruk-snl.png`).
+6. Areal C renamed 2026-09-17 to **Åpne spørsmål**. A-B hinges shipped.
+7. Readable areal corpus overview: `corpora/area-and-aquaculture/CORPUS_OVERVIEW.md` (what the 39 documents are about, where they disagree, where the file is empty). Villaks not included.
 
 ## Parquet update rule
 - Metadata / status / rationale only → `python scripts/sync_metadata_to_parquet.py`

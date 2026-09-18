@@ -34,3 +34,5 @@ python scripts/ingest.py --corpus area-and-aquaculture --doc <doc_id>
 ## Status
 
 `39 documents in the draft corpus (33 from the 2026-09-13 SharePoint set, 6 added by Thord Håkon Bakke on 2026-09-15). Parquet: data/area-and-aquaculture.parquet. Do not ingest into villaks.`
+
+Lesbar oversikt over hva settet handler om, uenighet og hull: `CORPUS_OVERVIEW.md`.

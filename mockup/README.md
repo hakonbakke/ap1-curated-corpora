@@ -2,7 +2,7 @@
 
 **Start her:** åpne `index.html` (dobbelklikk / Ctrl+O).
 
-Hold `figur-*.png` i samme mappe som HTML-filene.
+Hold `figur-*.png` i samme mappe som HTML-filene. Arealrommet bruker `figur-arealbruk-snl.png` (sitert utdrag av SNL/KF, venstre panel).
 
 ## Struktur
 

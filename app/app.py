@@ -89,10 +89,10 @@ with active_cols[1]:
 <span class="hl-status hl-status-on">Utkast</span>
 <h3 class="hl-room-title">Areal og havbruk</h3>
 <p class="hl-room-desc">
-  Havbrukets krav på sjøareal. Hva publikasjonene sier binder vekst: ledig
-  sjøflate, tillatelser og trafikklys, kommunal utpeking, eller biologi.
-  Villaks hører hjemme når den er lokk på vekst. Der saksfilen er tom, sier
-  vi det. Utkast.
+  Havbrukets krav på sjøareal. A skiller merdareal, lokalitetsareal og
+  planareal. B viser det delte styringssystemet. C og D viser åpne
+  spørsmål i forvaltningen og i forskningen. Villaks hører hjemme når
+  den er lokk på vekst. Utkast.
 </p>
 <div class="hl-room-meta">39 dokumenter · utkast</div>
 """,
