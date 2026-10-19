@@ -1,0 +1,9 @@
+Myklebust (2021) examines who may steer sea use for aquaculture. The chapter, in Hauge and Stokke's Integrert kystsoneforvaltning, asks whether the legal basis in regulations and conditions is interpreted differently inside and outside private property, and whether extra weight on coordination between authorities conflicts with equality and predictable decisions.
+
+The Planning and Building Act is the tool for nearshore sea, out to one nautical mile beyond the baselines. The Aquaculture Act and the licence sit with state or county authorities. The chapter says plans have become detailed enough to cover not only what the sea is used for, but how the use is carried out, and that this presses on the line between the municipality and the sector authorities.
+
+It cites a political aim of a fivefold increase in salmon and trout by 2050, and a hope that new technology will move much of the growth offshore, outside the Planning Act's geography. It also says conventional pens are poorly suited to exposed sites, so the contest over nearshore sea continues while capacity remains there. The Storting decided in 2015 to establish the aquaculture fund. In 2016-2019, 80 percent of the fee from increased production capacity was distributed to municipalities and counties that had opened for farming in their area plans. The chapter calls that a strong incentive to prioritise aquaculture in municipal planning.
+
+The cases it opens with are Lenvik (2016), where the county governor required sufficient prevention of genetic introgression and salmon lice, including a possible closed-pen condition, and Osterøy (2017), where the plan required minimal or no organic particle discharge. Later municipal decisions in Tromsø and Alta are named as the same kind of condition. The chapter's question is where the legal limit of that municipal competence lies.
+
+This note is drawn from the opening of the extract. It is not a full walk of the chapter.

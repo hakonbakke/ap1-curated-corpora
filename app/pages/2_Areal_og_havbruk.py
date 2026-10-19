@@ -79,220 +79,347 @@ def _last_name(authors: str) -> str:
 FAULTS = {
     "no": [
         (
-            "1. Hva begrenser vekst i havbruk på norskekysten: mangel på sjøflate, tillatelser, kommunal utpeking, eller biologi?",
-            "Hvis merden tar så lite plass, hva er det da som mangler? Hersoug, Mikkelsen "
-            "og Osmundsen (2020) svarer at grensen nasjonalt går ved produksjonstillatelser "
-            "og trafikklys, ikke ved mangel på ledig sjøflate, selv om noen regioner er "
-            "fulle og avstandskrav krymper det brukbare. Trafikklyset fargelegger 13 "
-            "produksjonsområder etter lus på vill laksefisk og styrer om kapasiteten der "
-            "kan økes, fryses eller kuttes. Sandersen og Kvalvik (2015) og Gullestad "
-            "(2011) ser knappheten i gode lokaliteter og i kommunens vilje til å peke ut "
-            "sjø. Sand (2025) og Kulmambetova og Tveterås (2025) setter lus, sykdom, "
-            "velferd og nærhet mellom anlegg først. Jentoft og Buanes (2005) kaller "
-            "bildet av nesten ubegrenset kystplass en myte: fra luften er merdene prikker, "
-            "på bakken gjør sikkerhetssoner næringen plasskrevende. Diagnosene er skrevet "
-            "forbi hverandre. Ingen tekst prøver dem mot samme kyst og samme år.",
-            "Hva begrenser vekst i havbruk på norskekysten: mangel på sjøflate, tillatelser, kommunal utpeking, eller biologi?",
+            "1. Hva bestemmer hvor og i hvilket omfang havbruk kan etableres og utvikles, og hvordan avveies hensynet til miljø, næringsutvikling og annen arealbruk?",
+            "Hvis merden tar så lite plass, hva er det da som setter grensen? Hersoug, "
+            "Mikkelsen og Osmundsen (2020) svarer at den nasjonale grensen den gangen "
+            "lå i produksjonstillatelser og trafikklys, selv om avstandskrav og andre "
+            "bruk krymper det som kan brukes, og noen regioner er fulle. Sandersen og "
+            "Kvalvik (2015) og Gullestad-utvalget (2011) legger knappheten i gode "
+            "lokaliteter og i kommunens vilje til å peke ut sjø. Rapporten om "
+            "bærekraftig arealbruk (2023) spør om en stor produksjonsøkning er mulig "
+            "når miljø, fiskevelferd og økonomi veies sammen, og svarer at det ikke "
+            "går med dagens teknologi og drift. Nofima-rapporten om det rettslige "
+            "rammeverket (2015) finner at en isolert miljønektelse kan stoppe en "
+            "lokalitet selv om en samlet avveining av næring, arbeidsplasser og smitte "
+            "ville pekt en annen vei. Diagnosene er skrevet forbi hverandre. Ingen "
+            "tekst prøver dem mot samme kyst og samme år.",
+            "Hva bestemmer hvor og i hvilket omfang havbruk kan etableres og utvikles, og hvordan avveies hensynet til miljø, næringsutvikling og annen arealbruk i dagens arealforvaltning?",
         ),
         (
-            "2. Hva avgjør utpekingen av sjøareal til havbruk: plankartet, senere dispensasjon, eller avslag etter vedtak?",
-            "Siden 1989-revisjonen er det kommunen som peker ut sjøareal til havbruk. Vedtatt "
-            "plankart er likevel ikke siste ord. Kvalvik og Robertsen (2017) og SALT 1065 "
-            "viser at dispensasjon og daglig forvaltning kan åpne sjø planen ikke pekte "
-            "ut. Sand (2025) viser kombinert formål som ser stort ut på kartet og likevel "
-            "faller i søknad. Innsigelse og avslag fra sektormyndighet kan stanse saken "
-            "etter at kartet er vedtatt. Sørdahl og Kvalvik (2024) og Sørdahl (2026) leser "
-            "fem generasjoner Tromsø-planer: tykkere og mer helhetlige dokumenter avgjør "
-            "ikke i seg selv hvilken sjø som pekes ut. Det åpne spørsmålet er hvor saken "
-            "stopper etter at kommunen har sagt ja eller nei: i kartet, i senere "
-            "dispensasjon, eller i innsigelse og avslag.",
-            "Hva avgjør utpekingen av sjøareal til havbruk: plankartet, senere dispensasjon, eller avslag etter vedtak?",
+            "2. Hvilke faktorer påvirker muligheten for utvikling av havbruk langs kysten, og hvordan samvirker arealtilgang, tillatelser, planlegging og miljø- og fiskehelse?",
+            "Utvikling langs kysten hviler på at flere ordninger treffer samme lokalitet. "
+            "Hersoug (2022) skiller produksjonstillatelsen, som trafikklyset styrer, fra "
+            "lokalitetstillatelsen, som må ligge i kommunens arealplan. Gullestad-utvalget "
+            "(2011) og Hersoug, Mikkelsen og Osmundsen (2020) knytter arealstrukturen til "
+            "lus, rømming, tap og avstand mellom anlegg. Sand og Misund (2025) viser at "
+            "klarert lokalitetskapasitet i Trøndelag er langt større enn selskapskapasiteten, "
+            "fordi brakklegging og flytterestriksjoner krever flere lokaliteter enn "
+            "tillatelsene dekker. Kvalvik og Robertsen (2017) og Mikkelsen, Karlsen og "
+            "Osmundsen (2019) viser at kommunens plan er porten, mens større planområder "
+            "og felles kart likevel gir få sikre nye arealer til havbruk. Myklebust "
+            "(2018, 2021) viser hvor langt kommunen kan gå med miljøvilkår i planen før "
+            "lokalitetssaken etter akvakulturloven tar over. Det åpne spørsmålet er hvilken "
+            "faktor som binder først, og hvor de trekker i hver sin retning.",
+            "Hvilke faktorer påvirker muligheten for utvikling av havbruk langs kysten, og hvordan samvirker forhold som arealtilgang, tillatelsessystem, arealplanlegging, og miljø- og fiskehelsehensyn?",
         ),
         (
-            "3. Hvor i tillatelsesstabelen dør en lokalitetssak: tildeling, smitteavstand, eller sektoravslag?",
-            "Et anlegg trenger produksjonstillatelse og lokalitetstillatelse. Fra 2010 "
-            "samordner fylkeskommunen lokalitetssaken. Sandersen og Kvalvik (2014) "
-            "beskriver den reformen som oppgaver uten reell myndighet: flere og mindre "
-            "enheter. Osmundsen og Olsen (2025) skiller fylkeskoordinering, kommunal "
-            "utpeking og avslag fra sektormyndighet, og finner at fylket mangler verktøy til å legge om "
-            "den strukturen som finnes. SALT 1110 leser 251 avslag fra 2020-2025. "
-            "Mattilsynet er den hyppigst registrerte avslagsinstansen, og lus er den "
-            "største kodede grunnen der. Fakta, skjønn og føre var løper ofte sammen. "
-            "Schütz og Slater (2019) beskriver produksjonsområder og veien fra plan til "
-            "tillatelse som et forutsigbarhetsproblem. Det åpne spørsmålet er om saken dør i "
-            "tildelingsrunder, i smitteavstand, eller i ugjennomsiktige avslag.",
-            "Hvor i tillatelsesstabelen dør en lokalitetssak: tildeling, smitteavstand, eller sektoravslag?",
+            "3. Hvordan praktiseres søknadsprosessen om lokaliteter, og hvor stopper, forsinkes eller konflikter den oftest?",
+            "Spørsmålet gjelder lokalitetssaken. Søknaden går til fylkeskommunen, som "
+            "ikke kan gi tillatelse hvis Mattilsynet, Statsforvalteren eller Kystverket "
+            "avslår, eller hvis plasseringen strider mot planen. Osmundsen og Olsen "
+            "(2025) finner at tidsfristene oftere ryker hos Mattilsynet og "
+            "Statsforvalteren enn hos fylket, og at ufullstendige og strategiske "
+            "søknader stopper køen. SALT 1110 gjennomgår 251 avslag fra 2020 til 2025. "
+            "Smitterisiko dominerer Mattilsynets avslag. Evenset med flere (2023) "
+            "beskriver den samme vetoretten og skjønnet i om lokaliteten er miljømessig "
+            "forsvarlig. Sand og Misund (2025) gjengir at søknader i Osen ofte får "
+            "avslag fordi kommunen ligger øverst i en smittevernsone. Nofima-rapporten "
+            "fra 2015 viser at selv små justeringer kan kreve en full lokalitetssøknad. "
+            "Det som fortsatt er åpent, er hvor mye av forsinkelsen som skyldes "
+            "kunnskapsmangel, og hvor mye som skyldes at etatene verner hvert sitt hensyn.",
+            "Hvordan praktiseres søknadsprosessen om lokaliteter, og i hvilke deler av prosessen oppstår søknadsstopp, forsinkelser eller konflikter oftest?",
         ),
         (
-            "4. Når sjø går til havbruk, hva må vike: annen bruk, levende natur, eller anlegget?",
-            "Når sjø går til anlegg, må noe annet vike: en annen bruk (fiskeri, ferdsel, "
-            "friluftsliv, forsvar, havvind), eller villaks, kysttorsk og natur på bunnen som "
-            "allerede er der. Noen ganger er det anlegget som må vike. Evenset og "
-            "medforfattere (2023) fant ingen publisert litteratur om at andre kystnæringer "
-            "skader anlegg, så ekspertskårer fyller det hullet. Mikkelsen og medforfattere "
-            "(2025) viser at naturmangfoldloven § 10 krever samlet belastning som "
-            "retningslinje, mens akvakulturloven ikke har noen uttrykkelig plikt eller "
-            "metode for det. Sandersen og Kvalvik (2015) behandler miljødebatten og "
-            "arealavgiftsdebatten som to spor. Meld. St. 35 (2023-2024) plasserer havbruk "
-            "som én sektor i bruk og bevaring av natur, og sier at trafikklys og "
-            "kvalitetsnorm for villaks ikke styrer mot samme mål. Dette er en strid om "
-            "bruk og verdier, ikke et andre villaks-rom.",
-            "Når sjø går til havbruk, hva må vike: annen bruk, levende natur, eller anlegget?",
+            "4. Hvordan vurderes kumulative effekter av akvakultur i arealplanlegging og lokaliseringsbeslutninger, og hvilke kunnskapsutfordringer beskrives?",
+            "Samlet belastning er noe annet enn konflikten med én annen bruker. Mikkelsen "
+            "med flere (2025) viser at konsekvensutredningsforskriften krever vurdering "
+            "av samlede påvirkninger, men ikke sier hvordan, og at akvakulturloven har "
+            "helhetlige vurderinger uten en uttrykkelig plikt til å vurdere samlet "
+            "påvirkning. Evenset med flere (2023) går gjennom kumulative miljøvirkninger "
+            "og finner metode- og datahull. Saksbehandlerne sliter særlig med å avveie "
+            "vekst mot miljørisiko og med samlede virkninger. SALT 1065 finner at "
+            "vurderingene av samlede virkninger over større arealer kunne vært bedre, "
+            "og at smitte og lus i stor grad bør ligge hos andre enn kommuneplanens "
+            "konsekvensutredning. Sandersen (2021) viser at omvendt planmetodikk på "
+            "Helgeland flyttet konfliktavklaringen ut av planen og gjorde samlet "
+            "belastning vanskelig å vurdere. Gullestad-utvalget (2011) foreslo "
+            "produksjonsområder fordi anlegg påvirker hverandre på tvers av "
+            "kommunegrenser. Hullet er metoden: lovene krever en samlet vurdering, mens "
+            "tekstene er uenige om hvem som skal gjøre den, og med hvilket grunnlag.",
+            "Hvordan vurderes kumulative effekter av akvakulturproduksjon i arealplanlegging og lokaliseringsbeslutninger for havbruk, og hvilke kunnskapsmessige og metodiske utfordringer beskrives?",
         ),
         (
-            "5. Hvordan brukes, mangler eller utsettes kunnskap i plan og lokalitetsbehandling av havbruk?",
-            "Hvis det er omstridt hva som er knapt, er planen og søknaden stedet der "
-            "striden skulle avgjøres. Ofte skjer det ikke der. SALT 1065 skiller mellom "
-            "det som hører hjemme i kommunens konsekvensutredning og det som hører hjemme "
-            "i akvakulturlovsaken, og viser til Sivilombudets saker om usikkerhet i "
-            "planfilen. SALT 1110 leser 251 avslag og finner at fakta, faglig skjønn og "
-            "føre var ofte løper sammen, og at terskler for korall ikke er standardisert. "
-            "Sørdahl (2024, 2026) argumenterer for at mer helhet i dokumentet ikke er mer "
-            "avgjørelse. Mikkelsen (2025) og Evenset (2023) peker begge på samlet "
-            "belastning som manglende kunnskap og svak praksis. Hullet er hvordan "
-            "usikkerhet og føre var skal inn i vedtaket. Det er ikke først et spørsmål "
-            "om hvilken studie som mangler.",
-            "Hvordan brukes, mangler eller utsettes kunnskap i plan og lokalitetsbehandling av havbruk?",
+            "5. Hvordan påvirker økonomiske virkemidler og regulering insentivene til arealbruk og lokaliseringsvalg, og hvordan fordeles gevinster og kostnader?",
+            "Kommunen peker ut sjøen, og flere tekster spør om penger endrer den viljen. "
+            "Sandersen og Kvalvik (2015) kaller arealavgiften et fastlåst problem: "
+            "staten vil unngå et nytt skatteinstrument, næringen vil betale for vekst "
+            "heller enn for eksisterende lokaliteter, og kommunene vil ha en stabil "
+            "andel. De beskriver et verstefall der kommunen får pengene og likevel "
+            "ikke peker ut mer sjø. Hersoug, Mikkelsen og Osmundsen (2020) følger det "
+            "som kom etterpå: Havbruksfondet og en produksjonsavgift, og at legitimitet "
+            "for mer areal hviler på en fordeling kommunene opplever som rimelig. "
+            "Aanesen og Mikkelsen (2020) finner at overføringene fra fondet ofte ikke "
+            "veier opp for husholdningenes verdsetting av å unngå mer havbruk, med "
+            "mindre en del av produsentoverskuddet blir i regionen. Iversen med flere "
+            "(2025) beskriver grunnrenteskatten og at auksjonsinntektene deles mellom "
+            "vertskommuner og fylker. Misund med flere (2023) finner at folk i "
+            "havbrukskommuner er mer positive til næringen, og likevel ikke mer fornøyde "
+            "med fordelingen. Om pengene faktisk åpner mer sjø, er ikke testet i settet.",
+            "Hvordan påvirker økonomiske virkemidler og regulering insentivene til arealbruk og lokaliseringsvalg, og hvordan fordeles gevinster og kostnader mellom aktørene?",
         ),
         (
-            "6. Er mer areal feil grep hvis tetthet og biologi begrenser først?",
-            "Smitteavstand og smitte mellom naboanlegg legger beslag på langt mer "
-            "sjø enn merden, og både Hersoug (2020) og Sand (2025) gjentar det. "
-            "Kulmambetova og Tveterås (2025) finner at tettere naboer henger sammen med "
-            "høyere produksjonskostnad. Gullestad (2011) foreslo produksjonsområder og "
-            "samordnet brakklegging, uten å fastsette sonestørrelse. Rapporten om "
-            "bærekraftig arealbruk (2023) vil ha tetthetsregler og bestrider "
-            "trafikklyskutt, mens HI (2026) beskriver bæreevnen per produksjonsområde som "
-            "lite kjent. Hvis det er biologi og avstand som begrenser, er «mer areal» feil politisk "
-            "setning. Trafikklyset er da et lokk på vekst, ikke et argument for mer "
-            "sjøflate. Aldrin (2011-2017), Qviller (2024) og Moldal (2026) ligger i "
-            "mappen som nabotekster om spredning.",
-            "Er mer areal feil grep hvis tetthet og biologi begrenser først?",
+            "6. Hvilket kunnskapsgrunnlag legges til grunn for arealbeslutninger, og hvordan kan ny teknologi endre arealbruk og lokalisering?",
+            "Kunnskapsgrunnlaget for arealvedtak er ujevnt, og ny teknologi kan flytte "
+            "hvor anlegg kan ligge. Robertsen med flere (2014) og SALT 1065 spør "
+            "hvilket grunnlag kommunene bruker i kystsoneplanene, og finner at temadata "
+            "er dårlig tilrettelagt og at vurderingene varierer. Mikkelsen, Sørdahl og "
+            "Solås (2022) sammenligner konsekvensvurderinger av 143 foreslåtte "
+            "havbruksområder og finner svak konsistens i hva som vektes. Metier (2023) "
+            "anslår at marine grunnkart kan redusere risikoen ved nye lokaliteter, "
+            "blant annet gjennom strøm og lus. SALT 1110 peker på kunnskapsbehov i "
+            "avslagspraksisen. Hersoug, Mikkelsen og Osmundsen (2020) og rapporten om "
+            "bærekraftig arealbruk (2023) går gjennom landbasert produksjon, havbasert "
+            "produksjon, stor smolt og lukkede merder, og sier at behovet for skjermet "
+            "kystareal avhenger av om disse konseptene blir lønnsomme. Sand og Misund "
+            "(2025) gjengir forslaget om et forskningssenter for arealbruk og statlige "
+            "planretningslinjer. Hvor mye den nye teknologien faktisk flytter "
+            "lokaliteter, er fortsatt kvalitativt.",
+            "Hvilket kunnskapsgrunnlag legges til grunn for arealbeslutninger i havbruk, og hvordan kan ny teknologi endre forutsetningene for arealbruk, miljøpåvirkning og lokaliseringsmuligheter?",
         ),
         (
-            "7. Åpner skatt og fond mer sjøareal i kommunene, eller kan de ta pengene uten å peke ut mer?",
-            "Kommunen peker ut sjøen, så nasjonale vekstmål hviler på lokal vilje. Penger "
-            "er grepet som oftest foreslås. Sandersen og Kvalvik (2015) kaller "
-            "arealavgiften et wicked problem: miljøkonflikt, annen bruk og lav lokal "
-            "avkastning etter at eierskapet ble konsentrert. De beskriver et verstefall "
-            "der kommunen tar pengene og likevel ikke vil peke ut mer sjø. Arealavgift "
-            "ble funnet uegnet som instrument, og senere kom eiendomsskatt på sjøanlegg, "
-            "produksjonsavgift og Havbruksfondet (Hersoug 2020). Rosendal (2025) kobler "
-            "kommunal økonomi til miljøhensyn. Om penger faktisk åpner mer sjøareal, har "
-            "ingen av tekstene testet.",
-            "Åpner skatt og fond mer sjøareal i kommunene, eller kan de ta pengene uten å peke ut mer?",
+            "7. Hvilke konflikter oppstår mellom havbruk og andre interesser i plan og lokalisering, og hva bidrar til legitime og forutsigbare prosesser?",
+            "Konflikten står mellom havbruk og andre bruk av den samme sjøen, og mellom "
+            "lokal utpeking og statlige sektorinteresser. Jentoft og Buanes (2005) "
+            "kaller bildet av nesten ubegrenset kystplass en myte: fra luften er "
+            "merdene prikker, på bakken gjør sikkerhetssoner næringen plasskrevende, og "
+            "brukskonflikter kan ikke skyves unna. Kvalvik og Robertsen (2017) og "
+            "Sandersen (2021) viser at interkommunal planlegging koordinerer prosessen, "
+            "mens utpeking av sjø til havbruk ofte faller tilbake til den enkelte "
+            "kommunen når interessene spriker. Bjørkan og Eilertsen (2020) finner et "
+            "legitimitetsgap mot fiskere, mens innbyggerne i de samme kommunene er mer "
+            "positive. Rosendal med flere (2025) viser at kommuner veier miljøbelastning "
+            "mot næringsklynge når de peker ut sjø i arealdelen. Sørdahl og Kvalvik "
+            "(2024) og Sørdahl (2026) argumenterer for at mer helhet i plandokumentet "
+            "ikke i seg selv gjør utfallet mer avgjort. Mikkelsen, Sørdahl og Solås "
+            "(2022) knytter legitimitet til om konsekvensvurderingene er gjennomsiktige "
+            "og like fra sak til sak. Schütz og Slater (2019) beskriver spenningen "
+            "mellom forutsigbarhet for tillatelsen og muligheten til å endre vilkår når "
+            "miljøvirkningene endrer seg.",
+            "Hvilke konflikter oppstår i plan- og lokaliseringsprosesser mellom havbruk og andre interesser, og hva bidrar til legitime, effektive og forutsigbare beslutningsprosesser?",
+        ),
+        (
+            "8. Hvilke muligheter har næringen selv for å gjøre sin arealbruk mest mulig effektiv og bærekraftig?",
+            "Tekstene som svarer her, handler om det oppdretterne kan gjøre sammen. "
+            "Karlsen med flere (2019) finner at samarbeid om brakklegging, utsett og "
+            "beredskap i stor grad er frivillig, eller frivillig under trussel om "
+            "pålegg, og anbefaler at det forblir frivillig fordi pålagt samarbeid "
+            "sjelden er nok. Osmundsen med flere (2021) studerer den samme "
+            "selvreguleringen i felles farvann. Bjørnå med flere (2026) beskriver "
+            "uformelle nettverk der selskapene tar biologisk risiko og regulatorisk "
+            "press i fellesskap. Rapporten om bærekraftig arealbruk (2023) sier at "
+            "produksjon i en åpen allmenning krever forretningsmodeller med koordinering "
+            "av lokalitetsbruk, fordi ett selskaps drift treffer naboens resultat. "
+            "Gullestad-utvalget (2011) la et sterkere ansvar på næringen i hvert "
+            "produksjonsområde for de felles utfordringene. Om frivillig sonesamarbeid "
+            "faktisk gir mer effektiv arealbruk, er omstridt: Karlsen gjengir at felles "
+            "brakklegging har usikker effekt på lus.",
+            "Hvilke muligheter har næringen selv for å gjøre sin arealbruk mest mulig effektiv og bærekraftig?",
+        ),
+        (
+            "9. På hvilken måte er biosikkerhet, smittehensyn og vannkontakt mellom anlegg viktig for produksjon og drift?",
+            "Åpne merder deler vann, og avstanden mellom anlegg er en driftsgrense like "
+            "mye som en plangrense. Aldrin med flere (2011) modellerer spredning av "
+            "ILA langs sjøvei mellom anlegg. Aldrin med flere (2015) finner at en stor "
+            "del av PD-smitten kommer fra naboanlegg. Aldrin med flere (2017) modellerer "
+            "lusepopulasjonen på det enkelte anlegget, inkludert rekruttering utenfra. "
+            "Qviller med flere (2024) simulerer at færre og større anlegg, lenger fra "
+            "hverandre, kan senke lusenivå og behandlingsbehov. Kulmambetova og Tveterås "
+            "(2025) finner at tettere naboer henger sammen med høyere produksjonskostnad, "
+            "via sykdom og lus som spres med strøm. Pettersen med flere (2015) beskriver "
+            "brakklegging, flytterestriksjoner og forvaltningssoner som smitteverktøy i "
+            "åpne merder. Moldal med flere (2026) knytter deler av ILA-utbruddene i 2025 "
+            "til horisontal smitte mellom sjølokaliteter og til flytting av fisk. Det "
+            "som gjenstår, er hvor stor avstand som faktisk bryter smittekontakten, og "
+            "om felles brakklegging virker.",
+            "På hvilken måte er biosikkerhet, smittehensyn og vannkontakt mellom anlegg viktig for produksjon og drift av akvakulturanlegg?",
         ),
     ],
     "en": [
         (
-            "1. What limits aquaculture growth on the Norwegian coast: unused sea, licences, municipal designation, or biology?",
-            "If the pen takes so little room, what is it that runs out? Hersoug, "
-            "Mikkelsen and Osmundsen (2020) answer that the national limit sits with "
-            "production licences and the traffic-light rule, not with a lack of unused "
-            "sea surface, even though some regions are full and spacing requirements "
-            "shrink what is usable. The traffic-light colours 13 production areas by "
-            "lice on wild salmonids and decides whether capacity there can grow, freeze "
-            "or be cut. Sandersen and Kvalvik (2015) and Gullestad (2011) locate "
-            "scarcity in good sites and in the municipality's willingness to designate "
-            "sea. Sand (2025) and Kulmambetova and Tveterås (2025) put lice, disease, "
-            "welfare and proximity between farms first. Jentoft and Buanes (2005) name "
-            "the picture of almost unlimited coastal space as a myth: from the air the "
-            "pens are dots, on the ground security zones make aquaculture "
-            "space-consuming. The diagnoses are written past one another. No text tests "
+            "1. What determines where and to what extent aquaculture can be established, and how are environment, industry development and other uses weighed?",
+            "If the pen takes so little room, what sets the limit? Hersoug, Mikkelsen "
+            "and Osmundsen (2020) answer that the national limit at the time sat with "
+            "production licences and the traffic-light rule, even though spacing "
+            "requirements and other uses shrink what can be used, and some regions are "
+            "full. Sandersen and Kvalvik (2015) and the Gullestad committee (2011) "
+            "place the scarcity in good sites and in the municipality's willingness to "
+            "designate sea. The 2023 report on sustainable area use asks whether a "
+            "large production increase is possible when environment, fish welfare and "
+            "economy are weighed together, and answers that it is not, with today's "
+            "technology and operation. The 2015 Nofima report on the legal framework "
+            "finds that an isolated environmental refusal can stop a site even when a "
+            "joint weighing of industry, jobs and disease transmission would point "
+            "another way. The diagnoses are written past one another. No text tests "
             "them on the same coast and the same years.",
-            "What limits aquaculture growth on the Norwegian coast: unused sea, licences, municipal designation, or biology?",
+            "What determines where and to what extent aquaculture can be established and developed, and how are environmental considerations, industry development and competing uses balanced in current spatial planning and area management?",
         ),
         (
-            "2. What decides designation of sea for aquaculture: the plan map, later dispensation, or refusal after the map?",
-            "Since the 1989 revision it is the municipality that designates sea area for "
-            "aquaculture. An adopted plan map is still not the last word. Kvalvik and Robertsen "
-            "(2017) and SALT 1065 show that dispensation and day-to-day management can "
-            "open sea the plan did not designate. Sand (2025) shows combined-purpose "
-            "zoning that looks large on the map and still fails at application. Sector "
-            "objection and refusal can stop the case after the map is adopted. Sørdahl "
-            "and Kvalvik (2024) and Sørdahl (2026) read five generations of Tromsø "
-            "plans: thicker, more comprehensive documents do not by themselves settle "
-            "which sea is designated. The open question is where the case stops after the "
-            "municipality has said yes or no: in the map, in later dispensation, or in "
-            "objection and refusal.",
-            "What decides designation of sea for aquaculture: the plan map, later dispensation, or refusal after the map?",
+            "2. Which factors affect the development of coastal aquaculture, and how do site access, licensing, planning, environment and fish health interact?",
+            "Development along the coast depends on several regimes hitting the same site. "
+            "Hersoug (2022) separates the production licence, which the traffic-light "
+            "steers, from the locality licence, which must sit inside the municipal "
+            "area plan. The Gullestad committee (2011) and Hersoug, Mikkelsen and "
+            "Osmundsen (2020) tie the area structure to lice, escapes, losses and "
+            "distance between farms. Sand and Misund (2025) show that cleared locality "
+            "capacity in Trøndelag is far larger than company capacity, because "
+            "fallowing and limits on moving fish require more localities than the "
+            "licences cover. Kvalvik and Robertsen (2017) and Mikkelsen, Karlsen and "
+            "Osmundsen (2019) show that the municipal plan is the gate, while larger "
+            "planning areas and shared maps still yield few certain new areas for "
+            "aquaculture. Myklebust (2018, 2021) shows how far the municipality can go "
+            "with environmental conditions in the plan before the locality case under "
+            "the Aquaculture Act takes over. The open question is which factor binds "
+            "first, and where they pull in different directions.",
+            "Which factors influence opportunities for development in coastal aquaculture, and how do factors related to site availability, licensing systems, spatial planning, environmental considerations and fish health interact?",
         ),
         (
-            "3. Where in the permit stack does a locality case die: allocation, sanitary spacing, or sector refusal?",
-            "A farm needs a production licence and a locality licence. From 2010 the "
-            "county coordinates the locality case. Sandersen and Kvalvik (2014) describe "
-            "that reform as tasks without real authority: more units, and smaller ones. "
-            "Osmundsen and Olsen (2025) separate county coordination, municipal "
-            "designation and sector vetoes, and find that the county lacks tools to "
-            "recast the structure that exists. SALT 1110 reads 251 refusals from "
-            "2020-2025. The Food Safety Authority is the most frequent recorded refuser, "
-            "and lice is the largest coded ground there. Facts, judgement and "
-            "precaution often run together. Schütz and Slater (2019) treat production "
-            "areas and the path from plan to permit as a predictability problem. The "
-            "open question is whether the case dies in allocation rounds, in sanitary "
-            "spacing, or in opaque refusals.",
-            "Where in the permit stack does a locality case die: allocation, sanitary spacing, or sector refusal?",
+            "3. How is the site application process practised, and where do stops, delays or conflicts most often occur?",
+            "The question is the locality application. It goes to the county, which "
+            "cannot grant a permit if the Food Safety Authority, the County Governor "
+            "or the Coastal Administration refuses, or if the location conflicts with "
+            "the plan. Osmundsen and Olsen (2025) find that deadlines are missed more "
+            "often at the Food Safety Authority and the County Governor than at the "
+            "county, and that incomplete and strategic applications stop the queue. "
+            "SALT 1110 reviews 251 refusals from 2020 to 2025. Infection risk dominates "
+            "the Food Safety Authority's refusals. Evenset and colleagues (2023) "
+            "describe the same veto and the judgement of whether the site is "
+            "environmentally sound. Sand and Misund (2025) report that applications in "
+            "Osen are often refused because the municipality sits at the top of a "
+            "disease-protection zone. The 2015 Nofima report shows that even small "
+            "adjustments can require a full locality application. What remains open is "
+            "how much of the delay comes from missing knowledge, and how much from each "
+            "agency protecting its own concern.",
+            "How does the site application process unfold, and at which stages of the process do delays, rejections or conflicts most commonly occur?",
         ),
         (
-            "4. When sea goes to aquaculture, what must yield: other use, living nature, or the farm?",
-            "When sea goes to a farm, something else has to yield: another use "
-            "(fisheries, shipping, recreation, defence, offshore wind), or wild salmon, "
-            "coastal cod and seabed nature already living there. Sometimes it is the "
-            "farm that has to yield. Evenset and colleagues (2023) found no published "
-            "literature on other coastal industries harming farms, so expert scores fill "
-            "that gap. Mikkelsen and colleagues (2025) show that Nature Diversity Act "
-            "section 10 requires cumulative load as a guideline, while the Aquaculture "
-            "Act has no explicit duty or method for it. Sandersen and Kvalvik (2015) "
-            "treat the environmental debate and the area-rent debate as two tracks. "
-            "Meld. St. 35 (2023-2024) places aquaculture as one sector in use and "
-            "conservation of nature, and says that the traffic-light and the quality "
-            "standard for wild salmon do not steer toward the same goal. This is a "
-            "dispute over use and values, not a second wild-salmon room.",
-            "When sea goes to aquaculture, what must yield: other use, living nature, or the farm?",
+            "4. How are cumulative effects of aquaculture assessed in planning and siting, and what knowledge problems are described?",
+            "Cumulative load is a different question from the conflict with one other "
+            "user. Mikkelsen and colleagues (2025) show that the impact-assessment "
+            "regulations require an assessment of combined pressures, without saying "
+            "how, and that the Aquaculture Act speaks of holistic judgements without an "
+            "explicit duty to assess cumulative pressure. Evenset and colleagues (2023) "
+            "review cumulative environmental effects and find gaps in method and data. "
+            "Case officers struggle in particular with weighing growth against "
+            "environmental risk, and with combined effects. SALT 1065 finds that "
+            "assessments of combined effects over larger areas could have been better, "
+            "and that disease and lice largely belong with authorities other than the "
+            "municipal impact assessment. Sandersen (2021) shows that reversed planning "
+            "on Helgeland moved the conflict clarification out of the plan and made "
+            "cumulative load hard to assess. The Gullestad committee (2011) proposed "
+            "production areas because farms affect one another across municipal "
+            "borders. The gap is the method: the statutes require a combined "
+            "assessment, while the texts disagree on who should do it, and on what "
+            "basis.",
+            "How are cumulative-effect assessments of aquaculture production incorporated into spatial planning and site-selection decisions for aquaculture, and what knowledge-related and methodological challenges are identified?",
         ),
         (
-            "5. How is knowledge used, missing or postponed in plans and locality processing of aquaculture?",
-            "If what is scarce is disputed, the plan and the application are where that "
-            "dispute should be settled. Often it is not settled there. SALT 1065 "
-            "separates what belongs in the municipal impact assessment from what belongs "
-            "in the Aquaculture Act case, and points to Ombudsman cases on uncertainty in "
-            "the plan file. SALT 1110 reads 251 refusals and finds that facts, "
-            "professional judgement and precaution often run together, and that "
-            "thresholds for coral are not standardised. Sørdahl (2024, 2026) argue that "
-            "more holism in the document is not more decision. Mikkelsen (2025) and "
-            "Evenset (2023) both point to cumulative load as missing knowledge and weak "
-            "practice. The gap is how uncertainty and precaution should enter the "
-            "decision. It is not first a question of which study is missing.",
-            "How is knowledge used, missing or postponed in plans and locality processing of aquaculture?",
+            "5. How do economic instruments and regulation affect incentives for area use and siting, and how are benefits and costs shared?",
+            "The municipality designates the sea, and several texts ask whether money "
+            "changes that willingness. Sandersen and Kvalvik (2015) treat the area rent "
+            "as a stuck problem: the state wants to avoid a new tax instrument, the "
+            "industry wants to pay for growth rather than for existing sites, and the "
+            "municipalities want a stable share. They describe a worst case in which "
+            "the municipality receives the money and still declines to designate more "
+            "sea. Hersoug, Mikkelsen and Osmundsen (2020) follow what came next: the "
+            "Aquaculture Fund and a production fee, and the claim that legitimacy for "
+            "more area rests on a distribution the municipalities experience as fair. "
+            "Aanesen and Mikkelsen (2020) find that transfers from the fund often do not "
+            "outweigh households' valuation of avoiding more aquaculture, unless some "
+            "of the producer surplus stays in the region. Iversen and colleagues (2025) "
+            "describe the resource rent tax and the split of auction income between "
+            "host municipalities and counties. Misund and colleagues (2023) find that "
+            "people in aquaculture municipalities are more positive toward the industry, "
+            "and still no more satisfied with the distribution. Whether the money "
+            "actually opens more sea is not tested in this set.",
+            "How do economic instruments and regulatory arrangements influence incentives for area use and site selection, and how are benefits and costs distributed among stakeholders?",
         ),
         (
-            "6. Is more area the wrong move if density and biology limit growth first?",
-            "Sanitary distances and infection between neighbouring farms claim far more "
-            "sea than the pen, and both Hersoug (2020) and Sand (2025) repeat the point. "
-            "Kulmambetova and Tveterås (2025) find that closer neighbours are associated "
-            "with higher production cost. Gullestad (2011) proposed production areas and "
-            "coordinated fallowing, without setting a zone size. The 2023 report on "
-            "sustainable area use calls for density rules and disputes traffic-light "
-            "cuts, while HI (2026) describes carrying capacity per production area as "
-            "little known. If biology and distance limit first, more area is the wrong "
-            "policy sentence. The traffic-light is then a lid on growth, not an argument "
-            "for more sea surface. Aldrin (2011-2017), Qviller (2024) and Moldal (2026) "
-            "sit in the file as neighbouring texts on spread.",
-            "Is more area the wrong move if density and biology limit growth first?",
+            "6. What knowledge base is used for area decisions, and how may new technology change area use and siting?",
+            "The knowledge base for area decisions is uneven, and new technology can "
+            "move where farms can sit. Robertsen and colleagues (2014) and SALT 1065 "
+            "ask what basis the municipalities use in coastal zone plans, and find that "
+            "thematic data are poorly prepared and that the assessments vary. Mikkelsen, "
+            "Sørdahl and Solås (2022) compare impact assessments of 143 proposed "
+            "aquaculture areas and find weak consistency in what is weighted. Metier "
+            "(2023) estimates that marine base maps can reduce the risk of new "
+            "locality decisions, including through currents and lice. SALT 1110 points "
+            "to knowledge needs in refusal practice. Hersoug, Mikkelsen and Osmundsen "
+            "(2020) and the 2023 report on sustainable area use review land-based "
+            "production, offshore production, large post-smolt and closed pens, and say "
+            "that the need for sheltered coastal area depends on whether these concepts "
+            "become profitable. Sand and Misund (2025) report the proposal for a "
+            "research centre on area use and for national planning guidelines. How far "
+            "the new technology actually moves localities is still qualitative.",
+            "What knowledge base underpins spatial decisions in aquaculture, and how may emerging technologies alter the conditions for area use, environmental impacts and siting opportunities?",
         ),
         (
-            "7. Do tax and funds open more sea area in municipalities, or can they take the money without designating more?",
-            "The municipality designates the sea, so national growth targets rest on "
-            "local will. Money is the fix most often proposed. Sandersen and Kvalvik "
-            "(2015) call the area rent a wicked problem: environmental conflict, other "
-            "uses, and low local return after ownership became concentrated. They "
-            "describe a worst case in which the municipality takes the money and still "
-            "declines to designate more sea. Area rent was found unsuited as an instrument, "
-            "and property tax on sea installations, a production fee and Havbruksfondet "
-            "followed (Hersoug 2020). Rosendal (2025) links municipal finances to "
-            "environmental concern. Whether money actually opens more sea area is "
-            "something none of the texts has tested.",
-            "Do tax and funds open more sea area in municipalities, or can they take the money without designating more?",
+            "7. What conflicts arise between aquaculture and other interests in planning and siting, and what makes the process legitimate and predictable?",
+            "The conflict is between aquaculture and other uses of the same sea, and "
+            "between local designation and national sector interests. Jentoft and Buanes "
+            "(2005) call the picture of almost unlimited coastal space a myth: from the "
+            "air the pens are dots, on the ground security zones make the industry "
+            "space-consuming, and user conflicts cannot be set aside. Kvalvik and "
+            "Robertsen (2017) and Sandersen (2021) show that inter-municipal planning "
+            "coordinates the process, while designation of sea for aquaculture often "
+            "falls back to each municipality when interests diverge. Bjørkan and "
+            "Eilertsen (2020) find a legitimacy gap toward fishers, while residents in "
+            "the same municipalities are more positive. Rosendal and colleagues (2025) "
+            "show that municipalities weigh environmental load against the industry "
+            "cluster when they designate sea in the area plan. Sørdahl and Kvalvik "
+            "(2024) and Sørdahl (2026) argue that more holism in the plan document does "
+            "not by itself make the outcome more settled. Mikkelsen, Sørdahl and Solås "
+            "(2022) tie legitimacy to whether the impact assessments are transparent "
+            "and consistent from case to case. Schütz and Slater (2019) describe the "
+            "tension between predictability for the permit and the possibility of "
+            "changing conditions when environmental effects change.",
+            "What conflicts arise in planning and siting processes between aquaculture and other interests, and what contributes to legitimate, effective and predictable decision-making processes?",
+        ),
+        (
+            "8. What can the industry itself do to make its area use more efficient and sustainable?",
+            "The texts that answer here are about what the farmers can do together. "
+            "Karlsen and colleagues (2019) find that cooperation on fallowing, stocking "
+            "and preparedness is largely voluntary, or voluntary under the threat of an "
+            "order, and recommend that it stay voluntary because ordered cooperation is "
+            "rarely enough. Osmundsen and colleagues (2021) study the same "
+            "self-regulation in shared waters. Bjørnå and colleagues (2026) describe "
+            "informal networks in which companies take on biological risk and regulatory "
+            "pressure together. The 2023 report on sustainable area use says that "
+            "production in an open commons requires business models that coordinate "
+            "locality use, because one company's operation hits the neighbour's result. "
+            "The Gullestad committee (2011) placed a stronger responsibility on the "
+            "industry in each production area for the shared problems. Whether voluntary "
+            "zone cooperation actually makes area use more efficient is disputed: "
+            "Karlsen reports that joint fallowing has an uncertain effect on lice.",
+            "What measures may the industry itself apply to ensure that its spatial use is most efficient and sustainable?",
+        ),
+        (
+            "9. How do biosecurity, disease and water contact between farms matter for production and operation?",
+            "Open pens share water, and the distance between farms is an operational "
+            "limit as much as a planning limit. Aldrin and colleagues (2011) model the "
+            "spread of ISA along the seaway between farms. Aldrin and colleagues (2015) "
+            "find that a large share of PD infection comes from neighbouring farms. "
+            "Aldrin and colleagues (2017) model the lice population on the individual "
+            "farm, including recruitment from outside. Qviller and colleagues (2024) "
+            "simulate that fewer and larger farms, farther apart, can lower lice levels "
+            "and treatment need. Kulmambetova and Tveterås (2025) find that closer "
+            "neighbours are associated with higher production cost, through disease and "
+            "lice carried by currents. Pettersen and colleagues (2015) describe "
+            "fallowing, movement restrictions and management areas as disease-control "
+            "tools in open pens. Moldal and colleagues (2026) tie part of the 2025 ISA "
+            "outbreaks to horizontal infection between sea sites and to movement of "
+            "fish. What remains is how large a distance actually breaks infection "
+            "contact, and whether joint fallowing works.",
+            "How are biosecurity, disease transmission and water connectivity between farms important for production and operation of aquaculture facilities?",
         ),
     ],
 }
@@ -302,57 +429,70 @@ FAULT_PAPERS = [
         "2020_hersoug_whats-the-clue",
         "2015_sandersen_access-to-sites",
         "2011_gullestad_arealbruk-havbruk",
-        "2025_sand_havbrukets-arealbehov-trondelag",
-        "2025_kulmambetova_spatial-density-productivity",
-        "2005_jentoft_challenges-myths-czm",
-    ],
-    [
-        "2017_kvalvik_intermunicipal-coastal-planning",
-        "2021_sandersen_kystsone-helgeland",
-        "2019_mikkelsen_arealplanlegging-sjo",
-        "salt_1065_ku-arealplanlegging",
-        "2025_sand_havbrukets-arealbehov-trondelag",
-        "2024_sordahl_when-all-you-have-is-a-hammer",
+        "2015_rettslig_rammeverk-havbruk",
+        "undated_baerekraftig-arealbruk-havbruk",
     ],
     [
         "2022_hersoug_ten-licensing-systems",
-        "2025_osmundsen_fylkeskommune-akvakulturloven",
-        "salt_1110_lokalitetssoknader",
-        "2015_rettslig_rammeverk-havbruk",
-        "2014_sandersen_administrative-reform",
-        "2019_schutz_strategic-marine-planning",
-    ],
-    [
-        "2023_evenset_sameksistens",
-        "2025_mikkelsen_samlet-pavirkning-nord",
-        "2025_sand_arealbruk-bionaringer-trondelag",
-        "2015_sandersen_access-to-sites",
-        "2019_schutz_strategic-marine-planning",
-        "2024_meldst35_baerekraftig-bruk-natur",
-    ],
-    [
-        "salt_1065_ku-arealplanlegging",
-        "salt_1110_lokalitetssoknader",
-        "2023_evenset_sameksistens",
-        "2025_mikkelsen_samlet-pavirkning-nord",
-        "2024_sordahl_when-all-you-have-is-a-hammer",
-        "2026_sordahl_nar-alt-skal-med",
-    ],
-    [
-        "2025_kulmambetova_spatial-density-productivity",
-        "2020_hersoug_whats-the-clue",
         "2011_gullestad_arealbruk-havbruk",
-        "undated_baerekraftig-arealbruk-havbruk",
-        "2026_hi_risikorapport",
         "2025_sand_havbrukets-arealbehov-trondelag",
+        "2017_kvalvik_intermunicipal-coastal-planning",
+        "2019_mikkelsen_arealplanlegging-sjo",
+        "2021_myklebust_authority-division",
+    ],
+    [
+        "2025_osmundsen_fylkeskommune-akvakulturloven",
+        "salt_1110_lokalitetssoknader",
+        "2023_evenset_sameksistens",
+        "2025_sand_havbrukets-arealbehov-trondelag",
+        "2015_rettslig_rammeverk-havbruk",
+        "2011_gullestad_arealbruk-havbruk",
+    ],
+    [
+        "2023_evenset_sameksistens",
+        "2025_mikkelsen_samlet-pavirkning-nord",
+        "salt_1065_ku-arealplanlegging",
+        "2021_sandersen_kystsone-helgeland",
+        "2011_gullestad_arealbruk-havbruk",
     ],
     [
         "2015_sandersen_access-to-sites",
         "2020_hersoug_whats-the-clue",
-        "2025_rosendal_municipal-environment-economy",
+        "2020_aanesen_arctic-aquaculture-cba",
+        "2025_iversen_socioeconomic-impacts-salmon",
+        "2023_misund_political-economy-salmon",
         "2015_rettslig_rammeverk-havbruk",
-        "2025_osmundsen_fylkeskommune-akvakulturloven",
-        "2019_mikkelsen_arealplanlegging-sjo",
+    ],
+    [
+        "2014_robertsen_interkommunal-planlegging",
+        "salt_1065_ku-arealplanlegging",
+        "2022_mikkelsen_ocean-coastal-management",
+        "2023_metier_marine-grunnkart",
+        "2020_hersoug_whats-the-clue",
+        "undated_baerekraftig-arealbruk-havbruk",
+    ],
+    [
+        "2005_jentoft_challenges-myths-czm",
+        "2017_kvalvik_intermunicipal-coastal-planning",
+        "2020_bjorkan_local-perceptions",
+        "2025_rosendal_municipal-environment-economy",
+        "2026_sordahl_nar-alt-skal-med",
+        "2022_mikkelsen_ocean-coastal-management",
+    ],
+    [
+        "2019_karlsen_omradesamarbeid",
+        "2021_osmundsen_shared-waters",
+        "2026_bjorna_adaptive-co-management",
+        "undated_baerekraftig-arealbruk-havbruk",
+        "2011_gullestad_arealbruk-havbruk",
+    ],
+    [
+        "2011_aldrin_isa-farm-spread",
+        "2015_aldrin_pd-space-time",
+        "2017_aldrin_lice-farm-model",
+        "2024_qviller_geographic-redistribution",
+        "2025_kulmambetova_spatial-density-productivity",
+        "2015_pettersen_emerging-diseases-salmon",
     ],
 ]
 
@@ -502,21 +642,21 @@ with st.sidebar:
         tr(lang, "Documents to retrieve", "Antall dokumenter å hente"),
         3,
         12,
-        8,
+        10,
         help=tr(
             lang,
-            "Number of documents ranked by similarity. This room does not yet add contrast links on top.",
-            "Antall dokumenter rangert etter likhet. Dette rommet legger ennå ikke til kontrastlenker oppå treffene.",
+            "Documents ranked by semantic and lexical relevance, with up to two relevant related sources.",
+            "Dokumenter rangert etter semantisk og leksikalsk relevans, med opptil to relevante relaterte kilder.",
         ),
     )
     st.divider()
     st.caption(
         tr(
             lang,
-            "Corpus: area-and-aquaculture (39 documents, draft room)  \n"
+            "Corpus: area-and-aquaculture (50 documents, draft room)  \n"
             "Method: Honest Broker (Pielke 2007)  \n"
             "Funded by FHF / Havbruksløftet AP1",
-            "Korpus: area-and-aquaculture (39 dokumenter, utkast-rom)  \n"
+            "Korpus: area-and-aquaculture (50 dokumenter, utkast-rom)  \n"
             "Metode: Honest Broker (Pielke 2007)  \n"
             "Finansiert av FHF / Havbruksløftet AP1",
         )
@@ -555,7 +695,7 @@ with hero_right:
   <div class="hl-stat"><strong>{n_total or 39}</strong><span>documents in corpus</span></div>
   <div class="hl-stat"><strong>{span}</strong><span>time span</span></div>
   <div class="hl-stat"><strong>{len(FAULTS['en'])}</strong><span>open questions</span></div>
-  <div class="hl-stat"><strong>17.09</strong><span>last reviewed</span></div>
+  <div class="hl-stat"><strong>19.10</strong><span>last reviewed</span></div>
 </div>
 """,
                 f"""
@@ -563,7 +703,7 @@ with hero_right:
   <div class="hl-stat"><strong>{n_total or 39}</strong><span>dokumenter i korpuset</span></div>
   <div class="hl-stat"><strong>{span}</strong><span>tidsrom</span></div>
   <div class="hl-stat"><strong>{len(FAULTS['no'])}</strong><span>åpne spørsmål</span></div>
-  <div class="hl-stat"><strong>17.09</strong><span>sist gjennomgått</span></div>
+  <div class="hl-stat"><strong>19.10</strong><span>sist gjennomgått</span></div>
 </div>
 """,
             ),
@@ -576,14 +716,14 @@ st.caption(
         "A introduces the paradox and the three area quantities. "
         "B shows the split governing system, with links to statutes and public sources. "
         "C collects the open questions. D searches the corpus. "
-        "Working draft. Priority questions are not confirmed by the three selectors. "
-        "The corpus is 39 documents: 33 from the received set plus six added by Thord Håkon Bakke on 15 September 2026. "
-        "Some files are neighbouring texts on farm-to-farm spread, fish health, welfare law and valuation. They do not answer designation.",
+        "The questions A0 to A8 were settled by the selectors on 19 October 2026. "
+        "Search hits the 50 embedded documents. "
+        "Files without an area code do not answer designation or siting.",
         "A innfører paradokset og de tre arealbegrepene. B viser det delte styringssystemet, med lenker til lover og offentlige kilder. "
         "C samler de åpne spørsmålene. D søker i korpuset. "
-        "Arbeidsutkast. Prioritetsspørsmål er ikke bekreftet av de tre utvelgerne. "
-        "Korpuset er 39 dokumenter: 33 fra den mottatte bunken pluss seks som Thord Håkon Bakke la inn 15. september 2026. "
-        "Noen filer er nabotekster om smitte mellom anlegg, fiskehelse, velferdsrett og verdsetting. De svarer ikke på utpeking.",
+        "Spørsmålene A0 til A8 ble vedtatt av utvelgerne 19. oktober 2026. "
+        "Søket treffer de 50 innebygde dokumentene. "
+        "Filer uten arealkode svarer ikke på utpeking eller lokalisering.",
     )
 )
 
@@ -954,10 +1094,10 @@ with st.container(border=True):
 st.caption(
     tr(
         lang,
-        "Editorial orientation · last reviewed 2026-09-17 · C and D search the active documents. "
-        "Tagging codes A1-A6 sit in PRIORITY_QUESTIONS.md. A0 is the lead question, not a tag.",
-        "Redaksjonell orientering · sist gjennomgått 2026-09-17 · C og D søker i de aktive dokumentene. "
-        "Taggkodene A1-A6 står i PRIORITY_QUESTIONS.md. A0 er det ledende spørsmålet, ikke en tagg.",
+        "Editorial orientation · last reviewed 2026-10-19 · C and D search the active documents. "
+        "Tagging codes A0-A8 sit in PRIORITY_QUESTIONS.md. A0 is also the lead question.",
+        "Redaksjonell orientering · sist gjennomgått 2026-10-19 · C og D søker i de aktive dokumentene. "
+        "Taggkodene A0-A8 står i PRIORITY_QUESTIONS.md. A0 er også det ledende spørsmålet.",
     )
 )
 
@@ -1015,8 +1155,8 @@ with st.container(border=True):
         value=st.session_state.get("areal_query", ""),
         placeholder=tr(
             lang,
-            "e.g. What limits aquaculture growth on the Norwegian coast: unused sea, licences, municipal designation, or biology?",
-            "f.eks. Hva begrenser vekst i havbruk på norskekysten: mangel på sjøflate, tillatelser, kommunal utpeking, eller biologi?",
+            "e.g. What limits aquaculture growth on the Norwegian coast: available sites, licences, municipal planning, or biological and environmental considerations?",
+            "f.eks. Hva begrenser vekst i havbruk på norskekysten: tilgjengelige lokaliteter, tillatelser, kommunal planlegging, eller biologiske og miljømessige hensyn?",
         ),
         height=90,
     )

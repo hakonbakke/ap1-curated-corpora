@@ -17,8 +17,7 @@ document_type: monitoring_report
 abstract_available: true
 corpus: area-and-aquaculture
 priority_questions:
-- A5
-- A3
+- A8
 geography:
 - Norway
 environment:

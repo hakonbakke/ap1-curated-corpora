@@ -1,0 +1,113 @@
+title: 'Adaptive co-management in Norwegian aquaculture: insights from horizontal
+  and vertical local networks'
+year: '2026'
+doi: 10.1007/s10113-026-02572-4
+url: https://doi.org/10.1007/s10113-026-02572-4
+authors:
+- Hilde Bjørnå
+journal: Regional Environmental Change
+publisher: The Author(s) 2026
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: 'yes'
+corpus: area-and-aquaculture
+priority_questions:
+- A7
+geography:
+- Norway
+- Nord_Norge
+environment:
+- coastal
+- municipality
+time_period: ''
+regulatory_context:
+- Norway_Aquaculture_Act
+- municipal_coastal_plan
+evidence_type: empirical_observational
+study_design:
+- interview_study
+- document_analysis
+data_source:
+- interviews
+- published_literature
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coexistence_tradeoffs
+- municipal_economy_environment
+- knowledge_in_decisions
+evidence_direction: not_applicable
+effect_scale: regional_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- regulatory_constraints
+- relational dependencies
+key_claims:
+- Norwegian salmon aquaculture faces socio-ecological challenges, including fish escapes
+  and lice infestations.
+- Informal, self-organized networks contribute to sustainability by fostering mutual
+  learning and adaptability.
+- Horizontal networks excel in knowledge sharing and collective action, addressing
+  biological risks and economic challenges.
+- Vertical networks emphasize public-private collaboration but show limited engagement
+  with environmental sustainability.
+- Adaptive co-management principles highlight the importance of trust, local knowledge,
+  and iterative adaptation.
+- Regulatory constraints and relational dependencies pose challenges to proactive
+  environmental collaboration.
+- The study underscores the complementary strengths of horizontal and vertical networks
+  in enhancing resilience and sustainability.
+claims_about_uncertainty:
+- Regulatory constraints and relational dependencies pose challenges to proactive
+  environmental collaboration.
+claims_about_policy_or_management:
+- Informal governance systems can enhance resilience and sustainability in aquaculture.
+- Horizontal networks enable stakeholders to address biological risks, regulatory
+  pressures, and economic challenges.
+- Vertical networks drive community and economic development through public-private
+  collaboration.
+methodological_limitations:
+- Focus on two regions in Arctic Norway may constrain applicability to other contexts.
+rag_summary: This study examines the role of informal, self-organized networks in
+  Norwegian aquaculture, focusing on horizontal collaborations among salmon entrepreneurs
+  and vertical collaborations between companies and municipalities. It highlights
+  how these networks contribute to sustainability by fostering mutual learning, adaptability,
+  and resilience. Horizontal networks excel in knowledge sharing and collective action,
+  addressing biological risks and economic challenges. Vertical networks emphasize
+  public-private collaboration, driving community and economic development, but show
+  limited engagement with environmental sustainability. The study underscores the
+  complementary strengths of these networks and their role in enhancing resilience
+  and sustainability in aquaculture. However, regulatory constraints and relational
+  dependencies pose challenges to proactive environmental collaboration.
+coi_declared: 'yes'
+coi_notes: The author declares no competing interests.
+consensus_signal: ''
+quality_signal: strong
+quality_rationale: The study is published in a peer-reviewed journal and employs a
+  robust qualitative methodology with interviews and document analysis.
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: The study provides insights into the role of informal networks
+  in aquaculture sustainability, relevant to understanding area and aquaculture interactions.
+included_because: The document provides insights into how informal governance systems,
+  including horizontal and vertical networks, contribute to sustainability and resilience
+  in Norwegian aquaculture, relevant to area and aquaculture interactions.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- adaptive_co_management
+- informal_networks
+- sustainability
+- Norwegian_aquaculture
+- horizontal_vertical_collaboration
+curator_note: Draft curate 2026-10-12 from the PyMuPDF extract. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording, not the September
+  A1-A6. The 12 October sheet does not name one selector for this file. inclusion_decided_by
+  is the three who added the batch.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Bjørnå 2026 Adaptive.pdf

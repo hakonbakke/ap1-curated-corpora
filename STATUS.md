@@ -1,6 +1,6 @@
 # STATUS - AP1 Curated Corpora
 
-Last updated: 2026-09-18 (C dropdown now shows the same forked questions as D)  
+Last updated: 2026-10-19 (Robertsen 2014 and Pettersen 2015 extracted; not curated)  
 Owner: Thord Hakon Bakke
 
 ## Purpose of this file
@@ -120,14 +120,33 @@ AREA_ROOM_FRAME and areal freeform prompts rewritten the same day. Traffic-light
 
 Standing split (Thord 2026-09-15): wild salmon is in this room when it gates expansion, above all via the traffic-light on 13 production areas and via lice as a reason for site refusal. The villaks room keeps the causal chain from lice on out-migrating smolt to mortality estimates. Do not strip TLS from areal answers. Do not let every areal question open as the wild-fish impact controversy.
 
+A0-A6 are a working set. Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen can change the questions, drop codes, add codes, or rewrite the wording as they go through the innspill pack. Do not treat today's codes, `_AREAL_ROUTE_RULES`, the 15 Sep smoke must-hits, or the tags on the original 33 as a ranking contract. Hybrid route boost is a temporary overlay on unrebalanced tags. After they land: retag, then rewrite the route list and the Ask-smoke. Not before.
+
+### Codex (2026-09-15 and 2026-09-18)
+Grounded in git plus Codex session logs. Not the Cursor demo/innspill work.
+
+Shipped on `origin/main` (commit `0d9f01a`, Luna batch 1):
+- Snapshot first: branch `backup-pre-audit-2026-09-15` at `2a708f3`, plus a local PDF zip under `ap1-curated-corpora-backups/2026-09-15`
+- Kvalvik selector keyed on `doc_id` (duplicate titles no longer collide)
+- `_odl_tmp/` in `.gitignore`; PyMuPDF in `requirements.txt`
+
+Written locally, not committed, not on Cloud:
+- 15 Sep, after the Luna commit: fail-closed `ai_verify_document.py` (every `key_claim` must be supported; `--audit-existing`), `offline_accept_qa.py` requires named override, `tests/test_verification_gates.py`, WORKFLOW/backlog, Jonsson 2016 corrected to `ai_draft` and re-embedded in villaks parquet
+- 18 Sep then finish 19 Sep: hybrid retrieve, evidence-block synthesis, ingest/sync field list expanded, `eval/areal_retrieval_benchmark.json` plus runner and `tests/test_areal_rag.py`. Against the finish brief it still re-embedded all 39 (`text-embedding-3-large`). Working parquet embeddings differ from `HEAD` on every row (mean cosine ~0.955). `retrieval_text` changed on all 39 because extra YAML fields now enter the embed string. Stale marker gone because ingest caught up, not because the old index was broken. Default Ask `k` is 10. Their 10/10 is a self-written smoke at k=10 with OR-groups and OOS keywords taken from the same three fixture queries. Astra first said qualified pass (scope guard too blunt), then they added a planning-context carve-out. Astra also called the ten cases a development smoke, not answer-quality eval. Cursor reproduced 19/19 unit tests. No commit, no retag of the original 33, A-C and innspill untouched.
+
+Audit write-up (read-only at the time it was written): `Astra_Audit_AP1_Curated_Corpora.md` (untracked).
+
+Cursor, not Codex: A-C copy, C/D question length, Cloud demo commits `0679c33`/`955cb8e`/`3e6f11d`, `CORPUS_OVERVIEW.md`, innspill Word/Excel.
+
 ### Next
-1. Cloud share: `https://ap1-evidensrom.streamlit.app` tracks `main`. C dropdown titles now match the D example questions (forked, not the old short labels). Confirm OpenAI secret, then send the live URL. Do not retag the original 33
-2. After the demo: selectors on A1-A6 tags. Retrieval of Jentoft and Sørdahl only if the same questions still miss them
+1. Second read of labels is finished 19 Oct 2026. The C-section bodies in `app/pages/2_Areal_og_havbruk.py` were rewritten the same day so each explanation matches the settled A0-A8 question. Chips under each question follow the labels. The page is local only. Cloud still shows the old questions until a push to main. On 19 Oct 2026 the 11 papers missing from the index were embedded with text-embedding-3-large and upserted. The parquet is 50 rows. The original 39 vectors were not rebuilt. priority_questions for all 50 were synced into the parquet without a new embedding. Robertsen 2014 and Pettersen 2015 now have summary.md, key_claims and rag_summary written from the extracts. Laws were not embedded. Villaks parquet was not touched. A0 to A8 are all possible tags. A0 only when the paper's subject is the overall balance of where and how far aquaculture can be established. A second read from the extracts is underway (19 Oct 2026) and is written into metadata and `updates_files_19_10_26/Documents_tags_and_weight.xlsx`. Narrowed so far: Mikkelsen, Karlsen and Osmundsen 2019 lost A0 (now A1, A4, A5, A6); Schütz and Slater 2019 lost A0 (now A1, A6); Aanesen and Mikkelsen 2020 lost A6 (now A4); Jentoft and Buanes 2005 is now A6 only; Sandersen 2021 Helgeland lost A0 (now A1, A3, A6); Sandersen and Kvalvik 2014 lost A0 (now A1, A6, both spreadsheet rows); Misund and others 2023 lost A1 (now A4). Pettersen and others 2015 lost A7 (now A8). Myklebust 2014 stays A1, A6. Robertsen and others 2014 stays A1, A5, A6. Aldrin and others 2015 stays A8. The 2015 legal framework report stays A0, A1, A2, A4, A6. Meld. St. 35, the 2026 risk report and the IPBES values volumes have no area code. Moldal 2026 stays A8. Sørdahl 2026 stays A6. Evenset 2023 is A1, A2, A3, A5, A8. SALT 1065 is A3, A5, A6. SALT 1075 stays A1, A5. SALT 1110 stays A2, A5, A8. The 2023 sustainable-area report is A0, A1, A4, A5, A7, A8. Metier 2023 is A5. Sand and Misund 2025 on area need is A1, A2, A5, A6, A8. Sand and others 2025 on bio-industries stays A6. Rosendal and others 2025 is A6. Myklebust 2021 is A1, A6. Hersoug 2022 is A1, A4. Iversen and others 2025 stays A4. Osmundsen and Olsen 2025 stays A2. Mikkelsen and others 2025 on cumulative impact stays A3. Kept after this read: Sandersen and Kvalvik 2015 (A0, A1, A4, A6), Gullestad and others 2011 (A0, A1, A2, A3, A5, A6, A7, A8), Aldrin and others 2011 (A8), Qviller and others 2024 (A8), Iversen and others 2025 (A4), Mikkelsen, Sørdahl and Solås 2022 (A5, A6). Hersoug, Mikkelsen and Osmundsen 2020 stays A0, A1, A4, A5, A6. Both Kvalvik 2017 folders stay A1, A6. Myklebust 2018 stays A1, A6. Karlsen and others 2019 stays A7, A8. Bjørkan and Eilertsen 2020 stays A6. Gismervik and others 2020 stays empty. Aldrin and others 2017 stays A8. The other folders still have the first labeling pass and are not certified by this re-read. Labels are not embedded and do not change search. A7 is what the industry itself can do. A8 is biosecurity, disease and water contact between farms. Laws and regulations stay context and are not embedded. Pettersen and others 2015 and Robertsen and others 2014 are extracted, not fully curated, and not embedded. Workshop 29 Oct.
+2. Cloud share: `https://ap1-evidensrom.streamlit.app` tracks `main`. Confirm OpenAI secret, then send the live URL. Cloud still uses cosine `retrieve`, not the local hybrid
+3. A1 drop was the route formula, not missing tags. The smoke query infers A1+A2 because it contains «avslag». Codex scored `intersection / all inferred codes`, so A1-only papers (Kvalvik, Helgeland) got half the boost of kitchen-sink A1+A2 tags. Cosine-only still had Helgeland at 5 and Kvalvik at 8. Fix: `areal_route_match_score` gives full credit for any matching A1-A6 code. After the fix, hybrid A1 k=8 returns Helgeland 6 and one Kvalvik 8 (the two files stay one publication). Still local. Do not push until you want another full Ask-smoke.
 
 Standing leftovers:
 1. Cloud share: `https://ap1-evidensrom.streamlit.app` (tracks `main`). Confirm secrets after push and send Ragnar the live URL
 2. Re-run recall after any retrieval change; compare to `2026-08-11T123621Z_recall.json`
-3. Hybrid BM25 only if a future recall run shows clear misses
+3. Hybrid Areal retrieve is investigate-first, not ship. Astra asked to categorize A0/A4 misses before a new retriever. Route boost on unrebalanced A1-A6 tags on the original 33 is the risk. Keep the evidence-block change (existing YAML into synthesis). Do not re-embed 39 because `RETRIEVAL_TEXT_FIELDS` grew.
 4. Source panel items 7-10 (group by direction, camp summary, clickable citations, merge debate map)
 5. Areal A is Thord's own intro (2026-09-17). Visible: paradox plus labeled merd/lokalitet/plan. Les mer has four headings (governance, three answers, knowledge, municipal will). SNL/KF left-panel excerpt remains as figure (`mockup/figur-arealbruk-snl.png`).
 6. Areal C renamed 2026-09-17 to **Åpne spørsmål**. A-B hinges shipped.

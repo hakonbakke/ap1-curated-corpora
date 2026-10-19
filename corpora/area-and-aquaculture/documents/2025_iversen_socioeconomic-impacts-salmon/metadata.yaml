@@ -1,0 +1,115 @@
+title: 'The Growing Importance of Aquaculture: The Case of Norwegian Salmon'
+year: '2025'
+doi: 10.1111/raq.70088
+url: https://doi.org/10.1111/raq.70088
+authors:
+- Audun Iversen
+- Frank Asche
+- Thomas Nyrud
+- Roy Robertsen
+- Bjørn Inge Bendiksen
+- Roberto Cárdenas-Retamal
+- Silje Steinsbø
+journal: Reviews in Aquaculture
+publisher: John Wiley & Sons Australia, Ltd.
+language: english
+source_type: peer_reviewed
+document_type: review_article
+abstract_available: 'yes'
+corpus: area-and-aquaculture
+priority_questions:
+- A4
+geography:
+- Norway
+environment:
+- coastal
+- municipality
+- county
+time_period: ''
+regulatory_context:
+- Norway_Aquaculture_Act
+- municipal_coastal_plan
+evidence_type: review
+study_design:
+- literature_review
+- statistical_analysis
+data_source:
+- official_statistics
+- public_registers
+wild_or_farmed_focus: farmed
+outcome_domain:
+- municipal_economy_environment
+- coexistence_tradeoffs
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- data availability
+- import leakage
+key_claims:
+- The Norwegian salmon aquaculture industry significantly contributes to employment
+  and value creation, with ripple effects extending beyond core production activities.
+- The industry supports 57,800 jobs, including 38,000 from ripple effects, highlighting
+  its importance to local and national economies.
+- Aquaculture production is concentrated along the Norwegian coast, with significant
+  regional differences in production growth.
+- The industry is highly profitable, contributing disproportionately to Norwegian
+  tax revenues compared to its GDP share.
+- The aquaculture sector's reliance on imported feed ingredients limits domestic ripple
+  effects, despite the industry's overall economic impact.
+claims_about_uncertainty:
+- The socioeconomic impact of aquaculture is difficult to assess due to limited data
+  availability.
+- Import leakage in feed production reduces the potential domestic ripple effects.
+claims_about_policy_or_management:
+- The aquaculture industry's tax contributions are significant, incentivizing municipalities
+  to support its growth.
+- The Aquaculture Fund distributes income from the industry to local municipalities,
+  promoting regional development.
+methodological_limitations:
+- The analysis does not account for international ripple effects from imported inputs
+  and services.
+- The study relies on input-output matrices with high levels of industry aggregation,
+  which may limit precision.
+rag_summary: The review article examines the socioeconomic impacts of the Norwegian
+  salmon aquaculture industry, emphasizing its role in employment and value creation.
+  The industry supports 57,800 jobs, including significant ripple effects from suppliers
+  and service providers. The analysis highlights the industry's importance to coastal
+  communities and its contribution to national tax revenues. However, the reliance
+  on imported feed ingredients limits domestic ripple effects. The study uses input-output
+  analysis to assess the industry's impact, but acknowledges limitations due to data
+  availability and the exclusion of international ripple effects.
+coi_declared: 'yes'
+coi_notes: The study was funded by the Norwegian Seafood Research Fund and the Norwegian
+  Research Council.
+consensus_signal: ''
+quality_signal: strong
+quality_rationale: The study is published in a peer-reviewed journal and uses comprehensive
+  data sources and established methodologies.
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: The study provides a detailed analysis of the socioeconomic impacts
+  of aquaculture, relevant to understanding its role in coastal and national economies.
+included_because: The document provides a comprehensive review of the socioeconomic
+  impacts of the Norwegian salmon aquaculture industry, relevant to understanding
+  its role in coastal and national economies.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- norwegian_salmon
+- socioeconomic_impacts
+- employment
+- value_creation
+- ripple_effects
+curator_note: Draft curate 2026-10-12 from the PyMuPDF extract. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording, not the September
+  A1-A6. The 12 October sheet does not name one selector for this file. inclusion_decided_by
+  is the three who added the batch.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Iversen et al 2025 The Growing Importance of Aquaculture  The Case of
+  Norwegian Salmon.pdf

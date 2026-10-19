@@ -13,8 +13,8 @@ document_type: review_article
 abstract_available: true
 corpus: area-and-aquaculture
 priority_questions:
-- A2
-- A6
+- A1
+- A4
 geography:
 - Norway
 environment:

@@ -1,0 +1,103 @@
+title: 'Rettslege rammer for oppgåvefordeling mellom planstyresmakter og akvakulturstyresmakter'
+year: '2021'
+doi: 10.18261/9788215045078-2021-17
+url: https://doi.org/10.18261/9788215045078-2021-17
+authors:
+- Ingunn Elise Myklebust
+journal: ''
+publisher: Universitetsforlaget
+language: norwegian
+source_type: peer_reviewed
+document_type: legal_analysis
+abstract_available: 'yes'
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A6
+geography:
+- Norway
+environment:
+- sea_area
+- municipality
+- county
+time_period: ''
+regulatory_context:
+- Norway_Aquaculture_Act
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+evidence_type: legal_analysis
+study_design:
+- legal_doctrinal
+data_source:
+- published_literature
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coastal_planning
+- licensing_access
+evidence_direction: not_applicable
+effect_scale: national_level
+uncertainty_emphasis: not_stated
+main_uncertainty_sources: []
+key_claims:
+- 'The chapter asks whether the legal basis for governing sea use, in regulations and conditions, is interpreted differently inside and outside private property, and whether giving more weight to coordination between authorities conflicts with equality and predictable decisions.'
+- 'Plan- og bygningsloven is treated as the tool for steering nearshore sea, one nautical mile beyond the baselines, and the chapter sets it against the Aquaculture Act and the split between municipal competence and state or county licence competence.'
+- 'The text cites a government aim of a fivefold increase in salmon and trout production by 2050, and says traditional pens are poorly suited to offshore sites, so the contest over nearshore sea continues while capacity remains there.'
+- 'It states that the Storting decided in 2015 to establish the aquaculture fund, and that in 2016-2019 80 percent of the fee from increased production capacity was distributed to municipalities and counties that had opened for farming in their plans. The chapter calls this a strong incentive to prioritise aquaculture in municipal planning.'
+- 'Examples of municipal conditions include the 2016 Lenvik objection on genetic introgression and salmon lice, including a possible closed-pen requirement, and the 2017 Osterøy plan text requiring minimal or no organic particle discharge.'
+claims_about_uncertainty: []
+claims_about_policy_or_management:
+- 'The chapter asks where the legal limit sits on a municipality setting operating conditions for nearshore aquaculture, and how steering should fit aquaculture to other uses.'
+methodological_limitations:
+- 'Legal analysis of statutes, objections and plan decisions. Not an empirical study of how often such conditions are used or of their effect on growth.'
+rag_summary: >
+  Myklebust (2021) is chapter 17 in Hauge and Stokke, Integrert kystsoneforvaltning
+  (Universitetsforlaget). It examines the legal split between planning authorities and
+  aquaculture authorities when sea area is steered. The chapter asks whether powers
+  in regulations and conditions are read differently inside and outside private
+  property, and whether extra weight on coordination conflicts with equal treatment
+  and predictable decisions. It places the Planning and Building Act, out to one
+  nautical mile beyond the baselines, against the Aquaculture Act. It cites the aim
+  of a fivefold production increase by 2050, argues that conventional pens are poorly
+  suited offshore, and says the nearshore contest continues. It reports that the
+  aquaculture fund was decided in 2015 and that in 2016-2019 80 percent of the fee
+  for increased capacity went to municipalities and counties that opened sea in their
+  plans. Lenvik (2016) and Osterøy (2017) are used as cases where municipalities
+  tried to set operating conditions, including closed pens and limits on organic discharge.
+coi_declared: unclear
+coi_notes: 'The extract states a CC BY-NC 4.0 licence for the chapter. No funding or conflict statement was read in the opening pages.'
+consensus_signal: ''
+quality_signal: strong
+quality_rationale: >
+  Doctrinal chapter by a law professor, with named cases and statutory hooks.
+  This draft was written from the opening of the extract, not a full page walk.
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: >
+  Directly on who may set conditions when sea is planned for aquaculture, which is
+  the licence-process and conflict questions in the 9 October set.
+included_because: >
+  The selectors added this chapter in the 28 September batch. It is a legal account
+  of the split between the municipality and the aquaculture authorities, including
+  the aquaculture fund as an incentive to open sea in the plan.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with:
+- 2018_myklebust_environmental-requirements
+- 2014_myklebust_municipal-coastal-planning
+retrieval_tags:
+- plan_og_bygningsloven
+- akvakulturloven
+- kommunal_kompetanse
+- havbruksfond
+- vilkar
+curator_note: >
+  Draft 2026-10-12 from the PyMuPDF extract, opening pages only. The API credit
+  stopped before this file was model-curated. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording.
+  The 12 October sheet does not name one selector for this file.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Myklebust 2021 Rettslege rammer for oppgåvefordeling mellom planstyresmakter og akvakulturstyresmakter.pdf

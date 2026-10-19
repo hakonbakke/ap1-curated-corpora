@@ -19,8 +19,7 @@ source_type: peer_reviewed
 document_type: review_article
 abstract_available: true
 corpus: area-and-aquaculture
-priority_questions:
-- A2
+priority_questions: []
 geography:
 - Norway
 environment:

@@ -1,0 +1,119 @@
+title: Miljøkrav i saker som gjeld akvakultur
+year: '2018'
+doi: ''
+url: ''
+authors:
+- Ingunn Elise Myklebust
+journal: KART OG PLAN
+publisher: ''
+language: norwegian
+source_type: peer_reviewed
+document_type: legal_analysis
+abstract_available: 'no'
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A6
+geography:
+- Norway
+environment:
+- coastal
+- municipality
+time_period: ''
+regulatory_context:
+- Norway_Aquaculture_Act
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+evidence_type: legal_analysis
+study_design:
+- legal_doctrinal
+data_source:
+- published_literature
+wild_or_farmed_focus: not_applicable
+outcome_domain:
+- coastal_planning
+- licensing_access
+- coexistence_tradeoffs
+- knowledge_in_decisions
+evidence_direction: not_applicable
+effect_scale: municipal_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- interpretation_of_legal_framework
+- interaction_between_laws
+key_claims:
+- The article examines the legal framework governing environmental requirements in
+  aquaculture, focusing on the role of municipalities under the Planning and Building
+  Act.
+- There is significant pressure to develop the aquaculture industry, leading to conflicts
+  between industrial development and environmental protection.
+- The legal framework is complex, with overlapping competencies between municipal
+  and sectoral authorities.
+- Municipalities have some discretion in setting conditions for aquaculture operations,
+  but this is limited by the need for coordination with sectoral laws.
+- The Aquaculture Act of 2005 clarified the relationship between municipal plans and
+  aquaculture licenses, stating that licenses cannot be granted in conflict with municipal
+  plans.
+- The article discusses the potential for municipalities to impose detailed conditions
+  on aquaculture operations to balance growth and environmental sustainability.
+- The legal analysis highlights the challenges in aligning municipal planning with
+  national goals for aquaculture growth.
+claims_about_uncertainty:
+- The boundaries between municipal and sectoral responsibilities are not clearly defined,
+  leading to uncertainty in legal interpretations.
+- The extent to which municipalities can impose detailed conditions on aquaculture
+  operations is uncertain and subject to legal interpretation.
+claims_about_policy_or_management:
+- Municipalities play a crucial role in balancing aquaculture growth with environmental
+  sustainability through planning and regulation.
+- Effective coordination between municipal and sectoral authorities is essential for
+  sustainable aquaculture development.
+methodological_limitations:
+- The analysis is based on legal interpretation, which may vary depending on future
+  legal developments and case law.
+rag_summary: The article by Ingunn Elise Myklebust explores the legal framework for
+  environmental requirements in aquaculture, focusing on the role of municipalities
+  under the Planning and Building Act. It highlights the significant pressure to develop
+  the aquaculture industry, which leads to conflicts between industrial development
+  and environmental protection. The legal framework is complex, with overlapping competencies
+  between municipal and sectoral authorities. Municipalities have some discretion
+  in setting conditions for aquaculture operations, but this is limited by the need
+  for coordination with sectoral laws. The Aquaculture Act of 2005 clarified that
+  licenses cannot be granted in conflict with municipal plans. The article discusses
+  the potential for municipalities to impose detailed conditions on aquaculture operations
+  to balance growth and environmental sustainability. However, the boundaries between
+  municipal and sectoral responsibilities are not clearly defined, leading to uncertainty
+  in legal interpretations.
+coi_declared: 'no'
+coi_notes: ''
+consensus_signal: ''
+quality_signal: strong
+quality_rationale: The article is a peer-reviewed legal analysis by a professor of
+  law, providing a detailed examination of the legal framework governing aquaculture.
+controversy_role: not_applicable
+relevance_signal: high
+relevance_rationale: The document provides a comprehensive legal analysis relevant
+  to understanding the regulatory context of aquaculture in Norway, particularly the
+  role of municipalities.
+included_because: The document provides a detailed legal analysis of the regulatory
+  framework for aquaculture in Norway, focusing on the interaction between municipal
+  planning and sectoral laws, which is crucial for understanding area and aquaculture
+  interactions.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- aquaculture
+- municipal_planning
+- legal_framework
+- environmental_requirements
+curator_note: Draft curate 2026-10-12 from the PyMuPDF extract. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording, not the September
+  A1-A6. The 12 October sheet does not name one selector for this file. inclusion_decided_by
+  is the three who added the batch.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Myklebust 2018 Miljokrav i saker som gjeld akvakultur.pdf

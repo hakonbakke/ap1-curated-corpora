@@ -33,8 +33,7 @@ source_type: expert_group_report
 document_type: policy_report
 abstract_available: true
 corpus: area-and-aquaculture
-priority_questions:
-- A3
+priority_questions: []
 geography:
 - global
 environment:

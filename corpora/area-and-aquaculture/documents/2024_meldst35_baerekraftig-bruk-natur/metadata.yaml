@@ -10,10 +10,7 @@ source_type: government_report
 document_type: policy_report
 abstract_available: true
 corpus: area-and-aquaculture
-priority_questions:
-- A1
-- A3
-- A5
+priority_questions: []
 geography:
 - Norway
 environment:

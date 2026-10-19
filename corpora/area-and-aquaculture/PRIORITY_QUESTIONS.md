@@ -8,9 +8,17 @@ on 2026-09-13 after the page-by-page extract walk, then tightened on
 the working Ask text. English is the parallel. They follow what this set
 contains, not a pre-set lice-style causal chain.
 
-They are a working structure for tagging and Ask. They are **not** confirmed
-by Ragnar Tveterås, Marit Schei Olsen or Tonje Osmundsen. Thord accepted the
-2026-09-15 sentences as good for now.
+The sentences below are the set Ragnar Tveterås, Marit Schei Olsen and
+Tonje Osmundsen settled on 19 October 2026, in
+`updates_files_19_10_26/Priority_questions.docx`. Norwegian is the working
+Ask text. English is their parallel.
+
+A0 to A8 are all tags. A0 is also the lead question in the app. A paper gets A0 only when it is about what determines where and how far aquaculture can be established, or how environment, industry development and other uses are weighed in current area management. A paper about one slice, such as disease spread or a fee, does not get A0. The supervision question drafted earlier is not A8. A8 is biosecurity, disease and water contact between farms. A7 is what the industry itself can do.
+
+The notes under each code were written for the September 2026 wording.
+They are not the definition of the settled question. Labels on the files
+are being set from the extracts against the sentences below. The old A1-A6
+tags in the spreadsheet are not copied.
 
 Room object: aquaculture's claim on coastal area. Other sectors and living
 nature enter when these papers name them as constraints or competing claims.
@@ -47,13 +55,7 @@ folders are kept.
 
 ## How the codes work
 
-**A0** is the lead Ask. It is **not** a metadata tag. Do not add `A0` to
-`priority_questions` until the three selectors confirm the set.
-
-**A1-A6** remain the tagging codes. Existing tags on the original 33 files
-stay as they were after page-verify. Do not retag those files on this
-rewrite. The six papers added 2026-09-15 already carry A1-A6 tags from
-curation.
+**A0 to A8** are the settled questions from 19 October 2026. All of them can sit on a document. A0 is also the question the app leads with. It is added only when the paper is about the overall balance: what determines where and how far aquaculture is established, and how environment, industry development and other uses are weighed. The old September tags are replaced.
 
 Samlet belastning (a new farm in already used sea) is named under A3 and
 A4. It is not a seventh tag.
@@ -62,13 +64,13 @@ IPBES stays on values in trade-offs (A3). It is not a seventh theme.
 
 ---
 
-## A0. What is actually scarce (lead Ask, not a tag)
+## A0. Balance, governance and trade-offs
 
 **Question (Norwegian)**
-Hva begrenser vekst i havbruk på norskekysten: mangel på ledig sjøflate, produksjons- og lokalitetstillatelser, kommunal utpeking av brukbar sjø, eller biologi (lus, sykdom, tetthet, velferd)?
+Hva bestemmer hvor og i hvilket omfang havbruk kan etableres og utvikles, og hvordan avveies hensynet til miljø, næringsutvikling og annen arealbruk i dagens arealforvaltning?
 
 **Question (English)**
-What limits aquaculture growth on the Norwegian coast: lack of unused sea surface, production and locality licences, municipal designation of usable sea, or biology (lice, disease, density, welfare)?
+What determines where and to what extent aquaculture can be established and developed, and how are environmental considerations, industry development and competing uses balanced in current spatial planning and area management?
 
 **Why this question matters**
 Testers and decision-makers will ask whether there is enough area. If Ask
@@ -113,13 +115,13 @@ file postpones the knowledge that would distinguish those diagnoses.
 
 ---
 
-## A1. Planning and designation
+## A1. Bottlenecks and development
 
 **Question (Norwegian)**
-Når kommunen peker ut, eller nekter å peke ut, sjøareal til havbruk, hva avgjør dette: selve plankartet, senere dispensasjon, eller innsigelse og avslag fra sektormyndighet etter at kartet er vedtatt?
+Hvilke faktorer påvirker muligheten for utvikling av havbruk langs kysten, og hvordan samvirker forhold som arealtilgang, tillatelsessystem, arealplanlegging, og miljø- og fiskehelsehensyn?
 
 **Question (English)**
-When a municipality designates, or refuses to designate, sea area for aquaculture, what decides this: the plan map itself, later dispensation, or sector objection and refusal after the map is adopted?
+Which factors influence opportunities for development in coastal aquaculture, and how do factors related to site availability, licensing systems, spatial planning, environmental considerations and fish health interact?
 
 **Why this question matters**
 Since the Planning and Building Act revision of 1989, municipalities
@@ -164,13 +166,13 @@ Jentoft and Buanes 2005.
 
 ---
 
-## A2. Licences and locality clearance
+## A2. The site application process
 
 **Question (Norwegian)**
-Hvordan former produksjonstillatelse, lokalitetstillatelse og fylkesbehandling etter akvakulturloven hvem som får en lokalitet, og hvor i den stabelen saken dør?
+Hvordan praktiseres søknadsprosessen om lokaliteter, og i hvilke deler av prosessen oppstår søknadsstopp, forsinkelser eller konflikter oftest?
 
 **Question (English)**
-How do production licences, locality licences and county administration of the Aquaculture Act shape who gets a site, and where in that stack does the case die?
+How does the site application process unfold, and at which stages of the process do delays, rejections or conflicts most commonly occur?
 
 **Why this question matters**
 A farm needs both a production licence and a locality licence. Counties
@@ -216,13 +218,13 @@ rammeverk 2015, Gullestad 2011, Osmundsen 2021 (shared waters), bærekraftig
 
 ---
 
-## A3. Trade-offs and coexistence
+## A3. Cumulative effects in planning and siting
 
 **Question (Norwegian)**
-Når sjø går til havbruksanlegg, hva må vike (annen bruk, levende natur, eller anlegget), og hvordan tas samlet belastning inn når merden kommer i sjø som allerede brukes?
+Hvordan vurderes kumulative effekter av akvakulturproduksjon i arealplanlegging og lokaliseringsbeslutninger for havbruk, og hvilke kunnskapsmessige og metodiske utfordringer beskrives?
 
 **Question (English)**
-When sea goes to an aquaculture farm, what must yield (other use, living nature, or the farm), and how is cumulative load taken in when the pen enters sea that is already in use?
+How are cumulative-effect assessments of aquaculture production incorporated into spatial planning and site-selection decisions for aquaculture, and what knowledge-related and methodological challenges are identified?
 
 **Why this question matters**
 Arealkonflikt is not only a map of empty cells. It is a claim about what
@@ -274,13 +276,13 @@ SALT 1110, Schütz and Slater 2019, Meld. St. 35 (2023-2024).
 
 ---
 
-## A4. Knowledge in decisions
+## A4. Economic instruments and area use
 
 **Question (Norwegian)**
-Hvilken kunnskap brukes, mangler, utsettes eller brukes skjevt i plan, KU og lokalitetsbehandling av havbruk, og hvordan skal usikkerhet og føre var inn i vedtaket?
+Hvordan påvirker økonomiske virkemidler og regulering insentivene til arealbruk og lokaliseringsvalg, og hvordan fordeles gevinster og kostnader mellom aktørene?
 
 **Question (English)**
-What knowledge is used, missing, postponed or applied unevenly in plans, impact assessment and locality processing of aquaculture, and how should uncertainty and precaution enter the decision?
+How do economic instruments and regulatory arrangements influence incentives for area use and site selection, and how are benefits and costs distributed among stakeholders?
 
 **Why this question matters**
 If the scarce object is disputed, the file is where that dispute should
@@ -325,13 +327,13 @@ Sørdahl and Kvalvik 2024, Sørdahl 2026.
 
 ---
 
-## A5. Density and biosecurity
+## A5. Knowledge base and technology
 
 **Question (Norwegian)**
-Hva følger av hvor og hvor tett havbruksanleggene ligger for produktivitet, sykdom, lus og belastning, og er «mer areal» feil grep hvis avstand og biologi binder først?
+Hvilket kunnskapsgrunnlag legges til grunn for arealbeslutninger i havbruk, og hvordan kan ny teknologi endre forutsetningene for arealbruk, miljøpåvirkning og lokaliseringsmuligheter?
 
 **Question (English)**
-What follows from how densely and where aquaculture farms sit for productivity, disease, lice and load, and is more area the wrong move if distance and biology bind first?
+What knowledge base underpins spatial decisions in aquaculture, and how may emerging technologies alter the conditions for area use, environmental impacts and siting opportunities?
 
 **Why this question matters**
 Sanitary distance and neighbour infection shrink usable water far more
@@ -375,13 +377,13 @@ Moldal 2026.
 
 ---
 
-## A6. Incentives and municipal politics
+## A6. Conflicts, legitimacy and process
 
 **Question (Norwegian)**
-Hvordan påvirker skatt, fond og arealavgiftsdebatten kommunenes vilje til å huse havbruksanlegg, og kan kommunen ta pengene uten å åpne mer sjøareal?
+Hvilke konflikter oppstår i plan- og lokaliseringsprosesser mellom havbruk og andre interesser, og hva bidrar til legitime, effektive og forutsigbare beslutningsprosesser?
 
 **Question (English)**
-How do taxes, funds and the area-rent debate affect municipalities' willingness to host aquaculture farms, and can the municipality take the money without opening more sea area?
+What conflicts arise in planning and siting processes between aquaculture and other interests, and what contributes to legitimate, effective and predictable decision-making processes?
 
 **Why this question matters**
 If municipalities designate sea, national targets depend on local
@@ -426,12 +428,44 @@ rammeverk 2015, Osmundsen and Olsen 2025, bærekraftig 2023, Mikkelsen
 
 ---
 
+## A7. What the industry itself can do
+
+Settled 19 October 2026. A tag, not a lead question.
+
+**Question (Norwegian)**
+Hvilke muligheter har næringen selv for å gjøre sin arealbruk mest mulig effektiv og bærekraftig?
+
+**Question (English)**
+What measures may the industry itself apply to ensure that its spatial use is most efficient and sustainable?
+
+---
+
+## A8. Biosecurity, disease and water contact
+
+Settled 19 October 2026. This replaces the earlier supervision draft. A tag.
+
+**Question (Norwegian)**
+På hvilken måte er biosikkerhet, smittehensyn og vannkontakt mellom anlegg viktig for produksjon og drift av akvakulturanlegg?
+
+**Question (English)**
+How are biosecurity, disease transmission and water connectivity between farms important for production and operation of aquaculture facilities?
+
+---
+
+## Earlier draft, not the settled A8
+
+The 30 September supervision sentence is not in the settled set: how cumulative impact is assessed in the plan, the licence and operation, including B- and C-surveys. Cumulative effects in planning and siting are A3. Biosecurity and water contact are A8.
+
+---
+
 ## What we did not add
 
 A seventh tag for IPBES values would overweight two peripheral files.
 
-A seventh tag for samlet belastning would split a live gap that already
-sits in A3 and A4, where Evenset 2023, Mikkelsen 2025 and SALT 1110 meet.
+A seventh tag for samlet belastning was not added in September, because it
+would have split a gap that already sits in A3 and A4. Marit's comment
+reopens that as proposal A8, limited to assessment across plan, licence
+and operation, plus supervision through B- and C-surveys. Not adopted.
 
 Matching villaks at ten questions would fake a causal chain this set does
 not have.
@@ -443,12 +477,8 @@ A1 and A4, Meld. St. 35 under A3.
 Technology and climate remain qualitative notes under A0, A4 and A5. They
 are not their own question until the selectors add papers that test them.
 
-## Tagging rule until selectors confirm
+## Tagging rule
 
-Each included document stays tagged with the A1-A6 questions it actually
-speaks to. Peripheral files may have one tag only. Broad reports
-(Gullestad, SALT 1065) may carry many tags. That is a smell if the codes
-are meant to discriminate. It is acceptable while A0 is the lead Ask and
-A1-A6 are a map.
+Each document is tagged with the A0-A8 questions it actually answers. A0 is used when the paper is about the overall balance, not when it only answers one of A1-A8. Peripheral files may have one tag. A broad report may carry several.
 
 If the three selectors confirm A0 as a tag, retag then, not before.

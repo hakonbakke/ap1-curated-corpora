@@ -20,9 +20,6 @@ abstract_available: true
 corpus: area-and-aquaculture
 priority_questions:
 - A1
-- A2
-- A3
-- A4
 - A5
 geography:
 - Norway

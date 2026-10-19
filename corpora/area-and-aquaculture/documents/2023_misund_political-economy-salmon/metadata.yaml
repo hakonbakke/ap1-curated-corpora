@@ -1,0 +1,118 @@
+title: 'The Political Economy of Salmon Aquaculture: Value Sharing and Societal Support
+  for Aquaculture in Norway'
+year: '2023'
+doi: 10.1086/726242
+url: ''
+authors:
+- Bård Misund
+- Marit Schei Olsen
+- Tonje C. Osmundsen
+- Ragnar Tveterås
+journal: Marine Resource Economics
+publisher: The University of Chicago Press
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: 'yes'
+corpus: area-and-aquaculture
+priority_questions:
+- A4
+geography:
+- Norway
+environment:
+- coastal
+- municipality
+time_period: ''
+regulatory_context:
+- Norway_Aquaculture_Act
+- municipal_coastal_plan
+evidence_type: empirical_observational
+study_design:
+- statistical_analysis
+data_source:
+- official_statistics
+- public_registers
+wild_or_farmed_focus: farmed
+outcome_domain:
+- municipal_economy_environment
+- coexistence_tradeoffs
+evidence_direction: not_applicable
+effect_scale: municipal_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- geographical_distribution
+- public perception variability
+key_claims:
+- Aquaculture production in Norway is primarily located in rural coastal areas, where
+  its economic and environmental impacts are highly visible.
+- The public's perception of aquaculture is more favorable in municipalities with
+  aquaculture activities, but there is a sentiment that economic benefits are not
+  fairly shared.
+- Proximity to aquaculture activities improves social acceptance, while perceptions
+  of equitable distribution of economic benefits play a significant role.
+- The aquaculture industry in Norway has evolved significantly, with increased production
+  and economic significance for coastal communities.
+- There is a need for improved societal acceptance of aquaculture production to facilitate
+  industry growth.
+claims_about_uncertainty:
+- The survey's nonrepresentative geographical distribution limits the data's geographic
+  range but strengthens the investigation of perceptions in communities directly affected
+  by aquaculture.
+- The effect of new measures to increase compensation for municipalities hosting aquaculture
+  production on public perceptions is not easy to measure.
+claims_about_policy_or_management:
+- Increasing coastal communities' share of benefits could be crucial in improving
+  the industry's legitimacy in Norway.
+- The industry could gain access to more and better production areas if there were
+  stronger incentives for municipalities to prioritize aquaculture sites.
+methodological_limitations:
+- The survey's nonrepresentative geographical distribution is a limitation in terms
+  of the data's geographic range.
+- Multicollinearity concerns prevent the simultaneous inclusion of several municipality-level
+  aquaculture-related variables in the regression models.
+rag_summary: The study examines societal support for aquaculture production in Norway,
+  focusing on the impact of economic and social factors. It finds that people living
+  in municipalities with aquaculture activities have a more favorable view of the
+  industry, but there is a perception that economic benefits are not fairly shared.
+  The study highlights the importance of proximity to aquaculture activities in improving
+  social acceptance and the role of perceptions of equitable distribution of economic
+  benefits. The research uses survey data combined with municipality-level data on
+  production and economic footprint, employing ordered logistic regression models
+  to analyze relationships between perceptions and municipality characteristics. The
+  study suggests that increasing coastal communities' share of benefits could enhance
+  the industry's legitimacy and that stronger incentives for municipalities to prioritize
+  aquaculture sites could facilitate access to better production areas.
+coi_declared: 'yes'
+coi_notes: The authors acknowledge financial support from the Research Council of
+  Norway.
+consensus_signal: ''
+quality_signal: strong
+quality_rationale: The study is published in a peer-reviewed journal and uses robust
+  statistical methods to analyze survey data and official statistics.
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: The study provides insights into public perceptions and economic
+  impacts of aquaculture, which are crucial for understanding and managing the industry's
+  growth and societal acceptance.
+included_because: The document provides empirical insights into the factors affecting
+  societal support for aquaculture in Norway, highlighting the importance of equitable
+  distribution of economic benefits and the role of proximity to aquaculture activities.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- aquaculture
+- public_perception
+- economic_impact
+- Norway
+- societal_support
+curator_note: Draft curate 2026-10-12 from the PyMuPDF extract. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording, not the September
+  A1-A6. The 12 October sheet does not name one selector for this file. inclusion_decided_by
+  is the three who added the batch.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Misund et al 2023 The political economy.pdf

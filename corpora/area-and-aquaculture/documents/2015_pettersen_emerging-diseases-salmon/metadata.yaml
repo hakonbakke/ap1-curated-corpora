@@ -1,0 +1,38 @@
+title: Controlling emerging infectious diseases in salmon aquaculture
+year: '2015'
+doi: ''
+url: ''
+authors:
+- J.M. Pettersen
+- T. Osmundsen
+- A. Aunsmo
+- F.O. Mardones
+- K.M. Rich
+journal: Revue scientifique et technique
+publisher: OIE
+language: english
+source_type: peer_reviewed
+document_type: review_article
+abstract_available: 'yes'
+corpus: area-and-aquaculture
+priority_questions:
+- A8
+curator_review_status: ai_draft
+curator_note: >
+  Extracted 2026-10-19 from the PDF. Label is A8 only. Fallowing and biosecurity are the disease analysis, not a study of what firms do with their own area use.
+  Full claims and summary are not written yet. Rev. Sci. Tech. Off. Int. Epiz. 2015, 34 (3), 923-938.
+inclusion_decided_by: Tonje Osmundsen
+added_date: '2026-10-19'
+source_pdf: Pettersen_Osmundsen mfl.pdf
+key_claims:
+- 'Marine production in semi-open net pens exchanges water with local currents, which disperses waste and infectious agents. Proximity of infected farms increases the risk of ISA and PD.'
+- 'Zoosanitary measures that reduce spread include fallowing, movement restrictions, surveillance, waste management and disinfection. They can be used with limited knowledge of the cause.'
+- 'ISA control in Norway, the Faroe Islands and Scotland was led by government, with public-private partnerships. In Chile, neighbourhood organisation and biosecurity improved after such partnerships. PD in Norway has been less systematically controlled.'
+- 'Action by a single producer is not enough for ISA or PD. The authors argue that cost-sharing with the private sector and stronger public-private cooperation would help PD control.'
+- 'The decision context is marked by uncertainty, disagreement and politicised debate, with weak incentives for prompt reporting of disease.'
+rag_summary: 'Pettersen, Osmundsen, Aunsmo, Mardones and Rich (Rev. Sci. Tech. Off. Int. Epiz. 2015) review control of emerging infectious diseases in Atlantic salmon farming, using ISA worldwide and PD in Norway. Open net pens share water, so infection can move between neighbouring farms and a single firm cannot close the problem. Control tools include vaccination, breeding, chemical treatment and zoosanitary measures such as fallowing and movement limits. ISA was brought under control where the state led and worked with industry. PD in Norway lacked that systematic control. The authors say technical options exist, and that cost-sharing and public-private cooperation would fit the disease better than the current institutional setup. The paper is about disease control and water contact between farms, not about municipal siting procedure.'
+included_because: 'Selected by Tonje Osmundsen. The review ties disease transmission in open pens to distance, fallowing and joint control, which is the biosecurity question in this room.'
+quality_signal: medium
+quality_rationale: 'Peer-reviewed review in the OIE journal. It synthesises published cases rather than presenting a new dataset. Some institutional claims about PD governance are argued, not measured in this paper.'
+relevance_signal: high
+relevance_rationale: 'Explains why water contact and proximity between farms matter for production and disease control.'

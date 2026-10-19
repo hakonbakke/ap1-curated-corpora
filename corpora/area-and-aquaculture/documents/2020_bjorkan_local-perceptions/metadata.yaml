@@ -1,0 +1,118 @@
+title: 'Local perceptions of aquaculture: A case study on legitimacy from northern
+  Norway'
+year: '2020'
+doi: 10.1016/j.ocecoaman.2020.105276
+url: https://doi.org/10.1016/j.ocecoaman.2020.105276
+authors:
+- Maiken Bjørkan
+- Svein Morten Eilertsen
+journal: Ocean and Coastal Management
+publisher: Elsevier Ltd.
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: 'yes'
+corpus: area-and-aquaculture
+priority_questions:
+- A6
+geography:
+- Norway
+- Nord_Norge
+environment:
+- coastal
+- coastal_zone
+- municipality
+time_period: ''
+regulatory_context:
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+evidence_type: empirical_observational
+study_design:
+- case_study
+- interview_study
+- statistical_analysis
+data_source:
+- interviews
+- published_literature
+wild_or_farmed_focus: farmed
+outcome_domain:
+- coastal_planning
+- municipal_economy_environment
+- coexistence_tradeoffs
+- nature_values
+evidence_direction: not_applicable
+effect_scale: municipal_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- stakeholder_perceptions
+- local_knowledge_gaps
+key_claims:
+- A legitimacy gap exists between blue growth goals and fishers in the communities
+  studied, while the general public holds a positive attitude towards aquaculture.
+- The aquaculture industry is perceived to generate local employment, ripple effects
+  for suppliers, and increased income for the municipality.
+- Fishers perceive aquaculture negatively due to restricted access to areas, declining
+  shrimp catches, and changes in fish quality.
+- The general public is more positive about aquaculture's socio-economic benefits
+  but acknowledges its negative environmental impacts.
+- There is a need to differentiate between the general public and key stakeholders
+  like fishers in assessing aquaculture's legitimacy.
+claims_about_uncertainty:
+- The perception of aquaculture's impact varies significantly between the general
+  public and fishers.
+- Fishers' negative perceptions are based on their direct experiences and competition
+  for space with aquaculture.
+claims_about_policy_or_management:
+- Understanding the range of views on aquaculture is crucial for developing a socially
+  acceptable and sustainable industry.
+- Improving input legitimacy for key stakeholders like fishers could enhance output
+  legitimacy for the aquaculture industry.
+methodological_limitations:
+- The study relies on perceptions, which are subjective and may not reflect objective
+  realities.
+- The structured interviews may not capture the full complexity of local attitudes
+  towards aquaculture.
+rag_summary: This study explores local perceptions of the aquaculture industry in
+  Northern Norway, focusing on its legitimacy and impact on coastal communities. It
+  finds a legitimacy gap between the blue growth goals of the Norwegian government
+  and fishers, who perceive aquaculture negatively due to restricted access to areas
+  and environmental impacts. In contrast, the general public holds a more positive
+  view, appreciating the socio-economic benefits of aquaculture. The study highlights
+  the importance of differentiating between the general public and key stakeholders
+  like fishers in assessing aquaculture's legitimacy. It suggests that improving input
+  legitimacy for key stakeholders could enhance the industry's overall legitimacy.
+coi_declared: 'yes'
+coi_notes: The authors declare no known competing financial interests or personal
+  relationships that could have appeared to influence the work reported in this paper.
+consensus_signal: ''
+quality_signal: medium
+quality_rationale: The study provides valuable insights into local perceptions of
+  aquaculture, but its reliance on subjective perceptions and potential biases in
+  stakeholder interviews may limit its generalizability.
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: The study addresses key issues related to the legitimacy and
+  socio-economic impacts of aquaculture, which are central to coastal planning and
+  management.
+included_because: The document provides insights into local perceptions of aquaculture,
+  highlighting conflicts and legitimacy issues that are relevant to coastal planning
+  and management.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- aquaculture_legitimacy
+- stakeholder_perceptions
+- coastal_zone_management
+- blue_growth
+- fisheries_conflict
+curator_note: Draft curate 2026-10-12 from the PyMuPDF extract. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording, not the September
+  A1-A6. The 12 October sheet does not name one selector for this file. inclusion_decided_by
+  is the three who added the batch.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Bjørkan and Eilertsen 2020 Local perceptions of aquaculture.pdf

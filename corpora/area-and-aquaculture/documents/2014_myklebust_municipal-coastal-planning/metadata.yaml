@@ -1,0 +1,118 @@
+title: Challenges of municipal land use management in coastal waters
+year: '2014'
+doi: ''
+url: ''
+authors:
+- Ingunn Elise Myklebust
+journal: KART OG PLAN
+publisher: ''
+language: english
+source_type: peer_reviewed
+document_type: legal_analysis
+abstract_available: 'no'
+corpus: area-and-aquaculture
+priority_questions:
+- A1
+- A6
+geography:
+- Norway
+environment:
+- coastal
+- coastal_zone
+- sea_area
+- municipality
+time_period: ''
+regulatory_context:
+- Norway_Planning_Building_Act
+- municipal_coastal_plan
+evidence_type: legal_analysis
+study_design:
+- document_analysis
+- legal_doctrinal
+data_source:
+- published_literature
+wild_or_farmed_focus: not_applicable
+outcome_domain:
+- coastal_planning
+- licensing_access
+- knowledge_in_decisions
+- municipal_economy_environment
+evidence_direction: not_applicable
+effect_scale: municipal_level
+uncertainty_emphasis: moderate
+main_uncertainty_sources:
+- coordination_between_authorities
+- municipal_autonomy
+- national_interests
+key_claims:
+- The Norwegian Plan and Building Act of 2008 extends municipal planning authority
+  to coastal waters, but the central government retains significant control.
+- Municipalities have the authority to make binding decisions regarding land-use plans,
+  including coastal waters, but sector laws often place decision-making power with
+  public sector authorities.
+- Coastal waters are open for various activities, leading to competition for areas,
+  and municipal plans are key tools for resolving conflicts of interest.
+- The Planning and Building Act aims to strengthen cross-sectoral management, but
+  municipalities face challenges in balancing local autonomy with national and regional
+  interests.
+- Municipalities have broad powers in land use planning, but these are constrained
+  by coordination requirements and state control mechanisms.
+- The Aquaculture Act requires that municipal land use plans allow for aquaculture,
+  but municipalities cannot impose additional conditions for aquaculture establishment.
+claims_about_uncertainty:
+- There is uncertainty about the extent of municipal autonomy in coastal planning
+  due to overlapping responsibilities with central government authorities.
+- The predictability of what constitutes 'national interests' in coastal management
+  is a challenge for municipalities.
+claims_about_policy_or_management:
+- The Planning and Building Act facilitates coordination between central, regional,
+  and municipal authorities, but effective collaboration is crucial for successful
+  coastal management.
+- Municipalities play a crucial role in balancing economic development and conservation
+  in coastal waters through land use planning.
+methodological_limitations: []
+rag_summary: The article discusses the challenges faced by Norwegian municipalities
+  in managing land use in coastal waters under the Norwegian Plan and Building Act
+  of 2008. While municipalities have the authority to make binding decisions regarding
+  land-use plans, including coastal waters, the central government retains significant
+  control through sector laws. Coastal waters are open for various activities, leading
+  to competition for areas, and municipal plans are key tools for resolving conflicts
+  of interest. The Planning and Building Act aims to strengthen cross-sectoral management,
+  but municipalities face challenges in balancing local autonomy with national and
+  regional interests. The Aquaculture Act requires that municipal land use plans allow
+  for aquaculture, but municipalities cannot impose additional conditions for aquaculture
+  establishment. The article highlights the importance of effective coordination between
+  central, regional, and municipal authorities for successful coastal management.
+coi_declared: 'no'
+coi_notes: ''
+consensus_signal: ''
+quality_signal: strong
+quality_rationale: The article is a peer-reviewed legal analysis by an associate professor,
+  providing a detailed examination of the legal framework governing coastal planning
+  in Norway.
+controversy_role: not_applicable
+relevance_signal: high
+relevance_rationale: The document provides a comprehensive analysis of the legal and
+  regulatory framework affecting municipal coastal planning in Norway, which is directly
+  relevant to understanding area and aquaculture interactions.
+included_because: The document provides a detailed legal analysis of the challenges
+  and regulatory context of municipal coastal planning in Norway, relevant to understanding
+  area and aquaculture interactions.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- municipal_planning
+- coastal_management
+- legal_framework
+- aquaculture_regulation
+curator_note: Draft curate 2026-10-12 from the PyMuPDF extract. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording, not the September
+  A1-A6. The 12 October sheet does not name one selector for this file. inclusion_decided_by
+  is the three who added the batch.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Myklebust 2014 Utfordringar ved kommunal arealplanlegging i kystnære sjøområde.pdf

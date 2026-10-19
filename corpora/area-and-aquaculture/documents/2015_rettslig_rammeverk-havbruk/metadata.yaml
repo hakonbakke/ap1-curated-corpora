@@ -20,8 +20,10 @@ document_type: legal_analysis
 abstract_available: true
 corpus: area-and-aquaculture
 priority_questions:
+- A0
 - A1
 - A2
+- A4
 - A6
 geography:
 - Norway

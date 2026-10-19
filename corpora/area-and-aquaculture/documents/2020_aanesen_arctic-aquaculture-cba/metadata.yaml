@@ -1,0 +1,124 @@
+title: Cost-benefit analysis of aquaculture expansion in Arctic Norway
+year: '2020'
+doi: 10.1080/13657305.2019.1641570
+url: https://doi.org/10.1080/13657305.2019.1641570
+authors:
+- Margrethe Aanesen
+- Eirik Mikkelsen
+journal: Aquaculture Economics & Management
+publisher: Taylor & Francis Group, LLC
+language: english
+source_type: peer_reviewed
+document_type: research_article
+abstract_available: 'yes'
+corpus: area-and-aquaculture
+priority_questions:
+- A4
+geography:
+- Norway
+- Nord_Norge
+environment:
+- coastal
+- municipality
+time_period: ''
+regulatory_context:
+- municipal_coastal_plan
+- intermunicipal_coastal_plan
+evidence_type: empirical_observational
+study_design:
+- case_study
+- statistical_analysis
+data_source:
+- official_statistics
+- public_registers
+wild_or_farmed_focus: farmed
+outcome_domain:
+- municipal_economy_environment
+- coexistence_tradeoffs
+- area_allocation
+evidence_direction: not_applicable
+effect_scale: regional_level
+uncertainty_emphasis: high
+main_uncertainty_sources:
+- producer_surplus_estimation
+- household_willingness_to_pay
+- environmental_damage_costs
+key_claims:
+- The motivation of municipalities to designate coastal areas for aquaculture depends
+  on net benefits at the municipal level.
+- There is little empirical evidence on the costs and benefits of using coastal areas
+  for aquaculture activities.
+- A positive regional total net present value (TNPV) crucially depends on producer
+  surplus from aquaculture remaining in the region.
+- Transfers from the Aquaculture Fund are often insufficient to outweigh regional
+  households' welfare loss from more aquaculture activities.
+- Uncertainties exist in the estimation of producer surplus, payments from the Aquaculture
+  Fund, and households' willingness to pay to avoid aquaculture.
+claims_about_uncertainty:
+- Uncertainties exist in the estimation of the producer surplus and payments from
+  the Aquaculture Fund, as well as in the households' willingness to pay to avoid
+  aquaculture.
+- The producer surplus may be lower than in recent years due to increasing costs of
+  farming salmon.
+- The large confidence interval for the estimated willingness to pay indicates ambiguous
+  preferences among households.
+claims_about_policy_or_management:
+- Municipalities' motivation for assigning coastal areas to aquaculture is likely
+  negative if there is limited local ownership of aquaculture companies.
+- The Aquaculture Fund's transfers are often insufficient to outweigh regional households'
+  welfare loss from more aquaculture activities.
+- Some of the producer surplus generated from operating new licenses should remain
+  in the region to ensure positive regional TNPV.
+methodological_limitations:
+- The lack of knowledge on the extent of environmental damages from aquaculture and
+  on monetization of such effects.
+- The survey's willingness to pay estimates are not statistically significant at a
+  5% level.
+- The analysis assumes that aquaculture expansion is marginal to the regional economy
+  and does not affect prices or economic growth.
+rag_summary: This study conducts a cost-benefit analysis of aquaculture expansion
+  in Arctic Norway, focusing on five municipalities. It highlights the importance
+  of producer surplus remaining in the region for a positive net present value (NPV)
+  of aquaculture expansion. The study identifies uncertainties in estimating producer
+  surplus, payments from the Aquaculture Fund, and households' willingness to pay
+  to avoid aquaculture. It suggests that transfers from the Aquaculture Fund are often
+  insufficient to outweigh regional households' welfare loss from more aquaculture
+  activities. The analysis assumes that aquaculture expansion is marginal to the regional
+  economy and does not affect prices or economic growth. The study emphasizes the
+  need for some producer surplus to remain in the region to ensure positive regional
+  NPV.
+coi_declared: 'yes'
+coi_notes: The research was funded by the Research Council of Norway and supported
+  by Horizon 2020 research and innovation program.
+consensus_signal: ''
+quality_signal: medium
+quality_rationale: The study provides a detailed cost-benefit analysis with empirical
+  data but acknowledges significant uncertainties and methodological limitations.
+controversy_role: supportive
+relevance_signal: high
+relevance_rationale: The study is highly relevant for understanding the economic and
+  environmental trade-offs in aquaculture expansion in Arctic Norway, particularly
+  in the context of municipal decision-making.
+included_because: The document provides a comprehensive cost-benefit analysis of aquaculture
+  expansion in Arctic Norway, focusing on municipal motivations and economic impacts,
+  which is relevant for understanding area and aquaculture interactions.
+related_documents_supporting: []
+related_documents_contrasting: []
+related_documents_reply_to: []
+should_be_read_with: []
+retrieval_tags:
+- aquaculture_expansion
+- cost_benefit_analysis
+- municipal_motivation
+- producer_surplus
+- aquaculture_fund
+curator_note: Draft curate 2026-10-12 from the PyMuPDF extract. Not page-verified.
+  priority_questions follow the selectors' 9 October 2026 wording, not the September
+  A1-A6. The 12 October sheet does not name one selector for this file. inclusion_decided_by
+  is the three who added the batch.
+curator_review_status: ai_draft
+added_by: cursor_grok_curate
+added_date: '2026-10-12'
+inclusion_decided_by: Ragnar Tveterås, Marit Schei Olsen and Tonje Osmundsen
+source_pdf: Aanesen and Mikkelsen 2020 Cost-benefit analysis of aquaculture expansion
+  in Arctic Norway.pdf
