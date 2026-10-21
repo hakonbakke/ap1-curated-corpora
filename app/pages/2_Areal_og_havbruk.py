@@ -39,7 +39,7 @@ st.set_page_config(
 
 inject_css()
 
-LANG_OPTIONS = ["en", "no"]
+LANG_OPTIONS = ["no", "en"]
 
 
 def tr(lang: str, en: str, no: str) -> str:
@@ -870,18 +870,37 @@ with st.container(border=True):
             lang,
             "The split means the municipality largely controls **where** aquaculture may "
             "take place, while the county and the state control **who** may produce and "
-            "**how much**. Capacity in the production area is a separate lid. The system "
-            "gives a broad professional review. It is also criticised as fragmented, "
-            "slow and hard to predict. Because fjords, currents and infection do not "
-            "follow municipal borders, municipalities have made intermunicipal coastal "
-            "plans, including in Trøndelag and on Helgeland.",
+            "**how much**. Myklebust (2021) starts from municipal conditions on how farming "
+            "is carried out, including a closed pen and limits on organic discharge, and "
+            "asks where the legal limit of that power lies. The 2014 and 2018 analyses "
+            "say the municipality cannot freely add its own conditions, and that the "
+            "boundary with the sector authorities is unclear. Capacity in the production "
+            "area is a separate lid. The system gives a broad professional review. It is "
+            "also criticised as fragmented, slow and hard to predict. Because fjords, "
+            "currents and infection do not follow municipal borders, municipalities have "
+            "made intermunicipal coastal plans, including in Trøndelag and on Helgeland. "
+            "Robertsen and colleagues (2014) could not show that these plans improve access "
+            "to sites. The municipal council still adopts the plan for its own sea, and "
+            "firms report refusals even inside areas already zoned for aquaculture. In a "
+            "survey with 54 replies from 111 firms, the conflicts named most often by firms "
+            "that had joined a plan were conservation (57 percent), fisheries (54 percent) "
+            "and wild salmon (36 percent).",
             "Todelingen gjør at kommunen i stor grad styrer **hvor** havbruk kan "
             "ligge, mens fylket og staten styrer **hvem** som får produsere, og **hvor mye**. "
-            "Kapasitet i produksjonsområdet er et eget lokk. Systemet gir bred faglig "
-            "gjennomgang. Det kritiseres også for å være fragmentert, tidkrevende og "
-            "uforutsigbart. Fordi fjorder, strøm og smitte ikke følger kommunegrenser, "
-            "har kommuner laget interkommunale kystsoneplaner, blant annet i Trøndelag "
-            "og på Helgeland.",
+            "Myklebust (2021) tar utgangspunkt i kommunale vilkår om hvordan oppdrett skal "
+            "drives, blant annet lukket merd og grenser for organisk utslipp, og spør hvor "
+            "den rettslige grensen for den myndigheten går. Analysene fra 2014 og 2018 sier "
+            "at kommunen ikke fritt kan legge på egne vilkår, og at grensen mot "
+            "sektormyndighetene er uklar. Kapasitet i produksjonsområdet er et eget lokk. "
+            "Systemet gir bred faglig gjennomgang. Det kritiseres også for å være "
+            "fragmentert, tidkrevende og uforutsigbart. Fordi fjorder, strøm og smitte ikke "
+            "følger kommunegrenser, har kommuner laget interkommunale kystsoneplaner, "
+            "blant annet i Trøndelag og på Helgeland. Robertsen og kolleger (2014) kunne "
+            "ikke vise at slike planer gir bedre lokalitetstilgang. Kommunestyret vedtar "
+            "fortsatt planen for egen sjø, og firmaer melder avslag også inne i områder som "
+            "allerede er avsatt til havbruk. I en undersøkelse med 54 svar fra 111 firmaer "
+            "var konfliktene som oftest ble oppgitt av firmaer som hadde deltatt i en plan, "
+            "vern (57 prosent), fiskeri (54 prosent) og villaks (36 prosent).",
         )
     )
     st.markdown(
@@ -970,7 +989,11 @@ with st.container(border=True):
             "is 25 percent, with a 70 million kroner allowance per group. An earlier "
             "area-rent idea was found unsuited. Whether Havbruksfondet and the production "
             "fee actually get the municipality to designate more sea is untested in the "
-            "research here.",
+            "research here. Aanesen and Mikkelsen (2020) find, in five Arctic municipalities, "
+            "that transfers from the fund often do not outweigh the welfare loss households "
+            "state for more aquaculture, and that a positive regional result needs some "
+            "producer surplus to remain in the region. Their willingness-to-pay estimates "
+            "were not statistically significant at 5 percent.",
             "**Fordeling av verdiene.** [Havbruksfondet](https://www.fiskeridir.no/akvakultur/havbruksfondet) "
             "ble besluttet i 2015 og satt opp i 2016. Det fordeler kommunal sektors andel "
             "av inntekter fra salg av ny kapasitet, og produksjonsavgiften, i hovedsak "
@@ -984,7 +1007,11 @@ with st.container(border=True):
             "prosent, med et bunnfradrag på 70 millioner kroner per konsern. En tidligere "
             "arealavgift ble funnet uegnet. Om Havbruksfondet og produksjonsavgiften "
             "faktisk får kommunen til å peke ut mer sjøareal, er uavklart i forskningen "
-            "her.",
+            "her. Aanesen og Mikkelsen (2020) finner, i fem arktiske kommuner, at "
+            "overføringer fra fondet ofte ikke veier opp for velferdstapet husholdningene "
+            "oppgir ved mer havbruk, og at et positivt regionalt resultat krever at noe "
+            "av produsentoverskuddet blir igjen i regionen. Anslagene for betalingsvilje "
+            "var ikke statistisk signifikante på 5 prosent.",
         )
     )
     with st.expander(
@@ -1215,6 +1242,7 @@ if run and query.strip():
             mode=mode,
             answer_format=answer_format,
             output_language=output_language,
+            model="gpt-6-luna",
             room="areal",
         )
     st.divider()

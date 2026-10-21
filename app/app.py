@@ -94,7 +94,7 @@ with active_cols[1]:
   spørsmål i forvaltningen og i forskningen. Villaks hører hjemme når
   den er lokk på vekst. Utkast.
 </p>
-<div class="hl-room-meta">39 dokumenter · utkast</div>
+<div class="hl-room-meta">50 dokumenter · utkast</div>
 """,
             unsafe_allow_html=True,
         )

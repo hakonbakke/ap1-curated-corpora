@@ -442,7 +442,7 @@ Write **one coherent essay** that answers the question. The reader should feel y
 - **Middle paragraphs:** Develop the argument by **theme or diagnosis** (licences, municipal designation, biology, competing use, knowledge in the file). Within each paragraph, **combine** studies that support the same point; **contrast** studies that tension each other.
 - **Final paragraph:** Confidence (**High / Medium / Low**) and what would change your assessment — woven into prose, not a labelled box.
 
-Use **parenthetical citations** (Hersoug et al. 2020) inside sentences.
+Use **parenthetical citations** (Author and colleagues, year) inside sentences. Name only studies that appear in the retrieved evidence.
 
 **Selectivity:** {n} documents were retrieved; you need not name all {n}. Prioritise studies that directly address the query.
 
@@ -567,11 +567,16 @@ def synthesise(
 
     temperature = 0.2 if answer_format == "structured" else 0.35
     max_tokens = MAX_TOKENS.get((mode, answer_format), 2800)
+    # gpt-6 rejects max_tokens. Reasoning off keeps temperature and the areal writer test.
+    token_key = "max_tokens" if model.startswith("gpt-4") else "max_completion_tokens"
+    kwargs = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        token_key: max_tokens,
+        "temperature": temperature,
+    }
+    if token_key == "max_completion_tokens":
+        kwargs["reasoning_effort"] = "none"
 
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=temperature,
-        max_tokens=max_tokens,
-    )
+    response = client.chat.completions.create(**kwargs)
     return response.choices[0].message.content.strip()
