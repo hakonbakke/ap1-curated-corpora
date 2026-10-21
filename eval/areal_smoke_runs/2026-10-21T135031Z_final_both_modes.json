@@ -1,0 +1,1348 @@
+{
+ "run_utc": "2026-10-21T135031Z",
+ "model": "gpt-6-luna",
+ "room": "areal",
+ "answer_format": "freeform",
+ "output_language": "Norwegian Bokmål",
+ "top_k": 10,
+ "n_expected": 18,
+ "n": 18,
+ "results": [
+  {
+   "id": "A0",
+   "mode": "researcher",
+   "query": "Hva bestemmer hvor og i hvilket omfang havbruk kan etableres og utvikles, og hvordan avveies hensynet til miljø, næringsutvikling og annen arealbruk i dagens arealforvaltning?",
+   "latency_s": 20.32,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6122
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.5855
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.5845
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.5709
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.5661
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.561
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5519
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5475
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.545
+    },
+    {
+     "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+     "authors": "",
+     "year": "2024",
+     "score": 0.544
+    }
+   ],
+   "answer": "**Kort svar**\n\n- Havbruk kan etableres der kommunale planer åpner for det, og der nødvendige sektorvise tillatelser og lokalitetsgodkjenninger foreligger.\n- Omfanget begrenses både av biologiske og driftsmessige forhold og av konkurranse om egnede sjøområder; fysisk arealbeslag alene viser ikke hele arealkravet.\n- Det er usikkert hvor mye av sjøarealet som reelt er tilgjengelig, og hvor godt dagens planprosesser avveier miljøhensyn og andre interesser.\n\nHvor havbruk kan etableres, bestemmes gjennom et samspill mellom kommunal arealplanlegging og statlige eller fylkeskommunale tillatelser. Kommunene kan sette av sjøområder til akvakultur eller flerbruk, men en planavsetning gir ikke i seg selv rett til å drive. En lokalitet må også gjennom sektorbehandling etter akvakulturlovgivningen, der blant annet mattrygghets-, forurensnings-, kyst- og fiskerimyndigheter har roller. Dermed er både planstatus, konkrete tillatelser og lokalitetens egnethet avgjørende. Systemet gir flere myndigheter innflytelse, men gjør også at en planlagt lokalitet kan stanse på grunn av en sektorvurdering (Solås og kolleger, 2015; Skrove og kolleger, 2023).\n\nKommunale planer er derfor en viktig portvakt for næringens arealtilgang, men kommunenes handlingsrom er ikke ubegrenset. Den juridiske analysen til Myklebust beskriver overlappende myndighet og uklare grenser mellom kommunal planstyring og sektorforvaltning. Kommunene kan ha rom for å stille vilkår, men hvor langt slike vilkår kan gå, og hvordan de skal samordnes med sektorregelverket, er rettslig usikkert. Plan- og bygningsloven gjelder for sjøområder ut til én nautisk mil utenfor grunnlinjene, mens tillatelsesmyndigheten etter akvakulturloven ligger hos andre myndigheter. Dette skillet gjør at arealplanen både må ta stilling til ønsket bruk og fungere sammen med senere behandling av den enkelte lokaliteten (Myklebust, 2018; Myklebust, 2021).\n\nOmfanget av havbruk kan ikke leses direkte ut av hvor stor del av sjøen merdene fysisk dekker. SALT-rapporten anslår at laksefisklokaliteter samlet beslaglegger om lag 94 km² før buffersoner. Men anbefalte avstander mellom lokaliteter og smittehensyn kan gjøre det relevante arealet langt større. Rapporten peker på at slike avstander kan tilsvare rundt 30–50 prosent av sjøarealet i enkelte produksjonsområder, men understreker at anbefalte avstander kan fravikes, og at sonene derfor ikke nødvendigvis er eksklusivt opptatt. Ankerareal er dessuten ikke med i fotavtrykksberegningen. Tallene beskriver dermed ulike mål på arealbruk, ikke én entydig størrelse på arealet som er utilgjengelig for andre formål (Skrove og kolleger, 2023).\n\nRegionale tall viser også hvorfor nasjonale gjennomsnitt kan skjule lokale forskjeller. I 2017 var 99 prosent av godkjente lakse- og ørretlokaliteter i Hordaland brukt i løpet av året, mens andre fylker hadde om lag 10–30 prosent av lokalitetene ubrukt. Samtidig var den gjennomsnittlige månedlige bruken av godkjente lokaliteter om lag 50–70 prosent. Dette er statistikk over bruk av godkjente lokaliteter, ikke et mål på hvor mye egnet sjøareal som finnes eller hvor lett nye lokaliteter kan godkjennes. Tallene viser likevel at presset kan være konsentrert geografisk, og at godkjent kapasitet ikke nødvendigvis er det samme som faktisk tilgjengelig produksjonsareal (Mikkelsen, Karlsen og Osmundsen, 2019).\n\nMiljøhensyn og annen arealbruk kommer inn både når planer utformes og når lokaliteter behandles. I en gjennomgang av sju planprosesser fant Eriksen og kolleger at planene ikke alltid avklarte konflikter endelig: enkelte saker kom tilbake som dispensasjonssøknader, og det var ofte vanskelig å se hvordan miljøvirkninger, usikkerhet og avveininger var dokumentert. Studien er kvalitativ og kan ikke fastslå hvor vanlig dette er nasjonalt. Den viser likevel en praktisk begrensning: selv når planprosessen har identifisert interesser, kan kunnskapsgrunnlaget og begrunnelsen for avveiningen være ufullstendig. En eldre studie av interkommunale planprosesser fant at samarbeid kunne styrke felles kunnskap og kompetanse, men at den endelige planmyndigheten fortsatt lå hos hver kommune. Samarbeid løser derfor ikke automatisk utfordringen med sammenhengende fjordsystemer eller ulike lokale prioriteringer (Eriksen og kolleger, 2023; Robertsen og kolleger, 2014).\n\nDet finnes heller ikke én samlet forklaring på hva som først begrenser videre vekst. En regional rapport fra Trøndelag framhever lus, sykdom og fiskevelferd som viktigere begrensninger enn mangel på merdareal. En tilhørende arealrapport beskriver samtidig planleggingstid, aksept, rømning og tilgang på kyststrøm som relevante begrensninger. Disse rapportene bygger i stor grad på dokumenter og informanter, og den ene er uttrykkelig skrevet fra et næringsperspektiv; de er ikke nasjonale målinger av hva som binder produksjonen mest. De viser derfor at spørsmålet om areal må skilles fra spørsmålet om produksjonskapasitet: mer planlagt sjøareal gir ikke nødvendigvis tilsvarende produksjonsvekst dersom biologiske eller driftsmessige forhold setter grensen (Sand og kolleger, 2025).\n\nSamlet sett er dagens avveining fordelt på flere beslutningsnivåer, uten at kildene beskriver én myndighet som foretar en fullstendig samlet vurdering av alle hensyn. Kommunale planer avgjør hvor havbruk kan vurderes, mens sektorbehandlingen prøver lokaliteten mot egne krav. Dette kan gi flere kontrollpunkter for miljø og sikkerhet, men også fragmentering og usikkerhet om hvem som skal veie hensynene samlet. Kommunale økonomiske insentiver kan dessuten påvirke planleggingen: Myklebust viser til at 80 prosent av avgiften for økt produksjonskapasitet i 2016–2019 gikk til kommuner og fylker som hadde åpnet for havbruk i planene. Dette er en beskrivelse av et insentiv, ikke dokumentasjon på at det faktisk førte til bestemte planvedtak. **Samlet vurdering: middels sikkerhet.** Regelverket og de ulike målene på arealbruk er godt beskrevet, men vurderingen av hvor mye sjøareal som reelt er tilgjengelig, og hvor konsekvent miljø og konkurrerende bruk veies mot næringsutvikling, ville blitt sikrere med mer sammenlignbare nasjonale data om planvedtak, avslag, dispensasjoner og faktisk egnet areal.",
+   "kort_svar_ok": true,
+   "body_words": 800,
+   "suspect_citations": [
+    "I"
+   ],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A0",
+   "mode": "non_researcher",
+   "query": "Hva bestemmer hvor og i hvilket omfang havbruk kan etableres og utvikles, og hvordan avveies hensynet til miljø, næringsutvikling og annen arealbruk i dagens arealforvaltning?",
+   "latency_s": 23.04,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6122
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.5855
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.5845
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.5709
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.5661
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.561
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5519
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5475
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.545
+    },
+    {
+     "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+     "authors": "",
+     "year": "2024",
+     "score": 0.544
+    }
+   ],
+   "answer": "**Kort svar**\n- Kommunale planer, statlige tillatelser og sektorregler avgjør hvor havbruk kan etableres og hvor mye produksjon som kan tillates.\n- Kildene peker både på knapphet på brukbare lokaliteter og på at vekst ofte begrenses av andre forhold enn selve arealet.\n- Det mangler nasjonale målinger som viser hvor ofte areal, miljøkrav eller saksbehandling faktisk stopper eller begrenser vekst.\n\nHavbruk kan ikke bare starte der sjøen ser ledig ut. Kommunen bestemmer gjennom arealplanen hvilke sjøområder som kan brukes, mens fylkeskommunen behandler lokalitetstillatelsen etter at flere statlige fagmyndigheter har vurdert saken. En plan som åpner for havbruk, gir derfor ikke automatisk tillatelse. Omvendt kan en lokalitet bli stoppet dersom en av sektorene avslår. Juridiske gjennomganger beskriver dette som et oppdelt system med uklare grenser mellom kommunenes planmyndighet og statlige eller fylkeskommunale myndigheters ansvar. De viser også at det ikke finnes én myndighet som alltid foretar en samlet avveining av alle hensyn.\n\nDet er ulike diagnoser av hva som i praksis begrenser veksten. Nofima-rapporten til Mikkelsen og kolleger (2019) peker på at tilgang til areal oppleves som et stort problem, og viser at bruken av godkjente lokaliteter varierer mye mellom fylker. I Hordaland var nesten alle godkjente lokaliteter i bruk i løpet av 2017, mens andre fylker hadde flere ubrukte. Det tyder på at knapphet kan være lokal og ulikt fordelt, ikke at hele kysten er full. Samtidig sier SINTEF-rapporten fra Trøndelag, skrevet fra næringens perspektiv, at vekst først og fremst begrenses av lakselus, sykdom og fiskevelferd, ikke av mangel på merdareal. Dette er ikke to målinger av samme nasjonale forhold: Den ene rapporten sammenstiller bruk av lokaliteter på landsbasis, mens den andre gir en regional vurdering av hva som begrenser næringen. De kan derfor ikke avgjøre alene hvilken begrensning som veier tyngst i hvert område.\n\nArealregnskapet avhenger også av hva man teller. Skrove og kolleger (2023) anslår at selve anleggene for laksefisk dekker rundt 94 kvadratkilometer før sikkerhetssoner regnes med. Med anbefalte avstander rundt anleggene blir det beregnede arealet langt større, særlig i enkelte produksjonsområder. Men slike soner er ikke det samme som kartlagt, eksklusiv bruk: Avstandene kan fravikes, og beregningen viser ikke i seg selv hvor sjøen egner seg for andre formål. Rapporten skisserer dessuten framtidig arealbehov under forutsetning av at økt produksjon krever mer areal. Den forutsetningen utelater blant annet knapphet på lokaliteter og biologiske begrensninger, så scenarioene er ikke sikre prognoser.\n\nAvveiningen skjer gjennom planer og enkeltsaker, men planene løser ikke alltid konfliktene. Kommuner kan bruke egne havbruksområder eller større flerbruksområder, der havbruk er én av flere mulige aktiviteter. En kvalitativ gjennomgang av sju planprosesser fant at konflikter og virkninger ikke alltid var godt nok avklart, og at noen søkere senere forsøkte å få dispensasjon fra planen. Interkommunale planer kan gi felles kunnskap og bedre samarbeid, men den enkelte kommune beholder den endelige planbeslutningen. Konflikter med fiskeri, naturvern, friluftsliv og andre interesser kan dermed bli avgjort stykkevis. Lakselus kan også føre til avslag på en lokalitet, og trafikklyssystemet deler kysten i 13 produksjonsområder: fargene kan fryse, redusere eller åpne for kapasitetsvekst. Det er en egen begrensning på produksjonskapasitet, ikke et mål på hvor mye sjøareal som er ledig.\n\n**Konfidens: Middels.** Kildene beskriver tydelig hvem som planlegger og gir tillatelser, men bruker ulike mål og geografiske utsnitt for å forklare hva som begrenser vekst. Et nasjonalt datasett som kobler søknader, avslag, planstatus og begrunnelsene for vedtak, ville gjort bildet sikrere.",
+   "kort_svar_ok": true,
+   "body_words": 502,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A1",
+   "mode": "researcher",
+   "query": "Hvilke faktorer påvirker muligheten for utvikling av havbruk langs kysten, og hvordan samvirker forhold som arealtilgang, tillatelsessystem, arealplanlegging, og miljø- og fiskehelsehensyn?",
+   "latency_s": 15.94,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6287
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6163
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6082
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.5805
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.5761
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.5748
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.574
+    },
+    {
+     "doc_id": "2020_hersoug_whats-the-clue",
+     "authors": "Bjørn Hersoug; Eirik Mikkelsen; Tonje C. Osmundsen",
+     "year": "2020",
+     "score": 0.5612
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5553
+    },
+    {
+     "doc_id": "2017_kvalvik_intermunicipal-coastal-planning",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.5537
+    }
+   ],
+   "answer": "**Kort svar**\n- Utvikling av havbruk avhenger av at egnede lokaliteter både planlegges for, får nødvendige tillatelser og kan drives innenfor miljø- og fiskehelsekrav.\n- Kildene peker både på lokale arealflaskehalser og på at produksjonstillatelser og biologiske begrensninger kan bremse vekst før samlet sjøareal blir bindende.\n- Det mangler sammenlignbare målinger av hvor mye areal som faktisk er egnet og tilgjengelig, og av hvordan plan- og tillatelsesprosesser påvirker veksten.\n\nMuligheten for å utvikle havbruk langs kysten formes av flere ledd som virker sammen, ikke av arealtilgang alene. Kommunale planer avgjør hvor havbruk kan vurderes, mens lokaliteter også må gjennom et tillatelsessystem med flere sektormyndigheter. Selv når et område er avsatt, kan miljø- og fiskehelsehensyn begrense bruken eller veksten. Derfor kan «arealmangel» vise til ulike forhold: lite fysisk areal, få egnede lokaliteter, avstandskrav mellom anlegg, eller at tillatelser og produksjonsrammer ikke åpner for mer drift.\n\nDet er viktig å skille mellom fysisk fotavtrykk og areal som i praksis er tilgjengelig. SALT-rapporten anslår at laksefisklokaliteter dekker om lag 94 km² før buffersoner, men anbefalte hygieniske avstander gjør det beregnede arealbeslaget langt større. Forfatterne viser til at slike avstander kan omfatte rundt 30–50 prosent av sjøarealet i enkelte produksjonsområder, men understreker at dette ikke betyr at alt arealet er eksklusivt opptatt: avstandssoner kan fravikes, og kartene viser ikke i seg selv egnethet eller faktisk bruk (Skrove og kolleger, 2023). En regional SINTEF-rapport gjengir et tilsvarende grovt anslag på om lag 20 prosent for produksjonsområdene 6 og 7 i Trøndelag, samtidig som den oppgir at selve anleggsarealet utgjør rundt 0,5 prosent av kystsonen. Dette er ikke en uavhengig ny måling, men bygger på arealtall fra SALT-rapporten (Sand og Misund, 2025).\n\nDisse tallene forklarer hvorfor et langt kyststrekk ikke automatisk gir mange brukbare lokaliteter. Avstandskrav, natur- og verneinteresser, fiskeri, sjøtransport og andre hensyn kan redusere hvilke områder som kan tas i bruk. Samtidig er det ikke grunnlag for å si at hele kysten er like presset. En nasjonal gjennomgang av 2017-statistikk fant store regionale forskjeller: Hordaland brukte 99 prosent av sine godkjente lokaliteter i løpet av året, mens andre fylker hadde om lag 10–30 prosent av lokalitetene ubrukt. Gjennomsnittlig månedlig bruk av godkjente lokaliteter lå på rundt 50–70 prosent. Dette viser at godkjent kapasitet og faktisk bruk varierer geografisk, men sier ikke alene om ubrukte lokaliteter var biologisk, driftsmessig eller økonomisk tilgjengelige (Mikkelsen og kolleger, 2019).\n\nPlanlegging og tillatelser utgjør et eget, sammenkoblet filter. Kommunene planlegger sjøarealene innenfor sitt ansvarsområde, mens en lokalitet i tillegg må få tillatelser etter akvakulturregelverket og relevante sektorlover. Den rettslige gjennomgangen til Solås og kolleger beskriver systemet som oppdelt, med flere myndigheter som kan stanse en lokalitet på grunnlag av sine ansvarsområder, og uten én myndighet som foretar en samlet avveining av alle hensyn. Myklebusts juridiske analyse viser samtidig at kommunale miljøvilkår og myndighetenes kompetansegrenser ikke alltid er klart avgrenset. Dette er analyser av regelverk, ikke målinger av hvor ofte søknader avslås eller hvor mye forsinkelse systemet skaper (Solås og kolleger, 2015; Myklebust, 2018).\n\nPlanavsetting er derfor nødvendig, men ikke tilstrekkelig for å få en lokalitet i drift. Robertsen og kolleger fant at flere oppdrettere hadde fått avslag på søknader selv innenfor områder som allerede var avsatt til havbruk. Interkommunale planprosesser kan gi felles kunnskapsgrunnlag, rutiner og et større geografisk perspektiv, men kommunestyrene beholder den endelige beslutningen for hvert sitt område. I en studie av ni slike prosesser var full samordning av innhold og arealavklaringer begrenset til fire prosesser med til sammen 15 kommuner; i Fensfjorden ble det i fellesskap valgt ikke å legge ut nye havbruksområder. Funnene viser at samarbeid kan bedre koordineringen, men ikke fjerne kommunale beslutningsgrenser eller sikre nye arealer (Kvalvik og Robertsen, 2017; Robertsen og kolleger, 2014).\n\nMiljø- og fiskehelsehensyn virker både gjennom lokalitetsvurderinger og gjennom begrensninger på produksjon. Hersoug og kolleger vurderte at den nasjonale vekstbegrensningen på tidspunktet for artikkelen først og fremst lå i produksjonstillatelser og trafikklyssystemet, snarere enn i mangel på sjøareal samlet sett, selv om enkelte regioner var nær fulle. Dette er en syntese av tidligere forskning og forvaltningsordninger, ikke en ny måling av årsakene til vekststans. Den står ikke nødvendigvis i motsetning til rapporter om lokal arealknapphet: en bedrift eller region kan mangle egnede lokaliteter samtidig som produksjonstillatelser eller biologiske rammer begrenser veksten nasjonalt. SINTEF-rapporten for Trøndelag peker tilsvarende på lus, sykdom og fiskevelferd som sentrale begrensninger for vekst, men bygger blant annet på intervjuer og en regional kunnskapssammenstilling, ikke på en kausal analyse av hvor mye hver faktor reduserer produksjonen (Hersoug og kolleger, 2020; Sand og kolleger, 2025).\n\nSamlet er evidensen **middels sterk** for at utviklingsmulighetene bestemmes av samspillet mellom planlagt areal, sektortillatelser, regionale forskjeller i lokalitetsbruk og biologiske rammer. Den er svakere når det gjelder å fastslå hvilken faktor som faktisk er den bindende begrensningen for en bestemt søknad, bedrift eller region. Vurderingen ville bli sikrere med sammenlignbare data om søknader, avslag og behandlingstid, faktisk egnethet og bruk av lokaliteter, og hvordan miljø- og fiskehelsekrav påvirker produksjonsmulighetene over tid.",
+   "kort_svar_ok": true,
+   "body_words": 751,
+   "suspect_citations": [
+    "SALT-rapporten"
+   ],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A1",
+   "mode": "non_researcher",
+   "query": "Hvilke faktorer påvirker muligheten for utvikling av havbruk langs kysten, og hvordan samvirker forhold som arealtilgang, tillatelsessystem, arealplanlegging, og miljø- og fiskehelsehensyn?",
+   "latency_s": 11.67,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6287
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6163
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6082
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.5805
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.5761
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.5748
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.574
+    },
+    {
+     "doc_id": "2020_hersoug_whats-the-clue",
+     "authors": "Bjørn Hersoug; Eirik Mikkelsen; Tonje C. Osmundsen",
+     "year": "2020",
+     "score": 0.5612
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5553
+    },
+    {
+     "doc_id": "2017_kvalvik_intermunicipal-coastal-planning",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.5537
+    }
+   ],
+   "answer": "**Kort svar**\n- Utvikling av havbruk avhenger både av om sjøareal er planlagt og godkjent, og av om driften kan oppfylle miljø- og fiskehelsekrav.\n- Kildene gir ulike diagnoser: noen peker på tillatelseskapasitet som hovedbrems, andre på knapphet på brukbare lokaliteter og oppstykket planlegging.\n- Det mangler gode målinger av hvor ofte søknader stoppes av hver enkelt hindring, og hvor mye ny teknologi kan åpne for.\n\nMuligheten for å utvikle havbruk langs kysten avgjøres ikke av hvor mye sjø som finnes på kartet. Et område må først være avsatt til akvakultur i kommunens arealplan, og deretter få en egen lokalitetstillatelse. Flere statlige fagmyndigheter vurderer blant annet fiskehelse, forurensning, ferdsel og fiskeri. Dermed kan et område være planlagt for havbruk uten at en konkret søknad får ja.\n\nDet finnes to ulike diagnoser av hva som først og fremst bremser veksten. Hersoug, Mikkelsen og Osmundsen (2020), i en gjennomgang av tidligere forskning og forvaltning, konkluderer med at den viktigste begrensningen på nasjonalt nivå da var produksjonstillatelser og trafikklyssystemet, ikke mangel på sjøareal i seg selv. Trafikklyssystemet deler kysten i 13 produksjonsområder: fargene kan åpne for kapasitetsvekst, holde kapasiteten stabil eller føre til reduksjon. Samtidig peker gjennomgangen på at enkelte regioner, særlig Hordaland, hadde lite ledig kapasitet på godkjente lokaliteter. Dette er altså ikke en påstand om at areal aldri er en flaskehals, men at den ikke nødvendigvis var den viktigste nasjonale begrensningen.\n\nAndre kilder viser hvorfor «ledig sjø» ikke er det samme som brukbart areal. Mikkelsen, Karlsen og Osmundsen (2019) fant i en sammenstilling av statistikk at godkjente lokaliteter ble brukt svært ulikt mellom fylker: Hordaland brukte nesten alle sine godkjente lokaliteter i 2017, mens andre fylker hadde flere som sto ubrukt. Det sier noe om forskjeller i bruk og kapasitet, men ikke alene hvorfor lokalitetene var ledige. I tillegg kan avstandskrav mellom anlegg og hensyn til andre brukere gjøre store sjøområder utilgjengelige. Skrove og kolleger (2023) anslo at selve anleggene opptar et lite areal, men at anbefalte smitteavstander kan omfatte langt større deler av sjøen. Slike avstandssoner er ikke det samme som at hele området er permanent beslaglagt; anbefalte avstander kan fravikes.\n\nPlanlegging og tillatelser virker sammen, men myndighetene har delt ansvar. Kommunene bestemmer gjennom arealplaner hvor havbruk kan vurderes, mens sektormyndigheter kan stanse en lokalitet på sine fagområder. Solås og kolleger (2015) beskriver systemet som oppdelt, uten én myndighet som foretar en samlet avveiing av alle hensyn. Myklebust (2018) viser i en juridisk analyse at kommunenes adgang til å stille miljøvilkår finnes, men at grensene mot statlige sektorregler er uklare. Interkommunale planer kan gi felles kunnskap og se en fjord under ett, men Kvalvik og Robertsen (2017) fant at kommunestyrene fortsatt har siste ord hver for seg. Slike planer løser derfor ikke automatisk konflikter eller sikrer nye lokaliteter.\n\nMiljø- og fiskehelsekrav kan både begrense vekst og påvirke hvor anlegg kan ligge. Lusehensyn inngår i trafikklyssystemet, og lus kan også være grunn til å avslå en lokalitet. Sykdom, fiskevelferd og andre miljøhensyn inngår i vurderingen av drift og plassering. Samtidig er det ikke dokumentert her hvor ofte hvert hensyn faktisk fører til avslag, eller hvor mye lukkede, nedsenkbare eller landbaserte løsninger vil endre arealbehovet. Rapportene om mulig framtidig arealbruk bygger delvis på scenarier og intervjuer, ikke på målinger av framtidig effekt.\n\n**Konfidens: Middels.** Kildene beskriver tydelig hvordan planlegging, tillatelser og helsekrav kan gripe inn i hverandre, men gir ikke sammenlignbare tall for hva som oftest stopper utvikling. En samlet oversikt over søknader, avslag og begrunnelser på tvers av kommuner og sektormyndigheter ville gjort bildet klarere.",
+   "kort_svar_ok": true,
+   "body_words": 518,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A2",
+   "mode": "researcher",
+   "query": "Hvordan praktiseres søknadsprosessen om lokaliteter, og i hvilke deler av prosessen oppstår søknadsstopp, forsinkelser eller konflikter oftest?",
+   "latency_s": 14.65,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.4958
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.4436
+    },
+    {
+     "doc_id": "2025_osmundsen_fylkeskommune-akvakulturloven",
+     "authors": "Tonje C. Osmundsen; Marit Schei Olsen",
+     "year": "2025",
+     "score": 0.4349
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4289
+    },
+    {
+     "doc_id": "salt_1110_lokalitetssoknader",
+     "authors": "Guri Hjallen Eriksen; Henrik Hareide; Tale Skrove",
+     "year": "2026",
+     "score": 0.4236
+    },
+    {
+     "doc_id": "2021_sandersen_kystsone-helgeland",
+     "authors": "Håkan T. Sandersen",
+     "year": "2021",
+     "score": 0.4208
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.4167
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.4162
+    },
+    {
+     "doc_id": "2015_sandersen_access-to-sites",
+     "authors": "Haakan T. Sandersen; Ingrid Kvalvik",
+     "year": "2015",
+     "score": 0.4139
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.4122
+    }
+   ],
+   "answer": "**Kort svar**\n- Søknader går gjennom kommunal arealplanlegging og deretter en koordinert lokalitetsbehandling der fylkeskommunen fatter vedtak.\n- Stopp og forsinkelser oppstår særlig ved sektoravklaringer, miljøfaglige vurderinger og uavklarte arealkonflikter; kildene måler ikke hvor ofte hvert ledd stopper søknader.\n- Det mangler en fullstendig nasjonal oversikt som følger søknader fra planforslag til endelig vedtak og sammenligner behandlingstid mellom myndigheter.\n\nSøknadsprosessen har to sammenhengende, men ulike flaskehalser: først må sjøarealet være planmessig tilgjengelig, og deretter må den konkrete lokaliteten få nødvendige sektoravklaringer. Kommunen bestemmer gjennom arealplanen hvor akvakultur kan være aktuelt, mens fylkeskommunen koordinerer lokalitetsbehandlingen og fatter det endelige vedtaket. En planavsetning er likevel ikke en garanti for tillatelse: søknaden kan fortsatt stanses eller forsinkes av innsigelser, miljøvurderinger eller andre sektorvedtak (Solås og kolleger, 2015; Osmundsen og Olsen, 2025).\n\nI planfasen oppstår konflikter når kommunene skal avveie akvakultur mot andre interesser, og når planene ikke gir tilstrekkelig avklaring av hvor anlegg kan ligge. I en spørreundersøkelse blant oppdrettsselskaper oppga respondentene oftest planleggingskonflikter med naturverninteresser (57 prosent) og fiskeri (54 prosent), fulgt av villaks (36 prosent), sjøtransport (22 prosent), turisme (19 prosent) og andre oppdrettere (11 prosent). Tallene beskriver selskapenes rapporterte konflikter, ikke en nasjonal opptelling av avslag eller avbrutte søknader (Robertsen og kolleger, 2014). Rapporten fant også at mange kommunale kystsoneplaner var gamle og viste områder som ikke lenger var brukbare. Dermed kan en plan som formelt åpner for akvakultur, likevel gi et svakt eller utdatert grunnlag for en konkret søknad.\n\nInterkommunal planlegging kan samle kunnskap og samordne kommuner rundt fjorder som går på tvers av kommunegrenser, men den fjerner ikke nødvendigvis uenigheten om enkeltsaker. I Kystplan Helgeland ga en omvendt planleggingsmetode et førsteutkast der 83 prosent av sjøarealet var satt av til flerbruksområder som også åpnet for akvakultur. Planen ble møtt med innsigelser, blant annet om svake konsekvensutredninger og regelen om at det måtte foreligge særlige grunner for å avslå oppdrett i slike områder. Sandersen beskriver resultatet som standardiserte planer og felles kart, men ikke helhetlig interkommunal styring; flere konflikter ble i praksis skjøvet videre til lokalitetsbehandlingen (Sandersen, 2021). Dette er en regional casestudie, ikke dokumentasjon på at samme metode gir samme utfall over hele landet.\n\nEtter planfasen blir søknaden vurdert av flere myndigheter med ulike ansvarsområder. Det eldre juridiske rammeverksarbeidet beskriver systemet som sektorisert: flere myndigheter kan stanse en lokalitet på grunnlag av sitt regelverk, uten at én instans nødvendigvis foretar en samlet avveining av alle hensyn (Solås og kolleger, 2015). En nyere evaluering av fylkeskommunenes forvaltning viser at fylkeskommunen koordinerer behandlingen og fatter lokalitetsvedtaket, men at den i praksis venter på alle sektorvedtak selv når regelverket kan åpne for å gå videre. I statistikken for 2020–2023 var gjennomsnittlig behandlingstid 31 uker i 2023 for rutinesaker, mens nye lokaliteter i gjennomsnitt tok 79 uker. Medianene lå nærmere 21–24 uker. Evalueringen peker særlig på forsinkelser hos Statsforvalteren og Mattilsynet, men tallene viser behandlingstid, ikke at alle lange saker skyldtes et formelt stopp hos disse myndighetene (Osmundsen og Olsen, 2025).\n\nMiljøfaglig dokumentasjon og usikkerhet kan også gjøre det vanskelig å avklare søknader. En kvalitativ gjennomgang av sju vedtatte planer fant at konsekvensutredninger ofte beskrev utvalgte temaer, men at miljøvirkninger, avgrensning av temaer og håndtering av usikkerhet var svakere dokumentert. Rapporten fant også saker der dispensasjon så ut til å bli brukt som en ny runde om areal som ikke var avsatt til akvakultur. Dette tyder på at mangelfull planavklaring kan føre til omkamper, men studien er basert på utvalgte saker og kan ikke si hvor vanlig dette er nasjonalt (Eriksen og kolleger, 2023).\n\nEn nasjonal gjennomgang av 251 avslag fra 2020–2025 gir et mer konkret bilde av hvor søknader stanses, men omfatter avslag snarere enn alle søknader og alle forsinkelser. Mattilsynet var registrert som avslagsmyndighet oftest, særlig med begrunnelse knyttet til smitterisiko for lakselus. Fylkeskommunale avslag på grunnlag av miljømessig forsvarlighet var særlig knyttet til torsk, og sjeldnere til vill laksefisk og fugl. Avslag etter forurensningsregelverket gjaldt blant annet resipientkapasitet og naturverdier. Rapporten understreker at fakta, faglig skjønn og føre-var-vurderinger i noen vedtak glir over i hverandre, og at enkelte begrunnelser i begrenset grad bygger på stedsspesifikke virkninger. Materialet er en første nasjonal avslagsdatabase, med databegrensninger og skjevheter, og kan derfor ikke alene fastslå hvor i hele søknadsstrømmen stopp oftest oppstår (Eriksen og kolleger, 2026).\n\nSamlet er sikkerheten **middels** for at de viktigste friksjonspunktene er planavklaring og konkurrerende arealinteresser, sektorvise miljø- og smittevurderinger samt koordinering mellom myndigheter. Det er lavere sikkerhet om den relative hyppigheten av hvert punkt: kildene kombinerer intervjuer, utvalgte planstudier, behandlingstidsstatistikk og en database over avslag, men følger ikke et representativt utvalg av søknader gjennom alle ledd. En nasjonal, sammenlignbar oversikt over søknadsutfall, ventetid og årsak til stopp i hvert trinn ville kunne endre vurderingen.",
+   "kort_svar_ok": true,
+   "body_words": 718,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A2",
+   "mode": "non_researcher",
+   "query": "Hvordan praktiseres søknadsprosessen om lokaliteter, og i hvilke deler av prosessen oppstår søknadsstopp, forsinkelser eller konflikter oftest?",
+   "latency_s": 20.0,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.4958
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.4436
+    },
+    {
+     "doc_id": "2025_osmundsen_fylkeskommune-akvakulturloven",
+     "authors": "Tonje C. Osmundsen; Marit Schei Olsen",
+     "year": "2025",
+     "score": 0.4349
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4289
+    },
+    {
+     "doc_id": "salt_1110_lokalitetssoknader",
+     "authors": "Guri Hjallen Eriksen; Henrik Hareide; Tale Skrove",
+     "year": "2026",
+     "score": 0.4236
+    },
+    {
+     "doc_id": "2021_sandersen_kystsone-helgeland",
+     "authors": "Håkan T. Sandersen",
+     "year": "2021",
+     "score": 0.4208
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.4167
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.4162
+    },
+    {
+     "doc_id": "2015_sandersen_access-to-sites",
+     "authors": "Haakan T. Sandersen; Ingrid Kvalvik",
+     "year": "2015",
+     "score": 0.4139
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.4122
+    }
+   ],
+   "answer": "**Kort svar**\n- Søknader går gjennom kommunale arealplaner og flere sektorvedtak før fylkeskommunen avgjør om lokaliteten kan klareres.\n- Stopp kan skyldes både manglende eller omstridt areal i planene og avslag fra sektormyndigheter; kildene peker ikke på én dominerende flaskehals.\n- Vi mangler en fullstendig nasjonal oversikt som viser hvor i saksløpet søknader oftest stopper eller blir forsinket.\n\nI praksis er dette ikke én søknad til én myndighet, men et løp med flere porter. Kommunen bestemmer gjennom arealplanen om sjøområder kan brukes til oppdrett. Deretter vurderer ulike sektormyndigheter blant annet fiskehelse, forurensning og farleder. Fylkeskommunen samordner behandlingen og fatter det endelige vedtaket om lokalitetsklarering. En plan som åpner for oppdrett, er likevel ikke en garanti for tillatelse: sektormyndigheter kan avslå, og fylkeskommunen kan også avslå søknaden.\n\nStoppene oppstår derfor på ulike steder, og kildene gir ikke grunnlag for å utpeke én av dem som den vanligste nasjonalt. En juridisk kartlegging fra 2015 beskriver systemet som oppdelt mellom myndigheter, uten ett organ som veier alle hensyn samlet. I den nyere kartleggingen av 251 avslag fra 2020–2025 var Mattilsynet den hyppigste avslagsmyndigheten, særlig i saker om smitterisiko fra lakselus. Det er et funn om registrerte avslag, ikke et mål på hvor i alle søknadsløp forsinkelsene oppstår. Kartleggingen fant også at begrunnelsene i noen saker blander faktagrunnlag, faglig skjønn og føre-var-vurderinger, slik at det kan være vanskelig å se hva som var avgjørende.\n\nAndre problemer oppstår før eller under kommunal planlegging. Robertsen og kolleger (2014) fant at mange kystsoneplaner var gamle og viste oppdrettsområder som ikke lenger var brukbare; flere bedrifter fortalte også om avslag på lokaliteter innenfor områder som allerede var satt av til oppdrett. Eriksen og kolleger (2023), i en kvalitativ gjennomgang av sju planer, fant at avklaringer mellom oppdrett og andre interesser ofte var ufullstendige, og at dispensasjonssaker noen ganger ble en ny runde om areal som ikke var avsatt. Det kan gi omkamper og usikkerhet, men studien er ikke en nasjonal opptelling av slike saker.\n\nDet er også uenighet om hva som skjer når planleggingen prøver å gjøre mer sjø tilgjengelig. I Kystplan Helgeland ble en omvendt metode brukt: først ble områder der oppdrett ikke var ønsket, tatt ut; mye av resten ble åpnet for flere formål, også oppdrett. Sandersen (2021) fant at dette ga fleksibilitet, men at konkrete konflikter og vurderinger i stor grad ble skjøvet videre til søknaden om lokalitet. Flere myndigheter protesterte mot svake konsekvensvurderinger og en regel som gjorde det vanskeligere å si nei. Det er altså ikke bare et spørsmål om hvor mye sjø som er avsatt, men også om planen avklarer konfliktene godt nok til at senere søknader kan behandles forutsigbart.\n\nForsinkelser kan dessuten komme etter at saken er sendt videre. Evalueringen av fylkeskommunenes behandling fant at gjennomsnittlig behandlingstid for nye lokaliteter nådde 79 uker i 2023, mens medianen lå nærmere 21–24 uker. Overskridelsene lå hovedsakelig hos Statsforvalteren og Mattilsynet. Forskjellen mellom gjennomsnitt og median tyder på at noen lange saker trekker snittet opp; tallene viser ikke at alle søknader tar så lang tid. Evalueringen kunne heller ikke måle resultatene for hvert fylke eller sammenligne behandlingstider direkte med tiden før reformen i 2010.\n\n**Konfidens: Middels.** Flere kilder beskriver hvor konflikter og forsinkelser kan oppstå, men de måler ulike deler av prosessen og gir ikke én samlet nasjonal rangering av flaskehalsene. En komplett, sammenlignbar oversikt over alle søknader fra innsending til endelig vedtak, med årsak og varighet for hvert trinn, ville endre bildet.",
+   "kort_svar_ok": true,
+   "body_words": 511,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A3",
+   "mode": "researcher",
+   "query": "Hvordan vurderes kumulative effekter av akvakulturproduksjon i arealplanlegging og lokaliseringsbeslutninger for havbruk, og hvilke kunnskapsmessige og metodiske utfordringer beskrives?",
+   "latency_s": 13.29,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6412
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6286
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6278
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5992
+    },
+    {
+     "doc_id": "2023_evenset_sameksistens",
+     "authors": "Anita Evenset; Gro Harlaug Refseth; Trine Dale; Maj Arnberg; Astrid Harendza; Kristine Bondo Pedersen; Kjetil Sagerup; Anja Striberny; David Izquierdo-Gomez; Gunhild Borgersen; Marit Markussen Bjorbekkmo; Eirik Mikkelsen; Kristine Eriksen; Per-Arne Emaus; Lars-Olav Sparboe; Audun Iversen; Roy Robertsen; Silje Steinsbø",
+     "year": "2023",
+     "score": 0.5967
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.5946
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.5932
+    },
+    {
+     "doc_id": "2025_mikkelsen_samlet-pavirkning-nord",
+     "authors": "Eirik Mikkelsen; Patrick Berg Sørdahl; Ingrid Kvalvik; Cornelya F.C. Klutsch; Gunnar Sander; Charlotte Weber; Marius Varg Næss; Vito De Lucia; Camilla Carlsten Mittenzwei; Elise Oline Pedersen; Sigrid Engen",
+     "year": "2025",
+     "score": 0.5928
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5798
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.567
+    }
+   ],
+   "answer": "**Kort svar**\n- Kumulative effekter vurderes gjennom plan- og konsekvensutredninger, men praksisen er ujevn og ofte lite konkret.\n- Kildene peker ikke på én konkurrerende diagnose; de framhever både uklare krav og mangelfull kunnskap om samlede belastninger.\n- Det mangler standardiserte metoder og tilstrekkelige data for å vurdere samvirkende påvirkninger på fjord- og økosystemnivå.\n\nI arealplanleggingen skal vurderingen av samlet belastning bidra til å avgjøre hvor havbruk kan lokaliseres, og hvilke hensyn som må veies mot hverandre. Kunnskapsgrunnlaget viser likevel et gap mellom formelle krav og praktisk gjennomføring: Planer og konsekvensutredninger omtaler ofte relevante temaer, men gjør ikke alltid tydelig hvordan påvirkninger er avgrenset, veid sammen eller håndtert under usikkerhet. Dermed kan en plan avklare arealbruk uten at den samtidig gir et etterprøvbart bilde av den samlede miljøbelastningen.\n\nEriksen og kolleger undersøkte sju vedtatte planer gjennom dokumentanalyse og intervjuer. De fant at avklaringen mellom akvakultur og andre interesser fortsatt kan være mangelfull, og at miljøvirkninger ofte er svakere utredet enn andre temaer. I flere saker var det vanskelig å se hvordan utredningstemaer var valgt, hvordan hensyn var veid, og hvordan usikkerhet var behandlet. Enkelte søknader om dispensasjon framsto dessuten som nye forsøk på å få gjennomslag for arealbruk som ikke var avklart i planen. Dette er kvalitative funn fra et begrenset, strategisk utvalg, ikke en nasjonal måling av hvor ofte slike svakheter forekommer (Eriksen og kolleger, 2023).\n\nDet rettslige bildet bidrar til å forklare hvorfor praksisen kan variere. Naturmangfoldloven og reglene om konsekvensutredninger stiller krav om å se belastninger i sammenheng, mens akvakulturloven ifølge Mikkelsen og kolleger ikke uttrykkelig krever en kumulativ vurdering. Loven krever likevel miljømessig forsvarlig produksjon og en helhetlig avveiing av arealbehov og interesser. For kysten peker rapporten på plan- og vannregelverket som tydeligere grunnlag for vurdering av samlet påvirkning, mens akvakulturregelverket gir mindre praktisk veiledning om hvordan dette skal gjøres. Dette er en juridisk analyse av krav og styringsrammer, ikke dokumentasjon på hvordan hver enkelt lokaliseringssak faktisk behandles (Mikkelsen og kolleger, 2025).\n\nEn sentral metodisk utfordring er å gå fra enkeltpåvirkninger til en samlet vurdering av aktivitet, påvirkningsfaktor og miljøvirkning. MILJØREG-rapporten finner at kunnskapen er ulikt utviklet for ulike påvirkninger: Organisk avfall på bløtbunn og rømming er godt dokumentert, mens kunnskapen om blant annet hardbunn, støy, lys og kunstige strukturer er langt svakere. Rapporten beskriver også usikkerhet om næringssalter og om hvordan flere belastninger virker sammen. Den viser at påvirkning fra organisk avfall kan strekke seg fra området under merdene til flere hundre meter, og ved eksponerte eller spredningsutsatte lokaliteter i enkelte tilfeller 600–1000 meter. Dette er oppsummerte forskningsfunn om bestemte påvirkninger, ikke en samlet måling av hvor stor del av en fjord som er økologisk belastet. Rapporten understreker dessuten at en rask kunnskapsoppsummering ikke er en full systematisk gjennomgang med kvalitetsvurdering av alle studiene (Evenset og kolleger, 2023).\n\nOgså datagrunnlaget begrenser vurderingene på større geografisk skala. MILJØREG fant at åpne norske data ikke gjorde det mulig å gjennomføre en samlet GIS-analyse av kumulative virkninger. Rapporten peker på mangler i rådata og på at mange vurderinger gjelder enkeltstressorer, mens samvirke mellom flere påvirkninger i stor grad faller utenfor. Dermed kan planmyndigheter ha grunnlag for å vurdere enkelte lokale forhold, men likevel mangle verktøy for å beregne samlet belastning på en fjord eller et større kystområde. Eriksen og kolleger skiller tilsvarende mellom det som med rimelighet kan vurderes i kommunale planer, og spørsmål som total lusebelastning, genetisk påvirkning på villaks og samlet næringssaltbelastning, som krever vurderinger på andre nivåer.\n\nDette betyr ikke at kumulative hensyn er fraværende i planleggingen. De kan inngå i konsekvensutredninger, kommunale planer og senere lokalitetsbehandling, men vurderingene fordeles mellom myndigheter og beslutningsnivåer. Den kvalitative planstudien viser at det kan være uklart hva som skal avklares i kommuneplanen, og hva som hører hjemme i den enkelte søknaden. Samtidig viser den juridiske analysen at kommunale planer er bindende for lokalisering, mens tillatelser etter akvakulturregelverket behandles av flere sektormyndigheter. Denne arbeidsdelingen kan gjøre det vanskelig å få fram en samlet og etterprøvbar vurdering i én sak, særlig når kunnskapen om påvirkninger og samvirke er ufullstendig.\n\nSamlet er sikkerheten **middels** for konklusjonen om at kumulative effekter inngår i regelverk og planlegging, men vurderes ujevnt og med betydelige kunnskapshull. Sikkerheten er lavere for hvor utbredt svakhetene er nasjonalt, fordi planstudien bygger på sju utvalgte saker og rapportene ikke gir en felles, standardisert måling av kvaliteten på kumulative vurderinger. Vurderingen ville bli sikrere med sammenlignbare metoder, bedre åpne data om påvirkninger og tydeligere dokumentasjon av hvordan usikkerhet og samlet belastning faktisk håndteres fra plan til lokaliseringsvedtak.",
+   "kort_svar_ok": true,
+   "body_words": 693,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A3",
+   "mode": "non_researcher",
+   "query": "Hvordan vurderes kumulative effekter av akvakulturproduksjon i arealplanlegging og lokaliseringsbeslutninger for havbruk, og hvilke kunnskapsmessige og metodiske utfordringer beskrives?",
+   "latency_s": 14.75,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6412
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6286
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6278
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5992
+    },
+    {
+     "doc_id": "2023_evenset_sameksistens",
+     "authors": "Anita Evenset; Gro Harlaug Refseth; Trine Dale; Maj Arnberg; Astrid Harendza; Kristine Bondo Pedersen; Kjetil Sagerup; Anja Striberny; David Izquierdo-Gomez; Gunhild Borgersen; Marit Markussen Bjorbekkmo; Eirik Mikkelsen; Kristine Eriksen; Per-Arne Emaus; Lars-Olav Sparboe; Audun Iversen; Roy Robertsen; Silje Steinsbø",
+     "year": "2023",
+     "score": 0.5967
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.5946
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.5932
+    },
+    {
+     "doc_id": "2025_mikkelsen_samlet-pavirkning-nord",
+     "authors": "Eirik Mikkelsen; Patrick Berg Sørdahl; Ingrid Kvalvik; Cornelya F.C. Klutsch; Gunnar Sander; Charlotte Weber; Marius Varg Næss; Vito De Lucia; Camilla Carlsten Mittenzwei; Elise Oline Pedersen; Sigrid Engen",
+     "year": "2025",
+     "score": 0.5928
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5798
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.567
+    }
+   ],
+   "answer": "**Kort svar**\n- Kumulative effekter vurderes gjennom plan- og miljøregler, men praksis og dokumentasjon varierer.\n- Kildene peker særlig på uklare metoder og svakt kunnskapsgrunnlag, ikke på én felles beregningsmåte.\n- Det mangler gode data om hvordan flere påvirkninger virker sammen over tid og på samme natur.\n\nI arealplanlegging betyr «kumulative effekter» at man vurderer den samlede belastningen på naturen, ikke bare virkningen fra én lokalitet eller én type påvirkning. Reglene for konsekvensutredninger og naturmangfold krever at slike samlede virkninger vurderes. Men rapportene beskriver et gap mellom kravet og det som faktisk kan dokumenteres: Det finnes ikke én fast metode som viser hvordan påvirkninger fra flere anlegg og andre aktiviteter skal legges sammen, eller hvordan usikkerheten skal håndteres.\n\nEn kvalitativ gjennomgang av sju vedtatte planer fant at avklaringer mellom havbruk og andre interesser fortsatt ofte er ufullstendige. Eriksen og kolleger (2023) fant også at planmaterialet ofte gjorde det vanskelig å se hvilke temaer som var valgt ut, hvordan hensyn var veid mot hverandre, og hvordan usikkerhet var behandlet. Vurderinger av miljøvirkninger var svakere dokumentert enn flere andre temaer. Dette er en studie av utvalgte plansaker, ikke en opptelling av all norsk planpraksis. Den viser derfor konkrete problemer, men ikke hvor vanlige de er nasjonalt.\n\nDet er også et spørsmål om hvilket nivå som skal gjøre hvilken vurdering. Kommunene bestemmer gjennom arealplaner hvor havbruk kan legges, mens flere miljøspørsmål må vurderes av andre myndigheter eller i senere lokalitetsbehandling. Eriksen og kolleger peker for eksempel på at samlet lusebelastning, genetiske endringer hos villaks og samlet næringssaltbelastning i en fjord ikke realistisk kan forventes utredet fullt ut i hver kommunale plan. Samtidig kan planleggingen undersøke forhold som avstand til lakseelver og om vannforekomster har dårlig vannutskifting. Dermed kan en plan være avhengig av kunnskap som finnes andre steder, uten at det alltid er tydelig hvordan den skal kobles inn.\n\nDen større kunnskapssammenstillingen fra Evenset og kolleger (2023) viser hvorfor dette er krevende. Virkninger av organisk avfall på bløtbunn er relativt godt dokumentert, mens kunnskapen om påvirkning på hardbunn, næringssalter og sårbare naturtyper har større mangler. Rapporten fant også at det ikke lot seg gjøre å lage en samlet kartanalyse av påvirkningene med tilgjengelige, åpne norske data. Det skyldtes manglende data, ikke at en ferdig modell hadde vist at samlet påvirkning var liten. Rapporten er en rask kunnskapsgjennomgang, ikke en full systematisk vurdering av kvaliteten på alle studiene.\n\nEn juridisk og forvaltningsrettet rapport fra Mikkelsen og kolleger (2025) beskriver en beslektet utfordring: Naturmangfoldloven og reglene om konsekvensutredning gir tydeligere krav om samlet vurdering enn akvakulturloven gjør uttrykkelig. Akvakulturloven krever likevel en helhetlig vurdering av miljø og arealinteresser. I praksis blir vurderingene ofte skjønnsmessige, og rapporten finner svakt kunnskapsgrunnlag om hvordan ulike påvirkninger virker sammen. Dette er en analyse av regler og forvaltningspraksis i Nord-Norge, ikke en måling av miljøeffekter ved bestemte anlegg.\n\n**Konfidens: Middels.** Flere typer kilder peker på mangelfull dokumentasjon og uklare metoder, men planstudiene dekker få saker og kunnskapsgrunnlaget varierer mellom påvirkningstyper. Et nasjonalt datasett som kobler lokaliteter, miljømålinger og andre påvirkninger over tid, ville gjort det lettere å vurdere hvor godt kumulative effekter faktisk fanges opp i plan- og lokalitetsbeslutninger.",
+   "kort_svar_ok": true,
+   "body_words": 472,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A4",
+   "mode": "researcher",
+   "query": "Hvordan påvirker økonomiske virkemidler og regulering insentivene til arealbruk og lokaliseringsvalg, og hvordan fordeles gevinster og kostnader mellom aktørene?",
+   "latency_s": 12.86,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.5041
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.473
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.4419
+    },
+    {
+     "doc_id": "2023_metier_marine-grunnkart",
+     "authors": "Metier AS",
+     "year": "2023",
+     "score": 0.4391
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4338
+    },
+    {
+     "doc_id": "2020_aanesen_arctic-aquaculture-cba",
+     "authors": "Margrethe Aanesen; Eirik Mikkelsen",
+     "year": "2020",
+     "score": 0.4331
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.4259
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.425
+    },
+    {
+     "doc_id": "2017_kvalvik_intermunicipal-coastal-planning",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.4207
+    },
+    {
+     "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+     "authors": "",
+     "year": "2024",
+     "score": 0.4195
+    }
+   ],
+   "answer": "**Kort svar**\n- Økonomiske overføringer og plan- og lisensregler påvirker kommunenes vilje til å åpne arealer, men avgjør ikke alene hvor anlegg faktisk kan etableres.\n- Kildene peker både på økonomiske insentiver til å sette av areal og på at lokal nytte avhenger av hvor mye verdiskaping som blir igjen regionalt.\n- Det mangler sikre, sammenlignbare målinger av hvordan virkemidlene endrer lokaliseringsvalg og samlet fordeling av gevinster og kostnader.\n\nØkonomiske virkemidler og regulering virker på ulike ledd i arealbeslutningen. Kommunene bestemmer gjennom arealplaner hvor havbruk kan være aktuelt, mens akvakulturmyndighetene behandler tillatelser etter sektorregelverket. Dermed kan økonomiske fordeler gjøre det mer attraktivt for en kommune å åpne for havbruk, uten at dette i seg selv sikrer en tillatelse eller et brukbart anlegg. Samtidig kan krav til avstand, miljø og andre interesser begrense hvilke planlagte lokaliteter som lar seg realisere. Kildene beskriver altså insentiver og beslutningsmyndighet, men gir ikke et samlet empirisk mål på hvor mye hvert virkemiddel endrer faktisk lokalisering.\n\nEt tydelig kommunalt insentiv er Havbruksfondet. Den juridiske analysen til Myklebust oppgir at 80 prosent av avgiften for økt produksjonskapasitet i 2016–2019 ble fordelt til kommuner og fylker som hadde åpnet for havbruk i planene sine. Hun omtaler dette som et sterkt insentiv til å prioritere havbruk i kommunal planlegging (Myklebust, 2021). Dette er en juridisk og institusjonell beskrivelse, ikke en måling av hvor mange kommuner som endret plan eller hvor mange lokaliteter som fulgte av ordningen. Den viser likevel hvordan en nasjonal inntektsordning kan knytte kommunale arealvalg til økonomiske gevinster.\n\nOm slike gevinster veier opp for lokale kostnader, er et annet spørsmål. En modellbasert samfunnsøkonomisk analyse av fem kommuner i Nord-Norge finner at regional netto nytte avhenger avgjørende av at noe av produsentoverskuddet blir igjen i regionen. Analysen anslår også at overføringer fra Havbruksfondet ofte ikke er store nok til å oppveie husholdningenes beregnede velferdstap ved mer havbruksaktivitet (Aanesen og Mikkelsen, 2020). Dette er modellresultater, ikke observerte regnskap over faktiske lokale gevinster og kostnader. Forfatterne peker på usikkerhet i anslagene for produsentoverskudd og fondsoverføringer, og betalingsvilligheten for å unngå havbruk var ikke statistisk signifikant på femprosentnivå. Resultatet bør derfor leses som en betinget vurdering av fordeling, ikke som en sikker konklusjon om at kommuner eller innbyggere samlet taper.\n\nReguleringen påvirker også hvilke arealer som kan brukes, og hvem som har innflytelse over bruken. Kommunene planlegger sjøareal ut til én nautisk mil utenfor grunnlinjene, mens akvakulturtillatelser ligger hos statlige eller fylkeskommunale myndigheter. Myklebusts juridiske analyser beskriver uklare grenser for hvor langt kommunene kan gå i å stille detaljerte miljø- eller driftsvilkår, og understreker at kommunal styring må samordnes med sektorregelverket (Myklebust, 2018; Myklebust, 2021). Dette kan skape usikkerhet for både kommuner og næring: En planavsetning er ikke det samme som en tillatelse, og en tillatelse kan ikke gis i strid med kommunale planer. Kildene dokumenterer imidlertid ikke hvor ofte denne rettslige usikkerheten faktisk endrer lokaliseringsvalg.\n\nPlanlegging på tvers av kommunegrenser kan gjøre det lettere å vurdere fjorder og andre sammenhengende sjøområder samlet, men flytter ikke nødvendigvis den endelige beslutningsmakten. Kvalvik og Robertsen fant at de ni undersøkte interkommunale prosessene delte informasjon og planverktøy, mens full samordning av innholdet, inkludert avsetting av havbruksareal, bare ble oppnådd i fire prosesser med til sammen 15 kommuner. Kommunestyrene beholdt den endelige planmyndigheten for egne områder (Kvalvik og Robertsen, 2017). En senere Nofima-rapport beskriver tilsvarende at slike prosesser kan bygge kompetanse og felles kunnskapsgrunnlag, men at gamle planer og avslag også innenfor avsatte havbruksområder begrenser hva planleggingen faktisk gir tilgang til (Robertsen og kolleger, 2014). Dette er funn om planprosesser og kommunal praksis, ikke et mål på den økonomiske virkningen av interkommunalt samarbeid.\n\nFordelingen av gevinster og kostnader formes dessuten av hvor arealpresset er størst, og av hvilke andre interesser som berøres. En gjennomgang av statistikk for 2017 fant at Hordaland brukte 99 prosent av godkjente sjølokaliteter for laks og ørret i løpet av året, mens andre fylker hadde om lag 10–30 prosent av lokalitetene ubrukt. Gjennomsnittlig månedlig bruk av godkjente lokaliteter var rundt 50–70 prosent (Mikkelsen, Karlsen og Osmundsen, 2019). Dette viser geografisk variasjon i bruk av godkjente lokaliteter, men ikke i seg selv at ubrukt kapasitet skyldtes økonomiske insentiver eller manglende areal. Rapporten peker også på at konflikter med blant annet naturvern og fiskeri inngår i planleggingen. Slike konkurrerende hensyn kan innebære lokale kostnader eller begrense tilgjengelig areal, men kildene gir ikke et felles regnskap som fordeler disse kostnadene mot næringens inntekter og kommunale overføringer.\n\nSamlet er evidensen **middels** for at økonomiske ordninger påvirker kommunenes insentiv til å åpne arealer, og for at regulering og planmyndighet former hvilke lokaliteter som kan realiseres. Den er svakere for hvor mye dette endrer faktiske lokaliseringsvalg, og for den samlede fordelingen mellom kommuner, innbyggere, næring og andre brukere. Vurderingen ville bli sikrere med sammenlignbare data som kobler endringer i overføringer og planregler til faktiske planvedtak, tillatelser, investeringer og lokale inntekter og kostnader over tid.",
+   "kort_svar_ok": true,
+   "body_words": 738,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A4",
+   "mode": "non_researcher",
+   "query": "Hvordan påvirker økonomiske virkemidler og regulering insentivene til arealbruk og lokaliseringsvalg, og hvordan fordeles gevinster og kostnader mellom aktørene?",
+   "latency_s": 9.43,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.5041
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.473
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.4419
+    },
+    {
+     "doc_id": "2023_metier_marine-grunnkart",
+     "authors": "Metier AS",
+     "year": "2023",
+     "score": 0.4391
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4338
+    },
+    {
+     "doc_id": "2020_aanesen_arctic-aquaculture-cba",
+     "authors": "Margrethe Aanesen; Eirik Mikkelsen",
+     "year": "2020",
+     "score": 0.4331
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.4259
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.425
+    },
+    {
+     "doc_id": "2017_kvalvik_intermunicipal-coastal-planning",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.4207
+    },
+    {
+     "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+     "authors": "",
+     "year": "2024",
+     "score": 0.4195
+    }
+   ],
+   "answer": "**Kort svar**\n- Avgifter, kommunale planvedtak og statlige tillatelser påvirker hvor attraktivt det er å åpne sjøareal og hvor oppdrett kan etableres.\n- Kildene viser både økonomiske grunner til å sette av areal og at planlegging ikke nødvendigvis gir tilgang til brukbare lokaliteter.\n- Det mangler sikre tall for hvordan gevinster og kostnader fordeles lokalt, og for hvor mye virkemidlene faktisk endrer lokaliseringsvalg.\n\nØkonomiske virkemidler kan gjøre kommuner mer villige til å sette av sjøareal til oppdrett, men de gir ikke automatisk en lokalitet eller en tillatelse. Kommunene bestemmer gjennom arealplaner hvor oppdrett kan passe inn, mens andre myndigheter behandler tillatelser og sektorhensyn. Dermed kan et område være avsatt til oppdrett uten at en bedrift får bruke det. Omvendt kan økonomiske belønninger påvirke planleggingen, men ikke fjerne andre rettslige eller praktiske begrensninger.\n\nEt tydelig økonomisk insentiv er Havbruksfondet. Den juridiske analysen til Myklebust (2021) oppgir at 80 prosent av avgiften for økt produksjonskapasitet i 2016–2019 gikk til kommuner og fylker som hadde åpnet sjøareal for oppdrett i planene sine. Analysen beskriver dette som en sterk grunn til å prioritere oppdrett i kommunal planlegging. Men dette er en juridisk gjennomgang, ikke en måling av hvor mange kommuner som endret planer på grunn av pengene. En økonomisk analyse av fem kommuner i Nord-Norge peker dessuten på at den lokale gevinsten avhenger av hvor mye av overskuddet fra oppdrett som blir igjen i regionen. Overføringene fra fondet var i analysen ofte ikke store nok til å veie opp for beregnet velferdstap blant husholdningene. Resultatene er usikre: blant annet var betalingsvilligheten for å unngå oppdrett ikke statistisk sikker.\n\nDet finnes også en annen diagnose av hva som styrer arealbruken: problemet er ikke bare om kommunen får økonomisk belønning, men om planene faktisk finner og avklarer brukbare steder. Robertsen og kolleger (2014) fant at mange kystplaner var gamle og viste områder som ikke lenger kunne brukes. Flere oppdrettere rapporterte avslag selv innenfor areal som allerede var satt av til oppdrett. Interkommunal planlegging kan samle kunnskap og samordne kommuner rundt en fjord, men Kvalvik og Robertsen (2017) fant at full samordning av innholdet bare var oppnådd i fire av ni planprosesser. Kommunestyrene beholdt siste ord for sine områder. Dette er funn fra planstudier, ikke bevis for at økonomiske virkemidler alene skaper eller løser arealknapphet.\n\nFordelingen av kostnader og gevinster er derfor ujevn og vanskelig å fastslå. Kommuner og fylker kan få inntekter gjennom fondet, mens bedrifter får mulighet til å søke om produksjon på avsatt areal. Samtidig kan lokale husholdninger oppleve kostnader, og planlegging må veie oppdrett mot blant annet naturvern, fiskeri og sjøtransport. En kvalitativ studie av sju planer fant at avklaringer mellom oppdrett og andre interesser fortsatt kunne være mangelfulle, og at miljøvirkninger og usikkerhet ofte var svakt forklart. Det betyr ikke at alle planer eller lokaliteter har samme konflikt, men at planvedtak ikke alltid viser tydelig hvem som bærer kostnadene.\n\n**Konfidens: Middels.** Kildene viser hvordan regler og penger kan påvirke insentivene, men flere resultater bygger på juridiske analyser, utvalgte planprosesser eller usikre økonomiske beregninger. En konkret forbedring ville være å følge kommuner over tid og måle om fondsoverføringer faktisk fører til nye, brukbare lokaliteter, og hvem som får inntektene eller bærer kostnadene.",
+   "kort_svar_ok": true,
+   "body_words": 466,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A5",
+   "mode": "researcher",
+   "query": "Hvilket kunnskapsgrunnlag legges til grunn for arealbeslutninger i havbruk, og hvordan kan ny teknologi endre forutsetningene for arealbruk, miljøpåvirkning og lokaliseringsmuligheter?",
+   "latency_s": 42.19,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6189
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.6117
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6058
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.5885
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.5814
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5805
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.579
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.5668
+    },
+    {
+     "doc_id": "salt_1110_lokalitetssoknader",
+     "authors": "Guri Hjallen Eriksen; Henrik Hareide; Tale Skrove",
+     "year": "2026",
+     "score": 0.5551
+    },
+    {
+     "doc_id": "2020_hersoug_whats-the-clue",
+     "authors": "Bjørn Hersoug; Eirik Mikkelsen; Tonje C. Osmundsen",
+     "year": "2020",
+     "score": 0.5475
+    }
+   ],
+   "answer": "**Kort svar**\n- Arealbeslutninger bygger på kommunale planer, sektorlovgivning og lokalitetsvurderinger, supplert av kartdata, fagkunnskap og konsekvensutredninger.\n- Kildene skiller mellom lite fysisk merdareal og større arealbehov når smitteavstander og andre begrensninger regnes med.\n- Det er usikkert hvor mye ny teknologi faktisk vil redusere arealbehovet eller åpne lokaliteter som i dag ikke kan brukes.\n\nArealbeslutninger i havbruk bygger ikke på ett samlet mål på «tilgjengelig areal». De formes gjennom flere trinn: kommunene avsetter sjøareal i planer, og en konkret lokalitet må deretter få tillatelser etter akvakulturregelverket og relevante sektorlover. Kunnskapsgrunnlaget omfatter derfor både kart over planlagt og godkjent bruk, vurderinger av natur- og miljøforhold, smitte- og driftsfaglige vurderinger og avveiinger mot andre interesser. Det er viktig å skille mellom hva som er juridisk mulig, hva som er fysisk opptatt, og hva som i praksis kan godkjennes og drives.\n\nKommunale kystsoneplaner er den første arealmessige rammen for tradisjonelt sjøbasert havbruk. SALTs nasjonale sammenstilling beskriver hvordan noen kommuner avsetter egne akvakulturområder, mens andre bruker større flerbruksområder der akvakultur kan være tillatt sammen med andre formål (Skrove og kolleger, 2023). En planavsetning er likevel ikke det samme som en lokalitetstillatelse: etter planen følger behandling etter akvakulturloven og sektorregelverk, der blant annet Mattilsynet, Statsforvalteren, Kystverket og Fiskeridirektoratet kan ha roller. Juridiske analyser understreker at kommunal planmyndighet og sektormyndighetenes tillatelsesmyndighet virker parallelt, og at grensene for kommunenes adgang til å stille detaljerte driftsvilkår ikke alltid er klare (Myklebust, 2018; Myklebust, 2021). Dette er rettslige analyser av kompetanse og regelverk, ikke målinger av hvor ofte bestemte vilkår faktisk endrer arealbruken.\n\nPlanleggingen skal dessuten håndtere kunnskap som varierer i omfang og kvalitet. En kvalitativ gjennomgang av sju planprosesser fant at planene ofte beskrev utvalgte temaer, men at det kunne være vanskelig å se hvordan temaene var avgrenset, hvordan interesser var veid, og hvordan usikkerhet var behandlet. Vurderinger av miljøvirkninger var svakere dokumentert enn flere andre deler av planarbeidet (Eriksen og kolleger, 2023). Studien er ikke et representativt nasjonalt mål på alle planer, men viser en praktisk utfordring: kommunale planer må ta stilling til arealbruk uten nødvendigvis å kunne avklare alle fjordomfattende virkninger. Rapporten skiller derfor mellom forhold som kan vurderes i plan, og større belastninger som må håndteres av andre myndigheter eller på andre nivåer. Interkommunale planprosesser kan gi større geografisk sammenheng, felles data og økt kompetanse, men de flytter ikke den endelige planbeslutningen fra hver enkelt kommune (Robertsen og kolleger, 2014).\n\nEn sentral spenning i kunnskapsgrunnlaget gjelder hva «arealbruk» betyr. Målt som fysisk produksjonsflate er merdenes fotavtrykk lite. Skrove og kolleger anslår at laksefisklokaliteter samlet dekker om lag 94 km² før buffere regnes med. Men smitte- og sikkerhetsavstander rundt lokaliteter gir et langt større areal som kan være berørt av eller vanskelig å kombinere med annen bruk. For produksjonsområdene 2 og 3 oppgir rapporten at slike avstander kan tilsvare omtrent 30–50 prosent av sjøarealet, samtidig som den advarer om at anbefalte avstander kan fravikes, og at kartene derfor ikke viser et presist mål på eksklusiv bruk. I Trøndelag er et tilsvarende grovt anslag rundt 20 prosent i produksjonsområdene 6 og 7, mens den fysiske produksjonsflaten med enkelte tillegg anslås til om lag 0,5 prosent av kystsonen (Sand og Misund, 2025). Tallene beskriver ulike geografier og beregningsmåter; de kan ikke leses som direkte motstridende målinger. De viser heller at konklusjonen om arealpress avhenger av om man teller merder, fortøyninger, smitteavstander eller sjø som faktisk er egnet og tilgjengelig.\n\nOgså vurderingen av hvor bindende arealknappheten er, avhenger av nivå og sted. En gjennomgang av nasjonal utvikling konkluderte med at produksjonskapasitet og trafikklyssystemet, snarere enn mangel på tomt sjøareal alene, var den viktigste begrensningen for vekst på det tidspunktet; samtidig ble enkelte regioner, særlig Hordaland, beskrevet som tett utnyttet (Hersoug og kolleger, 2020). Statistikken for 2017 viser at 99 prosent av godkjente lakse- og ørretlokaliteter i Hordaland var i bruk i løpet av året, mens andre fylker hadde om lag 10–30 prosent godkjente lokaliteter uten bruk. Gjennomsnittlig månedlig bruk av godkjente lokaliteter var likevel rundt 50–70 prosent (Mikkelsen og kolleger, 2019). Dette er mål på bruk av godkjente lokaliteter, ikke på hvor mye sjø som er egnet for nye anlegg. De viser at nasjonale gjennomsnitt kan skjule regionale forskjeller, og at godkjent areal ikke nødvendigvis er likt faktisk tilgjengelig produksjonskapasitet.\n\nNy teknologi kan endre både hvilke områder som kan brukes, og hvilke arealvirkninger som følger av driften, men kildene gir i hovedsak mulige mekanismer og forventninger, ikke dokumenterte nasjonale effekter. Lukkede eller semilukkede anlegg og nedsenkbare merder kan ifølge intervjuene og sammenstillingene gjøre enkelte lokaliteter mer aktuelle der lus, naturverdier eller andre forhold begrenser åpne merder. De kan dermed åpne for en annen lokalisering eller bidra til modernisering av eksisterende lokaliteter (Skrove og kolleger, 2023). Samtidig er det ikke vist i materialet hvor mange nye lokaliteter slike systemer faktisk vil gjøre tilgjengelige, eller hvor mye samlet arealbehov de vil redusere. Teknologien er omtalt som et mulig supplement til åpne merder, ikke som en sikker erstatning.\n\nLandbasert produksjon og offshoreanlegg kan i prinsippet flytte produksjon bort fra den tradisjonelle kystsonen, men også her er kunnskapsgrunnlaget begrenset. SALT-rapporten holder landbaserte anlegg utenfor sin arealberegning, og beskriver offshore som en utvikling lenger fram i tid. En nasjonal gjennomgang peker dessuten på økonomisk usikkerhet ved lukkede løsninger og usikkerhet om hvor mye landbasert og offshore produksjon vil avlaste kystarealet (Hersoug og kolleger, 2020). Teknologisk endring kan derfor ikke uten videre tolkes som mindre samlet arealbruk: den kan endre hvor arealet trengs, hvilke miljø- og driftsforhold som begrenser lokalisering, og hvilke nye krav som følger med anleggene.\n\nSamlet er sikkerheten **middels** for beskrivelsen av plan- og tillatelsessystemet og for skillet mellom fysisk fotavtrykk og større buffersoner. Sikkerheten er lavere når spørsmålet gjelder hvor mye ny teknologi vil endre framtidig arealbehov eller åpne konkrete lokaliteter. Vurderingen ville bli sterkere med sammenlignbare, oppdaterte kart over faktisk bruk og egnethet, tydeligere dokumentasjon av hvordan usikkerhet og miljøvirkninger håndteres i plan- og lokalitetssaker, og empiriske data om hvor teknologiske løsninger faktisk kan brukes og med hvilke arealvirkninger.",
+   "kort_svar_ok": true,
+   "body_words": 935,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A5",
+   "mode": "non_researcher",
+   "query": "Hvilket kunnskapsgrunnlag legges til grunn for arealbeslutninger i havbruk, og hvordan kan ny teknologi endre forutsetningene for arealbruk, miljøpåvirkning og lokaliseringsmuligheter?",
+   "latency_s": 11.16,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6189
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.6117
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6058
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.5885
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.5814
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5805
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.579
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.5668
+    },
+    {
+     "doc_id": "salt_1110_lokalitetssoknader",
+     "authors": "Guri Hjallen Eriksen; Henrik Hareide; Tale Skrove",
+     "year": "2026",
+     "score": 0.5551
+    },
+    {
+     "doc_id": "2020_hersoug_whats-the-clue",
+     "authors": "Bjørn Hersoug; Eirik Mikkelsen; Tonje C. Osmundsen",
+     "year": "2020",
+     "score": 0.5475
+    }
+   ],
+   "answer": "**Kort svar**\n- Arealbeslutninger bygger på kommunale planer, lokalitetsdata og vurderinger fra flere myndigheter av om et sted kan brukes.\n- Kildene peker både på at produksjonslisenser og trafikklysregler kan begrense vekst, og at egnede lokaliteter kan være knappe.\n- Det er usikkert hvor mye ny teknologi faktisk vil frigjøre areal eller gjøre steder som i dag er uegnede, brukbare.\n\nArealbeslutninger bygger på flere lag med kunnskap, ikke på ett samlet kart over «ledig sjø». Kommunale planer bestemmer hvilke sjøområder som kan vurderes for havbruk. Deretter må en lokalitet få tillatelser fra flere myndigheter, som vurderer blant annet fiskehelse, miljø og andre interesser. Skrove og kolleger (2023) beskriver dette som et system der både planstatus og særskilte tillatelser setter grenser: Et område som er avsatt til havbruk, gir ikke i seg selv rett til å drive der.\n\nKunnskapsgrunnlaget har også ulike mål på hva «arealbruk» betyr. Selve merdene opptar en liten del av sjøarealet, men avstandskrav mellom anlegg og andre smittevernhensyn gjør at større områder kan bli vanskeligere å bruke samtidig. Skrove og kolleger (2023) anslår at lakse- og ørretlokaliteter til sammen dekker 94 kvadratkilometer før slike buffere regnes med. De understreker at anbefalte avstander kan fravikes, så sonene rundt anlegg er ikke det samme som et presist kart over beslaglagt eller ubrukelig sjø. I Trøndelag anslår Sand og kolleger (2025) at fysisk bruk er rundt 0,5 prosent av kystsonen, mens avstandssoner kan tilsvare omtrent 20 prosent av sjøarealet i produksjonsområdene 6 og 7. Det siste er et grovt mål, ikke en vurdering av hvor resten faktisk er egnet.\n\nKildene gir ulike diagnoser av hva som først og fremst stopper vekst. Hersoug og kolleger (2020), i en gjennomgang av tidligere forskning og forvaltning, mener at produksjonslisenser og trafikklysreglene på det tidspunktet var den viktigste begrensningen nasjonalt, selv om enkelte områder, særlig Hordaland, var svært tett utnyttet. Trafikklyssystemet deler kysten i 13 produksjonsområder og kan fryse, redusere eller tillate kapasitetsvekst. Derimot peker Trøndelag-rapporten fra Sand og kolleger (2025) på lus, sykdom og fiskevelferd som de første vekstbegrensningene, snarere enn mangel på plass til merder. Dette er ikke samme type dokumentasjon: Hersoug og kolleger sammenfatter tidligere forskning, mens Trøndelag-rapporten er en regional kunnskapsrapport med bransjeperspektiv. Planstudier viser samtidig at gamle planer kan peke ut områder som ikke lenger er brukbare, og at avklaringer mellom havbruk og andre interesser ofte er ufullstendige. Eriksen og kolleger (2023) fant dette i sju utvalgte planprosesser, ikke i en landsdekkende opptelling.\n\nNy teknologi kan endre hvilke steder som er aktuelle, men kildene viser ikke at den automatisk løser arealkonfliktene. Skrove og kolleger (2023) beskriver lukkede eller nedsenkbare merder som mulige alternativer på steder der åpne merder møter utfordringer med lus eller naturverdier. Samtidig er det usikkert hvor mye slike løsninger vil bli tatt i bruk, og om de vil gjøre fjorder tilgjengelige igjen. Større anlegg lenger til havs omtales som en mulighet på lengre sikt, mens landbasert oppdrett ligger utenfor arealberegningene i rapporten. Teknologi kan altså flytte eller endre arealbehovet, men den må fortsatt vurderes gjennom planer og tillatelser. Kunnskapen om miljøvirkninger, egnethet og faktisk arealgevinst er ikke tilstrekkelig til å fastslå hvor stor endringen blir.\n\n**Konfidens: Middels.** Kildene beskriver plan- og tillatelsessystemet og gir nyttige arealanslag, men flere tall er grove, og teknologiscenarioene er usikre. En landsdekkende sammenstilling av hvilke lokaliteter som faktisk er egnet og godkjent med ulike teknologier, ville kunne endre bildet.",
+   "kort_svar_ok": true,
+   "body_words": 498,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A6",
+   "mode": "researcher",
+   "query": "Hvilke konflikter oppstår i plan- og lokaliseringsprosesser mellom havbruk og andre interesser, og hva bidrar til legitime, effektive og forutsigbare beslutningsprosesser?",
+   "latency_s": 24.73,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6591
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6244
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.61
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6061
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5938
+    },
+    {
+     "doc_id": "2017_kvalvik_intermunicipal-coastal-planning",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.581
+    },
+    {
+     "doc_id": "2017_kvalvik_ocean-coastal-management",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.5797
+    },
+    {
+     "doc_id": "2020_bjorkan_local-perceptions",
+     "authors": "Maiken Bjørkan; Svein Morten Eilertsen",
+     "year": "2020",
+     "score": 0.579
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5787
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.5725
+    }
+   ],
+   "answer": "**Kort svar**\n- Konfliktene gjelder særlig naturvern, fiskeri, villaks, ferdsel og konkurranse om lokaliteter, men også hvem som har myndighet til å avgjøre bruken.\n- Felles planlegging kan bedre kunnskapsdeling og samordning, men kommunene beholder vedtaksmyndigheten, og samordningen av arealvalg er ujevn.\n- Det er usikkert hvor godt planene avklarer miljøvirkninger og interesseavveininger, og hvor representative de kvalitative casestudiene er.\n\nPlan- og lokaliseringsprosesser handler ikke bare om hvorvidt havbruk skal få plass, men også om hvordan arealvalg, miljøhensyn og andre brukere skal veies mot hverandre. Kildene viser både konkrete interessekonflikter og en styringsutfordring: kommunal arealplanlegging og statlig eller fylkeskommunal lokalitetsbehandling er fordelt mellom flere myndigheter. Bedre samordning kan gjøre prosessene mer forståelige og forutsigbare, men dokumentasjonen viser ikke at én planform løser konfliktene eller sikrer tilgang til lokaliteter.\n\nKonfliktene som opptrer i planprosessene, er brede. I en spørreundersøkelse blant havbruksbedrifter som hadde deltatt i planarbeid, oppga 57 prosent konflikt med naturverninteresser, 54 prosent med fiskeri og 36 prosent med villaks; transport, turisme og andre oppdrettere ble også nevnt (Robertsen og kolleger, 2014). Dette er rapporterte konflikter fra bedriftenes ståsted, ikke en uavhengig måling av hvor store virkningene eller arealtapene er. En kvalitativ studie av lokale oppfatninger i Nord-Norge viser dessuten at fiskere kan oppleve begrenset tilgang til områder og miljøendringer som negative, mens befolkningen generelt i de undersøkte lokalsamfunnene i større grad vektla økonomiske ringvirkninger (Bjørkan og kolleger, 2020). Det peker på at legitimitet ikke nødvendigvis følger av at havbruk gir lokale inntekter: berørte brukere kan vurdere arealkonkurransen annerledes enn allmennheten.\n\nEn sentral spenning ligger mellom planens rolle som avklaring og den faktiske behandlingen av lokaliteter. Kommunene vedtar arealplaner for sjøområdene, mens sektormyndigheter behandler tillatelser og kan stille krav eller avslå på grunnlag av sine ansvarsområder. Den juridiske analysen til Solås og kolleger beskriver dette som et fragmentert system uten én myndighet som foretar en samlet avveining av alle hensyn. Myklebusts juridiske analyser viser samtidig at kommunene har en rolle i å styre arealbruk og kan forsøke å stille miljørelaterte vilkår, men at grensene mot sektorregelverket og andre myndigheters kompetanse ikke alltid er klare (Myklebust, 2018; Myklebust, 2021). Dette er juridiske vurderinger, ikke empiriske målinger av hvor ofte slike vilkår brukes eller hvor godt de virker. Forutsigbarhet krever derfor både tydelige planer og klarhet om hva som avgjøres i planfasen, og hva som hører til den senere lokalitetsbehandlingen.\n\nInterkommunal planlegging kan redusere noe av den stykkevise behandlingen av fjorder og kystområder, men erfaringene viser at felles prosess ikke automatisk gir felles arealvalg. Gjennomgangen av ni planprosesser fant omfattende deling av data, verktøy og arbeidsmåter, men full samordning av innholdet, inkludert felles utpeking av havbruksarealer, i bare fire prosesser. Kommunestyrene beholdt den endelige beslutningen for sine egne områder (Kvalvik og kolleger, 2017). Robertsen og kolleger fant tilsvarende at planprosessene kunne bygge kompetanse og gi et bredere geografisk perspektiv, men at bedrifter fortsatt kunne få avslag også innenfor områder som allerede var avsatt til havbruk (Robertsen og kolleger, 2014). Det er ikke nødvendigvis motstridende funn: bedre koordinering og kunnskapsgrunnlag kan være nyttig uten å garantere en bestemt lokalitet eller fjerne kommunenes selvstendige vedtaksmyndighet.\n\nKvaliteten på kunnskapsgrunnlaget og synligheten i avveiningene er en annen forutsetning for legitime og forutsigbare beslutninger. En kvalitativ analyse av sju plan- og reguleringssaker fant at miljøvirkninger ofte var svakere dokumentert enn andre temaer, og at det kunne være vanskelig å se hvordan temaer var avgrenset, hvordan interesser var veid, og hvordan usikkerhet var håndtert. Studien fant også dispensasjonssaker som kunne innebære en ny runde om arealbruk etter planvedtaket (Eriksen og kolleger, 2023). Forfatterne understreker samtidig at enkelte spørsmål, som samlet lusebelastning eller samlet næringssaltbelastning i et fjordsystem, ikke realistisk kan avklares av kommunen alene på plannivå. En effektiv prosess bør derfor ikke forveksle grundighet med at alle virkninger må avgjøres i samme dokument; den bør gjøre tydelig hvilke spørsmål som vurderes hvor, og hvordan usikkerhet og senere behandling påvirker beslutningen.\n\nEffektivitet og forutsigbarhet kan også svekkes når planene er utdaterte eller prosessene trekker ut. Robertsen og kolleger viser til at mange kommunale kystsoneplaner var gamle og kunne vise havbruksområder som ikke lenger var brukbare. Eriksen og kolleger fant at flere av de undersøkte interkommunale planprosessene tok rundt seks år, slik at kunnskapsgrunnlaget kunne bli foreldet mens planarbeidet pågikk. Mikkelsen og kolleger vurderte mulige endringer i planleggingen, men konkluderte ikke med at noen av de undersøkte grepene med sikkerhet ville gi mer havbruksareal. Større planområder, forhåndsvurderte arealblokker og marine næringsparker ble omtalt som mulige alternativer, mens bedre forutsigbarhet og mer systematisk offentlig kunnskap var egne mål. Dette er en policyanalyse av muligheter, ikke dokumentasjon på at tiltakene faktisk gir raskere eller mer legitime vedtak.\n\nSamlet er tilliten **middels** til at de viktigste konfliktlinjene og styringsutfordringene er identifisert: flere kilder peker på konkurranse med fiskeri og naturhensyn, delt myndighet og ujevn samordning. Tilliten er lavere til hvor utbredt bestemte problemer er nasjonalt, og til hvilke planformer som faktisk gir bedre resultater, fordi flere av de sentrale studiene er kvalitative eller bygger på rapporterte erfaringer. Et mer representativt materiale om avslag, dispensasjoner, saksbehandlingstid og hvordan miljø- og brukerhensyn begrunnes i vedtak, ville kunne endre vurderingen av hvilke grep som best fremmer legitime, effektive og forutsigbare prosesser.",
+   "kort_svar_ok": true,
+   "body_words": 795,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A6",
+   "mode": "non_researcher",
+   "query": "Hvilke konflikter oppstår i plan- og lokaliseringsprosesser mellom havbruk og andre interesser, og hva bidrar til legitime, effektive og forutsigbare beslutningsprosesser?",
+   "latency_s": 9.44,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.6591
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.6244
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.61
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.6061
+    },
+    {
+     "doc_id": "salt_1065_ku-arealplanlegging",
+     "authors": "Guri Hjallen Eriksen; Tale Skrove; Tomas Brage",
+     "year": "2023",
+     "score": 0.5938
+    },
+    {
+     "doc_id": "2017_kvalvik_intermunicipal-coastal-planning",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.581
+    },
+    {
+     "doc_id": "2017_kvalvik_ocean-coastal-management",
+     "authors": "Ingrid Kvalvik; Roy Robertsen",
+     "year": "2017",
+     "score": 0.5797
+    },
+    {
+     "doc_id": "2020_bjorkan_local-perceptions",
+     "authors": "Maiken Bjørkan; Svein Morten Eilertsen",
+     "year": "2020",
+     "score": 0.579
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.5787
+    },
+    {
+     "doc_id": "2015_rettslig_rammeverk-havbruk",
+     "authors": "Ann-Magnhild Solås; Bjørn Hersoug; Otto Andreassen; Ragnar Tveterås; Tonje C. Osmundsen; Bjørn Sørgård; Kine M. Karlsen; Frank Asche; Roy Robertsen",
+     "year": "2015",
+     "score": 0.5725
+    }
+   ],
+   "answer": "**Kort svar**\n- Konfliktene gjelder særlig naturvern, fiskeri, villaks, transport og konkurranse om egnede sjøområder.\n- Studiene peker både på bedre samordning gjennom felles planlegging og på at kommunenes separate vedtak fortsatt kan gi oppstykket styring.\n- Det mangler landsdekkende kunnskap om hvordan konflikter faktisk avgjøres, og om virkningene av ulike planløsninger.\n\nPlan- og lokaliseringsprosesser handler ikke bare om hvor det finnes plass til mer havbruk. De handler også om hvem som får bruke sjøarealet, hvilke hensyn som skal veie tyngst, og hvilke myndigheter som kan stanse eller stille vilkår til en lokalitet. I en spørreundersøkelse blant oppdrettsselskaper som hadde deltatt i planprosesser, oppga flest konflikt med naturvern og fiskeri, fulgt av villaks, sjøtransport, turisme og andre oppdrettere (Robertsen og kolleger, 2014). Dette er bedriftenes rapportering om konflikter, ikke en måling av hvor store virkningene er.\n\nEt sentralt problem er at planleggingen kan bli bedre samordnet uten at beslutningsmakten samles. Studier av interkommunale planer finner at kommuner deler kunnskap og planverktøy, men at bare noen prosesser endte med felles avklaringer for hele fjorder eller sjøområder. Kommunestyrene beholder siste ord om arealbruken i egen kommune, og nye oppdrettsområder ble ofte fortsatt tegnet kommune for kommune (Kvalvik og kolleger, 2017). Dermed kan en felles prosess gi bedre oversikt, men ikke nødvendigvis én samlet beslutning. Robertsen og kolleger (2014) fant også at noen selskaper fikk avslag selv innenfor områder som allerede var satt av til havbruk.\n\nDet finnes samtidig en annen diagnose av hva som gjør prosessene vanskelige: ikke bare oppstykket planlegging, men også et regelverk der flere myndigheter vurderer hver sin del av en sak. En juridisk gjennomgang beskriver at kommunene planlegger sjøareal, mens statlige eller regionale fagmyndigheter behandler tillatelser og kan stanse en lokalitet på sine ansvarsområder. Gjennomgangen peker på at det ikke finnes én myndighet som har ansvar for å veie alle hensyn samlet (Solås og kolleger, 2015). Myklebust (2018, 2021) viser dessuten at kommunenes mulighet til å stille detaljerte miljøvilkår er begrenset av uklare grenser mellom kommunalt planansvar og sektorregelverk. Dette er juridiske analyser av regler og myndighetsfordeling, ikke undersøkelser av hvor ofte bestemte typer saker faktisk blir avslått.\n\nLegitime, effektive og forutsigbare prosesser krever derfor mer enn at et område får farge på et plankart. Planstudier peker på verdien av felles kunnskapsgrunnlag, tydelige avveininger og tidlig deltakelse fra berørte interesser. Men en kvalitativ gjennomgang av sju planer fant at miljøvirkninger, usikkerhet og begrunnelsen for avveininger ofte var svakt dokumentert. Flere planprosesser tok rundt seks år, slik at kunnskap kunne bli utdatert før planen var vedtatt (Eriksen og kolleger, 2023). En rapport om mulige planendringer vurderte større planområder, forhåndsvurderte arealblokker og marine næringsparker som mulige måter å åpne for mer areal på, men fant ikke at noen av dem sikkert ville gi større tilgang (Mikkelsen og kolleger, 2019). Dette er forslag og vurderinger, ikke dokumenterte virkninger av gjennomførte reformer.\n\nSamlet sett viser materialet både muligheter og grenser: samordning kan gjøre kunnskap og prosesser bedre, men kommunenes separate vedtak og myndighetenes delte ansvar består. **Konfidens: middels** — flere plan- og juridiske studier peker på disse mønstrene, men utvalgene er begrensede og sier lite om nasjonale utfall. En landsdekkende gjennomgang av faktiske søknader, avslag, begrunnelser og tidsbruk ville gjort bildet tydeligere.",
+   "kort_svar_ok": true,
+   "body_words": 478,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A7",
+   "mode": "researcher",
+   "query": "Hvilke muligheter har næringen selv for å gjøre sin arealbruk mest mulig effektiv og bærekraftig?",
+   "latency_s": 13.97,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+     "authors": "",
+     "year": "2024",
+     "score": 0.4548
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.4406
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.4402
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.4275
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.4256
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.4113
+    },
+    {
+     "doc_id": "undated_baerekraftig-arealbruk-havbruk",
+     "authors": "Ragnar Tveterås",
+     "year": "2023",
+     "score": 0.4101
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4048
+    },
+    {
+     "doc_id": "2011_gullestad_arealbruk-havbruk",
+     "authors": "Peter Gullestad; Sigurd Bjørgo; Inger Eithun; Arne Ervik; Roar Gudding; Heidi Hansen; Roar Johansen; Anne B. Osland; Marit Rødseth; Inger Oline Røsvik; Håkan T. Sandersen; Hilde Skarra",
+     "year": "2011",
+     "score": 0.4007
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.3854
+    }
+   ],
+   "answer": "**Kort svar**\n- Næringen kan bruke eksisterende lokaliteter bedre, samordne drift og brakklegging, og utvikle teknologi som passer til lokalitetenes forhold.\n- Kildene peker både på biologiske og planmessige begrensninger, men gir ikke grunnlag for å si at mer sjøareal alene løser dem.\n- Det mangler særlig uavhengige, sammenlignbare data om hvordan nye driftsformer påvirker arealbehov, miljø og økonomi over tid.\n\nNæringens viktigste handlingsrom ligger i å få mer bærekraftig produksjon ut av lokalitetene den allerede har, og i å tilpasse produksjonsmåten til stedlige forhold. Det betyr ikke nødvendigvis å øke biomassen på hver lokalitet: høyere utnyttelse kan være uheldig dersom den øker biologisk belastning eller smitterisiko. Kunnskapsgrunnlaget peker derfor mot en kombinasjon av bedre drift, koordinering mellom lokaliteter, teknologisk tilpasning og mer gjennomtenkt planlegging. Det dokumenterer derimot ikke én løsning som virker overalt.\n\nEt sentralt skille er mellom selve anleggsavtrykket og arealet som må holdes tilgjengelig av hensyn til smitte og drift. I Trøndelag er merdene beregnet å oppta om lag 0,2–0,4 prosent av kystsonen, eller rundt 0,5 prosent når andre arter og et 100-meters fiskeforbud regnes med. Når anbefalte avstander mellom anlegg tas med, anslår rapporten at oppdrett legger beslag på rundt 20 prosent av sjøarealet i produksjonsområdene 6 og 7. Dette er en grov arealindikator, ikke et kart over faktisk egnet eller utilgjengelig sjø; avstandene kan fravikes, og beregningen sier ikke i seg selv hvordan andre brukere påvirkes (Sand og Misund, 2025).\n\nDen nasjonale sammenstillingen finner tilsvarende at lokalitetenes fysiske areal er langt mindre enn arealet som kan bli berørt når smitteavstander regnes inn. For produksjonsområdene 2 og 3 anslår den sistnevnte indikatoren til om lag 30–50 prosent av sjøarealet. Forfatterne understreker at slike avstander kan overvurdere eksklusiv bruk, og at beregningene ikke inkluderer alle forhold, blant annet ankerareal (Skrove og kolleger, 2023). For næringen innebærer dette et mulig effektiviseringsgrep: bedre samordning av utsett, brakklegging og drift mellom lokaliteter kan gjøre det lettere å bruke et nettverk av lokaliteter uten å behandle hver lokalitet som en isolert produksjonsenhet. Men kildene måler ikke hvor mye slik koordinering faktisk kan redusere arealbehovet eller smitterisikoen.\n\nBedre utnyttelse av eksisterende lokaliteter er heller ikke det samme som å presse mer fisk inn på dem. En rapport bestilt av BluePlanet finner statistiske sammenhenger for perioden 2012–2022 mellom høyere lokalitetstetthet og svakere biologiske resultater og høyere kostnader, samtidig som høyere biomasse på lokalitetsnivå var forbundet med bedre økonomi. Dette er gjennomsnittlige sammenhenger i historiske data, ikke bevis for at økt biomasse i seg selv gir bedre økonomi eller dårligere biologi i en bestemt lokalitet; rapporten påpeker også at enkelte lokaliteter og tette områder har gode resultater (Tveterås, 2023). Den praktiske lærdommen er derfor ikke en generell anbefaling om høyere tetthet, men at næringen må vurdere lokalitetens biologiske kapasitet og driftsresultater sammen med produksjonsvolumet.\n\nTeknologisk tilpasning kan utvide hvilke lokaliteter som kan brukes, men dokumentasjonen er foreløpig ujevn. Den nasjonale arealsammenstillingen omtaler lukkede eller nedsenkbare merder som mulige supplementer til åpne merder, blant annet på steder der lus eller naturverdier begrenser dagens driftsform. Samtidig beskrives erfaringene med lukkede og delvis lukkede anlegg som tidlige og blandede, og økonomien som et betydelig kunnskapshull (Skrove og kolleger, 2023; Tveterås, 2023). Trøndelagsrapporten peker også på landbaserte anlegg og nye produksjonssystemer som mulige måter å flytte eller avlaste arealbehov på, men behandler potensialet som uavklart og viser til begrensninger som tilgang på kystkraft (Sand og Misund, 2025). Dette er muligheter som bør vurderes som teknologiske alternativer, ikke som dokumenterte løsninger med kjent samlet areal- eller miljøgevinst.\n\nNæringen kan dessuten bidra til mer effektiv arealbruk gjennom planlegging og kunnskapsdeling. Interkommunale planprosesser har gitt bedre felles datagrunnlag, kompetanse og oversikt over sjøområder, og mange selskaper deltok i slike prosesser. Likevel ble den endelige planmyndigheten liggende hos hver kommune, og rapporten fant at flere planer var gamle eller viste områder som ikke lenger var brukbare. Noen oppdrettere oppga også å ha fått avslag på lokaliteter innenfor områder som allerede var avsatt til akvakultur (Robertsen og kolleger, 2014). Det viser at næringen kan bidra med oppdaterte driftsdata og delta tidlig i planleggingen, men ikke selv avgjøre om et område blir avsatt eller får tillatelse. Den juridiske analysen understreker at kommunal planlegging og sektorvise tillatelser virker sammen, og at grensene for kommunale vilkår ikke alltid er klare (Myklebust, 2018).\n\nDet finnes en reell forskjell i vektleggingen av hva som først begrenser vekst. Trøndelagsrapporten fra et bredt regionalt kunnskapsarbeid sier at lus, sykdom og fiskevelferd begrenser vekst før mangel på merdareal gjør det. Den tilhørende delrapporten, skrevet fra næringens perspektiv, beskriver også planleggingstid, aksept og krafttilgang som begrensninger, og peker på behov for nye lokaliteter og bedre tilpassede systemer (Sand og kolleger, 2025; Sand og Misund, 2025). Dette er ikke nødvendigvis motstridende diagnoser: den første gjelder hva som først begrenser produksjonsvekst, mens den andre også omfatter vilkårene for å utvikle og drive næringen regionalt. Begge tilsier at mer areal alene ikke er en tilstrekkelig effektiviseringsstrategi.\n\nSamlet er vurderingen **middels sikker**: kildene støtter at bedre samordning, lokalitetstilpasset drift, oppdatert planlegging og forsiktig utprøving av teknologi er relevante muligheter for næringen. Sikkerheten er lavere når det gjelder hvor store gevinster de gir, fordi flere arealtall er grove beregninger, teknologivurderingene bygger delvis på intervjuer og ekspertanslag, og de regionale rapportene ikke er uavhengige av hverandre. Vurderingen ville bli styrket av sammenlignbare, langsiktige data fra drift som viser produksjon, biologiske resultater, faktisk arealbruk og kostnader for ulike driftsformer.",
+   "kort_svar_ok": true,
+   "body_words": 829,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A7",
+   "mode": "non_researcher",
+   "query": "Hvilke muligheter har næringen selv for å gjøre sin arealbruk mest mulig effektiv og bærekraftig?",
+   "latency_s": 10.06,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+     "authors": "",
+     "year": "2024",
+     "score": 0.4548
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.4406
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.4402
+    },
+    {
+     "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+     "authors": "Eirik Mikkelsen; Kine Mari Karlsen; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.4275
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.4256
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.4113
+    },
+    {
+     "doc_id": "undated_baerekraftig-arealbruk-havbruk",
+     "authors": "Ragnar Tveterås",
+     "year": "2023",
+     "score": 0.4101
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4048
+    },
+    {
+     "doc_id": "2011_gullestad_arealbruk-havbruk",
+     "authors": "Peter Gullestad; Sigurd Bjørgo; Inger Eithun; Arne Ervik; Roar Gudding; Heidi Hansen; Roar Johansen; Anne B. Osland; Marit Rødseth; Inger Oline Røsvik; Håkan T. Sandersen; Hilde Skarra",
+     "year": "2011",
+     "score": 0.4007
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.3854
+    }
+   ],
+   "answer": "**Kort svar**\n- Næringen kan bruke eksisterende lokaliteter bedre, samordne drift og planlegging og tilpasse teknologi til stedets forhold.\n- Kildene peker både på biologiske og driftsmessige grenser og på at planlagte sjøarealer ikke alltid er brukbare.\n- Det mangler gode data om hvor mye nye driftsformer faktisk kan øke produksjonen uten å flytte eller forsterke belastningen.\n\nMer effektiv arealbruk handler ikke bare om å få flere merder inn på samme sjøflate. Næringen kan forsøke å få mer ut av lokalitetene den allerede har, redusere tap og sykdom, og velge driftsform etter forholdene på stedet. Men kildene gir ulike diagnoser av hva som først begrenser vekst: Trøndelagsrapportene peker særlig på lus, sykdom og fiskevelferd, mens arealstudier viser at avstandskrav, planvedtak og konflikter kan gjøre langt større sjøområder utilgjengelige enn selve merdene opptar.\n\nEt konkret grep er bedre samordning mellom lokaliteter og kommuner. Smittehensyn gjør at plasseringen av én lokalitet kan påvirke bruken av sjøområder rundt den, og fjorder går ofte på tvers av kommunegrenser. Robertsen og kolleger (2014), som undersøkte planprosesser og intervjuet oppdrettere, fant at samarbeid mellom kommuner kunne gi bedre felles kunnskap og rutiner. Men det flyttet ikke den endelige avgjørelsen fra hver enkelt kommune, og noen oppdrettere fikk avslag selv innenfor områder som allerede var satt av til havbruk. Eldre kystsoneplaner kan dessuten vise arealer som ikke lenger er brukbare. Samarbeid kan altså gjøre planleggingen bedre, men sikrer ikke i seg selv nye eller anvendelige lokaliteter.\n\nDet er også mulig å bruke lokalitetene mer effektivt gjennom bedre biologisk drift. Rapporten til Tveterås (2023), finansiert av nærings- og kommunale aktører, finner i statistiske analyser at høyere tetthet av lokaliteter henger sammen med dårligere biologiske resultater og høyere kostnader, mens mer biomasse på den enkelte lokalitet henger sammen med bedre økonomi. Dette er gjennomsnittlige sammenhenger i data fra 2012–2022, ikke bevis for at mer fisk alltid kan settes på en lokalitet uten problemer. Rapporten understreker selv at enkelte tette områder og lokaliteter med høy biomasse likevel har gode biologiske resultater. Den foreslår også å stenge lokaliteter med størst lusepress for å bedre forholdene for andre åpne anlegg, men dette er en anbefaling i en rapport, ikke dokumentasjon på at tiltaket vil virke overalt.\n\nTeknologi kan åpne for bruk av steder der åpne merder er vanskelige å drive. Skrove og kolleger (2023) vurderer lukkede eller nedsenkbare anlegg som mulige supplementer, blant annet på steder med høyt lusepress eller naturverdier som hindrer åpne merder. Men rapporten behandler ikke miljøvirkningene, og den viser ikke at slike løsninger gir en bestemt produksjonsøkning. Tveterås peker på at erfaringene med lukkede anlegg fortsatt er tidlige, og at økonomien er et stort kunnskapshull. Landbasert oppdrett kan også flytte noe produksjon bort fra sjøen, men Trøndelagsrapporten framhever at tilgang på strøm og politiske rammer kan begrense dette.\n\nArealregnskapet avhenger dessuten av hva man teller. Skrove og kolleger anslår at lakse- og ørretanlegg fysisk dekker rundt 94 kvadratkilometer før avstandssoner regnes med. Når anbefalte avstander mellom anlegg tas med, blir det beregnede arealet langt større, særlig i enkelte produksjonsområder. Slike soner er ikke det samme som sjø som er permanent opptatt: avstandene kan fravikes, og beregningen viser ikke i detalj hvilke andre brukere eller naturverdier som faktisk berøres. Næringen kan derfor ikke løse arealspørsmålet bare ved å vise til merdenes fotavtrykk.\n\n**Sikkerhet: Middels.** Kildene beskriver konkrete muligheter, men flere anslag bygger på modeller, intervjuer eller rapporter med næringsperspektiv, ikke på sammenlignende målinger av nye driftsformer. Et konkret kunnskapsgap er dokumenterte resultater over tid for lukkede og nedsenkbare anlegg: produksjon, fiskehelse, arealbehov og kostnader sammenlignet med åpne merder på tilsvarende steder.",
+   "kort_svar_ok": true,
+   "body_words": 535,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A8",
+   "mode": "researcher",
+   "query": "På hvilken måte er biosikkerhet, smittehensyn og vannkontakt mellom anlegg viktig for produksjon og drift av akvakulturanlegg?",
+   "latency_s": 11.31,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2015_pettersen_emerging-diseases-salmon",
+     "authors": "J.M. Pettersen; T. Osmundsen; A. Aunsmo; F.O. Mardones; K.M. Rich",
+     "year": "2015",
+     "score": 0.448
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4465
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.4298
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.4191
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.4149
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.4141
+    },
+    {
+     "doc_id": "2011_gullestad_arealbruk-havbruk",
+     "authors": "Peter Gullestad; Sigurd Bjørgo; Inger Eithun; Arne Ervik; Roar Gudding; Heidi Hansen; Roar Johansen; Anne B. Osland; Marit Rødseth; Inger Oline Røsvik; Håkan T. Sandersen; Hilde Skarra",
+     "year": "2011",
+     "score": 0.4136
+    },
+    {
+     "doc_id": "2019_karlsen_omradesamarbeid",
+     "authors": "Kine Mari Karlsen; Roy Robertsen; Bjørn Hersoug; Ragnar Tveterås; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.4109
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.4075
+    },
+    {
+     "doc_id": "undated_baerekraftig-arealbruk-havbruk",
+     "authors": "Ragnar Tveterås",
+     "year": "2023",
+     "score": 0.406
+    }
+   ],
+   "answer": "**Kort svar**\n- Vannkontakt gjør at smittestoff kan spres mellom anlegg og påvirke biosikkerhet, produksjon og driftsvalg.\n- Kildene framhever koordinert smittevern som nødvendig fordi tiltak ved ett anlegg ikke alene stanser smitte mellom naboanlegg.\n- Dokumentene gir ikke et samlet tall for hvor mye smitte reduserer produksjonen eller øker driftskostnadene.\n\nI åpne og semilukkede merder utveksles vann med lokale strømmer. Det betyr at smittestoff og avfall kan bevege seg mellom anlegg, slik at smitterisikoen ikke bare bestemmes av forholdene på én lokalitet. Pettersen og kolleger beskriver nærhet til et infisert anlegg som en risikofaktor for infeksiøs lakseanemi (ISA) og pankreassykdom (PD). Biosikkerhet blir dermed både et spørsmål om drift på det enkelte anlegget og om hvordan anleggene samlet ligger og drives i et område (Pettersen og kolleger, 2015).\n\nDenne sammenhengen har direkte betydning for produksjon og drift. Smitte kan gjøre det nødvendig å bruke tiltak som overvåking, brakklegging, begrensninger på flytting av fisk, desinfeksjon og håndtering av avfall. Slike tiltak kan redusere muligheten for spredning, men kan også begrense når og hvordan lokaliteter brukes. Den sentrale mekanismen er derfor ikke bare at sykdom kan ramme fisk på én lokalitet: vannkontakt gjør at smittevernvalg og smittestatus ved én lokalitet kan få følger for andre anlegg i samme område. Pettersen og kolleger understreker at tiltak kan være relevante også når årsaken til sykdommen ikke er fullt kjent, men gjennomgangen deres er en narrativ oversikt, ikke en ny analyse av produksjonstap eller driftskostnader.\n\nDet følger av denne mekanismen at enkeltbedrifters tiltak har begrensninger. Pettersen og kolleger viser til erfaringer med ISA-kontroll i Norge, Færøyene og Skottland, der myndighetene ledet arbeidet i samarbeid med næringen. De beskriver PD-kontrollen i Norge som mindre systematisk og argumenterer for sterkere offentlig-privat samarbeid og kostnadsdeling. Dette er forfatternes vurdering av organisering og kontroll, ikke et målt estimat på hvor mye en bestemt samarbeidsmodell øker produksjonen. Poenget er likevel viktig for driften: når smitte kan krysse lokalitetsgrenser, kan en produsent ikke nødvendigvis beskytte egen produksjon gjennom egne tiltak alene.\n\nNorsk forskning på områdesamarbeid gir et mer konkret, men begrenset bilde av hvordan dette håndteres. I en spørreundersøkelse blant 37 oppdrettere svarte 28 at de samarbeidet for å redusere risiko for sykdom og parasitter. Samtidig mente 23 at økt konkurranse om lokaliteter begrenset samarbeid om drift og beredskap. Rapporten fant også at konflikter ble rapportert oftere i områder med mange aktører og høy tetthet (Karlsen og kolleger, 2019). Dette er svar fra et lite utvalg oppdrettere, ikke en måling av smittespredning eller av effekten av samarbeid på produksjonsresultater. Funnene peker likevel på en praktisk spenning: koordinering kan være viktig for biosikkerheten, mens konkurranse om areal og lokaliteter kan gjøre samarbeid vanskeligere.\n\nArealplanlegging og lokalitetsstruktur er derfor relevante for biosikkerhet, men kildene gir ikke grunnlag for å redusere smitteproblemet til avstand alene. Den nasjonale ekspertgruppen om arealbruk framhevet at arealhensyn må omfatte vannkontakt og smitte mellom anlegg, i tillegg til mer synlig fysisk arealbruk. Den pekte også på at strømforhold kan være viktigere enn enkel avstand når smitterisiko vurderes (Gullestad og kolleger, 2011). Dette er en faglig og politisk utredning, ikke en ny feltmåling av hvilke avstander som gir trygg drift. Tilsvarende viser Skrove og kolleger at anbefalte smitteavstander brukes i arealberegninger, men at slike soner kan fravikes. De understreker dermed at avstandssoner ikke uten videre kan tolkes som faktisk, eksklusivt beslaglagt areal eller som et fullstendig mål på smitterisiko (Skrove og kolleger, 2023).\n\nSamlet er evidensen sterkest for den grunnleggende mekanismen: vannkontakt mellom åpne merder gjør smitte til et områdeproblem, og det påvirker behovet for koordinert drift og smitteverntiltak. Evidensen er svakere når spørsmålet gjelder hvor stor produksjonseffekten er, hvilke avstander eller lokalitetsmønstre som gir best beskyttelse, eller hvor mye bestemte samarbeidsordninger reduserer risikoen. Pettersen og kolleger bygger på en litteraturgjennomgang, Karlsen og kolleger på små spørreundersøkelser, og arealrapportene kombinerer plan- og kunnskapsgrunnlag snarere enn kontrollerte feltforsøk. Sikkerheten i den overordnede konklusjonen er derfor **middels til høy**, mens sikkerheten om størrelsen på produksjons- og kostnadseffektene er **lavere**. Større, sammenlignbare data om smitteforløp, strømforhold, lokalitetsavstand og driftsresultater ville kunne presisere vurderingen.",
+   "kort_svar_ok": true,
+   "body_words": 620,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  },
+  {
+   "id": "A8",
+   "mode": "non_researcher",
+   "query": "På hvilken måte er biosikkerhet, smittehensyn og vannkontakt mellom anlegg viktig for produksjon og drift av akvakulturanlegg?",
+   "latency_s": 13.76,
+   "error": null,
+   "retrieved": [
+    {
+     "doc_id": "2015_pettersen_emerging-diseases-salmon",
+     "authors": "J.M. Pettersen; T. Osmundsen; A. Aunsmo; F.O. Mardones; K.M. Rich",
+     "year": "2015",
+     "score": 0.448
+    },
+    {
+     "doc_id": "2018_myklebust_environmental-requirements",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2018",
+     "score": 0.4465
+    },
+    {
+     "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+     "authors": "Roald Sand; Andreas Ugelvik Misund",
+     "year": "2025",
+     "score": 0.4298
+    },
+    {
+     "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+     "authors": "Roald Sand; Anne Sigrid Haugset; Andreas Misund; Signe Sønvisen",
+     "year": "2025",
+     "score": 0.4191
+    },
+    {
+     "doc_id": "2014_robertsen_interkommunal-planlegging",
+     "authors": "Roy Robertsen; Ingrid Kvalvik; Otto Andreassen; Bjørn Hersoug; Jahn Petter Johnsen",
+     "year": "2014",
+     "score": 0.4149
+    },
+    {
+     "doc_id": "2021_myklebust_authority-division",
+     "authors": "Ingunn Elise Myklebust",
+     "year": "2021",
+     "score": 0.4141
+    },
+    {
+     "doc_id": "2011_gullestad_arealbruk-havbruk",
+     "authors": "Peter Gullestad; Sigurd Bjørgo; Inger Eithun; Arne Ervik; Roar Gudding; Heidi Hansen; Roar Johansen; Anne B. Osland; Marit Rødseth; Inger Oline Røsvik; Håkan T. Sandersen; Hilde Skarra",
+     "year": "2011",
+     "score": 0.4136
+    },
+    {
+     "doc_id": "2019_karlsen_omradesamarbeid",
+     "authors": "Kine Mari Karlsen; Roy Robertsen; Bjørn Hersoug; Ragnar Tveterås; Tonje Osmundsen",
+     "year": "2019",
+     "score": 0.4109
+    },
+    {
+     "doc_id": "salt_1075_arealbruk-havbruk",
+     "authors": "Tale Skrove; Guri Hjallen Eriksen; Rui Pires; Helene Skjeie Thorstensen; Audun Narvestad; Johanne Rydsaa; Sonja Lyngøy; Sverre Håpnes",
+     "year": "2023",
+     "score": 0.4075
+    },
+    {
+     "doc_id": "undated_baerekraftig-arealbruk-havbruk",
+     "authors": "Ragnar Tveterås",
+     "year": "2023",
+     "score": 0.406
+    }
+   ],
+   "answer": "**Kort svar**\n- Vannkontakt gjør at smittestoffer kan spre seg mellom nærliggende anlegg og påvirke fiskehelse, produksjon og drift.\n- Kildene peker særlig på smittepress og svak samordning som driftsproblemer, ikke på én enkelt løsning som passer overalt.\n- Kunnskapen her sier lite om hvor mye ulike biosikkerhetstiltak faktisk reduserer smitte og produksjonstap i praksis.\n\nI åpne merder går vannet gjennom anlegget og videre med lokale strømmer. Det betyr at anlegg ikke er isolerte enheter: smittestoffer og avfall kan følge vannet mellom lokaliteter. Pettersen og kolleger (2015), i en faglig oversiktsartikkel om infeksjonssykdommer, beskriver økt risiko for infeksiøs lakseanemi og pankreassykdom når smittede anlegg ligger nær hverandre. For driften kan smitte derfor bli et felles områdespørsmål: tiltak ved ett anlegg er ikke nødvendigvis nok til å beskytte naboene.\n\nBiosikkerhet handler her om å redusere muligheten for at smitte kommer inn eller sprer seg. Oversikten peker på flere virkemidler: overvåking, brakklegging mellom produksjonssykluser, begrensninger på flytting av fisk, desinfeksjon og håndtering av avfall. Noen tiltak kan brukes selv når årsaken til et sykdomsproblem ikke er fullt kjent. Men de krever ofte koordinering mellom anlegg. Pettersen og kolleger framhever at enkeltprodusenter ikke kan løse sykdommer som sprer seg gjennom felles vannmiljø alene.\n\nDet sentrale driftsproblemet er ikke bare hvilke tiltak som finnes, men om de blir gjennomført samlet og systematisk. Oversikten beskriver offentlig ledet samarbeid som viktig i kontrollen av infeksiøs lakseanemi, mens pankreassykdom i Norge ifølge forfatterne har vært mindre systematisk kontrollert. De foreslår sterkere samarbeid mellom myndigheter og næring, blant annet om kostnadsdeling. Dette er en diagnose fra en oversiktsartikkel, ikke en ny måling av hvor mye hvert tiltak øker produksjonen eller reduserer tap.\n\nAndre kilder gir støtte til at samarbeid kan være vanskelig i praksis, men måler ikke effekten av biosikkerhet direkte. Karlsen og kolleger (2019) fant i en spørreundersøkelse blant 37 oppdrettere at mange samarbeidet om drift og beredskap, samtidig som 23 mente at konkurranse om lokaliteter begrenset samarbeidet helt eller delvis. Rapporten beskriver altså en mulig organisatorisk hindring: bedrifter kan ha felles smitterisiko, men også konkurrere om areal. Den fastslår ikke at konkurransen i seg selv fører til mer sykdom.\n\nSamlet viser kildene hvorfor vannkontakt gjør smittehensyn viktige for både produksjon og daglig drift: sykdom kan krysse anleggsgrenser, og forebygging kan kreve tiltak på områdenivå. Men materialet gir ikke et sikkert tall på hvor mye smitte, produksjonstap eller kostnader som kan unngås med bestemte tiltak. **Konfidens: middels** – mekanismen og behovet for samordning beskrives tydelig, men dokumentene gir ikke en direkte sammenligning av tiltakseffekt. Feltdata som følger smitte og produksjon før og etter samordnede tiltak på tvers av anlegg, ville gjort bildet sikrere.",
+   "kort_svar_ok": true,
+   "body_words": 381,
+   "suspect_citations": [],
+   "opens_with_wild_fish": false
+  }
+ ]
+}
