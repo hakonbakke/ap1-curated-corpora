@@ -24,7 +24,7 @@ from retrieval import (  # noqa: E402
     publication_group,
     retrieve_areal_hybrid,
 )
-from synthesis import build_evidence_block  # noqa: E402
+from synthesis import build_evidence_block, citation_label  # noqa: E402
 
 
 class ArealBenchmarkTests(unittest.TestCase):
@@ -140,6 +140,16 @@ class EvidenceContextTests(unittest.TestCase):
         self.assertIn("The coral evidence was incomplete", block)
         self.assertIn("inconsistent coral thresholds", block)
         self.assertIn("Verification status: ai_verified", block)
+
+    def test_citation_label_counts_authors(self) -> None:
+        self.assertEqual(citation_label("Ingunn Elise Myklebust", "2018"), "Myklebust 2018")
+        self.assertEqual(
+            citation_label("Tonje C. Osmundsen; Marit Schei Olsen", "2025"), "Osmundsen & Olsen 2025"
+        )
+        self.assertEqual(
+            citation_label("Roy Robertsen; Ingrid Kvalvik; Otto Andreassen", "2014"), "Robertsen et al. 2014"
+        )
+        self.assertEqual(citation_label("", "2024", "Meld. St. 35"), "Meld. St. 35 2024")
 
 
 if __name__ == "__main__":

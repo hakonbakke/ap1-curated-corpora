@@ -315,12 +315,28 @@ def truncate_summary_text(text: str, max_chars: int = SUMMARY_MAX_CHARS_PER_DOC)
     return cut.rstrip() + "\n\n[… evidence brief truncated for context length …]"
 
 
+def citation_label(authors: str, year: object, title: str = "") -> str:
+    """Short citation the model copies: "Myklebust 2018", "Osmundsen & Olsen 2025", "Robertsen et al. 2014".
+
+    Two-author works must not become "et al."; reports without authors fall back to the title.
+    """
+    surnames = [a.split()[-1] for a in (authors or "").split(";") if a.strip()]
+    if not surnames:
+        who = (title or "Unknown").strip()[:60]
+    elif len(surnames) == 1:
+        who = surnames[0]
+    elif len(surnames) == 2:
+        who = f"{surnames[0]} & {surnames[1]}"
+    else:
+        who = f"{surnames[0]} et al."
+    return f"{who} {year}".strip()
+
+
 def build_evidence_block(results: list[dict], *, compact: bool = False, query: str = "") -> str:
     """Format retrieved documents into the context block for the synthesis prompt."""
     parts = []
     for i, r in enumerate(results, 1):
-        authors_short = r["authors"].split(";")[0].split()[-1] if r["authors"] else "Unknown"
-        citation = f"{authors_short} et al. {r['year']}" if ";" in r["authors"] else f"{r['authors']} {r['year']}"
+        citation = citation_label(r.get("authors") or "", r.get("year", ""), r.get("title") or "")
 
         selected_claims = _rank_evidence_items(r.get("key_claims") or [], query, 4)
         claims = "\n".join(f"  - {c}" for c in selected_claims)
@@ -489,7 +505,7 @@ Below the short answer, write **one coherent essay** that answers the question. 
 - **Middle paragraphs:** Develop the argument by **theme or diagnosis** (licences, municipal designation, biology, competing use, knowledge in the file). Within each paragraph, **combine** studies that support the same point; **contrast** studies that tension each other.
 - **Final paragraph:** Confidence (**High / Medium / Low**) and what would change your assessment — woven into prose, not a labelled box.
 
-Use **parenthetical citations** (Author and colleagues, year) inside sentences. Name only studies that appear in the retrieved evidence.
+Use **parenthetical citations** inside sentences, in both Norwegian and English: (Robertsen et al., 2014) for three or more authors, (Sand og Misund, 2025) or (Sand and Misund, 2025) for two, (Myklebust, 2018) for one. Never write "og kolleger" or "and colleagues". Name only studies that appear in the retrieved evidence.
 
 **Selectivity:** {n} documents were retrieved; you need not name all {n}. Prioritise studies that directly address the query.
 
@@ -553,7 +569,8 @@ Instead:
 ## Rules
 - Use ONLY the retrieved evidence; do not make up studies.
 - Preserve real disagreement — do not paper it over or invent a compromise.
-- Cite as "Researcher Name and colleagues (year)" when naming a study.
+- Name at least three of the retrieved studies in the text (outside the short answer), so readers can check the sources.
+- When naming a study in Norwegian, write «Robertsen mfl. (2014)» for three or more authors, «Sand og Misund (2025)» for two and «Myklebust (2018)» for one. Never write «og kolleger». In English, write "Robertsen and colleagues (2014)", "Sand and Misund (2025)", "Myklebust (2018)".
 - Say when a result is from a plan study, a legal review, a computer model, or field data; do not treat them as the same kind of proof.
 - No unexplained jargon — spell out terms on first use.
 - Do not argue that aquaculture is good or bad overall.
