@@ -1,6 +1,11 @@
 [server]
 headless = true
 
+[client]
+# Skjul den automatiske sidemenyen (hjemmesiden vises ellers som "app").
+# Begge rom har «← Alle evidensrom», og forsiden lenker til begge rom.
+showSidebarNavigation = false
+
 [browser]
 gatherUsageStats = false
 

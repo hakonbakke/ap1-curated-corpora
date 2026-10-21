@@ -31,6 +31,7 @@ from retrieval import (
     is_out_of_scope,
 )
 import feedback
+from regelverk import REGELVERK, render_regelverk
 from synthesis import synthesise_stream
 from ui import brand_header, inject_css, paper_chips, section_header
 
@@ -38,7 +39,7 @@ st.set_page_config(
     page_title="Areal og havbruk · Evidensrom",
     page_icon="🗺️",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 
 inject_css()
@@ -77,6 +78,46 @@ def _last_name(authors: str) -> str:
     first = str(authors).split(";")[0].strip()
     parts = first.split()
     return parts[-1] if parts else "?"
+
+
+def _surname(name: str) -> str:
+    parts = name.split()
+    if not parts:
+        return ""
+    # Organisations such as "Metier AS" keep their full name.
+    return name if len(parts) > 1 and parts[-1].isupper() else parts[-1]
+
+
+def _source_label(lang: str, authors, year, title) -> str:
+    """Readable source name: "Hersoug mfl. 2020", "Sand og Misund 2025".
+    Documents without authors (reports) get a short title instead."""
+    try:
+        yr = str(int(year))
+    except (TypeError, ValueError):
+        yr = ""
+    names = [_surname(a.strip()) for a in str(authors or "").split(";") if a.strip()]
+    if not names:
+        short = str(title or "").strip()
+        if len(short) > 40:
+            short = short[:40].rsplit(" ", 1)[0].rstrip(",.:;") + "…"
+        return f"{short} ({yr})" if short and yr else short or yr
+    if len(names) == 1:
+        who = names[0]
+    elif len(names) == 2:
+        who = f"{names[0]} {tr(lang, 'and', 'og')} {names[1]}"
+    else:
+        who = f"{names[0]} {tr(lang, 'et al.', 'mfl.')}"
+    return f"{who} {yr}".strip()
+
+
+def _chip_labels(lang: str, frame) -> dict[str, str]:
+    """doc_id -> readable label for the source chips in C."""
+    if frame is None:
+        return {}
+    return {
+        str(r["doc_id"]): _source_label(lang, r.get("authors"), r.get("year"), r.get("title"))
+        for _, r in frame.iterrows()
+    }
 
 
 # ── Fault lines (C) ───────────────────────────────────────────────────────────
@@ -506,53 +547,29 @@ EXAMPLE_QUESTIONS = {
     "no": [""] + [f[2] for f in FAULTS["no"]],
 }
 
+# ── Language (main area, so phone users see it) ───────────────────────────────
+
+header_slot = st.container()  # brand header, filled below once `lang` is known
+col_home, col_lang = st.columns([1, 1], vertical_alignment="center")
+with col_home:
+    st.page_link("app.py", label="← Alle evidensrom", icon="🏠")
+with col_lang:
+    lang = st.radio(
+        "Språk / Language",
+        options=LANG_OPTIONS,
+        format_func=lambda x: "English" if x == "en" else "Norsk",
+        horizontal=True,
+        label_visibility="collapsed",
+    )
+answer_format = "freeform"
+output_language = "Norwegian Bokmål" if lang == "no" else "English"
+
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 
 with st.sidebar:
     st.title("Havbruksløftets Evidensrom")
     st.page_link("app.py", label="← Alle evidensrom", icon="🏠")
-    lang = st.radio(
-        "Language",
-        options=LANG_OPTIONS,
-        format_func=lambda x: "English" if x == "en" else "Norsk",
-        horizontal=True,
-    )
     st.caption(tr(lang, "Area and aquaculture", "Areal og havbruk"))
-    st.subheader(tr(lang, "Audience", "Målgruppe"))
-    mode = st.radio(
-        tr(lang, "Choose your background", "Velg bakgrunn"),
-        options=["researcher", "non_researcher"],
-        format_func=lambda x: (
-            tr(lang, "Researcher / expert", "Forsker / fagperson")
-            if x == "researcher"
-            else tr(lang, "Interested non-specialist", "Interessert ikke-spesialist")
-        ),
-        help=(
-            tr(
-                lang,
-                "**Researcher:** Technical language, full citations and stated findings. "
-                "The answer follows the shape of your question.\n\n"
-                "**Non-specialist:** Plain language without unnecessary jargon. "
-                "The structure is adapted to what you asked.",
-                "**Forsker:** Teknisk språk, fulle referanser og funn som står i kildene. "
-                "Svaret formes etter spørsmålet ditt.\n\n"
-                "**Ikke-spesialist:** Enkelt språk uten unødvendig fagjargon. "
-                "Strukturen tilpasses det du spør om.",
-            )
-        ),
-    )
-    if mode == "non_researcher":
-        st.info(
-            tr(
-                lang,
-                "Answers use plain language. They show the open questions, competing "
-                "diagnoses of what limits growth, and where knowledge is missing.",
-                "Svarene bruker enkelt språk. De viser de åpne spørsmålene, konkurrerende "
-                "diagnoser av hva som begrenser vekst, og der kunnskap mangler.",
-            )
-        )
-    answer_format = "freeform"
-    output_language = "Norwegian Bokmål" if lang == "no" else "English"
 
     st.divider()
 
@@ -572,96 +589,103 @@ with st.sidebar:
             )
         )
 
-    if corpus_ready:
-        st.subheader(tr(lang, "Documents in corpus", "Dokumenter i korpuset"))
-        st.caption(tr(lang, f"{n_total} documents in database", f"{n_total} dokumenter i databasen"))
-        if st.button(
-            tr(lang, "Reload corpus from disk", "Last inn korpus på nytt"),
+    # Expert controls stay out of the way; defaults are all documents and k = 10.
+    with st.expander(tr(lang, "Advanced settings", "Avanserte innstillinger")):
+        if corpus_ready:
+            st.subheader(tr(lang, "Documents in corpus", "Dokumenter i korpuset"))
+            st.caption(tr(lang, f"{n_total} documents in database", f"{n_total} dokumenter i databasen"))
+            if st.button(
+                tr(lang, "Reload corpus from disk", "Last inn korpus på nytt"),
+                help=tr(
+                    lang,
+                    "Use after ingest if the document count looks wrong.",
+                    "Bruk etter ingest hvis antall dokumenter ser feil ut.",
+                ),
+                width="stretch",
+            ):
+                df = reload_corpus(AREAL_DATA_FILE)
+                st.rerun()
+            # Use stable document IDs as widget values. Display labels are not
+            # unique (the two retained Kvalvik records describe the same paper),
+            # so using labels as keys silently dropped one record.
+            option_rows = []
+            for _, row in df.sort_values(["year", "doc_id"]).iterrows():
+                first_author = _last_name(row.get("authors", ""))
+                title = str(row.get("title") or row["doc_id"])
+                label = f"{first_author} {row['year']} · {title[:55]}"
+                option_rows.append((str(row["doc_id"]), label))
+            label_counts = {}
+            for _, label in option_rows:
+                label_counts[label] = label_counts.get(label, 0) + 1
+            doc_options = {
+                doc_id: (f"{label} · {doc_id}" if label_counts[label] > 1 else label)
+                for doc_id, label in option_rows
+            }
+            all_doc_ids = list(doc_options)
+            if "areal_selected" not in st.session_state:
+                st.session_state["areal_selected"] = all_doc_ids
+            else:
+                # Migrate a pre-fix session that stored display labels. If no
+                # stable IDs survive, restore the safe all-documents default.
+                stored_ids = st.session_state.get("areal_selected") or []
+                valid_ids = [doc_id for doc_id in stored_ids if doc_id in doc_options]
+                if stored_ids and not valid_ids:
+                    st.session_state["areal_selected"] = all_doc_ids
+            col_sel, col_clr = st.columns(2)
+            if col_sel.button(tr(lang, "Select all", "Velg alle"), width="stretch"):
+                st.session_state["areal_selected"] = all_doc_ids
+            if col_clr.button(tr(lang, "Clear all", "Tøm"), width="stretch"):
+                st.session_state["areal_selected"] = []
+            selected_doc_ids = st.multiselect(
+                tr(lang, "Include these documents", "Inkluder disse dokumentene"),
+                options=all_doc_ids,
+                default=[
+                    doc_id
+                    for doc_id in st.session_state.get("areal_selected", all_doc_ids)
+                    if doc_id in doc_options
+                ],
+                format_func=lambda doc_id: doc_options[doc_id],
+                label_visibility="collapsed",
+            )
+            st.session_state["areal_selected"] = selected_doc_ids
+            if not selected_doc_ids:
+                st.warning(tr(lang, "Select at least one document.", "Velg minst ett dokument."))
+            else:
+                st.caption(
+                    tr(
+                        lang,
+                        f"{len(selected_doc_ids)} / {n_total} documents active",
+                        f"{len(selected_doc_ids)} / {n_total} aktive dokumenter",
+                    )
+                )
+        else:
+            selected_doc_ids = None
+
+        st.divider()
+        top_k = st.slider(
+            tr(lang, "Documents to retrieve", "Antall dokumenter å hente"),
+            3,
+            12,
+            10,
             help=tr(
                 lang,
-                "Use after ingest if the document count looks wrong.",
-                "Bruk etter ingest hvis antall dokumenter ser feil ut.",
+                "How many of the most relevant documents the answer is based on. "
+                "The search ranks documents by how similar their content is to your "
+                "question. More documents give a broader answer, but it can take a "
+                "little longer.",
+                "Hvor mange av de mest relevante dokumentene svaret bygger på. "
+                "Søket rangerer dokumentene etter hvor lik innholdet er spørsmålet "
+                "ditt. Flere dokumenter gir et bredere svar, men kan ta litt lengre tid.",
             ),
-            width="stretch",
-        ):
-            df = reload_corpus(AREAL_DATA_FILE)
-            st.rerun()
-        # Use stable document IDs as widget values. Display labels are not
-        # unique (the two retained Kvalvik records describe the same paper),
-        # so using labels as keys silently dropped one record.
-        option_rows = []
-        for _, row in df.sort_values(["year", "doc_id"]).iterrows():
-            first_author = _last_name(row.get("authors", ""))
-            title = str(row.get("title") or row["doc_id"])
-            label = f"{first_author} {row['year']} · {title[:55]}"
-            option_rows.append((str(row["doc_id"]), label))
-        label_counts = {}
-        for _, label in option_rows:
-            label_counts[label] = label_counts.get(label, 0) + 1
-        doc_options = {
-            doc_id: (f"{label} · {doc_id}" if label_counts[label] > 1 else label)
-            for doc_id, label in option_rows
-        }
-        all_doc_ids = list(doc_options)
-        if "areal_selected" not in st.session_state:
-            st.session_state["areal_selected"] = all_doc_ids
-        else:
-            # Migrate a pre-fix session that stored display labels. If no
-            # stable IDs survive, restore the safe all-documents default.
-            stored_ids = st.session_state.get("areal_selected") or []
-            valid_ids = [doc_id for doc_id in stored_ids if doc_id in doc_options]
-            if stored_ids and not valid_ids:
-                st.session_state["areal_selected"] = all_doc_ids
-        col_sel, col_clr = st.columns(2)
-        if col_sel.button(tr(lang, "Select all", "Velg alle"), width="stretch"):
-            st.session_state["areal_selected"] = all_doc_ids
-        if col_clr.button(tr(lang, "Clear all", "Tøm"), width="stretch"):
-            st.session_state["areal_selected"] = []
-        selected_doc_ids = st.multiselect(
-            tr(lang, "Include these documents", "Inkluder disse dokumentene"),
-            options=all_doc_ids,
-            default=[
-                doc_id
-                for doc_id in st.session_state.get("areal_selected", all_doc_ids)
-                if doc_id in doc_options
-            ],
-            format_func=lambda doc_id: doc_options[doc_id],
-            label_visibility="collapsed",
         )
-        st.session_state["areal_selected"] = selected_doc_ids
-        if not selected_doc_ids:
-            st.warning(tr(lang, "Select at least one document.", "Velg minst ett dokument."))
-        else:
-            st.caption(
-                tr(
-                    lang,
-                    f"{len(selected_doc_ids)} / {n_total} documents active",
-                    f"{len(selected_doc_ids)} / {n_total} aktive dokumenter",
-                )
-            )
-    else:
-        selected_doc_ids = None
-
-    st.divider()
-    top_k = st.slider(
-        tr(lang, "Documents to retrieve", "Antall dokumenter å hente"),
-        3,
-        12,
-        10,
-        help=tr(
-            lang,
-            "Documents ranked by semantic and lexical relevance, with up to two relevant related sources.",
-            "Dokumenter rangert etter semantisk og leksikalsk relevans, med opptil to relevante relaterte kilder.",
-        ),
-    )
     st.divider()
     st.caption(
         tr(
             lang,
-            "Corpus: area-and-aquaculture (50 documents, draft room)  \n"
+            f"Corpus: area and aquaculture ({n_total or 50} documents, draft room)  \n"
             "Method: Honest Broker (Pielke 2007)  \n"
             "Funded by FHF / Havbruksløftet AP1",
-            "Korpus: area-and-aquaculture (50 dokumenter, utkast-rom)  \n"
+            f"Korpus: areal og havbruk ({n_total or 50} dokumenter, utkast-rom)  \n"
             "Metode: Honest Broker (Pielke 2007)  \n"
             "Finansiert av FHF / Havbruksløftet AP1",
         )
@@ -669,7 +693,8 @@ with st.sidebar:
 
 # ── Brand + hero ──────────────────────────────────────────────────────────────
 
-brand_header(tr(lang, "Evidence room · area and aquaculture", "Evidensrom · areal og havbruk"))
+with header_slot:
+    brand_header(tr(lang, "Evidence room · area and aquaculture", "Evidensrom · areal og havbruk"))
 
 try:
     year_min = int(df["year"].min())
@@ -720,15 +745,9 @@ st.caption(
         lang,
         "A introduces the paradox and the three area quantities. "
         "B shows the split governing system, with links to statutes and public sources. "
-        "C collects the open questions. D searches the corpus. "
-        "The questions A0 to A8 were settled by the selectors on 19 October 2026. "
-        "Search hits the 50 embedded documents. "
-        "Files without an area code do not answer designation or siting.",
+        "C collects the open questions. D lets you ask the sources.",
         "A innfører paradokset og de tre arealbegrepene. B viser det delte styringssystemet, med lenker til lover og offentlige kilder. "
-        "C samler de åpne spørsmålene. D søker i korpuset. "
-        "Spørsmålene A0 til A8 ble vedtatt av utvelgerne 19. oktober 2026. "
-        "Søket treffer de 50 innebygde dokumentene. "
-        "Filer uten arealkode svarer ikke på utpeking eller lokalisering.",
+        "C samler de åpne spørsmålene. D lar deg spørre kildene.",
     )
 )
 
@@ -1022,8 +1041,8 @@ with st.container(border=True):
     with st.expander(
         tr(
             lang,
-            "Read more: Havbruksutvalget, offshore, closed and land-based, and statutes",
-            "Les mer: Havbruksutvalget, havbruk til havs, lukket og landbasert, og lover",
+            "Read more: Havbruksutvalget, offshore, closed and land-based",
+            "Les mer: Havbruksutvalget, havbruk til havs, lukket og landbasert",
         )
     ):
         st.markdown(
@@ -1039,17 +1058,6 @@ Three developments change the area picture, without solving it alone. They mainl
 **Closed and semi-closed farms at sea.** They can collect discharges and reduce lice pressure, and may give more production per unit of area. They need more energy, more infrastructure and larger investment. They are not yet at large scale.
 
 **Land-based aquaculture.** It removes the sea-area conflict and moves it to the shoreline, the power grid, water intake and land discharge permits.
-
-**Statutes**
-
-- [Planning and Building Act](https://lovdata.no/dokument/NL/lov/2008-06-27-71) (LOV-2008-06-27-71)
-- [Aquaculture Act](https://lovdata.no/dokument/NL/lov/2005-06-17-79) (LOV-2005-06-17-79)
-- [Nature Diversity Act](https://lovdata.no/dokument/NL/lov/2009-06-19-100) (LOV-2009-06-19-100)
-- [Production area regulation](https://lovdata.no/dokument/SF/forskrift/2017-01-16-61) (FOR-2017-01-16-61)
-- [Pollution Control Act](https://lovdata.no/dokument/NL/lov/1981-03-13-6) (LOV-1981-03-13-6)
-- [Harbour and Fairway Act](https://lovdata.no/dokument/NL/lov/2019-06-21-70) (LOV-2019-06-21-70)
-- [Sámi Act chapter 4](https://lovdata.no/dokument/NL/lov/1987-06-12-56/KAPITTEL_4)
-- [Quality standard for wild Atlantic salmon](https://lovdata.no/dokument/SF/forskrift/2013-09-20-1109) (FOR-2013-09-20-1109)
 """,
                 """
 [NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/) (Havbruksutvalget, 28. september 2023) gjennomgikk tillatelses- og forvaltningssystemet. Utvalget foreslo blant annet en klarere splitting av selskaps- og lokalitetstillatelse, **auksjon av selskapstillatelser som hovedregel**, lokalitetstillatelser etter søknad uten vederlag, og en større statlig rolle i sjøarealplanlegging. Det foreslo **ikke** en arealavgift, og ikke auksjon av selve lokaliteten.
@@ -1061,20 +1069,17 @@ Tre utviklingstrekk endrer arealbildet, uten å løse det alene. De endrer førs
 **Lukkede og semilukkede anlegg i sjø.** De kan samle utslipp og redusere lusepress, og kan gi mer produksjon per arealenhet. De krever mer energi, mer infrastruktur og større investeringer. De er foreløpig ikke i stor skala.
 
 **Landbasert oppdrett.** Det fjerner sjøarealkonflikten og flytter den til strandsonen, kraftnettet, vannuttak og utslippstillatelser på land.
-
-**Lover**
-
-- [Plan- og bygningsloven](https://lovdata.no/dokument/NL/lov/2008-06-27-71) (LOV-2008-06-27-71)
-- [Akvakulturloven](https://lovdata.no/dokument/NL/lov/2005-06-17-79) (LOV-2005-06-17-79)
-- [Naturmangfoldloven](https://lovdata.no/dokument/NL/lov/2009-06-19-100) (LOV-2009-06-19-100)
-- [Produksjonsområdeforskriften](https://lovdata.no/dokument/SF/forskrift/2017-01-16-61) (FOR-2017-01-16-61)
-- [Forurensningsloven](https://lovdata.no/dokument/NL/lov/1981-03-13-6) (LOV-1981-03-13-6)
-- [Havne- og farvannsloven](https://lovdata.no/dokument/NL/lov/2019-06-21-70) (LOV-2019-06-21-70)
-- [Sameloven kapittel 4](https://lovdata.no/dokument/NL/lov/1987-06-12-56/KAPITTEL_4)
-- [Kvalitetsnorm for vill atlantisk laks](https://lovdata.no/dokument/SF/forskrift/2013-09-20-1109) (FOR-2013-09-20-1109)
 """,
             )
         )
+    with st.expander(
+        tr(
+            lang,
+            f"Laws and regulations ({len(REGELVERK)})",
+            f"Lover og forskrifter ({len(REGELVERK)})",
+        )
+    ):
+        render_regelverk(lang)
 
 # ── C: Åpne spørsmål ──────────────────────────────────────────────────────────
 
@@ -1116,7 +1121,7 @@ with st.container(border=True):
     )
 
     st.markdown(FAULTS[lang][fault_idx][1])
-    paper_chips(FAULT_PAPERS[fault_idx])
+    paper_chips(FAULT_PAPERS[fault_idx], _chip_labels(lang, df))
 
     st.write("")
     if st.button(tr(lang, "Ask the sources about this ↓", "Spør kildene om dette ↓")):
@@ -1126,10 +1131,8 @@ with st.container(border=True):
 st.caption(
     tr(
         lang,
-        "Editorial orientation · last reviewed 2026-10-19 · C and D search the active documents. "
-        "Tagging codes A0-A8 sit in PRIORITY_QUESTIONS.md. A0 is also the lead question.",
-        "Redaksjonell orientering · sist gjennomgått 2026-10-19 · C og D søker i de aktive dokumentene. "
-        "Taggkodene A0-A8 står i PRIORITY_QUESTIONS.md. A0 er også det ledende spørsmålet.",
+        "Editorial orientation · last reviewed 2026-10-19 · C and D search the active documents.",
+        "Redaksjonell orientering · sist gjennomgått 2026-10-19 · C og D søker i de aktive dokumentene.",
     )
 )
 
@@ -1140,34 +1143,74 @@ section_header(
     tr(lang, "Live synthesis", "Live syntese"),
 )
 
-if mode == "researcher":
-    st.markdown(
-        tr(
-            lang,
-            "Section C helps you see the open questions. Section D lets you ask a "
-            "question. The tool retrieves from the curated set and returns a "
-            "technical synthesis. Competing diagnoses are kept visible. Gaps are named "
-            "when the file is empty.",
-            "Seksjon C hjelper deg å se de åpne spørsmålene. Seksjon D lar deg stille "
-            "et spørsmål. Verktøyet henter fra det kuraterte settet og returnerer "
-            "en teknisk syntese. Konkurrerende diagnoser holdes synlige. Hull navngis når "
-            "saksfilen er tom.",
-        )
-    )
-else:
-    st.markdown(
-        tr(
-            lang,
-            "Section C helps you see the open questions. Section D lets you ask in plain "
-            "language. The tool explains what the publications say, including where they "
-            "write past one another, and where the file is empty.",
-            "Seksjon C hjelper deg å se de åpne spørsmålene. Seksjon D lar deg spørre "
-            "med enkelt språk. Verktøyet forklarer hva publikasjonene sier, også der de "
-            "skriver forbi hverandre, og der saksfilen er tom.",
-        )
-    )
+intro_slot = st.container()  # text depends on the audience chosen just below
 
-with st.container(border=True):
+question_card = st.container(border=True)
+with question_card:
+    mode = st.radio(
+        tr(lang, "Choose your background", "Velg bakgrunn"),
+        options=["researcher", "non_researcher"],
+        format_func=lambda x: (
+            tr(lang, "Researcher / expert", "Forsker / fagperson")
+            if x == "researcher"
+            else tr(lang, "Interested non-specialist", "Interessert ikke-spesialist")
+        ),
+        horizontal=True,
+        help=(
+            tr(
+                lang,
+                "**Researcher:** Technical language, full citations and stated findings. "
+                "The answer follows the shape of your question.\n\n"
+                "**Non-specialist:** Plain language without unnecessary jargon. "
+                "The structure is adapted to what you asked.",
+                "**Forsker:** Teknisk språk, fulle referanser og funn som står i kildene. "
+                "Svaret formes etter spørsmålet ditt.\n\n"
+                "**Ikke-spesialist:** Enkelt språk uten unødvendig fagjargon. "
+                "Strukturen tilpasses det du spør om.",
+            )
+        ),
+    )
+    if mode == "non_researcher":
+        st.info(
+            tr(
+                lang,
+                "Answers use plain language. They show the open questions, competing "
+                "diagnoses of what limits growth, and where knowledge is missing.",
+                "Svarene bruker enkelt språk. De viser de åpne spørsmålene, konkurrerende "
+                "diagnoser av hva som begrenser vekst, og der kunnskap mangler.",
+            )
+        )
+
+with intro_slot:
+    if mode == "researcher":
+        st.markdown(
+            tr(
+                lang,
+                "Section C helps you see the open questions. Section D lets you ask a "
+                "question. The tool retrieves from the curated set and returns a "
+                "technical synthesis. Competing diagnoses are kept visible. Gaps are named "
+                "when the file is empty.",
+                "Seksjon C hjelper deg å se de åpne spørsmålene. Seksjon D lar deg stille "
+                "et spørsmål. Verktøyet henter fra det kuraterte settet og returnerer "
+                "en teknisk syntese. Konkurrerende diagnoser holdes synlige. Hull navngis når "
+                "saksfilen er tom.",
+            )
+        )
+    else:
+        st.markdown(
+            tr(
+                lang,
+                "Section C helps you see the open questions. Section D lets you ask in plain "
+                "language. The tool explains what the publications say, including where they "
+                "write past one another, and where the file is empty.",
+                "Seksjon C hjelper deg å se de åpne spørsmålene. Seksjon D lar deg spørre "
+                "med enkelt språk. Verktøyet forklarer hva publikasjonene sier, også der de "
+                "skriver forbi hverandre, og der saksfilen er tom.",
+            )
+        )
+
+
+with question_card:
     examples = EXAMPLE_QUESTIONS[lang]
     pick = st.selectbox(
         tr(
@@ -1203,11 +1246,12 @@ with st.container(border=True):
     with col1:
         run = st.button(tr(lang, "Synthesise", "Syntetiser"), type="primary", width="stretch")
     with col2:
+        n_active = len(selected_doc_ids) if selected_doc_ids else 0
         st.caption(
             tr(
                 lang,
-                f"Retrieves up to k = {top_k} by similarity among {len(selected_doc_ids) if selected_doc_ids else 0} active documents.",
-                f"Henter opptil k = {top_k} etter likhet blant {len(selected_doc_ids) if selected_doc_ids else 0} aktive dokumenter.",
+                f"The answer draws on the {min(top_k, n_active)} most relevant of {n_active} documents.",
+                f"Svaret bygger på de {min(top_k, n_active)} mest relevante av {n_active} dokumenter.",
             )
         )
 
@@ -1337,10 +1381,11 @@ def _render_sources(results: list[dict]) -> None:
             if r.get("rag_summary"):
                 with st.expander(tr(lang, "Summary", "Oppsummering"), expanded=False):
                     st.markdown(r["rag_summary"])
-            qs = r.get("priority_questions") or []
-            if qs:
-                st.caption(" · ".join(str(q) for q in qs))
-            st.caption(f"doc_id: `{r.get('doc_id', '')}`")
+            if mode == "researcher":  # internal codes are only useful to experts
+                qs = r.get("priority_questions") or []
+                if qs:
+                    st.caption(" · ".join(str(q) for q in qs))
+                st.caption(f"doc_id: `{r.get('doc_id', '')}`")
 
 
 def _render_last(last: dict) -> None:
@@ -1394,8 +1439,8 @@ def _ask(q: str) -> None:
         st.error(
             tr(
                 lang,
-                "Select at least one document in the sidebar before querying.",
-                "Velg minst ett dokument i sidepanelet før du spør.",
+                "Select at least one document under Advanced settings in the sidebar before asking.",
+                "Velg minst ett dokument under Avanserte innstillinger i sidepanelet før du spør.",
             )
         )
         return

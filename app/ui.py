@@ -165,6 +165,7 @@ h1{ line-height:1.14; }
   background:var(--hl-accent-soft); color:var(--hl-accent);
   border-radius:6px; padding:3px 8px;
 }
+.hl-paper-name{ font-family:inherit; font-size:.8rem; font-weight:500; }
 .hl-caveat{ font-size:.86rem; color:var(--hl-muted); font-style:italic; margin:10px 0 0; }
 
 /* Footer */
@@ -210,9 +211,16 @@ def section_header(label: str, tag: str) -> None:
     )
 
 
-def paper_chips(doc_ids: list[str]) -> None:
-    """Rad med monospace paper-chips (korpus-ID-er)."""
+def paper_chips(doc_ids: list[str], labels: dict[str, str] | None = None) -> None:
+    """Rad med paper-chips. `labels` mapper korpus-ID til lesbart navn (f.eks.
+    «Hersoug mfl. 2020»); uten treff vises rå ID."""
     if not doc_ids:
         return
-    chips = "".join(f'<span class="hl-paper">{escape(d)}</span>' for d in doc_ids)
+    labels = labels or {}
+    chips = "".join(
+        f'<span class="hl-paper hl-paper-name">{escape(labels[d])}</span>'
+        if labels.get(d)
+        else f'<span class="hl-paper">{escape(d)}</span>'
+        for d in doc_ids
+    )
     st.markdown(f'<div class="hl-papers">{chips}</div>', unsafe_allow_html=True)
