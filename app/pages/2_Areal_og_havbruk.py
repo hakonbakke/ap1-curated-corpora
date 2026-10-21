@@ -9,8 +9,11 @@ from __future__ import annotations
 
 import os
 import sys
+import time
+import uuid
 from pathlib import Path
 
+import openai
 import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -27,7 +30,8 @@ from retrieval import (
     retrieve,
     is_out_of_scope,
 )
-from synthesis import synthesise
+import feedback
+from synthesis import synthesise_stream
 from ui import brand_header, inject_css, paper_chips, section_header
 
 st.set_page_config(
@@ -63,7 +67,8 @@ def get_client() -> OpenAI | None:
             "OPENAI_API_KEY not set. Add it to .env (local) or Streamlit Cloud secrets."
         )
         return None
-    return OpenAI(api_key=key)
+    # Retries with backoff and a generous timeout ride out brief rate limits.
+    return OpenAI(api_key=key, max_retries=3, timeout=120.0)
 
 
 def _last_name(authors: str) -> str:
@@ -1187,6 +1192,13 @@ with st.container(border=True):
         ),
         height=90,
     )
+    st.caption(
+        tr(
+            lang,
+            "Questions, answers and ratings are stored anonymously for research on the tool. No names are collected.",
+            "Spørsmål, svar og vurderinger lagres anonymt for forskning på verktøyet. Ingen navn samles inn.",
+        )
+    )
     col1, col2 = st.columns([1, 4])
     with col1:
         run = st.button(tr(lang, "Synthesise", "Syntetiser"), type="primary", width="stretch")
@@ -1199,55 +1211,114 @@ with st.container(border=True):
             )
         )
 
-if run and query.strip():
-    if not corpus_ready:
-        st.error(tr(lang, "Corpus not ready.", "Korpuset er ikke klart."))
-        st.stop()
-    if not selected_doc_ids:
-        st.error(
-            tr(
-                lang,
-                "Select at least one document in the sidebar before querying.",
-                "Velg minst ett dokument i sidepanelet før du spør.",
-            )
-        )
-        st.stop()
-    client = get_client()
-    if not client:
-        st.stop()
-    with st.spinner(tr(lang, "Retrieving relevant documents...", "Henter relevante dokumenter...")):
-        results = retrieve(
-            client,
-            query.strip(),
-            top_k=top_k,
-            selected_doc_ids=selected_doc_ids,
-            data_file=AREAL_DATA_FILE,
-        )
-    if not results or is_out_of_scope(results):
+AREAL_MODEL = "gpt-6-luna"
+MAX_UNCACHED_PER_SESSION = 8
+
+if "areal_session_id" not in st.session_state:
+    st.session_state["areal_session_id"] = uuid.uuid4().hex
+
+
+def _warn_failure(exc: Exception | None) -> None:
+    """Plain bilingual warning. Never show a traceback to users."""
+    if isinstance(exc, (openai.RateLimitError, openai.APITimeoutError, openai.APIConnectionError)):
         st.warning(
             tr(
                 lang,
-                "This question appears to fall outside this corpus. "
-                "Try a question about sea area, locality or coastal-zone planning, or pick a point in section C.",
-                "Spørsmålet ser ut til å ligge utenfor dette korpuset. "
-                "Prøv et spørsmål om sjøareal, lokalitet eller kystsoneplan, eller velg et punkt i seksjon C.",
+                "The service is busy right now. Please try again in half a minute.",
+                "Tjenesten er travel akkurat nå. Prøv igjen om et halvt minutt.",
             )
         )
-        st.stop()
-    with st.spinner(tr(lang, "Writing synthesis...", "Skriver syntese...")):
-        synthesis_text = synthesise(
-            client,
-            query.strip(),
-            results,
-            mode=mode,
-            answer_format=answer_format,
-            output_language=output_language,
-            model="gpt-6-luna",
-            room="areal",
+    else:
+        st.warning(
+            tr(
+                lang,
+                "Something went wrong while answering. Please try again in a moment.",
+                "Noe gikk galt under svaret. Prøv igjen om litt.",
+            )
         )
+
+
+def _log_answer(answer_id: str, q: str, results: list[dict], answer: str, started: float, cached: bool, error: str = "") -> None:
+    feedback.log_answer(
+        session_id=st.session_state["areal_session_id"],
+        answer_id=answer_id,
+        question=q,
+        mode=mode,
+        language=lang,
+        model=AREAL_MODEL,
+        top_k=top_k,
+        n_active_docs=len(selected_doc_ids or []),
+        retrieved=[r.get("doc_id", "") for r in results],
+        answer=answer,
+        latency_s=time.perf_counter() - started,
+        cached=cached,
+        error=error,
+    )
+
+
+def _answer_header() -> None:
     st.divider()
     st.subheader(tr(lang, "Synthesis", "Syntese"))
-    st.markdown(synthesis_text)
+
+
+def _render_feedback(answer_id: str) -> None:
+    """Rating form under the answer. One submission per answer_id."""
+    rated = st.session_state.setdefault("areal_rated", set())
+    thanks = tr(lang, "Thank you for your feedback.", "Takk for tilbakemeldingen.")
+    if answer_id in rated:
+        st.success(thanks)
+        return
+    choices = ["ja", "delvis", "nei"]
+    choice_label = {
+        "ja": tr(lang, "Yes", "Ja"),
+        "delvis": tr(lang, "Partly", "Delvis"),
+        "nei": tr(lang, "No", "Nei"),
+    }
+    slot = st.empty()
+    with slot.container():
+        with st.form(f"areal_feedback_{answer_id}"):
+            st.markdown(f"**{tr(lang, 'Your feedback on this answer', 'Din tilbakemelding på dette svaret')}**")
+            thumbs = st.feedback("thumbs", key=f"areal_thumbs_{answer_id}")
+            answered = st.radio(
+                tr(lang, "Did it answer the question?", "Svarte det på spørsmålet?"),
+                options=choices,
+                format_func=choice_label.get,
+                index=None,
+                horizontal=True,
+                key=f"areal_answered_{answer_id}",
+            )
+            fair = st.radio(
+                tr(
+                    lang,
+                    "Did the answer show the disagreement fairly?",
+                    "Viste svaret uenigheten på en rettferdig måte?",
+                ),
+                options=choices,
+                format_func=choice_label.get,
+                index=None,
+                horizontal=True,
+                key=f"areal_fair_{answer_id}",
+            )
+            comment = st.text_area(
+                tr(lang, "Is anything wrong or missing? (optional)", "Er noe feil eller mangler? (valgfritt)"),
+                key=f"areal_comment_{answer_id}",
+            )
+            sent = st.form_submit_button(tr(lang, "Send feedback", "Send tilbakemelding"))
+    if sent:
+        feedback.log_rating(
+            session_id=st.session_state["areal_session_id"],
+            answer_id=answer_id,
+            thumbs={1: "up", 0: "down"}.get(thumbs, ""),
+            answered_question=answered or "",
+            fair_disagreement=fair or "",
+            comment=comment.strip(),
+        )
+        rated.add(answer_id)
+        slot.empty()
+        st.success(thanks)
+
+
+def _render_sources(results: list[dict]) -> None:
     st.divider()
     st.subheader(tr(lang, f"Retrieved sources ({len(results)})", f"Hentede kilder ({len(results)})"))
     for r in results:
@@ -1270,6 +1341,159 @@ if run and query.strip():
             if qs:
                 st.caption(" · ".join(str(q) for q in qs))
             st.caption(f"doc_id: `{r.get('doc_id', '')}`")
+
+
+def _render_last(last: dict) -> None:
+    """Render a stored answer: synthesis, feedback form, sources."""
+    _answer_header()
+    st.markdown(last["answer"])
+    _render_feedback(last["answer_id"])
+    _render_sources(last["results"])
+
+
+def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
+    """Stream the synthesis into `holder`. Returns the full text (stripped)."""
+    status = st.empty()
+    status.caption(tr(lang, "Writing synthesis...", "Skriver syntese..."))
+
+    def deltas():
+        pieces = synthesise_stream(
+            client,
+            q,
+            results,
+            mode=mode,
+            answer_format=answer_format,
+            output_language=output_language,
+            model=AREAL_MODEL,
+            room="areal",
+        )
+        for piece in pieces:
+            status.empty()  # first token arrived
+            yield piece
+
+    try:
+        with holder.container():
+            _answer_header()
+            text = st.write_stream(deltas())
+    finally:
+        status.empty()
+    return str(text or "").strip()
+
+
+def _ask(q: str) -> None:
+    """One question: cache lookup, retrieval, streamed synthesis, logging.
+    On success the answer is stored in session state and shown."""
+    started = time.perf_counter()
+    answer_id = uuid.uuid4().hex
+    st.session_state.pop("areal_last", None)  # a new question replaces the old answer
+
+    if not corpus_ready:
+        st.error(tr(lang, "Corpus not ready.", "Korpuset er ikke klart."))
+        return
+    if not selected_doc_ids:
+        st.error(
+            tr(
+                lang,
+                "Select at least one document in the sidebar before querying.",
+                "Velg minst ett dokument i sidepanelet før du spør.",
+            )
+        )
+        return
+
+    key = feedback.answer_cache_key(q, mode, lang, top_k, selected_doc_ids, AREAL_MODEL)
+    last = {
+        "answer_id": answer_id,
+        "query": q,
+        "mode": mode,
+        "lang": lang,
+        "results": [],
+        "answer": "",
+        "latency_s": 0.0,
+        "cached": False,
+    }
+
+    hit = feedback.cache_get(key)
+    if hit is not None:
+        results, answer = hit
+        last.update(results=results, answer=answer, latency_s=time.perf_counter() - started, cached=True)
+        st.session_state["areal_last"] = last
+        _log_answer(answer_id, q, results, answer, started, cached=True)
+        _render_last(last)
+        return
+
+    if st.session_state.get("areal_n_asked", 0) >= MAX_UNCACHED_PER_SESSION:
+        st.info(
+            tr(
+                lang,
+                f"You have reached the limit of {MAX_UNCACHED_PER_SESSION} new questions in this session. "
+                "The example questions stay available. Thank you for testing.",
+                f"Du har nådd grensen på {MAX_UNCACHED_PER_SESSION} nye spørsmål i denne økten. "
+                "Eksempelspørsmålene er fortsatt tilgjengelige. Takk for at du tester.",
+            )
+        )
+        return
+
+    client = get_client()
+    if not client:
+        return
+
+    try:
+        with st.spinner(tr(lang, "Retrieving relevant documents...", "Henter relevante dokumenter...")):
+            results = retrieve(
+                client,
+                q,
+                top_k=top_k,
+                selected_doc_ids=selected_doc_ids,
+                data_file=AREAL_DATA_FILE,
+            )
+    except Exception as exc:
+        _warn_failure(exc)
+        _log_answer(answer_id, q, [], "", started, cached=False, error=type(exc).__name__)
+        return
+    if not results or is_out_of_scope(results):
+        st.warning(
+            tr(
+                lang,
+                "This question appears to fall outside this corpus. "
+                "Try a question about sea area, locality or coastal-zone planning, or pick a point in section C.",
+                "Spørsmålet ser ut til å ligge utenfor dette korpuset. "
+                "Prøv et spørsmål om sjøareal, lokalitet eller kystsoneplan, eller velg et punkt i seksjon C.",
+            )
+        )
+        _log_answer(answer_id, q, results, "", started, cached=False, error="out_of_scope")
+        return
+
+    st.session_state["areal_n_asked"] = st.session_state.get("areal_n_asked", 0) + 1
+    holder = st.empty()
+    try:
+        answer = _stream_answer(client, q, results, holder)
+    except Exception as exc:
+        holder.empty()
+        _warn_failure(exc)
+        _log_answer(answer_id, q, results, "", started, cached=False, error=type(exc).__name__)
+        return
+    if not answer:
+        holder.empty()
+        _warn_failure(None)
+        _log_answer(answer_id, q, results, "", started, cached=False, error="EmptyAnswer")
+        return
+
+    last.update(results=results, answer=answer, latency_s=time.perf_counter() - started)
+    st.session_state["areal_last"] = last
+    feedback.cache_put(key, (results, answer))
+    _log_answer(answer_id, q, results, answer, started, cached=False)
+    # The answer is already on screen from the stream; add what goes below it.
+    _render_feedback(answer_id)
+    _render_sources(results)
+
+
+# The finished answer lives in session state, so it survives reruns triggered by
+# other widgets. The run that produces it streams it (and renders nothing twice);
+# later reruns re-render it from session state.
+if run and query.strip():
+    _ask(query.strip())
+elif st.session_state.get("areal_last"):
+    _render_last(st.session_state["areal_last"])
 
 st.markdown(
     tr(

@@ -546,8 +546,10 @@ Instead:
 """
 
 
-def synthesise(
-    client: OpenAI,
+NO_RESULTS_MESSAGE = "No relevant documents found in the corpus for this query."
+
+
+def _build_request(
     query: str,
     results: list[dict],
     mode: str = "researcher",
@@ -555,16 +557,8 @@ def synthesise(
     output_language: str = "English",
     model: str = "gpt-4o",
     room: str = "villaks",
-) -> str:
-    """
-    Call GPT-4o with the retrieved evidence and return a synthesis.
-
-    mode: "researcher" | "non_researcher"
-    answer_format: "structured" | "freeform"
-    """
-    if not results:
-        return "No relevant documents found in the corpus for this query."
-
+) -> dict:
+    """Build the chat.completions kwargs (prompt, model, token limits) for one synthesis."""
     if answer_format not in ("structured", "freeform"):
         answer_format = "freeform"
 
@@ -611,6 +605,53 @@ def synthesise(
     }
     if token_key == "max_completion_tokens":
         kwargs["reasoning_effort"] = "none"
+    return kwargs
 
+
+def synthesise(
+    client: OpenAI,
+    query: str,
+    results: list[dict],
+    mode: str = "researcher",
+    answer_format: str = "freeform",
+    output_language: str = "English",
+    model: str = "gpt-4o",
+    room: str = "villaks",
+) -> str:
+    """
+    Call GPT-4o with the retrieved evidence and return a synthesis.
+
+    mode: "researcher" | "non_researcher"
+    answer_format: "structured" | "freeform"
+    """
+    if not results:
+        return NO_RESULTS_MESSAGE
+
+    kwargs = _build_request(query, results, mode, answer_format, output_language, model, room)
     response = client.chat.completions.create(**kwargs)
     return response.choices[0].message.content.strip()
+
+
+def synthesise_stream(
+    client: OpenAI,
+    query: str,
+    results: list[dict],
+    mode: str = "researcher",
+    answer_format: str = "freeform",
+    output_language: str = "English",
+    model: str = "gpt-4o",
+    room: str = "villaks",
+):
+    """Same request as synthesise(), but yield the answer as text deltas as they arrive."""
+    if not results:
+        yield NO_RESULTS_MESSAGE
+        return
+
+    kwargs = _build_request(query, results, mode, answer_format, output_language, model, room)
+    stream = client.chat.completions.create(**kwargs, stream=True)
+    for chunk in stream:
+        if not chunk.choices:
+            continue
+        delta = chunk.choices[0].delta.content
+        if delta:
+            yield delta
