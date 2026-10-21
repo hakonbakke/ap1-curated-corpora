@@ -9,6 +9,9 @@ Dimensions:
 
 from __future__ import annotations
 
+import re
+import unicodedata
+
 from openai import OpenAI
 
 OUTPUT_LANGUAGE_RULE = """\
@@ -167,6 +170,8 @@ Your job is an honest broker for non-experts: make disagreement understandable. 
 
 {evidence_block}
 
+Treat policy details mentioned in this prompt as framing only. State them as facts only when they are supported by the retrieved evidence; otherwise omit them.
+
 ## Question asked
 
 {query}
@@ -260,6 +265,43 @@ SUMMARY_MAX_CHARS_PER_DOC = 5000
 FREEFORM_SUMMARY_MAX_CHARS = 1200
 FREEFORM_FULL_BRIEF_TOP_N = 3
 
+_SYNTHESIS_STOPWORDS = {
+    "and", "are", "for", "from", "how", "the", "what", "when", "where", "which",
+    "with", "eller", "for", "fra", "har", "hva", "hvordan", "hvor", "med", "når",
+    "og", "om", "som", "til", "ved", "det", "den",
+}
+
+
+def _query_tokens(text: str) -> set[str]:
+    normalized = unicodedata.normalize("NFKC", text or "").casefold()
+    return {
+        token for token in re.findall(r"[^\W_]+", normalized, flags=re.UNICODE)
+        if len(token) > 1 and token not in _SYNTHESIS_STOPWORDS
+    }
+
+
+def _rank_evidence_items(items: list[str], query: str, limit: int) -> list[str]:
+    query_tokens = _query_tokens(query)
+    scored = []
+    for position, item in enumerate(items or []):
+        clean = str(item).strip()
+        if not clean:
+            continue
+        overlap = len(query_tokens.intersection(_query_tokens(clean)))
+        scored.append((overlap, -position, clean))
+    scored.sort(reverse=True)
+    return [item for _, _, item in scored[:limit]]
+
+
+def _relevant_summary_excerpt(text: str, query: str, max_chars: int) -> str:
+    """Select query-matched paragraphs instead of taking the start of the brief."""
+    paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text or "") if p.strip()]
+    ranked = _rank_evidence_items(paragraphs, query, 3)
+    if not ranked:
+        return ""
+    excerpt = "\n\n".join(ranked)
+    return truncate_summary_text(excerpt, max_chars)
+
 
 def truncate_summary_text(text: str, max_chars: int = SUMMARY_MAX_CHARS_PER_DOC) -> str:
     """Cap summary length for synthesis context; prefer cutting at paragraph boundary."""
@@ -273,22 +315,27 @@ def truncate_summary_text(text: str, max_chars: int = SUMMARY_MAX_CHARS_PER_DOC)
     return cut.rstrip() + "\n\n[… evidence brief truncated for context length …]"
 
 
-def build_evidence_block(results: list[dict], *, compact: bool = False) -> str:
+def build_evidence_block(results: list[dict], *, compact: bool = False, query: str = "") -> str:
     """Format retrieved documents into the context block for the synthesis prompt."""
     parts = []
     for i, r in enumerate(results, 1):
         authors_short = r["authors"].split(";")[0].split()[-1] if r["authors"] else "Unknown"
         citation = f"{authors_short} et al. {r['year']}" if ";" in r["authors"] else f"{r['authors']} {r['year']}"
 
-        claims = "\n".join(f"  - {c}" for c in r["key_claims"] if c and str(c).strip())
+        selected_claims = _rank_evidence_items(r.get("key_claims") or [], query, 4)
+        claims = "\n".join(f"  - {c}" for c in selected_claims)
         rag = r["rag_summary"].strip() if r["rag_summary"] else ""
         effect_scale = r.get("effect_scale") or ""
         doc_type = r.get("document_type") or ""
         controversy = r.get("controversy_role") or ""
 
+        source_type = r.get("source_type") or r.get("document_type") or "—"
+        study_design = ", ".join(r.get("study_design") or []) or "—"
+        geography = ", ".join(r.get("geography") or []) or "—"
         meta_line = (
             f"Evidence direction: {r['evidence_direction']} | Quality: {r['quality_signal']}"
-            f" | Effect scale: {effect_scale or '—'} | Type: {doc_type or '—'}"
+            f" | Effect scale: {effect_scale or '—'} | Type: {source_type} / {doc_type or '—'}"
+            f" | Study design: {study_design} | Geography: {geography}"
         )
         if controversy and str(controversy).strip() and controversy not in ("none", "not_applicable"):
             meta_line += f" | Role: {controversy}"
@@ -299,16 +346,27 @@ Retrieval summary: {rag if rag else "(see key claims)"}
 Key claims:
 {claims if claims else "  (see retrieval summary)"}"""
 
+        for label, key, limit in (
+            ("Methodological limitations", "methodological_limitations", 2),
+            ("Uncertainty", "claims_about_uncertainty", 2),
+            ("Policy/management claims", "claims_about_policy_or_management", 2),
+        ):
+            items = _rank_evidence_items(r.get(key) or [], query, limit)
+            if items:
+                block += f"\n{label}:\n" + "\n".join(f"  - {item}" for item in items)
+
+        verification = r.get("curator_review_status") or "unknown"
+        block += f"\nVerification status: {verification}"
+        if r.get("evidence_family") and r.get("evidence_family") != f"family:{r.get('doc_id')}":
+            block += f"\nEvidence family: {r['evidence_family']} (do not count family members as independent corroboration)"
+
         summary_raw = (r.get("summary_text") or "").strip()
         if summary_raw:
             if compact:
-                if i <= FREEFORM_FULL_BRIEF_TOP_N:
-                    cap = FREEFORM_SUMMARY_MAX_CHARS
-                    label = "Evidence excerpt"
-                else:
-                    cap = 400
-                    label = "Brief excerpt"
-                block += f"\n\n{label}:\n{truncate_summary_text(summary_raw, cap)}"
+                cap = FREEFORM_SUMMARY_MAX_CHARS if i <= FREEFORM_FULL_BRIEF_TOP_N else 500
+                excerpt = _relevant_summary_excerpt(summary_raw, query, cap)
+                if excerpt:
+                    block += f"\n\nQuery-relevant evidence excerpt:\n{excerpt}"
             else:
                 block += f"\n\nEvidence brief (curated from full paper):\n{truncate_summary_text(summary_raw)}"
 
@@ -368,44 +426,20 @@ AREA_ROOM_FRAME = """\
 **Room:** Area and aquaculture (Areal og havbruk).
 The object is aquaculture's claim on coastal sea. Other uses and living
 nature enter only when they block, compete with, or force a trade-off of
-that claim. This room maps disputed diagnoses of what limits growth and
-coexistence for farms. It is not a causal chain.
+that claim. Answer the specific question asked and use only factual claims
+present in the retrieved evidence below.
 
-Answer the question that was asked. If it is about plans, permits, the
-case file, money, density, or whose use must yield, lead with that
-open question. The four scarcity answers are for scarcity questions. Do
-not use them as a default template for every query.
+Treat plans, permits, the case file, economics, density, competing uses and
+scarcity as distinct questions. Compare diagnoses only when the retrieved
+sources actually offer competing explanations. Do not manufacture opposing
+camps, turn complementary findings into disagreement, or collapse real
+disagreement into consensus.
 
-Lead with where growth stops, then with where knowledge is missing. When the question is scarcity,
-keep four answers visible: lack of unused sea surface; production and
-locality permits together with the traffic-light rule on 13 production
-areas; municipal designation of usable sea; or biology (lice, disease,
-density, welfare). Physical pen area is treated as small in several core
-texts. Empty-looking fjord is a management myth in Jentoft and Buanes
-(2005), not the national limit in Hersoug, Mikkelsen and Osmundsen (2020).
-
-The traffic-light system belongs here as a lid on capacity growth in a
-production area (green, yellow or red). Lice can also be a ground for
-refusing a locality. Wild salmon belongs in the answer in those roles.
-Do not open as a debate about whether salmon farming threatens wild fish,
-and do not walk mortality-estimate camps, unless the question itself is
-that debate. The causal chain from lice on out-migrating smolt to
-mortality estimates sits in the salmon-lice / wild-salmon room.
-
-Also keep competing answers to whose use and values must give way, how
-knowledge is used or postponed in the file, whether density means more
-area is the wrong move, and whether money opens the municipal gate.
-Papers in this room often write past one another on the problem
-definition. Name those diagnoses. Do not force two scientific camps on
-one estimate. Do not collapse them into consensus.
-
-Gaps come second. If knowledge is postponed, unused, or unevenly applied
-in plans and locality files, say that after the disagreement is on the
-table. Do not invent a research agenda the papers did not state.
-Do not use Traffic Light Q9 confidence rules.
-Adjacent files (farm-to-farm disease models, national fish-health
-yearbooks, welfare law, IPBES values) are in the set. Say when a hit is
-adjacent, not a siting study.
+Distinguish empirical findings, models, legal analysis, policy claims and
+adjacent evidence. When two records belong to the same evidence family,
+they may add detail but do not count as independent corroboration. State
+material limitations and uncertainty that bear on the question. If the
+retrieved evidence is insufficient, narrow or only adjacent, say so.
 """
 
 
@@ -497,8 +531,8 @@ Write **flowing prose** — like a short feature article — that answers the qu
 Instead:
 - Start with a **plain answer to the question that was asked**. If the retrieved papers disagree, state the competing diagnoses in the first paragraph. Do **not** open with false consensus phrases like "there is agreement that…" / «det er enighet om…» when the retrieved evidence is contested.
 - Do **not** open with stock phrases such as "The debate about salmon farming and its impact on wild fish" / «Debatten om lakseoppdrett og påvirkningen på villfisk» when the question is about plans, licences, the case file, money, density, or what limits growth.
-- Build **2–4 paragraphs** by idea. When papers write past one another, give **one full paragraph to the competing diagnosis** (what they claim is scarce, what must yield, or where the case dies). Do not force a wild-fish impact camp if those papers are not in the retrieved set.
-- Name **both sides** with concrete examples. You may group similar papers, but **do not** fold a conflicting paper into "other research."
+- Build **2–4 paragraphs** by idea. If the retrieved papers write past one another, explain each material diagnosis (what they claim is scarce, what must yield, or where the case dies). Do not force a disagreement when the evidence is complementary.
+- Name each material diagnosis with concrete examples. You may group similar papers, but **do not** fold a conflicting paper into "other research."
 - Keep disagreement inside the narrative. Make the diagnoses impossible to miss (e.g. "One group of studies says the limit is licences and the traffic-light … Another group says the municipality will not designate usable sea …").
 - End with **High / Medium / Low** confidence, a simple reason, and **one concrete thing that would change the picture**.
 
@@ -536,7 +570,7 @@ def synthesise(
 
     n = len(results)
     compact = answer_format == "freeform"
-    evidence_body = build_evidence_block(results, compact=compact)
+    evidence_body = build_evidence_block(results, compact=compact, query=query)
     if room == "areal":
         guidance = AREA_ROOM_FRAME + "\n"
     else:
