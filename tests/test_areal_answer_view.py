@@ -88,6 +88,7 @@ class AnswerShapeTests(unittest.TestCase):
         full = "**Kort svar**\n- a\n\nIntro\n1. Søk\n2. Vent\n\n| a | b |\n|---|---|"
         self.assertEqual("kort_svar,steps,table", feedback.answer_shape(full))
         self.assertEqual("steps,table", feedback.answer_shape("1. a\n\n| a | b |"))
+        self.assertEqual("sections", feedback.answer_shape("Svar.\n\n### Hva bestemmer\nTekst.\n\n### Hvordan avveies\nTekst."))
 
     def test_numbered_short_block_is_not_steps(self) -> None:
         self.assertEqual("kort_svar", feedback.answer_shape("**Kort svar**\n1. a\n2. b\n\nProsa."))

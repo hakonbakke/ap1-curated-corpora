@@ -41,6 +41,7 @@ SHORT_ANSWER_LABELS = ("**Kort svar**", "**Short answer**")
 _BULLET_RE = re.compile(r"^\s*(?:[-*]|\d+[.)])\s+\S")
 _NUMBERED_RE = re.compile(r"^\s*\d+[.)]\s+\S")
 _TABLE_ROW_RE = re.compile(r"^\s*\|.*\|\s*$")
+_HEADING_RE = re.compile(r"^\s*#{1,4}\s+\S")
 
 
 def split_short_answer(text: str) -> tuple[str, str]:
@@ -68,16 +69,19 @@ def split_short_answer(text: str) -> tuple[str, str]:
 
 
 def answer_shape(text: str) -> str:
-    """Comma-joined features of an answer: kort_svar, steps, table. "plain" if none."""
+    """Comma-joined features of an answer: kort_svar, sections, steps, table. "plain" if none."""
     if not (text or "").strip():
         return ""
     short, rest = split_short_answer(text)
+    lines = rest.split("\n")
     features = []
     if short:
         features.append("kort_svar")
-    if any(_NUMBERED_RE.match(line) for line in rest.split("\n")):
+    if any(_HEADING_RE.match(line) for line in lines):
+        features.append("sections")
+    if any(_NUMBERED_RE.match(line) for line in lines):
         features.append("steps")
-    if any(_TABLE_ROW_RE.match(line) for line in rest.split("\n")):
+    if any(_TABLE_ROW_RE.match(line) for line in lines):
         features.append("table")
     return ",".join(features) or "plain"
 

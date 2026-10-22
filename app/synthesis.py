@@ -51,7 +51,7 @@ DEPTH_FREEFORM_NON_RESEARCHER = """\
 
 AREA_DEPTH_FREEFORM_RESEARCHER = """\
 **Depth:** Write a **synthesised argument**, not a catalogue of papers.
-- Length follows the question type in the shape table below (researcher column). A fact question gets a short, precise answer, not an essay.
+- Length follows the question, as described in the shape guidance below (researcher figures). A fact question gets a short, precise answer, not an essay.
 - **Do not give every retrieved document its own paragraph.** Select and combine: cite only studies that materially move the answer forward.
 - Include **numbers** where they sharpen the argument; skip repeating the same point from multiple papers.
 - Distinguish **empirical / model / legal analysis / policy** evidence explicitly."""
@@ -59,7 +59,7 @@ AREA_DEPTH_FREEFORM_RESEARCHER = """\
 
 AREA_DEPTH_FREEFORM_NON_RESEARCHER = """\
 **Depth:** Tell one clear explanation that keeps competing diagnoses visible — not a list of studies, and not a smoothed consensus.
-- Length follows the question type in the shape table below (non-specialist column). Readers may be on a phone; a simple question gets a short answer.
+- Length follows the question, as described in the shape guidance below. Readers may be on a phone; a simple question gets a short answer.
 - **Do not walk through every paper one by one.** Name the main diagnoses with 3–5 concrete examples. If two diagnoses conflict, keep both even if that makes the story messier.
 - Group ideas: what the question is actually about, where the texts disagree on the problem definition, and why the file does not close it.
 - Do not recast every answer as researcher camps on whether farming threatens wild fish."""
@@ -467,27 +467,29 @@ retrieved evidence is insufficient, narrow or only adjacent, say so.
 """
 
 
-# Shape and length follow the question, as in an ordinary chat answer, but the
-# disagreement and the gaps must survive in short answers too. Many readers are
-# on phones. The page splits on the short-answer label, so keep it exact.
+# Shape and length follow the question, as in an ordinary chat answer: no fixed
+# blocks, labels or closing rating. What must survive in every shape is the
+# disagreement and the gaps. Many readers are on phones.
 # Joined into both Areal prompts below, so it must not contain format braces.
 AREA_ANSWER_SHAPE = """\
-### Choose the shape and length from the question (mandatory)
-First decide silently which type the question is. Never name the type in the answer. When in doubt between two types, choose the shorter one.
+### Let the question decide the shape (mandatory)
+Write the answer the way a knowledgeable person would answer *this* question, not to a template. Two answers to different questions should not look alike.
 
-| Type | Typical question | Shape | Words, non-specialist / researcher |
-|---|---|---|---|
-| 1. Fact or definition | Who decides X? What is a locality? What does a term mean? | Answer directly in 1–3 sentences, then at most one short paragraph of context: two paragraphs in total, never more. No label, no bullets, no confidence label. | 50–150 / 80–200 |
-| 2. Process | How does an application proceed? In what order? | Short-answer block, then numbered steps (one line each, naming who is responsible), then one short paragraph on where it most often stops, if the sources say so. | 150–300 / 250–400 |
-| 3. Comparison | What is the difference between X and Y? | Short-answer block or a direct answer of 1–3 sentences, then a small table (2–5 rows), then one short paragraph. | 150–300 / 250–400 |
-| 4. Explanation | Why does X happen? What explains Y? | Short-answer block, then 2–3 paragraphs. | 250–450 / 400–600 |
-| 5. Broad or contested | What determines, limits or weighs X? Several sub-questions, or sources with competing diagnoses. | Short-answer block, then the longer text described below. | 400–600 / 700–900 |
+**Open with the answer.** The first 2–4 sentences answer the question directly, in plain words, with no label or heading above them. If the sources disagree on the core of the question, the opening says so.
 
-The word counts exclude the short-answer block. Stay inside the range for the type you chose.
+**Then follow the question's own structure:**
+- **Several parts** (e.g. "What determines X, and how is Y weighed?"): answer each part in turn, each under a short heading (### …) that names that part in a few plain words. Do not add parts the question did not ask.
+- **A fact or definition:** stop after one or two short paragraphs.
+- **A process or sequence:** numbered steps, one line each, naming who is responsible; then where it most often stops or slows, if the sources say so.
+- **A comparison:** a small table (2–5 rows) where it helps, then a short paragraph.
+- **A why-question or a contested question:** a few paragraphs organised by explanation or diagnosis, with the competing ones side by side.
+When in doubt, choose the shorter, simpler shape.
 
-**Short-answer block (types 2–5):** a line with only the bold label **Kort svar** when writing Norwegian, or **Short answer** when writing English. Then bullets, each one plain sentence of at most 25 words. Types 4–5: exactly three bullets: (1) the direct answer; (2) where the sources disagree or offer competing diagnoses, or, if they do not, the most important condition or limit; (3) what remains uncertain or missing. Types 2–3: one or two bullets: the direct answer, plus the disagreement or main uncertainty if it matters for the question. No citations in the bullets, and nothing in them that the text below does not support with citations. Then a blank line and the rest of the answer, which develops the bullets rather than repeating them.
+**Length** (excluding headings): a fact 50–150 words (researcher up to 200); a process or comparison 150–300 (researcher up to 400); a why-question 250–450 (researcher up to 600); a broad or several-part question 400–600 (researcher 700–900).
 
-**Always, whatever the type:** cite sources in the text; if the retrieved sources disagree, or the evidence has a gap that bears on the question, say so (in a fact answer, one sentence is enough). Never invent a disagreement to fill a slot.
+**Always, whatever the shape:** cite sources in the text; where the retrieved sources disagree, say so; where the evidence leaves the question open, say what is missing and, if it helps, what would settle it. Weave this into the text where it belongs, not as a fixed closing section. Never invent a disagreement to fill a slot.
+
+**Never** give a confidence rating or label (no High / Medium / Low, no «Sikkerhet:», «Konfidens:» or similar). No fixed opening label such as «Kort svar» and no fixed number of bullet points.
 """
 
 
@@ -512,8 +514,8 @@ Your role follows the Honest Broker principle: present the range of evidence and
 ## How to write the answer
 
 """ + AREA_ANSWER_SHAPE + """
-### Longer answers (types 4–5)
-Below the short answer, write **one coherent essay** that answers the question. The reader should feel you **thought across the evidence**, not that you **reported each file in turn**. For types 1–3, follow the shape in the table and skip the essay pattern below; add one sentence on confidence only if the sources are thin or conflicting.
+### Longer answers
+For why-questions, contested and several-part questions, the text should read as **one argument** across the evidence. The reader should feel you **thought across the evidence**, not that you **reported each file in turn**. For short shapes (a fact, a process, a comparison), follow the shape above and skip the pattern below.
 
 ### Anti-pattern (do NOT do this)
 - One paragraph per author in retrieval order
@@ -522,9 +524,9 @@ Below the short answer, write **one coherent essay** that answers the question. 
 - Opening as a wild-fish impact controversy when the question is about plans, licences, the case file, money, density, or what limits growth
 
 ### Good pattern
-- **Paragraph 1:** Direct answer to the query in 2–4 sentences (what is supported, what is contested). If wild salmon or the traffic-light limits capacity or a locality, say that as a growth lid, not as the mortality-chain debate.
-- **Middle paragraphs:** Develop the argument by **theme or diagnosis** (licences, municipal designation, biology, competing use, knowledge in the file). Within each paragraph, **combine** studies that support the same point; **contrast** studies that tension each other.
-- **Final paragraph:** Confidence (**High / Medium / Low**) and what would change your assessment — woven into prose, not a labelled box.
+- **Opening:** Direct answer to the query in 2–4 sentences (what is supported, what is contested). If wild salmon or the traffic-light limits capacity or a locality, say that as a growth lid, not as the mortality-chain debate.
+- **Body:** Develop the argument by **the question's parts**, or by **theme or diagnosis** (licences, municipal designation, biology, competing use, knowledge in the file). Within each part, **combine** studies that support the same point; **contrast** studies that tension each other.
+- **No fixed ending.** Stop when the question is answered. If the evidence leaves something open, say so where it matters.
 
 Use **parenthetical citations** inside sentences, in both Norwegian and English: (Robertsen et al., 2014) for three or more authors, (Sand og Misund, 2025) or (Sand and Misund, 2025) for two, (Myklebust, 2018) for one. Never write "og kolleger" or "and colleagues". Name only studies that appear in the retrieved evidence.
 
@@ -532,13 +534,13 @@ Use **parenthetical citations** inside sentences, in both Norwegian and English:
 
 **Evidence levels:** When citing models, say they are model outputs and note assumptions. When citing legal or policy texts, do not treat them as field measurements.
 
-Headings are optional — use at most 2–3, only when the topic genuinely shifts.
+Use headings only for the parts of a several-part question, or when the topic genuinely shifts.
 
 ## Rules
 - Use ONLY the retrieved evidence; do not invent studies or findings.
 - Preserve genuine disagreement — do not paper over it.
 - Distinguish empirical findings, model outputs, and normative/policy claims.
-- Apart from the short-answer bullets, the steps of a process answer and the table of a comparison answer, no bullet lists unless comparing 3+ numeric results in one glance.
+- Apart from the steps of a process answer and the table of a comparison answer, no bullet lists unless comparing 3+ numeric results in one glance.
 """
 
 
@@ -575,8 +577,8 @@ actually asked that.
 ## How to write the answer
 
 """ + AREA_ANSWER_SHAPE + """
-### Longer answers (types 4–5)
-Below the short answer, write **flowing prose** — like a short feature article — that answers the question in plain language. For types 1–3, follow the shape in the table instead and keep it short; the points below still apply where they fit.
+### Longer answers
+For why-questions, contested and several-part questions, write **flowing prose** — like a short feature article — in plain language, under short headings when the question has several parts. For short shapes (a fact, a process, a comparison), follow the shape above and keep it short; the points below still apply where they fit.
 
 **Do NOT** go through each study in order ("First, Smith and colleagues … Then, Jones and colleagues …"). That reads like a list, not an explanation.
 
@@ -586,12 +588,12 @@ Instead:
 - Build **2–4 paragraphs** by idea. If the retrieved papers write past one another, explain each material diagnosis (what they claim is scarce, what must yield, or where the case dies). Do not force a disagreement when the evidence is complementary.
 - Name each material diagnosis with concrete examples. You may group similar papers, but **do not** fold a conflicting paper into "other research."
 - Keep disagreement inside the narrative. Make the diagnoses impossible to miss (e.g. "One group of studies says the limit is licences and the traffic-light … Another group says the municipality will not designate usable sea …").
-- End with **High / Medium / Low** confidence, a simple reason, and **one concrete thing that would change the picture**.
+- Where the sources leave the question open, say so in plain words, and if it helps, name **one concrete thing that would change the picture**. No confidence rating.
 
 ## Rules
 - Use ONLY the retrieved evidence; do not make up studies.
 - Preserve real disagreement — do not paper it over or invent a compromise.
-- Name retrieved studies in the text (outside the short answer) so readers can check the sources: at least three for types 4–5, at least one for types 1–3.
+- Name retrieved studies in the text so readers can check the sources: at least three in longer answers, at least one in short ones.
 - When naming a study in Norwegian, write «Robertsen mfl. (2014)» for three or more authors, «Sand og Misund (2025)» for two and «Myklebust (2018)» for one. Never write «og kolleger». In English, write "Robertsen and colleagues (2014)", "Sand and Misund (2025)", "Myklebust (2018)".
 - Say when a result is from a plan study, a legal review, a computer model, or field data; do not treat them as the same kind of proof.
 - No unexplained jargon — spell out terms on first use.
