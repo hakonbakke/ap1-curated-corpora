@@ -54,9 +54,14 @@ class ArealUiTests(unittest.TestCase):
         self.assertIn("Språk / Language", main_radios)
         self.assertEqual("no", main_radios["Språk / Language"].value)
         self.assertEqual("researcher", main_radios["Velg bakgrunn"].value)
-        # The expert controls moved into a collapsed expander in the sidebar.
-        self.assertIn("Avanserte innstillinger", [e.label for e in at.sidebar.expander])
-        self.assertEqual(10, at.sidebar.slider[0].value)
+        # The expert controls live in a collapsed expander in section C, not in the sidebar.
+        self.assertEqual([], list(at.sidebar.expander))
+        self.assertEqual([], list(at.sidebar.slider))
+        self.assertEqual([], list(at.sidebar.multiselect))
+        docs = [e for e in at.main.expander if e.label.startswith("Dokumenter i korpuset")]
+        self.assertEqual(1, len(docs))
+        self.assertFalse(docs[0].proto.expanded)
+        self.assertEqual(10, at.slider[0].value)
 
     def test_loads_in_both_languages_and_both_modes(self) -> None:
         at = self.app().run()
@@ -64,7 +69,8 @@ class ArealUiTests(unittest.TestCase):
         at.main.radio[0].set_value("en").run()
         self.assertFalse(at.exception, at.exception)
         self.assertIn("Choose your background", self._labels(at.main.radio))
-        self.assertIn("Advanced settings", [e.label for e in at.sidebar.expander])
+        self.assertEqual([], list(at.sidebar.expander))
+        self.assertTrue([e for e in at.main.expander if e.label.startswith("Documents in the corpus (")])
         for r in at.main.radio:
             if r.label == "Choose your background":
                 r.set_value("non_researcher")
@@ -87,7 +93,7 @@ class SourceLabelTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         src = Path(PAGE).read_text(encoding="utf-8")
         start = src.index("def _surname")
-        end = src.index("def _chip_labels")
+        end = src.index("# ── Open questions (C)")
         ns = {"tr": lambda lang, en, no: no if lang == "no" else en}
         exec(src[start:end], ns)
         cls.label = staticmethod(ns["_source_label"])

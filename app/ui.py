@@ -168,20 +168,6 @@ h1{ line-height:1.14; }
 .hl-paper-name{ font-family:inherit; font-size:.8rem; font-weight:500; }
 .hl-caveat{ font-size:.86rem; color:var(--hl-muted); font-style:italic; margin:10px 0 0; }
 
-/* Åpne spørsmål (Areal): temaoverskrift over chipsene, og spørsmålsboksen over svaret */
-.hl-group-title{ font-size:.95rem; font-weight:700; color:var(--hl-ink); margin:8px 0 0; }
-.hl-card-title{ font-size:1rem; font-weight:700; line-height:1.3; color:var(--hl-ink); }
-/* Spørsmålsboksen: luft over, og teksten settes liten */
-[data-testid="stVerticalBlockBorderWrapper"]:has(> div .hl-card-title){ margin-top:.6rem; }
-[data-testid="stVerticalBlockBorderWrapper"]:has(> div .hl-card-title) [data-testid="stVerticalBlock"]{ gap:.6rem; }
-[data-testid="stVerticalBlockBorderWrapper"]:has(> div .hl-card-title) [data-testid="stMarkdownContainer"] :is(p, li){
-  font-size:.88rem; line-height:1.4;
-}
-[data-testid="stVerticalBlockBorderWrapper"]:has(> div .hl-card-title) [data-testid="stMarkdownContainer"] ul{
-  margin:0; padding-left:1.1rem; padding-bottom:.3rem;
-}
-[data-testid="stVerticalBlockBorderWrapper"]:has(> div .hl-card-title) [data-testid="stMarkdownContainer"] li{ padding-bottom:.25rem; }
-
 /* Footer */
 .hl-footer{
   margin-top:34px; padding-top:16px; border-top:1px solid var(--hl-line);

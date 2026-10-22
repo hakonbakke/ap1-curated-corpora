@@ -11,7 +11,6 @@ import os
 import sys
 import time
 import uuid
-from html import escape
 from pathlib import Path
 
 import openai
@@ -27,7 +26,6 @@ load_dotenv(REPO / ".env", override=True)
 from retrieval import (
     AREAL_DATA_FILE,
     load_corpus,
-    reload_corpus,
     retrieve,
     is_out_of_scope,
 )
@@ -110,16 +108,6 @@ def _source_label(lang: str, authors, year, title) -> str:
     else:
         who = f"{names[0]} {tr(lang, 'et al.', 'mfl.')}"
     return f"{who} {yr}".strip()
-
-
-def _chip_labels(lang: str, frame) -> dict[str, str]:
-    """doc_id -> readable label for the sources on the question cards in C."""
-    if frame is None:
-        return {}
-    return {
-        str(r["doc_id"]): _source_label(lang, r.get("authors"), r.get("year"), r.get("title"))
-        for _, r in frame.iterrows()
-    }
 
 
 # ── Open questions (C) ───────────────────────────────────────────────────────────
@@ -514,96 +502,6 @@ with st.sidebar:
             )
         )
 
-    # Expert controls stay out of the way; defaults are all documents and k = 10.
-    with st.expander(tr(lang, "Advanced settings", "Avanserte innstillinger")):
-        if corpus_ready:
-            st.subheader(tr(lang, "Documents in corpus", "Dokumenter i korpuset"))
-            st.caption(tr(lang, f"{n_total} documents in database", f"{n_total} dokumenter i databasen"))
-            if st.button(
-                tr(lang, "Reload corpus from disk", "Last inn korpus på nytt"),
-                help=tr(
-                    lang,
-                    "Use after ingest if the document count looks wrong.",
-                    "Bruk etter ingest hvis antall dokumenter ser feil ut.",
-                ),
-                width="stretch",
-            ):
-                df = reload_corpus(AREAL_DATA_FILE)
-                st.rerun()
-            # Use stable document IDs as widget values. Display labels are not
-            # unique (the two retained Kvalvik records describe the same paper),
-            # so using labels as keys silently dropped one record.
-            option_rows = []
-            for _, row in df.sort_values(["year", "doc_id"]).iterrows():
-                first_author = _last_name(row.get("authors", ""))
-                title = str(row.get("title") or row["doc_id"])
-                label = f"{first_author} {row['year']} · {title[:55]}"
-                option_rows.append((str(row["doc_id"]), label))
-            label_counts = {}
-            for _, label in option_rows:
-                label_counts[label] = label_counts.get(label, 0) + 1
-            doc_options = {
-                doc_id: (f"{label} · {doc_id}" if label_counts[label] > 1 else label)
-                for doc_id, label in option_rows
-            }
-            all_doc_ids = list(doc_options)
-            if "areal_selected" not in st.session_state:
-                st.session_state["areal_selected"] = all_doc_ids
-            else:
-                # Migrate a pre-fix session that stored display labels. If no
-                # stable IDs survive, restore the safe all-documents default.
-                stored_ids = st.session_state.get("areal_selected") or []
-                valid_ids = [doc_id for doc_id in stored_ids if doc_id in doc_options]
-                if stored_ids and not valid_ids:
-                    st.session_state["areal_selected"] = all_doc_ids
-            col_sel, col_clr = st.columns(2)
-            if col_sel.button(tr(lang, "Select all", "Velg alle"), width="stretch"):
-                st.session_state["areal_selected"] = all_doc_ids
-            if col_clr.button(tr(lang, "Clear all", "Tøm"), width="stretch"):
-                st.session_state["areal_selected"] = []
-            selected_doc_ids = st.multiselect(
-                tr(lang, "Include these documents", "Inkluder disse dokumentene"),
-                options=all_doc_ids,
-                default=[
-                    doc_id
-                    for doc_id in st.session_state.get("areal_selected", all_doc_ids)
-                    if doc_id in doc_options
-                ],
-                format_func=lambda doc_id: doc_options[doc_id],
-                label_visibility="collapsed",
-            )
-            st.session_state["areal_selected"] = selected_doc_ids
-            if not selected_doc_ids:
-                st.warning(tr(lang, "Select at least one document.", "Velg minst ett dokument."))
-            else:
-                st.caption(
-                    tr(
-                        lang,
-                        f"{len(selected_doc_ids)} / {n_total} documents active",
-                        f"{len(selected_doc_ids)} / {n_total} aktive dokumenter",
-                    )
-                )
-        else:
-            selected_doc_ids = None
-
-        st.divider()
-        top_k = st.slider(
-            tr(lang, "Documents to retrieve", "Antall dokumenter å hente"),
-            3,
-            12,
-            10,
-            help=tr(
-                lang,
-                "How many of the most relevant documents the answer is based on. "
-                "The search ranks documents by how similar their content is to your "
-                "question. More documents give a broader answer, but it can take a "
-                "little longer.",
-                "Hvor mange av de mest relevante dokumentene svaret bygger på. "
-                "Søket rangerer dokumentene etter hvor lik innholdet er spørsmålet "
-                "ditt. Flere dokumenter gir et bredere svar, men kan ta litt lengre tid.",
-            ),
-        )
-    st.divider()
     st.caption(
         tr(
             lang,
@@ -1002,14 +900,15 @@ Tre utviklingstrekk endrer arealbildet, uten å løse det alene. De endrer førs
             render_regelverk(lang)
 
 # ── C: Spør kildene ───────────────────────────────────────────────────────────
-# Spør først: eget spørsmål, så åpne spørsmål som chips, så svaret rett under.
+# Rekkefølge: bakgrunn, dokumenter (lukket), eget spørsmål, åpent spørsmål som
+# nedtrekksliste (fyller bare tekstfeltet), knappen, så svaret rett under.
 
 section_header(
     tr(lang, "C · Ask the sources", "C · Spør kildene"),
     tr(lang, "Your own question, or an open one", "Ditt eget spørsmål, eller et åpent"),
 )
 
-# The audience comes first, so a chip click and the button both use the chosen mode.
+# The audience comes first, so the button uses the chosen mode.
 with st.container(border=True):
     mode = st.radio(
         tr(lang, "Choose your background", "Velg bakgrunn"),
@@ -1045,30 +944,126 @@ with st.container(border=True):
             )
         )
 
-CHIP_KEYS = [f"areal_chips_{i}" for i in range(len(GROUPS))]
-CARDS = {card["n"]: card for group in GROUPS for card in group["cards"]}
+# ── Documents in the corpus (collapsed). Defaults: all documents, k = 10. ─────
+# `selected_doc_ids` and `top_k` are defined here, before anything reads them.
+
+if corpus_ready:
+    # Use stable document IDs as widget values. Display labels are not
+    # unique (the two retained Kvalvik records describe the same paper),
+    # so using labels as keys silently dropped one record.
+    option_rows = []
+    for _, row in df.sort_values(["year", "doc_id"]).iterrows():
+        first_author = _last_name(row.get("authors", ""))
+        title = str(row.get("title") or row["doc_id"])
+        label = f"{first_author} {row['year']} · {title[:55]}"
+        option_rows.append((str(row["doc_id"]), label))
+    label_counts = {}
+    for _, label in option_rows:
+        label_counts[label] = label_counts.get(label, 0) + 1
+    doc_options = {
+        doc_id: (f"{label} · {doc_id}" if label_counts[label] > 1 else label)
+        for doc_id, label in option_rows
+    }
+    all_doc_ids = list(doc_options)
+    # `areal_selected` is the multiselect's own state, so the expander label below
+    # always shows the live count. Drop IDs that no longer exist (a pre-fix session
+    # stored display labels); if none survive, restore the all-documents default.
+    if "areal_selected" not in st.session_state:
+        st.session_state["areal_selected"] = all_doc_ids
+    else:
+        stored_ids = st.session_state.get("areal_selected") or []
+        valid_ids = [doc_id for doc_id in stored_ids if doc_id in doc_options]
+        if stored_ids and not valid_ids:
+            valid_ids = all_doc_ids
+        st.session_state["areal_selected"] = valid_ids
+    n_selected = len(st.session_state["areal_selected"])
+else:
+    all_doc_ids = []
+    doc_options = {}
+    n_selected = 0
 
 
-def _clear_chips() -> None:
-    """Callback: no chip stays marked once a question is asked another way."""
-    for key in CHIP_KEYS:
-        st.session_state[key] = None
+def _select_docs(doc_ids: list[str]) -> None:
+    """Button callback: runs before the rerun, so the widget and the label follow."""
+    st.session_state["areal_selected"] = list(doc_ids)
 
 
-def _pick_question(group_key: str, chip_lang: str) -> None:
-    """Chip callback (runs before the rerun): fill the text area, remember which card
-    it came from and flag the question so the ask flow below runs once in the answer
-    area. Deselecting a chip asks nothing."""
-    n = st.session_state.get(group_key)
-    if n is None:
+with st.expander(
+    tr(
+        lang,
+        f"Documents in the corpus ({n_selected} of {n_total} selected)",
+        f"Dokumenter i korpuset ({n_selected} av {n_total} valgt)",
+    ),
+    key="areal_docs_expander",
+):
+    if corpus_ready:
+        col_sel, col_clr = st.columns(2)
+        col_sel.button(
+            tr(lang, "Select all", "Velg alle"),
+            on_click=_select_docs,
+            args=(all_doc_ids,),
+            width="stretch",
+        )
+        col_clr.button(
+            tr(lang, "Clear all", "Tøm"),
+            on_click=_select_docs,
+            args=([],),
+            width="stretch",
+        )
+        selected_doc_ids = st.multiselect(
+            tr(lang, "Include these documents", "Inkluder disse dokumentene"),
+            options=all_doc_ids,
+            key="areal_selected",
+            format_func=lambda doc_id: doc_options[doc_id],
+            label_visibility="collapsed",
+        )
+        if not selected_doc_ids:
+            st.warning(tr(lang, "Select at least one document.", "Velg minst ett dokument."))
+    else:
+        selected_doc_ids = None
+    top_k = st.slider(
+        tr(lang, "Documents to retrieve", "Antall dokumenter å hente"),
+        3,
+        12,
+        10,
+        help=tr(
+            lang,
+            "How many of the most relevant documents the answer is based on. "
+            "The search ranks documents by how similar their content is to your "
+            "question. More documents give a broader answer, but it can take a "
+            "little longer.",
+            "Hvor mange av de mest relevante dokumentene svaret bygger på. "
+            "Søket rangerer dokumentene etter hvor lik innholdet er spørsmålet "
+            "ditt. Flere dokumenter gir et bredere svar, men kan ta litt lengre tid.",
+        ),
+    )
+
+# ── Open questions: a dropdown that only fills the text area ──────────────────
+
+OPEN_Q_CARDS = [card for group in GROUPS for card in group["cards"]]  # in group order
+OPEN_Q_THEME = {card["n"]: group for group in GROUPS for card in group["cards"]}
+
+
+def _open_q_key(key_lang: str) -> str:
+    """One selectbox state per language, so a language switch never mixes them."""
+    return f"areal_open_q_{key_lang}"
+
+
+def _fill_from_open_question(key_lang: str) -> None:
+    """Selectbox callback (runs before the rerun): put the full priority question in
+    the text area and drop the old answer. Asks nothing. The placeholder does nothing."""
+    n = st.session_state.get(_open_q_key(key_lang))
+    if not n:
         return
-    for key in CHIP_KEYS:
-        if key != group_key:
-            st.session_state[key] = None  # only one chip looks selected
-    q = FAULTS[chip_lang][n - 1][2]
-    st.session_state["areal_query"] = q
-    st.session_state["areal_ask_now"] = q
-    st.session_state["areal_ask_card"] = n
+    st.session_state["areal_query"] = FAULTS[key_lang][n - 1][2]
+    st.session_state.pop("areal_last", None)  # never leave an old answer under a new question
+
+
+def _open_q_label(n: int) -> str:
+    if not n:
+        return tr(lang, "Choose a question", "Velg et spørsmål")
+    card = next(c for c in OPEN_Q_CARDS if c["n"] == n)
+    return f"{OPEN_Q_THEME[n]['title_' + lang]} · {card['title_' + lang]}"
 
 
 # ── Your own question ─────────────────────────────────────────────────────────
@@ -1082,7 +1077,7 @@ with st.container(border=True):
             "e.g. What limits aquaculture growth on the Norwegian coast: available sites, licences, municipal planning, or biological and environmental considerations?",
             "f.eks. Hva begrenser vekst i havbruk på norskekysten: tilgjengelige lokaliteter, tillatelser, kommunal planlegging, eller biologiske og miljømessige hensyn?",
         ),
-        height=90,
+        height="content",
     )
     st.caption(
         tr(
@@ -1091,13 +1086,20 @@ with st.container(border=True):
             "Spørsmål, svar og vurderinger lagres anonymt for forskning på verktøyet. Ingen navn samles inn.",
         )
     )
+    st.selectbox(
+        tr(lang, "Or pick an open question", "Eller velg et åpent spørsmål"),
+        options=[0] + [card["n"] for card in OPEN_Q_CARDS],
+        format_func=_open_q_label,
+        key=_open_q_key(lang),
+        on_change=_fill_from_open_question,
+        args=(lang,),
+    )
     col1, col2 = st.columns([1, 4])
     with col1:
         run = st.button(
             tr(lang, "Ask the sources", "Spør kildene"),
             type="primary",
             width="stretch",
-            on_click=_clear_chips,
         )
     with col2:
         n_active = len(selected_doc_ids) if selected_doc_ids else 0
@@ -1108,56 +1110,6 @@ with st.container(border=True):
                 f"Svaret bygger på de {min(top_k, n_active)} mest relevante av {n_active} dokumenter.",
             )
         )
-
-# ── Open questions as chips ───────────────────────────────────────────────────
-
-st.markdown(f"**{tr(lang, 'Or pick an open question:', 'Eller velg et åpent spørsmål:')}**")
-for gi, group in enumerate(GROUPS):
-    st.markdown(
-        f'<div class="hl-group-title">{escape(group["title_" + lang])}</div>',
-        unsafe_allow_html=True,
-    )
-    titles = {card["n"]: card["title_" + lang] for card in group["cards"]}
-    st.pills(
-        group["title_" + lang],
-        options=list(titles),
-        format_func=titles.get,
-        selection_mode="single",
-        key=CHIP_KEYS[gi],
-        on_change=_pick_question,
-        args=(CHIP_KEYS[gi], lang),
-        label_visibility="collapsed",
-    )
-
-def _card_sources(docs: list[str], labels: dict[str, str]) -> str:
-    names = [labels[d] for d in docs if labels.get(d)]
-    return f" · :gray[*{', '.join(names)}*]" if names else ""
-
-
-def _render_question_box(card_n: int | None) -> None:
-    """The open question the answer belongs to: short title, the full question asked,
-    what the sources say, what is unresolved. Static text, so it shows at once, before
-    any API wait. Rendered in the language of the page right now."""
-    card = CARDS.get(card_n) if card_n else None
-    if card is None:
-        return
-    labels = _chip_labels(lang, df)
-    with st.container(border=True):
-        st.markdown(
-            f'<div class="hl-card-title">{escape(card["title_" + lang])}</div>',
-            unsafe_allow_html=True,
-        )
-        st.caption(
-            f"**{tr(lang, 'The question asked:', 'Spørsmålet som stilles:')}** "
-            f"{FAULTS[lang][card_n - 1][2]}"
-        )
-        st.caption(card["intro"][lang])
-        st.markdown(
-            "\n".join(f"- {p[lang]}{_card_sources(p['docs'], labels)}" for p in card["points"])
-        )
-        st.markdown(f"**{tr(lang, 'Unresolved:', 'Uavklart:')}** {card['open_' + lang]}")
-        with st.expander(tr(lang, "Read more", "Les mer")):
-            st.markdown(FAULTS[lang][card_n - 1][1])
 
 AREAL_MODEL = "gpt-6-luna"
 MAX_UNCACHED_PER_SESSION = 8
@@ -1346,11 +1298,9 @@ def _render_answer(text: str, answer_mode: str) -> None:
         st.markdown(rest)
 
 
-def _render_last(last: dict, with_question_box: bool = True) -> None:
-    """Render a stored answer: question box (for open questions), synthesis, feedback
-    form, sources. The box uses the language of the page now, not of the answer."""
-    if with_question_box:
-        _render_question_box(last.get("card_n"))
+def _render_last(last: dict) -> None:
+    """Render a stored answer: synthesis, feedback form, sources. Older session state
+    may still carry a `card_n` key from the removed question box; it is ignored."""
     _answer_header()
     _render_answer(last["answer"], last.get("mode", mode))
     _render_feedback(last["answer_id"])
@@ -1386,15 +1336,12 @@ def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
     return str(text or "").strip()
 
 
-def _ask(q: str, card_n: int | None = None) -> None:
+def _ask(q: str) -> None:
     """One question: cache lookup, retrieval, streamed synthesis, logging.
-    On success the answer is stored in session state and shown. `card_n` is the open
-    question (1-9) it came from, or None for an own question."""
+    On success the answer is stored in session state and shown."""
     started = time.perf_counter()
     answer_id = uuid.uuid4().hex
     st.session_state.pop("areal_last", None)  # a new question replaces the old answer
-    # Static text first, so there is something to read before any API wait.
-    _render_question_box(card_n)
 
     if not corpus_ready:
         st.error(tr(lang, "Corpus not ready.", "Korpuset er ikke klart."))
@@ -1403,8 +1350,8 @@ def _ask(q: str, card_n: int | None = None) -> None:
         st.error(
             tr(
                 lang,
-                "Select at least one document under Advanced settings in the sidebar before asking.",
-                "Velg minst ett dokument under Avanserte innstillinger i sidepanelet før du spør.",
+                "Select at least one document under Documents in the corpus before asking.",
+                "Velg minst ett dokument under Dokumenter i korpuset før du spør.",
             )
         )
         return
@@ -1413,7 +1360,6 @@ def _ask(q: str, card_n: int | None = None) -> None:
     last = {
         "answer_id": answer_id,
         "query": q,
-        "card_n": card_n,
         "mode": mode,
         "lang": lang,
         "results": [],
@@ -1428,7 +1374,7 @@ def _ask(q: str, card_n: int | None = None) -> None:
         last.update(results=results, answer=answer, latency_s=time.perf_counter() - started, cached=True)
         st.session_state["areal_last"] = last
         _log_answer(answer_id, q, results, answer, started, cached=True)
-        _render_last(last, with_question_box=False)  # already shown above
+        _render_last(last)
         return
 
     if st.session_state.get("areal_n_asked", 0) >= MAX_UNCACHED_PER_SESSION:
@@ -1507,11 +1453,7 @@ def _ask(q: str, card_n: int | None = None) -> None:
 # The finished answer lives in session state, so it survives reruns triggered by
 # other widgets. The run that produces it streams it (and renders nothing twice);
 # later reruns re-render it from session state.
-pending = st.session_state.pop("areal_ask_now", None)  # set by a chip
-pending_card = st.session_state.pop("areal_ask_card", None)
-if pending:
-    _ask(pending, pending_card)
-elif run and query.strip():
+if run and query.strip():
     _ask(query.strip())
 elif st.session_state.get("areal_last"):
     _render_last(st.session_state["areal_last"])

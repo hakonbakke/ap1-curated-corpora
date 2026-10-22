@@ -266,7 +266,7 @@ class ArealPageTests(unittest.TestCase):
         self.assertEqual(1, len(self.completions.calls))
         self.assertTrue(self.completions.calls[0]["stream"])
         last = at.session_state["areal_last"]
-        self.assertEqual(["answer_id", "query", "card_n", "mode", "lang", "results", "answer", "latency_s", "cached"], list(last))
+        self.assertEqual(["answer_id", "query", "mode", "lang", "results", "answer", "latency_s", "cached"], list(last))
         self.assertEqual("Svar fra kildene.", last["answer"])
         self.assertFalse(last["cached"])
 
