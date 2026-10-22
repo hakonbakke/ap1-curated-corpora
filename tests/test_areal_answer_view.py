@@ -397,13 +397,13 @@ class AnswerPresentationTests(_PageCase):
                 self.assertEqual(1, sum(m == HEADED for m in self.md(at.main)))
         self.assertEqual(1, self.api_calls)
 
-    def test_answer_heading_is_svar_and_answer(self) -> None:
+    def test_answer_heading_is_syntese_and_synthesis(self) -> None:
         at = self.app().run()
         self.ask(at)
-        self.assertEqual(["Svar"], [s.value for s in at.subheader if s.value in ("Svar", "Syntese")])
+        self.assertEqual(["Syntese"], [s.value for s in at.subheader if s.value in ("Svar", "Syntese")])
         en = self.english()
         self.ask(en)
-        self.assertEqual(["Answer"], [s.value for s in en.subheader if s.value in ("Answer", "Synthesis")])
+        self.assertEqual(["Synthesis"], [s.value for s in en.subheader if s.value in ("Answer", "Synthesis")])
 
     def test_css_sets_in_text_headings_to_body_size(self) -> None:
         import ui

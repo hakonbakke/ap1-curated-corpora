@@ -1149,7 +1149,7 @@ def _log_answer(answer_id: str, q: str, results: list[dict], answer: str, starte
 
 def _answer_header() -> None:
     st.divider()
-    st.subheader(tr(lang, "Answer", "Svar"))
+    st.subheader(tr(lang, "Synthesis", "Syntese"))
 
 
 def _render_feedback(answer_id: str) -> None:
@@ -1279,7 +1279,7 @@ def _render_last(last: dict) -> None:
 def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
     """Stream the synthesis into `holder`. Returns the full text (stripped)."""
     status = st.empty()
-    status.caption(tr(lang, "Writing the answer...", "Skriver svar..."))
+    status.caption(tr(lang, "Writing the synthesis...", "Skriver syntese..."))
 
     def deltas():
         pieces = synthesise_stream(
