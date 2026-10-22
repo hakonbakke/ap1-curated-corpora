@@ -30,7 +30,6 @@ from retrieval import (
     is_out_of_scope,
 )
 import feedback
-from areal_questions import GROUPS
 from regelverk import REGELVERK, render_regelverk
 from synthesis import synthesise_stream
 from ui import brand_header, inject_css, section_header
@@ -1040,10 +1039,6 @@ with st.expander(
 
 # ── Open questions: a dropdown that only fills the text area ──────────────────
 
-OPEN_Q_CARDS = [card for group in GROUPS for card in group["cards"]]  # in group order
-OPEN_Q_THEME = {card["n"]: group for group in GROUPS for card in group["cards"]}
-
-
 def _open_q_key(key_lang: str) -> str:
     """One selectbox state per language, so a language switch never mixes them."""
     return f"areal_open_q_{key_lang}"
@@ -1060,10 +1055,8 @@ def _fill_from_open_question(key_lang: str) -> None:
 
 
 def _open_q_label(n: int) -> str:
-    if not n:
-        return tr(lang, "Choose a question", "Velg et spørsmål")
-    card = next(c for c in OPEN_Q_CARDS if c["n"] == n)
-    return f"{OPEN_Q_THEME[n]['title_' + lang]} · {card['title_' + lang]}"
+    """The full priority question, verbatim, as the selectors settled it."""
+    return FAULTS[lang][n - 1][2]
 
 
 # ── Your own question ─────────────────────────────────────────────────────────
@@ -1086,14 +1079,19 @@ with st.container(border=True):
             "Spørsmål, svar og vurderinger lagres anonymt for forskning på verktøyet. Ingen navn samles inn.",
         )
     )
-    st.selectbox(
-        tr(lang, "Or pick an open question", "Eller velg et åpent spørsmål"),
-        options=[0] + [card["n"] for card in OPEN_Q_CARDS],
-        format_func=_open_q_label,
-        key=_open_q_key(lang),
-        on_change=_fill_from_open_question,
-        args=(lang,),
-    )
+    # A selectbox cuts the long questions off with «…», so the full texts sit in a
+    # closed panel as a wrapping radio list instead.
+    with st.expander(tr(lang, "Or pick an open question", "Eller velg et åpent spørsmål")):
+        st.radio(
+            tr(lang, "Open questions", "Åpne spørsmål"),
+            options=list(range(1, len(FAULTS[lang]) + 1)),  # A0-A8 in order
+            index=None,
+            format_func=_open_q_label,
+            key=_open_q_key(lang),
+            on_change=_fill_from_open_question,
+            args=(lang,),
+            label_visibility="collapsed",
+        )
     col1, col2 = st.columns([1, 4])
     with col1:
         run = st.button(

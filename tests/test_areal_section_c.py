@@ -4,8 +4,9 @@ dropdown and the «Spør kildene» button.
 Nothing here calls OpenAI or the webhook: dotenv loading, page_link, the OpenAI client,
 retrieval and the webhook sender are replaced (see _PageCase in test_areal_answer_view).
 
-The nine open questions are a plain `st.selectbox` (key `areal_open_q_<lang>`) with an empty
-placeholder first. Choosing one only fills the text area and clears the old answer.
+The nine open questions are a radio list (key `areal_open_q_<lang>`, nothing chosen at first)
+inside a closed expander, so the full texts wrap instead of being cut off. Choosing one only
+fills the text area and clears the old answer.
 """
 
 from __future__ import annotations
@@ -36,13 +37,11 @@ def _faults() -> dict:
 FAULTS = _faults()
 CARDS = {c["n"]: c for g in GROUPS for c in g["cards"]}
 CARD_ORDER = [c["n"] for g in GROUPS for c in g["cards"]]  # 1, 2, 8, 3, 5, 7, 4, 6, 9
-THEME_OF = {c["n"]: g for g in GROUPS for c in g["cards"]}
 ASK_BUTTON = {"no": "Spør kildene", "en": "Ask the sources"}
 OLD_BUTTON = {"no": "Syntetiser", "en": "Synthesise"}
 YOUR_Q = {"no": "Spørsmålet ditt", "en": "Your question"}
 RADIO = {"no": "Velg bakgrunn", "en": "Choose your background"}
 OPEN_Q = {"no": "Eller velg et åpent spørsmål", "en": "Or pick an open question"}
-PLACEHOLDER = {"no": "Velg et spørsmål", "en": "Choose a question"}
 DOCS_PREFIX = {"no": "Dokumenter i korpuset (", "en": "Documents in the corpus ("}
 DOCS_LABEL = {
     "no": "Dokumenter i korpuset ({n} av {m} valgt)",
@@ -89,11 +88,11 @@ class _SectionCase(_PageCase):
 
     @staticmethod
     def dropdown(at, lang):
-        return at.selectbox(key=f"areal_open_q_{lang}")
+        return at.radio(key=f"areal_open_q_{lang}")
 
     def choose(self, at, lang, n):
-        """Pick open question n (0 is the placeholder) in the dropdown."""
-        self.dropdown(at, lang).select(n)
+        """Pick open question n (1-9, i.e. A0-A8) in the list."""
+        self.dropdown(at, lang).set_value(n)
         at.run()
         self.assertFalse(at.exception, at.exception)
 
@@ -145,7 +144,7 @@ class SectionLayoutTests(_SectionCase):
             src.index("mode = st.radio("),
             src.index('key="areal_docs_expander"'),
             src.index("query = st.text_area("),
-            src.index("st.selectbox("),
+            src.index('with st.expander(tr(lang, "Or pick an open question"'),
             src.index("run = st.button("),
             src.index("if run and query.strip():"),
             src.index('"Redaksjonell orientering'),
@@ -183,24 +182,18 @@ class SectionLayoutTests(_SectionCase):
                 self.assertEqual(1, len(at.slider))
                 self.assertEqual(1, len(at.multiselect))
 
-    def test_dropdown_has_placeholder_and_nine_questions_in_group_order(self) -> None:
+    def test_dropdown_lists_the_full_priority_questions_in_order(self) -> None:
         for lang in ("no", "en"):
             with self.subTest(lang):
                 at = self.in_lang(lang)
+                # A closed panel, so the long questions wrap instead of being cut off.
+                panel = [e for e in at.expander if e.label == OPEN_Q[lang]]
+                self.assertEqual(1, len(panel))
                 dd = self.dropdown(at, lang)
-                self.assertEqual(OPEN_Q[lang], dd.label)
-                expected = [PLACEHOLDER[lang]] + [
-                    f"{THEME_OF[n]['title_' + lang]} · {CARDS[n]['title_' + lang]}" for n in CARD_ORDER
-                ]
-                self.assertEqual(expected, dd.options)
-                self.assertEqual(10, len(dd.options))
-                self.assertEqual(PLACEHOLDER[lang], dd.options[0])
-                self.assertEqual(PLACEHOLDER[lang], dd.proto.options[dd.proto.default])
-                self.assertEqual(0, dd.value)  # nothing chosen before a click
-                self.assertEqual(1, len(at.selectbox))
-                # Ordered by group, so each theme's three questions sit together.
-                themes = [o.split(" · ")[0] for o in dd.options[1:]]
-                self.assertEqual([g["title_" + lang] for g in GROUPS for _ in range(3)], themes)
+                # The full A0-A8 texts, verbatim and in order; not the short card titles.
+                self.assertEqual([f[2] for f in FAULTS[lang]], dd.options)
+                self.assertIsNone(dd.value)  # nothing chosen before a click
+                self.assertEqual(0, len(at.selectbox))
 
     def test_no_chips_and_no_question_box_remain(self) -> None:
         src = Path(PAGE).read_text(encoding="utf-8")
@@ -277,20 +270,18 @@ class OpenQuestionTests(_SectionCase):
         self.assertEqual(FAULTS["no"][4][2], at.text_area[0].value)
         self.assertEqual([], self.queries)
 
-    def test_the_placeholder_does_nothing(self) -> None:
+    def test_nothing_is_chosen_or_asked_until_a_click(self) -> None:
         at = self.in_lang("no")
-        self.choose(at, "no", 0)
+        self.assertIsNone(self.dropdown(at, "no").value)
         self.assertEqual("", at.text_area[0].value)
         self.assertEqual([], self.queries)
         self.assertNotIn("areal_last", at.session_state)
-        # After a real choice, going back to the placeholder keeps the text and the answer.
+        # An own question answered first stays until an open question is picked.
         at.text_area[0].set_value("Hva er en lokalitet?")
         self.ask(at, "Hva er en lokalitet?")
         self.assertIn("areal_last", at.session_state)
-        first = at.session_state["areal_last"]["answer_id"]
-        self.choose(at, "no", 0)
-        self.assertEqual("Hva er en lokalitet?", at.text_area[0].value)
-        self.assertEqual(first, at.session_state["areal_last"]["answer_id"])
+        at.run()
+        self.assertIn("areal_last", at.session_state)
         self.assertEqual(["Hva er en lokalitet?"], self.queries)
 
     def test_ask_button_then_asks_the_chosen_question_once(self) -> None:
@@ -345,24 +336,24 @@ class OpenQuestionTests(_SectionCase):
         self.assertEqual([], self.queries)
         self.assertNotIn("areal_last", at.session_state)
 
-    def test_language_switch_resets_the_dropdown_to_its_placeholder(self) -> None:
+    def test_language_switch_resets_the_open_question_list(self) -> None:
         at = self.in_lang("no")
         self.choose(at, "no", 3)
         self.set_radio(at, "Språk / Language", "en")
         at.run()
         self.assertFalse(at.exception, at.exception)
         self.assertEqual([], self.queries)  # switching language asks nothing
-        self.assertEqual(0, self.dropdown(at, "en").value)  # English list starts at its placeholder
+        self.assertIsNone(self.dropdown(at, "en").value)  # English list starts unchosen
         self.assertEqual(FAULTS["no"][2][2], at.text_area[0].value)  # the text stays
-        self.assertEqual(10, len(self.dropdown(at, "en").options))
+        self.assertEqual(9, len(self.dropdown(at, "en").options))
         self.choose(at, "en", 3)
         self.assertEqual(FAULTS["en"][2][2], at.text_area[0].value)
         # Back to Norwegian: Streamlit drops the state of a widget that was not drawn, so the
-        # list starts at its placeholder again. Nothing is asked, the text stays.
+        # list starts unchosen again. Nothing is asked, the text stays.
         self.set_radio(at, "Språk / Language", "no")
         at.run()
         self.assertFalse(at.exception, at.exception)
-        self.assertEqual(0, self.dropdown(at, "no").value)
+        self.assertIsNone(self.dropdown(at, "no").value)
         self.assertEqual(FAULTS["en"][2][2], at.text_area[0].value)
         self.assertEqual([], self.queries)
 
