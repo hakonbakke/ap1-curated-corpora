@@ -83,14 +83,14 @@ with active_cols[1]:
         st.markdown(
             """
 <div class="hl-feature-marker"></div>
-<span class="hl-status hl-status-on">Utkast</span>
+<span class="hl-status hl-status-on">Prototype</span>
 <h3 class="hl-room-title">Areal og havbruk</h3>
 <p class="hl-room-desc">
   Havbrukets krav på sjøareal. A skiller merdareal, lokalitetsareal og
   planareal. B viser det delte styringssystemet. C lar deg spørre kildene,
   med egne spørsmål eller de åpne spørsmålene i forvaltningen og forskningen.
 </p>
-<div class="hl-room-meta">50 dokumenter · utkast</div>
+<div class="hl-room-meta">50 dokumenter · prototype</div>
 """,
             unsafe_allow_html=True,
         )

@@ -47,7 +47,7 @@ DOCS_LABEL = {
     "no": "Dokumenter i korpuset ({n} av {m} valgt)",
     "en": "Documents in the corpus ({n} of {m} selected)",
 }
-SYNTHESIS = {"no": "Syntese", "en": "Synthesis"}
+SYNTHESIS = {"no": "Svar", "en": "Answer"}
 TAG = {"no": "Ditt eget spørsmål, eller et åpent", "en": "Your own question, or an open one"}
 DRAWS_ON = {"no": "Svaret bygger på de", "en": "The answer draws on the"}
 EDITORIAL = {"no": "Redaksjonell orientering", "en": "Editorial orientation"}
@@ -254,7 +254,7 @@ class OpenQuestionTests(_SectionCase):
         self.choose(at, "no", 4)
         self.assertNotIn("areal_last", at.session_state)
         self.assertEqual(0, sum(m == KORT for m in self.md(at.main)))
-        self.assertEqual([], [s for s in at.subheader if s.value == "Syntese"])
+        self.assertEqual([], [s for s in at.subheader if s.value == "Svar"])
         self.assertEqual(FAULTS["no"][3][2], at.text_area[0].value)
         self.assertEqual(["Hva er en lokalitet?"], self.queries)  # still only the first ask
         self.assertEqual(1, len(self.answer_rows()))

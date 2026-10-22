@@ -116,6 +116,16 @@ h1{ line-height:1.14; }
   border:1px solid var(--hl-line); border-radius:.6rem;
   padding:.65rem .8rem; margin:0; width:100%; background:var(--hl-surface);
 }
+/* Areal: headings the model writes inside an answer stay bold at body size */
+.st-key-areal_answer_text h1,
+.st-key-areal_answer_text h2,
+.st-key-areal_answer_text h3,
+.st-key-areal_answer_text h4{
+  font-size:1rem; font-weight:700; line-height:1.4;
+  letter-spacing:0; margin:1rem 0 .25rem; padding:0;
+}
+/* No anchor-link icon next to those headings */
+.st-key-areal_answer_text [data-testid="stHeaderActionElements"]{ display:none; }
 .hl-tag{
   display:inline-block; font-size:.7rem; font-weight:700;
   letter-spacing:.04em; text-transform:uppercase;

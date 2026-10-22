@@ -1,5 +1,5 @@
 """
-Evidensrom: Areal og havbruk (working draft).
+Evidensrom: Areal og havbruk (prototype).
 
 Bakgrunn (A og B) + åpne spørsmål som kort og Spør kildene (C) mot isolert
 parquet data/area-and-aquaculture.parquet.
@@ -38,7 +38,7 @@ st.set_page_config(
     page_title="Areal og havbruk · Evidensrom",
     page_icon="🗺️",
     layout="wide",
-    initial_sidebar_state="auto",
+    initial_sidebar_state="collapsed",
 )
 
 inject_css()
@@ -504,10 +504,10 @@ with st.sidebar:
     st.caption(
         tr(
             lang,
-            f"Corpus: area and aquaculture ({n_total or 50} documents, draft room)  \n"
+            f"Corpus: area and aquaculture ({n_total or 50} documents, prototype room)  \n"
             "Method: Honest Broker (Pielke 2007)  \n"
             "Funded by FHF / Havbruksløftet AP1",
-            f"Korpus: areal og havbruk ({n_total or 50} dokumenter, utkast-rom)  \n"
+            f"Korpus: areal og havbruk ({n_total or 50} dokumenter, prototype-rom)  \n"
             "Metode: Honest Broker (Pielke 2007)  \n"
             "Finansiert av FHF / Havbruksløftet AP1",
         )
@@ -547,7 +547,7 @@ with hero_right:
   <div class="hl-stat"><strong>{n_total or 39}</strong><span>documents in corpus</span></div>
   <div class="hl-stat"><strong>{span}</strong><span>time span</span></div>
   <div class="hl-stat"><strong>{len(FAULTS['en'])}</strong><span>open questions</span></div>
-  <div class="hl-stat"><strong>19.10</strong><span>last reviewed</span></div>
+  <div class="hl-stat"><strong>19.10.2026</strong><span>last reviewed</span></div>
 </div>
 """,
                 f"""
@@ -555,20 +555,12 @@ with hero_right:
   <div class="hl-stat"><strong>{n_total or 39}</strong><span>dokumenter i korpuset</span></div>
   <div class="hl-stat"><strong>{span}</strong><span>tidsrom</span></div>
   <div class="hl-stat"><strong>{len(FAULTS['no'])}</strong><span>åpne spørsmål</span></div>
-  <div class="hl-stat"><strong>19.10</strong><span>sist gjennomgått</span></div>
+  <div class="hl-stat"><strong>19.10.2026</strong><span>sist gjennomgått</span></div>
 </div>
 """,
             ),
             unsafe_allow_html=True,
         )
-
-st.caption(
-    tr(
-        lang,
-        "A and B sit in two closed boxes below; C collects the open questions and lets you ask the sources.",
-        "A og B ligger i hver sin lukkede boks under; C samler de åpne spørsmålene og lar deg spørre kildene.",
-    )
-)
 
 st.write("")
 
@@ -1110,6 +1102,7 @@ with st.container(border=True):
         )
 
 AREAL_MODEL = "gpt-6-luna"
+ANSWER_TEXT_KEY = "areal_answer_text"  # CSS hook in ui.py; created once per run
 MAX_UNCACHED_PER_SESSION = 8
 
 if "areal_session_id" not in st.session_state:
@@ -1156,7 +1149,7 @@ def _log_answer(answer_id: str, q: str, results: list[dict], answer: str, starte
 
 def _answer_header() -> None:
     st.divider()
-    st.subheader(tr(lang, "Synthesis", "Syntese"))
+    st.subheader(tr(lang, "Answer", "Svar"))
 
 
 def _render_feedback(answer_id: str) -> None:
@@ -1182,7 +1175,7 @@ def _render_feedback(answer_id: str) -> None:
     slot = st.empty()
     with slot.container():
         with st.form(f"areal_feedback_{answer_id}"):
-            st.markdown(f"**{tr(lang, 'Your feedback on this answer', 'Din tilbakemelding på dette svaret')}**")
+            st.markdown(f"**{tr(lang, 'Help us: how was this answer?', 'Hjelp oss: hvordan var svaret?')}**")
             thumbs = st.feedback("thumbs", key=f"areal_thumbs_{answer_id}")
             answered = st.radio(
                 tr(lang, "Did it answer the question?", "Svarte det på spørsmålet?"),
@@ -1224,7 +1217,7 @@ def _render_feedback(answer_id: str) -> None:
                 tr(lang, "Is anything wrong or missing? (optional)", "Er noe feil eller mangler? (valgfritt)"),
                 key=f"areal_comment_{answer_id}",
             )
-            sent = st.form_submit_button(tr(lang, "Send feedback", "Send tilbakemelding"))
+            sent = st.form_submit_button(tr(lang, "Send feedback", "Send tilbakemelding"), type="primary")
     if sent:
         feedback.log_rating(
             session_id=st.session_state["areal_session_id"],
@@ -1245,8 +1238,8 @@ def _render_sources(results: list[dict]) -> None:
     st.divider()
     st.subheader(tr(lang, f"Retrieved sources ({len(results)})", f"Hentede kilder ({len(results)})"))
     for r in results:
-        cite = f"{_last_name(r.get('authors', ''))} {r.get('year', '')}".strip()
         title = r.get("title") or r.get("doc_id")
+        cite = _source_label(lang, r.get("authors", ""), r.get("year", ""), title)
         with st.expander(f"**{cite}** · {title[:90]}"):
             st.markdown(f"**{title}**")
             doi_url = r.get("url") or (f"https://doi.org/{r['doi']}" if r.get("doi") else "")
@@ -1268,8 +1261,10 @@ def _render_sources(results: list[dict]) -> None:
 
 
 def _render_answer(text: str, answer_mode: str) -> None:
-    """The whole answer, open, in every mode. Nothing is folded away."""
-    st.markdown(text)
+    """The whole answer, open, in every mode. Nothing is folded away. The keyed
+    container lets the CSS in ui.py set in-text headings at body size."""
+    with st.container(key=ANSWER_TEXT_KEY):
+        st.markdown(text)
 
 
 def _render_last(last: dict) -> None:
@@ -1284,7 +1279,7 @@ def _render_last(last: dict) -> None:
 def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
     """Stream the synthesis into `holder`. Returns the full text (stripped)."""
     status = st.empty()
-    status.caption(tr(lang, "Writing synthesis...", "Skriver syntese..."))
+    status.caption(tr(lang, "Writing the answer...", "Skriver svar..."))
 
     def deltas():
         pieces = synthesise_stream(
@@ -1304,7 +1299,8 @@ def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
     try:
         with holder.container():
             _answer_header()
-            text = st.write_stream(deltas())
+            with st.container(key=ANSWER_TEXT_KEY):
+                text = st.write_stream(deltas())
     finally:
         status.empty()
     return str(text or "").strip()
@@ -1436,9 +1432,9 @@ st.caption(
 st.markdown(
     tr(
         lang,
-        '<div class="hl-footer">Havbruksløftets Evidensrom. Draft room on area and aquaculture. '
+        '<div class="hl-footer">Havbruksløftets Evidensrom. Prototype room on area and aquaculture. '
         "Honest Broker: we show the open questions, competing diagnoses, and where the file is empty.</div>",
-        '<div class="hl-footer">Havbruksløftets Evidensrom. Utkast-rom om areal og havbruk. '
+        '<div class="hl-footer">Havbruksløftets Evidensrom. Prototype-rom om areal og havbruk. '
         "Honest Broker: vi viser de åpne spørsmålene, konkurrerende diagnoser, og der saksfilen er tom.</div>",
     ),
     unsafe_allow_html=True,

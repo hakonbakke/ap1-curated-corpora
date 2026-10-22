@@ -1,10 +1,14 @@
 """
-Answer logging, ratings and the shared answer cache for the Areal og havbruk room.
+Answer logging, ratings and the per-session answer cache for the Areal og havbruk room.
 
 Answers and ratings are POSTed as JSON to a Google Apps Script web app whose
 URL is the secret FEEDBACK_WEBHOOK_URL. Without the secret, logging is skipped
 silently so local development works. Sending runs in a daemon thread with a
 short timeout and swallows every error, so it can never slow down or break the UI.
+
+The answer cache lives in the visitor's own `st.session_state` and is never shared:
+a participant who repeats a question gets the same answer at once, while every other
+participant gets a freshly generated answer.
 """
 
 from __future__ import annotations
@@ -191,7 +195,9 @@ def log_rating(**fields) -> None:
         pass
 
 
-# ── Shared answer cache ───────────────────────────────────────────────────────
+# ── Per-session answer cache ──────────────────────────────────────────────────
+
+ANSWER_CACHE_STATE_KEY = "areal_answer_cache"
 
 
 def answer_cache_key(
@@ -205,20 +211,26 @@ def answer_cache_key(
     return (query.strip(), mode, lang, top_k, tuple(sorted(selected_doc_ids or [])), model)
 
 
-@st.cache_resource
-def _answer_cache() -> tuple[dict, threading.Lock]:
-    """One dict and lock shared by every session of this server process."""
-    return {}, threading.Lock()
+def session_store() -> tuple[dict, threading.Lock]:
+    """The answer cache of the current browser session: a dict and a lock kept in
+    `st.session_state`. Nothing is shared between sessions."""
+    store = st.session_state.get(ANSWER_CACHE_STATE_KEY)
+    if store is None:
+        store = ({}, threading.Lock())
+        st.session_state[ANSWER_CACHE_STATE_KEY] = store
+    return store
 
 
 def cache_get(key: tuple, store: tuple[dict, threading.Lock] | None = None):
-    cache, lock = store or _answer_cache()
+    """Look up an answer in `store` (default: this session's cache)."""
+    cache, lock = store or session_store()
     with lock:
         return cache.get(key)
 
 
 def cache_put(key: tuple, value: tuple, store: tuple[dict, threading.Lock] | None = None) -> None:
-    cache, lock = store or _answer_cache()
+    """Store an answer in `store` (default: this session's cache), at most 500 entries."""
+    cache, lock = store or session_store()
     with lock:
         if key not in cache and len(cache) >= CACHE_MAX_ENTRIES:
             cache.pop(next(iter(cache)))  # drop the oldest entry

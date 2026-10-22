@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import os
 import sys
-import threading
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
@@ -131,11 +130,12 @@ class _PageCase(unittest.TestCase):
 
         self.AppTest = AppTest
         self.sent: list[dict] = []
-        self.store = ({}, threading.Lock())
+        self.api_calls = 0
         outer = self
 
         class Completions:
             def create(self, **kwargs):
+                outer.api_calls += 1
                 return iter(
                     [SimpleNamespace(choices=[SimpleNamespace(delta=SimpleNamespace(content=piece))])
                      for piece in outer.pieces]
@@ -151,7 +151,6 @@ class _PageCase(unittest.TestCase):
             mock.patch("openai.OpenAI", FakeOpenAI),
             mock.patch("retrieval.retrieve", lambda client, query, **kw: list(RESULTS)),
             mock.patch.object(feedback, "send_async", lambda payload, url=None: self.sent.append(payload)),
-            mock.patch.object(feedback, "_answer_cache", lambda: self.store),
             mock.patch.dict(os.environ, {"OPENAI_API_KEY": "sk-test-not-real"}),
         ]
         for p in patches:
@@ -255,13 +254,25 @@ class FullAnswerViewTests(_PageCase):
         self.assertEqual(1, sum(m == self.pieces[0] for m in self.md(at.main)))
 
     def test_cache_hit_shows_the_whole_answer_too(self) -> None:
+        # The cache is per session: the same participant asking again gets the hit.
+        at = self.non_specialist_session()
+        self.ask(at)
+        self.assertEqual(1, self.api_calls)
+        self.ask(at)
+        self.assertFalse(at.exception, at.exception)
+        self.assertEqual(1, self.api_calls)
+        self.assertTrue(at.session_state["areal_last"]["cached"])
+        self.assertEqual([], self.full_answer_expanders(at))
+        self.assertEqual(1, sum(m == KORT for m in self.md(at.main)))
+
+    def test_other_session_gets_a_fresh_answer_not_the_cached_one(self) -> None:
         first = self.non_specialist_session()
         self.ask(first)
         other = self.non_specialist_session()
         self.ask(other)
         self.assertFalse(other.exception, other.exception)
-        self.assertTrue(other.session_state["areal_last"]["cached"])
-        self.assertEqual([], self.full_answer_expanders(other))
+        self.assertEqual(2, self.api_calls)
+        self.assertFalse(other.session_state["areal_last"]["cached"])
         self.assertEqual(1, sum(m == KORT for m in self.md(other.main)))
 
     def test_answer_row_logs_words_and_shape(self) -> None:
@@ -308,6 +319,178 @@ class RatingFormTests(_PageCase):
         at.run()
         rating = [p for p in self.sent if p["type"] == "rating"][0]
         self.assertEqual(("", ""), (rating["length"], rating["readability"]))
+
+
+HEADED = (
+    "Innledning om saken.\n\n### Første overskrift\n\nTekst under første.\n\n"
+    "### Andre overskrift\n\nTekst under andre."
+)
+
+
+def _source(doc_id, authors, year, title):
+    return {"doc_id": doc_id, "authors": authors, "year": year, "title": title, "semantic_score": 0.8,
+            "score": 0.8, "rag_summary": "x", "evidence_direction": "not_applicable", "quality_signal": "medium"}
+
+
+TWO_AUTHORS = _source("2025_osmundsen", "Tonje C. Osmundsen; Marit Schei Olsen", 2025, "Søknadsprosessen")
+THREE_AUTHORS = _source("2014_robertsen", "Rolf Robertsen; Anne Hansen; Per Berg", 2014, "Kystsoneplaner")
+ONE_AUTHOR = _source("2018_myklebust", "Vibeke Myklebust", 2018, "Kommunale vilkår")
+
+
+def _texts(*roots):
+    """All visible text (markdown, captions, headings, labels) below the given roots."""
+    out = []
+
+    def walk(node):
+        for child in node.children.values():
+            for attr in ("value", "label"):
+                v = getattr(child, attr, None)
+                if isinstance(v, str):
+                    out.append(v)
+            if hasattr(child, "children"):
+                walk(child)
+
+    for root in roots:
+        walk(root)
+    return out
+
+
+def _answer_blocks(at):
+    """The keyed `areal_answer_text` containers on the page."""
+    found = []
+
+    def walk(node):
+        for child in node.children.values():
+            if str(getattr(getattr(child, "proto", None), "id", "")).endswith("-areal_answer_text"):
+                found.append(child)
+            if hasattr(child, "children"):
+                walk(child)
+
+    walk(at.main)
+    return found
+
+
+class AnswerPresentationTests(_PageCase):
+    pieces = (HEADED,)
+
+    def english(self):
+        at = self.app().run()
+        self.set_radio(at, "Språk / Language", "en")
+        at.run()
+        return at
+
+    def test_answer_text_sits_in_the_keyed_container_streaming_rerun_and_cache_hit(self) -> None:
+        at = self.app().run()
+        self.ask(at)  # the streaming run
+        for step in ("stream", "rerun", "cache hit"):
+            with self.subTest(step):
+                if step == "rerun":
+                    at.run()
+                elif step == "cache hit":
+                    self.ask(at)
+                    self.assertTrue(at.session_state["areal_last"]["cached"])
+                self.assertFalse(at.exception, at.exception)
+                blocks = _answer_blocks(at)
+                self.assertEqual(1, len(blocks), "exactly one keyed answer container")
+                self.assertEqual([HEADED], [m.value for m in blocks[0].markdown])
+                # The answer is not also rendered outside the container.
+                self.assertEqual(1, sum(m == HEADED for m in self.md(at.main)))
+        self.assertEqual(1, self.api_calls)
+
+    def test_answer_heading_is_svar_and_answer(self) -> None:
+        at = self.app().run()
+        self.ask(at)
+        self.assertEqual(["Svar"], [s.value for s in at.subheader if s.value in ("Svar", "Syntese")])
+        en = self.english()
+        self.ask(en)
+        self.assertEqual(["Answer"], [s.value for s in en.subheader if s.value in ("Answer", "Synthesis")])
+
+    def test_css_sets_in_text_headings_to_body_size(self) -> None:
+        import ui
+
+        css = ui._BASE_CSS
+        for tag in ("h1", "h2", "h3", "h4"):
+            self.assertIn(f".st-key-areal_answer_text {tag}", css)
+        self.assertIn("font-size:1rem; font-weight:700;", css)
+        self.assertIn("margin:1rem 0 .25rem", css)
+        self.assertIn('.st-key-areal_answer_text [data-testid="stHeaderActionElements"]', css)
+
+    def test_feedback_heading_and_primary_submit_in_both_languages(self) -> None:
+        for lang, heading, button in (
+            ("no", "**Hjelp oss: hvordan var svaret?**", "Send tilbakemelding"),
+            ("en", "**Help us: how was this answer?**", "Send feedback"),
+        ):
+            with self.subTest(lang):
+                at = self.app().run() if lang == "no" else self.english()
+                self.ask(at)
+                self.assertFalse(at.exception, at.exception)
+                self.assertIn(heading, self.md(at.main))
+                self.assertNotIn("Din tilbakemelding på dette svaret", " ".join(self.md(at.main)))
+                submit = next(b for b in at.button if b.label == button)
+                self.assertEqual("primary", submit.proto.type)
+
+    def test_source_labels_use_the_readable_label(self) -> None:
+        cases = (
+            ("no", ["**Osmundsen og Olsen 2025** · Søknadsprosessen", "**Robertsen mfl. 2014** · Kystsoneplaner",
+                    "**Myklebust 2018** · Kommunale vilkår"]),
+            ("en", ["**Osmundsen and Olsen 2025** · Søknadsprosessen", "**Robertsen et al. 2014** · Kystsoneplaner",
+                    "**Myklebust 2018** · Kommunale vilkår"]),
+        )
+        results = [TWO_AUTHORS, THREE_AUTHORS, ONE_AUTHOR]
+        with mock.patch("retrieval.retrieve", lambda client, query, **kw: list(results)):
+            for lang, expected in cases:
+                with self.subTest(lang):
+                    at = self.app().run() if lang == "no" else self.english()
+                    self.ask(at)
+                    self.assertFalse(at.exception, at.exception)
+                    for _ in range(2):  # the streaming run, then a rerun from session state
+                        labels = [e.label for e in at.main.expander]
+                        for label in expected:
+                            self.assertIn(label, labels)
+                        at.run()
+
+
+class PrototypeWordingTests(_PageCase):
+    def test_no_utkast_or_draft_in_visible_areal_text(self) -> None:
+        for lang in ("no", "en"):
+            with self.subTest(lang):
+                at = self.app().run()
+                if lang == "en":
+                    self.set_radio(at, "Språk / Language", "en")
+                    at.run()
+                self.ask(at)
+                self.assertFalse(at.exception, at.exception)
+                text = " ".join(_texts(at.main, at.sidebar)).lower()
+                self.assertNotIn("utkast", text)
+                self.assertNotIn("draft", text)
+        at = self.app().run()
+        self.assertIn("prototype-rom", " ".join(c.value for c in at.sidebar.caption))
+        self.assertIn("Prototype-rom om areal og havbruk", " ".join(self.md(at.main)))
+
+    def test_stats_box_shows_the_full_review_date_and_hero_caption_is_gone(self) -> None:
+        for lang, label in (("no", "sist gjennomgått"), ("en", "last reviewed")):
+            with self.subTest(lang):
+                at = self.app().run()
+                if lang == "en":
+                    self.set_radio(at, "Språk / Language", "en")
+                    at.run()
+                stats = next(m for m in self.md(at.main) if '<div class="hl-stats">' in m)
+                self.assertIn(f"<strong>19.10.2026</strong><span>{label}</span>", stats)
+                self.assertNotIn("<strong>19.10</strong>", stats)
+                captions = " ".join(c.value for c in at.main.caption)
+                self.assertNotIn("A og B ligger", captions)
+                self.assertNotIn("A and B sit", captions)
+
+    def test_sidebar_starts_collapsed(self) -> None:
+        self.assertIn('initial_sidebar_state="collapsed"', Path(PAGE).read_text(encoding="utf-8"))
+
+    def test_home_page_calls_the_areal_card_prototype(self) -> None:
+        at = self.AppTest.from_file(str(REPO / "app" / "app.py"), default_timeout=120).run()
+        self.assertFalse(at.exception, at.exception)
+        html = " ".join(self.md(at.main))
+        self.assertIn('<span class="hl-status hl-status-on">Prototype</span>', html)
+        self.assertIn('<div class="hl-room-meta">50 dokumenter · prototype</div>', html)
+        self.assertNotIn("tkast", html)
 
 
 if __name__ == "__main__":

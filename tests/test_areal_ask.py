@@ -153,6 +153,20 @@ class FeedbackModuleTests(unittest.TestCase):
         self.assertNotEqual(a, feedback.answer_cache_key("Hva?", "researcher", "en", 10, ["a", "b", "c"], "gpt-6-luna"))
         self.assertNotEqual(a, feedback.answer_cache_key("Hva?", "researcher", "no", 9, ["a", "b", "c"], "gpt-6-luna"))
 
+    def test_session_store_lives_in_session_state_and_is_the_default_store(self) -> None:
+        import streamlit as st
+
+        with mock.patch.object(st, "session_state", {}) as state:
+            store = feedback.session_store()
+            self.assertIs(store, feedback.session_store())
+            self.assertIs(store, state[feedback.ANSWER_CACHE_STATE_KEY])
+            self.assertIsNone(feedback.cache_get(("k",)))
+            feedback.cache_put(("k",), ([1], "answer"))
+            self.assertEqual(([1], "answer"), feedback.cache_get(("k",)))
+            self.assertEqual({("k",): ([1], "answer")}, store[0])
+        with mock.patch.object(st, "session_state", {}):  # another session sees nothing
+            self.assertIsNone(feedback.cache_get(("k",)))
+
     def test_cache_put_get_and_eviction(self) -> None:
         store = ({}, threading.Lock())
         self.assertIsNone(feedback.cache_get(("k",), store))
@@ -198,7 +212,6 @@ class ArealPageTests(unittest.TestCase):
 
         self.AppTest = AppTest
         self.sent: list[dict] = []
-        self.store = ({}, threading.Lock())
         self.completions = FakeCompletions(("Svar ", "fra ", "kildene."))
         self.retrieve_calls = 0
         outer = self
@@ -221,7 +234,6 @@ class ArealPageTests(unittest.TestCase):
             mock.patch("openai.OpenAI", FakeOpenAI),
             mock.patch("retrieval.retrieve", fake_retrieve),
             mock.patch.object(feedback, "send_async", lambda payload, url=None: self.sent.append(payload)),
-            mock.patch.object(feedback, "_answer_cache", lambda: self.store),
             mock.patch.dict(os.environ, {"OPENAI_API_KEY": "sk-test-not-real"}),
         ]
         for p in patches:
@@ -288,21 +300,39 @@ class ArealPageTests(unittest.TestCase):
         self.assertEqual(row["answer_id"], last["answer_id"])
         self.assertEqual(at.session_state["areal_session_id"], row["session_id"])
 
-    def test_identical_question_is_a_cache_hit_without_api_calls(self) -> None:
+    def test_same_session_repeating_a_question_is_a_cache_hit_without_api_calls(self) -> None:
         at = self.app().run()
         self.ask(at)
         calls_before = len(self.completions.calls)
-        other = self.app().run()  # a different session
-        self.ask(other)
-        self.assertFalse(other.exception, other.exception)
+        self.ask(at)  # the same participant asks again
+        self.assertFalse(at.exception, at.exception)
         self.assertEqual(calls_before, len(self.completions.calls))
         self.assertEqual(1, self.retrieve_calls)
-        self.assertIn("Svar fra kildene.", self.texts(other))
+        self.assertIn("Svar fra kildene.", self.texts(at))
+        self.assertEqual(1, sum("Svar fra kildene." == t for t in self.texts(at)))
         rows = [p for p in self.sent if p["type"] == "answer"]
         self.assertEqual([False, True], [r["cached"] for r in rows])
-        self.assertNotEqual(rows[0]["session_id"], rows[1]["session_id"])
+        self.assertEqual(rows[0]["session_id"], rows[1]["session_id"])
         self.assertNotEqual(rows[0]["answer_id"], rows[1]["answer_id"])
-        self.assertNotIn("areal_n_asked", other.session_state)  # cache hits do not count
+        self.assertEqual(1, at.session_state["areal_n_asked"])  # cache hits do not count
+
+    def test_other_session_gets_a_fresh_answer_and_the_cache_is_not_shared(self) -> None:
+        at = self.app().run()
+        self.ask(at)
+        other = self.app().run()  # a different participant, same question
+        self.ask(other)
+        self.assertFalse(other.exception, other.exception)
+        self.assertEqual(2, len(self.completions.calls))
+        self.assertEqual(2, self.retrieve_calls)
+        self.assertIn("Svar fra kildene.", self.texts(other))
+        rows = [p for p in self.sent if p["type"] == "answer"]
+        self.assertEqual([False, False], [r["cached"] for r in rows])
+        self.assertNotEqual(rows[0]["session_id"], rows[1]["session_id"])
+        self.assertEqual(1, other.session_state["areal_n_asked"])
+        # Each session holds only its own entry.
+        self.assertEqual(1, len(at.session_state["areal_answer_cache"][0]))
+        self.assertEqual(1, len(other.session_state["areal_answer_cache"][0]))
+        self.assertIsNot(at.session_state["areal_answer_cache"], other.session_state["areal_answer_cache"])
 
     def test_session_limit_blocks_new_questions_but_not_cached_ones(self) -> None:
         at = self.app().run()
@@ -334,7 +364,7 @@ class ArealPageTests(unittest.TestCase):
         row = [p for p in self.sent if p["type"] == "answer"][0]
         self.assertEqual("APIConnectionError", row["error"])
         self.assertEqual("", row["answer"])
-        self.assertEqual(0, len(self.store[0]))  # failures are not cached
+        self.assertEqual(0, len(at.session_state["areal_answer_cache"][0]))  # failures are not cached
 
     def test_retrieval_failure_shows_friendly_warning(self) -> None:
         import httpx
