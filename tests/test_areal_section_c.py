@@ -366,7 +366,7 @@ class OpenQuestionTests(_SectionCase):
         at.run()
         self.assertEqual("non_researcher", at.session_state["areal_last"]["mode"])
         self.assertEqual("non_researcher", self.answer_rows()[-1]["mode"])
-        self.assertEqual(1, len(self.full_answer_expanders(at)))
+        self.assertEqual([], self.full_answer_expanders(at))  # the answer is never folded
 
     def test_old_session_state_with_card_n_does_not_crash(self) -> None:
         at = self.in_lang("no")

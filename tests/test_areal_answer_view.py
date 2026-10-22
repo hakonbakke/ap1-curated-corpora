@@ -233,68 +233,35 @@ class BackgroundPanelAndMapTests(_PageCase):
 
 
 class FullAnswerViewTests(_PageCase):
-    def test_non_specialist_gets_short_block_and_folded_rest_streaming_and_rerun(self) -> None:
-        at = self.non_specialist_session()
-        self.ask(at)
-        self.assertFalse(at.exception, at.exception)
-        for run_label in ("streaming run", "rerun"):
-            with self.subTest(run_label):
-                self.assertEqual("non_researcher", at.session_state["areal_last"]["mode"])
-                exps = self.full_answer_expanders(at)
-                self.assertEqual(1, len(exps))
-                self.assertEqual("Les hele svaret (ca. 120 ord)", exps[0].label)
-                self.assertFalse(exps[0].proto.expanded)
-                self.assertIn(LONG_REST, self.md(exps[0]))
-                main_md = self.md(at.main)
-                self.assertEqual(1, sum("Kommunene peker ut sjøen" in m for m in main_md))
-                self.assertEqual(1, sum(LONG_REST in m for m in main_md), "long text rendered twice")
-                self.assertFalse([m for m in main_md if m == KORT], "whole text must not be shown")
-            at.run()
-            self.assertFalse(at.exception, at.exception)
+    def test_whole_answer_is_shown_open_in_both_modes_streaming_and_rerun(self) -> None:
+        for mode_session in ("non_specialist", "researcher"):
+            with self.subTest(mode_session):
+                at = self.non_specialist_session() if mode_session == "non_specialist" else self.app().run()
+                self.ask(at, f"spørsmål {mode_session}")
+                self.assertFalse(at.exception, at.exception)
+                for _ in range(2):  # the streaming run, then a rerun from session state
+                    self.assertEqual([], self.full_answer_expanders(at))
+                    self.assertEqual(1, sum(m == KORT for m in self.md(at.main)))
+                    at.run()
+                    self.assertFalse(at.exception, at.exception)
 
-    def test_english_label_and_rounding(self) -> None:
+    def test_english_answer_is_not_folded(self) -> None:
         self.pieces = ("**Short answer**\n- a\n\n" + " ".join(["w"] * 84),)
         at = self.non_specialist_session("en")
         self.ask(at)
         self.assertFalse(at.exception, at.exception)
-        self.assertEqual(["Read the full answer (about 80 words)"], [e.label for e in self.full_answer_expanders(at)])
-
-    def test_researcher_mode_shows_whole_text_without_expander(self) -> None:
-        at = self.app().run()
-        self.ask(at)
-        self.assertFalse(at.exception, at.exception)
         self.assertEqual([], self.full_answer_expanders(at))
-        self.assertEqual(1, sum(m == KORT for m in self.md(at.main)))
-        at.run()
-        self.assertEqual([], self.full_answer_expanders(at))
-        self.assertEqual(1, sum(m == KORT for m in self.md(at.main)))
+        self.assertEqual(1, sum(m == self.pieces[0] for m in self.md(at.main)))
 
-    def test_non_specialist_without_label_or_with_short_rest_shows_whole_text(self) -> None:
-        for answer in ("Det er 13 produksjonsområder.", "**Kort svar**\n- a\n\nBare noen få ord."):
-            with self.subTest(answer=answer):
-                self.pieces = (answer,)
-                at = self.non_specialist_session()
-                self.ask(at, f"spørsmål {answer[:10]}")
-                self.assertFalse(at.exception, at.exception)
-                self.assertEqual([], self.full_answer_expanders(at))
-                self.assertEqual(1, sum(m == answer for m in self.md(at.main)))
-
-    def test_cache_hit_folds_too(self) -> None:
+    def test_cache_hit_shows_the_whole_answer_too(self) -> None:
         first = self.non_specialist_session()
         self.ask(first)
         other = self.non_specialist_session()
         self.ask(other)
         self.assertFalse(other.exception, other.exception)
         self.assertTrue(other.session_state["areal_last"]["cached"])
-        self.assertEqual(1, len(self.full_answer_expanders(other)))
-
-    def test_mode_switch_after_answer_keeps_the_generated_mode(self) -> None:
-        at = self.non_specialist_session()
-        self.ask(at)
-        self.set_radio(at, "Velg bakgrunn", "researcher")
-        at.run()
-        self.assertFalse(at.exception, at.exception)
-        self.assertEqual(1, len(self.full_answer_expanders(at)))
+        self.assertEqual([], self.full_answer_expanders(other))
+        self.assertEqual(1, sum(m == KORT for m in self.md(other.main)))
 
     def test_answer_row_logs_words_and_shape(self) -> None:
         at = self.app().run()

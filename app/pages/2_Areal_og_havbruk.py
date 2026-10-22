@@ -1267,33 +1267,9 @@ def _render_sources(results: list[dict]) -> None:
                 st.caption(f"doc_id: `{r.get('doc_id', '')}`")
 
 
-FULL_ANSWER_MIN_WORDS = 80  # shorter remainders are not worth hiding
-
-
-def _collapsed_parts(text: str, answer_mode: str) -> tuple[str, str, int] | None:
-    """(short_block, rest, rounded_word_count) when the non-specialist view should
-    fold the long part away, else None. `answer_mode` is the mode the answer was
-    generated in, not the current radio value."""
-    if answer_mode != "non_researcher":
-        return None
-    short, rest = feedback.split_short_answer(text)
-    words = len(rest.split())
-    if not short or words < FULL_ANSWER_MIN_WORDS:
-        return None
-    return short, rest, int(words / 10 + 0.5) * 10
-
-
 def _render_answer(text: str, answer_mode: str) -> None:
-    """The answer text: short block plus a folded full answer for non-specialists
-    when the model gave a «Kort svar» block, otherwise the whole text."""
-    parts = _collapsed_parts(text, answer_mode)
-    if parts is None:
-        st.markdown(text)
-        return
-    short, rest, n = parts
-    st.markdown(short)
-    with st.expander(tr(lang, f"Read the full answer (about {n} words)", f"Les hele svaret (ca. {n} ord)")):
-        st.markdown(rest)
+    """The whole answer, open, in every mode. Nothing is folded away."""
+    st.markdown(text)
 
 
 def _render_last(last: dict) -> None:
@@ -1436,14 +1412,7 @@ def _ask(q: str) -> None:
     st.session_state["areal_last"] = last
     feedback.cache_put(key, (results, answer))
     _log_answer(answer_id, q, results, answer, started, cached=False)
-    # The answer is already on screen from the stream. Where the non-specialist view
-    # folds the long part away, swap the streamed text for that view so it matches
-    # what later reruns show.
-    if _collapsed_parts(answer, last["mode"]) is not None:
-        with holder.container():
-            _answer_header()
-            _render_answer(answer, last["mode"])
-    # Add what goes below it.
+    # The answer is already on screen from the stream; add what goes below it.
     _render_feedback(answer_id)
     _render_sources(results)
 
