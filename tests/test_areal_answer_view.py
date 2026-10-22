@@ -189,29 +189,36 @@ class _PageCase(unittest.TestCase):
 
 
 class BackgroundPanelAndMapTests(_PageCase):
-    def test_a_and_b_sit_in_one_collapsed_expander_in_both_languages(self) -> None:
+    def test_a_and_b_are_two_separate_collapsed_expanders_in_both_languages(self) -> None:
         at = self.app().run()
         self.assertFalse(at.exception, at.exception)
-        panel = next(e for e in at.main.expander if e.label.startswith("Bakgrunn"))
-        self.assertEqual("Bakgrunn: A · Introduksjon og B · Norsk rammeverk", panel.label)
-        self.assertFalse(panel.proto.expanded)
-        inside = " ".join(self.md(panel))
-        self.assertIn("A · Introduksjon", inside)
-        self.assertIn("B · Gjeldende norsk rammeverk", inside)
-        inside_values = set(self.md(panel))
+        labels = [e.label for e in at.main.expander]
+        self.assertFalse([x for x in labels if x.startswith("Bakgrunn")], "the shared background panel is gone")
+        panel_a = next(e for e in at.main.expander if e.label == "A · Introduksjon")
+        panel_b = next(e for e in at.main.expander if e.label == "B · Norsk rammeverk")
+        self.assertFalse(panel_a.proto.expanded)
+        self.assertFalse(panel_b.proto.expanded)
+        inside_a, inside_b = " ".join(self.md(panel_a)), " ".join(self.md(panel_b))
+        self.assertIn("Merdareal", inside_a)
+        self.assertNotIn("lovdata.no", inside_a)
+        self.assertIn("lovdata.no", inside_b)
+        self.assertNotIn("Merdareal", inside_b)
+        inside_values = set(self.md(panel_a)) | set(self.md(panel_b))
         outside = " ".join(m.value for m in at.main.markdown if m.value not in inside_values)
-        self.assertIn("C · Åpne spørsmål", outside)
-        self.assertIn("D · Spør kildene", outside)
-        self.assertNotIn("A · Introduksjon", outside)
+        self.assertIn("C · Spør kildene", outside)
+        self.assertNotIn("C · Åpne spørsmål", outside)
+        self.assertNotIn("D · Spør kildene", outside)
         # The inner «Les mer» expanders still exist (nested).
         self.assertTrue([e for e in at.main.expander if e.label == "Les mer"])
 
         self.set_radio(at, "Språk / Language", "en")
         at.run()
         self.assertFalse(at.exception, at.exception)
-        panel = next(e for e in at.main.expander if e.label.startswith("Background"))
-        self.assertEqual("Background: A · Introduction and B · The Norwegian framework", panel.label)
-        self.assertIn("A · Introduction", " ".join(self.md(panel)))
+        self.assertEqual("A · Introduction", next(e for e in at.main.expander if e.label.startswith("A ·")).label)
+        self.assertEqual(
+            "B · The Norwegian framework", next(e for e in at.main.expander if e.label.startswith("B ·")).label
+        )
+        self.assertFalse([e for e in at.main.expander if e.label.startswith("Background")])
 
     def test_new_map_is_shown_with_caption(self) -> None:
         at = self.app().run()

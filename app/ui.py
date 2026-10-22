@@ -168,6 +168,21 @@ h1{ line-height:1.14; }
 .hl-paper-name{ font-family:inherit; font-size:.8rem; font-weight:500; }
 .hl-caveat{ font-size:.86rem; color:var(--hl-muted); font-style:italic; margin:10px 0 0; }
 
+/* Spørsmålskort (Areal): temaoverskrift og korttittel */
+.hl-group-title{ font-size:1.02rem; font-weight:700; color:var(--hl-ink); margin:18px 0 4px; }
+.hl-card-title{ font-size:1rem; font-weight:700; line-height:1.3; color:var(--hl-ink); }
+/* Kort i samme rad får lik høyde (nye og eldre Streamlit), og teksten settes liten */
+[data-testid="stColumn"]:has(.hl-card-title) > [data-testid="stVerticalBlock"]
+  > :is([data-testid="stLayoutWrapper"], [data-testid="stVerticalBlockBorderWrapper"]){ flex:1; }
+[data-testid="stColumn"]:has(.hl-card-title) [data-testid="stVerticalBlock"]{ gap:.6rem; }
+[data-testid="stColumn"]:has(.hl-card-title) [data-testid="stMarkdownContainer"] :is(p, li){
+  font-size:.88rem; line-height:1.4;
+}
+[data-testid="stColumn"]:has(.hl-card-title) [data-testid="stMarkdownContainer"] ul{
+  margin:0; padding-left:1.1rem; padding-bottom:.3rem;
+}
+[data-testid="stColumn"]:has(.hl-card-title) [data-testid="stMarkdownContainer"] li{ padding-bottom:.25rem; }
+
 /* Footer */
 .hl-footer{
   margin-top:34px; padding-top:16px; border-top:1px solid var(--hl-line);

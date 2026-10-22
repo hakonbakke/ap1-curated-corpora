@@ -1,8 +1,8 @@
 """
 Evidensrom: Areal og havbruk (working draft).
 
-Orientering (A til C) + Spør kildene (D) mot isolert parquet
-data/area-and-aquaculture.parquet.
+Bakgrunn (A og B) + åpne spørsmål som kort og Spør kildene (C) mot isolert
+parquet data/area-and-aquaculture.parquet.
 """
 
 from __future__ import annotations
@@ -11,6 +11,7 @@ import os
 import sys
 import time
 import uuid
+from html import escape
 from pathlib import Path
 
 import openai
@@ -31,9 +32,10 @@ from retrieval import (
     is_out_of_scope,
 )
 import feedback
+from areal_questions import GROUPS
 from regelverk import REGELVERK, render_regelverk
 from synthesis import synthesise_stream
-from ui import brand_header, inject_css, paper_chips, section_header
+from ui import brand_header, inject_css, section_header
 
 st.set_page_config(
     page_title="Areal og havbruk · Evidensrom",
@@ -111,7 +113,7 @@ def _source_label(lang: str, authors, year, title) -> str:
 
 
 def _chip_labels(lang: str, frame) -> dict[str, str]:
-    """doc_id -> readable label for the source chips in C."""
+    """doc_id -> readable label for the sources on the question cards in C."""
     if frame is None:
         return {}
     return {
@@ -120,7 +122,7 @@ def _chip_labels(lang: str, frame) -> dict[str, str]:
     }
 
 
-# ── Fault lines (C) ───────────────────────────────────────────────────────────
+# ── Open questions (C) ───────────────────────────────────────────────────────────
 
 FAULTS = {
     "no": [
@@ -470,83 +472,6 @@ FAULTS = {
     ],
 }
 
-FAULT_PAPERS = [
-    [
-        "2020_hersoug_whats-the-clue",
-        "2015_sandersen_access-to-sites",
-        "2011_gullestad_arealbruk-havbruk",
-        "2015_rettslig_rammeverk-havbruk",
-        "undated_baerekraftig-arealbruk-havbruk",
-    ],
-    [
-        "2022_hersoug_ten-licensing-systems",
-        "2011_gullestad_arealbruk-havbruk",
-        "2025_sand_havbrukets-arealbehov-trondelag",
-        "2017_kvalvik_intermunicipal-coastal-planning",
-        "2019_mikkelsen_arealplanlegging-sjo",
-        "2021_myklebust_authority-division",
-    ],
-    [
-        "2025_osmundsen_fylkeskommune-akvakulturloven",
-        "salt_1110_lokalitetssoknader",
-        "2023_evenset_sameksistens",
-        "2025_sand_havbrukets-arealbehov-trondelag",
-        "2015_rettslig_rammeverk-havbruk",
-        "2011_gullestad_arealbruk-havbruk",
-    ],
-    [
-        "2023_evenset_sameksistens",
-        "2025_mikkelsen_samlet-pavirkning-nord",
-        "salt_1065_ku-arealplanlegging",
-        "2021_sandersen_kystsone-helgeland",
-        "2011_gullestad_arealbruk-havbruk",
-    ],
-    [
-        "2015_sandersen_access-to-sites",
-        "2020_hersoug_whats-the-clue",
-        "2020_aanesen_arctic-aquaculture-cba",
-        "2025_iversen_socioeconomic-impacts-salmon",
-        "2023_misund_political-economy-salmon",
-        "2015_rettslig_rammeverk-havbruk",
-    ],
-    [
-        "2014_robertsen_interkommunal-planlegging",
-        "salt_1065_ku-arealplanlegging",
-        "2022_mikkelsen_ocean-coastal-management",
-        "2023_metier_marine-grunnkart",
-        "2020_hersoug_whats-the-clue",
-        "undated_baerekraftig-arealbruk-havbruk",
-    ],
-    [
-        "2005_jentoft_challenges-myths-czm",
-        "2017_kvalvik_intermunicipal-coastal-planning",
-        "2020_bjorkan_local-perceptions",
-        "2025_rosendal_municipal-environment-economy",
-        "2026_sordahl_nar-alt-skal-med",
-        "2022_mikkelsen_ocean-coastal-management",
-    ],
-    [
-        "2019_karlsen_omradesamarbeid",
-        "2021_osmundsen_shared-waters",
-        "2026_bjorna_adaptive-co-management",
-        "undated_baerekraftig-arealbruk-havbruk",
-        "2011_gullestad_arealbruk-havbruk",
-    ],
-    [
-        "2011_aldrin_isa-farm-spread",
-        "2015_aldrin_pd-space-time",
-        "2017_aldrin_lice-farm-model",
-        "2024_qviller_geographic-redistribution",
-        "2025_kulmambetova_spatial-density-productivity",
-        "2015_pettersen_emerging-diseases-salmon",
-    ],
-]
-
-EXAMPLE_QUESTIONS = {
-    "en": [""] + [f[2] for f in FAULTS["en"]],
-    "no": [""] + [f[2] for f in FAULTS["no"]],
-}
-
 # ── Language (main area, so phone users see it) ───────────────────────────────
 
 header_slot = st.container()  # brand header, filled below once `lang` is known
@@ -709,9 +634,9 @@ with hero_left:
         tr(
             lang,
             '<h1 class="hl-h1">Area and aquaculture</h1>'
-            '<p class="hl-lede">The pens occupy a vanishingly small share of the coastal zone, and yet area scarcity remains a persistent dispute. A distinguishes pen area, locality area and plan area. B shows the split governing system. C and D show the open questions.</p>',
+            '<p class="hl-lede">The pens occupy a vanishingly small share of the coastal zone, and yet area scarcity remains a persistent dispute. A distinguishes pen area, locality area and plan area. B shows the split governing system. C shows the open questions.</p>',
             '<h1 class="hl-h1">Areal og havbruk</h1>'
-            '<p class="hl-lede">Merdene tar en forsvinnende liten del av kystsonen, og likevel er knapphet på areal et vedvarende stridsspørsmål. A skiller merdareal, lokalitetsareal og planareal. B viser det delte styringssystemet. C og D viser de åpne spørsmålene.</p>',
+            '<p class="hl-lede">Merdene tar en forsvinnende liten del av kystsonen, og likevel er knapphet på areal et vedvarende stridsspørsmål. A skiller merdareal, lokalitetsareal og planareal. B viser det delte styringssystemet. C viser de åpne spørsmålene.</p>',
         ),
         unsafe_allow_html=True,
     )
@@ -743,33 +668,18 @@ with hero_right:
 st.caption(
     tr(
         lang,
-        "A and B sit in the collapsed background panel below. "
-        "A introduces the paradox and the three area quantities. "
-        "B shows the split governing system, with links to statutes and public sources. "
-        "C collects the open questions. D lets you ask the sources.",
-        "A og B ligger i bakgrunnspanelet under, som er lukket. "
-        "A innfører paradokset og de tre arealbegrepene. B viser det delte styringssystemet, med lenker til lover og offentlige kilder. "
-        "C samler de åpne spørsmålene. D lar deg spørre kildene.",
+        "A and B sit in two closed boxes below; C collects the open questions and lets you ask the sources.",
+        "A og B ligger i hver sin lukkede boks under; C samler de åpne spørsmålene og lar deg spørre kildene.",
     )
 )
 
 st.write("")
 
-# ── Background panel: A and B, collapsed so C and D are reached sooner ────────
+# ── A and B: two collapsed background boxes, so C is reached sooner ───────────
+# ── A: Introduksjon ───────────────────────────────────────────────────────────
 
-with st.expander(
-    tr(
-        lang,
-        "Background: A · Introduction and B · The Norwegian framework",
-        "Bakgrunn: A · Introduksjon og B · Norsk rammeverk",
-    )
-):
-    # ── A: Introduksjon ───────────────────────────────────────────────────────────
-
-    section_header(
-        tr(lang, "A · Introduction", "A · Introduksjon"),
-        tr(lang, "Editorial overview", "Redaksjonell oversikt"),
-    )
+with st.expander(tr(lang, "A · Introduction", "A · Introduksjon")):
+    st.caption(tr(lang, "Editorial overview", "Redaksjonell oversikt"))
     with st.container(border=True):
         col_a, col_fig = st.columns([1.0, 1.0])
         with col_a:
@@ -843,11 +753,15 @@ Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig, og i enk
                     ),
                 )
 
-    # ── B: Norsk rammeverk ────────────────────────────────────────────────────────
+# ── B: Norsk rammeverk ────────────────────────────────────────────────────────
 
-    section_header(
-        tr(lang, "B · Current Norwegian framework", "B · Gjeldende norsk rammeverk"),
-        tr(lang, "A split governing system", "Et delt styringssystem"),
+with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk")):
+    st.caption(
+        tr(
+            lang,
+            "Current Norwegian framework: a split governing system",
+            "Gjeldende norsk rammeverk: et delt styringssystem",
+        )
     )
     with st.container(border=True):
         st.markdown(
@@ -1087,72 +1001,22 @@ Tre utviklingstrekk endrer arealbildet, uten å løse det alene. De endrer førs
         ):
             render_regelverk(lang)
 
-# ── C: Åpne spørsmål ──────────────────────────────────────────────────────────
+# ── C: Åpne spørsmål og Spør kildene ──────────────────────────────────────────
 
 section_header(
-    tr(lang, "C · Open questions", "C · Åpne spørsmål"),
+    tr(lang, "C · Ask the sources", "C · Spør kildene"),
+    tr(lang, "Open questions, or your own", "Åpne spørsmål, eller ditt eget"),
+)
+st.markdown(
     tr(
         lang,
-        "Where growth stops, and where knowledge is missing",
-        "Der veksten stopper, og der kunnskapen mangler",
-    ),
+        "Pick an open question, or write your own at the bottom.",
+        "Velg et åpent spørsmål, eller skriv ditt eget nederst.",
+    )
 )
+
+# The audience comes before the cards, so a card click uses the chosen mode.
 with st.container(border=True):
-    st.markdown(
-        tr(
-            lang,
-            "A distinguishes pen area, locality area and plan area. B shows the split "
-            "governing system, with public sources. "
-            "This is not a room of two scientific camps on one estimate. The publications "
-            "rarely rebut one another on a shared number. They write past one another on "
-            "what limits growth, and the case file often postpones the hard part. The "
-            "strongest gap in the set is knowledge in plans, impact assessment and "
-            "locality processing. Pick an open question below.",
-            "A skiller merdareal, lokalitetsareal og planareal. B viser det delte "
-            "styringssystemet, med offentlige kilder. "
-            "Dette er ikke et rom med to faglige leire om ett tall. Publikasjonene slår "
-            "sjelden hverandre i hjel på et felles anslag. De skriver forbi hverandre om "
-            "hva som begrenser vekst, og saksfilen utsetter ofte det harde. Det tyngste "
-            "hullet i settet er kunnskap i plan, konsekvensutredning og "
-            "lokalitetsbehandling. Velg et åpent spørsmål under.",
-        )
-    )
-
-    fault_labels = [f[0] for f in FAULTS[lang]]
-    fault_idx = st.selectbox(
-        tr(lang, "Open question", "Åpent spørsmål"),
-        options=list(range(len(fault_labels))),
-        format_func=lambda i: fault_labels[i],
-        key=f"areal_fault_long_{lang}",
-    )
-
-    st.markdown(FAULTS[lang][fault_idx][1])
-    paper_chips(FAULT_PAPERS[fault_idx], _chip_labels(lang, df))
-
-    st.write("")
-    if st.button(tr(lang, "Ask the sources about this ↓", "Spør kildene om dette ↓")):
-        st.session_state["areal_query"] = FAULTS[lang][fault_idx][2]
-        st.rerun()
-
-st.caption(
-    tr(
-        lang,
-        "Editorial orientation · last reviewed 2026-10-19 · C and D search the active documents.",
-        "Redaksjonell orientering · sist gjennomgått 2026-10-19 · C og D søker i de aktive dokumentene.",
-    )
-)
-
-# ── D: Ask ────────────────────────────────────────────────────────────────────
-
-section_header(
-    tr(lang, "D · Ask the sources", "D · Spør kildene"),
-    tr(lang, "Live synthesis", "Live syntese"),
-)
-
-intro_slot = st.container()  # text depends on the audience chosen just below
-
-question_card = st.container(border=True)
-with question_card:
     mode = st.radio(
         tr(lang, "Choose your background", "Velg bakgrunn"),
         options=["researcher", "non_researcher"],
@@ -1187,53 +1051,71 @@ with question_card:
             )
         )
 
-with intro_slot:
-    if mode == "researcher":
-        st.markdown(
-            tr(
-                lang,
-                "Section C helps you see the open questions. Section D lets you ask a "
-                "question. The tool retrieves from the curated set and returns a "
-                "technical synthesis. Competing diagnoses are kept visible. Gaps are named "
-                "when the file is empty.",
-                "Seksjon C hjelper deg å se de åpne spørsmålene. Seksjon D lar deg stille "
-                "et spørsmål. Verktøyet henter fra det kuraterte settet og returnerer "
-                "en teknisk syntese. Konkurrerende diagnoser holdes synlige. Hull navngis når "
-                "saksfilen er tom.",
-            )
-        )
-    else:
-        st.markdown(
-            tr(
-                lang,
-                "Section C helps you see the open questions. Section D lets you ask in plain "
-                "language. The tool explains what the publications say, including where they "
-                "write past one another, and where the file is empty.",
-                "Seksjon C hjelper deg å se de åpne spørsmålene. Seksjon D lar deg spørre "
-                "med enkelt språk. Verktøyet forklarer hva publikasjonene sier, også der de "
-                "skriver forbi hverandre, og der saksfilen er tom.",
-            )
-        )
+
+def _pick_question(q: str) -> None:
+    """Card button callback (runs before the rerun): fill the text area and flag
+    the question so the ask flow below runs once in the answer area."""
+    st.session_state["areal_query"] = q
+    st.session_state["areal_ask_now"] = q
 
 
-with question_card:
-    examples = EXAMPLE_QUESTIONS[lang]
-    pick = st.selectbox(
-        tr(
-            lang,
-            "Example questions (mirror the points in C)",
-            "Eksempelspørsmål (speiler punktene i C)",
-        ),
-        options=examples,
-        format_func=lambda q: tr(lang, "Choose a question", "Velg et spørsmål") if q == "" else q,
-        key=f"areal_example_long_{lang}",
+def _card_sources(docs: list[str], labels: dict[str, str]) -> str:
+    names = [labels[d] for d in docs if labels.get(d)]
+    return f" · :gray[*{', '.join(names)}*]" if names else ""
+
+
+def _render_card(card: dict, labels: dict[str, str]) -> None:
+    n = card["n"]
+    with st.container(border=True):
+        st.markdown(
+            f'<div class="hl-card-title">{escape(card["title_" + lang])}</div>',
+            unsafe_allow_html=True,
+        )
+        st.caption(card["intro"][lang])
+        st.markdown(
+            "\n".join(f"- {p[lang]}{_card_sources(p['docs'], labels)}" for p in card["points"])
+        )
+        st.markdown(f"**{tr(lang, 'Open:', 'Åpent:')}** {card['open_' + lang]}")
+        st.button(
+            tr(lang, "Ask the sources about this", "Spør kildene om dette"),
+            key=f"areal_card_{lang}_{n}",
+            on_click=_pick_question,
+            args=(FAULTS[lang][n - 1][2],),
+            width="stretch",
+        )
+        with st.expander(tr(lang, "Read more", "Les mer")):
+            st.markdown(FAULTS[lang][n - 1][1])
+
+
+card_labels = _chip_labels(lang, df)
+for group in GROUPS:
+    st.markdown(
+        f'<div class="hl-group-title">{escape(group["title_" + lang])}</div>',
+        unsafe_allow_html=True,
     )
-    if pick and st.session_state.get("_areal_example") != pick:
-        st.session_state["areal_query"] = pick
-        st.session_state["_areal_example"] = pick
+    for col, card in zip(st.columns(3), group["cards"]):
+        with col:
+            _render_card(card, card_labels)
+
+st.caption(
+    tr(
+        lang,
+        "Editorial orientation · last reviewed 2026-10-19 · the answers search the active documents.",
+        "Redaksjonell orientering · sist gjennomgått 2026-10-19 · svarene søker i de aktive dokumentene.",
+    )
+)
+
+# ── Your own question ─────────────────────────────────────────────────────────
+
+st.markdown(
+    f'<div class="hl-group-title">{tr(lang, "Your own question", "Ditt eget spørsmål")}</div>',
+    unsafe_allow_html=True,
+)
+with st.container(border=True):
     query = st.text_area(
         tr(lang, "Your question", "Spørsmålet ditt"),
-        value=st.session_state.get("areal_query", ""),
+        key="areal_query",
+        label_visibility="collapsed",
         placeholder=tr(
             lang,
             "e.g. What limits aquaculture growth on the Norwegian coast: available sites, licences, municipal planning, or biological and environmental considerations?",
@@ -1419,6 +1301,36 @@ def _render_sources(results: list[dict]) -> None:
                 st.caption(f"doc_id: `{r.get('doc_id', '')}`")
 
 
+# Streamlit has no scroll call, so a zero-height iframe scrolls the parent page.
+SCROLL_TO_ANSWER = """
+<script>
+(function () {
+  // Until retrieval finishes the page is too short to bring the anchor to the
+  // top, so keep scrolling as the answer grows. Stop once it is in place, after
+  // 25 s, or as soon as the reader scrolls or types.
+  var parent = window.parent;
+  var ticks = 0;
+  var stop = function () { clearInterval(timer); };
+  ["wheel", "touchmove", "keydown"].forEach(function (ev) {
+    parent.addEventListener(ev, stop, {once: true, passive: true});
+  });
+  var timer = setInterval(function () {
+    var anchor = parent.document.getElementById("areal-answer");
+    if (anchor) {
+      if (anchor.getBoundingClientRect().top > 140) {
+        anchor.scrollIntoView({behavior: "auto", block: "start"});
+      } else if (ticks > 8) {
+        stop();
+      }
+    }
+    if (++ticks > 100) {
+      stop();
+    }
+  }, 250);
+})();
+</script>
+"""
+
 FULL_ANSWER_MIN_WORDS = 80  # shorter remainders are not worth hiding
 
 
@@ -1531,9 +1443,9 @@ def _ask(q: str) -> None:
             tr(
                 lang,
                 f"You have reached the limit of {MAX_UNCACHED_PER_SESSION} new questions in this session. "
-                "The example questions stay available. Thank you for testing.",
+                "Questions that have already been answered stay available. Thank you for testing.",
                 f"Du har nådd grensen på {MAX_UNCACHED_PER_SESSION} nye spørsmål i denne økten. "
-                "Eksempelspørsmålene er fortsatt tilgjengelige. Takk for at du tester.",
+                "Spørsmål som allerede er besvart, er fortsatt tilgjengelige. Takk for at du tester.",
             )
         )
         return
@@ -1560,9 +1472,9 @@ def _ask(q: str) -> None:
             tr(
                 lang,
                 "This question appears to fall outside this corpus. "
-                "Try a question about sea area, locality or coastal-zone planning, or pick a point in section C.",
+                "Try a question about sea area, locality or coastal-zone planning, or pick an open question in section C.",
                 "Spørsmålet ser ut til å ligge utenfor dette korpuset. "
-                "Prøv et spørsmål om sjøareal, lokalitet eller kystsoneplan, eller velg et punkt i seksjon C.",
+                "Prøv et spørsmål om sjøareal, lokalitet eller kystsoneplan, eller velg et av de åpne spørsmålene i seksjon C.",
             )
         )
         _log_answer(answer_id, q, results, "", started, cached=False, error="out_of_scope")
@@ -1602,7 +1514,18 @@ def _ask(q: str) -> None:
 # The finished answer lives in session state, so it survives reruns triggered by
 # other widgets. The run that produces it streams it (and renders nothing twice);
 # later reruns re-render it from session state.
-if run and query.strip():
+pending = st.session_state.pop("areal_ask_now", None)  # set by a card button
+if pending:
+    # The answer renders below, out of sight of the card that was clicked. Scroll
+    # there: the anchor is above the script, so the script can wait for it.
+    st.markdown(
+        '<div id="areal-answer" style="scroll-margin-top:4.5rem"></div>',
+        unsafe_allow_html=True,
+    )
+    st.components.v1.html(SCROLL_TO_ANSWER, height=0)
+    st.toast(tr(lang, "The answer appears below the question box ↓", "Svaret kommer under spørsmålsboksen ↓"))
+    _ask(pending)
+elif run and query.strip():
     _ask(query.strip())
 elif st.session_state.get("areal_last"):
     _render_last(st.session_state["areal_last"])
