@@ -238,7 +238,7 @@ class ArealPageTests(unittest.TestCase):
 
     def ask(self, at, question="Hva begrenser vekst i havbruk?"):
         at.text_area[0].set_value(question)
-        self.button(at, "Syntetiser").click()
+        self.button(at, "Spør kildene").click()
         at.run()
 
     @staticmethod
@@ -266,7 +266,7 @@ class ArealPageTests(unittest.TestCase):
         self.assertEqual(1, len(self.completions.calls))
         self.assertTrue(self.completions.calls[0]["stream"])
         last = at.session_state["areal_last"]
-        self.assertEqual(["answer_id", "query", "mode", "lang", "results", "answer", "latency_s", "cached"], list(last))
+        self.assertEqual(["answer_id", "query", "card_n", "mode", "lang", "results", "answer", "latency_s", "cached"], list(last))
         self.assertEqual("Svar fra kildene.", last["answer"])
         self.assertFalse(last["cached"])
 

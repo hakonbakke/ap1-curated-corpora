@@ -167,7 +167,7 @@ class _PageCase(unittest.TestCase):
 
     def ask(self, at, question="Hva begrenser vekst i havbruk?"):
         at.text_area[0].set_value(question)
-        next(b for b in at.button if b.label in ("Syntetiser", "Synthesise")).click()
+        next(b for b in at.button if b.label in ("Spør kildene", "Ask the sources")).click()
         at.run()
 
     def non_specialist_session(self, lang="no"):

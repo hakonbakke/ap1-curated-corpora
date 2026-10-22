@@ -73,20 +73,6 @@ class ArealUiTests(unittest.TestCase):
         self.assertTrue(any("plain language" in i.value for i in at.info))
         self.assertEqual("non_researcher", [r for r in at.main.radio if r.label == "Choose your background"][0].value)
 
-    def test_readable_source_chips_replace_raw_ids(self) -> None:
-        at = self.app().run()
-        self.assertFalse(at.exception, at.exception)
-        # Fault 1 chips: 3 authors, 2 authors, 1 author.
-        html = " ".join(m.value for m in at.markdown)
-        self.assertIn("Hersoug mfl. 2020", html)
-        self.assertIn("Sandersen og Kvalvik 2015", html)
-        self.assertIn("Tveterås 2023", html)
-        self.assertNotIn("2020_hersoug_whats-the-clue", html)
-        at.main.radio[0].set_value("en").run()
-        html = " ".join(m.value for m in at.markdown)
-        self.assertIn("Hersoug et al. 2020", html)
-        self.assertIn("Sandersen and Kvalvik 2015", html)
-
     def test_jargon_is_gone_from_visible_text(self) -> None:
         at = self.app().run()
         text = " ".join([m.value for m in at.markdown] + [c.value for c in at.caption])

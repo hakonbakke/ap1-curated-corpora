@@ -1001,21 +1001,15 @@ Tre utviklingstrekk endrer arealbildet, uten å løse det alene. De endrer førs
         ):
             render_regelverk(lang)
 
-# ── C: Åpne spørsmål og Spør kildene ──────────────────────────────────────────
+# ── C: Spør kildene ───────────────────────────────────────────────────────────
+# Spør først: eget spørsmål, så åpne spørsmål som chips, så svaret rett under.
 
 section_header(
     tr(lang, "C · Ask the sources", "C · Spør kildene"),
-    tr(lang, "Open questions, or your own", "Åpne spørsmål, eller ditt eget"),
-)
-st.markdown(
-    tr(
-        lang,
-        "Pick an open question, or write your own at the bottom.",
-        "Velg et åpent spørsmål, eller skriv ditt eget nederst.",
-    )
+    tr(lang, "Your own question, or an open one", "Ditt eget spørsmål, eller et åpent"),
 )
 
-# The audience comes before the cards, so a card click uses the chosen mode.
+# The audience comes first, so a chip click and the button both use the chosen mode.
 with st.container(border=True):
     mode = st.radio(
         tr(lang, "Choose your background", "Velg bakgrunn"),
@@ -1051,71 +1045,38 @@ with st.container(border=True):
             )
         )
 
+CHIP_KEYS = [f"areal_chips_{i}" for i in range(len(GROUPS))]
+CARDS = {card["n"]: card for group in GROUPS for card in group["cards"]}
 
-def _pick_question(q: str) -> None:
-    """Card button callback (runs before the rerun): fill the text area and flag
-    the question so the ask flow below runs once in the answer area."""
+
+def _clear_chips() -> None:
+    """Callback: no chip stays marked once a question is asked another way."""
+    for key in CHIP_KEYS:
+        st.session_state[key] = None
+
+
+def _pick_question(group_key: str, chip_lang: str) -> None:
+    """Chip callback (runs before the rerun): fill the text area, remember which card
+    it came from and flag the question so the ask flow below runs once in the answer
+    area. Deselecting a chip asks nothing."""
+    n = st.session_state.get(group_key)
+    if n is None:
+        return
+    for key in CHIP_KEYS:
+        if key != group_key:
+            st.session_state[key] = None  # only one chip looks selected
+    q = FAULTS[chip_lang][n - 1][2]
     st.session_state["areal_query"] = q
     st.session_state["areal_ask_now"] = q
+    st.session_state["areal_ask_card"] = n
 
-
-def _card_sources(docs: list[str], labels: dict[str, str]) -> str:
-    names = [labels[d] for d in docs if labels.get(d)]
-    return f" · :gray[*{', '.join(names)}*]" if names else ""
-
-
-def _render_card(card: dict, labels: dict[str, str]) -> None:
-    n = card["n"]
-    with st.container(border=True):
-        st.markdown(
-            f'<div class="hl-card-title">{escape(card["title_" + lang])}</div>',
-            unsafe_allow_html=True,
-        )
-        st.caption(card["intro"][lang])
-        st.markdown(
-            "\n".join(f"- {p[lang]}{_card_sources(p['docs'], labels)}" for p in card["points"])
-        )
-        st.markdown(f"**{tr(lang, 'Open:', 'Åpent:')}** {card['open_' + lang]}")
-        st.button(
-            tr(lang, "Ask the sources about this", "Spør kildene om dette"),
-            key=f"areal_card_{lang}_{n}",
-            on_click=_pick_question,
-            args=(FAULTS[lang][n - 1][2],),
-            width="stretch",
-        )
-        with st.expander(tr(lang, "Read more", "Les mer")):
-            st.markdown(FAULTS[lang][n - 1][1])
-
-
-card_labels = _chip_labels(lang, df)
-for group in GROUPS:
-    st.markdown(
-        f'<div class="hl-group-title">{escape(group["title_" + lang])}</div>',
-        unsafe_allow_html=True,
-    )
-    for col, card in zip(st.columns(3), group["cards"]):
-        with col:
-            _render_card(card, card_labels)
-
-st.caption(
-    tr(
-        lang,
-        "Editorial orientation · last reviewed 2026-10-19 · the answers search the active documents.",
-        "Redaksjonell orientering · sist gjennomgått 2026-10-19 · svarene søker i de aktive dokumentene.",
-    )
-)
 
 # ── Your own question ─────────────────────────────────────────────────────────
 
-st.markdown(
-    f'<div class="hl-group-title">{tr(lang, "Your own question", "Ditt eget spørsmål")}</div>',
-    unsafe_allow_html=True,
-)
 with st.container(border=True):
     query = st.text_area(
         tr(lang, "Your question", "Spørsmålet ditt"),
         key="areal_query",
-        label_visibility="collapsed",
         placeholder=tr(
             lang,
             "e.g. What limits aquaculture growth on the Norwegian coast: available sites, licences, municipal planning, or biological and environmental considerations?",
@@ -1132,7 +1093,12 @@ with st.container(border=True):
     )
     col1, col2 = st.columns([1, 4])
     with col1:
-        run = st.button(tr(lang, "Synthesise", "Syntetiser"), type="primary", width="stretch")
+        run = st.button(
+            tr(lang, "Ask the sources", "Spør kildene"),
+            type="primary",
+            width="stretch",
+            on_click=_clear_chips,
+        )
     with col2:
         n_active = len(selected_doc_ids) if selected_doc_ids else 0
         st.caption(
@@ -1142,6 +1108,56 @@ with st.container(border=True):
                 f"Svaret bygger på de {min(top_k, n_active)} mest relevante av {n_active} dokumenter.",
             )
         )
+
+# ── Open questions as chips ───────────────────────────────────────────────────
+
+st.markdown(f"**{tr(lang, 'Or pick an open question:', 'Eller velg et åpent spørsmål:')}**")
+for gi, group in enumerate(GROUPS):
+    st.markdown(
+        f'<div class="hl-group-title">{escape(group["title_" + lang])}</div>',
+        unsafe_allow_html=True,
+    )
+    titles = {card["n"]: card["title_" + lang] for card in group["cards"]}
+    st.pills(
+        group["title_" + lang],
+        options=list(titles),
+        format_func=titles.get,
+        selection_mode="single",
+        key=CHIP_KEYS[gi],
+        on_change=_pick_question,
+        args=(CHIP_KEYS[gi], lang),
+        label_visibility="collapsed",
+    )
+
+def _card_sources(docs: list[str], labels: dict[str, str]) -> str:
+    names = [labels[d] for d in docs if labels.get(d)]
+    return f" · :gray[*{', '.join(names)}*]" if names else ""
+
+
+def _render_question_box(card_n: int | None) -> None:
+    """The open question the answer belongs to: short title, the full question asked,
+    what the sources say, what is unresolved. Static text, so it shows at once, before
+    any API wait. Rendered in the language of the page right now."""
+    card = CARDS.get(card_n) if card_n else None
+    if card is None:
+        return
+    labels = _chip_labels(lang, df)
+    with st.container(border=True):
+        st.markdown(
+            f'<div class="hl-card-title">{escape(card["title_" + lang])}</div>',
+            unsafe_allow_html=True,
+        )
+        st.caption(
+            f"**{tr(lang, 'The question asked:', 'Spørsmålet som stilles:')}** "
+            f"{FAULTS[lang][card_n - 1][2]}"
+        )
+        st.caption(card["intro"][lang])
+        st.markdown(
+            "\n".join(f"- {p[lang]}{_card_sources(p['docs'], labels)}" for p in card["points"])
+        )
+        st.markdown(f"**{tr(lang, 'Unresolved:', 'Uavklart:')}** {card['open_' + lang]}")
+        with st.expander(tr(lang, "Read more", "Les mer")):
+            st.markdown(FAULTS[lang][card_n - 1][1])
 
 AREAL_MODEL = "gpt-6-luna"
 MAX_UNCACHED_PER_SESSION = 8
@@ -1301,36 +1317,6 @@ def _render_sources(results: list[dict]) -> None:
                 st.caption(f"doc_id: `{r.get('doc_id', '')}`")
 
 
-# Streamlit has no scroll call, so a zero-height iframe scrolls the parent page.
-SCROLL_TO_ANSWER = """
-<script>
-(function () {
-  // Until retrieval finishes the page is too short to bring the anchor to the
-  // top, so keep scrolling as the answer grows. Stop once it is in place, after
-  // 25 s, or as soon as the reader scrolls or types.
-  var parent = window.parent;
-  var ticks = 0;
-  var stop = function () { clearInterval(timer); };
-  ["wheel", "touchmove", "keydown"].forEach(function (ev) {
-    parent.addEventListener(ev, stop, {once: true, passive: true});
-  });
-  var timer = setInterval(function () {
-    var anchor = parent.document.getElementById("areal-answer");
-    if (anchor) {
-      if (anchor.getBoundingClientRect().top > 140) {
-        anchor.scrollIntoView({behavior: "auto", block: "start"});
-      } else if (ticks > 8) {
-        stop();
-      }
-    }
-    if (++ticks > 100) {
-      stop();
-    }
-  }, 250);
-})();
-</script>
-"""
-
 FULL_ANSWER_MIN_WORDS = 80  # shorter remainders are not worth hiding
 
 
@@ -1360,8 +1346,11 @@ def _render_answer(text: str, answer_mode: str) -> None:
         st.markdown(rest)
 
 
-def _render_last(last: dict) -> None:
-    """Render a stored answer: synthesis, feedback form, sources."""
+def _render_last(last: dict, with_question_box: bool = True) -> None:
+    """Render a stored answer: question box (for open questions), synthesis, feedback
+    form, sources. The box uses the language of the page now, not of the answer."""
+    if with_question_box:
+        _render_question_box(last.get("card_n"))
     _answer_header()
     _render_answer(last["answer"], last.get("mode", mode))
     _render_feedback(last["answer_id"])
@@ -1397,12 +1386,15 @@ def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
     return str(text or "").strip()
 
 
-def _ask(q: str) -> None:
+def _ask(q: str, card_n: int | None = None) -> None:
     """One question: cache lookup, retrieval, streamed synthesis, logging.
-    On success the answer is stored in session state and shown."""
+    On success the answer is stored in session state and shown. `card_n` is the open
+    question (1-9) it came from, or None for an own question."""
     started = time.perf_counter()
     answer_id = uuid.uuid4().hex
     st.session_state.pop("areal_last", None)  # a new question replaces the old answer
+    # Static text first, so there is something to read before any API wait.
+    _render_question_box(card_n)
 
     if not corpus_ready:
         st.error(tr(lang, "Corpus not ready.", "Korpuset er ikke klart."))
@@ -1421,6 +1413,7 @@ def _ask(q: str) -> None:
     last = {
         "answer_id": answer_id,
         "query": q,
+        "card_n": card_n,
         "mode": mode,
         "lang": lang,
         "results": [],
@@ -1435,7 +1428,7 @@ def _ask(q: str) -> None:
         last.update(results=results, answer=answer, latency_s=time.perf_counter() - started, cached=True)
         st.session_state["areal_last"] = last
         _log_answer(answer_id, q, results, answer, started, cached=True)
-        _render_last(last)
+        _render_last(last, with_question_box=False)  # already shown above
         return
 
     if st.session_state.get("areal_n_asked", 0) >= MAX_UNCACHED_PER_SESSION:
@@ -1514,21 +1507,22 @@ def _ask(q: str) -> None:
 # The finished answer lives in session state, so it survives reruns triggered by
 # other widgets. The run that produces it streams it (and renders nothing twice);
 # later reruns re-render it from session state.
-pending = st.session_state.pop("areal_ask_now", None)  # set by a card button
+pending = st.session_state.pop("areal_ask_now", None)  # set by a chip
+pending_card = st.session_state.pop("areal_ask_card", None)
 if pending:
-    # The answer renders below, out of sight of the card that was clicked. Scroll
-    # there: the anchor is above the script, so the script can wait for it.
-    st.markdown(
-        '<div id="areal-answer" style="scroll-margin-top:4.5rem"></div>',
-        unsafe_allow_html=True,
-    )
-    st.components.v1.html(SCROLL_TO_ANSWER, height=0)
-    st.toast(tr(lang, "The answer appears below the question box ↓", "Svaret kommer under spørsmålsboksen ↓"))
-    _ask(pending)
+    _ask(pending, pending_card)
 elif run and query.strip():
     _ask(query.strip())
 elif st.session_state.get("areal_last"):
     _render_last(st.session_state["areal_last"])
+
+st.caption(
+    tr(
+        lang,
+        "Editorial orientation · last reviewed 2026-10-19 · the answers search the active documents.",
+        "Redaksjonell orientering · sist gjennomgått 2026-10-19 · svarene søker i de aktive dokumentene.",
+    )
+)
 
 st.markdown(
     tr(
