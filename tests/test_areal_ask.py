@@ -121,7 +121,8 @@ class FeedbackModuleTests(unittest.TestCase):
         p = feedback.build_answer_payload(**self.ANSWER)
         self.assertEqual(
             ["type", "ts", "session_id", "answer_id", "room", "question", "mode", "language", "model",
-             "top_k", "n_active_docs", "retrieved", "answer", "latency_s", "cached", "error"],
+             "top_k", "n_active_docs", "retrieved", "answer", "latency_s", "cached", "error",
+             "answer_words", "answer_shape"],
             list(p),
         )
         self.assertEqual("answer", p["type"])
@@ -135,7 +136,8 @@ class FeedbackModuleTests(unittest.TestCase):
     def test_rating_payload_keys_and_defaults(self) -> None:
         p = feedback.build_rating_payload(session_id="s", answer_id="a", thumbs="up", comment="hm")
         self.assertEqual(
-            ["type", "ts", "session_id", "answer_id", "thumbs", "answered_question", "fair_disagreement", "comment"],
+            ["type", "ts", "session_id", "answer_id", "thumbs", "answered_question", "fair_disagreement", "comment",
+             "length", "readability"],
             list(p),
         )
         self.assertEqual("rating", p["type"])

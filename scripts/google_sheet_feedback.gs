@@ -13,11 +13,11 @@ const COLUMNS = {
   answer: [
     'ts', 'session_id', 'answer_id', 'room', 'question', 'mode', 'language',
     'model', 'top_k', 'n_active_docs', 'retrieved', 'answer', 'latency_s',
-    'cached', 'error',
+    'cached', 'error', 'answer_words', 'answer_shape',
   ],
   rating: [
     'ts', 'session_id', 'answer_id', 'thumbs', 'answered_question',
-    'fair_disagreement', 'comment',
+    'fair_disagreement', 'comment', 'length', 'readability',
   ],
 };
 const TAB = { answer: 'answers', rating: 'ratings' };

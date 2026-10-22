@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import threading
 import urllib.request
 from datetime import datetime, timezone
@@ -33,6 +34,52 @@ def _webhook_url() -> str:
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+# A short-answer block opens with a bold label line, in either language.
+SHORT_ANSWER_LABELS = ("**Kort svar**", "**Short answer**")
+_BULLET_RE = re.compile(r"^\s*(?:[-*]|\d+[.)])\s+\S")
+_NUMBERED_RE = re.compile(r"^\s*\d+[.)]\s+\S")
+_TABLE_ROW_RE = re.compile(r"^\s*\|.*\|\s*$")
+
+
+def split_short_answer(text: str) -> tuple[str, str]:
+    """Split an answer into (short_block, rest).
+
+    The short block is the bold label line plus its bullet lines (blank lines are
+    allowed between the label and the first bullet). It ends at the first blank line
+    or non-bullet line after at least one bullet. Without the label at the start of
+    the text, or without any bullet under it, returns ("", text)."""
+    text = text or ""
+    lines = text.lstrip().split("\n")
+    if not lines or lines[0].strip() not in SHORT_ANSWER_LABELS:
+        return "", text
+    i = 1
+    while i < len(lines) and not lines[i].strip():
+        i += 1
+    first_bullet = i
+    while i < len(lines) and _BULLET_RE.match(lines[i]):
+        i += 1
+    if i == first_bullet:
+        return "", text
+    short = "\n".join([lines[0].strip()] + lines[first_bullet:i]).strip()
+    rest = "\n".join(lines[i:]).strip()
+    return short, rest
+
+
+def answer_shape(text: str) -> str:
+    """Comma-joined features of an answer: kort_svar, steps, table. "plain" if none."""
+    if not (text or "").strip():
+        return ""
+    short, rest = split_short_answer(text)
+    features = []
+    if short:
+        features.append("kort_svar")
+    if any(_NUMBERED_RE.match(line) for line in rest.split("\n")):
+        features.append("steps")
+    if any(_TABLE_ROW_RE.match(line) for line in rest.split("\n")):
+        features.append("table")
+    return ",".join(features) or "plain"
 
 
 def build_answer_payload(
@@ -69,6 +116,8 @@ def build_answer_payload(
         "latency_s": round(float(latency_s), 1),
         "cached": bool(cached),
         "error": error,
+        "answer_words": len((answer or "").split()),
+        "answer_shape": answer_shape(answer),
     }
 
 
@@ -80,6 +129,8 @@ def build_rating_payload(
     answered_question: str = "",
     fair_disagreement: str = "",
     comment: str = "",
+    length: str = "",
+    readability: str = "",
 ) -> dict:
     return {
         "type": "rating",
@@ -90,6 +141,8 @@ def build_rating_payload(
         "answered_question": answered_question,
         "fair_disagreement": fair_disagreement,
         "comment": comment,
+        "length": length,
+        "readability": readability,
     }
 
 

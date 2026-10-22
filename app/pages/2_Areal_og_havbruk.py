@@ -743,9 +743,11 @@ with hero_right:
 st.caption(
     tr(
         lang,
+        "A and B sit in the collapsed background panel below. "
         "A introduces the paradox and the three area quantities. "
         "B shows the split governing system, with links to statutes and public sources. "
         "C collects the open questions. D lets you ask the sources.",
+        "A og B ligger i bakgrunnspanelet under, som er lukket. "
         "A innfører paradokset og de tre arealbegrepene. B viser det delte styringssystemet, med lenker til lover og offentlige kilder. "
         "C samler de åpne spørsmålene. D lar deg spørre kildene.",
     )
@@ -753,19 +755,28 @@ st.caption(
 
 st.write("")
 
-# ── A: Introduksjon ───────────────────────────────────────────────────────────
+# ── Background panel: A and B, collapsed so C and D are reached sooner ────────
 
-section_header(
-    tr(lang, "A · Introduction", "A · Introduksjon"),
-    tr(lang, "Editorial overview", "Redaksjonell oversikt"),
-)
-with st.container(border=True):
-    col_a, col_fig = st.columns([1.7, 0.7])
-    with col_a:
-        st.markdown(
-            tr(
-                lang,
-                """
+with st.expander(
+    tr(
+        lang,
+        "Background: A · Introduction and B · The Norwegian framework",
+        "Bakgrunn: A · Introduksjon og B · Norsk rammeverk",
+    )
+):
+    # ── A: Introduksjon ───────────────────────────────────────────────────────────
+
+    section_header(
+        tr(lang, "A · Introduction", "A · Introduksjon"),
+        tr(lang, "Editorial overview", "Redaksjonell oversikt"),
+    )
+    with st.container(border=True):
+        col_a, col_fig = st.columns([1.0, 1.0])
+        with col_a:
+            st.markdown(
+                tr(
+                    lang,
+                    """
 Norwegian aquaculture runs along a coastline that is, internationally, almost unreal in length and fragmentation, and yet scarcity of area has become one of the most persistent disputes in the industry's governance. The paradox is clear when the figures are set side by side. Inside the baseline there is on the order of 76 000 to 80 000 square kilometres of sea, while the pens themselves occupy a vanishingly small share of this, estimated at half a percent of the coastal zone. At the same time, farmers report year after year that they cannot get the localities they need. Already in 2005, Jentoft and Buanes called the idea of almost unlimited coastal space a myth: from the air the pens look like dots on an empty surface, but on the ground moorings, safety zones and spacing requirements between farms make the industry far more space-consuming than the footprint suggests.
 
 The key to the disagreement is that when people talk about how much area aquaculture occupies, it is described by three different quantities.
@@ -778,7 +789,7 @@ The key to the disagreement is that when people talk about how much area aquacul
 
 When infection distances between farms are counted in, the occupation grows sharply, and in some production areas it ties up a substantial share of available sea. Debates about whether the coast is full or empty therefore easily become meaningless if the parties are each talking about a different one of these quantities.
 """,
-                """
+                    """
 Norsk havbruk drives langs en kystlinje som i internasjonal sammenheng er nesten uvirkelig lang og oppstykket, og likevel er knapphet på areal blitt et av de mest vedvarende stridsspørsmålene i næringens forvaltning. Paradokset trer tydelig frem når tallene settes ved siden av hverandre. Innenfor grunnlinjen ligger det i størrelsesorden 76 000 til 80 000 kvadratkilometer sjø, mens selve merdene legger beslag på en forsvinnende liten del av dette, anslagsvis en halv prosent av kystsonen. Samtidig melder oppdrettere år etter år at de ikke får tilgang til de lokalitetene de trenger. Allerede i 2005 kalte Jentoft og Buanes forestillingen om nærmest ubegrenset kystplass for en myte: fra luften ser merdene ut som prikker på en tom flate, men på bakken gjør fortøyninger, sikkerhetssoner og krav til avstand mellom anlegg næringen langt mer plasskrevende enn fotavtrykket tilsier.
 
 Nøkkelen til uenigheten ligger i at når man snakker om hvor mye areal havbruk beslaglegger, beskrives det av tre ulike størrelser.
@@ -791,13 +802,13 @@ Nøkkelen til uenigheten ligger i at når man snakker om hvor mye areal havbruk 
 
 Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig, og i enkelte produksjonsområder binder det opp en betydelig andel av tilgjengelig sjø. Diskusjoner om hvorvidt kysten er full eller tom blir derfor lett meningsløse dersom partene snakker om hver sin av disse størrelsene.
 """,
+                )
             )
-        )
-        with st.expander(tr(lang, "Read more", "Les mer")):
-            st.markdown(
-                tr(
-                    lang,
-                    """
+            with st.expander(tr(lang, "Read more", "Les mer")):
+                st.markdown(
+                    tr(
+                        lang,
+                        """
 **Split governance.** Governance is split between levels that each have their own logic. The municipality designates sea area under the Planning and Building Act, out to one nautical mile beyond the baselines, and thus holds a key role that national growth targets depend on. A farm then needs both a production licence and a locality licence, and after the 2010 administrative reform it is the county that coordinates the locality case. Sector authorities can still refuse under their own statutes, so an application can survive the plan process and stop somewhere else entirely. Above this sits the traffic-light system with its thirteen production areas, which is a lid on capacity and not a map of where farms may stand.
 
 **Three answers on what stops growth.** What actually stops growth is the central disputed question, and there are at least three competing answers. One points to the licence regime: the constraint is not sea surface, but production licences and capacity limits. The second points to the municipality, where good localities are a limited resource and the political will to designate sea decides what is available at all. The third points to biology, where lice, disease, fish welfare and proximity between farms set the limit long before the map does. The explanations do not rule one another out, but they lead to different political conclusions, and they have not been tested against one another on the same coast in the same year.
@@ -806,7 +817,7 @@ Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig, og i enk
 
 **Municipal will.** All of this hangs on the municipalities' own interests. Because designation happens locally, national growth ambitions rest on local will, and the question of what municipalities get in return has followed the debate for decades. An area rent, a production fee and Havbruksfondet have changed the money flows, but whether that actually leads to more sea being designated remains unanswered. So does the question of where in the decision chain cases most often die: in the plan, in the sector refusal, or in the county's discretion. It is in this space of competing diagnoses, different area concepts and unsettled causal chains that the discussion of aquaculture's coastal area takes place.
 """,
-                    """
+                        """
 **Delt forvaltning.** Forvaltningen er delt mellom nivåer som hver har sin logikk. Kommunen peker ut sjøareal etter plan- og bygningsloven, ut til én nautisk mil utenfor grunnlinjene, og har dermed en nøkkelrolle som nasjonale vekstmål er avhengige av. Et anlegg trenger deretter både produksjonstillatelse og lokalitetstillatelse, og etter forvaltningsreformen i 2010 er det fylkeskommunen som samordner lokalitetssaken. Sektormyndighetene kan likevel avslå etter sine egne lover, slik at en søknad kan overleve planprosessen og stoppe et helt annet sted. Over dette ligger trafikklyssystemet med sine tretten produksjonsområder, som er et lokk på kapasitet og ikke et kart over hvor anleggene kan stå.
 
 **Tre svar på hva som stopper veksten.** Hva som egentlig stopper veksten, er det sentrale stridsspørsmålet, og det finnes minst tre konkurrerende svar. Det ene peker på tillatelsesregimet: det står ikke på sjøflaten, men på produksjonstillatelser og kapasitetsgrenser. Det andre peker på kommunen, der gode lokaliteter er en begrenset ressurs og den politiske viljen til å avsette sjø avgjør hva som overhodet er tilgjengelig. Det tredje peker på biologien, der lus, sykdom, fiskevelferd og nærhet mellom anlegg setter grensen lenge før kartet gjør det. Forklaringene utelukker ikke hverandre, men de leder til ulike politiske konklusjoner, og de er ikke prøvd mot hverandre på samme kyst i samme år.
@@ -815,122 +826,117 @@ Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig, og i enk
 
 **Kommunal vilje.** Alt henger sammen med kommunenes egne interesser. Fordi utpekingen skjer lokalt, hviler nasjonale vekstambisjoner på lokal vilje, og spørsmålet om hva kommunene får igjen har fulgt debatten i flere tiår. Arealavgift, produksjonsavgift og Havbruksfondet har endret pengestrømmene, men om det faktisk fører til at mer sjø blir pekt ut, står ubesvart. Det samme gjør spørsmålet om hvor i beslutningskjeden sakene oftest dør, i planen, i sektoravslaget eller i fylkets skjønn. Det er i dette rommet av konkurrerende diagnoser, ulike arealbegreper og uavklarte årsakskjeder at diskusjonen om havbrukets kystareal foregår.
 """,
+                    )
                 )
-            )
-    with col_fig:
-        fig_areal = REPO / "mockup" / "figur-arealbruk-snl.png"
-        if fig_areal.exists():
-            st.image(
-                str(fig_areal),
-                width=220,
-                caption=tr(
-                    lang,
-                    "Land use, not the influence zone.",
-                    "Arealbruk, ikke påvirkningssonen.",
-                ),
-            )
-            st.caption(
-                tr(
-                    lang,
-                    "Cited excerpt of the left panel at [SNL, Business in Norway](https://snl.no/næringsliv_i_Norge) (KF).",
-                    "Sitert utdrag av venstre panel hos [SNL, Næringsliv i Norge](https://snl.no/næringsliv_i_Norge) (KF).",
+        with col_fig:
+            fig_areal = REPO / "mockup" / "figur-havbruk-og-areal.jpg"
+            if fig_areal.exists():
+                # Portrait map with a small-print legend: the column is wide enough to
+                # read it, and the image has a fullscreen button for the rest.
+                st.image(
+                    str(fig_areal),
+                    width="stretch",
+                    caption=tr(
+                        lang,
+                        "Aquaculture and other interests along the coast. Sources are listed in the map.",
+                        "Havbruk og andre interesser langs kysten. Kilder står i kartet.",
+                    ),
                 )
+
+    # ── B: Norsk rammeverk ────────────────────────────────────────────────────────
+
+    section_header(
+        tr(lang, "B · Current Norwegian framework", "B · Gjeldende norsk rammeverk"),
+        tr(lang, "A split governing system", "Et delt styringssystem"),
+    )
+    with st.container(border=True):
+        st.markdown(
+            tr(
+                lang,
+                "Sea use is planned by the municipalities in the land-use part of the "
+                "municipal master plan. The [Planning and Building Act](https://lovdata.no/dokument/NL/lov/2008-06-27-71) "
+                "applies in the sea to **one nautical mile beyond the baselines** (section 1-2). "
+                "Here sea is designated for aquaculture, fishing, navigation, nature and "
+                "outdoor life, often as combined purposes.",
+                "Arealbruken i sjø planlegges av kommunene i kommuneplanens arealdel. "
+                "[Plan- og bygningsloven](https://lovdata.no/dokument/NL/lov/2008-06-27-71) "
+                "gjelder i sjø ut til **én nautisk mil utenfor grunnlinjene** (§ 1-2). "
+                "Her settes områder av til akvakultur, fiske, ferdsel, natur og friluftsliv, "
+                "ofte som kombinerte formål.",
             )
-
-# ── B: Norsk rammeverk ────────────────────────────────────────────────────────
-
-section_header(
-    tr(lang, "B · Current Norwegian framework", "B · Gjeldende norsk rammeverk"),
-    tr(lang, "A split governing system", "Et delt styringssystem"),
-)
-with st.container(border=True):
-    st.markdown(
-        tr(
-            lang,
-            "Sea use is planned by the municipalities in the land-use part of the "
-            "municipal master plan. The [Planning and Building Act](https://lovdata.no/dokument/NL/lov/2008-06-27-71) "
-            "applies in the sea to **one nautical mile beyond the baselines** (section 1-2). "
-            "Here sea is designated for aquaculture, fishing, navigation, nature and "
-            "outdoor life, often as combined purposes.",
-            "Arealbruken i sjø planlegges av kommunene i kommuneplanens arealdel. "
-            "[Plan- og bygningsloven](https://lovdata.no/dokument/NL/lov/2008-06-27-71) "
-            "gjelder i sjø ut til **én nautisk mil utenfor grunnlinjene** (§ 1-2). "
-            "Her settes områder av til akvakultur, fiske, ferdsel, natur og friluftsliv, "
-            "ofte som kombinerte formål.",
         )
-    )
-    st.markdown(
-        tr(
-            lang,
-            "The permit to farm is given by the **county** under the "
-            "[Aquaculture Act](https://lovdata.no/dokument/NL/lov/2005-06-17-79). From 2010 "
-            "the county coordinates the locality case "
-            "([coordination regulation](https://lovdata.no/dokument/SF/forskrift/2010-05-18-708)). "
-            "Before a decision, the permits required by section 6 "
-            "must be in place: the Food Safety Authority under the Food Act, the County "
-            "Governor under the Pollution Control Act, the Coastal Administration under "
-            "the Harbour and Fairway Act, and NVE under the Water Resources Act where "
-            "relevant. The [Directorate of Fisheries comments on fisheries interests, "
-            "including Sámi fisheries, and is the appeal body](https://mattilsynet.no/fisk-og-akvakultur/oppdrettsanlegg/saksgangen-i-etablering-og-utvidelse-av-akvakulturanlegg). "
-            "It is not a section 6 permit authority. Sector authorities can also object "
-            "to municipal plans. See the Directorate's "
-            "[allocation process](https://www.fiskeridir.no/akvakultur/akvakultursoknader-hvordan-foregar-tildelingsprosessen).",
-            "Tillatelsen til å drive havbruk gis av **fylkeskommunen** etter "
-            "[akvakulturloven](https://lovdata.no/dokument/NL/lov/2005-06-17-79). Fra 2010 "
-            "samordner fylket lokalitetssaken "
-            "([samordningsforskriften](https://lovdata.no/dokument/SF/forskrift/2010-05-18-708)). "
-            "Før vedtak må tillatelsene som kreves etter § 6 "
-            "foreligge: Mattilsynet etter matloven, Statsforvalteren etter "
-            "forurensningsloven, Kystverket etter havne- og farvannsloven, og NVE etter "
-            "vannressursloven der det er aktuelt. [Fiskeridirektoratet uttaler seg om "
-            "fiskeriinteresser, herunder samiske, og er klageorgan](https://mattilsynet.no/fisk-og-akvakultur/oppdrettsanlegg/saksgangen-i-etablering-og-utvidelse-av-akvakulturanlegg). "
-            "Det er ikke tillatelsesmyndighet etter § 6. Sektormyndigheter kan også "
-            "fremme innsigelse mot kommunale planer. Se direktoratets "
-            "[tildelingsprosess](https://www.fiskeridir.no/akvakultur/akvakultursoknader-hvordan-foregar-tildelingsprosessen).",
+        st.markdown(
+            tr(
+                lang,
+                "The permit to farm is given by the **county** under the "
+                "[Aquaculture Act](https://lovdata.no/dokument/NL/lov/2005-06-17-79). From 2010 "
+                "the county coordinates the locality case "
+                "([coordination regulation](https://lovdata.no/dokument/SF/forskrift/2010-05-18-708)). "
+                "Before a decision, the permits required by section 6 "
+                "must be in place: the Food Safety Authority under the Food Act, the County "
+                "Governor under the Pollution Control Act, the Coastal Administration under "
+                "the Harbour and Fairway Act, and NVE under the Water Resources Act where "
+                "relevant. The [Directorate of Fisheries comments on fisheries interests, "
+                "including Sámi fisheries, and is the appeal body](https://mattilsynet.no/fisk-og-akvakultur/oppdrettsanlegg/saksgangen-i-etablering-og-utvidelse-av-akvakulturanlegg). "
+                "It is not a section 6 permit authority. Sector authorities can also object "
+                "to municipal plans. See the Directorate's "
+                "[allocation process](https://www.fiskeridir.no/akvakultur/akvakultursoknader-hvordan-foregar-tildelingsprosessen).",
+                "Tillatelsen til å drive havbruk gis av **fylkeskommunen** etter "
+                "[akvakulturloven](https://lovdata.no/dokument/NL/lov/2005-06-17-79). Fra 2010 "
+                "samordner fylket lokalitetssaken "
+                "([samordningsforskriften](https://lovdata.no/dokument/SF/forskrift/2010-05-18-708)). "
+                "Før vedtak må tillatelsene som kreves etter § 6 "
+                "foreligge: Mattilsynet etter matloven, Statsforvalteren etter "
+                "forurensningsloven, Kystverket etter havne- og farvannsloven, og NVE etter "
+                "vannressursloven der det er aktuelt. [Fiskeridirektoratet uttaler seg om "
+                "fiskeriinteresser, herunder samiske, og er klageorgan](https://mattilsynet.no/fisk-og-akvakultur/oppdrettsanlegg/saksgangen-i-etablering-og-utvidelse-av-akvakulturanlegg). "
+                "Det er ikke tillatelsesmyndighet etter § 6. Sektormyndigheter kan også "
+                "fremme innsigelse mot kommunale planer. Se direktoratets "
+                "[tildelingsprosess](https://www.fiskeridir.no/akvakultur/akvakultursoknader-hvordan-foregar-tildelingsprosessen).",
+            )
         )
-    )
-    st.markdown(
-        tr(
-            lang,
-            "The split means the municipality largely controls **where** aquaculture may "
-            "take place, while the county and the state control **who** may produce and "
-            "**how much**. Myklebust (2021) starts from municipal conditions on how farming "
-            "is carried out, including a closed pen and limits on organic discharge, and "
-            "asks where the legal limit of that power lies. The 2014 and 2018 analyses "
-            "say the municipality cannot freely add its own conditions, and that the "
-            "boundary with the sector authorities is unclear. Capacity in the production "
-            "area is a separate lid. The system gives a broad professional review. It is "
-            "also criticised as fragmented, slow and hard to predict. Because fjords, "
-            "currents and infection do not follow municipal borders, municipalities have "
-            "made intermunicipal coastal plans, including in Trøndelag and on Helgeland. "
-            "Robertsen and colleagues (2014) could not show that these plans improve access "
-            "to sites. The municipal council still adopts the plan for its own sea, and "
-            "firms report refusals even inside areas already zoned for aquaculture. In a "
-            "survey with 54 replies from 111 firms, the conflicts named most often by firms "
-            "that had joined a plan were conservation (57 percent), fisheries (54 percent) "
-            "and wild salmon (36 percent).",
-            "Todelingen gjør at kommunen i stor grad styrer **hvor** havbruk kan "
-            "ligge, mens fylket og staten styrer **hvem** som får produsere, og **hvor mye**. "
-            "Myklebust (2021) tar utgangspunkt i kommunale vilkår om hvordan oppdrett skal "
-            "drives, blant annet lukket merd og grenser for organisk utslipp, og spør hvor "
-            "den rettslige grensen for den myndigheten går. Analysene fra 2014 og 2018 sier "
-            "at kommunen ikke fritt kan legge på egne vilkår, og at grensen mot "
-            "sektormyndighetene er uklar. Kapasitet i produksjonsområdet er et eget lokk. "
-            "Systemet gir bred faglig gjennomgang. Det kritiseres også for å være "
-            "fragmentert, tidkrevende og uforutsigbart. Fordi fjorder, strøm og smitte ikke "
-            "følger kommunegrenser, har kommuner laget interkommunale kystsoneplaner, "
-            "blant annet i Trøndelag og på Helgeland. Robertsen og kolleger (2014) kunne "
-            "ikke vise at slike planer gir bedre lokalitetstilgang. Kommunestyret vedtar "
-            "fortsatt planen for egen sjø, og firmaer melder avslag også inne i områder som "
-            "allerede er avsatt til havbruk. I en undersøkelse med 54 svar fra 111 firmaer "
-            "var konfliktene som oftest ble oppgitt av firmaer som hadde deltatt i en plan, "
-            "vern (57 prosent), fiskeri (54 prosent) og villaks (36 prosent).",
+        st.markdown(
+            tr(
+                lang,
+                "The split means the municipality largely controls **where** aquaculture may "
+                "take place, while the county and the state control **who** may produce and "
+                "**how much**. Myklebust (2021) starts from municipal conditions on how farming "
+                "is carried out, including a closed pen and limits on organic discharge, and "
+                "asks where the legal limit of that power lies. The 2014 and 2018 analyses "
+                "say the municipality cannot freely add its own conditions, and that the "
+                "boundary with the sector authorities is unclear. Capacity in the production "
+                "area is a separate lid. The system gives a broad professional review. It is "
+                "also criticised as fragmented, slow and hard to predict. Because fjords, "
+                "currents and infection do not follow municipal borders, municipalities have "
+                "made intermunicipal coastal plans, including in Trøndelag and on Helgeland. "
+                "Robertsen and colleagues (2014) could not show that these plans improve access "
+                "to sites. The municipal council still adopts the plan for its own sea, and "
+                "firms report refusals even inside areas already zoned for aquaculture. In a "
+                "survey with 54 replies from 111 firms, the conflicts named most often by firms "
+                "that had joined a plan were conservation (57 percent), fisheries (54 percent) "
+                "and wild salmon (36 percent).",
+                "Todelingen gjør at kommunen i stor grad styrer **hvor** havbruk kan "
+                "ligge, mens fylket og staten styrer **hvem** som får produsere, og **hvor mye**. "
+                "Myklebust (2021) tar utgangspunkt i kommunale vilkår om hvordan oppdrett skal "
+                "drives, blant annet lukket merd og grenser for organisk utslipp, og spør hvor "
+                "den rettslige grensen for den myndigheten går. Analysene fra 2014 og 2018 sier "
+                "at kommunen ikke fritt kan legge på egne vilkår, og at grensen mot "
+                "sektormyndighetene er uklar. Kapasitet i produksjonsområdet er et eget lokk. "
+                "Systemet gir bred faglig gjennomgang. Det kritiseres også for å være "
+                "fragmentert, tidkrevende og uforutsigbart. Fordi fjorder, strøm og smitte ikke "
+                "følger kommunegrenser, har kommuner laget interkommunale kystsoneplaner, "
+                "blant annet i Trøndelag og på Helgeland. Robertsen og kolleger (2014) kunne "
+                "ikke vise at slike planer gir bedre lokalitetstilgang. Kommunestyret vedtar "
+                "fortsatt planen for egen sjø, og firmaer melder avslag også inne i områder som "
+                "allerede er avsatt til havbruk. I en undersøkelse med 54 svar fra 111 firmaer "
+                "var konfliktene som oftest ble oppgitt av firmaer som hadde deltatt i en plan, "
+                "vern (57 prosent), fiskeri (54 prosent) og villaks (36 prosent).",
+            )
         )
-    )
-    st.markdown(
-        tr(
-            lang,
-            """
+        st.markdown(
+            tr(
+                lang,
+                """
 <ol class="hl-chain">
   <li><strong>Municipal designation</strong>. Coastal-zone plans under the Planning and Building Act, to one nautical mile beyond the baselines. <a href="https://www.regjeringen.no/no/tema/plan-bygg-og-eiendom/plan_bygningsloven/planlegging/fagtema/planlegging_kyst/id2889076/">KDD on coastal sea planning</a>.</li>
   <li><strong>Production licence</strong>. The company's right to produce and the biomass it may hold (MTB). The stricter of company MTB and locality MTB binds.</li>
@@ -941,7 +947,7 @@ with st.container(border=True):
   <li><strong>Payment to the host municipality</strong>. Havbruksfondet, a production fee and resource-rent tax. See below.</li>
 </ol>
 """,
-            """
+                """
 <ol class="hl-chain">
   <li><strong>Kommunal utpeking</strong>. Kystsoneplaner etter plan- og bygningsloven, til én nautisk mil utenfor grunnlinjene. <a href="https://www.regjeringen.no/no/tema/plan-bygg-og-eiendom/plan_bygningsloven/planlegging/fagtema/planlegging_kyst/id2889076/">KDD om planlegging i kystnære sjøområder</a>.</li>
   <li><strong>Produksjonstillatelse</strong>. Selskapets rett til å produsere og biomassen det får holde (MTB). Den strengeste av selskaps-MTB og lokalitets-MTB binder.</li>
@@ -952,103 +958,103 @@ with st.container(border=True):
   <li><strong>Betaling til vertskommunen</strong>. Havbruksfondet, produksjonsavgift og grunnrenteskatt. Se under.</li>
 </ol>
 """,
-        ),
-        unsafe_allow_html=True,
-    )
-    st.markdown(
-        tr(
-            lang,
-            "An adopted plan map and a granted permit do not automatically settle the "
-            "case. Knowledge can be missing, postponed or applied unevenly in the "
-            "municipal impact assessment and in the locality file. Precaution and "
-            "professional judgement often run together, so the decisive ground can be "
-            "hard to name. That is the strongest research gap in this corpus.",
-            "Vedtatt plankart og gitt tillatelse avgjør ikke automatisk saken. Kunnskap "
-            "kan mangle, utsettes eller brukes skjevt i kommunens konsekvensutredning og "
-            "i lokalitetsfilen. Føre var og faglig skjønn løper ofte sammen, slik at den "
-            "avgjørende grunnen kan være vanskelig å navngi. Det er det tyngste "
-            "kunnskapshullet i dette korpuset.",
+            ),
+            unsafe_allow_html=True,
         )
-    )
-    st.markdown(
-        tr(
-            lang,
-            "From the industry's side, **good localities** are often treated as the "
-            "scarce input: depth, exchange, shelter and distance to other biomass. That "
-            "is one diagnosis in the corpus. Others put production licences and the "
-            "traffic-light first nationally, or lice, disease, welfare and proximity "
-            "between farms. Climate change and warming sea water also shift where "
-            "conditions are favourable. Area alone does not give growth. The traffic-light "
-            "can freeze or cut capacity even where the plan has opened the sea. Green can "
-            "offer up to 6 percent growth, yellow holds capacity, red can require a 6 "
-            "percent cut "
-            "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)). "
-            "The system has been legally and scientifically contested, including because "
-            "whole areas are treated collectively.",
-            "Sett fra næringen behandles **gode lokaliteter** ofte som den knappeste "
-            "innsatsfaktoren: dybde, vannutskifting, skjerming og avstand til annen "
-            "biomasse. Det er én diagnose i korpuset. Andre setter produksjonstillatelser "
-            "og trafikklys først nasjonalt, eller lus, sykdom, velferd og nærhet mellom "
-            "anlegg. Klimaendring og oppvarming av sjøvann forskyver også hvor forholdene "
-            "er gunstige. Areal alene gir ikke vekst. Trafikklyset kan fryse eller kutte "
-            "kapasitet selv der planen har åpnet sjøen. Grønt kan gi inntil 6 prosent "
-            "vekst, gult holder kapasiteten, rødt kan kreve 6 prosent kutt "
-            "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)). "
-            "Systemet har vært rettslig og faglig omstridt, blant annet fordi hele "
-            "områder rammes kollektivt.",
-        )
-    )
-    st.markdown(
-        tr(
-            lang,
-            "**Sharing the value.** [Havbruksfondet](https://www.fiskeridir.no/akvakultur/havbruksfondet) "
-            "was decided in 2015 and set up in 2016. It distributes municipal-sector "
-            "income from sale of new capacity, and the production fee, mainly by cleared "
-            "locality MTB. Payments swing with whether capacity is sold. A "
-            "[production fee](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.071/A-11.090/) "
-            "from 1 January 2021 was meant to smooth that. The rate has been raised "
-            "several times (98.5 øre per kilo slaughtered fish in 2026). "
-            "[Resource-rent tax](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
-            "on salmon, trout and rainbow trout was adopted in 2023. The effective rate "
-            "is 25 percent, with a 70 million kroner allowance per group. An earlier "
-            "area-rent idea was found unsuited. Whether Havbruksfondet and the production "
-            "fee actually get the municipality to designate more sea is untested in the "
-            "research here. Aanesen and Mikkelsen (2020) find, in five Arctic municipalities, "
-            "that transfers from the fund often do not outweigh the welfare loss households "
-            "state for more aquaculture, and that a positive regional result needs some "
-            "producer surplus to remain in the region. Their willingness-to-pay estimates "
-            "were not statistically significant at 5 percent.",
-            "**Fordeling av verdiene.** [Havbruksfondet](https://www.fiskeridir.no/akvakultur/havbruksfondet) "
-            "ble besluttet i 2015 og satt opp i 2016. Det fordeler kommunal sektors andel "
-            "av inntekter fra salg av ny kapasitet, og produksjonsavgiften, i hovedsak "
-            "etter klarert lokalitets-MTB. Utbetalingene svinger med om det selges "
-            "kapasitet. En "
-            "[produksjonsavgift](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.071/A-11.090/) "
-            "fra 1. januar 2021 skulle jevne det ut. Satsen er hevet flere ganger "
-            "(98,5 øre per kilo sløyd fisk i 2026). "
-            "[Grunnrenteskatt](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
-            "på laks, ørret og regnbueørret ble vedtatt i 2023. Effektiv sats er 25 "
-            "prosent, med et bunnfradrag på 70 millioner kroner per konsern. En tidligere "
-            "arealavgift ble funnet uegnet. Om Havbruksfondet og produksjonsavgiften "
-            "faktisk får kommunen til å peke ut mer sjøareal, er uavklart i forskningen "
-            "her. Aanesen og Mikkelsen (2020) finner, i fem arktiske kommuner, at "
-            "overføringer fra fondet ofte ikke veier opp for velferdstapet husholdningene "
-            "oppgir ved mer havbruk, og at et positivt regionalt resultat krever at noe "
-            "av produsentoverskuddet blir igjen i regionen. Anslagene for betalingsvilje "
-            "var ikke statistisk signifikante på 5 prosent.",
-        )
-    )
-    with st.expander(
-        tr(
-            lang,
-            "Read more: Havbruksutvalget, offshore, closed and land-based",
-            "Les mer: Havbruksutvalget, havbruk til havs, lukket og landbasert",
-        )
-    ):
         st.markdown(
             tr(
                 lang,
-                """
+                "An adopted plan map and a granted permit do not automatically settle the "
+                "case. Knowledge can be missing, postponed or applied unevenly in the "
+                "municipal impact assessment and in the locality file. Precaution and "
+                "professional judgement often run together, so the decisive ground can be "
+                "hard to name. That is the strongest research gap in this corpus.",
+                "Vedtatt plankart og gitt tillatelse avgjør ikke automatisk saken. Kunnskap "
+                "kan mangle, utsettes eller brukes skjevt i kommunens konsekvensutredning og "
+                "i lokalitetsfilen. Føre var og faglig skjønn løper ofte sammen, slik at den "
+                "avgjørende grunnen kan være vanskelig å navngi. Det er det tyngste "
+                "kunnskapshullet i dette korpuset.",
+            )
+        )
+        st.markdown(
+            tr(
+                lang,
+                "From the industry's side, **good localities** are often treated as the "
+                "scarce input: depth, exchange, shelter and distance to other biomass. That "
+                "is one diagnosis in the corpus. Others put production licences and the "
+                "traffic-light first nationally, or lice, disease, welfare and proximity "
+                "between farms. Climate change and warming sea water also shift where "
+                "conditions are favourable. Area alone does not give growth. The traffic-light "
+                "can freeze or cut capacity even where the plan has opened the sea. Green can "
+                "offer up to 6 percent growth, yellow holds capacity, red can require a 6 "
+                "percent cut "
+                "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)). "
+                "The system has been legally and scientifically contested, including because "
+                "whole areas are treated collectively.",
+                "Sett fra næringen behandles **gode lokaliteter** ofte som den knappeste "
+                "innsatsfaktoren: dybde, vannutskifting, skjerming og avstand til annen "
+                "biomasse. Det er én diagnose i korpuset. Andre setter produksjonstillatelser "
+                "og trafikklys først nasjonalt, eller lus, sykdom, velferd og nærhet mellom "
+                "anlegg. Klimaendring og oppvarming av sjøvann forskyver også hvor forholdene "
+                "er gunstige. Areal alene gir ikke vekst. Trafikklyset kan fryse eller kutte "
+                "kapasitet selv der planen har åpnet sjøen. Grønt kan gi inntil 6 prosent "
+                "vekst, gult holder kapasiteten, rødt kan kreve 6 prosent kutt "
+                "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)). "
+                "Systemet har vært rettslig og faglig omstridt, blant annet fordi hele "
+                "områder rammes kollektivt.",
+            )
+        )
+        st.markdown(
+            tr(
+                lang,
+                "**Sharing the value.** [Havbruksfondet](https://www.fiskeridir.no/akvakultur/havbruksfondet) "
+                "was decided in 2015 and set up in 2016. It distributes municipal-sector "
+                "income from sale of new capacity, and the production fee, mainly by cleared "
+                "locality MTB. Payments swing with whether capacity is sold. A "
+                "[production fee](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.071/A-11.090/) "
+                "from 1 January 2021 was meant to smooth that. The rate has been raised "
+                "several times (98.5 øre per kilo slaughtered fish in 2026). "
+                "[Resource-rent tax](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
+                "on salmon, trout and rainbow trout was adopted in 2023. The effective rate "
+                "is 25 percent, with a 70 million kroner allowance per group. An earlier "
+                "area-rent idea was found unsuited. Whether Havbruksfondet and the production "
+                "fee actually get the municipality to designate more sea is untested in the "
+                "research here. Aanesen and Mikkelsen (2020) find, in five Arctic municipalities, "
+                "that transfers from the fund often do not outweigh the welfare loss households "
+                "state for more aquaculture, and that a positive regional result needs some "
+                "producer surplus to remain in the region. Their willingness-to-pay estimates "
+                "were not statistically significant at 5 percent.",
+                "**Fordeling av verdiene.** [Havbruksfondet](https://www.fiskeridir.no/akvakultur/havbruksfondet) "
+                "ble besluttet i 2015 og satt opp i 2016. Det fordeler kommunal sektors andel "
+                "av inntekter fra salg av ny kapasitet, og produksjonsavgiften, i hovedsak "
+                "etter klarert lokalitets-MTB. Utbetalingene svinger med om det selges "
+                "kapasitet. En "
+                "[produksjonsavgift](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.071/A-11.090/) "
+                "fra 1. januar 2021 skulle jevne det ut. Satsen er hevet flere ganger "
+                "(98,5 øre per kilo sløyd fisk i 2026). "
+                "[Grunnrenteskatt](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
+                "på laks, ørret og regnbueørret ble vedtatt i 2023. Effektiv sats er 25 "
+                "prosent, med et bunnfradrag på 70 millioner kroner per konsern. En tidligere "
+                "arealavgift ble funnet uegnet. Om Havbruksfondet og produksjonsavgiften "
+                "faktisk får kommunen til å peke ut mer sjøareal, er uavklart i forskningen "
+                "her. Aanesen og Mikkelsen (2020) finner, i fem arktiske kommuner, at "
+                "overføringer fra fondet ofte ikke veier opp for velferdstapet husholdningene "
+                "oppgir ved mer havbruk, og at et positivt regionalt resultat krever at noe "
+                "av produsentoverskuddet blir igjen i regionen. Anslagene for betalingsvilje "
+                "var ikke statistisk signifikante på 5 prosent.",
+            )
+        )
+        with st.expander(
+            tr(
+                lang,
+                "Read more: Havbruksutvalget, offshore, closed and land-based",
+                "Les mer: Havbruksutvalget, havbruk til havs, lukket og landbasert",
+            )
+        ):
+            st.markdown(
+                tr(
+                    lang,
+                    """
 [NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/) (Havbruksutvalget, 28 September 2023) reviewed the permit and management system. It proposed, among other things, a clearer split of company licences and locality licences, **auction of company licences as the main rule**, locality licences on application without a fee, and a larger state role in sea-area planning. It did **not** propose an area tax or auction of the locality itself.
 
 Three developments change the area picture, without solving it alone. They mainly change who must say yes, which interests collide, and where in the system the conflict sits.
@@ -1059,7 +1065,7 @@ Three developments change the area picture, without solving it alone. They mainl
 
 **Land-based aquaculture.** It removes the sea-area conflict and moves it to the shoreline, the power grid, water intake and land discharge permits.
 """,
-                """
+                    """
 [NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/) (Havbruksutvalget, 28. september 2023) gjennomgikk tillatelses- og forvaltningssystemet. Utvalget foreslo blant annet en klarere splitting av selskaps- og lokalitetstillatelse, **auksjon av selskapstillatelser som hovedregel**, lokalitetstillatelser etter søknad uten vederlag, og en større statlig rolle i sjøarealplanlegging. Det foreslo **ikke** en arealavgift, og ikke auksjon av selve lokaliteten.
 
 Tre utviklingstrekk endrer arealbildet, uten å løse det alene. De endrer først og fremst hvem som må si ja, hvilke interesser som settes opp mot hverandre, og hvor i systemet konflikten havner.
@@ -1070,16 +1076,16 @@ Tre utviklingstrekk endrer arealbildet, uten å løse det alene. De endrer førs
 
 **Landbasert oppdrett.** Det fjerner sjøarealkonflikten og flytter den til strandsonen, kraftnettet, vannuttak og utslippstillatelser på land.
 """,
+                )
             )
-        )
-    with st.expander(
-        tr(
-            lang,
-            f"Laws and regulations ({len(REGELVERK)})",
-            f"Lover og forskrifter ({len(REGELVERK)})",
-        )
-    ):
-        render_regelverk(lang)
+        with st.expander(
+            tr(
+                lang,
+                f"Laws and regulations ({len(REGELVERK)})",
+                f"Lover og forskrifter ({len(REGELVERK)})",
+            )
+        ):
+            render_regelverk(lang)
 
 # ── C: Åpne spørsmål ──────────────────────────────────────────────────────────
 
@@ -1318,6 +1324,13 @@ def _render_feedback(answer_id: str) -> None:
         "delvis": tr(lang, "Partly", "Delvis"),
         "nei": tr(lang, "No", "Nei"),
     }
+    # Sent as for_kort|passe|for_lang so the sheet columns stay language-neutral.
+    length_choices = ["for_kort", "passe", "for_lang"]
+    length_label = {
+        "for_kort": tr(lang, "Too short", "For kort"),
+        "passe": tr(lang, "About right", "Passe"),
+        "for_lang": tr(lang, "Too long", "For lang"),
+    }
     slot = st.empty()
     with slot.container():
         with st.form(f"areal_feedback_{answer_id}"):
@@ -1343,6 +1356,22 @@ def _render_feedback(answer_id: str) -> None:
                 horizontal=True,
                 key=f"areal_fair_{answer_id}",
             )
+            length = st.radio(
+                tr(lang, "Was the length right?", "Var lengden passe?"),
+                options=length_choices,
+                format_func=length_label.get,
+                index=None,
+                horizontal=True,
+                key=f"areal_length_{answer_id}",
+            )
+            readable = st.radio(
+                tr(lang, "Was the answer easy to read?", "Var svaret lett å lese?"),
+                options=choices,
+                format_func=choice_label.get,
+                index=None,
+                horizontal=True,
+                key=f"areal_readable_{answer_id}",
+            )
             comment = st.text_area(
                 tr(lang, "Is anything wrong or missing? (optional)", "Er noe feil eller mangler? (valgfritt)"),
                 key=f"areal_comment_{answer_id}",
@@ -1356,6 +1385,8 @@ def _render_feedback(answer_id: str) -> None:
             answered_question=answered or "",
             fair_disagreement=fair or "",
             comment=comment.strip(),
+            length=length or "",
+            readability=readable or "",
         )
         rated.add(answer_id)
         slot.empty()
@@ -1388,10 +1419,39 @@ def _render_sources(results: list[dict]) -> None:
                 st.caption(f"doc_id: `{r.get('doc_id', '')}`")
 
 
+FULL_ANSWER_MIN_WORDS = 80  # shorter remainders are not worth hiding
+
+
+def _collapsed_parts(text: str, answer_mode: str) -> tuple[str, str, int] | None:
+    """(short_block, rest, rounded_word_count) when the non-specialist view should
+    fold the long part away, else None. `answer_mode` is the mode the answer was
+    generated in, not the current radio value."""
+    if answer_mode != "non_researcher":
+        return None
+    short, rest = feedback.split_short_answer(text)
+    words = len(rest.split())
+    if not short or words < FULL_ANSWER_MIN_WORDS:
+        return None
+    return short, rest, int(words / 10 + 0.5) * 10
+
+
+def _render_answer(text: str, answer_mode: str) -> None:
+    """The answer text: short block plus a folded full answer for non-specialists
+    when the model gave a «Kort svar» block, otherwise the whole text."""
+    parts = _collapsed_parts(text, answer_mode)
+    if parts is None:
+        st.markdown(text)
+        return
+    short, rest, n = parts
+    st.markdown(short)
+    with st.expander(tr(lang, f"Read the full answer (about {n} words)", f"Les hele svaret (ca. {n} ord)")):
+        st.markdown(rest)
+
+
 def _render_last(last: dict) -> None:
     """Render a stored answer: synthesis, feedback form, sources."""
     _answer_header()
-    st.markdown(last["answer"])
+    _render_answer(last["answer"], last.get("mode", mode))
     _render_feedback(last["answer_id"])
     _render_sources(last["results"])
 
@@ -1527,7 +1587,14 @@ def _ask(q: str) -> None:
     st.session_state["areal_last"] = last
     feedback.cache_put(key, (results, answer))
     _log_answer(answer_id, q, results, answer, started, cached=False)
-    # The answer is already on screen from the stream; add what goes below it.
+    # The answer is already on screen from the stream. Where the non-specialist view
+    # folds the long part away, swap the streamed text for that view so it matches
+    # what later reruns show.
+    if _collapsed_parts(answer, last["mode"]) is not None:
+        with holder.container():
+            _answer_header()
+            _render_answer(answer, last["mode"])
+    # Add what goes below it.
     _render_feedback(answer_id)
     _render_sources(results)
 
