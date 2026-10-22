@@ -108,6 +108,14 @@ h1{ line-height:1.14; }
   gap:12px; flex-wrap:wrap; margin:6px 0 10px;
 }
 .hl-section-head h2{ font-size:1.4rem; margin:0; }
+/* Areal: A and B are closed panels whose titles match the C section head */
+[class*="st-key-areal_section_"] summary p{ font-size:1.4rem; font-weight:600; line-height:1.3; }
+/* Areal: each open question as its own thin box, with room between them */
+[class*="st-key-areal_open_q_"] [role="radiogroup"]{ gap:.55rem; }
+[class*="st-key-areal_open_q_"] [role="radiogroup"] > label{
+  border:1px solid var(--hl-line); border-radius:.6rem;
+  padding:.65rem .8rem; margin:0; width:100%; background:var(--hl-surface);
+}
 .hl-tag{
   display:inline-block; font-size:.7rem; font-weight:700;
   letter-spacing:.04em; text-transform:uppercase;

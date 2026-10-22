@@ -575,7 +575,7 @@ st.write("")
 # ── A and B: two collapsed background boxes, so C is reached sooner ───────────
 # ── A: Introduksjon ───────────────────────────────────────────────────────────
 
-with st.expander(tr(lang, "A · Introduction", "A · Introduksjon")):
+with st.expander(tr(lang, "A · Introduction", "A · Introduksjon"), key="areal_section_a"):
     st.caption(tr(lang, "Editorial overview", "Redaksjonell oversikt"))
     with st.container(border=True):
         col_a, col_fig = st.columns([1.0, 1.0])
@@ -652,7 +652,7 @@ Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig, og i enk
 
 # ── B: Norsk rammeverk ────────────────────────────────────────────────────────
 
-with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk")):
+with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"), key="areal_section_b"):
     st.caption(
         tr(
             lang,

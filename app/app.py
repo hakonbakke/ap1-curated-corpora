@@ -64,8 +64,8 @@ with active_cols[0]:
     with st.container(border=True):
         st.markdown(
             """
-<div class="hl-feature-marker"></div>
-<span class="hl-status hl-status-on">Aktiv</span>
+<div class="hl-soon-marker"></div>
+<span class="hl-status hl-status-soon">Under utvikling</span>
 <h3 class="hl-room-title">Lakselus og dødelighet hos ville laksefisk</h3>
 <p class="hl-room-desc">
   Hva akademiske publikasjoner sier om hvor mye lakselus fra oppdrett
@@ -75,11 +75,8 @@ with active_cols[0]:
 """,
             unsafe_allow_html=True,
         )
-        st.page_link(
-            "pages/1_Lakselus_og_villaks.py",
-            label="Åpne rom →",
-            icon="📗",
-        )
+        # Kept out of the workshop for now: no link into the room.
+        st.button("Under utvikling", disabled=True, key="soon_villaks", width="stretch")
 
 with active_cols[1]:
     with st.container(border=True):
@@ -90,9 +87,8 @@ with active_cols[1]:
 <h3 class="hl-room-title">Areal og havbruk</h3>
 <p class="hl-room-desc">
   Havbrukets krav på sjøareal. A skiller merdareal, lokalitetsareal og
-  planareal. B viser det delte styringssystemet. C og D viser åpne
-  spørsmål i forvaltningen og i forskningen. Villaks hører hjemme når
-  den er lokk på vekst. Utkast.
+  planareal. B viser det delte styringssystemet. C lar deg spørre kildene,
+  med egne spørsmål eller de åpne spørsmålene i forvaltningen og forskningen.
 </p>
 <div class="hl-room-meta">50 dokumenter · utkast</div>
 """,
