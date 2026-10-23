@@ -671,7 +671,7 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
         st.markdown(
             tr(
                 lang,
-                "The permit to farm is given by the **county** under the "
+                "The locality application goes to the **county**, which handles it under the "
                 "[Aquaculture Act](https://lovdata.no/dokument/NL/lov/2005-06-17-79). From 2010 "
                 "the county coordinates the locality case "
                 "([coordination regulation](https://lovdata.no/dokument/SF/forskrift/2010-05-18-708)). "
@@ -684,7 +684,7 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 "It is not a section 6 permit authority. Sector authorities can also object "
                 "to municipal plans. See the Directorate's "
                 "[allocation process](https://www.fiskeridir.no/akvakultur/akvakultursoknader-hvordan-foregar-tildelingsprosessen).",
-                "Tillatelsen til å drive havbruk gis av **fylkeskommunen** etter "
+                "Lokalitetssøknaden sendes til **fylkeskommunen**, som behandler den etter "
                 "[akvakulturloven](https://lovdata.no/dokument/NL/lov/2005-06-17-79). Fra 2010 "
                 "samordner fylket lokalitetssaken "
                 "([samordningsforskriften](https://lovdata.no/dokument/SF/forskrift/2010-05-18-708)). "
@@ -746,7 +746,7 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
   <li><strong>Municipal designation</strong>. Coastal-zone plans under the Planning and Building Act, to one nautical mile beyond the baselines. <a href="https://www.regjeringen.no/no/tema/plan-bygg-og-eiendom/plan_bygningsloven/planlegging/fagtema/planlegging_kyst/id2889076/">KDD on coastal sea planning</a>.</li>
   <li><strong>Production licence</strong>. The company's right to produce and the biomass it may hold (MTB). The stricter of company MTB and locality MTB binds.</li>
   <li><strong>Locality licence, county coordination</strong>. From 2010 the county runs the process and decides. <a href="https://lovdata.no/dokument/SF/forskrift/2010-05-18-708">Coordination regulation of 18 May 2010</a>.</li>
-  <li><strong>Sector permits</strong>. Food Safety Authority, County Governor (pollution) and Coastal Administration can refuse under their own statutes, so no Aquaculture Act permit can be issued. NVE enters for freshwater intake. The County Governor's advice under the Nature Diversity Act is a guideline, not a veto.</li>
+  <li><strong>Sector permits</strong>. Food Safety Authority, County Governor (pollution) and Coastal Administration can refuse under their own statutes, so no Aquaculture Act permit can be issued. NVE enters for freshwater intake. A permit cannot be granted in breach of adopted protection measures under the Nature Diversity Act (<a href="https://lovdata.no/dokument/NL/lov/2005-06-17-79">Aquaculture Act § 15</a>).</li>
   <li><strong>Sanitary spacing</strong>. Infection control and recommended distance occupy far more sea than the pen. Live advice sits with the <a href="https://mattilsynet.no/fisk-og-akvakultur/oppdrettsanlegg/saksgangen-i-etablering-og-utvidelse-av-akvakulturanlegg">Food Safety Authority</a>.</li>
   <li><strong>Production areas and the traffic-light</strong>. The coast is coloured in 13 areas. Every other year, estimated lice impact on wild salmonids decides whether capacity can grow, freeze or be cut. <a href="https://www.fiskeridir.no/akvakultur/hva-er-trafikklyssystemet">Directorate of Fisheries</a>. <a href="https://lovdata.no/dokument/SF/forskrift/2017-01-16-61">Production area regulation</a>. Colour bands and mortality models belong in the wild-salmon room. The capacity lid belongs here.</li>
   <li><strong>Payment to the host municipality</strong>. Havbruksfondet, a production fee and resource-rent tax. See below.</li>
@@ -757,7 +757,7 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
   <li><strong>Kommunal utpeking</strong>. Kystsoneplaner etter plan- og bygningsloven, til én nautisk mil utenfor grunnlinjene. <a href="https://www.regjeringen.no/no/tema/plan-bygg-og-eiendom/plan_bygningsloven/planlegging/fagtema/planlegging_kyst/id2889076/">KDD om planlegging i kystnære sjøområder</a>.</li>
   <li><strong>Produksjonstillatelse</strong>. Selskapets rett til å produsere og biomassen det får holde (MTB). Den strengeste av selskaps-MTB og lokalitets-MTB binder.</li>
   <li><strong>Lokalitetstillatelse, fylket samordner</strong>. Fra 2010 kjører fylkeskommunen prosessen og fatter vedtak. <a href="https://lovdata.no/dokument/SF/forskrift/2010-05-18-708">Samordningsforskriften 18. mai 2010</a>.</li>
-  <li><strong>Sektortillatelser</strong>. Mattilsynet, Statsforvalteren (forurensning) og Kystverket kan avslå etter egne lover, slik at tillatelse etter akvakulturloven ikke kan gis. NVE kommer inn ved ferskvannsinntak. Statsforvalterens råd etter naturmangfoldloven er retningslinje, ikke veto.</li>
+  <li><strong>Sektortillatelser</strong>. Mattilsynet, Statsforvalteren (forurensning) og Kystverket kan avslå etter egne lover, slik at tillatelse etter akvakulturloven ikke kan gis. NVE kommer inn ved ferskvannsinntak. Tillatelse kan ikke gis i strid med vedtatte vernetiltak etter naturmangfoldloven (<a href="https://lovdata.no/dokument/NL/lov/2005-06-17-79">akvakulturloven § 15</a>).</li>
   <li><strong>Smitteavstand</strong>. Smittevern og anbefalt avstand legger beslag på langt mer sjø enn merden. Levende råd ligger hos <a href="https://mattilsynet.no/fisk-og-akvakultur/oppdrettsanlegg/saksgangen-i-etablering-og-utvidelse-av-akvakulturanlegg">Mattilsynet</a>.</li>
   <li><strong>Produksjonsområder og trafikklys</strong>. Kysten fargelegges i 13 områder. Annethvert år avgjør beregnet lusepåvirkning på vill laksefisk om kapasiteten kan økes, fryses eller kuttes. <a href="https://www.fiskeridir.no/akvakultur/hva-er-trafikklyssystemet">Fiskeridirektoratet</a>. <a href="https://lovdata.no/dokument/SF/forskrift/2017-01-16-61">Produksjonsområdeforskriften</a>. Fargebånd og dødelighetsmodeller hører hjemme i villaks-rommet. Selve kapasitetslokket hører hjemme her.</li>
   <li><strong>Betaling til vertskommunen</strong>. Havbruksfondet, produksjonsavgift og grunnrenteskatt. Se under.</li>
@@ -793,7 +793,7 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 "2023). Area alone does not give growth. The traffic-light "
                 "can freeze or cut capacity even where the plan has opened the sea. Green can "
                 "offer up to 6 percent growth, yellow holds capacity, red can require a 6 "
-                "percent cut "
+                "percent cut, with an exception for farms that document low lice counts "
                 "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)).",
                 "Sett fra næringen behandles **gode lokaliteter** ofte som den knappeste "
                 "innsatsfaktoren: dybde, vannutskifting, skjerming og avstand til annen "
@@ -803,7 +803,7 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 "også forskyve hvor forholdene er gunstige (Skrove mfl. 2023). Areal alene gir "
                 "ikke vekst. Trafikklyset kan fryse eller kutte "
                 "kapasitet selv der planen har åpnet sjøen. Grønt kan gi inntil 6 prosent "
-                "vekst, gult holder kapasiteten, rødt kan kreve 6 prosent kutt "
+                "vekst, gult holder kapasiteten, rødt kan kreve 6 prosent kutt, med unntak for anlegg som dokumenterer lave lusetall "
                 "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)).",
             )
         )
@@ -811,15 +811,17 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
             tr(
                 lang,
                 "**Sharing the value.** [Havbruksfondet](https://www.fiskeridir.no/akvakultur/havbruksfondet) "
-                "was decided in 2015 and set up in 2016. It distributes municipal-sector "
-                "income from sale of new capacity, and the production fee, mainly by cleared "
-                "locality MTB. Payments swing with whether capacity is sold. A "
+                "was decided by the Storting in 2015. It distributes the municipal sector's share "
+                "of income from growth in the industry and from the production fee, mainly by cleared "
+                "locality MTB; part goes to municipalities that have cleared new locality MTB. A "
                 "[production fee](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.071/A-11.090/) "
-                "from 1 January 2021 was meant to smooth that. The rate has been raised "
-                "several times (98.5 øre per kilo slaughtered fish in 2026). "
+                "has applied from 1 January 2021. The rate has been raised several times and is "
+                "98.5 øre per kilo of finished salmon, trout and rainbow trout in 2026 (96.5 øre in 2025). "
                 "[Resource-rent tax](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
-                "on salmon, trout and rainbow trout was adopted in 2023. The effective rate "
-                "is 25 percent, with a 70 million kroner allowance per group. An area rent "
+                "on salmon, trout and rainbow trout was adopted in 2023. The rate is 32.1 percent of the "
+                "resource-rent income after deducting the calculated corporate tax, about 25 percent "
+                "effectively. The bottom deduction is set yearly by the Storting; for 2025 it is "
+                "70 million kroner ([Skatteetaten](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.019/A-11.020/)). An area rent "
                 "was considered and rejected (Sandersen and Kvalvik 2015). Whether Havbruksfondet and the production "
                 "fee actually get the municipality to designate more sea is untested in the "
                 "research here. Aanesen and Mikkelsen (2020) find, in five Arctic municipalities, "
@@ -828,16 +830,18 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 "producer surplus to remain in the region. Their willingness-to-pay estimates "
                 "were not statistically significant at 5 percent.",
                 "**Fordeling av verdiene.** [Havbruksfondet](https://www.fiskeridir.no/akvakultur/havbruksfondet) "
-                "ble besluttet i 2015 og satt opp i 2016. Det fordeler kommunal sektors andel "
-                "av inntekter fra salg av ny kapasitet, og produksjonsavgiften, i hovedsak "
-                "etter klarert lokalitets-MTB. Utbetalingene svinger med om det selges "
-                "kapasitet. En "
+                "ble besluttet av Stortinget i 2015. Det fordeler kommunal sektors andel "
+                "av inntektene fra vekst i oppdrettsnæringen og fra produksjonsavgiften, i hovedsak "
+                "etter klarert lokalitets-MTB; en del går til kommuner som har klarert ny "
+                "lokalitets-MTB. En "
                 "[produksjonsavgift](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.071/A-11.090/) "
-                "fra 1. januar 2021 skulle jevne det ut. Satsen er hevet flere ganger "
-                "(98,5 øre per kilo sløyd fisk i 2026). "
+                "har gjeldt fra 1. januar 2021. Satsen er hevet flere ganger og er 98,5 øre "
+                "per kilo ferdig produsert laks, ørret og regnbueørret i 2026 (96,5 øre i 2025). "
                 "[Grunnrenteskatt](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
-                "på laks, ørret og regnbueørret ble vedtatt i 2023. Effektiv sats er 25 "
-                "prosent, med et bunnfradrag på 70 millioner kroner per konsern. Forslag om en "
+                "på laks, ørret og regnbueørret ble vedtatt i 2023. Satsen er 32,1 prosent av "
+                "grunnrenteinntekten etter fradrag for beregnet selskapsskatt, om lag 25 prosent "
+                "effektivt. Bunnfradraget fastsettes årlig av Stortinget og er 70 millioner kroner "
+                "for 2025 ([Skatteetaten](https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/a-11-akvakultur-havbruk/A-11.019/A-11.020/)). Forslag om en "
                 "arealavgift ble vurdert og forkastet (Sandersen og Kvalvik 2015). Om Havbruksfondet og produksjonsavgiften "
                 "faktisk får kommunen til å peke ut mer sjøareal, er uavklart i forskningen "
                 "her. Aanesen og Mikkelsen (2020) finner, i fem arktiske kommuner, at "
@@ -858,22 +862,22 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 tr(
                     lang,
                     """
-[NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/) (Havbruksutvalget, 28 September 2023) reviewed the permit and management system. It proposed, among other things, a clearer split of company licences and locality licences, **auction of company licences as the main rule**, locality licences on application without a fee, and a larger state role in sea-area planning. It did **not** propose an area tax or auction of the locality itself.
+[NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/) (Havbruksutvalget, 2023) reviewed the permit and management system. It proposed, among other things, that every aquaculture permit consist of a company licence and a locality licence, **auction of company licences as the main rule**, locality licences on application without payment, a larger state role in sea-area planning, and a study of the Directorate of Fisheries as the body that grants locality licences.
 
 Three developments change the area picture, without solving it alone. They mainly change who must say yes, which interests collide, and where in the system the conflict sits.
 
-**Aquaculture at sea.** Production moves out of the municipal plan area and into areas opened by the state. [Fiskeridirektoratet on allocation](https://www.fiskeridir.no/akvakultur/tildeling). On 27 February 2026 the King in Council decided that [Norskerenna sør, Frøyabanken nord and Trænabanken](https://www.regjeringen.no/no/aktuelt/kongelig-resolusjon-om-havbruk-til-havs-fastsatt/id3150415/) can be put out to tender. That can reduce local coastal conflict. It raises new questions about preparedness, welfare, cost, fisheries, and who receives the income when there is no host municipality.
+**Aquaculture at sea.** Production moves out of the municipal plan area and into areas opened by the state. [Fiskeridirektoratet on allocation](https://www.fiskeridir.no/akvakultur/tildeling). On 27 February 2026 the King in Council decided that [Norskerenna sør, Frøyabanken nord and Trænabanken](https://www.regjeringen.no/no/aktuelt/kongelig-resolusjon-om-havbruk-til-havs-fastsatt/id3150415/) can be put out to tender, with parts of Norskerenna sør and Trænabanken excluded where they overlap defence and particularly valuable areas. That can reduce local coastal conflict. It raises new questions about preparedness, welfare, cost, fisheries, and who receives the income when there is no host municipality.
 
 **Closed and semi-closed farms at sea.** They can collect discharges and reduce lice pressure, and may give more production per unit of area. They need more energy, more infrastructure and larger investment. They are not yet at large scale.
 
 **Land-based aquaculture.** It removes the sea-area conflict and moves it to the shoreline, the power grid, water intake and land discharge permits.
 """,
                     """
-[NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/) (Havbruksutvalget, 28. september 2023) gjennomgikk tillatelses- og forvaltningssystemet. Utvalget foreslo blant annet en klarere splitting av selskaps- og lokalitetstillatelse, **auksjon av selskapstillatelser som hovedregel**, lokalitetstillatelser etter søknad uten vederlag, og en større statlig rolle i sjøarealplanlegging. Det foreslo **ikke** en arealavgift, og ikke auksjon av selve lokaliteten.
+[NOU 2023: 23](https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/) (Havbruksutvalget, 2023) gjennomgikk tillatelses- og forvaltningssystemet. Utvalget foreslo blant annet at alle akvakulturtillatelser skal bestå av en selskapstillatelse og en lokalitetstillatelse, **auksjon av selskapstillatelser som hovedregel**, lokalitetstillatelser etter søknad uten vederlag, en større statlig rolle i sjøarealplanlegging, og at Fiskeridirektoratet utredes som tildelingsmyndighet for lokalitetstillatelser.
 
 Tre utviklingstrekk endrer arealbildet, uten å løse det alene. De endrer først og fremst hvem som må si ja, hvilke interesser som settes opp mot hverandre, og hvor i systemet konflikten havner.
 
-**Havbruk til havs.** Produksjon flyttes ut av kommunenes planområde og inn i områder staten åpner. [Fiskeridirektoratet om tildeling](https://www.fiskeridir.no/akvakultur/tildeling). 27. februar 2026 fastsatte Kongen i statsråd at [Norskerenna sør, Frøyabanken nord og Trænabanken](https://www.regjeringen.no/no/aktuelt/kongelig-resolusjon-om-havbruk-til-havs-fastsatt/id3150415/) kan lyses ut. Det kan redusere lokal kystkonflikt. Det reiser nye spørsmål om beredskap, velferd, kostnader, fiskeriene, og hvem som skal få inntektene når det ikke finnes vertskommune.
+**Havbruk til havs.** Produksjon flyttes ut av kommunenes planområde og inn i områder staten åpner. [Fiskeridirektoratet om tildeling](https://www.fiskeridir.no/akvakultur/tildeling). 27. februar 2026 fastsatte Kongen i statsråd at [Norskerenna sør, Frøyabanken nord og Trænabanken](https://www.regjeringen.no/no/aktuelt/kongelig-resolusjon-om-havbruk-til-havs-fastsatt/id3150415/) kan lyses ut, med unntak av deler av Norskerenna sør og Trænabanken som overlapper Forsvarets fareområde og særlig verdifulle områder. Det kan redusere lokal kystkonflikt. Det reiser nye spørsmål om beredskap, velferd, kostnader, fiskeriene, og hvem som skal få inntektene når det ikke finnes vertskommune.
 
 **Lukkede og semilukkede anlegg i sjø.** De kan samle utslipp og redusere lusepress, og kan gi mer produksjon per arealenhet. De krever mer energi, mer infrastruktur og større investeringer. De er foreløpig ikke i stor skala.
 
