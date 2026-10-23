@@ -42,6 +42,23 @@ PQ_TITLES = {
     "A8": "Biosecurity, disease and water contact",
 }
 
+# Official context documents (white papers, government and international reports).
+# They frame the rules and the official picture rather than answer a priority
+# question, so they carry no PQ tag in the funnel and compete for their own places.
+CONTEXT_DOC_IDS = frozenset({
+    "2024_meldst35_baerekraftig-bruk-natur",
+    "2026_hi_risikorapport",
+    "2026_moldal_fiskehelserapporten",
+    "2022_ipbes_values-assessment",
+    "2022_ipbes_spm-values",
+})
+CONTEXT_SLOTS = 2
+# A context document joins only when it is close to the best research hit:
+# at least this share of the best evidence score, and never below the floor.
+# Calibrated 2026-10-23 on the nine PQs and four free questions.
+CONTEXT_RELATIVE = 0.75
+CONTEXT_FLOOR = 0.38
+
 PQ_TITLES_NO = {
     "A0": "Balanse, styring og avveiing",
     "A1": "Flaskehalser og utvikling",
@@ -114,11 +131,14 @@ def retrieve_funnel(
     query_embedding: np.ndarray | None = None,
     data_file: Path | None = None,
 ) -> list[dict]:
-    """Documents tagged with `codes` first (by similarity), then the best untagged hits.
+    """Research documents tagged with `codes` first (by similarity), then the best
+    untagged research hits, plus up to CONTEXT_SLOTS official context documents.
 
     Each result keeps its cosine `semantic_score` (the out-of-scope check still uses
-    it) and gets `via_pq` = the matching codes, empty for semantic fill. Two files of
-    the same publication never both take a place.
+    it), gets `via_pq` = the matching codes (empty for semantic fill and context) and
+    `corpus_role` = "context" or "evidence". Context documents join only when they are
+    close to the best research hit, and take places from the research list only then.
+    Two files of the same publication never both take a place.
     """
     df = load_corpus(data_file or AREAL_DATA_FILE).copy()
     if selected_doc_ids is not None:
@@ -130,18 +150,29 @@ def retrieve_funnel(
     df["_score"] = df["_semantic_score"]
     wanted = set(codes or [])
     df["_via_pq"] = df["priority_questions"].apply(lambda v: [c for c in _json_list(v) if c in wanted])
-    df["_tagged"] = df["_via_pq"].apply(bool)
-    ranked = df.sort_values(["_tagged", "_semantic_score"], ascending=[False, False])
+    is_context = df["doc_id"].isin(CONTEXT_DOC_IDS)
+    evidence, context = df[~is_context].copy(), df[is_context].copy()
+    evidence["_tagged"] = evidence["_via_pq"].apply(bool)
 
-    results: list[dict] = []
     seen_publications: set[str] = set()
-    for _, row in ranked.iterrows():
-        result = _row_to_result(row)
-        if result["publication_group"] in seen_publications:
-            continue
-        result["via_pq"] = list(row["_via_pq"])
-        results.append(result)
-        seen_publications.add(result["publication_group"])
-        if len(results) >= top_k:
-            break
-    return results
+
+    def take(rows, limit: int, role: str) -> list[dict]:
+        picked: list[dict] = []
+        for _, row in rows.iterrows():
+            if len(picked) >= limit:
+                break
+            result = _row_to_result(row)
+            if result["publication_group"] in seen_publications:
+                continue
+            result["via_pq"] = list(row["_via_pq"]) if role == "evidence" else []
+            result["corpus_role"] = role
+            picked.append(result)
+            seen_publications.add(result["publication_group"])
+        return picked
+
+    best_evidence = float(evidence["_semantic_score"].max()) if not evidence.empty else 0.0
+    floor = max(CONTEXT_FLOOR, CONTEXT_RELATIVE * best_evidence)
+    eligible = context[context["_semantic_score"] >= floor].sort_values("_semantic_score", ascending=False)
+    context_results = take(eligible, min(CONTEXT_SLOTS, top_k), "context")
+    ranked = evidence.sort_values(["_tagged", "_semantic_score"], ascending=[False, False])
+    return take(ranked, top_k - len(context_results), "evidence") + context_results

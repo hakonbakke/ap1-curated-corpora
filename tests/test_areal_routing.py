@@ -119,6 +119,60 @@ class RetrieveFunnelTests(unittest.TestCase):
         self.assertEqual([], self.run_funnel(["A2"], top_k=5, selected=["missing"]))
 
 
+MELD = "2024_meldst35_baerekraftig-bruk-natur"
+HI = "2026_hi_risikorapport"
+FHR = "2026_moldal_fiskehelserapporten"
+IPBES_A, IPBES_B = "2022_ipbes_values-assessment", "2022_ipbes_spm-values"
+
+
+class ContextSlotTests(unittest.TestCase):
+    """Best research hit at 10° (cos ≈ 0.985), so the context floor is 0.75 × 0.985 ≈ 0.74."""
+
+    CORPUS = pd.DataFrame(
+        [
+            _row("ev_best", 10, ["A8"]),
+            _row("ev_tag", 40, ["A8"]),
+            _row("ev_plain", 20, []),
+            _row(MELD, 25, []),  # cos ≈ 0.91, above the floor
+            _row(FHR, 30, ["A8"]),  # cos ≈ 0.87, above the floor; tagged, but context
+            _row(HI, 35, []),  # cos ≈ 0.82, above the floor, but only two context places
+            _row(IPBES_A, 70, []),  # cos ≈ 0.34, below the floor
+            _row(IPBES_B, 72, []),
+        ]
+    )
+
+    def run_funnel(self, codes, top_k, corpus=None):
+        frame = self.CORPUS if corpus is None else corpus
+        with mock.patch.object(routing, "load_corpus", lambda f=None: frame), mock.patch.object(
+            routing, "get_embedding", lambda client, text: _vec(0)
+        ):
+            return routing.retrieve_funnel(None, "q", codes, top_k=top_k)
+
+    def test_two_best_context_documents_join_after_the_research(self) -> None:
+        results = self.run_funnel(["A8"], top_k=5)
+        self.assertEqual(["ev_best", "ev_tag", "ev_plain", MELD, FHR], [r["doc_id"] for r in results])
+        self.assertEqual(["evidence"] * 3 + ["context"] * 2, [r["corpus_role"] for r in results])
+
+    def test_context_documents_never_count_as_pq_hits(self) -> None:
+        by_id = {r["doc_id"]: r for r in self.run_funnel(["A8"], top_k=5)}
+        self.assertEqual([], by_id[FHR]["via_pq"])  # tagged A8, but it is context
+
+    def test_context_below_the_floor_stays_out_and_frees_its_place(self) -> None:
+        corpus = self.CORPUS[~self.CORPUS["doc_id"].isin([MELD, FHR, HI])]
+        results = self.run_funnel(["A8"], top_k=3, corpus=corpus)
+        self.assertEqual(["ev_best", "ev_tag", "ev_plain"], [r["doc_id"] for r in results])
+        self.assertTrue(all(r["corpus_role"] == "evidence" for r in results))
+
+    def test_context_documents_are_marked_for_the_writer(self) -> None:
+        from synthesis import build_evidence_block
+
+        results = self.run_funnel(["A8"], top_k=5)
+        for r in results:
+            r.update(authors="A B", rag_summary="s", evidence_direction="-", quality_signal="-")
+        block = build_evidence_block(results, compact=True, query="q")
+        self.assertEqual(2, block.count("CONTEXT DOCUMENT"))
+
+
 class _RoutingPageCase(_PageCase):
     classify_returns: list[str] = []
     funnel_score = 0.9

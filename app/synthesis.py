@@ -374,6 +374,8 @@ def build_evidence_block(
         )
         if controversy and str(controversy).strip() and controversy not in ("none", "not_applicable"):
             meta_line += f" | Role: {controversy}"
+        if r.get("corpus_role") == "context":
+            meta_line += " | CONTEXT DOCUMENT: official/policy document, not research evidence"
 
         block = f"""[{i}] **{citation}** — {r['title']}
 {meta_line}
@@ -469,6 +471,12 @@ scarcity as distinct questions. Compare diagnoses only when the retrieved
 sources actually offer competing explanations. Do not manufacture opposing
 camps, turn complementary findings into disagreement, or collapse real
 disagreement into consensus.
+
+Documents marked CONTEXT DOCUMENT are white papers, government reports or
+international assessments. Use them for the official picture, rules, goals and
+official figures, and say that this is what they are (e.g. "the government's
+action plan states …"); do not present them as research findings or count them
+as corroboration of a study.
 
 Distinguish empirical findings, models, legal analysis, policy claims and
 adjacent evidence. When two records belong to the same evidence family,

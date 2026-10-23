@@ -1262,6 +1262,8 @@ def _render_sources(results: list[dict]) -> None:
             st.markdown(f"**{title}**")
             if r.get("via_pq"):
                 st.caption(tr(lang, "Selected via ", "Valgt via ") + ", ".join(r["via_pq"]))
+            if r.get("corpus_role") == "context":
+                st.caption(tr(lang, "Context (official document), not research", "Kontekst (offentlig dokument), ikke forskning"))
             doi_url = r.get("url") or (f"https://doi.org/{r['doi']}" if r.get("doi") else "")
             if doi_url:
                 st.markdown(f"[DOI ↗]({doi_url})")
