@@ -69,12 +69,12 @@ class _SectionCase(_PageCase):
         self.retrieve_kwargs: list[dict] = []
         outer = self
 
-        def recording_retrieve(client, query, **kwargs):
+        def recording_retrieve(client, query, codes, **kwargs):
             outer.queries.append(query)
             outer.retrieve_kwargs.append(kwargs)
             return list(RESULTS)
 
-        p = mock.patch("retrieval.retrieve", recording_retrieve)
+        p = mock.patch("routing.retrieve_funnel", recording_retrieve)
         p.start()
         self.addCleanup(p.stop)
 
@@ -163,7 +163,7 @@ class SectionLayoutTests(_SectionCase):
                 self.assertEqual("areal_selected", exp.multiselect[0].key)
                 self.assertEqual(N_DOCS, len(at.session_state["areal_selected"]))
                 self.assertEqual(1, len(exp.slider))
-                self.assertEqual((10, 3, 12), (exp.slider[0].value, exp.slider[0].min, exp.slider[0].max))
+                self.assertEqual((12, 3, 15), (exp.slider[0].value, exp.slider[0].min, exp.slider[0].max))
                 self.assertEqual(
                     {"Velg alle", "Tøm"} if lang == "no" else {"Select all", "Clear all"},
                     {b.label for b in exp.button},
@@ -391,20 +391,20 @@ class DocumentsAndKTests(_SectionCase):
 
     def test_deselecting_documents_changes_caption_label_and_cache_key(self) -> None:
         at = self.in_lang("no")
-        self.assertIn("de 10 mest relevante av 50 dokumenter", self.drawn(at))
+        self.assertIn("de 12 mest relevante av 50 dokumenter", self.drawn(at))
         all_ids = list(self.multiselect(at).value)
         self.assertEqual(N_DOCS, len(all_ids))
         self.ask(at, self.QUESTION)
         self.assertEqual([self.QUESTION], self.queries)
         self.assertEqual(N_DOCS, len(self.retrieve_kwargs[0]["selected_doc_ids"]))
-        self.assertEqual(10, self.retrieve_kwargs[0]["top_k"])
+        self.assertEqual(12, self.retrieve_kwargs[0]["top_k"])
         self.assertEqual([False], [r["cached"] for r in self.answer_rows()])
 
         keep = all_ids[:-5]
         self.multiselect(at).set_value(keep)
         at.run()
         self.assertFalse(at.exception, at.exception)
-        self.assertIn("de 10 mest relevante av 45 dokumenter", self.drawn(at))
+        self.assertIn("de 12 mest relevante av 45 dokumenter", self.drawn(at))
         self.assertEqual(DOCS_LABEL["no"].format(n=45, m=N_DOCS), self.docs_expander(at, "no").label)
         self.assertEqual(keep, at.session_state["areal_selected"])
         # Same question, fewer documents: a different cache key, so a fresh retrieval.
@@ -424,14 +424,14 @@ class DocumentsAndKTests(_SectionCase):
     def test_k_slider_changes_caption_and_cache_key(self) -> None:
         at = self.in_lang("en")
         self.ask(at, self.QUESTION)
-        self.assertEqual(10, self.retrieve_kwargs[0]["top_k"])
+        self.assertEqual(12, self.retrieve_kwargs[0]["top_k"])
         at.slider[0].set_value(4)
         at.run()
         self.assertIn("The answer draws on the 4 most relevant of 50 documents.", self.drawn(at))
         self.own_button(at, "en").click()
         at.run()
-        self.assertEqual([10, 4], [k["top_k"] for k in self.retrieve_kwargs])
-        self.assertEqual([10, 4], [r["top_k"] for r in self.answer_rows()])
+        self.assertEqual([12, 4], [k["top_k"] for k in self.retrieve_kwargs])
+        self.assertEqual([12, 4], [r["top_k"] for r in self.answer_rows()])
 
     def test_clear_and_select_all_buttons_follow_in_label_and_widget(self) -> None:
         for lang in ("no", "en"):

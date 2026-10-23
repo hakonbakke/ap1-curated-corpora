@@ -26,9 +26,9 @@ load_dotenv(REPO / ".env", override=True)
 from retrieval import (
     AREAL_DATA_FILE,
     load_corpus,
-    retrieve,
     is_out_of_scope,
 )
+from routing import PQ_TITLES, PQ_TITLES_NO, classify_pq, pq_code_for_text, retrieve_funnel
 import feedback
 from regelverk import REGELVERK, render_regelverk
 from synthesis import synthesise_stream
@@ -1019,16 +1019,16 @@ with st.expander(
     top_k = st.slider(
         tr(lang, "Documents to retrieve", "Antall dokumenter å hente"),
         3,
+        15,
         12,
-        10,
         help=tr(
             lang,
             "How many of the most relevant documents the answer is based on. "
-            "The search ranks documents by how similar their content is to your "
+            "Documents tagged with the linked open question come first. The search ranks documents by how similar their content is to your "
             "question. More documents give a broader answer, but it can take a "
             "little longer.",
             "Hvor mange av de mest relevante dokumentene svaret bygger på. "
-            "Søket rangerer dokumentene etter hvor lik innholdet er spørsmålet "
+            "Dokumenter merket med det koblede åpne spørsmålet kommer først. Søket rangerer dokumentene etter hvor lik innholdet er spørsmålet "
             "ditt. Flere dokumenter gir et bredere svar, men kan ta litt lengre tid.",
         ),
     )
@@ -1133,7 +1133,7 @@ def _warn_failure(exc: Exception | None) -> None:
         )
 
 
-def _log_answer(answer_id: str, q: str, results: list[dict], answer: str, started: float, cached: bool, error: str = "") -> None:
+def _log_answer(answer_id: str, q: str, results: list[dict], answer: str, started: float, cached: bool, error: str = "", routed_pq: list[str] | None = None) -> None:
     feedback.log_answer(
         session_id=st.session_state["areal_session_id"],
         answer_id=answer_id,
@@ -1148,12 +1148,26 @@ def _log_answer(answer_id: str, q: str, results: list[dict], answer: str, starte
         latency_s=time.perf_counter() - started,
         cached=cached,
         error=error,
+        routed_pq=",".join(routed_pq or []),
     )
 
 
-def _answer_header() -> None:
+def _routing_caption(codes: list[str]) -> str:
+    if not codes:
+        return tr(
+            lang,
+            "Not linked to an open question; the answer uses plain search.",
+            "Ikke koblet til et åpent spørsmål; svaret bygger på vanlig søk.",
+        )
+    titles = PQ_TITLES_NO if lang == "no" else PQ_TITLES
+    linked = tr(lang, " and ", " og ").join(f"{c} · {titles[c]}" for c in codes)
+    return tr(lang, "Linked to open question: ", "Koblet til åpent spørsmål: ") + linked
+
+
+def _answer_header(codes: list[str]) -> None:
     st.divider()
     st.subheader(tr(lang, "Synthesis", "Syntese"))
+    st.caption(_routing_caption(codes))
 
 
 def _render_feedback(answer_id: str) -> None:
@@ -1246,6 +1260,8 @@ def _render_sources(results: list[dict]) -> None:
         cite = _source_label(lang, r.get("authors", ""), r.get("year", ""), title)
         with st.expander(f"**{cite}** · {title[:90]}"):
             st.markdown(f"**{title}**")
+            if r.get("via_pq"):
+                st.caption(tr(lang, "Selected via ", "Valgt via ") + ", ".join(r["via_pq"]))
             doi_url = r.get("url") or (f"https://doi.org/{r['doi']}" if r.get("doi") else "")
             if doi_url:
                 st.markdown(f"[DOI ↗]({doi_url})")
@@ -1274,13 +1290,13 @@ def _render_answer(text: str, answer_mode: str) -> None:
 def _render_last(last: dict) -> None:
     """Render a stored answer: synthesis, feedback form, sources. Older session state
     may still carry a `card_n` key from the removed question box; it is ignored."""
-    _answer_header()
+    _answer_header(last.get("routed_pq") or [])
     _render_answer(last["answer"], last.get("mode", mode))
     _render_feedback(last["answer_id"])
     _render_sources(last["results"])
 
 
-def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
+def _stream_answer(client: OpenAI, q: str, results: list[dict], holder, codes: list[str]) -> str:
     """Stream the synthesis into `holder`. Returns the full text (stripped)."""
     status = st.empty()
     status.caption(tr(lang, "Writing the synthesis...", "Skriver syntese..."))
@@ -1302,7 +1318,7 @@ def _stream_answer(client: OpenAI, q: str, results: list[dict], holder) -> str:
 
     try:
         with holder.container():
-            _answer_header()
+            _answer_header(codes)
             with st.container(key=ANSWER_TEXT_KEY):
                 text = st.write_stream(deltas())
     finally:
@@ -1340,14 +1356,16 @@ def _ask(q: str) -> None:
         "answer": "",
         "latency_s": 0.0,
         "cached": False,
+        "routed_pq": [],
     }
 
     hit = feedback.cache_get(key)
     if hit is not None:
-        results, answer = hit
-        last.update(results=results, answer=answer, latency_s=time.perf_counter() - started, cached=True)
+        results, answer, *rest = hit
+        codes = list(rest[0]) if rest else []
+        last.update(results=results, answer=answer, routed_pq=codes, latency_s=time.perf_counter() - started, cached=True)
         st.session_state["areal_last"] = last
-        _log_answer(answer_id, q, results, answer, started, cached=True)
+        _log_answer(answer_id, q, results, answer, started, cached=True, routed_pq=codes)
         _render_last(last)
         return
 
@@ -1367,11 +1385,21 @@ def _ask(q: str) -> None:
     if not client:
         return
 
+    codes: list[str] = []
     try:
         with st.spinner(tr(lang, "Retrieving relevant documents...", "Henter relevante dokumenter...")):
-            results = retrieve(
+            # A question repeated verbatim from the nine (either language) needs no classifier.
+            code = pq_code_for_text(q, [f[2] for f in FAULTS[lang]]) or pq_code_for_text(
+                q, [f[2] for f in FAULTS["en" if lang == "no" else "no"]]
+            )
+            if code:
+                codes = [code]
+            else:
+                codes = classify_pq(client, q, [f[2] for f in FAULTS[lang]])
+            results = retrieve_funnel(
                 client,
                 q,
+                codes,
                 top_k=top_k,
                 selected_doc_ids=selected_doc_ids,
                 data_file=AREAL_DATA_FILE,
@@ -1380,7 +1408,7 @@ def _ask(q: str) -> None:
         _warn_failure(exc)
         _log_answer(answer_id, q, [], "", started, cached=False, error=type(exc).__name__)
         return
-    if not results or is_out_of_scope(results):
+    if not results or (not codes and is_out_of_scope(results)):
         st.warning(
             tr(
                 lang,
@@ -1390,28 +1418,28 @@ def _ask(q: str) -> None:
                 "Prøv et spørsmål om sjøareal, lokalitet eller kystsoneplan, eller velg et av de åpne spørsmålene i seksjon C.",
             )
         )
-        _log_answer(answer_id, q, results, "", started, cached=False, error="out_of_scope")
+        _log_answer(answer_id, q, results, "", started, cached=False, error="out_of_scope", routed_pq=codes)
         return
 
     st.session_state["areal_n_asked"] = st.session_state.get("areal_n_asked", 0) + 1
     holder = st.empty()
     try:
-        answer = _stream_answer(client, q, results, holder)
+        answer = _stream_answer(client, q, results, holder, codes)
     except Exception as exc:
         holder.empty()
         _warn_failure(exc)
-        _log_answer(answer_id, q, results, "", started, cached=False, error=type(exc).__name__)
+        _log_answer(answer_id, q, results, "", started, cached=False, error=type(exc).__name__, routed_pq=codes)
         return
     if not answer:
         holder.empty()
         _warn_failure(None)
-        _log_answer(answer_id, q, results, "", started, cached=False, error="EmptyAnswer")
+        _log_answer(answer_id, q, results, "", started, cached=False, error="EmptyAnswer", routed_pq=codes)
         return
 
-    last.update(results=results, answer=answer, latency_s=time.perf_counter() - started)
+    last.update(results=results, answer=answer, routed_pq=codes, latency_s=time.perf_counter() - started)
     st.session_state["areal_last"] = last
-    feedback.cache_put(key, (results, answer))
-    _log_answer(answer_id, q, results, answer, started, cached=False)
+    feedback.cache_put(key, (results, answer, codes))
+    _log_answer(answer_id, q, results, answer, started, cached=False, routed_pq=codes)
     # The answer is already on screen from the stream; add what goes below it.
     _render_feedback(answer_id)
     _render_sources(results)

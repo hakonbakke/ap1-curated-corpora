@@ -106,6 +106,7 @@ def build_answer_payload(
     cached: bool,
     error: str = "",
     room: str = "areal",
+    routed_pq: str = "",
 ) -> dict:
     return {
         "type": "answer",
@@ -126,6 +127,7 @@ def build_answer_payload(
         "error": error,
         "answer_words": len((answer or "").split()),
         "answer_shape": answer_shape(answer),
+        "routed_pq": routed_pq,
     }
 
 

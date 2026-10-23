@@ -13,7 +13,7 @@ const COLUMNS = {
   answer: [
     'ts', 'session_id', 'answer_id', 'room', 'question', 'mode', 'language',
     'model', 'top_k', 'n_active_docs', 'retrieved', 'answer', 'latency_s',
-    'cached', 'error', 'answer_words', 'answer_shape',
+    'cached', 'error', 'answer_words', 'answer_shape', 'routed_pq',
   ],
   rating: [
     'ts', 'session_id', 'answer_id', 'thumbs', 'answered_question',

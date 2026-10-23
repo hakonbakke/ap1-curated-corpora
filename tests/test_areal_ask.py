@@ -122,7 +122,7 @@ class FeedbackModuleTests(unittest.TestCase):
         self.assertEqual(
             ["type", "ts", "session_id", "answer_id", "room", "question", "mode", "language", "model",
              "top_k", "n_active_docs", "retrieved", "answer", "latency_s", "cached", "error",
-             "answer_words", "answer_shape"],
+             "answer_words", "answer_shape", "routed_pq"],
             list(p),
         )
         self.assertEqual("answer", p["type"])
@@ -216,7 +216,7 @@ class ArealPageTests(unittest.TestCase):
         self.retrieve_calls = 0
         outer = self
 
-        def fake_retrieve(client, query, **kwargs):
+        def fake_retrieve(client, query, codes, **kwargs):
             outer.retrieve_calls += 1
             return list(RESULTS)
 
@@ -227,12 +227,19 @@ class ArealPageTests(unittest.TestCase):
                 self.embeddings = SimpleNamespace(create=mock.Mock(side_effect=AssertionError("embeddings called")))
 
         self.fake_retrieve = fake_retrieve
+        self.classify_calls = 0
+
+        def fake_classify(client, query, pq_texts):
+            outer.classify_calls += 1
+            return []
+
         patches = [
             mock.patch("dotenv.load_dotenv", lambda *a, **k: False),
             # AppTest has no multipage navigation context, so st.page_link raises KeyError.
             mock.patch("streamlit.page_link", lambda *a, **k: None),
             mock.patch("openai.OpenAI", FakeOpenAI),
-            mock.patch("retrieval.retrieve", fake_retrieve),
+            mock.patch("routing.retrieve_funnel", fake_retrieve),
+            mock.patch("routing.classify_pq", lambda *a, **k: fake_classify(*a, **k)),
             mock.patch.object(feedback, "send_async", lambda payload, url=None: self.sent.append(payload)),
             mock.patch.dict(os.environ, {"OPENAI_API_KEY": "sk-test-not-real"}),
         ]
@@ -278,7 +285,7 @@ class ArealPageTests(unittest.TestCase):
         self.assertEqual(1, len(self.completions.calls))
         self.assertTrue(self.completions.calls[0]["stream"])
         last = at.session_state["areal_last"]
-        self.assertEqual(["answer_id", "query", "mode", "lang", "results", "answer", "latency_s", "cached"], list(last))
+        self.assertEqual(["answer_id", "query", "mode", "lang", "results", "answer", "latency_s", "cached", "routed_pq"], list(last))
         self.assertEqual("Svar fra kildene.", last["answer"])
         self.assertFalse(last["cached"])
 
@@ -294,7 +301,7 @@ class ArealPageTests(unittest.TestCase):
         row = answer_rows[0]
         self.assertEqual("2020_hersoug_a, 2022_hersoug_b", row["retrieved"])
         self.assertEqual("Svar fra kildene.", row["answer"])
-        self.assertEqual(("no", "researcher", "gpt-6-luna", 10), (row["language"], row["mode"], row["model"], row["top_k"]))
+        self.assertEqual(("no", "researcher", "gpt-6-luna", 12), (row["language"], row["mode"], row["model"], row["top_k"]))
         self.assertIs(False, row["cached"])
         self.assertEqual("", row["error"])
         self.assertEqual(row["answer_id"], last["answer_id"])
@@ -370,14 +377,14 @@ class ArealPageTests(unittest.TestCase):
         import httpx
         import openai
 
-        def boom(client, query, **kwargs):
+        def boom(client, query, codes, **kwargs):
             raise openai.RateLimitError(
                 "rate limited",
                 response=httpx.Response(429, request=httpx.Request("POST", "https://api.openai.com/v1/embeddings")),
                 body=None,
             )
 
-        with mock.patch("retrieval.retrieve", boom):
+        with mock.patch("routing.retrieve_funnel", boom):
             at = self.app().run()
             self.ask(at)
         self.assertFalse(at.exception, at.exception)

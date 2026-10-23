@@ -61,7 +61,7 @@ class ArealUiTests(unittest.TestCase):
         docs = [e for e in at.main.expander if e.label.startswith("Dokumenter i korpuset")]
         self.assertEqual(1, len(docs))
         self.assertFalse(docs[0].proto.expanded)
-        self.assertEqual(10, at.slider[0].value)
+        self.assertEqual((12, 3, 15), (at.slider[0].value, at.slider[0].min, at.slider[0].max))
 
     def test_loads_in_both_languages_and_both_modes(self) -> None:
         at = self.app().run()

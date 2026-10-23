@@ -101,7 +101,7 @@ class PayloadTests(unittest.TestCase):
         p = feedback.build_answer_payload(**self.ANSWER, answer=KORT)
         self.assertEqual(
             ["type", "ts", "session_id", "answer_id", "room", "question", "mode", "language", "model", "top_k",
-             "n_active_docs", "retrieved", "answer", "latency_s", "cached", "error", "answer_words", "answer_shape"],
+             "n_active_docs", "retrieved", "answer", "latency_s", "cached", "error", "answer_words", "answer_shape", "routed_pq"],
             list(p),
         )
         self.assertEqual(len(KORT.split()), p["answer_words"])
@@ -149,7 +149,8 @@ class _PageCase(unittest.TestCase):
             mock.patch("dotenv.load_dotenv", lambda *a, **k: False),
             mock.patch("streamlit.page_link", lambda *a, **k: None),
             mock.patch("openai.OpenAI", FakeOpenAI),
-            mock.patch("retrieval.retrieve", lambda client, query, **kw: list(RESULTS)),
+            mock.patch("routing.retrieve_funnel", lambda client, query, codes, **kw: list(RESULTS)),
+            mock.patch("routing.classify_pq", lambda client, query, pq_texts: []),
             mock.patch.object(feedback, "send_async", lambda payload, url=None: self.sent.append(payload)),
             mock.patch.dict(os.environ, {"OPENAI_API_KEY": "sk-test-not-real"}),
         ]
@@ -437,7 +438,7 @@ class AnswerPresentationTests(_PageCase):
                     "**Myklebust 2018** · Kommunale vilkår"]),
         )
         results = [TWO_AUTHORS, THREE_AUTHORS, ONE_AUTHOR]
-        with mock.patch("retrieval.retrieve", lambda client, query, **kw: list(results)):
+        with mock.patch("routing.retrieve_funnel", lambda client, query, codes, **kw: list(results)):
             for lang, expected in cases:
                 with self.subTest(lang):
                     at = self.app().run() if lang == "no" else self.english()
