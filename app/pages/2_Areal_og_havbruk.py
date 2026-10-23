@@ -578,7 +578,7 @@ with st.expander(tr(lang, "A · Introduction", "A · Introduksjon"), key="areal_
                     """
 Norwegian aquaculture runs along a coastline that is, internationally, almost unreal in length and fragmentation, and yet scarcity of area has become one of the most persistent disputes in the industry's governance. The paradox is clear when the figures are set side by side. The Gullestad committee put the total sea area from Vest-Agder to Finnmark at about 76 000 square kilometres (Gullestad et al. 2011), while the farms, moorings included, occupy just over half a percent of the inshore coastal area (Hersoug et al. 2020). At the same time, farmers report that they cannot get the localities they need (Robertsen et al. 2014; Sandersen and Kvalvik 2015). Already in 2005, Jentoft and Buanes called the idea of almost unlimited coastal space a myth: from the air the zone looks empty and the pens are hard to see, but on the ground safety zones and the need for alternative localities make the industry far more space-consuming than the footprint suggests (Jentoft and Buanes 2005).
 
-The key to the disagreement is that when people talk about how much area aquaculture occupies, it is described by three different quantities.
+Much of the disagreement comes from the fact that "the area aquaculture uses" can mean very different things. Count only the pens, and the footprint is small. Count moorings, safety zones and planned areas as well, and it becomes far larger, and largest of all when the infection distance between farms is included.
 
 **Pen area.** The farm's physical surface in the sea.
 
@@ -591,7 +591,7 @@ When infection distances between farms are counted in, the occupation grows shar
                     """
 Norsk havbruk drives langs en kystlinje som i internasjonal sammenheng er nesten uvirkelig lang og oppstykket, og likevel er knapphet på areal blitt et av de mest vedvarende stridsspørsmålene i næringens forvaltning. Paradokset trer tydelig frem når tallene settes ved siden av hverandre. Gullestad-utvalget anslo det samlede sjøarealet fra Vest-Agder til Finnmark til om lag 76 000 kvadratkilometer (Gullestad mfl. 2011), mens anleggene, medregnet fortøyninger, legger beslag på drøyt en halv prosent av det kystnære sjøarealet (Hersoug mfl. 2020). Samtidig melder oppdrettere at de ikke får tilgang til de lokalitetene de trenger (Robertsen mfl. 2014; Sandersen og Kvalvik 2015). Allerede i 2005 kalte Jentoft og Buanes forestillingen om nærmest ubegrenset kystplass for en myte: fra luften ser sonen tom ut og merdene er vanskelige å se, men på bakken gjør sikkerhetssoner og behovet for alternative lokaliteter næringen langt mer plasskrevende enn fotavtrykket tilsier (Jentoft og Buanes 2005).
 
-Nøkkelen til uenigheten ligger i at når man snakker om hvor mye areal havbruk beslaglegger, beskrives det av tre ulike størrelser.
+Mye av uenigheten skyldes at «arealet havbruket bruker» kan bety svært forskjellige ting. Regnes bare merdene, er beslaget lite. Regnes fortøyninger, sikkerhetssoner og planlagte områder med, blir det langt større, og størst når smitteavstanden mellom anlegg tas med.
 
 **Merdareal.** Anleggets fysiske flate i sjøen.
 
