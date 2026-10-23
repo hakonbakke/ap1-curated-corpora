@@ -576,7 +576,7 @@ with st.expander(tr(lang, "A · Introduction", "A · Introduksjon"), key="areal_
                 tr(
                     lang,
                     """
-Norwegian aquaculture runs along a coastline that is, internationally, almost unreal in length and fragmentation, and yet scarcity of area has become one of the most persistent disputes in the industry's governance. The paradox is clear when the figures are set side by side. Inside the baseline there is on the order of 76 000 to 80 000 square kilometres of sea, while the pens themselves occupy a vanishingly small share of this, estimated at half a percent of the coastal zone. At the same time, farmers report year after year that they cannot get the localities they need. Already in 2005, Jentoft and Buanes called the idea of almost unlimited coastal space a myth: from the air the pens look like dots on an empty surface, but on the ground moorings, safety zones and spacing requirements between farms make the industry far more space-consuming than the footprint suggests.
+Norwegian aquaculture runs along a coastline that is, internationally, almost unreal in length and fragmentation, and yet scarcity of area has become one of the most persistent disputes in the industry's governance. The paradox is clear when the figures are set side by side. The Gullestad committee put the total sea area from Vest-Agder to Finnmark at about 76 000 square kilometres (Gullestad et al. 2011), while the farms, moorings included, occupy just over half a percent of the inshore coastal area (Hersoug et al. 2020). At the same time, farmers report that they cannot get the localities they need (Robertsen et al. 2014; Sandersen and Kvalvik 2015). Already in 2005, Jentoft and Buanes called the idea of almost unlimited coastal space a myth: from the air the zone looks empty and the pens are hard to see, but on the ground safety zones and the need for alternative localities make the industry far more space-consuming than the footprint suggests (Jentoft and Buanes 2005).
 
 The key to the disagreement is that when people talk about how much area aquaculture occupies, it is described by three different quantities.
 
@@ -586,10 +586,10 @@ The key to the disagreement is that when people talk about how much area aquacul
 
 **Plan area.** The sea the municipality has designated for the purpose, often as a combined purpose where aquaculture is only one of several permitted uses.
 
-When infection distances between farms are counted in, the occupation grows sharply, and in some production areas it ties up a substantial share of available sea. Debates about whether the coast is full or empty therefore easily become meaningless if the parties are each talking about a different one of these quantities.
+When infection distances between farms are counted in, the occupation grows sharply: Hersoug et al. (2020) illustrate that a five-kilometre zone around farms can cover about a fifth of the coastal zone. Debates about whether the coast is full or empty therefore easily talk past one another if the parties are each talking about a different one of these quantities.
 """,
                     """
-Norsk havbruk drives langs en kystlinje som i internasjonal sammenheng er nesten uvirkelig lang og oppstykket, og likevel er knapphet på areal blitt et av de mest vedvarende stridsspørsmålene i næringens forvaltning. Paradokset trer tydelig frem når tallene settes ved siden av hverandre. Innenfor grunnlinjen ligger det i størrelsesorden 76 000 til 80 000 kvadratkilometer sjø, mens selve merdene legger beslag på en forsvinnende liten del av dette, anslagsvis en halv prosent av kystsonen. Samtidig melder oppdrettere år etter år at de ikke får tilgang til de lokalitetene de trenger. Allerede i 2005 kalte Jentoft og Buanes forestillingen om nærmest ubegrenset kystplass for en myte: fra luften ser merdene ut som prikker på en tom flate, men på bakken gjør fortøyninger, sikkerhetssoner og krav til avstand mellom anlegg næringen langt mer plasskrevende enn fotavtrykket tilsier.
+Norsk havbruk drives langs en kystlinje som i internasjonal sammenheng er nesten uvirkelig lang og oppstykket, og likevel er knapphet på areal blitt et av de mest vedvarende stridsspørsmålene i næringens forvaltning. Paradokset trer tydelig frem når tallene settes ved siden av hverandre. Gullestad-utvalget anslo det samlede sjøarealet fra Vest-Agder til Finnmark til om lag 76 000 kvadratkilometer (Gullestad mfl. 2011), mens anleggene, medregnet fortøyninger, legger beslag på drøyt en halv prosent av det kystnære sjøarealet (Hersoug mfl. 2020). Samtidig melder oppdrettere at de ikke får tilgang til de lokalitetene de trenger (Robertsen mfl. 2014; Sandersen og Kvalvik 2015). Allerede i 2005 kalte Jentoft og Buanes forestillingen om nærmest ubegrenset kystplass for en myte: fra luften ser sonen tom ut og merdene er vanskelige å se, men på bakken gjør sikkerhetssoner og behovet for alternative lokaliteter næringen langt mer plasskrevende enn fotavtrykket tilsier (Jentoft og Buanes 2005).
 
 Nøkkelen til uenigheten ligger i at når man snakker om hvor mye areal havbruk beslaglegger, beskrives det av tre ulike størrelser.
 
@@ -599,7 +599,7 @@ Nøkkelen til uenigheten ligger i at når man snakker om hvor mye areal havbruk 
 
 **Planareal.** Den sjøen kommunen har avsatt til formålet, ofte som kombinert formål der havbruk bare er én av flere tillatte bruksmåter.
 
-Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig, og i enkelte produksjonsområder binder det opp en betydelig andel av tilgjengelig sjø. Diskusjoner om hvorvidt kysten er full eller tom blir derfor lett meningsløse dersom partene snakker om hver sin av disse størrelsene.
+Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig: Hersoug mfl. (2020) illustrerer at en sone på fem kilometer rundt anleggene kan dekke om lag en femdel av kystsonen. Diskusjoner om hvorvidt kysten er full eller tom skriver derfor lett forbi hverandre dersom partene snakker om hver sin av disse størrelsene.
 """,
                 )
             )
@@ -610,20 +610,20 @@ Når smitteavstander mellom anlegg regnes inn, vokser beslaget kraftig, og i enk
                         """
 **Split governance.** Governance is split between levels that each have their own logic. The municipality designates sea area under the Planning and Building Act, out to one nautical mile beyond the baselines, and thus holds a key role that national growth targets depend on. A farm then needs both a production licence and a locality licence, and after the 2010 administrative reform it is the county that coordinates the locality case. Sector authorities can still refuse under their own statutes, so an application can survive the plan process and stop somewhere else entirely. Above this sits the traffic-light system with its thirteen production areas, which is a lid on capacity and not a map of where farms may stand.
 
-**Three answers on what stops growth.** What actually stops growth is the central disputed question, and there are at least three competing answers. One points to the licence regime: the constraint is not sea surface, but production licences and capacity limits. The second points to the municipality, where good localities are a limited resource and the political will to designate sea decides what is available at all. The third points to biology, where lice, disease, fish welfare and proximity between farms set the limit long before the map does. The explanations do not rule one another out, but they lead to different political conclusions, and they have not been tested against one another on the same coast in the same year.
+**Three answers on what stops growth.** What actually stops growth is the central disputed question, and there are at least three competing answers. One points to the licence regime: the constraint is not sea surface, but production licences and capacity limits (Hersoug et al. 2020). The second points to the municipality, where good localities are a limited resource and the political will to designate sea decides what is available at all (Sandersen and Kvalvik 2015; Gullestad et al. 2011). The third points to biology, where lice, disease, fish welfare and proximity between farms can set the limit before the sea runs out (Tveterås 2023; Qviller et al. 2024). The explanations do not rule one another out, but they lead to different political conclusions, and no text in the collection tests them against one another on the same coast in the same year.
 
-**Uneven knowledge base.** When sea goes to a farm, something else must yield, and the knowledge base for that trade-off is strikingly uneven. Organic load on soft seabed and the consequences of escape are thoroughly documented, while effects on hard seabed and the impacts of noise, light and physical structures are thinly covered. The duty to assess cumulative load follows from the Nature Diversity Act and the impact-assessment rules, but practice repeatedly shows weak treatment of how stressors act together.
+**Uneven knowledge base.** When sea goes to a farm, something else must yield, and the knowledge base for that trade-off is uneven. Organic load on soft seabed is well studied, while effects on hard seabed are far less understood, and knowledge is lacking on dissolved nutrients and vulnerable species and habitats, among other things (Evenset et al. 2023). The duty to assess cumulative impact follows from the Nature Diversity Act and the impact-assessment rules (Mikkelsen et al. 2025), but reviews of plans and cases find that it is often treated weakly (Eriksen et al. 2023; Mikkelsen et al. 2025).
 
-**Municipal will.** All of this hangs on the municipalities' own interests. Because designation happens locally, national growth ambitions rest on local will, and the question of what municipalities get in return has followed the debate for decades. An area rent, a production fee and Havbruksfondet have changed the money flows, but whether that actually leads to more sea being designated remains unanswered. So does the question of where in the decision chain cases most often die: in the plan, in the sector refusal, or in the county's discretion. It is in this space of competing diagnoses, different area concepts and unsettled causal chains that the discussion of aquaculture's coastal area takes place.
+**Municipal will.** All of this hangs on the municipalities' own interests. Because designation happens locally, national growth ambitions rest on local will, and the question of what municipalities get in return has followed the debate for decades. Property tax on sea installations, Havbruksfondet and the production fee have changed the money flows; an area rent was considered but never introduced (Sandersen and Kvalvik 2015). Whether the money actually leads to more sea being designated is not examined in the collection. Surveys of refusals and processing times show where the cases studied stop (Eriksen et al. 2026; Osmundsen and Olsen 2025), but not how often a case dies in the plan, in the sector refusal or in the county's discretion overall. It is in this space of competing diagnoses, different area concepts and unsettled causal chains that the discussion of aquaculture's coastal area takes place.
 """,
                         """
 **Delt forvaltning.** Forvaltningen er delt mellom nivåer som hver har sin logikk. Kommunen peker ut sjøareal etter plan- og bygningsloven, ut til én nautisk mil utenfor grunnlinjene, og har dermed en nøkkelrolle som nasjonale vekstmål er avhengige av. Et anlegg trenger deretter både produksjonstillatelse og lokalitetstillatelse, og etter forvaltningsreformen i 2010 er det fylkeskommunen som samordner lokalitetssaken. Sektormyndighetene kan likevel avslå etter sine egne lover, slik at en søknad kan overleve planprosessen og stoppe et helt annet sted. Over dette ligger trafikklyssystemet med sine tretten produksjonsområder, som er et lokk på kapasitet og ikke et kart over hvor anleggene kan stå.
 
-**Tre svar på hva som stopper veksten.** Hva som egentlig stopper veksten, er det sentrale stridsspørsmålet, og det finnes minst tre konkurrerende svar. Det ene peker på tillatelsesregimet: det står ikke på sjøflaten, men på produksjonstillatelser og kapasitetsgrenser. Det andre peker på kommunen, der gode lokaliteter er en begrenset ressurs og den politiske viljen til å avsette sjø avgjør hva som overhodet er tilgjengelig. Det tredje peker på biologien, der lus, sykdom, fiskevelferd og nærhet mellom anlegg setter grensen lenge før kartet gjør det. Forklaringene utelukker ikke hverandre, men de leder til ulike politiske konklusjoner, og de er ikke prøvd mot hverandre på samme kyst i samme år.
+**Tre svar på hva som stopper veksten.** Hva som egentlig stopper veksten, er det sentrale stridsspørsmålet, og det finnes minst tre konkurrerende svar. Det ene peker på tillatelsesregimet: det står ikke på sjøflaten, men på produksjonstillatelser og kapasitetsgrenser (Hersoug mfl. 2020). Det andre peker på kommunen, der gode lokaliteter er en begrenset ressurs og den politiske viljen til å avsette sjø avgjør hva som overhodet er tilgjengelig (Sandersen og Kvalvik 2015; Gullestad mfl. 2011). Det tredje peker på biologien, der lus, sykdom, fiskevelferd og nærhet mellom anlegg kan sette grensen før sjøen tar slutt (Tveterås 2023; Qviller mfl. 2024). Forklaringene utelukker ikke hverandre, men de leder til ulike politiske konklusjoner, og ingen av tekstene i korpuset prøver dem mot hverandre på samme kyst i samme år.
 
-**Skjevt kunnskapsgrunnlag.** Når sjø går til anlegg, må noe annet vike, og kunnskapsgrunnlaget for den avveiingen er påfallende skjevt. Organisk belastning på bløtbunn og konsekvenser av rømming er grundig dokumentert, mens effekter på hardbunn og virkninger av støy, lys og fysiske strukturer er tynt belagt. Kravet om å vurdere samlet belastning følger av naturmangfoldloven og reglene om konsekvensutredning, men praksis viser gjentatte ganger svak behandling av hvordan påvirkningsfaktorer virker sammen.
+**Skjevt kunnskapsgrunnlag.** Når sjø går til anlegg, må noe annet vike, og kunnskapsgrunnlaget for den avveiingen er skjevt. Organisk belastning på bløtbunn er godt studert, mens påvirkningen på hardbunn er langt dårligere kjent, og det mangler blant annet kunnskap om løste næringssalter og om sårbare arter og habitater (Evenset mfl. 2023). Kravet om å vurdere samlet påvirkning følger av naturmangfoldloven og reglene om konsekvensutredning (Mikkelsen mfl. 2025), men gjennomganger av planer og saker finner at det ofte behandles svakt (Eriksen mfl. 2023; Mikkelsen mfl. 2025).
 
-**Kommunal vilje.** Alt henger sammen med kommunenes egne interesser. Fordi utpekingen skjer lokalt, hviler nasjonale vekstambisjoner på lokal vilje, og spørsmålet om hva kommunene får igjen har fulgt debatten i flere tiår. Arealavgift, produksjonsavgift og Havbruksfondet har endret pengestrømmene, men om det faktisk fører til at mer sjø blir pekt ut, står ubesvart. Det samme gjør spørsmålet om hvor i beslutningskjeden sakene oftest dør, i planen, i sektoravslaget eller i fylkets skjønn. Det er i dette rommet av konkurrerende diagnoser, ulike arealbegreper og uavklarte årsakskjeder at diskusjonen om havbrukets kystareal foregår.
+**Kommunal vilje.** Alt henger sammen med kommunenes egne interesser. Fordi utpekingen skjer lokalt, hviler nasjonale vekstambisjoner på lokal vilje, og spørsmålet om hva kommunene får igjen har fulgt debatten i flere tiår. Eiendomsskatt på anlegg i sjø, Havbruksfondet og produksjonsavgiften har endret pengestrømmene; en arealavgift ble vurdert, men aldri innført (Sandersen og Kvalvik 2015). Om pengene faktisk fører til at mer sjø blir pekt ut, er ikke undersøkt i korpuset. Kartlegginger av avslag og saksbehandlingstid viser hvor de undersøkte sakene stopper (Eriksen mfl. 2026; Osmundsen og Olsen 2025), men ikke hvor ofte en sak dør i planen, i sektoravslaget eller i fylkets skjønn sett under ett. Det er i dette rommet av konkurrerende diagnoser, ulike arealbegreper og uavklarte årsakskjeder at diskusjonen om havbrukets kystareal foregår.
 """,
                     )
                 )
@@ -705,35 +705,37 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 "take place, while the county and the state control **who** may produce and "
                 "**how much**. Myklebust (2021) starts from municipal conditions on how farming "
                 "is carried out, including a closed pen and limits on organic discharge, and "
-                "asks where the legal limit of that power lies. The 2014 and 2018 analyses "
-                "say the municipality cannot freely add its own conditions, and that the "
+                "asks where the legal limit of that power lies. Myklebust (2014, 2018) finds "
+                "that the municipality cannot freely add its own conditions, and that the "
                 "boundary with the sector authorities is unclear. Capacity in the production "
-                "area is a separate lid. The system gives a broad professional review. It is "
-                "also criticised as fragmented, slow and hard to predict. Because fjords, "
+                "area is a separate lid. The arrangement lets several expert authorities review "
+                "each case, but it is also described as fragmented (Sandersen and Kvalvik 2014; "
+                "Solås et al. 2015) and slow (Osmundsen and Olsen 2025). Because fjords, "
                 "currents and infection do not follow municipal borders, municipalities have "
                 "made intermunicipal coastal plans, including in Trøndelag and on Helgeland. "
-                "Robertsen and colleagues (2014) could not show that these plans improve access "
+                "Robertsen et al. (2014) could not show that these plans improve access "
                 "to sites. The municipal council still adopts the plan for its own sea, and "
                 "firms report refusals even inside areas already zoned for aquaculture. In a "
                 "survey with 54 replies from 111 firms, the conflicts named most often by firms "
                 "that had joined a plan were conservation (57 percent), fisheries (54 percent) "
-                "and wild salmon (36 percent).",
+                "and wild salmon (36 percent) (Robertsen et al. 2014).",
                 "Todelingen gjør at kommunen i stor grad styrer **hvor** havbruk kan "
                 "ligge, mens fylket og staten styrer **hvem** som får produsere, og **hvor mye**. "
                 "Myklebust (2021) tar utgangspunkt i kommunale vilkår om hvordan oppdrett skal "
                 "drives, blant annet lukket merd og grenser for organisk utslipp, og spør hvor "
-                "den rettslige grensen for den myndigheten går. Analysene fra 2014 og 2018 sier "
+                "den rettslige grensen for den myndigheten går. Myklebust (2014, 2018) finner "
                 "at kommunen ikke fritt kan legge på egne vilkår, og at grensen mot "
                 "sektormyndighetene er uklar. Kapasitet i produksjonsområdet er et eget lokk. "
-                "Systemet gir bred faglig gjennomgang. Det kritiseres også for å være "
-                "fragmentert, tidkrevende og uforutsigbart. Fordi fjorder, strøm og smitte ikke "
+                "Ordningen gjør at flere fagmyndigheter vurderer hver sak, men den beskrives også "
+                "som fragmentert (Sandersen og Kvalvik 2014; Solås mfl. 2015) og tidkrevende "
+                "(Osmundsen og Olsen 2025). Fordi fjorder, strøm og smitte ikke "
                 "følger kommunegrenser, har kommuner laget interkommunale kystsoneplaner, "
-                "blant annet i Trøndelag og på Helgeland. Robertsen og kolleger (2014) kunne "
+                "blant annet i Trøndelag og på Helgeland. Robertsen mfl. (2014) kunne "
                 "ikke vise at slike planer gir bedre lokalitetstilgang. Kommunestyret vedtar "
                 "fortsatt planen for egen sjø, og firmaer melder avslag også inne i områder som "
                 "allerede er avsatt til havbruk. I en undersøkelse med 54 svar fra 111 firmaer "
                 "var konfliktene som oftest ble oppgitt av firmaer som hadde deltatt i en plan, "
-                "vern (57 prosent), fiskeri (54 prosent) og villaks (36 prosent).",
+                "vern (57 prosent), fiskeri (54 prosent) og villaks (36 prosent) (Robertsen mfl. 2014).",
             )
         )
         st.markdown(
@@ -783,28 +785,26 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
             tr(
                 lang,
                 "From the industry's side, **good localities** are often treated as the "
-                "scarce input: depth, exchange, shelter and distance to other biomass. That "
-                "is one diagnosis in the corpus. Others put production licences and the "
-                "traffic-light first nationally, or lice, disease, welfare and proximity "
-                "between farms. Climate change and warming sea water also shift where "
-                "conditions are favourable. Area alone does not give growth. The traffic-light "
+                "scarce input: depth, exchange, shelter and distance to other biomass "
+                "(Sandersen and Kvalvik 2015). That is one diagnosis in the corpus. Others put "
+                "production licences and the traffic-light first nationally (Hersoug et al. "
+                "2020), or lice, disease, welfare and proximity between farms (Tveterås 2023). "
+                "Climate change may also shift where conditions are favourable (Skrove et al. "
+                "2023). Area alone does not give growth. The traffic-light "
                 "can freeze or cut capacity even where the plan has opened the sea. Green can "
                 "offer up to 6 percent growth, yellow holds capacity, red can require a 6 "
                 "percent cut "
-                "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)). "
-                "The system has been legally and scientifically contested, including because "
-                "whole areas are treated collectively.",
+                "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)).",
                 "Sett fra næringen behandles **gode lokaliteter** ofte som den knappeste "
                 "innsatsfaktoren: dybde, vannutskifting, skjerming og avstand til annen "
-                "biomasse. Det er én diagnose i korpuset. Andre setter produksjonstillatelser "
-                "og trafikklys først nasjonalt, eller lus, sykdom, velferd og nærhet mellom "
-                "anlegg. Klimaendring og oppvarming av sjøvann forskyver også hvor forholdene "
-                "er gunstige. Areal alene gir ikke vekst. Trafikklyset kan fryse eller kutte "
+                "biomasse (Sandersen og Kvalvik 2015). Det er én diagnose i korpuset. Andre setter "
+                "produksjonstillatelser og trafikklys først nasjonalt (Hersoug mfl. 2020), eller "
+                "lus, sykdom, velferd og nærhet mellom anlegg (Tveterås 2023). Klimaendringer kan "
+                "også forskyve hvor forholdene er gunstige (Skrove mfl. 2023). Areal alene gir "
+                "ikke vekst. Trafikklyset kan fryse eller kutte "
                 "kapasitet selv der planen har åpnet sjøen. Grønt kan gi inntil 6 prosent "
                 "vekst, gult holder kapasiteten, rødt kan kreve 6 prosent kutt "
-                "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)). "
-                "Systemet har vært rettslig og faglig omstridt, blant annet fordi hele "
-                "områder rammes kollektivt.",
+                "([HI](https://www.hi.no/hi/temasider/akvakultur/trafikklyssystemet-hi-sin-kunnskap)).",
             )
         )
         st.markdown(
@@ -819,8 +819,8 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 "several times (98.5 øre per kilo slaughtered fish in 2026). "
                 "[Resource-rent tax](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
                 "on salmon, trout and rainbow trout was adopted in 2023. The effective rate "
-                "is 25 percent, with a 70 million kroner allowance per group. An earlier "
-                "area-rent idea was found unsuited. Whether Havbruksfondet and the production "
+                "is 25 percent, with a 70 million kroner allowance per group. An area rent "
+                "was considered and rejected (Sandersen and Kvalvik 2015). Whether Havbruksfondet and the production "
                 "fee actually get the municipality to designate more sea is untested in the "
                 "research here. Aanesen and Mikkelsen (2020) find, in five Arctic municipalities, "
                 "that transfers from the fund often do not outweigh the welfare loss households "
@@ -837,8 +837,8 @@ with st.expander(tr(lang, "B · The Norwegian framework", "B · Norsk rammeverk"
                 "(98,5 øre per kilo sløyd fisk i 2026). "
                 "[Grunnrenteskatt](https://www.stortinget.no/no/Saker-og-publikasjoner/Saker/Sak/?p=93582) "
                 "på laks, ørret og regnbueørret ble vedtatt i 2023. Effektiv sats er 25 "
-                "prosent, med et bunnfradrag på 70 millioner kroner per konsern. En tidligere "
-                "arealavgift ble funnet uegnet. Om Havbruksfondet og produksjonsavgiften "
+                "prosent, med et bunnfradrag på 70 millioner kroner per konsern. Forslag om en "
+                "arealavgift ble vurdert og forkastet (Sandersen og Kvalvik 2015). Om Havbruksfondet og produksjonsavgiften "
                 "faktisk får kommunen til å peke ut mer sjøareal, er uavklart i forskningen "
                 "her. Aanesen og Mikkelsen (2020) finner, i fem arktiske kommuner, at "
                 "overføringer fra fondet ofte ikke veier opp for velferdstapet husholdningene "

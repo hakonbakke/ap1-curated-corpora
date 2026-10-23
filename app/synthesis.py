@@ -50,10 +50,11 @@ DEPTH_FREEFORM_NON_RESEARCHER = """\
 
 
 AREA_DEPTH_FREEFORM_RESEARCHER = """\
-**Depth:** Write a **synthesised argument**, not a catalogue of papers.
-- Length follows the question, as described in the shape guidance below (researcher figures). A fact question gets a short, precise answer, not an essay.
-- **Do not give every retrieved document its own paragraph.** Select and combine: cite only studies that materially move the answer forward.
-- Include **numbers** where they sharpen the argument; skip repeating the same point from multiple papers.
+**Depth:** Write a **full and complete synthesis**, the answer a researcher in the field would expect, organised as an argument rather than a catalogue of papers.
+- Length follows the question, as described in the shape guidance below (researcher figures). A fact question still gets a precise answer, not an essay, but broader questions deserve the full length.
+- **Be complete:** draw on every retrieved study that bears on the question, not only the first few. In a broad answer, name at least five to eight of them. Combine studies that say the same thing; do not give each its own paragraph.
+- For each key finding give the **specifics** the evidence offers: numbers, study design (survey, case study, legal analysis, model, field data), geography and time period.
+- Spell out **methodological limitations** and the **scope** of each central source (what it covers and what it does not), and explain **why** sources differ (method, scale, region, period) where they do.
 - Distinguish **empirical / model / legal analysis / policy** evidence explicitly."""
 
 
@@ -261,9 +262,9 @@ PROMPTS: dict[tuple[str, str], str] = {
 
 # (mode, answer_format) -> max_tokens
 MAX_TOKENS: dict[tuple[str, str], int] = {
-    ("researcher", "freeform"): 4000,
+    ("researcher", "freeform"): 5500,
     ("researcher", "structured"): 4000,
-    ("non_researcher", "freeform"): 2800,
+    ("non_researcher", "freeform"): 3500,
     ("non_researcher", "structured"): 2800,
 }
 
@@ -272,6 +273,13 @@ SUMMARY_MAX_CHARS_PER_DOC = 5000
 # Freeform: compact context — avoids "must mention every long brief" behaviour
 FREEFORM_SUMMARY_MAX_CHARS = 1200
 FREEFORM_FULL_BRIEF_TOP_N = 3
+
+# How much of each retrieved document a freeform prompt carries. The default keeps
+# the villaks room as it was; the Areal room gives the writer more of each source
+# so full researcher answers can be specific (numbers, design, scope).
+DEFAULT_EVIDENCE_BUDGET = {"claims": 4, "extras": 2, "top_n": FREEFORM_FULL_BRIEF_TOP_N,
+                           "top_chars": FREEFORM_SUMMARY_MAX_CHARS, "rest_chars": 500}
+AREA_EVIDENCE_BUDGET = {"claims": 6, "extras": 3, "top_n": 5, "top_chars": 2200, "rest_chars": 900}
 
 _SYNTHESIS_STOPWORDS = {
     "and", "are", "for", "from", "how", "the", "what", "when", "where", "which",
@@ -340,13 +348,16 @@ def citation_label(authors: str, year: object, title: str = "") -> str:
     return f"{who} {year}".strip()
 
 
-def build_evidence_block(results: list[dict], *, compact: bool = False, query: str = "") -> str:
+def build_evidence_block(
+    results: list[dict], *, compact: bool = False, query: str = "", budget: dict | None = None
+) -> str:
     """Format retrieved documents into the context block for the synthesis prompt."""
+    budget = {**DEFAULT_EVIDENCE_BUDGET, **(budget or {})}
     parts = []
     for i, r in enumerate(results, 1):
         citation = citation_label(r.get("authors") or "", r.get("year", ""), r.get("title") or "")
 
-        selected_claims = _rank_evidence_items(r.get("key_claims") or [], query, 4)
+        selected_claims = _rank_evidence_items(r.get("key_claims") or [], query, budget["claims"])
         claims = "\n".join(f"  - {c}" for c in selected_claims)
         rag = r["rag_summary"].strip() if r["rag_summary"] else ""
         effect_scale = r.get("effect_scale") or ""
@@ -370,12 +381,12 @@ Retrieval summary: {rag if rag else "(see key claims)"}
 Key claims:
 {claims if claims else "  (see retrieval summary)"}"""
 
-        for label, key, limit in (
-            ("Methodological limitations", "methodological_limitations", 2),
-            ("Uncertainty", "claims_about_uncertainty", 2),
-            ("Policy/management claims", "claims_about_policy_or_management", 2),
+        for label, key in (
+            ("Methodological limitations", "methodological_limitations"),
+            ("Uncertainty", "claims_about_uncertainty"),
+            ("Policy/management claims", "claims_about_policy_or_management"),
         ):
-            items = _rank_evidence_items(r.get(key) or [], query, limit)
+            items = _rank_evidence_items(r.get(key) or [], query, budget["extras"])
             if items:
                 block += f"\n{label}:\n" + "\n".join(f"  - {item}" for item in items)
 
@@ -387,7 +398,7 @@ Key claims:
         summary_raw = (r.get("summary_text") or "").strip()
         if summary_raw:
             if compact:
-                cap = FREEFORM_SUMMARY_MAX_CHARS if i <= FREEFORM_FULL_BRIEF_TOP_N else 500
+                cap = budget["top_chars"] if i <= budget["top_n"] else budget["rest_chars"]
                 excerpt = _relevant_summary_excerpt(summary_raw, query, cap)
                 if excerpt:
                     block += f"\n\nQuery-relevant evidence excerpt:\n{excerpt}"
@@ -485,7 +496,7 @@ Write the answer the way a knowledgeable person would answer *this* question, no
 - **A why-question or a contested question:** a few paragraphs organised by explanation or diagnosis, with the competing ones side by side.
 When in doubt, choose the shorter, simpler shape.
 
-**Length** (excluding headings): a fact 50–150 words (researcher up to 200); a process or comparison 150–300 (researcher up to 400); a why-question 250–450 (researcher up to 600); a broad or several-part question 400–600 (researcher 700–900).
+**Length** (excluding headings), non-specialist / researcher: a fact 80–200 / 150–300 words; a process or comparison 250–450 / 400–700; a why-question 400–650 / 700–1,000; a broad or several-part question 600–900 / 1,000–1,500. Use the full range when the evidence supports it; do not stop early on a broad question.
 
 **Always, whatever the shape:** cite sources in the text; where the retrieved sources disagree, say so; where the evidence leaves the question open, say what is missing and, if it helps, what would settle it. Weave this into the text where it belongs, not as a fixed closing section. Never invent a disagreement to fill a slot.
 
@@ -530,7 +541,7 @@ For why-questions, contested and several-part questions, the text should read as
 
 Use **parenthetical citations** inside sentences, in both Norwegian and English: (Robertsen et al., 2014) for three or more authors, (Sand og Misund, 2025) or (Sand and Misund, 2025) for two, (Myklebust, 2018) for one. Never write "og kolleger" or "and colleagues". Name only studies that appear in the retrieved evidence.
 
-**Selectivity:** {n} documents were retrieved; you need not name all {n}. Prioritise studies that directly address the query.
+**Coverage:** {n} documents were retrieved. Use every one that bears on the question, and skip only those that are off-topic or add nothing new.
 
 **Evidence levels:** When citing models, say they are model outputs and note assumptions. When citing legal or policy texts, do not treat them as field measurements.
 
@@ -619,7 +630,8 @@ def _build_request(
 
     n = len(results)
     compact = answer_format == "freeform"
-    evidence_body = build_evidence_block(results, compact=compact, query=query)
+    budget = AREA_EVIDENCE_BUDGET if room == "areal" else None
+    evidence_body = build_evidence_block(results, compact=compact, query=query, budget=budget)
     if room == "areal":
         guidance = AREA_ROOM_FRAME + "\n"
     else:
