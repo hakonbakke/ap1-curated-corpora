@@ -1,0 +1,54 @@
+{
+ "doc_id": "2024_qviller_geographic-redistribution",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 11,
+   "chars": 45700,
+   "key_figures": [
+    {
+     "quote": "By closing farms and relocating the biomass to other farms, the average number of AF and OM sal mon lice was reduced by 4–15 and 6–23%, re spectively (Figs. 2–4).",
+     "statement": "The authors’ simulations for production area PA3, using historic production data from 2014 to 2017, found average adult female (AF) and other motile (OM) lice reductions of 4–15 and 6–23%, respectively, across redistribution scenarios."
+    },
+    {
+     "quote": "With the reduced number of lice, the annually averaged number of fish treatments per year was also reduced, by 6–25% (Figs. 4 & 5).",
+     "statement": "The authors’ simulations for PA3 using historic production data from 2014 to 2017 found annual fish treatments decreased by 6–25% across redistribution scenarios."
+    },
+    {
+     "quote": "This measure led to a 15% median reduction of AF, as compared to the baseline value, 23% median reduction in OM lice and 25% median reduction in the number of fish treatments over the entire simulation period (Fig. 4).",
+     "statement": "The authors found that strategically removing 50% of farms in PA3 produced median reductions of 15% in AF lice, 23% in OM lice, and 25% in fish treatments over the simulation period."
+    },
+    {
+     "quote": "For instance, the average fish experience between 6 and 17% less treatments in the random removal scenarios, and between 14 and 25% less treatments in the strategic removal scenarios.",
+     "statement": "The authors’ simulations for PA3 found that average fish experienced between 6 and 17% fewer treatments under random removal and between 14 and 25% fewer under strategic removal."
+    },
+    {
+     "quote": "The monthly average standing stock in a Norwe gian salmonid farm during our study period between 2014 and 2017 was 713 000 fish, but the numbers vary greatly (67 000–1 578 000, 5–95% percentile range).",
+     "statement": "The authors report that the monthly average standing stock per Norwegian salmonid farm during 2014 to 2017 was 713 000 fish, with a 5–95% percentile range of 67 000–1 578 000."
+    },
+    {
+     "quote": "PA3 covers an area of 3646 km2, and includes 147 farms that were actively producing salmonids during the study period (January 2014–December 2017).",
+     "statement": "The authors’ study area, production area PA3 on Norway’s western coast, covered 3646 km2 and had 147 actively producing salmonid farms during January 2014–December 2017."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors do not assess the general legal or municipal process for determining where aquaculture may be established. Their simulation finding is that redistributing unchanged biomass among fewer, more distant farms can reduce lice and treatment frequency, especially when farms important to dispersal connectivity are removed strategically. They suggest these mechanisms could inform regional production planning and allocation of production concessions. The analysis addresses environmental effects on lice, not how these effects are balanced against industry growth or competing coastal uses.",
+    "A1": "The authors’ simulation suggests farm spacing and the configuration of dispersal connections affect lice burdens and treatment frequency even when biomass is maintained. In PA3, biomass was moved from closed farms to existing farms with matching cohorts; increasing the share of farms removed generally increased reductions, and strategic removal based on a hydrodynamic connectivity analysis performed better than random removal. This is not a feasibility assessment of new sites or licensing. The authors caution that they did not test whether receiving sites could accommodate the increased biomass, and some simulated farms became unrealistically large, creating uncertainty when extrapolating beyond the model’s fitting data.",
+    "A2": "",
+    "A3": "The study does not evaluate cumulative-effect assessment procedures in spatial planning. It models lice as a connected farm metapopulation and compares random farm removal with strategic removal based on a hydrodynamic network analysis that ranked farms by their export of lice larvae to other farms. The authors find strategic removal more effective in their simulation. A methodological caveat is that the lice population model used for scenario simulations represents inter-farm contact through seaway distances, whereas the connectivity analysis uses hydrodynamic dispersal; the networks are not equivalent, and a population-dynamics model incorporating hydrodynamics was not available. The authors also caution that redistribution scenarios created farm sizes outside the range of data used to fit the model.",
+    "A4": "",
+    "A5": "The study uses farm locations from the Norwegian aquaculture register, monthly fish numbers and weights from a national registry, calculated seaway distances, and a previously published lice model fitted to Norwegian farm production data. A separate biophysical connectivity analysis, using farm lice counts, temperature and a high-resolution hydrodynamic model, identified farms with strong outward influence for strategic-removal scenarios. The authors argue hydrodynamic properties matter for planktonic lice dispersal and may better identify important network nodes. They identify model mismatch, extrapolation to very large farms, and untested site capacity as caveats. Simulation code and results are reported as publicly available.",
+    "A6": "The segment does not report conflicts in planning or siting between aquaculture and other coastal interests, nor does it assess legitimacy or predictability of decision-making. It does identify a potential tension between increasing salmonid production and reducing lice impacts on farmed and wild fish. The authors discuss strategic changes to farm structure as a possible management measure, but emphasize that their simulation is not a straightforward procedure for optimizing farm structure and does not establish real-world site suitability.",
+    "A7": "The authors’ modeled measure is to redistribute the same biomass onto fewer, larger farms situated farther apart, preferably by strategically removing farms that contribute most to external infestation pressure. In PA3 simulations, this reduced lice and treatments, with strategic removal outperforming random removal. The proposed mechanism is reduced between-farm dispersal and fragmentation of transmission networks, potentially creating ‘firebreaks’. This is a modeled management option, not a demonstrated operational intervention. Caveats include unrealistic farm sizes, unknown site suitability and capacity, delays in arranging treatments at very large farms, and uncertainty from extrapolation beyond model-fitting data.",
+    "A8": "The authors describe salmon lice transmission between open-net farms through waterborne larvae, with connectivity influenced by distance, geographic features, currents and temperature-dependent development. Their simulations indicate that larger distances and removal of highly connected farms can reduce lice exchange and treatments. The strategic-removal ranking came from a hydrodynamic model, while the simulation model itself represented external recruitment using neighboring farms and seaway distances. The authors note that wild lice provide a background infestation source, so complete isolation of farm networks is impossible; this may limit the effects of network fragmentation. The study concerns lice transmission, not general pathogen biosecurity."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

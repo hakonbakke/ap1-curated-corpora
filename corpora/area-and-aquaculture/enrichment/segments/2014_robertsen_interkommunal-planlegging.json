@@ -1,0 +1,218 @@
+{
+ "doc_id": "2014_robertsen_interkommunal-planlegging",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 3,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 23,
+   "chars": 48791,
+   "key_figures": [
+    {
+     "quote": "Antall oppdrettslokaliteter har endret seg mye fra en topp i 2000 med 1.806 lokaliteter, til dagens nivå på 943 lokaliteter.",
+     "statement": "The authors report that the number of Norwegian aquaculture sites fell from 1.806 in 2000 to 943 at the time of writing."
+    },
+    {
+     "quote": "Følgelig er uttak per lokalitet nesten seksdoblet fra 223 tonn per lokalitet i 1999 til 1.286 tonn per lokalitet i 2013.",
+     "statement": "The authors report that production per aquaculture site in Norway rose from 223 tonn per lokalitet in 1999 to 1.286 tonn per lokalitet in 2013."
+    },
+    {
+     "quote": "konsesjonsgivende myndigheter opplyser at lokaliteten som omsøkes i dag er langt større enn tidligere, og at det er en åpenbar trend mot høyproduktive ”super-lokaliteter” med MTB på 5.400 tonn eller mer.",
+     "statement": "The authors report licensing authorities’ observation of a trend toward proposed high-output Norwegian sites with MTB of 5.400 tonn or more."
+    },
+    {
+     "quote": "Samlet arealbeslag på lokaliteten økes dermed, og enkelte lokalitetssøknader innebærer fysisk arealbeslag i havoverflaten på over 150 daa og forankringsstrekk på 2 km.",
+     "statement": "The authors report that some aquaculture site applications in Norway involve a surface footprint of over 150 daa and mooring spans of 2 km."
+    },
+    {
+     "quote": "Tar man med en faktor som smittesoner mellom anlegg økes \"arealbeslaget\" til vel 20.000 km2, men dette er en faktor som mest påvirker næringen selv og ikke andre brukere av kystsonen.",
+     "statement": "The authors estimate that including infection zones between farms brings the aquaculture industry’s effective area use to vel 20.000 km2, mostly affecting the industry itself."
+    },
+    {
+     "quote": "Av et univers på 111 bedrifter svarte 54 på undersøkelsen, noe som gir en svarprosent nesten 50 prosent.",
+     "statement": "The authors’ nationwide survey of aquaculture companies received responses from 54 of a population of 111 bedrifter, a response rate described as almost 50 prosent."
+    },
+    {
+     "quote": "På spørsmål om deltakelse i planprosesser svarte 93 prosent av respondentene at de har deltatt i en planprosess de siste seks årene, enten personlig (63 prosent), gjennom en organisasjon (22 prosent) eller gjennom et konsulentselskap (8 prosent), eller en kombinasjon av disse.",
+     "statement": "The authors’ survey found that 93 prosent of responding aquaculture companies had participated in a planning process during the preceding six years; reported participation routes included personally (63 prosent), through an organization (22 prosent), and through a consultancy (8 prosent)."
+    },
+    {
+     "quote": "I disse planprosessene var bedriftens interesse i konflikt med verneinteresser (57 prosent), fiskerinæringen (54 prosent), villaksinteresser (36 prosent), sjøtransport (22 prosent), turisme (19 prosent) og andre oppdrettere (11 prosent).",
+     "statement": "The authors’ survey of participating aquaculture companies identified conflicts with conservation interests (57 prosent), fisheries (54 prosent), wild salmon interests (36 prosent), sea transport (22 prosent), tourism (19 prosent), and other farmers (11 prosent)."
+    },
+    {
+     "quote": "Hele 65 kommuner som er engasjert i 6 ulike prosjekter i fylkene Troms, Nordland, Sør-Trøndelag, Møre og Romsdal og Hordaland utarbeider felles kystsoneplaner.",
+     "statement": "The authors report that 65 kommuner in 6 projects across Troms, Nordland, Sør-Trøndelag, Møre og Romsdal and Hordaland were developing joint coastal-zone plans."
+    },
+    {
+     "quote": "Det estimeres at halvparten av det som faktisk finnes av prioriterte naturtyper er kartfestet.",
+     "statement": "The plan’s cited assessment estimates that, in Sør-Trøndelag, half of the priority nature types actually present had been mapped."
+    },
+    {
+     "quote": "10 selskap stod for en kommersiell produksjon på vel 141.000 tonn rund vekt laks til en verdi av over 3,1 milliarder kroner.",
+     "statement": "The authors report that 10 companies in Sør-Trøndelag produced vel 141.000 tonn round-weight salmon commercially, valued at over 3,1 milliarder kroner."
+    },
+    {
+     "quote": "Eksempel er lokalitetene Rataren I & II som samlet har tillatelse på 14 konsesjoner med total lokalitets MTB på 10.920 tonn.",
+     "statement": "The authors report that Rataren I & II in Frøya had authorization for 14 konsesjoner and total site MTB of 10.920 tonn."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that aquaculture space is shaped by the physical footprint and safety zones of farms, displacement of other users, environmental effects, and disease and parasite spread. They identify disease-spread area as the most important area-limiting factor for marine aquaculture, with its extent depending on regulation and increasingly on models of currents, infection distances and environmental effects. Larger sites and coordinated production zones require a broader spatial perspective than municipal boundaries. The report presents intermunicipal planning as a means of coordinating competing interests and building a more consistent management basis, while noting that municipalities must agree and may be reluctant to relinquish local control.",
+    "A1": "The authors identify site availability, farm size, production structure, disease control, and competing coastal uses as interacting influences on development. They report a move toward fewer, larger sites and describe infection zones as a major constraint on marine aquaculture. Their account says this constraint varies with regulations and increasingly complex modelling of physical and ecological parameters. Outdated plans may allocate aquaculture areas that can no longer be used, while traditional small nearshore areas may not suit coordinated, third-generation production structures. Planning therefore needs sufficient suitable areas, current knowledge, and coordination across municipal borders. Environmental and fish-health considerations are discussed as planning constraints, but this segment does not explain the licensing system in detail.",
+    "A2": "The authors discuss environmental assessment at both plan and project levels. Under their account of the planning rules, environmental impact assessment is integrated into public marine-area planning, including new regional plans, municipal land-use plans and local area plans that allocate areas for aquaculture, subject to exceptions. Effects assessed at a higher planning level should not be reassessed, and assessment scope depends on factors such as area size, conflict level and impacts. The segment does not give a detailed sequence for a site application or report where delays and rejections most often occur. It does note that applications for exemptions can be burdensome and conflict-generating.",
+    "A3": "The authors describe environmental impact assessment as covering the combined effects of a plan’s land-use changes, particularly in regional plans, municipal land-use plans and low-detail area plans. Relevant and realistic alternatives should also be assessed; the assessment of individual areas depends on size, conflict level and impacts. This is a legal and policy account of planning requirements, not a reported evaluation of cumulative aquaculture production effects. The authors identify major knowledge limitations: ecosystem relationships are incompletely understood, species and habitat records are often inadequate, and ecosystems do not follow municipal boundaries. In the Kysten er Klar case, weak knowledge of marine depth, sediments, currents and deposition areas limited the ability to identify suitable future aquaculture sites.",
+    "A4": "",
+    "A5": "The authors state that planning should draw on scientific and experience-based knowledge, with the precautionary principle relevant when knowledge is incomplete. They describe the Nature Diversity Act, Water Regulations and environmental impact assessment rules as requiring ecosystem-oriented, knowledge-based decisions and documentation. The Kysten er Klar plan relied primarily on existing information while identifying gaps; its assessment said that only half of the priority nature types present were mapped and that marine depth, seabed sediments, currents and deposition areas were not adequately available for identifying future sites. The plan therefore showed existing approved farms as aquaculture areas and generally placed possible future sites in multi-use areas, rather than selecting new exclusive aquaculture areas. The authors also identify modelling tools for currents, infection distance and environmental effects as increasingly relevant.",
+    "A6": "The authors report that aquaculture companies’ planning interests commonly conflicted with conservation interests, fisheries and wild salmon interests, as well as sea transport, tourism and other farmers. They argue that rising pressure from different users makes fragmented, municipality-by-municipality management of shared fjord systems unsuitable. Intermunicipal planning can improve coordination and consistency, but requires participating municipalities to agree on plan design, adoption and follow-up. A cited expert committee cautions that intermunicipal cooperation can make governance more complex and weaken transparency, democratic control and accountability when decisions move away from elected councils. The authors’ survey also indicates that companies generally had contact with local political and administrative actors and often considered that their input was taken into account.",
+    "A7": "The authors argue that aquaculture companies should participate in municipal and intermunicipal planning and provide information about their area needs, preferred sites and site-selection criteria. They describe industry input as necessary when plans negotiate shared or exclusive areas with other users, and report that companies were active in planning processes. In the Kysten er Klar case, the project visited salmon farmers to gather input and relay it to authorities; the plan mapped existing approved farms while allowing future aquaculture to be considered in multi-use areas because evidence for selecting new exclusive sites was insufficient. The authors present engagement and evidence-based input as ways for the industry to support better access to suitable areas, rather than specifying operational measures for reducing farm footprints.",
+    "A8": "The authors identify disease and parasite spread between farms as a major spatial constraint on marine aquaculture. They explain that the area required for infection zones varies with the regulatory framework and increasingly with modelling of currents and infection distances. The report describes a developing production structure based on coordinated clusters in large zones separated by extensive aquaculture-free firebreaks, linking siting and operational organization to disease control. It estimates the effective area involved when infection zones are included, while emphasizing that this factor mainly affects the aquaculture industry rather than other coastal users. This segment does not provide detailed findings on water connectivity, transmission rates or farm-level biosecurity practices."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 23,
+   "page_to": 44,
+   "chars": 48319,
+   "key_figures": [
+    {
+     "quote": "kun to aktører ser behov for nye områder",
+     "statement": "The authors report that, among the aquaculture actors discussed in this segment, only two saw a need for new areas."
+    },
+    {
+     "quote": "alle oppdretterne sa de ikke hadde behov for lokaliteter som var grunnere en 25 meter.",
+     "statement": "The authors report that all fish farmers consulted said they did not need sites shallower than 25 meters."
+    },
+    {
+     "quote": "Forsvaret krever nesten 1/3 av sjøområdene til sine formål",
+     "statement": "The authors cite a personal communication reporting that the Norwegian Armed Forces required almost 1/3 of the sea areas in the Trøndelag planning process for their purposes."
+    },
+    {
+     "quote": "Kystplan Troms er organisert som et 3-årig prosjekt 2013-2016 og er delt opp i 3 regioner.",
+     "statement": "The authors report that Kystplan Troms was organized as a 3-year project for 2013-2016, divided into 3 regions."
+    },
+    {
+     "quote": "Alle eksisterende lokaliteter har fått justert arealområdet slik at det er plass til fortøyninger. Det fremlegges arealforslag på 10 nye områder for akvakultur.",
+     "statement": "The authors report that the Nordreisa and Skjervøy plan proposal adjusted areas for all existing sites to accommodate moorings and proposed 10 new aquaculture areas."
+    },
+    {
+     "quote": "Konsekvensutredninger på tiltaksnivå er på et helt annet detaljnivå og kan pålegges i havbruksnæringen på store lokaliteter (>3600 mtb).",
+     "statement": "The authors state that project-level impact assessments may be required for large aquaculture sites (>3600 mtb); the segment does not specify a place or period for this general statement."
+    },
+    {
+     "quote": "35 årsverk er direkte knyttet til lakseoppdrett i dag. Havbruksnæringen gir også sysselsetting i kommunene på leverandørsiden, spesielt transport (med cirka 50 årsverk). Slakterivirksomhet gir i dag ca. 100–110 årsverk.",
+     "statement": "The authors quote the Nordreisa and Skjervøy plan assessment, which reports current employment associated with salmon farming, supplier activity and slaughtering in the region as 35, cirka 50 and ca. 100–110 årsverk, respectively."
+    },
+    {
+     "quote": "Prosjektet ble eksternt evaluert og fikk karakteren svært vellykket (Bennet & Skjerdal, 1996), selv om kun 4 av de 18 kommunene kom i mål med en endelig vedtatt plan.",
+     "statement": "The authors cite an external evaluation of the 1993–1996 Regional Coastal Zone Plan for Helgeland, noting that it was rated very successful although only 4 of the 18 participating municipalities completed an adopted plan."
+    },
+    {
+     "quote": "Det er i dag mer fokus på direkte samarbeid mellom kommunene, styringsgruppen og prosjektledelsen samlet enn arbeid i mer eller mindre autonome grupper.",
+     "statement": "The authors report that Kystplan Helgeland shifted its work method toward direct joint cooperation rather than autonomous groups; the segment gives no quantified period or population for this change."
+    },
+    {
+     "quote": "Prosjektet har en økonomisk ramme på 3,6 millioner kroner.",
+     "statement": "The authors report that the Sjøområder Nordmøre project had a budget framework of 3,6 millioner kroner."
+    },
+    {
+     "quote": "Havbruksnæringen i Møre og Romsdal er viktig, 44 selskaper med direkte aktivitet og ringvirkninger skaper verdier for 3,8 milliarder kroner og sysselsetter 2.900 årsverk i fylket (Olafsen et al., 2010).",
+     "statement": "The authors cite Olafsen et al. (2010), who report that 44 companies with direct activity and spillovers in Møre og Romsdal generated 3,8 milliarder kroner in value and 2.900 årsverk in the county."
+    },
+    {
+     "quote": "Kjernevirksomheten utgjorde 2,5 milliarder og genererte 1.300 årsverk (ibid).",
+     "statement": "The authors cite Olafsen et al. (2010), who report that the core aquaculture business in Møre og Romsdal accounted for 2,5 milliarder and 1.300 årsverk."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe several intermunicipal coastal plans intended to balance aquaculture growth with fisheries, navigation, nature, recreation and tourism. In Troms, the stated policy aim is sustainable, long-term management and common land-use guidance, while municipal councils retain final plan decisions. The Helgeland plan aims to support growth without sacrificing important areas and proposes prioritizing aquaculture where regional and national interests do not take precedence. Its proposed “reverse planning principle” would allow aquaculture in residual multi-use sea areas, reflecting uncertainty and incomplete knowledge. In Nordreisa and Skjervøy, the cited plan assessment weighs nature conservation against social benefit in a proposed aquaculture area and gives the social benefit priority. The segment also reports industry concerns about inconsistent municipal decisions, including municipalities opposing their own approved plans.",
+    "A1": "The authors identify current site suitability factors raised by industry and authorities as currents, depth, seabed conditions, distance, proximity, zones and shipping lanes. Industry representatives generally did not need sites shallower than 25 meters, and only two actors saw a need for new areas. The Helgeland planning programme says it will generally not plan salmon or trout farming in waters shallower than 30m. The authors argue that technology and production methods may enable more exposed sites as well as more sheltered coastal sites. Site access also depends on planning design: the segment describes demands for flexible multi-use areas because knowledge is insufficient to identify future aquaculture sites as single-use areas, and because future zones and production areas may need flexibility to limit lice and disease transmission.",
+    "A2": "The segment describes planning processes rather than individual aquaculture site-application procedures. In the intermunicipal projects, plans are prepared collaboratively, with consultation and public participation, but final decisions under the Planning and Building Act are made by each municipality. In Tromsøregionen, a proposal to delegate some decisions to the steering group was rejected, so municipalities retained all decisions. The Helgeland plan is intended to establish a framework that may make later individual case processing more predictable and efficient. The authors report disputes in current practice, including refusals or discouragement of applications within areas designated for aquaculture and municipal decisions contrary to adopted plans. The segment does not identify application-stage durations or quantify where delays and rejections occur.",
+    "A3": "The authors describe cumulative-effect assessment as part of plan-level impact assessment, but note limits in available information. The Nordreisa and Skjervøy plan assessment uses known registrations, professional judgment, site visits and other available information; it did not commission special baseline surveys for proposed new development areas, leaving such studies to proponents at project or detailed-plan level. It assesses cumulative pressure under Nature Diversity Act § 10, including a proposed site where the assessment judged overall pressure could be high, especially in the event of a salmon escape, but recommended the site because of social benefit. The authors also describe a general methodological challenge: plan-level information is incomplete, and project-level assessments are more detailed, demanding and time-consuming. Helgeland’s plan proposes multi-use flexibility partly because there is not enough knowledge for future single-use aquaculture zoning.",
+    "A4": "The segment gives little direct analysis of economic instruments or how costs and benefits are distributed. It reports that the Romsdalsfjorden intermunicipal plan received funding from a county marine environmental protection and value-creation fund established with money allocated to the county in the 2009 aquaculture licensing round. Sjøområder Nordmøre had an economic framework of 3,6 millioner kroner. The authors cite Olafsen et al. (2010) for aquaculture’s economic and employment contribution in Møre og Romsdal, including figures for 44 companies and the core business. In Troms, the county’s role is described as prominent in financing, expertise and process resources, with funding reported as vel 12 millioner kroner including a current-catalogue project. The segment does not examine how licensing charges or other economic incentives affect site selection.",
+    "A5": "The authors describe a mixed knowledge base of public registers, existing plans, sector data, environmental monitoring, research and local information. The Nordreisa and Skjervøy assessment relies on known information rather than new baseline studies for proposed sites. The Helgeland programme identifies updated aquaculture data but notes a need to digitize seabed occupation by moorings; environmental status is being assessed using long-term MOM-B monitoring series. Romsdalsfjorden is building a digital database and using GIS-based multi-criteria analysis to compare suitability and value, but the authors identify gaps in data access, completeness, quality, format and translation of research into usable planning information. The segment says “Strømmodell Nordland” is being developed to provide knowledge about water contact and potentially guide siting to limit infection. It also notes that new technology may open both exposed and sheltered coastal locations.",
+    "A6": "The authors report conflicts between aquaculture and protected areas, fisheries, navigation, recreation, nature conservation and other coastal uses. Industry actors objected to refusals based on proximity to protected areas, refusals or discouragement within designated aquaculture areas, inconsistent municipal treatment and municipalities contradicting their own plans. The segment also notes that shipping lanes may occupy more area than necessary and calls for review of blank sectors if traffic patterns change. In Trøndelag, the Armed Forces’ late reversal of earlier statements about their interests in sea areas put the intermunicipal plan on hold; the authors report a demand for almost 1/3 of sea areas for military purposes. The authors present early participation, dialogue with fishers and authorities, shared information and clear, predictable plans as ways to improve legitimacy. They regard the Troms process as participatory and locally legitimate, while recognizing that final authority remains with individual municipalities.",
+    "A7": "The segment records industry proposals for more flexible use within an approved site: approve an area larger than the physical installation and allow cages to be repositioned within that boundary. The authors report that industry considered this potentially beneficial for both fish and the environment. Industry and planners also identified the need to adjust blank sectors when navigation patterns change and to review the spatial demands of shipping lanes. The authors note that only two actors saw a need for new areas, suggesting that better use and adjustment of existing areas may matter alongside expansion. The segment does not give a developed set of industry-led sustainability measures or assess their outcomes.",
+    "A8": "The segment links water connectivity between farms to future spatial management for biosecurity. A quoted Helgeland planning discussion says future zoning by the Food Safety Authority and production areas by the fisheries ministry require flexible, sufficiently large multi-use areas so management can reduce both lice and disease transmission. “Strømmodell Nordland” was under development and expected to add knowledge about water contact and help identify locations that limit infection spread. The Romsdalsfjorden project also lists research on lice and PD as relevant knowledge for planning. These are planning arguments and anticipated knowledge contributions, not reported results establishing particular farm-to-farm distances or transmission thresholds."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 44,
+   "page_to": 55,
+   "chars": 30502,
+   "key_figures": [
+    {
+     "quote": "Av landets 420 kommuner er det 275 kommuner med egen kystlinje. Av disse er det igjen 157 kommuner som er vert for laks- eller ørretoppdrett i sjø, og har godkjente lokaliteter i sin kystsone, per medio februar 2012",
+     "statement": "The authors report that, in Norway as of mid-February 2012, 275 of 420 municipalities had a coastline and 157 hosted salmon or trout farming in the sea with approved sites."
+    },
+    {
+     "quote": "I vår undersøkelse ser vi at hele 65 av de 157 kommunene som har lokaliteter i sjø deltar i interkommunale kystsoneplanprosesser som pågår.",
+     "statement": "The authors find that 65 of the 157 Norwegian municipalities with marine aquaculture sites were participating in ongoing intermunicipal coastal planning processes."
+    },
+    {
+     "quote": "Undersøkelsen viser også at bedriftens interesse i disse planprosessene var i konflikt med verneinteresser (57 prosent), fiskerinæringen (54 prosent), villaksinteresser (36 prosent), sjøtransport (22 prosent), turisme (19 prosent) og andre oppdrettere (11 prosent).",
+     "statement": "The authors' interview survey of aquaculture companies in the planning processes found reported conflicts with the listed interests at the quoted shares; the segment does not specify the survey period or sample size."
+    },
+    {
+     "quote": "De oppdretterne vi har spurt i intervjuundersøkelsen brukte i snitt mer enn én uke men mindre enn en måned på å delta i planprosessen.",
+     "statement": "The authors' interview survey found that participating aquaculture operators spent, on average, more than one week but less than one month on the planning process; the survey period and sample size are not stated here."
+    },
+    {
+     "quote": "Det er i alt 6 eksisterende akvakulturlokaliteter i planområdet. I den delen av planen som gjelder Hordaland ligger det 4 godkjente akvakulturlokaliteter, 1 i Lindås, 1 i Austrheim og 2 i Fedje kommune.",
+     "statement": "The segment reports six existing aquaculture sites in the Fensfjorden plan area, including four approved sites in its Hordaland section, distributed among the named municipalities."
+    },
+    {
+     "quote": "Det kom inn 18 merknader til planframlegget i forbindelse med høringen, hvorav 2 innsigelser.",
+     "statement": "The authors report that the Fensfjorden plan proposal received 18 consultation comments, including 2 formal objections."
+    },
+    {
+     "quote": "Per i dag har 3 av de 5 kommunene godkjent sin kommunedelplan: Gulen, Austrheim og Lindås.",
+     "statement": "The authors report that, at the time described, 3 of the 5 municipalities in the Fensfjorden collaboration had approved their municipal sub-plan."
+    },
+    {
+     "quote": "3 av de 5 kommunene har vedtatt sine arealplaner for sjø.",
+     "statement": "The authors report that 3 of the 5 Fensfjorden municipalities had adopted their sea-area plans."
+    },
+    {
+     "quote": "I 4 av 6 case i vår undersøkelse spiller fylkeskommunen en nøkkelrolle i etablering, finansiering og til dels drift av prosjektene.",
+     "statement": "The authors find that county authorities played a key role in establishing, funding and, in part, operating projects in 4 of the 6 cases they examined."
+    },
+    {
+     "quote": "Noen har brukt lang tid (45 år), mens andre er i mål med planen på kort tid (2 år).",
+     "statement": "The authors report that intermunicipal planning projects in their study took 45 years in some cases and 2 years in others; the sentence does not identify the projects or dates."
+    },
+    {
+     "quote": "I «Kysten er Klar» la man opp til et omvendt planprinsipp og at nye akvakulturområder er flerbruksareal som omfatter alle arealkategorier, også akvakultur (FFFNA-områder).",
+     "statement": "The authors report that the Kysten er Klar plan used a multi-use designation for new aquaculture areas, including all listed area categories; no quantity of areas is given."
+    },
+    {
+     "quote": "Prosessen i Nord-Troms har gitt 10 nye områder for Akvakultur slik at der er mye nytt areal klarert, selv om noe er tatt ut av det gamle.",
+     "statement": "The authors report that the Nord-Troms planning process designated 10 new aquaculture areas; the segment does not give a date or area measurement."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe spatial allocation as a balancing exercise among aquaculture, shipping, industry, fisheries, nature, recreation and other uses. In Fensfjorden, municipalities prioritized shipping and did not allocate more area to aquaculture because of heavy traffic and nearby industrial areas. Existing aquaculture sites were carried forward, while the plan also sought to show mooring areas so their full spatial footprint could be considered alongside fishing and anchoring. The authors conclude more generally that intermunicipal planning can support a more integrated view, but municipalities retain decision-making authority, leaving scope for fragmented, bit-by-bit management.",
+    "A1": "The authors identify available and mapped space, mooring footprints, competing uses, environmental and safety concerns, and planning capacity as factors shaping opportunities. In Fensfjorden, no new aquaculture sites were proposed; existing sites were retained, and the plan avoided additional sites near industrial areas because shipping was prioritized. Poor mapping and missing precise mooring-coordinate reports prevented the plan from showing actual mooring footprints. The authors also note that some operators reportedly receive refusals even for applications concerning areas already designated for aquaculture, suggesting that designation does not guarantee a site approval. Fish-health considerations appear in the plan's description of the fjord as a natural “firebreak.”",
+    "A2": "This segment discusses planning processes rather than the detailed statutory stages of an individual site application. The authors report that planning projects can take 45 years or 2 years, and that Fensfjorden began as intermunicipal collaboration, produced a plan proposal, and then required each municipality to approve its own plan. At the time described, 3 of the 5 municipalities had approved. In Fensfjorden, the consultation produced 18 comments and 2 objections, neither concerning aquaculture. More generally, the authors say many operators report refusals even for applications targeting areas already designated for aquaculture, but do not identify the application stage or reasons for those refusals.",
+    "A3": "The authors say knowledge requirements include scientific and experience-based evidence, the precautionary principle, an ecosystem approach and consideration of cumulative burden under the Nature Diversity Act. Fensfjorden's plan used marine nature-type mapping and species records, among other sources, but municipalities still called for more knowledge about fjord condition and an assessment of the combined burden of all measures. The authors note that where a plan opens little new area, its knowledge base was regarded as legally sufficient, while also identifying the need to compare societal value and benefit with risks to biodiversity. This segment does not describe a specific quantitative cumulative-effects method for aquaculture production.",
+    "A4": "The segment gives no account of economic instruments that directly change incentives for choosing aquaculture sites or of a quantified distribution of costs and benefits. It does discuss employment and regional spillovers as evidence that could affect how proposed areas are valued in impact assessments: the Nordmøre project was gathering employment information related to aquaculture and associated activities. The authors observe that industry actors had not supplied this type of factual evidence to the planning projects they reviewed, while some regional employment-impact studies had been commissioned by county authorities. They also describe county funding and support for intermunicipal planning, but not as an aquaculture-specific economic instrument.",
+    "A5": "The authors describe a knowledge base assembled from municipal questionnaires, map data, current land-use plans, risk and vulnerability analyses, meetings, and public datasets such as Naturbase, Artsdatabanken and Miljøstatus, supplemented by local surveys where available. They note that national databases prominently cover nature, transport, pollution and safety, while the industry lacks comparable national databases demonstrating its societal value beyond relevant official statistics. In Fensfjorden, inadequate mapping and missing precise mooring coordinates limited the representation of aquaculture footprints, despite a county authority saying it had supplied map sketches. The authors call for planning across surface, water column and seabed and for improved capacity and knowledge sharing. No emerging technology is discussed.",
+    "A6": "The authors' interview survey found reported conflicts between aquaculture-company interests and conservation, fisheries, wild salmon, sea transport, tourism and other aquaculture operators. In Fensfjorden, moorings had caused conflicts with residents and challenges in relation to shipping lanes; industrial land-use demands also potentially competed with aquaculture. The plan received no objections concerning aquaculture, but shipping was prioritized and municipalities wanted no further farms close to industrial areas because of traffic and risks from acute pollution. The authors argue intermunicipal planning can improve shared routines and coordination, but predictable and legitimate decisions remain constrained by municipal variation, limited planning capacity, weak continuity after project completion and the retention of local decision authority.",
+    "A7": "The segment does not set out specific operational measures that the aquaculture industry itself should adopt to reduce spatial use. It does identify a planning-related efficiency issue: aquaculture sites occupy mooring and anchoring areas as well as the visible farm footprint, and these should be mapped so other activities can account for them. In Fensfjorden, poor mapping and a lack of precise coordinate reporting meant moorings could not be shown on the plan map, despite the county authority reporting that it had supplied sketches. The authors also emphasize the need for continuing plan revision as the industry's area needs change, but do not prescribe industry-led technical or operational measures.",
+    "A8": "The Fensfjorden plan describes the fjord as a natural “firebreak” for aquaculture because few facilities are located out in the fjord, and regards this as positive for infection risk. The segment also states that no zone regulation to prevent and combat lice at aquaculture facilities had been prepared for Nordhordland and Gulen, unlike in other coastal areas. These are statements reported from the plan, not a disease-transmission analysis by the authors. The segment does not quantify water connectivity, transmission pathways or the effects of farm spacing on biosecurity."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

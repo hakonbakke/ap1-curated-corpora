@@ -1,0 +1,61 @@
+{
+ "doc_id": "2021_sandersen_kystsone-helgeland",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Interkommunal kystsoneplanlegging på Helgeland",
+    "Noen erfaringer med omvendt planleggingsmetodikk Intermunicipal coastal zone planning in Helgeland, Norway",
+    "– Some experiences with the “reversed” planning approach",
+    "Håkan T. Sandersen",
+    "Abstract",
+    "Keywords"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 44812,
+   "key_figures": [
+    {
+     "quote": "Artikkelen er basert på dokumentstudier og 28 kvalitative intervjuer med representanter fra ledelsen i KPH (5), kommuner (12), Nordland Fylkes Fiskarlag (1), Nordland fylkeskommune (5) og regional stat i Nordland (4) og i departement (1), samt deltakelse på flere møter i og om Kystplan Helgeland.",
+     "statement": "The authors’ evidence base for the Kystplan Helgeland analysis comprised 28 qualitative interviews, alongside document studies and meeting participation."
+    },
+    {
+     "quote": "Kystplan Helgeland (KPH), et interkommunalt plansamarbeid mellom 13 kommuner på Helgeland som varte fra 2012 til 2019.",
+     "statement": "The authors report that Kystplan Helgeland was an intermunicipal planning collaboration involving 13 municipalities in Helgeland from 2012 to 2019."
+    },
+    {
+     "quote": "Planområdet er på nesten 10 000 km2, og omfatter ca. 12 500 øyer og holmer og en kystlinje på ca. 9 800 km, tilsvarende ca. 5 % av Norges kystlinje (KPH 2019).",
+     "statement": "The authors describe the Kystplan Helgeland planning area as nearly 10 000 km2, with about 12 500 islands and skerries, about 9 800 km of coastline, and about 5 % of Norway’s coastline; the figures are attributed to KPH 2019."
+    },
+    {
+     "quote": "I det første høringsutkastet utgjorde dette hele 83 % av sjøarealet, og man hadde en generell bestemmelse om at det her skal foreligge «særlige grunner» for å avslå etablering av akvakultur.",
+     "statement": "The authors report that in Kystplan Helgeland’s first consultation draft, multi-use areas allowing aquaculture covered 83 % of the sea area."
+    },
+    {
+     "quote": "Man la også inn et forbud mot matfiskoppdrett i områder grunnere enn 20 meter – et område som utgjorde 13 % av sjøarealet.",
+     "statement": "The authors report that the first draft prohibited food-fish farming in waters shallower than 20 meters, an area covering 13 % of the sea area."
+    },
+    {
+     "quote": "De 13 kommunene mottok til sammen 56 innsigelser, 39 påpekninger av planfaglige mangler og 70 planfaglige råd.",
+     "statement": "The authors report that the 13 municipalities received 56 objections, 39 notices of planning deficiencies, and 70 planning recommendations during the first consultation."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors find that municipal coastal-zone plans are the main instrument for directing coastal development, but the balance between aquaculture, environmental protection, and other uses is contested. In Kystplan Helgeland, the reversed method first identified areas where aquaculture was unwanted and designated most remaining sea area as multi-use areas that included aquaculture. This prioritized flexibility and industry development over detailed prior allocation and conflict resolution. The article describes the final plan as a compromise: large multi-use areas remained, while some areas lost the aquaculture designation and environmental-interest provisions were added. The authors argue that plans need to balance flexibility with adequate impact assessment and local conflict potential; the segment does not set out a general national formula for balancing interests.",
+    "A1": "The authors identify site availability and uncertainty about future technologies and operating models as reasons Kystplan Helgeland chose broad multi-use areas rather than pre-cleared aquaculture-only sites. Municipalities said some previously designated A-areas had become unusable as knowledge and technology changed. The reversed approach expands the area in which operators may seek locations and can reduce the need for dispensations, but does not itself determine whether a particular site meets sectoral requirements. The article also finds that existing site structures constrain the scope for many new large establishments. Environmental knowledge gaps and competing interests affect the feasibility of sites, while the final decision on specific locations is left substantially to county and state sector agencies. Fish health and licensing-system design are not discussed in detail.",
+    "A2": "The segment describes a planning process rather than tracing individual aquaculture applications. Under the reversed method, municipalities designate areas where aquaculture is excluded, while location-specific conflict resolution is deferred to later site processing under the Aquaculture Act. The first Kystplan Helgeland hearing produced objections concerning the general rule that special reasons were needed to refuse aquaculture, as well as inadequate impact assessments of important values such as seabirds, navigation, and recreation. Delays arose during plan preparation: the project leader’s appointment ended as objections arrived, planning capacity was limited, and some municipal planners disagreed with or were weakly connected to the project. A new project leader later helped negotiate revisions and resolve objections. The article does not quantify application-stage delays or rejection rates.",
+    "A3": "The authors argue that broad multi-use areas make cumulative effects and long-term, aggregated consequences difficult to assess when the plan does not specify the type or amount of aquaculture or the locations of facilities. They describe the approach as returning to incremental, application-led development and note that municipalities did not use available planning provisions to control matters such as facility numbers, spacing, species, or cumulative burden. During consultation, authorities objected that assessments for registered national and regional values were inadequate across some multi-use areas; municipalities subsequently removed aquaculture designations from some areas or produced improved assessments. The article identifies uncertainty, insufficient environmental records, and the broad scale of assessment as methodological and knowledge challenges. It notes that the Nature Diversity Act requires cumulative burden to be considered, whereas the Planning and Building Act refers to sustainability.",
+    "A4": "The authors note that municipal allocation of aquaculture-fund revenues and tax income makes it harder to take an intermunicipal view of where to encourage more or less aquaculture. They also interpret the reversed method as a strategic choice that shifts some costs of clearing specific sites from municipalities to aquaculture companies, while giving operators more flexibility. Common maps and provisions initially offer the industry greater predictability and can reduce reliance on dispensations, although broad designations leave uncertainty about whether a potential site will satisfy sectoral requirements. The segment does not assess the amounts or distribution of revenues, nor does it provide a detailed analysis of economic instruments or stakeholder costs.",
+    "A5": "The authors base their analysis on document studies, qualitative interviews, and participation in project meetings. They describe the planning approach as knowledge-based revision and standardization, but find that inadequate environmental registrations weakened environmental authorities’ position, especially when broad multi-use areas were assessed. Uncertainty about future site preferences and aquaculture technologies was used to justify flexibility; conversely, the authors argue, uncertainty about nature values and the eventual form of aquaculture made assessments vague and weakened precautionary decision-making. The article recommends matching the planning method to local conflict levels and the quality of the knowledge base. It does not discuss emerging technologies as tools for changing environmental impacts or siting opportunities beyond their role in creating uncertainty about future location needs.",
+    "A6": "The authors identify conflicts between aquaculture and fisheries, environmental protection, recreation, tourism, seabirds, landscape values, reindeer migration routes, and other interests. The first consultation generated objections and planning comments, with authorities concerned that the general presumption favouring aquaculture and inadequate impact assessments would leave other interests insufficiently protected. The reversed method also caused internal disagreement in some municipalities, and Brønnøy and Vefsn left the collaboration, citing, among other reasons, a lack of integrated planning and concerns about the aquaculture-oriented approach. The authors find that centralised project management, limited involvement of municipal planners, and institutional tensions between growth and conservation contributed to delays and conflict. They suggest pragmatic choice of methods, adequate impact assessment, and stronger local engagement as conditions for more effective planning.",
+    "A7": "The segment does not identify measures that aquaculture companies themselves apply to make spatial use more efficient or sustainable. The authors instead discuss measures available to municipalities, such as setting planning provisions for facility numbers, distances, species, sequencing, and cumulative effects. They find that Kystplan Helgeland did not use these tools in its multi-use areas, thereby leaving much of the detailed siting decision to operators and sector authorities. This is a finding about public planning choices, not evidence of industry-led spatial-efficiency measures.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

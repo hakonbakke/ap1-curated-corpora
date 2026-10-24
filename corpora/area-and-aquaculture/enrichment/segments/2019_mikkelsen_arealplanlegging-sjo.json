@@ -1,0 +1,294 @@
+{
+ "doc_id": "2019_mikkelsen_arealplanlegging-sjo",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 5,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Endringer i arealplanlegging av sjøområder? Mulig betydning for havbruk",
+    "Stavanger:",
+    "Foretaksnr.: NO 989 278 835 MVA",
+    "Rapport",
+    "Forord",
+    "Innhold"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 34254,
+   "key_figures": [
+    {
+     "quote": "i 2017 skilte Hordaland seg ut, ved at praktisk talt alle godkjente lokaliteter (99 %) var i bruk i løpet av året.",
+     "statement": "The authors report that in Hordaland in 2017, 99 % of approved salmon and trout sea-farming sites were used at some point during the year."
+    },
+    {
+     "quote": "For de andre fylkene var mellom ti og ca. tredve prosent av de godkjente lokalitetene ikke brukt i 2017.",
+     "statement": "The authors report that in other Norwegian counties, between ten and ca. tredve prosent of approved sites were unused during 2017."
+    },
+    {
+     "quote": "Andelen av godkjente lokaliteter som var i bruk i en gjennomsnittlig måned lå i 2017 fra ca. 50 til 70 prosent i de ulike fylkene.",
+     "statement": "The authors report that across Norwegian counties in 2017, ca. 50 til 70 prosent of approved sites were in use in an average month."
+    },
+    {
+     "quote": "Av de unike lokalitetene som var brukt i hvert av fylkene var 65 til 74 % i bruk i en gjennomsnittlig måned.",
+     "statement": "The authors report that in Norwegian counties in 2017, 65 til 74 % of the unique sites used during the year were in use in an average month."
+    },
+    {
+     "quote": "De tre nordnorske fylkene har over 60 % av kystsonearealet til Norge, og sammen med Trøndelag blir det over 75 %.",
+     "statement": "The authors report that the three northern Norwegian counties contain over 60 % of Norway’s coastal-zone area, rising to over 75 % when Trøndelag is included."
+    },
+    {
+     "quote": "Hordaland er det fylket med størst tetthet av lokaliteter. Der er det mer enn 8 ganger så tett som i fylket med minst tetthet, Finnmark.",
+     "statement": "The authors report that in their comparison of Norwegian counties, approved aquaculture-site density in Hordaland was more than 8 ganger that in Finnmark."
+    },
+    {
+     "quote": "I en spørreundersøkelse i 2015 svarte over 60% av respondentene fra næringen at det var det største problemet de sto overfor (Hersoug m.fl. 2014).",
+     "statement": "A cited survey of aquaculture-industry respondents, reported in Hersoug m.fl. 2014, found that over 60% identified access to area as their biggest problem; the survey is described as conducted in 2015."
+    },
+    {
+     "quote": "Det inkluderer alger (tare) til fôr eller konsum, hvor det nå er over 350 tillatelser5, torsk, flere typer skjell og andre skalldyr.",
+     "statement": "The authors report that there were over 350 permits for seaweed (kelp) for feed or consumption, citing the Aquaculture Register as of 29 October 2018."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe spatial planning under the Planning and Building Act as determining where aquaculture may take place, while also setting conditions and identifying important considerations for use of areas. Their summary says access to sea area is central to the industry’s future development, but that few of the planning changes considered would reliably or highly probably increase areas allocated to aquaculture. They frame decisions as balancing industry development, other societal interests, and the effectiveness of planning and allocation. The authors’ 2017 county comparisons suggest different degrees of apparent area pressure, especially in Hordaland, but caution that the measures have limitations and are not directly comparable. The report also notes that new production methods could alter area needs and access.",
+    "A1": "The authors identify site availability and quality, approved-site capacity, and the need for spare sites to manage disease outbreaks and operational disruptions as factors affecting development. Their 2017 county statistics indicate that site use and density vary substantially; they caution that unused approved sites do not necessarily mean there is more capacity than operators need. Production systems matter: offshore production could expand available area if technically and commercially successful, while closed sea-based systems could reduce some veterinary separation constraints and allow closer placement with respect to infection risk. Land-based systems could reduce dependence on coastal sea areas but require substantial land and may generate competing-use conflicts. These are possibilities discussed by the authors, not demonstrated outcomes.",
+    "A2": "This segment does not describe the individual stages of an aquaculture site application or report where application-stage delays, refusals, or conflicts most often occur. It does state that Norwegian sea-planning practice varies among municipalities, including in the use and conduct of impact assessments, plan types, area purposes, participation arrangements, and time spent on processes; this is attributed to Sørdahl m.fl. (2017), a cited study of planning practice in 2016-17. The authors also report that some actors seek simpler and faster planning, while arguing that the complexity and diversity of coastal uses make easy solutions unlikely. They distinguish the time and resources consumed by making plans from the effectiveness of the resulting plan solutions.",
+    "A3": "The segment does not explain how cumulative-effect assessments of aquaculture production are incorporated into plans or site-selection decisions. It does discuss environmental impact assessment of plans in general: Sørdahl m.fl. (2017), a cited study of Norwegian municipal sea-planning practice in 2016-17, found variation in whether and how impact assessments were used. The authors note that environmental sustainability and demands for more information have increased planning tasks and the need for systematic data collection. They also caution that biomass relative to water volume does not by itself provide an unambiguous measure of environmental risk; depth, seabed type, currents, and distance to vulnerable or valuable nature areas or populations are among relevant factors. These observations point to knowledge and measurement limitations, not a specific cumulative-effects method.",
+    "A4": "",
+    "A5": "The authors’ assessment draws on county-level statistics and stresses limits to comparing the measures of area scarcity across counties. They argue that environmental assessment needs more than surface-area or biomass measures: seabed depth and type, currents, and proximity to vulnerable or valuable natural areas or populations may all matter, and biomass relative to water volume is not an unambiguous risk indicator. They also describe increasing demands for information and systematic data collection as environmental sustainability becomes a planning concern, while citing Hersoug (2012) on municipal limits in planning resources and competence. The report considers potential changes to the knowledge base for planning, but this segment does not specify emerging technologies for decision-support. It does mention new production technologies that could change area requirements and siting opportunities.",
+    "A6": "The authors explain that coastal planning must address a wide range of interests and that pressure on the coastal zone comes from many users, not only aquaculture. They draw on planning theory to argue that real conflicts of interest may persist, and that apparent agreement can reflect unequal power. Participation and transparency can help counter misuse of power, while planning should handle conflict constructively rather than assume consensus. Their account of current Norwegian planning combines vertical coordination by state and county authorities with participation requirements and practical recognition of conflicts. They also note municipal variation in participation and planning practice, citing Sørdahl m.fl. (2017). Predictability can be weakened by frequent dispensations, although adaptive flexibility may be needed as technology, economies, nature, and society change.",
+    "A7": "",
+    "A8": "The authors state that spare site capacity may be needed to move operations in response to disease outbreaks or other disruptions. They note that veterinary distance requirements currently practiced in coastal aquaculture apply between grow-out facilities, between grow-out facilities and watercourses with anadromous salmonids, and to slaughterhouses, among other facilities. In their discussion of possible production changes, they say closed sea-based systems could permit facilities to be placed much closer than today with respect to infection risk, if the technology succeeds. Other types of conflict would remain and could still limit facility density. This segment does not provide detailed analysis of water connectivity or quantify disease-transmission risks."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [
+    "2 Insentiver for å legge til rette for havbruk",
+    "Arbeidsplasser",
+    "Verdiskapning",
+    "Fordeling av verdiskapning",
+    "Petroleum 8 % 9 %",
+    "Andre effekter"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 24090,
+   "key_figures": [
+    {
+     "quote": "Det er beregnet at det var litt over 33 tusen årsverk i verdikjeden knyttet til havbruk i 2016 (Richardsen m. fl. 2018).",
+     "statement": "A cited study estimated slightly more than 33 thousand full-time equivalent jobs in Norway’s aquaculture value chain in 2016."
+    },
+    {
+     "quote": "Det sto bare for 21 %, det vil si rundt 7000, av alle årsverkene. Foredling og handel og eksport sto for 8 %, mens hele 71 % av årsverkene var fra ringvirkninger i andre næringer.",
+     "statement": "A cited study attributed 21 % (around 7000), 8 %, and 71 % of Norwegian aquaculture value-chain full-time equivalent jobs to farming, processing and trade/export, and spillovers in other industries, respectively."
+    },
+    {
+     "quote": "Sysselsettingsstatistikken til Statistisk sentralbyrå (SSB)7 forteller at det var ca. 8000 sysselsatte i akvakulturnæringen alene8 i 2017, og 18 kommuner hadde mer enn 100 sysselsatte.",
+     "statement": "The authors’ account of Statistics Norway data reports ca. 8000 people employed in aquaculture alone in Norway in 2017 and 18 municipalities with more than 100 such employees."
+    },
+    {
+     "quote": "Median antall innbyggere i norske kommuner er litt under 470010.",
+     "statement": "The authors report a median population of slightly under 4700 residents per Norwegian municipality, using the cited population statistic."
+    },
+    {
+     "quote": "Hvert årsverk der ga en verdiskapning på nesten 4,5 millioner kroner (Richardsen m.fl. 2018).",
+     "statement": "A cited study estimated value creation of almost 4.5 million kroner per full-time equivalent in aquaculture in Norway in 2016."
+    },
+    {
+     "quote": "Det vil da si en verdiskapning i 2016 på ca. 57 milliarder kroner fra laks og ørret oppdrett. For hver av de 978 godkjente lokalitetene for laks og ørret i sjø i 2016 blir det en verdiskapning på ca. 58 millioner kroner.",
+     "statement": "The authors’ rough estimate assigns ca. 57 billion kroner in 2016 value creation to Norwegian salmon and trout farming, or ca. 58 million kroner per each of the 978 approved marine sites."
+    },
+    {
+     "quote": "Siden bare 750 av lokalitetene var i bruk overhodet i løpet av 2016, og ca. 550 av dem på ethvert tidspunkt, så blir verdiskapningen per «aktive» lokalitet noe høyere.",
+     "statement": "The authors report that 750 Norwegian salmon and trout sites were used at some point in 2016 and ca. 550 were in use at any given time."
+    },
+    {
+     "quote": "Med maksimale satser på eiendomsskatt (7 promille), så blir det rundt 26 500 kr per år per godkjente lokalitet, ifølge Isaksen m.fl. (2012).",
+     "statement": "A cited study estimated annual municipal property tax of around 26 500 kr per approved aquaculture site under the maximum tax rate of 7 promille."
+    },
+    {
+     "quote": "salg til fastpris og på auksjon av kapasitetsøkning, som til sammen ga over 3,9 milliarder kroner i 201811.",
+     "statement": "The authors report that fixed-price sales and auctions of capacity increases generated over 3,9 billion kroner in Norway in 2018."
+    },
+    {
+     "quote": "For kommunene var det ca. 3 millioner kroner og for fylkeskommunene ca. 430 000 kroner.",
+     "statement": "The authors report average 2018 Havbruksfond payments per site of ca. 3 million kroner to municipalities and ca. 430 000 kroner to county municipalities."
+    },
+    {
+     "quote": "Det er 159 kommuner som har godkjente kommersielle lokaliteter for havbruk av laks og ørret (per 29/10-2018).",
+     "statement": "The authors report that 159 Norwegian municipalities had approved commercial salmon and trout aquaculture sites as of 29/10-2018."
+    },
+    {
+     "quote": "Figuren viser at litt over 20 % av Norges befolkning bor i kommuner med oppdrettslokaliteter i sjø for laks og ørret.",
+     "statement": "The authors report that slightly over 20 % of Norway’s population lived in municipalities with marine salmon and trout aquaculture sites."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ discussion describes incentives that can shape whether municipalities, county municipalities, and the state prioritize aquaculture, rather than setting out a full account of current spatial-planning rules. Employment, value creation, public revenues, and settlement can encourage support, while environmental effects and concerns about recreation, landscape, and other local interests can work against it. The authors emphasize that effects and the distribution of value creation vary by region and year. They conclude that high value creation and the Havbruksfondet arrangement strengthen incentives to facilitate aquaculture, while environmental problems weaken them. The segment does not describe a formal method for balancing these interests in plan decisions.",
+    "A1": "The authors identify economic and environmental factors that affect the scope for coastal aquaculture. Employment and spillovers, local value creation, tax revenues, and payments linked to licenses and capacity increases can encourage public authorities to facilitate development. In contrast, effects on wild fish and local nature, including nutrient and medicinal discharges, escapes, genetic mixing, and disease and parasite spread, can reduce support. Environmental risk depends in part on the number and size of sites, their precise location and surroundings, facility design, safeguards, and operating practices. The segment does not explain licensing procedure, site availability constraints, or how fish health interacts with planning.",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors describe regulatory and fiscal arrangements as shaping public-sector incentives. Municipalities may tax the value of cages and buildings, but not the fish in them; a cited study found that this generated modest revenue per approved site. By contrast, payments for new licenses and capacity increases, distributed through Havbruksfondet, provide larger incentives. The state retains 20 % of the 2018 proceeds, while municipalities and county municipalities share the remaining 80 %, with allocations mainly based on their relative share of approved maximum allowable biomass. Municipalities that cleared new sites in the preceding two-year period receive a somewhat larger share. The authors caution that future payments are uncertain because growth depends on environmental status, producer willingness to pay, and willingness to expand.",
+    "A5": "The segment draws on employment and tax statistics, site-register data, and cited studies of value creation and environmental risks. The authors refer to the Institute of Marine Research’s annual risk reports for environmental effects, and identify site number and size, precise location, surrounding conditions, facility design, safeguards, and operational practices as relevant to risk. They also note that little is known about how public attitudes to aquaculture vary by demographic group or how this affects support for access to sites. Their population comparison does not account for the number of sites per municipality or county, or the area of those jurisdictions, which may also matter.",
+    "A6": "The authors identify potential tensions between aquaculture and local nature, wild fish, recreation, landscape, and nearby residents’ experience of noise and light. They also note that some studies find the public welcomes commercial activities, so local responses are not uniform. Cited research and the authors’ discussion describe aquaculture as controversial and subject to media debate, including disputes over regulation, sea lice treatments, and effects on shrimp stocks. Political incentives may therefore depend on voters’ perceived local costs and wider views about what benefits society. The authors stress that they lack evidence on how strongly aquaculture affects voting or how attitudes vary among demographic groups.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [
+    "3 Dagens forvaltning",
+    "3.1 Akvakulturforvaltning",
+    "3.2 Arealplanlegging etter Plan- og bygningsloven (PBL)",
+    "Overordnet om Plan- og bygningsloven Loven har svært mange og brede formål.",
+    "Kommunal planlegging",
+    "Interkommunalt plansamarbeid"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 42068,
+   "key_figures": [
+    {
+     "quote": "Fra 2017 har det vært et system hvor norskekysten har vært delt inn i 13 produksjonsområder.",
+     "statement": "The authors report that since 2017 the Norwegian coast has been divided into 13 production areas for regulating aquaculture production capacity."
+    },
+    {
+     "quote": "En standard tillatelse for matfisk av laks eller ørret er på 780 tonn maksimal tillatt biomasse (MTB) sør for Troms fylke, og 945 tonn MTB i Troms og Finnmark.",
+     "statement": "The authors report standard maximum permitted biomass limits for salmon or trout food-fish licences: 780 tonnes south of Troms and 945 tonnes in Troms and Finnmark."
+    },
+    {
+     "quote": "En tillatelse til å drive oppdrett kan normalt knyttes til inntil fire lokaliteter, og seks lokaliteter om flere tillatelser produseres på de samme lokalitetene.",
+     "statement": "The authors report that an aquaculture licence can normally be linked to up to four sites, or six when several licences are produced at the same sites."
+    },
+    {
+     "quote": "Hørings- og innsigelsesfrister skal være minst seks uker.",
+     "statement": "The authors describe a minimum consultation and objection period of six weeks for plan processes under the Planning and Building Act."
+    },
+    {
+     "quote": "De gjelder for 10 år av gangen, og kan så forlenges med 5 år av gangen.",
+     "statement": "The authors’ legal account says that state planning provisions apply for 10 years and may then be extended in periods of 5 years."
+    },
+    {
+     "quote": "Planen at forvaltningsplanene skal revideres minimum hvert tolvte år og oppdateres hvert fjerde år.",
+     "statement": "The authors report the stated schedule for Norwegian ocean management plans: revision at least every twelve years and updating every four years."
+    },
+    {
+     "quote": "Det er enten 5, 2,5 eller 1,5 km i sjø.",
+     "statement": "The authors report that the Norwegian Food Safety Authority uses three recommended minimum sea-distance values, depending on facility type, size, and the interests considered."
+    },
+    {
+     "quote": "Enkeltkommuner kan tre ut av interkommunalt plansamarbeid med tre måneders varsel, men departementet kan også pålegge dem å fortsette.",
+     "statement": "The authors’ legal account says that an individual municipality may leave intermunicipal planning collaboration with three months’ notice, although the ministry can require it to continue."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe aquaculture establishment as requiring both a general production licence and clearance of one or more specific sites. Under the Aquaculture Act, permits require environmental acceptability, compliance with municipal plans and conservation measures (unless the relevant authority consents), consideration of area interests, and other sectoral permits. The statutory balancing factors include the applicant’s area needs, alternative aquaculture uses, other uses, and conservation interests. Municipal plans can allocate sea areas to aquaculture alone or in combination with other purposes, while national expectations call for sufficient area for fisheries and aquaculture balanced against environmental and other social interests, viewed regionally. Production capacity can also be adjusted by production area according to environmental sustainability; as of March 2019, the only indicator in use was wild salmonid mortality induced by sea lice from farms.",
+    "A1": "The authors identify site availability as shaped by municipal spatial plans, protected areas, competing uses, and statutory area-interest balancing. A licence for production does not itself authorize production at a site: locality clearance and a site-specific maximum biomass are also required. Environmental sustainability at production-area scale can affect capacity, while site-level decisions also involve fish health, welfare, and biosecurity. The Food Safety Authority’s guidance calls for attention to distance from watercourses, other aquaculture-related activity, and groups of facilities, and for assessing sites in a wider geographic context. Recommended minimum distances vary by facility type and size and the interests considered. The segment describes these requirements but does not establish how strongly each factor affects actual development opportunities.",
+    "A2": "The authors describe applications as submitted to the county authority where the applicant wants to operate. The county coordinates the process, sends the application to the location municipality and relevant state sector authorities, and then makes a decision based on their decisions and statements. The municipality and applicant arrange public inspection; the municipality comments on consistency with plans and local interests, while sector authorities decide under their laws or provide comments. A site is also approved for a maximum biomass. The segment sets out the process but does not identify empirical frequencies of delay, rejection, or conflict at particular stages. For spatial plans, consultation and objection handling can involve mediation; unresolved objections are referred to the ministry for decision.",
+    "A3": "The authors’ account of the Environmental Impact Assessment Regulations requires assessment of plans or projects that may have significant effects, and identifies aquaculture in the relevant annex for projects under other legislation. For municipal and regional spatial plans, the plan authority is responsible for the assessment; for aquaculture applications under the Aquaculture Act, the county authority is the responsible authority and the proponent conducts the assessment. Assessments are to address positive and negative, direct and indirect, temporary and lasting, short- and long-term effects, including cumulative effects alongside existing, adopted, or approved plans and projects in the area of influence. The authors note methodological limits: information must be obtained when important information is missing, but requirements such as “recognized methodology” and relevant expertise are not specified in greater detail. Overarching assessments should identify matters for later, more detailed clarification.",
+    "A4": "The authors report that commercial sea-based salmon and trout food-fish licences are limited in number and have been allocated in application rounds when the ministry considered it appropriate. A payment has been required for such licences since 2002, and auctions were also used in 2013 and 2018, making the amount an applicant was willing to pay decisive for whether it received a licence. The segment says that municipalities, counties, and the state have differing incentives to facilitate aquaculture, but the discussion of those incentives is deferred to a later part of the document. It does not describe the distribution of economic benefits and costs among stakeholders in this segment.",
+    "A5": "The authors describe a knowledge base combining environmental indicators, planning documents, impact assessments, sector-authority assessments, and information on environmental values and existing uses. As of March 2019, production-area capacity adjustments used only one environmental indicator: wild salmonid mortality induced by sea lice originating from farms. Impact assessments must consider environmental values, emissions and waste, natural-resource use, alternatives, baseline conditions, and cumulative effects. The regulations require missing information to be collected and assessments to use recognized methodology and relevant expertise, but the authors note that these terms are not specified more precisely. Offshore aquaculture technology is being developed and tested, but the ocean management plan described gives little attention to aquaculture beyond noting possible new forms of farming and seaweed cultivation.",
+    "A6": "The authors describe potential conflicts between aquaculture and other uses through the statutory requirement to balance an applicant’s area needs against other aquaculture, other uses, and conservation interests. Municipal planning can designate sea areas for several purposes, and national expectations explicitly call for balancing aquaculture area needs with environmental and other societal interests. Regional plans can guide municipal planning, and departures may prompt an objection; the authors give the example of five municipalities in Hordaland challenging a regional plan that they considered an intrusion on municipal self-government. Objections can lead to mediation and, if unresolved, a ministerial decision. The authors also note that requiring detailed zoning plans for aquaculture could increase municipal authority but complicate the process and challenge sector-authority responsibilities. The law calls for openness, participation, predictability, and consideration of effects, while the authors note limited concrete requirements for how participation must be secured.",
+    "A7": "",
+    "A8": "The authors describe biosecurity as relevant both to site applications and ongoing operation. The Food Safety Authority considers infection risk together with animal health and welfare, emphasizing distance from watercourses, other aquaculture-related activities, and clusters of facilities; it says each site should be assessed in the context of a wider geographical area. Recommended minimum distances vary with facility type and size and with the interests being considered. The operating regulations also require fallowing for disease-control and environmental reasons. The segment says that the Authority has made decisions about infection control for proposed sites near production-area boundaries by combining different spatial definitions, a practice that has faced criticism. It also notes treatment and monitoring zones for disease or parasite risks and cooperation among operators on coordinated stocking, fallowing, and sea-lice measures."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [
+    "4 Alternative modeller for framtidig arealplanlegging",
+    "Hva kan endres i arealplanleggingen?",
+    "4.1 Planområde",
+    "4.2 Planmyndighet",
+    "4.3 Medvirkning",
+    "4.4 Kunnskapsgrunnlag"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 47572,
+   "key_figures": [
+    {
+     "quote": "Høsten 2017 ble norskekysten delt inn i 13 produksjonsområder for havbruk, som tidligere nevnt.",
+     "statement": "The authors report that the Norwegian coast was divided into 13 aquaculture production areas in autumn 2017."
+    },
+    {
+     "quote": "Produksjonsområde 10, Andøya til Senja, tilsvarer for eksempel omtrent området for den interkommunale kystsoneplanen for Midt- og Sør-Troms, som var ferdigstilt i 2015.",
+     "statement": "The authors report that production area 10, from Andøya to Senja, approximately corresponds to the Midt- og Sør-Troms intermunicipal coastal-zone plan area, completed in 2015."
+    },
+    {
+     "quote": "Bare de to første er obligatoriske etter PBL (Ringholm m.fl. 2018)",
+     "statement": "The authors cite Ringholm et al. (2018) for the finding that only the first two of Arnstein’s participation steps are mandatory under the Planning and Building Act."
+    },
+    {
+     "quote": "Selv om et kommunestyre skulle bestemme seg for å lage en ny kystsoneplan kan den gamle ende opp med å være gyldig i 6-7 år, da det tar tid å lage en ny plan.",
+     "statement": "The authors state that a municipal coastal-zone plan may remain valid for 6-7 years while a replacement plan is prepared."
+    },
+    {
+     "quote": "Tillatelser til å drive havbruk har i 2015 og 2018 blitt auksjonert ut.",
+     "statement": "The authors report that aquaculture operating permits were auctioned in 2015 and 2018."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors assess planning models against three aims: making areas available for aquaculture growth, safeguarding other considerations, and achieving time- and cost-efficient processes. They explain that current coastal planning commonly follows municipal administrative boundaries rather than ecological or operational connections. Larger or functionally defined planning areas may allow more activities and interests to be accommodated and support ecosystem-based management, but can make participation and planning more complex. The authors emphasize that changing one planning element often requires changes elsewhere. They do not determine which model would best balance aquaculture development and environmental or competing-use considerations.",
+    "A1": "The authors identify site availability as shaped by plan boundaries, the authority responsible for planning, participation, knowledge, balancing methods, and plan design. Municipal plans are central because aquaculture sites must conform to them or receive a dispensation. Larger functional planning areas may allow more activities to coexist and permit consideration of disease-spread risks between farms, but the authors say it is uncertain whether they would permit more farms without compromising biosecurity. They describe the licensing of production capacity and the separate site application and clearance process as distinct. The segment discusses possible reforms, not observed effects on development opportunities.",
+    "A2": "The segment states that aquaculture sites must be placed in accordance with municipal spatial plans, unless a dispensation is granted. It notes that aquaculture permits have been auctioned in 2015 and 2018, while the locality still has to be applied for unless there is unused capacity at existing sites. Under the proposed area-auction model, some locality-clearance assessments would have to occur before auction, a departure from the current separation of area allocation and site application/clearance. The segment does not provide a full application sequence, processing times, rejection rates, or evidence on where delays most often occur.",
+    "A3": "The authors describe environmental risk and conflicts with other interests as matters that could be assessed before allocating areas, including in a possible auction of defined sea-area blocks. They discuss environmental indicators for production areas, whose boundaries were largely set in relation to the risk of salmon-louse larvae spreading between areas and within them. They also say production zones are generally operational arrangements rather than topics in spatial plans, although the Food Safety Authority may consider their relationship to plans. The segment does not report a systematic method for cumulative-impact assessment in current site decisions; it highlights variation in impact assessments and the need for better, comparable knowledge and methods.",
+    "A4": "The authors discuss auctioning sea-area blocks and charging annual area or use fees as possible instruments, not existing general arrangements. Auctions would require prior clarification of which activities are acceptable and likely some prior assessment of environmental risks and conflicts. They could increase aquaculture access to areas and give municipalities an incentive to allocate areas, but would make use of space paid and connect to debates about resource-rent taxation and overall tax burdens. An annual fee might be fixed or related to company profits; the authors caution that recent high average profits may not persist. The segment does not quantify benefits or costs or specify their distribution among stakeholders.",
+    "A5": "The authors say current planning knowledge typically combines expert knowledge from public databases and reports, sector-authority input, and stakeholder input, some of which is produced during planning by actors with interests in the outcome. Disputed, difficult-to-understand evidence can undermine legitimacy. They propose systematic, centrally coordinated data collection and shared methods to improve verification, comparability across municipalities, and use of scientific valuation, cost-benefit, or ecosystem-service analysis. They caution that information may become outdated before use and that the cost of a national program must be weighed against its benefits. The segment notes that submerged cages could make three-dimensional planning more relevant and potentially reduce conflicts with recreation and tourism.",
+    "A6": "The authors identify potential conflicts between aquaculture and other coastal uses, and between stakeholder groups with competing area preferences. Larger planning areas can accommodate more interests but may make participation harder and planning less transparent. Sectoral objections can delay completion and may allow a particular interest to outweigh an overall assessment; opposing objections may also arise, with mediation or ministerial decision as possible resolutions. Stakeholder working groups may help develop compromises, but representatives may lack legitimacy or favor some members, and compromises may create new conflicts. The authors argue that open hearings help guard against decisions based on a skewed knowledge base. They frame legitimacy, early dialogue, balanced participation, and predictable procedures as important, while noting trade-offs.",
+    "A7": "The segment does not identify measures that the aquaculture industry itself can apply to make spatial use more efficient and sustainable. It discusses planning and regulatory options for public authorities, including functional planning areas, auctions, fees, plan conditions, and marine industrial areas, but does not present these as industry-led measures.",
+    "A8": "The authors explain that functional ecological connections may matter for infection prevention between groups of aquaculture facilities and coordinated farm operations. Production-area boundaries were largely determined by the risk of salmon-louse larvae spreading from farms, with lower transmission risk between areas than within an area. They suggest that planning at production-area scale could allow production zones and sites to be considered together and potentially influence disease-spread risk, but say whether this would enable more farms without compromising biosecurity is difficult to determine. Production zones are usually set by aquaculture companies, with operating plans subject to approval by the Food Safety Authority and the Directorate of Fisheries."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 4,
+   "headings": [
+    "5 Oppsummering",
+    "Hovedfunn summert",
+    "ISBN 978-82-8296-588-0 (pdf) ISSN 1890-579X"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 11235,
+   "key_figures": [
+    {
+     "quote": "Kjernen i rapporten er kapittel 4, som ser på mulige grep innenfor seks aspekter ved arealplanlegging.",
+     "statement": "The authors identify six aspects of spatial planning considered in the report’s analysis of possible changes in Norway."
+    },
+    {
+     "quote": "I to mindre planområder var det kanskje bare plass til å prioritere det som ble sett på som de 2-3 viktigste interessene. Hvis man ser de to områdene som ett kan man kanskje prioritere de 4-5 viktigste interessene.",
+     "statement": "The authors illustrate hypothetically how combining two smaller planning areas in Norway might allow priority to be given to 4-5 interests rather than the 2-3 interests that might fit in each separate area."
+    },
+    {
+     "quote": "Rapporten identifiserer tre endringer som sannsynligvis kan øke arealtilgangen for havbruk:",
+     "statement": "The authors identify three types of planning change that are likely to increase aquaculture’s access to area in Norway."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors conclude that few of the planning changes they assess are likely to increase the area allocated to aquaculture. They identify larger planning areas, auctions of area blocks, and marine industrial parks as changes that could do so. Larger areas may accommodate more interests, including aquaculture. Auctions could attract high bids from profitable salmon farming, and sharing auction revenue with planning authorities could create an incentive to plan auctionable blocks. Industrial parks could allow commercial actors to coordinate more densely while public authorities set limits to protect outside interests. The report also stresses balancing local priorities with more harmonized treatment of regional and state interests.",
+    "A1": "The authors discuss area availability as shaped by planning boundaries, allocation methods, and the knowledge used to assess competing interests. Larger planning areas could make room for more prioritized interests, while auctions and marine industrial parks might increase the area available to aquaculture. More consistent assessment methods and systematic knowledge collection could make allocation more predictable and efficient. The segment also notes that emerging offshore and closed-system technologies may change siting needs. Potential disease or parasite challenges could require different spatial arrangements, larger or different veterinary buffers, more fallowing, or additional reserve sites. It does not describe licensing procedures in detail.",
+    "A2": "",
+    "A3": "The authors say that the knowledge base varies considerably between planning processes, as illustrated by impact assessments prepared for coastal-zone plans. They argue that systematic knowledge collection outside individual planning processes could improve scientific grounding, comparability between areas, and assessment of interests that are currently weakly represented. It could also help verify stakeholder-provided information and make it less vulnerable to suspicion that it is strategically produced. The authors suggest that having knowledge available before a planning process begins could reduce the resources needed and allow plans to be updated more often or address other planning aspects in greater depth. This segment does not explain cumulative-effect assessment methods or their use in site selection.",
+    "A4": "The authors propose auctions of commercially usable area blocks as one possible way to increase aquaculture’s access to area. They reason that, given salmon farming’s profitability in recent years, the industry would likely have relatively high willingness to pay for additional area and win many auctions. If some or all auction revenue went to planning authorities, that could further incentivize them to plan blocks for auction. The segment presents this as a possible policy mechanism, not an implemented arrangement, and does not assess how auction costs or benefits would be distributed among other stakeholders.",
+    "A5": "The authors identify variable knowledge bases across planning processes and argue for systematic, scientifically grounded information collected independently of those processes. They say that making facts accessible to case officers and politicians is important, and that public access could help keep debate and political decisions from relying on misconceptions. The report largely takes prevailing coastal aquaculture technology as its premise, but notes that offshore and closed-system technologies could substantially change planning conditions. It raises questions about how offshore facilities, closed systems, and mobile farms should be handled in spatial planning and site approval, without resolving them.",
+    "A6": "The authors describe competing interests in coastal planning and say that larger planning areas may allow more interests to be prioritized, potentially including both aquaculture and other uses. They argue that clearer and more consistent trade-off methods across planning areas could improve predictability and reduce time and resources spent by farmers and others seeking access to areas. Municipalities should retain the ability to prioritize local interests, while regional and state bodies could harmonize their knowledge, assessment methods, and decision criteria. The authors also note uncertainty and disagreement about aquaculture’s effects on the environment and other coastal users, which should be made clear in public decision documents.",
+    "A7": "The segment does not set out specific voluntary measures for the aquaculture industry to improve the efficiency or sustainability of its spatial use. It does discuss marine industrial parks, where commercial actors could coordinate activities and internalize externalities within the park, potentially enabling denser commercial use. However, the authors describe this as a possible planning arrangement, with public authorities determining which activities are acceptable in light of interests outside the park, rather than as an industry measure already in use.",
+    "A8": "The authors raise biosecurity and disease-related spatial needs as possible future planning challenges. Closed facilities in the sea are being tested with the aim of controlling the flows of water and other material, including pathogens and parasites. The report asks whether such systems could reduce the importance of access to particularly suitable sites and veterinary separation distances, but does not reach a conclusion. It also notes that new diseases or parasite challenges could require new spatial arrangements, larger or different veterinary buffer zones, more fallowing, and additional reserve sites."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

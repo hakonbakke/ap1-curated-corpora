@@ -1,0 +1,62 @@
+{
+ "doc_id": "2011_aldrin_isa-farm-spread",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": null,
+   "page_to": null,
+   "chars": 45630,
+   "key_figures": [
+    {
+     "quote": "The present data include all 1201 Norwegian marine salmon farms with a standing stock of Atlantic salmon in any month from February 2003 to August 2009.",
+     "statement": "The authors’ dataset covered 1201 Norwegian marine salmon farms with salmon present at some point from February 2003 to August 2009."
+    },
+    {
+     "quote": "the present data consist of 3202 cohorts, where a farm had between one and eight cohorts",
+     "statement": "The authors’ dataset contained 3202 salmon production cohorts across the farms studied, with between one and eight cohorts per farm."
+    },
+    {
+     "quote": "The various salmon farms had between 0 and 27 other salmon farms within a seaway distance of 10 km (median 5 farms).",
+     "statement": "The authors found that Norwegian salmon farms had between 0 and 27 other farms within a seaway distance of 10 km, with a median of 5 farms."
+    },
+    {
+     "quote": "The estimated value of fwas 0.095, implying that the risk of infection from a neighbourhood farm decreases by about 60 per cent (exp(20.095 . 10) approx. 0.4)) when the seaway distance increases from 0 to 10 km.",
+     "statement": "The authors’ model estimated that infection risk from a neighbourhood farm decreased by about 60 per cent as seaway distance increased from 0 to 10 km."
+    },
+    {
+     "quote": "The estimated value of vwas 1.42, i.e. for a given farm, the probability of infection from a specific source farm decreases by about 75 per cent (exp(21.42 . 1) approx. 0.25)) when the genetic distance increases from 0 to 1.",
+     "statement": "The authors’ model estimated that the probability of infection from a specific source farm decreased by about 75 per cent when genetic distance increased from 0 to 1."
+    },
+    {
+     "quote": "This average implies that the source of infection is attributed to neighbourhood infectiousfarmsforabout43percentoftheinfectedfarms.",
+     "statement": "The authors’ model attributed infection to neighbourhood infectious farms for about 43 percent of infected farms."
+    },
+    {
+     "quote": "The figure shows that the epidemic started at one farm (in blue), with ISA recorded in June 2007, and was further spread to 16 other farms within 2 years.",
+     "statement": "The authors’ reconstruction of the Troms County cluster found that an epidemic recorded from June 2007 spread from one farm to 16 other farms within 2 years."
+    },
+    {
+     "quote": "The present study suggests that such a control measure could be more efficient by intensifying ISAV surveillance in fish farms surrounding infected farms, and where the surroundings are extended to 20–30 km surveillance zones.",
+     "statement": "The authors proposed intensifying ISAV surveillance around infected farms within 20–30 km surveillance zones."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "The authors do not examine licensing or the site application process. Their disease-transmission analysis does, however, show how the physical arrangement of coastal farms can affect operational risks: seaway distance and genetic distance between virus isolates were significantly associated with infection rates. The authors’ model estimated lower infection risk with increasing seaway distance, while farm cohort size also affected susceptibility. They use seaway rather than straight-line distance because islands and fjords make it a more appropriate proxy for water-mediated connectivity. These findings concern fish health and spatial relationships between existing farms, not decisions about where new aquaculture may be licensed.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors’ analysis combines farm and cohort records, disease diagnosis dates, farm locations, and genetic sequences from virus isolates. They calculate shortest-path seaway distances using geographic data and model infection rates with a stochastic spatio-temporal method. They identify limitations: infection timing is assumed to be a fixed delay before diagnosis, infectiousness is treated as constant until cohort removal, and the model does not account for repeated infection of a cohort. They suggest using local sea-current information instead of fixed seaway distances, but note that such information was then available only for limited areas of Norway. They also propose future Bayesian modelling with latent infection times and stochastic delays.",
+    "A6": "",
+    "A7": "The authors identify early removal of infectious fish as a key measure to prevent local ISA spread. Their findings suggest that control could be strengthened by intensifying ISAV surveillance around infected farms, with surveillance extending to 20–30 km. They also argue for high biosecurity standards across salmon production, noting possible transmission through well boats and shared services such as divers. These are disease-control implications from the authors’ model and epidemiological discussion, not an assessment of industry-wide spatial efficiency or sustainability.",
+    "A8": "The authors find that both seaway distance and genetic distance between virus isolates are significantly associated with ISA infection rates. Their model predicts decreasing infection risk from a neighbourhood farm as seaway distance increases, and identifies neighbourhood farms as the predicted source for about 43 percent of infected farms. They stress that transmission risk extends beyond the 5 and 10 km radial restriction and observation zones discussed for Norway. Some modelled transmission pathways extended over 20 km, and the authors suggest that anthropogenic contacts, including well boats and shared divers, may help explain longer-distance spread. They recommend surveillance around infected farms extending to 20–30 km. They also caution that their seaway-distance measure does not incorporate local currents and propose hydrodynamic distance measures as a future improvement."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

@@ -1,0 +1,539 @@
+{
+ "doc_id": "2023_metier_marine-grunnkart",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 10,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Samfunnsøkonomisk analyse Marine grunnkart i kystsonen",
+    "Statens Kartverk",
+    "Sammendrag",
+    "Fordelingseffekter: Liten effekt",
+    "1. Bidrag til oppnåelse av FNs bærekraftsmål nr. 9, 13, 14 og 17",
+    "Prissatte virkninger"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 39109,
+   "key_figures": [
+    {
+     "quote": "De prissatte virkningene av full kartlegging og tilgjengeliggjøring av data om kysten har en netto nåverdi på 34 033 mrd. kr.",
+     "statement": "The authors report a net present value of 34 033 mrd. kr. for the priced effects of full coastal mapping and data availability in Norway."
+    },
+    {
+     "quote": "I denne analysen er det identifisert 6 prissatte nyttevirkninger som inngår i den samfunnsøkonomiske beregningen med en samlet forventet årlig nytte på 3 939 mill.kr.",
+     "statement": "The authors identify 6 priced benefit categories with expected annual benefits of 3 939 mill.kr. from the proposed coastal mapping and data infrastructure."
+    },
+    {
+     "quote": "Den totale forventede årlige nytten inntreffer ved optimal kartlegging, som er antatt å være når 80 % av kystsonen er kartlagt.",
+     "statement": "The authors assume that expected full annual benefits are reached when 80 % of the Norwegian coastal zone has been mapped."
+    },
+    {
+     "quote": "Driftskostnader vil løpe over hele analyseperioden på 40 år.",
+     "statement": "The authors use a 40-year analysis period for the proposed mapping and data infrastructure, with operating costs continuing throughout."
+    },
+    {
+     "quote": "Den totale forventede nåverdien av kostnadene er 4 458 mill.kr.",
+     "statement": "The authors estimate the total present value of costs for the proposed coastal mapping and data infrastructure at 4 458 mill.kr."
+    },
+    {
+     "quote": "Tabell 1 viser at forventet netto nåverdi for tiltaket har økt med henholdsvis 38% sammenliknet med verdiene fra analysen i 2021.",
+     "statement": "The authors report that the intervention’s expected net present value increased by 38% relative to the 2021 analysis."
+    },
+    {
+     "quote": "Etter dialog med Kartverket er det fastslått at størrelsen på områder grunnere enn 5m er 4 403 km2, og bruk av LiDAR på disse områdene vil kunne redusere Kartverkets totalkostnad for kartlegging med 25%.",
+     "statement": "The authors report that LiDAR mapping of areas shallower than 5m, covering 4 403 km2, could reduce Kartverket’s total mapping costs by 25%."
+    },
+    {
+     "quote": "Kartverkets totale kartleggingskostnad er i utgangspunktet beregnet til 1 922 mill.kr. Bruk av den nye teknologien gjør at denne nedjusteres med 480 mill.kr (25%) til 1 441 mill.kr.",
+     "statement": "The authors estimate Kartverket’s mapping cost at 1 922 mill.kr. before LiDAR and 1 441 mill.kr. after a stated reduction of 480 mill.kr (25%)."
+    },
+    {
+     "quote": "I 2019 var den totale sysselsettingseffekten av sjømatnæringen i overkant av 90 000 årsverk, fordelt på direkte og indirekte sysselsetting (Menon Economics, 2020).",
+     "statement": "A cited Menon Economics estimate states that Norway’s seafood industry had a total employment effect of over 90 000 full-time equivalents in 2019."
+    },
+    {
+     "quote": "I 2020 ble det eksportert 2,7 millioner tonn sjømat fra Norge til en verdi av 106 mrd.kr (Nærings- og fiskeridepartementet, 2021).",
+     "statement": "A cited Norwegian Ministry of Trade, Industry and Fisheries figure reports that Norway exported 2,7 millioner tonnes of seafood worth 106 mrd.kr in 2020."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that making marine maps and coastal data available through a shared infrastructure can improve knowledge-based, integrated coastal planning and resource management. They describe the information as useful before areas are opened for activities such as aquaculture, industry, fishing, or protection. The analysis identifies improved area plans under the Planning and Building Act and more holistic coastal-area planning as benefits. It does not set out the current rules for allocating aquaculture space or explain how environmental protection, industry growth, and competing uses are formally balanced in spatial plans.",
+    "A1": "The authors identify better information about suitable localities as a potential basis for more efficient aquaculture production and increased production permits. Their priced benefits include increased production of salmon and trout, reduced production costs through more suitable localities, and reduced application costs. The report’s central mechanism is that marine mapping and accessible data can improve information available to public authorities and the aquaculture industry. This segment does not explain licensing rules, site-availability constraints, environmental thresholds, or how fish-health considerations interact with spatial planning.",
+    "A2": "The authors include reduced costs for aquaculture applications among the priced benefits of marine mapping, and the contents list a separate calculation for benefits from reducing the number of rejected applications. The segment does not describe the application sequence, identify which authorities decide at each stage, or report where delays, rejections, or conflicts most commonly occur. It therefore provides no account of processing times or procedural causes of rejection.",
+    "A3": "The authors argue that detailed seabed and current information can support knowledge-based, integrated coastal management, including decisions about aquaculture and environmental protection. They also state that current methods and market prices are inadequate for pricing some nature and environmental resources, so many environmental effects are assessed qualitatively and should be given substantial weight. The segment does not describe a cumulative-effects assessment method for aquaculture production or explain how cumulative findings are applied in spatial plans or site-selection decisions.",
+    "A4": "The authors present a societal cost-benefit assessment of a public investment in coastal mapping and data access, rather than an analysis of economic instruments governing aquaculture area use. They identify benefits associated with aquaculture production, operating costs, suitable sites, and application costs, alongside mapping and infrastructure costs. Their distributional assessment says the measure has small redistribution effects: public funding comes from across the country while benefits primarily accrue to coastal areas and marine industries. No licensing fees, area charges, or other incentives for choosing sites are discussed.",
+    "A5": "The authors identify marine seabed maps, depth data, current information, and a shared infrastructure for updated data as a basis for spatial decisions. They argue that this information can help authorities and businesses assess areas before permitting uses, improve coastal plans, and support environmental and resource management. The segment reports that LiDAR can make mapping shallow coastal areas cheaper and more efficient, and that mapping costs were revised accordingly. The authors also caution that limited experience with realized benefits and the lack of established methods for pricing some environmental resources create uncertainty.",
+    "A6": "The authors state that marine maps can make information available to public authorities, industry, research, and other interested parties, supporting shared knowledge and more integrated coastal planning. The segment names a case involving conflict over cauliflower corals at Husevåg in the contents, but gives no details about the dispute or its resolution. It does not analyze conflicts between aquaculture and particular competing interests, nor does it specify procedural conditions for legitimate, effective, or predictable decisions.",
+    "A7": "The authors argue that marine mapping and accessible coastal data can help aquaculture operators identify more suitable localities, reduce production costs, and improve production efficiency. They also describe potential benefits from improved area planning and more holistic management of coastal space. These are presented as benefits enabled by better information, not as specific voluntary measures that the industry itself is required or encouraged to apply. The segment does not assess operational practices for reducing spatial footprints or environmental impacts.",
+    "A8": "The segment mentions a fact box titled “Strømmodell for vurdering av smitteutbredelse – ILA utbrudd i Astafjorden” in the contents and states generally that more detailed seabed maps and current information can support understanding of coastal areas. However, it gives no details about farm-to-farm connectivity, disease transmission, biosecurity measures, or how current models are used in production and operational decisions."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [
+    "1. Gjennomføring av samfunnsøkonomisk analyse",
+    "1.1. Analysens avgrensninger",
+    "1.2. Uavhengighet",
+    "1.3. Ordliste",
+    "Marine grunnkart",
+    "Sertifisering"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 39872,
+   "key_figures": [
+    {
+     "quote": "Kysten er her definert som området fra land og ut til én nautisk mil utenfor grunnlinjen, totalt 93 825 km2.",
+     "statement": "The authors define the study area as Norway’s coast from land to one nautical mile beyond the baseline, covering 93 825 km2."
+    },
+    {
+     "quote": "Kartverket har kun kartlagt ca. 35 % av kysten, NGU har kartlagt 10 % og HI har kartlagt 5 %.",
+     "statement": "The authors report that Kartverket had mapped ca. 35 % of the coast, NGU 10 % and the Institute of Marine Research 5 %; the segment does not specify a measurement date."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that competing coastal uses—including fishing, aquaculture, tourism, conservation, and energy development—have specific and often conflicting spatial needs. They say municipalities allocate areas through coastal-zone plans, while county authorities adopt regional marine-area plans. The segment reports that there is no national or regional plan for area use and much is left to individual municipalities, whose planning capacity and expertise can vary. Citing NOU 2023:23, it argues that aquaculture affects other operations and the environment over wider areas, so coordinated planning and shared knowledge could support sustainable development and reduce conflict. A cited policy statement in the Districts White Paper says long-term area needs for fisheries and aquaculture should be secured while environmental and other societal interests are safeguarded.",
+    "A1": "The segment identifies access to suitable coastal areas and the quality of planning information as relevant conditions for aquaculture development. The authors report incomplete and dispersed coastal data, including gaps in geological, biological and chemical information, which can leave decisions based on a weak factual basis. They describe municipalities as responsible for allocating coastal space and note that local planning capacity varies. Citing NOU 2023:23, the report says aquaculture growth has brought environmental, biosecurity and fish-welfare challenges, while successive adjustments to the licensing system have increased its complexity and reduced its effectiveness. The segment does not describe specific licensing criteria or how site availability interacts with environmental approvals.",
+    "A2": "",
+    "A3": "The segment does not describe a specific method for cumulative-effect assessment or how such assessments are formally incorporated into site decisions. It does report, citing NOU 2023:23, that aquaculture businesses can affect one another and the environment over wider areas, including through the spread of infection, making an overarching approach to placement important. The report says there is no national or regional plan for area use and argues that shared, accessible knowledge could support more coherent planning across municipalities and counties. It identifies a knowledge challenge: coastal data are incomplete, dispersed across data owners, and sometimes lack adequate information on standards, accuracy, resolution and error margins. The authors present marine maps as a means to improve the evidence base, not as an established cumulative-assessment procedure.",
+    "A4": "",
+    "A5": "The segment describes the current knowledge base as fragmented across public agencies and portals, with no common infrastructure bringing together all information about coastal waters. The authors report that mapping coverage is incomplete and that data on seabed geology, biology and chemistry are deficient in many coastal areas. Relevant planning datasets can also include fisheries statistics, environmental variables, seabird areas, biodiversity, AIS, shipping lanes, salmon routes and spawning grounds. The report says non-certified surveys may lack documented formats, standards, calibration, accuracy, resolution and error margins; some seabed information is also legally restricted. Marine base maps are proposed as a shared, quality-controlled source incorporating seabed conditions and ocean variables such as currents, waves, salinity and temperature. The report mentions sonar, video and sampling as mapping methods, but makes no specific claim about emerging technologies changing aquaculture siting.",
+    "A6": "The authors identify competing and often conflicting demands for coastal space from fishing, aquaculture, tourism, conservation, oil and energy development, among other uses. They argue that limited or missing information can prevent decision-makers from knowing what values could be lost if a fish farm affects a cod spawning area or seabed infrastructure damages a coral reef. Citing NOU 2023:23, the report says a common, accessible knowledge base could improve planning and is likely to lower conflict in aquaculture allocation and operations. It also notes that data collected without suitable certification or compliance with security rules may be unusable, and in some cases classified data have been shared unlawfully. These points frame reliable, shared evidence and cross-boundary planning as supports for more informed decisions; the segment does not assess procedural legitimacy in detail.",
+    "A7": "The segment does not give a direct list of voluntary measures for the aquaculture industry to improve the efficiency or sustainability of its spatial use. It does say that data gathered by individual actors, including in aquaculture, may be difficult to reuse when survey providers are not certified or when formats, standards, calibration, accuracy and other quality information are inadequate. The authors describe a proposed capacity-building approach in which companies could eventually be cleared to conduct analysis and make data available under applicable rules and Kartverket specifications. This concerns the quality and lawful sharing of spatial information rather than farm-level operational measures. The report also notes that marine base maps include information about seabed deposition from aquaculture facilities.",
+    "A8": "The segment raises biosecurity as a significant issue but does not provide operational guidance on farm spacing, water connectivity or disease transmission pathways. Citing NOU 2023:23, it says aquaculture growth has brought substantial challenges related to the environment, biosecurity and fish welfare. The same cited assessment states that aquaculture businesses can affect one another and the environment over wider areas, for example through the spread of infection, and therefore argues for an overarching plan for facility placement. The report presents shared coastal data as potentially useful for more coherent planning, but does not specify connectivity models, disease thresholds or how such evidence is used in individual siting decisions."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [
+    "3. Tiltak",
+    "3.1. Nullalternativet",
+    "3.2. Mulighetsrom / mulighetsdimensjoner",
+    "3.3. Mulig tiltak",
+    "4. Identifisere og tallfeste virkninger",
+    "4.1. Innledende presiseringer og utfordringer"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 43251,
+   "key_figures": [
+    {
+     "quote": "Det er forutsatt at den norske kysten er 93 825 km29, slik at totalt areal for kartlegging i tiltaket blir 75 000 km2 (inkludert areal som har blitt kartlagt i pilotprosjekt).",
+     "statement": "The authors assume the Norwegian coast is 93 825 km29 and propose mapping 75 000 km2, including pilot-project areas, as part of the measure."
+    },
+    {
+     "quote": "Da det ikke ansees som realistisk eller hensiktsmessig å kartlegge 100 % av kysten, er det forutsatt at det er tilstrekkelig å kartlegge 80 % av kysten.",
+     "statement": "The authors’ proposed mapping target for Norway’s coast is 80 %, rather than complete coverage."
+    },
+    {
+     "quote": "Basert på denne kartleggingshastigheten vil 80% av kystområdene være kartlagt i 2040.",
+     "statement": "The authors estimate that, under the proposed annual mapping schedule, 80% of coastal areas will be mapped by 2040."
+    },
+    {
+     "quote": "Gjennom intervjuer og arbeidsmøter med aktører fra forvaltningen, næringslivet og andre interessenter er det identifisert 28 virkninger som er tatt med i den samfunnsøkonomiske analysen.",
+     "statement": "The authors identified 28 impacts for their socioeconomic analysis through interviews and workshops with public administration, businesses, and other stakeholders."
+    },
+    {
+     "quote": "SUM årlig prissatt nytte 6 684",
+     "statement": "The authors estimate total annual priced benefits of 6 684 mill.kr for the proposed marine mapping and data-access measure."
+    },
+    {
+     "quote": "I denne analysen har vi valgt å sette en 3 % produksjonsøkning i forhold til dagens produksjonsnivå.",
+     "statement": "The authors assume a 3 % increase in salmon and trout production relative to the current production level."
+    },
+    {
+     "quote": "Dette gir en årlig effekt på 3 mrd.kr i 2023-kroner, se Tabell 7.",
+     "statement": "The authors estimate an annual benefit of 3 mrd.kr in 2023-kroner from the assumed production increase."
+    },
+    {
+     "quote": "I denne analysen har vi valgt å bruke en - 4 % reduksjon i dårlige lokaliteter til fordel for gode lokaliteter.",
+     "statement": "The authors assume that 4 % of production shifts from poor to good aquaculture sites."
+    },
+    {
+     "quote": "Dette gir en årlig effekt på 659 mill.kr., se Tabell 8.",
+     "statement": "The authors estimate annual benefits of 659 mill.kr from reduced operating costs due to more suitable aquaculture sites."
+    },
+    {
+     "quote": "For å beregne den årlige nyttevirkningen av reduserte kostnader som følge av færre avslåtte søknader, er det antatt at 50 % av de søknadene som i dag avslås ikke vil bli sendt med tilgang på marine grunnkart.",
+     "statement": "The authors assume that access to marine base maps would prevent 50 % of currently rejected aquaculture applications from being submitted."
+    },
+    {
+     "quote": "Antallet søknader i 2021 og 2022 var henholdsvis 333 og 237, mens antall avslag i 2021 og 2022 var henholdsvis 46 og 26 (FAKS, 2022), (FAKS, 2023).",
+     "statement": "A cited FAKS report gives Norwegian aquaculture application counts of 333 and 237, and rejection counts of 46 and 26, for 2021 and 2022 respectively."
+    },
+    {
+     "quote": "Dette gir en årlig effekt på 9 mill.kr.",
+     "statement": "The authors estimate annual savings of 9 mill.kr from fewer rejected aquaculture applications."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe marine base maps as a potential source of better evidence for coastal area plans and regulation of areas suitable for aquaculture. They argue that municipalities could steer activity toward areas that can better tolerate aquaculture while avoiding substantial damage to vulnerable habitats. The document describes the current planning arrangement: municipalities prepare the relevant land-use plans, and an aquaculture site must be allocated for this purpose in the municipal plan. This is an account of current governance, not a comparative finding on how competing interests are balanced. The authors also assume better plans could identify suitable commercial areas with less conflict with nature and other area uses.",
+    "A1": "The authors identify site suitability, carrying capacity, anchoring conditions, environmental status, currents, biodiversity, and risk of salmon-lice spread as relevant to choosing aquaculture locations. Marine maps could help firms assess these factors before applying, and help authorities identify areas that can support production. Site availability also depends on municipal plans: a site must be allocated for aquaculture. A site-specific permit sets species and maximum allowable biomass, subject to environmental suitability. Growth is also governed by the traffic-light system, which divides the coast into 13 zones and uses monitoring data to guide whether production can increase, decrease, or remain unchanged. The authors argue that better knowledge may improve fish health, reduce disease-spread risk, and reduce relocations and downtime.",
+    "A2": "The segment says an aquaculture company must apply to several authorities, with the county municipality coordinating the application. A permit for a particular location is granted on an individual-application basis. The county municipality coordinates; the Governor assesses applications under pollution legislation, and the Environment Agency is the appeal body for the Governor’s decisions. Municipalities must have allocated the site for aquaculture in their land-use plan. Rejections may relate to proximity to corals, distance from cod spawning grounds, or food-safety authority rules concerning infection and sea lice. The authors estimate that better maps could help firms avoid unsuitable survey areas and applications that would be rejected, but do not identify which formal stage most commonly causes delay or conflict.",
+    "A3": "",
+    "A4": "The authors’ socioeconomic analysis prices some expected benefits, including increased aquaculture production, lower operating costs at more suitable sites, and reduced costs from fewer rejected applications. They estimate total annual priced benefits of 6 684 mill.kr, while noting substantial uncertainty, coarse estimates, and the lack of directly transferable experience data. The analysis does not include users’ costs of obtaining the potential benefits. It also warns that market-price methods tend to price business-development impacts more readily than nature and environmental impacts; qualitative environmental effects therefore require substantial weight in decision-making. The segment does not discuss regulatory fees, taxes, or how economic benefits and costs are distributed among specific stakeholder groups.",
+    "A5": "The proposed knowledge base combines existing coastal datasets in a seamless marine geographic infrastructure with expanded mapping. The measure assumes mapping 80 % of the coast and making data available through interoperable systems. The authors say detailed maps can support site assessment using seabed topography and sediment, currents, environmental status, biodiversity, and anchoring conditions. They present mapping and shared data as useful to authorities and industry, including for planning, site selection, and environmental management. The segment also describes current data gaps: evidence on realized benefits is limited to pilot areas, largely qualitative, and the authors say estimates are uncertain and difficult to isolate from political and technological change. No specific emerging technology is assessed, though digital models and derived maps are identified as potential uses.",
+    "A6": "The authors identify possible conflict reduction as a benefit of shared, current coastal data and better municipal planning. For aquaculture, maps could help authorities and firms distinguish suitable areas from vulnerable habitats and other competing uses, and could make applications more targeted. The proposed assumptions for estimating savings from fewer rejected applications include municipalities preparing better marine area plans and allocating areas that are suitable while minimizing conflict with nature and other uses. The segment lists examples of reasons for rejected applications, including proximity to corals, cod spawning grounds, infection, and sea lice. These are claims and assumptions in the authors’ analysis; it does not provide a systematic account of stakeholder disputes or procedures for ensuring legitimacy and predictability.",
+    "A7": "The authors say aquaculture firms can use marine maps to make better-informed site choices, including assessing carrying capacity, anchoring, environmental status, and risk of salmon-lice spread. The analysis assumes that industry will use the new information to optimize existing sites and may shift production from less suitable to more suitable locations, provided relocation does not increase environmental impacts. The authors associate better choices with improved fish health, lower feed factors and operating costs, fewer relocations, less downtime, fewer escapes, and reduced need for firms’ own mapping and monitoring. These are expected mechanisms and assumptions in the socioeconomic analysis, rather than measured outcomes demonstrated across the industry.",
+    "A8": "The authors connect water currents and connectivity between farms to disease transmission and operational decisions. They state that neighboring sites are the most important infection route for ILA virus among farmed salmon in Norway. In the Astafjord example, a current model was used to assess the likelihood of infection between sites, and the Food Safety Authority used the data in simulations. According to an informant cited by the authors, the information meant that not all farms in the fjord had to lie fallow, potentially avoiding business failures and substantial losses. The authors also argue that current and biodiversity information can help assess salmon-lice spread and that suitable site structures can support infection prevention through zone-based separation of generations."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [
+    "Sparte drivstoffkostnader som følge av mer effektiv fiske",
+    "Redusert CO2-utslipp fra drivstoff som følge av mer målrettet fiske"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 10469,
+   "key_figures": [
+    {
+     "quote": "Det antas en 8 % reduksjon i drivstofforbruk som følge av tilgjengeliggjøring av marine grunnkart for fiskere. Dette gir en årlig effekt på 44 mill.kr.",
+     "statement": "The authors estimate that making marine base maps available to Norwegian coastal fishers would reduce fuel consumption by 8 % and yield an annual benefit of 44 mill.kr."
+    },
+    {
+     "quote": "Den estimerte effektiviseringen av tidsforbruk er satt til 8 %, som for reduksjonen i drivstofforbruk. Dette gir en årlig effekt på 189 mill.kr.",
+     "statement": "The authors estimate that marine base maps would reduce time use in Norwegian coastal fisheries by 8 %, with an annual benefit of 189 mill.kr."
+    },
+    {
+     "quote": "Det er antatt at en 8 % reduksjon i drivstofforbruk gir en 8 % reduksjon i CO2-utslipp",
+     "statement": "For the authors’ estimate of coastal-fishery emissions benefits, an assumed 8 % reduction in fuel consumption produces an assumed 8 % reduction in CO2 emissions."
+    },
+    {
+     "quote": "|Kystfiske 34 264 000 91 142 1067 8 %|8|",
+     "statement": "The authors’ table estimates an annual benefit of 8 mill.kr from an 8 % emissions reduction for coastal fishing, using the listed fuel, emissions and carbon-price figures."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that marine base maps would give authorities better knowledge of what is present beneath the sea surface along the Norwegian coast, helping them pursue targeted, sustainable environmental protection. They give establishing conservation areas and prohibited areas based on map information as examples. This is a general argument about environmental management, not a discussion of aquaculture planning or how environmental protection is balanced against industry development and competing uses.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors identify marine base maps as a source of more detailed knowledge about seabed habitats, bottom conditions and currents, and argue that these maps can improve authorities’ knowledge of the coastal marine environment. Their quantified benefit estimates assume complete mapping and availability, fishers’ knowledge and willingness to use the maps, offline access through systems such as an Olex chart machine, and a minimum resolution of 10 meter. The segment does not discuss aquaculture-specific knowledge, technologies or siting decisions.",
+    "A6": "",
+    "A7": "The segment describes potential actions by fishers rather than aquaculture companies. With marine base maps, fishers can target areas with suitable seabed and depth conditions; the authors report that this can make fishing more efficient and reduce fuel use and time spent locating fishing grounds. The benefit is expected to be greatest for bottom fisheries and fishers working in new, less familiar areas. The estimates depend on fishers having the knowledge and willingness to use the maps. This does not establish measures for sustainable spatial use by the aquaculture industry.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 4,
+   "headings": [
+    "Bevaring og restaurering av tareskogen"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 49642,
+   "key_figures": [
+    {
+     "quote": "Om lag 10 000 km2 av norskekysten er bevokst med tang og tare (Steen, 2019).",
+     "statement": "A cited estimate says about 10 000 km2 of the Norwegian coast is covered by seaweed and kelp."
+    },
+    {
+     "quote": "I en rapport til Fiskeridepartementet i 2002 ble det estimert at 2 000 km2 med tareskog er nedbeitet (Gregersen, Evertsen, & Sundy, 2002).",
+     "statement": "A cited 2002 estimate put the area of kelp forest grazed down by sea urchins in Norway at 2 000 km2."
+    },
+    {
+     "quote": "Ifølge Urchinomics kan en tareskog restaureres raskt (6-7 måneder) etter at kråkebollene fjernes.",
+     "statement": "Urchinomics claims that kelp forest can recover within 6-7 months after sea urchins are removed."
+    },
+    {
+     "quote": "Ifølge Sintef vil et dyrkingsareal av tare på rundt 18 000 km2 kunne ta opp Norges totale utslipp av CO2-ekvivalenter hvert år (Skjermo, 2018).",
+     "statement": "A cited SINTEF estimate says that around 18 000 km2 of kelp cultivation area could absorb Norway’s total annual greenhouse-gas emissions in CO2 equivalents."
+    },
+    {
+     "quote": "I mangel på referansetall er det satt et estimat på i hvor stor grad marine grunnkart kan føre til restaurering av nedbeitet tareskog. Dette er satt til 3 %. Estimatet fra 2002 på 2000 km2 er lagt til grunn i beregningen.",
+     "statement": "The authors assume that marine base maps could enable restoration of 3 % of the 2000 km2 of kelp forest estimated to have been grazed down in 2002."
+    },
+    {
+     "quote": "Restaurering av tareskog<br><br>15,6 2 000 3 %|936",
+     "statement": "The authors’ modeled annual benefit of kelp-forest restoration is 936 million kroner, using an annual value of 15,6 million kroner per km2, 2 000 km2 of grazed forest, and 3 % restoration."
+    },
+    {
+     "quote": "Ifølge en rapport fra SINTEF Ocean ble det for hver krone omsatt i kjerneleddet av sjømatnæringen skapt økonomisk aktivitet for 0,597 kroner tilknyttet norsk næringsliv i 2021 (Johansen U. , Myhre, Young, & Richardsen, 2022).",
+     "statement": "A cited SINTEF Ocean report estimates that each krone of core seafood-industry turnover generated 0,597 kroner of economic activity in other Norwegian businesses in 2021."
+    },
+    {
+     "quote": "Ringvirkningseffekt 3 030 0,597|1 806",
+     "statement": "The authors’ modeled annual spillover effect from increased salmon and trout production is 1 806 million kroner, based on turnover of 3 030 million kroner and a spillover factor of 0,597."
+    },
+    {
+     "quote": "I dag høstes 2,5 % av den årlige tilveksten av stortare i Norge. Dette tilsvarer 0,3% av den totale forekomsten av stortare langs norskekysten (Fiskeridirektoratet, 2020).",
+     "statement": "A cited 2020 estimate says that harvesting in Norway takes 2,5 % of annual kelp growth, equivalent to 0,3% of the total kelp stock along the Norwegian coast."
+    },
+    {
+     "quote": "Til sammenligning høstes rundt 40 % av den årlige tilveksten i norske skoger.",
+     "statement": "The document cites around 40 % as the share of annual growth harvested in Norwegian forests, for comparison with kelp harvesting."
+    },
+    {
+     "quote": "SINTEF beregnet i 2010 at verdiskapingen basert på tang og tare vil øke fra 1 milliard kroner i 2019 til 40 mrd.kr i 2050.",
+     "statement": "A cited SINTEF calculation projected that value creation based on seaweed and kelp would rise from 1 milliard kroner in 2019 to 40 mrd.kr in 2050."
+    },
+    {
+     "quote": "Ifølge en rapport fra Europakommisjonen på restaurering av hav og kystområder, er en kritisk faktor for dette tilgjengeliggjøring av strømlinjeformet data på marine observasjoner fra alle havnasjoner i Europa (European Commission , 2020).",
+     "statement": "A cited 2020 European Commission report identifies streamlined marine-observation data availability across European maritime nations as critical to the report’s data-sharing objective; the passage gives no numeric result."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that marine base maps can improve coastal spatial planning by providing shared information on seabed conditions, habitats, and environmental pressures. They say better information can help authorities identify areas for aquaculture while taking environmental impacts into account, and support plans that balance development with protection of valuable nature. In Stavanger, cited municipal experience describes using maps to assess site suitability, consider whether farms should be expanded, developed, or moved, and propose nature consideration zones. The authors also identify inconsistent municipal practices and competing uses as issues that better common data may help address. The segment does not set out a general allocation rule or explain the full statutory planning framework.",
+    "A1": "The segment chiefly discusses marine base maps as information that may affect development opportunities. The authors argue that knowledge of seabed and anchoring conditions, biodiversity, currents, salinity, and water temperature can help identify suitable sites and reduce the need for costly, time-consuming surveys. A cited account from Nordi Ocean says pilot-project maps in Giske made it easier to find kelp-farming locations. The segment also says seaweed cultivation is subject to the Aquaculture Act and requires applications for suitable sites. For salmon and trout, the authors argue that a common evidence base could reduce differences in municipal and county permitting practices and improve predictability. Environmental considerations, including sensitive habitats, are presented as factors in site selection; disease and fish health are not discussed.",
+    "A2": "The segment does not describe the ordinary aquaculture site-application process or identify the stages where delays and rejections most commonly occur. It does provide a case illustrating conflict and delay after a permit decision: three companies initially received pollution-law permits in 2018, which the County Governor withdrew in September 2019 after a large cauliflower-coral area was found near the site. The companies challenged the reversal; the case went to the Environment Agency and then through court proceedings. The account says the companies ultimately lost in the district and appeals courts, and the Supreme Court Appeals Selection Committee rejected a further appeal. The authors suggest that maps with information about vulnerable species could have prevented the conflict and associated time, resource use, and investment.",
+    "A3": "Cumulative effects of aquaculture production are not directly assessed in this segment. The authors do argue that marine base maps can improve understanding of environmental pressures and support more precise planning that takes account of environmental burdens when areas are allocated to aquaculture. They describe mapped habitats and species as useful for identifying sensitive nature and for considering ecological effects across areas. A Stavanger example shows maps informing proposals for nature consideration zones and lobster protection areas, while the Rogaland regional plan cited in the segment calls for ecosystem-based planning across shared fjords. These are planning and knowledge arguments, not a specified cumulative-impact method. The segment does not discuss methodological standards, production thresholds, or how effects from multiple farms are aggregated.",
+    "A4": "Economic instruments, taxation, and charging arrangements for aquaculture area use are not discussed. The authors do describe economic incentives and costs indirectly: marine base maps may lower entry barriers by reducing the need for businesses to pay for their own seabed surveys, which can be especially costly for start-ups in emerging sectors such as kelp cultivation. They also argue that more consistent information could support more even treatment of salmon and trout operators and a more even distribution of spillover benefits between municipalities. In a separate modeled calculation, the authors estimate a possible annual kelp-restoration benefit, but explicitly exclude it from the net present value of marine base maps because maps alone do not trigger restoration; large-scale actions require initiative, time, and costs. Benefits and costs are therefore not fully allocated among stakeholders.",
+    "A5": "The segment presents marine base maps as a shared evidence base assembled from biological, geological, and chemical seabed data, with potential to support habitat prediction, species distribution estimates, environmental assessment, and planning. The authors say pilot-project analyses have been good predictors of areas suitable for kelp forest that are currently grazed down by sea urchins. They also describe mapped seabed and habitat data as useful for site selection, environmental safeguards, and digital models, including digital twins. Open GIS formats and interoperable data are presented as enabling data combination and modeling. The authors acknowledge uncertainty about how much mapping will actually increase kelp restoration, because restoration depends on other concrete actions; they also state that the estimate used for grazed kelp forest relies on a 2002 source and that the true current area is uncertain.",
+    "A6": "The segment identifies conflicts between aquaculture, nature protection, and other coastal uses, and argues that shared, current data may reduce disagreement by increasing transparency, supporting fact-based decisions, and reducing disputes over data quality or relevance. The cauliflower-coral case is the central example: a permit was withdrawn after a vulnerable coral area was found near an aquaculture site, and the companies later lost their legal challenge. The authors consider it likely that better map information could have avoided the dispute and substantial investment and administrative effort. Stavanger’s planning example also illustrates balancing aquaculture with valuable habitats and proposed lobster protection. A cited Rogaland regional plan encourages cooperation between municipalities sharing fjords, since ecological systems do not follow administrative boundaries. The segment presents better information as helpful, not as a guarantee that conflicts will disappear.",
+    "A7": "The segment describes industry and other actors undertaking kelp restoration and sea-urchin control, rather than offering a general set of measures for making aquaculture spatial use more efficient. It notes that companies harvesting and farming sea urchins may remove urchins to restore kelp forests, while voluntary groups use manual methods on smaller areas. The “green gravel” project spreads gravel platforms carrying kelp shoots and is described as scalable to larger areas. The authors argue that marine base maps can help these actors target places with the greatest restoration potential and use resources more efficiently. They also describe maps as useful for selecting kelp-harvesting areas where ecological effects may be lower and growth conditions favorable. Restoration efforts in Norway are characterized as relatively small-scale or short-lived, and maps alone are not said to cause restoration without concrete measures.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 5,
+   "headings": [
+    "Bevaring og restaurering av tareskogen"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 34828,
+   "key_figures": [
+    {
+     "quote": "I 2016 gjennomførte Kartverket en uformell undersøkelse for å få en oversikt over offentlige midler (utover det som brukes av NGU, Kartverket og Havforskningsinstituttet) brukt til datainnsamling langs kysten. Undersøkelsen viste at det ble brukt om lag 100 mill.kr i året på kartlegging langs kysten.",
+     "statement": "A 2016 Kartverket survey cited by the authors found that about 100 mill.kr per year was spent on coastal mapping in Norway, excluding NGU, Kartverket and the Institute of Marine Research."
+    },
+    {
+     "quote": "Som beskrevet i kapittel 3.3 er arealet for kartlegging totalt 75 000 km2.",
+     "statement": "The authors estimate that the total area to be mapped within the baseline and out to one nautical mile beyond it is 75 000 km2."
+    },
+    {
+     "quote": "Årsverkskostnad er satt til 2,45 mill.kr, og forutsatt varighet er kartleggingsperioden på 16 år.",
+     "statement": "The authors' cost model assumes a 16-year mapping period and a staffing cost of 2,45 mill.kr per full-time-equivalent year."
+    },
+    {
+     "quote": "SUM investeringskostnader 4 462",
+     "statement": "The authors estimate total investment costs for the coastal marine-base-map initiative at 4 462 mill.kr."
+    },
+    {
+     "quote": "SUM|3 271|",
+     "statement": "The authors estimate mapping costs for the initiative at 3 271 mill.kr."
+    },
+    {
+     "quote": "SUM årlige driftskostnader 9",
+     "statement": "The authors estimate annual operating costs for the initiative at 9 mill.kr."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that marine base maps and shared data infrastructure can improve coastal area planning by making information on the seabed, habitats and currents more accessible. They say this can help infrastructure agencies optimize routes and project designs, and can reduce repeated mapping. The segment does not discuss how aquaculture locations are allocated or how aquaculture is balanced against competing interests in current spatial plans.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors identify fragmented data infrastructure, formats and access arrangements as barriers: users often need data in formats different from those used internally, requiring manual preparation by data managers. They argue that a shared presentation system could reduce repeated requests and make existing mapping easier to find and reuse. Their cost model covers mapping 75 000 km2 and assumes a 16-year mapping period. The report also describes planned LiDAR use in areas shallower than 5m and investment in machine learning, processing and sensor technology to improve mapping efficiency. These are proposals and model assumptions, not reported outcomes. The segment does not evaluate how these technologies change aquaculture siting directly.",
+    "A6": "The authors describe duplication and gaps in public coastal mapping as a management problem. Data may be unusable for official charts if collected by non-certified providers or in areas not cleared for official charting, and sometimes data are not transferred to specialist agencies. Kartverket has seen examples of public bodies mapping the same areas, including in Hardangerfjorden, where Kartverket, the Norwegian Defence Research Establishment and Statkraft mapped the same areas. The authors propose certified providers and shared infrastructure as ways to make data accessible and reduce duplicated work. This is a conflict over data coordination and public resources, not a reported aquaculture siting dispute.",
+    "A7": "The segment does not set out measures for aquaculture companies to improve the efficiency or sustainability of their spatial use. It does describe a cited 2019 survey in which fishers said seabed-type maps and detailed depth maps could help avoid snags and gear damage for trawlers and Danish seine vessels. The authors argue that better seabed information could support more targeted fishing and reduce lost gear, ghost fishing and marine litter. This concerns fishing practices rather than aquaculture operations.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 6,
+   "headings": [
+    "4.8. Fordelingseffekter",
+    "5. Samfunnseffekter",
+    "5.4. Grunnlag for reduksjon i materielle skader og ulykker langs kysten",
+    "5.5. Digitalisering i offentlig sektor",
+    "6. Usikkerhetsanalyse"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 23196,
+   "key_figures": [
+    {
+     "quote": "Basisestimat for virkninger knyttet til tiltaket er estimert til 6 684 mill.kr i året. Estimatene inkludert i basisestimatet er beskrevet i kapittel 4.5. Usikkerhet i nyttepostene gir et forventet tillegg på 6 %, som gir en forventet nytte på 7 107 mill.kr.",
+     "statement": "The authors estimate annual baseline benefits of 6 684 mill.kr and an expected benefit of 7 107 mill.kr after a 6 % uncertainty allowance for the Marine Grunnkart measure."
+    },
+    {
+     "quote": "Estimatet er basert på gjennomsnittlig salg av laks og regnbueørret i 2021 og 2022 og en varig engangsøkning i årlig produksjon og salg på 3 % relativt til nivået i 2021/2022.",
+     "statement": "The authors' estimate of increased production and sales of farmed salmon and rainbow trout assumes a lasting one-time 3 % increase relative to the 2021/2022 level, based on average sales in 2021 and 2022."
+    },
+    {
+     "quote": "Basiskostnaden for investeringskostnadene knyttet til tiltaket er estimert til 4 462 mill.kr. Postene inkludert i estimatet er beskrevet i kapittel 4.7. Usikkerhet i kostnadsposter og drivere gir et forventet tillegg på 9%, som gir en forventet kostnad på 4 879 mill. kr.",
+     "statement": "The authors estimate investment costs for the measure at a baseline of 4 462 mill.kr and an expected cost of 4 879 mill. kr after a 9% uncertainty allowance."
+    },
+    {
+     "quote": "Basisestimatet for de årlige driftskostnadene er estimert til 9 mill.kr. Postene inkludert i estimatet er beskrevet i kapittel 4.7. Usikkerhet i kostnadsposter og drivere gir et forventet tillegg på 11%, som gir en forventet kostnad på 10 mill.kr.",
+     "statement": "The authors estimate annual operating costs for the measure at a baseline of 9 mill.kr and an expected cost of 10 mill.kr after an 11% uncertainty allowance."
+    },
+    {
+     "quote": "I 2019 var den totale sysselsettingseffekten av sjømatnæringen i overkant av 90 000, fordelt på direkte og indirekte sysselsetting (Menon Economics, 2020).",
+     "statement": "A cited Menon Economics study reports that the seafood industry's total direct and indirect employment effect in Norway in 2019 was in excess of 90 000."
+    },
+    {
+     "quote": "I 2020 ble det eksportert 2,7 millioner tonn sjømat fra Norge til en verdi av 106 mrd.kr (Nærings- og fiskeridepartementet, 2021).",
+     "statement": "A cited Norwegian Ministry of Trade, Industry and Fisheries source reports that Norway exported 2,7 millioner tonn of seafood in 2020, valued at 106 mrd.kr."
+    },
+    {
+     "quote": "Et statistisk liv er verdt omtrent 33 mill.kr p.t (Finansdepartementet, 2014).",
+     "statement": "A figure cited from the Ministry of Finance (2014) values a statistical life at approximately 33 mill.kr at the time of the report."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that Marine Grunnkart can support knowledge-based coastal and marine area planning by showing what is present underwater before areas are opened to fishing, aquaculture or industry, or protected. They present a more comprehensive marine geographic data infrastructure as a basis for sustainable, holistic coastal development and resource management. In the authors' optimistic scenario, improved knowledge could help identify areas not previously readily used for aquaculture, define more detailed suitable areas, and revise production-area boundaries and design. The segment does not describe the current planning process or explain how environmental considerations and competing uses are formally balanced against industry development.",
+    "A1": "The authors identify improved knowledge of the seabed and coastal areas as a potential influence on aquaculture development. In an optimistic scenario, Marine Grunnkart could help locate areas that have not been easy to use for aquaculture, allocate detailed suitable areas, and redefine production-area boundaries. Better understanding could also support a more differentiated traffic-light system favourable to the industry and enable smarter production. Conversely, the authors' pessimistic scenario assumes less benefit if actors do not use the maps, the potential of new areas is lower than expected, or the maps do not help overcome sea-lice problems. The segment does not discuss licensing rules, site-specific environmental thresholds or fish-health mechanisms in detail.",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors assess the distributional effects of the mapping measure as few or none, identifying no particular group that is worse off overall. They note a regional distribution effect: taxes are collected across the country, while benefits are expected primarily in coastal areas, supporting employment and value creation there without actively harming other regions. Private mapping firms might face reduced demand for surveys initiated by private actors such as fish farmers. The authors expect this to be offset by increased survey demand from Kartverket, the Institute of Marine Research and NGU, with the need for more mapping providers expected to have a positive overall effect on private firms. This is an assessment of the mapping programme, not a discussion of aquaculture area-use fees or other siting incentives.",
+    "A5": "The authors describe the measure as building a shared marine geographic infrastructure that brings marine knowledge together for public administration, industry development, research and innovation. They argue that accessible, updated data could address problems with disparate systems, outdated formats, incomplete metadata, uncertain data currency, difficulty tracing data, and limited compatibility with analysis tools. Mapping may also enable researchers to develop better digital models. The uncertainty analysis identifies mapping cost, data maturity, market conditions and political decisions as important uncertainties; it discusses possible efficiencies from new methods, automation, parallel data collection, autonomous vessels and aircraft-based mapping with green laser. These are projected opportunities and risks, not demonstrated outcomes.",
+    "A6": "The authors' overall distributional assessment identifies no specific group made worse off by the measure. They nevertheless acknowledge a possible negative effect on private mapping providers from lower demand for surveys initiated by private actors, and argue that increased public-agency demand and a need for more mapping providers may offset it. The segment presents the measure as supporting coastal employment and value creation without actively reducing these in other regions. It does not describe specific aquaculture siting disputes, objections from other coastal users, or procedural measures for ensuring legitimacy and predictability.",
+    "A7": "The segment does not set out a specific industry code or practical measures that aquaculture firms should apply to make their spatial use more sustainable. The authors do identify potential industry contributions and benefits: cooperation with industry can support innovative solutions and mapping, and use of Marine Grunnkart could help identify new suitable areas and enable smarter production. In the uncertainty analysis, the authors also note that benefits may be lower if industry actors do not use the maps. These points concern participation in and use of the mapping initiative rather than a defined set of industry-led area-efficiency measures.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 7,
+   "headings": [
+    "7. Samfunnsøkonomisk lønnsomhet",
+    "7.2. Sammenstilling av prissatte nytte- og kostnadsvirkninger",
+    "8. Realopsjoner",
+    "Vedlegg 1: Intervjuer"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 16203,
+   "key_figures": [
+    {
+     "quote": "Analyseperiode er 2025-2064.",
+     "statement": "The authors set a 40-year analysis period for the marine charting measure, running from 2025-2064."
+    },
+    {
+     "quote": "Det er benyttet en diskonteringsrente på 4%.",
+     "statement": "The authors use a 4% discount rate in their economic analysis of the measure."
+    },
+    {
+     "quote": "70% kartlegging utover dagens nivå oppnås i 2040, noe som gir en kartleggingsperiode på 16 år.",
+     "statement": "The authors project that charting 70% beyond the current level will be reached in 2040, after a 16-year charting period."
+    },
+    {
+     "quote": "Prioriterte områder utgjør 15 % av den totale kysten (ca. 10 500 km2).",
+     "statement": "The authors estimate that priority areas cover 15 % of Norway's total coastline, approximately 10 500 km2."
+    },
+    {
+     "quote": "Med denne hastigheten oppnås 80% kartlegging av kysten i 2040.",
+     "statement": "The authors project 80% charting of the coast by 2040 under the assumed charting schedule."
+    },
+    {
+     "quote": "|Oppdrett av laks og ørret: Økt produksjon|28 868|",
+     "statement": "The authors estimate the expected net present value of increased salmon and trout production from full data availability and full charting at 28 868 mill.kr."
+    },
+    {
+     "quote": "|Opprett av laks og ørret: Reduksjon i driftskostnader|6 831|",
+     "statement": "The authors estimate the expected net present value of reduced operating costs for salmon and trout aquaculture from full data availability and full charting at 6 831 mill.kr."
+    },
+    {
+     "quote": "|SUM prissatte nyttevirkninger|38 491|",
+     "statement": "The authors estimate total priced benefits from full data availability and full charting at 38 491 mill.kr."
+    },
+    {
+     "quote": "|SUM prissatte kostnadsvirkninger|4 458|",
+     "statement": "The authors estimate total priced costs from full data availability and full charting at 4 458 mill.kr."
+    },
+    {
+     "quote": "|Sum netto nåverdi|34 033|",
+     "statement": "The authors estimate the net present value of full data availability and full charting at 34 033 mill.kr."
+    },
+    {
+     "quote": "Det beregnes en skattekostnad av investeringskostnader og andre kontantstrømmer via offentlige budsjetter på 20 % av netto finansieringsbehov.",
+     "statement": "The authors apply a tax-financing cost equal to 20 % of net financing needs for investment costs and other cash flows through public budgets."
+    },
+    {
+     "quote": "Det antas at de områdene som kartlegges de fem første årene (prioriterte områder) gir ca. 50 % mer avkastning i form av nytte relativt til de resterende områdene.",
+     "statement": "The authors assume that priority areas charted in the first five years yield ca. 50 % more benefit than the remaining areas."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not describe how current coastal spatial planning balances aquaculture, environmental concerns, industry development and competing uses. The authors' economic analysis does, however, estimate that marine chart data could benefit salmon and trout aquaculture through increased production and reduced operating costs. It treats charting as an information measure, not as a planning or allocation decision, and does not explain how aquaculture locations or production levels are determined.",
+    "A1": "The authors' analysis identifies marine chart data as a potential aid to aquaculture development: priced benefits include increased production and reduced operating costs for salmon and trout, as well as reduced application costs. It assumes that priority areas charted in the first five years generate ca. 50 % more benefit than other areas. The segment does not explain how site availability, licensing, spatial planning, environmental limits or fish health interact in determining development opportunities, and it gives no site-level evidence.",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors' economic analysis estimates benefits and costs for full data availability and full charting, including aquaculture benefits and public programme costs. It reports expected net present values of 38 491 mill.kr in priced benefits, 4 458 mill.kr in priced costs and 34 033 mill.kr net. These are modelled estimates for the charting measure, not a distributional analysis of aquaculture area-use instruments. The authors exclude indirect economic ripple effects from the main comparison, citing the Ministry of Finance's guidance to include as a rule only one link in the impact chain and insufficient empirical evidence to calculate net ripple effects.",
+    "A5": "The segment concerns marine charting as an information base for decisions, rather than describing the content or quality of particular spatial datasets. The authors assume that charting will be useful until replaced by updated data, while noting that some chart data may become outdated during the analysis period, for example because of climate change. They assume annual benefits decline linearly after 20 years of charting to zero in 2063. The authors also say new charting technology could reduce costs, but whether or when this will happen is uncertain.",
+    "A6": "",
+    "A7": "The authors present marine charting and data availability as a way to support more informed choices, including selecting areas to prioritize for kelp-forest restoration. Their economic analysis assumes priority areas charted in the first five years produce ca. 50 % more benefit than the remaining areas. The segment also assumes private coastal actors can contribute to charting; it notes that only two private companies are currently approved under the Norwegian Mapping Authority's standard for hydrographic surveys, and assumes a national programme would encourage more actors to qualify. This is an analysis assumption, not a reported outcome.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 8,
+   "headings": [
+    "Vedlegg 2: Usikkerhetsanalyse nyttevirkninger, 27.mai 2021",
+    "Deltakere",
+    "Vedlegg 3: Usikkerhetsanalyse kostnadsvirkninger, 31.mai 2021",
+    "Deltakere gruppesamling 31.mai 2021",
+    "Vedlegg 4: Kartlegging av nyttevirkninger",
+    "Samfunnseffekt"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 15349,
+   "key_figures": [
+    {
+     "quote": "Optimistiske anslag er en vurdering av hvor godt det kan gå i en av ti tilfeller, mens pessimistiske anslag er en vurdering av hvor dårlig det kan gå i en av ti tilfeller.",
+     "statement": "The authors’ uncertainty-analysis method for the national marine-charting programme defines optimistic and pessimistic estimates using one-in-ten cases; the passage does not report aquaculture-specific results."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ mapping of benefits identifies more comprehensive coastal-area planning, improved land-use plans under the Planning and Building Act, and reduced processing time at municipal, county and state levels as potential effects of marine charts. These are listed as expected benefits, not findings about current planning practice or a comparison of how environmental considerations, industry development and competing uses are balanced. The appendices describe uncertainty analysis of the charting programme’s benefits and costs, but provide no aquaculture-specific spatial-planning evidence in the text shown.",
+    "A1": "The authors’ benefit mapping lists growth in aquaculture and reduced production costs and saved costs for the aquaculture industry as potential effects of marine charts. It also identifies increased predictability for industry and greater equality before the law as a potential effect. The segment does not explain how site availability, licensing, spatial planning, environmental conditions or fish health interact, and gives no evidence on which factors determine aquaculture development opportunities.",
+    "A2": "The authors’ mapping lists reduced case-processing time at municipal, county and state levels as a potential benefit of marine charts. This is a general expected effect of improved coastal data and planning, not an account of the aquaculture site-application process. The segment does not identify application stages where delays, rejections or conflicts occur, nor does it provide observed processing durations.",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors’ benefit mapping presents marine charts as a basis for sharing data and knowledge nationally and internationally, developing digital models and analyses, and improving coastal planning. The appendices describe the economic analysis method: estimates were updated to 2023 price levels, while uncertainty ranges from workshops in 2021 were retained because the estimation method and maturity were considered similar. This segment does not specify the underlying marine-data coverage or how emerging technologies change aquaculture siting.",
+    "A6": "The authors’ benefit mapping identifies reduced conflict levels and more comprehensive coastal-area planning as potential effects of marine charts. It also lists greater predictability for industry and increased equality before the law among possible benefits. These are modelled or mapped benefits, not documented cases of conflict between aquaculture and other interests. The segment does not discuss stakeholder disagreements, procedural legitimacy or safeguards for predictable decisions.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 9,
+   "headings": [
+    "Vedlegg 5: Bibliografi"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 15806,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

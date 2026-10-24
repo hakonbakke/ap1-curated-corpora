@@ -1,0 +1,290 @@
+{
+ "doc_id": "2025_osmundsen_fylkeskommune-akvakulturloven",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 5,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 16,
+   "chars": 49981,
+   "key_figures": [
+    {
+     "quote": "Total saksbehandlingstid skal ikke overgå 22 uker, men fylkeskommunen har ingen sanksjonsmuligheter overfor andre aktører dersom de overskrider sine frister.",
+     "statement": "The legal processing-time limit for site-clearance applications is 22 weeks overall; this is a description of the regulatory arrangement, not an authors’ statistical finding."
+    },
+    {
+     "quote": "Saksbehandlingstiden for kurante saker har økt de siste årene fra at den var lavere enn tidsfristen på 22 uker i 2020 og 2021, og økte til 24 og 31 uker i 2022 og 2023.",
+     "statement": "The authors report that processing time for routine cases in the counties studied was below 22 weeks in 2020 and 2021, then 24 and 31 weeks in 2022 and 2023."
+    },
+    {
+     "quote": "Statistikken viser at ca. 80% av søknadene er såkalte «kurante» saker, hvor en stor andel av søknadene gjelder endringer på eksisterende lokalitet og en mindre andel for ny lokalitet.",
+     "statement": "The authors’ statistics indicate that ca. 80% of applications in the reviewed period were classified as routine, with many concerning changes to existing sites and fewer concerning new sites."
+    },
+    {
+     "quote": "statistikken viser også at det har det vært en økning i vedtak for akvakultur av torsk, fra 7 vedtak i 2020 til 30 vedtak i 2023.",
+     "statement": "The authors’ statistics show that decisions concerning cod aquaculture increased from 7 decisions in 2020 to 30 decisions in 2023."
+    },
+    {
+     "quote": "I perioden oktober 2024-januar 2025 ble det gjennomført 36 dybdeintervjuer med totalt 38 informanter",
+     "statement": "The authors conducted 36 in-depth interviews with 38 informants representing relevant authorities, municipalities and aquaculture businesses or organizations in October 2024-January 2025."
+    },
+    {
+     "quote": "Forsøket kunne vise til gode resulter for saksbehandlingen på lokalitetssøknader i form av kortere saksbehandlingstid i løpet av forsøksperioden (fra gjennomsnittlig 20 måneder til 6 uker, ekskl. kommunal behandlingstid).",
+     "statement": "A cited evaluation of the Trøndelagsmodellen trial reported that average processing time for site applications fell from 20 months to 6 weeks, excluding municipal processing time."
+    },
+    {
+     "quote": "I samme rapport vises det til at andre regioner enn Trøndelag hadde en saksbehandlingstid på ca. 13 måneder (varierte fra 8 til 18 måneder) i tiden før 2004.",
+     "statement": "A cited report states that before 2004, processing time in regions outside Trøndelag was ca. 13 months, varying from 8 to 18 months."
+    },
+    {
+     "quote": "Ved avslutningen av Trøndelagsmodellen i 2006 ble det gjennomført en ny undersøkelse av saksbehandlingstid, som viste at denne varierte fra 1 til 18 måneder etter kommunal behandling, og at det på landsbasis var et snitt på 9-10 måneder saksbehandlingstid.",
+     "statement": "A cited 2006 survey found that after municipal processing, application processing time ranged from 1 to 18 months and averaged 9-10 months nationally."
+    },
+    {
+     "quote": "Siden dataene i vedtaksbasen ikke er fullstendige eller kvalitetssikret for alle fylkene for perioden 2010-2019, har vi til denne evalueringen valgt å bruke statistikken for de siste fire årene (2020-2023)",
+     "statement": "The authors’ processing-time analysis uses the four years 2020-2023 because the decision database was incomplete or not quality-assured for all counties during 2010-2019."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe a system in which site availability is shaped by municipal coastal-area plans, sector authorities’ assessments under their respective laws, and the county’s coordinating and final-decision roles. Counties can also raise objections on behalf of aquaculture interests in municipal planning. The reform aimed to improve integrated coastal planning and regional development, but the report says national rules constrain county discretion. The authors find that competition for coastal space has increased and that assessing cumulative burden and coherent site structures has become more difficult. Interviewees disagree about solutions, including stronger state steering versus stronger regional or local coordination and prioritization. Some stakeholders emphasize legitimacy for decisions about municipal marine areas.",
+    "A1": "The authors identify site competition, application complexity and the availability of areas consistent with municipal plans as factors affecting development opportunities. Applications involve municipalities and several sector authorities, each applying its own legislation; the county coordinates the process and makes the final decision. The report notes increased documentation requirements and competition, and reports that routine cases’ processing times rose to 24 and 31 weeks in 2022 and 2023, above the stated 22-week overall limit. The authors also describe fish-health and environmental challenges as pressures on the industry, but this segment does not analyze how particular site conditions, disease risks or licensing rules interact in detail.",
+    "A2": "The authors describe site-clearance applications as coordinated by the county, with municipal and sector-authority stages before the county’s final decision. The time-limit regulation distributes deadlines among the county, municipality, Mattilsynet, Kystverket, Fiskeridirektoratet and Statsforvalteren; total processing should not exceed 22 weeks, but counties cannot sanction other authorities for overruns. The authors’ statistics indicate that county deadlines for final decisions in routine cases were generally met, while Statsforvalteren and Mattilsynet often exceeded their deadlines and municipalities had smaller overruns. Delays may arise from requests for additional documentation, applicants pausing applications, appeals, multiple applications for the same area, or limited resources in other authorities. The segment does not provide a breakdown of rejection rates or identify a single most frequent conflict stage.",
+    "A3": "The authors report that assessing cumulative burden and developing coherent site structures has become more difficult for all involved, including counties, as competition for coastal areas has grown. They identify this as a central future challenge, but this segment does not describe a specific cumulative-effects method or how such assessments are systematically integrated into individual site decisions or municipal plans. The report says the interviewees are not in agreement about suitable solutions. It also notes that applications have become more complex and require more documentation, but does not specify the knowledge gaps, models or methodological disagreements underlying cumulative assessment.",
+    "A4": "This segment does not discuss economic instruments or quantify how benefits and costs of coastal-area use are distributed. It does explain the division of regulatory authority: counties handle aquaculture licensing and site applications, while national authorities retain important powers, including decisions on production increases at company level for salmon, trout and rainbow trout. A cited study, Robertsen and colleagues (2016), concluded that no authority had power to make an overall assessment of all positive and negative environmental, social and economic effects of a site or aquaculture permit. The segment also notes that county discretion is limited by a tightly regulated field and national directions.",
+    "A5": "The authors’ evaluation draws on interviews, document studies and county decision statistics, including a shared FAKS knowledge base and decision database. They say the decision database is incomplete or not quality-assured for all counties for 2010-2019, so their statistical analysis uses 2020-2023; figures may also differ from earlier reports because of case-selection and classification choices. The authors describe FAKS as supporting knowledge exchange, common practices and templates, reporting, and tools for recording processing time. They also note that county regional-planning responsibilities span business development, transport, place development, biodiversity and environment, offering scope to integrate policy areas. This segment mentions new production technologies in general but does not assess their siting effects.",
+    "A6": "The authors describe competition in coastal areas and the need to balance aquaculture applications with other coastal interests. Municipal plans determine whether the proposed area is consistent with planning, while sector authorities protect their own interests and laws; public consultation is also part of the process. The report notes that some sector-authority informants question whether the balance between industry interests and environmental considerations is adequate. Industry representatives would like counties to take a stronger role in municipal processes that decide whether to allocate areas to aquaculture. Interviewees also emphasize the need for more legitimate decisions about municipal sea areas, while differing on whether stronger state control or more regional and local coordination is preferable. The authors caution that their interview sample cannot represent every municipality or business.",
+    "A7": "",
+    "A8": "The authors identify fish health and welfare challenges as issues affecting the industry’s results, regulation and reputation, and say that environmental problems and fish-health pressures make sustainable growth more difficult. However, this segment does not discuss biosecurity, pathogen transmission, water connectivity between farms, or how these factors should affect production, operations or site selection. It provides no specific disease cases, connectivity measures or management actions, so it cannot support more detailed conclusions on this question."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 16,
+   "page_to": 29,
+   "chars": 49883,
+   "key_figures": [
+    {
+     "quote": "den totale saksbehandlingstid skal ikke overstige 22 uker, ekskludert eventuell klagebehandling.",
+     "statement": "The authors describe the statutory maximum processing time for Norwegian aquaculture site-clearance applications, excluding any appeal processing."
+    },
+    {
+     "quote": "Fylkeskommunen har deretter en frist på to uker til å sende søknaden til kommunal høring og behandling.",
+     "statement": "The authors describe the two-week deadline for county authorities to forward a complete site application for municipal consultation and processing in Norway."
+    },
+    {
+     "quote": "Det er satt av tolv uker til kommunal behandling (inkl. høring).",
+     "statement": "The authors describe the twelve-week period allocated for municipal processing, including public consultation, of Norwegian aquaculture site applications."
+    },
+    {
+     "quote": "Fra kommunal uttalelse er oversendt har sektormyndighetene fire uker til søknadsbehandling",
+     "statement": "The authors describe the four-week deadline for sector authorities to process an application after receiving the municipality’s statement in Norway."
+    },
+    {
+     "quote": "Til denne sluttbehandlingen har fylkeskommunen en frist på fire uker.",
+     "statement": "The authors describe the four-week deadline for county authorities’ final consideration of Norwegian aquaculture site applications."
+    },
+    {
+     "quote": "Statsforvalteren kan anmode fylkeskommunen om inntil fire ukers forlengelse av fristen, og dersom det foreligger særlige tilfeller kan det bes om inntil ytterligere fire ukers forlengelse.",
+     "statement": "The authors describe the legal possibility of extending the processing deadline for the County Governor by up to four weeks and, in special cases, by up to a further four weeks."
+    },
+    {
+     "quote": "Omfanget av oppgavene som ble foreslått overført var beregnet av direktoratet til et arbeidskraftforbruk på 11 årsverk.",
+     "statement": "The authors report that the Directorate estimated the workload of the tasks proposed for transfer to county authorities in Norway at 11 full-time equivalents; this is a cited estimate."
+    },
+    {
+     "quote": "Over halvparten av de nyansatte kom fra Fiskeridirektoratet, noe som medførte at, bortsett fra i to fylker, var det erfarne ansatte som var med å utforme fylkeskommunenes håndtering av de nye oppgavene.",
+     "statement": "The authors find that, after the 2010 transfer of aquaculture duties in Norway, more than half of county authorities’ new hires came from the Directorate, and experienced staff helped shape the new arrangements in all but two counties."
+    },
+    {
+     "quote": "I høyre side av tabellen ser vi at totalt er det i disse periodene kun 2 vedtak som har blitt endret i politisk behandling.",
+     "statement": "The authors report from FAKS’s data for 2010-2018 that only 2 decisions were changed through political consideration across the periods shown; the underlying figures were made available by FAKS."
+    },
+    {
+     "quote": "I 2010 hadde tre av akvakulturfylkene parlamentarisme",
+     "statement": "The authors report that three of Norway’s aquaculture counties had a parliamentary governance model in 2010."
+    },
+    {
+     "quote": "kystarealet ble delt inn i 13 produksjonsområder, og det ble innført en handlingsregel for vekst.",
+     "statement": "The authors describe the cited 2015 policy change that divided Norway’s coastal area into 13 production areas and introduced a growth rule."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe a planning framework in which municipalities are the central land-use authorities, while counties lead regional planning and coordinate local, regional and national interests. Government expectations for 2023-2027 call for updated regional and municipal plans to reserve sufficient suitable new areas for aquaculture while protecting environmental and other societal interests. For individual site permits, the legal test under Aquaculture Act § 16 requires consideration of the applicant’s area needs, alternative aquaculture use, other uses and conservation interests. The authors find county discretion is constrained because sector authorities have veto powers under their own laws. They also describe the 2023 Aquaculture Committee’s policy proposal for stronger state authority over marine spatial plans.",
+    "A1": "The authors describe site availability as shaped by municipal plans: a site must comply with the area plan or have a municipal dispensation before a county can grant a permit. Applications also depend on approvals under several other statutes, including food safety, animal welfare, pollution, ports and waterways, and water resources where relevant. The licensing route differs by species: salmon, trout and rainbow trout require an initial company-level permit and then a site application, while applications for other species combine species, location and biomass. The authors identify fragmented responsibilities and environmental regulation as constraints on development; their account does not assess fish-health or water-connectivity effects in detail.",
+    "A2": "The authors describe a multi-authority process for site-clearance applications. The county checks completeness, forwards the file for municipal consultation and parallel sector-authority review, then makes the final decision after receiving decisions or statements. The prescribed total processing time is 22 weeks excluding appeals, but deadlines are binding without sanctions. Although counties may proceed when statements are late, they report that current practice is generally to wait for all approvals and statements; necessary statutory permits must be in place before a site permit can be granted. Rejections can arise when authorities with veto powers refuse approval. The segment gives no statistical account of the stages where delays or rejections most commonly occur.",
+    "A3": "The segment says counties assess whether a site requires an environmental impact assessment under the impact-assessment regulations, and the final permit requires a cross-interest assessment under Aquaculture Act § 16. It does not explain how cumulative production effects are methodologically incorporated into plans or individual site decisions. The authors cite the 2011 Area Committee’s recommendations and note that production areas and lice-based action rules were later introduced. They also cite the 2023 Aquaculture Committee’s call for a consolidated knowledge base for good spatial planning, better site structure and more coordination and dialogue. The segment does not specify cumulative-assessment methods or their knowledge limitations.",
+    "A4": "The segment does not discuss economic instruments such as fees, taxes or compensation, or how costs and benefits of spatial use are distributed among stakeholders. It does report earlier concerns from industry that transferring responsibilities to counties would increase workload and impose additional costs. The Directorate estimated the transferred tasks at 11 full-time equivalents, while counties generally said they needed sufficient transferred resources for proper case handling; the authors later report that counties staffed above the Directorate’s estimate. These are accounts of administrative resource requirements and anticipated burdens, not an analysis of economic incentives or distributional effects.",
+    "A5": "The authors describe a knowledge base combining municipal and regional plans, applications, sector-authority assessments and county expertise in local conditions. They report that the counties received the Directorate’s site-case archive and that more than half of new hires came from the Directorate; informants also emphasized staff experience and relevant education. The FAKS network developed shared knowledge and decision databases, common practices and professional exchange to address incomplete guidance and support more consistent processing. The authors cite a 2023 committee call for a consolidated knowledge base. Digital platforms and updated electronic solutions were proposed as process improvements, but this segment does not evaluate emerging technologies’ effects on siting or environmental impacts.",
+    "A6": "The authors describe potential conflicts among aquaculture, municipal land-use plans, conservation interests and other uses of coastal areas. Regional planning and regional planning forums are presented as ways to identify and attempt to reconcile state, regional and municipal interests. In the application process, municipal public consultation provides an opportunity for public input, while sector authorities assess their statutory mandates; some have veto powers. The authors find that county authorities’ final cross-interest judgment is important but constrained by those mandates. They report historical concerns about politicized site allocation and inconsistent decisions, but informants later described political involvement as limited and decisions as generally well reasoned. The segment identifies better coordination and dialogue as continuing needs.",
+    "A7": "The segment does not identify specific voluntary measures that aquaculture companies themselves can apply to make spatial use more efficient or sustainable. It does discuss system-level measures intended to improve area use, including production areas, lice-based growth rules, improved site and operating structures, and the use of new production technologies to support more differentiated coastal use. These are described as regulatory or sector-wide approaches, not as a catalogue of actions available to individual firms. The authors note continuing weaknesses in coordination and infection-spread structure, while the 2023 Aquaculture Committee called for better planning, a shared knowledge base and more dialogue among relevant actors.",
+    "A8": "The authors note that the 2011 Area Committee recommended restructuring aquaculture activity along the coast and that production areas and lice-based action rules were later implemented. They also identify continuing weaknesses in coordination between farms and in infection spread as features of the current spatial structure. This bears on how farm locations and production structure can affect disease transmission, but the segment does not explain water connectivity, quantify transmission, or set out specific biosecurity procedures. It therefore provides a general spatial-management concern rather than detailed evidence on the operational mechanisms of connectivity between sites."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 29,
+   "page_to": 44,
+   "chars": 48509,
+   "key_figures": [
+    {
+     "quote": "Der søknader om endring har en gjennomsnittlig saksbehandlingstid på henholdsvis 22, 21, 24 og 27 uker i årene 2020-2023, er tidsbruken for søknader om ny lokalitet på 56, 42, 50, og 79 uker i samme tidsperiode.",
+     "statement": "The authors’ Vedtaksbasen analysis found that, for applications recorded in the included counties, average processing time in 2020-2023 was 22, 21, 24 and 27 weeks for changes to existing sites and 56, 42, 50 and 79 weeks for new-site applications, respectively."
+    },
+    {
+     "quote": "Gjennomsnittlig saksbehandlingstid for alle søknader (fra komplett søknade til sluttvedtak) har variert noe over tid, og er på henholdsvis 30, 26, 30 og 38 uker for årene 2020-2023.",
+     "statement": "The authors’ analysis of 1219 applications across the listed counties found average processing times from complete application to final decision of 30, 26, 30 and 38 weeks in 2020-2023."
+    },
+    {
+     "quote": "Gjennomsnittlig saksbehandlingstid på kurante saker var i 2020-2022 på henholdsvis 21, 20 og 24 uker, men økte til 31 uker i 2023. Saksbehandlingstiden for ukurante saker har for hvert av disse årene vært mer enn det dobbelte som for kurante: 53, 43, 55, og 66 uker.",
+     "statement": "The authors’ Vedtaksbasen analysis found average processing times for routine applications of 21, 20, 24 and 31 weeks, and for applications with special circumstances of 53, 43, 55 and 66 weeks, in 2020-2023."
+    },
+    {
+     "quote": "I tillegg til saksbehandlingstid viser rapportene at det for 2021-2023 gis tillatelse (tilsagn) i over 85% av søknadene, med noen variasjoner mellom årene.",
+     "statement": "The authors report that FAKS reports recorded approvals for over 85% of applications in 2021-2023, with some variation between years."
+    },
+    {
+     "quote": "I 2023 ble det rapportert fra 13 fylker, men det er de store kystfylkene som har flest antall søknader.",
+     "statement": "The authors report that 13 counties contributed data in 2023, and that the large coastal counties had the most applications."
+    },
+    {
+     "quote": "Som vist i Figur 5 er det fra 2020 til 2023 blant annet en økning i antall vedtak i saker om torskeoppdrett, fra 7 søknader behandlet ferdig i 2020 til 30 søknader i 2023.",
+     "statement": "The authors’ analysis of recorded decisions found that completed cod-farming applications increased from 7 in 2020 to 30 in 2023 across the counties included in Figure 5."
+    },
+    {
+     "quote": "Vedtaksbasens oversikt viser store forskjeller i saksbehandlingstid for søknader om endring på eksisterende lokalitet sammenlignet med søknader om ny lokalitet",
+     "statement": "The authors’ analysis of Vedtaksbasen data for 2020-2023 found substantially different processing times for applications to change existing sites and applications for new sites."
+    },
+    {
+     "quote": "I all hovedsak viser rapportene fra de siste årene at gjennomsnittlig total tidsbruk for kurante saker har variert fra 18 til 31 uker på nasjonalt nivå i årene 2021-2023.",
+     "statement": "The authors report that FAKS reports showed national average total processing times of 18 to 31 weeks for routine applications in 2021-2023."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ interview findings indicate tensions in how county authorities balance regional business development against other interests, particularly nature and the environment. Some interviewees want greater use of updated knowledge from the Institute of Marine Research and assessments consistent with the Nature Diversity Act and Water Regulations. The authors also report that county authorities say climate change and new situations, such as lice outbreaks in the north, make assessments of cumulative impacts more difficult. In the authors’ account, competition for sites and multiple applications in the same area have increased the difficulty of making area-interest trade-offs. The segment describes these issues in application processing rather than setting out a complete account of current spatial-planning rules.",
+    "A1": "The authors’ findings identify site competition, nearby competing applications, applications with higher maximum permitted biomass, and applications for new species as factors making site approval more complex. The authors’ Vedtaksbasen analysis finds that new-site applications take longer on average than applications to change existing sites in 2020-2023. Interviewees say the authorities often lack information about applicants’ historical use of allocated production capacity, making it difficult to assess actual need. Some industry interviewees acknowledged applying for sites to prevent competitors from entering an area and to control nearby sites for biosecurity, rather than to increase production. The segment also reports limited experience with what documentation and site conditions to require for new species.",
+    "A2": "The authors describe site clearance as involving the county authority, municipality, sector authorities and industry. County authorities screen applications, guide applicants and check completeness, but some interviewees report recurring disagreement about what documentation makes an application complete; pre-application meetings are proposed as a way to resolve this. The authors’ analysis finds that new-site applications take longer on average than changes to existing sites. Interviewees identify appeals, plan dispensations, new species and competing applications for the same area as causes of delay. The authors’ analysis of case comments also finds that cases often stall during appeals of sector-authority decisions. The process is coordinated across authorities, sometimes in parallel, and the county authority has no sanctioning power when statutory time limits are exceeded.",
+    "A3": "The authors’ interview findings say county authorities find assessments of cumulative environmental burden increasingly difficult, including because of climate change and new conditions such as lice outbreaks in the north. Some interviewees call for greater reliance on updated Institute of Marine Research knowledge and stronger consideration of nature and environmental law. The authors also describe a limitation in the application system: authorities process cases individually and may have to make final decisions without knowing which competing applications will be approved. Interviewees say this leaves them with limited information for an overall area assessment. The segment does not describe a specific cumulative-effects assessment method or explain how such assessments are formally incorporated into spatial plans.",
+    "A4": "",
+    "A5": "The authors describe the Vedtaksbasen as a shared county-level database, established in 2017, that supports common registration, quality control, reporting and comparison of processing times. They caution that data were primarily quality-assured from 2020, registration forms changed over time, and 2020 records do not consistently identify cases with special circumstances. Interviewees say county authorities cannot access Fisheries Directorate data visualizing historical use of allocated production capacity, limiting assessment of applicants’ actual needs. The authors also report that limited experience with new species creates uncertainty about required application documentation and site conditions. Interviewees call for updated guidance and environmental knowledge, while the segment gives no account of emerging technologies changing siting conditions.",
+    "A6": "The authors’ interview findings identify conflicts between aquaculture and environmental interests, as well as growing competition for coastal sites. Applicants may submit competing proposals for the same area, and some industry interviewees acknowledged applying to keep others out or to control nearby sites for biosecurity. The authors report that decisions are increasingly appealed, whether by applicants after refusals or by other interests after approvals; interviewees describe this as resource-intensive. Common tools, shared practices and FAKS coordination are described by the authors as supporting more consistent treatment, although regional needs can still produce different decisions. Interviewees also identify incomplete applications, unclear guidance and weak coordination as sources of unpredictability. The segment does not assess the legitimacy of individual decisions directly.",
+    "A7": "The authors report that industry actors can influence how efficiently sites are used through their application choices, but the segment does not present this as a sustainability measure. Interviewees from industry acknowledged that applications may be made to prevent competitors from gaining access to sites and to control nearby sites, including to improve biosecurity, rather than because of a need for more production. The authors also report that county authorities lack access to data on applicants’ historical use of their allocated capacity, which interviewees say makes it difficult to evaluate actual production needs. The segment does not identify operational measures that industry can apply to reduce spatial use or environmental impacts.",
+    "A8": "The authors’ interview findings connect biosecurity to spatial control: some industry actors acknowledged seeking nearby sites to keep others from entering the area and to maintain control over locations in the vicinity, with the stated aim of improving biosecurity. This indicates that applicants’ site-selection motives may include managing neighbouring activity, not only expanding their own production. The segment does not provide findings on water connectivity, disease transmission pathways, farm-to-farm distances, or the biological effects of such spatial arrangements, so it cannot establish how these factors affect production or operations."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 44,
+   "page_to": 58,
+   "chars": 48643,
+   "key_figures": [
+    {
+     "quote": "Fylkeskommunen som koordinator for søknadsprosessen har frist på to uker fra søknaden er komplett og til den sendes ut til lokalitetskommune (med sektormyndigheter på kopi), og deretter en frist på fire uker for å gjøre sluttvedtak",
+     "statement": "The authors report the statutory processing deadlines for county authorities coordinating aquaculture site applications in Norway: two weeks to send a complete application to the municipality and four weeks for the final decision after sector authorities have responded."
+    },
+    {
+     "quote": "For 2023 har statsforvalteren en gjennomsnittlig tidsbruk på nesten 24 uker, og mellom 14 og 18 uker årene før det.",
+     "statement": "The authors' findings from the decision database show average processing time for the County Governor in aquaculture applications across the counties covered in 2020–2023: almost 24 weeks in 2023 and between 14 and 18 weeks in the preceding years."
+    },
+    {
+     "quote": "Mattilsynet har for de samme årene en registrert tidsbruk på mellom 12,7 og 16,5 uker.",
+     "statement": "The authors' findings from the decision database show that the Norwegian Food Safety Authority's registered processing time for aquaculture applications across the counties covered was between 12,7 and 16,5 weeks in the same years."
+    },
+    {
+     "quote": "Medianen ligger på 20, 7 til 23,7 uker, som betyr at halvpartene av sakene har en saksbehandlingstid som er lik eller lavere enn medianen.",
+     "statement": "The authors report the median processing time for applications for a change or a new site across seven counties in 2020–2023 as 20, 7 to 23,7 weeks."
+    },
+    {
+     "quote": "Saksbehandlingstiden for kurante saker har økt de siste årene fra at den var lavere enn tidsfristen på 22 uker i 2020 og 2021, og økte til 24 og 31 uker i 2022 og 2023.",
+     "statement": "The authors find that average processing time for routine aquaculture applications in Norway was below the 22-week deadline in 2020 and 2021, and rose to 24 and 31 weeks in 2022 and 2023."
+    },
+    {
+     "quote": "Statistikken viser at ca. 80% av søknadene er såkalte «kurante» saker, hvor en stor andel av søknadene gjelder endringer på eksisterende lokalitet og en mindre andel for ny lokalitet.",
+     "statement": "The authors find that ca. 80% of aquaculture applications in the statistics are classified as routine cases, mostly changes to existing sites and a smaller share for new sites."
+    },
+    {
+     "quote": "fra 2020-2023 har det blitt behandlet en større andel søknader om akvakultur av torsk, fra 7 stykker i 2020 til 30 i 2023.",
+     "statement": "The authors report that the number of processed applications for cod aquaculture increased from 7 in 2020 to 30 in 2023."
+    },
+    {
+     "quote": "en gjennomgang av rådataene viser at det i flere fylker er saker med en total saksbehandlingstid over flere år – fra over 70 til mer enn 200 uker.",
+     "statement": "The authors' review of raw data finds that some aquaculture applications in several counties took from over 70 to more than 200 weeks in total."
+    },
+    {
+     "quote": "Tallene viser at de fleste fylkene har en gjennomsnittlig tidsbruk som er under fristen for mange av årene. Det største avviket er Møre og Romsdal som i 2022 og 2023 hadde en gjennomsnittlig tidsbruk på 7,7 og 10,4 uker.",
+     "statement": "The authors find that for routine cases the county authorities' average time to issue a final decision was 7,7 and 10,4 weeks in Møre og Romsdal in 2022 and 2023, respectively."
+    },
+    {
+     "quote": "Medianen har også mindre variasjon fra år til år enn gjennomsnittstallene.",
+     "statement": "The authors find that, across the seven counties and years represented in the table, median processing time varied less from year to year than the mean."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors identify municipal plans as a basic determinant of whether and where aquaculture can obtain marine space: municipalities decide which areas are allocated to aquaculture. County authorities guide municipalities, act as regional planning authorities, and may object to plans on behalf of aquaculture interests, but their practice varies. Informants describe growing competition for sites, greater attention to vulnerable habitats, and unresolved questions about what surveys belong in area planning versus individual site clearance. The authors find that existing planning and licensing arrangements provide inadequate tools for improving the overall site structure. Informants support more area-based management, but disagree on solutions, including the use of multi-purpose zones and the appropriate balance of local autonomy and national direction.",
+    "A1": "The authors describe site opportunities as shaped by municipal zoning, increasing competition among operators and species, and the growing documentation and survey requirements. Informants say suitable new sites are harder to find and applications have become more complex. Environmental knowledge gaps and uncertainty about which assessments belong in municipal planning or site clearance complicate decisions. County authorities assess an applicant’s stated need when allocating a site, but may lack information on how much previously allocated capacity the applicant has used. They also lack site-performance information such as mortality and lice data when considering biomass expansion, making them dependent on information from other authorities. The segment does not discuss fish-health or biosecurity mechanisms in detail.",
+    "A2": "The authors describe the process as coordinated by the county authority: a complete application is sent to the municipality and sector authorities, and the county makes the final decision after their responses. They find that delays arise mainly with other actors, especially the County Governor and the Food Safety Authority, whose average processing times substantially exceed their four-week deadlines. Municipal processing also averages some weeks above its deadline. County authorities generally meet their own deadline for routine final decisions, with some exceptions. Applications may be delayed by additional documentation, appeals, applicants asking to pause a case, parallel handling of competing applications for the same area, or administrative and system problems. The authors caution that averages are affected by a small number of exceptionally long cases; routine and non-routine cases also differ in processing time.",
+    "A3": "The authors and informants say assessing cumulative burden and taking a holistic view has become harder as competition, species diversity, and demand for site knowledge increase. The report does not set out a specific cumulative-effects methodology; instead, it identifies barriers to applying such assessments in planning and site decisions. Municipalities often lack the resources and knowledge needed to survey their marine areas adequately, and informants disagree over what should be mapped during plan revision and what can be left to site clearance. The authors also note that county authorities may not have information on applicants’ historical use of capacity or on site outcomes such as mortality and lice levels. Informants call for better information sharing, collaboration across authorities, and knowledge of which changes to site structure would improve both production and environmental performance.",
+    "A4": "The segment contains limited discussion of economic instruments or how their costs and benefits are distributed. The authors report that some county authorities use funds from the aquaculture fund to support marine planning and knowledge-development projects; informants suggest reserving a share of that fund for building the evidence needed to improve regional site structure. Some counties also use revenues from educational aquaculture licences to support equipment and teaching, and informants worry that removing those licences and revenues could weaken training. The report also notes concern that the loss of fee funding for County Governor positions could reduce that authority’s capacity. These points are presented as informant views and policy concerns, not as an evaluation of the distributional effects of the instruments.",
+    "A5": "The authors describe a knowledge base assembled through county-funded projects and collaboration with municipalities, industry, and sector authorities. Examples include current modelling, fjord ecosystems, wild salmon migration patterns, spawning areas, and vulnerable habitats. Informants value county authorities’ ability to initiate projects and strengthen municipal planning knowledge. They also identify substantial gaps: many municipalities lack the capacity to survey marine areas to the desired level, and there is uncertainty about the division between planning surveys and site-specific investigations. County authorities may lack records of operators’ historic capacity use and site suitability, including mortality and lice data. The authors report that a shared digital application platform is under development and could improve transparency, preserve case history, and connect registers, although digital barriers remain.",
+    "A6": "The authors report conflicts between aquaculture and other interests arising in plan revisions, site applications, and choices about how much marine area to allocate. Informants describe competition between operators and between salmon farming and other species, and say informal understandings about where not to apply for sites no longer hold. There are also differing views within county authorities over economic development and environmental priorities, and variation in whether authorities object to municipal plans. The boundary between evidence required for area plans and for site clearance is a recurring source of disagreement. Parallel applications for the same area can hold up decisions because authorities wait to process them together. The authors conclude that there is no consensus among informants about the problems’ solutions; stronger national direction is proposed by some, while others warn of local and regional resistance.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 4,
+   "headings": [],
+   "page_from": 58,
+   "page_to": 74,
+   "chars": 27592,
+   "key_figures": [
+    {
+     "quote": "Figur 12 Gjennomsnittlig total saksbehandlingstid fordelt på søknadstype «endring» og «ny lokalitet» for årene 2020-2023. Tall er hentet fra vedtaksbasen og inkluderer fylkene Finnmark, Troms, Nordland, Trøndelag, Møre og Romsdal, Vestland, Rogaland og Agder. Tall vist i antall uker. Total N = 1219 saker.",
+     "statement": "The authors’ appendix reports total processing times in weeks for change and new-site applications across the listed Norwegian counties in 2020-2023, based on 1219 cases."
+    },
+    {
+     "quote": "Fylke År Gjennomsnitt Median N (antall) Rogaland 2023 57,1 23 21",
+     "statement": "The authors’ dataset reports a mean processing time of 57,1 weeks and a median of 23 weeks for 21 change or new-site cases in Rogaland in 2023."
+    },
+    {
+     "quote": "Fylke År Gjennomsnitt Median N (antall) Møre og Romsdal 2023 51,3 46 14",
+     "statement": "The authors’ dataset reports a mean processing time of 51,3 weeks and a median of 46 weeks for 14 change or new-site cases in Møre og Romsdal in 2023."
+    },
+    {
+     "quote": "Fylke År Gjennomsnitt Median N (antall) Vestland 2020 14,5 6,6 100",
+     "statement": "The authors’ dataset reports a mean processing time of 14,5 weeks and a median of 6,6 weeks for 100 change or new-site cases in Vestland in 2020."
+    },
+    {
+     "quote": "Fylke År Gjennomsnitt Median N (antall) Nordland 2020 49,1 39,1 89",
+     "statement": "The authors’ dataset reports a mean processing time of 49,1 weeks and a median of 39,1 weeks for 89 change or new-site cases in Nordland in 2020."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "The authors’ appendices provide processing-time data for applications to change a site or establish a new site. Figure 12 gives average total processing time by application type for 2020-2023, in weeks, for eight named counties and 1219 cases. A county-level table gives average and median times for six county groupings and includes both straightforward and complex cases. The authors caution that the table’s figures may differ from the decision database; for example, the raw-data spreadsheet records 14 Møre og Romsdal cases in 2023 while the database records 30. The segment does not explain where in the application sequence delays, rejections or conflicts occur.",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

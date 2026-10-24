@@ -1,0 +1,58 @@
+{
+ "doc_id": "2021_osmundsen_shared-waters",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 24,
+   "chars": 62087,
+   "key_figures": [
+    {
+     "quote": "In total 22 respondents participated in this initial study, 16 from the aquaculture industry and 6 from public authorities.",
+     "statement": "The authors' initial Norwegian aquaculture cooperation survey had 22 respondents, comprising 16 industry representatives and 6 public-authority representatives."
+    },
+    {
+     "quote": "The number of respondents was 37 Norwegian fish farmers. This represents approximately 35–40% of salmon and trout farmers in Norway, the total in 2019 being approximately 100 (NOU, 2019).",
+     "statement": "The authors' in-depth survey included 37 Norwegian fish farmers, approximately 35–40% of Norway's salmon and trout farmers; the text reports a 2019 total of approximately 100."
+    },
+    {
+     "quote": "In the spring of 2019, 14 Norwegian salmon farms in the northern part of Nordland County and the southern part of Troms County were hit by a toxic algae bloom2 (Chrysochromulina leadbeaterii). In less than three weeks, the farmers lost 8 million salmon (Salmon salar), a total of 14,000 tons.",
+     "statement": "The authors report that the spring 2019 toxic algae bloom affected 14 Norwegian salmon farms in parts of Nordland and Troms, killing 8 million salmon, weighing 14,000 tons, in less than three weeks."
+    },
+    {
+     "quote": "some losing up to 85% of the total fish they had in the net pens.",
+     "statement": "The authors report that some farms affected by the 2019 algae bloom lost up to 85% of their net-pen fish."
+    },
+    {
+     "quote": "Only 13 (of 37) of the respondents state they agree this should be a responsibility for the public authorities.",
+     "statement": "In the authors' survey of Norwegian fish farmers, 13 of 37 respondents agreed that public authorities should be responsible for establishing cooperation."
+    },
+    {
+     "quote": "Also, on the question whether such cooperation should be voluntary or mandatory, 21 respondents respond that this should be voluntary",
+     "statement": "In the authors' survey, 21 respondents favored voluntary rather than mandatory cooperation between fish farmers."
+    },
+    {
+     "quote": "The majority (23 of 37) of the informants report that they cooperate well with other fish farmers in their area",
+     "statement": "In the authors' survey, 23 of 37 Norwegian fish-farmer informants reported cooperating well with other farmers in their area."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors' finding is that cooperation between neighboring farmers can support area management by sharing resources, coordinating production and limiting cumulative externalities. They report that area cooperation includes operating activity, emergency preparedness, area governance or planning, and strategic cooperation. The Norwegian Food Safety Authority increasingly requires coordinated fallowing by assessing the combined operation plans of farms in an area and approving them when they satisfy fish-health and welfare considerations. The authors also find that access to sites constrains cooperation and restructuring: farmers may resist swapping or closing sites, leaving fallowing zones too small to work effectively. The paper does not provide a comprehensive account of how environmental protection, industry growth and competing coastal uses are balanced in spatial planning.",
+    "A1": "The authors' findings identify site access and competition for sites as important constraints on area-based cooperation and on reorganizing farms into effective fallowing zones. Fish farmers may be reluctant to give up sites, and competition can limit cooperation in daily operations and emergency preparedness. In the current regulatory arrangement described by the authors, sharing resources and coordinating with others is not rewarded. The Norwegian Food Safety Authority can require neighboring farmers to coordinate fallowing, with combined operation plans assessed against fish-health and welfare considerations. The authors also identify knowledge of hydrodynamic, biological and epidemiological factors, information systems, trust, regional institutions and public regulation as conditions affecting cooperation. Licensing stages, application delays and rejection rates are not addressed.",
+    "A2": "",
+    "A3": "The authors discuss cumulative externalities and coordinated area management, rather than a formal cumulative-effects assessment method. They report that open net pens share waters, through which currents carry feed residues, fecal and metabolic products, diseases and parasites; these impacts can affect other farms, the environment and other resources and activities. The Norwegian Food Safety Authority assesses the sum of farms' operation plans in an area when considering coordinated fallowing, and approves them if fish-health and welfare considerations are met. The authors find that a lack of cooperation can leave fallowing zones too small and reduce their effectiveness. They identify knowledge of hydrodynamic, biological and epidemiological factors, and systems to collect, analyze and share relevant information, as important conditions for area cooperation. They do not describe a general cumulative-effects assessment framework or its methodology.",
+    "A4": "The authors' findings indicate that cooperation is motivated primarily by reducing disease and parasite risks, then negative environmental impacts, and then improving operational profitability. Cooperation can provide access to equipment, personnel, knowledge and processing capacity, and help coordinate production. However, Food Safety Authority interviewees said that the current regulatory system does not reward farmers for cooperation or willingness to share resources. The authors argue that costs and benefits of cooperative arrangements should be clear and reasonably distributed, with explicit rules and sanctions. They identify conflicts over who bears costs or sacrifices when collective action benefits an area but burdens an individual farm. The article does not analyze taxes, fees, or the distribution of broader economic benefits and costs among coastal stakeholders.",
+    "A5": "The authors draw on an initial survey, an in-depth survey of Norwegian fish farmers, interviews with the Food Safety Authority, and interviews about the spring 2019 algae crisis. They identify knowledge of hydrodynamic, biological and epidemiological factors, together with information systems for harvesting, analyzing and sharing relevant data, as conditions for effective area cooperation. In the algae crisis, the authors report a need for rapid water-sample analysis to track the algae, sampling at different depths rather than only at the surface, and real-time measurements. The Coast Guard was brought in to analyze samples, while the authors recommend strengthening local analytical capacity. They also note that shared suppliers and emergency resources lacked capacity when farms were affected simultaneously. The paper does not assess emerging siting technologies in general.",
+    "A6": "The authors' findings identify conflicts where many farms occupy a limited area, sites are close together, or new farmers enter an area with established cooperation arrangements. Competition for site access can inhibit cooperation and make it difficult to restructure sites or create effective fallowing zones. Disagreements may also emerge during difficult events when a farm must bear a disproportionate burden for the collective good; informants questioned whether cooperation rules are sufficiently clear. The authors recommend defined agreements, observable actions, clear divisions of responsibility, and sanctions for violations. They argue for industry-led, voluntary cooperation where possible, supported by public authorities through resources, formal approvals, incentives or a credible threat of intervention. The study also shows that collaboration between farmers and authorities was decisive during the algae crisis. It does not detail conflicts with particular non-aquaculture users.",
+    "A7": "The authors recommend that the industry establish area cooperation where possible, develop common rules, coordinate activities and resources, exchange information, and make joint decisions. Farmers can coordinate sea transfers, harvesting and fallowing; coordinated fallowing is intended to reduce environmental pressure and improve disease management. The authors stress that agreements should specify responsibilities, make participants' actions visible, clarify costs and benefits, and include sanctions. They also recommend stronger practical emergency preparedness, including supplementary standby resources or advance agreements for access to additional capacity, because local suppliers may be unable to serve all farms during a shared emergency. They identify trust, information systems, knowledge of environmental and epidemiological factors, and regional institutional conditions as relevant to self-governance. Public oversight remains necessary; industry action alone is not presented as sufficient.",
+    "A8": "The authors' findings identify reducing disease and parasite risks as the leading motivation for cooperation among surveyed farmers. Open-net farms share waters, and currents can carry diseases and parasites between farms; the article also notes possible effects on surrounding environments and other resources. Farmers cooperate on emergency preparedness, surveillance, warning systems, fish health, contagious-disease outbreaks, and coordinated fallowing. The Food Safety Authority increasingly requires neighboring farmers to coordinate fallowing and considers fish-health and welfare conditions when reviewing combined operation plans. The authors argue that coordination across farms can mitigate disease risk, while effective arrangements depend on shared knowledge of hydrodynamic, biological and epidemiological factors. The article does not quantify water connectivity or disease transmission distances between facilities."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

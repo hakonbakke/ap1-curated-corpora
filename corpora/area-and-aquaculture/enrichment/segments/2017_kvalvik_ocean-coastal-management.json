@@ -1,0 +1,72 @@
+{
+ "doc_id": "2017_kvalvik_ocean-coastal-management",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Ocean & Coastal Management"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 68718,
+   "key_figures": [
+    {
+     "quote": "Nine inter-municipal coastal zone planning processes in six counties, involving 65 municipalities, have been conducted in recent years.",
+     "statement": "The authors report that nine inter-municipal coastal zone planning processes in Norway involved 65 municipalities across six counties."
+    },
+    {
+     "quote": "The shortest process took less than two years, while two processes that started in 2012 are still not complete (as of October 2016), by far exceeding their set timeframe.",
+     "statement": "The authors report that among the nine Norwegian planning processes, the shortest took less than two years and two begun in 2012 remained incomplete as of October 2016."
+    },
+    {
+     "quote": "In the eight remaining processes, common planning maps have been developed, and in seven processes new areas for aquaculture have been suggested.",
+     "statement": "The authors find that eight of the nine processes produced common planning maps, and seven suggested new aquaculture areas."
+    },
+    {
+     "quote": "Only in four of the processes, the Lyngenfjord, Fensfjord, the Romsdalsfjord and the Nord-Troms (numbers 1, 3, 5 and 9 in the table), we ﬁoud real policy integration through the development of a well-coordinated plan",
+     "statement": "The authors find that four of the nine Norwegian processes achieved real policy integration through a well-coordinated plan."
+    },
+    {
+     "quote": "In all nine processes, we see, as expected, a high degree of policy cooperation",
+     "statement": "The authors find a high degree of policy cooperation in all nine Norwegian inter-municipal planning processes."
+    },
+    {
+     "quote": "The growth of aquaculture has been tremendous, with a doubling of production from 600 000 tonnes of salmon in 2000 to more than 1.2 million tonnes in 2014.",
+     "statement": "A figure cited by the authors reports salmon production in Norway increasing from 600 000 tonnes in 2000 to more than 1.2 million tonnes in 2014."
+    },
+    {
+     "quote": "At the same time, the number of aquaculture sites has been reduced from its peak in 2000 with 1800 sites to its current level of about 1000 sites.",
+     "statement": "A figure cited by the authors reports that Norwegian aquaculture sites declined from 1800 in 2000 to about 1000 at the time reported."
+    },
+    {
+     "quote": "In this period, the production per site grew almost six-fold; from 278 to 1303 tonnes per site, as illustrated in Fig. 2.",
+     "statement": "A figure cited by the authors reports production per site rising from 278 to 1303 tonnes per site during the period discussed."
+    },
+    {
+     "quote": "It amounts to only 0.5 per cent of Norwegian coastal areas inside the baseline when including safety and anchoring areas (Isaksen et al., 2012).",
+     "statement": "A cited study estimates that aquaculture sites, including safety and anchoring areas, occupy 0.5 per cent of Norwegian coastal areas inside the baseline."
+    },
+    {
+     "quote": "The Food Safety Authority regulates the required distance between production sites, which generally is 2.5 km between farms, 5 km between farm and slaugthery (Norwegian Food Safety Authority, 2015).",
+     "statement": "A cited regulatory source gives the generally required Norwegian distances as 2.5 km between farms and 5 km between a farm and a slaughtery."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that municipalities determine whether and where aquaculture areas are designated through coastal zone plans, while national sector agencies retain authority in areas including environment, fisheries, navigation and veterinary affairs. Plans are intended to prioritize among uses and avoid piecemeal development. Aquaculture competes with fisheries, environmental protection, recreation, transport, tourism and other interests. Environmental and veterinary requirements also constrain the spacing of farms, and the authors report that municipalities have become reluctant to designate new areas because of environmental concerns and limited local economic returns. Their analysis of nine processes finds strong coordination of planning processes and tools, but less consistent coordination of plan content and area designations. Inter-municipal planning can support a broader perspective, but municipal autonomy and the need for each council to adopt its own plan limit integration.",
+    "A1": "The authors describe opportunities for development as depending on access to new and larger sites, including deeper-water areas, as well as municipal designation in coastal zone plans. Older municipal plans may designate sites no longer suitable under stronger veterinary and environmental rules or the requirements of large-scale production. Site availability is also constrained by disease and parasite dispersal, environmental status and the required spacing between facilities. A cited national policy describes production zones separated by aquaculture-free fire gates as a proposed additional regulatory layer; the government could permit growth or downsizing according to a zone’s environmental status. The authors identify municipal reluctance, including concerns about wild salmon and limited local returns, as another constraint. Their study focuses on planning coordination, not the detailed operation of licensing decisions.",
+    "A2": "",
+    "A3": "The authors argue that ecosystem-based coastal management requires planning across larger geographical areas and consideration of cumulative effects from different human uses. They describe municipalities as often too small for planning fjords and coastal areas and identify inter-municipal cooperation as one way to improve the spatial scale of decisions. In the planning processes they studied, municipalities commonly gathered information jointly, commissioned or carried out impact assessments, and developed shared planning descriptions, criteria and mapping tools. However, the segment does not report a standardized cumulative-effects assessment of aquaculture production or explain a common method for quantifying cumulative effects. It identifies knowledge gaps as consequential: in Helgeland, the municipalities used an inverse planning approach partly because they lacked knowledge about areas suitable for aquaculture. The authors also note that more complex modelling of physical and ecological parameters affects how disease dispersal and environmental impacts are assessed.",
+    "A4": "The authors describe a mismatch in the local distribution of benefits and burdens: environmental effects and economic benefits from aquaculture are local, while the industry is highly profitable and municipalities receive limited returns. A cited policy detail states that part of the aquaculture licence fee is reallocated from the government to municipalities where production takes place, but the authors still identify limited municipal economic returns as a reason for reluctance to allocate new areas. Their analysis suggests that cooperation is easier for shared information gathering and planning tools, which can benefit all participants, than for designating aquaculture areas, where benefits and burdens may fall unevenly. In the successful integrated cases, municipalities considered the distribution across the whole planning area and saw benefits from a common decision. The segment does not analyze the licence-fee instrument in detail.",
+    "A5": "The planning processes drew on municipal coastal zone plans, planning programmes, interim reports, interviews with process leaders and participation in regional meetings with industry and public authorities. The authors report that municipalities built shared knowledge bases, collected information together and developed common planning descriptions, criteria, mapping systems and digital tools. They argue that standardization can make plan implementation more predictable for public actors and industry, and that cooperation can build expertise in small municipalities. The segment also describes a knowledge limitation: the Helgeland process used an inverse planning principle because the municipalities lacked information about areas suitable for aquaculture. Emerging technological innovations are described as driving a shift from small-scale to large-scale production and increasing demand for larger sites in deeper waters. The article does not evaluate specific new technologies or their environmental effects.",
+    "A6": "The authors identify competing interests in coastal space, including aquaculture, fisheries, environmental protection, recreation, shipping, tourism, transport and military uses. Conflicts can arise over area designation, environmental impacts on wild salmon, and the distribution of economic benefits and burdens. In Fensfjord, municipalities prioritized shipping and did not designate new aquaculture areas, while the navy’s withholding of areas for exercises also created uncertainty in several processes. A Tromsø-region case illustrates conflict across municipal boundaries: one process did not designate aquaculture areas in a national salmon fjord because of perceived risk to wild salmon, while a neighboring process designated areas on the same fjord. The authors argue that legitimacy and predictability benefit from shared data, common criteria, transparent cooperation and a holistic regional perspective. They also caution that local autonomy and disagreement can prevent joint decisions.",
+    "A7": "The segment does not set out measures that the aquaculture industry itself can apply to make its spatial use more efficient or sustainable. It does report that industry development requires new and larger sites, including deeper-water areas, and that site consolidation and increased production per site have occurred alongside a decline in the number of sites; these are described as sector trends, not recommendations for industry-led measures. Industry actors participated in regional meetings and, in one planning process, aquaculture companies were invited to provide a wish list of sites. The article’s proposed planning improvements concern municipal and inter-municipal coordination rather than operational actions by companies.",
+    "A8": "The authors state that aquaculture sites influence one another, especially through the spread of diseases and parasites, and that dispersion range appears to be the main limiting factor for sea-based fish farming. Environmental and veterinary regulations require distances between production sites; a cited regulatory source gives general distances of 2.5 km between farms and 5 km between a farm and a slaughtery. The authors explain that the scope of disease dispersal depends on prevailing regulations and increasingly complex modelling of physical and ecological parameters, including currents and offsetting distance. They also describe a proposed zoning system with aquaculture-free fire gates between production zones, which could affect existing site structures. The article treats connectivity and disease mainly as constraints relevant to planning, rather than providing farm-level biosecurity practices."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

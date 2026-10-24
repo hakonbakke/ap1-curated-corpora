@@ -1,0 +1,161 @@
+{
+ "doc_id": "2025_mikkelsen_samlet-pavirkning-nord",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 3,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Forvaltning av samlet påvirkning på natur i nord: Krav, føringer, praksis og utfordringer",
+    "Illustrasjon (delvis kunstig intelligens): Open AI / Eirik Mikkelsen",
+    "Kontaktinformasjon",
+    "Hovedkontor Tromsø",
+    "Ås",
+    "Stavanger"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 35643,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The authors’ framing is that decisions affecting ecosystems should account for cumulative pressures from existing and expected future activities, including activities in other sectors and pressures originating outside the area. They describe ecosystem-based management as balancing resource use with ecological limits, rather than requiring strict protection. The report also notes that sector authorities retain responsibility for their own environmental effects, creating a need for cross-sector coordination. It does not analyze how current aquaculture spatial plans balance industry development against competing uses in particular locations.",
+    "A1": "",
+    "A2": "",
+    "A3": "The authors explain that an individual aquaculture project should be assessed not only for its own added pressure but also for how that contribution changes the combined effects of existing and planned activities. The Ministry’s guidance to the Nature Diversity Act, as described in the report, says an aquaculture facility assessment should consider other aquaculture facilities in the same area, other types of measures, and pressures such as climate change and natural population fluctuations. The authors identify challenges including incomplete knowledge and data, limited methods and guidance, reliance on qualitative rather than quantitative assessments, and fragmented sectoral management. This segment does not report how such assessments are applied in actual aquaculture siting decisions.",
+    "A4": "The authors describe economic incentives, such as taxes or subsidies, as one general category of management measure alongside direct rules and measures aimed at knowledge or awareness. They note that choosing measures can involve economic, regional-policy, distributional and human-rights considerations, and that responsibility and costs may need to be allocated across sectors. These are general arguments about environmental management, not findings about aquaculture-specific fees, licensing incentives, site selection or how aquaculture benefits and costs are distributed.",
+    "A5": "The authors argue that sound cumulative-impact assessment requires knowledge of pressures already affecting ecosystems and pressures expected in the near future. They identify general obstacles reported in the literature: insufficient data and knowledge, lack of methods and guidance, uncertainty about what cumulative impact means, and reliance on qualitative judgments rather than quantitative models. They also describe interactions among pressures and indirect effects through ecosystems as difficult to identify and predict. This segment does not discuss aquaculture-specific spatial data or emerging technologies that could change siting opportunities.",
+    "A6": "The authors describe a general tension between sectoral responsibilities and the need for holistic, cross-sectoral management. They argue that authorities may defend sector interests rather than achieve coherent policy, and that cumulative pressures can come from different sectors and from outside the area under consideration. Decisions about measures may also involve economic, regional-policy, distributional and human-rights considerations, as well as allocating responsibility and costs. These are general arguments in the report; this segment does not document specific conflicts between aquaculture and other coastal uses or evaluate the legitimacy or predictability of siting decisions.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [
+    "2 Metode",
+    "2.1 Kartlegging av forvaltningsrammeverk",
+    "2.2 Spørreundersøkelse",
+    "3 Krav i regelverk om å håndtere samlet påvirkning",
+    "3.1 Overordnet lovverk Plan- og bygningsloven",
+    "Naturmangfoldloven"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 47008,
+   "key_figures": [
+    {
+     "quote": "Denne tabellen inneholdt 18 spørsmål fordelt på 6 kategorier som ble besvart for hvert dokument.",
+     "statement": "The authors' framework for reviewing each management document used 18 questions in 6 categories."
+    },
+    {
+     "quote": "Undersøkelsen ble sendt til 370 personer i november 2024 via epost.",
+     "statement": "The authors sent their survey to 370 people in November 2024."
+    },
+    {
+     "quote": "Respondentene fikk to uker på å svare. Vi sendte to påminnelser etter henholdsvis 10 og 15 dager.",
+     "statement": "The authors gave survey respondents two weeks to reply and sent two reminders after 10 and 15 days."
+    },
+    {
+     "quote": "Naturmangfoldloven dekker landområder og marine områder ut til 12 nautiske mil, det vil si ut til territorialgrensen.",
+     "statement": "The authors' legal reading is that the Nature Diversity Act covers land and marine areas out to 12 nautical miles, the territorial boundary."
+    },
+    {
+     "quote": "Den norske sonen utgjør 313 000 km².",
+     "statement": "The authors report that the Norwegian economic zone in the Barents Sea covers 313 000 km²."
+    },
+    {
+     "quote": "Kommunenes planmyndighet i kystsonen strekker seg 1 nautisk mil ut fra grunnlinjen langs kysten.",
+     "statement": "The authors' description of Norwegian coastal planning states that municipal planning authority extends 1 nautical mile from the baseline."
+    },
+    {
+     "quote": "Det er videre fastsatt at de samlete påvirkningene av de foreslåtte tiltakene i en plan, arealplan eller annet, bør vurderes, og at vurderingen skal inkludere positive, negative, direkte, indirekte, midlertidige, permanente, kortsiktige og langsiktige virkninger av et tiltak.",
+     "statement": "The authors' legal reading of the impact-assessment regulation is that cumulative effects of proposed measures should be assessed across positive and negative, direct and indirect, temporary and permanent, short-term and long-term effects."
+    },
+    {
+     "quote": "Det er videre fastsatt at de samlete påvirkningene av de foreslåtte tiltakene i en plan, arealplan eller annet, bør vurderes, og at vurderingen skal inkludere positive, negative, direkte, indirekte, midlertidige, permanente, kortsiktige og langsiktige virkninger av et tiltak. Forskriften inneholder imidlertid en liste over 21 faktorer som kan påvirkes av tiltak.",
+     "statement": "The authors' legal review reports that the impact-assessment regulation lists 21 factors that may be affected by measures."
+    },
+    {
+     "quote": "Vurdering av grad av måloppnåelse er et vesentlig grunnlag for departementenes utarbeiding av handlingsprogrammet i forvaltningsplanen, som står i siste kapittel i stortingsmeldingene som legges fram hvert 4. år.",
+     "statement": "The authors report that Norwegian marine-management plan white papers are presented every 4 years, with goal attainment informing the action programme."
+    },
+    {
+     "quote": "Svalbardmiljøloven ble endret med virkning fra 1. januar 2025.",
+     "statement": "The authors report that amendments to the Svalbard Environmental Protection Act took effect on 1 January 2025."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors' legal analysis says that coastal-zone planning under the Planning and Building Act is intended to coordinate sectors and interests and support sustainable development. The Aquaculture Act provides for aquaculture only when it is environmentally responsible and requires holistic consideration of area needs and interests inside and outside the industry. The authors find, however, that the legal framework does not clearly specify how cumulative effects should be assessed in practice. In the Barents Sea, the marine-management plans provide an overall political framework, but they are not legally binding and leave sectors considerable discretion. The authors argue that this can fragment management and leave real trade-offs between activities and interests unresolved. Municipal coastal planning authority extends 1 nautical mile from the baseline.",
+    "A1": "The segment identifies aquaculture as one of several activities affecting coastal ecosystems, alongside urban development, fisheries, agriculture, hydropower, transport, industry and tourism. The authors' legal reading is that the Aquaculture Act combines environmental responsibility with holistic assessments of area needs and interests, including interests beyond the aquaculture industry, as well as business profitability, competitiveness and geographic distribution of value creation. They conclude that these provisions imply integrated consideration, but that there are no clear legal requirements or guidance on how cumulative impacts should be assessed in practice. The segment does not discuss licensing allocation, site availability, fish health or how these factors interact in individual development decisions.",
+    "A2": "The segment does not describe the stages of an aquaculture site application, processing times, or where delays, rejections or conflicts most often occur. It gives a general legal account of coastal planning: plans, public regulations and impact assessments under the Planning and Building Act require broad participation and consultation, which should bring different interests and pressures into consideration. The authors also explain that an impact assessment is required for certain local and regional plans and specified measures, or where significant environmental or social effects are possible. These are general process requirements, not evidence about the frequency or timing of aquaculture application outcomes.",
+    "A3": "The authors' legal review finds that cumulative effects are explicitly required as a basis for ecosystem decisions under the Nature Diversity Act and that the impact-assessment regulation requires cumulative effects of proposed plans or measures to be considered. However, the regulation does not specify methods for assessing effects. For coastal water management, the authors say that individual indicator scores are assessed without considering interactions among indicators; the lowest score determines ecological status and informs proposed measures. The authors find that the Aquaculture Act implies holistic assessment but does not explicitly require cumulative-impact assessment. More broadly, they identify a lack of clear practical requirements and guidance. In the Barents Sea, methodological work is reported as ongoing, including an approach distinguishing activities, pressures and ecosystem components.",
+    "A4": "The segment does not examine economic instruments, fees, taxation or financial incentives for choosing aquaculture sites, nor does it assess how costs and benefits are distributed among stakeholders. It does describe relevant legal objectives: the Aquaculture Act includes business profitability and competitiveness, as well as sustainability and geographic distribution of value creation, and requires holistic consideration of area needs and interests. The authors also note that water-management rules do not provide extra authority to impose measures or create incentive schemes; implementation is left to sector authorities and municipalities within their budgets and areas of authority. This can constrain whether planned measures are carried out.",
+    "A5": "The authors describe marine-management knowledge as produced by a central-government steering group, the Norwegian marine expert forum and a monitoring group comprising directorates and some research institutes. Monitoring mainly tracks marine environmental condition and activity levels; monitoring of direct effects is less frequent. The authors note efforts to improve cumulative-impact methods using an approach that considers activities, pressures and ecosystem components. For aquaculture decisions, the segment identifies the general Nature Diversity Act requirement that decision-making be based, as far as reasonable, on scientific ecological and biological knowledge, with traditional knowledge also considered and the knowledge requirement proportionate to the matter and risk of harm. The segment does not discuss emerging technologies.",
+    "A6": "The authors describe coastal planning as requiring broad participation and consultation and say that the Aquaculture Act requires holistic consideration of area needs and interests within and outside the industry. The Nature Diversity Act requires measures to be weighed against important societal interests, with Sami interests particularly important. In the Barents Sea, the authors argue that non-binding plans leave sectors free to interpret how to respond to cumulative effects and do little to make concrete trade-offs between activities and interests. This discretion can contribute to fragmented management. The segment does not provide specific aquaculture siting disputes or assess the legitimacy or predictability of individual decisions.",
+    "A7": "",
+    "A8": "The segment lists introduced species and diseases among the pressures relevant to coastal waters in Northern Norway. It also identifies aquaculture as a coastal activity that can affect ecosystems. These are general descriptions of pressures, not findings about disease transmission between aquaculture farms. The segment provides no discussion of water connectivity, farm separation, biosecurity measures or how disease risk affects production and facility operation."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [
+    "3.7 Oppsummering på tvers av caseområder",
+    "4 Praksis ved håndtering av samlet påvirkning i forvaltningen – resultater fra spørreundersøkelse",
+    "5 Oppsummering og videre arbeid",
+    "Appendiks",
+    "Questions to answer for each legal text"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 19103,
+   "key_figures": [
+    {
+     "quote": "totalt 6 av 18 lover og forskrifter som nevner enten «samlet påvirkning» eller «økosystembasert»",
+     "statement": "The authors find that 6 of 18 laws and regulations reviewed mention either cumulative impact or ecosystem-based management."
+    },
+    {
+     "quote": "Totalt 76 personer deltok i undersøkelsen. Disse representerte stat (N:33), kommune (N: 27), fylke (N: 8) og konsulentselskap (N: 8).",
+     "statement": "The authors' survey included 76 people from government, municipalities, counties and consultancy companies in Norway."
+    },
+    {
+     "quote": "46 % oppga at de i stor eller svært stor grad gjorde slike vurderinger",
+     "statement": "The authors' survey found that 46 % of participants said they assessed cumulative impacts to a large or very large extent in their work."
+    },
+    {
+     "quote": "Selv om bare 45 % oppgir at det i stor eller svært stor grad gjøres vurderinger av samlet påvirkning på natur, er prosentandelen 78 % når vi inkluderer de som svarer «i middels grad».",
+     "statement": "The authors' survey found that 45 % reported cumulative-impact assessment to a large or very large extent, rising to 78 % when respondents who said a moderate extent are included."
+    },
+    {
+     "quote": "Samtidig svarer 58 % at de bruker veiledere for hvordan man skal gjøre vurderinger av samlet påvirkning på natur.",
+     "statement": "The authors' survey found that 58 % of respondents use guidance for assessing cumulative impacts on nature."
+    },
+    {
+     "quote": "den klare majoriteten (72 %) svarer at sist de gjorde en vurdering av interaksjoner mellom påvirkningsfaktorer så gjorde de en skjønnsmessig vurdering.",
+     "statement": "The authors' survey found that 72 % of respondents used a discretionary judgment the last time they assessed interactions between impact factors."
+    },
+    {
+     "quote": "Til sammen svarer 63 % at de opplever å ha middels, noe eller svært liten tilgang på nødvendig kunnskap om hvordan ulike påvirkningsfaktorer kan interagere med hverandre.",
+     "statement": "The authors' survey found that 63 % reported having moderate, somewhat limited or very limited access to the necessary knowledge about interactions between impact factors."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors' cross-case review finds that laws and management plans often require cumulative-impact or ecosystem-based assessments, and that the Nature Diversity Act and the environmental impact assessment regulations influence decisions under other management regimes. However, the review does not explain how aquaculture areas are spatially allocated or how industry development is balanced against competing uses. The Aquaculture Act is described in the table as requiring sustainable and environmentally responsible activity, but this segment gives no account of the practical balancing of interests or spatial-planning decisions.",
+    "A1": "The segment offers only limited aquaculture-specific evidence. The authors' legal review lists the Aquaculture Act as referring to sustainable and environmentally responsible activity, while broader requirements in the Nature Diversity Act and environmental impact assessment regulations may also shape decisions under sectoral rules. The authors find that requirements to assess cumulative impacts are common across the cases, but that regulations rarely specify how assessments should be conducted. There is no discussion here of site availability, licensing stages, fish health, or how these factors interact in coastal aquaculture development.",
+    "A2": "",
+    "A3": "The authors find that cumulative-impact assessment is required or guided by several laws and management plans across the case areas, although some rules use related terms such as ecosystem-based, holistic or sustainable rather than explicitly requiring a cumulative assessment. The Nature Diversity Act and environmental impact assessment regulations are described as providing cross-cutting requirements that also affect decisions under sectoral regimes. Yet the authors find few concrete requirements for identifying relevant impact factors, measuring or assessing impacts, or weighing competing considerations. In the survey, 72 % said their latest assessment of interactions between impact factors relied on discretionary judgment, and 63 % reported moderate to very limited access to necessary knowledge about how such factors interact. The authors identify both methodological and knowledge gaps and call for transparency about discretionary judgments.",
+    "A4": "",
+    "A5": "The authors' survey of 76 public-sector and consultancy participants indicates that many use guidance in assessing impacts, but access to guidance is not universal. The authors report that 58 % said they use guidance for cumulative-impact assessment. They also find gaps in knowledge about how impact factors interact: 63 % reported moderate, somewhat limited or very limited access to necessary knowledge on this subject. The authors argue that shortages of knowledge, methods and guidance may contribute to reliance on discretionary judgment. Their review finds that legislation generally does not specify how assessments should be carried out. The segment does not discuss emerging technologies or aquaculture-specific knowledge systems.",
+    "A6": "The authors find that legal terms such as holistic assessment can be interpreted differently across regulatory regimes, agencies and individual case officers, and may not clearly require assessment of cumulative effects on the natural environment. Their survey also indicates extensive reliance on discretionary judgment when assessing interactions between impact factors. The authors do not characterize particular aquaculture conflicts, but argue that transparency about the basis for discretionary assessments is important. They note that assessments are often required without detailed rules on methods, impact-factor identification or trade-offs, which may undermine predictability across cases.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

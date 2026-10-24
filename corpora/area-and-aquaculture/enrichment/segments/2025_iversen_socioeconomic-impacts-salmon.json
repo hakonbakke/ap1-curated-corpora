@@ -1,0 +1,58 @@
+{
+ "doc_id": "2025_iversen_socioeconomic-impacts-salmon",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 14,
+   "chars": 67124,
+   "key_figures": [
+    {
+     "quote": "In total, we estimate that there are 19,600 employees in core activities and more than 38,000 employees created by the ripple effects of the industry, giving a total employment of 57,800 associated with the Norwegian aquaculture sector.",
+     "statement": "The authors estimate employment in Norway’s salmon aquaculture sector in 2022, distinguishing core activities, supplier ripple effects and the total."
+    },
+    {
+     "quote": "When looking at value creation, the production created a value of 40 billion NOK, while ripple effects were estimated to be an additional 27 billion NOK. As such, the industry reached a total value added of 67 billion NOK.",
+     "statement": "The authors estimate value creation and supplier ripple effects in Norwegian salmon production in 2022."
+    },
+    {
+     "quote": "The multiplier for employment in production (3.23) (see also Table 1) is significantly stronger than for value creation (1.66).",
+     "statement": "The authors report employment and value-creation multipliers for the Norwegian salmon production sector."
+    },
+    {
+     "quote": "For Northern Norway (Nordland, Troms, and Finnmark), their share of production has increased from 33% in 2005 to 42%–44% in later years.",
+     "statement": "The authors report the Northern Norway share of Norwegian salmon and trout production, comparing 2005 with later years covered by the study."
+    },
+    {
+     "quote": "The share of salmon processed in Norway has increased from around 10% in the early 1990s to more than 25% in 2023 (Figure 6).",
+     "statement": "The authors report the share of farmed salmon processed in Norway, from the early 1990s to 2023."
+    },
+    {
+     "quote": "The volume for processing was around 100,000 tonnes in 2002, while in 2022 it exceeded 450,000 tonnes.",
+     "statement": "The authors report the volume of salmon processed in Norway in 2002 and 2022."
+    },
+    {
+     "quote": "In 2022, 142 municipalities received a tax contribution from the Aquaculture Fund, with payments to municipalities ranging from 116 million NOK down to 0.6 million (Figure 13).",
+     "statement": "The authors report the number of Norwegian municipalities receiving Aquaculture Fund payments in 2022 and the range of their payments."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not examine spatial planning rules or how environmental considerations and competing coastal uses are balanced. It does report that Norwegian salmon farms are spread across nearly 1000 sites along most of the coastline, and that production is geographically dispersed, largely in coastal communities. The authors describe production’s centre of gravity as having moved northwards over time. These are findings about the industry’s spatial distribution, not an analysis of what determines siting or how planning authorities make trade-offs.",
+    "A1": "The segment offers only limited evidence on factors shaping development opportunities. It reports that Norwegian salmon farms are distributed across nearly 1000 sites and that growth in production capacity is regulated: every second year, the industry may increase production by a maximum of 6%, with no growth or negative growth in areas with too high lice levels. Capacity increases are auctioned as new licenses or additions to existing ones. The segment does not explain site availability, application requirements, spatial planning procedures or how fish health interacts with specific site-selection decisions.",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors describe regulatory and economic arrangements that link production growth to area access and municipal revenue. Every second year, increased capacity is auctioned as new licenses or additions to existing licenses, subject to a maximum 6% increase and no growth or negative growth in areas with too high lice levels. Auction proceeds go to the Aquaculture Fund and are distributed to counties and municipalities hosting aquaculture; the authors say this incentivizes municipalities to facilitate aquaculture because payments are calculated using existing and new sea sites. The segment also notes an additional rent tax of 25% on profits, on top of the 22% profit tax, with a free-profit allowance before rent tax applies. It does not assess the full distribution of benefits and costs among stakeholders.",
+    "A5": "The segment’s knowledge base is an economic impact review using company accounts, employment records, supplier ledgers and Statistics Norway input-output matrices, with a custom database and geographic modelling to estimate local and regional economic effects. It discusses industry innovation and specialized suppliers, including monitoring systems, genetics, vaccines, RAS systems, well-boats and delousing equipment. These technologies are presented as part of the industry’s development and supply chain, not assessed for how they change siting opportunities or environmental impacts. The authors do not examine emerging spatial-planning technologies or environmental knowledge used in site decisions.",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment mentions increasing efforts to control lice and disease as part of the explanation for the range of services purchased by salmon producers. It also reports that areas with too high lice levels may have no production growth or negative growth under the capacity-adjustment system. These points indicate that fish health can affect industry operations and permitted growth. However, the segment does not discuss biosecurity, disease transmission between farms, water connectivity, or how those factors should inform farm spacing and siting."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

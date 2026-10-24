@@ -1,0 +1,245 @@
+{
+ "doc_id": "salt_1065_ku-arealplanlegging",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 5,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 19,
+   "chars": 49562,
+   "key_figures": [
+    {
+     "quote": "Prosjektet har studert syv vedtatte arealplaner presentert i tabell 1.",
+     "statement": "The authors' study examined syv adopted spatial plans in Norway."
+    },
+    {
+     "quote": "Dokumentanalysen ble fulgt opp med åtte semi-strukturerte intervju med planleggere, andre administrativt ansatte og personer som på ulike måter har vært tett involvert i planprosessene i fem av planene",
+     "statement": "The authors conducted åtte semi-structured interviews with people involved in five of the plans studied."
+    },
+    {
+     "quote": "I tillegg har flere akvakultursøknader relevante for noen av planene (rundt 18 saker) blitt studert.",
+     "statement": "The authors studied rundt 18 aquaculture applications relevant to some of the plans."
+    },
+    {
+     "quote": "Kort oppsummert er kysten inndelt i 13 produksjonsområder.",
+     "statement": "The cited production-area system divides the Norwegian coast into 13 production areas."
+    },
+    {
+     "quote": "Hvert andre år gjøres det en vurdering av den påvirkning akvakultur har i hvert produksjonsområde etter de til enhver tid gjeldende miljøindikatorene.",
+     "statement": "Under the cited production-area system, aquaculture impacts are assessed in each production area hvert andre år."
+    },
+    {
+     "quote": "Her opplyses det at det er at det er gjennomført 13 konsekvensutredninger for akvakulturtiltak. Dette er lite sett opp mot det totale antallet lokaliteter på rundt 1200 anlegg.",
+     "statement": "A cited 2021 report recorded 13 impact assessments for aquaculture measures, compared in the segment with rundt 1200 aquaculture sites."
+    },
+    {
+     "quote": "Opprinnelig var det en øvre grense på 780 MTB per standard tillatelse (945 MTB i Troms- og Finnmark av produksjonshensyn)",
+     "statement": "The segment reports cited original maximum biomass limits of 780 MTB per standard licence and 945 MTB in Troms- og Finnmark for production reasons."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors' overall finding is that spatial clarifications in coastal and marine areas can improve, particularly in resolving aquaculture's relationship with other interests. Their case studies found some dispensations were repeat attempts or applications for entirely new areas not allocated to aquaculture in the plan. The legal account explains that municipalities have substantial influence over where aquaculture can operate because site licences cannot be granted where production conflicts with municipal plans. Sector authorities and the Sámi Parliament can object to plans. The report frames the planning goal as balancing environmental considerations and other national, regional, and local interests with sustainable business development. It recommends better resourcing and organization of planning and stronger assessments of environmental effects.",
+    "A1": "The authors describe development opportunities as shaped by the availability of areas allocated for aquaculture in municipal plans and by subsequent licensing. Under the legal framework described, the county authority processes site applications, but approval also requires relevant permissions or approvals from the Food Safety Authority, the County Governor, and the Coastal Administration. The final assessment must find the operation environmentally responsible, and the site-specific maximum permitted biomass is set with regard to local environmental conditions and site suitability. The report also describes production-area controls, where capacity changes apply to licence biomass rather than site-specific biomass. Fish health and environmental controls are handled through separate regulatory responsibilities; the segment does not assess how these factors affect specific site opportunities.",
+    "A2": "The legal overview describes an application process in which an applicant seeks a site permit from the county authority under the aquaculture rules. Applications must include specified information, including current measurements. The county authority initially considers whether an impact assessment is required; the authors note that few aquaculture applications have triggered the formal assessment procedures under the impact-assessment regulations. Before approval, the application requires approvals from the Food Safety Authority, the County Governor, and the Coastal Administration, as well as input from the Directorate of Fisheries. The county authority then makes an overall decision. The segment does not identify common stages for delays, rejections, or conflicts, or provide process durations.",
+    "A3": "The authors identify assessment of cumulative environmental burden as a subject municipalities can and should address in environmental impact assessments at municipal-plan level. They also recommend clarifying which topics should be assessed at municipal, detailed-plan, and licensing levels, and what information municipalities cannot reasonably be expected to gather and assess. The authors' case-study summary finds that selected topics are generally described well, but assessments of measures' environmental effects are sometimes deficient. Plan documents often make it difficult to see how assessment topics were scoped, how competing interests were weighed, and how uncertainty and knowledge gaps were handled. The report recommends examining whether the combined planning and aquaculture-management systems adequately assess cumulative impacts at strategic and project levels. The segment gives no specific cumulative-impact method or case result.",
+    "A4": "",
+    "A5": "The authors base their study on document analysis of plans and assessment documents, interviews, a meeting with sector authorities, and comparison with legal requirements and interdisciplinary literature. They caution that qualitative findings from selected geographic cases may not represent planning challenges across all coastal and marine areas. Their findings point to difficulties in understanding how knowledge gaps and uncertainty were assessed from plan documents. They identify nature diversity and water quality as especially relevant environmental topics, and recommend strengthening the knowledge base and providing clearer, more standardized guidance for marine impact assessments. The legal overview also describes the production-area system's expert assessments as drawing on available knowledge, monitoring data, and modelling data. The authors say further research is needed on how planning and aquaculture management together assess environmental consequences.",
+    "A6": "The authors' principal finding is that plans do not always settle the relationship between aquaculture and other interests. In some cases, later applications for dispensations appear to revisit earlier issues or seek areas not allocated to aquaculture in the plan. The case selection also includes examples involving aquaculture alongside wild salmon and recreational interests, Sámi cultural foundations, fisheries, and water quality and pollution in a built-up area. The authors find that documents do not always make the balancing of interests transparent, and recommend better organization, participation, and openness in planning. The legal overview notes that sector authorities and the Sámi Parliament may object to plans. It also emphasizes that clearer accounts of environmental assessments and uncertainty can support more robust planning decisions.",
+    "A7": "The segment does not present a general set of measures for industry-led efficient or sustainable spatial use. It does describe a regulatory route under which authorities may offer capacity increases regardless of a production area's environmental status when an operator can document that a site has kept sea-lice levels below specified limits for a specified period and meets other requirements. This is a regulatory incentive linked to lice performance, not a finding about spatial-use efficiency. The authors do not assess its effects on site selection or propose it as a planning measure.",
+    "A8": "The segment describes fish health and disease-related matters as part of operational regulation, with the Food Safety Authority responsible for checks and enforcement concerning infectious conditions, disease, and animal welfare. Approval from that authority is required before an aquaculture site application can be approved. It does not discuss water connectivity between farms, disease transmission pathways, or how biosecurity considerations shape site selection. The authors' broader account of licensing therefore establishes the presence of health approval in the process but offers no findings on connectivity or disease risk between facilities."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 19,
+   "page_to": 40,
+   "chars": 49886,
+   "key_figures": [
+    {
+     "quote": "Fisken holdes i sjøanlegg (merdkonstruksjoner) i havet i 14 til 22 måneder (til den er fra 4 kg og opp til 6 kg), før den tas opp, slaktes og går til videre produksjon.",
+     "statement": "The authors describe the sea-phase duration and harvest size of farmed salmon in Norway; these are general production figures, not a cited study."
+    },
+    {
+     "quote": "Etter en endt produksjonssyklus er det et krav om minimum to måneders brakklegging av lokaliteten.",
+     "statement": "The authors state the minimum fallowing period required at a Norwegian aquaculture site after a production cycle; this is a regulatory requirement."
+    },
+    {
+     "quote": "Den interkommunale kystsoneplanen for en rekke kystkommuner i Helgeland sør i Nordland fylke, også referert til som Kystplan Helgeland, ble gjennomført i perioden 2013–2019.",
+     "statement": "The authors report the period of the Kystplan Helgeland process in Nordland; this is a finding about the plan studied."
+    },
+    {
+     "quote": "Det kom inn 31 forslag til tiltak, og alle gjaldt akvakultur.",
+     "statement": "The authors report the number and subject of proposed measures received during the initial Kystplan Helgeland phase; this is a finding about that plan process."
+    },
+    {
+     "quote": "Det kom inn totalt 52 innsigelser, og mange av innsigelsene var like for flere av kommunene.",
+     "statement": "The authors report the total objections to the first Kystplan Helgeland proposal; this is a finding about that plan process."
+    },
+    {
+     "quote": "Den andre delen av konsekvensutredningen er utredningen av 31 innspill om akvakultur, fordelt på 25 nye lokaliteter, 4 arealendringer og 2 flyttinger av anlegg.",
+     "statement": "The authors report the composition of aquaculture proposals assessed in the Kystplan Helgeland impact assessment; this is a finding about that plan."
+    },
+    {
+     "quote": "Som et kompromiss ble det laget en generell planbestemmelse om at det ikke tillates akvakultur i alle flerbruksarealer som er grunnene enn 20 meter.",
+     "statement": "The authors describe the depth threshold used to exclude aquaculture from shallower multi-use areas in Kystplan Helgeland; this is a finding about the plan."
+    },
+    {
+     "quote": "Planarbeidet startet opp i 2012 og ble vedtatt i alle kommunene i 2017.",
+     "statement": "The authors report the start and adoption years of the Interkommunal plan for Romsdalsfjorden across its participating municipalities; this is a finding about the plan."
+    },
+    {
+     "quote": "På Nordmøre gikk 11 kommuner sammen om Interkommunal kommunedelplan for sjøområdene på Nordmøre, også kalt Sjøområdeplan Nordmøre.",
+     "statement": "The authors report the number of municipalities involved in the Nordmøre intermunicipal sea-area plan; this is a finding about that plan."
+    },
+    {
+     "quote": "Det ble vedtatt et generelt krav om reguleringsplan for alle de seks nye akvakulturområdene i planen.",
+     "statement": "The authors report how many new aquaculture areas in Lebesby’s plan were subject to a general detailed-zoning requirement; this is a finding about that plan."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ plan cases show that aquaculture opportunities depend on how municipal plans designate sea areas and balance them against other uses. Kystplan Helgeland broadly allowed aquaculture in multi-use areas deeper than 20 meters unless conflicts or specified interests ruled it out, while Lebesby and Kvænangen allowed new sites only in designated single-use aquaculture areas. Nordmøre used multi-use zones giving aquaculture priority, with restrictions for wild salmon and sea trout and other site conditions. In Romsdalsfjorden, existing aquaculture areas were reviewed and the total area allocated to aquaculture was reduced. The cases also show that allocation in a plan does not itself guarantee a permit: later licensing considers more detailed statutory requirements and competing interests.",
+    "A1": "The authors’ cases identify site availability, planning design, knowledge and environmental constraints as interacting influences on coastal aquaculture. Plans may reserve single-use areas, allow aquaculture within multi-use areas, or impose species and location limits. Kvænangen expanded some existing sites to accommodate modern operating area needs, while removing others; Lebesby required detailed regulation and year-round environmental documentation, current measurements and dispersion modelling for new sites. In Kystplan Helgeland, lack of knowledge about seabed conditions and currents was used to explain why sustainable future sites were difficult to identify. Local knowledge also mattered: a Nordmøre site was found to be winter-ice-covered after a later application, a problem interviewees thought an open meeting might have revealed. Fish health and environmental monitoring can lead to fallowing or other restrictions.",
+    "A2": "The authors’ cases show that a site may be considered through municipal planning, possible detailed regulation, and a subsequent aquaculture licensing process, with sector authorities and other interests involved. In Lebesby, an application for a planned site was initially rejected by the county because no detailed zoning plan had been proposed; after dialogue, the zoning plan and licence application were to be processed in parallel. A second applicant created uncertainty because being first to apply does not confer priority under the licensing system; decisions involve an overall assessment under the Aquaculture Act. In Helgeland, a site included in a plan was later refused a licence, while another application was appealed by several authorities and fishing interests. These cases illustrate conflicts and procedural uncertainty, but the segment does not establish which stages most commonly cause delay or rejection.",
+    "A3": "The authors find that cumulative effects are treated unevenly across the plans. Kystplan Helgeland included an overall assessment and concluded that the cumulative burden on biodiversity was acceptable across the plan area, while also acknowledging knowledge gaps and the need for better mapping. In Bindal, the county governor objected that there was no real assessment of the increased burden from proposed sites, including escaped salmon and lice, and a temporary development prohibition was imposed pending an assessment of fjord capacity. Lebesby assessed overall plan effects and considered environmental documentation over a full year a way to improve the decision basis, but did not include the Water Framework Directive or water quality in the assessment. The cases indicate that cumulative assessment can be high-level, have incomplete data, and differ between plan areas; the segment does not describe a consistent method for linking production across farms to site decisions.",
+    "A4": "",
+    "A5": "The authors’ mapping of the plans identifies spatial data, thematic maps, local knowledge and impact assessments as core parts of the knowledge base for decisions. Romsdalsfjorden used thematic maps and a multi-criteria overlay analysis to identify conflict areas and inform boundaries for future use; the work to gather and quality-check data was more extensive than expected. Kystplan Helgeland’s documents identified insufficient knowledge of seabed topography, sediments, currents and hydrological conditions, as well as gaps in biodiversity and cultural-heritage data. Lebesby’s assessment also noted that marine and seabed knowledge was poor and some coastal and fisheries data coarse or outdated. Interviews highlighted the need for better public information on aquaculture options and access to tracking data. The Romsdalsfjorden closed-farm application illustrates how changing technology can make plans based on earlier expectations less suited to new proposals.",
+    "A6": "The authors’ cases document conflicts among aquaculture, fisheries, wild salmon interests, biodiversity, cultural heritage, recreation, navigation, reindeer use and Sami interests. In Helgeland, objections focused heavily on the plan’s broad accommodation of aquaculture, and one municipality withdrew because it disagreed with the plan’s orientation. Applications at specific sites faced objections from fisheries organizations, cabin associations and public authorities; conflicts also arose over fishing grounds, bird nesting sites and navigation. In Lebesby, an objection by the Sami Parliament led to requirements to assess local fishing and the cultural basis of Sami sea fishing, but the municipality reported uncertainty about what those terms mean and who represents the interests. The authors also describe disagreements over interpretation of plan provisions and whether an aquaculture application conflicts with the plan. Interviewees associated effective planning with political anchoring, dialogue and local knowledge, while some plans suffered from weak administrative anchoring or unclear provisions.",
+    "A7": "The segment offers limited direct discussion of measures the industry itself may apply to improve sustainable spatial use. It does state that producers need access to multiple sites because a site must be fallowed after a production cycle, and that operators in some areas coordinate fallowing to reduce disease risk. Authorities can require coordinated fallowing groups when approving operating plans or applications. In Lebesby, interviews linked intensive operation at some established sites to a shortage of alternative sites for relieving production, as well as potentially less favourable currents than expected. This suggests that spreading production across suitable sites and coordinating their use can matter, but the segment does not evaluate industry-led measures for improving spatial efficiency more broadly.",
+    "A8": "The authors describe biosafety as a reason for coordinated fallowing: nearby sites may be left without production at the same time, often through cooperation among operators. The Food Safety Authority has considered coordinated fallowing when approving operating plans and may require groups of sites to fallow together during plan approvals or applications for establishment and expansion. The segment also describes monitoring and enforcement: the authority oversees disease and sea-lice limits and may order fish to be slaughtered, sites to be emptied and fallowed, or temporary reductions in site maximum allowable biomass. In Lebesby, the municipality wanted the Food Safety Authority more involved in planning because it was concerned that disease outbreaks at sea farms could pose a risk to a land-based hatchery in the inner fjord. The segment does not provide evidence quantifying connectivity or disease transmission between farms."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 40,
+   "page_to": 58,
+   "chars": 49975,
+   "key_figures": [
+    {
+     "quote": "Syv ulike typer av planer er kartlagt i oppdraget, og det er både forskjeller og likheter å spore i materialet.",
+     "statement": "The authors report that their Norwegian case-study material covered seven different types of plans."
+    },
+    {
+     "quote": "Et fellestrekk er at alle planprosessene, med unntak av reguleringsplanen for oppdrett på land i Farsund kommune, har tatt lang tid.",
+     "statement": "The authors find that all studied planning processes except the land-based aquaculture zoning plan in Farsund took a long time."
+    },
+    {
+     "quote": "Reguleringsplan landbasert oppdrett - Lundevågen\n1 år og 3 måneder\n(2020-2021)",
+     "statement": "The authors report that the Lundevågen land-based aquaculture zoning process in Farsund lasted 1 år og 3 måneder, from 2020-2021."
+    },
+    {
+     "quote": "Reguleringsplan i sjø - Syltefjorden\nRundt 3 år\n(2019-2021)",
+     "statement": "The authors report that the Syltefjorden marine zoning process took Rundt 3 år, from 2019-2021."
+    },
+    {
+     "quote": "Søknaden omfattet en årlig produksjon på inntil 24 000 tonn fordelt på smolt, postsmolt og matfisk av laks.",
+     "statement": "The authors report that the 2021 permit application for the Lundevågen land-based facility sought annual production of up to 24 000 tonn across smolt, postsmolt and salmon for consumption."
+    },
+    {
+     "quote": "Mattilsynet vedtok en bekjempelsessone på 10 km etter et sykdomsutbrudd (ILA) på en av lokalitetene sommeren 2019.",
+     "statement": "The authors report that, after an ILA outbreak at a Kvænangen site in summer 2019, the Food Safety Authority established a 10 km eradication zone."
+    },
+    {
+     "quote": "Det kom syv merknader til oppstartsvarselet.",
+     "statement": "The authors report that seven comments were submitted on the start-up notice for the Syltefjorden zoning plan."
+    },
+    {
+     "quote": "Det kom inn totalt 13 merknader til oppstartsvarselet fra sektormyndigheter som gikk på naturmangfold og havneforhold, men også fra en del naboer",
+     "statement": "The authors report that 13 comments were submitted on the Lundevågen start-up notice, from sector authorities and neighbours."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ case analysis shows that spatial decisions are made through municipal and regulatory plans, followed by licensing decisions that may leave site details such as location, size and production capacity to later stages. Their analysis finds that plan decisions have often failed to resolve aquaculture conflicts, with dispensations sometimes reopening disputes or postponing them. The authors argue that strategic planning should identify suitable sites, assess cumulative environmental burden and consider alternative locations. They recommend designated single-use aquaculture areas where justified, while allowing multi-use areas only where aquaculture does not conflict with recorded interests and the assessment is adequate. Environmental considerations are assessed unevenly: water-management issues and cumulative effects are often omitted or weakly addressed, while fisheries, nature values, neighbouring uses and safety can also shape decisions.",
+    "A1": "The authors identify site availability, the quality and currency of maps, and whether operators provide information about suitable locations as factors affecting development opportunities. Missing approved sites from plan maps can force operators to seek dispensations, while new sites proposed after plans are adopted may not have received strategic-level assessment. In the Syltefjorden case, the zoning plan did not specify facility placement, size or production capacity, leaving these matters to the aquaculture permit process. Environmental knowledge, competing interests, municipal resources and the division between planning and licensing interact: the authors argue that licensing review is poorly suited to assess cumulative aquaculture effects across a wider area. The segment also describes disease-related operational constraints in Kvænangen, where an ILA outbreak led to a 10 km eradication zone.",
+    "A2": "The cases show planning and licensing as distinct, sometimes lengthy stages. In Syltefjorden, a private proposal proceeded through a start-up notice, assessment, public consultation, municipal decision, complaint review and a still-pending permit application. The authors report that the process took Rundt 3 år (2019-2021); the permit application remained under county-authority consideration. In Lundevågen, the zoning plan was adopted in 1 år og 3 måneder (2020-2021), but later licensing conditions and delayed construction meant that a plan alone did not ensure prompt establishment. The Kvænangen cases show that dispensations can generate objections and appeals, particularly where a site had been removed from a plan or fisheries interests objected. The authors find that disputes, appeals and later licensing requirements can prolong decisions even after a plan is adopted.",
+    "A3": "The authors’ central finding is that cumulative effects are not consistently incorporated into spatial plans, and that cumulative assessments over wider areas could be improved. They argue that municipal-level decisions should assess overall environmental effects and alternatives before site allocation; these assessments should not be deferred to individual aquaculture licensing. The segment notes that planning assessments sometimes rely on available information without site-specific suitability studies, and that some cases omit water-quality or water-management assessment. In Kvænangen, the plan described cumulative ecosystem pressure as limited based on current knowledge while acknowledging possible effects on ecosystems and anadromous salmon. The authors also discuss Sivilombudet’s legal reading in the Brønnøy and Alver matters: licensing is poorly suited to assess aquaculture collectively across a larger area. They identify uncertainty about what constitutes sufficient knowledge, and call for clearer guidance.",
+    "A4": "The segment does not report empirical findings on how economic instruments distribute aquaculture benefits and costs among stakeholders. It does make a policy recommendation that funding for municipal coastal planning and competence-building could be considered from the aquaculture fund, resource-rent taxation or other sources. The authors present this as a possible way to support assessment, participation and stronger decision-making, not as an evaluated economic instrument. They argue that investing in robust planning may reduce later conflict-management and appeals costs. They also note that dispensations may enable production-capacity or site adjustments that can improve environmental operations or animal welfare, but do not quantify who receives those benefits or bears associated costs.",
+    "A5": "The authors find that planning decisions draw on varied knowledge bases and methods, with uneven documentation and quality. The cases use public guidance, consultant assessments, thematic maps, existing information and, in Syltefjorden, biological-mapping handbooks. Some assessments lacked site-specific suitability investigations, alternatives, literature review or clear descriptions of uncertainty; water environment and cumulative effects were also often weakly addressed. The authors emphasize the need for current maps that include approved sites and relevant interests, and for transparent written reasoning so decisions can be scrutinized. They identify municipal capacity, staff turnover and the cost of environmental assessments as constraints, recommending stronger public support, standardized guidance and early involvement by sector authorities. The segment mentions technology development as a reason to allow sufficient room for future adjustments, but does not assess emerging technologies’ environmental effects or siting opportunities.",
+    "A6": "The cases document conflicts between aquaculture and fisheries, nature conservation, Sami interests, neighbours, local users and other marine or industrial uses. In Kvænangen, a proposed site removed from the plan after an objection was later pursued through a dispensation; the County Governor found that granting it would undermine the recently adopted plan and fisheries purpose. In Syltefjorden, objections focused on fishing grounds and concerns for wild salmon and Arctic char; the final plan was nevertheless upheld after complaint review. Lundevågen planning raised concerns about odour, air effects, harbour access, traffic, noise and nearby uses. The authors find that long processes can weaken trust and that poor documentation of trade-offs, limited participation and dispensations can damage legitimacy. They recommend better resourcing, transparency, genuine local participation and clearer assessment of alternatives and competing interests.",
+    "A7": "The authors argue that aquaculture operators can help ensure efficient and sustainable spatial use by providing municipalities with good information about suitable sites and by submitting concrete proposals during coastal planning, rather than relying on later dispensations. They note that operators may withhold proposed sites for competitive reasons, since other operators could apply for areas designated in a plan. The segment also describes applications to expand production capacity or adjust facility placement; such changes may, in some cases, support better environmental operation or animal welfare. The authors’ policy recommendation is to assess and designate suitable aquaculture areas strategically, with enough room for technological development, modernization and site adjustments, while avoiding dispensations that challenge or displace adopted plans.",
+    "A8": "The segment provides one disease-related example relevant to farm operation and biosecurity. The authors report that an ILA outbreak at a Kvænangen aquaculture site in summer 2019 led the Food Safety Authority to establish a 10 km eradication zone. The operator then faced difficulty operating normally at the municipality’s permitted sites and sought a dispensation for another location. This illustrates how disease controls can constrain the usable site network and trigger planning conflicts. However, the segment does not explain water connectivity between farms, disease-transmission pathways, or how such connectivity is incorporated into siting decisions or biosecurity planning."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 58,
+   "page_to": 74,
+   "chars": 49675,
+   "key_figures": [
+    {
+     "quote": "Bestemmelser om å ikke tillate akvakultur grunnere enn en viss dybde (20 meter i eksemplet i casestudiene).",
+     "statement": "The authors give 20 meter as a depth restriction used in case studies of coastal spatial planning; this is a reported case-study example."
+    },
+    {
+     "quote": "Bestemmelser om at akvakultur ikke tillates innenfor en viss avstand til land (50 meter i eksemplet i casestudiene).",
+     "statement": "The authors report 50 meter as a land-distance restriction used in the case studies; this is a reported case-study example."
+    },
+    {
+     "quote": "Det er fornuftig å legge inn et betydelig avstandskrav for områder der det vil kunne foregå teine-fiske, gitt det generelle forbudet mot å fiske nærmere enn 100 meter fra akvakulturanlegget.",
+     "statement": "The authors note the general prohibition on fishing within 100 meter of an aquaculture facility when discussing planning for areas used for pot fishing; this is a legal reading."
+    },
+    {
+     "quote": "Som et siste typetilfelle er det et eksempel på en bestemmelse i en interkommunal kystsoneplan for Tromsøregionen der det er satt vilkår om tidsbegrensende konsesjoner på 25 år for alle nye områder for akvakultur.",
+     "statement": "The authors describe a Tromsø-region intermunicipal coastal plan provision setting 25 år time-limited licences for all new aquaculture areas; this is a case example."
+    },
+    {
+     "quote": "Tall fra 2017 viser for eksempel at det var gitt lokalitetsklarering (lokalitets-MTB) for 3,9 ganger så mye biomasse som det var gitt produksjonstillatelser (tillatelses-MTB) til.",
+     "statement": "For aquaculture in Norway, figures from 2017 show site clearance (locality-MTB) for 3,9 times as much biomass as the biomass covered by production permits (permit-MTB); this is a cited calculation attributed to Fauchald (2020)."
+    },
+    {
+     "quote": "Tillatelses-MTB kan bare endres etter Nærings- og fiskeridepartementets vurderinger i trafikklys-systemet hvert andre år.",
+     "statement": "The authors state that permit-MTB can be changed only following Ministry assessments in the traffic-light system hvert andre år; this is their description of the regulatory arrangement."
+    },
+    {
+     "quote": "Det er også en fleksibilitet i systemet som gjør at overskudds-MTB fra ett produksjonsområde, på nærmere vilkår, kan flyttes og utnyttes i inntil to eller tre tilgrensede produksjonsområder.",
+     "statement": "The authors describe regulatory flexibility allowing surplus-MTB from one production area to be used in inntil to eller tre adjacent production areas, subject to conditions."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe municipal coastal plans as a way to steer where aquaculture is accommodated, through area provisions, species restrictions, distance or depth limits, and requirements for further investigation. They argue that local environmental and competing-use considerations must be assessed in each plan, while sector authorities assess matters such as fish health and pollution in licensing. They find that the division of responsibility across planning and licensing rules is complex and that the overall system does not clearly establish where cumulative environmental effects should be assessed. They recommend clearer guidance and further assessment of whether stronger state planning is appropriate, while noting that more state direction would not itself resolve local conflicts.",
+    "A1": "The authors identify suitable site availability as dependent on environmental conditions, water exchange, depth and currents, proximity to sensitive nature and wild salmon waters, and separation from other aquaculture facilities. Municipal plans may restrict shallow areas, impose distance from land, limit species, or reserve existing locality biomass while allowing production to move between sites. Mattilsynet’s recommended minimum distances vary by species and type of existing facility; they are guidance rather than absolute rules and allow closer sites in coordinated fallowing zones. The authors also report that uneven practice and a lack of standardized methods for surveying vulnerable habitats can create differing requirements and competitive conditions across counties. Fish-health and environmental considerations interact with planning, but final sector approvals remain part of licensing.",
+    "A2": "This segment does not map the full application process or report typical processing durations. It explains that municipal area planning provides strategic allocation, while concrete site approval proceeds through a cross-sectoral licensing process under the Aquaculture Act. The authors identify possible procedural problems: a site applicant has no priority right to a specific locality, so disputes about who may apply or cease production at an existing site may have to be resolved privately. Requiring a regulatory plan could provide more detailed assessment, notice, hearing and appeal rights, but the authors warn that it can lengthen processing and create uncertainty where multiple applicants seek the same area. They suggest considering parallel treatment of a regulatory plan and licence application, and whether an applicant who initiates a plan should receive a conditional option or priority.",
+    "A3": "The authors state that municipalities must assess local and surrounding ecosystem effects when allocating aquaculture areas; the Ombudsman’s legal reading is that these effects cannot simply be deferred to licensing or replaced by traffic-light-system assessments. Municipalities can compare potential nutrient discharges with other farms and sources, using current, monitoring and survey information. However, the authors say it is unrealistic to expect municipal plans to assess broad or distant effects such as total sea-lice burden, genetic impacts on wild salmon, disease spread to wild fish, or fjord-wide nutrient totals. They identify unclear allocation of cumulative-impact assessment across the regulatory system and recommend clarifying where strategic and cumulative assessments should occur, including how water-region management fits. A cited 2017 calculation found site clearance for 3,9 times the biomass covered by production permits, complicating estimates because site use and operating patterns are not known.",
+    "A4": "This segment does not analyze economic instruments, incentives, or how the benefits and costs of aquaculture area use are distributed. The authors do discuss a possible policy arrangement in which the state identifies aquaculture areas and maximum capacity, then auctions permits for those areas to operators. They cite European offshore-wind practice as an example of state or regional authorities planning locations and capacity before open, transparent auctions to the highest bidder. This is presented as an option for further consideration, not as a recommendation that the authors endorse. They also note that requiring regulatory plans transfers assessment costs from the public sector to private applicants.",
+    "A5": "The authors say municipal plans should use available public information and obtain missing information on important matters. Relevant knowledge includes marine habitats and red-listed species, wild salmon status and migration, existing aquaculture sites, water-quality information, current and depth-specific flow data, and fisheries use. They identify major knowledge limitations: marine species are less comprehensively mapped than terrestrial species, aquaculture effects on species are poorly understood, sensitive-habitat survey methods are not standardized, and survey findings are difficult to access when buried in reports. They propose a system to collect past survey reports and enable electronic reporting of future findings, which could build an updated dataset. They also call for clearer regional guidance on what species and habitats to protect and how. The segment offers no specific discussion of emerging technologies changing siting opportunities.",
+    "A6": "The authors identify conflicts between aquaculture and fisheries, Sámi fisheries and cultural interests, recreation, nature conservation, and other uses. Their case mapping found that fisheries were treated as a separate topic in all case studies, which they regard as useful for visibility and participation. They report particular difficulty defining and mapping Sámi sea fishing and note disagreement between the state and the Sámi Parliament over legal obligations concerning any exclusive fishing rights. They also describe uncertainty in plan provisions and recommend clear wording, verified public records for claims of new knowledge, and early involvement by sector authorities to quality-check data. Regulatory plans may strengthen notice, hearing and appeal safeguards, but may delay decisions. The authors argue that predictable rules, clear division of roles, and avoiding duplicate assessment are important for both affected parties and industry.",
+    "A7": "The authors do not provide a dedicated set of measures for the industry to optimize its area use. They do describe actions and contributions that operators can make: provide sector authorities and municipalities with relevant information, participate in designing workable plan provisions, and make survey and monitoring results more accessible. They suggest collecting historical reports and using an electronic form for future findings, including discoveries of corals or other natural values. In a proposed planning guideline concerning wild salmon, operators would use the latest applicable technology and practice to prevent escapes, including sound mooring, facility security and inspection, and regular review of emergency plans. The authors present this as an example of a guideline, while cautioning that operational requirements should generally be handled through sector rules rather than municipal plan provisions.",
+    "A8": "The authors link disease prevention and fish health to the location and spacing of facilities. Mattilsynet’s recommended minimum distances for new sites vary by farmed species and by the type of existing aquaculture facility; recommendations also cover slaughter and processing facilities and hatchery and broodstock facilities. These distances are guidance and can be reduced where coordinated fallowing zones are established. The authors recommend that municipalities know these guidelines and obtain Mattilsynet’s input on disease-protection zones and separation requirements when planning a workable locality structure. They also state that disease and infection concerns are matters for sector authorities during licensing, rather than for a municipal provision triggered by new knowledge. The segment does not quantify water connectivity or explain transmission mechanisms between farms."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 4,
+   "headings": [],
+   "page_from": 74,
+   "page_to": 90,
+   "chars": 37018,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The authors recommend strengthening knowledge about coastal and marine areas so municipalities can identify areas suitable for different forms of aquaculture and areas with natural values that should be protected. They describe marine base maps and local investigations as useful inputs, but note that mapping larger coastal areas requires substantial resources. The authors also recommend standardized guidance for assessing and weighing knowledge, uncertainty and impacts in marine-area planning. The segment offers recommendations rather than findings on how current plans balance industry development and competing uses.",
+    "A1": "The authors identify seabed conditions, ecosystem effects and conflicts with other interests as relevant to identifying areas suitable for aquaculture. They describe marine base maps and local studies as potential sources of information on seabed conditions and suitability, including seabed tolerance for organic inputs. They also point to thematic maps concerning environmental impacts, intensity of aquaculture and indicative buffer distances from other installations. These are examples of tools and knowledge projects, not a comprehensive assessment of how site availability, licensing, fish health and environmental factors interact.",
+    "A2": "The segment does not analyze application stages or identify where delays, rejections or conflicts most commonly occur. It notes that the regulatory system for aquaculture permits includes consultation and participation processes as well as substantive assessments of many topics, and says that compliance with relevant planning and project-assessment directives merits extensive legal analysis. This is a description and research recommendation by the authors, not evidence about the frequency or causes of delays or rejection.",
+    "A3": "The authors recommend clearer, more standardized guidance for impact assessment in marine spatial planning. Their proposed guidance would explain which information to obtain, how to use map layers, the required level of detail, when additional investigations are needed, how to handle information that is not geographically located, and how to assess and record uncertainty. They note professional disagreement, including within sector authorities, about the knowledge base, uncertainty, aquaculture’s effects on surrounding environments and the appropriate scope of assessment requirements. The segment does not report a method or result for cumulative-effect assessment.",
+    "A4": "The authors recommend practical tools and methods for valuing ecosystem services, noting that valuation is relevant to impact assessments at different planning levels and that some tools and studies have already been developed. They also identify a need for further research on how valuation methods can be used in practice. These are the authors’ recommendations and research priorities; this segment does not assess economic instruments, incentives for site selection, or how benefits and costs are distributed among stakeholders.",
+    "A5": "The authors find a substantial need to map and improve knowledge of coastal and marine areas and how ecosystems are affected by activities, despite improvements in recent years. They describe marine base maps, local surveys, fieldwork and current measurements, and thematic maps as useful knowledge sources. They recommend making industry-collected surveys more systematic and publicly accessible, and improving municipal guidance on available data, map layers, assessment detail and uncertainty. The segment discusses mapping and planning tools, but does not address emerging technologies changing aquaculture impacts or siting conditions.",
+    "A6": "The authors describe the need to assess areas with limited conflict with other interests and recommend guidance that helps municipalities evaluate and weigh knowledge in marine planning. They also report professional disagreement, including within sector authorities, concerning the knowledge base, uncertainty, the assumed effects of aquaculture on its surroundings and how far assessment requirements should extend. They say improved guidance may therefore require attention to governance, regulation and political clarification. These are the authors’ observations and recommendations; the segment does not detail specific stakeholder conflicts or evaluate the legitimacy of particular decisions.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

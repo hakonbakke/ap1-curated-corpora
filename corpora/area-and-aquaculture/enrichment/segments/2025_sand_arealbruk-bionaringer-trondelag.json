@@ -1,0 +1,155 @@
+{
+ "doc_id": "2025_sand_arealbruk-bionaringer-trondelag",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 4,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 20,
+   "chars": 49871,
+   "key_figures": [
+    {
+     "quote": "Vi har beregnet at de står for til sammen 15 prosent av verdiskapingen i regionen når vi tar med foredlingsindustrien og andre ringvirkninger i økonomien.",
+     "statement": "The authors estimate that the five bio-based industries together account for 15 prosent of value creation in Trøndelag, including processing industries and other economic spillovers."
+    },
+    {
+     "quote": "Trøndersk fiskerinæring gir i dag grunnlag for 2,5 milliarder i årlig verdiskaping i Trøndelag, inkludert ringvirkninger, og næringa kan spille en svært viktig rolle for matberedskapen i Trøndelag.",
+     "statement": "The authors report that fisheries in Trøndelag support 2,5 milliarder in annual value creation, including spillovers."
+    },
+    {
+     "quote": "Dette legger grunnlag for betydelig eksport og om lag 16 milliarder kroner i årlig verdiskaping i Trøndelag, inkludert ringvirkninger.",
+     "statement": "The authors report that aquaculture in Trøndelag generates om lag 16 milliarder kroner in annual value creation, including spillovers."
+    },
+    {
+     "quote": "Trøndelag har om lag 42 200 kvadratkilometer med landareal, 10 860 kvadratkilometer med sjøareal innenfor grunnlinjen, og et samla sjøareal på om lag 15 200 kvadratkilometer om man går ut til territorialgrensen (Almås m.fl. 2024).",
+     "statement": "A cited source reports the land and sea area of Trøndelag, including sea area within the baseline and total sea area out to the territorial boundary."
+    },
+    {
+     "quote": "I perioden 2014-2024 viser arealstatistikk fra SSB at jordbruket og skogbrukets produksjonsarealer har holdt seg relativt stabile, mens det har vært en økning på 6 prosent i bebygd areal.",
+     "statement": "SSB area statistics cited by the authors show that built-up area in Trøndelag increased by 6 prosent during 2014-2024, while agricultural and forestry production areas remained relatively stable."
+    },
+    {
+     "quote": "Mellom 2018 og 2022 ble 46 kvadratkilometer omklassifisert.",
+     "statement": "Miljødirektoratet statistics cited by the authors show that 46 kvadratkilometer of areas classified as inngrepsfri natur in Trøndelag were reclassified between 2018 and 2022."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors frame available production area as dependent not just on physical extent but also on qualities affecting biological and economic production, such as currents, depth, seabed conditions, temperature, weather and location at sea. Their analytical framework identifies natural production conditions, technology, accessibility, competence, economic growth and area policy and regulation as interacting influences. They argue that planning must weigh bio-based value creation against other legitimate societal interests, including nature and biodiversity, housing, infrastructure, energy and marine activities. The authors find that conflicts on land often arise with interests outside the bio-based sectors; at sea, these include petroleum, energy, shipping, tourism and nature conservation. They also describe disagreement between fisheries and aquaculture over aquaculture’s ecosystem effects.",
+    "A1": "The authors describe Trøndelag as having natural advantages for marine aquaculture, a strong value chain, leading professional environments, well-capitalized operators and ambitions to expand production and area use. They say aquaculture currently occupies a small share of the county’s coastal area, mainly for open-net salmon farming in fjords and near the coast. Site opportunities and production potential depend on natural conditions and on how technology and regulation address coastal challenges; the report identifies potential locations at sea, offshore and on land. The authors’ broader framework also treats access, competence and economic growth as relevant factors. They note that electricity access to planned aquaculture sites has recently been mapped, while wider knowledge of suitable production areas remains limited.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors say that production-area mapping is uneven: many areas are documented for physical extent and biological production capacity, but less is known about suitability and commercial potential. For aquaculture, they note studies of how facilities may affect one another, usually as part of assessments of proposed facilities rather than broad mapping of where different forms of aquaculture are suitable. They also report recent mapping of electricity access for planned coastal aquaculture locations. The authors describe emerging production systems suited to different coastal challenges, including offshore and land-based systems, and argue more generally that technological, institutional and organizational innovation will be needed as area becomes more contested. The report does not discuss particular monitoring technologies or methods for assessing cumulative aquaculture impacts in this segment.",
+    "A6": "The authors identify competition between aquaculture and fisheries as a specific marine-use issue: installations, long moorings and exclusion zones can occupy fishing grounds and reduce flexibility and efficiency for coastal fishing. Fisheries representatives are also concerned about possible ecosystem effects, including impacts on shellfish, wild salmon and wild cod, and effects near spawning and nursery areas. The authors distinguish these concerns from direct spatial conflicts, describing threats to ecosystems and fish-stock productivity as a greater concern to fisheries. They say workable arrangements can often be reached when fisheries are involved early in planning other marine activities. Across sectors, they argue that legitimate but competing societal values make decisions difficult and require stronger capacity for coordination.",
+    "A7": "The authors argue that bio-based industries need to use land and biological resources more intelligently and efficiently, and to explore new ways of using them, as competition for area intensifies. In the fisheries discussion, they identify more efficient resource utilization, including use of residual materials and waste, as an avenue for development. They also note that fisheries depend on open access to large sea areas to adapt to weather and fish movements, so avoiding excessive access restrictions from installations and other activities is important to efficient operation. The segment does not set out specific industry-led measures or operational standards for optimizing aquaculture’s spatial footprint.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 20,
+   "page_to": 33,
+   "chars": 49851,
+   "key_figures": [
+    {
+     "quote": "Havbruk • Bruker 0,5 % (50 km2) av kystsonen til intensiv/eksklusiv oppdrett",
+     "statement": "The authors estimate that aquaculture uses 0,5 % (50 km2) of the Trøndelag coastal zone for intensive or exclusive production today."
+    },
+    {
+     "quote": "I Trøndelag er cirka 20 prosent av sjøarealet i praksis opptatt til havbruk, når en regner både direkte og indirekte med nødvendige sikkerhetssoner til smittevern (Skrove med flere, 2023 s. 8).",
+     "statement": "A study cited by the authors estimates that cirka 20 prosent of Trøndelag’s sea area is effectively occupied by aquaculture when direct use and biosecurity buffer zones are included."
+    },
+    {
+     "quote": "Verdikjedens sysselsatte som andel av samla sysselsetting i Trøndelag\n5,8 %\n2,2 %\n0,1 %\n1,1 %\n4,5 %\n13,6 %",
+     "statement": "The authors’ estimates for 2023 show that aquaculture’s value-chain employment, including ripple effects, was 4,5 % of total employment in Trøndelag."
+    },
+    {
+     "quote": "Verdiskaping i verdikjeden i millioner kr\ninkl. ringvirkninger\n13600\n5700\n100\n2500\n18200\n40100",
+     "statement": "The authors’ estimates for 2023 put aquaculture value-chain value creation, including ripple effects, at 18200 million kroner in Trøndelag."
+    },
+    {
+     "quote": "Havbruk\n•\nFemdoble produksjonen på landsbasis, og øke fiskeforbruket nasjonalt",
+     "statement": "The report lists a national policy ambition for aquaculture to increase production fivefold and raise fish consumption nationally; this is an ambition, not a measured outcome."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe aquaculture’s access to sea and land sites as dependent on public planning processes that weigh different societal interests. At sea, competing interests include biodiversity, recreation, shipping lanes, defence, cables and pipelines, energy development, tourism and traditional fisheries; on land, agriculture and forestry also compete for space. The authors say these planning processes are demanding in terms of duration, expertise and assessing the overall significance of land-use changes. They report that sea lice, disease and escapes have reduced social acceptance and access to area, while environmental and fish-health problems—not primarily lack of area—currently constrain regional growth. New production systems and better site mapping and integrated plans are identified as possible ways to reconcile development and environmental concerns.",
+    "A1": "The authors identify site access as shaped by public planning at several levels, competing uses, environmental impacts and fish health. Sea lice, disease and escapes are central constraints on current production, with negative effects on farmed-fish welfare and wild salmon and consequences for social acceptance and available area. The report describes submerged cages as potentially reducing lice problems cost-effectively and more closed systems as reducing emissions further, while requiring more materials, energy and, particularly on land, substantial land interventions. It also notes electricity access problems in several places along the Trøndelag coast and uncertain feed-ingredient supply. A cited study estimates that cirka 20 prosent of sea area is effectively occupied when necessary biosecurity zones are included, illustrating that usable site availability extends beyond the physical farm footprint.",
+    "A2": "The segment does not describe the stages of an individual aquaculture site application or identify where applications are most often delayed, rejected or contested. The authors do say that public planning processes allocate access to aquaculture areas by weighing societal interests, and characterize these processes as demanding in duration, expertise and holistic assessment of land-use changes. They identify competing sea uses—including biodiversity, recreation, shipping, defence, cables and pipelines, energy, tourism and fisheries—as potential sources of conflict, but do not provide application-stage evidence or case-specific timelines.",
+    "A3": "The authors argue that aquaculture affects surrounding areas as well as the farm site: neighbouring sea areas must absorb or manage disease pressure and the spillover of externally supplied nutrients. They identify the spread of sea lice and disease from existing sites to other sea areas as the environmental constraint on further growth in Trøndelag, and note that biosecurity safety zones make the effective area occupied larger than the farm footprint. The segment gives no detailed method for cumulative-effect assessment or account of how such assessments enter individual site-selection decisions. More broadly, the authors find that systematic knowledge of what constitutes qualitatively good production areas is limited, and that much existing evidence concerns biological production rather than wider area qualities.",
+    "A4": "",
+    "A5": "The authors point to public planning, site mapping and more integrated locality plans as parts of the knowledge base for spatial decisions; they say such planning could usefully involve municipalities and regional authorities. They also find that systematic knowledge about the qualities of economically productive areas is limited, with much existing evidence focused on biological production. On technology, the report describes new monitoring and production systems in aquaculture as potentially reducing environmental effects and improving resource efficiency. Submerged cages may reduce lice problems, while more closed systems may further reduce emissions but require more raw materials and energy and, especially on land, larger area interventions. The authors also identify climate change as a possible driver of production moving farther offshore, onto land or northward, depending on technology and changing sea temperatures.",
+    "A6": "The authors describe conflicts between aquaculture and biodiversity, recreation, shipping lanes, defence, cables and pipelines, energy development, tourism and traditional fisheries. On land, aquaculture may face similar interests, with agriculture and forestry replacing fisheries among the competing uses. Sea lice, disease and escapes also create conflict through harm to farmed-fish welfare and wild salmon and have reduced social acceptance and access to area. The report presents public planning as the process for balancing these interests, but says such processes are demanding in duration, expertise and holistic assessment. It identifies collaboration between municipalities and regional authorities on site mapping and integrated plans as useful, but does not directly evaluate procedural legitimacy or predictability.",
+    "A7": "The authors argue that existing aquaculture sites should be used better and that new sites should be developed with production systems more suited to their locations. They report that informants and the new aquaculture white paper point to changes in technology and area use that could improve animal welfare and environmental performance, alongside mapping good areas and preparing more integrated locality plans. The report identifies submerged cages and more closed systems as industry developments that may reduce lice or emissions, although closed systems have higher material and energy needs and can require substantial land interventions. These are presented as promising directions rather than as measured guarantees of sustainable or more efficient area use.",
+    "A8": "Biosecurity and connectivity between sites matter because disease and sea lice can spread from current aquaculture localities to other sea areas. The authors identify this spread as the constraint on further growth in Trøndelag and note that necessary biosecurity safety zones count as indirect area use around farms. The segment reports that submerged cages may reduce lice problems cost-effectively and that more closed systems can reduce emissions further, but it does not provide specific distances, transmission rates or disease-connectivity modelling. The emphasis is on area-wide environmental effects and the need to consider surrounding waters, not just the area occupied by each facility."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 33,
+   "page_to": 46,
+   "chars": 49797,
+   "key_figures": [
+    {
+     "quote": "Upåvirket natur kan være i form av inngrepsfrie områder som utgjør 41 prosent av trøndersk landareal mens landsgjennomsnittet er 43 prosent.",
+     "statement": "The authors report the shares of Trøndelag land area and the national average classified as areas without major interventions; the figures describe the report’s present-day context, not a specified measurement year."
+    },
+    {
+     "quote": "Nedbebygde arealer kan være i form av utbyggingsareal til veger, infrastruktur, boliger og næringsareal m.m. Slike arealer utgjør 1,4 prosent i Trøndelag mot landsgjennomsnitt på 1,7 prosent",
+     "statement": "The authors report the shares of land that are built up in Trøndelag and nationally, describing the report’s present-day context without specifying a measurement year."
+    },
+    {
+     "quote": "Likevel drives det aktivt skogbruk bare på en knapp tredjedel av dette arealet, til tross for stor regional etterspørsel etter tømmer og at skogressursen tåler et høyere uttak",
+     "statement": "The authors find that active forestry takes place on only knapp tredjedel of the productive forest area in Trøndelag, in the report’s present-day account."
+    },
+    {
+     "quote": "Denne strategien vil nemlig kreve 40-100 prosent MER bioressurser enn det som er tilgjengelig i Europa.",
+     "statement": "A cited 2021 Material Economics analysis estimates that the EU green-transition strategies would require 40-100 prosent more bioresources than are available in Europe."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe access to production areas as shaped by biological productivity, accessibility, suitability for current technology and production practices, market demand, policy and regulations, and competing uses. In Trøndelag, attractive and accessible areas face pressure from construction, infrastructure, energy production, recreation and nature conservation. Aquaculture has moved from pressured fjords and nearshore locations farther offshore, but remains within the coast’s baseline. The report’s account says its access is restrictive mainly because of sea lice and disease, and that electricity availability also constrains projects. Regional planning is presented as weighing economic development against nature, biodiversity, fisheries and other interests; the authors point to intermunicipal planning as a preferred route for securing sufficient sea area for expected aquaculture growth.",
+    "A1": "The authors identify disease and sea lice as the main reasons aquaculture’s access to production areas in Trøndelag is restrictive. Aquaculture has shifted away from pressured fjords and areas close to the coast and farther out to sea, although not beyond the coast’s baseline. Site opportunities are also influenced by area qualities and infrastructure: the report notes inadequate electricity access offshore, particularly in the important Hitra/Frøya and Ytre Namdal aquaculture areas, with projects for land-based facilities and electrification of marine facilities on hold. The regional land-use plan states that aquaculture should have sufficient sea area for expected growth, preferably through intermunicipal planning, while considering fisheries, nature values and other interests. The segment does not detail licensing stages or how these factors interact in individual applications.",
+    "A2": "",
+    "A3": "The authors identify substantial knowledge gaps about how the bio-based industries affect nature and ecosystems, and how those effects interact. In particular, the fisheries sector worries that current aquaculture practices and growth ambitions may harm the ecosystems on which fisheries depend more than is currently known. The report says both sectors recognise the need for more research and disagree over how precautionary decisions should be before there is a secure, shared evidence base. It does not describe a formal cumulative-effects assessment method or explain how such assessments are incorporated into individual site-selection decisions. The regional plan’s stated approach is to provide sufficient sea area for aquaculture growth while taking account of fisheries, nature values and other interests.",
+    "A4": "The authors describe competition for attractive production areas as shaped partly by differences in willingness to pay: construction projects often have strong purchasing power, meaning bio-based industries may lose when land is allocated on the basis of money alone. In forestry, market value, current technology, transport access and applicable rules help determine which productive areas are economically viable to use. The report also notes that sector-specific laws and national policies frame local planning decisions. It does not assess specific economic instruments for aquaculture, quantify benefits and costs among stakeholders, or explain how financial incentives affect aquaculture site choices.",
+    "A5": "The authors’ knowledge base combines sectoral land-use analyses, informant views, planning documents and cited studies, but they identify important gaps. They say understanding of how industries affect ecosystems, and affect one another, is incomplete; the report also calls for more systematic knowledge of technologies in use and under testing, potentially including scenario-based work with stakeholders. Their technology overview identifies more efficient production systems for aquaculture in coastal waters, offshore and on land, as well as possible multi-use with other farmed species. The authors caution that coexistence with offshore wind is uncertain and that technology development in this area has not progressed far. These are potential changes to production and land-use conditions, not established outcomes.",
+    "A6": "The authors find that all bio-based industries in Trøndelag face pressure on production areas and describe conflicts involving aquaculture, fisheries, wind power, nature conservation and other uses of the sea. Fisheries worry that aquaculture may negatively affect ecosystems and wild fish; the report says the sectors differ over how precautionary to be while evidence remains incomplete. The regional plan seeks to secure sufficient aquaculture area, preferably through intermunicipal planning, while considering fisheries, nature values and other interests. More generally, the authors say disputes can involve whether shared use is genuinely possible, how serious its disadvantages are, and how those disadvantages should be distributed. They argue that broad coordination, stronger shared knowledge and meaningful local engagement can support decisions’ legitimacy.",
+    "A7": "The authors’ technology overview identifies possible industry-led ways to improve the efficiency and sustainability of spatial use: aquaculture production systems with fewer environmental problems, and shared-use systems combining fish farming with other farmed species. The report also notes that improved production systems could reduce effects on fisheries’ catch opportunities for wild fish and other species. These are described as technology trends or potential benefits, not as proven results or requirements. The authors call for a more systematic assessment of technologies currently used and being tested, and suggest scenario-based discussions involving different actors to inform future choices.",
+    "A8": "The authors state that aquaculture’s access to production areas in Trøndelag is restrictive mainly because of sea lice and disease. This is the segment’s only direct discussion of disease-related constraints. It does not explain water connectivity among farms, disease-transmission pathways, biosecurity measures, or how farm spacing affects production and operations. The report notes that aquaculture has moved farther out to sea from pressured fjords and nearshore areas, but does not establish that this shift is a biosecurity measure or describe its effects on disease transmission."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 46,
+   "page_to": 52,
+   "chars": 14720,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The authors argue that aquaculture’s access to production areas depends partly on maintaining a social licence, shaped by transparency, fairness, sustainability and trust. In spatially attractive areas that are also sought for other industries or public purposes, perceived fairness about where production occurs and how environmental costs, other disadvantages and value creation are distributed is especially important. The segment identifies this as a continuing concern for Trøndelag’s bio-based industries, rather than describing a specific planning procedure.",
+    "A1": "The authors identify suitable coastal area as insufficient on its own to ensure aquaculture development. They report that Osen has coastal areas well suited to aquaculture, but is strongly affected by lice and disease spreading from areas to the south. Authorities have been very restrictive for several years in granting new production areas for salmon farming in Osen, because the municipality acts as a buffer against further spread northward. The segment does not detail licensing rules or the application process.",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors report that Osen receives no economic compensation despite its economic opportunities being constrained by lice and disease from other areas. More broadly, they identify perceived fairness in the distribution of aquaculture’s value creation and environmental costs as central to its social licence. The segment presents this as a distributional concern; it does not assess particular economic instruments or quantify benefits and costs among stakeholders.",
+    "A5": "",
+    "A6": "The authors find that aquaculture is generally tolerated in Norway, but public attitudes are more negative regarding environmental effects, fair distribution of value creation and substantial production growth. Residents of areas with aquaculture are more positive than other residents. In Trøndelag, the Osen case illustrates a conflict between the municipality’s suitable production areas and disease-related constraints, without economic compensation. The authors conclude that further work is needed on what fairness means to industry participants and affected communities and how it should inform area decisions.",
+    "A7": "The authors’ policy-oriented conclusion is that the social licence of Trøndelag’s bio-based industries must be strengthened and maintained if they are to secure sufficient production areas in the future. For aquaculture, the segment points to environmental sustainability, fish welfare, transparency and fairness in the location of production and distribution of costs and value creation as relevant concerns. It does not specify operational measures for farms or quantify their effects.",
+    "A8": "The authors describe Osen as strongly affected by lice and disease spreading from aquaculture areas to the south, and as a buffer against further spread northward. They report that authorities have been very restrictive for several years in granting new salmon-farming production areas there, although Osen has coastal areas well suited to aquaculture. The segment also says Osen receives no economic compensation for the resulting constraints. It provides no measurements of water connectivity or disease transmission."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "doc_id": "2014_myklebust_municipal-coastal-planning",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 10,
+   "chars": 45568,
+   "key_figures": [
+    {
+     "quote": "In marine areas, the Act applies to a zone extending one nautical mile beyond the baselines of the territorial sea.",
+     "statement": "The authors state that Norway’s Plan and Building Act applies in marine areas up to one nautical mile beyond the territorial-sea baselines."
+    },
+    {
+     "quote": "In Norwegian law there is a long tradition of prohibiting building within a 100-meter belt along the waterline, cf. PBA Section 1-8.",
+     "statement": "The authors describe a Norwegian statutory building-prohibition belt of 100-meter along the waterline."
+    },
+    {
+     "quote": "Through the amendment of April 21, 1989 no. 17, the Plan and Building Act is applicable all the way out to the baselines, cf. pbl. (1985) Section 1, first paragraph, second sentence.",
+     "statement": "The authors report that a 1989 amendment extended the 1985 Plan and Building Act’s application to the baselines."
+    },
+    {
+     "quote": "Pursuant to the Plan and Building Act of 2008, the municipality's planning competence was extended all the way out to «one nautical mile beyond the baselines of the territorial sea», cf. Section 1-2, first paragraph.",
+     "statement": "The authors state that the 2008 Act extended municipal planning competence to one nautical mile beyond the territorial-sea baselines."
+    },
+    {
+     "quote": "A three-year trial relating to the coordination of state objections to municipal plans initiated.",
+     "statement": "The authors report that a three-year trial on coordinating state objections to municipal plans was initiated by a Ministry decision in 2012."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ legal analysis says that municipal coastal-zone plans are the main instrument for prioritizing competing uses, including aquaculture, fishing, industry, recreation and environmental protection. The municipality may facilitate marine industries or choose not to permit aquaculture, but its plans operate alongside sector laws and state oversight. Aquaculture permits require environmental responsibility, consistency with relevant land-use plans and conservation measures, balancing of land-use interests, and permits under other applicable laws. Environmental protection and recreation are identified in preparatory guidance as considerations in coastal-water management. Regional and central authorities can object where national or significant regional interests are involved, and the Ministry may then make the final decision.",
+    "A1": "The authors’ legal analysis identifies site availability as dependent on municipal plans: plans must allow aquaculture or at least not prevent it, though a municipality can consent to an initiative even when its plan excludes aquaculture. Aquaculture has no legal entitlement to a sea site; licensing is discretionary. A permit requires four cumulative conditions: environmental responsibility; compliance with land-use plans and conservation measures; weighing of land-use interests; and licences under other relevant statutes. Planning can also set conditions on aquaculture species or groups of species. The authors note that site, distance to salmon rivers and minimum distance to neighbouring installations may matter, while detailed planning conditions can conflict with industry flexibility. The segment does not analyze fish-health requirements or the operational licensing sequence in detail.",
+    "A2": "The authors describe a broad legal pathway rather than a detailed application timeline. The county administration is the first-instance authority for allocating aquaculture permits, following transfer of this competence from central government in the 2009 management reform. The county must assess four cumulative statutory conditions, including environmental responsibility, plan consistency, land-use interests and licences under other sector laws. Municipalities participate mainly through planning and may provide advice during an application, but fisheries authorities decide which municipal input to emphasize. Planning-stage conflict may be clarified early through participation and regional planning forums; objections can transfer final decision competence to the Ministry. The segment gives no figures on processing times, common rejection stages or application delays.",
+    "A3": "The authors argue that marine planning should consider areas in a wider context and that growing demand for comprehensive, ecosystem-based management makes land-use plans and sound processes important. The Nature Diversity Act’s Section 10 is cited as a basis for ecosystem-based management, and Section 8 as relevant to the knowledge used in decisions. The municipality should consult other authorities to establish which uses can be combined; aquaculture will in most cases require exclusive use of an area. The article does not describe cumulative-effect assessment methods or show how production-level cumulative assessments are incorporated into site decisions. It does identify a knowledge and capacity challenge: cited research by Hersoug and Johnsen concludes that municipalities are often too small for marine-area planning and that impact studies and planning processes can involve substantial work.",
+    "A4": "",
+    "A5": "The authors’ analysis emphasizes the need for knowledge about marine resources and compatible uses, and for cooperation among municipalities and sector authorities when selecting suitable plan objectives. The Nature Diversity Act requires relevant natural-resource knowledge to inform management, while municipal experience and national goals and expertise are both described as important to conservation. The article argues that clearer legal priorities and general guidelines could help municipalities understand what to prioritize and disseminate relevant knowledge. It also says municipalities may lack capacity for extensive marine planning and impact studies, citing Hersoug and Johnsen (2012). Emerging technologies are not discussed.",
+    "A6": "The authors identify conflicts among aquaculture, traditional fishing, nature protection, outdoor recreation, landscape, cultural heritage and other coastal uses. They note that aquaculture and traditional fishing interests may oppose one another, and that disagreement between sector authorities can make planning difficult and time-consuming. A cited study reports that planning forums may not work entirely as intended, but such forums can help clarify potential conflicts early and have no decision-making or formal mediation authority. The authors argue that early participation by public bodies can reduce surprises and extra work; failure to participate can cause an authority’s interests to be overlooked and can remove its right to object in specified circumstances. They question the predictability of what counts as a national interest and connect legitimate local democracy to municipalities’ real ability to set priorities. A three-year state-objection coordination trial was initiated in 2012.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

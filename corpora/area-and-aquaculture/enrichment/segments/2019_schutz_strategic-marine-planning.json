@@ -1,0 +1,146 @@
+{
+ "doc_id": "2019_schutz_strategic-marine-planning",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 3,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 6,
+   "chars": 48615,
+   "key_figures": [
+    {
+     "quote": "New technological possibilities and pressure on onshore areas and resources are leading to increased interest in moving industries such as food and renewable energy production offshore and northwards to Arctic waters beyond 66° (the Arctic Circle).",
+     "statement": "The authors describe interest in moving food and renewable-energy production into Arctic waters beyond 66°; this is contextual information, not a quantitative finding about a measured population."
+    },
+    {
+     "quote": "Scotland's National Marine Plan (SNMP) 2015 covers all policy areas [48] and extends 200 nm from the baseline.",
+     "statement": "The authors report that Scotland’s 2015 National Marine Plan extends 200 nm from the baseline; this describes the plan’s geographic reach."
+    },
+    {
+     "quote": "In 2010, in a state-driven process not regulated by law, 15 areas along the Norwegian coast were identified as locations in the Ocean Wind Report [69].",
+     "statement": "The authors report that a 2010 state-driven process identified 15 potential offshore-wind locations along the Norwegian coast."
+    },
+    {
+     "quote": "In 2017, the coast was divided into 13 ‘aquaculture production zones’ [90], delimited in order to reduce the spread of sea lice and diseases [91].",
+     "statement": "The authors report that Norway’s coast was divided into 13 aquaculture production zones in 2017, intended to reduce the spread of sea lice and diseases."
+    },
+    {
+     "quote": "Norway's 19 counties can adopt regional thematic plans, but this opportunity has not been utilised much for sea areas until recently.",
+     "statement": "The authors note that Norway’s 19 counties have the authority to adopt regional thematic plans, though they had made limited use of this opportunity for marine areas until recently."
+    },
+    {
+     "quote": "Sea lice pressure is decisive for production growth in the ‘production areas’, (growth of up to 6%), standstill or reduction",
+     "statement": "The authors report that sea-lice pressure determines whether production in Norwegian production areas can grow by up to 6%, remain at a standstill, or be reduced."
+    },
+    {
+     "quote": "The Municipal Councils have competence under the PBA to adopt marine spatial plans landward of the baselines and, since 2008, one nautical mile out to sea [96].",
+     "statement": "The authors report that, since 2008, Norwegian municipal councils have been able to adopt marine spatial plans extending one nautical mile out to sea from the baselines."
+    },
+    {
+     "quote": "For the west coast, the inclusion of coastal waters means that the SNMP provides a general strategic policy for aquaculture [58].",
+     "statement": "The authors describe the Scottish National Marine Plan’s strategic policy role for aquaculture on the west coast; this passage gives no quantitative finding."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ review argues that where and to what extent aquaculture can develop depends on several planning layers, from strategic marine plans to marine spatial plans and licences. In Norway, municipal plans are legally binding on new projects and expansions, while regional plans guide allocation but are not formally binding on licensing. The Government’s policy expectation is to optimise use of allocated areas and provide enough area for fisheries and aquaculture while considering environmental and other social interests. Scottish strategic and local planning identifies areas for aquaculture, including locations where sustainable growth is considered appropriate. The authors present the central balance as reconciling industry development and predictable rights with ecosystem protection, environmental effects and competing uses.",
+    "A1": "The authors’ review identifies site availability, planning status, environmental conditions and disease pressures as interdependent influences on coastal aquaculture development. In Scotland, the National Marine Plan recognises that cultivation depends on good water quality and currents that support healthy fish and shellfish; locational guidelines distinguish areas where development is opposed, warrants caution or is likely acceptable. In Norway, municipal spatial plans can bind new projects and expansion, and applications conflicting with a municipal master plan can be rejected. The production-zone system ties growth, standstill or reduction to sea-lice pressure, while wild-salmon protections have prompted stricter requirements and, in some cases, duties to move facilities. The authors note that planning alone cannot control sea lice; environmental-health rules and policies also matter.",
+    "A2": "The authors describe Norway’s application process as involving several sectoral laws and administrative bodies. An applicant must be registered as the holder of an aquaculture licence; the process includes a biological risk assessment, but seldom an EIA. When a county authority evaluates an application, it forwards it to the relevant municipality. An application that conflicts with the municipal marine spatial master plan can be rejected. The segment does not provide a complete account of subsequent steps or quantify processing times, delays, rejection rates or the stages where conflicts most commonly arise. It does identify planning conflict at the municipal stage as a possible basis for rejection.",
+    "A3": "The authors argue that strategic ecosystem plans and marine spatial planning can address cumulative impacts, coordination failures and inefficient use of marine space. Scotland’s National Marine Plan expects strategic mitigation of potential and cumulative impacts to be integral to planning and decision-making. Norway’s offshore-wind area assessment used existing knowledge and strategic plans, but was conducted at an overall level before potential applicants were known; its purpose was to provide enough relevant knowledge to decide whether areas should be opened. The review identifies a methodological limitation in Norwegian aquaculture production zones: reliance on sea-lice pressure as the only indicator was criticised as oversimplifying ecosystem impacts. The authors also caution that Scottish processes were not yet mature enough to verify claims about cumulative assessment.",
+    "A4": "The authors discuss the economic value of a licence and argue that predictability requires due protection for the rights and terms it establishes, while adaptability may require changes or revocation when conditions change. Regulating production capacity, continuation or closure, sale, transfer and mortgaging can clarify the conditions governing investment. The segment does not describe specific economic instruments such as taxes, charges or subsidies, or assess how monetary benefits and costs are distributed among stakeholders. It does note that production-zone rules make operators in the same zone dependent on one another’s contribution to sea-lice pressure, linking one operator’s environmental effects to other operators’ prospects for production growth.",
+    "A5": "The authors describe strategic planning as drawing on up-to-date knowledge about ecosystem condition, habitat structures, pollution, human activity and impacts. Revising plans can change analyses, mapping, zoning and proposed management measures. For Norwegian offshore wind, the 2012 strategic environmental assessment used existing knowledge and was later evaluated as still valid in 2017 as a basis for decisions on opening areas. In Scotland, scientific scoping, locational guidance, consultation, sustainability appraisal and environmental and socioeconomic assessments inform offshore-wind plan options. The authors note that a Scottish research framework was being developed to feed new knowledge into plan updates and risk-based licensing. They also identify the need to adapt decisions as knowledge changes, while noting that the Scottish processes were not yet mature enough to verify their effectiveness.",
+    "A6": "The authors identify potential conflicts between aquaculture and wild-salmon protection, fisheries, environmental concerns and other social interests. Offshore wind can create physical competition for space and navigational restrictions, and its structures may affect fisheries, aquaculture, recreation and tourism, shipping and defence. The Norwegian Barents Sea plan leaves the question of combining wind farms with fisheries, or establishing fishery-protection zones, for later planning stages. Scottish policy generally supports coexistence when consistent with the National Marine Plan. The authors describe early precautionary measures, including protection of Norwegian wild-salmon rivers and fjords and restrictions on aquaculture on Scotland’s north and east coasts, as helping steer development away from conflict-ridden sites. They argue that clear frameworks and public participation support legitimate and predictable decisions.",
+    "A7": "The authors state that Norwegian government guidelines expect existing allocated areas to be used optimally, alongside sufficient allocation for fisheries and aquaculture and consideration of environmental and social interests. In the Southern Hordaland and Western Hardanger regional coastal plan, counties sought to secure production areas with expansion potential and few conflicts with other interests. Multi-use zoning was also introduced in new areas to facilitate new technologies, including sea-based aquaculture and closed facilities closer to shore. The authors present multi-use, densification and coexistence as possible ways to use marine space more rationally and reduce pressure on ocean ecology. These are planning and policy mechanisms discussed in the review, not evidence of a measured industry-wide outcome.",
+    "A8": "The authors identify sea lice and disease transmission as important constraints on production and planning. Norway’s aquaculture production zones were delimited to reduce the spread of sea lice and diseases, and sea-lice pressure determines whether production growth, standstill or reduction applies. Operators in the same zone are interdependent because each contributes to the shared sea-lice problem. The authors note criticism that relying only on sea-lice pressure oversimplifies ecosystem impacts. In Scotland, Farm Management Areas and statutory farm-management agreements aim to promote biosecurity and control disease and parasites. The review also states that bringing sea lice under control is a substantial challenge and that planning principles alone cannot address it; practical environmental-health laws and policies must work alongside planning."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 6,
+   "page_to": 10,
+   "chars": 41230,
+   "key_figures": [
+    {
+     "quote": "Aquaculture development out to 3 nm requires planning permission [158].",
+     "statement": "The authors report that Scottish aquaculture development out to 3 nm requires planning permission."
+    },
+    {
+     "quote": "Most planning permissions for aquaculture development are now not time limited, making them permanent, whereas, prior to 2007, only temporary consent was granted, which had to be renewed after the period set for the temporary consent had expired [163].",
+     "statement": "The authors report that in Scotland most aquaculture planning permissions are now permanent, whereas before 2007 they were temporary and required renewal."
+    },
+    {
+     "quote": "Licences are granted for a limited period of up to 30 years, but can be extended upon application [172].",
+     "statement": "The authors report that Norwegian offshore wind licences are granted for up to 30 years and may be extended upon application."
+    },
+    {
+     "quote": "Any proposal to construct, extend or operate a generating station in Scottish territorial waters (0–12 nm) and Offshore region (12–200 nm) with a generating capacity in excess of 50 MW requires consent under Section 36 of the Electricity Act [176].",
+     "statement": "The authors report that Scottish generating-station proposals in the stated territorial and offshore waters require Section 36 consent when capacity exceeds 50 MW."
+    },
+    {
+     "quote": "All approvals will include a condition relating to decommissioning of the windfarm at the end of the license period, normally 25 years after the final commissioning of the development.",
+     "statement": "The authors report that Scottish offshore wind approvals normally require decommissioning 25 years after final commissioning."
+    },
+    {
+     "quote": "The time lag between the opening process and the granting of a licence will be relevant, as will the possibility of opening other areas than the 15 already evaluated.",
+     "statement": "The authors identify 15 evaluated areas in Norway as relevant to considering future offshore wind licensing flexibility."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe marine governance in Norway and Scotland as a patchwork of national, regional and local competences, land-sea interfaces, plans and licences, with vertical hierarchies intended to connect strategic guidance to project decisions. In Scotland, aquaculture is governed through the land-use planning system rather than the established marine planning regime, although detailed policy guidance exists. Planning authorities consider strategic and local policy and an ecosystem approach; approvals may carry conditions, and SEPA can suspend or revoke a licence for noncompliance. The authors note that a missing Norwegian municipal marine spatial plan weakens the link between plan and licence, requiring a broader licensing perspective informed by Nature Diversity Act principles. They argue that balancing predictability and adaptability depends on the overall system, and that sector-specific frameworks mean one-size-fits-all policies are ineffective.",
+    "A1": "The authors describe Scottish site opportunities as dependent on planning permission, strategic and local policy guidance, EIA requirements and other parts of a complex licensing regime. Aquaculture development out to 3 nm requires planning permission, and applicants may need to provide further detailed information before implementation. In Norway, the authors explain that the absence of a municipal sea-area plan can hinder the connection between spatial planning and a licence; licensing must then consider the land-sea interface, knowledge-based management and conflicting interests and uses. They also caution that a missing plan could indicate lower pressure from existing uses. The segment discusses fish-health regulation in Scotland, including statutory measures to prevent, control and reduce parasites, but does not explain how disease conditions determine site availability.",
+    "A2": "The authors describe elements of the Scottish aquaculture process: planning applications must meet planning requirements, including EIA; authorities use strategic and local policy guidance and work with Marine Scotland; approvals may impose enforceable planning conditions; and further detailed information is often required before implementation. Planning-authority decisions can be appealed to Scottish ministers, while SEPA can suspend or revoke a licence for noncompliance with licence conditions. This account identifies multiple regulatory steps but does not report typical processing times or establish where aquaculture applications most commonly experience delay, rejection or conflict. The segment’s discussion of prolonged project finalisation concerns offshore wind, not aquaculture, and should not be treated as an aquaculture finding.",
+    "A3": "The segment says that Scottish aquaculture applications must comply with EIA requirements and that cumulative effects may require a European Protected Species Licence. These are described as elements of the regulatory system, not as a detailed account of how cumulative aquaculture production is quantified or incorporated into spatial site selection. The authors discuss cumulative impact assessment more explicitly for offshore wind, noting that Scotland’s licensing and policy framework has developed to address technical and environmental issues, including cumulative impact, and that conditions can require ongoing monitoring and assessment. The segment does not set out specific methods, thresholds or knowledge limitations for cumulative aquaculture assessment.",
+    "A4": "The segment provides little on economic instruments for aquaculture or on distribution of costs and benefits among stakeholders. For offshore wind in Norway, the authors’ legal reading is that a licence may require payment of an area fee to the state. They also explain that in special cases licence terms may be altered to protect public interests, with due consideration to costs for the licensee and the benefits and disadvantages of the change. These provisions illustrate how costs may enter a regulatory decision, but the segment does not evaluate their economic effects or describe comparable aquaculture charges or stakeholder benefit-sharing.",
+    "A5": "The authors say that where Norway lacks a municipal marine spatial plan, licensing must adopt a broader perspective involving knowledge-based management and mapping of conflicting interests and uses. In Scotland, strategic and local policy guidance, the National Marine Plan and EIA inform decisions; offshore wind leasing areas have been subject to Strategic Environmental Assessment. The authors identify monitoring and assessment requirements in offshore wind consents as mechanisms for improving information over time. Their broader argument is that management systems evolve in response to emerging challenges, while changes grounded in democratically adopted laws support predictability. The segment does not specify a particular aquaculture dataset or assess how emerging technologies alter aquaculture siting.",
+    "A6": "The authors identify competing uses and environmental protection as matters that licensing and spatial planning must address, including impacts on natural diversity, cultural heritage and other land use. In Scotland, offshore generating consent may not be granted if interference with recognised sea lanes essential for international navigation is likely; licence holders must also avoid harm to fisheries and fish stocks as far as possible. For aquaculture, the authors report that Scottish parliamentary recommendations called for the industry to address environmental and fish-health challenges as a priority, and considered the regulatory status quo unacceptable. They argue that clear rules can support predictability, while open-ended terms such as ‘significant’ may create uncertainty but avoid overly rigid standards. The segment does not give a detailed aquaculture siting-conflict case.",
+    "A7": "",
+    "A8": "The authors describe fish health as part of Scotland’s aquaculture regulatory framework. The Aquaculture and Fisheries (Scotland) Act 2013 sets out measures for prevention, control and reduction of parasites, and the segment notes growing concern about aquaculture’s environmental effects, particularly on wild fish stocks. A Scottish parliamentary committee is cited as saying that industry growth depends on addressing environmental and fish-health challenges as a priority. These points establish that fish health and wild-stock effects are relevant regulatory concerns, but the segment does not discuss water connectivity between farms, disease transmission pathways, or biosecurity measures in detail."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 10,
+   "page_to": 11,
+   "chars": 10818,
+   "key_figures": [
+    {
+     "quote": "aims to generate the equivalent of 100% of Scotland's electricity demand from renewable resources by 2020 and to deliver an 80% reduction in greenhouse gas emissions by 2050",
+     "statement": "A cited target in Scotland's National Marine Plan measures renewable electricity and greenhouse-gas ambitions for Scotland, with targets for 2020 and 2050; it is not a finding by the authors."
+    },
+    {
+     "quote": "As of 8 January 2017, 38 applications had been received.",
+     "statement": "A cited report states that 38 applications had been received by 8 January 2017 in the Norwegian application process for aquaculture development licences; this is not an authors' finding."
+    },
+    {
+     "quote": "a few applicants have been accepted so far, including an ocean cage concept based on offshore oil technology, and an ocean farm resembling a ship, with possible significant effects on production capacity in Norway by 2020",
+     "statement": "A cited analysis reports that a few applicants had been accepted in Norway's evaluation of new aquaculture concepts and notes possible effects on production capacity by 2020; this is not an authors' finding."
+    },
+    {
+     "quote": "of which 80 per cent is distributed annually to municipalities and counties with aquaculture enterprises.",
+     "statement": "A cited note on the Norwegian Aquaculture Fund states that 80 per cent of the fund is distributed annually to municipalities and counties with aquaculture enterprises; this is not an authors' finding."
+    }
+   ],
+   "pq_notes": {
+    "A0": "This segment is primarily a collection of notes and legal references rather than a detailed account of current spatial planning. The authors cite Norwegian rules governing aquaculture licences and the registration of licences, and refer to Scotland's National Marine Plan and local development plans as sources of locational guidance. They also describe Norwegian coastal-zone planning rules and a general building restriction extending up to 100 m inland from the shoreline. These references indicate that planning frameworks and licensing arrangements shape where development may proceed, but this segment does not explain how environmental protection, industry development and competing uses are balanced in practice.",
+    "A1": "The segment cites Norwegian legislation under which aquaculture licences are granted and registered, and refers to the Nature Diversity Act's principles for environmental decisions. For Scotland, it notes that local development plans provide locational guidelines for aquaculture and that planning, marine licensing, water-environment and aquatic-animal-health rules apply. A cited Norwegian evaluation had received 38 applications as of 8 January 2017, including applications for offshore concepts. The segment does not explain how site availability, fish health, environmental assessment and licensing interact in individual site decisions.",
+    "A2": "The segment provides only a limited indication of application activity: a cited source states that 38 applications had been received as of 8 January 2017 in an evaluation of aquaculture concepts, and that a few applicants had been accepted so far. It identifies examples including an ocean cage based on offshore oil technology and an ocean farm resembling a ship. It does not describe the stages of an ordinary site application, give processing times, or identify where delays, rejections or conflicts most commonly occur.",
+    "A3": "",
+    "A4": "A cited note says that Norwegian aquaculture growth is distributed in two rounds, first at a fixed price and then through auction, contributing to the Aquaculture Fund established in 2016. It states that 80 per cent of the fund is distributed annually to municipalities and counties with aquaculture enterprises. This provides a limited account of how an economic arrangement directs some benefits to local and regional authorities. The segment does not assess how these instruments affect operators' site choices or how the costs and benefits are distributed among other stakeholders.",
+    "A5": "The segment refers to the evaluation of new Norwegian aquaculture concepts, including an ocean cage based on offshore oil technology and an ocean farm resembling a ship. A cited analysis suggests these concepts could significantly affect Norway's production capacity by 2020, but the segment gives no assessment of their environmental effects or siting requirements. It also cites Scottish marine-planning targets for renewable energy and emissions reduction. These are cited policy ambitions, not findings by the authors about the knowledge base or effects of emerging technology.",
+    "A6": "The segment cites the Aarhus Convention's recognition that the public should know and be able to use participation procedures in environmental decision-making, alongside access to justice through appeals, challenges or courts. It also recounts a Norwegian planning-law discussion that stricter dispensation rules were considered necessary because extensive dispensations could undermine plans and the values they are meant to protect. These legal and policy references concern participation and predictable plan-led decisions, but the segment does not describe specific aquaculture conflicts with other coastal interests.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

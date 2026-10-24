@@ -1,0 +1,209 @@
+{
+ "doc_id": "2022_mikkelsen_ocean-coastal-management",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 4,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Ocean and Coastal Management",
+    "Transparent and consistent? Aquaculture impact assessments and trade-offs in coastal zone planning in Norway",
+    "A R T I C L E I N F O",
+    "1. Introduction",
+    "2. Planning for aquaculture"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 16951,
+   "key_figures": [
+    {
+     "quote": "This is based on cases studies of SEAs in two intermunicipal planning processes involving 143 proposed aquaculture areas in 18 municipalities in Northern Norway.",
+     "statement": "The authors’ study covers 143 proposed aquaculture areas in 18 Northern Norwegian municipalities across two intermunicipal planning processes."
+    },
+    {
+     "quote": "Marine aquaculture has over the last 50 years grown into a major industry in Norway, dominated by the farming of Atlantic salmon.",
+     "statement": "The authors describe Norwegian marine aquaculture, particularly Atlantic salmon farming, as having grown into a major industry over the last 50 years."
+    },
+    {
+     "quote": "With a production of more than 1,3 million tonnes in 2019 at around 1000 approved sites along the Norwegian coast (Directorate of Fisheries 2020), Norway is the world’s largest producer of this species",
+     "statement": "A cited Directorate of Fisheries figure reports more than 1,3 million tonnes of salmon production in 2019 at around 1000 approved sites along the Norwegian coast."
+    },
+    {
+     "quote": "even though the production volume was virtually unchanged between 2012 and 2019, mainly due to challenges related to sea lice and escaped farmed salmon",
+     "statement": "The authors report, citing Hersoug et al. (2019), that Norwegian aquaculture production volume was virtually unchanged between 2012 and 2019, mainly due to sea lice and escaped farmed salmon."
+    },
+    {
+     "quote": "The Norwegian regulation on impact assessments requires that the assessments should be tailored to the specific context, and lists 18 topics that may be considered, including nature diversity, ecosystem services, cultural heritage, recreation, landscape, and effects of climate change.",
+     "statement": "Norwegian impact assessment regulations list 18 topics that may be considered in assessments, which are to be tailored to their specific context."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe municipal spatial planning as a central mechanism for deciding where aquaculture can be sited: farms must accord with municipal coastal zone plans, and municipalities are the planning authority for near-shore sea space within 1 nautical mile from the base lines. The Aquaculture Act bars site licences that contravene adopted conservation measures or land-use plans unless the relevant authority consents. Local political authorities can choose whether to facilitate aquaculture, but sector agencies can formally object to plans that conflict with their legislation or priorities; unresolved objections go to the Ministry of Local Government and Modernisation. Plans must consider environmental and social impacts, while balancing aquaculture against other interests. State-sector permissions are also required at the subsequent licensing stage.",
+    "A1": "The authors explain that development opportunities depend on space being allocated in municipal spatial plans and on obtaining a subsequent site licence. Municipalities have substantial influence over siting, but formal objections from sector agencies can constrain plans, and state authorities responsible for pollution, food safety and marine traffic must grant permissions for a site licence. Environmental impacts and competing interests, including fisheries, wildlife, recreation and biodiversity, also enter decisions. The paper notes that sea lice and escaped farmed salmon were cited as major challenges associated with virtually unchanged production volume between 2012 and 2019. The segment does not detail how fish health, connectivity or licensing capacity interact at specific sites.",
+    "A2": "The authors outline a sequence rather than report application-stage outcomes: municipal plans allocate space and undergo a mandatory hearing; sector agencies may make formal objections, which must be resolved before adoption, with unresolved objections referred to the Ministry of Local Government and Modernisation. A later site-licensing process requires permissions from state sector authorities and further consideration of other interests. Site licence applications are generally considered to provide enough information alongside the planning SEA, so EIAs are rarely made, according to cited Robertsen et al. (2016). This segment gives no counts or evidence on where delays, rejections or conflicts most commonly occur.",
+    "A3": "The authors state that Norwegian management requires consideration of cumulative environmental effects under the Nature Diversity Act, and that mandatory SEAs describe environmental and social impacts for proposed new aquaculture areas. The paper’s cases examine how proposed areas are assessed and traded off, but this segment provides no case results on cumulative-effect assessment methods. The authors identify a general methodological challenge: regulations and guidelines are broad, not tailored to aquaculture or coastal space, and leave substantial discretion over assessment methods, knowledge and presentation. They also note that SEA practice varies considerably between municipalities.",
+    "A4": "The authors state that aquaculture has brought employment and income to rural areas and national income and export, while controversies concern uneven distribution of benefits and the distribution of industry burdens. Municipalities are in principle free to facilitate aquaculture or not, so planning choices shape access to sea space. The segment describes regulatory arrangements, including municipal plans, formal objections and later state permissions, but does not discuss economic instruments, quantify costs or benefits, or explain how these are distributed among particular stakeholders.",
+    "A5": "The authors describe SEAs as drawing on a knowledge base to assess area value, impacts and consequences, but argue that Norwegian rules and guidance leave considerable discretion over databases, methods and presentation. They report that SEA scope, knowledge foundations, practices and formats vary substantially between municipalities, citing Sørdahl et al. (2017). The Norwegian framework calls for knowledge-based and ecosystem-based management, the precautionary approach and attention to cumulative environmental effects. The authors argue that scientific knowledge cannot make planning entirely objective or value-free: practitioner norms, bounded rationality, perceived risks and uncertainty, and politics can shape indicators and decisions. This segment says nothing about emerging technologies.",
+    "A6": "The authors frame aquaculture planning as a setting for trade-offs between an important but controversial industry and other coastal interests. They identify controversies involving negative environmental impacts, access to sea space and uneven distribution of benefits and burdens. For decision-making legitimacy, they emphasize transparent, accountable, inclusive and fair processes, and say that inconsistent assessments can reduce clarity and credibility. Planning rules provide public participation and formal objection routes for sector agencies, while NGOs and individuals may comment but cannot make formal objections. The authors stress that the rationale for decisions should remain transparent even though planning is political and cannot be wholly objective.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [
+    "3. Case studies",
+    "4. Methods"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 18264,
+   "key_figures": [
+    {
+     "quote": "This resulted in four intermunicipal planning processes undertaken during the years 2013–2016, involving 22 of the county’s 23 coastal municipalities",
+     "statement": "The authors report that four intermunicipal planning processes were undertaken in Troms county during 2013–2016, involving 22 of its 23 coastal municipalities."
+    },
+    {
+     "quote": "The Mid and South Troms (MST) planning process consisted of 13 municipalities with a total population of around 55 000.",
+     "statement": "The authors report that the Mid and South Troms process involved 13 municipalities with a population of around 55 000."
+    },
+    {
+     "quote": "The total size of the planned sea area was around 3800 km2, of which more than 25% belonged to one municipality.",
+     "statement": "The authors report that the Mid and South Troms planned sea area covered around 3800 km2, with more than 25% belonging to one municipality."
+    },
+    {
+     "quote": "At the start of the planning process, 70 000 tonnes, or around 50% of the salmon produced in the county, came from these 13 municipalities.",
+     "statement": "The authors report that at the start of the Mid and South Troms planning process, the 13 municipalities produced 70 000 tonnes, or around 50% of the salmon produced in Troms county."
+    },
+    {
+     "quote": "They had 85 approved aquaculture localities, of which 61 were for salmon.",
+     "statement": "The authors report that the Mid and South Troms municipalities had 85 approved aquaculture localities at the start of the planning process, of which 61 were for salmon."
+    },
+    {
+     "quote": "Aquaculture directly employed 391 people in the core activity, and there were 490 registered fishers.",
+     "statement": "The authors report direct core-activity aquaculture employment of 391 people and 490 registered fishers in the Mid and South Troms municipalities at the start of the planning process."
+    },
+    {
+     "quote": "Aquaculture was expected to increase, and 109 aquaculture areas were proposed as established or expanded. Of these, 101 were for salmon (41 new and 60 expansions/adjustments of existing localities), and the rest for cod (6), shellfish (1) or other species (1).",
+     "statement": "The authors report that the Mid and South Troms plan proposed 109 established or expanded aquaculture areas, including 101 for salmon, six for cod, one for shellfish and one for other species."
+    },
+    {
+     "quote": "The SEA recommendation was to allow 89 of the proposed aquaculture areas and disallow 20.",
+     "statement": "The authors report that the Mid and South Troms SEA recommended allowing 89 proposed aquaculture areas and disallowing 20."
+    },
+    {
+     "quote": "The Tromsø region coastal planning process was for five municipalities with a total population of around 88 000, of which 70 000 lived in Tromsø, the largest city in North-Norway.",
+     "statement": "The authors report that the Tromsø region process covered five municipalities with a total population of around 88 000, including 70 000 residents in Tromsø."
+    },
+    {
+     "quote": "The total size of the planned sea area was about 5100 km2, of which almost half belonged to one of the municipalities.",
+     "statement": "The authors report that the Tromsø region planned sea area covered about 5100 km2, with almost half belonging to one municipality."
+    },
+    {
+     "quote": "A total of 34 new or expanded aquaculture areas were proposed in this plan. Of these, 33 were for salmon (31 new and two expansion of existing locality) and one for cod.",
+     "statement": "The authors report that the Tromsø region plan proposed 34 new or expanded aquaculture areas, including 33 for salmon and one for cod."
+    },
+    {
+     "quote": "The SEA recommendation was to allow 15 aquaculture areas and to disallow 19.",
+     "statement": "The authors report that the Tromsø region SEA recommended allowing 15 proposed aquaculture areas and disallowing 19."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe two intermunicipal coastal plans in Troms as responses to growing sea-space use, competition and conflict. In Mid and South Troms, the stated plan purpose was to create opportunities for marine-industry value creation consistent with sustainable development; in the Tromsø region, the stated purpose was to accommodate industrial development while considering non-commercial interests. The authors report that each process proposed new or expanded aquaculture areas, assessed them through an SEA, and then presented recommendations that politicians sometimes changed. This illustrates planning as a balance among proposed industry development, assessed interests and political decisions, but this segment does not explain the full national planning framework or how environmental considerations are ultimately weighted.",
+    "A1": "The authors’ case descriptions show that development opportunities are shaped by existing aquaculture activity and the amount of sea area considered in municipal planning, alongside competing coastal uses. Mid and South Troms planned for expansion in an area already producing salmon and containing approved localities; its SEA covered 22 themes, while the Tromsø region assessed proposed areas against 14 themes, with some assessed verbally only. The cases also show that municipal planning and SEA recommendations do not alone determine outcomes: politicians changed some recommendations. The segment does not discuss licensing rules, site availability constraints in detail, environmental carrying capacity, or fish health, so it cannot establish how these factors interact more broadly.",
+    "A2": "The authors describe a sequence in which municipalities proposed aquaculture areas, SEAs and risk-and-vulnerability analyses assessed the proposals, administrative recommendations followed, and politicians made final decisions. In Mid and South Troms, planners in individual municipalities conducted area SEAs using an agreed method; in the Tromsø region, a consultant managed the process and carried out elements including impact assessment. Politicians altered recommendations in both cases, allowing some areas the SEA did not recommend and turning down some recommended areas. This segment does not report application-stage durations, delays, formal rejection grounds, or where conflicts most commonly arise in the licensing process.",
+    "A3": "The authors’ cases show cumulative production effects incorporated only indirectly through assessments of proposed individual aquaculture areas and their consequences across multiple themes; the segment does not describe a production-level cumulative-effects assessment. Mid and South Troms assessed each proposal across 22 themes using scores for value, impact and consequence, while the Tromsø region covered 14 themes and used verbal descriptions for nine. Risk and vulnerability were also considered. The authors identify methodological differences between the cases, including inconsistent scoring rules and the absence of numerical value and impact scores in the Tromsø region assessment. They also note that the Tromsø SEA did not explicitly include positive aquaculture effects on employment, industry activity or regional income. These differences complicate comparison and consistency.",
+    "A4": "The segment does not discuss economic instruments, fees, taxes or how regulatory arrangements change incentives for site selection. It does report that the Mid and South Troms plan sought marine-industry value creation under sustainable development and that aquaculture was assessed in relation to industry and employment. In that case, predefined job-count criteria could determine positive or negative impact scores for employment. By contrast, the Tromsø region assessment did not explicitly include positive effects of aquaculture on employment, industry activity or regional income. These are case-specific assessment choices reported by the authors, not evidence about the distribution of economic benefits and costs among stakeholders.",
+    "A5": "The authors report that the SEA knowledge base drew on different information sources, which their methods classify as national guidelines, public databases, technical reports or agency/expert input, and public meeting or stakeholder input. Their analysis considers whether sources are transparent and whether information was produced independently of or within the planning process. The authors examine how value and impact scores are assigned, distinguishing clear objective rules from partly specified or discretionary judgments. They note that the Mid and South Troms process developed an agreed method through planner meetings, whereas the Tromsø region used a consultant and verbal-only assessments for some themes. The segment does not discuss emerging technologies.",
+    "A6": "The authors describe rising competition and conflict in the coastal zone, involving aquaculture, fisheries and recreational use in Mid and South Troms, and broader competition between commercial and non-commercial interests in the Tromsø region. Their cases show a potential source of procedural conflict: the SEAs and political decisions did not always align. Politicians turned down some SEA recommendations and allowed some areas the assessments had not recommended in both processes. The paper’s stated analytical concern is transparency and fairness, with consistency across municipalities, proposed areas and planning processes treated as relevant to legitimacy. The segment does not report detailed stakeholder disputes or establish which decisions were considered legitimate by affected groups.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [
+    "5. Results",
+    "Model pR2 MST",
+    "Model pR2 MST"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 34110,
+   "key_figures": [
+    {
+     "quote": "For the Mid and South Troms SEA, out of the 22 themes, only six had value-scores based on a clearly stated rule, and for three this was only partly so",
+     "statement": "The authors found that, in the Mid and South Troms SEA, only six of 22 themes had value scores based on a clearly stated rule, with three more partly rule-based."
+    },
+    {
+     "quote": "For Mid and South Troms, 108 of the 110 verbal summaries for the proposed aquaculture areas had discrepancies with the SEA theme scores.",
+     "statement": "The authors found discrepancies between SEA theme scores and 108 of 110 verbal summaries for proposed aquaculture areas in Mid and South Troms."
+    },
+    {
+     "quote": "The average number of discrepancies per proposed aquaculture area was 4.3, while the highest was 13.",
+     "statement": "The authors found an average of 4.3 discrepancies per proposed aquaculture area in Mid and South Troms, with a maximum of 13."
+    },
+    {
+     "quote": "Ninety percent of the discrepancies in the verbal summaries made the consequences seem less negative/more positive than the theme scores indicated, and conversely, ten percent of the discrepancies made the consequences seem more negative/less positive.",
+     "statement": "The authors found that, in Mid and South Troms, ninety percent of summary discrepancies presented consequences as less negative or more positive, while ten percent presented them as more negative or less positive."
+    },
+    {
+     "quote": "For the Tromsø region, 19 of the 34 verbal summaries had discrepancies",
+     "statement": "The authors found discrepancies in 19 of 34 verbal summaries for proposed aquaculture areas in the Tromsø region."
+    },
+    {
+     "quote": "The average number of discrepancies per proposed aquaculture area was 0.8, while the highest was two",
+     "statement": "The authors found an average of 0.8 discrepancies per proposed aquaculture area in the Tromsø region, with a maximum of two."
+    },
+    {
+     "quote": "For the Tromsø region, the political decisions went against 24% of the recommendations, and for Mid and South Troms 12%.",
+     "statement": "The authors found that political decisions in the Tromsø region went against 24% of administrative recommendations, compared with 12% in Mid and South Troms."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors find that coastal aquaculture decisions in the two Norwegian planning cases were shaped by SEA consequence scores, administrative recommendations, municipal political decisions, and formal objections by state authorities. The apparent decision rule differed: recommendations in Tromsø were based on the sum of consequence scores, while Mid and South Troms recommendations and political decisions in both cases appeared to rely on themes with high consequence scores in absolute value. The authors caution that scores across themes may not be comparable, and that aggregating them can obscure either cumulative smaller effects or a very important individual interest. They frame planning as a trade-off between consistent rules and responsiveness to local context.",
+    "A1": "This segment does not discuss licensing systems, site availability, or fish-health constraints. It does show that spatial-development opportunities are considered through SEA themes and consequence scores, but the rules for scoring are often discretionary. In Mid and South Troms, only six of 22 themes had clearly stated rules for value scores, and only four had clearly stated rules for impact scores. The authors find that decisions depend on how consequences are scored and traded off, and note that local knowledge and context can lead planners to adjust standardized assessments. Formal objections by state authorities can also affect whether proposed areas proceed.",
+    "A2": "",
+    "A3": "The segment examines how SEA impact assessments inform area decisions, rather than cumulative-effect assessment of production. The authors find that the SEAs relied on similar sets of sources, especially national databases, but did not identify precisely which datasets were used or how original data were collected. Scoring often involved discretionary judgement, and the authors identify a basic methodological concern: scores for different themes may not be comparable. They also find that the verbal summaries frequently diverged from theme scores, particularly in Mid and South Troms, raising concerns about how assessment results are communicated into trade-off decisions. No explicit production-level cumulative-effects method is described here.",
+    "A4": "",
+    "A5": "The authors find that the SEAs listed many external knowledge sources, especially national databases, guidelines, plans, technical reports and agency or expert input. However, source names were often broad, with no exact dataset or account of how the underlying data were gathered; public-meeting and stakeholder information was also not clearly traced into decisions. They describe these sources as potential “black boxes” and note that more information can paradoxically make transparency worse when users cannot navigate it. Local perceptions, such as recreational-area importance and effects on local businesses, may require local input. Limited municipal capacity, time and resources can constrain collection of new local data.",
+    "A6": "The authors identify tensions among local interests, national and regional interests, aquaculture development, and other coastal uses. Formal objections by state authorities can overturn or constrain municipal draft plans, and unresolved objections are decided by the ministry responsible for planning. They argue that standardized scoring can improve transparency and consistency across places but may fail to reflect local context and thereby weaken legitimacy. Conversely, local discretion can improve contextual fit but may introduce inconsistent or biased decisions. The authors also find substantial discrepancies in verbal summaries of SEA scores, which could affect public impressions and the legitimacy of recommendations.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [
+    "7. Conclusion",
+    "Declaration of competing interest",
+    "Acknowledgements",
+    "Appendix A. Supplementary data"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 5275,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The authors find that choices in strategic environmental assessment (SEA) design affect transparency and consistency in coastal planning. In the SEAs studied, there were no general descriptions of how trade-offs were made beyond references to assessed consequences and risk and vulnerability analyses; decisions therefore appeared to rest largely with planners. Administrative recommendations used different logics: one summed consequence scores across themes for each proposed aquaculture area, while the other focused on themes with extreme scores. The authors argue for clearer explanations of trade-off methods while retaining room for local adaptation.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors argue that independent data from national databases and expert reports, together with standardized methods for assigning value and impact scores, can support consistency across places and SEA processes. However, referring readers to information or methods described elsewhere can reduce transparency and make assessments seem like black boxes. The authors also note that relevant data may be limited and that local conditions may vary too much for standardized methods to capture well. These are methodological observations about SEA, not a specific account of emerging technologies or aquaculture siting data.",
+    "A6": "The authors find that opaque trade-off decisions can undermine transparency and fairness, and that complex SEA descriptions may create information overload that affects groups’ power and influence. They argue that clearer explanations, public hearings, and quality assurance of verbal summaries can support legitimacy and public understanding. Their conclusion also cautions against overly rigid standardization: practitioner discretion and local adaptation can help address local conditions and enable innovative solutions, provided the reasons for special assessments are explained clearly.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

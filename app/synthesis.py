@@ -277,9 +277,13 @@ FREEFORM_FULL_BRIEF_TOP_N = 3
 # How much of each retrieved document a freeform prompt carries. The default keeps
 # the villaks room as it was; the Areal room gives the writer more of each source
 # so full researcher answers can be specific (numbers, design, scope).
+# The Areal room also carries full-text material (enrichment.py): figures and
+# chapters per document, more for the top_n documents than for the rest.
 DEFAULT_EVIDENCE_BUDGET = {"claims": 4, "extras": 2, "top_n": FREEFORM_FULL_BRIEF_TOP_N,
-                           "top_chars": FREEFORM_SUMMARY_MAX_CHARS, "rest_chars": 500}
-AREA_EVIDENCE_BUDGET = {"claims": 6, "extras": 3, "top_n": 5, "top_chars": 2200, "rest_chars": 900}
+                           "top_chars": FREEFORM_SUMMARY_MAX_CHARS, "rest_chars": 500,
+                           "figures": (0, 0), "chapters": (0, 0)}
+AREA_EVIDENCE_BUDGET = {"claims": 6, "extras": 3, "top_n": 5, "top_chars": 2200, "rest_chars": 900,
+                        "figures": (6, 3), "chapters": (2, 1)}
 
 _SYNTHESIS_STOPWORDS = {
     "and", "are", "for", "from", "how", "the", "what", "when", "where", "which",
@@ -348,6 +352,33 @@ def citation_label(authors: str, year: object, title: str = "") -> str:
     return f"{who} {year}".strip()
 
 
+def _pages(start: int | None, end: int | None = None) -> str:
+    if not start:
+        return ""
+    return f" (p. {start})" if not end or end == start else f" (pp. {start}-{end})"
+
+
+def _full_text_material(r: dict, budget: dict, *, top: bool) -> str:
+    """Priority-question notes, matching chapters and verbatim figures read from the
+    full text (enrichment.py). Empty for results without them."""
+    text = ""
+    for code, note in (r.get("pq_notes") or {}).items():
+        text += f"\nNote on {code}, written from the full text:\n{note}"
+    n_chapters = budget["chapters"][0 if top else 1]
+    for chapter in (r.get("chapter_hits") or [])[:n_chapters]:
+        where = _pages(chapter.get("page_from"), chapter.get("page_to"))
+        text += (
+            f"\nMatching chapter \"{chapter['title']}\"{where}, summary written from the full text:"
+            f"\n{chapter['text']}"
+        )
+    figures = (r.get("key_figures") or [])[: budget["figures"][0 if top else 1]]
+    if figures:
+        text += "\nKey figures, quoted verbatim from the full text:\n" + "\n".join(
+            f"  - \"{f['quote']}\"{_pages(f.get('page'))} [{f['statement']}]" for f in figures
+        )
+    return text
+
+
 def build_evidence_block(
     results: list[dict], *, compact: bool = False, query: str = "", budget: dict | None = None
 ) -> str:
@@ -396,6 +427,8 @@ Key claims:
         block += f"\nVerification status: {verification}"
         if r.get("evidence_family") and r.get("evidence_family") != f"family:{r.get('doc_id')}":
             block += f"\nEvidence family: {r['evidence_family']} (do not count family members as independent corroboration)"
+
+        block += _full_text_material(r, budget, top=i <= budget["top_n"])
 
         summary_raw = (r.get("summary_text") or "").strip()
         if summary_raw:
@@ -477,6 +510,14 @@ international assessments. Use them for the official picture, rules, goals and
 official figures, and say that this is what they are (e.g. "the government's
 action plan states …"); do not present them as research findings or count them
 as corroboration of a study.
+
+Some documents also carry material read from their full text: a note on a
+priority question, a matching chapter of a large report, and key figures quoted
+verbatim. Use it where it is more specific than the summary. Give every figure
+as the source gives it, including wording such as "nearly 50 %" or "about"; do
+not calculate new figures (percentages, sums, differences or ratios) from the
+numbers in the sources. The bracketed statement after a quote explains what the
+figure measures; it is not part of the quote.
 
 Distinguish empirical findings, models, legal analysis, policy claims and
 adjacent evidence. When two records belong to the same evidence family,

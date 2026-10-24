@@ -1,0 +1,50 @@
+{
+ "doc_id": "2017_kvalvik_intermunicipal-coastal-planning",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 10,
+   "chars": 69160,
+   "key_figures": [
+    {
+     "quote": "Nine planning processes in six counties, involving 65 municipalities, have been conducted in recent years.",
+     "statement": "The authors report that nine inter-municipal coastal planning processes involving 65 municipalities in six Norwegian counties had been conducted in recent years."
+    },
+    {
+     "quote": "Only in four of the processes, the Lyngenfjord, Fensfjord, the Romsdalsfjord and the Nord-Troms (numbers 1, 3, 5 and 9 in the table), we fioud real policy integration through the development of a well-coordinated plan",
+     "statement": "The authors find that four of the nine Norwegian inter-municipal processes achieved real policy integration through a well-coordinated plan."
+    },
+    {
+     "quote": "These processes however involve few municipalities, in total they amount to 15 of the 65 municipalities involved in inter-municipal planning.",
+     "statement": "The authors report that the four processes with a high degree of holistic planning involved 15 of the 65 municipalities participating in inter-municipal planning."
+    },
+    {
+     "quote": "In seven of the projects the board was delegated planning authority, in line with the Plan and Building Act x9-3.",
+     "statement": "The authors report that the boards in seven of the nine planning projects were delegated authority over the planning process."
+    },
+    {
+     "quote": "The shortest process took less than two years, while two processes that started in 2012 are still not complete (as of October 2016), by far exceeding their set timeframe.",
+     "statement": "The authors report that the shortest of the nine processes took less than two years, while two processes begun in 2012 remained incomplete as of October 2016."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors find that municipal coastal zone plans determine whether and where new aquaculture sites can be established: new sites and relocations must comply with those plans. Municipalities retain considerable discretion over designating aquaculture areas, although national sector agencies have authority in fields such as environment, fisheries, navigation and veterinary affairs. Planning must balance aquaculture with fisheries, environmental protection, recreation, transport, tourism and other uses. The authors find that inter-municipal planning commonly coordinates planning processes and tools, but coordination of actual area designations is more limited. In four processes the authors identify well-coordinated plans; elsewhere municipalities often made area decisions individually. Environmental and veterinary regulation, including distance requirements and production-area environmental status, also constrain development.",
+    "A1": "The authors identify site availability as dependent on municipal designation in coastal zone plans, as well as on environmental and veterinary restrictions. They report that aquaculture sites have become fewer while production per site and permitted biomass have increased; industry development requires larger sites and deeper waters. The cited regulatory distance requirements generally include 2.5 km between farms and 5 km between a farm and a slaughterhouse. Disease and parasite dispersion, currents, environmental impact and sea-lice status shape the practical suitability of sites. Municipal reluctance to allocate areas, associated in the paper with environmental concerns and limited local economic returns, is another constraint. The article focuses on planning coordination, not the full licensing system.",
+    "A2": "The segment does not describe the complete application and licensing sequence for an individual aquaculture site. It does show that municipal coastal zone plans establish the areas in which new sites may be developed, while sector authorities can object to proposed designations. In the Sør-Trøndelag process, proposed aquaculture areas were removed before plan adoption because of objections from sector authorities; the Helgeland plan was stopped at county level after protests from other sector agencies. Planning itself could be protracted: the authors report that two processes begun in 2012 were still incomplete as of October 2016, while the shortest took less than two years. These are planning-process examples, not general application-stage delay rates.",
+    "A3": "The authors place inter-municipal planning in the context of ecosystem-based management, which requires consideration of cumulative impacts from different human uses over larger geographical areas. Planning documents emphasized acquiring common information, identifying suitable aquaculture areas and conflicting interests, and establishing shared criteria. In some projects, impact assessments and common data gathering supported planning. However, the segment does not report a consistent method for cumulative-effect assessment or show that such assessments systematically determined site choices. The authors describe knowledge gaps as a practical obstacle: in Helgeland, municipalities used an inverse planning approach partly because they lacked knowledge of areas suitable for aquaculture. They also note that planning integration and common criteria remained uneven.",
+    "A4": "The authors argue that cooperation does not automatically produce a win-win outcome when areas for aquaculture are designated: both pollution-related costs and economic benefits are local, so municipalities may have different incentives. They report that municipalities have been reluctant to allocate new areas partly because local economic returns are limited relative to the profitability of the industry. The paper notes that part of the aquaculture licence fee is redistributed by the government to municipalities where production occurs, but it does not quantify the distribution or assess the instrument's effects. In processes achieving content integration, municipalities considered the distribution of benefits and burdens across the whole area and saw benefits for their own municipality in the shared decision.",
+    "A5": "The authors describe a planning knowledge base built through shared information gathering, common plan descriptions, mapping systems, databases and criteria. They find that these shared tools and standards can improve consistency and predictability for public and industry users. Knowledge acquisition included impact assessments in some processes, while planners also exchanged local experience and developed competence. The segment identifies significant gaps: the Helgeland municipalities said they lacked knowledge of suitable aquaculture locations, and the authors note a broader lack of unified criteria for managing coastal areas and aquaculture. Technological innovation is described as driving larger-scale production and demand for larger sites in deeper waters. The article does not assess emerging monitoring or siting technologies in detail.",
+    "A6": "The authors identify competing interests involving aquaculture, fisheries, environmental protection, recreation, shipping, tourism, transport and conservation. In the Fensfjord process, municipalities jointly prioritized shipping and did not designate new aquaculture areas, partly in a busy fjord with varied traffic. In Tromsø-region planning, inconsistent decisions around a shared fjord and salmon river confused aquaculture businesses and illustrated the need for coordination across municipal borders. Sector-agency objections also affected outcomes: proposed areas were removed in Sør-Trøndelag, and the Helgeland plan was stopped at county level after protests. The authors suggest that predictable and legitimate decisions are supported by common information, shared criteria, transparent coordination and consideration of the distribution of benefits and burdens, while municipal autonomy limits joint decision-making.",
+    "A7": "",
+    "A8": "The authors state that aquaculture sites influence one another, particularly through the spread of diseases and parasites, and identify disease dispersion as a main limiting factor for sea-based fish farming. Environmental and veterinary regulations require distances between production sites; the cited general requirements are 2.5 km between farms and 5 km between a farm and a slaughterhouse. The appropriate dispersion range depends on regulations and on physical and ecological factors such as currents, offsetting distance and environmental impact. The paper also discusses proposed production zones separated by areas without aquaculture, and monitoring of sea lice and conditions under and near cages. It does not provide a detailed analysis of water connectivity or farm-level biosecurity practices."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

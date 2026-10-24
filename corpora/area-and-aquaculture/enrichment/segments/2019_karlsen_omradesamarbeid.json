@@ -1,0 +1,177 @@
+{
+ "doc_id": "2019_karlsen_omradesamarbeid",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 4,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Områdesamarbeid i norsk havbruk",
+    "Foretaksnr.: NO 989 278 835",
+    "Rapport",
+    "Innhold",
+    "1 Innledning",
+    "2 Metode"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 26902,
+   "key_figures": [
+    {
+     "quote": "Regjeringen har en visjon om en femdobling av vekst i havbruk innen 2050.",
+     "statement": "The report describes the Norwegian government’s vision of a fivefold increase in aquaculture growth by 2050; this is a cited policy vision, not an authors’ finding."
+    },
+    {
+     "quote": "Dette systemet deler kysten inn i 13 områder, såkalt produksjonsområder, hvor miljøindikatorer skal regulere kapasiteten (Figur 2).",
+     "statement": "Norway’s capacity system divides the coast into 13 production areas; this is a report description of the system introduced in 2017."
+    },
+    {
+     "quote": "Norge (etter modell fra EU) skal bygge opp et omfattende apparat, bestående av vannregioner (11 i alt, se Figur 3) og vannområder (16), for å ta hånd om i alt 23 536 vannforekomster (Klausen, 2012).",
+     "statement": "The cited account says Norway’s water-management system comprises 11 water regions, 16 water areas and 23 536 water bodies; these are figures cited from Klausen (2012)."
+    },
+    {
+     "quote": "Etter siste kommunesammenslåingsreform er det nå 356 kommuner (per 2020) i Norge. Av disse er det cirka 164 som har lakseoppdrett innen sine kommunale farvann.",
+     "statement": "The report states that Norway had 356 municipalities as of 2020 and that approximately 164 had salmon farming in their municipal waters; these are descriptive figures reported by the authors."
+    },
+    {
+     "quote": "Men også innenfor slike regionale planforslag, må endelig kystsoneplan (eller del av kommuneplan) godkjennes av det enkelte kommunestyre. Samordning innenfor hvert enkelt kommunehav vil derfor stadig være en utfordring.",
+     "statement": "This passage contains no quantitative finding and is not included as a key figure."
+    },
+    {
+     "quote": "I 2019 har det vært gjennomført en spørreundersøkelse blant alle oppdrettsbedrifter i hele Norge.",
+     "statement": "The authors report that a nationwide survey of aquaculture businesses was conducted in 2019; this passage gives no respondent count."
+    },
+    {
+     "quote": "Antall informanter var 37 oppdrettere.",
+     "statement": "The authors report that 37 fish-farming operators participated as informants in the 2019 nationwide survey."
+    },
+    {
+     "quote": "Lokaliteter i sjøvann med matfisk og stamfisk skal tømmes og brakklegges i minimum 2 måneder etter hver produksjonssyklus.",
+     "statement": "The cited aquaculture operations regulation requires marine food-fish and broodstock sites to be fallowed for a minimum of 2 months after each production cycle."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The report says access to sea area is central to the government’s vision for substantial aquaculture growth, while new area needs, environmental impacts, fish welfare and reputation are ongoing challenges. Municipalities are responsible for identifying suitable aquaculture areas or multi-use areas that include aquaculture, and increasing scarcity can force municipalities and county authorities to prioritize among companies seeking the same site. Planning jurisdictions overlap: municipal waters, production areas and ecosystem-based water regions have different boundaries. The authors describe water-region planning as intended to coordinate users and impacts, but cite Klausen’s conclusion that adding another regional division does not automatically improve coordination when authority and resources are dispersed. The segment does not provide a comprehensive account of how environmental, industry and other-use priorities are balanced in site decisions.",
+    "A1": "The segment identifies access to suitable sea area, municipal plans, competition for scarce sites, environmental indicators and fish-health requirements as factors affecting development opportunities. The capacity system described by the authors divides the coast into 13 production areas, and capacity is currently regulated only by the environmental indicator sea lice. Municipalities designate aquaculture or multi-use areas, but their planning is described as voluntary in principle; final coastal plans still require approval by the individual municipal council. Disease-control rules can require coordinated fallowing, movement restrictions and other measures, while the cited operations regulation requires a minimum fallowing period after each production cycle. Water quality may also constrain new activity that worsens poor environmental conditions, although the report says the Water Framework Directive had not been used to restrict aquaculture in fjords or along the coast to that point.",
+    "A2": "This segment does not describe the stages of an individual site-application process or report where applications are delayed, rejected or disputed. It does say that municipalities identify suitable aquaculture areas and that growing area scarcity can lead municipalities, in cooperation with county authorities, to prioritize among companies seeking the same site. The segment also notes that a coastal-zone plan, or relevant part of a municipal plan, must be approved by the individual municipal council, including when developed through regional planning cooperation. These are planning and allocation conditions, not a process map of site applications, and the report gives no application-processing durations or rejection figures here.",
+    "A3": "The segment does not describe cumulative-effect assessments of aquaculture production or explain how such assessments are incorporated into site selection. It does discuss ecosystem-based water management: water-region boundaries follow natural catchments and associated coastal areas, with the theoretical aim of coordinating those who use and affect the same water. The authors note, citing Klausen (2012), that this system overlaps other regional divisions and that authority and resources are dispersed, so the added division does not automatically improve coordination. The report also says water quality may affect whether growth or new activity that worsens problems is permissible, but it does not identify cumulative-assessment methods, indicators beyond sea lice for capacity regulation, or methodological challenges specific to cumulative effects.",
+    "A4": "The segment does not discuss economic instruments, how they change incentives for site selection, or how area-use benefits and costs are distributed among stakeholders. It states that evaluating forms of area collaboration through cost-benefit calculations is an aim of the study, but no calculations or results appear in this segment. The report describes competition for scarce sites and municipal prioritization among companies, which indicates that access is contested, but it does not quantify economic consequences or identify fees, taxes, compensation arrangements or allocation mechanisms.",
+    "A5": "The report’s knowledge base in this segment includes a nationwide operator survey, interviews with public authorities, a review of regulations and Google searches, and data from the Food Safety Authority’s internal project on fallowing areas. The authors say the fallowing-area data were processed and digitized, and that the resulting overview was a snapshot as of June 2019; the areas may change over time. The survey included 37 operators, but some were skeptical, and the authors suggest that an algal bloom in Nordland and Troms may have diverted attention and work capacity. The segment also describes overlapping administrative and ecosystem-based spatial divisions, and notes that the Food Safety Authority did not have a current overview of lice-coordination areas. These observations point to information and coordination limitations. The contents list later discussion of digitalization, but this segment gives no findings on how emerging technologies change siting or environmental impacts.",
+    "A6": "The authors describe competition for increasingly scarce coastal areas, including cases where companies want access to the same locality and municipalities must prioritize between them. They also identify overlapping planning boundaries and dispersed authority as challenges to coordination. The water-region discussion cites Klausen (2012), who cautions that adding another regional division will not automatically improve coordination. The report’s stated study aim is to consider whether area collaboration should be industry-led or placed with public administration, and its summary presents voluntary collaboration as a key finding. This segment does not yet provide detailed accounts of specific stakeholder conflicts, procedural legitimacy criteria or evidence on which arrangements produce predictable decisions.",
+    "A7": "The report frames collaboration between aquaculture operators on shared operational and emergency-preparedness challenges as a possible way to address growth, environmental impact, fish welfare and reputation. Its summary identifies voluntary area collaboration as a key finding, and the study aims to assess how collaboration can be organized and whether the industry can take responsibility or whether administration should do so. The segment defines area collaboration as cooperation among actors within a defined geographic area and describes industry coordination around stocking, fallowing, sea-lice control and disease prevention. It also outlines regulatory requirements for coordinated lice-control plans, including information exchange and coordination of treatments and fallowing. Detailed measures and findings on efficiency or sustainability are not yet reported in this segment.",
+    "A8": "The segment gives substantial attention to disease control and coordination between aquaculture sites. A cited regulation allows the Food Safety Authority to establish control areas with eradication and surveillance zones after specified disease is detected, including restrictions on moving live aquatic animals and requirements such as fallowing and biosecurity measures. For sea lice, the cited regulation requires coordinated plans across a defined geographic area, with its extent based on hydrological conditions and the location of farms; plans include coordinated stocking, fallowing, treatments and information exchange. The report also defines coordination areas as geographic areas where farms coordinate lice control and fallowing. These arrangements show why connections between sites matter, but the segment does not give quantified evidence about waterborne disease transmission or specify transmission distances."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [
+    "3 Teoretisk rammeverk",
+    "4 Resultater og diskusjon",
+    "4.1 Områdesamarbeid",
+    "4.1.1 Frivillig, \"frivilling under tvang\" og lovpålagt områdesamarbeid",
+    "4.1.2 Samarbeid om drift og beredskap",
+    "4.1.3 Samarbeid mellom store og små oppdrettsaktører"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 48810,
+   "key_figures": [
+    {
+     "quote": "Tjueåtte av informantene samarbeider med andre for å redusere risiko for spredning av sykdommer og parasitter (Figur 10).",
+     "statement": "The authors' survey finding is that Tjueåtte respondents reported collaborating to reduce disease and parasite transmission risk; the survey population was aquaculture informants in Norway."
+    },
+    {
+     "quote": "Funnene fra spørreundersøkelsen viser at 23 av informantene er helt og delvis enige i at økt konkurranse om lokaliteter begrenser samarbeidet om drift og beredskap (Figur 12). Åtte av informantene er helt eller delvis uenige.",
+     "statement": "The authors' survey finding for Norwegian aquaculture informants is that 23 agreed or partly agreed and Åtte disagreed or partly disagreed that increased site competition limits operational and emergency-preparedness cooperation."
+    },
+    {
+     "quote": "Funnene fra spørreundersøkelsen viser at 25 informanter mener at Mattilsynet krever koordinerte brakkleggingssoner ved godkjenning av driftsplanene (Figur 14).",
+     "statement": "The authors' survey finding is that 25 Norwegian aquaculture informants said the Food Safety Authority requires coordinated fallowing zones when approving operating plans."
+    },
+    {
+     "quote": "Under denne krisen tapte oppdretterne cirka 13 400 tonn fisk (6 600 tonn i Nordland og 6 800 tonn i Troms), og cirka 8 millioner fisk (4 millioner i Nordland og 4 millioner i Troms) (Fiskeridirektoratet, 2019).",
+     "statement": "A figure cited from Fiskeridirektoratet (2019) reports fish losses among farmers affected by the spring 2019 algal crisis in Troms and Nordland."
+    },
+    {
+     "quote": "For lokaliteter, der flere akvakulturtillatelser er tilknyttet, skal det fremgå hvilke tillatelser utsettet gjelder for, og b) tidsrom for brakklegging og eventuell oppbevaring av rensefisk og flytting av fisk til andre lokaliteter, og c) hvilke lokaliteter som eventuelt ikke planlegges brukt.",
+     "statement": "The segment quotes the operating-plan requirements in Akvakulturforskriften §40, including information on fallowing periods and unused sites for marine aquaculture facilities."
+    },
+    {
+     "quote": "Her står det at Fiskeridirektoratet kan trekke tilbake en lokalitetsklarering dersom det ikke har vært virksomhet som overstiger en tredjedel av det tillatte i en periode på to år.",
+     "statement": "The authors' legal reading of the cited allocation regulation is that the Directorate of Fisheries may withdraw site clearance if activity does not exceed en tredjedel of the permitted level during a period på to år."
+    },
+    {
+     "quote": "Her er som kjent kysten delt opp i 13 produksjonsområder, hvor miljøtilstanden måles ut fra èn parameter, nemlig lakselus.",
+     "statement": "The authors state that Norway's coast is divided into 13 production areas whose environmental status is assessed using the single parameter sea lice."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors frame aquaculture sites as part of a shared marine commons: water currents mean farms can affect one another, and externalities such as disease and sea lice may also affect other users, including wild salmon interests. They argue that sustainable growth depends on balancing production with reduced externalities through changes in production technology, operating routines, and area-based cooperation. Area definition is not presented as settled: a Food Safety Authority informant says knowledge about suitable zones is incomplete, and the appropriate scale depends on the problem. The segment describes production areas as organized around sea lice, while fallowing and local cooperation address other operational and health concerns. It does not provide a general account of how competing coastal uses are balanced in spatial plans.",
+    "A1": "The segment identifies site access and competition as important constraints on development and cooperation. A Food Safety Authority informant says actors retain allocated areas, making it harder to establish adequate fallowing areas or durations; survey respondents also linked greater site competition to weaker cooperation on operations and emergency preparedness. The authors describe how site spacing, disease-transmission risk, fallowing-group membership, operating plans, and fish welfare enter the Authority's consideration of establishment or expansion. Larger companies may have more flexibility because they can shift production among more sites, while smaller companies may have fewer options. The segment does not detail the full licensing system or explain how environmental and health considerations are weighed against all other site-availability factors.",
+    "A2": "",
+    "A3": "The authors report that they found no system for assessing combined environmental, economic, and social impacts from multiple companies in an area. They developed a prototype by digitizing Food Safety Authority fallowing-area records and linking site locations, ownership, area size, and lice status over time, arguing that such a tool could support group-level assessment and transparency. They also identify a major knowledge limitation: the correct size and configuration of zones are not well established and may change over time. Earlier zone regulations in Hordaland and Trøndelag were evaluated in 2012; the segment reports cited findings of more coordinated sea-lice control and scientific institutes' view that zone regulations could be useful, but also cites Veterinary Institute findings that cast doubt on whether coordinated fallowing affects lice conditions. Production-area environmental status is measured using sea lice alone. No formal cumulative-impact assessment method for planning or site selection is specified.",
+    "A4": "The segment does not analyze area-use taxes, fees, or other economic instruments in detail. It does discuss incentives and distributional issues in cooperation: a public-administration informant says actors who perform well are not currently rewarded more than those who perform poorly, and suggests clearer criteria and stronger motivation for cooperation. The authors' theoretical discussion says cooperation can spread risk and costs, share resources, improve flexibility, and increase access to technology and knowledge. However, the bioeconomic model discussed by Misund et al. (2019) allows for cooperation measures that cost money while changing disease pressure, growth, production, and profits differently across heterogeneous sites. The authors note that these differences can weaken individual firms' incentives to cooperate even when cooperation may be profitable for the industry and society overall.",
+    "A5": "The authors describe a knowledge base comprising publicly funded research, industry research through FHF, company production-management systems, public registers, and Food Safety Authority records. For spatial analysis, they digitized paper maps of fallowing areas and linked site coordinates and ownership with area size and lice-status data in PowerBI. They say the resulting prototype can make area information easier to inspect and share, but note that no existing tool combined environmental, economic, and social effects across firms. The authors identify gaps in quantitative knowledge of hydrodynamic, biological, and epidemiological relationships, including region-specific relationships, and emphasize that the bioeconomic model is a simplification that assumes full information. Respondents' views of future cooperation also included technological transition, including open versus closed containment, but the survey showed little agreement about future drivers.",
+    "A6": "The authors' survey and interview findings associate conflict with having more aquaculture operators in an area, close spacing between sites, competition over sites and applications, and new entrants seeking locations among established sites and zones. One informant said new entrants can disrupt established zones; another considered this irrelevant where a company is alone in its zone. A Food Safety Authority informant identified access to area as a central obstacle to cooperation. Respondents also described potential power imbalances: smaller firms may be overrun in meetings when larger firms send decision-makers, while some believed small firms receive more lenient treatment. The authors caution that their material does not allow a firm conclusion about whether large or small companies cooperate more or benefit most. Respondents were divided over whether cooperation should be voluntary or managed by authorities, and over who should be responsible.",
+    "A7": "The authors argue that firms can improve spatial efficiency and sustainability through cooperation on production location, fallowing, information sharing, and disease- and sea-lice-control measures. Survey findings indicate that more than half of respondents considered coordinated fish stocking and fallowing important for optimizing sea production, while about half did not consider coordinated delousing central; the authors suggest use of cleaner fish or firm-specific treatment decisions may help explain this difference. They also report that many firms cooperate voluntarily beyond legal requirements, sometimes described by informants as voluntary under pressure because they anticipate regulatory orders otherwise. The authors' recommendations from the cited 2019 algal-crisis study include better monitoring, regional analysis capacity, emergency agreements, and coordinated communication. These are presented as policy and preparedness recommendations, not evaluated measures of spatial efficiency.",
+    "A8": "Water currents connect farms, creating mutual exposure and making disease transmission a central reason for cooperation in the authors' account. The Food Safety Authority considers transmission risk and distances between sites when assessing establishment or expansion, and examines whether sites belong to fallowing groups through operating plans. The authors' survey found that Tjueåtte informants collaborated to reduce disease and parasite spread. An informant described a specific operational risk: a wellboat that carried smolt affected by PD may transmit infection to fish transported afterward, creating cleaning costs and uncertainty about who should pay. The authors also discuss a bioeconomic model by Misund et al. (2019) that represents lice and disease pressure from other farms and allows site vulnerability to differ. They caution that quantitative knowledge of relevant biological and epidemiological relationships, including for particular coastal regions, remains insufficient."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [
+    "5 Oppsummering",
+    "6 Anbefalinger organisering av områdesamarbeid",
+    "Vedlegg - Intervjuguide spørreundersøkelsen",
+    "Spørreundersøkelse om samarbeid mellom oppdrettsaktører og forvaltning",
+    "Del 2 – Framtidas samarbeidssituasjon mot år 2030"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 16351,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The authors argue that area management is shaped by shared environmental externalities, especially the movement of feed residues, disease and sea lice with currents, and by competition for localities. Coordinated fallowing and area-wide operating plans are used to address fish health and welfare. The authors say the relevant administrative responsibilities are divided among state, county and municipal bodies; they suggest that centralisation could simplify administration, while greater municipal influence could increase demands for organised cooperation. The report does not set out a general spatial-planning framework for balancing aquaculture with all competing coastal uses.",
+    "A1": "The authors identify competition for localities as a constraint on cooperation in operations and emergency preparedness. They also describe how technology could affect development opportunities and the need for coordination: offshore solutions, closed cages, large smolt and land-based facilities are potential developments, and closed cages could reduce the need for cooperation on lice and disease control. The segment discusses shared fallowing and emergency sites, but does not analyse licensing rules, site suitability criteria or how environmental and fish-health factors jointly determine whether an individual site is available.",
+    "A2": "The segment does not describe the application process for establishing an aquaculture site or identify typical application delays, rejections or conflicts. It does say that operational plans in an area are assessed together and approved when they meet fish-health and welfare considerations, and that the Food Safety Authority increasingly requires coordinated fallowing. This concerns approval and coordination of operating plans, not the stages of a site application, so it cannot establish where site-application problems most commonly arise.",
+    "A3": "The authors state that there is currently no tool for an integrated assessment of positive and negative effects from different aquaculture actors at local and regional levels, including environmental, economic and social factors. They recommend developing a digital tool for area cooperation, noting that substantial site-level data already exist and that some data are compiled in BarentsWatch’s fish-health service. They also recommend developing a national digital overview of fallowing areas. A cited study by Guarracino et al. (2018), reported as findings from the Veterinary Institute, casts doubt on whether coordinated fallowing affects the sea-lice situation; the authors call for scientific clarification and better knowledge of optimal fallowing-area numbers and boundaries.",
+    "A4": "The authors recommend that cooperation agreements clearly specify actions, decision rules and sanctions, and make cooperation costs and benefits visible, reasonably distributed and not subject to excessive uncertainty. They identify shared emergency localities as a public good that companies alone may not be able to provide, recommending that county authorities, municipalities, the Food Safety Authority and the Directorate of Fisheries jointly develop a minimum provision within each production area. The segment discusses incentives and distribution in terms of cooperation, not specific economic instruments, fees or a quantified allocation of costs and benefits.",
+    "A5": "The authors describe open research and information-sharing as contributors to the development of technology, feed and vaccines in Norwegian aquaculture. Looking ahead, they identify industry concentration, technology and administrative organisation as factors that may shape cooperation and area use. Potential technologies include offshore solutions, closed cages, large smolt and land-based facilities; the authors suggest that closed cages could reduce the need for cooperation on lice and disease control. They also recommend digital tools to assess combined local and regional effects, while acknowledging that existing area maps based on operating plans are only snapshots and require decisions about data maintenance and responsibility.",
+    "A6": "The authors report that nearly all farmers recognise the need for cooperation, but disagree about who should initiate and take responsibility, which rules should govern cooperation, and whether solutions should be universal or tailored to local conditions. They say commitments may prove uncertain when participants face difficulties, and that competition for localities can limit operational and emergency cooperation. Their recommendations favour voluntary cooperation, clear agreements and conflict-resolution arrangements. They also identify emergency localities as a shared resource requiring public-sector coordination. The report says it cannot conclude whether small or large companies cooperate more or benefit more; both have advantages and disadvantages as partners.",
+    "A7": "The authors recommend that the industry organise area cooperation as far as possible on a voluntary basis, supported by clear agreements that make participants’ actions visible and provide sanctions for breaches. They call for improved cooperation between farmers and wellboat companies on responsibility and costs for transporting sick fish, and between farmers and fishing-vessel owners on dead-fish transport. They also recommend stronger knowledge about fallowing and better tools for assessing combined effects. The authors note that voluntary arrangements may be backed by the prospect of regulatory requirements if cooperation does not occur; the Food Safety Authority also encourages voluntary cooperation.",
+    "A8": "The authors explain that farms share a common marine environment in which currents carry feed residues, disease and sea lice, so one farmer’s actions can affect other farms in the area. They describe coordinated fallowing, minimum distances between facilities, and disease-control and surveillance zones as measures used or enforced to limit these externalities. The Food Safety Authority may assess operating plans together across an area and approve them when fish-health and welfare considerations are met. The report also notes uncertainty about whether coordinated fallowing improves the lice situation, citing Guarracino et al. (2018), and calls for scientific clarification."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [
+    "Del 6 – Bakgrunnsopplysninger",
+    "ISBN 978-82-8296-613-9 (pdf) ISSN 1890-579X"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 598,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

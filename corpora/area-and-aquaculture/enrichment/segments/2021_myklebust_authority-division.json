@@ -1,0 +1,71 @@
+{
+ "doc_id": "2021_myklebust_authority-division",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 17,
+   "chars": 48038,
+   "key_figures": [
+    {
+     "quote": "det er lagt til grunn at det er potensial for ei femdobling av produksjonen av laks og aure innan 2050.",
+     "statement": "The authors report a cited government estimate that Norwegian salmon and trout production has the potential to increase fivefold by 2050."
+    },
+    {
+     "quote": "perioden 2016–2019 har 80 % av vederlaget frå løyve til auka produksjonskapasitet vorte delt til kommunar og fylkeskommunar som har opna for oppdrett i sine arealplanar.",
+     "statement": "The authors report that, during 2016–2019, 80 % of the fee for permits increasing production capacity was distributed to municipalities and county municipalities that had opened areas for aquaculture in their land-use plans."
+    },
+    {
+     "quote": "innanfor plan- og bygningslova sitt område, ei nautisk mil utanfor grunnlinjene, jf. pbl § 1-2 andre ledd.",
+     "statement": "The authors state that the Planning and Building Act's marine planning area extends one nautical mile from the baselines."
+    },
+    {
+     "quote": "I løpet av dei fem siste åra har vi sett at kommunen gjennom rettsleg bindande planar både ønskjer å styre kvar akvakultur skal plasserast, men også vilkår for drift.",
+     "statement": "The authors observe that, in the five years preceding the chapter, municipalities had sought through legally binding plans to regulate both aquaculture locations and operating conditions."
+    },
+    {
+     "quote": "eigedom som låg 58 meter frå det nye anlegget. I vedtaket frå Fiskeridirektoratet er det lagt til grunn at anlegget skal flyttast slik at det er ca. 170 meter frå denne eigedomen",
+     "statement": "The authors cite a 2015 Fisheries Directorate case in which a holiday property was 58 meters from a proposed facility and the facility was to be moved to about 170 meters from it."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ legal analysis presents spatial decisions as an interaction between municipal planning under the Planning and Building Act and sector authorities’ licensing under the Aquaculture Act. Municipal plans can allocate areas and settle conflicts; the more they clarify with binding effect, the less room remains for the later site decision, although sector authorities can still refuse a planned project. Aquaculture licensing must weigh the applicant’s needs, alternative aquaculture, other uses and conservation interests. The chapter argues that combined-use zoning can fail to resolve conflicts because aquaculture may displace other uses when realized. A cited government policy statement seeks predictable, environmentally sustainable growth, while the author stresses that environmental and competing-use considerations remain relevant.",
+    "A1": "The authors describe development opportunities as shaped by available coastal space, municipal plans, licensing and environmental constraints. The government’s cited aspiration for growth includes a potential fivefold increase in salmon and trout production by 2050, and technology and improved mapping are presented as conditions that may enable more growth offshore. However, traditional cage technology is described as poorly suited to offshore and more exposed sites, so coastal competition is expected to continue while capacity remains. Production-area rules assess the interaction between aquaculture, sea lice and wild fish, but do not account for other area or environmental interests. Site approvals also depend on several sector authorities, including assessments of fish health and welfare, pollution and navigation.",
+    "A2": "The authors describe a two-stage licensing process: an applicant first obtains a production licence, then seeks clearance to use a specific site. For site clearance, approvals are required under several sector laws, with authorities assessing matters such as fish health and welfare, pollution, water quality and navigation. Only if these authorities are positive does the process proceed to the county municipality’s assessment of whether the licence can be accommodated at the site and of competing interests. The author notes that plans and applications should be legally interpreted correctly from the outset to avoid unnecessary delays, and that private parties may find it difficult to contribute if they become aware of a process late. The segment does not quantify processing times or rejection rates.",
+    "A3": "The segment does not set out a cumulative-effects assessment method for aquaculture production. It does note, in the authors’ discussion of production-area regulations, that those regulations assess the interaction between aquaculture, sea lice and wild fish, while not assessing other area or environmental interests. Separately, the author argues that site-level decisions require a new, independent assessment of area use and environmental effects, even where a municipal plan has already allowed aquaculture. The county municipality may reach a stricter overall conclusion than individual sector authorities, particularly where several authorities have approved a site only with reservations or new knowledge emerges. These are legal and governance arguments, not a described cumulative-effects methodology.",
+    "A4": "The authors report that a fee for permits increasing production capacity was partly distributed to municipalities and county municipalities that had opened areas for aquaculture in their plans; they identify this as a strong incentive for municipalities to prioritize aquaculture in planning. The Aquaculture Act also treats production licences as limited goods for which applicants pay consideration. The author argues that licensing discretion and the Act’s emphasis on aquaculture profitability within sustainable development can give aquaculture priority where plans have not resolved conflicts. The distributional discussion is limited: the segment notes that other users, including fisheries, recreation and possible future projects, may be displaced when a site is secured, but does not quantify their costs or benefits.",
+    "A5": "The authors identify plans, environmental assessments and knowledge about area-use conflicts as relevant to spatial decisions. They argue that improved technology and better mapping of potential environmental and area-use conflicts could allow a large share of future growth to occur offshore. However, traditional cage technology is described as unsuitable for more exposed offshore locations. At site application stage, new knowledge arising during the process can require reassessment, and the author says inadequate knowledge about a species, operating form or site can be grounds to refuse an application. This is a legal reading of licensing discretion alongside a policy aspiration; the segment does not assess specific emerging technologies or data methods.",
+    "A6": "The authors identify conflicts between aquaculture and fisheries, public access and recreation, shoreline owners’ interests, conservation and other possible activities such as wind power. They argue that combined-use plans may leave conflicts unresolved, because establishing aquaculture can displace other uses. The legal analysis says the county municipality must weigh other use and conservation interests, but the author criticizes the law’s process rules as vague and notes that private actors may depend on the municipality to raise their concerns. The chapter’s cited case involving shoreline owners illustrates how proximity can become contested. Legitimacy and predictability, in the author’s account, depend on correct legal interpretation, meaningful coordination and clear allocation of authority; overly detailed or unclear conditions can complicate effective administration.",
+    "A7": "",
+    "A8": "The segment addresses fish health and disease-related concerns as part of site regulation, but does not discuss water connectivity between farms. In the Lenvik case, the cited objection sought to condition aquaculture on adequately preventing genetic introgression and sea-lice attacks, and a closed-cage technology requirement was mentioned as a possible condition. The authors explain that the Food Safety Authority assesses fish health and welfare during site clearance, while production-area regulations focus on the relationship between aquaculture, sea lice and wild fish. The county municipality retains an independent assessment role and may refuse a site even where sector authorities have given approvals. These points are legal and procedural, not a technical account of disease transmission."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 17,
+   "page_to": 27,
+   "chars": 28906,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The author’s legal analysis says municipalities have considerable freedom to decide how municipal areas are used, within the statutory bases for planning conditions. Municipal plans can set the level and timing of spatial control, balancing framework rules, detailed regulation and implementation in light of local needs and area conflicts. The plan-and-building-law system is described as flexible, while county authorities retain responsibility for a sound assessment of environmental and competing interests when deciding a specific aquaculture locality. The chapter argues that planning and licensing should be coordinated, rather than treated as isolated sector responsibilities, so conflicts can be clarified early without attempting hypothetical, overly detailed locality-level planning before concrete applications exist.",
+    "A1": "The author’s legal reading identifies municipal spatial plans, the statutory scope of planning conditions, sectoral licensing rules and the need to assess environmental and competing interests at a specific locality as factors shaping development opportunities. Under plan-and-building law, municipalities may specify which aquaculture species or species groups can be established, which can indirectly affect area occupation and activity. The author stresses that this provision does not authorize conditions on facility design or operation. Aquaculture authorities need flexibility for individual licensing decisions, but the county authority remains responsible for a sound locality assessment. The chapter also notes that fewer localities, greater competition and increasingly standardized regulations may make individualized, locally adapted environmental conditions harder to secure.",
+    "A2": "The author describes the locality process as reaching the county authority for a final decision only after most of the relevant issues have already been considered, leaving limited scope to add conditions at that stage. This is a legal and procedural observation, not a quantified finding about typical processing times or rejection rates. The author argues that planning and sectoral authorities should coordinate their work in time and substance so the applicant’s overall processing time is no longer than necessary. The segment does not map the full application sequence or identify statistically common points of delay, rejection or conflict.",
+    "A3": "",
+    "A4": "",
+    "A5": "The segment’s knowledge base is principally legal: the author interprets statutory text, legislative preparatory works, administrative guidance and selected case law, and notes that relevant court practice is limited. The analysis emphasizes that competence must be interpreted in context and that planning authorities and aquaculture authorities may have overlapping responsibilities requiring coordination. Environmental quality, water quality, nature and landscape are identified as relevant planning concerns. The author mentions possible requirements concerning genetic introgression, sea-lice prevention and cage technology as examples raised by the wording of the law, not as established technical findings or adopted rules. The segment does not assess emerging technologies or their effects on siting opportunities.",
+    "A6": "The author’s legal analysis frames the central conflict as the division of responsibilities between municipal planning authorities and aquaculture authorities, alongside competition among environmental, recreational and industry interests. Planning is intended to clarify conflicts early, but overly detailed plans made without concrete applications may instead provoke conflict and be burdensome. The author favors coordination over a strict sector-by-sector approach, while warning that negotiated arrangements between municipalities and sector authorities may undermine consistent rules across the country. A cited government circular advises municipalities to be very restrained in imposing aquaculture conditions already regulated by sectoral rules. The author considers legal interpretation and application of planning conditions subject to court review, though courts may be cautious where conditions result from inter-agency cooperation.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

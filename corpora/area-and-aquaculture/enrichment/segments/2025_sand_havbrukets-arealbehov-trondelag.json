@@ -1,0 +1,140 @@
+{
+ "doc_id": "2025_sand_havbrukets-arealbehov-trondelag",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 18,
+   "chars": 49526,
+   "key_figures": [
+    {
+     "quote": "Havbrukets fysiske beslag på produksjonsarealer i sjø utgjør likevel mindre enn en prosent av kystsonene i Trøndelag.",
+     "statement": "The authors report that aquaculture’s physical occupation of production areas is less than en prosent of Trøndelag’s coastal zones."
+    },
+    {
+     "quote": "I produksjonsområde 6 og 7 var det 31.12.2023 en maksimal selskapskapasitet på 205 000 tonn, mens den klarerte lokalitetskapasiteten var over 870 000 tonn, hvorav 79 prosent av dette er i Trøndelag.",
+     "statement": "The authors report maximum company capacity and cleared site capacity in production areas 6 and 7 as of 31.12.2023, including the share of site capacity in Trøndelag."
+    },
+    {
+     "quote": "Anlegg i sjø skal brakklegges i to måneder etter utslakt mellom produksjonssyklusene, for å forebygge smitte av både lakselus og patogener/sykdommer (Mattilsynet 2024).",
+     "statement": "A cited Norwegian Food Safety Authority requirement specifies a two-month fallowing period after harvest between production cycles at sea, intended to prevent transmission of sea lice and pathogens or diseases."
+    },
+    {
+     "quote": "Dyrevelferdsmeldinga (Landbruks- og matdepartementet 2024) foreslår tiltak for å oppnå 5 prosent dødelighet, mot dagens 16 prosent dødelighet for laks i sjøfasen.",
+     "statement": "A cited government animal-welfare white paper proposes measures to reach 5 prosent mortality, compared with the stated current 16 prosent mortality for salmon in the marine phase."
+    },
+    {
+     "quote": "I 2020 var snittstørrelsen pr anlegg på merdearealet i overflata ca. 10 dekar, fordelt på 7 merder. Dybden pr merd er gjerne 30 meter.",
+     "statement": "A cited study reports the 2020 average surface area and number of pens per open-net salmon site, as well as the usual pen depth."
+    },
+    {
+     "quote": "Avstander mellom merdene og tilstrekkelig areal utenfor merdene bidrar til at det i akvakulturregisteret opereres med rundt 94 dekar i snitt pr anlegg/lokalitet i Norge (Skrove m.fl. 2023).",
+     "statement": "A cited study reports an average registered area of around 94 dekar per aquaculture facility or site in Norway, including spacing and surrounding area."
+    },
+    {
+     "quote": "Dagens direkte fysiske arealbeslag fra lakseoppdrettsanlegg i sjø kan utfra Skrove m. fl. (2023) kalkuleres til å bruke 15 – 42 km2 eller 0,2 – 0,4 prosent av kystsonearealet i Trøndelag.",
+     "statement": "Using a cited study, the authors estimate the direct physical area occupied by marine salmon farms in Trøndelag as 15 – 42 km2 or 0,2 – 0,4 prosent of its coastal-zone area."
+    },
+    {
+     "quote": "Med denne tilnærmingen anslås det at dagens oppdrett tar opp 20 prosent av sjøarealet i produksjonsområde 6 og 7 (Skrove m. fl. 2023).",
+     "statement": "A cited study estimates that current aquaculture occupies 20 prosent of the sea area in production areas 6 and 7 when average biosecurity distances are included."
+    },
+    {
+     "quote": "Oppsummert var det snakk om drøye 11 400 sysselsatte og 17,7 milliarder kroner i verdiskaping i Trøndelag i 2022 med grunnlag i havbrukssektoren.",
+     "statement": "The authors estimate that aquaculture supported drøye 11 400 jobs and 17,7 milliarder kroner in value creation in Trøndelag in 2022."
+    },
+    {
+     "quote": "Trøndelag hadde i 2024 en tillatt lokalitetskapasitet til å produsere laks og ørret på 691 602 tonn.",
+     "statement": "The authors report that Trøndelag’s permitted site capacity for producing salmon and trout was 691 602 tonn in 2024."
+    },
+    {
+     "quote": "Et estimat på energiforbruk fra 2018 er 6-9 kWh/kg laks i RAS-anlegg (Hilmarsen m.fl. 2018).",
+     "statement": "A cited 2018 estimate gives energy consumption of 6-9 kWh/kg salmon in RAS facilities."
+    },
+    {
+     "quote": "I juni 2025 ble det vedtatt en ny stortingsmelding om havbruket (Nærings- og fiskeridepartementet 2025b), med ulike forslag som kan øke havbrukets arealbruk der miljøproblemene er minst og redusere arealbruken der miljøproblemer er størst.",
+     "statement": "A government policy statement adopted in June 2025 proposes shifting aquaculture area use toward locations with fewer environmental problems and away from locations with greater problems."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe location and development as shaped by suitable water conditions, depth, currents, infrastructure, environmental capacity, and access to permitted sites. Municipalities allocate coastal areas through long-term plans, either for aquaculture alone or for multiple uses, while county authorities coordinate applications and decide under the Aquaculture Act. For salmon and trout, the state also controls company capacity and overall production through the traffic-light system and auctions. The authors describe balancing environmental impacts and social interests through planning, sectoral reviews, and production regulation, while noting that increasing demands for nature, energy, and other uses make space scarcer.",
+    "A1": "The authors identify site suitability, available space, water qualities, infrastructure, environmental impacts, and conflicts with other interests as factors influencing coastal aquaculture development. Operators need site permissions and company production capacity; for salmon and trout, the state controls aggregate production through the traffic-light system, while local site capacity is separately authorized. Site capacity exceeds company capacity because of production cycles, fallowing, and restrictions on moving fish. Technology can alter opportunities: submerged and closed systems may reduce lice exposure or use sites unsuitable for open pens, but require appropriate depth, water conditions, shelter, energy, or higher costs. The authors also note that Trøndelag is currently in the yellow traffic-light category, allowing current production to continue.",
+    "A2": "The authors describe a process in which companies apply for permissions to use specific sites, usually seeking areas already allocated in municipal plans, but sometimes requesting plan dispensations or proposing new aquaculture areas. The county ensures that a complete application goes to affected municipalities and state agencies for assessment under their sectoral legislation. Reviews address site suitability, environmental effects, and other consequences; the county coordinates these assessments and decides under the Aquaculture Act. The segment says that documentation and applications require substantial work because interests and views on area use differ. It does not report application-stage rejection rates, typical processing durations, or which stage most commonly causes delays or conflicts.",
+    "A3": "The segment discusses environmental and biosecurity effects that extend beyond the physical footprint, including the spread of sea lice, disease, and organic material to other areas. A cited 2023 study uses average biosecurity distances of 2,5 km for fish farms and 1,5 km for other species, estimating that aquaculture occupies 20 prosent of sea area in production areas 6 and 7 under that approach. The authors caution that this simple method does not assess the suitability of different areas for specific technologies or production systems, nor does it adequately show impacts on other interests. The segment does not describe a formal cumulative-effects assessment method incorporated into municipal plans or site decisions.",
+    "A4": "The authors describe economic incentives and costs as affecting technology and area choices. They report that land-based food-fish facilities receive production permissions without charge, while the average price for a marine production permission is over 200 million kroner per concession of 780 tonn. They also note new value-sharing payments for coastal-area use and a resource-rent tax, and describe a 2025 government proposal to replace direct production-capacity limits with charges and quotas for escapes and sea lice. The authors say such changes could affect production systems even without technology-specific requirements. They describe the Aquaculture Fund as distributing money to county and aquaculture municipalities, with municipal payments based on permitted local site capacity; they also note that local employment and income are concentrated in a few large aquaculture municipalities.",
+    "A5": "The authors draw on interviews with three industry informants, mapping and statistical data from Barentswatch, the Directorate of Fisheries and Statistics Norway, and policy documents and research. They emphasize that marine production area includes water qualities such as currents and depth, as well as proximity to land and infrastructure; land-based area similarly depends on terrain, ground conditions, water, and infrastructure. The report also cites studies for estimates of site area, energy use, and spatial occupation, while warning that simple distance-based estimates cannot capture site suitability or effects on other interests. Emerging monitoring systems, new energy solutions, and more exposed-site structures may change siting options. The authors identify limited electricity supply along the Trøndelag coast as a constraint on closed systems.",
+    "A6": "The authors describe conflicts within aquaculture and between the sector and fisheries, wild salmon, cod, seaweed farming, land-based aquaculture, offshore aquaculture, agriculture, other economic production, conservation, defence, and recreational uses. Marine farms can restrict fishing and movement around sites, while environmental effects such as lice, disease, escapes, and organic discharges may affect other areas and interests. The authors note that some communities or user groups may see little of aquaculture’s economic benefits while losing access to areas used for fishing or recreation. They describe municipal planning and consultation by sector authorities as part of decision-making, but also emphasize that competing interests and increasingly scarce space increase the need for knowledge and robust planning. The segment does not evaluate procedural legitimacy in detail.",
+    "A7": "The authors identify several actions and operational choices that could improve the efficiency or sustainability of industry area use. Citing Tveterås and colleagues, they mention more efficient fallowing, coordinated operations, larger smolt before sea transfer, and more closed production systems as ways to increase utilization of company and site capacity. They also describe collaboration among operators on shared fallowing and fallowing zones, which may be more effective for preventing sea lice and disease transmission, provided companies cooperate. In Trøndelag, the report notes perceptions of relatively good zone cooperation and shared fallowing guidelines. The authors also describe a long-term regional effort to close less sustainable sites and move production to sites farther from the coast with greater capacity.",
+    "A8": "The authors explain that open-net production raises risks of sea-lice infestation and spread, fish disease transmission, and escapes. They state that marine sites must be fallowed for two months after harvest between production cycles to prevent sea lice and pathogen or disease transmission, citing the Norwegian Food Safety Authority. Shared fallowing and coordinated fallowing zones may improve effectiveness, but depend on cooperation among operators; the authors report perceptions of relatively good zone cooperation in Trøndelag. They also explain that site capacity exceeds company capacity partly because fallowing and production-cycle separation limit use of sites. More exposed locations may offer better biosecurity and less lice spread, while closed or submerged systems can reduce exposure but have other site and technology requirements."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 18,
+   "page_to": 29,
+   "chars": 40727,
+   "key_figures": [
+    {
+     "quote": "Kviduls anlegg ved Stokkøya i Åfjord nærmest en realisering, med mulighet til å produsere 10 millioner storsmolt (0,5- 2 kg) og 20 000 tonn matfisk pr år med en arealbruk på 180 dekar.",
+     "statement": "The authors report the planned capacity and area use of Kvidul’s proposed land-based facility at Stokkøya in Åfjord, Trøndelag."
+    },
+    {
+     "quote": "Det er ikke realistisk med mer enn 10-20 slike anlegg i Trøndelag, ut fra den samlede produksjonskapasiteten.",
+     "statement": "The authors estimate that no more than 10-20 facilities of the planned Kvidul type are realistic in Trøndelag, based on total production capacity."
+    },
+    {
+     "quote": "Almås m. fl (2024) identifiserer 82 km2 eller ca. 2 prosent av det totale arealet innenfor grunnlinjen når potensielt \"konfliktareal\" som fiskeri- og gyteområder, farledsareal, naturreservater og forsvarets øvingsfelt, er tatt bort.",
+     "statement": "A cited study identifies 82 km2, or ca. 2 prosent, of area inside the baseline as potential seaweed-farming area after specified conflict areas are excluded."
+    },
+    {
+     "quote": "Arealbruk til taredyrking i dag er på ca 1,2 km2 i Trøndelag.",
+     "statement": "The authors report current area used for seaweed cultivation in Trøndelag as ca 1,2 km2."
+    },
+    {
+     "quote": "Semi-lukket og lukkede produksjonssystemer krever flere tusen kilowatt mens tradisjonelle merder bare trenger noen hundre kilowatt pr lokalitet. Landbaserte matfiskanlegg krever titalls megawatt pr anlegg.",
+     "statement": "A cited 2025 report describes power requirements for semi-closed and closed systems, traditional sea cages, and land-based grow-out facilities in Trøndelag."
+    },
+    {
+     "quote": "Dagens produksjonsareal til havbruk i sjø utgjør omlag en halv prosent av kystsonearealet i Trøndelag",
+     "statement": "The authors report that current marine aquaculture production area occupies omlag en halv prosent of Trøndelag’s coastal zone."
+    },
+    {
+     "quote": "SSBs arealstatistikk for 2024 viser at kommunene i Trøndelag har satt av 4650 km2 eller 43 prosent av kystsonearealet til såkalte kombinerte formål der havbruk kan inngå.",
+     "statement": "Statistics Norway’s 2024 area statistics show that Trøndelag municipalities allocated 4650 km2, or 43 prosent, of coastal-zone area to combined purposes that may include aquaculture."
+    },
+    {
+     "quote": "Osen er den kommunen i Trøndelag som har satt av desidert mest areal til havbruk alene med 10 km2.",
+     "statement": "The authors report that Osen has allocated the largest area in Trøndelag specifically to aquaculture, at 10 km2."
+    },
+    {
+     "quote": "Mattilsynet har en anbefalt minsteavstand på 5 km i sjø til andre anlegg med laksefisk, slakterier, settefiskanlegg og stamfiskanlegg.",
+     "statement": "The Norwegian Food Safety Authority recommends a minimum sea distance of 5 km from facilities with salmonids, slaughterhouses, smolt facilities, and broodstock facilities."
+    },
+    {
+     "quote": "Dette legger grunnlag for betydelig eksport og om lag 16 milliarder kroner i årlig verdiskaping i Trøndelag, inkludert ringvirkninger.",
+     "statement": "The authors report that aquaculture supports om lag 16 milliarder kroner in annual value creation in Trøndelag, including indirect effects."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that aquaculture’s spatial potential depends on suitable sites, production technology, environmental effects, and competing coastal uses. New systems may enable production in areas unsuitable for conventional cages, farther offshore, or on land, while closed systems could make weakly flushed fjord sites usable. In their assessment, aquaculture currently occupies omlag en halv prosent of Trøndelag’s coastal zone, but increasing its area is difficult because of competing interests and concerns about fish welfare and wild salmon. They say future locations depend on mapping suitable areas, dialogue with interests, and cooperation among municipalities and levels of government. The planning process must balance flexibility for specific proposals against comprehensive assessments of social interests. The government’s proposed research centre and coastal planning guidelines are policy proposals, not findings by the authors.",
+    "A1": "The authors identify site suitability, technology, energy, environmental effects, and regulation as interacting influences on development. New systems often need deeper sites; for example, cages may be lowered by 20 meter, or closed systems may draw water from at least that depth. Better production technology may allow existing sites to be used more intensively and new sites to be considered, but power supply constrains the transition: a cited report says closed and semi-closed systems require several thousand kilowatts, compared with some hundred kilowatts per traditional cage site, and land-based grow-out facilities require tens of megawatts per facility. Licensing requires sites to be in areas designated for aquaculture, or a municipal plan dispensation. The authors also describe a prohibition on salmon food-fish and broodstock production in national salmon fjords, and note that strong land-based biosecurity is being considered as a possible future option there.",
+    "A2": "The authors describe a process in which companies apply for sites designated in municipal coastal plans, seek a dispensation, or apply to use designated industrial land. The county authority is the licensing authority for specific aquaculture sites and forwards complete applications to affected municipalities and state bodies. Companies must describe site suitability, production, environmental effects, and other consequences. Agencies including the Food Safety Authority, Coastal Administration, County Governor, and NVE assess matters within their remits and can stop a proposed use under their legislation; the Fisheries Directorate comments on fishing interests. Informants say application handling is increasingly complex, knowledge-intensive, and slow, including applications to modify existing sites. A cited evaluation finds that county authorities rarely breach time limits; delays may instead arise from the resources available to other agencies, including the Food Safety Authority and County Governor. The segment gives no general processing duration or rejection rate. It describes Osen applications that have often been rejected in the context of its location in a production area and disease-protection zone.",
+    "A3": "The authors describe modelling of currents and water influence as a way to estimate the spread of lice and infectious agents between marine farms. Research projects are developing understanding of site-to-site connections and how it could inform site structure and area organisation. They say it remains to be clarified how water connectivity and area organisation would interact with the proposed indirect regulation through lice quotas or fees. The segment presents connectivity as relevant to cumulative exposure and biosecurity, but does not set out a specific cumulative-effects assessment method used in planning decisions. It also identifies knowledge gaps: municipal plans often designate broad multi-use areas rather than specific aquaculture sites, partly because of limited knowledge, including uncertainty about future applications. The authors note limited knowledge of conflicts among less prevalent farmed species and missing knowledge about effects on sensitive habitats such as corals, maerl, and sponge areas.",
+    "A4": "",
+    "A5": "The authors describe a knowledge base combining site mapping, current and future production proposals, environmental information, hydrodynamic modelling, and consultation with affected interests. Modelling currents and water influence can estimate the spread of lice and pathogens between farms, while ongoing research seeks to improve understanding of connectivity and site organisation. They identify knowledge deficiencies in municipal planning, especially uncertainty about future applications and the impacts of aquaculture on sensitive marine species and habitats. A cited 2024 study identifies 82 km2, or ca. 2 prosent, inside the baseline as potential seaweed cultivation area after specified conflict areas are excluded. New production systems may expand the range of usable sites, including deeper or more exposed marine areas and land-based facilities, but also change energy demands, emissions, and land impacts. The authors report that electrical capacity along parts of the Trøndelag coast is uncertain and insufficient for projected needs. The government’s proposed research centre for area use and state coastal planning guidelines are policy proposals.",
+    "A6": "The authors find that aquaculture competes or interacts with fisheries, shipping, energy production, tourism, recreation, defence, conservation, cables and pipelines, and other aquaculture. Fishers may be affected by facilities and moorings near spawning and fishing grounds, as well as indirect ecological effects. Concerns about open salmon farms include lice and escapes affecting wild salmon; for cod farming, cited concerns include effects on wild cod through spawning, genetics, and disease. Land-based facilities may cause irreversible landscape change and compete for electricity, while offshore aquaculture may affect fisheries, wild salmon, seabirds, and other industries. Local residents may be concerned about visual impacts, noise, and boat traffic. The authors note that Osen has allocated 10 km2 specifically to aquaculture, yet applications there have often been rejected because of its position in a production area and a disease-protection zone; the municipality has also requested financial compensation. They argue that effective and predictable planning requires better knowledge, sufficient administrative capacity, and cooperation across municipal boundaries, which has varied in practice.",
+    "A7": "The authors argue that industry can improve spatial efficiency by using existing sites more intensively, changing site structure, and adopting production systems suited to site conditions. New systems may allow production cycles to be broken up, reduce the time salmon spend at sea, and use collected organic material to shorten fallowing, potentially improving use of production capacity; this mechanism is attributed to a cited study. Companies can also seek deeper sites for lowered cages or water intake and use closed systems where weak flushing makes conventional aquaculture unsuitable. The authors say sustainable growth requires access to new marine sites partly to reorganise production at existing sites and potentially release some area. They also mention using surplus heat from other industry to reduce electricity demand, citing SalMar’s smolt facility at Follafoss as an example. These are possible measures and mechanisms, not quantified findings of realised efficiency gains.",
+    "A8": "The authors describe currents and water contact between farms as routes for spreading lice and infectious disease, making site spacing and area organisation relevant to production and operation. The Food Safety Authority recommends a minimum sea distance of 5 km from other salmonid facilities, slaughterhouses, smolt facilities, and broodstock facilities. A cited agency statement says good farm structure can make it easier to control pancreatic disease through coordinated fallowing. The authors caution that cooperation can vary with competition among companies, their room to act and access to sites, and different production durations at sea; large cooperative zones can also have large consequences if infection enters. Hydrodynamic modelling is being used to estimate spread of lice and pathogens, while research continues on connectivity among sites. The authors say the role of this connectivity in area organisation and proposed lice quotas or fees remains to be clarified."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

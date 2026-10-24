@@ -1,0 +1,91 @@
+{
+ "doc_id": "2021_sonvisen_shaping-management",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 12,
+   "chars": 49434,
+   "key_figures": [
+    {
+     "quote": "In this system, the coast was divided into thirteen production areas (PAs) separated by “ﬁregates”.",
+     "statement": "The authors report that Norway’s Traffic Light System divided the coast into thirteen production areas separated by natural barriers."
+    },
+    {
+     "quote": "Nine PAs were deﬁned as posing a low risk of lice-induced mortality to smolt (green) and were offered an increase of 6 percent in production capacity. Two PAs were deﬁned as moderate risk (yellow), in which case the capacity was frozen, and two PAs were deﬁned as high risk (red), resulting in a reduction in capacity.",
+     "statement": "The authors report the 2021 distribution of Norway’s production areas by risk category and their corresponding production-capacity adjustments."
+    },
+    {
+     "quote": "Low risk is deﬁned as a probability of less than 10 percent that out-migrating smolt will die due to lice infestation (green light). Moderate risk is a 10 to 30 percent probability that smolt will die (yellow light), whereas high risk is over 30 percent probability that the out-migrating smolt will die as a result of salmon lice (red light)",
+     "statement": "The authors describe the Traffic Light System’s cited mortality-risk thresholds for migrating wild salmon smolt in Norwegian production areas."
+    },
+    {
+     "quote": "A six percent reduction in red areas would amount to 17,000 tonnes and affect about 140 farms, with a reduced turnover of NOK 850 million (about USD 100 million)",
+     "statement": "A cited Seafood Norway estimate gives the production volume, number of farms and turnover affected by the six percent reduction in red Norwegian production areas."
+    },
+    {
+     "quote": "The 25 ﬁsh farmers sued the state for NOK 250 million (about USD 31 million) for lost production capacity, but they lost in the district court.",
+     "statement": "The authors report the number of farmers and the claim amount in the Norwegian district-court case over lost production capacity."
+    },
+    {
+     "quote": "In the ﬁrst round with the exemption rule in 2018, 43 localities applied for exemptions, of which 12 satisﬁed the criteria.",
+     "statement": "The authors report the number of Norwegian aquaculture localities applying for and qualifying for exemptions in the first 2018 round."
+    },
+    {
+     "quote": "In the second round in 2019, 50 localities applied for exemptions, of which 23 fulﬁlled the requirements. Of these, 11 were in red or yellow zones",
+     "statement": "The authors report applications, qualifying localities and qualifying localities in red or yellow zones in the 2019 exemption round in Norway."
+    },
+    {
+     "quote": "Moreover, despite 17 grievances in the ﬁrst round and 15 in the second, no changes were made to these decisions",
+     "statement": "The authors report the number of grievances and that decisions were unchanged across the first and second Norwegian exemption rounds."
+    },
+    {
+     "quote": "In 2019, this amounted to about NOK 450 million (about USD 49 million) [110].",
+     "statement": "A cited figure gives the 2019 revenue for Norway’s Aquaculture Fund."
+    },
+    {
+     "quote": "Starting in 2022, the revenue basis for the Aquaculture Fund will be based on a production fee of NOK 0.40 per kilo.",
+     "statement": "The authors report the planned Norwegian Aquaculture Fund production fee and its starting year."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe a national spatial regime in which the Norwegian coast is divided into thirteen production areas separated by natural barriers. Production capacity is adjusted according to modeled salmon-louse mortality risk for migrating wild smolt: green areas can grow, yellow areas are frozen, and red areas face reductions. The system aims to combine environmental protection with predictable economic growth, but the authors find that stakeholder legitimacy and acceptance also shape whether growth is feasible. The paper presents balancing environmental and economic effects against income impacts as a legal requirement of proportionality. Competing uses of coastal space are not examined in detail in this segment.",
+    "A1": "The authors identify environmental challenges, limited access to space, and policy and bureaucratic regulations as constraints on Norwegian aquaculture growth. In the Traffic Light System, production opportunities depend on the area’s lice-related risk classification, while farms may seek an exemption based on specified lice and treatment criteria. The exemption can provide capacity growth irrespective of the production area’s color, but strict, non-discretionary application has led to rejections. The authors also report concerns that lice-focused incentives may prompt mechanical treatment that harms fish welfare. This segment does not describe the full ordinary licensing or site-application system.",
+    "A2": "This segment does not provide a general account of the aquaculture site application process. It does describe applications under the exemption rule: localities apply to authorities, which assess whether every regulatory criterion is met. Authorities and applicants reported strict interpretation, with no discretion to accept near-compliance; examples of grounds for rejection included two medical lice treatments rather than one and more than one lice count exceeding the specified level. The authors report grievances in both rounds but no changes to the decisions. Separately, industry actors challenged production reductions through a lawsuit over the Traffic Light System; the farmers lost in district court and their counsel said they would appeal.",
+    "A3": "The Traffic Light System assesses collective effects at the production-area scale, using surveillance of lice on migrating smolt, models of infection pressure based on lice counts and currents, and estimates of effects on smolt survival. The area’s production capacity is set according to the river with the highest modeled lice-induced mortality risk, reflecting a precautionary approach. The authors report that advisory bodies regarded the system as knowledge-based, while industry actors questioned model certainty, the lice–mortality link, and whether lice impacts could be isolated from other mortality sources such as hydropower, migration barriers, habitat change, and climate change. Knowledge gaps include total lice release and how farm location and currents affect it. The exemption rule is also disputed because lice counts alone may not capture total environmental load or a farm’s location and size.",
+    "A4": "The authors report that the Traffic Light System offers a regular growth mechanism, while red-area production reductions impose costs on operators, including well-run farms that may be affected by area-wide decisions. The exemption rule is intended to reward low-impact operations and encourage technology investment, though its strict criteria limit access. The Aquaculture Fund distributes revenue to host municipalities and counties; the authors report that this was welcomed by some but also perceived as purchasing local goodwill or a social license. A planned change to the fee and allocation basis led some municipalities to expect lower or only marginally higher allocations, potentially affecting willingness to accommodate aquaculture. Whether the industry will pay a resource tax remains unresolved in this segment.",
+    "A5": "The authors characterize Norwegian aquaculture management as knowledge-based, while emphasizing that research is uncertain and can be interpreted in ways that benefit different interests. The Traffic Light System relies on lice surveillance, infection-pressure models using lice counts and currents, and estimates of effects on smolt survival. Stakeholders dispute the scientific basis, including the lice–mortality relationship, mortality attribution, and counting methods. Identified gaps include total lice release and the influence of farm location and currents. Industry actors also challenge the exemption rule’s foundation. The segment mentions environmentally friendly technologies, de-licing, and semi-closed facilities as possible operational developments, but does not assess emerging technologies’ wider siting effects.",
+    "A6": "The authors’ central finding is that industry and environmental interests assign different legitimacy to the Traffic Light System and its exemption rule. Industry actors object to collective reductions affecting farms they consider responsibly operated, and challenge scientific certainty, legality, and predictability; environmental organizations worry that exemptions weaken area-wide environmental protection. The exemption rule can therefore strengthen or weaken perceived legitimacy depending on the stakeholder. A court case illustrates the conflict over the system’s legal and scientific basis. The authors argue that participation, reliable and credible knowledge, transparency, and predictable procedures matter for acceptance and institutional stability. This segment focuses on stakeholder conflict within aquaculture management rather than detailed conflicts with other coastal uses.",
+    "A7": "The authors describe the exemption rule as an incentive for farms to reduce lice impacts and demonstrate environmentally sound operations. Qualifying farms may receive a production-capacity increase, and the rule is intended to encourage investment in environmentally friendly technologies and operating modes, including de-licing and semi-closed facilities. The authors report that some farmers appreciated the predictable, mathematical application of the criteria, while others considered the authorities too rigid. The segment also notes an unintended operational effect: replacing medical lice treatment with mechanical treatment was perceived to harm fish welfare. It does not present a broader industry-led spatial-efficiency plan.",
+    "A8": "The authors explain that production areas are separated by natural barriers, such as deep fjords, intended to limit disease spread. They also state that lice infection pressure on migrating smolt is modeled using lice counts and currents, and acknowledge knowledge gaps about how farm location and water currents affect lice release. The system regulates production capacity across an area based on collective lice-related risk, rather than only the performance of individual farms. This segment does not provide detailed analysis of farm-to-farm biosecurity, water connectivity, or transmission of diseases other than salmon lice."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 12,
+   "page_to": 16,
+   "chars": 22228,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

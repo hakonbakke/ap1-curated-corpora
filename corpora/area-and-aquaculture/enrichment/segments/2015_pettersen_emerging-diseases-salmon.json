@@ -1,0 +1,71 @@
+{
+ "doc_id": "2015_pettersen_emerging-diseases-salmon",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 11,
+   "chars": 46533,
+   "key_figures": [
+    {
+     "quote": "In Norway, more than 100 salmon farms annually have reported PD outbreaks in recent years (Fig. 2).",
+     "statement": "The authors report that more than 100 Norwegian salmon farms annually reported pancreas disease outbreaks in recent years; this is a figure presented in their review, not a new estimate from original data."
+    },
+    {
+     "quote": "Norway has imposed the mandatory fallowing of sites (minimum two months), together with synchronised management areas (MAs) with a minimum of one month of synchronised fallowing, regardless of disease status.",
+     "statement": "The authors describe Norwegian ISA-control requirements of minimum two months of site fallowing and a minimum of one month of synchronised fallowing in management areas; these are regulatory durations reported in the review."
+    },
+    {
+     "quote": "In 2006, the regional industry established the Hustadvika barrier (a 15–20 km zone with no farming activities) in mid-Norway, on the frontier between the endemic and non-endemic areas, with the purpose of preventing disease dissemination into the densely farmed areas further north in mid-Norway (Fig. 5).",
+     "statement": "The authors describe an industry-established 15–20 km no-farming zone at Hustadvika in mid-Norway, established in 2006 to limit pancreas disease spread; this is a case detail reported by the authors."
+    },
+    {
+     "quote": "Pancreas disease remains an emerging threat in Norway. Its dissemination has, however, been both spatially and temporally slow, spreading gradually for more than 15 years.",
+     "statement": "The authors characterize pancreas disease as having spread gradually in Norway for more than 15 years; this is their synthesis of the disease history, not a new quantitative study."
+    },
+    {
+     "quote": "In Chile, although the structure of the industry and surveillance and intervention are still under development, progress has been made in controlling ISA, with only one to five confirmed cases per year.",
+     "statement": "The authors report one to five confirmed infectious salmon anaemia cases per year in Chile during the period discussed; this is a case-study figure reported in the review."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not examine how aquaculture locations are allocated through Norwegian spatial planning, nor how environmental considerations and competing coastal uses are balanced in planning decisions. It does discuss disease control as a factor in the sustainability and operation of salmon farming: marine currents connect farms, and the proximity and density of sites can raise infection risk. The authors argue that control must consider the shared marine environment and wild fish alongside privately owned farms. Their discussion concerns disease management and management areas, not a general account of area planning.",
+    "A1": "The authors identify disease-related conditions that affect the suitability and operation of salmon-farming locations. Semi-open net pens exchange water with the marine environment, and currents can disperse infectious agents; proximity to infected farms and site density can increase transmission risk. In the Norwegian pancreas-disease case, a 15–20 km no-farming barrier was used to separate endemic and non-endemic areas, while low site density in northern Norway probably helped limit disease establishment. The segment does not describe licensing criteria, application procedures, or how spatial planning decisions formally integrate fish-health evidence.",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors argue that disease-control rules distribute costs and benefits unevenly among producers and can weaken incentives to act. Under eradication rules, depopulating an infected farm can impose large costs on that producer while nearby farms benefit from reduced infection pressure; this is described as a free-rider problem. In Norway, producers near the Hustadvika barrier bore depopulation costs while producers farther north benefited from remaining disease-free, and the authors call for cost-sharing mechanisms. They report that no compensation is paid to individual farmers in Norwegian or Chilean aquaculture when disease strikes and fish are destroyed under regulatory order. The authors discuss compensation, incentives for biosecurity, and possible fines for late reporting as policy options, not as established Norwegian area-use instruments.",
+    "A5": "The authors identify knowledge about disease properties, transmission, and the effectiveness of control measures as important to decisions. They say disagreement over whether ISA and pancreas disease spread mainly vertically or horizontally has delayed or hindered control, and argue that studies should quantify causal relationships rather than report statistical significance alone. Risk-based surveillance and diagnostics can support early detection, but detection sensitivity depends on the technology used and the resources allocated. The review names polymerase chain reaction and histopathology as examples of diagnostic technologies. It does not assess technologies for spatial planning or their effects on siting opportunities.",
+    "A6": "The authors describe tension among producers, government, environmental interests, rural communities, and other stakeholders because disease-control choices involve uncertain evidence, private profitability, environmental protection, and wild-fish interests. Rights of appeal or requests for exemptions can delay disease-control action, while politicised debate and disagreement over evidence may lead to decisions that are suboptimal for disease control and the marine environment. They argue that legitimate and effective arrangements require reliable information, stakeholder cooperation, and clear attention to how costs, benefits, risks, and responsibilities are shared. Their discussion concerns infectious-disease governance rather than the full range of aquaculture siting conflicts.",
+    "A7": "The authors describe industry actions that can reduce disease risk and improve the efficiency of farm operations. These include establishing management areas and fallowing sites, coordinating management, limiting fish movements, improving husbandry and biosecurity, controlling waste, and conducting surveillance. In Norway, the regional industry established the Hustadvika barrier to limit pancreas-disease spread; the authors report that it prevented spread of strain SAV3 but did not prevent SAV2 from spreading. They argue that barriers need supporting surveillance and mitigation plans, and that industry cooperation and cost-sharing are important for maintaining control. These are disease-management measures, not a general assessment of efficient coastal-area use.",
+    "A8": "This is a central topic of the segment. The authors explain that semi-open marine net pens exchange water with the surrounding environment, allowing currents to transport infectious agents and linking farms epidemiologically. Proximity to infected farms increases risk, and horizontal transmission by currents is technically challenging to control. Other routes discussed include movements of live fish and eggs, well-boat traffic, wild fish, sea lice, escapees, workers, equipment, service boats, and seabirds. The authors also emphasize the role of density and stocking levels in disease risk. They describe Norwegian management areas, fallowing, movement restrictions, surveillance, and depopulation as measures used to limit transmission."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 11,
+   "page_to": 16,
+   "chars": 26405,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

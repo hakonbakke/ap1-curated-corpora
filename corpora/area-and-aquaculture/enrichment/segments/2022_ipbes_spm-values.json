@@ -1,0 +1,176 @@
+{
+ "doc_id": "2022_ipbes_spm-values",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 4,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 17,
+   "chars": 49511,
+   "key_figures": [
+    {
+     "quote": "More than 50 valuation methods and approaches, originating from diverse disciplines and knowledge systems, are available to date to assess nature’s values;",
+     "statement": "The authors report that more than 50 valuation methods and approaches are available to assess nature’s values; the finding is not specific to a place or period."
+    },
+    {
+     "quote": "Despite increasing calls to consider valuation in policy decisions, scientific documentation shows that less than 5 per cent of published valuation studies report its uptake in policy decisions",
+     "statement": "The authors report that less than 5 per cent of published valuation studies document uptake in policy decisions; this is a general finding, not specific to a place or period."
+    },
+    {
+     "quote": "More than 13,000 scientific publications were analyzed as well as a substantive body of indigenous and local knowledge.",
+     "statement": "The foreword reports that the Values Assessment analyzed more than 13,000 scientific publications, alongside Indigenous and local knowledge; no specific place or analysis period is stated."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 17,
+   "page_to": 29,
+   "chars": 48201,
+   "key_figures": [
+    {
+     "quote": "The number of valuation studies undertaken has increased on average by more than 10 per cent per year over the last four decades (well established) {3.2.1}.",
+     "statement": "The authors report that the number of valuation studies worldwide increased by more than 10 per cent per year on average over the last four decades."
+    },
+    {
+     "quote": "More recently (2010–2020) the most prominent focus of valuation studies has been on the status of nature (65 per cent of 1,163 valuation studies reviewed) (well established) {3.3.1.1}",
+     "statement": "The authors report that, among 1,163 valuation studies reviewed for 2010–2020, 65 per cent focused on the status of nature."
+    },
+    {
+     "quote": "Instrumental values are elicited more often (74 per cent) than relational and intrinsic values (well established) {3.2.3}.",
+     "statement": "The authors report that instrumental values were elicited in 74 per cent of the valuation studies reviewed worldwide."
+    },
+    {
+     "quote": "Most reported valuations have been performed at the subnational scales (72 per cent), compared to national and global scales, with very few studies dealing with cross-regional or cross-national protected areas (well established) {3.2.1}",
+     "statement": "The authors report that 72 per cent of reported valuation studies were conducted at subnational scales."
+    },
+    {
+     "quote": "Most valuation studies (76 per cent of the 1,163 valuation studies reviewed in depth) focus on more than one type of value related to different aspects of nature, its contributions to people and good quality of life.",
+     "statement": "The authors report that 76 per cent of the 1,163 valuation studies reviewed in depth considered more than one type of value."
+    },
+    {
+     "quote": "Less than 10 per cent address more than one life frame of nature’s values (i.e., living from, with, in and as nature) (well established) {3.3.1}.",
+     "statement": "The authors report that less than 10 per cent of the valuation studies reviewed addressed more than one life frame of nature’s values."
+    },
+    {
+     "quote": "Some stakeholder involvement is reported in 44 per cent of valuation studies (well established) {3.2.1}.",
+     "statement": "The authors report that some stakeholder involvement was recorded in 44 per cent of valuation studies."
+    },
+    {
+     "quote": "Only 2 per cent of studies consult stakeholders on findings and 1 per cent involve them in every step of the valuation process (well established) {3.2.1}.",
+     "statement": "The authors report that, among valuation studies reviewed, 2 per cent consulted stakeholders on findings and 1 per cent involved stakeholders at every step."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not discuss aquaculture planning or Norwegian area management. As a general policy argument, the authors say that addressing conflicting values requires decision makers to recognize power and equity asymmetries, support inclusive social learning involving different knowledge types, negotiate compromises among stakeholders, improve coherence across sectors and jurisdictional scales, and increase transparency and accountability. The authors also argue that institutions and decision processes affect whose values count and how nature’s contributions and costs are distributed. These points concern general decision-making, not a finding about how aquaculture locations or production levels are determined.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "The segment does not identify aquaculture-specific economic instruments, licensing arrangements, or how costs and benefits are distributed among aquaculture stakeholders. The authors’ general argument is that predominant economic decisions have prioritized market-based instrumental values, often ignoring externalities from negative impacts on biodiversity and ecosystems. They advocate institutions integrating economic, social and environmental policies and prioritizing the avoidance of serious future impacts on nature. This is a broad policy argument about valuation and decision-making, not an assessment of aquaculture incentives or site selection.",
+    "A5": "The authors describe a broad valuation knowledge base rather than knowledge used specifically for aquaculture siting. They report that more than 50 methods have been applied in varied social-ecological contexts and group them into nature-based, statement-based, behaviour-based and integrated method families. They argue that methods can provide complementary information, while method choice shapes which values are represented. The review includes different ecological contexts, including coastal areas and aquaculture, but this segment provides no aquaculture-specific siting evidence and does not discuss emerging technologies.",
+    "A6": "The segment does not describe conflicts between aquaculture and other coastal uses. In a general account of decision legitimacy, the authors identify recognition, procedural and distributional justice as dimensions of fairness. They argue that power asymmetries can constrain whose values are represented, who controls access to nature, and who bears ecosystem-degradation costs. They also note generally that restricting access to nature and undermining local livelihoods can compromise perceived fairness and lead to conflict. These are broad findings and examples about nature decisions, not aquaculture cases or Norwegian planning processes.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 29,
+   "page_to": 40,
+   "chars": 49138,
+   "key_figures": [
+    {
+     "quote": "engaging participants in their local languages (6 per cent of valuation studies), communicating through diverse media (e.g., verbal and written forms) (3 per cent) and managing group composition and size (1 per cent)",
+     "statement": "The authors report that, across valuation studies reviewed without a specified place or period, 6 per cent used local languages, 3 per cent diverse media, and 1 per cent managed group composition and size."
+    },
+    {
+     "quote": "these are rarely used in valuation (5 per cent of studies reviewed)",
+     "statement": "The authors report that equity guidelines were used in 5 per cent of the valuation studies reviewed; the segment specifies no place or review period."
+    },
+    {
+     "quote": "less than 5 per cent report the uptake of valuation in decision-making",
+     "statement": "The authors report that less than 5 per cent of valuation studies reported uptake in decision-making, across the studies reviewed; no place or exact period is specified."
+    },
+    {
+     "quote": "Valuation studies often present a diversity of stakeholder perspectives based on aspects such as age, gender, position and power relations (43 per cent of the 1,163 valuation studies reviewed in depth)",
+     "statement": "The authors report that 43 per cent of the 1,163 valuation studies reviewed in depth presented diverse stakeholder perspectives; no place or review period is specified."
+    },
+    {
+     "quote": "only a small fraction of valuation studies (0.6 per cent) explicitly report on measures to account for power asymmetries within the valuation process itself",
+     "statement": "The authors report that 0.6 per cent of valuation studies explicitly reported measures addressing power asymmetries within the valuation process; no place or review period is specified."
+    },
+    {
+     "quote": "Out of 460 scenarios reviewed, 53 per cent of them explicitly articulate values, especially when co-developed with stakeholders, 42 per cent of them mention values but do not assess them explicitly, and 53 per cent of them perform some kind of valuation without reflecting on underpinning values",
+     "statement": "The authors report these three findings for the 460 scenarios reviewed, without specifying their place or the review period."
+    },
+    {
+     "quote": "The majority of scenario studies are driven by instrumental values (94 per cent), either solely (60 per cent) or in combination with other types of values (34 per cent)",
+     "statement": "The authors report the distribution of instrumental values in the scenario studies reviewed, without specifying the place or review period."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 40,
+   "page_to": 52,
+   "chars": 34456,
+   "key_figures": [
+    {
+     "quote": "A selection of environmental policy instruments (37 from the IPBES catalogue and previous assessments) was assessed regarding five key criteria required for transformative governance",
+     "statement": "The authors report assessing 37 environmental policy instruments from the IPBES catalogue and previous assessments against five criteria for transformative governance; no specific place or period is given."
+    },
+    {
+     "quote": "85 capacity needs grouped into the six categories were identified and ranked through a consultation process involving experts across the chapters of the assessment of the diverse values and valuation of nature.",
+     "statement": "The authors report identifying and ranking 85 capacity needs in six categories through expert consultation for the assessment; no specific place or period is given."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors state that participatory land and ocean use planning can be built on social learning and can help recognize, incorporate and co-create diverse values of nature. This is a general policy argument, not an aquaculture-specific finding about how industry development, environmental considerations or competing uses are balanced in Norwegian spatial planning.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "The authors argue that decision-makers need negotiation capacities to represent interests, make compromises and accept others’ views when managing trade-offs. They also identify governance capacities for accountable, transparent, participatory and law-abiding decisions. Social learning and participatory land and ocean use planning can support mutual understanding and co-creation of values. These are general arguments about decision processes, not findings about aquaculture siting conflicts or Norwegian procedures.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "doc_id": "2015_sandersen_access-to-sites",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "Access to aquaculture sites: A wicked problem in Norwegian aquaculture development",
+    "Haakan T. Sandersen1* and Ingrid Kvalvik2"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 65389,
+   "key_figures": [
+    {
+     "quote": "the country is already by far the world’s largest producer of salmon (salmo salar), and both government and industry aim to at least double the current production of more than 1 million tonnes, which had an export value of 5 billion euros in 2013",
+     "statement": "The authors report Norway’s salmon production ambition and 2013 export value; the production and export figures are presented as cited contextual figures, not as findings from their interviews."
+    },
+    {
+     "quote": "Of the 276 coastal municipalities in Norway, 160 currently are hosting salmon farms",
+     "statement": "A cited 2013 parliamentary source reports how many Norwegian coastal municipalities hosted salmon farms."
+    },
+    {
+     "quote": "Back in 1995 the production was 200.000 tonnes of salmon a year, and the industry was composed of 565 small, local and family-run companies holding 725 licenses.",
+     "statement": "The authors cite figures for Norwegian salmon production, companies and licenses in 1995."
+    },
+    {
+     "quote": "Today, due to changes in government regulations, technological developments and a restructuring of the industry, the amount of production has soared to more than 1 million tonnes on 932 licenses.",
+     "statement": "The authors cite figures for Norwegian salmon production and licenses at the time of writing."
+    },
+    {
+     "quote": "At the same time, the number of producers has been reduced to 90, which own 132 companies",
+     "statement": "A cited 2013 report gives the number of salmon producers and companies at the time of writing."
+    },
+    {
+     "quote": "The total area occupied by the aquaculture industry is therefore increasing. Still, the aquaculture sites, including safety and anchoring area, amounts to only 0.5 per cent of the Norwegian coastal areas inside the baseline",
+     "statement": "A cited study estimates the share of Norwegian coastal areas inside the baseline occupied by aquaculture sites, including safety and anchoring areas."
+    },
+    {
+     "quote": "Five listed companies with headquarters in main Norwegian cities today own more than 50 per cent of the licenses",
+     "statement": "A cited 2012 report describes the share of Norwegian salmon licenses owned by five listed companies."
+    },
+    {
+     "quote": "The number of landing and processing plants has been reduced from 250 to 50 in a 20-year time period",
+     "statement": "A cited 2013 source reports the change in the number of Norwegian aquaculture landing and processing plants over a 20-year period."
+    },
+    {
+     "quote": "The suggestion was adopted, and today most aquaculture municipalities had levied this tax. The returns from this tax have been very modest, however, as the maximum tax rate is 7 %",
+     "statement": "The authors report that most aquaculture municipalities had adopted the property tax and state its maximum rate; the low returns are their qualitative assessment."
+    },
+    {
+     "quote": "The Norwegian Seafood Federation (FHL/Sjømat Norge), the prominent interest organisation of the industry, has also come up with a suggestion of how to compensate the municipalities, according to which the industry would pay an annual fee to the municipalities based on an annual growth in production of 3–5 %.",
+     "statement": "The authors describe an industry proposal for an annual municipal fee tied to production growth of 3–5 %."
+    },
+    {
+     "quote": "It has however suggested allowing a 5 per cent increase in the production of salmon and trout on existing licenses, under strict environmental conditions, for a fee of 1.5 mil. NOK",
+     "statement": "The authors report a 2014 government proposal for increasing salmon and trout production on existing licenses for a fee."
+    },
+    {
+     "quote": "In the proposed state budget for 2015 it is stated that “it should be worthwhile for the municipalities to facilitate aquaculture”, and the compensation to the municipalities should therefore be increased from 40 to 50 per cent of the fee",
+     "statement": "The authors cite the proposed 2015 state budget’s planned change to the share of license fees allocated as compensation to municipalities."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors identify site availability as shaped by municipal coastal-zone planning, national licensing and production limits, environmental and veterinary rules, and competition with other coastal uses. Municipalities designate areas through planning, while the national government controls licenses and maximum allowed biomass. Municipalities’ reluctance to allocate more space reflects environmental concerns, competing uses and limited local economic returns. The authors argue that the current balance is contested: national ambitions for growth depend on local decisions, but environmental protection, municipal autonomy and other interests constrain expansion. Compensation proposals have not resolved this tension.",
+    "A1": "The authors argue that development depends on suitable sites as well as licenses, feed and healthy marine environments. Site availability is affected by municipal allocation decisions, geography, competing coastal uses, and the need for larger production areas. Citing veterinary regulations, they note requirements for distance between facilities, fallowing and rotating site use, which add to demand for suitable locations. National authorities determine when licenses are issued, their number and maximum biomass. The authors caution that an area rent might not secure preferred sites because municipalities may still decline allocation and national environmental or veterinary rules may constrain access.",
+    "A2": "The segment describes the planning and allocation framework but does not provide a detailed account of an individual site application’s stages or quantify where delays and rejections occur. Municipalities designate aquaculture areas through coastal-zone plans; companies then apply for permission to place cages, anchoring and related infrastructure. Applications and site permissions operate within national licensing and regulatory constraints. The authors identify municipal reluctance to designate areas as a key access obstacle, and describe conflicts over competing uses and environmental concerns, but do not report stage-by-stage processing times or rejection rates.",
+    "A3": "",
+    "A4": "The authors analyze area rent as a proposed way to compensate municipalities for planning and hosting aquaculture, and potentially make them more willing to allocate sites. Municipalities frame it as fair compensation and a share of value created; industry representatives increasingly support payment if it goes directly to municipalities without raising the total tax burden. The national government has resisted a rent because it does not fit the existing tax system and could set precedents for other resource industries. Existing property taxes and allocations of license fees are described as limited or uneven, with hosting municipalities disputing their adequacy. The authors warn that rent could disadvantage less profitable aquaculture and non-commercial coastal users.",
+    "A5": "The authors base their analysis on literature and document review, public documents and news, and interviews with municipal, regional and national decision makers, industry actors, the industry organization, the municipal network, and members of the public and opponents in selected municipalities. They cite expert and policy reports for industry structure, site use and municipal attitudes. The segment does not describe a specific spatial decision-support dataset or method for assessing cumulative effects. It notes that technological changes could alter environmental impacts and that failure to address environmental problems through technology, regulation or incentives could bring environmental and area-rent debates together.",
+    "A6": "The authors identify conflict among aquaculture growth, municipal autonomy, environmental protection, and competing uses such as fisheries, transport, tourism, recreation and other industries. Municipalities may resist expansion because of environmental impacts, competition for sea space and modest local benefits. The authors also note that aquaculture’s semi-permanent occupation can be viewed as an illegitimate use of coastal commons. They argue that legitimate and workable decisions require attention to different stakeholder interests and the political and institutional constraints on solutions. A rent tailored to encourage aquaculture could weaken the position of non-commercial interests and less affluent stakeholders.",
+    "A7": "The segment does not set out a formal industry-led programme for efficient or sustainable spatial use. It notes that production per site has increased as the number of sites has fallen, and that the industry seeks larger, better-suited areas and more production on existing sites where capacity is not fully used. Veterinary requirements for distance, fallowing and rotation also shape site use. The Norwegian Seafood Federation’s cited proposal links municipal compensation to production growth, intending to encourage additional allocation. The authors caution that growth incentives do not necessarily resolve access constraints or environmental concerns.",
+    "A8": "The authors identify veterinary rules requiring distance between aquaculture facilities, fallowing and rotating site use as factors affecting the industry’s need for suitable sites. These rules relate to operation and fish health, although the segment does not explain water connectivity, transmission pathways or particular biosecurity methods. The authors also state that national veterinary regulations may limit access to desired sites even if municipalities receive compensation. Disease outbreaks are mentioned among environmental concerns that could become more prominent and interact with the area-rent debate."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

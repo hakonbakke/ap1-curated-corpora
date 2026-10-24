@@ -1,0 +1,100 @@
+{
+ "doc_id": "2025_rosendal_municipal-environment-economy",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 7,
+   "chars": 46952,
+   "key_figures": [
+    {
+     "quote": "Selecting ten municipalities for in depth studies, we apply a qualitative comparative analysis approach to examine the proposition that municipalities hosting strong aquaculture industry clusters (AC) will be positive to expansion, regardless of the state of the environment.",
+     "statement": "The authors' study examines ten Norwegian coastal municipalities to assess how industry clusters and environmental conditions relate to positions on aquaculture expansion."
+    },
+    {
+     "quote": "We have also conducted semi-structured interviews within ten municipalities, with a total of 39 municipal representatives (three to five within each municipality).",
+     "statement": "The authors interviewed 39 municipal representatives across ten Norwegian municipalities, with three to five interviewees in each municipality."
+    },
+    {
+     "quote": "There are 145 out of 276 Norwegian coastal municipalities that host salmonid farming and related supply-chain activities according to the Aquaculture Registry (2024).",
+     "statement": "A cited Aquaculture Registry figure reports that 145 out of 276 Norwegian coastal municipalities hosted salmonid farming and related supply-chain activities in 2024."
+    },
+    {
+     "quote": "In 2022 transfers from the government’s Aquaculture Fund to municipalities amounted to £250 million (3 billion NOK5).",
+     "statement": "The authors report that transfers from the Norwegian government’s Aquaculture Fund to municipalities in 2022 amounted to £250 million (3 billion NOK5)."
+    },
+    {
+     "quote": "Our ten cases display considerable variation – the majority of which are in line with our main proposition, but a few are not. Four municipalities receive high scores on both environmental problems and on AC dependency.",
+     "statement": "The authors find that four of the ten case municipalities scored high on both environmental problems and aquaculture-cluster dependency."
+    },
+    {
+     "quote": "Of these, three are positive to aquaculture expansion, in line with the proposition, while Osterøy alone is negative.",
+     "statement": "The authors find that three of the four municipalities with high environmental problems and high cluster dependency supported expansion, while Osterøy opposed it."
+    },
+    {
+     "quote": "The interviews were conducted on-line (teams-meeting), followed a common interview guide (Appendix 1) and lasted between 45 and 90 min.",
+     "statement": "The authors' interviews with municipal representatives lasted between 45 and 90 min."
+    },
+    {
+     "quote": "A green light allows localities in the PA to maintain current production volumes, while a green light opens for further growth up to 6 %.",
+     "statement": "The article's description of the Traffic Light System states that a green production-area status opens for production growth up to 6 %."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe a divided planning and regulatory framework. Nationally, the Traffic Light System regulates production-volume growth across production areas according to risk of wild-salmon mortality from sea lice. A physical farm site also needs a localization permit coordinated by the County Authority, while municipalities have responsibility under the Planning and Building Act for coastal area planning and can authorize or restrict aquaculture areas in municipal master plans. In their ten-municipality study, the authors find that cluster dependency generally predicts support for expansion better than measured environmental problems, but the relationship is qualified by company ownership, local economic diversity, and environmental interests. They argue that the environment can constrain growth in particular cases, including Osterøy.",
+    "A1": "The authors identify site availability and municipal land-use planning as important local conditions: municipalities may include or exclude coastal areas for salmon farming in their master plans, and timing differs because area plans can span 12-year periods. Site approval is distinct from national permission to increase production capacity: the County Authority coordinates localization decisions involving sectoral authorities, while the Traffic Light System governs growth at production-area level according to louse-related risk to wild salmon. The study also finds that opportunities and municipal attitudes are shaped by economic dependence, local company ties, competing interests, and environmental concerns. Environmental indicators include sea-lice risk and treatments, reported threshold exceedances, and seabed conditions. Fish health is addressed indirectly through the authors' use of delousing frequency as an indicator correlated with farmed-fish mortality; they lack direct site-level mortality data.",
+    "A2": "The segment explains that national growth permits must also be accompanied by a localization permit for the physical farm site. The County Authority is the coordinating agency for localization decisions, which involve a range of sectoral authorities; municipalities separately control coastal area planning through the Planning and Building Act and their master plans. The segment does not describe the detailed application sequence, statutory processing times, or which formal application stages most commonly produce delay or rejection. It does, however, document a local planning conflict in Hareid: after large aquaculture companies advocated major facilities in popular coastal areas, pressure from other industries and local people led the municipality to halt initiation of expansion in its area planning. This is an interview-based case finding, not a general account of application outcomes.",
+    "A3": "The authors describe cumulative assessment chiefly through the national Traffic Light System. It assigns production areas risk categories based on sea-louse effects on wild salmon; further growth is allowed in low-risk areas, while the system uses cumulative louse impacts within production areas to assess wild-salmon mortality. The authors supplement this area-scale assessment with municipality-level indicators, including site-level lice counts and treatment frequency, because broad production areas can contain municipalities with different conditions due to currents and salinity. They also use B-assessments of seabed impacts. Their method aggregates five indicators into a high/low environmental-problem classification, but they acknowledge limited coverage of environmental problems, reporting and measurement bias, and possible inaccuracies. Interviews provide triangulation. The segment does not establish that these municipal indicators are formally incorporated into site-selection decisions.",
+    "A4": "The authors treat economic dependence on aquaculture clusters as a key influence on municipal support for expansion. Their indicators include local employment and investment, supply-chain effects, Aquaculture Fund revenues, company headquarters, and competing economic interests. They report that the Fund redistributes national revenues from industry growth and production taxes to municipalities, and that transfers in 2022 amounted to £250 million (3 billion NOK5). In their cases, revenues can matter substantially where populations are small. The authors find that strong cluster dependence usually aligns with support for expansion, but the effect is weaker where companies are large and externally based or municipalities are economically diverse. Hareid's case illustrates that supply-chain activity need not mean direct local revenue from farming, while Osterøy interviewees viewed local revenues as small relative to multinational companies' earnings. The segment does not quantify the distribution of costs among stakeholders.",
+    "A5": "The authors' evidence base combines municipal interviews with administrative and environmental information. They interviewed mayors, municipal executives, and administrative representatives, and assessed master-plan land-use elements and proposals alongside environmental indicators. Those indicators draw on Traffic Light System colours and expert-group assessments, reported sea-louse counts, delousing actions, and mandatory B-assessments of seabed conditions; Aquaculture Registry and Directorate of Fisheries material also inform the analysis. The authors acknowledge that available data cover only a limited range of potential environmental problems and that reported measurements may be biased. They triangulate the quantitative indicators with interviews, while noting that both methods have limitations. The segment does not discuss emerging technologies as a general means of changing siting opportunities, though it mentions closed cages as a demand voiced in Osterøy.",
+    "A6": "The authors identify conflicts between aquaculture expansion and tourism, fisheries, shipyards, shipping, Sami interests, and environmental interests. Hareid provides a case in which large companies proposed facilities in popular coastal areas, prompting pressure from other industry actors and local people; tourism businesses also objected to noise and other disturbances. In Osterøy, concern for an iconic wild-salmon variety and active environmental interests supported opposition to salmon farming, even though the municipality remained supportive of trout farming. The authors' broader finding is that economic dependence often favors expansion, but local identity, trust, environmental advocacy, and alternative economic opportunities can shape opposition. Their study uses interviews and planning positions to compare cases, but the segment does not assess procedural legitimacy or predictability systematically.",
+    "A7": "",
+    "A8": "The segment describes salmon lice as a production and environmental concern: lice can transfer from farms to migrating wild-salmon juveniles and threaten wild salmon and other salmonids. The Traffic Light System assesses louse-related risk to wild-salmon mortality across production areas and regulates production growth accordingly. The authors also use reported site-level lice-threshold exceedances and delousing frequency to assess local environmental conditions; they note that treatment frequency is strongly correlated with farmed-fish mortality and can indicate fish welfare, although direct site-level mortality data were unavailable. They note that natural factors such as sea currents and salinity can make lice challenges vary within broad production areas. The segment does not provide a specific analysis of water connectivity between farms or of biosecurity coordination among sites."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 7,
+   "page_to": 11,
+   "chars": 32338,
+   "key_figures": [
+    {
+     "quote": "With a per capita of 21,187 from the Fund, Solund is on top of the list.",
+     "statement": "The authors report that Solund, Norway, received 21,187 per capita from the Aquaculture Fund; the period is not specified."
+    },
+    {
+     "quote": "The local industry delivers 20 % of the Norwegian salmon supply and represents 40–50 % of the total value creation in Trøndelag County.",
+     "statement": "The authors report that Frøya’s local salmon-farming industry delivers 20 % of Norway’s salmon supply and represents 40–50 % of value creation in Trøndelag County; the period is not specified."
+    },
+    {
+     "quote": "The difference is about NOK 200 million in tax revenues, which helps to explain the positive attitudes towards aquaculture expansion in Frøya.",
+     "statement": "The authors report an approximately NOK 200 million difference in tax revenues between Frøya and neighbouring Hitra, which they link to Frøya’s positive attitudes toward aquaculture expansion; the period is not specified."
+    },
+    {
+     "quote": "Regarding AC dependency, the benefits are considerable – about 300 people are employed in aquaculture and various supply services.",
+     "statement": "The authors report that about 300 people in Alta are employed in aquaculture and associated supply services; the period is not specified."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ finding is that municipal support for expanding salmon-farming areas is shaped strongly by dependence on aquaculture clusters (ACs), including employment, revenues, and local funding. Environmental problems often do not outweigh economic growth in municipalities dependent on these clusters. Larger municipalities with lower AC dependence may oppose expansion even when environmental problems are low, especially where other interests compete for coastal space. Municipal positions also reflect local identity and the strength of interests such as wild salmon fishing, tourism, and fisheries. Some municipalities use flexible “multi-use areas” to preserve the possibility of future expansion, while others define areas where aquaculture should not take place.",
+    "A1": "This segment focuses on municipal positions toward salmon-aquaculture expansion rather than detailing licensing or site-application rules. The authors find that opportunities for development depend on local AC dependence, environmental concerns, competing interests, municipal identity, and trust in companies. Local companies can anchor support and perceived community benefits, while externally based corporations may weaken local ties and trust. Environmental conditions also matter: the segment describes sea-lice risks, fish mortality, disease, seabed assessments, and pollution concerns in particular municipalities. The authors note that a green traffic-light-system (TLS) designation does not settle every site-level concern; the TLS does not regulate salmon lice at the level of sites.",
+    "A2": "",
+    "A3": "The authors report that Steigen interviewees considered their small municipality to lack the environmental competence needed to assess cumulative effects of aquaculture expansion. In Alta, respondents questioned whether environmental assessments covered all relevant issues and cited negative seabed-assessment conditions at a significant number of farming sites. The authors say more knowledge is warranted about how municipalities use assessment results, given variation in their capacity and resources. The segment also illustrates a scale mismatch: a production area may receive a green light from central authorities while local concerns about site-level lice risk and cumulative effects remain. No specific cumulative-assessment method is evaluated.",
+    "A4": "The authors’ cases show that economic instruments and the distribution of benefits can shape local support. Solund receives Aquaculture Fund revenues, while interviewees in Flatanger say the small local company Bjørøya contributes substantially to local activities and infrastructure, including schools and culture, and provides residents a greater share of benefits than larger corporations. In Frøya, the authors link positive attitudes partly to a tax-revenue difference of about NOK 200 million compared with neighbouring Hitra. The authors argue that local ownership and company ties can support trust and perceived fairness; external corporate ownership and relocation of headquarters may erode them. The segment does not detail licensing fees or other regulatory economic instruments.",
+    "A5": "The segment draws on interviews, environmental assessments, seabed assessments, municipal-level knowledge, and the TLS Expert Group’s risk assessments. The authors find that environmental knowledge may be contested by knowledge generated through professionalization in the aquaculture sector; university-trained aquaculture personnel may strengthen arguments for local expansion, while ecology and marine-biology expertise is often absent from small municipal administrations. Steigen interviewees said the municipality lacked competence to assess cumulative effects, and Alta respondents doubted whether assessments covered all relevant environmental aspects. The authors characterize their results as tentative indicators and call for further study of how municipalities use environmental-assessment results. They do not discuss emerging technologies in detail, beyond local confidence that new technologies may address environmental problems.",
+    "A6": "The authors identify conflicts between aquaculture expansion and environmental protection, wild salmon and fisheries, tourism, conservation, and other coastal interests. Interviewees in Solund and Flatanger described opposition from the County Governor to expansion; municipalities in Smøla and Hammerfest faced criticism for planning expansion into protected areas. Steigen interviewees feared central authorities would overlook negative environmental effects and opposed multi-use areas, which they saw as expansion in disguise. In Alta and Tromsø, wild-salmon identity, biodiversity, tourism, and other economic interests contribute to resistance. The authors find that local trust and perceived fairness affect acceptance, but caution that their case findings are tentative and call for closer examination of interest groups and municipal capacity.",
+    "A7": "The segment offers few direct recommendations for industry action to improve spatial efficiency or sustainability. It reports that Cermaq requested twin locations in Steigen to rotate production, allegedly to support ecological sustainability, but interviewees said the company was instead using both areas to maximize production. The authors also report that Flatanger representatives trust that new technologies may address environmental challenges, but this is an expectation rather than evidence of a demonstrated industry measure. The segment does not assess operational practices for reducing spatial footprints or provide a general industry framework.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

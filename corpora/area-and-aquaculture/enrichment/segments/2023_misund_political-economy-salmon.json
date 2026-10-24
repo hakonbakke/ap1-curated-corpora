@@ -1,0 +1,88 @@
+{
+ "doc_id": "2023_misund_political-economy-salmon",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 17,
+   "chars": 48731,
+   "key_figures": [
+    {
+     "quote": "Norwegian production has increased from a few thousand metric tons (mt) in 1970 to 1.6 mill mt in 2021",
+     "statement": "The authors report that Norwegian salmon aquaculture production grew from a few thousand metric tons (mt) in 1970 to 1.6 mill mt in 2021."
+    },
+    {
+     "quote": "Over the last decade, extraordinary proﬁtability driven by elevated market prices for salmon has contributed to the owners’ larger share of value added, going from levels below or around 50% in earlier years to 70%–85% in the last five years.",
+     "statement": "The authors report that capital owners’ share of value added in Norwegian salmon aquaculture rose from levels below or around 50% in earlier years to 70%–85% in the last five years."
+    },
+    {
+     "quote": "In 2018, government sales of new licenses enabling production growth generated an income of approximately NOK 4 billion (~USD 381 million), resulting in a payment of NOK 2.7 billion (~USD 257 million) divided among 164 host municipalities and 10 counties",
+     "statement": "The authors report that Norway’s 2018 sales of new production-growth licenses generated approximately NOK 4 billion (~USD 381 million), with NOK 2.7 billion (~USD 257 million) distributed among 164 host municipalities and 10 counties."
+    },
+    {
+     "quote": "a production fee implemented in 2021 is estimated to provide aquaculture municipalities with yearly revenues of approximately NOK 500 million (~USD 48 million).",
+     "statement": "The authors report an estimated yearly revenue of approximately NOK 500 million (~USD 48 million) for Norwegian aquaculture municipalities from the production fee implemented in 2021."
+    },
+    {
+     "quote": "Total inﬂation-adjusted value added has increased from NOK 15 billion (~USD 1.4 billion) in 2004 to around NOK 70 billion (~USD 6.7 billion) in 2019",
+     "statement": "The authors report that inflation-adjusted value added across the Norwegian aquaculture value chain increased from NOK 15 billion (~USD 1.4 billion) in 2004 to around NOK 70 billion (~USD 6.7 billion) in 2019."
+    },
+    {
+     "quote": "The number of active farms has been relatively stable over the last 10 years, slightly above a thousand in total along the coast. Nevertheless, ﬁgure 6 shows that the area occupied by farms increased by 49% from 2012 to 2020.",
+     "statement": "The authors report that the area occupied by Norwegian salmon farms increased by 49% from 2012 to 2020, while active farms remained slightly above a thousand over the last 10 years."
+    },
+    {
+     "quote": "Although the salmon farms themselves occupy less than 1% of the total inshore sea area, new farms are placed at a minimum 5-km distance from existing aquaculture activity",
+     "statement": "The authors report that Norwegian salmon farms occupy less than 1% of total inshore sea area and that new farms are placed at a minimum 5-km distance from existing aquaculture activity."
+    },
+    {
+     "quote": "The survey consists of 1,183 respondents, who are unevenly distributed geographically.",
+     "statement": "The authors’ 2020 Norway-wide survey of public perceptions included 1,183 respondents, with an uneven geographic distribution."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe aquaculture as competing with other users for coastal areas and identify municipal decisions about whether, when, and where salmon can be produced as important to development. Access to new locations is described as one of the industry’s main growth challenges. They argue that municipalities may have stronger incentives to prioritize aquaculture sites if communities perceive costs and benefits as fairly shared. Environmental impacts, including sea lice, are also described as constraining growth and as part of the regulation of production growth. The segment does not explain a formal spatial-planning framework or how competing uses are weighed in individual planning decisions.",
+    "A1": "The authors identify access to new locations as a major constraint on industry growth and state that municipalities decide whether, when, and where salmon can be produced. They report that the area occupied by farms increased by 49% from 2012 to 2020, although farms themselves occupy less than 1% of total inshore sea area. The cited study by Hersoug, Mikkelsen, and Osmundsen (2021) is reported as saying that new farms are placed at a minimum 5-km distance from existing aquaculture activity to reduce disease transmission; this increases effective area use and restricts access to new sites. The authors also describe environmental challenges, especially sea lice, as limiting growth and influencing production-growth regulation. This segment does not detail licensing stages or how site availability interacts with fish-health assessment in applications.",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors explain that public allocation of new and increased production licenses generates revenue through fixed-price sales or auctions, with income directed to the Aquaculture Fund and distributed between central government and counties or municipalities with production sites. They report that a production fee implemented in 2021 is estimated to provide aquaculture municipalities with yearly revenues of approximately NOK 500 million (~USD 48 million). The authors also describe corporate, wealth, employer, and property taxes, as well as license-related fees, as channels for capturing industry value. Their survey analysis finds that residents in municipalities with aquaculture activity and greater industry presence tend to view aquaculture more favorably, while respondents generally view benefit distribution as unfair. The segment notes that these compensation arrangements are relatively new and their effects on perceptions may be difficult to measure.",
+    "A5": "",
+    "A6": "The authors describe competition between aquaculture and other users of coastal areas, and explain that environmental effects and perceived unfair sharing of economic benefits can weaken public support. They report that people in municipalities with aquaculture activity have more favorable views, with more positive perceptions associated with greater local industry presence. However, respondents’ assessments of whether economic benefits are fairly distributed were generally negative. The authors argue that community expectations about sharing benefits have grown alongside the industry’s profitability and that fairer sharing could improve legitimacy and municipal willingness to prioritize sites. These are findings and arguments about societal support, not an evaluation of the procedural legitimacy or predictability of specific siting decisions. The segment does not describe particular planning conflicts or consultation processes.",
+    "A7": "",
+    "A8": "The authors state that new farms are placed at a minimum 5-km distance from existing aquaculture activity to reduce transmission of fish diseases. They explain that this separation substantially increases the industry’s effective area use and restricts access to new sites, despite salmon farms themselves occupying less than 1% of total inshore sea area. Disease and parasites, including sea lice, are also identified as adverse environmental effects of aquaculture, with sea lice a major concern because of potential effects on wild salmonids and the health and welfare of farmed salmonids. The 5-km siting statement is attributed to Hersoug, Mikkelsen, and Osmundsen (2021); the segment does not discuss water connectivity or provide further biosecurity methods."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 17,
+   "page_to": 26,
+   "chars": 24905,
+   "key_figures": [
+    {
+     "quote": "For all models, the two lowest scores (i.e., scores 1 and 2) have a predicted probability of nearly 60%, indicating that the respondents would not agree that the salmon aquaculture industry has a high financial significance for their local community.",
+     "statement": "The authors' model predicts that respondents in the study have a nearly 60% probability of assigning one of the two lowest scores for the aquaculture sector's financial significance to their local community."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors' empirical findings indicate that aquaculture production and value creation are associated with more favorable impressions of the industry, but residents of aquaculture municipalities do not report more favorable perceptions of how its economic benefits are distributed. The authors interpret this as evidence that community expectations about sharing benefits are not yet fulfilled by industry behavior and/or government regulation. They note that debates about taxes, revenue distribution, and regulatory compliance may contribute to this sentiment; they also cite research that communities hosting production expect more benefits and revenues. The segment does not evaluate particular spatial-use instruments or their effects on site selection.",
+    "A5": "",
+    "A6": "The authors find that people are more favorably disposed toward the industry where aquaculture is present, and that favorable impressions are associated with increased production capacity and value creation. Yet residents of aquaculture municipalities do not perceive the distribution of economic benefits more favorably, and even those respondents rate the sector's financial significance to their local community relatively low. The authors argue that social license varies across local communities and nationwide, and cite the proposal to understand it as “multiple social licenses” rather than a single license granted by one community. The segment discusses public expectations and support, not procedural conflicts or planning decision-making.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

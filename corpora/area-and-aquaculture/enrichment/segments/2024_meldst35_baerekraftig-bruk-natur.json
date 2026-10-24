@@ -1,0 +1,931 @@
+{
+ "doc_id": "2024_meldst35_baerekraftig-bruk-natur",
+ "model": "gpt-6-luna",
+ "large": true,
+ "n_segments": 18,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 18,
+   "chars": 49004,
+   "key_figures": [
+    {
+     "quote": "blant de vurderte dyre- og plantegruppene er i gjennomsnitt ca. 25 prosent av artene truet,1 og estimerer at rundt én million arter står i fare for å bli utryddet,2 mange av dem innen noen tiår",
+     "statement": "A cited 2019 global IPBES assessment reports that ca. 25 prosent of assessed animal and plant species are threatened and estimates that around én million species face extinction."
+    },
+    {
+     "quote": "den globale utryddelsestakten, som allerede er mellom ti og hundre ganger høyere enn gjennomsnittet for de siste ti millioner år.",
+     "statement": "A cited 2019 global IPBES assessment says the current global extinction rate is between ti and hundre times the average rate over the last ti millioner år."
+    },
+    {
+     "quote": "Økosystemer med stort artsmangfold produserer omtrent dobbelt så mye biomasse som monokulturer av de samme artene, og forskjellene øker over tid.7",
+     "statement": "A cited study reports that ecosystems with high species diversity produce omtrent dobbelt as much biomass as monocultures of the same species, with differences increasing over time."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The policy statement presents land-use management as a comprehensive planning task balancing nature conservation with society’s needs. The government proposes reducing development of particularly important natural areas by 2030 and limiting net loss of these areas to a minimum by 2050. It says this should be pursued through participatory, integrated spatial planning, with local self-government and Indigenous rights respected. Municipalities are described as key actors because of their local knowledge and responsibility for much local development. When nature must give way, purposes with particularly strong societal need, such as renewable energy production, are to receive highest priority. These are policy directions, not findings about aquaculture siting.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "The document argues that actors who intervene in nature or otherwise harm it are generally not made to bear the real societal costs of their actions. It says individual contributions to environmental degradation may be small while cumulative consequences become large, and that immediate, visible considerations can crowd out nature’s less tangible or difficult-to-price values in decisions. The report presents this as a general policy concern about how economic and political decisions value nature; it does not discuss aquaculture-specific charges, licensing incentives, or how costs and benefits are distributed among aquaculture stakeholders.",
+    "A5": "The government identifies knowledge about ecosystem condition, the combined burden of human activity, and the benefits of that activity as a basis for sustainable management. It proposes a nature account to provide systematic, regularly updated knowledge about ecosystem extent and condition and the services nature provides. It also plans regular overall reviews of status, progress toward goals, and measures, drawing in part on ecosystem action menus and the nature account. These are policy proposals; the segment does not describe aquaculture-specific data, site-selection tools, or emerging technology.",
+    "A6": "The policy statement calls for participatory, integrated spatial planning grounded in local self-government and respect for Indigenous rights. Municipalities are described as having a key role because they possess local knowledge and know local needs, while also facing extensive responsibilities. The government says it wants to provide municipalities with better tools and opportunities for long-term decisions that safeguard both biodiversity and societal needs. The segment acknowledges that climate and nature considerations can conflict, including where renewable energy, power infrastructure, minerals, or industry require land. It does not identify aquaculture-specific conflicts or procedures for resolving them.",
+    "A7": "The government’s policy direction is to manage nature sustainably through a combination of national rules and sound, long-term local management. It promotes principles for more land-efficient and sustainable spatial management, reducing development of particularly important natural areas, and restoring nature where appropriate. It also stresses the need to consider the cumulative burden on ecosystems and keep use within ecological limits. These statements offer general expectations for sustainable area use, not measures developed specifically for the aquaculture industry.",
+    "A8": ""
+   },
+   "summary": "This segment introduces Norway’s 2024 national action plan for biodiversity and explains its general policy direction. It frames sustainable use and conservation as necessary to maintain nature’s contribution to welfare, livelihoods, health, and local economies. The government identifies land-use change as the largest negative pressure on Norwegian nature and says that cumulative human impacts can exceed ecological limits. It proposes regular reviews of ecosystem status, measures, and progress; a nature account to improve knowledge of ecosystem extent, condition, and services; and menus of measures to address cumulative pressures. Spatial planning is to be participatory and integrated, respect local self-government and Indigenous rights, and reduce development of particularly important natural areas by 2030, with net loss limited to a minimum by 2050. Municipalities are assigned a key role, supported by improved tools and knowledge. The segment also notes that climate and nature goals may conflict where energy, infrastructure, minerals, and industry require land. It cites the 2019 IPBES assessment, including estimates that ca. 25 prosent of assessed animal and plant species are threatened, around én million species face extinction, and the global extinction rate is between ti and hundre times the average for the last ti millioner år. A cited study says diverse ecosystems produce omtrent dobbelt as much biomass as monocultures of the same species. The material is policy framing and background rather than an aquaculture-specific account; it provides no site application details, farm-level cumulative assessments, or aquaculture biosecurity analysis.",
+   "chapter_title": "1 Sammendrag; 2 Bakgrunn"
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 18,
+   "page_to": 31,
+   "chars": 48376,
+   "key_figures": [
+    {
+     "quote": "De 23 målene for 2030 er delt inn tematisk i tre ulike grupper:",
+     "statement": "The authors state that the Nature Agreement has 23 targets for 2030, grouped into three themes."
+    },
+    {
+     "quote": "Av de naturlige vannforekomstene har 86 prosent av arealet for kystvann god eller svært god tilstand i henhold til vannforskriften.",
+     "statement": "The authors report that 86 prosent of the area of natural coastal-water bodies in Norway has good or very good status under the Water Regulations."
+    },
+    {
+     "quote": "Dersom en regner med sterkt modifiserte vannforekomster (se kapittel 3.2.2), er tallet 84 prosent.",
+     "statement": "The authors report that 84 prosent of the area of coastal-water bodies has good or very good status when heavily modified water bodies are included."
+    },
+    {
+     "quote": "Kystområdet innenfor grunnlinjen (det vil si indre farvann) omfatter et areal på nesten 90 000 km2.",
+     "statement": "The authors report that Norway’s coastal area inside the baseline, or internal waters, covers nearly 90 000 km2."
+    },
+    {
+     "quote": "De norske havområdene omfatter mer enn seks ganger arealet av fastlandet, og Norge har en kystlinje på over 100 000 km, inkludert øyer, skjær og holmer.",
+     "statement": "The authors describe the extent of Norway’s marine areas and coastline, including islands and skerries, as more than six times the mainland area and over 100 000 km."
+    },
+    {
+     "quote": "Arealendringer påvirker ni av ti truede arter, blant annet gjennom utbygging, skogbruk og opphør av landbruksdrift.",
+     "statement": "The authors report, drawing on the Norwegian Red Lists, that land-use changes affect nine of ten threatened species in Norway."
+    },
+    {
+     "quote": "I arbeidet med Rødlista for arter 2021 ble 23 405 arter vurdert. Av disse kom 4957, det vil si 21 prosent, på Rødlista.",
+     "statement": "The authors report that the 2021 Norwegian Red List assessment considered 23 405 species and listed 4957, or 21 prosent, as red-listed."
+    },
+    {
+     "quote": "I Norsk rødliste for naturtyper 2018 er 258 naturtyper vurdert. Av disse er 123 på Rødlista (tilsvarende 48 prosent), og 74 (tilsvarende om lag 29 prosent) er vurdert som truet.",
+     "statement": "The authors report that the 2018 Norwegian Red List assessment covered 258 nature types, of which 123 were red-listed and 74 were considered threatened."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not describe aquaculture siting rules or current spatial-planning decisions. It presents the Nature Agreement as a policy framework requiring biodiversity to be integrated across sectors and levels of government. Target 10 specifically calls for sustainable management of areas used for agriculture, aquaculture, fisheries and forestry. The government also describes implementation as ecosystem-based integrated management of land, water and natural resources, intended to balance conservation, sustainable use and fair benefit-sharing. These are policy statements, not findings about how competing aquaculture uses are weighed in actual plans.",
+    "A1": "The segment provides no direct account of aquaculture development opportunities, licensing, site availability, fish health or site-selection processes. Its relevant policy context is target 10 of the Nature Agreement, which covers sustainable management of areas used for aquaculture alongside agriculture, fisheries and forestry. The government also states that implementation should use an ecosystem-based approach to manage land, water and natural resources in an integrated way. These statements establish broad environmental objectives but do not explain how they interact with aquaculture licensing or constraints on coastal sites.",
+    "A2": "",
+    "A3": "",
+    "A4": "The segment does not discuss aquaculture-specific economic instruments, fees, incentives or how costs and benefits are distributed. It describes the Nature Agreement’s target 18 as seeking to reduce harmful incentives and scale up positive incentives for biodiversity, and target 19 as seeking to mobilize financial resources. These are policy objectives rather than an assessment of existing instruments or their effects on aquaculture area use and site choice.",
+    "A5": "The government describes several knowledge systems relevant to nature management: the ecological-condition system, the Nature Index and the Water Regulations’ classification system for freshwater and coastal water. The Water Regulations system classifies ecological and chemical status, but the text cautions that its coastal-water quality elements are not especially well suited to assessing biodiversity. The ecological-condition system does not cover rivers or coastal areas, which are addressed through the water classification system; the government has initiated an evaluation of the ecological-condition system. The Nature Index summarizes information from 260 indicators, but the segment cautions that it is not suitable for comparing status and trends between ecosystems. These are descriptions of methods and limitations, not aquaculture-specific siting evidence.",
+    "A6": "The segment reports that public input to the nature plan repeatedly raised land-use challenges, including dilemmas between renewable-energy development and nature conservation, and called for more mapping, knowledge access and expertise. These are summaries of consultation input, not aquaculture-specific conflict findings. The Sami Parliament’s stated position is that Sami rights, traditional knowledge and practices should be respected, and that Sami communities should participate in decisions affecting Sami areas and rights-holders. The government says the plan itself contains no measures that will directly affect Sami interests, while noting that ordinary consultation procedures apply when concrete instruments are implemented. The segment does not assess the legitimacy or predictability of aquaculture siting decisions.",
+    "A7": "The segment gives no operational measures that the aquaculture industry itself can use to improve the efficiency or sustainability of its area use. The relevant policy statement is target 10 of the Nature Agreement, which calls for sustainable management of areas used for aquaculture, agriculture, fisheries and forestry. The broader implementation framework calls for integrated, ecosystem-based management of land, water and natural resources. The segment does not translate these objectives into industry practices or site-level measures.",
+    "A8": "The segment mentions the Nature Agreement’s One Health approach, which recognizes that the health of people, domestic and wild animals, plants and the wider environment, including ecosystems, is closely connected and interdependent. This is a broad policy principle, not an assessment of aquaculture biosecurity, disease transmission or water connectivity between farms. The segment provides no aquaculture-specific evidence on these mechanisms."
+   },
+   "summary": "This segment explains the Nature Agreement, its implementation arrangements, and the broader national and international context for Norway’s nature policy. The Agreement has four long-term goals for 2050 and 23 targets for 2030, grouped around reducing threats, meeting human needs through sustainable use and benefit-sharing, and providing tools for implementation. Target 10 explicitly covers sustainable management of areas used for aquaculture, fisheries, agriculture and forestry. Implementation includes national action plans, periodic ambition analyses, national reports and global reviews. A four-level indicator framework is described, alongside overarching principles including human rights, intergenerational justice, Sami and local knowledge, ecosystem-based management and One Health.\n\nThe segment also outlines international agreements, Norway’s national environmental goals, earlier nature action plans and the process used to prepare the current parliamentary report. Consultation input repeatedly highlighted land-use challenges and the need for more knowledge and mapping. The Sami Parliament emphasized recognition of Sami rights and traditional knowledge and meaningful participation in decisions affecting Sami areas. These are reported positions and policy context, not aquaculture-specific siting findings.\n\nThe nature-status section describes Norway’s diverse ecosystems and summarizes Red List assessments. It identifies land-use change as the largest threat to species and nature types; such changes affect nine of ten threatened species. For coastal waters, the authors report that 86 prosent of the area of natural water bodies has good or very good status under the Water Regulations, or 84 prosent when heavily modified water bodies are included. The text cautions that the coastal-water indicators are not particularly suited to assessing biodiversity. No aquaculture site-selection process, cumulative-impact method, or farm-level environmental assessment is examined in this segment.",
+   "chapter_title": "2.3 Nærmere om naturavtalen"
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 31,
+   "page_to": 47,
+   "chars": 49447,
+   "key_figures": [
+    {
+     "quote": "Verdien ved siste vurdering i 2019 var på 0,67.",
+     "statement": "The document reports a Norwegian coastal-water Nature Index value of 0,67 in the 2019 assessment; this is a finding presented in the government document."
+    },
+    {
+     "quote": "Antall norske sjøfugler er estimert å ha gått tilbake med 80 prosent i perioden 1970–2020.",
+     "statement": "The document reports an estimated 80 prosent decline in the number of Norwegian seabirds during 1970–2020; this is a figure cited in the document."
+    },
+    {
+     "quote": "Av de typiske sjøfuglartene er 63 prosent på rødlista.",
+     "statement": "The document states that 63 prosent of typical seabird species in Norway are on the Red List; this is a finding presented in the government document."
+    },
+    {
+     "quote": "For marine områder er 11 av 15 vurderte naturtyper rødlistet.",
+     "statement": "The document reports that 11 of 15 assessed marine habitat types in Norway are on the Red List; this is a finding presented in the government document."
+    },
+    {
+     "quote": "Av Norges naturlige vannforekomster i elv og innsjø er 75 prosent av antallet i god eller svært god økologisk tilstand",
+     "statement": "The document reports that 75 prosent of Norway’s natural river and lake water bodies were in good or very good ecological condition per mai 2023; this is a finding presented in the government document."
+    },
+    {
+     "quote": "Totalt er 32 prosent (330 arter) av de vurderte artene med ferskvann som sitt hovedhabitat kategorisert som truet.",
+     "statement": "The document reports that 32 prosent (330 arter) of assessed species whose main habitat is freshwater are classified as threatened in Norway; this is a finding presented in the government document."
+    },
+    {
+     "quote": "Den siste klassifiseringen fra 2021 viste at 18 prosent av laksebestandene var i god eller svært god tilstand, 30 prosent var i moderat tilstand, 11 prosent var i dårlig tilstand, og 41 prosent var i svært dårlig tilstand.",
+     "statement": "The document reports the 2021 condition classification of Norwegian wild salmon populations: 18 prosent were in good or very good condition, 30 prosent moderate, 11 prosent poor and 41 prosent very poor; this is a cited assessment by VRL."
+    },
+    {
+     "quote": "To tredjedeler av bestandene nådde ikke tilstrekkelig kvalitet etter delnormen genetisk integritet.",
+     "statement": "The document reports that two thirds of the classified Norwegian wild salmon populations did not meet the quality requirement for genetic integrity; this is a cited VRL assessment."
+    },
+    {
+     "quote": "I 2019 var naturindeksen for våtmark 0,68.",
+     "statement": "The document reports a 2019 Nature Index value of 0,68 for Norwegian wetlands; this is a finding presented in the government document."
+    },
+    {
+     "quote": "Av disse er 14 truet og 4 er nær truet.",
+     "statement": "The document reports that, of 32 wetland habitat types defined in the 2018 Red List, 14 are threatened and 4 near threatened in Norway; this is a finding presented in the government document."
+    },
+    {
+     "quote": "1132 av de 1330 truede artene i skog (85 prosent) er vurdert å være negativt påvirket av tidligere eller pågående arealendringer knyttet til skogbruk.",
+     "statement": "The document reports that 1132 of the 1330 threatened forest species (85 prosent) are assessed as negatively affected by past or ongoing land-use changes associated with forestry in Norway; this is a cited assessment."
+    },
+    {
+     "quote": "I den norske sektoren av Nordsjøen og Skagerrak er økosystemene vesentlig påvirket av menneskelig aktivitet.",
+     "statement": "The document characterizes ecosystems in the Norwegian sectors of the North Sea and Skagerrak as substantially affected by human activity; this is a qualitative finding, not a quantitative figure."
+    }
+   ],
+   "pq_notes": {
+    "A0": "This segment provides environmental context for Norwegian coastal and marine areas, but does not explain how aquaculture locations or production levels are determined in spatial planning. It identifies aquaculture among the sources of marine nutrient inputs and describes coastal impacts from nutrients, particulate organic matter, medicines and delousing agents, copper, and use of wild-caught wrasse. It also notes that fisheries, shipping, offshore industries, tourism, recreation, research and defence use marine and coastal areas. These are statements in the government document about environmental pressures and competing uses, not an account of how planning authorities balance them when allocating aquaculture space.",
+    "A1": "The segment identifies environmental pressures relevant to coastal aquaculture, including nutrient inputs, particulate organic matter, medicines and delousing agents, copper, and use of wild-caught wrasse. It also states that aquaculture effects on wild salmon and sea trout are especially serious because they are large, persistent and increasing in some areas; examples include salmon lice, escaped farmed salmon and infections. The document notes that these effects can arise in freshwater even when the source is marine. These are environmental findings and policy-background statements; the segment does not discuss site availability, licensing, spatial planning procedures, or how fish health and site suitability interact.",
+    "A2": "",
+    "A3": "The document states that work is underway to analyse the combined impacts on marine life. It does not specify how cumulative-effect assessments of aquaculture production are incorporated into planning or site selection, nor does it describe assessment methods or decision thresholds. It does identify knowledge limitations in the wider marine evidence base: biological indicator time series are short in parts of the Barents Sea, ecological condition in the Norwegian Sea has been assessed for only one of eleven identified ecosystem types, and monitoring data are scarce or absent for other parts. The document also notes that natural environmental and population variation, combined with relatively thin data, makes it difficult to identify clear overall biodiversity trends. These are government-document statements about assessment and evidence limitations, not aquaculture-specific cumulative assessment findings.",
+    "A4": "",
+    "A5": "The segment describes several evidence limitations relevant to spatial decisions in marine and coastal environments. It says biological indicator time series are short in parts of the Barents Sea, that ecological condition in the Norwegian Sea has been assessed for only one of eleven identified ecosystem types, and that other areas have few or no monitoring data. It also notes that natural variation and a relatively thin evidence base make overall biodiversity trends difficult to distinguish. For rivers and lakes, the document identifies biological impacts, including salmon lice and disease, among assessed pressures. It does not discuss aquaculture spatial data, emerging technologies, or how technology might change siting opportunities.",
+    "A6": "The document describes multiple interests and pressures in marine and coastal areas: fisheries, oil and gas, shipping, tourism, recreation, research and defence, alongside aquaculture and prospective industries such as offshore aquaculture, offshore wind, CO2 transport and storage, and seabed mineral extraction. It identifies aquaculture-related discharges and other environmental effects, and notes that marine ecosystems in the North Sea and Skagerrak are substantially affected by human activities. This provides context for potential competition among uses, but the segment does not describe specific planning conflicts, consultation processes, legitimacy, or decision-making predictability for aquaculture siting.",
+    "A7": "",
+    "A8": "The segment describes biological effects relevant to aquaculture operations and wild stocks, including salmon lice, escaped farmed salmon and infections. It says aquaculture impacts on wild salmon and sea trout are especially serious because their effect is large, persistent and increasing in some areas, and notes that impacts originating in the marine environment can cause damage in freshwater. It does not discuss water connectivity between farms, farm-to-farm disease transmission, biosecurity measures, or how connectivity affects facility operations."
+   },
+   "summary": "This segment surveys the condition, biodiversity and pressures of Norway’s marine and coastal ecosystems, then discusses freshwater, wetlands, forests, open lowland, mountains, polar ecosystems and urban nature. It reports a coastal-water Nature Index of 0,67 in 2019 and describes a weak negative trend in recent years. Marine ecosystems in the North Sea and Skagerrak are substantially affected by human activity, while the document points to uncertainty and sparse monitoring for some other sea areas. It reports worsening status for marine threatened species and habitats, including an estimated 80 prosent decline in Norwegian seabirds during 1970–2020 and 11 of 15 assessed marine habitat types on the Red List.\n\nAquaculture is identified as a source of nutrient inputs and as affecting coastal areas through particulate organic matter, medicines and delousing agents, copper, and use of wild-caught wrasse. The document also describes salmon lice, escaped farmed salmon and infections as serious pressures on wild salmon and sea trout, with effects that may occur in freshwater despite originating in the marine environment. It notes that work is underway to analyse combined impacts on marine life. The wider evidence base has limitations, including short biological time series and sparse monitoring for some marine ecosystem types. The segment is a broad government status overview, not a study of aquaculture siting, licensing, planning procedures or farm connectivity.",
+   "chapter_title": "3.2.1 Hav og kyst"
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 47,
+   "page_to": 62,
+   "chars": 48312,
+   "key_figures": [
+    {
+     "quote": "Ifølge FN lider 800 millioner mennesker av sult og underernæring.",
+     "statement": "The document cites the UN figure that 800 million people worldwide suffer from hunger and undernutrition."
+    },
+    {
+     "quote": "Hele 80 prosent av tropisk avskoging skyldes råvareproduksjon, hvor særlig beite, soya og palmeolje er viktige drivere for tropisk avskoging, men ikke alle råvarer inngår i matsystemet.",
+     "statement": "The document reports that 80 prosent of tropical deforestation is attributed to commodity production, citing a finding rather than presenting a new analysis."
+    },
+    {
+     "quote": "der aktører fra 73 ulike organisasjoner i det norske matsystemet deltok.",
+     "statement": "The document reports that participants from 73 organizations in Norway’s food system took part in the national dialogue in autumn 2023."
+    },
+    {
+     "quote": "Over 1,2 millioner såfrøeksemplar er nå sikkerhetslagret fra over 100 genbanker verden over.",
+     "statement": "The document reports that the Svalbard Global Seed Vault holds over 1,2 million seed samples from over 100 genebanks worldwide."
+    },
+    {
+     "quote": "Nasjonal frøbank skal omfatte minst 75 prosent av landets truede arter. Artene skal være innsamlet fra ulike deler av landet der de har sin naturlige utbredelse, og minimum 20 prosent av planteartene skal være tilgjengelig for reetableringer og restaureringsprogram.",
+     "statement": "The document states that Norway’s national seed bank is intended to cover minst 75 prosent of the country’s threatened species, with minimum 20 prosent of plant species available for re-establishment and restoration."
+    },
+    {
+     "quote": "Rapporten Financing Nature: Closing the Global Biodiversity Financing Gap fra 2020 konkluderer med at det er behov for ca. 700 milliarder amerikanske dollar per år i økte finansielle ressurser for å stanse nedgangen i naturmangfold innen 2030 og restaurere naturen innen 2050.",
+     "statement": "A cited 2020 report estimates a global annual need of ca. 700 milliarder amerikanske dollar in additional financial resources to halt biodiversity decline by 2030 and restore nature by 2050."
+    },
+    {
+     "quote": "Mye av dette, ca. 500 milliarder amerikanske dollar, kan imidlertid dekkes inn ved å eliminere naturskadelige subsidier og andre negative insentiver.",
+     "statement": "The cited 2020 report estimates that ca. 500 milliarder amerikanske dollar of the global financing need could be met by eliminating harmful subsidies and other negative incentives."
+    },
+    {
+     "quote": "Hvis dette gjøres, vil verden trenge ca. 200 milliarder amerikanske dollar i økte finansielle ressurser hvert år på global basis.",
+     "statement": "The cited 2020 report estimates that, if harmful subsidies and negative incentives are eliminated, the remaining global need is ca. 200 milliarder amerikanske dollar in additional resources per year."
+    },
+    {
+     "quote": "Samtidig inneholder naturavtalen en forventning om at industrilandene samlet skal øke sine bidrag til utviklingslandene til minst 20 milliarder amerikanske dollar per år innen 2025 og minst 30 milliarder amerikanske dollar per år innen 2030.",
+     "statement": "The document describes the nature agreement’s expectation that developed countries collectively increase contributions to developing countries to minst 20 milliarder amerikanske dollar annually by 2025 and minst 30 milliarder amerikanske dollar annually by 2030."
+    },
+    {
+     "quote": "Norsk bilateral bistand til naturmangfold var på 3,5 milliarder kroner i 2022.",
+     "statement": "The document reports that Norway’s bilateral aid for biodiversity was 3,5 milliarder kroner in 2022."
+    },
+    {
+     "quote": "Klima- og skoginitiativet er Norges største innsats for å ta vare på natur i andre land og lå på 2,9 milliarder kroner i 2023, hvorav 2,6 milliarder regnes som bilateral naturbistand.",
+     "statement": "The document reports that Norway’s International Climate and Forest Initiative amounted to 2,9 milliarder kroner in 2023, of which 2,6 milliarder was classified as bilateral biodiversity aid."
+    },
+    {
+     "quote": "Systemet med egne vann- og havforvaltningsplaner vurderer også status, tiltak og måloppnåelse regelmessig, henholdsvis hvert sjette og hvert fjerde år.",
+     "statement": "The document states that Norway’s water-management plans review status, measures and target achievement hvert sjette år, while its marine-management plans do so hvert fjerde år."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not discuss aquaculture siting or the balancing of aquaculture with other coastal uses. It does state, as a policy approach to nature management, that decisions should consider ecosystem condition, the combined burden of human activity across sectors, and the benefits of that activity. It describes existing marine-management plans as a system for regularly assessing status, measures and goal achievement, with reviews hvert fjerde år. This is general spatial and ecosystem-management context, not a finding about aquaculture planning.",
+    "A1": "",
+    "A2": "",
+    "A3": "The segment offers general policy guidance rather than aquaculture-specific cumulative-effect assessment. It says sustainable biodiversity management should be based on ecosystem condition, the combined burden of human activity across sectors, and the benefits of that activity. Existing marine-management plans are described as assessing status, measures and goal achievement regularly, hvert fjerde år. It does not explain how cumulative aquaculture production is measured, applied to site selection, or constrained by methodological or knowledge limitations.",
+    "A4": "The segment discusses economic incentives in the context of global biodiversity finance, not aquaculture. It cites a 2020 report estimating that ca. 700 milliarder amerikanske dollar per year in additional resources are needed globally, with ca. 500 milliarder potentially addressed by eliminating harmful subsidies and other negative incentives. The document notes that such subsidies may serve other social aims, including food security, livelihoods, business activity and employment. It gives no account of how these instruments affect aquaculture area use or distribute costs and benefits among coastal stakeholders.",
+    "A5": "The segment describes knowledge systems relevant to environmental decisions, but not specifically to aquaculture site selection. The government proposes a national nature account providing regularly updated information on ecosystem extent, condition and ecosystem services, and regular parliamentary overviews of status, measures and goal achievement. It also describes satellite monitoring and open access to forest data, alongside international research and observation programmes. These are policy and institutional descriptions; the segment does not assess how emerging technologies alter aquaculture impacts or siting opportunities.",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment ranges from international nature policy and cooperation to Norway’s proposed system for managing nature. It discusses global food-system pressures, including the document’s reported 80 prosent contribution of commodity production to tropical deforestation, and describes Norway’s work on sustainable production, forest protection, biodiversity knowledge and international cooperation. It reports that the Svalbard Global Seed Vault holds over 1,2 million seed samples from over 100 genebanks, and outlines the planned coverage and restoration-access goals of Norway’s national seed bank. The segment also presents global biodiversity-finance estimates from a cited 2020 report: ca. 700 milliarder amerikanske dollar per year in additional resources, with ca. 500 milliarder potentially met by removing harmful subsidies and negative incentives. Norway’s biodiversity aid figures are also reported, including 3,5 milliarder kroner in bilateral aid in 2022 and 2,9 milliarder kroner for the Climate and Forest Initiative in 2023. The final sections describe a policy direction toward ecosystem-based management, regular reporting, and a national nature account. Marine-management plans already assess status, measures and goal achievement hvert fjerde år. The discussion is broad and policy-oriented; it does not examine aquaculture licensing, farm siting, fish health, or aquaculture-specific cumulative effects. It does, however, provide general context on cross-sector environmental assessment and the knowledge base intended to support nature-management decisions.",
+   "chapter_title": "5 Forvalte naturen for fremtidens velferd"
+  },
+  {
+   "index": 4,
+   "headings": [],
+   "page_from": 62,
+   "page_to": 75,
+   "chars": 47010,
+   "key_figures": [
+    {
+     "quote": "Miljødirektoratet og Statistisk sentralbyrå jobber i samarbeid med relevante fagmiljøer for at et regnskap for utbredelse av økosystemer, et tilstandsregnskap og et biofysisk regnskap over økosystemtjenester skal være klart i 2026.",
+     "statement": "The government agencies and expert communities are working toward having three components of a Norwegian ecosystem account ready in 2026; this is a stated development target in the document."
+    },
+    {
+     "quote": "Oppsummert har 7 av 13 indikatorer hatt en positiv utvikling, tre av indikatorene er stabile, to indikatorer har negativ utvikling og for to indikatorer er det ikke mulig å angi utvikling.",
+     "statement": "For Norwegian productive forests, the government’s synthesis reports the direction of change for 13 selected indicators, drawing on the period 1997–2021."
+    },
+    {
+     "quote": "Det er nå vernet 5,3 prosent av skogen.",
+     "statement": "The government reports that 5,3 percent of Norway’s forest is protected, in the context of a national target of 10 percent forest protection."
+    },
+    {
+     "quote": "Det er frem mot 2050 forventet en avskoging på 1800 km2 og påskoging på om lag 1600 km2.",
+     "statement": "A cited NIBIO projection estimates deforestation and afforestation in Norway up to 2050."
+    },
+    {
+     "quote": "Miljødirektoratet anslår, basert på tall fra SSB og NIBIO, at nedbyggingen av naturarealer fremover vil være mellom 35 til 40 km2 årlig.",
+     "statement": "The Norwegian Environment Agency estimates future annual development of natural areas in Norway at between 35 til 40 km2, based on statistics from SSB and NIBIO."
+    },
+    {
+     "quote": "Anslaget innebærer at 210 til 240 km2 naturareal bygges ned frem til 2030 og 910 til 1040 km2 frem til 2050.",
+     "statement": "The Norwegian Environment Agency’s estimate implies natural-area development of 210 til 240 km2 by 2030 and 910 til 1040 km2 by 2050."
+    },
+    {
+     "quote": "Tall fra 2023 viser at 43 prosent av Fastlands-Norges areal regnes som inngrepsfri natur og 11,2 prosent regnes som villmarkspreget.",
+     "statement": "Cited 2023 figures show the shares of mainland Norway classified as undisturbed nature and wilderness-like nature."
+    },
+    {
+     "quote": "Fra 1988–2023 ble de inngrepsfrie arealene i Norge redusert med om lag 6,8 prosent (10 244 km2).",
+     "statement": "The document reports a cited reduction in Norway’s undisturbed areas over 1988–2023."
+    },
+    {
+     "quote": "Samlet omfatter dette et areal på ca. 4000 km2 (1,2 prosent), der ca. 90 prosent av dette er naturarealer i dag.",
+     "statement": "A government-agency compilation estimates the area allocated to development under planning and sectoral legislation, and the share that is currently natural area."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not discuss aquaculture siting or how aquaculture development is balanced against other uses. It states that, within one nautical mile outside the baselines, land-use planning and reallocation are largely governed by municipalities under the Planning and Building Act. State authorities provide guidance and frameworks through legislation, regulations and planning guidelines. The policy discussion calls for more attention to cumulative consequences for nature and promotes more land-efficient planning, but does not apply these points specifically to aquaculture or coastal licensing.",
+    "A1": "There are no findings about aquaculture site availability, licensing, fish health or the interaction of these factors. The segment does describe general spatial-planning conditions: municipalities largely control planning within one nautical mile outside the baselines, while state rules and guidance shape their decisions. It also identifies incomplete mapping and data as constraints on understanding ecosystem distribution and condition. The government is developing ecosystem accounts and a detailed national base map, but the text does not connect these tools to aquaculture opportunities.",
+    "A2": "",
+    "A3": "The segment does not describe cumulative-effect assessment of aquaculture production or its use in aquaculture site selection. More generally, it warns that piecemeal development can make the cumulative burden on biodiversity difficult to assess, and that the Planning and Building Act does not adequately capture the combined consequences of land-use policy, according to the cited EVAPLAN evaluation. The government is developing spatially based ecosystem accounts to track changes in defined areas and support decisions. It also proposes documenting nature losses and considering alternatives when deciding on development, but does not set out an aquaculture-specific method.",
+    "A4": "",
+    "A5": "The segment describes a developing knowledge base for spatial decisions rather than aquaculture-specific evidence. A first-generation nature account was assembled in 2023 from existing accessible data on area, condition and ecosystem services; the government says further work is needed to meet international standards. A national account and a detailed base map are under development, with gaps and uneven quality across ecosystem classes acknowledged. The government also reports that new technology is being tested to improve efficient, agreed and updateable data collection. Project-based nature accounts are presented as a way for businesses to measure effects across a development’s life cycle, with methods still being adapted to Norwegian conditions.",
+    "A6": "No aquaculture-related conflicts or siting disputes are described. For land-use planning generally, the government says decisions must balance nature conservation with other societal interests and preserve local self-government, while adapting planning to regional and local conditions. It identifies limited municipal capacity and expertise, and the relative weighting of nature and climate against other interests, as problems highlighted by the cited EVAPLAN evaluation. The policy principles seek greater predictability, better documentation of nature impacts and consideration of alternatives. They also call for participation and respect for Indigenous rights in achieving the national nature-area objective.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers the development of nature accounts, government measures for ecosystems and principles for sustainable land-use management. The government is working toward a national nature account, with ecosystem distribution, condition and biophysical ecosystem-service accounts intended to be ready in 2026. A first-generation account was assembled in 2023 from existing data. Mapping is progressing, but gaps and uneven data quality remain; new technology is being tested to support more efficient, updateable data collection. Project-based nature accounts are also discussed as a way for businesses to record impacts across a development’s life cycle.\n\nThe segment then presents a government menu of measures for forests, based on work by the Norwegian Environment Agency and the Norwegian Agriculture Agency. Their assessment covers 13 indicators for productive forests: 7 showed positive development, three were stable, two negative and two could not be assessed. The government describes goals for forest condition by 2050 and measures including better mapping, monitoring and protection. It also reports that 5,3 percent of forest is protected, against a 10 percent national target.\n\nThe land-use section explains that municipal planning is central, particularly within one nautical mile outside the baselines, and that development can fragment habitats and make cumulative effects difficult to understand. The Environment Agency estimates future natural-area development at 35 to 40 km2 annually. The government proposes reducing development of particularly important natural areas by 2030 and minimizing net loss by 2050. Its planning principles prioritize avoiding impacts, documenting consequences and using land efficiently. The segment contains no aquaculture-specific siting, licensing or fish-health findings.",
+   "chapter_title": "5.2 Nature accounts, 5.3 Measures, 5.4 Land-use management"
+  },
+  {
+   "index": 5,
+   "headings": [],
+   "page_from": 75,
+   "page_to": 86,
+   "chars": 48642,
+   "key_figures": [
+    {
+     "quote": "Miljødirektoratet anslår at den årlige nedbyggingen av naturareal vil være mellom 35 til 40 km2 fremover",
+     "statement": "The Norwegian Environment Agency estimates that annual conversion of natural areas in Norway will be between 35 and 40 km2 in the future; this is a cited estimate."
+    },
+    {
+     "quote": "viser at det samlet er planlagt utbygging av ca. 4000 km2 (1,2 prosent), der ca. 90 prosent av dette er naturarealer i dag.",
+     "statement": "A compilation of planned development under the Planning and Building Act and other legislation finds that about 4000 km2 (1,2 percent) is planned for development, of which about 90 percent is currently natural areas; this is a cited agency compilation."
+    },
+    {
+     "quote": "Plan- og bygningsloven gjelder for hele Fastlands-Norge og i sjøarealene ut til én nautisk mil utenfor grunnlinjene.",
+     "statement": "The segment states that the Planning and Building Act applies throughout mainland Norway and to sea areas extending one nautical mile beyond the baselines; this is a description of the law."
+    },
+    {
+     "quote": "For vindkraftanlegg med kapasitet over 1 MW må det foreligge en kommunal områderegulering før det kan gis konsesjon etter energiloven.",
+     "statement": "For onshore wind facilities with capacity over 1 MW, municipal area zoning must be in place before a licence under the Energy Act can be granted; this is a legal requirement described in the segment."
+    },
+    {
+     "quote": "Norge vil arbeide for å redusere nedbyggingen av særlig viktige naturarealer innen 2030, og begrense netto tap av særlig viktige naturarealer til et minimum innen 2050.",
+     "statement": "The government sets a national policy goal to reduce development of particularly important natural areas by 2030 and limit their net loss to a minimum by 2050."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment describes aquaculture management as using spatial planning, permits, and direct regulation of establishment, operation, and closure under several legal frameworks. It states that the main management goal is the greatest possible value creation within sustainable limits, with further policy consideration deferred to a forthcoming parliamentary report on aquaculture. In offshore areas beyond the Planning and Building Act’s reach, central government coordinates area use through integrated ocean management plans and sectoral laws, including the Aquaculture Act. Those plans weigh conservation and use based on knowledge of the marine environment and current and future activity and value creation. The government’s ocean-industry plan also sets ten principles intended to improve coordination, predictability, and coexistence among sea users.",
+    "A1": "The segment notes that aquaculture covers multiple species and operating models in the sea, on land, and in lakes and rivers, with differing effects on nature, the environment, and landscapes. Opportunities are therefore addressed through several instruments: spatial planning, permits, and direct regulation of establishment, operation, and closure. The stated management objective is value creation within sustainable limits. In offshore areas, government management plans and sector laws provide overarching spatial frameworks and coordinate uses; these decisions draw on knowledge of the marine environment and present and anticipated activities. The segment does not detail farm-site availability, licensing criteria, fish-health constraints, or how these interact in individual coastal applications.",
+    "A2": "",
+    "A3": "The segment describes environmental assessment as part of spatial decisions generally, rather than presenting an aquaculture-specific cumulative-effects method. It states that decisions should use an up-to-date knowledge base suited to the plan or measure, and that environmental impact assessment rules require consideration of environmental and social effects, mitigation measures, and participation by affected parties and the public. For offshore areas, integrated management plans weigh use and conservation, while project-specific impact assessments inform licensing decisions for offshore renewable energy; these are policy descriptions, not aquaculture cases. The segment also reports that the government has no consolidated overview of how, or to what extent, nature and climate are considered across municipal land-use plans. It gives no aquaculture production thresholds or cumulative assessment methodology.",
+    "A4": "",
+    "A5": "The segment presents knowledge of natural values and the consequences of development as prerequisites for sound land-use decisions. It says the knowledge base should be up to date and tailored to the plan or measure, with impact-assessment rules intended to support this. For offshore management, integrated plans draw on knowledge of the marine environment and current and future activity and value creation. The government also says a comprehensive nature-mapping plan for offshore wind will improve knowledge of effects on biodiversity, including through surveys of fish, marine mammals, seabed communities, and seabirds. These are general policy and planning statements; the segment does not identify technologies that change aquaculture siting or quantify aquaculture-specific knowledge gaps.",
+    "A6": "The segment frames area management as requiring trade-offs among conservation, economic activity, and other social interests. For ocean areas, integrated management plans provide overarching priorities, while the government’s ocean-industry plan is intended to strengthen cross-sector coordination, predictability, and coexistence. Marine nature is to be considered in decisions on offshore area use. The segment also describes public participation in planning and says consultation with affected Sámi interests is required where planning concerns Sámi reindeer-herding areas. More generally, impact-assessment rules provide for participation by affected actors and the public. These are descriptions of policy and legal arrangements; the segment does not provide aquaculture-specific conflict cases or evidence about the legitimacy or speed of decisions.",
+    "A7": "The segment does not set out measures specifically for aquaculture businesses to improve spatial efficiency. More generally, it says aquaculture is managed through planning, permits, and direct rules covering establishment, operation, and closure, and places value creation within sustainable limits. For other sectors, the government promotes reuse and more efficient use of existing industrial areas and infrastructure to reduce new land take, and encourages coordinated planning. These examples are not stated as aquaculture requirements or industry-led measures. The segment gives no specific guidance on farm layout, production density, relocation, technology choices, or use of shared infrastructure to reduce aquaculture’s spatial footprint.",
+    "A8": ""
+   },
+   "summary": "This segment covers sustainable use across several sectors and then describes Norway’s approach to land-use planning under the first target of the nature agreement. It presents aquaculture as a diverse activity involving different species and operating models in marine, terrestrial, and freshwater settings, with varying effects on nature, the environment, and landscape. Its management relies on spatial planning, permits, and direct regulation of establishment, operation, and closure, with value creation pursued within sustainable limits. The government says it will consider the aquaculture framework further in a forthcoming parliamentary report.\n\nThe segment distinguishes municipal planning under the Planning and Building Act from state coordination of offshore areas through integrated ocean management plans and sectoral laws, including the Aquaculture Act. Ocean plans weigh conservation and use using environmental knowledge and information on current and future activity. The law covers mainland Norway and sea areas out to one nautical mile beyond the baselines. The government’s ocean-industry plan sets ten principles to improve coordination, predictability, and coexistence among users.\n\nFor land planning more broadly, the segment says decisions should rely on current knowledge suited to the plan or measure. Impact-assessment rules address environmental and social effects, mitigation, and participation. The government reports no consolidated overview of how nature and climate are treated across municipal plans. It cites an estimate of future annual natural-area development of 35 to 40 km2 and planned development of ca. 4000 km2 (1,2 percent), around 90 percent of which is currently natural area. These figures are not aquaculture-specific. The segment identifies planning arrangements and policy aims, but provides little detail on farm applications, cumulative aquaculture effects, or site-level outcomes.",
+   "chapter_title": "5.5 Sustainable use of nature; 6.1 Area management"
+  },
+  {
+   "index": 6,
+   "headings": [],
+   "page_from": 86,
+   "page_to": 97,
+   "chars": 46238,
+   "key_figures": [
+    {
+     "quote": "Tiltakspakken omfatter 24 tiltak som til sammen skal bidra til å ivareta hensynet til samisk reindrift ved planlegging og utbygging av energi.",
+     "statement": "The government’s 2023 policy package for energy planning and development included 24 measures intended to protect Sami reindeer husbandry."
+    },
+    {
+     "quote": "I perioden 2016–2023 har 82 kommuner fått tilskudd til å lage slike planer.",
+     "statement": "The document reports that 82 municipalities received grants to prepare municipal nature plans during 2016–2023; this is an authors’ report of government support."
+    },
+    {
+     "quote": "I 2024 er det i alt avsatt 68 millioner kroner til tilskuddsordningen, og 45 kommuner har fått støtte til å lage kommunedelplaner for natur i år.",
+     "statement": "In Norway in 2024, 68 million kroner was allocated to the grant scheme and 45 municipalities received support for municipal nature plans; this is an authors’ report."
+    },
+    {
+     "quote": "Planene oppdateres hvert fjerde år.",
+     "statement": "Norway’s marine management plans are updated every four years; this is an authors’ description of the planning system."
+    },
+    {
+     "quote": "Norge sluttet seg i 2020 til tilrådningene fra Havpanelet, og har politisk forpliktet seg til bærekraftig forvaltning av 100 prosent av havområdene under nasjonal jurisdiksjon basert på Planer for bærekraftig hav, innen 2025.",
+     "statement": "Norway’s policy commitment, made in 2020, was to sustainably manage 100 percent of sea areas under national jurisdiction through Sustainable Ocean Plans by 2025."
+    },
+    {
+     "quote": "Målet skal oppnås gjennom en deltakende og helhetlig arealplanlegging, med utgangspunkt i lokalt selvstyre og respekt for urfolks rettigheter.",
+     "statement": "The government’s national contribution toward reducing development of particularly important natural areas by 2030 and limiting net loss to a minimum by 2050 is to use participatory, integrated spatial planning grounded in local self-government and Indigenous rights."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not discuss aquaculture siting specifically. As a general policy account of spatial management, it says municipalities have primary responsibility for land-use planning under the Planning and Building Act and should weigh nature, climate, agriculture, cultural heritage, landscape and other societal interests. State, regional and Sami bodies can participate and, in specified circumstances, object to plans. For marine areas, the government describes marine management plans as ecosystem-based frameworks that assess human pressures together and establish overarching coordination and priorities. Regional coastal-zone plans are also identified as a means of coordinating management of sea areas and shorelines across municipal boundaries. The document’s national policy goal is to reduce development of particularly important natural areas by 2030 and limit net loss to a minimum by 2050.",
+    "A1": "",
+    "A2": "",
+    "A3": "The segment does not describe cumulative-effect assessments of aquaculture production. It does, however, set out a general policy expectation that municipalities should give weight to the combined effects of existing and planned land use. Local area and nature accounts are presented as tools to assess cumulative pressures on ecosystems and whether planned use makes them more or less resilient to climate change. For marine areas, the government describes ecosystem-based management plans as assessing all human impacts on the marine environment together. These are general planning approaches, not aquaculture-specific methods or assessments, and the segment does not explain how they guide aquaculture production limits or site selection.",
+    "A4": "",
+    "A5": "The segment describes spatial-planning knowledge tools generally, rather than an aquaculture-specific evidence base. It says many municipalities lack an overview of actual land use and the characteristics of areas proposed for development. The government therefore promotes local area and nature accounts and a regularly updated national base map, and notes that a first version of a shared map was published in March 2024 and is being tested. Nature accounts are intended to show types and amounts of nature, condition and ecosystem services; marine accounts are described as combining information on nature, economic activity, environmental impacts and natural-resource use. The document also identifies remote sensing and artificial intelligence as possible inputs to assessing degraded areas. It does not assess how these tools change aquaculture siting or impacts.",
+    "A6": "The segment does not identify conflicts between aquaculture and other interests or discuss aquaculture decision-making legitimacy. In the broader planning context, it emphasizes that municipalities must balance different societal considerations and that planning should be participatory and respect Indigenous rights. It notes that reindeer husbandry faces pressure from land encroachment and that traditional knowledge should form part of the planning knowledge base. The Fosen case illustrates the consequences of inadequate safeguards: the Supreme Court found that wind-power development had a substantially negative effect on reindeer owners’ ability to practise their culture and that the mitigation measures were insufficient. The segment also describes regional and intermunicipal planning as ways to coordinate interests across municipal borders.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment discusses spatial planning, nature conservation and restoration policy, rather than aquaculture. It presents municipalities as the main land-use planning authorities and describes how national and regional agencies, the Sami Parliament and affected interests participate. Government expectations call for mapping important nature, farmland, water environments and other values, considering the combined effects of existing and planned land use, and reviewing previously approved development areas. Local area and nature accounts, supported by a national base map, are proposed as tools for improving the evidence used in planning. A first version of the map was published in March 2024 and is being tested. For marine areas, the segment describes ecosystem-based management plans, updated every fourth year, and regional coastal-zone plans that coordinate management across municipal boundaries. Norway’s commitment is to sustainable management of 100 percent of marine areas under national jurisdiction by 2025. The segment also reports that 82 municipalities received grants for nature plans during 2016–2023; in 2024, 68 million kroner was allocated to the grant scheme and 45 municipalities received support. Later sections cover restoration, including the need for better information on degraded ecosystems, more coordinated responsibility, and grants for restoration activities. The material is a government policy document summarizing plans, legal arrangements and reported programs; it does not present an aquaculture-specific analysis, site-application evidence, or methods for setting aquaculture production limits.",
+   "chapter_title": "Kommunene som nøkkelaktører"
+  },
+  {
+   "index": 7,
+   "headings": [],
+   "page_from": 97,
+   "page_to": 109,
+   "chars": 48865,
+   "key_figures": [
+    {
+     "quote": "I dag har Norge vernet ca. 25,7 prosent av landarealet medregnet Svalbard og Jan Mayen. Dette fordeler seg på ca. 17,7 prosent av fastlandet (se figur 6.4) og 69,1 prosent av landarealet på Svalbard og Jan Mayen.",
+     "statement": "The report gives the protected shares of Norway’s land area, including Svalbard and Jan Mayen, and its component areas; these are figures reported by the authors."
+    },
+    {
+     "quote": "Videre har vi til sammen vernet om lag 4,2 prosent av norske havområder etter naturmangfoldloven, svalbardmiljøloven, lov om Jan Mayen og bilandsloven.",
+     "statement": "The report states that about 4,2 prosent of Norwegian marine areas are protected under the listed laws; this is a figure reported by the authors."
+    },
+    {
+     "quote": "I havet og langs kysten er 4,2 prosent av sjøarealet under norsk jurisdiksjon vernet.",
+     "statement": "The report states the protected share of sea area under Norwegian jurisdiction; this is a figure reported by the authors."
+    },
+    {
+     "quote": "I territorialfarvannet ved Fastlands-Norge er hittil 4,5 prosent av arealene vernet etter naturmangfoldloven, noe som utgjør 6503 km2.",
+     "statement": "The report gives the protected share and area of mainland Norway’s territorial waters under the Nature Diversity Act; these are figures reported by the authors."
+    },
+    {
+     "quote": "Det er hittil opprettet 17 marine verneområder, som er en egen vernekategori etter naturmangfoldloven, samt flere nasjonalparker med betydelig marint areal.",
+     "statement": "The report states the number of marine protected areas established under the Nature Diversity Act; this is a figure reported by the authors."
+    },
+    {
+     "quote": "Norge har vernet ca. 25,7 prosent av landarealet inkludert Svalbard og Jan Mayen. Det er som nevnt under kapittel 6.3.2 pågående verneprosesser (skogvern og vern av mindre områder med verdifull natur i lavlandet) som vil kunne øke dette med ca. 2 prosentpoeng.",
+     "statement": "The report describes Norway’s current protected land share and the possible increase from ongoing protection processes; these are figures reported by the authors."
+    },
+    {
+     "quote": "Samlet anslås disse områdene å kunne omfatte ca. 4,5 prosent av Norges landareal inkludert Svalbard og Jan Mayen. Mesteparten av dette utgjøres av de nasjonale villreinområdene (ca. 3,5 prosent).",
+     "statement": "The report estimates the land share that could qualify as other effective area-based conservation measures and the share accounted for by national wild-reindeer areas; these are estimates reported by the authors."
+    },
+    {
+     "quote": "Regjeringen vil fortsette arbeidet med å gjennomføre marin verneplan fra 2004, som består av 36 områder, hovedsakelig innenfor territorialfarvannet, som er valgt ut blant annet med sikte på å utgjøre et representativt utvalg av norsk undersjøisk natur.",
+     "statement": "The report states the number of areas in the 2004 marine protection plan, selected partly to represent Norwegian underwater nature; this is a figure reported by the authors."
+    },
+    {
+     "quote": "Av disse områdene er 18 hittil vernet, mens verneprosessene har startet for de resterende områdene.",
+     "statement": "The report states how many areas in the 2004 marine protection plan have been protected so far; this is a figure reported by the authors."
+    },
+    {
+     "quote": "Tiltaksplanen inneholder 63 konkrete tiltak samt 19 punkter for kunnskapsinnhenting for å øke kunnskapen om fjordens tilstand og hvordan den kan bedres, se boks 6.11.",
+     "statement": "The report counts the concrete measures and knowledge-gathering items in the Oslofjord action plan; this is a figure reported by the authors."
+    },
+    {
+     "quote": "I dag er 5,3 prosent av all skog og 4 prosent av den produktive skogen vernet.",
+     "statement": "The report gives the protected shares of all forest and productive forest in Norway; these are figures reported by the authors."
+    },
+    {
+     "quote": "En økning av skogvernet fra dagens 5,3 prosent til 10 prosent er ventet å dekke 5700 km2",
+     "statement": "The report estimates the area associated with increasing forest protection from 5,3 prosent to 10 prosent; these are figures reported by the authors."
+    }
+   ],
+   "pq_notes": {
+    "A0": "This segment does not discuss aquaculture siting or coastal spatial plans directly. Its policy account of marine conservation is relevant to the wider balance of uses: the government says marine conservation should protect representative areas important for biodiversity and ecosystem functions while allowing sustainable use where compatible with conservation purposes. The report states that 4,2 prosent of sea area under Norwegian jurisdiction is protected, and that a process is underway to assess which marine areas may qualify as other effective area-based conservation measures (OECM). It says Norway will develop a future sea-area conservation target after that assessment, with an approach that also facilitates sustainable use of Norwegian waters. It does not identify how this framework affects aquaculture locations.",
+    "A1": "The segment gives no account of aquaculture licensing, site applications, fish health, or operational conditions. It does, however, describe conservation as one factor in the broader availability and management of coastal and marine space. The report states that 4,2 prosent of sea area under Norwegian jurisdiction is protected and that 4,5 prosent of mainland Norway’s territorial waters is protected under the Nature Diversity Act. Marine protection planning and the identification of possible OECM areas are ongoing. The report says any future marine conservation target will be developed after further assessment and in a way that facilitates sustainable use. It does not say how protected areas or those assessments interact with aquaculture site availability.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The report identifies existing knowledge, data and mapping as important to decisions on conservation areas. For marine OECM, the government is assessing environmental values, conservation effects, pressures from activities, and geographical boundaries before deciding which areas can be recognized as conserved. The report says OECM areas should be geographically defined and mapped, with data that are transparent, searchable, accessible, comparable with other data and reusable. It also describes the Naturoppdrag digital system, which links conservation objectives, monitoring data, management actions and resource use in protected areas. These are policy and administrative statements about conservation knowledge infrastructure, not findings about aquaculture siting or technology.",
+    "A6": "The segment discusses balancing conservation and use in marine areas, but does not describe conflicts between aquaculture and other coastal interests. As a policy statement, the government says marine conservation should protect representative nature and ecosystem functions while allowing sustainable use where consistent with conservation purposes. For identifying OECM areas at sea, the government will assess environmental values, conservation effects, activity pressures and geographical boundaries. In land-based protection processes, the report says landowners, rights holders, Sami interests and other affected interests are involved, and consultations with Sami representatives are offered when they are affected. These procedures concern protected-area decisions generally, not aquaculture applications.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers restoration and conservation policy, with most of its later discussion focused on the national contribution to the global goal of conserving land, freshwater and sea. It describes restoration plans for water bodies, wetlands, wild-reindeer habitats and the Oslofjord, including an Oslofjord plan with 63 concrete measures and 19 knowledge-gathering items. It then reports the extent of existing protection: about 25,7 prosent of Norway’s land area including Svalbard and Jan Mayen, and 4,2 prosent of sea area under Norwegian jurisdiction. In mainland Norway’s territorial waters, 4,5 prosent, or 6503 km2, is protected under the Nature Diversity Act, and 17 marine protected areas have been established. The 2004 marine protection plan contains 36 areas, of which 18 are protected so far. The government is considering marine OECM areas and says a future marine conservation target will follow that assessment while facilitating sustainable use. The report also discusses how protected-area management, mapping, monitoring, and data systems can be improved, and how affected interests, including Sami representatives, are involved in protection processes. The segment begins a later section on threatened species and genetic diversity. It provides policy positions and status figures rather than an analysis of aquaculture, licensing decisions, cumulative aquaculture effects, or aquaculture-related conflicts.",
+   "chapter_title": "6.3 Mål 3 – Bevare land, ferskvann og hav"
+  },
+  {
+   "index": 8,
+   "headings": [],
+   "page_from": 109,
+   "page_to": 121,
+   "chars": 47556,
+   "key_figures": [
+    {
+     "quote": "Det er den viktigste påvirkningsfaktoren for om lag 90 prosent av de truede artene.",
+     "statement": "The document reports that land-use changes are the most important pressure on about 90 percent of threatened species in Norway; this is the authors' finding."
+    },
+    {
+     "quote": "Basert på kostnader, verdivurderinger og sannsynlig måloppnåelse, er 23 arter og 16 naturtyper prioritert for oppfølging, hvor flere av naturtypene er viktige områder for mange truede arter.",
+     "statement": "The cross-sector follow-up plan prioritizes 23 species and 16 habitat types for action in Norway; this is the document's reported finding."
+    },
+    {
+     "quote": "I dag har vi 8 utvalgte naturtyper: slåttemark, slåttemyr, hule eiker, kalklindeskog, kalksjøer, kystlynghei, åpen grunnlendt kalkmark og olivinskog.",
+     "statement": "The document reports that Norway has 8 designated habitat types receiving special protection and management; this is the authors' finding."
+    },
+    {
+     "quote": "I dag har vi 14 prioriterte arter: dverggås, svarthalespove (underarten islandica), rød skogfrue, dragehode, honningblom, dvergålegras, skredmjelt, svartkurle, trøndertorvmose, elfenbenslav, elvesandjeger, eremitt, klippeblåvinge og fjellrev.",
+     "statement": "The document reports 14 species currently designated as priority species in Norway; this is the authors' finding."
+    },
+    {
+     "quote": "Blant annet har Norge 58 fredede arter av karplanter, moser og virveldyr etter forskrift om fredning av truede arter, jf. naturmangfoldloven §§ 20 og 77.",
+     "statement": "The document reports 58 protected species of vascular plants, mosses and vertebrates in Norway; this is the authors' finding."
+    },
+    {
+     "quote": "En første klassifisering av de ti nasjonale villreinområdene etter kvalitetsnorm for villrein i 2022, viser at seks har dårlig kvalitet og ingen har god kvalitet.",
+     "statement": "The first 2022 classification of Norway's ten national wild-reindeer areas found six in poor condition and none in good condition; this is the document's reported finding."
+    },
+    {
+     "quote": "I 2023 ble de øvrige 14 villreinområdene klassifisert for første gang. Klassifiseringen viser at seks har dårlig kvalitet, syv har middels kvalitet og ett har god kvalitet.",
+     "statement": "The 2023 first classification of the other 14 wild-reindeer areas found six in poor, seven in moderate and one in good condition; this is the document's reported finding."
+    },
+    {
+     "quote": "Antallet av ville atlantiske laks som kommer tilbake til norske elver for å gyte (innsiget) er mer enn halvert siden 1980-tallet og har de siste årene vært historisk lavt.",
+     "statement": "The number of wild Atlantic salmon returning to Norwegian rivers to spawn has more than halved since the 1980s; this is the document's reported finding."
+    },
+    {
+     "quote": "Gjennom plenarvedtak i Stortinget har 52 norske vassdrag fått status som nasjonale laksevassdrag, og 29 fjorder har fått status som nasjonale laksefjorder.",
+     "statement": "Parliamentary decisions have designated 52 Norwegian watercourses as national salmon watercourses and 29 fjords as national salmon fjords; this is the document's reported finding."
+    },
+    {
+     "quote": "Høsting påvirker 55 truede arter negativt (2 prosent av de truede artene), se figur 3.2.",
+     "statement": "Harvesting negatively affects 55 threatened species, or 2 percent of threatened species in Norway; this is the document's reported finding."
+    },
+    {
+     "quote": "I perioden 2019–2022 gjorde norsk tollvesen i gjennomsnitt 102 beslag årlig av eksemplarer som ikke hadde de nødvendige tillatelsene ved grensepassering.",
+     "statement": "Norwegian Customs made an average of 102 annual seizures of specimens lacking required border-crossing permits during 2019–2022; this is the document's reported finding."
+    },
+    {
+     "quote": "I Fremmedartslista for 2023 har Artsdatabanken foretatt en økologisk risikovurdering av til sammen 2342 arter i områdene Fastlands-Norge med havområder og Svalbard med kystsone",
+     "statement": "The 2023 Alien Species List assessed the ecological risk of 2342 species across mainland Norway with marine areas and Svalbard's coastal zone; this is a cited assessment reported in the document."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not describe aquaculture siting or current spatial-planning procedures. Its broader policy account says land-use change is the main pressure on threatened species, affecting about 90 percent, and argues for preventing nature loss, limiting harm from other land uses, maintaining active management, and protecting species-rich areas through area-based measures. It also says many sectors affect species and that coordinated cross-sector effort is important. These are policy arguments in the government document, not findings about how aquaculture locations or competing coastal uses are decided.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers measures for threatened species and habitats, sustainable harvesting and trade of wild species, and the beginning of the chapter on reducing introductions of alien species. For threatened nature, it describes a cross-sector follow-up plan, established in 2021, that prioritizes 23 species and 16 habitat types, as well as legal designations for selected habitats and species. The document reports that land-use change is the most important pressure for about 90 percent of threatened species. It also describes the decline of wild reindeer and wild Atlantic salmon, including classifications of Norwegian wild-reindeer areas and protective designations for 52 watercourses and 29 fjords as national salmon areas. For harvesting, it reports negative effects on 55 threatened species (2 percent), outlines rules based on sustainable surplus, precaution and ecosystem-based management, and summarizes fisheries management and bycatch controls. It notes that the number of wild salmon returning to Norwegian rivers has more than halved since the 1980s. The segment also reports CITES enforcement activity and introduces the 2023 Alien Species List: 2342 species were assessed, and 581 were placed in a higher risk category than in 2018. It says knowledge about alien-species spread and effects remains limited in some ecosystems and that the target of reducing harmful impacts by 2025 is unlikely to be met at the observed introduction rate. The material is a government policy statement drawing on cited assessments and studies; it does not provide evidence on aquaculture siting, licensing, cumulative effects or farm biosecurity.",
+   "chapter_title": "6.4.3 Tiltak og virkemidler for å bidra til målet"
+  },
+  {
+   "index": 9,
+   "headings": [],
+   "page_from": 121,
+   "page_to": 133,
+   "chars": 48188,
+   "key_figures": [
+    {
+     "quote": "Forurensning påvirker 14 prosent (377) av de truede artene, og berører både arter som lever i vann og på land. Alger skiller seg ut ved at en svært høy andel av de truede artene (88,5 prosent) påvirkes negativt av forurensning.",
+     "statement": "The government report states that pollution affects 14 prosent (377) of threatened species in Norway, including 88,5 prosent of threatened algae; these are reported status figures, not original findings from a study in this segment."
+    },
+    {
+     "quote": "Over 25 prosent av Norges naturlige vannforekomster i kyst og ferskvann oppnår ikke målet om god eller svært god økologisk tilstand etter vannforskriften.",
+     "statement": "The government report states that Over 25 prosent of Norway’s natural coastal and freshwater bodies fail to attain good or very good ecological status under the Water Regulations; this is a reported national status figure."
+    },
+    {
+     "quote": "grenseverdiene for forsuringseffekter på vegetasjon er fremdeles overskredet for 7–19 prosent av Norges vannarealer, og 20 prosent av Norges areal.",
+     "statement": "The government report reports that acidification thresholds for vegetation remain exceeded across 7–19 prosent of Norway’s water area and 20 prosent of its land area; these are national status figures."
+    },
+    {
+     "quote": "Oversikten viser at tilfanget av fosfor til den norske matkjeden er over 30 000 tonn per år, mens bare 40 prosent tas ut i avlinger og matvarer.",
+     "statement": "A cited 2017 report estimates that more than 30 000 tonn of phosphorus enters Norway’s food chain per year, while 40 prosent is taken up in crops and food; this is a cited study."
+    },
+    {
+     "quote": "Den samlede akvakulturproduksjonen av fisk gjør at fiskeoppdrett er den største kilden til utslipp av næringssalter langs kysten fra Lindesnes til Nordkapp.",
+     "statement": "The government report identifies fish farming as the largest source of nutrient discharges along the Norwegian coast from Lindesnes to Nordkapp, based on total fish aquaculture production; no quantity or period is specified."
+    },
+    {
+     "quote": "I februar 2024 trådte et nytt forurensningsregelverk i kraft for akvakultur i sjø.",
+     "statement": "The government report states that a new pollution regulatory framework for marine aquaculture took effect in februar 2024; this is a policy and regulatory fact."
+    },
+    {
+     "quote": "Det nye regelverket innebærer at det som ny hovedregel gås bort fra individuelle utslippstillatelser for enkeltlokaliteter og over til forskriftsfestede standardvilkår for forurensning.",
+     "statement": "The government report describes the marine aquaculture framework introduced in februar 2024 as generally replacing individual discharge permits for single sites with standard pollution conditions set by regulation; this is a legal reading."
+    },
+    {
+     "quote": "Regjeringen fastsetter følgende målsetting for mål 7: Innen 2030 har forurensning fra miljøgifter og helse- og miljøfarlige kjemikalier, sur nedbør, tapet av næringsstoffer fra jordbruk, og utslipp fra avløp, akvakultur og annen industri lav påvirkning på naturmangfold og økosystemfunksjoner og -tjenester.",
+     "statement": "The government’s national policy target is that by 2030 pollution from listed sources, including aquaculture, should have low impacts on biodiversity and ecosystem functions and services."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The government report says that decisions on locating activities are made through planning under the Planning and Building Act. Knowing the qualities of natural areas allows planning authorities to assess which locations are more or less suitable or vulnerable and thereby reduce total environmental degradation. For aquaculture, pollution depends on type, production volume, technology and facility location; nutrient discharges from fish farming can cause eutrophication, particularly in enclosed fjords. The report also notes that temperature change may alter areas suited to different aquaculture species and operating methods. It does not describe a specific balancing procedure for industry growth and competing coastal uses.",
+    "A1": "The government report identifies type of aquaculture, production volume, technology and facility placement as determinants of pollution impacts. Fish farming in open, water-throughflow sea cages is the dominant form of fish production, while other sea systems use barriers and varying degrees of filtration and water treatment. Land-based fish aquaculture has developing treatment technology and increasingly faces discharge-treatment requirements. The report says climate-driven increases in sea temperature may change which areas suit different species and operating methods, and may benefit harmful or disease-causing organisms. These factors are described as interacting with environmental impacts, but the segment does not discuss site availability, licensing allocation or fish-health requirements in detail.",
+    "A2": "The segment says that aquaculture requires a permit, and that new marine aquaculture site applications are subject to minimum environmental documentation requirements under the pollution rules that took effect in februar 2024. It also says that new requirements for monitoring and reporting have been introduced. The government is considering proposals to require mapping of vulnerable nature in aquaculture applications. The segment does not set out the stages of the application process or identify where delays, rejections or conflicts commonly occur.",
+    "A3": "The global pollution goal described in the report calls for cumulative effects to be considered, but the segment does not explain a method for assessing cumulative effects of aquaculture production in spatial plans or site selection. It states that fish farming is the largest source of nutrient discharges along the coast from Lindesnes to Nordkapp, and that discharges may cause algal growth and eutrophication in enclosed fjords. New marine aquaculture rules introduce monitoring, reporting and minimum environmental documentation for new site applications. The government is considering a requirement to map vulnerable nature in applications. No specific knowledge gaps or cumulative-assessment methodology are set out for aquaculture.",
+    "A4": "The government report describes aquaculture as requiring a permit and says that all aquaculture must be environmentally responsible. In februar 2024, a new pollution framework for marine aquaculture generally shifted from individual discharge permits for each site to standard pollution conditions established by regulation. It also introduced new monitoring and reporting obligations and minimum environmental documentation for new site applications. The report says regulation is based on an overall assessment that can include health, welfare, the natural environment, abatement costs and economic conditions. It does not discuss aquaculture-specific economic instruments or how financial benefits and costs are distributed among stakeholders.",
+    "A5": "The report identifies environmental monitoring, reporting and minimum environmental documentation as requirements relevant to marine aquaculture, and says the government is considering requiring applications to map vulnerable nature. It describes pollution impacts as depending on production type and volume, technology and site placement. Different technologies include open sea cages, barrier systems with varying filtration and water treatment, and developing treatment technology for land-based fish farming. The report notes that climate change may alter suitable areas and benefit harmful organisms. These points indicate a knowledge base involving site sensitivity, discharges and technology, but the segment does not discuss emerging digital or monitoring technologies or their effects on siting in detail.",
+    "A6": "The report recognizes that planning must account for natural-area qualities and that the location of an activity can strongly affect how its pollution impacts nature. Fish farming’s nutrient discharges may increase algal growth and cause eutrophication in enclosed fjords, while the Oslofjord faces pressure from multiple activities, including agriculture, municipal wastewater and fisheries. The report says aquaculture’s impacts vary with production type, scale, technology and location. However, this segment does not describe specific aquaculture conflicts with fishing, recreation, conservation or other coastal users, nor does it assess legitimacy or predictability in siting decisions.",
+    "A7": "The government report points to technology and facility location as factors that shape aquaculture pollution, and describes alternatives to open, water-throughflow sea cages, including systems with barriers, filtration and water treatment. For land-based fish aquaculture, treatment technology is developing and discharge treatment is increasingly required. Marine farms must meet monitoring and reporting requirements and provide minimum environmental documentation for new site applications. The government is also developing pollution rules and considering mapping vulnerable nature in applications. These are regulatory and technical measures discussed in the segment; it does not specifically state what voluntary area-efficiency measures the industry itself should adopt.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": "6.7 Mål 7 – Redusere forurensning; 6.8 Mål 8"
+  },
+  {
+   "index": 10,
+   "headings": [],
+   "page_from": 133,
+   "page_to": 144,
+   "chars": 49303,
+   "key_figures": [
+    {
+     "quote": "I trafikklyssystemet er norskekysten delt inn i 13 produksjonsområder. I hvert av områdene vurderes oppdrettsnæringens miljøpåvirkning gjennom miljøindikatorer.",
+     "statement": "The authors state that Norway’s coast is divided into 13 production areas in the traffic-light system, where aquaculture’s environmental impact is assessed using indicators."
+    },
+    {
+     "quote": "Er det sannsynlig at over 30 prosent av laksesmolten dør som følge av lakselus (rød farge) kan tillatelseskapasiteten i området senkes med 6 prosent.",
+     "statement": "The authors describe the system’s rule for production areas where over 30 prosent of migrating salmon smolts are likely to die from sea lice: permitted capacity can be reduced by 6 prosent."
+    },
+    {
+     "quote": "Målet er at sjøørreten skal være med i fargeleggingene etter trafikklyssystemet fra og med 2026.",
+     "statement": "The government’s stated policy goal is to include sea trout in traffic-light system colour assessments from 2026."
+    },
+    {
+     "quote": "Arealplanlegging etter plan- og bygningsloven, akvakulturtillatelser og krav etter akvakulturloven, godkjenninger og krav etter matloven og krav i forurensningsloven, er i dag sentrale virkemidler for å sikre miljømessig bærekraftig forvaltning av arealer der det drives akvakultur.",
+     "statement": "The authors identify spatial planning and requirements or approvals under several laws as central current instruments for environmentally sustainable management of aquaculture areas in Norway."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe a governance framework in which municipalities manage areas used for coastal aquaculture under the Planning and Building Act, while sector authorities and sector laws also apply. Aquaculture permits and requirements under the aquaculture, food and pollution laws are central instruments. Comprehensive spatial plans with impact assessments are presented as important for reconciling use and protection and locating aquaculture areas. The government says it wants to improve guidance for coastal-zone planning and examine the framework for aquaculture planning. The segment does not explain how competing uses are balanced in particular siting cases.",
+    "A1": "The authors identify spatial plans, aquaculture permits, and requirements under aquaculture, food and pollution legislation as interacting conditions for aquaculture area management. Environmental effects also influence opportunities for production: the traffic-light system divides the coast into 13 production areas and currently uses one environmental indicator, mortality of migrating salmon smolts caused by sea lice. If over 30 prosent mortality is likely, permitted capacity may be reduced by 6 prosent. The segment also describes risks from escaped farmed cod and cod spawning in cages, and notes a clarified prohibition on cod farming in wild-cod spawning areas and fields. It does not discuss site availability or application procedures in detail.",
+    "A2": "",
+    "A3": "The segment does not describe cumulative-effect assessment methods specifically for aquaculture production or how such assessments guide individual site selection. More generally, the authors say comprehensive area plans with impact assessments are important for locating aquaculture areas and clarifying use versus protection. They also report that the traffic-light system and the quality norm for wild salmon do not steer toward the same goal: an expert working group concluded that current sea-lice threshold values do not align with the norm. The report says yellow status and unchanged capacity can maintain breaches of the norm in some periods. This is a cited working-group conclusion, not a described cumulative-effects method.",
+    "A4": "",
+    "A5": "The authors refer to environmental indicators in the traffic-light system, currently limited to mortality of migrating salmon smolts caused by sea lice. They report that the Institute of Marine Research’s 2021 knowledge report identifies escapes and spawning in cages as the main risk factors for genetic interaction between farmed and wild cod, and describes possible effects on wild-cod movements, behaviour, physiology and reproduction. A working group’s assessment found that the traffic-light system’s sea-lice thresholds do not correspond to the wild-salmon quality norm. The government says it will consider proposals from this assessment and the aquaculture committee’s NOU 2023: 23 in follow-up processes, including a new aquaculture white paper.",
+    "A6": "The authors state that comprehensive regional and municipal planning based on updated knowledge is important for securing area needs for primary industries, including aquaculture, alongside fisheries, agriculture and reindeer husbandry. They say plans and impact assessments help clarify the relationship between area use and protection. The segment does not provide specific examples of aquaculture conflicts with other interests, describe consultation processes, or assess what makes decisions legitimate or predictable.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment first discusses climate adaptation and nature-based solutions. It argues that ecosystems can reduce climate risks and that planning should protect climate-sensitive habitats, connectivity and robust ecosystems. Marine climate refuges may include coastal areas with strong water exchange and access to deep, stable-temperature waters, provided cumulative pressures are well managed. The government promotes nature-based measures and says their use should be considered in planning. The segment also notes that climate measures, energy development and biofuel policies can harm biodiversity, while energy efficiency can reduce pressure for new land interventions.\n\nThe later sections cover sustainable use of wild species and management of areas used for agriculture, aquaculture, fisheries and forestry. For aquaculture, the authors identify municipal spatial planning, aquaculture permits, and requirements under aquaculture, food and pollution laws as central instruments. Comprehensive plans and impact assessments help locate aquaculture areas and address use versus protection. The traffic-light system divides the coast into 13 production areas and currently assesses sea-lice-related mortality of migrating salmon smolts. If over 30 prosent mortality is likely, capacity may be reduced by 6 prosent. A working group found that the system’s thresholds do not align with the wild-salmon quality norm; the government plans to consider follow-up measures and wants sea trout included in colour assessments from 2026.\n\nFor cod farming, the segment notes risks from escapes and spawning in cages, and a clarified prohibition on farming in wild-cod spawning areas. The discussion is a national policy overview rather than a site-level study: it provides no detailed application-stage evidence, site comparisons, or specific analysis of competing-use disputes.",
+   "chapter_title": "Mål 10 – Bærekraftig forvaltning av arealer"
+  },
+  {
+   "index": 11,
+   "headings": [],
+   "page_from": 144,
+   "page_to": 157,
+   "chars": 49961,
+   "key_figures": [
+    {
+     "quote": "Over 80 prosent av Norges befolkning bor i byer og tettsteder.",
+     "statement": "The segment reports that over 80 prosent of Norway’s population lives in urban areas and settlements; this is a figure cited in the policy discussion, not a new finding by the authors."
+    },
+    {
+     "quote": "Mer enn 70 prosent av grønnstrukturen som fantes i byer og tettsteder på 1950-tallet er borte.",
+     "statement": "The segment reports that more than 70 prosent of the green structure in Norwegian cities and settlements that existed in the 1950s has disappeared; this is a cited figure, not a new finding by the authors."
+    },
+    {
+     "quote": "Siden kun om lag en tredjedel av avløpsanleggene overholder eksisterende rensekrav, kan dette utfordre tilgangen på trygt drikkevann i tillegg til de negative miljøkonsekvensene det medfører.",
+     "statement": "The segment states that only about one third of wastewater treatment plants comply with existing treatment requirements in Norway; this is a figure reported in the policy text, not identified as a new finding by the authors."
+    },
+    {
+     "quote": "Steder i Oslo med bytrær var for eksempel inntil 10 grader kjøligere enn steder med asfalt under hetebølgen sommeren 2018.",
+     "statement": "The segment cites a comparison in Oslo during the 2018 heatwave in which places with urban trees were up to 10 degrees cooler than places with asphalt; this is a cited finding."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The government states that it will improve guidance on planning in the coastal zone and examine the framework for aquaculture planning. This is a policy commitment, not an account of how current plans balance aquaculture development, environmental considerations, or competing coastal uses. Elsewhere, the segment says that ecosystem-based management of sea areas considers human pressures collectively, but it does not explain how this approach determines aquaculture locations or production levels.",
+    "A1": "The government’s stated policy commitment is to improve guidance on coastal-zone planning and examine the framework for aquaculture. The segment does not identify how site availability, licensing, environmental requirements, fish health, or spatial planning interact to shape development opportunities. It provides no aquaculture-specific evidence on site constraints or the effects of those factors on development.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers sustainable management of land and natural resources, ecosystem services, and nature in urban areas. It describes government policy for agriculture, forestry and reindeer husbandry, and sets a 2030 objective for sustainable management of areas used for agriculture, aquaculture, fisheries, reindeer husbandry and forestry. For coastal planning, the government says it will improve guidance and examine the framework for aquaculture planning, but the segment does not explain licensing, site selection or aquaculture-specific impacts.\n\nThe section on ecosystem services describes the importance of maintaining ecological structure, function and area extent. A first national nature account consistent with the UN system is planned for 2026 and is intended to cover services including crops, timber, pollination, climate regulation and nature-based tourism. The segment also discusses water management, pollinators, soil health, drinking water and nature-based solutions. It reports that only about a third of wastewater treatment plants comply with existing treatment requirements. Urban nature is presented as important for biodiversity, recreation, health and climate adaptation: over 80 prosent of Norway’s population lives in cities and settlements, and more than 70 prosent of their green structure from the 1950s is reported lost. Places with urban trees in Oslo were up to 10 degrees cooler than asphalt locations during the 2018 heatwave.\n\nThe material is a government policy document summarizing plans, existing information and cited examples, rather than an aquaculture siting study. It offers little detail on aquaculture decisions or conflicts and no assessment of cumulative effects at farm or production level.",
+   "chapter_title": "Mål 11 – Restaurere, opprettholde og forbedre naturens bidrag til mennesker"
+  },
+  {
+   "index": 12,
+   "headings": [],
+   "page_from": 157,
+   "page_to": 169,
+   "chars": 47151,
+   "key_figures": [
+    {
+     "quote": "Under åpningen av Svalbard globale frøhvelv i februar 2008 annonserte Norge at vi vil gi et årlig bidrag tilsvarende 0,1 prosent av norsk såvareomsetning til fondet for fordelsdeling (Benefit-sharing fund).",
+     "statement": "The document states that Norway announced an annual contribution equal to 0,1 prosent of Norwegian seed sales to the benefit-sharing fund in 2008; this is a policy commitment, not an aquaculture finding."
+    },
+    {
+     "quote": "Derfor brukes såvareomsetningen som utgangspunkt for å beregne det årlige bidraget, som har vært utbetalt hvert år siden 2009.",
+     "statement": "The document says Norway's annual contribution to the benefit-sharing fund has been paid each year since 2009, calculated from seed sales; this is a policy statement, not an aquaculture finding."
+    },
+    {
+     "quote": "Forvaltningsplanene oppdateres gjennom meldinger til Stortinget hvert fjerde år.",
+     "statement": "The document states that Norway's marine management plans are updated through parliamentary white papers hvert fjerde år; this describes a policy process, not an aquaculture finding."
+    },
+    {
+     "quote": "Statens prosjektmodell gjelder for statlige investeringsprosjekter med anslått kostnadsramme over 300 millioner kroner for digitaliseringsprosjekter og 1 milliard kroner for øvrige prosjekter.",
+     "statement": "The document gives the cost thresholds for applying the State project model to public investment projects in Norway: over 300 millioner kroner for digitalisation projects and 1 milliard kroner for other projects; this is a policy rule, not an aquaculture finding."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not specify what determines aquaculture locations or the extent of aquaculture development. As a general policy description, it says marine management plans assess human impacts on the marine environment together and set overarching frameworks, while current sector legislation regulates activities within those frameworks. The 2024 marine management plan update considers aquaculture alongside fisheries, shipping, offshore wind, petroleum and environmental concerns. A separate government policy statement says ten overarching principles for marine area use are intended to improve predictability and support coexistence among sea users. No aquaculture-specific siting criteria or balancing outcomes are given.",
+    "A1": "",
+    "A2": "",
+    "A3": "The segment does not explain how cumulative effects of aquaculture production are assessed or used in aquaculture site selection. More generally, it reports that the EVAPLAN evaluation found that local planning practice does not adequately safeguard biodiversity and does not ensure that cumulative consequences for biodiversity are captured. A cited evaluation of environmental impact assessments found that assessments of combined effects of a measure and other completed or planned measures are rare. The authors identify uncertainty, irreversible effects and time lags as further difficulties in assessing overall burdens. These are general planning and assessment concerns, not aquaculture-specific findings.",
+    "A4": "",
+    "A5": "The segment discusses general knowledge for spatial decisions, not aquaculture site selection. It describes a Norwegian Environment Agency project modelling green infrastructure for selected species and species groups, with the aim of making maps and related data tools useful in overarching land-use planning. It also says knowledge of recreational areas has improved through municipal mapping, with methods being developed for updating and regional assessment. For impact assessments, the authors identify uneven quality, limited assessment of climate-change effects, and infrequent evaluation of combined effects. The segment does not address aquaculture monitoring technologies or their effects on siting.",
+    "A6": "The segment does not describe specific aquaculture siting disputes or application conflicts. As a general policy statement, it says Norway's marine management plans consider aquaculture, fisheries, shipping, offshore wind, petroleum and environmental concerns together, and that ten overarching principles for marine area use are intended to increase predictability and support coexistence. More generally, it identifies weaknesses in coordinating sector planning with integrated planning across land, coastal zones and marine areas. It does not report how these arrangements resolve conflicts or establish procedural legitimacy in aquaculture decisions.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment moves from urban green and blue infrastructure and genetic-resource benefit sharing to the integration of biodiversity into public decision-making. It describes green infrastructure as connected habitats across land and water, and reports work to model it for selected species and develop maps and tools for land-use planning. Municipal mapping has also improved knowledge of recreational areas, while methods for revisions and regional assessments are being developed.\n\nThe section on genetic resources describes Norwegian rules, international negotiations on digital sequence information, and difficulties tracing the origins of genetic data in public databases because metadata are not standardized or consistently reported. Norway’s annual contribution to the benefit-sharing fund is based on seed sales; the document says it was announced as 0,1 prosent of Norwegian seed sales and has been paid each year since 2009.\n\nThe discussion of biodiversity integration identifies weaknesses in local planning and in the assessment of cumulative effects. A cited evaluation found that assessments of combined impacts from a measure and other completed or planned measures are rare; future impacts can also be uncertain, irreversible or delayed. The document describes marine and water management plans as systems for assessing human pressures collectively, with marine plans updated hvert fjerde år. The 2024 marine plan update considers aquaculture alongside other sea-based industries and environmental concerns, and overarching marine area-use principles are intended to promote predictability and coexistence. The segment gives no aquaculture-specific site-selection criteria, application-process evidence, or assessment of farm-level cumulative effects. It also describes proposed improvements to impact-assessment guidance, natural accounts and regular reporting on biodiversity status, targets and measures.",
+   "chapter_title": "6.14 Mål 14 – Integrere naturmangfold i ulike prosesser"
+  },
+  {
+   "index": 13,
+   "headings": [],
+   "page_from": 169,
+   "page_to": 181,
+   "chars": 49787,
+   "key_figures": [
+    {
+     "quote": "Kravet gjelder i dag om lag 350 norske foretak.",
+     "statement": "The document reports that current sustainability-reporting requirements apply to about 350 Norwegian enterprises; this is a government-document finding about the current period."
+    },
+    {
+     "quote": "Regelverket begynte å gjelde i Norge 1. januar 2023 og gjelder i dag om lag 50 norske foretak.",
+     "statement": "The document states that Norway’s taxonomy rules took effect on 1. januar 2023 and currently cover about 50 Norwegian enterprises; this is a government-document finding."
+    },
+    {
+     "quote": "56 norske reisemål og mer enn 130 kommuner deltar i ordningen ved utgangen av 2023.",
+     "statement": "The document reports that 56 Norwegian destinations and more than 130 municipalities participated in the sustainable-destination certification scheme at the end of 2023; this is a government-document finding."
+    },
+    {
+     "quote": "I Bransjeavtalen om reduksjon av matsvinn, som er Norges fremste virkemiddel for å redusere matsvinnet, er det satt mål om å redusere matsvinnet med 50 prosent innen 2030, sammenlignet med 2015.",
+     "statement": "The document describes the national food-waste agreement’s target of reducing food waste by 50 prosent by 2030 compared with 2015; this is a policy target."
+    },
+    {
+     "quote": "Det kartlagte matsvinnet i Norge var på 450 000 tonn i året 2020, og fra 2015 til 2020 oppnådde man en matsvinnreduksjon på nesten 10 prosent, se figur 6.30.",
+     "statement": "The document reports measured Norwegian food waste of 450 000 tonnes in 2020 and a reduction of nearly 10 prosent from 2015 to 2020; these are reported national findings."
+    },
+    {
+     "quote": "Norge er i dag ikke formelt ansvarlig for utslipp som oppstår i andre land under klimakonvensjonen eller Parisavtalen.",
+     "statement": "This passage contains no quantitative finding and is not included as a key figure."
+    },
+    {
+     "quote": "De siste 50 årene er forbruket mer enn tredoblet av ressurser som biomasse, fossile drivstoff, metaller og ikke-metalliske mineraler, for eksempel grus, sand og kalkstein.",
+     "statement": "The document cites a global increase of more than threefold in consumption of these resource categories over the last 50 years; this is a cited finding."
+    },
+    {
+     "quote": "Gjennom EØS-avtalen er vi forpliktet til å nå mål om 65 prosent materialgjenvinning av husholdningsavfall innen 2035.",
+     "statement": "The document states that Norway is committed through the EEA Agreement to achieve 65 prosent recycling of household waste by 2035; this is a regulatory target."
+    },
+    {
+     "quote": "Om lag 85 prosent av utslippene av klimagasser i Norge er underlagt prising.",
+     "statement": "The document reports that about 85 prosent of Norwegian greenhouse-gas emissions are subject to pricing; this is a government-document finding."
+    },
+    {
+     "quote": "Offentlige anskaffelser utgjør rundt 780 milliarder kroner årlig og representerer en stor markedsmakt.",
+     "statement": "The document reports annual Norwegian public procurement of around 780 milliarder kroner; this is a government-document estimate."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The segment discusses information and reporting on nature impacts and nature-related risk in business generally, rather than knowledge used for aquaculture spatial decisions. The government says that better, comparable reporting and accessible data and tools are needed to help investors and other stakeholders assess companies’ dependencies and impacts on nature. It also states that knowledge about how Norwegian consumption affects nature globally is limited, including impacts in particular countries and areas and changes over time. The segment does not describe aquaculture-specific datasets, site-selection methods, or emerging technologies affecting aquaculture siting.",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers business reporting on nature-related risk and impacts, then turns to sustainable consumption and circular-economy measures. It describes existing Norwegian requirements, EU-related frameworks, voluntary financial-sector initiatives, and the government’s proposed contribution for 2030: enabling businesses to produce and publish decision-relevant, comparable reporting on nature risk and impacts. The government says reporting by the private sector is still at an early stage for nature risk, and notes limited knowledge of how Norwegian economic activity affects nature abroad. It presents proposed and adopted sustainability-reporting rules, including an estimate that about 50 Norwegian enterprises will be covered in the 2024 reporting year and about 1 200 in 2026. The segment also discusses sustainable tourism certification, with 56 destinations and more than 130 municipalities participating at the end of 2023.\n\nThe consumption section reports that Norway has high material consumption and cites a national food-waste measurement of 450 000 tonnes in 2020, with a reduction of nearly 10 percent from 2015 to 2020. It outlines policy measures on sustainable products, reuse, food waste, public procurement, and bioeconomy. These include a 65 percent household-waste recycling target by 2035 and a rule from 1. januar 2024 that climate and environmental considerations should normally receive a minimum 30 percent weighting in public procurement. The material is a policy overview drawing on cited studies, estimates, legislation, and government proposals; it does not provide aquaculture-specific spatial-planning or siting evidence.",
+   "chapter_title": "6.15 Status i Norge i dag / 6.16 Mål 16 – Bærekraftig forbruk"
+  },
+  {
+   "index": 14,
+   "headings": [],
+   "page_from": 181,
+   "page_to": 192,
+   "chars": 48939,
+   "key_figures": [
+    {
+     "quote": "Innenfor Klima- og miljødepartementets budsjett har det de siste tolv årene (2013–2024) vært satt av i snitt 1,2 milliarder kroner årlig til fysiske tiltak for naturmangfold, målt i faste kroner.",
+     "statement": "The authors report that Norway’s Ministry of Climate and Environment budget allocated an average of 1,2 billion kroner annually to physical biodiversity measures during 2013–2024."
+    },
+    {
+     "quote": "I 2024 utgjorde klima- og skoginitiativet om lag 8 prosent av det totale bistandsbudsjettet med 4,1 milliarder kroner.",
+     "statement": "The authors report that Norway’s climate and forest initiative accounted for about 8 percent of the total aid budget, or 4,1 billion kroner, in 2024."
+    },
+    {
+     "quote": "Norge støtter GEF med 780 millioner kroner i perioden 2022–2026 (GEF-8). Hele 36 prosent av disse midlene er spesifikt satt av til naturmangfold",
+     "statement": "The authors report that Norway supports GEF with 780 million kroner for 2022–2026, of which 36 percent is specifically allocated to biodiversity."
+    },
+    {
+     "quote": "Rapportering fra Norges forskningsråd viser at det i 2023 var totalt 380 aktive forskningsprosjekter innenfor naturmangfold, med en total finansiering på om lag 590 millioner kroner.",
+     "statement": "According to Research Council reporting cited by the authors, Norway had 380 active biodiversity research projects with total funding of about 590 million kroner in 2023."
+    },
+    {
+     "quote": "Norge har lenge vært en ledende givernasjon innenfor naturbistand og har økt den bilaterale bistanden til naturmangfold kraftig de siste årene, fra 1,55 milliarder kroner i 2010 til 3,6 milliarder kroner i 2020",
+     "statement": "The authors report that Norwegian bilateral aid for biodiversity increased from 1,55 billion kroner in 2010 to 3,6 billion kroner in 2020."
+    },
+    {
+     "quote": "Rundt 90 millioner euro av EØS-midlene for inneværende periode går til bevaring og/eller bærekraftig bruk av natur og biologisk mangfold.",
+     "statement": "The authors report that around 90 million euros of EEA funding in the current period is allocated to nature and biodiversity conservation and/or sustainable use."
+    },
+    {
+     "quote": "For inneværende periode har 11 av de 15 landene valgt å ta med dette temaet i sin portefølje.",
+     "statement": "The authors report that 11 of the 15 EEA-fund recipient countries included the environment, climate and energy theme in their portfolio for the current period."
+    },
+    {
+     "quote": "EUs forsknings- og innovasjonsprogram Horisont Europa er verdens største forsknings- og innovasjonsprogram og 35 prosent av budsjettet på 95,5 milliarder euro skal gå til klimaformål",
+     "statement": "The authors report that 35 percent of Horizon Europe’s 95,5 billion euro budget is intended for climate purposes."
+    },
+    {
+     "quote": "I strategien for perioden 2025–2027 er det et mål at 10 prosent skal gå til forskning og innovasjon knyttet til naturmangfold.",
+     "statement": "The authors report that Horizon Europe’s strategy sets a target for 10 percent of funding to go to biodiversity-related research and innovation during 2025–2027."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers national policy for biodiversity targets 17–20: biosafety and biotechnology benefit-sharing, incentives affecting biodiversity, financial resources, and international capacity-building and technology cooperation. It describes Norway’s GMO framework, including risk assessment, approval, monitoring and enforcement, and notes that authorities may need more resources if applications increase. Benefit-sharing measures are not currently established through the GMO rules, and the future scope of regulation remains under review. For incentives, the segment reports that Norway lacks comprehensive statistics on incentives harmful to biodiversity. A Menon Economics and NINA mapping found relatively few reviewed state-budget support schemes with large direct negative effects, while warning that many small effects may add up. The government proposes regular evaluation and stronger consideration of biodiversity in scheme design. On finance, the document reports average annual allocations of 1,2 billion kroner for physical biodiversity measures in the Ministry of Climate and Environment budget during 2013–2024, while noting that there is no comprehensive overview of relevant national spending. It also discusses Norwegian international assistance, including GEF support of 780 million kroner for 2022–2026, and the climate and forest initiative. For capacity-building, it describes work through IPBES, Norad, GEF, EEA funding, research cooperation and forest-country partnerships. The segment sets policy ambitions and summarizes studies and administrative reporting; it does not assess aquaculture, coastal spatial planning, farm siting, or aquaculture-specific environmental effects.",
+   "chapter_title": "Mål 17–20: Biosikkerhet, insentiver, finansiering og kapasitetsbygging"
+  },
+  {
+   "index": 15,
+   "headings": [],
+   "page_from": 192,
+   "page_to": 203,
+   "chars": 47135,
+   "key_figures": [
+    {
+     "quote": "over 800 millioner globale artsobservasjoner er gjort gratis tilgjengelige for alle.",
+     "statement": "The report states that more than 800 million global species observations are freely available through GBIF; this is a reported status figure, not an aquaculture-specific finding."
+    },
+    {
+     "quote": "GBIF Norge har gjort tilgjengelig nesten 50 millioner observasjoner fra 242 land og regioner, de aller fleste av disse fra Norge, inkludert Svalbard og Jan Mayen.",
+     "statement": "The report states that GBIF Norway has made nearly 50 million observations from 242 countries and regions available, most from Norway, including Svalbard and Jan Mayen; this is a reported status figure."
+    },
+    {
+     "quote": "Klima- og miljødepartementet støtter 34 besøkssentre for natur og sju for verdensarv.",
+     "statement": "The report states that the Ministry of Climate and Environment supports 34 nature visitor centres and seven world heritage visitor centres in Norway; this is a reported status figure."
+    },
+    {
+     "quote": "Miljødirektoratet har valgt ut 111 naturtyper som er truede/nær truede, spesielt dårlig kartlagt og/eller dekker sentrale økosystemfunksjoner.",
+     "statement": "The report states that the Norwegian Environment Agency has selected 111 nature types that are threatened or near threatened, especially poorly mapped, and/or cover key ecosystem functions; this is a reported status figure."
+    },
+    {
+     "quote": "I perioden 2018–2023 er 4,4 prosent av Norges fastland kartlagt for terrestriske naturtyper etter NiN. Dette utgjør 14 130 km2, der lokaliteter av de 111 naturtypene er funnet på 18 prosent av arealet (2543 km2).",
+     "statement": "The report states that during 2018–2023, 4,4 percent of mainland Norway, covering 14 130 km2, was mapped for terrestrial nature types under NiN, and sites of the selected 111 types were found on 18 percent of that mapped area (2543 km2); this is a reported national status."
+    },
+    {
+     "quote": "I tillegg er det funnet naturtyper som er spesielt viktig for biologisk mangfold etter et eldre system (DN håndbok 13) på 3 prosent av fastlandet.",
+     "statement": "The report states that nature types considered especially important for biodiversity under the older DN håndbok 13 system were found on 3 percent of mainland Norway; this is a reported national status."
+    },
+    {
+     "quote": "Det er valgt ut 30 marine naturtyper og 18 naturtyper i ferskvann som er truede/nær truede, spesielt dårlig kartlagt og/eller dekker sentrale økosystemfunksjoner.",
+     "statement": "The report states that 30 marine nature types and 18 freshwater nature types have been selected as threatened or near threatened, especially poorly mapped, and/or covering key ecosystem functions; this is a policy and mapping status figure for Norway."
+    },
+    {
+     "quote": "Over 25 000 arter anslås i dag som uoppdaget i Norge.",
+     "statement": "The report cites an estimate that over 25 000 species remain undiscovered in Norway; this is a cited estimate, not an original finding."
+    },
+    {
+     "quote": "Siden temperaturen i Arktis stiger omtrent tre ganger raskere enn det globale gjennomsnittet, og spesielt raskt på Svalbard, er slik kunnskap avgjørende for å kunne tilpasse naturforvaltningen til klimaendringene.",
+     "statement": "The report states that Arctic temperatures are rising approximately three times faster than the global average, especially rapidly on Svalbard; this is a cited contextual finding about climate change."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The report describes a broad knowledge base for nature management: mapping, monitoring, research, statistics, models, and spatially referenced data made available through portals such as Økologiske grunnkart and Naturbase. For coastal and marine areas, Naturbase includes information relevant to land-use management in the coastal zone, while MAREANO maps seabed terrain, habitats, and species. The report says that marine mapping and monitoring support understanding of ecosystems and their functions, including ecosystem services, but it does not connect these systems to aquaculture site decisions. It identifies gaps: data are incomplete, some survey and project data are not openly shared, and systematic, comprehensive maps and data on ecosystem extent, condition, and services are still needed. Remote sensing, satellite data, modelling, and artificial intelligence are presented as ways to improve coverage and analysis.",
+    "A6": "The report's general policy discussion says that decisions affecting nature should be supported by accessible information and open, inclusive processes. It describes planning and environmental impact assessment procedures as providing opportunities for public and private parties to contribute to decision-making, and says that data collected for assessments should be made available to avoid duplicate mapping and support better democratic processes in land management. It also notes that Norwegian law provides for access to environmental information and participation, and that consultation is required in cases that may directly affect Sámi interests. These are general statements about nature and planning governance; the segment does not identify aquaculture-specific conflicts or evaluate the predictability or legitimacy of aquaculture decisions.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment focuses mainly on Goal 21: ensuring that knowledge is accessible and guides biodiversity management. It describes Norway’s knowledge base as a combination of mapping, monitoring, research, statistics, and data systems, including public portals that provide spatial information on species, habitats, ecosystems, and environmental variables. The report states that during 2018–2023, 4,4 percent of mainland Norway was mapped for terrestrial nature types under NiN, covering 14 130 km2; selected nature types were found on 18 percent of that area (2543 km2). It also identifies gaps in coverage, including wetlands and cultural landscapes, and says that many species remain poorly mapped. MAREANO has mapped marine seabed habitats for nearly 20 years, and the report highlights the need for improved, comprehensive marine and coastal information.\n\nThe policy response includes continued mapping in areas with development pressure, planned instructions for mapping 30 marine and 18 freshwater nature types, expanded monitoring, and more use of satellite data, remote sensing, modelling, and artificial intelligence. The report also calls for improved environmental-data infrastructure, open access, and research into ecosystem condition, cumulative pressures, scenarios, and sustainable land use. It notes that data from impact assessments and private projects are not always shared, limiting reuse and transparency. The segment also covers public participation and access to environmental information in general planning and conservation processes. It does not discuss aquaculture siting, licensing, farm-level cumulative effects, or aquaculture-specific conflicts, and therefore provides no direct findings on those questions.",
+   "chapter_title": "6.21 Mål 21 – Sikre at kunnskap er tilgjengelig og førende for forvaltningen"
+  },
+  {
+   "index": 16,
+   "headings": [],
+   "page_from": 203,
+   "page_to": 214,
+   "chars": 48821,
+   "key_figures": [
+    {
+     "quote": "Ved kommunestyrevalget i 2019 kom andelen kvinner i norske kommunestyrer for første gang over 40 prosent i landsgjennomsnitt. Det var kun en fremgang på 0,2 prosentpoeng i 2023.",
+     "statement": "The report states that women’s share of Norwegian municipal councils exceeded 40 percent for the first time in 2019 and increased by 0,2 percentage points in 2023; this is the report’s account of national representation."
+    },
+    {
+     "quote": "Andelen kvinnelige ordførere var på 35 prosent i 2019 og har steget til nær 37 prosent i 2023.",
+     "statement": "The report states that women accounted for 35 prosent of mayors in Norway in 2019 and nearly 37 prosent in 2023; this is the report’s account of national representation."
+    },
+    {
+     "quote": "En av ti ledere i villreinnemnder og fem av 100 ledere i fiskerlag er kvinner.",
+     "statement": "The report states that women make up one of ten leaders in wild reindeer committees and five of 100 leaders in fishing associations in Norway; this is a figure cited from Kilden kjønnsforskning.no."
+    },
+    {
+     "quote": "Kommunene forvalter om lag 83 prosent av arealene i Fastlands-Norge",
+     "statement": "The report states that municipalities manage approximately 83 prosent of mainland Norway’s area; this is the authors’ finding."
+    },
+    {
+     "quote": "finansieringsgapet på 700 milliarder dollar per år for å sikre naturmangfold",
+     "statement": "The report describes the global annual biodiversity-financing gap as 700 milliarder dollar; this is a figure presented in the global framework’s main goal D."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not discuss aquaculture siting or licensing. As a general policy statement, it emphasizes that municipalities administer land-use planning under the Planning and Building Act and manage about 83 percent of mainland Norway’s area. It says local solutions must operate within shared frameworks, while national and regional interests also matter. In the discussion of economic and administrative consequences, the government says measures to reduce development of particularly important natural areas could mean that some developments cannot proceed, and that land-use principles may prioritize certain development purposes when uses conflict. The text discusses land and coastal and marine nature in relation to identifying degraded areas, but gives no aquaculture-specific spatial criteria or balancing procedure.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "The segment contains no aquaculture-specific economic instruments, licensing incentives, or distributional analysis. Its general policy discussion says the nature action plan is to be implemented within the applicable budget frameworks, with the government returning to the costs of possible new measures in annual budgets. It notes that reducing development of particularly important natural areas may prevent some projects, while potentially limiting nature loss and related costs. The report says consequences depend on which development purposes and types of nature are affected. It also states that improved nature protection and ecosystem services could make overall social benefits positive, but does not quantify these effects or allocate them among aquaculture operators, communities, or other stakeholders.",
+    "A5": "The segment says that decisions affecting nature should be informed by accessible information, knowledge communication, and the perspectives of different groups. As a policy statement, it calls for clear-language guidance and information that is accessible, including consideration of different languages. It also identifies a need for more knowledge about the relationship between gender equality and nature management in Norway. For coastal and marine areas, it says that determining the extent of degraded or destroyed areas will draw on existing knowledge, while requiring additional resources from state agencies. It does not discuss aquaculture-specific evidence, monitoring technologies, or how emerging technologies could change site availability or environmental impacts.",
+    "A6": "The segment’s general account of participation in planning says that local people can contribute local knowledge and better understand decisions in which nature protection is given greater weight. It identifies meaningful involvement, accessible information, and representation of varied perspectives as important to decision-making. In cases affecting Sámi interests, the report describes a statutory consultation duty for the state, counties, and municipalities, with consultations to be conducted in good faith and aimed at agreement. It also says consultation duties apply in addition to ordinary administrative procedures. These are general policy and legal statements; the segment gives no aquaculture-specific conflict cases or evidence on delays, legitimacy, or predictability.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers participation in environmental decision-making, gender equality in nature management, the overarching goals of the biodiversity framework, and the economic and administrative consequences of the action plan. It presents participation as a democratic right and as important to planning and conservation processes. The government intends to continue guidance on broad participation in planning. For Sámi interests, the report describes consultation duties under chapter 4 of the Sámi Act and a requirement to consult in good faith with the aim of reaching agreement. It also calls for accessible information and attention to language and representation.\n\nOn gender equality, the report identifies gaps in influence and leadership despite legal duties to promote equality. Women held more than 40 percent of municipal council seats in 2019, with an increase of 0,2 percentage points in 2023; women mayors rose from 35 percent in 2019 to nearly 37 percent in 2023. It also reports low female representation among leaders in wild reindeer committees and fishing associations. The government emphasizes equal access to positions with real influence and identifies a need for more knowledge on gender equality and nature management.\n\nThe final chapter says municipalities manage about 83 percent of mainland Norway’s area and that implementation depends on cooperation among national, regional, and local authorities and businesses. Measures may require administrative resources or constrain some development, while improved ecosystem services may produce social benefits. The segment also refers to a global biodiversity-financing gap of 700 billion dollars per year. It contains no aquaculture-specific siting, licensing, cumulative-effects, fish-health, or biosecurity findings; its discussion is general policy rather than an aquaculture assessment.",
+   "chapter_title": "6.23 Gender equality and 7 Economic and administrative consequences"
+  },
+  {
+   "index": 17,
+   "headings": [],
+   "page_from": 214,
+   "page_to": 218,
+   "chars": 4004,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment contains the closing portion of the document’s reference list and publication information; it does not present a substantive chapter or section about aquaculture, coastal area use, spatial planning, or site selection. The references shown cover a wide range of topics, including biodiversity and ecosystem functioning, nature-based solutions, resource use, food security, water management, biodiversity monitoring, protected areas, and climate-related risks. Some entries concern Norwegian conditions, while others are international reports or scientific publications. The segment provides bibliographic details and, for some works, links or publication identifiers, but it does not summarize the cited works’ findings or explain how they relate to the document’s arguments. It therefore supplies no author findings, cited quantitative results, stated methods, or evidence about the priority questions. The numerical details visible in the references, such as publication years, report identifiers, volume numbers, and dates, identify publications rather than report findings, so they are not extracted as key figures. The final material gives instructions for ordering publications, the government publications website and telephone number, the cover-photo credit, and printing details. Because the segment consists of references and production information rather than analytical content, it cannot support conclusions about aquaculture development, environmental effects, competing coastal uses, licensing, or decision-making processes.",
+   "chapter_title": ""
+  }
+ ]
+}

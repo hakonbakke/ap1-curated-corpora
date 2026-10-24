@@ -1,0 +1,62 @@
+{
+ "doc_id": "2020_aanesen_arctic-aquaculture-cba",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 24,
+   "chars": 64420,
+   "key_figures": [
+    {
+     "quote": "After public hearings and political decisions in the municipalities, 5 of the areas were withdrawn and 1 is still disputed. Hence, the plan currently includes 12 new areas and 2 extended areas for aquaculture activities.",
+     "statement": "The authors report that review of the Tromsø-region coastal plan reduced its proposed aquaculture sites to 12 new areas and 2 extended areas, with 1 area still disputed."
+    },
+    {
+     "quote": "The survey was distributed electronically to 3000 of a total of 450,000 inhabitants in Arctic Norway. We obtained 1016 responses, of which we apply a subsample of 519 respondents.",
+     "statement": "The authors report the survey distribution and response counts for their Arctic Norway household study."
+    },
+    {
+     "quote": "The WTP-estimate equal to -65.6 USD means that on average households in the Tromsø-region are willing to pay this amount to avoid more aquaculture activities in this region.",
+     "statement": "The authors’ stated-preference estimate is that Tromsø-region households’ average willingness to pay to avoid more aquaculture is -65.6 USD."
+    },
+    {
+     "quote": "The estimated TNPVs for the region is given in Table 5. The results in Table 5 show that if there is no regional ownership growth, implying that no producer surplus remains in the region, the regional TNPV of such expansion is mainly negative.",
+     "statement": "The authors find that the Tromsø-region’s 2019–2028 total net present value is mainly negative when no producer surplus from new licenses remains in the region."
+    },
+    {
+     "quote": "In 2018, the production capacity in area 11, to which the Tromsø-region belongs, increased by 5.7%.",
+     "statement": "The authors report a 5.7% increase in production capacity in production area 11, which includes the Tromsø-region, in 2018."
+    },
+    {
+     "quote": "Given the growth in production capacity in the Tromsø-region in 2018, the region received 477,617 USD from the fund.",
+     "statement": "The authors report that the Tromsø-region received 477,617 USD from the Aquaculture Fund in 2018."
+    },
+    {
+     "quote": "The 2017 Aquaculture Risk Report (Svåsand et al., 2017) shows that the prevalence of sea-lice in Troms county is, together with Finnmark county, the lowest in Norway. Still, an average number of female lice per fish has increased from about 0.1 in 2015 to about 0.15 in 2017.",
+     "statement": "A cited 2017 risk report describes sea-lice prevalence in Troms and Finnmark as the lowest in Norway, while female lice per fish increased from about 0.1 in 2015 to about 0.15 in 2017."
+    },
+    {
+     "quote": "The analysis, which included the distance from aquaculture facilities to the salmon-river mouths, could not establish a statistically significant relationship between fish farm biomass and a number of migrating wild salmon, but it indicated a weak negative impact of aquaculture biomass.",
+     "statement": "A cited study using Norwegian river and farm data for 2005–2015 found no statistically significant relationship between farm biomass and migrating wild salmon, but indicated a weak negative impact."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ account makes municipal coastal planning central: municipalities designate coastal areas for aquaculture, and their motivation depends on expected net benefits from that use. The case study assesses costs and benefits for five municipalities in Arctic Norway. Its coastal plan originally proposed 18 new areas and extensions to two existing areas; after public hearings and municipal political decisions, 5 areas were withdrawn and 1 remained disputed, leaving 12 new and 2 extended areas. The authors identify competing recreational, subsistence and commercial fishing uses as opportunity costs, approximated in part by household willingness to pay to avoid expansion. Environmental harms are not monetized comprehensively, so the analysis does not establish a complete environmental-economic balance for spatial decisions.",
+    "A1": "The authors describe two distinct parts of the Norwegian aquaculture license: a right to hold a specified amount of fish and a right to farm at a particular locality. Salmon license numbers and maximum total biomass are restricted; government awards new licenses or increases capacity every second year. A site also needs permissions from regional environmental and veterinarian authorities and must conform to the municipal coastal-zone plan, unless the municipality grants an exemption. The traffic-light system further conditions production expansion on environmental status, specifically salmon-lice-induced mortality on wild salmon. The authors argue that site availability can constrain expansion: the Tromsø-region had fewer cleared localities per license than Troms county overall. These licensing, planning and environmental constraints interact, but the paper does not analyze fish-health requirements at individual application stages.",
+    "A2": "The authors explain that a locality must receive municipal-plan conformity or an exemption, as well as permissions from regional environmental and veterinarian authorities. A cleared locality is described in a legal-administrative note as a site approved by county municipalities and permitted by the County Governor’s Environmental department and the Food Safety Authority. The Tromsø-region plan’s public-hearing and political-decision stages resulted in 5 proposed areas being withdrawn and 1 remaining disputed; the plan then contained 12 new and 2 extended areas. This is a case description, not a systematic study of application timelines. The segment does not identify typical processing durations or establish which licensing authority most commonly causes delays or rejections.",
+    "A3": "The authors do not report a cumulative-effects assessment incorporated into municipal site selection. Their cost-benefit analysis is regional and considers aggregate expansion over a 10-year period, using scenarios for production, transfers and household willingness to pay. They note environmental monitoring and annual risk reports, with salmon lice and escapees identified in a cited report as the two largest risks to wild salmon stocks. Monetizing environmental damage is difficult because effects must be distinguished from other influences on wild salmon, and national estimates may not transfer to the Tromsø-region, where sea-lice levels are lower. A cited time-series analysis for 2005–2015 found no statistically significant biomass–migration relationship, only a weak negative indication. The authors also caution that stated willingness to pay may already include perceived environmental damage, creating possible double counting.",
+    "A4": "The authors model municipal incentives through regional transfers from the national Aquaculture Fund and the share of producer surplus retained locally. The cited policy arrangement channels 80% of license fees back to municipalities and county municipalities; the municipal share is distributed partly according to existing locality capacity and partly to municipalities with newly approved localities. The authors’ scenarios show that fund transfers alone are usually insufficient to offset household welfare losses when no producer surplus remains locally. Their main finding is that positive regional net present value depends crucially on some producer surplus benefiting the region, for example through local ownership. They note uncertainty in future fees, license growth, profitability and local ownership. The analysis excludes wages and related-industry producer surplus under its assumptions, while acknowledging these could matter, especially where rural employment alternatives are limited.",
+    "A5": "The authors base spatial-economic assessment on a municipal coastal plan, fisheries and aquaculture registry data, company financial and employment information, and household stated-preference survey results. Environmental context comes from Norwegian aquaculture risk reports and cited studies, but the authors stress that region-specific environmental damage data and monetization are scarce. Their discussion identifies uncertainty about how household willingness to pay represents environmental values and whether it captures all damage. Emerging production concepts could change the spatial basis of planning: the authors note that large-scale offshore farms would lie beyond municipal area jurisdiction, defined in the text as one nautical mile from the baseline. They argue this could shift production toward capital-intensive operations and reduce the relevance of municipal coastal-zone management, though they expect this to take many years or decades to become a major production mode.",
+    "A6": "The authors describe competing uses and distributional concerns rather than documenting a systematic inventory of disputes. The coast is used for recreation, subsistence and commercial fishing, and household willingness to pay to avoid aquaculture is used as a proxy for some opportunity costs. In hearings on the Tromsø-region coastal plan, representatives of traditional cod fishing, shrimp fishing and tourism argued that nearby aquaculture could constrain their continued activity and future expansion; this is a reported claim, not a demonstrated causal effect. The plan’s public-hearing and municipal decision process led to 5 proposed areas being withdrawn and 1 remaining disputed. The authors say the literature on long-term impacts on other marine industries is scarce and inconclusive, making conflicts and their effects difficult to verify. Their analysis also highlights unequal regional distribution of gains when producer surplus leaves the region.",
+    "A7": "",
+    "A8": "The authors identify disease and sanitary control as important to production and expansion. They describe salmon lice as a major source of rising production costs and as one important reason for limits on new salmon licenses from 2013. Under the traffic-light system, capacity growth is allowed only in production areas with low salmon-lice-induced mortality on wild salmon stocks. A cited risk report identifies salmon lice and escaped farmed fish as the two largest risks to wild salmon stocks; the report also says sea-lice prevalence in Troms and Finnmark was the lowest in Norway, although female lice per fish increased from about 0.1 in 2015 to about 0.15 in 2017. The segment does not discuss water connectivity between farms, coordinated biosecurity zones or disease transmission pathways among individual facilities."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

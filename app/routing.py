@@ -18,6 +18,7 @@ from pathlib import Path
 import numpy as np
 from openai import OpenAI
 
+import enrichment
 from retrieval import (
     AREAL_DATA_FILE,
     _json_list,
@@ -53,6 +54,13 @@ CONTEXT_DOC_IDS = frozenset({
     "2022_ipbes_spm-values",
 })
 CONTEXT_SLOTS = 2
+# A large report has 8-53 chapter summaries, and its best chapter is nearly always
+# closer to a question than the report as a whole (by 0.05-0.20 on the nine PQs).
+# A chapter lifts its report only by what it beats the report by beyond this margin,
+# so a report rises when one chapter stands out, not merely because it is long.
+# Calibrated 2026-10-24 on the nine PQs and seven free questions: at 0.15 two of
+# sixteen lists change (A8 gains the fish-health report's biosecurity chapter).
+CHAPTER_LIFT_MARGIN = 0.15
 # A context document joins only when it is close to the best research hit:
 # at least this share of the best evidence score, and never below the floor.
 # Calibrated 2026-10-23 on the nine PQs and four free questions.
@@ -134,11 +142,14 @@ def retrieve_funnel(
     """Research documents tagged with `codes` first (by similarity), then the best
     untagged research hits, plus up to CONTEXT_SLOTS official context documents.
 
-    Each result keeps its cosine `semantic_score` (the out-of-scope check still uses
-    it), gets `via_pq` = the matching codes (empty for semantic fill and context) and
-    `corpus_role` = "context" or "evidence". Context documents join only when they are
-    close to the best research hit, and take places from the research list only then.
-    Two files of the same publication never both take a place.
+    A large report is ranked by its best chapter when that chapter is closer to the
+    question than the report as a whole (`score`); `semantic_score` stays the cosine
+    of the document itself, which the out-of-scope check uses. Each result gets
+    `via_pq` = the matching codes (empty for semantic fill and context),
+    `corpus_role` = "context" or "evidence", and the full-text chapters, figures and
+    priority-question notes from enrichment.attach. Context documents join only when
+    they are close to the best research hit, and take places from the research list
+    only then. Two files of the same publication never both take a place.
     """
     df = load_corpus(data_file or AREAL_DATA_FILE).copy()
     if selected_doc_ids is not None:
@@ -147,7 +158,10 @@ def retrieve_funnel(
         return []
     query_vec = query_embedding if query_embedding is not None else get_embedding(client, query)
     df["_semantic_score"] = df["_embedding"].apply(lambda emb: cosine_similarity(query_vec, emb))
-    df["_score"] = df["_semantic_score"]
+    chapter_best = enrichment.best_chapter_scores(query_vec)
+    df["_score"] = [
+        max(s, chapter_best.get(d, s) - CHAPTER_LIFT_MARGIN) for d, s in zip(df["doc_id"], df["_semantic_score"])
+    ]
     wanted = set(codes or [])
     df["_via_pq"] = df["priority_questions"].apply(lambda v: [c for c in _json_list(v) if c in wanted])
     is_context = df["doc_id"].isin(CONTEXT_DOC_IDS)
@@ -170,9 +184,10 @@ def retrieve_funnel(
             seen_publications.add(result["publication_group"])
         return picked
 
-    best_evidence = float(evidence["_semantic_score"].max()) if not evidence.empty else 0.0
+    best_evidence = float(evidence["_score"].max()) if not evidence.empty else 0.0
     floor = max(CONTEXT_FLOOR, CONTEXT_RELATIVE * best_evidence)
-    eligible = context[context["_semantic_score"] >= floor].sort_values("_semantic_score", ascending=False)
+    eligible = context[context["_score"] >= floor].sort_values("_score", ascending=False)
     context_results = take(eligible, min(CONTEXT_SLOTS, top_k), "context")
-    ranked = evidence.sort_values(["_tagged", "_semantic_score"], ascending=[False, False])
-    return take(ranked, top_k - len(context_results), "evidence") + context_results
+    ranked = evidence.sort_values(["_tagged", "_score"], ascending=[False, False])
+    results = take(ranked, top_k - len(context_results), "evidence") + context_results
+    return enrichment.attach(results, query_vec)

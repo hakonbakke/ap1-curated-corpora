@@ -1,0 +1,137 @@
+{
+ "doc_id": "2017_aldrin_lice-farm-model",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 3,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 9,
+   "chars": 49928,
+   "key_figures": [
+    {
+     "quote": "Model parameters were estimated from data including 32 salmon farms, except the last production months for five farms, which were used to evaluate model predictions.",
+     "statement": "The authors fitted the model using data from 32 Norwegian salmon farms and evaluated predictions on the final production months for five farms."
+    },
+    {
+     "quote": "The average temperature was 9.1 ◦C, and 95% of the temperatures were between 3.6 and 15.0 ◦C.",
+     "statement": "The authors report the average and distribution of seawater temperatures measured at 3 m depth at the study farms."
+    },
+    {
+     "quote": "The production cycles lasted on average 16.5 months per cage, with on average 140 000 fish per cage, typically more in the beginning of a production cycle and less towards the end.",
+     "statement": "The authors report average production-cycle duration and fish numbers per cage in the Norwegian farm data."
+    },
+    {
+     "quote": "The average minimum and maximum fish weights during a production cycle was 140 g and 5.7 kg, respectively.",
+     "statement": "The authors report the average minimum and maximum fish weights during production cycles in the study cages."
+    },
+    {
+     "quote": "89% of the cages contained cleaner fish in parts of the production period.",
+     "statement": "The authors report the share of study cages that contained cleaner fish during some part of production."
+    },
+    {
+     "quote": "There were on average 41 dates with lice counts per cage, with averages (abundance) of 0.23 CH, 0.76 OM and 0.18 AF per fish.",
+     "statement": "The authors report average lice-count dates per cage and mean abundance per fish for chalimus, other mobile lice and adult female lice in the study data."
+    },
+    {
+     "quote": "Six different types of antiparasitic medicals were used (Table 1), and there were on average 4.6 events of medical treatments per cage.",
+     "statement": "The authors report six treatment types and the average number of treatment events per cage in the study farms."
+    },
+    {
+     "quote": "The number of production units (cages) per farm varied from 3 to 12, but were usually around 8 (mean 7.7).",
+     "statement": "The authors report the range and mean number of cages per farm among the 32 study farms."
+    },
+    {
+     "quote": "For 9 farms, the ﬁsh were moved between cages within the farm during the production period.",
+     "statement": "The authors report that fish were moved between cages during production at 9 of the study farms."
+    },
+    {
+     "quote": "The average temperature was 9.1 ◦C, and 95% of the temperatures were between 3.6 and 15.0 ◦C.",
+     "statement": "The authors report the temperature range containing 95% of seawater temperature observations at the study farms."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "The authors do not assess licensing, site availability, spatial planning, or the allocation of coastal space. Their study does, however, identify fish-health processes that can affect operational opportunities at existing farms: lice transmission depends on fish abundance and size, temperature, infection pressure from neighbouring farms, and control measures. These are modelled as interacting processes in a population model fitted to cage-level production and lice-count data from Norwegian farms. This is evidence about disease dynamics in established sites, not about how those sites are selected or licensed.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors’ study uses cage-level production data from 32 Norwegian marine salmon farms, including fish numbers and weights, lice counts, temperatures, treatment records, cleaner-fish stocking and fish movements. They combine farm data with informative prior distributions, informed mainly by laboratory studies, in a Bayesian hierarchical model. Their model represents stages of lice development, farm and cage variation, and external transmission linked to seaway distances between farms. The authors report that fitted expected values matched observed infection levels reasonably well and that predictions for periods withheld from fitting were consistent with observations. They note that salinity data were unavailable in sufficient detail and therefore were not used; unmeasured factors such as salinity may be reflected in time-varying farm-specific mortality.",
+    "A6": "",
+    "A7": "The authors frame their model as a potential tool to support more proactive and effective salmon-louse control in farm production systems. It estimates lice populations from successive counts, predicts short-term infection levels and can be used to evaluate control measures. The authors report that predictions for periods not used to fit the model were consistent with observations, but scenario simulations of alternative control strategies are reserved for later work. This segment does not evaluate industry practices for reducing spatial footprint, nor does it assess sustainability trade-offs or conflicts with other coastal users.",
+    "A8": "The authors’ model explicitly represents salmon-louse transmission within and between farms. External recruitment is linked to adult female lice at other farms, weighted by seaway distance, and modified by farm-specific, time-varying factors that may capture local conditions such as sea currents. Within-farm infection is modelled in relation to fish numbers and average fish weight; the introduction also points to prior studies linking transmission and parasite abundance to local host biomass and between-farm distance. The authors use data from 32 Norwegian farms, including farm locations and seaway distances, but this segment presents the model framework rather than estimates of connectivity effects or specific transmission distances. The model neglects infection from wild salmon and trout, reasoning that their numbers are few compared with farmed fish."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 9,
+   "page_to": 16,
+   "chars": 46852,
+   "key_figures": [
+    {
+     "quote": "Depending on the size of the ﬁsh, the model estimates suggested that on average only 9% to 19% of the CH lice were counted (Fig. 5).",
+     "statement": "The authors' model estimates that only 9% to 19% of chalimus lice were counted, depending on fish size, in the farm data analysed."
+    },
+    {
+     "quote": "We obtain an estimate of the daily cleaner ﬁsh mortality of 0.028 (C.I. 0.022–0.034, Table 4).",
+     "statement": "The authors estimate a daily cleaner-fish mortality rate of 0.028, with a 0.022–0.034 credible interval, in the salmon-farm model."
+    },
+    {
+     "quote": "With a 10% cleaner ﬁsh to salmon ratio, the estimated daily lice mortality due to the use of cleaner ﬁsh, is 0.079 (C.I. 0.060–0.099).",
+     "statement": "The authors estimate daily lice mortality due to cleaner fish at 0.079, with a 0.060–0.099 credible interval, at a 10% cleaner-fish-to-salmon ratio."
+    },
+    {
+     "quote": "The estimated proportion of internal recruitment for each farm averaged over the whole production cycle varies from about 4 to 73%.",
+     "statement": "The authors estimate that average internal lice recruitment over a production cycle ranged from about 4 to 73% across the farms studied."
+    },
+    {
+     "quote": "On average over all farms, this proportion is 25% (C.I. 23–26%), with a median of 19.",
+     "statement": "The authors estimate average internal recruitment at 25% across the farms, with a 23–26% credible interval and a median of 19."
+    },
+    {
+     "quote": "The largest farm-wise factor was 61% higher than the smallest one, indicating that there are local variations that cannot be explained by distances to the neighbouring farms alone.",
+     "statement": "The authors find that the largest farm-wise external-exposure factor was 61% higher than the smallest among the farms studied."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors' finding is that routine farm production and lice-count data, combined in a Bayesian hierarchical population model, can support estimates of lice abundance and predictions several weeks ahead. They report that predictions for adult females and other mobile lice were generally reasonable, while long-term prediction intervals were slightly too narrow. The segment identifies knowledge limitations: chalimus counts substantially under-report lice and vary between farms; there are no count data for the planktonic stage; and some life stages are pooled in observations. Unobserved predictors such as salinity, uncertainty about cleaner-fish abundance, and stochastic infection processes also limit predictive precision. The authors say the model could be updated as new farm data become available.",
+    "A6": "",
+    "A7": "The authors discuss farm-level lice-control measures, including cleaner fish and chemotherapeutic treatments, and find that the model can quantify their effects. Their estimate indicates cleaner fish increase lice mortality, especially for pre-adult lice, but cleaner-fish ratios in the data seldom exceeded 5%; medical treatments were applied in almost all cages. The authors note sustainability concerns, including cleaner-fish welfare and resilience of wild cleaner-fish populations to fishery. They also argue that evaluating control efforts across interconnected farms is difficult, and propose using the model as a mathematical laboratory to explore coordinated control strategies in production areas. These are model findings and the authors' suggested application, not a spatial-planning policy assessment.",
+    "A8": "The authors' model explicitly distinguishes internal lice recruitment within a farm from external recruitment associated with neighbouring farms, using farm distances and modifying factors that indirectly account for local hydrodynamics. Their finding is that both sources vary over time and either can dominate; internal recruitment is more important when adult female lice are abundant, while external recruitment can dominate at low abundance. They report variation in farm exposure not explained by neighbour distances alone, and variation in exposure between cages within farms. The segment argues that interconnected farms and planktonic parasite spread complicate assessment of control measures across production areas. It does not evaluate biosecurity rules or water connectivity as a spatial-planning instrument."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 16,
+   "page_to": 16,
+   "chars": 5475,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

@@ -1,0 +1,1289 @@
+{
+ "doc_id": "2026_moldal_fiskehelserapporten",
+ "model": "gpt-6-luna",
+ "large": true,
+ "n_segments": 20,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "2025",
+    "Fiskehelserapporten 2025",
+    "Veterinærinstituttets årlige oversikt over fiskehelsen i Norge",
+    "Forfattere",
+    "Redaksjon",
+    "Sitering:"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 29949,
+   "key_figures": [
+    {
+     "quote": "Beregnet årlig dødelighetsrisiko i sjøfasen var 14,2 % for laks, 17,0 % for regnbueørret og 20,4 % for torsk.",
+     "statement": "The authors report estimated annual sea-phase mortality risk in Norwegian aquaculture in 2025 of 14,2 % for salmon, 17,0 % for rainbow trout and 20,4 % for cod."
+    },
+    {
+     "quote": "For laks kommer produksjonsområde 4 (PO4) dårligst ut med 20,1 %, mens PO12-PO13, som vurderes samlet, kom best ut med 9,4 %.",
+     "statement": "The authors report that salmon annual mortality risk in Norway in 2025 was 20,1 % in production area 4 and 9,4 % in the combined PO12-PO13."
+    },
+    {
+     "quote": "I 2025 ble det registrert data fra 408 lokaliteter, noe som representerer nær halvparten av alle sjølokaliteter med laks.",
+     "statement": "The authors report that AquaCloud mortality-cause data for 2025 covered 408 Norwegian salmon sea sites, nearly half of all such sites."
+    },
+    {
+     "quote": "Hovedårsakene til dødelighet registrert på nasjonalt nivå var «Skader (traumer)» med 33,5 %, «Infeksjonssykdommer» med 28,1 % og «Ukjent årsak» med 27,4 %.",
+     "statement": "The authors report the national shares of recorded salmon mortality causes at covered sea sites in 2025: «Skader (traumer)» 33,5 %, «Infeksjonssykdommer» 28,1 % and «Ukjent årsak» 27,4 %."
+    },
+    {
+     "quote": "Infeksiøs lakseanemi (ILA) ble stadfestet på 18 sjølokaliteter i 2025, og i tillegg oppstod mistanke om ILA på tre sjølokaliteter i løpet av året.",
+     "statement": "The authors report 18 confirmed infectious salmon anaemia cases and suspicions at three additional Norwegian sea sites in 2025."
+    },
+    {
+     "quote": "I 2025 ble det påvist 44 tilfeller.",
+     "statement": "The authors report 44 cases of pancreatic disease in Norwegian aquaculture in 2025."
+    },
+    {
+     "quote": "Det var 246 lokaliteter med påvist infeksjon med M. viscosa (klassisk vintersår) i 2025, sammenlignet med 289 i 2024.",
+     "statement": "The authors report the number of Norwegian sites with detected M. viscosa infection, or classic winter ulcers, as 246 in 2025 and 289 in 2024."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not describe spatial planning or how competing coastal uses are balanced. It does report a policy direction in the 2025 aquaculture white paper: a proposed shift from limits on permitted biomass to a system based on quotas for salmon-louse larval emissions, alongside a proposed fee on fish mortality. The report says the overarching goal is a management system regulating the industry according to actual, measurable environmental impacts. These are policy proposals, not findings about how area decisions currently work; the most extensive measures were deferred pending further assessments.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "The segment identifies proposed economic and regulatory changes in the 2025 aquaculture white paper: replacing permitted-biomass limits with quotas for salmon-louse larval emissions and introducing a proposed fee on lost fish through mortality. The report characterizes these proposals as a major change in direction toward regulation based on measurable environmental impact. This is a policy statement, not an assessment of how incentives, costs or benefits would be distributed among companies, communities or other stakeholders. The most extensive measures were put on hold until further assessments are completed.",
+    "A5": "The report says its annual health overview draws on data collected over two decades, including mandatory reporting and information shared voluntarily by industry and suppliers. It notes important knowledge limitations: fish-group traceability is lacking when fish move within or between facilities, and public registers vary in data quality, making it difficult to link freshwater and sea-phase data into a full production mortality estimate. AquaCloud cause-of-death data covered 408 salmon sea sites in 2025, nearly half of such sites. The report also points to warmer sea conditions as a changing production factor that may expand the range or accelerate reproduction of parasites and microorganisms. It does not discuss new technologies for spatial decisions.",
+    "A6": "",
+    "A7": "",
+    "A8": "The authors report that several 2025 infectious salmon anaemia outbreaks may have involved movement of infected fish between sites, while transmission was otherwise assumed to have occurred between neighbouring sites. They also note that warmer sea periods can allow salmon lice and other harmful parasites and microorganisms to reproduce faster and establish themselves in new areas. These points indicate that disease risk can extend across connected locations, but this segment does not provide a specific assessment of water-current connectivity, biosecurity zones or siting rules."
+   },
+   "summary": "This opening segment of Fiskehelserapporten 2025 presents the report’s purpose and a broad overview of fish health in Norwegian aquaculture. The editor describes a policy direction in the 2025 aquaculture white paper: management based on measurable environmental impacts, including proposals for quotas on salmon-louse larval emissions and a fee related to fish mortality. The most extensive measures were deferred for further assessment. The report’s annual overview combines mandatory reporting with data voluntarily shared by companies and suppliers. The authors identify weaknesses in linking production data: fish groups are not traceable through all movements, and public registers differ in data quality.\n\nFor 2025, estimated annual sea-phase mortality risk was 14,2 % for salmon, 17,0 % for rainbow trout and 20,4 % for cod. Salmon risk varied geographically, from 20,1 % in PO4 to 9,4 % in the combined PO12-PO13. AquaCloud mortality-cause data covered 408 salmon sea sites, with injuries, infectious disease and unknown causes prominent. The segment also reports 18 confirmed ILA sites and 44 pancreatic disease cases. It describes possible ILA spread through fish transfers and between neighbouring sites, and notes that warmer waters may favour parasites and microorganisms. The material is an introductory overview, not a dedicated analysis of spatial planning, site applications or cumulative environmental effects.",
+   "chapter_title": "Er vi på rett vei nå? Sammendrag"
+  },
+  {
+   "index": 1,
+   "headings": [
+    "1 Datagrunnlag",
+    "Offisielle data",
+    "Data fra Veterinærinstituttet",
+    "Data fra private laboratorier og sammenstilling",
+    "Data fra AquaCloud",
+    "Data fra spørreundersøkelsen"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 48739,
+   "key_figures": [
+    {
+     "quote": "Undersøkelsenble­fullført­av­143­personer­(40 %­svarandel),­det­høyesteantallet­besvarelse­vi­har­mottatt.",
+     "statement": "The authors report that their 2025 fish-health survey received 143 completed responses, a 40 % response rate and the highest number of responses they had received."
+    },
+    {
+     "quote": "Sammenstilte­data­for­de­ovennevnteikkelisteførte­sykdommene­baserte­seg­på­påvisningerpå­692­lokaliteter",
+     "statement": "The authors report that the compiled 2025 data on selected non-listed diseases were based on detections at 692 Norwegian aquaculture sites."
+    },
+    {
+     "quote": "Antall­lokaliteter­som­rapporterte­til­AquaCloud­i­2025var­408­(per­januar­2026),­noe­som­utgjør­ca.­49­prosentav­alle­sjøanlegg­med­laks­i­2025­i­Norge.",
+     "statement": "The authors report that 408 Norwegian salmon sea sites reported to AquaCloud in 2025, representing ca. 49 prosent of all salmon sea sites that year."
+    },
+    {
+     "quote": "Totalt­833­lokaliteter­med­atlantisk­laks­og85­lokaliteter­med­regnbueørret­(matfisk,­stamfisk­ogforsknings-­og­utviklingslokaliteter)­var­aktive­i­minst­én­måned­i­2025.",
+     "statement": "The authors report that 833 Atlantic salmon sites and 85 rainbow trout sites in Norway were active for at least one month in 2025."
+    },
+    {
+     "quote": "I 2025ble­43,3­millioner­laks­og­2,84­millioner­regnbueørret(over­3­gram)­rapportert­tapt­i­settefiskfasen.",
+     "statement": "The authors report that Norwegian hatcheries recorded losses of 43,3 millioner salmon and 2,84 millioner rainbow trout over 3 grams in 2025."
+    },
+    {
+     "quote": "de­2,44­millioner­fiskene­som­ble­rapportert­tapt­i­2025,representerer­en­økning­på­over­250 %­sammenlignetmed­2022.",
+     "statement": "The authors report that 2,44 millioner Atlantic cod were recorded lost in Norwegian hatcheries in 2025, an increase of over 250 % compared with 2022."
+    },
+    {
+     "quote": "I 2025­utgjorde­de­rapporterte­tapene­(i­kategoriene«død»,­«destruksjon»,­«rømming»­og­«annet»)­om­lag67,5 millioner­laks.",
+     "statement": "The authors report that total reported losses across the death, destruction, escape and other categories at Norwegian sea sites amounted to about 67,5 millioner salmon in 2025."
+    },
+    {
+     "quote": "Av­de­rappor­terte­tapene,­ble­54,8 millioner­registrert­som­døde­laksog­3,2 millioner­som­døde­regnbueørret,­som­utgjør­hen­holdsvis­81,2 %­og­86,6 %­av­det­totale­tapet­for­laks­ogregnbueørret.",
+     "statement": "The authors report that in Norwegian sea-site loss records for 2025, 54,8 millioner salmon and 3,2 millioner rainbow trout were categorized as dead, respectively 81,2 % and 86,6 % of each species' total reported losses."
+    },
+    {
+     "quote": "Antall­rensefisk­satt­ut­i­sjølokaliteter­var­ca.­19­millioner­i2025,­sammenliknet­med­ca.­48 millioner­i­2021.",
+     "statement": "The authors report that approximately 19 millioner cleaner fish were deployed at Norwegian sea sites in 2025, compared with approximately 48 millioner in 2021."
+    },
+    {
+     "quote": "Slaktevolumet­har­økt­tilsvarende,­fra­1­800tonn­i­2021­til­over­19­000­tonn­i­2025.",
+     "statement": "The authors report that Norwegian farmed Atlantic cod slaughter volume rose from 1 800 tonnes in 2021 to over 19 000 tonnes in 2025."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors describe the evidence base and its limitations, rather than assessing spatial decisions. Data come from official registers and reporting systems, the Veterinary Institute's diagnostic records, private laboratories, AquaCloud, and a survey of fish-health personnel and regulators. In 2025, 408 salmon sea sites reported to AquaCloud, about 49 prosent of the national total; compiled non-listed-disease data covered detections at 692 sites. The authors note that hatchery mortality records are lower quality than sea-production records, cannot track individual fish groups, and support broad patterns rather than detailed group-level estimates. Survey findings also represent respondents' views, not a census of the sector.",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment describes the report’s data sources and methods, then presents production and mortality information for Norwegian aquaculture, mainly for 2021–2025. Evidence is drawn from official registers and reporting by the Norwegian Food Safety Authority and Directorate of Fisheries, Veterinary Institute laboratory records, private laboratories, AquaCloud and a questionnaire. The 2025 survey was completed by 143 respondents, a 40 % response rate. Private-laboratory data for selected non-listed diseases covered detections at 692 sites. AquaCloud received reports from 408 salmon sea sites, about 49 prosent of all Norwegian salmon sea sites in 2025. The report generally uses production areas for geographic summaries and combines some areas with few sites to protect confidentiality.\n\nProduction statistics show 405,3 million salmon smolts and 25,1 million rainbow trout were put to sea in 2025. Average monthly sea biomass was 875 687 tonnes for salmon and 51 760 tonnes for rainbow trout. Cod production expanded: average monthly sea biomass reached 16 294 tonnes and slaughter volume 19 698 tonnes in 2025. Cleaner-fish deployment fell to 18,9 million in 2025, from 48,3 million in 2021.\n\nReported hatchery losses in 2025 included 43,3 million salmon and 2,84 million rainbow trout over 3 grams, while cod losses reached 2,44 million. At sea, total reported salmon losses were about 67,5 million; 54,8 million were recorded as dead. The authors explain mortality calculation methods and flag data-quality limits, including hatchery reporting inconsistencies, exclusions, and inability to follow individual fish groups. This segment provides no substantive analysis of siting, spatial planning, cumulative environmental effects, or competing area uses.",
+   "chapter_title": "1 Datagrunnlag; 2 Dødelighet i fiskeoppdrett"
+  },
+  {
+   "index": 2,
+   "headings": [
+    "Månedlig dødelighet hos laksefisk",
+    "PO 3",
+    "PO 4",
+    "Figur 2.4.1 A Månedlige dødelighetsrisiko (%) i perioden 2023–2025 for laks i Norge samt PO1-PO2 (slått sammen), PO3 og PO4. Den svarte heltrukne linjen viser medianen, og det grå skyggeområdet representerer interkvartilområdet (IKO) for dødelighetsrisikoen. Gjennomsnittlige dødelighetsrisikoer vises som røde punkter, og de vertikale røde strekene angir 95 % konfidensintervall for gjennomsnittet.",
+    "PO 5",
+    "PO 6"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 45269,
+   "key_figures": [
+    {
+     "quote": "I 2025 ble den nasjonale årlige kumulative dødelighetsrisikoen (basert på månedlige intervaller), heretter omtalt som årlig dødelighet, estimert til 14,2 % for laks",
+     "statement": "The authors estimate Norway’s annual cumulative mortality risk for farmed salmon in 2025 at 14,2 %."
+    },
+    {
+     "quote": "Den nasjonale årlige dødeligheten i 2025 var 17,0 %, noe som representerer en økning fra tidligere år, og er sammenlignbar med toppen som ble observert i 2022.",
+     "statement": "The authors report a national annual mortality rate of 17,0 % for farmed rainbow trout in Norway in 2025."
+    },
+    {
+     "quote": "I 2025 var den årlige dødeligheten 20,4 %, en liten nedgang fra 22,2 % i 2024.",
+     "statement": "The authors report annual mortality of 20,4 % for farmed cod in Norway in 2025, compared with 22,2 % in 2024."
+    },
+    {
+     "quote": "Antallet døde rensefisk i sjø gikk ned fra 39 millioner i 2021 til 12,7 millioner i 2025.",
+     "statement": "The authors report that registered deaths of cleaner fish in Norwegian sea cages declined from 39 million in 2021 to 12,7 million in 2025."
+    },
+    {
+     "quote": "Antall lokaliteter som rapporterer dødfiskårsaker er firedoblet siden starten, og omfattet 408 lokaliteter med laks i 2025.",
+     "statement": "The authors report that 408 Norwegian salmon sites shared dead-fish cause data in 2025, four times the number at the project’s start."
+    },
+    {
+     "quote": "Median dødelighet for produksjonssykluser fullført i Norge i 2025 var på 14,7 %, en nedgang fra 15,4 % i 2024.",
+     "statement": "The authors report that median mortality for completed Norwegian salmon production cycles was 14,7 % in 2025, down from 15,4 % in 2024."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors use monthly and annual mortality records, production-cycle data, and regional and site-level distributions to describe fish-health patterns. Their analyses distinguish medians, means, interquartile ranges and confidence intervals, and note that national estimates are based on more observations than production-area estimates. They also identify important limitations: recent monthly values reflect fish still in the sea, annual sea-phase mortality does not necessarily represent mortality over the full life cycle, and production strategies and cycle lengths affect comparisons. Cleaner-fish loss data are particularly difficult to interpret because removed fish and fish that die are not distinguished in the existing reporting. A new reporting form planned from January 2026 is intended to improve that data quality.",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment does not discuss water connectivity between farms or biosecurity measures. It does report fish-health patterns and possible disease-related mortality factors: cited and reported explanations include infections, gill disease, sea-lice treatments, and environmental conditions. For cod in 2025, fish-health personnel associated summer mortality peaks with high temperatures, reports of Vibrio anguillarum infections, and complex gill disease involving different agents. The authors caution that mortality data can be sensitive to individual sites and, for cod, to the small number of active facilities."
+   },
+   "summary": "This segment reports mortality patterns for farmed salmon, rainbow trout, cod and cleaner fish in Norway. For salmon, monthly mortality in 2023–2025 generally showed higher winter and early-spring values nationally, although seasonal peaks were less pronounced in 2024 and 2025. Patterns differed by production area, and isolated sites could have exceptionally high mortality. Mortality also varied with fish weight: the lightest and heaviest salmon groups had higher mortality and greater variation. The authors report annual salmon mortality of 14,2 % in 2025, the lowest in at least five years, while rainbow-trout mortality was 17,0 %. Cod mortality was 20,4 %, with summer peaks associated by fish-health personnel with high temperatures, Vibrio anguillarum infections and complex gill disease. The segment explains that cumulative mortality comparisons depend on production-cycle duration and production strategies, and that sea-phase mortality does not necessarily reflect total mortality across a fish’s life cycle. Completed salmon production-cycle mortality had a national median of 14,7 % in 2025. The authors also describe limitations in cleaner-fish loss reporting: recorded deaths fell from 39 million in 2021 to 12,7 million in 2025, but data weaknesses prevent concluding that the proportion dying declined. The next section introduces a voluntary dead-fish cause database, covering 408 salmon sites in 2025. The material is primarily descriptive, and the authors flag uneven site coverage, changing data quality and uncertainty in interpreting outliers and regional comparisons.",
+   "chapter_title": "Månedlig dødelighet hos laksefisk"
+  },
+  {
+   "index": 3,
+   "headings": [
+    "Fordeling av dødfiskregistreringer (laks) på nasjonalt nivå",
+    "Fordeling av dødfiskregistreringer (laks) innenfor grupper av produksjonsområder",
+    "Produksjonsområde 1–4",
+    "PO1−PO4 PO5−PO9 PO10−PO13",
+    "Figur 2.5.1 Andelen av dødsårsaker registrert i «Fiskehelsedatabasen»/AquaCloud for laks fordelt på hovedkategori A – F (nivå 1) i tidsperioden 2021–2025, fordelt på tre grupper av produksjonsområder: PO1-PO4, PO5-PO9 og PO10-PO13. Dette er registreringer gjort av selskaper som har delt data, og angir ikke nødvendigvis den reelle prevalensen på nasjonalt nivå. Tallgrunnlaget vil endres hvis antall deltagende selskaper endres, og historiske data kan dermed også endres som følge av dette.",
+    "Produksjonsområde 5–9"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 23388,
+   "key_figures": [
+    {
+     "quote": "var hovedkategoriene med høyest andel dødfiskregistreringer blant de seks kategoriene for nivå 1 på nasjonalt nivå i 2025 «Skader (traume) (C)» (33,5 % av registreringene) og «Infeksjonssykdommer (A)» (28,1 % av registreringene).",
+     "statement": "The authors report that, among salmon mortality records shared to the national database in 2025, trauma and infectious diseases accounted for the largest category shares; these records do not represent actual national prevalence."
+    },
+    {
+     "quote": "Andelen døde registrert under «Ukjent årsak (F)» gikk gradvis ned i perioden 2021 til 2024 (21,2 % av registreringene i 2024), men har økt til 27,4 % av alle registreringer i 2025.",
+     "statement": "The authors find that the share of shared salmon mortality records assigned to unknown causes rose from 21,2 % in 2024 to 27,4 % in 2025."
+    },
+    {
+     "quote": "Uavhengig av hovedkategori (nivå 1), er de tre dødsårsakene på nivå 3 med høyest andel dødfisk i 2025: «Ukjent dødsårsak» (15 % av alle registreringer), «Håndteringsskade» (uspesifisert) (13 % av alle registreringer) og «Ikke-medikamentell behandling (uspesifisert)» (11 % av alle registreringer).",
+     "statement": "The authors identify the three most common level-3 causes in shared salmon mortality records in 2025 and report their respective shares as 15 %, 13 % and 11 %."
+    },
+    {
+     "quote": "HSMB har holdt seg på et stabilt nivå de fire forutgående årene (ca. 6–10 % av registreringene i kategori A «Infeksjonssykdommer»), men gjør i 2025 et hopp til 19 % av dødfiskregistreringene i kategori A, og er dermed kategorien med flest registreringer blant infeksjonssykdommene.",
+     "statement": "The authors report that HSMB rose to 19 % of shared salmon mortality records in the infectious-disease category in 2025, compared with ca. 6–10 % in the four preceding years."
+    },
+    {
+     "quote": "I 2025 var det en økning i antall registreringer for HSMB og CMS sammenliknet med 2021–2024. HSMB har holdt seg på et stabilt nivå de fire forutgående årene (ca. 6–10 % av registreringene i kategori A «Infeksjonssykdommer»), men gjør i 2025 et hopp til 19 %",
+     "statement": "The authors find an increase in HSMB records among shared salmon mortality data in 2025, reaching 19 % of infectious-disease-category records after ca. 6–10 % in the four preceding years."
+    },
+    {
+     "quote": "Det har siden 2021 vært en gradvis økning i andelen dødfiskregistreringer som følge av vintersår grunnet M. viscosa, med en topp i 2024 (ca. 39 % av alle registreringene blant infeksjonssykdommene). I 2025 var det derimot en markant reduksjon i andelen registreringer innenfor denne kategorien, hvor de stod for ca. 14 %",
+     "statement": "The authors report that M. viscosa winter-sore records reached ca. 39 % of infectious-disease records in 2024 and fell to ca. 14 % in 2025."
+    },
+    {
+     "quote": "Dødelighet som følge av algeforgiftning står for 94 % av registreringene under denne kategorien i 2025, med hovedtyngden av registreringer i perioden mai til august",
+     "statement": "The authors find that algae poisoning accounted for 94 % of environmental-cause records in production areas PO10-PO13 in 2025, with most records from May to August."
+    },
+    {
+     "quote": "Hovedandelen av dødfiskregistreringer i PO1-PO4 var i 2025 registrert under «Ukjent årsak (F)» (årsak til ca. 47 % av all dødfisk i dette området)",
+     "statement": "The authors report that unknown causes accounted for ca. 47 % of shared salmon mortality records in production areas PO1-PO4 in 2025."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment presents distributions of registered salmon mortality causes nationally and across three groups of production areas, using data shared to Fiskehelsedatabasen/AquaCloud. The authors caution that the participating sites are not all Norwegian salmon sites, so the recorded category shares are not actual national prevalence. Shares may also change with participating companies, historical data updates, registration practices and data quality.\n\nNationally, trauma was the largest level-1 category in 2025, at 33,5 % of records, followed by infectious diseases at 28,1 %. Unknown causes rose to 27,4 % after falling to 21,2 % in 2024. Within infectious-disease records, HSMB increased to 19 % in 2025, while records for M. viscosa winter sores declined from a 2024 peak of ca. 39 % to ca. 14 %. Environmental mortality records included a marked algae-poisoning signal in northern production areas: algae poisoning represented 94 % of environmental-category records in PO10-PO13, mainly from May to August. The segment also describes regional contrasts in infectious, trauma, environmental, physiological and unknown causes.\n\nThe report compares annual and seasonal database records across 2021–2025 and production-area groups; it also references diagnostic data from the Veterinary Institute and private laboratories, plus survey rankings. It suggests, without confirming, that reduced winter-sore records may be connected to increased use of a new vaccine. The authors stress that these recorded shares are affected by recording and coverage limitations, so they should not be read as direct measures of disease prevalence or mortality across all farms.",
+   "chapter_title": "Fordeling av dødfiskregistreringer (laks) på nasjonalt nivå"
+  },
+  {
+   "index": 4,
+   "headings": [
+    "3 Fiskehelseøkonomi",
+    "Tabell 3.2.1 Estimerte produksjonskostnader relatert til fiskehelsekostnader 2024 (kr/kg rundvekt). Kilde: Fiskeridirektoratets lønnsomhetsundersøkelse for laks og regnbueørret og egne beregninger (se NORCE-rapport 41/2022 Kostnadsutvikling i oppdrett av laks og ørret: Hva koster biologisk risiko?).",
+    "Tabell 3.2.2 Rapporterte helsekostnader. Kilde: Fiskeridirektoratets Lønnsomhetsundersøkelse for laks og regnbueørret.",
+    "3.4 Samfunnsøkonomisk sykdomsbyrde",
+    "3.5 Helseøkonomi som en del av et beslutningsgrunnlag"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 20662,
+   "key_figures": [
+    {
+     "quote": "I 2013 ble et PD-utbrudd estimert til å koste rundt 55,4 millioner kroner, som tilsvarer ca. 80 millioner i 2025-kroner.",
+     "statement": "A cited estimate puts the cost of a PD outbreak in Norway in 2013 at 55,4 million kroner, equivalent to ca. 80 million in 2025-kroner."
+    },
+    {
+     "quote": "I perioden 2014–2020 var det fra 140 til 170 nye PD-tilfeller hvert år. For næringen tilsvarte dette dermed en årlig kostnad av PD på 10–12 milliarder kroner.",
+     "statement": "The authors report 140 to 170 new PD cases per year in Norway during 2014–2020 and an estimated annual industry cost of 10–12 billion kroner."
+    },
+    {
+     "quote": "I Chile falt produksjonen med 64 % fra 2008 til 2010. I tillegg ble antall sjøsatte laks redusert med 80 % fra 2007–2009.",
+     "statement": "The cited Chilean case reports production falling by 64 % from 2008 to 2010 and the number of salmon put to sea declining by 80 % from 2007–2009."
+    },
+    {
+     "quote": "Ifølge chilensk lakseindustri var tapet på rundt 2 milliarder USD i 2010, og 40 % av arbeiderne mistet arbeidsplassen sin.",
+     "statement": "According to the cited Chilean salmon industry estimate, the ILA crisis caused losses of around 2 billion USD in 2010, and 40 % of workers lost their jobs."
+    },
+    {
+     "quote": "På Færøyene falt produksjonen etter ILA-krisen med nesten 75 % mellom 2003 og 2006. Det tok omtrent 10 år før produksjonen var tilbake på 2003-nivå.",
+     "statement": "The cited Faroe Islands case reports production falling by almost 75 % between 2003 and 2006 and taking about 10 years to return to its 2003 level."
+    },
+    {
+     "quote": "Hvis oppdrettere venter over tre måneder med å slakte ut PD-smittet fisk, vil den kortsiktige kostnaden overstige den kortsiktige nytten.",
+     "statement": "The authors' preliminary assessment for PD control in PO8 finds that waiting over three months to slaughter infected fish makes short-term costs exceed short-term benefits."
+    },
+    {
+     "quote": "Hvis oppdrettere venter hele seks måneder med å slakte ut, viser foreløpige estimater at den forventede kostnaden for området er på rundt 1,2 milliarder.",
+     "statement": "The authors' preliminary estimate for the area in PO8 puts expected costs at around 1,2 billion if farmers wait six months to slaughter PD-infected fish."
+    },
+    {
+     "quote": "I en kost-nytte-vurdering gjort av utslakting som tiltak for å kontrollere PD (introduksjon av SAV2) i PO8, viser foreløpige estimater for området som helhet en forventet verdi på 521 millioner, sammenlignet med å ikke gjøre noe.",
+     "statement": "The authors' preliminary cost-benefit assessment for PD control following SAV2 introduction in PO8 estimates a benefit of 521 million for the area as a whole compared with taking no action."
+    },
+    {
+     "quote": "De rapporterte helsekostnadene (del av posten ‘andre driftskostnader’) har jevnt over økt siden 2015, men årsakene til økningen er ikke oppgitt, heller ikke hvilke kostnader som inngår i ‘helsekostnader’.",
+     "statement": "The authors report that the Directorate of Fisheries' reported health-cost item for Norwegian salmon and rainbow trout farming generally increased since 2015, while its causes and included costs are unspecified."
+    },
+    {
+     "quote": "2024|3,65|6,71",
+     "statement": "The Directorate of Fisheries' 2024 figures report health costs of 3,65 kr/kg nominal and estimated total direct health costs of 6,71 billion nominal kroner for salmon and rainbow trout farming."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors explain that health-economic calculations can inform decisions about prevention, treatment, and disease control, but are decision support rather than a final answer. Their preliminary cost-benefit example for PD control after SAV2 introduction in PO8 estimates a benefit of 521 million for the area if infected farms slaughter within one month, compared with doing nothing. The estimated benefit declines with delay; waiting over three months makes short-term costs exceed benefits, and waiting six months produces an expected area cost of around 1,2 billion. The authors describe a collective-action dilemma: an infected farm may gain in the short term by delaying slaughter, while exposing neighboring farms to infection and early slaughter. They note that uncompensated losses may seem unfair and that binding cooperation is difficult. The segment also discusses negative externalities, including impacts on wild fish and the environment, and says proposed mortality fees and lice quotas require careful assessment before full-scale implementation.",
+    "A5": "The authors identify limited and fragmented knowledge about the economic burden of disease in Norwegian farmed salmon, especially for non-notifiable diseases. Existing studies are often not directly comparable, measure different aspects, and may lead to double-counting if combined. The segment describes the WOAH Global Burden of Animal Diseases framework as a standardized approach the authors aim to adapt for Norwegian aquaculture. It compares actual production costs with a hypothetical production baseline in which fish have perfect health; economic feed conversion is suggested as one possible indicator, but the authors caution that it also captures factors unrelated to fish welfare, such as feed waste and changes in feed composition. Applying the framework requires production, disease, price, cost, prevention, and treatment data. The authors note that detailed farm data are often not public or readily available, while public data are limited. Systematic health records, standardized mortality-cause coding, and broader disease monitoring and reporting are identified as useful initiatives. No emerging technologies are discussed.",
+    "A6": "The authors describe a distributional conflict in disease-control decisions rather than a spatial-planning dispute. Rapid slaughter of a PD-infected farm can reduce infection risks and costs for the wider area, but impose a substantial short-term loss on that farm, depending on where it is in the production cycle. Delaying slaughter may benefit the infected farm in the short term while increasing the chance that neighboring farms must slaughter fish before planned harvest weight. The authors call this a collective-action dilemma and note that it may be perceived as unfair if losses are not compensated; effective action therefore requires binding cooperation among companies and authorities. More broadly, the authors say economic calculations cannot settle decisions alone: fish welfare, environmental impacts, profitability, food production, resource efficiency, and social acceptance can conflict. They emphasize ethical objectives and social expectations as part of decision-making.",
+    "A7": "The segment discusses disease-prevention and control measures that companies may use, including vaccination, preventive work, treatment, and biosecurity measures to prevent disease introduction and limit spread. It presents early slaughter of PD-infected fish in a non-endemic area as a potential area-level control strategy, while noting that its value depends on timing, disease effects, production stage, and uncertainty. The authors' preliminary PO8 example shows that individual-farm incentives may diverge from the wider area's interest, so farm-level action alone may not deliver the most effective outcome. The segment does not discuss measures specifically aimed at making spatial use more efficient or reducing the area occupied by aquaculture.",
+    "A8": "The authors explain that disease spread between neighboring farms can change the costs and benefits of control. In the PO8 example, delaying slaughter of PD-infected fish increases the risk of transmission to neighboring sites and can force additional farms to slaughter before planned harvest weight. The authors therefore find an area-level economic case for rapid slaughter in the short term, although an infected farm may have an incentive to delay. This is presented as a collective-action problem requiring binding cooperation. The segment does not discuss water connectivity, hydrodynamic pathways, or specific biosecurity distances between farms."
+   },
+   "summary": "This chapter considers the economics of fish health, covering disease costs, methods for estimating the burden of disease, the costs and benefits of biosecurity, and wider social consequences. It explains that disease can harm fish and reduce growth, increase mortality, lower slaughter quality, and require spending on prevention and treatment; broader effects may include reduced demand, trade restrictions, environmental impacts, and risks to wild fish. Historical examples include PD in Norway and ILA crises in Chile and the Faroe Islands. The text reports 140 to 170 new PD cases annually in 2014–2020 and an estimated yearly industry cost of 10–12 billion kroner. It also describes preliminary estimates for PD control in PO8: the expected area-level value is 521 million compared with taking no action, while waiting six months to slaughter infected fish is associated with an expected area cost of around 1,2 billion. The chapter stresses that disease-cost knowledge is incomplete, especially for non-notifiable diseases, and that existing estimates may not be comparable. It outlines the WOAH GBADs framework, which compares real production costs with a hypothetical perfect-health baseline, while noting limitations in using economic feed conversion as an indicator. The authors point to data gaps and the value of systematic health records and standardized mortality coding. They also discuss externalities, possible regulation, and conflicts between farm-level incentives and area-wide disease control. The segment draws on cited historical cases, existing cost studies, Fisheries Directorate data, and authors' preliminary estimates; it does not present a new spatial-planning analysis.",
+   "chapter_title": "3 Fiskehelseøkonomi"
+  },
+  {
+   "index": 5,
+   "headings": [
+    "4 Biosikkerhet",
+    "Standardisering",
+    "Teknologinøytralitet og prosjektering",
+    "Analysemetoder",
+    "4.3 Vaksinasjon som smittereduserende tiltak",
+    "Tabell 4.3.1: Autogene vaksiner til fisk i 2025. Antall søknader innvilget hos DMP per art. Agens fra lista forekommer i ulike sammensetninger i de omsøkte autogene vaksinene til en art. Agens kan dermed også kun være nevnt i avslåtte søknader. Data mottatt fra Direktoratet for medisinske produkter 11.02.2026."
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 23614,
+   "key_figures": [
+    {
+     "quote": "Forskrift om desinfeksjon av vann, akvakultur § 10 stiller krav om 99,9 % inaktiveringsgrad av bakterien Aeromonas salmonicida ssp. salmonicida for inntaksvann til settefisk.",
+     "statement": "The authors report that Norwegian regulation requires 99,9 % inactivation of this bacterium for intake water to juvenile-fish facilities; this threshold applies to approval of the method."
+    },
+    {
+     "quote": "Blant 500 undersøkte laksefisk er R. salmoninarum påvist med PCR i én rømt laks og i to eldre villaks – alle fanget i Orkla.",
+     "statement": "The authors report PCR detection of R. salmoninarum in one escaped farmed salmon and two older wild salmon among 500 salmonids examined in Orkla in 2025."
+    },
+    {
+     "quote": "I 2024 rømte 8 400 laks (gjennomsnittsvekt 7,3 kg) fra den BKD-smittede lokaliteten Reitholmen. I gjenfanget fisk var prevalensen i overkant av 2 %",
+     "statement": "The authors report that 8 400 salmon, with an average weight of 7,3 kg, escaped from the BKD-infected Reitholmen site in 2024, and prevalence among recaptured fish was over 2 %."
+    },
+    {
+     "quote": "I 2025 ble infeksiøs lakseanemi (ILA) stadfestet på 18 lokaliteter, og på sju av lokalitetene var fisken vaksinert",
+     "statement": "The authors report that ILA was confirmed at 18 Norwegian sites in 2025 and fish were vaccinated at seven of those sites."
+    },
+    {
+     "quote": "Totalt ble det rekvirert omtrent like mange PD-vaksinedoser til laks i 2025 (198 millioner) som i 2024 (194 millioner).",
+     "statement": "The authors report salmon PD-vaccine doses requisitioned in Norway, comparing 2025 (198 millioner) with 2024 (194 millioner)."
+    },
+    {
+     "quote": "I løpet av 2025 ble det totalt utlevert ca. 430 millioner doser av en ny vintersår-vaksine som ble godkjent i 2023",
+     "statement": "The authors report that approximately 430 millioner doses of a winter-ulcer vaccine approved in 2023 were dispensed in Norway in 2025."
+    },
+    {
+     "quote": "Omtrent 263 millioner laks ble stikkvaksinert med yersiniose-vaksine i 2025.",
+     "statement": "The authors report that approximately 263 millioner salmon were injection-vaccinated against yersiniosis in Norway in 2025."
+    },
+    {
+     "quote": "Der ble det bestemt å etablere et toppelederforum for å peke ut en felles videre vei mot hovedmålet",
+     "statement": "The authors describe establishment of an industry top-leadership forum in spring 2022; this passage gives no numerical finding."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors identify knowledge and measurement limitations relevant to aquaculture operations, though they do not discuss spatial decisions. A 2024 standardisation committee mapped technical and biological requirements for water disinfection and found knowledge gaps and limited research activity in recent years. The FHF-funded WaterSafe project, started in 2025 and led by the Norwegian Veterinary Institute, is intended to address some gaps, including microbial indicators and standardised sampling, analysis and efficacy measurement. The authors also describe inconsistent calculations of disinfection doses, limited knowledge of seasonal water-quality variation, and risks that changes such as heavy rainfall or algal blooms can reduce treatment efficacy. Reported variation between laboratories and the effects of sample transport and storage are further caveats.",
+    "A6": "",
+    "A7": "The authors describe biosecurity measures as systematic practices, routines and barriers that prevent pathogens entering a facility, spreading within it, or reaching other facilities, wild fish and the environment. They say measures should be risk-based and tailored to species, production type, location and disease situation, and cover the full production chain. Under the animal-health rules introduced in 2022, all aquaculture facilities must have an approved biosecurity plan. The industry established a top-leadership forum in 2022 to set shared principles, goals and measures, with work being operationalised nationally and through regional and subregional groups. The authors also discuss vaccination and water disinfection as disease-control measures, while noting limitations in evaluating vaccine effectiveness from available data.",
+    "A8": "The authors explain that open-net farming creates two-way infection risks between farmed and wild fish. High densities of susceptible hosts can amplify pathogens and increase infection pressure on wild fish; continuous host availability may also support pathogen establishment and selection for altered traits. The authors stress that transmission depends on pathogen, host and environmental factors, including temperature, and that susceptibility across fish species and pathogen variants remains incompletely understood. As a case, they report BKD outbreaks in PO4–PO6 since 2022 and describe surveillance in 2025: R. salmoninarum was detected by PCR in one escaped farmed salmon and two older wild salmon among 500 salmonids examined, all from Orkla. The bacteria could not be cultured from those individuals, and follow-up was planned for 2026. The authors say farm-to-farm spread can sharply increase infected numbers and “spill-back” pressure on wild fish, with escape of large fish a particular risk."
+   },
+   "summary": "This segment covers biosecurity, water disinfection, vaccination and pathogen exchange between farmed and wild fish. The authors define biosecurity as measures to prevent pathogen introduction and spread within and beyond aquaculture facilities. They describe risk-based, facility-specific practices across the production chain and note that rules introduced in 2022 require every aquaculture facility to have an approved biosecurity plan. An industry forum established in 2022 is developing shared measures through national, regional and subregional work.\n\nThe water-disinfection section discusses revision of regulations dating from 1997 and 2004, a 2024 standardisation committee, and the WaterSafe project started in 2025. The authors report knowledge gaps, inconsistent dose calculations and laboratory results, and challenges from seasonal water quality and sample handling. Existing approval is limited to UV and ozone, while the proposed regulatory approach is intended to support technology neutrality. Regulation requires 99,9 % inactivation of Aeromonas salmonicida ssp. salmonicida for approval of intake-water treatment methods for juvenile fish.\n\nVaccination is presented as a way to reduce disease and pathogen shedding, but the authors state that field effectiveness cannot be quantified from available data. They report 198 millioner salmon PD-vaccine doses requisitioned in 2025 and 194 millioner in 2024, and approximately 430 millioner doses of a winter-ulcer vaccine dispensed in 2025. Survey responses offer subjective assessments of vaccine performance. Finally, the authors discuss two-way transmission between farmed and wild fish, including BKD surveillance: among 500 salmonids examined, PCR detected the bacterium in one escaped salmon and two older wild salmon, all caught in Orkla. They identify substantial uncertainty about host susceptibility, pathogen variation and environmental effects.",
+   "chapter_title": "4 Biosikkerhet"
+  },
+  {
+   "index": 6,
+   "headings": [
+    "5 Klima og fiskehelse",
+    "Temperatur",
+    "Oksygeninnhold",
+    "Ekstremvær",
+    "Strøm, is og saltholdighet",
+    "Havforsuring"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 36827,
+   "key_figures": [
+    {
+     "quote": "Av totalt 141 respondenter, besvarte 126 de to spørsmålene som omhandlet klima og miljø.",
+     "statement": "The authors' Fiskehelserapporten 2025 survey received climate-and-environment responses from 126 of 141 respondents."
+    },
+    {
+     "quote": "Det hyppigst oppgitte forholdet var økt behov for lusebehandling eller forebyggende tiltak (81 %), fulgt av endringer i vannkvalitet – som temperatur, oksygen og pH.",
+     "statement": "In the authors' survey of 126 respondents in Norway, 81 % reported increased need for sea-lice treatment or preventive measures."
+    },
+    {
+     "quote": "Flere rapporterte også økning i forekomst av nye infeksjonssykdommer (39 %).",
+     "statement": "In the authors' survey of 126 respondents in Norway, 39 % reported increased occurrence of new infectious diseases."
+    },
+    {
+     "quote": "Mange oppga behovet for bedre overvåking og varsling (69 %) og økt tilpasning av drift (68 %).",
+     "statement": "In the authors' survey of 126 respondents in Norway, 69 % prioritized improved monitoring and warning, while 68 % prioritized adapting operations."
+    },
+    {
+     "quote": "Langtidsmålinger viser at vannet langs norskekysten har blitt 1–2 °C varmere siden 1935",
+     "statement": "The report cites long-term measurements showing that water along the Norwegian coast has warmed 1–2 °C since 1935."
+    },
+    {
+     "quote": "Flere vestlandsfjorder har hatt en nedgang i dypvannsoksygen på rundt 15 % de siste 30 årene.",
+     "statement": "The report states that several western Norwegian fjords have experienced a decline of around 15 % in deep-water oxygen over the last 30 years."
+    },
+    {
+     "quote": "Den marine hetebølgen i 2024 ga en økning på 5 grader varmere temperatur i nordområdene sammenlignet med temperaturer fra 2012–2023.",
+     "statement": "The report states that the 2024 marine heatwave brought temperatures in northern areas 5 degrees warmer compared with temperatures from 2012–2023."
+    },
+    {
+     "quote": "pH har falt fra 8,11 i 1985 til 8,04 i 2024,",
+     "statement": "The report cites global ocean pH values declining from 8,11 in 1985 to 8,04 in 2024."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that climate change should be incorporated into spatial planning and area management for aquaculture. Their policy recommendations say planning for new sites should account for expected temperature development, local ecosystem dynamics, potential disease and sea-lice pressure, and the tolerance limits and needs of the species to be farmed. They also recommend area-based management, continuous monitoring and locally adapted, dynamic measures. The report does not describe how these considerations are currently balanced against competing uses or industry development, nor does it evaluate a planning case.",
+    "A1": "The authors identify environmental conditions as increasingly important to site suitability: temperature, oxygen, salinity, pH, currents, local ecosystem dynamics and exposure to extreme weather can affect fish health, infrastructure and production. They recommend that new-site planning consider projected temperatures, local disease and sea-lice pressure, and the needs and tolerance limits of farmed species. The report also notes substantial variation between regions and nearby sites, making local data important. However, it does not discuss site availability, licensing rules, application steps or how these factors interact with licensing decisions.",
+    "A2": "",
+    "A3": "The authors explain that climate-related factors affect how aquaculture waste disperses and accumulates, and therefore affect an area's capacity to tolerate loads. Warming and declining oxygen may weaken fjord environments' ability to break down organic material; increased runoff can add organic matter and further reduce capacity. The authors also note major knowledge gaps about combined climate stressors and production systems. They recommend better environmental data, monitoring and modelling, and including local ecosystem dynamics in site planning. The segment does not describe formal cumulative-effect assessment methods or how such assessments are used to decide production limits or sites.",
+    "A4": "",
+    "A5": "The authors identify a major shortage of coastal environmental data and say current models and downscaled scenarios are inadequate for some coastal areas. They report that farms already record temperature, oxygen, salinity and pH, and argue that monitoring across more than a thousand sites could complement the eight fixed national hydrographic stations. Better data could improve coastal climate understanding, projections and targeted adaptation. The report also describes uncertainty about how closed systems, offshore cages and land-based facilities affect vulnerability. It recommends systematic event recording and monitoring, while cautioning that there are substantial gaps in evidence on climate effects across species and production systems.",
+    "A6": "",
+    "A7": "The authors recommend industry measures including improved environmental monitoring and warning, climate-risk management across the value chain, preparedness, area coordination, and locally adapted operational changes. Possible adaptations include changing stocking or harvest timing, reducing biomass, active oxygenation, and using semi-closed or closed systems, submerged cages or offshore facilities. They also propose considering species diversification, including fish and lower-trophic species, where appropriate. These are recommendations rather than evaluated outcomes. The authors warn that adaptation can become maladaptation if it creates ecological, social or economic costs, harms fish welfare, raises emissions, or locks operators into inflexible technology. They therefore call for integrated risk assessment and continuous evaluation.",
+    "A8": "The authors describe temperature and salinity as important to sea-lice development and reproduction, and state that warmer water can shorten generation time and accelerate development. They also discuss how changing currents and extreme weather may affect lice spread, and how warmer conditions can increase risks from other parasites and infectious diseases. The report recommends stronger preparedness and monitoring of known and emerging disease threats, and mentions area coordination as an adaptation measure. It does not specifically analyze water connectivity between farms, transmission pathways among connected sites or biosecurity arrangements."
+   },
+   "summary": "This chapter examines how climate change may affect Norwegian aquaculture, fish health and production environments, and sets out adaptation options. It covers warming, oxygen decline, extreme weather, changing currents and salinity, and ocean acidification. The report cites long-term measurements showing that coastal water has warmed 1–2 °C since 1935, and says several western fjords have seen deep-water oxygen decline by around 15 % over the last 30 years. A 2024 marine heatwave brought northern-area temperatures 5 degrees above those recorded in 2012–2023. The chapter describes potential effects on fish physiology, infrastructure, pathogens, parasites, harmful algae and jellyfish, while emphasizing that evidence is particularly limited on interacting stressors and on species and systems beyond conventional open sea cages.\n\nA survey in Fiskehelserapporten 2025 received climate-and-environment responses from 126 of 141 respondents. Increased need for sea-lice treatment or prevention was reported by 81 %, and 39 % reported increased occurrence of new infectious diseases. Respondents prioritized better monitoring and warning (69 %) and adapting operations (68 %). The authors recommend stronger monitoring, climate-informed site planning, area-based management, preparedness, operational and technological adaptation, and considering species diversification. They caution that poorly assessed interventions may cause maladaptation, with unintended ecological, social or economic consequences. The chapter repeatedly notes limited coastal data and uncertain projections, and calls for locally tailored, continuously evaluated responses.",
+   "chapter_title": "5 Klima og fiskehelse"
+  },
+  {
+   "index": 7,
+   "headings": [
+    "6 Fiskevelferd",
+    "Vurdering av fiskevelferd i 2025",
+    "6.1 Velferdsindikatorer",
+    "Automatisk registrerte velferdsindikatorer",
+    "For ytterligere informasjon om velferdsindikatorer, se Veterinærinstituttets faktaside:",
+    "Spørreundersøkelsen"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 49751,
+   "key_figures": [
+    {
+     "quote": "I 2025 er antall medikamentfrie avlusningsuker (3918 uker), økt med 24 % sammenliknet med 2024 (3163 uker).",
+     "statement": "Veterinary Institute authors report that medication-free delousing weeks for farmed fish in Norway rose to 3918 weeks in 2025, up 24 % from 3163 weeks in 2024."
+    },
+    {
+     "quote": "Antall alvorlige velferdshendelser er økt fra 1385 i 2024 til 1488 i 2025, der andelen som gjelder IMM øker mest (44 %).",
+     "statement": "Veterinary Institute authors report that serious welfare incidents at sea farms increased from 1385 in 2024 to 1488 in 2025, with 44 % related to IMM."
+    },
+    {
+     "quote": "Når det gjelder alvorlige velferdsmessige hendelser rapportert til Mattilsynet i 2025, var det 75 hendelser for rensefisk i sjø",
+     "statement": "Veterinary Institute authors report 75 serious welfare incidents involving cleaner fish at sea farms in Norway in 2025."
+    },
+    {
+     "quote": "Når det gjelder alvorlige velferdshendelser i forbindelse med landanlegg, er det registrert 284 hendelser i 2025, noe som er en tydelig økning sammenliknet med 238 hendelser i 2024.",
+     "statement": "Veterinary Institute authors report 284 serious welfare incidents at land-based facilities in 2025, compared with 238 in 2024."
+    },
+    {
+     "quote": "Veterinærinstituttets spørreundersøkelse blant fiskehelsepersonell viste at 77 av 127 respondenter hadde erfaring med kamerateknologi for automatisk registrering av velferdsindikatorer, 44 hadde ikke erfaring og seks svarte «vet ikke».",
+     "statement": "The authors' 2025 survey of fish-health personnel found that 77 of 127 respondents had experience with camera technology for automatically recording welfare indicators."
+    },
+    {
+     "quote": "På spørsmål om kameraregistrerte velferdsindikatorer var til vesentlig støtte i faglige vurderinger og/eller beslutninger, svarte 63 av 77 respondenter «ja», ti svarte «nei» og fire svarte «vet ikke».",
+     "statement": "The authors' survey found that 63 of 77 respondents with camera-technology experience said camera-recorded welfare indicators substantially supported professional assessments or decisions."
+    },
+    {
+     "quote": "Totalt er det gjennomført 20 revisjoner, hvorav 12 i 2025 (11 revisjonsrapporter publisert).",
+     "statement": "The authors report that the Norwegian Food Safety Authority had conducted 20 system audits of the industry in total, including 12 in 2025, with 11 audit reports published."
+    },
+    {
+     "quote": "Bølgehøyden på lokaliteten var i snitt 1,7 meter, der høyeste bølgehøyde målt var 5,3 meter.",
+     "statement": "The authors report that at one exposed aquaculture site whose permit was withdrawn, average wave height was 1,7 meter and the highest measured wave height was 5,3 meter."
+    }
+   ],
+   "pq_notes": {
+    "A0": "This segment does not set out how spatial plans allocate aquaculture areas or balance industry development against competing uses. It does describe a site-specific welfare case: the Norwegian Food Safety Authority withdrew a permit for an exposed site, citing, among other issues, lack of access for slaughter because of wave height. The passage presents this as a fish-welfare and operational risk, not as an account of the broader spatial-planning process.",
+    "A1": "The segment does not discuss licensing systems, the availability of coastal sites, or how planning and environmental considerations interact in applications. It does illustrate that site conditions can constrain operations: at one exposed site, wave conditions impeded access for slaughter and the permit was withdrawn. The authors also note that high waves can indirectly affect welfare by preventing husbandry, so operational access and fish-welfare risks matter when considering exposed locations.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors describe growing use of camera technology to record welfare indicators continuously and in real time. They report that 77 of 127 survey respondents had experience with it, and 63 of those 77 said it substantially supported professional assessments or decisions. They caution that camera data may be inaccurate or non-comparable across suppliers, should be checked manually, and cannot replace health examinations or staff expertise. The segment also discusses risks and access constraints at exposed sites, but does not assess how emerging technologies change siting opportunities or environmental impacts.",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment discusses disease prevention, welfare, and biosecurity management but does not examine water connectivity between farms or how connectivity affects disease transmission. As a policy and regulatory discussion, it says sites must maintain updated, site-specific biosecurity plans, and that an establishment's approval may be withdrawn if breaches of its plan are not corrected. The authors also call for more systematic disease reporting and better information on causes and spread to support targeted measures."
+   },
+   "summary": "This segment covers fish welfare, welfare indicators, regulation and management, reported welfare incidents, and challenges associated with technology and exposed sites. It argues for assessing welfare broadly, including health and biological function, the fish's own experience, and the opportunity for a natural life. Mortality is a useful but crude indicator, and survival alone does not establish good welfare. The government’s stated goal is to reduce mortality towards 5 % for all farmed fish species; the segment says that reaching this goal requires better knowledge of mortality causes and consistent, usable data.\n\nThe authors report that 2025 had 3918 medication-free delousing weeks, up 24 % from 3163 in 2024. Serious welfare incidents at sea farms rose from 1385 in 2024 to 1488 in 2025, with 44 % related to IMM. Land-based facilities had 284 reported serious incidents in 2025, compared with 238 in 2024. The authors caution that the reporting system changed in October 2024, making comparisons with earlier years less certain. Their survey found camera technology was used by 77 of 127 respondents; 63 of those 77 said it substantially supported professional assessments or decisions. They stress that manual checks and health examinations remain necessary.\n\nThe segment also discusses limited data on disease and mortality causes, proposals for welfare reporting and indicators, and the need for risk assessment and emergency preparedness. A site example describes permit withdrawal after access for slaughter was impaired by wave conditions. The authors warn that exposed and offshore operations require workable means to remove dead or weak fish and to respond to poor weather. This segment focuses on welfare and health rather than spatial planning, cumulative environmental assessment, or competing coastal uses.",
+   "chapter_title": "6 Fiskevelferd"
+  },
+  {
+   "index": 8,
+   "headings": [
+    "Innspill i spørreundersøkelsen til regelverk og forvaltning",
+    "HENDELSER MED SYKDOM LANDANLEGG",
+    "Figur 6.2.1 Fordelingen av sykdom der dette er oppgitt som hovedforhold ved alvorlige velferdsmessige hendelsene fra landanlegg i 2025 (N=56 hendelser). Der det er oppgitt flere sykdommer i en og samme hendelse er begge oppgitt (gjaldt tre hendelser).",
+    "6.3 Drift og metoder",
+    "Spørreundersøkelsen",
+    "Vurdering av situasjonen"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 49904,
+   "key_figures": [
+    {
+     "quote": "I spørreundersøkelsen kom det inn 52 fritekstsvar under «ytterligere kommentarer til fiskehelse- og velferdssituasjonen i norsk akvakulturnæring».",
+     "statement": "The authors report that their 2025 survey received 52 free-text responses on fish health and welfare in Norwegian aquaculture."
+    },
+    {
+     "quote": "Respondenter med erfaring med matfiskoppdrett av laks (N=119) og/eller regnbueørret (N=23) i Norge, fikk anledning til å besvare spørsmålene om de ulike alternative driftsformene",
+     "statement": "The authors’ 2025 survey invited respondents experienced in Norwegian salmon grow-out (N=119) and/or rainbow trout grow-out (N=23) to answer questions about alternative production systems."
+    },
+    {
+     "quote": "I 2025 var andelen norske fôrråvarer på knapt 10 %.",
+     "statement": "The authors report that Norwegian feed ingredients accounted for just under 10 % in 2025."
+    },
+    {
+     "quote": "Nytt for 2025 er at det totale antallet meldte hendelser igjen økte for landfasen, totalt 288 rapportert.",
+     "statement": "The authors report 288 total reported serious welfare events in the land phase in 2025."
+    },
+    {
+     "quote": "78 % (77 av 99 respondenter) oppga at grenseverdiene i veilederen benyttes, mot 52 % i 2024.",
+     "statement": "The authors’ survey found that 78 % (77 av 99) of respondents reported using the guidance thresholds in 2025, compared with 52 % in 2024."
+    },
+    {
+     "quote": "En stor andel, 44 % (35 respondenter) vet ikke lengden på utsettet.",
+     "statement": "The authors’ survey found that 44 % (35 respondents) did not know the duration of the sea phase after large-smolt transfer."
+    },
+    {
+     "quote": "For 21 % erfares situasjonen som uendret.",
+     "statement": "The authors’ survey found that 21 % of respondents experienced no change in health and welfare challenges after transition to large smolt."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not discuss spatial planning, area allocation, licensing, or how competing coastal uses are balanced. It does state that alternative production systems, like open cages, have locations that are more or less suitable. For fish welfare, key site conditions include a steady supply of suitable fresh water, removal of used water and waste, appropriate temperature, and low pathogen introduction. The authors do not connect these conditions to planning decisions or broader environmental and industry trade-offs.",
+    "A1": "The authors state that site suitability differs among alternative production systems and that water supply, removal of used water and waste, temperature, and pathogen exposure matter for successful operation. They also note that these systems may require larger areas or cause greater environmental interventions, particularly land-based production, and may have different escape and infection risks. The segment does not address coastal site availability, licensing procedures, or how spatial planning interacts with fish health. Survey responses indicate that alternative systems were generally associated with fewer delousing operations and other handling events than open cages, but the authors caution that definitions are unclear and results based on few respondents should be treated only as possible trends.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The segment draws on a 2025 survey of industry respondents and fish-health professionals, research studies, regulatory guidance, and reported welfare events. The authors caution that alternative-system survey results depend on respondents’ reference points and unclear technology definitions, and that some categories had very few responses. They identify a need to systematically build and share knowledge about alternative systems, including welfare outcomes, operational risks, and performance. The segment also describes a 2026 requirement for technology to be reported to authorities in connection with operating-plan approvals. It does not discuss spatial decision datasets or how emerging technologies change siting opportunities.",
+    "A6": "The survey’s free-text comments identify concerns about inadequate biosecurity and regional coordination. Respondents say zone-cooperation guidelines are not always followed, particularly for fallowing periods and use of boats to move smolt, harvest fish, or conduct non-medicinal delousing. They also call for greater information sharing and regional overview to support fish-health work. These are reported respondent views, not an assessment of conflicts in planning or siting. The segment does not discuss disputes between aquaculture and other coastal interests or the legitimacy of spatial decision processes.",
+    "A7": "The authors describe operational measures that may reduce welfare pressures, including preventing sea-lice exposure through alternative production systems, fewer delousing operations, and reduced handling. They emphasize that these systems need systematic risk management, internal control, competent staffing, monitoring, and backup systems, and that experience and data should be shared to avoid repeating mistakes. Survey respondents also proposed stronger biosecurity practices and information sharing. These points concern operational sustainability and animal welfare; the segment does not specifically evaluate industry measures for making spatial use more efficient.",
+    "A8": "The segment highlights biosecurity concerns raised in survey comments, including that regional cooperation rules are not always followed. Respondents particularly mention fallowing periods and boats used to move smolt or harvest fish, as well as non-medicinal delousing. The authors also state that low pathogen introduction is important for suitable production sites and that most infectious diseases affecting open-cage production can also affect alternative systems. Alternative systems may lower the risk of some surface-associated pathogens, depending on the system. The segment does not assess water connectivity between farms or quantify disease transmission between sites."
+   },
+   "summary": "This segment moves from survey comments on fish health and welfare into alternative production systems, nutrition, hatchery welfare, and sea-lice treatment. The authors report 52 free-text survey responses on fish health and welfare. Respondents call for stronger limits on fish stocked at sea, welfare-based growth criteria, better reporting of welfare indicators, greater information sharing, and improved biosecurity. In the discussion of alternative production systems, the authors describe potential benefits including fewer lice, less treatment-related welfare harm, and, depending on the system, reduced escape or infection risks. They also emphasize higher investment and operating demands, complex technology, and limited experience. Site suitability depends on fresh-water supply, waste removal, temperature, and pathogen exposure. Survey responses suggest fewer delousing and handling events in alternative systems, but unclear definitions and small respondent groups limit interpretation.\n\nThe segment also reports that Norwegian feed ingredients were just under 10 % in 2025, and summarizes research on feed composition, fish health, vitamin D, and gut microbiota. In hatcheries, approximately 25 % of total salmon mortality in the freshwater phase involved fish weighing 0–3 grams, while reported land-phase welfare events reached 288 in 2025. Survey findings on large smolt and delousing guidance are presented, including 78 % reporting use of guidance thresholds in 2025. Across these topics, the authors stress uncertainties, the need for further research, and the importance of sharing operational knowledge. The segment does not analyze spatial planning, licensing, cumulative effects, or competing coastal uses.",
+   "chapter_title": "6.3 Drift og metoder"
+  },
+  {
+   "index": 9,
+   "headings": [
+    "PO3 PO4 PO5 PO6",
+    "PO7",
+    "PO8",
+    "PO9",
+    "PO10",
+    "PO11"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 15963,
+   "key_figures": [
+    {
+     "quote": "I 2025 var det 84 søknader om unntaksvekst, hvorav 15 søknader fikk avslag.",
+     "statement": "The authors report that in Norway in 2025, 84 applications for growth exemptions were submitted and 15 were rejected."
+    },
+    {
+     "quote": "En gjennomgang av lokaliteter i PO3 og PO4 som fikk innvilget unntaksvekst i 2025 (N=42), viste at disse hadde færre behandlingsuker per produksjonsår (gjennomsnitt 3,8) enn andre anlegg i samme område (gjennomsnitt 6,1)",
+     "statement": "The authors' comparison of 42 sites granted growth exemptions in PO3 and PO4 in 2025 found averages of 3,8 treatment weeks per production year at those sites and 6,1 at other facilities in the same areas."
+    },
+    {
+     "quote": "Av behandlingsukene rapportert fra anlegg som fikk unntaksvekst, var 38 % utført på hele anlegget, mot 28 % for PO3 og PO4 totalt.",
+     "statement": "The authors report that in PO3 and PO4, 38 % of reported treatment weeks at facilities granted growth exemptions involved the whole facility, compared with 28 % for the areas overall."
+    },
+    {
+     "quote": "totalt ble det i 2025 meldt om 64 hendelser fra de 42 lokalitetene som ble innvilget unntaksvekst i PO3 og PO4 samme år.",
+     "statement": "The authors report 64 serious welfare events in 2025 from the 42 sites granted growth exemptions in PO3 and PO4 that year."
+    },
+    {
+     "quote": "Totalt 101 respondenter delte sine erfaringer med ulike avlusningsmetoder i den årlige spørreundersøkelsen blant fiskehelsepersonell og inspektører i Mattilsynet",
+     "statement": "The authors' 2025 survey of fish-health personnel and Norwegian Food Safety Authority inspectors had 101 respondents."
+    },
+    {
+     "quote": "Termolicer var i 2025, som i 2024, den metodikken som flest respondenter hadde erfaring med, og andelen er økt; 92 % i 2025, mot 87 % i 2024.",
+     "statement": "The authors' survey found that respondents with experience of Thermolicer increased from 87 % in 2024 to 92 % in 2025."
+    },
+    {
+     "quote": "Avlusning med ferskvann og Flatsetsundspyler (FLS) har også en økt andel av respondentene erfaring med, henholdsvis 84 % i år mot 80 % i 2024 og 76 % mot 63 % i 2024.",
+     "statement": "The authors' survey found experience with freshwater delousing among respondents was 84 % in 2025 versus 80 % in 2024, and experience with the Flatsetsund washer was 76 % versus 63 %."
+    },
+    {
+     "quote": "Når det gjelder medikamentelt fôr oppgir 35 % av respondentene, som har erfaring med metoden, redusert effekt, og ved medikamentelt bad oppgir 33 % redusert effekt.",
+     "statement": "The authors' 2025 survey found that 35 % of respondents experienced with medicated feed and 33 % experienced with medicinal baths reported reduced efficacy."
+    },
+    {
+     "quote": "andelen respondenter som vanligvis benytter høyeste temperatur intervall (33–34 ºC) er redusert fra 41 % i 2024 til 33 % i 2025.",
+     "statement": "The authors' survey found that the share of respondents usually using the highest temperature interval, 33–34 ºC, fell from 41 % in 2024 to 33 % in 2025."
+    },
+    {
+     "quote": "Femtito prosent (av 101 respondenter) svarte at det ikke hadde vært en endring i skader, mot 47 % i 2024.",
+     "statement": "The authors' survey found that 52 % of 101 respondents reported no change in external injuries associated with non-medicinal delousing in 2025, compared with 47 % in 2024."
+    },
+    {
+     "quote": "Tjuefire prosent mente at det har vært en forbedring mot 29 % i 2024.",
+     "statement": "The authors' survey found that 24 % of respondents perceived an improvement in external injuries in 2025, compared with 29 % in 2024."
+    },
+    {
+     "quote": "områder. Dette innebærer 10–30 % lakselusindusert dødelighet hos vill laksesmolt.",
+     "statement": "The report states that in the areas discussed, wild salmon smolt experience 10–30 % salmon-louse-induced mortality; the segment does not specify the underlying period or population estimate."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "The segment does not discuss site availability, spatial planning or the site-application process. It does report on a regulatory arrangement affecting production capacity: in 2025, 84 applications for growth exemptions were submitted and 15 were rejected. The report says rejections mainly followed breaches of lice-reporting or lice-level conditions, with other breaches involving limits on medicinal treatment, qualification-period conditions, or more than six non-medicinal treatments at one site. This concerns exemption eligibility rather than siting decisions.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment examines lice treatments, growth exemptions in the traffic-light system, and fish welfare. The report says the exemption scheme was originally intended for new operating methods or technologies that could reduce parasite and disease spread. It notes that the rules now allow a maximum of six non-medicinal delousing treatments per fish, while publicly available welfare documentation for six such treatments on the same fish group is still lacking. The authors warn that the arrangement may conflict with requirements to document welfare consequences before methods and equipment are used. In 2025, 84 exemption applications were received and 15 were rejected, mainly for breaches of lice reporting or lice-level conditions. A review of 42 approved sites in PO3 and PO4 found an average of 3,8 treatment weeks per production year, compared with 6,1 at other facilities in those areas. The authors caution that the calculation does not account for cases where only some pens were treated. They also report 64 serious welfare events from the 42 sites granted exemptions in those production areas during 2025.\n\nThe segment presents results from an annual survey of 101 fish-health personnel and inspectors. Thermolicer was the method most respondents had experience with, at 92 % in 2025 versus 87 % in 2024. Respondents reported mixed experiences of treatment efficacy and fish injuries. Free-text comments describe handling stress, temperature and oxygen concerns, repeated treatments, and variation between fish groups. These survey responses are reported experiences, not controlled efficacy or welfare measurements. The segment also suggests welfare clearance and stronger documentation as possible conditions for future growth, but does not assess spatial planning or site selection.",
+   "chapter_title": "Lakselusbehandlinger og fiskevelferd"
+  },
+  {
+   "index": 10,
+   "headings": [
+    "27 °C eller mindre 28 °C 29-30 °C 31-32 °C 33-34 °C Vet ikke/ingen erfaring",
+    "Figur 6.6.8 Prosentandel av respondentene som oppgir høyeste temperatur som benyttes under avlusning der termisk inngår som enkelt prinsipp eller i kombinasjon med andre behandlingsprinsipp. Antall respondenter (N) er for kolonnen fra venstre: N=96, N=94, N=94 og N=93.",
+    "6.7 Slaktedata som velferdsindikator",
+    "Slaktemeldinger",
+    "For ytterligere informasjon om velferd ved slakting, se Veterinærinstituttets faktaside:",
+    "Tabell 6.7.1 Oversikt over slaktedata for 2025 som rapportert fra slakterier og slaktebåter til Mattilsynet, fordelt på laks, regnbueørret og torsk. Antall slaktmeldinger, totalt volum slaktet (sløydvekt), og mengde klassifisert som henholdsvis superior, ordinær, produksjon og utkast."
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 29762,
+   "key_figures": [
+    {
+     "quote": "Etter datavask hadde materialet totalt 6566 rader med slaktemeldinger",
+     "statement": "The authors’ cleaned 2025 slaughter dataset contained 6566 slaughter notifications."
+    },
+    {
+     "quote": "Disse dataene representerer, basert på vekt, 104 % av laksen og 104 % av regnbueørreten som ble slaktet i Norge i 2025",
+     "statement": "The authors’ 2025 dataset represented, by weight, 104 % of Norwegian salmon and 104 % of Norwegian rainbow trout slaughtered that year."
+    },
+    {
+     "quote": "Antall slaktemeldinger 5571 880 115",
+     "statement": "The authors’ 2025 slaughter data included 5571 notifications for salmon, 880 for rainbow trout and 115 for cod."
+    },
+    {
+     "quote": "Superiorandel, % 86,9 91,2 72,7",
+     "statement": "The authors’ 2025 dataset showed superior shares of 86,9 % for salmon, 91,2 % for rainbow trout and 72,7 % for cod."
+    },
+    {
+     "quote": "Superiorandel varierer mellom produksjonsområdene fra 83 % (PO6) til 91 % (PO11)",
+     "statement": "The authors found that salmon’s 2025 superior share ranged from 83 % in PO6 to 91 % in PO11."
+    },
+    {
+     "quote": "I første halvår av 2025 var det ukentlige slaktevolum ca. 25 tusen tonn og superiorandelen i gjennomsnitt 79 %. Andre halvår økte det ukentlige slaktevolum til ca. 35 tusen tonn",
+     "statement": "The authors reported that weekly slaughter volume was ca. 25 tusen tonn with an average superior share of 79 % in the first half of 2025, rising to ca. 35 tusen tonn in the second half."
+    },
+    {
+     "quote": "Gjennomsnittlig superiorandel var 86,5 % (25-persentilen var 82,0 %, medianen 90,4 % og 75-persentilen var 94,4 %).",
+     "statement": "The authors found that the average 2025 superior share across 607 salmon and/or rainbow-trout sites was 86,5 %, with a 25th percentile of 82,0 %, a median of 90,4 % and a 75th percentile of 94,4 %."
+    },
+    {
+     "quote": "Sammenlignet med 2024-tall var volumøkningen i 2025 på 14 % for laks og 16 % for regnbueørret.",
+     "statement": "The authors reported that Norwegian slaughter volume in 2025 increased from 2024 by 14 % for salmon and 16 % for rainbow trout."
+    },
+    {
+     "quote": "I 2025 ble det brukt i overkant av 1,4 millioner forsøksdyr i Norge",
+     "statement": "The authors reported that just over 1,4 millioner experimental animals were used in Norway in 2024."
+    },
+    {
+     "quote": "Fisk utgjorde 95,5 % av det totale antallet, omtrent som tidligere år.",
+     "statement": "The authors reported that fish accounted for 95,5 % of all experimental animals used in Norway in 2024."
+    },
+    {
+     "quote": "Atlantisk laks alene står for 51 %, en reduksjon på 26 % fra året før",
+     "statement": "The authors reported that Atlantic salmon accounted for 51 % of experimental animals in 2024, a reduction of 26 % from the previous year."
+    },
+    {
+     "quote": "Om lag 80 % av den atlantiske laksen benyttes i forsøk som er klassifisert som mild belastningsgrad.",
+     "statement": "The cited Norecopa statistics indicate that about 80 % of Atlantic salmon used in experiments in 2024 were in trials classified as mildly burdensome."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment records respondents’ concerns that boats and equipment moved between areas may compromise biosecurity and contribute to the introduction and establishment of new diseases. This is a report of survey respondents’ views, not a quantified analysis of transmission or water connectivity. The segment also calls for sufficient delousing, slaughter and emergency-slaughter capacity operating within an area, but does not explain how farm connectivity or spatial arrangements determine disease spread."
+   },
+   "summary": "This segment first reports survey comments on delousing and then presents slaughter data as a fish-welfare indicator. Respondents call for preventive measures against sea lice, including shielding or closed units, lower density, shorter production time and earlier slaughter. They describe high sea temperatures, lice pressure and frequent treatments as unsustainable, express concern about biosecurity when boats and equipment move between areas, and say that area-based delousing, slaughter and emergency-slaughter capacity is needed. The report also discusses laser delousing: 48 respondents shared experience, with perceived benefits dependent on conditions and limitations in evidence about welfare effects.\n\nThe main section analyses 2025 slaughter notifications for salmon, rainbow trout and cod. After data cleaning, the dataset contained 6566 notifications and represented, by weight, 104 % of salmon and 104 % of rainbow trout slaughtered in Norway. Reported superior shares were 86,9 % for salmon, 91,2 % for rainbow trout and 72,7 % for cod. Salmon superior shares ranged from 83 % in PO6 to 91 % in PO11. Slaughter volumes increased from 2024 by 14 % for salmon and 16 % for rainbow trout. The report notes that superior share is usually calculated by weight, although counting fish could better reflect welfare; it also recommends retaining reasons for downgrading in official reporting.\n\nA reporting-form change in 2025 removed downgrade reasons from later notifications, making those results less certain. The segment then covers experimental fish in 2024, reporting over 1,4 million experimental animals in Norway, 95,5 % of them fish. The material includes counts, regulatory context and calls for stronger 3R efforts. Its limits include missing downgrade data, possible slaughter-data errors, and particular uncertainty in interpreting cod results.",
+   "chapter_title": "6.7 Slaktedata som velferdsindikator"
+  },
+  {
+   "index": 11,
+   "headings": [
+    "7 Virussykdommer hos laksefisk i oppdrett",
+    "For ytterligere informasjon om laksepox, se Veterinærinstituttets faktaside:",
+    "7.1 Pankreassykdom (PD)",
+    "Om sykdommen",
+    "For ytterligere informasjon om PD, se Veterinærinstituttets faktaside:",
+    "Bekjempelse"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 49558,
+   "key_figures": [
+    {
+     "quote": "I 2025 ble ILA stadfestet på 18 sjølokaliteter",
+     "statement": "The authors report confirmed infectious salmon anaemia on 18 sea sites in Norway in 2025.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "Basert på Veterinærinstituttets egne undersøkelser og data som oppdrettsselskapene har delt fra undersøkelser på private laboratorier, er ILAV HPR0 påvist på til sammen 78 lokaliteter i 2025",
+     "statement": "The authors report ILAV HPR0 detections at 78 sites in Norway in 2025, based on institute and shared private-laboratory data.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "I 2025 ble det registrert totalt 44 nye PD-tilfeller (13 SAV2 og 31 SAV3)",
+     "statement": "The authors report 44 new pancreas disease cases, comprising 13 SAV2 and 31 SAV3 cases, in Norway in 2025.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "Sammenstilte data fra Veterinærinstituttet og de private laboratoriene viste at IPN ble påvist hos 37 anlegg med laks og tre anlegg med regnbueørret i 2025.",
+     "statement": "The authors report IPN detections at 37 salmon sites and three rainbow trout sites in Norway in 2025, using combined institute and private-laboratory data.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "IPN-virus ble påvist (hovedsakelig med PCR) på 120 lokaliteter med laks og fire lokaliteter med regnbueørret.",
+     "statement": "The authors report IPN virus detections, mainly by PCR, at 120 salmon sites and four rainbow trout sites in Norway in 2025.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "I 2025 ble HSMB hos laks diagnostisert på 167 lokaliteter, hovedsakelig matfiskanlegg, men også i noen settefiskanlegg.",
+     "statement": "The authors report histopathological HSMB diagnoses at 167 salmon sites, mainly grow-out facilities, in Norway in 2025.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "PRV-3 hos regnbueørret ble påvist på 18 lokaliteter i 2025, noe som er en økning fra elleve i 2024.",
+     "statement": "The authors report PRV-3 detections at 18 rainbow trout sites in Norway in 2025, compared with eleven in 2024.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "Basert på sammenstilte data fra Veterinærinstituttet og private laboratorier, ble det i 2025 påvist CMS på 114 lokaliteter",
+     "statement": "The authors report CMS diagnoses at 114 sites in Norway in 2025, based on combined institute and private-laboratory data.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "Fisken var vaksinert mot ILA ved sju lokaliteter hvor ILA ble stadfestet.",
+     "statement": "The authors report that fish were vaccinated against ILA at seven of the sites with confirmed ILA in Norway in 2025.",
+     "source": "authors' finding"
+    },
+    {
+     "quote": "SAV spres innad og mellom sjølokaliteter via vannstrømmer, eller med transport og med flytting av infiserte populasjoner mellom sjølokaliteter.",
+     "statement": "The authors describe water currents, transport, and movements of infected populations as routes for SAV spread within and between sea sites.",
+     "source": "authors' finding"
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": "The authors describe disease transmission between sea sites as an operational and biosecurity concern. SAV can spread within and between sites through water currents, transport, and movements of infected populations. The report also considers horizontal spread between nearby sites likely in some ILA clusters, including in PO7 and PO9, while infected fish may also have been moved between sites. For PD, preclinical infection can make early detection difficult; the authors emphasize screening, fallowing, and controls on smolt and harvest-fish transport. They report that ILAV HPR0 was detected at a higher proportion of recirculating-water hatcheries than flow-through hatcheries, but do not establish a cause. These findings concern disease connectivity and biosecurity, not spatial-planning rules."
+   },
+   "summary": "This chapter reviews viral diseases in farmed salmonids in Norway, combining official disease records, institute and private-laboratory data, surveillance information, and a questionnaire of fish-health personnel and inspectors. It covers ILA, pancreas disease (PD), IPN, HSMB, and CMS, including disease characteristics, diagnosis, control, and the 2025 situation. The authors report 18 confirmed ILA sites and three additional suspicions arising in 2025; ILAV HPR0 was detected at 78 sites using institute and company-shared laboratory data. They describe suspected links between some ILA outbreaks and hatchery HPR0, and probable horizontal spread between nearby sea sites in some areas. PD had 44 new cases, while IPN virus was detected at 120 salmon sites and four rainbow trout sites; the authors characterize recent IPN trends as concerning, including detections in fish bred for resistance and vaccinated stocks. HSMB was diagnosed at 167 salmon sites, and CMS at 114 sites. Survey responses identify HSMB as a major concern for mortality in grow-out salmon, especially in northern Norway, while the report cautions that disease may be underdiagnosed or inconsistently diagnosed. The authors also describe water currents, fish movements, and transport as transmission routes, and emphasize surveillance, biosecurity, and rapid removal of infected stocks. Counts are subject to limitations: some diseases are not reportable, private-laboratory coverage varies over time, and virus detection alone does not always establish clinical disease. The segment addresses fish health and transmission rather than spatial planning or allocation of coastal areas.",
+   "chapter_title": "7 Virussykdommer hos laksefisk i oppdrett"
+  },
+  {
+   "index": 12,
+   "headings": [
+    "Diagnoser fordelt på produksjonsområder",
+    "Spørreundersøkelsen",
+    "Medikamentfri avlusing og CMS",
+    "Vurdering av situasjonen for CMS",
+    "7.6 Viral hemoragisk septikemi (VHS) og infeksiøs hematopoetisk nekrose (IHN)",
+    "Om sykdommene"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 49501,
+   "key_figures": [
+    {
+     "quote": "Det ble diagnostisert CMS på 33 lokaliteter i dette produksjonsområdet, en økning fra 23 i 2024. Dette utgjorde 29 % av alle påvisningene.",
+     "statement": "The authors report that CMS was diagnosed at 33 sites in production area PO6 in Norway in 2025, up from 23 in 2024, accounting for 29 % of all detections."
+    },
+    {
+     "quote": "Det ble heller ikke i 2025 påvist VHS eller IHN i Norge.",
+     "statement": "The authors report that surveillance detected no VHS or IHN in Norway in 2025."
+    },
+    {
+     "quote": "Sammenstilte tall fra Veterinærinstituttet og private laboratorier viser at vintersår, uansett underliggende årsak, ble påvist på 299 lokaliteter med laks i løpet av 2025.",
+     "statement": "The authors’ combined data from the Norwegian Veterinary Institute and private laboratories show winter sores, regardless of cause, at 299 Norwegian salmon sites during 2025."
+    },
+    {
+     "quote": "Det ble påvist M. viscosa på 246 lokaliteter i 2025 (figur 8.4.3), noe som innebærer en moderat nedgang fra 2024 da M. viscosa ble påvist på 289 lokaliteter.",
+     "statement": "The authors’ combined data show M. viscosa detections at 246 Norwegian sites in 2025, compared with 289 sites in 2024."
+    },
+    {
+     "quote": "På 94 lokaliteter ble det påvist blandingsinfeksjoner med både Moritella og Tenacibaculum spp. i 2025.",
+     "statement": "The authors’ combined data show mixed Moritella and Tenacibaculum spp. infections at 94 Norwegian sites in 2025."
+    },
+    {
+     "quote": "I 2025 ble Ph. atlanticus subsp. atlanticus isolert ved dyrkning og/eller pasteurellose påvist ved histopatologisk og immunhistokjemisk undersøkelse hos laks på 34 lokaliteter (figur 8.5.1).",
+     "statement": "The authors report that Ph. atlanticus subsp. atlanticus was isolated or pasteurellosis was diagnosed at 34 Norwegian salmon sites in 2025."
+    },
+    {
+     "quote": "Sammenstilte data (Kapittel 1 Datagrunnlag) viser at Y. ruckeri ble påvist, ved dyrkning og/eller PCR, hos oppdrettet atlantisk laks fra 36 lokaliteter i 2025",
+     "statement": "The authors’ combined data show Y. ruckeri detected by culture and/or PCR at 36 Norwegian farmed Atlantic salmon sites in 2025."
+    },
+    {
+     "quote": "ifølge VetReg ble ca. 263 millioner doser av vaksinen rekvirert i 2025",
+     "statement": "The authors cite VetReg data indicating that approximately ca. 263 millioner doses of the yersiniosis vaccine were requisitioned in Norway in 2025."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment discusses disease transmission and operational practices affecting fish health, but does not assess water connectivity between farms as a spatial planning factor. The authors describe horizontal transmission of Flavobacterium psychrophilum between fish and possible vertical transmission from broodfish to eggs, and recommend biosecurity, egg disinfection and avoiding movement of infected fish to new areas. For yersiniosis, they report that stress can increase bacterial shedding from carrier fish, potentially exposing susceptible fish treated together or later in the same water. The segment also notes that pasteurellosis may spread horizontally between nearby sites, although its transmission routes and environmental survival are unknown. These are disease-control observations, not a broader analysis of farm-to-farm connectivity."
+   },
+   "summary": "This segment concludes the account of CMS, covers VHS and IHN, and presents several bacterial diseases affecting farmed salmonids. For CMS, reported diagnoses rose in some production areas; PO6 remained a core area, with diagnoses at 33 sites, representing 29 % of detections. Survey respondents ranked CMS fifth among salmon health challenges, and the authors associate stressful non-medicinal delousing with possible progression to clinical disease in infected fish. The segment reports no VHS or IHN detections in Norway in 2025; both are listed diseases for which an outbreak leads to destruction of the affected population and establishment of restriction zones.\n\nThe bacterial-disease overview describes winter sores, pasteurellosis, yersiniosis, flavobacteriosis, furunculosis and BKD, among others. Combined data show winter sores at 299 salmon sites in 2025, with M. viscosa at 246 sites and mixed Moritella and Tenacibaculum infections at 94. Pasteurellosis was detected at 34 salmon sites, while Y. ruckeri was found at 36 farmed Atlantic salmon sites. The authors discuss vaccination, biosecurity, screening and husbandry as disease-control measures, while noting that some conditions are not reportable and may be underreported. Survey responses and diagnostic data inform the assessments, but the authors caution that submissions do not always provide a complete picture. The segment focuses on fish health and disease management rather than aquaculture siting or spatial planning.",
+   "chapter_title": "7.6 Viral hemoragisk septikemi and 8 Bakteriesykdommer hos laksefisk i oppdrett"
+  },
+  {
+   "index": 13,
+   "headings": [
+    "For ytterligere informasjon om piscirickettsiose, se Veterinærinstituttets faktaside:",
+    "Bekjempelse",
+    "Helsesituasjonen i 2025",
+    "Offisielle data",
+    "Spørreundersøkelsen",
+    "Vurdering av situasjonen for piscirickettsiose"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 17496,
+   "key_figures": [
+    {
+     "quote": "Det ble meldt om mistanke om piscirickettsiose hos laks på tre lokaliteter i 2025, to lokaliteter i PO8 og én lokalitet i PO9. Ingen av mistankene ble bekreftet.",
+     "statement": "The authors report three suspected piscirickettsiosis cases in salmon at Norwegian sites in 2025, two in PO8 and one in PO9, with none confirmed."
+    },
+    {
+     "quote": "var det 15 lokaliteter med påvist mykobakteriose i 2025. Sakene hadde geografisk opprinnelse fra flere produksjonsområder med PO1-PO2 som sørligste registrering og nordover til og med PO8.",
+     "statement": "The authors’ combined data from the Norwegian Veterinary Institute and private laboratories recorded mycobacteriosis at 15 sites across production areas PO1-PO2 through PO8 in 2025."
+    },
+    {
+     "quote": "Tolv av sykdomstilfellene stammet fra den sørlige halvdelen av kystlinja (PO1-PO5).",
+     "statement": "The authors report that 12 mycobacteriosis cases in Norway in 2025 came from the southern half of the coastline, PO1-PO5."
+    },
+    {
+     "quote": "Det meldes om færre (8) stadfestinger av Mycobacterium spp., og vi har ikke fullstendig kjennskap til hva som er grunnlaget for å stille diagnose i de ulike tilfellene med sykdomspåvisning.",
+     "statement": "The authors report 8 confirmed Mycobacterium spp. identifications in Norway in 2025 and note uncertainty about the diagnostic basis across cases."
+    },
+    {
+     "quote": "Antall årlige sykdomspåvisninger av mykobakteriose ved Veterinærinstituttet fra 2018 til 2025 har variert fra ingen til åtte tilfeller.",
+     "statement": "The authors report that annual mycobacteriosis detections at the Norwegian Veterinary Institute ranged from none to eight cases during 2018 to 2025."
+    },
+    {
+     "quote": "Antall påvisninger var høyere i 2025 enn i 2024, og omfattet totalt 15 påviste tilfeller fra 12 unike lokaliteter (opp fra fire tilfeller i 2024).",
+     "statement": "The authors, citing Pharmaq Analytiq data, report 15 mycobacteriosis detections from 12 unique Norwegian sites in 2025, up from four cases in 2024."
+    },
+    {
+     "quote": "Ni av tilfellene var fra matfiskanlegg, fem fra settefisk og én fra stamfisk.",
+     "statement": "The authors report that the 15 mycobacteriosis cases in 2025 comprised nine from food-fish farms, five from juvenile-fish facilities and one from a broodstock facility."
+    },
+    {
+     "quote": "Ifølge sammenstilte data fra Veterinærinstituttet og private laboratorier (Kapittel 1 Datagrunnlag) ble infeksjoner med Vibrio anguillarum, som gir sykdommen klassisk vibriose, påvist hos laks i fire anlegg i henholdsvis PO1-PO2, PO4, PO6 og PO7.",
+     "statement": "The authors’ combined laboratory data recorded Vibrio anguillarum infections in salmon at four Norwegian facilities in PO1-PO2, PO4, PO6 and PO7."
+    },
+    {
+     "quote": "Fra regnbueørret ble V. anguillarum påvist på 14 lokaliteter, 11 i PO4 og tre i PO3.",
+     "statement": "The authors’ combined laboratory data recorded V. anguillarum at 14 rainbow-trout sites in Norway, 11 in PO4 and three in PO3."
+    },
+    {
+     "quote": "Vibrio splendidus ble isolert i forbindelse med diagnostisk arbeid fra 107 lakseanlegg spredt langs hele kysten, men hovedsakelig i PO3 (21 lokaliteter) og PO6 (29 lokaliteter).",
+     "statement": "The authors report that diagnostic work isolated Vibrio splendidus from 107 salmon facilities along the Norwegian coast, including 21 sites in PO3 and 29 in PO6."
+    },
+    {
+     "quote": "Forbruket i 2025 var på 498 kg og representerte dermed en reduksjon på 211 kg sammenliknet med 2024.",
+     "statement": "The authors report antibiotic use of 498 kg of active substance for Norwegian farmed fish, including cleaner fish, in 2025, a reduction of 211 kg compared with 2024."
+    },
+    {
+     "quote": "Av utleveringene av antibiotika i 2025 (136) var 72 % (98) til marine arter (94 til kveite og 4 til torsk).",
+     "statement": "The authors report that, among 136 antibiotic prescriptions issued for farmed fish in Norway in 2025, 72 % (98) were for marine species, including 94 for halibut and 4 for cod."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment discusses disease transmission rather than spatial connectivity between farms. In its account of mycobacteriosis, the authors state that infection most likely occurs through direct contact with infected fish, feed or water; the incubation period can last several weeks, and infected fish may show no clinical signs for several years. For piscirickettsiosis, the authors identify knowledge gaps around the bacterial reservoir and transmission mechanisms, particularly in the Norwegian/North Atlantic context, and say these gaps have hindered effective control measures. The segment does not assess water-current connectivity, transmission distances between sites, or coordinated biosecurity across farm networks."
+   },
+   "summary": "This segment covers piscirickettsiosis, mycobacteriosis, other bacterial infections, and sensitivity to antibacterial agents and antibiotic use. For piscirickettsiosis, three suspected cases in salmon at sites in PO8 and PO9 were reported in 2025, but none was confirmed. The authors note knowledge gaps about reservoirs and transmission, limited treatment options, and no vaccine approved for use in Norway. They warn that rising sea temperatures could create a risk of the disease becoming established as a serious, persistent problem.\n\nFor mycobacteriosis, combined data from the Norwegian Veterinary Institute and private laboratories found 15 affected sites in 2025, with 12 cases from PO1-PO5; 8 Mycobacterium spp. identifications were confirmed. The report notes uncertainty about the basis for diagnoses across cases and that the disease is not notifiable. Survey respondents did not consider it a substantial problem for farmed salmon, although some respondents reported mortality or a worsening problem in juvenile fish. There is no effective treatment or approved vaccine. Transmission is considered likely through contact with infected fish, feed or water.\n\nThe section also reports bacterial detections, including Vibrio anguillarum in salmon and rainbow trout and Vibrio splendidus isolated from 107 salmon facilities, though fish-health personnel considered it likely associated with clinical disease in only 15 cases. Antibiotic use for farmed fish, including cleaner fish, was 498 kg in 2025, a reduction of 211 kg compared with 2024. The report says there was little evidence of widespread or increasing resistance. Data sources include official and private laboratory records, a respondent survey, and prescribing data; diagnostic coverage and the basis for some disease identifications remain limitations.",
+   "chapter_title": "8.8 Mykobakteriose"
+  },
+  {
+   "index": 14,
+   "headings": [
+    "9 Soppsykdommer hos laksefisk",
+    "Om sykdommen",
+    "Bekjempelse",
+    "For ytterligere informasjon om saprolegniose, se Veterinærinstituttets faktaside:",
+    "Helsesituasjonen i 2025",
+    "Data fra Veterinærinstituttet"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 49858,
+   "key_figures": [
+    {
+     "quote": "I 2025 har det imidlertid ikke vært påvist saprolegniose eller systemisk mykose fra innsendelser fra fisk i oppdrett.",
+     "statement": "Veterinary Institute submissions from farmed fish in Norway yielded no detected saprolegniosis or systemic mycosis in 2025; this is the authors’ report of surveillance data."
+    },
+    {
+     "quote": "For laks i settefiskfasen erfarte syv av 62 respondenter at sykdommen hadde ført til dødelighet, fem av 60 at den hadde påvirket fiskevelferden negativt, fire av 57 at de hadde registrert en økende forekomst og to av 59 opplevde at sykdommen førte til redusert tilvekst.",
+     "statement": "For Norwegian salmon in the juvenile production phase, the authors’ 2025 survey reports respondent counts for mortality, welfare effects, increasing occurrence and reduced growth associated with saprolegniosis."
+    },
+    {
+     "quote": "Utslippet av lakseluslarver fra oppdrettsanlegg i perioden med lavere lusegrense om våren økte fra 2024 til 2025 i ti av de 13 produksjonsområdene.",
+     "statement": "The authors report that spring salmon-louse larval output from Norwegian farms increased from 2024 to 2025 in ten of the 13 production areas."
+    },
+    {
+     "quote": "I seks produksjonsområder var larveutslippet i utvandringsperioden i 2025 også høyere enn alle år i femårsperioden før 2024.",
+     "statement": "The authors report that 2025 larval output during wild smolt migration exceeded every year in the five-year period before 2024 in six Norwegian production areas."
+    },
+    {
+     "quote": "Det høyeste utslippet var i PO6 med en topp på over 20 milliarder luselarver per uke, etterfulgt av PO3 med over 10 milliarder.",
+     "statement": "The authors’ estimate for Norwegian production areas in autumn 2025 found peak weekly salmon-louse larval output above 20 billion in PO6 and above 10 billion in PO3."
+    },
+    {
+     "quote": "Fra 2024 til 2025 var denne reduksjonen på 19 % (146 behandlingsuker).",
+     "statement": "The authors report a 19 % reduction, amounting to 146 treatment-weeks, in medicinal salmon-louse treatments in Norway from 2024 to 2025."
+    },
+    {
+     "quote": "Antall innrapporterte medikamentfrie avlusninger gikk 24 prosent opp fra 2024 til 2025, og var det høyeste antallet registrert så lenge data har blitt samlet inn (siden i 2012)",
+     "statement": "The authors report that non-medicinal delousing reports in Norway rose 24 percent from 2024 to 2025, reaching the highest count since data collection began in 2012."
+    },
+    {
+     "quote": "Det var 305 lokaliteter som avluste med ferskvann (alene eller i kombinasjon). Av disse var det 125 lokaliteter som brukte ferskvann i mer enn to uker i løpet av 2025.",
+     "statement": "The authors report that 305 Norwegian farm sites used freshwater delousing alone or in combination in 2025, and 125 of those sites used it for more than two weeks."
+    },
+    {
+     "quote": "Sammenstilte data fra Veterinærinstituttet og de private laboratoriene viser at parvicapsulose ble påvist på 18 lokaliteter med laks, noe som er på samme nivå som i 2024.",
+     "statement": "Combined Veterinary Institute and private laboratory data, as reported by the authors, found parvicapsulosis at 18 Norwegian salmon sites in 2025, the same level as in 2024."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The segment’s knowledge base is disease surveillance, laboratory submissions, weekly farm-reported lice counts, temperature and fish numbers, together with a respondent survey of fish-health personnel and inspectors. The authors explain that calculated larval output uses reported lice counts, sea temperatures and fish numbers, plus knowledge of lice reproduction and egg hatching at different temperatures; they cite Stige et al. (2021) for that method. Surveillance has important limitations: saprolegniosis is usually diagnosed and treated in the field, so Veterinary Institute submissions are limited and do not reflect its actual scale. The survey likewise reflects respondents’ experience rather than comprehensive case counts. The authors also say parvicapsulosis detections may underestimate its real distribution. These are disease-monitoring findings, not a discussion of spatial-planning datasets or emerging siting technology.",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment describes water connectivity as a route for parasite transmission. Salmon-louse larvae disperse planktonically with ocean currents and can travel many kilometres during their planktonic stages before infecting fish. The authors estimate larval releases by production area using reported lice counts, sea temperatures, farmed-fish numbers and lice reproductive biology; they note that warmer water increases larval production per female. For skottelus, mobile adults can actively change hosts, including between cleaner fish and salmon, while farmed fish may also be infected by fish outside cages. The segment thus identifies connectivity and neighbouring hosts as relevant to infection pressure, but does not quantify farm-to-farm transmission distances or prescribe spatial separation."
+   },
+   "summary": "This segment first describes fungal and oomycete disease in farmed salmonids, then covers salmon lice and several other parasite problems. Saprolegnia infections are reported as most problematic in hatcheries in Norway; prevention includes careful handling, good hygiene and water quality, and frequent removal of dead eggs and organic matter. Veterinary Institute submissions contained no diagnosed saprolegniosis or systemic mycosis from farmed fish in 2025. Survey respondents generally considered saprolegniosis a relatively small problem, although some reported effects in juvenile salmon.\n\nThe largest disease challenge discussed is salmon lice. The authors report that larval output during the spring period with a lower lice limit rose from 2024 to 2025 in ten of the 13 production areas, and in six areas exceeded every year in the five-year period before 2024. Autumn output peaked above 20 billion larvae per week in PO6. Higher lice counts and warmer water contribute to increased larval production. The segment also reports a 24 percent increase in non-medicinal delousing reports and a 19 % fall in medicinal treatment-weeks from 2024 to 2025. Survey responses identify delousing-related injury as a major welfare and mortality concern.\n\nOther sections report parvicapsulosis at 18 salmon sites, primarily in northern production areas, and describe AGD risks and treatment approaches. The evidence combines surveillance data, reported farm lice counts and a survey; field diagnosis and incomplete submissions limit interpretation, and survey findings represent respondent experience rather than complete disease prevalence.",
+   "chapter_title": "9 Soppsykdommer hos laksefisk"
+  },
+  {
+   "index": 15,
+   "headings": [
+    "Data fra Veterinærinstituttet og private laboratorier",
+    "Spørreundersøkelsen",
+    "Vurdering av situasjonen for AGD",
+    "11 Andre helseproblem for oppdrettet laksefisk",
+    "11.1 Gjelleproblemer",
+    "Gjellesykdom"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 48590,
+   "key_figures": [
+    {
+     "quote": "Sammenstilte data fra de private laboratoriene og Veterinærinstituttet viser funn av AGD på 99 lokaliteter med laks. Dette er en økning fra 2023 og 2024, hvor det var henholdsvis 73 og 40 påvisninger.",
+     "statement": "The authors’ compiled laboratory data show AGD diagnoses at 99 salmon localities in Norway in 2025, compared with 73 in 2023 and 40 in 2024."
+    },
+    {
+     "quote": "Sammenstilte tall fra undersøkelser hos Veterinærinstituttet og private laboratorier for gjellesykdom hos laks i sjø der epiteliocyster ble påvist ved histopatologi, viser en økning i registreringer fra 65 lokaliteter i 2024 til 83 i 2025",
+     "statement": "The authors’ compiled data show histopathologically detected epithelial cysts at 83 marine salmon localities in 2025, up from 65 in 2024."
+    },
+    {
+     "quote": "Basert på innsendelser til Veterinærinstituttet, var det sparsom til stor forekomst av epiteliocyster påvist ved histopatologi i 65 % av anleggene med gjellediagnose (50 % i 2024).",
+     "statement": "The authors report that epithelial cysts were detected histopathologically in 65 % of facilities submitted to the Veterinary Institute with a gill diagnosis in 2025, compared with 50 % in 2024."
+    },
+    {
+     "quote": "Funn av bakterien ved PCR på laks ble gjort i 240 lokaliteter (245 i 2024 og 189 i 2023) og langs hele kysten.",
+     "statement": "The authors’ compiled laboratory findings detected Ca. Branchiomonas cysticola by PCR at 240 salmon localities along the Norwegian coast in 2025, compared with 245 in 2024 and 189 in 2023."
+    },
+    {
+     "quote": "Som i 2024 vurderte respondentene gjellesykdom som den aller viktigste helseutfordringen hos laks i matfiskanlegg, etterfulgt av skader relatert til avlusning og HSMB (Appendiks B2). Over halvparten av respondentene (62 av 114) anga gjelleproblemer som økt forekommende.",
+     "statement": "The authors’ 2025 survey found that 62 av 114 respondents reported increasing gill problems in salmon grow-out facilities."
+    },
+    {
+     "quote": "I Veterinærinstituttets materiale ble nefrokalsinose påvist i 45 innsendelser fra 29 kommersielle anlegg med laksefisk, de fleste med laks og noen med regnbueørret.",
+     "statement": "The authors report nephrocalcinosis in 45 submissions from 29 commercial facilities with salmonids in the Veterinary Institute’s 2025 material."
+    },
+    {
+     "quote": "En rekke forsøk har vist at verdier av CO2 over 15 til 16 mg/L øker risikoen for utvikling av nefrokalsinose, både i ferskvann, brakkvann og sjøvann.",
+     "statement": "The authors cite experimental studies indicating increased nephrocalcinosis risk for fish exposed to CO2 values over 15 til 16 mg/L in freshwater, brackish water and seawater."
+    },
+    {
+     "quote": "I Veterinærinstituttets materiale i 2025 var innsendelser fra laks i sjøanlegg med hoved- eller tilleggsdiagnoser som omhandlet gjeller, fordelt gjennom hele året, men med en klar overvekt første halvår (72 %).",
+     "statement": "The authors report that 72 % of Veterinary Institute submissions concerning gill diagnoses in marine salmon facilities in 2025 came in the first half of the year."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment covers production-related health problems in farmed salmonids, including AGD, gill disease, poor smolt quality and “taper” syndrome, nephrocalcinosis, water-quality problems and harmful algae. It combines compiled diagnostic material from the Veterinary Institute and private laboratories with a respondent survey, while noting that several conditions are not reportable and that submissions do not provide a complete picture of national prevalence.\n\nThe compiled data show AGD diagnoses at 99 salmon localities in 2025, compared with 73 in 2023 and 40 in 2024. Gill disease was identified by survey respondents as the leading health challenge for salmon in marine grow-out facilities. Epithelial cysts were detected at 83 marine salmon localities, and PCR detected Ca. Branchiomonas cysticola at 240 salmon localities. The report describes gill disease as consequential for mortality, growth and welfare, with complex causes and continuing knowledge gaps. It highlights screening, diagnostic tools, biosecurity and information sharing as important for improved control.\n\nThe segment also describes how smoltification protocols, fish handling, production conditions and water quality may influence fish health after sea transfer. Nephrocalcinosis was detected in 45 submissions from 29 commercial facilities; the report discusses multiple possible environmental and operational causes, including CO2, and recommends stable water conditions and systematic monitoring. Harmful algal blooms caused fish mortality in 2025, and respondents reported their increased importance. The authors stress that disease attribution and prevalence remain uncertain for several conditions and that findings from surveys and laboratory submissions have limitations.",
+   "chapter_title": "11 Andre helseproblem for oppdrettet laksefisk"
+  },
+  {
+   "index": 16,
+   "headings": [
+    "Spørreundersøkelsen",
+    "Vurdering av situasjonen for nefrokalsinose",
+    "11.4 Hemoragisk smoltsyndrom (HSS) / Hemoragisk diatese (HD)",
+    "Om sykdommen",
+    "Bekjempelse",
+    "Helsesituasjonen i 2025"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 18224,
+   "key_figures": [
+    {
+     "quote": "15 av 116 respondenter vurderer lidelsen som en viktig årsak til redusert tilvekst",
+     "statement": "In the 2025 survey of salmon in the marine phase, 15 av 116 respondents identified nephrocalcinosis as an important cause of reduced growth; this is a survey finding reported by the authors."
+    },
+    {
+     "quote": "HSS oppgis av respondentene også i 2025 som det viktigste problemet relatert til dødelighet hos laks i settefiskfasen (29 av 62)",
+     "statement": "For salmon in the smolt-production phase in 2025, 29 av 62 respondents identified HSS as the most important mortality-related problem; this is a survey finding reported by the authors."
+    },
+    {
+     "quote": "Totalt håndterte NIVA Akvakultur i underkant av 200 enkeltsaker om vannkvalitet. Av disse var omtrent 18 % knyttet til episoder med akutt eller forhøyet dødelighet.",
+     "statement": "NIVA Akvakultur handled i underkant av 200 water-quality cases in 2025, of which omtrent 18 % concerned acute or elevated mortality; this is the authors’ report of NIVA’s caseload."
+    },
+    {
+     "quote": "Disse sakene utgjorde omtrent halvparten av dødelighetshendelsene som NIVA håndterte i 2025.",
+     "statement": "Freshwater treatment of salmonids on wellboats accounted for omtrent halvparten of the mortality events handled by NIVA in 2025; this is the authors’ report of NIVA’s cases."
+    },
+    {
+     "quote": "Blant 28 helseproblemer vurderes dårlig vannkvalitet som den viktigste årsaken til redusert vekst (31 av 59)",
+     "statement": "Among 28 health problems considered for salmon in the smolt-production phase, 31 av 59 respondents ranked poor water quality as the leading cause of reduced growth; this is a survey finding reported by the authors."
+    },
+    {
+     "quote": "Svarene fra 2025 viser tydelig at færre har svart «vet ikke» på om vannkvalitet har forårsaket problemer for ferskvannsbehandlinger (figur 11.5.4). Dette er en nedgang fra 30 % av respondentene i 2024 og 2023 til 10 % i 2025.",
+     "statement": "For respondents asked whether water quality caused problems during freshwater treatments, the share answering “do not know” fell from 30 % in 2024 and 2023 to 10 % in 2025; this is a survey finding reported by the authors."
+    },
+    {
+     "quote": "Videre svarte henholdsvis 43 % og 30 % at CO2 hadde hatt en negativ effekt og at O2-relaterte problemer hadde påvirket fiskevelferden negativt.",
+     "statement": "In the 2025 survey on flow-through facilities, 43 % of respondents reported a negative welfare effect from CO2 and 30 % from oxygen-related problems; this is a survey finding reported by the authors."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": "The segment discusses fish-health risks associated with production and handling, but does not assess water connectivity or disease transmission between farms. The authors report that nephrocalcinosis is common and important to health and welfare in salmon and rainbow trout smolt facilities, and may affect survival and health in the marine phase. They state that HSS has no known cause and that an infectious cause has not been documented; it is thought possibly to relate to osmoregulatory problems during smoltification, a hypothesis requiring more research. Because HSS can resemble serious viral diseases, the authors stress testing for VHS and IHN as differential diagnoses. The segment also describes water-quality problems and mortality during wellboat freshwater treatments, but does not establish farm-to-farm transmission or quantify connectivity-related risk."
+   },
+   "summary": "This segment reports survey findings on nephrocalcinosis and hemorrhagic smolt syndrome (HSS), then reviews water-quality issues and introduces an account of algal blooms. Nephrocalcinosis remains a common, consequential diagnosis in salmon and rainbow trout smolt facilities. The authors connect it to water quality and possibly smoltification protocols, and recommend improving operating conditions to prevent it. HSS is described as a bleeding condition that often appears late in the smolt phase or soon after transfer to seawater. Its cause and true prevalence are uncertain; the authors note that it has not been shown to result from an infectious agent and call for laboratory testing to distinguish it from VHS and IHN. Survey respondents ranked HSS as the leading mortality problem for salmon smolts during 2021–2025.\n\nNIVA Akvakultur handled i underkant av 200 water-quality cases in 2025; omtrent 18 % involved acute or elevated mortality. Around half of the mortality events it handled concerned freshwater treatment of salmonids on wellboats, while omtrent 35 % were linked to land-based farming. Survey respondents identified temperature, turbidity, CO2 and oxygen among welfare concerns in flow-through and RAS facilities. The authors emphasize monitoring, water-chemistry knowledge, appropriately sized cooling and degassing systems, and documenting water quality during wellboat operations. The share answering “do not know” about water-quality effects during freshwater treatment declined from 30 % in 2024 and 2023 to 10 % in 2025. The segment presents survey and advisory-case evidence, while noting uncertainty in HSS occurrence and causes; it contains no spatial-planning analysis.",
+   "chapter_title": "11.5 Vannkvalitet"
+  },
+  {
+   "index": 17,
+   "headings": [
+    "12. mai.­Algene,­som­ved­høy­konsentrasjon­kan­væreskadelige­for­fisk,­førte­til­omfattende­dødelighet­blantoppdrettslaks.­Ifølge­Fiskeridirektoratet­førte­oppblom‑ stringen­til­omkring­to­millioner­døde­fisk.­",
+    "Spørreundersøkelsen",
+    "12 Helse og velferd hos torsk i oppdrett",
+    "For ytterligere informasjon om francisellose, nodavirus og IPN, se Veterinærinstituttets faktasider:",
+    "Helse- og velferdsutfordringer",
+    "Figur 12.3 Multifaktoriell gjellesykdom hos torsk med sykdomsforandringer som fører til redusert respiratorisk overflate. Begge bildene er fra samme torsk. In situhybridisering (rødt) for påvisning av den epiteliocystedannende bakterien Ca. Branchiomonas cysticola (t.v.) og for torskepoxvirus (t.h.). Ektoparastitten Trichodinaspp. (piler). Foto: Mona Gjessing, Veterinærinstituttet"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 23279,
+   "key_figures": [
+    {
+     "quote": "I 2025­er­dødelighetsrisikoen­fremdeles­relativt­høysammenliknet­med­2022­og­2023­hvor­dødeligheten­varcirka­13,5 %.",
+     "statement": "The authors compare cod mortality risk in 2025 with mortality in 2022 and 2023, when it was approximately 13,5 %."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "The segment does not describe site availability or the licensing and application process. It does, however, connect disease risks with spatial planning: the authors say that IPNV can infect several farmed species, and that this cross-species transmission must be considered when planning facilities for multiple species in the same area and in coastal area planning. They also identify contact between farmed cod and wild fish at sea sites as a biosecurity concern. These are health-related considerations for siting and area planning, not a comparison of site options or a description of planning procedures.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors describe research that identified leadbeaterin-1, a toxin produced by C. leadbeateri, and found it toxic to trout and salmon gill cells. A quantitative standard has been prepared, enabling measurement of toxin concentrations in seawater around fish farms during blooms; the toxin was detected in samples from the 2019 bloom and fresh water samples from 2025. The authors say monitoring could complement current methods based on algal counts, which can poorly correspond with fish deaths because the alga is small and difficult to distinguish reliably by light microscopy. Important uncertainties remain: the lethal concentrations and exposure duration are unknown, and only leadbeaterin-1 has been tested among the toxin family. The segment does not discuss spatial decision datasets or emerging siting technologies more broadly.",
+    "A6": "",
+    "A7": "",
+    "A8": "The authors identify substantial biosecurity gaps in cod farming: few broodstock and juvenile facilities, contact between farmed cod and wild fish at sea sites, no marine-species-specific requirements for intake-water quality and disinfection, and no statutory screening programmes for infectious diseases. A risk map developed by the Norwegian Veterinary Institute and the Institute of Marine Research identified knowledge gaps about wild-fish susceptibility, vaccination status and non-notifiable diseases. The authors call for precautionary measures and better knowledge to improve risk assessments and reduce transmission to farmed and wild fish. They also report a cited cohabitation experiment in which IPNV from cod could infect salmon, halibut and lumpfish, making cross-species transmission relevant to multi-species facility planning and coastal area planning. Parasites may also affect both farmed and wild fish."
+   },
+   "summary": "The segment first describes harmful algal events and research on algal toxins. A 2025 bloom caused around two million fish deaths, according to the Norwegian Directorate of Fisheries. The research project ToxANoWa identified leadbeaterin-1, produced by C. leadbeateri, and showed toxicity to trout and salmon gill cells. A prepared quantitative standard makes it possible to measure the toxin in seawater; it was detected in samples from the 2019 bloom and fresh samples from 2025. The lethal concentration and exposure duration remain unknown, and algal counts may not reliably predict fish deaths. Survey respondents ranked algae as the seventh largest health problem for salmon among 38 challenges; 23 % (27 of 119) reported algal mortality and 24 % perceived occurrence as increasing.\n\nThe main chapter reviews farmed cod health and welfare. Cod production increased: 8,7 million fish were stocked and approximately 19 700 tonnes slaughtered in 2025. Mortality risk in the grow-out phase was 20,4 %, down from 22,2 % in 2024. Problems include intestinal disease, poor-performing fish, skeletal and jaw deformities, and maturation-related welfare concerns. Gill disease and vibriosis appear to have become more important. The segment reports 33 serious welfare incidents and describes findings from 25 Veterinary Institute submissions from eight sites. It also outlines infection risks, including transmission between farmed cod and wild fish, and IPNV transmission among farmed species. The authors identify major biosecurity knowledge and regulatory gaps and recommend precautionary measures. Evidence includes official data, institute submissions, cited research and a survey of fish-health personnel; several causal relationships and disease risks remain uncertain.",
+   "chapter_title": "12 Helse og velferd hos torsk i oppdrett"
+  },
+  {
+   "index": 18,
+   "headings": [
+    "13 Helsesituasjonen hos andre marine arter i oppdrett",
+    "Sykdommer hos marine arter i oppdrett",
+    "Bekjempelse av infeksiøse sykdommer",
+    "For ytterligere informasjon om nodavirus, piscirickettsiose og IPN, se Veterinærinstituttets faktasider:",
+    "Helsesituasjonen i 2025",
+    "Offisielle data"
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 49981,
+   "key_figures": [
+    {
+     "quote": "Produksjonen harholdt­seg­stabil,­mellom­2­og­7000­tonn­de­siste­årene­fra­2020–2024",
+     "statement": "The authors report that Norwegian halibut production remained between 2 and 7000 tonnes in 2020–2024."
+    },
+    {
+     "quote": "Dødelighet­i­yngelfasen­kan­nå­100 %­i­noen­tilfeller.",
+     "statement": "The authors state that mortality in the juvenile phase of marine fish can reach 100 % in some cases."
+    },
+    {
+     "quote": "I­2025­ble­det­mottatt­totalt­19­innsendelser­(seks­fra­piggvar­og­13­fra­kveite)­fra­tre­forskjellige­lokaliteter­med­piggvar­og­kveite.",
+     "statement": "The authors report that the Veterinary Institute received 19 submissions from three Norwegian sites with turbot and halibut in 2025, comprising six from turbot and 13 from halibut."
+    },
+    {
+     "quote": "I 2025­ble­den­intracellulære­bakterien Piscirickettsia­salmonis­rapportert­fra­piggvar­for­første­gang.",
+     "statement": "The authors report the first detection of Piscirickettsia salmonis in turbot in 2025."
+    },
+    {
+     "quote": "I 2025 ble det ifølge Fiskeridirektoratet (data per 20.01.2026) satt ut mer enn 19 millioner rensefisk, en reduksjon på om lag 5 millioner fra foregående år.",
+     "statement": "According to the Directorate of Fisheries data cited by the authors, more than 19 million cleaner fish were deployed in Norway in 2025, about 5 million fewer than in the preceding year."
+    },
+    {
+     "quote": "Fra toppåret 2019 er det registrert en nedgang på 69 %",
+     "statement": "The authors report a 69 % decline in cleaner-fish deployment from the peak year 2019."
+    },
+    {
+     "quote": "Antall lokaliteter for laks og regnbueørret som har rapportert å ha rensefisk er redusert fra 444 lokaliteter i 2019 til 148 i 2025.",
+     "statement": "The authors report that salmon and rainbow-trout sites reporting cleaner fish decreased from 444 sites in 2019 to 148 in 2025."
+    },
+    {
+     "quote": "Ifølge Norges sjømatråd ble det importert 13 tonn leppefisk fra Sverige i 2025, mot 21 tonn i 2024.",
+     "statement": "The Norwegian Seafood Council figures cited by the authors show that 13 tonnes of wrasse were imported from Sweden in 2025, compared with 21 tonnes in 2024."
+    },
+    {
+     "quote": "Oppdrettet rognkjeks utgjør om lag 46 % av det som totalt settes ut av rensefisk.",
+     "statement": "The authors estimate that farmed lumpfish made up about 46 % of total cleaner-fish deployments."
+    },
+    {
+     "quote": "Som nevnt ble det satt ut over 19 millioner rensefisk i fjor, og 12,8 millioner ble registrert som døde",
+     "statement": "The authors report that over 19 million cleaner fish were deployed in the preceding year and 12,8 million were recorded dead."
+    },
+    {
+     "quote": "Oppdrettere innrapporterte 75 alvorlige velferdsmessige hendelser for rensefisk i sjø til Mattilsynet i 2025.",
+     "statement": "The authors report 75 serious welfare incidents involving cleaner fish at sea reported to the Norwegian Food Safety Authority in 2025."
+    },
+    {
+     "quote": "For rognkjeks svarte fem av 33 respondenter at de registrerte god effekt, en liten økning fra 2024, mens syv respondenter mente at de så liten eller ingen effekt.",
+     "statement": "In the 2025 survey, five of 33 respondents reported good cleaner-louse-eating effect for lumpfish, while seven reported little or no effect."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "This segment concerns fish health rather than spatial decision-making or emerging technology, so it provides no direct evidence about the knowledge base or technologies used for spatial decisions. It does report that in 2025 a first international report of Piscirickettsia salmonis in turbot was confirmed using immunohistochemistry and in situ hybridisation after culture failed. The outbreak followed suboptimal water quality and was controlled by improving environmental conditions. Cleaner-fish mortality data are described as difficult to interpret because of incomplete accounting and undocumented losses; a new reporting form was introduced from 01.01.2026 to improve data on health, welfare and mortality.",
+    "A6": "",
+    "A7": "The segment offers fish-health management observations rather than guidance on efficient spatial use. Survey respondents emphasized suitable tank design, size grading to reduce aggression and injuries, sorting by fin condition, appropriate species-specific feed, and gentle handling. In sea cages they highlighted planning and follow-up, adequate shelter and feed, and gentle handling during delousing and net cleaning. The report says cleaner fish tolerate crowding, netting and pumping less well than salmon, and welfare remains poor with high mortality. Respondents also reported that discontinuing cleaner-fish use sometimes increased lice pressure and delousing, while others described positive outcomes. The authors conclude that cleaner-fish use should be phased out or stopped if welfare cannot be improved; the Veterinary Institute has previously proposed ending use by 2029 at the latest.",
+    "A8": "The authors describe disease transmission risks where cleaner fish and salmon share cages. Wild-caught cleaner fish have unknown infection status and can carry agents including atypical Aeromonas salmonicida; introduction from other regions may also create biosecurity risks. Experimental evidence shows Paramoeba perurans can pass between cleaner fish and farmed fish, and a 2022 site detection of Spironucleus salmonicida in both salmon and lumpfish suggests possible cross-species transmission. Lumpfish are vulnerable to infection from salmon with S. salmonicida and are considered unsuitable as cleaner fish at sites with outbreaks. The report also notes potential transmission of other agents and emphasizes monitoring infection dynamics, particularly for pathogens with marine reservoirs."
+   },
+   "summary": "This segment opens Chapter 13 on health in farmed marine species and then includes a substantial portion of Chapter 14 on cleaner-fish health and welfare. It describes limited Norwegian production of halibut, turbot and spotted wolffish, their biological and production characteristics, and reported bacterial, viral and parasitic diseases. Halibut production remained between 2 and 7000 tonnes in 2020–2024. In 2025, Piscirickettsia salmonis was detected in turbot for the first time internationally, at a site where increased mortality followed suboptimal water quality; improving environmental conditions controlled the outbreak. The Veterinary Institute received 19 submissions from three sites, six from turbot and 13 from halibut, and none from spotted wolffish.\n\nThe cleaner-fish discussion reports continued contraction in use: more than 19 million were deployed in 2025, 69 % below the 2019 peak, and reporting sites declined from 444 in 2019 to 148 in 2025. The text describes welfare concerns, disease risks from wild-caught fish, and practical challenges including unsuitable cage conditions, handling, feeding and mortality measurement. A new reporting form began 01.01.2026. Survey evidence indicates uncertainty about cleaner fish’s lice-control effect, while disease transmission between cleaner fish and salmon remains a biosecurity concern. The segment draws on official records, diagnostic submissions, literature and respondent surveys; it notes limitations including incomplete mortality records, uncertain pathogen significance and small or non-representative survey samples.",
+   "chapter_title": "13 Helsesituasjonen hos andre marine arter i oppdrett"
+  },
+  {
+   "index": 19,
+   "headings": [
+    "Helseproblemer hos laks i matfiskanlegg",
+    "Antallsvarperkategori",
+    "Appendiks B2:",
+    "Helseproblemer hos laks i matfiskanlegg fordelt på PO-områder:",
+    "De 10 høyest rangerte helseproblemene hos matfisk laks i PO1-PO5.",
+    "De 10 høyest rangerte helseproblemene hos matfisk laks i PO6-PO9."
+   ],
+   "page_from": null,
+   "page_to": null,
+   "chars": 22300,
+   "key_figures": [
+    {
+     "quote": "Takk til de 143 fagpersonene som svarte på spørreundersøkelsen og med det har bidratt til viktig feltinformasjon til årets rapport.",
+     "statement": "The authors report that 143 professionals responded to the report's survey, providing field information for the 2025 report."
+    },
+    {
+     "quote": "For hver problemkategori var det N=119 respondenter som svarte på dødelighet, N=116 svarte på redusert tilvekst, N=119 svarte på redusert velferd og N=114 svarte på økende forekomst.",
+     "statement": "The authors report the numbers of respondents answering each question category about health problems in salmon grow-out facilities in Norway."
+    },
+    {
+     "quote": "PO1-PO5 (N=41), PO6-9 (N=39) og PO10-13 (N=26).",
+     "statement": "The authors report the respondent counts for the three grouped production-area regions used in the salmon health-problem breakdown."
+    },
+    {
+     "quote": "For hver problemkategori var det N= 23 respondenter som svarte på dødelighet, N= 22 svarte på redusert tilvekst, N= 23 svarte på redusert velferd og N= 19 svarte på økende forekomst.",
+     "statement": "The authors report respondent counts for each question category in the rainbow trout grow-out survey."
+    },
+    {
+     "quote": "For hver problemkategori var det N= 17 respondenter som svarte på dødelighet, N= 16 svarte på redusert tilvekst, N= 17 svarte på redusert velferd og N= 13 svarte på økende forekomst.",
+     "statement": "The authors report respondent counts for each question category in the cod grow-out survey."
+    },
+    {
+     "quote": "For hver problemkategori var det N=21 respondenter som svarte på dødelighet, N=18 svarte på redusert tilvekst, N=21 svarte på redusert velferd og N=14 svarte på økende forekomst.",
+     "statement": "The authors report respondent counts for each question category in the salmon broodstock survey."
+    },
+    {
+     "quote": "For hver problemkategori var det N=4 respondenter som svarte på dødelighet, N=3 svarte på redusert tilvekst, N=4 svarte på redusert velferd og N=2 svarte på økende forekomst.",
+     "statement": "The authors report respondent counts for each question category in the lumpfish hatchery survey."
+    },
+    {
+     "quote": "For hver problemkategori var det N=5 respondenter som svarte på dødelighet, N=5 svarte på redusert tilvekst, N=5 svarte på redusert velferd og N=4 svarte på økende forekomst.",
+     "statement": "The authors report respondent counts for each question category in the cleaner-fish hatchery survey."
+    },
+    {
+     "quote": "For hver problemkategori var det N=20 respondenter som svarte på dødelighet, N=20 svarte på redusert velferd og N=14 svarte på økende forekomst.",
+     "statement": "The authors report respondent counts for mortality, reduced welfare and increasing occurrence in the lumpfish co-reared with salmon survey."
+    },
+    {
+     "quote": "For hver problemkategori var det N=25 respondenter som svarte på dødelighet, N=25 svarte på redusert velferd og N=13 svarte på økende forekomst.",
+     "statement": "The authors report respondent counts for mortality, reduced welfare and increasing occurrence in the cleaner fish co-reared with salmon survey."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "",
+    "A6": "",
+    "A7": "",
+    "A8": "This segment reports survey respondents' perceptions of health problems in farmed fish, including problems that they associated with mortality, reduced welfare or increasing occurrence. It does not discuss biosecurity, disease transmission between farms, water connectivity, or how those factors affect siting and operations."
+   },
+   "summary": "This segment contains appendices presenting survey results on perceived health problems in farmed fish. It covers salmon in grow-out facilities, including results by grouped production areas; rainbow trout and cod in grow-out facilities; salmon broodstock; lumpfish and cleaner fish in hatcheries; and lumpfish and cleaner fish co-reared with salmon. Fish-health personnel and inspectors or advisers from the Norwegian Food Safety Authority were asked to identify important problems from specified lists, judging whether they contributed to mortality, reduced growth, reduced welfare or increasing occurrence. The number of respondents differs by species, production setting and question category. For example, the salmon grow-out survey had N=119 respondents for mortality and reduced welfare, while the regional salmon breakdown groups respondents into PO1-PO5 (N=41), PO6-9 (N=39) and PO10-13 (N=26). The appendices also define abbreviations for health conditions shown in the figures. A final acknowledgement states that 143 professionals answered the survey and thanks data providers, producers and other contributors. The evidence presented is based on reported professional perceptions, not a direct measurement of disease incidence or causal effects. The figures are reproduced as charts, and this segment does not explain spatial planning, aquaculture siting, environmental assessment, competing coastal uses or regulatory processes.",
+   "chapter_title": "Appendiks B2–E2: Helseproblemer hos oppdrettsfisk"
+  }
+ ]
+}

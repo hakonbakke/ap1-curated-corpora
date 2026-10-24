@@ -1,0 +1,99 @@
+{
+ "doc_id": "2020_bjorkan_local-perceptions",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 7,
+   "chars": 48406,
+   "key_figures": [
+    {
+     "quote": "Original data were collected from structured (N = 150) and semi-structured interviews (N = 10) in two coastal communities in Northern Norway (Alstahaug and Brønnøy).",
+     "statement": "The authors collected data through structured interviews (N = 150) and semi-structured interviews (N = 10) in Alstahaug and Brønnøy."
+    },
+    {
+     "quote": "In Brønnøy, the perception is overwhelmingly positive and more than 70% gives this a high score (five out six or more); and in Alstahaug 50% gives this a high score (five out of six or more).",
+     "statement": "The authors' 2018 survey found that more than 70% of respondents in Brønnøy and 50% in Alstahaug rated aquaculture's contribution to local attractiveness highly."
+    },
+    {
+     "quote": "In Brønnøy, 62% of the persons asked underlines that the aquaculture industry provides higher income to the municipality in the form taxes and fees. In Alstadhaug, 34% of the persons asked had the same opinion.",
+     "statement": "The authors' survey found that 62% of respondents in Brønnøy and 34% in Alstadhaug said aquaculture provides higher municipal income through taxes and fees."
+    },
+    {
+     "quote": "In Brønnøy, more than 50% finds that there are no or small negative effects (score 1–3) on the coastal zone from aquaculture. However, 31% finds that the aquaculture industry has a large and considerable negative effect (score 5–6) on the coastal zone;",
+     "statement": "The authors' survey found that in Brønnøy more than 50% perceived no or small negative coastal-zone effects, while 31% perceived large or considerable negative effects."
+    },
+    {
+     "quote": "In Alstahaug, more than 26% finds that there are no or small negative effects (score 1–3) on the coastal zone from aquaculture. However, more than 43% finds that the aquaculture industry has a large and considerable negative effect (score 5–6) on the coastal zone;",
+     "statement": "The authors' survey found that in Alstahaug more than 26% perceived no or small negative coastal-zone effects, while more than 43% perceived large or considerable negative effects."
+    },
+    {
+     "quote": "In Brønnøy, more than 55% finds that there are none or small negative effects (score 1–3) from the aquaculture industry and 28% finds that the aquaculture industry has a large and considerable negative effect (score 5–6) on the local fjords fishery.",
+     "statement": "The authors' survey found that in Brønnøy more than 55% perceived no or small negative effects on local fjord fishing, while 28% perceived large or considerable effects."
+    },
+    {
+     "quote": "In Alstahaug, more than 33% finds that there are none or small negative effects (score 1–3) from the aquaculture industry, while 34% finds that the aquaculture industry has a large and considerable negative effect (score 5–6) on the local fjords fishery.",
+     "statement": "The authors' survey found that in Alstahaug more than 33% perceived no or small negative effects on local fjord fishing, while 34% perceived large or considerable effects."
+    },
+    {
+     "quote": "Here, more than 93% finds that the aquaculture industry has no negative or small negative impacts on the tourism (score 1–2).",
+     "statement": "The authors' survey found that more than 93% of respondents in Brønnøy perceived no or small negative effects of aquaculture on tourism."
+    },
+    {
+     "quote": "Furthermore, about 86% in Brønnøy finds that the aquaculture industry has no negative or small negative impacts (score 1–2) on the recreational/outdoor possibilities.",
+     "statement": "The authors' survey found that about 86% of respondents in Brønnøy perceived no or small negative effects of aquaculture on recreational and outdoor opportunities."
+    },
+    {
+     "quote": "In Alstahaug, more than 81% finds that the aquaculture industry has no negative or small negative impacts (score 1–2) on the tourism.",
+     "statement": "The authors' survey found that more than 81% of respondents in Alstahaug perceived no or small negative effects of aquaculture on tourism."
+    },
+    {
+     "quote": "More than 65% finds that the aquaculture industry has no negative or small negative impacts (1–2) on the recreational/outdoor possibilities.",
+     "statement": "The authors' survey found that more than 65% of respondents in Alstahaug perceived no or small negative effects of aquaculture on recreational and outdoor opportunities."
+    },
+    {
+     "quote": "Interestingly, 48% of the persons asked did not know that their municipality has aquaculture sites in their coastal zone.",
+     "statement": "The authors' survey found that 48% of respondents in Alstahaug did not know their municipality had aquaculture sites in its coastal zone."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe coastal aquaculture development as shaped by competing demands for space, environmental concerns, economic growth and employment, and the distribution of benefits to communities. Municipalities have authority to allocate sites through coastal-zone plans, but their autonomy is limited by sector laws, national guidelines and the possibility of formal objections from state agencies; the Department of Environment is the final decision-maker in such disputes. The authors summarize four conflict axes identified by Karlsen et al. (2015): access to sea areas, effects on the natural environment, fishing, and community development and the distribution of advantages and disadvantages. Their survey in Alstahaug and Brønnøy found generally positive views of community benefits but concerns about environmental effects and fishing. The authors also note that growth has involved larger sites and fewer locations, increasing demand for suitable areas.",
+    "A1": "The authors describe site availability as an important constraint: production and site size have increased, and larger sites require bigger and better-suited areas. They cite Gullestadutvalget (2011) on veterinary regulations affecting distances between sites, fallowing and rotational site use. Municipal plans allocate coastal areas, but site decisions operate within sector laws, national guidelines and policy provisions; state agencies can formally object to plans that conflict with national policy. The authors also describe environmental concerns—including sea lice, escapes, feces and chemicals—and competition with fishers, tourism and leisure uses as factors that can make municipalities reluctant to allocate further sites. The segment does not detail licensing criteria or how these factors interact at individual application stages.",
+    "A2": "The segment explains that municipalities are responsible for coastal-zone plans and formally invite stakeholders to participate in planning within municipal waters to the baseline plus one nautical mile. Planning is intended by law to be open, transparent, inclusive, participatory and deliberate. However, municipal decision-making is constrained by sector laws and national policies, and state agencies may raise formal objections; the Department of Environment is identified as the final decision-maker. The authors report frustration among workshop participants about competition for space, planning processes and limited planning resources. They do not describe the sequence of an individual site application, identify common stages for delay or rejection, or provide counts or durations for applications.",
+    "A3": "",
+    "A4": "The authors discuss the Aquaculture Fund as a government instrument intended to allocate economic benefits to municipalities and counties that provide aquaculture space; Table 2 describes 80% of income as allocated to these local authorities. They note that at the time of the study no allocations had been made, so the practical effect remained unknown. The authors also describe the Traffic Light System as linking production changes to environmental indicator assessments, with sea lice then the only indicator. Historically, policy shifted from locally controlled ownership and district-oriented licensing toward larger companies and more concentrated ownership after the Aquaculture Bill of 1991 made it possible to own and sell several licenses. The authors argue that site establishment does not necessarily yield local jobs or revenue: production municipalities may receive fewer jobs and ripple effects than places with processing, headquarters and services. They report concerns about modest local benefits and the distribution of value.",
+    "A5": "The authors' empirical evidence combines structured interviews with the general public, semi-structured interviews with fishers, and workshop observation in Alstahaug and Brønnøy. They use these sources to examine perceived impacts and legitimacy, while acknowledging knowledge gaps, particularly about conflicts between fishers and aquaculture. They report that many general-public respondents trusted technology to solve environmental challenges, but the segment does not evaluate specific technologies or their effects on siting opportunities. Table 2 summarizes policy measures involving indicator-based monitoring, technology development and seaweed cultivation; it states that the Traffic Light System then used sea lice as its only indicator. The authors also cite research documenting effects on wild salmon and crustaceans, but do not present a cumulative-effects assessment method.",
+    "A6": "The authors' central finding is a legitimacy gap between government blue-growth goals and fishers in the communities studied, while the general public held a positive overall attitude toward aquaculture. They organize conflicts around access to sea areas, environmental impacts, fishing, and community development and benefit distribution, drawing these axes from Karlsen et al. (2015). Fishers interviewed described shrimp grounds becoming inaccessible where farms blocked entrances or gear posed risks, and perceived changes to shrimp, other marine life and the quality of saithe. The authors also report that municipalities may resist further growth because of environmental concerns, competition for coastal space and modest local economic returns. They distinguish output legitimacy, which they operationalize as acceptance of decisions, from input legitimacy concerning affected actors' voice in planning; their empirical focus is mainly on output legitimacy.",
+    "A7": "",
+    "A8": "The segment notes that veterinary regulations affect the distance between aquaculture sites and create needs for fallowing and rotational use of sites, citing Gullestadutvalget (2011). It also identifies sea lice and disease among environmental and operational concerns, and Table 2 describes sea lice as the only indicator used by the Traffic Light System at the time discussed. These points indicate that disease pressures and farm spacing can affect the availability and rotation of sites. The segment does not explain biosecurity arrangements, quantify transmission risks, or discuss water connectivity between farms."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 7,
+   "page_to": 10,
+   "chars": 22958,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The authors find that perceptions of aquaculture differ between the general public and fishers: the public is mainly positive about community benefits, while fishers perceive negative effects across access, the environment and fishing. They argue that coastal-zone plans must confront competing interests and that prioritizing interests is a political matter without a single answer. Drawing on legitimacy literature, they suggest that involving fishers more in plan-making and establishing formal dialogue arenas could improve input legitimacy and potentially affect fishers’ acceptance. The segment does not describe current spatial-planning rules or how environmental, industry and other-use objectives are formally balanced.",
+    "A1": "The authors’ interviews indicate that fishers perceive aquaculture pens as restricting their access to coastal areas and competing with fishing for space. Fishers also report perceived declines in shrimp catches and changes in fish quality, but the authors explicitly say their purpose is to examine these perceptions, not to establish the claims as scientific facts. The segment does not discuss site availability in licensing terms, application requirements, environmental thresholds, fish health or how these factors interact in development decisions.",
+    "A2": "",
+    "A3": "",
+    "A4": "The segment does not examine economic instruments or regulatory arrangements governing site choice. It does discuss perceived distribution of benefits and costs: the general public associates aquaculture with employment and wider community effects, whereas fishers describe restricted access and negative effects on fishing and the natural environment. The authors suggest that Brønnøy’s perceived local returns, including employment, education and career opportunities, may help explain more positive views there than in Alstahaug. This is an interpretation of the study’s findings, not an assessment of measured economic distributions or incentives.",
+    "A5": "The authors note that the general public’s limited knowledge of aquaculture sites complicates interpretation of the poll. They argue that fishers may possess experience-based knowledge of marine conditions because they regularly observe the sea and shrimp through their work. At the same time, they caution that fishers have a direct interest in competition for coastal space, which can invite suspicion about their criticism. The segment does not discuss spatial-data systems or emerging technologies.",
+    "A6": "The authors find a legitimacy gap between blue-growth goals and fishers, despite generally positive views among the public in the two communities studied. Fishers describe restricted access, perceived environmental and fishing impacts, and weak dialogue with a large, international industry; the general public is more positive about socioeconomic benefits. The authors argue that affected stakeholders’ views deserve emphasis, while acknowledging that fishers’ direct interests may raise questions about objectivity. They suggest greater fisher involvement in coastal-plan-making and formal dialogue, and caution that legitimacy is continually reassessed rather than solved by a quick fix. These are the authors’ findings and arguments, informed by cited legitimacy literature.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

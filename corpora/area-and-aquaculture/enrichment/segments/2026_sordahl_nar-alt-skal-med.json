@@ -1,0 +1,317 @@
+{
+ "doc_id": "2026_sordahl_nar-alt-skal-med",
+ "model": "gpt-6-luna",
+ "large": true,
+ "n_segments": 9,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 26,
+   "chars": 49482,
+   "key_figures": [
+    {
+     "quote": "I 2023 var kun 5 % av alle doktorgradsavhandlinger som ble levert ved norske institusjoner skrevet på norsk",
+     "statement": "A cited statistic reports that 5 % of doctoral dissertations submitted at Norwegian institutions in 2023 were written in Norwegian."
+    },
+    {
+     "quote": "Tallet er synkende, og har gått jevnt nedover fra 10 % i 2014.",
+     "statement": "A cited statistic says the share of Norwegian-language doctoral dissertations at Norwegian institutions declined from 10 % in 2014."
+    },
+    {
+     "quote": "Det samme gjelder andre former for publikasjoner, hvor 24 % av artikler innenfor samfunnsfagene ble skrevet på norsk i 2019",
+     "statement": "A cited statistic reports that 24 % of social-science articles were written in Norwegian in 2019."
+    },
+    {
+     "quote": "Avhandlingen består av tre artikler.",
+     "statement": "The author’s dissertation comprises three papers; the segment does not specify a study period or population for this count."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The author’s framing is that coastal area is limited and that a growing variety and intensity of activities—including fisheries, aquaculture, tourism, energy production and nature conservation—compete for overlapping space. This can generate tensions and conflicts, while increased human activity can also put pressure on biodiversity and nature’s capacity to provide benefits and services. The author presents integrated planning as a response intended to consider interests together, support sustainable use, and balance development with environmental protection. These are broad arguments about planning ambitions, not findings about aquaculture-specific siting criteria, production limits, or how particular trade-offs are decided.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The author argues that planning depends on how concepts are translated into frameworks, indicators and practical tools, and that existing institutional arrangements shape what can be implemented. The dissertation’s summary identifies a mismatch between the responsibilities assigned to different authorities and the knowledge available for an ecosystem-services perspective. The author also describes a tension between a scientific approach that seeks simplification and standardisation and a political approach that continually expands what planning should include. These points concern planning knowledge and institutional capacity generally; the segment does not assess specific data sources or technologies for aquaculture site selection.",
+    "A6": "The author describes coastal areas as increasingly pressured by more kinds of activities and greater intensity of use, with competition for overlapping areas producing tensions and conflicts. Aquaculture is named among the competing activities, alongside fisheries, tourism, energy production and nature conservation. The segment argues that integrated planning is expected to hear and consider different interests, improve legitimacy and reduce conflict, but it does not report a particular siting dispute or evaluate a specific decision process. The author’s central caution is that integration is normative rather than a neutral technical solution: choices about what is included or excluded, and the tools available to municipalities, matter for planning outcomes.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment introduces Sørdahl’s dissertation on how integrated planning is understood and put into practice in Norwegian coastal-zone planning. The author situates the topic in increasing pressure on coastal areas, where limited space is used by fisheries, aquaculture, tourism, energy production and conservation, and argues that competing uses can create conflict and affect the natural environment. Integrated planning is presented as an ambition to consider interests together, make decisions more legitimate and balance development with environmental protection. The author emphasizes, however, that integration is not a neutral technical solution: it is normative, and planning occurs between political goal-setting and administrative implementation.\n\nThe dissertation consists of three papers. They examine the introduction of the ecosystem-services framework, how integration is problematized and rationalized in practical planning, and how integration and fragmentation are conceptualized. The author reports tensions between a scientific approach seeking simplification and standardisation and a political approach that expands the scope of planning. The summary also identifies a mismatch between authority responsibilities and the knowledge available for an ecosystem-services perspective. The author argues that planning concepts move from ideas into frameworks and tools through an iterative process shaped by existing institutions and practices.\n\nThe segment includes cited language statistics: 5 % of doctoral dissertations submitted at Norwegian institutions were written in Norwegian in 2023, compared with 10 % in 2014; 24 % of social-science articles were written in Norwegian in 2019. It is an introductory and theoretical segment, not an empirical account of aquaculture licensing, site applications, cumulative effects, or fish health. The table of contents indicates that methods and fuller article findings appear later.",
+   "chapter_title": "1 Innledning; 2 Teori og konseptuell modell"
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 26,
+   "page_to": 44,
+   "chars": 49974,
+   "key_figures": [
+    {
+     "quote": "I Artikkel II ble dokumentstudiene supplert med semi-strukturerte intervjuer med totalt syv personer involvert i arbeidet med de ulike generasjonene av kystsoneplaner.",
+     "statement": "The authors interviewed seven people involved in different generations of coastal zone plans in Tromsø as a supplement to document studies; this is the authors’ methodological finding."
+    },
+    {
+     "quote": "Dette ga i overkant av 100 treff hvor de aller fleste var falske positive, i hovedsak fordi de enten ikke omhandlet kystsoneforvaltning eller fordi de kun nevnte økosystemtjenester uten at det faktisk handlet om konseptet som et forvaltningsrammeverk. Etter en gjennomgang ble dette redusert til åtte dokumenter",
+     "statement": "The authors’ search for documents on the ecosystem-services framework in Norwegian coastal zone management returned over 100 results, which screening reduced to eight documents."
+    },
+    {
+     "quote": "Tromsø kommune har kystsoneplaner som strekker seg om lag 30 år tilbake, og er dermed blant de kommunene i landet med lengst erfaring når det kommer til planlegging av kystsonen.",
+     "statement": "The authors report that Tromsø’s coastal zone plans extend back about 30 years, making the municipality among Norway’s longest-experienced in this planning."
+    },
+    {
+     "quote": "En annen nyvinning var innføringen av både regional- og kommunal planstrategi. Gjennom en planstrategi, utarbeidet hvert fjerde år av det nyvalgte fylkestinget eller kommunestyret, skal de folkevalgte ta stilling til planbehovet i den kommende fireårsperioden.",
+     "statement": "The cited legal and policy account says that regional and municipal planning strategies are prepared every four years to determine planning needs for the coming four-year period in Norway."
+    },
+    {
+     "quote": "En viktig endring kom i 1989 hvor kommunene fikk anledning til å planlegge for hele sine kystområder ut til grunnlinja",
+     "statement": "A cited account identifies 1989 as the year Norwegian municipalities gained the ability to plan their coastal areas out to the baseline."
+    },
+    {
+     "quote": "En av de mest håndfaste endringene i PBL som gjaldt kystsoneplanlegging spesielt var at området kommunen kunne planlegge for i sjøområdene ble utvidet nok en gang, nå til å gjelde 1 nautisk mil utenfor grunnlinja",
+     "statement": "The document reports that the 2008 Planning and Building Act extended municipal coastal planning jurisdiction to 1 nautical mile beyond the baseline in Norway."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe coastal zone planning as the arena for coordinating users, weighing interests, and distributing area resources. They explain that aquaculture has driven the development of marine planning and has shaped how areas are allocated: early plans often designated small, fixed aquaculture sites, while later practice increasingly set aside areas where aquaculture was unsuitable because of conflicts and used multi-purpose areas for aquaculture elsewhere. The segment says suitability changes with technology, climate and environmental conditions, production volumes, disease conditions, knowledge, and political frameworks. The stated planning ambition is to enable aquaculture potential while safeguarding public interests, natural resources, landscapes, and biodiversity. It does not offer empirical findings on current production limits or specific balancing outcomes.",
+    "A1": "The authors identify site suitability as dynamic, changing with technological development, climatic and environmental conditions, production volumes, disease conditions, knowledge, and political frameworks. Aquaculture’s relatively permanent and place-bound use of marine space contrasts with changing operational needs, so a site suitable in the past may no longer be suitable. The account describes the planning system as an important determinant of available areas: municipalities gained coastal planning powers in stages, and the 2000 planning requirement linked consideration of an aquaculture site application in allocation rounds to the municipality having an approved coastal zone plan. This encouraged municipal planning. The segment does not detail licensing criteria, environmental thresholds, fish-health rules, or how those interact in individual site decisions.",
+    "A2": "The segment provides only limited information about the site application process. It reports, citing Sandersen, that a 2000 planning requirement meant an applicant for an aquaculture site could be considered in allocation rounds only if the municipality had an approved coastal zone plan. The authors say this requirement was followed by faster growth in coastal planning in the early 2000s. They also describe earlier small, fixed aquaculture zones as poorly suited to industry needs, leading to extensive use of dispensations, and explain that planning practice later shifted toward multi-purpose aquaculture areas. No application-stage sequence, typical delay, rejection rate, or evidence identifying where conflicts most commonly arise is given.",
+    "A3": "The segment discusses environmental impact assessment (KU) as a planning tool intended to make potential effects on the environment and society visible and to support weighing different considerations. It notes that a common, more uniform KU framework was introduced in 1990 and that the Norwegian approach has treated KU more broadly as a way to consider different interests together than the internationally common environment-focused approach. These are accounts based on cited literature and policy history, not new empirical findings by the author. The segment does not explain how cumulative aquaculture production effects are assessed or incorporated into site selection, and it identifies no specific cumulative-effects methodology or knowledge gap.",
+    "A4": "",
+    "A5": "The authors’ methodological account says the research relied mainly on qualitative document studies and in-depth interviews, with documents treated as purposeful governance technologies rather than neutral representations. For the Tromsø case, documents from plans dated 1991, 2000, 2008, 2015, and 2022 were examined, alongside interviews with seven key participants. The segment also emphasizes that the knowledge used to judge aquaculture site suitability changes with technological development, environmental conditions, production, disease, knowledge status, and political frameworks. Its theoretical discussion warns that measurable indicators, such as sea lice, can make an industry governable while other less measurable indicators may become invisible. It does not assess emerging technologies’ actual effects on siting or environmental impacts.",
+    "A6": "The authors frame coastal planning as a means of coordinating competing interests and note that conflicts can arise between aquaculture and other marine uses. Citing the Planning Law Commission, they report that marine areas involve multiple, sometimes conflicting interests and that increased use has intensified conflicts; planning is expected to provide clarification and predictability for users. Aquaculture’s permanent spatial footprint and changing needs contribute to pressures, while the use of dispensations under early small-area plans could produce piecemeal management. The segment also describes the ambition to reconcile business development with public interests, nature protection, and biodiversity. It does not present a detailed case of a particular dispute or assess actual process legitimacy or outcomes.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment develops the theoretical and methodological basis for studying integrated coastal planning, then traces Norwegian planning’s development and the emergence of municipal coastal planning. The theoretical discussion explains how problems, rationales, and governing technologies shape what becomes visible and manageable. Sea lice, for example, is a measurable environmental indicator that can make aquaculture regulable while leaving less measurable concerns outside the field of view. Institutional change is described as gradual: new practices may be layered onto existing ones, and established institutions can persist despite new management approaches.\n\nThe study is exploratory and uses Norwegian coastal zone planning as its case. Research centers on qualitative document studies, supplemented in the Tromsø case by semi-structured interviews with seven people involved in plan processes. A search for documents on the ecosystem-services framework produced over 100 results, screened down to eight documents. The Tromsø plan review covered plans from 1991, 2000, 2008, 2015, and 2022. The author notes limits including reliance on documents, retrospective interviews, and interviews conducted remotely.\n\nThe historical account describes expanding planning ambitions, from physical development control toward coordination of social, economic, and environmental concerns. Municipal marine planning powers expanded in 1989 to the baseline, and the 2008 Planning and Building Act extended the planning area to 1 nautical mile outside it. Aquaculture helped drive this development. A 2000 planning requirement tied consideration of aquaculture site applications in allocation rounds to an approved municipal coastal plan. Planning practice shifted from small, fixed aquaculture zones toward multi-purpose areas, with areas unsuitable because of conflicts excluded. Site suitability changes with technology, environmental conditions, production, disease, knowledge, and policy. The segment discusses planning ambitions and institutional context, but does not provide detailed application outcomes or cumulative-effects assessments.",
+   "chapter_title": "4 Helhet i norsk planlegging – fra byplanlegging til sjø og land, hand i hand"
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 44,
+   "page_to": 61,
+   "chars": 47220,
+   "key_figures": [
+    {
+     "quote": "der hvor det i 1992 var kun 22% av landets kommuner som hadde en plan som omfattet sjøareal (Stokke et al., 2006), var det i 2015 kun 6 av 275 kystkommuner som ikke hadde en vedtatt plan for kystområdene (Sørdahl et al., 2017).",
+     "statement": "Cited studies report that the share of Norwegian municipalities with a plan covering sea areas was 22% in 1992, while in 2015 only 6 of 275 coastal municipalities lacked an adopted coastal plan."
+    },
+    {
+     "quote": "En oversikt fra 2017 viser at det i perioden 2008-2013 var enten ferdigstilt eller igangsatt 9 interkommunale kystsoneplanprosesser som involverte totalt 65 kommuner",
+     "statement": "A cited 2017 overview reports that 9 intermunicipal coastal-zone planning processes involving 65 municipalities were completed or initiated during 2008-2013."
+    },
+    {
+     "quote": "Et bidrag i denne artikkelen er at den studerer endring over lengre tid (35 år) og analyserer utviklingen i forståelsen av helhet på tvers av flere planer og prosesser.",
+     "statement": "The authors report that Article II examines changes in understandings of integration across plans and processes over 35 years."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment describes coastal spatial planning as an increasingly central part of municipal planning, carried out through separate coastal plans or the municipal land-use plan. It reports substantial variation among municipalities and regions in zoning approaches, public participation, and impact assessment practices. Intermunicipal planning can standardize methods and improve planning expertise, but some collaborations have stalled or may amount mainly to shared data collection while municipalities make separate allocation decisions. Regional plans can provide guidance but are not legally binding; the Sunnhordaland and Ytre Hardanger plan drew municipal and industry criticism over mismatches with municipal allocations and constraints on aquaculture expansion or site changes. The authors emphasize that balancing interests is complicated by overlapping authorities and sector laws.",
+    "A1": "The segment identifies spatial planning arrangements and institutional conditions that shape coastal aquaculture opportunities. Municipalities allocate areas through coastal or municipal plans, while regional plans can set out guidance and zones, including zones for multiple uses with or without aquaculture. The regional plan for Sunnhordaland and Ytre Hardanger was criticized by municipalities for inconsistencies with their own allocations, and the aquaculture industry viewed it as limiting future site expansion or changes. Planning practice varies in its use of single-use versus multiple-use areas and in participation and impact assessment. The segment does not detail the licensing system, site-specific environmental thresholds, or fish-health factors. It does show that authority overlaps and differences in how planning and sectoral laws relate can affect what is possible.",
+    "A2": "",
+    "A3": "The segment notes that planning practices vary in how impact assessments are conducted, but does not describe methods for assessing cumulative effects of aquaculture production or how such assessments determine site selection. Article II, as summarized by the authors, finds that growing attention to sustainability and aggregate effects is reflected in local municipal planning adapting to national expectations. More broadly, the authors argue that fragmented responsibilities and inadequate, poorly standardized knowledge make it difficult to apply comprehensive assessment frameworks, including ecosystem-services mapping. Their account concerns planning integration and knowledge barriers rather than a specific cumulative-effects method, production threshold, or aquaculture siting decision.",
+    "A4": "",
+    "A5": "The segment presents knowledge and planning tools as important conditions for coastal decisions. Intermunicipal planning can support standardized data collection and compilation, increase planning competence, and improve understanding of neighboring municipalities’ circumstances. However, the authors’ account of Article I finds that ecosystem-services concepts have been adopted only superficially: local authorities lack practical mapping tools, available nature-value knowledge does not fit the framework’s categories, and knowledge of socioeconomic conditions is limited. The segment argues that coordinated work across levels of government is needed to collect, standardize, and make knowledge accessible. It discusses maps, participation procedures, valuation models, and nature and land accounts as governance technologies, but says nothing about emerging technological tools for aquaculture siting.",
+    "A6": "The segment describes conflicts among municipalities, regional authorities, sectoral agencies, aquaculture, conservation, and other interests. In the Sunnhordaland and Ytre Hardanger regional plan case, municipalities criticized mismatches with municipal plans and the treatment of aquaculture alongside protected areas; the industry considered the plan restrictive to future expansion or changes at sites. Because regional plans are not legally binding, their force is uncertain, although maps and guidelines can support objections to municipal plans that conflict with regional interests. The authors also identify unclear divisions of authority and contradictory or fragmented national signals as obstacles. Continuous networks and shared arenas are presented, based on cited research, as factors supporting regional planning; the segment also warns that broad integration can delay decisions or allow powerful interests to dominate.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment reviews coastal planning across municipal, intermunicipal, regional, and sectoral levels, then summarizes the dissertation’s three articles and discusses their combined contribution. Coastal planning has become a standard part of municipal planning: cited figures indicate that in 1992 only 22% of municipalities had a plan covering sea areas, while in 2015 only 6 of 275 coastal municipalities lacked an adopted coastal plan. A cited overview records 9 intermunicipal coastal planning processes, involving 65 municipalities, initiated or completed during 2008-2013. Such collaboration can standardize data work and strengthen planning competence, but some processes have stalled or may not produce genuinely cross-boundary land allocations. Regional plans can coordinate across boundaries but are less binding than municipal plans. The Sunnhordaland and Ytre Hardanger plan illustrates disputes over aquaculture, protected areas, and the relationship between regional guidance and municipal authority.\n\nThe segment emphasizes overlapping laws, sectoral responsibilities, and uneven coordination as obstacles to coherent planning. It summarizes Article I’s finding that ecosystem-services planning has been adopted only superficially because local authorities lack suitable tools and knowledge, while sector-based institutions are poorly matched to an intersectoral framework. Article II traces changing meanings of integration across 35 years, including broader participation, geographic coordination, and knowledge types, while warning that ambitions such as integration and sustainability can be vague. Article III argues that the planning system is better described as differentiated than fragmented: more integration is not always better and can increase delays or unequal influence. The discussion draws on documentary research and, for Article II, interviews; it concerns planning concepts and institutions rather than detailed site-application procedures, fish health, or aquaculture biosecurity.",
+   "chapter_title": "4.3 Helhetsambisjoner og kritikk; 5 Artikler og hovedfunn; 6 Felles drøfting"
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 61,
+   "page_to": 76,
+   "chars": 47867,
+   "key_figures": [
+    {
+     "quote": "der hvor den har en fastsatt grense i sjø (1 nautisk mil utenfor grunnlinjen), kan det variere hvor lagt opp på land den går.",
+     "statement": "The authors state that the sea boundary of municipal planning is 1 nautical mile outside the baseline in Norway, while its landward extent can vary; this is a description of the planning boundary, not a measured study result."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors argue that coastal spatial planning is shaped by political ambitions and administrative practice. Municipalities prepare and adopt plans, but these must also translate national goals into local decisions. The planning area itself is politically defined, and the chapter describes a tension between holistic ambitions to include more interests and the reductionist choices needed to make decisions manageable. Environmental considerations, industry benefits, and nature values may be weighed against one another, but the authors stress that such weighing is normative and depends on available tools, knowledge, and resources. The segment does not set out specific rules determining aquaculture capacity or where sites may be established.",
+    "A1": "The authors discuss coastal planning as a means of coordinating activities and interests across sectors, administrative boundaries, and the land–sea interface. They note that the geographical scope of municipal planning is politically defined: its sea boundary is stated as 1 nautical mile outside the baseline, while its landward extent can vary. The segment does not analyze aquaculture site availability, licensing, fish health, or how these interact in particular applications. It does argue that broad planning ambitions require adequate knowledge, methods, and municipal capacity, and that increasing the number of interests considered can make planning more complex and prolonged.",
+    "A2": "",
+    "A3": "The authors describe ecosystem-based management as an ambition to consider ecosystem structure, function, limits, and cumulative human effects rather than isolated species, activities, or sectors. They argue that translating broad international principles to national and local practice increases complexity and allows differing interpretations. The ecosystem-services framework is discussed as a reductionist tool that categorizes nature’s contributions and can place them on a common, often monetary, scale. This may make comparisons easier but can obscure values that are difficult to quantify. The authors cite Mikkelsen et al. (2022) on challenges for equal treatment, transparency, and consistency when fixed rules and quantitative models are used. The segment does not describe cumulative aquaculture production assessments or their use in site decisions.",
+    "A4": "The authors discuss economic valuation as one way of making different ecosystem services comparable, noting that the ecosystem-services framework often uses monetary values as a common measure. They caution that monetization and standardization can hide material or immaterial values, including the significance of an undisturbed natural area, and that valuation reflects underlying values and choices. The chapter gives industrial establishment, jobs, and tax revenues as possible benefits to weigh against nature values, but does not quantify these or explain how benefits and costs are distributed among stakeholders. It does not examine economic instruments or incentives for aquaculture site selection.",
+    "A5": "The authors identify the knowledge base and tools available to municipalities as determinants of what can be included and prioritized in planning. They argue that the planning system lacks a sufficiently comprehensive knowledge base and methods for valuation and trade-offs, and that municipalities also need the capacity and resources to use available tools. Different planning technologies, such as impact assessments, maps, and ecosystem-services frameworks, recognize different forms of knowledge. Standardization and quantitative methods can make comparisons possible but may render some values and concerns less visible. The segment proposes further research on nature and area accounts and on how actors shape planning practice. It does not assess emerging technologies for aquaculture siting.",
+    "A6": "The authors describe conflicts as arising from competing uses and values, including the tension between industrial development and protecting natural areas. They argue that deciding what to include, exclude, and prioritize is unavoidable, and that these choices also shape which actors participate and whose knowledge counts. Translating value disputes into technical assessments may conceal or reproduce power imbalances. The authors suggest that overlapping responsibilities can create friction but may also encourage dialogue and reveal conflicting objectives. They associate legitimate and effective planning with clear roles, predictability, participation, transparency, learning capacity, and sufficient resources, while cautioning that excessive sectoral separation can reinforce silo thinking.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment examines holistic planning as a meeting point between political ambitions and administrative practice, then presents concluding reflections on coastal planning in Norway. The authors distinguish a holistic approach, which seeks to include connected social and ecological systems and more interests, from a reductionist approach, which simplifies complexity into manageable categories and common measures. They note that municipal planning has a sea boundary of 1 nautical mile outside the baseline, while its landward extent can vary; the planning area is itself politically defined.\n\nThe chapter argues that extending holistic ambitions across sectors and administrative boundaries increases complexity and makes implementation difficult. Ecosystem-based management is presented as an ambitious principle, while the ecosystem-services framework is discussed as a tool for translating that ambition into categories and comparable values. The authors caution that monetization and quantitative assessments can obscure values, produce inconsistent or less transparent decisions, and turn normative disagreements into technical questions. The segment emphasizes that planning choices about what to include and exclude also affect which actors and knowledge are influential.\n\nThe concluding discussion identifies a persistent gap between aspirations and practical capacity. Municipalities need stronger knowledge, valuation methods, resources, and tools to make broad assessments; intermunicipal planning may offer capacity benefits but does not guarantee effective or adopted plans. Political authorities retain final decision-making responsibility, and planning cannot itself deliver consensus or eliminate conflicts. The authors recommend critical reflection on planning’s normative choices and identify further research needs, while noting that findings are grounded in specific Norwegian planning processes and are not directly generalizable. The discussion is conceptual and based substantially on documentary material, a methodological choice influenced by the pandemic.",
+   "chapter_title": "6.2 Helhet i møtet mellom politikk og forvaltning"
+  },
+  {
+   "index": 4,
+   "headings": [],
+   "page_from": 76,
+   "page_to": 88,
+   "chars": 46031,
+   "key_figures": [
+    {
+     "quote": "As the municipal plans are legally binding, the main authority for coastal spatial planning in Norway are the 225 coastal municipalities (reduced from 273 due to mergers in 2019).",
+     "statement": "The authors report that Norway's municipal coastal spatial planning authority comprises 225 coastal municipalities, reduced from 273 due to mergers in 2019."
+    },
+    {
+     "quote": "Acknowledging that there was not enough information to undertake a full ES evaluation of the Barents Sea, the Forum selected six ES to illustrate how the concept can be used to describe the basis for value creation in Norwegian seas (in line with their mandate) (Anon., 2018).",
+     "statement": "A cited 2018 Professional Forum report selected six ecosystem services to illustrate value creation in Norwegian seas, noting that information was insufficient for a full Barents Sea evaluation."
+    },
+    {
+     "quote": "The Forum is made up of a dozen directorates and research institutions providing knowledge to the relevant ministries on the ocean plans.",
+     "statement": "The authors report that the Barents Sea Professional Forum comprises a dozen directorates and research institutions providing knowledge to ministries on ocean plans."
+    },
+    {
+     "quote": "The search resulted in more than one hundred documents, including parliamentary bills, acts and regulations, white papers and official reports, as well as background documents, academic books and book chapters.",
+     "statement": "The authors' Lovdata search for ecosystem service terminology returned more than one hundred documents relevant to screening for the Norwegian governance analysis."
+    },
+    {
+     "quote": "This reduced the number to eight documents; two public reports, one proposition to the Parliament, two officially appointed expert group reports, one white paper, the mentioned regulation and the public comment on the regulation.",
+     "statement": "The authors' screening reduced the documents relevant to their analysis of ecosystem services in Norwegian coastal governance to eight."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors find that Norway's municipal spatial-planning system is intended to coordinate the use and non-use of resources and areas, and to weigh uses and interests. Municipalities are described as an integrating body where trade-offs between uses and non-uses of natural resources are considered before decisions. The article argues that ecosystem-services approaches could make trade-offs more visible by identifying and valuing benefits in monetary and non-monetary terms. However, the authors find that integration into Norwegian coastal governance has been incremental: the concept lacks practical terms and methods, and the multilevel, multiscale governance system is not structured to accommodate an intersectoral and interdisciplinary approach. The 225 coastal municipalities hold the main authority for coastal spatial planning, and their plans are legally binding.",
+    "A1": "",
+    "A2": "",
+    "A3": "The authors discuss strategic environmental assessments as a potential route for incorporating ecosystem services into municipal planning. Their abstract identifies the municipal planning system, particularly strategic environmental assessments, as potentially well suited to considering trade-offs. However, they find that adapted knowledge databases, clarified methods and training are needed before municipalities can take on this task. The article's document analysis also finds that the ecosystem-services concept is not applied in most central acts, including the Planning and Building Act of 2008, the Nature Diversity Act of 2009 and the water-management framework regulation. It does not provide aquaculture-specific cumulative-effect methods or site-selection findings.",
+    "A4": "The article discusses ecosystem-services frameworks that value benefits in monetary and non-monetary terms, making trade-offs between ecosystem uses and pressures more visible for decision-making. It describes TEEB as emphasizing the economic contribution of ecosystems and biodiversity, including the potential cost of losses, while also recognizing that simple recognition of value may be more appropriate in complex situations involving multiple ecosystems, services or ethical and cultural convictions. These are descriptions of cited frameworks, not findings about Norwegian aquaculture fees, regulatory incentives, or how costs and benefits are distributed among coastal stakeholders.",
+    "A5": "The authors' document analysis finds that ecosystem-services implementation in Norwegian coastal governance is constrained by inadequate practical tools and an institutional system not structured for intersectoral, interdisciplinary work. They call for adapted knowledge databases, clarified methods and municipal training. The article reviews differences among the Millennium Ecosystem Assessment, TEEB, CICES and IPBES in service classification, knowledge requirements and valuation, including IPBES's recognition of multiple knowledge systems and stakeholder participation. The cited Barents Sea Professional Forum selected six ecosystem services to illustrate value creation, while acknowledging insufficient information for a full evaluation. The segment says nothing about emerging technologies.",
+    "A6": "The article frames coastal zones as facing growing pressure from multiple activities competing for space and resources. It presents spatial planning as the principal arena for allocating coastal and terrestrial space and weighing uses and interests. The authors argue that ecosystem-services approaches could help reveal trade-offs among uses and pressures, but find that sectoral and fragmented governance presents structural obstacles to integration. They also note, drawing on cited research, that ecosystem-services concepts may be contested by sectors with conflicting goals. This segment does not report specific aquaculture conflicts or evaluate the legitimacy of particular siting decisions.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment begins an article examining how the ecosystem-services (ES) concept has been introduced into Norwegian coastal governance, with particular attention to coastal spatial planning. The authors use document analysis, screening Norwegian legal and policy documents for explicit use of ES terminology and tracing recommendations from policy documents into regulations and guidance. Their Lovdata search returned more than one hundred documents, which screening reduced to eight relevant documents. The authors find that only incremental changes have been made: ES terms and practical methods for applying the concept in day-to-day governance are lacking, and the multilevel, multiscale system is not structured for an intersectoral and interdisciplinary approach. Norway's 225 coastal municipalities, reduced from 273 due to mergers in 2019, hold the main authority for coastal spatial planning, and their legally binding plans are presented as a potentially suitable arena for integrating trade-offs. In particular, strategic environmental assessments could help, but municipalities need adapted knowledge databases, clarified methods and training. The article reviews ES frameworks and examples of mapping and valuation, including a cited Barents Sea exercise in which a Professional Forum selected six services because information was insufficient for a full evaluation. The authors also describe barriers reported in cited studies, such as ambiguous terminology, fragmented management and limited practical awareness among planners. The segment is the opening and background of the article; it does not report aquaculture-specific siting outcomes, cumulative-effect assessments, application delays, fish-health issues or emerging technologies.",
+   "chapter_title": "Introducing the ecosystem services concept in Norwegian coastal zone planning"
+  },
+  {
+   "index": 5,
+   "headings": [],
+   "page_from": 88,
+   "page_to": 94,
+   "chars": 45613,
+   "key_figures": [
+    {
+     "quote": "As of late 2018, six out of ten municipalities have adopted the subplans, and the remaining four are expected to approve their plan by mid-2019.",
+     "statement": "The authors' review found that, as of late 2018, six out of ten municipalities in the biodiversity subplan pilot had adopted subplans, while the remaining four were expected to approve theirs by mid-2019."
+    },
+    {
+     "quote": "As for the use of the ES concept, only two of the approved plans mention ES explicitly and in some detail.",
+     "statement": "The authors' review found that only two of the approved municipal subplans explicitly discussed ecosystem services in some detail."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe Norway's coastal planning framework: municipalities allocate space to different uses and non-uses within their jurisdiction, while sector agencies can object to plans that conflict with sector interests or legislation. They argue that planning requires consideration of environmental and socioeconomic factors, but find that ecosystem-service approaches have not been effectively integrated into coastal governance. The segment does not discuss aquaculture siting or how aquaculture development is balanced against competing uses.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "The authors discuss economic instruments for nature use, but not aquaculture-specific incentives or the distribution of costs and benefits among stakeholders. A cited 2013 expert group proposed payments as compensation for the use of ecosystem services. A cited 2015 green-tax report recommended a fee on larger technical developments in untouched nature, but the authors report that this fee was not adopted. The segment does not connect these proposals to aquaculture site selection.",
+    "A5": "The authors find that municipal planning relies mainly on official reports and national databases, supplemented by local knowledge. Although these sources contain information relevant to ecosystem services, they are not organised or presented for ecosystem-service valuation, and municipalities have limited capacity to generate new knowledge during planning. The authors argue that effective implementation requires practical guidelines, tailored tools, clarified methods and training. Their evidence is a qualitative, in-depth content analysis of policy and legal documents, alongside a review of municipal biodiversity subplans; the segment does not discuss emerging technologies.",
+    "A6": "The authors explain that sector authorities, including those responsible for fisheries, aquaculture, marine traffic and environmental protection, influence municipal plans and may formally object when plans conflict with sector interests or legislation. This creates a multilevel governance setting in which interests can compete. The authors argue that unclear methods and roles, limited coordination and missing practical guidance hinder effective and predictable decision-making. The segment does not describe particular aquaculture-related disputes or assess stakeholder perceptions of legitimacy.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment reviews how the ecosystem-services (ES) concept has entered Norwegian environmental and coastal planning policy. It describes a system in which municipalities are the main spatial-planning authorities, while state and county bodies provide guidance and sector agencies can object to plans. The authors use qualitative, in-depth content analysis of relevant policy and legal documents, and review municipal biodiversity subplans. They find that ES has been introduced gradually but remains weakly operationalised: regulations mention the concept, yet provide little guidance on methods for identifying, valuing or weighing services. Existing biodiversity mapping and databases are not tailored to ES assessment, and the policy approach often focuses on habitats and species rather than the services and human systems connected to them. A municipal pilot illustrates this gap: as of late 2018, six out of ten municipalities had adopted subplans, but only two approved plans mentioned ES explicitly and in some detail. The authors argue that sector-based knowledge production, limited municipal capacity and the absence of clear guidance impede integration. They call for practical tools, methods, training and coordination suited to Norway’s multilevel planning system. The segment also notes that a proposed fee on larger technical developments in untouched nature was not adopted. Its focus is the governance of ES and biodiversity, not aquaculture site applications, production impacts or fish health; it therefore offers little direct evidence on those topics.",
+   "chapter_title": "4.1 Setting the scene; 4.2 Introducing the ES concept"
+  },
+  {
+   "index": 6,
+   "headings": [],
+   "page_from": 94,
+   "page_to": 105,
+   "chars": 45672,
+   "key_figures": [
+    {
+     "quote": "Our aim is to investigate how the need for integration in coastal zone planning is framed by the government and how this has changed over time in a practical planning context. This will be done through an in-depth study of coastal zone planning in Norway, spanning 35 years and five generations of municipal coastal zone plans in the Tromsø municipality.",
+     "statement": "The authors’ study examines changes in how integration is framed across 35 years and five generations of coastal-zone plans in Tromsø municipality."
+    },
+    {
+     "quote": "Tromsø is a medium-sized municipality (with a population of about 77,000) where the inhabitants are spread between a large urban centre and several smaller coastal villages in the adjacent area.",
+     "statement": "The authors describe Tromsø municipality’s population as about 77,000 when explaining the case-study setting."
+    },
+    {
+     "quote": "In total, 7 persons were interviewed. This included both current and previous employees in the municipality, covering all five planning processes.",
+     "statement": "The authors interviewed 7 current and former municipal employees to support their analysis of the five Tromsø planning processes."
+    },
+    {
+     "quote": "The interviews were conducted by telephone as semi-structured interviews, allowing for follow-up questions, and lasted between 20 and 45 min each.",
+     "statement": "The authors’ telephone interviews with planning informants lasted between 20 and 45 min each."
+    },
+    {
+     "quote": "In the current PBA of 2008, it was extended to one nautical mile beyond the baseline (Hersoug and Johnsen 2012).",
+     "statement": "The segment reports that the 2008 Planning and Building Act extended municipal coastal planning jurisdiction to one nautical mile beyond the baseline; this is a cited legal account."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ analysis frames aquaculture as a major driver of municipal coastal-zone planning, while planning is presented as a tool for prioritising uses and non-uses and reducing spatial conflicts. The segment reports that, since 2000, the government has required municipalities to have an approved coastal-zone plan before new aquaculture production sites can be established. In Tromsø, the 1987 plan focused on aquaculture development, and the 1991 plan described aquaculture growth as the main reason coastal spatial planning had emerged. Later planning ambitions also include economic development, environmental considerations and other coastal interests. The segment establishes these planning conditions but does not assess the extent of aquaculture sites or how specific applications are decided."
+   },
+   "summary": "This segment introduces a study of how the meaning and practice of integration in Norwegian coastal-zone planning have changed. The authors use a governmentality framework to trace how planning challenges are problematised, how integration is rationalised as a response, and which governance technologies are used. They analyse national policies and five generations of municipal coastal plans in Tromsø spanning 35 years, supplemented by scientific literature and interviews with 7 municipal public servants. The interviews lasted between 20 and 45 min each. Tromsø is described as having a population of about 77,000.\n\nThe article frames integrated planning as a response to sectoral fragmentation, cumulative impacts of human uses, and conflicts over marine space. It also cautions that integration is a changing political goal and governance approach, and that more integration can add complexity without prompting debate about whether it is always a useful ambition. The analysis identifies political and administrative, geographic, participation and knowledge dimensions of integration. The Planning and Building Acts establish planning as a means of coordinating interests and guiding resource use; the 2008 Act adds sustainable development and encourages inter-municipal planning. The segment reports that, since 2000, an approved municipal coastal-zone plan has been required before new aquaculture production sites can be established, making aquaculture a major planning driver. It begins the Tromsø case analysis, describing a shift from conflict reduction and oversight in the 1991 plan toward economic development in the 2000 plan. This segment does not provide a full account of later plan findings or site-level aquaculture decisions.",
+   "chapter_title": "The challenge of integrated planning"
+  },
+  {
+   "index": 7,
+   "headings": [],
+   "page_from": 105,
+   "page_to": 116,
+   "chars": 44195,
+   "key_figures": [
+    {
+     "quote": "The study of the planning history in Tromsø, spanning 35 years, shows how changes have occurred in what has been considered problematic and consequently what the planning process should analyse and rectify.",
+     "statement": "The authors describe a 35 years span of Tromsø coastal planning history as the period examined in their analysis."
+    },
+    {
+     "quote": "The documents themselves have become ‘thicker’, where the plan description of 2015 was twice the size of that of the 2000 plan, and that of the 2022 plan was triple its size.",
+     "statement": "The authors find that Tromsø’s 2015 plan description was twice the size of its 2000 plan and its 2022 plan description was triple its size."
+    },
+    {
+     "quote": "In 2015, the first inter-municipal coastal zone plan including Tromsø and four other municipalities was approved.",
+     "statement": "The authors report that Tromsø’s first inter-municipal coastal zone plan, covering five municipalities, was approved in 2015."
+    },
+    {
+     "quote": "The latest inter-municipal coastal zone plan was approved in 2022, this time involving three municipalities",
+     "statement": "The authors report that the latest inter-municipal coastal zone plan discussed, involving three municipalities, was approved in 2022."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ analysis of Tromsø’s coastal plans shows that where and how coastal space is planned is shaped by changing planning priorities, inter-municipal coordination, participation, knowledge practices and efforts to manage competing interests. The 2015 inter-municipal plan used an ecosystem-based approach and considered cumulative effects of spatial dispositions; planning across municipal borders was intended to reduce differences in methods and provisions that could create unpredictability for aquaculture. The 2022 plan continued to emphasise ecosystem-based management and predictability, while also addressing growing complexity, coordination among authorities, tourism and recreation, and conflicts closer to shore. The authors argue that planning increasingly serves broad societal development goals, but that terms such as ‘comprehensiveness’ do not clearly specify what should be achieved.",
+    "A1": "The authors discuss planning conditions rather than aquaculture licensing or farm-level development factors. Their Tromsø case indicates that aquaculture development opportunities are affected by the spatial plans of neighbouring municipalities: separate plans and differing practices can make conditions unpredictable for the industry. Inter-municipal planning is presented as a way to coordinate knowledge bases, methods and provisions across municipal borders. The 2015 plan sought an ecosystem-based approach and consideration of cumulative effects, while the 2022 plan emphasised coordination and predictability. The segment does not detail licensing rules, site availability, fish health or how those factors interact.",
+    "A2": "",
+    "A3": "The authors report that Tromsø’s 2015 inter-municipal plan aimed for an ecosystem-based approach that considered cumulative effects of different spatial dispositions. They interpret the increased emphasis on sustainability and cumulative effects as local planning adapting to national expectations. The segment does not describe a specific cumulative-effects assessment method, production thresholds, or how such assessments determine individual aquaculture site decisions. In their broader argument, the authors caution that expanding the scope of integration can add complexity rather than resolve it, and that broad ideals such as ‘comprehensiveness’ may provide little practical guidance.",
+    "A4": "",
+    "A5": "The authors find that planning knowledge practices expanded over time. The 2015 plan used more in-depth impact assessment and risk and vulnerability analysis, combining scientific knowledge with local knowledge that had been gathered and mapped. The authors also report that participation was framed as a means of gathering knowledge and establishing local legitimacy. Interviews indicated that the municipality-led 2022 process improved local participation and understanding of local issues, with increased feedback at public meetings and hearings. The segment does not assess emerging technologies or provide a comprehensive account of the evidence used for individual site decisions.",
+    "A6": "The authors’ Tromsø case describes spatial conflicts associated with aquaculture expansion, which was perceived as unjustified expansion at the expense of local rights developed through traditional use. The 2008 plan mobilised participation and cooperation across municipal borders as ways to prevent or resolve spatial conflicts. Later plans addressed unpredictability between municipalities and sought common principles and provisions. By 2022, tourism and recreation were increasing concerns, with shore areas becoming more important and conflict lines moving closer to land. The authors report that municipality-led planning improved local participation and understanding. Their critical argument is that ‘integration’ can appear inherently positive while concealing whose interests it serves, and that more integration does not necessarily settle conflicts or make decisions legitimate.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment completes Sørdahl’s analysis of changing integration practices in Tromsø coastal planning and begins a separate article on the concept of integration. The Tromsø case traces planning across 35 years. The 2008 plan treated participation and cooperation across municipal borders as tools for addressing spatial conflicts associated with aquaculture expansion and perceived encroachment on traditional local rights. The first inter-municipal plan discussed, approved in 2015 and involving Tromsø and four other municipalities, pursued an ecosystem-based approach, considered cumulative effects, and sought consistent methods and provisions across municipal boundaries. Its process combined scientific and local knowledge, impact assessment and risk and vulnerability analysis. The 2022 plan involved three municipalities and was municipality-led; interview evidence indicated improved participation and understanding of local concerns. Tourism and recreation had become more prominent issues, with conflict lines moving closer to shore. The plan descriptions grew: the 2015 description was twice the size of the 2000 plan, and the 2022 description was triple its size. The authors argue that broader, more comprehensive planning can lengthen the process and introduce vague goals. They question whether ‘integration’ and ‘comprehensiveness’ provide sufficiently clear direction, warning that repeatedly expanding the planning agenda may reproduce complexity rather than resolve it. The segment then introduces a 2023 conceptual article, which argues for treating integration as context-dependent and distinguishing differentiation from fragmentation. It presents integration as a means toward sustainable planning, not an end in itself. The segment provides a qualitative planning-history analysis and interview references, but does not report aquaculture site-level or licensing outcomes.",
+   "chapter_title": "The changing framings and practices of integration in coastal zone planning"
+  },
+  {
+   "index": 8,
+   "headings": [],
+   "page_from": 116,
+   "page_to": 124,
+   "chars": 37441,
+   "key_figures": [],
+   "pq_notes": {
+    "A0": "The authors’ conceptual argument is that coastal planning should not treat integration as eliminating fragmentation or achieving a single unified system. Planning involves differentiated actors, sectors, interests, knowledge systems and territories; the practical task is to coordinate and manage this network. The authors caution that more integration is not automatically better: over-integration can cause inefficiencies, while integration under a dominant authority may overshadow minor or marginalized interests. Cited research suggests effective integration may lie between light and deep integration, and that the appropriate degree depends on the plan and issue.",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors argue that planning brings together specialized knowledge from sector agencies and interest groups, including agencies regulating aquaculture production, fishing, marine traffic and pollution. Different sectors use distinct knowledge, policy frameworks and objectives, and may delineate coastal space according to their own mandates. The authors’ conceptual proposal is to understand integration as coordinating this differentiated network rather than merging knowledge into a single system. They also caution that integration varies across dimensions and planning stages, so measuring it as one overall degree is unlikely to be informative.",
+    "A6": "The authors identify potential conflicts between sectoral interests and between dominant and minor or marginalized groups. They argue that gathering sectors under one authority may make interests easier to consider together, but can also allow dominant interests to overshadow others. Over-integration may involve too many institutions in too many issues and create inefficiencies. Their conceptual argument is that legitimacy and effective planning depend on context-sensitive coordination, not simply maximizing integration. They also warn that the vague, positive framing of integration can provide political kudos without substantive management content and may be co-opted to preserve the status quo.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "This segment develops a conceptual critique of how integration and fragmentation are understood in coastal and marine planning literature. The authors argue that fragmentation is often treated as integration’s negative opposite without sufficient theorization. They suggest that the term may misdescribe planning: many sectors and interests were not once part of a unified system, but developed separately and later entered planning. Moreover, some fragmentation is a feature of pluralistic society and can protect diverse interests; integration may instead produce dominance by a powerful sector or inefficiencies through excessive institutional involvement.\n\nThe authors propose viewing planning as a differentiated network of actors, sectors, knowledge systems and territories. Integration then means coordinating this network, not unifying supposedly fragmented parts. They describe degrees ranging from information-sharing and cooperation, through coordination of policies, to joint work on mutually beneficial goals. Cited research indicates that the most effective processes may lie between light and deep integration, and that suitable degrees vary by plan, issue and dimension. Integration can also change over time and across planning stages, making a single measure of integration potentially uninformative.\n\nThe authors further argue that full integration is unattainable and that integration should be treated as an ongoing, context-dependent process and means to sustainable planning, rather than a final state. They warn that its positive connotations can give political legitimacy without useful management content, or enable over-integration and unsustainable practices. This segment is a conceptual discussion of scientific literature, not an empirical assessment of Norwegian aquaculture planning, site decisions, environmental effects or industry practices.",
+   "chapter_title": "Towards a more dynamic concept"
+  }
+ ]
+}

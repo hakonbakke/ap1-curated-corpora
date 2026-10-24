@@ -1,0 +1,342 @@
+{
+ "doc_id": "2026_hi_risikorapport",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 5,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 21,
+   "chars": 47421,
+   "key_figures": [
+    {
+     "quote": "Norsk akvakulturproduksjon økte kraftig fra 2024 til 2025 – med drøyt 200 000 tonn. Dette er den største årlige veksten i perioden 1980-2025.",
+     "statement": "The report finds that Norwegian aquaculture production grew by drøyt 200 000 tonn from 2024 to 2025, the largest annual increase in the stated 1980-2025 period."
+    },
+    {
+     "quote": "Atlantisk laks utgjør i underkant av 1,7 millioner tonn (93 %) av den totale matfiskproduksjonen, en økning på i overkant av 182 000 tonn fra 2024.",
+     "statement": "The report’s account of preliminary 2025 production data finds that Atlantic salmon made up i underkant av 1,7 millioner tonn (93 %) of Norwegian food-fish production, an increase of i overkant av 182 000 tonn from 2024."
+    },
+    {
+     "quote": "Nedsenkede merder brukes nå på 40 lokaliteter for å redusere lusepåslag, men dette utgjør fortsatt en svært liten del av de rundt 900 lokalitetene i Norge.",
+     "statement": "The report finds that submerged cages intended to reduce lice infestation were in use at 40 sites, compared with rundt 900 aquaculture sites in Norway."
+    },
+    {
+     "quote": "Tall fra Fiskeridirektoratet viser at 67 millioner oppdrettslaks gikk tapt i 2025. Over 54 millioner av disse døde i merdene, rundt 2,5 millioner ble sortert bort i slakteriet, 26 000 fisk rømte, og nesten 10 millioner ble registrert tapt av «andre årsaker».",
+     "statement": "Citing the Directorate of Fisheries, the report states that 67 millioner farmed salmon were lost in Norway in 2025, with the quoted passage detailing the reported loss categories."
+    },
+    {
+     "quote": "To områder har høy risiko for lakselusindusert dødelighet hos vill laksesmolt, åtte har moderat risiko og tre har lav.",
+     "statement": "The authors’ 2026 risk assessment finds high, moderate and low risk of salmon-lice-induced mortality in wild salmon smolts in the stated numbers of Norwegian production areas."
+    },
+    {
+     "quote": "For sjøørret og sjørøye er situasjonen betydelig verre, men uendret fra fjoråret: ni produksjonsområder har høy risiko, to har moderat risiko og to områder har lav risiko.",
+     "statement": "The authors’ 2026 assessment finds high, moderate and low risk from lice effects on sea trout and Arctic char in the stated numbers of production areas."
+    },
+    {
+     "quote": "Nærings- og fiskeridepartementet en samlet vurdering annethvert år der området enten gis fargen grønn som åpner for 6 % vekst, gul som betyr ingen vekst, og rød som kan innebære et nedtrekk av produksjonskapasiteten på 6 %.",
+     "statement": "The report’s description of the traffic-light system says that the government reviews production-area status every other year and that green and red status can respectively allow 6 % growth or entail a 6 % capacity reduction."
+    },
+    {
+     "quote": "I denne vurderingen besluttet regjeringen at produksjonsområdene 3 og 4 skulle ha et nedtrekk i produksjonskapasiteten.",
+     "statement": "The report states that the government’s 2024 capacity decision reduced production capacity in production areas 3 and 4."
+    },
+    {
+     "quote": "Hvor stor kapasitetsjusteringen faktisk ble i 2024-2025 er uvisst, men økningen i matfiskproduksjon av laksefisk (laks og regnbueørret) var på drøyt 197 000 tonn, den største årlige økningen i løpet av perioden 1981-2025",
+     "statement": "The authors’ analysis of preliminary Directorate of Fisheries data finds that food-fish production of salmonids increased by drøyt 197 000 tonn in 2024-2025, the largest annual increase in the stated 1981-2025 period."
+    },
+    {
+     "quote": "Matfiskproduksjonen har økt i dette tidsrommet med drøyt 67 000 tonn i områder som stort sett har vært røde i perioden (PO3+PO4), med nesten 243 000 tonn i områder som har vært gule de siste årene (PO2+PO5-8), og 135 500 tonn i områder som har vært grønne de siste årene (PO1+PO9-13).",
+     "statement": "The authors’ comparison of production-area groups finds the quoted increases in food-fish production between the stated two-year periods in areas that were mostly red, yellow or green."
+    },
+    {
+     "quote": "Laksvel-protokollen definerer lav dødelighet som å ha en månedlig innrapportert dødelighet under 0,3 %. Oppdrettsanlegg som ligger rundt eller under dette nivået vil oppnå en produksjonsdødelighet rundt 5 %.",
+     "statement": "The report states that the Laksvel protocol defines low mortality as monthly reported mortality below 0,3 %, corresponding to production mortality around 5 % for facilities at or below that level."
+    },
+    {
+     "quote": "Den gjennomsnittlige registrerte beholdningen av laks i sjø per måned inn til Fiskeridirektoratet sin database var 459 millioner i 2024 og 445 millioner i 2025.",
+     "statement": "Citing monthly records in the Directorate of Fisheries database, the report gives average salmon stocks in Norwegian sea cages as 459 millioner in 2024 and 445 millioner in 2025."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe site and area capacity as constrained by ecological conditions, including wild-fish population status, overlap between farms and wild-fish spawning or migration routes, sensitive habitats exposed to organic matter, contaminants and metals, and the dispersion and dilution of nutrient releases. They state that Norway does not yet know enough about the carrying capacity for different aquaculture effects in each production area. The traffic-light system links area-level environmental status, assessed through lice-related mortality of wild salmonids, to capacity growth, no growth or reductions. The report also notes that production rose even in areas with red or yellow status, citing greater use of existing capacity and flexibility across areas as possible explanations. It presents balancing environmental and industry objectives as an ongoing regulatory challenge, not as a resolved planning formula.",
+    "A1": "The authors identify the availability of production capacity and the environmental status of each production area as interacting constraints. The traffic-light system uses lice impacts on wild salmonids to determine whether capacity may grow, remain unchanged or be reduced; its assessments draw on monitoring data and models. Yet the report finds that production increased in areas with red or yellow status, and suggests that more intensive use of company capacity, exceptional growth permissions, flexibility across production areas and faster production using larger post-smolts may explain this. Open cages, the number of sites, fish abundance and biomass, and close infection links between sites make lice control difficult. Environmental conditions, including warming waters, also affect future growth opportunities and fish health. The segment does not describe site-specific licensing criteria or a complete site application process.",
+    "A2": "",
+    "A3": "The report says area-level environmental status is assessed annually by an expert group using extensive monitoring data and models against specified impact thresholds; the government then makes a combined capacity decision every other year. The authors also state that models sometimes indicate possible nutrient-emission risks that are not supported by measurements, and recommend more monitoring where aquaculture activity is high. They acknowledge limited knowledge of carrying capacity across production areas and say work is ongoing to develop common consequences across the assessed unwanted events, with the aim of a combined assessment of aquaculture impacts in each area. The segment does not set out a cumulative-effects method for site selection or explain how such an assessment is incorporated into individual site decisions.",
+    "A4": "The report describes the traffic-light system as a regulatory mechanism linking environmental status to production capacity: green can permit growth, yellow means no growth, and red can involve a capacity reduction. The authors observe that production nonetheless increased in red and yellow areas, potentially because companies made greater use of existing company-level capacity, used exceptional growth permissions, shifted capacity across production areas, or shortened sea production time with larger post-smolts. A government proposal and subsequent 2025 arrangement allow reduced capacity to be used in closed units if requirements are documented to the Directorate of Fisheries; the report presents this as an incentive to introduce zero-lice technology. It also reports ongoing consideration of lice quotas, aquaculture permits and the organization of aquaculture administration. This segment does not assess how financial benefits and costs are distributed among stakeholders.",
+    "A5": "The authors say risk assessment uses available data, observations, measurements and expert judgement, and explicitly incorporates uncertainty and the strength of the underlying knowledge. Area-level traffic-light decisions use monitoring data and models. They caution that knowledge is limited on carrying capacity in production areas, and that observed and modelled signals can diverge, as with nutrient emissions. The report says weak knowledge leaves room for serious surprises and that risk conclusions are not objective, definitive risk figures. The segment describes technology as a possible way to change siting and production conditions: submerged cages are used at some sites to reduce lice infestation, and closed or zero-emission systems may allow use of otherwise reduced capacity. It does not assess emerging technologies’ spatial footprint or compare their environmental impacts in detail.",
+    "A6": "The segment identifies competing environmental interests rather than detailing local planning disputes. Aquaculture may affect wild salmonids through lice, wild-fish spawning and migration routes, sensitive habitats, seabed conditions, and water quality; these concerns interact with pressure to increase production. The traffic-light system is intended to balance environmental status against production capacity, but the authors note that output rose in areas with red or yellow status, raising questions about whether increased production is environmentally sustainable. The report also points to uncertainty and the need for a shared understanding of environmental and welfare challenges. Its approach is to provide a knowledge- and risk-based decision basis, while acknowledging that assumptions and limited knowledge are inherent. The segment does not describe community conflicts, consultation procedures, or specific criteria for legitimate and predictable site decisions.",
+    "A7": "The authors suggest that operators may improve spatial and environmental efficiency through greater use of closed or zero-emission systems that can reduce lice transmission, and report that submerged cages are already used to reduce lice infestation. A government arrangement permits use of reduced production capacity in closed units when requirements are documented to the Directorate of Fisheries, which the report says may encourage zero-lice technology. The report also identifies operational choices that may increase output from existing capacity, including higher utilization through the year, cross-area capacity flexibility and faster sea production using larger post-smolts. These are described as possible explanations for production growth, not as recommendations that are necessarily sustainable. The authors question whether such production increases are environmentally sustainable, particularly regarding lice pressure on wild salmonids.",
+    "A8": "The authors state that open cages, the number of farm sites, the quantity of farmed fish in the sea and close infection links between sites make it very difficult to maintain low salmon-lice levels. This describes waterborne connectivity and transmission between farms as an operational and environmental concern, although the segment does not quantify connectivity or identify particular connected farm groups. High lice pressure affects wild salmonids, while warmer water can accelerate lice development and reproduction and increase the need for delousing. The authors present technology that directly prevents lice transmission, including closed systems and submerged cages, as a possible response. They also note that increased production in northern areas further amplifies lice risk and that knowledge remains limited about how future marine heatwaves may affect lice transmission."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 21,
+   "page_to": 34,
+   "chars": 49105,
+   "key_figures": [
+    {
+     "quote": "Ikke-medikamentell avlusing (IMM) er fortsatt den vanligste sakstypen, og utgjorde 47 % av alle meldinger i 2025, med ca. en tredjedel flere tilfeller enn i 2024.",
+     "statement": "The authors report that non-medicinal delousing accounted for 47 % of welfare-event reports in Norwegian aquaculture in 2025, about one-third more cases than in 2024."
+    },
+    {
+     "quote": "Meldinger kategorisert som «Alge-og-manetangrep» utgjorde ca. 3 % av sakene. Her var den den påfølgende dødeligheten nesten 10 %, noe som indikerte få, men alvorlige hendelser.",
+     "statement": "The authors report that algae and jellyfish attacks accounted for about 3 % of reported cases and were followed by nearly 10 % mortality in Norway."
+    },
+    {
+     "quote": "i 2023 var det omtrent 10 lokaliteter med nedsenkede merder, i 2024 cirka 20, og i 2025 omtrent 40. Dypdrift foregår i PO3–9 og PO11, og over 30 millioner laks er hittil slaktet fra nedsenket drift.",
+     "statement": "The authors report the number of Norwegian sites using submerged cages in 2023, 2024 and 2025, the production areas where deep operation occurs, and the cumulative salmon slaughtered from submerged production."
+    },
+    {
+     "quote": "Tapsprosenten på landsbasis har ligget mellom ca. 16 og 18 % for de siste årsklassene.",
+     "statement": "The authors report that national loss rates for recent salmon year-classes have been between ca. 16 and 18 %."
+    },
+    {
+     "quote": "For 2024-årsklassen, er tapet foreløpig nesten 16 %. Men siden det her fortsatt er mye fisk i sjøen forventer vi at også denne årsklassen vil nå 17-18 %.",
+     "statement": "The authors report the preliminary loss rate and expected eventual loss rate for Norway’s 2024 salmon year-class."
+    },
+    {
+     "quote": "Med 44 meldte PD-tilfeller i 2025 må en tilbake til 2004 for et tilsvarende lavt nivå. For den alvorlige sykdommen infeksiøs lakseanemi (ILA) rapporterer Veterinærinstituttet 18 tilfeller i 2025, opp fra 13 tilfeller i 2024, som var det laveste tallet siden 2019 da 10 tilfeller av ILA ble påvist.",
+     "statement": "The authors cite the Norwegian Veterinary Institute’s counts of reported PD and ILA cases in 2025 and ILA cases in 2024 and 2019."
+    },
+    {
+     "quote": "Det årlige utsettet av regnbueørret var nede i ca. 21 millioner i 2025, mot 26 millioner i 2026, og rundt 24 millioner i 2023 og 2022.",
+     "statement": "The authors report annual rainbow trout releases in Norway for 2022, 2023, 2025 and 2026."
+    },
+    {
+     "quote": "Produksjonen av laksefisk i 2025 vil gi estimerte utslipp på 70 665 tonn løst nitrogen og 9377 tonn løst fosfor (Modell: TEOTIL).",
+     "statement": "The authors’ TEOTIL model estimates dissolved nitrogen and phosphorus emissions from Norwegian salmonid production in 2025."
+    },
+    {
+     "quote": "Dette tilsvarer grenseverdier på 850 og 1700 kgN/km2/år.",
+     "statement": "The authors set annual dissolved-nitrogen thresholds of 850 and 1700 kgN/km2/år for classifying eutrophication risk in production areas."
+    },
+    {
+     "quote": "Produksjonsområde 2 hadde en beregnet teoretisk respons på 17,6 % økning i planteplanktonproduksjonen i 2024 (figur 2.6), mens simuleringen med økosystemmodellen viser 5,8 % gjennomsnittlig økning for hele produksjonsområdet (figur 2.7).",
+     "statement": "The authors report the theoretical and ecosystem-modelled phytoplankton-production increases for production area 2 in 2024."
+    },
+    {
+     "quote": "For produksjonsområde 3 som har en beregnet respons på 19,1 % økning i planteplanktonproduksjonen i 2024, viser modellen en gjennomsnittlig respons på 6,1 %.",
+     "statement": "The authors report the theoretical and ecosystem-modelled phytoplankton-production increases for production area 3 in 2024."
+    },
+    {
+     "quote": "For produksjonsområde 10 er beregnet respons 9,7 % økning i planteplanktonproduksjonen i 2024, mens simulering viser en gjennomsnittlig økning for produksjonsområdet regionalt på 7,9 %.",
+     "statement": "The authors report the theoretical and ecosystem-modelled phytoplankton-production increases for production area 10 in 2024."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not describe current spatial planning processes, allocation of sites, or how environmental, industry and competing-use interests are balanced. It does assess environmental pressure at production-area scale and notes that total-area averages can conceal local differences, including where fish production is concentrated or water exchange is weak. These are environmental-assessment observations by the authors, not an account of spatial planning or area-management decisions.",
+    "A1": "",
+    "A2": "",
+    "A3": "The authors assess dissolved nutrient emissions at production-area scale and use both simplified calculations and ecosystem-model simulations to estimate effects on phytoplankton production. Their simple calculations assume that 100 % of dissolved nitrogen from marine farms becomes plankton production; the model covers selected areas and years and indicates local variation that regional averages can hide. They identify incomplete monitoring coverage, especially in high-production areas, as a knowledge gap and recommend more representative monitoring stations. They also state that future assessments should extend the simulations to other production areas. This is an environmental cumulative-pressure assessment, not a description of how such assessments are incorporated into planning or individual site-selection decisions.",
+    "A4": "",
+    "A5": "The authors draw on Fisheries Directorate biomass statistics, environmental monitoring under the Water Framework Directive, hydrodynamic and ecosystem models, and observations from selected coastal areas. They note that monitoring coverage is uneven and that some regional assessments rely on data from areas with better monitoring. For particulate emissions, they describe modelled estimates based on feed mass balance and the spatial extent of farms; local seabed effects depend on currents, topography, seabed type, and water exchange. Emerging approaches mentioned include submerged cages, closed or semi-closed systems, offshore farming, and systems to collect organic waste. The segment does not assess digital or other emerging spatial-planning technologies.",
+    "A6": "",
+    "A7": "The authors describe industry trials of submerged cages and other production forms intended to reduce sea-lice exposure and thereby reduce the need for delousing. They also say that systems have been developed to collect organic waste before it leaves farms, which could substantially reduce emissions, but these systems have not yet been adopted at large scale. Closed and semi-closed production and offshore farming are presented as alternative production approaches, with remaining welfare, technical, operational, and cost challenges. These measures concern environmental and operational impacts; the segment does not evaluate how efficiently they use coastal space.",
+    "A8": "The authors explain that sea lice larvae released from farms spread through water currents and can infect wild salmon post-smolts, sea trout, and Arctic char. Infection risk depends on the amount of larvae released, temperature, larval distribution, and the overlap in time and space between lice and fish migration routes or coastal feeding areas. Hydrodynamic models estimate larval distribution, while monitoring and other models assess exposure. The authors note limited knowledge of post-smolt migration routes in many areas and that open areas without aquaculture can reduce exposure for salmon with long migration routes. This concerns connectivity and transmission, not farm-to-farm biosecurity measures."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 34,
+   "page_to": 49,
+   "chars": 49231,
+   "key_figures": [
+    {
+     "quote": "Det ble totalt utført B-undersøkelsene på 838 lokaliteter i 2024 og 2025 på landsbasis opp til 15.12.2025. 756 var i tilstandsklasse «Meget god» eller «God» og var 71 «Dårlig» og 11 «Meget dårlig» tilstandsklasser.",
+     "statement": "The authors report national B-survey results for 838 aquaculture sites in 2024 and 2025 through 15.12.2025, including the stated numbers in each sediment condition grouping."
+    },
+    {
+     "quote": "I perioden 2021–2025 ble det gjennomført totalt 746 C-undersøkelser på landsbasis. 687 av disse var i tilstandsklasse «Svært god» eller «God» og 59 i «Moderat», «Dårlig» eller «Svært dårlig».",
+     "statement": "The authors report national C-survey results for 746 surveys conducted in 2021–2025 and the stated numbers in the two condition groupings."
+    },
+    {
+     "quote": "I 2024, som er siste året vi har data på forbruk, ble det registrert 564 tonn kobber til bruk som groehemmende middel i akvakultur. Dette er en nedgang på 67 % fra toppåret 2019 (1698 tonn), men en økning på 84 % i forhold til 2023 (306 tonn)",
+     "statement": "The authors report copper use as an antifouling agent in Norwegian aquaculture in 2024 and its stated change from 2019 and 2023."
+    },
+    {
+     "quote": "Modellsimuleringer basert på utslipp i 2020 der vi har antatt at 28 % av kobberet lekker ut til vannsøylen, viser at passivt utlekket kobber kan gi et vesentlig bidrag til den totale kobberkonsentrasjonen i et fjordsystem, i størrelsesorden 0,2–0,4 μg/l.",
+     "statement": "The authors' model simulations based on 2020 emissions estimate passive copper leakage concentrations in a fjord system, assuming 28 % of copper leaks into the water column."
+    },
+    {
+     "quote": "Når det gjelder legemidler mot lakselus, avlusningsmidler, var forbruket i Norge i 2024 på 795 kg azametifos, 2 kg deltametrin, 1587 kg imidakloprid, 737 tonn hydrogenperoksid (100 %), 101 kg emamektin og 1306 kg flubenzuroner (82% diflubenzuron).",
+     "statement": "The authors report national Norwegian use of the listed salmon-louse medicines in 2024."
+    },
+    {
+     "quote": "Av en kvote på 18 millioner, ble det i 2024 fangstet ca. 9,9 millioner vill leppefisk mens det i 2025 ble fangstet drøyt 5,4 millioner.",
+     "statement": "The authors report wild-caught wrasse harvest in Norway in 2024 and 2025 against the stated quota."
+    },
+    {
+     "quote": "Av de nesten 8 millionene fisk satt ut i 2025 har det allerede blitt innrapportert et tap på over 2 millioner fisk, altså et tap på 28%.",
+     "statement": "The authors report the 2025 reported loss among salmon stocked in production area 1."
+    },
+    {
+     "quote": "Området har den nest høyeste estimerte økningen av planteplanktonproduksjon som skyldes utslipp fra fiskeoppdrett i Norge, med 17,6 %. Gjennomsnittlig modellert økning av planteplankton i hele området er på 5,8%.",
+     "statement": "The authors report estimated and area-wide average modelled increases in phytoplankton production attributable to aquaculture emissions in production area 2."
+    },
+    {
+     "quote": "Lakselusindusert dødelighet på postsmolt laks har ligget på mellom 10 og 30% de fem siste årene.",
+     "statement": "The authors report the range of sea-lice-induced mortality in post-smolt salmon in production area 2 over the five years preceding the report."
+    },
+    {
+     "quote": "Fangst av berggylte var i 2025 på 272 000 individer, omtrent en halvering fra 2024. Berggylt er ansett som den mest sårbare av artene, da den har lang generasjonstid og kjønnsskifte (fra hunn til hann), hvor hannen utøver yngelpleie.",
+     "statement": "The authors report the 2025 catch of ballan wrasse and its approximate change from 2024 in the Norwegian wrasse fishery."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe environmental management through site-level benthic monitoring and condition thresholds, alongside assessments of cumulative environmental pressures. In production area 1, they say aquaculture impacts are currently limited mainly to the western part and assess current aquaculture-related environmental risk as low, but warn that any production increase should be considered alongside other human pressures and ecological carrying capacity. They recommend considering species such as algae or filter feeders if production expands. In production area 2, modeled nutrient effects are low overall, although some fjords can have elevated eutrophication risk during high production. These are the authors' risk assessments and recommendations, not a description of the formal spatial-planning process.",
+    "A1": "This segment does not discuss licensing or the formal availability of sites. It does show how environmental capacity and local conditions bear on development opportunities: the authors say production increases should be considered in light of other pressures and ecological carrying capacity. They describe how fjord water exchange affects the potential for copper accumulation and how currents, temperature and water-column stratification influence the spread of delousing medicines. Their risk assessments also distinguish between production areas and local receiving environments, including fjords where modeled nutrient impacts can be elevated. These are environmental assessment findings, not a complete account of how site availability, licensing, planning and fish health interact.",
+    "A2": "",
+    "A3": "The authors assess cumulative effects using production-area data, site-level B- and C-surveys, and models of nutrient and copper dispersal. B-surveys cover conditions near cages, while C-surveys assess seabed conditions out to around 600 m; survey frequency depends on observed condition. For production-area assessments, the authors use recent survey results and compare the proportions of poor results with national reference shares. They also model phytoplankton increases and identify fjords where high production can raise eutrophication risk. Important limitations include weak hard-bottom monitoring, sparse regional sediment-copper data, and limited information on local antifouling use and operating practices. These are the report authors' methods and caveats.",
+    "A4": "",
+    "A5": "The authors rely on benthic monitoring under NS9410, survey data supplied by the Norwegian Directorate of Fisheries, mapping through Yggdrasil, and models of dispersal and environmental effects. They identify gaps that limit spatial assessments: hard-bottom conditions are less well known because grab sampling works poorly there; regional sediment-copper data are missing for most production areas; routine water-column copper monitoring is generally absent; and local records of antifouling products and net-washing practices are needed. For delousing medicines, information about where and when bath treatments occurred, and whether they were performed in cages or wellboats, was unavailable for the assessment. The segment describes ongoing research to develop hard-bottom monitoring indicators and thresholds, but does not assess emerging technologies.",
+    "A6": "The segment gives little direct account of conflicts between aquaculture and other users of coastal space or of planning-process legitimacy. It does identify an environmental balancing issue: production area 1 has substantial pressures from other human activities, so the authors advise considering the combined burden and ecological carrying capacity before increasing aquaculture. They also note that site-level pollution can be unevenly distributed, with aquaculture-intensive waters more burdened than an area-wide allocation suggests. These are environmental management concerns identified by the authors, rather than documented disputes among stakeholders.",
+    "A7": "The authors recommend that any increase in production area 1 consider alternative cultured species that can take up nutrients, such as algae, or filter-feed, such as shellfish and tunicates. They say larger-scale production of other organisms would require dedicated environmental risk assessments and may require new or revised monitoring guidance. They also identify improved recording of antifouling products and operational practices, including net washing, as important for targeting management measures. In production area 2, they recommend reducing sea-lice emissions and high fish mortality, and say good biosecurity when moving wild-caught wrasse can reduce the likelihood of disease transmission. These are the report authors' recommendations.",
+    "A8": "The authors identify movement of wild-caught wrasse as a potential pathway for disease transmission. Wild wrasse have unknown health status and disease histories and may carry known or previously unknown infectious agents; there is no comprehensive overview of geographic disease and parasite differences. Transport over long distances and escape from cages may also affect local populations, including through unintended genetic changes. The authors state that good biosecurity associated with moving wild-caught wrasse can reduce transmission risk. Their production-area 2 assessment also flags unknown disease history as a potentially serious surprise despite low assessed current risk from wrasse use. This segment does not quantify water connectivity or farm-to-farm disease transmission."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 49,
+   "page_to": 63,
+   "chars": 49571,
+   "key_figures": [
+    {
+     "quote": "Området har den høyeste estimerte økningen av planteplanktonproduksjon som skyldes utslipp fra fiskeoppdrett i Norge, med 19,1 %. Gjennomsnittlig modellert økning av planteplankton i hele området er på 6,1 %.",
+     "statement": "The authors report that in PO3 the estimated aquaculture-related increase in phytoplankton production is 19,1 %, while the modelled average increase across the area is 6,1 %."
+    },
+    {
+     "quote": "Influensområdet til matfiskanleggene dekket til sammen rundt 522 km sjøareal som utgjør 15 % av det samlede arealet for PO3.",
+     "statement": "The authors report that in PO3, in the report’s assessment, grow-out farms’ influence areas covered around 522 km of sea area, or 15 % of the production area."
+    },
+    {
+     "quote": "I 2025 var det henholdsvis 119 oppdrettslokaliteter i området som i løpet av året rapporterte inn fisk.",
+     "statement": "The authors report that 119 aquaculture sites in PO4 reported fish during 2025."
+    },
+    {
+     "quote": "Influensområdet til matfiskanleggene dekket til sammen rundt 498-510 km sjøareal som utgjør 9 % av det samlede arealet for PO4.",
+     "statement": "The authors report that in PO4, in the report’s assessment, grow-out farms’ influence areas covered around 498-510 km of sea area, or 9 % of the production area."
+    },
+    {
+     "quote": "Beregnet økning av planteplanktonproduksjon som skyldes utslipp fra fiskeoppdrett lav (8 %).",
+     "statement": "The authors estimate an 8 % aquaculture-related increase in phytoplankton production in PO5."
+    },
+    {
+     "quote": "Beregnet økning av planteplanktonproduksjon som skyldes utslipp fra fiskeoppdrett er lav (10,7 %).",
+     "statement": "The authors estimate a 10,7 % aquaculture-related increase in phytoplankton production in PO6."
+    },
+    {
+     "quote": "Beregnet økning av planteplanktonproduksjonen som skyldes utslipp fra fiskeoppdrett er lav (9,1 %) og langt unna grenseverdien på 50 % som er definert av OSPAR.",
+     "statement": "The authors estimate a 9,1 % aquaculture-related increase in phytoplankton production in PO7 and compare it with the cited OSPAR threshold of 50 %."
+    },
+    {
+     "quote": "Produksjonsområde 6 er det området med klart flest utsatt laks hvert år. Det ble satt ut over 69 millioner i 2025 (data fra Fiskeridirektoratets Biomassestatistikk).",
+     "statement": "The authors report, using the Norwegian Directorate of Fisheries’ biomass statistics, that over 69 million salmon were stocked in PO6 in 2025."
+    },
+    {
+     "quote": "I 2025 var det en 50 % økning i innmeldte hendelser i forbindelse med ikke-medikamentelle avlusninger sammenlignet med 2024.",
+     "statement": "The authors report a 50 % increase in reports of incidents associated with non-medicinal delousing in PO6 in 2025 compared with 2024."
+    },
+    {
+     "quote": "Beregnet økning i planteproduksjon fra utslipp av næringssalter er 5,5 % og langt fra referanseverdien for denne parameteren.",
+     "statement": "The authors estimate a 5,5 % increase in phytoplankton production from nutrient emissions in PO8."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors’ assessments draw on reported production and incident data, monitoring surveys, field observations, and model outputs. They compare trawl observations with virtual post-smolt models for sea-lice exposure, and use hydrodynamic models to estimate water exchange, dilution, and nutrient-related phytoplankton effects. They also identify important knowledge gaps: monitoring is absent in some aquaculture-intensive areas, hard-bottom monitoring methods are insufficient, and some regions lack data on fish migration routes or adequate coverage of rivers and coastal observations. The authors note that model and observation agreement varies by indicator and region. These limitations affect confidence in risk estimates; for example, they describe uncertainty in PO8 due to limited observations that do not cover the end of the sea-trout feeding period.",
+    "A6": "",
+    "A7": "The authors recommend actions to reduce environmental and operational risks in the production areas discussed. These include reducing sea-lice emissions, keeping escape numbers low, improving removal of escaped farmed salmon from rivers, and reducing mortality in farmed salmon and rainbow trout. They suggest collecting particulate organic waste at farms located in areas considered more vulnerable to organic loading as a possible way to reduce impacts on sediments and benthic communities. They also state that good biosecurity when moving wild-caught wrasse can reduce the likelihood of disease transmission. These are the report authors’ recommendations, rather than findings from a spatial-planning or licensing analysis.",
+    "A8": "The authors identify water movement and connectivity as relevant to sea-lice exposure: hydrodynamic conditions, fish migration routes, and the areas through which post-smolts travel affect estimated exposure and risk. They also flag disease transmission associated with moving wild-caught wrasse. The wrasse may have an unknown disease history and could carry new or unknown diseases, creating potentially severe consequences for farmed and wild fish. The authors recommend good biosecurity in connection with moving these fish to reduce transmission risk. These points are presented in the authors’ regional risk assessments and recommendations; this segment does not quantify connectivity between individual farms."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 4,
+   "headings": [],
+   "page_from": 63,
+   "page_to": 76,
+   "chars": 35076,
+   "key_figures": [
+    {
+     "quote": "I 2025 var det 86 oppdrettslokaliteter i området som i løpet av året rapporterte inn fisk.",
+     "statement": "The authors report 86 reporting aquaculture sites in production area 9 (Vestfjorden and Vesterålen) in 2025."
+    },
+    {
+     "quote": "Det ble satt ut ca. 44 millioner laks i PO9 i 2025 (data fra Fiskeridirektoratets biomassestatistikk).",
+     "statement": "The authors report that approximately 44 million salmon were stocked in production area 9 in 2025, citing the Directorate of Fisheries’ biomass statistics."
+    },
+    {
+     "quote": "B eregnet økning i planteproduksjon fra utslipp av næringssalter er 9,1 % og langt fra referanseverdien for denne parameteren.",
+     "statement": "The authors estimate a 9,1 % increase in plant production from nutrient emissions in production area 9, well below the parameter’s reference value."
+    },
+    {
+     "quote": "Det ble satt ut over 36 millioner laks i 2025 (data fra Fiskeridirektoratets biomassestatistikk).",
+     "statement": "The authors report that over 36 million salmon were stocked in production area 10 in 2025, citing the Directorate of Fisheries’ biomass statistics."
+    },
+    {
+     "quote": "beregnet økning i planteplanktonproduksjon på 9,7 % som er langt fra referanseverdien for denne parameteren (50 % økning).",
+     "statement": "The authors estimate a 9,7 % increase in phytoplankton production in production area 10, compared with the stated reference value of 50 % increase."
+    },
+    {
+     "quote": "Gjennomsnittlig modellert økning av planteplankton i hele området er på 7,9 %.",
+     "statement": "The authors report a modeled average increase in phytoplankton of 7,9 % across production area 10."
+    },
+    {
+     "quote": "Det var 7 hendelsesrapporter knyttet til alger eller manet i 2025.",
+     "statement": "The authors report 7 incident reports linked to algae or jellyfish in production area 10 in 2025."
+    },
+    {
+     "quote": "Beregnet økning i planteproduksjon fra utslipp av næringssalter er lavt (4,4 %) og langt fra referanseverdien for denne parameteren (50% % økning).",
+     "statement": "The authors estimate a 4,4 % increase in plant production from nutrient emissions in production area 11, compared with the quoted reference value."
+    },
+    {
+     "quote": "Beregnet areal av influensområdet for fekalier og spillfôr er lavt (2,7 %)",
+     "statement": "The authors estimate that the influence area for faeces and waste feed is 2,7 % in production area 11."
+    },
+    {
+     "quote": "Beregnet økning i planteproduksjon fra utslipp av næringssalter er lavt (4,6 %) og langt fra referanseverdien for denne parameteren (50 % økning).",
+     "statement": "The authors estimate a 4,6 % increase in plant production from nutrient emissions in production area 12, compared with the stated reference value of 50 % increase."
+    },
+    {
+     "quote": "Beregnet areal av influensområdet for fekalier og spillfôr er lavt (2,3 %)",
+     "statement": "The authors estimate that the influence area for faeces and waste feed is 2,3 % in production area 12."
+    },
+    {
+     "quote": "Det ble satt ut 3,9 millioner laks i 2025 (data fra Fiskeridirektoratets biomassestatistikk).",
+     "statement": "The authors report that 3,9 million salmon were stocked in production area 13 in 2025, citing the Directorate of Fisheries’ biomass statistics."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors’ regional risk assessments draw on monitoring, environmental surveys, field observations, and model estimates, including virtual smolt models and simulations of nutrient-related phytoplankton production. They repeatedly identify knowledge gaps that limit confidence: sparse monitoring stations, incomplete coverage of hard-bottom sites, uncertain fish tolerance thresholds, and poorly mapped salmon migration routes. In PO10, the authors note that model estimates and observations of sea-trout and Arctic-char infection pressure do not fully agree. These are caveats about the evidence used to assess environmental impacts; this segment does not discuss emerging technologies or how spatial planning uses these data.",
+    "A6": "",
+    "A7": "The authors recommend actions to reduce environmental pressures in several production areas. They identify reducing salmon-lice emissions and keeping escape numbers low as sustainability goals, and also recommend reducing farmed-salmon mortality in PO10 and PO11. For PO9, they suggest collecting particulate organic emissions at farms in areas considered more vulnerable to organic loading as one possible measure to reduce effects on sediments and benthic communities. For PO12, they advise avoiding production groups in hatcheries that would require release in late autumn or winter, because these groups are particularly exposed to higher mortality. These are recommendations in the report, not evaluations of their effectiveness.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

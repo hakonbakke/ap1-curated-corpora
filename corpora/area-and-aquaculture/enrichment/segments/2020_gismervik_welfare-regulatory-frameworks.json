@@ -1,0 +1,104 @@
+{
+ "doc_id": "2020_gismervik_welfare-regulatory-frameworks",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 2,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [
+    "ID"
+   ],
+   "page_from": 1,
+   "page_to": 5,
+   "chars": 24445,
+   "key_figures": [
+    {
+     "quote": "This has shown to be effective for terrestrial livestock, where in total only 74 outbreaks of serious infectious disease were reported in 2018 in Norway (NFSA 2018c).",
+     "statement": "The authors cite 74 serious infectious disease outbreaks reported among terrestrial livestock in Norway in 2018 as evidence of the effectiveness of disease control."
+    },
+    {
+     "quote": "In comparison, a single virus disease, pancreas disease (PD), caused 163 new cases and infectious salmon anaemia virus, were reported to cause 13 outbreaks in Norwegian aquaculture in 2018 (Hjeltnes et al. 2019).",
+     "statement": "The authors cite 163 new cases of pancreas disease and 13 infectious salmon anaemia outbreaks in Norwegian aquaculture in 2018."
+    },
+    {
+     "quote": "Norway produced 66 552 000 broiler chickens in 2018 (Landbruksdirektoratet 2019).",
+     "statement": "The authors cite national production of 66 552 000 broiler chickens in Norway in 2018."
+    },
+    {
+     "quote": "In contrast, the number of ﬁsh in Norwegian aquaculture in 2018 was over 872 631 000.",
+     "statement": "The authors report that Norwegian aquaculture contained over 872 631 000 fish in 2018."
+    },
+    {
+     "quote": "We have identiﬁed altogether 36 regulations (Table 1) related to broiler chicken and/or salmon production having the legal basis in the Food Act (Matloven, LOV-2003-12-19-124), the Animal Welfare Act (Dyrevelferdsloven, LOV-2009-06-19-97) or the Aquaculture Act (Akvakulturloven, LOV-2005-06-17-79) (Fig. 2).",
+     "statement": "The authors identified 36 regulations related to Norwegian broiler chicken and/or salmon production under the three named Acts."
+    },
+    {
+     "quote": "The 14 regulations with the Aquaculture Act as legal basis (Fig. 2) all affect salmon farming, in addition to seven regulations speciﬁc for ﬁsh under the two other laws (Fig. 2), illustrating the complexity of the ﬁsh farming regulations.",
+     "statement": "The authors identify 14 regulations under the Aquaculture Act affecting salmon farming and seven additional fish-specific regulations under the other two laws."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The segment does not examine spatial planning or explain how environmental considerations, industry development and competing uses are balanced. It does state that county municipalities allocate aquaculture licences, including new sites and size changes, after consulting other governmental bodies. The Aquaculture Act’s stated purpose is to promote aquaculture profitability within sustainability limits. It allows farms to be ordered to move when environmental or fish-health considerations require it. These are legal descriptions, not an analysis of how trade-offs are decided in practice.",
+    "A1": "The segment gives only limited information about factors affecting coastal aquaculture development. It states that county municipalities allocate licences for new sites and size changes after consulting the Directorate of Fisheries, the Norwegian Food Safety Authority, municipalities, the Norwegian Coastal Administration and County Governors. The Aquaculture Act permits farms to be ordered to move when environmental or fish-health considerations dictate. The authors’ review emphasizes that aquaculture is governed by additional legislation, ministries and agencies compared with chicken production, potentially creating conflicting aims. It does not analyze site availability, licensing criteria or how site planning and fish health interact in specific development decisions.",
+    "A2": "The segment describes one part of the application and decision process: county municipalities allocate aquaculture licences for new sites and size changes after consulting relevant governmental bodies, including the Directorate of Fisheries, the Norwegian Food Safety Authority, municipalities, the Norwegian Coastal Administration and County Governors. It does not set out application stages, processing times, or evidence about where delays, rejections or conflicts most commonly arise. The authors’ discussion of multiple authorities and potentially conflicting agency aims signals institutional complexity, but does not identify this as a measured cause of delay or rejection.",
+    "A3": "",
+    "A4": "The segment describes the Aquaculture Act as aiming to promote industry profitability within the limitations of sustainability; this is a statement of the law’s purpose, not evidence about economic instruments or their effects on siting incentives. It notes that the Act has no direct references to animal health and welfare, apart from allowing farms to be ordered to move when environmental or fish-health considerations dictate. The authors argue that salmon regulation is more complex and may have potentially conflicting aims. The segment does not discuss how benefits and costs of area use are distributed among stakeholders.",
+    "A5": "The segment identifies several sources of knowledge and institutional advice relevant to decisions. The Norwegian Food Safety Authority supports ministries in developing regulations and, for technical and non-political matters, may update or design regulations for ministerial approval. The Authority is described as supplying professional competence and recommendations, while the Directorate of Fisheries implements political decisions. County Governors represent regional and national interests, including recreation, nature conservation, fishing interests and pollution control. These are descriptions of governance roles; the segment does not assess spatial data, mapping methods or emerging technologies.",
+    "A6": "The segment identifies interests that County Governors are responsible for ensuring in local counties, including recreation, nature conservation, fishing interests and pollution control. County municipalities decide on aquaculture licences after consulting several public bodies, including municipalities and County Governors. The authors also describe different agency aims and potentially conflicting roles in salmon-farming regulation, and note that the Aquaculture Act’s emphasis on profitability operates within sustainability limits. These points indicate possible institutional and interest-based tensions, but the segment does not report specific siting disputes or assess what makes decisions legitimate or predictable.",
+    "A7": "",
+    "A8": "The segment discusses disease control as a major issue for salmon production, citing disease cases and outbreaks in Norwegian aquaculture in 2018. It describes the pancreas disease regulation as dividing the country into an endemic zone in West Norway and monitoring zones to its south and north. Measures may include testing neighbouring farms, restricting fish movements and emergency slaughter. The authors report differing control approaches for SAV2 and SAV3 across zones and cite literature linking tolerance of pancreas disease in the endemic zone to severe negative welfare impacts. The segment does not specifically analyze water connectivity between farms."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [
+    "ID"
+   ],
+   "page_from": 5,
+   "page_to": 15,
+   "chars": 49216,
+   "key_figures": [
+    {
+     "quote": "Welfare courses became mandatory for Norwegian salmon producers (§6) in 2010 and for chicken producers (§5) in 2013.",
+     "statement": "The authors report the years when welfare courses became mandatory for Norwegian salmon and chicken producers, respectively."
+    },
+    {
+     "quote": "Salmon producers are obligated to repeat the welfare course when needed, and at least every 5th year (§6).",
+     "statement": "The authors report the minimum course-repetition interval required of salmon producers in Norway."
+    },
+    {
+     "quote": "Although there are many more individuals in each site for farmed salmon compared to chickens, the salmon should be checked ‘at least once a day if weather permits’ (§12).",
+     "statement": "The authors describe the Norwegian regulatory minimum for checking farmed salmon at production sites."
+    },
+    {
+     "quote": "In aquaculture, the increasing sizes of cages or containers holding up to 200 000 individual fish, make it hard to comply with easy inspection and good treatment, and the trend of emerging technologies facilitating even more individuals raises concerns.",
+     "statement": "The authors note that Norwegian aquaculture cages or containers may hold up to 200 000 fish, making inspection and care more difficult."
+    },
+    {
+     "quote": "there is no specific environmental standards for animal density above 25 kg m−3 permitted for closed cages and slaughter cages since 2018 (§25)",
+     "statement": "The authors compare Norwegian salmon rules, noting the permitted density threshold for closed cages and slaughter cages since 2018."
+    },
+    {
+     "quote": "A minimum of 6 h darkness period per night, or two periods lasting at least 4 h, and rules of light intensity during daytime are stated (§35).",
+     "statement": "The authors describe Norwegian chicken regulations requiring specified daily darkness periods and daytime light conditions."
+    }
+   ],
+   "pq_notes": {
+    "A0": "",
+    "A1": "The segment does not analyze site availability, application procedures, spatial planning, or factors determining where aquaculture may be established. As a policy recommendation, the authors say producers should report fish-welfare and health measures as a basis for licences, production increases or changes, and localisation. This is a recommendation about incorporating welfare and health into decisions, not a description of how current site allocation works.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors argue that increasing cage or container sizes, including units holding up to 200 000 fish, make inspection and good treatment difficult; they say emerging technologies facilitating even more individuals raise concerns. They recommend documenting that technologies and methods are fish-welfare-friendly and using risk assessments in emergency plans. The segment does not assess how technologies change spatial availability or environmental impacts.",
+    "A6": "",
+    "A7": "As policy recommendations, the authors propose that producers document and report fish-welfare and health measures as a basis for licences, production increases or changes, and localisation. They also recommend documenting that technologies and methods are welfare-friendly, establishing emergency plans based on risk assessments, and removing moribund and dead fish daily while recording causes. These measures address welfare and management; the segment does not assess spatial-use efficiency directly.",
+    "A8": "The authors state that daily removal of dead fish matters for biosecurity as well as ethics, citing earlier studies. They recommend daily removal of moribund and dead fish and determining why they died, so industry and government can identify mitigating measures. They also say salmon producers need competence in infection prevention under the Food Act, although the salmon welfare-course rules do not specifically identify infection prevention as a course topic. The segment does not discuss water connectivity or disease transmission between farms."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

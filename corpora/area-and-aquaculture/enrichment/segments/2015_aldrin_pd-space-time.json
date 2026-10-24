@@ -1,0 +1,78 @@
+{
+ "doc_id": "2015_aldrin_pd-space-time",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 10,
+   "chars": 57460,
+   "key_figures": [
+    {
+     "quote": "Our data consist of information on all 1412 Norwegian marine farms producing salmonids in any month from February 2003 to February 2012.",
+     "statement": "The authors’ study data cover 1412 Norwegian marine salmonid farms active at some point from February 2003 to February 2012."
+    },
+    {
+     "quote": "The fish population within a production period (from stocking to removal) is termed a cohort and the present data consists of 4332 cohorts with a total of 62 408 farm-months of cohort production.",
+     "statement": "The authors’ dataset contains 4332 production cohorts and 62 408 farm-months of cohort production in Norwegian marine salmonid farming."
+    },
+    {
+     "quote": "The various farms had on average 6.3 other farms within a seaway distance of 10 km, and 1.2 farms within a distance of 3 km.",
+     "statement": "The authors found that Norwegian salmonid farms in the study period had on average 6.3 other farms within 10 km by seaway and 1.2 within 3 km."
+    },
+    {
+     "quote": "The monthly number of detected PD outbreaks was on average 5.4 (588 outbreaks in total) and varied between 0 and 22.",
+     "statement": "The authors found an average of 5.4 detected PD outbreaks per month, 588 in total, with monthly counts ranging from 0 to 22 during the study period."
+    },
+    {
+     "quote": "96% of these outbreaks occurred south of Hustadvika (62◦57′ N) in Southern Norway. Only 46% of the fish cohorts were farmed in this area.",
+     "statement": "The authors found that 96% of detected outbreaks occurred south of Hustadvika, where 46% of the study’s fish cohorts were farmed."
+    },
+    {
+     "quote": "Infection from infected neighbouring farms is by far the most important source of infection, accounting for 87.8% (95% C.I. 81.1–94.2%) of the infection events.",
+     "statement": "The authors’ model attributes 87.8% of infection events among Norwegian farm cohorts to infected neighbouring farms, with a 95% credible interval of 81.1–94.2%."
+    },
+    {
+     "quote": "Infection from infected farms in the same contact network accounts for 5.6% (C.I. 0.9–10.6%); infection related to previous infected cohorts accounts for 2.8% (C.I. 0.3–6.2%); and infection from other, non-specified sources accounts for 2.3% (C.I. 1.0–3.9%).",
+     "statement": "The authors’ model estimates these respective shares of infection events from the same contact network, previous infected cohorts at the farm, and other unspecified sources."
+    },
+    {
+     "quote": "We estimate that 20.3% of all cohorts were infected (C.I. 18.9–21.7%), even though an outbreak was only detected in 13.6% of the cohorts in the data set.",
+     "statement": "The authors estimate that 20.3% of Norwegian study cohorts were infected, while detected outbreaks occurred in 13.6%, with the quoted confidence intervals for infection."
+    },
+    {
+     "quote": "The average time from infection to detection of an outbreak is estimated to be 3.6 months (C.I. 3.1–4.2 months) for infected cohorts in which an outbreak was detected.",
+     "statement": "The authors estimate a 3.6-month average from infection to outbreak detection for infected cohorts with a detected outbreak, with a confidence interval of 3.1–4.2 months."
+    },
+    {
+     "quote": "On average over the last five years, the new strategy reduces the number of detected outbreaks by 42 per year (C.I. 18–69).",
+     "statement": "In the authors’ scenario simulations for Norwegian farms, the culling strategy reduced detected outbreaks by 42 per year on average over the last five years, with a confidence interval of 18–69."
+    },
+    {
+     "quote": "Compared to the strategy followed in reality, this was a reduction of 57% (C.I. 24–90%).",
+     "statement": "The authors’ scenario simulations estimate a 57% reduction in detected outbreaks compared with the strategy followed in reality, with a confidence interval of 24–90%."
+    },
+    {
+     "quote": "The price for this improvement is that the fish must be slaughtered before it is economically optimal, and there is a loss of 174 (C.I. from 4 to 331) farm months of production per year due to early removal of cohorts.",
+     "statement": "The authors’ scenario simulations estimate a loss of 174 farm-months of production per year from early cohort removal, with a confidence interval from 4 to 331."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors do not analyze Norwegian spatial planning rules or how environmental considerations and competing coastal uses are balanced. Their study does show that spatial relationships between farms matter for PD transmission: the model attributes most infection events to infected neighbouring farms, and risk declines with seaway distance. This is evidence about disease-related spatial constraints, not a finding about where aquaculture should be allocated or how planning decisions are made.",
+    "A1": "The authors do not examine site applications, licensing decisions, site availability, or the interaction of planning rules with environmental assessment. Their disease model does identify spatial and fish-health factors relevant to operating opportunities: seaway distance to infected farms, shared concession-based contact networks, prior infected cohorts at a farm, and cohort size. The authors report that farms had on average 6.3 other farms within 10 km by seaway. These are modelled transmission mechanisms, not evidence about how licensing or spatial planning determines development opportunities.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors’ knowledge base is monthly farm-level data for all 1412 Norwegian marine salmonid farms producing fish during February 2003 to February 2012, including locations, seaway distances, fish numbers and weights, temperatures, and detected PD outbreaks. They fit a Bayesian spatio-temporal model and compare variants using cross-validation and simulation. The authors caution that the model does not fully reproduce observed outbreak clustering and that estimated introduction risk may not apply to disease-free areas. They also lacked detailed cohort-level vaccination information, which limits interpretation of changes over time.",
+    "A6": "",
+    "A7": "The authors use scenario simulations to assess a management measure that operators can apply: removing or slaughtering cohorts after a detected PD outbreak. Their model estimates fewer detected outbreaks under mandatory culling, but also early removal and lost farm production time. The authors present this as information relevant to industry-level cost-benefit evaluation, not as a complete economic assessment. They argue that simulation modelling can test extensive control measures before implementation, while noting that results depend on the model representing disease spread and on production conditions remaining relevant.",
+    "A8": "The authors find that water-connected spatial proximity is important to PD transmission: the model’s distance-related pathway, interpreted as distance-related contagious contacts and potentially spread via water currents, accounts for 87.8% of infection events. Risk decreases with seaway distance. They also model a local contact network based on shared concession identity, potentially representing shared personnel or equipment, and transmission from a previous infected cohort at the same farm. The authors emphasize that their distance pathway dominates in endemic settings; results for disease-free areas require caution because introduction from unspecified sources is estimated using endemic data."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

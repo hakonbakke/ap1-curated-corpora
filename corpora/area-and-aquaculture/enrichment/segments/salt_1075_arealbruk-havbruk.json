@@ -1,0 +1,326 @@
+{
+ "doc_id": "salt_1075_arealbruk-havbruk",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 5,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 25,
+   "chars": 49576,
+   "key_figures": [
+    {
+     "quote": "Det samlede arealet for alle lokaliteter til laks, ørret og regnbueørret er 94 km2. Medregnet buffersoner på 20 meter og 100 meter er arealbruken henholdsvis 123 og 261 km2.",
+     "statement": "The authors find that the total site area for salmon, trout and rainbow trout in Norway is 94 km2, increasing to 123 and 261 km2 when 20-meter and 100-meter buffer zones are included."
+    },
+    {
+     "quote": "Når det gjelder oppdrett av andre arter, er det oppdrettsanlegg for alger som benytter de største arealene, etterfulgt av blåskjell, med henholdsvis omkring 8 km2 og 5 km2.",
+     "statement": "The authors estimate that Norwegian algae and mussel aquaculture facilities use approximately 8 km2 and 5 km2, respectively."
+    },
+    {
+     "quote": "I tillegg kommer havbeite for hummer og kamskjell, som opptar henholdsvis 23 km2 og 3 km2.",
+     "statement": "The authors report that lobster and scallop sea-ranching areas in Norway occupy 23 km2 and 3 km2, respectively."
+    },
+    {
+     "quote": "Av de 1 000 lokalitetene med laks, var det 129 med gjennomsnittsdybde på 55 meter eller grunnere, og 102 med gjennomsnittsdybde dypere enn 200 meter.",
+     "statement": "The authors find that, among 1 000 Norwegian salmon sites, 129 had an average depth of 55 meters or less and 102 had an average depth greater than 200 meters."
+    },
+    {
+     "quote": "En framskriving av dagens vekst (scenario 1) vil innebære en dobling av arealet brukt til akvakultur i 2050 sammenliknet med i dag. Grønt lys i henhold til trafikklyssystemet vil kunne innebære en økning på 126 % i samme periode.",
+     "statement": "The authors' scenarios for Norwegian salmon, trout and rainbow trout area use project a doubling by 2050 under continued historical growth and a 126 % increase under the traffic-light system's green-growth scenario."
+    },
+    {
+     "quote": "Dersom veksten i noen områder begrenses av røde og gule lys i trafikklyssystemet, tilsvarende resultatene hittil, vil veksten i areal kunne være 44 % i perioden fra 2022 og fram til 2050.",
+     "statement": "The authors' scenario for Norwegian aquaculture area use projects a 44 % increase from 2022 to 2050 if traffic-light outcomes continue to constrain growth in some production areas."
+    },
+    {
+     "quote": "Det har til sammen blitt gitt 24 tilsagn på søknader om tildeling av utviklingstillatelser, en midlertidig ordning som opphørte i 2017.",
+     "statement": "The authors report that 24 applications were granted commitments for development licences under a temporary Norwegian scheme that ended in 2017."
+    },
+    {
+     "quote": "Et vanlig anlegg består av 5 til 20 bæreliner og dekker et sjøareal på mellom 10 og 200 dekar (10 000-200 000 m2). Disse anleggene har en årlig produksjon som varierer fra 50 til 150 tonn blåskjell.",
+     "statement": "The report describes typical Norwegian suspended-culture installations as having 5 to 20 support lines, covering 10 to 200 dekar (10 000-200 000 m2) and producing 50 to 150 tonnes of mussels annually."
+    },
+    {
+     "quote": "Atlantisk laks utgjør omtrent 94 % av den totale produksjonen i Norge og i 2022 ble det solgt 1,55 millioner tonn norsk laks.",
+     "statement": "The report cites Norwegian production data showing that Atlantic salmon accounted for approximately 94 % of total production and 1,55 million tonnes were sold in 2022."
+    },
+    {
+     "quote": "I 2017 ble produksjonsområdeforskriften18 vedtatt. Her deles kysten inn i 13 produksjonsområder, der veksten i tillatelses-MTB reguleres gjennom det såkalte trafikklyssystemet.",
+     "statement": "The report's legal account states that the 2017 production-area regulation divided the Norwegian coast into 13 production areas for regulating permitted biomass growth through the traffic-light system."
+    },
+    {
+     "quote": "Prinsippet i systemet er at det gis grønt lys for en vekst på inntil 6 % per andre år dersom miljøtilstanden i et produksjonsområde er akseptabel.",
+     "statement": "The report's legal account says the Norwegian traffic-light system allows growth of up to 6 % every two years in a production area when its environmental condition is acceptable."
+    },
+    {
+     "quote": "Havtemperaturen utenfor norskekysten har økt med omentrent 1 °C siden 1980-tallet.",
+     "statement": "The report cites an estimate that sea temperatures off the Norwegian coast have risen approximately 1 °C since the 1980s."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors' legal account describes a system in which aquaculture is prohibited unless specifically permitted, unlike fisheries, where fishing is generally allowed unless prohibited. Within 1 nautical mile outside the baseline, municipalities use legally binding coastal-zone plans to designate aquaculture areas; the authors say all traditional sea-based aquaculture currently takes place within this planning area. Site-specific approvals and production-area controls add further constraints. The traffic-light system evaluates environmental condition regularly and links it to production capacity. The report presents the system as intended to support predictable, environmentally sustainable growth, while noting that its current environmental indicator is sea-lice effects on wild salmonids.",
+    "A1": "The authors identify designated site availability, natural conditions and regulation as interacting influences on development. Site suitability depends on conditions including depth, seabed, temperature, salinity and currents, while production at a site is constrained by site-specific maximum permitted biomass. Municipal plans determine which coastal areas may be used; individual permits and the production-area traffic-light system then regulate activity and capacity. Recommended separation distances and disease history inform site assessments, but the report says recommended distances may be departed from following case-specific assessment. Changes in site size, depth and distance from shore over time, and a northward shift in new approvals, are reported as authors' findings. The report also notes that technology may change the relationship between production volume and area demand.",
+    "A2": "The authors' legal account describes a multi-stage process. A prospective site must be in an area designated for aquaculture in the municipal coastal plan. The operator then applies to the relevant county authority for an aquaculture operating permit. The county authority cannot issue its permit until the Food Safety Authority, County Governor, Norwegian Coastal Administration and Directorate of Fisheries have granted theirs. The report says site decisions involve a holistic assessment of current conditions, including currents, seabed topography and the area's history of disease outbreaks. This segment does not report evidence on typical processing times, common delay points, rejection rates or where conflicts most often arise.",
+    "A3": "This segment does not set out a formal method for cumulative-effect assessment of aquaculture production or explain how such assessments are incorporated into planning decisions. The authors state that site assessments consider separation from other sites, currents, seabed topography and previous disease outbreaks in the area, but distance is not decisive for a new or expanded site and cases receive an overall assessment. They caution that their mapped area-use calculation using recommended separation radii does not fully describe the situation: sites may be closer within a shared disease zone, and recommended distances may be departed from when circumstances support it. These observations point to case-specific complexity, but the segment does not discuss cumulative-assessment methods or their knowledge gaps directly.",
+    "A4": "The report's legal account describes regulatory arrangements that shape incentives and capacity: aquaculture requires permission, site biomass is limited by site-specific maximum permitted biomass, and the traffic-light system adjusts permitted biomass growth according to environmental condition. The system allows growth in acceptable-condition areas, holds production steady under moderate conditions and requires reductions under unacceptable conditions. The authors also report that sea ranching grants an operator exclusive rights to release and harvest the relevant species within a specified area. This segment does not analyse economic instruments, financial incentives for selecting particular sites, or how benefits and costs are distributed among industry, communities and other stakeholders.",
+    "A5": "The authors base their analysis on legal research, Fisheries Directorate map data available through Yggdrasil, and interviews with aquaculture operators and public authorities about new technologies. They describe current sites using positional data and modeled weather information, including geographic and natural-condition characteristics. Their account identifies limited experience and information about optimal seaweed-growing locations and the sector's actual potential. Interviews and the report's discussion suggest that submersible, semi-closed, closed and offshore technologies could alter area requirements or make new sites usable; however, the authors say these technologies are expected mainly to complement, rather than replace, conventional open cages. The report also notes that its growth scenarios omit constraints such as site availability, feed supply, biological challenges and future regulation.",
+    "A6": "The report frames coastal sea space as sought after by aquaculture and other activities, including offshore wind, new marine aquaculture and seabed mineral extraction, which may require large areas. Municipal coastal planning is central to decisions about which areas are allocated to aquaculture, but this segment does not provide detailed cases of conflicts or describe stakeholder participation and legitimacy. The authors note that recommended separation distances and site assessments consider other aquaculture, disease history, currents and seabed topography. Their area-use depiction using safety radii is only indicative because sites may be closer within a disease zone and recommended distances can be waived after individual assessment. The segment does not assess which processes are most effective or predictable from stakeholders' perspectives.",
+    "A7": "The authors describe technological and operational options that may improve spatial efficiency or sustainability. Development licences supported testing submersible, semi-closed, closed and offshore systems, with the stated aim of addressing environmental and area-use challenges, including sea-lice spread. Interviewed industry and public-sector representatives are generally optimistic, and some technologies—especially submersible cages—have reached commercial production. The report suggests closed or submersible systems may help reduce lice in high-pressure areas, while closed systems could allow production where open cages are unsuitable because of environmental values or production conditions. Offshore technology is viewed positively, although large-scale offshore production is expected to be some way off. The authors say new systems are more likely to complement conventional open cages than replace them.",
+    "A8": "The report links spacing between cages and sites to biosecurity: greater distances in recent years are described as reducing the risk of disease spread within and between facilities. The authors report recommended minimum distances that vary by aquaculture type, including greater separation for anadromous fish outside the same disease zone, and explain that assessments also consider disease-outbreak history in the area. However, the report cautions that recommended distances are not absolute: facilities may be closer within a disease zone and authorities may allow exceptions after individual assessment. The segment does not provide a detailed analysis of water connectivity, transmission pathways or how connectivity should be incorporated into network-level siting decisions."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 1,
+   "headings": [],
+   "page_from": 25,
+   "page_to": 49,
+   "chars": 49999,
+   "key_figures": [
+    {
+     "quote": "For å se nærmere på hvordan arealmessige forhold vurderes i den enkelte søknad, er 5 vedtak om lokalitetstillatelser fra fylkeskommunene i Nordland (2 for lakseoppdrett), Troms og Finnmark (1 for lakseoppdrett og 1 for torskeoppdrett), Møre og Romsdal (1 for lakseoppdrett) fra perioden 2019 til 2022 studert nærmere.",
+     "statement": "The authors examined 5 site-permit decisions from counties in Nordland, Troms and Finnmark, and Møre og Romsdal, from 2019 to 2022."
+    },
+    {
+     "quote": "Mattilsynet krever for eksempel forundersøkelser i form av strømmålinger på den omsøkte lokaliteten i en periode på mist fire uker for å få representative strømmålinger.",
+     "statement": "The authors report that the Norwegian Food Safety Authority requires current measurements at a proposed site over a period of mist fire uker to obtain representative measurements."
+    },
+    {
+     "quote": "Den anbefalte minsteavstanden for nye matfiskanlegg for laks (til et etablert anlegg) som ikke er en del av koordinerte brakkleggingsgrupper er fem kilometer, mens den kan være betydelig mindre enn 5 km, og kan være kortere enn 2,5 km når anlegget er en del av koordinerte brakkleggingsgrupper.",
+     "statement": "The segment reports the Food Safety Authority’s recommended minimum distance between new salmon grow-out sites and established sites, with different guidance for sites in coordinated fallowing groups."
+    },
+    {
+     "quote": "Den anbefalte minsteavstanden til lakseførende vassdrag er på minst 2,5 km, mens det ikke er tillatt med ny akvakultur i etablerte nasjonale laksefjorder",
+     "statement": "The segment reports the recommended minimum distance from salmon-bearing rivers and the prohibition on new aquaculture in established national salmon fjords."
+    },
+    {
+     "quote": "For vannutskiftningsstrøm er det videre for eksempel anbefalt at andel nullmålinger bør være lavt (under 10 %), og at en praktisk grense for strømhastigheter (målt utenfor merd) for lokaliteter som brukes til ny-utsatt smolt bør settes til maksimalt 2 fiskelengder per sekund.",
+     "statement": "The segment gives recommended current conditions for water exchange and a practical current-speed limit for sites holding newly transferred smolt."
+    },
+    {
+     "quote": "Det samlede arealet for alle lokaliteter til laks, ørret og regnbueørret er 94 km2. Medregnet buffersoner på 20 meter og 100 meter er arealbruken henholdsvis 123 og 261 km2.",
+     "statement": "The authors calculated the registered combined site area for salmon, trout and rainbow trout in Norway and the area use when 20 meter and 100 meter buffer zones are included."
+    },
+    {
+     "quote": "I produksjonsområdene hvor opp mot 30 og 50 prosent av totalt tilgjengelig sjøareal er benyttet til oppdrett, kan det antas at det er lite tilgjengelig areal igjen til nye oppdrettslokaliteter, og at det dermed ikke lenger er store vekstmuligheter her.",
+     "statement": "The authors infer that production areas where up mot 30 og 50 prosent of available sea area is used for aquaculture may have little room for new sites and limited growth opportunities."
+    },
+    {
+     "quote": "Når det gjelder oppdrett av nye arter, er det oppdrettsanlegg for alger som benytter de største arealene, etterfulgt av blåskjell, med henholdsvis omkring 8 km2 og 5 km2.",
+     "statement": "The authors estimate the national area used by farms for new species, finding that algae and mussel facilities occupy the largest areas among the groups discussed."
+    },
+    {
+     "quote": "Til sammen opptar disse arealer på omkring 23 km2 (hummer) og 3 km2 (kamskjell)",
+     "statement": "The authors estimate the combined area occupied by lobster and scallop sea-ranching sites in Norway."
+    },
+    {
+     "quote": "Til sammen undersøker vi 1263 godkjente lokaliteter.",
+     "statement": "The authors’ analysis of natural and geographic site characteristics covers 1263 approved marine aquaculture sites."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors describe municipal coastal-zone plans as decisive: they determine whether aquaculture can be operated in a municipality’s sea areas. Plans are legally binding and may allocate single-use aquaculture areas or broader multiple-use areas where aquaculture may be allowed, subject to later permit review. Planning rules require plan programmes, impact assessment, participation and consultation, and reasoned balancing of relevant considerations. At site level, the county makes the final decision only after required sector approvals, and must find the proposal environmentally responsible and consistent with plans and protection measures. The authors emphasize uncertainty from changing political priorities across government levels. Their Lurøy example shows how an aquaculture area and a separate area permitting specified mooring uses can coexist with navigation conditions.",
+    "A1": "The authors identify both spatial and biological constraints. Municipal plans first determine where aquaculture may be considered, while applicants choose and document the specific sites they regard as suitable. Applications must include items such as current measurements, maps and environmental surveys; authorities may request additional information. Site review considers navigation and safety, pollution and receiving-water capacity, nature values, fisheries, fish health and welfare. The Food Safety Authority’s cited guidance includes separation distances between farms and from salmon rivers, while site suitability also depends on currents, oxygen, seabed, topography and temperature. The authors’ area analysis suggests that some production areas may have little room for new sites, but cautions that low use of total sea area does not necessarily mean suitable area is available.",
+    "A2": "The process described by the authors begins with municipal planning, followed by an application to the county for a site permit. For salmon, applicants must already hold a company production permit or a commitment to one. The county coordinates the case, but cannot grant the site permit until required approvals have been obtained from bodies including the Food Safety Authority, the County Governor and the Coastal Administration. Fisheries and nature authorities also provide opinions. The authors examined 5 decisions from 2019 to 2022 and describe the practice as fairly standardized. This segment does not report typical processing durations, common delays, rejection rates or the stages where delay or conflict occurs most often.",
+    "A3": "The authors distinguish municipal plan-level assessment of the combined effects and consequences of allocating areas to aquaculture from the more site-specific assessments made during permit processing. Each new aquaculture area proposed in a plan must be impact-assessed under the relevant regulation. At application stage, the County Governor considers pollution risk, receiving-water capacity, waterbody ecological status and nature values, drawing on current measurements and environmental surveys. The segment does not describe a specific cumulative-effects method or report the results of cumulative assessment. It does note that estimates using recommended safety radii are only indicative: sites may be closer within coordinated infection zones, and recommended distances can be departed from following individual assessment.",
+    "A4": "The segment describes economic and regulatory arrangements for production capacity, rather than a detailed distributional analysis of costs and benefits. Under the traffic-light system, the government may offer capacity increases in green production areas through new permits or increases to existing permits, for payment or auction; capacity may be reduced in red areas. The authors note that decisions are discretionary under the system’s “may” provisions. They also explain that company permits set production capacity, while site permits impose an absolute site-specific biomass ceiling. This segment does not assess how auction payments or regulatory costs are distributed among companies, communities or other stakeholders.",
+    "A5": "The authors’ account of site decisions relies on municipal plans, application documents, mapped areas, current measurements, environmental surveys and assessments by sector authorities. Their description of natural site conditions also uses site-position data and modeled weather data, examining factors such as temperature, salinity, current speed, depth and distance from land. The authors caution that some species groups have few sites, so observed characteristics may reflect chance; they therefore exclude groups with fewer than 8 sites from that analysis. They recommend allocating enough space for future adaptation to modernization, new technology or new knowledge. The segment points to possible development offshore or northward, and potential for new species and technology, but does not assess emerging technologies in detail.",
+    "A6": "The authors identify potential competition between aquaculture and navigation, fisheries, nature conservation, wildlife and recreation. Municipal planning is where these interests are generally assessed and balanced, while site decisions may bring more detailed information or new concerns. In the 5 permit decisions studied, such additional issues did not determine the outcome. The Lurøy plan example allows moorings in a multiple-use area only subject to requirements intended to preserve ordinary navigation. The authors describe consultation and participation, impact assessment and reasoned weighing of considerations as elements of the planning framework. This segment does not provide evidence about stakeholder perceptions of legitimacy or the most common sources of conflict.",
+    "A7": "The authors say operators can improve use of authorized biomass by coordinating production across sites and, in some cases, with other companies. Production planning includes timing fish transfers, harvesting, fallowing and any joint operation, in accordance with plans approved by the Food Safety Authority. The segment describes a minimum fallowing period after a production cycle and explains that sites may not be in use continuously. It also recommends that plans allocate enough aquaculture area to accommodate future adjustments arising from modernization, new technology or new knowledge. These passages point to operational coordination and forward-looking spatial planning as measures available to the industry, but do not evaluate their sustainability outcomes.",
+    "A8": "The segment treats biosecurity as a central factor in site approval and operation. The Food Safety Authority assesses infection risk and fish welfare, and its cited guidance recommends minimum separation between farms, with different distances depending on species and coordinated fallowing arrangements. The authors explain that coordinated fallowing can help reduce disease pressure, break infection cycles and reduce transmission from larger fish to newly stocked fish. A minimum fallowing period is required after a production cycle, and authorities may require coordinated fallowing or a longer period where circumstances warrant. Their area-use calculation based on standard safety radii is explicitly approximate because sites can be closer within infection zones and individual assessments may justify departures from recommended distances."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 2,
+   "headings": [],
+   "page_from": 49,
+   "page_to": 82,
+   "chars": 49975,
+   "key_figures": [
+    {
+     "quote": "For laks, ørret, regnbueørret I alle produksjonsområdene ligger median gjennomsnittsdybde mellom 50 og 100 meter (Figur 15).",
+     "statement": "The authors report that median average depth at salmon, trout and rainbow trout sites in all Norwegian production areas was between 50 and 100 meters."
+    },
+    {
+     "quote": "Av de 1 000 lokalitetene med laks, var det 129 med gjennomsnittsdybde på 55 meter eller grunnere, og 102 med gjennomsnittsdybde dypere enn 200 meter.",
+     "statement": "The authors report the depth distribution of the 1 000 salmon sites analyzed in Norway: 129 sites had an average depth of 55 meters or less, and 102 were deeper than 200 meters."
+    },
+    {
+     "quote": "130 av de 1000 lokalitetene ligger mellom 0 og 100 meter fra land, 766 ligger mellom 100 og 500 meter, og 234 lokaliteter ligger mer enn 500 meter fra land.",
+     "statement": "The authors report distances from the nearest land point for the 1,000 salmon, trout and rainbow trout sites analyzed in Norway."
+    },
+    {
+     "quote": "Lokalitetene er plassert mellom 2 og 135 km fra grunnlinja. 90 av de 1 000 lokalitetene ligger mellom 2 og 10 km fra grunnlinja, 613 ligger mellom 10 og 50 km fra grunnlinja, 269 ligger mellom 50 og 100 km og 27 ligger mer enn 100 km fra.",
+     "statement": "The authors report the distance from the Norwegian baseline for salmon, trout and rainbow trout sites analyzed in Norway, including the overall range and counts in distance bands."
+    },
+    {
+     "quote": "Overflatearealene for oppdrettsanlegg for laks, ørret og regnbueørret ser ut til å ha blitt større på lokaliteter klarert mellom 2011 – 2023 sammenlignet med de klarert 1991 – 2010 (Figur 28).",
+     "statement": "The authors find that registered surface areas of salmon, trout and rainbow trout facilities tended to be larger for sites cleared in 2011 – 2023 than for sites cleared in 1991 – 2010."
+    },
+    {
+     "quote": "Det er en generell tendens til at slettede lokaliteter for laksefisk var grunnere plassert enn dagens klarerte lokaliteter, mens det ikke ser ut til å være noe systematisk endring mellom de klarert 2011 – 2023 og de klarert før 2011 (Figur 30).",
+     "statement": "The authors compare depths of salmonid sites in Norway by clearance status and period, finding deleted sites generally shallower than currently cleared sites, with no systematic depth change between the two current-site clearance periods."
+    },
+    {
+     "quote": "Lokaliteter for gruppen laks, ørret, regnbueørret viser en generell tendens til økt avstand fra land for de tre lokalitetsgruppene, med kortest avstand for slettede lokaliteter og lengst avstand i lokaliteter klarert fra 2011 – 2023.",
+     "statement": "The authors find a general increase in distance from land across three groups of Norwegian salmon, trout and rainbow trout sites, with deleted sites closest and sites cleared in 2011 – 2023 farthest."
+    },
+    {
+     "quote": "En slik vekst innebærer at arealbehovet til oppdrett av laks, ørret og regnbueørret vil være doblet fra 2022 til 2046.",
+     "statement": "In the authors’ scenario assuming 6 % growth every second year, the projected area requirement for salmon, trout and rainbow trout farming in Norway doubles from 2022 to 2046."
+    },
+    {
+     "quote": "En framskriving av dagens vekst (scenario 1) vil innebære en dobling av arealet brukt til akvakultur i 2050 sammenliknet med i dag.",
+     "statement": "The authors project that continuing the recent area-growth trend would double the area used for aquaculture in Norway by 2050 compared with the present."
+    },
+    {
+     "quote": "Grønt lys i henhold til trafikklyssystemet vil kunne innebære en økning på 126 % i samme periode.",
+     "statement": "The authors’ traffic-light scenario projects a 126 % increase in aquaculture area in Norway over the period from 2022 to 2050 under green-light growth."
+    },
+    {
+     "quote": "Dersom veksten i noen områder begrenses av røde og gule lys i trafikklyssystemet, tilsvarende resultatene hittil, vil veksten i areal kunne være 44 % i perioden fra 2022 og fram til 2050.",
+     "statement": "The authors’ scenario continuing historical traffic-light outcomes projects 44 % growth in aquaculture area in Norway from 2022 to 2050."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ analysis shows that current and recent site locations reflect both physical conditions and pressure on coastal space. Traditional farms have been placed in sheltered, accessible nearshore and fjord areas, which the authors describe as having limited available area and carrying capacity and many competing users. Their comparison of site cohorts finds a tendency for salmonid sites cleared in 2011 – 2023 to be farther from land than older or deleted sites, and for site surface areas to have increased. The authors suggest that high area-use levels, management and other factors may help explain changing locations. Their projections illustrate different possible area demands under historical growth and the traffic-light system. The segment does not provide a detailed account of how planning authorities balance individual environmental and competing-use considerations in decisions.",
+    "A1": "The authors identify site availability, depth, distance from land, natural conditions, technology and regulatory growth limits as factors shaping coastal aquaculture opportunities. Nearshore and fjord locations are described as sheltered and accessible but constrained by limited area, limited carrying capacity and multiple users; pressure on these areas makes more exposed sites increasingly relevant. Their analysis finds that recent salmonid sites tend to be farther from land, while deleted sites tended to be shallower than currently cleared sites. They caution that depth data are limited and based on 50-meter isolines, and that the NorKyst-800 model’s 800-meter horizontal resolution creates uncertainty, especially for current estimates at some fjord sites. The authors also describe traffic-light outcomes as affecting production capacity and model associated area growth, but do not analyze the site-application licensing process in this segment.",
+    "A2": "",
+    "A3": "This segment does not describe cumulative-effect assessments of aquaculture production in spatial planning or site-selection decisions. It does discuss environmental status at production-area scale through the traffic-light system and uses historical or assumed future traffic-light outcomes in area-demand scenarios. The authors state that their scenarios assume maximum 6 % growth or reduction based on environmental-status assessments, while noting that actual capacity decisions are at the authorities’ discretion. The modelling omits some factors, including exceptions to growth decisions and use of surplus biomass across production areas. These are scenario limitations, not a method for assessing cumulative environmental effects at individual sites.",
+    "A4": "The authors describe the traffic-light system as a regulatory arrangement under which authorities may offer 6 % growth in permit-MTB every second year in green areas, maintain capacity in yellow areas, or reduce it in red areas. They note that the amount of reduction is not fixed, although permit-MTB was reduced by 6 % in the two years when reductions were used. Their scenarios assume maximum growth or a 6 % reduction based on environmental status, while acknowledging that authorities exercise discretion and that the model excludes exceptions and cross-area use of surplus biomass. The segment does not analyze economic instruments, financial incentives, or how benefits and costs are distributed among stakeholders.",
+    "A5": "The authors’ spatial analysis combines register data on sites with geographic measures and modelled temperature, salinity and current speed. NorKyst-800 is described as an openly accessible coastal model with 800-meter horizontal resolution and 35 vertical layers; the authors caution that it resolves major coastal features but not small islands and narrow fjord arms well, creating uncertainty, particularly for current estimates. Some sites were excluded where model data were considered inadequate. The environmental-variable analysis covers 2018-2022, which the authors say is too short to capture long-term temperature trends. They also identify emerging technology as a factor that may enable more exposed siting, including structures designed for exposed conditions and closed or semi-closed systems. The authors point to possible reduced particle emissions or reduced sea-lice exposure from deeper intake water, while noting that environmental and other-industry considerations remain relevant.",
+    "A6": "The authors describe competition for coastal space as one reason farms may move farther from shore: traditional sheltered, accessible areas near the coast and in fjords have limited available area and carrying capacity and many interested users. For potential offshore aquaculture, the segment identifies existing interests such as fisheries, petroleum and shipping, as well as developing interests such as ocean energy. It states that environmental considerations and other industries must be considered alongside technological feasibility. The authors also note that some production areas with high aquaculture area-use show trends toward changing site locations, possibly partly because of lack of space, but say management and other factors may also contribute. This segment does not assess procedural legitimacy or predictability in planning decisions.",
+    "A7": "The authors’ findings indicate that the industry’s spatial footprint and site choices can change: recent salmonid sites tend to have larger registered surface areas and greater distances from land, and the authors suggest future growth may increasingly involve northern or more exposed areas. The segment discusses technology as a means of expanding siting options, including structures able to withstand more exposed conditions and closed or semi-closed systems that may reduce organic-particle emissions or sea-lice exposure. It also notes that low-trophic species may be suitable in more sheltered areas and could potentially contribute to restoration projects. These are described as possible developments, not as evaluated measures proving that industry use is more area-efficient or sustainable.",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 3,
+   "headings": [],
+   "page_from": 82,
+   "page_to": 102,
+   "chars": 49960,
+   "key_figures": [
+    {
+     "quote": "Med dette scenariet vil den samlede arealbruken i 2050 utgjøre 64 % av den samlede arealbruken i scenario 2.",
+     "statement": "The authors’ scenario analysis estimates that total aquaculture area use in Norway in 2050 under scenario 3 would be 64 % of the area under scenario 2."
+    },
+    {
+     "quote": "Det har til sammen blitt gitt 24 tilsagn på søknader om tildeling av utviklingstillatelser, en midlertidig ordning som opphørte i 2017.",
+     "statement": "The authors report that 24 applications were granted commitments for development licences under the temporary scheme, which ended in 2017."
+    },
+    {
+     "quote": "Til sammen er det gitt 50 tillatelser, hvor Nordlaks Oppdrett AS sitt anlegg Havfarm er tildelt flest med 21 tillatelser (16 380 tonn).",
+     "statement": "The authors report 50 development licences for offshore concepts, with Havfarm allocated 21 licences (16 380 tonn)."
+    },
+    {
+     "quote": "Blant lukkede anlegg finner vi 9 ulike konsepter som har fått tilsagn på utviklingstillatelser, og til sammen er det tildelt 35 tillatelser til produksjon i lukkede merd-anlegg.",
+     "statement": "The authors report that 9 closed-system concepts received commitments and that 35 development licences were allocated for production in closed-pen systems."
+    },
+    {
+     "quote": "Blant semi-lukkede anlegg finner vi 5 ulike konsepter, og blant nedsenkbare 2 konsepter. Disse teknologiene er tildelt henholdsvis 17 og 3 tillatelser hver.",
+     "statement": "The authors report 5 semi-closed concepts with 17 licences and 2 submersible concepts with 3 licences."
+    },
+    {
+     "quote": "Til sammen har det blitt intervjuet fire representanter, én for hver teknologi.",
+     "statement": "The authors interviewed four industry representatives, one for each of the technologies covered."
+    },
+    {
+     "quote": "Det ble satt av 45 minutter til intervjuene som ble gjennomført i digitalt møterom.",
+     "statement": "The authors scheduled 45 minutes for each digital interview with industry representatives."
+    },
+    {
+     "quote": "Det er til sammen 13 nye oppdrettsarter, av totalt 31 vurderte arter, som oppnådde en samlet vurderingsscore over 2 i den tidligere utredningen.",
+     "statement": "The authors report that 13 of the 31 species assessed in the cited earlier study scored above 2 overall."
+    },
+    {
+     "quote": "Veksten i scenario 3 er 278 %, noe som vil tilsvare et samlet arealbehov på 15 751 562 m2 i 2032.",
+     "statement": "The authors’ kamskjell scenario 3 projects 278 % growth and a total area requirement of 15 751 562 m2 in 2032."
+    },
+    {
+     "quote": "Vekstscenario 1 anses som sannsynlig med bakgrunn av den relativt stabile produksjonen av arten det siste tiåret, noe som vil gi et samlet arealbehov på 4 609 742 m2 innen 2032.",
+     "statement": "The authors consider blue mussel growth scenario 1 plausible and project a total area requirement of 4 609 742 m2 by 2032."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors use three scenarios to illustrate possible future area needs and say they may assist municipal and central-government planners. Scenarios 2 and 3 assume that production-volume growth entails proportional growth in area, but the authors caution that new technology and methods may break that relationship. The scenarios omit constraints such as available sites, feed access, biological challenges and new regulation. Scenario 2 represents an upper growth boundary, based on the regulation’s maximum permitted capacity growth of 6 % every second year. The authors say areas already hosting substantial aquaculture may face limits on available sites. Scenario 3 applies traffic-light outcomes and yields lower total area use than scenario 2. The segment also describes prospective technology and offshore-area assessments, but does not set out a comprehensive current planning framework for balancing all interests.",
+    "A1": "The authors identify site availability as a potential constraint on future growth, particularly in production areas that already have substantial aquaculture. The scenario analysis does not model this constraint, nor feed access, biological challenges or future regulation. Interviews and the authors’ technology review describe different site requirements: offshore installations need exposed locations, suitable water temperature and currents for water exchange, and typically depths greater than 100 meters; submersible pens need sufficient depth to go below the lice belt, around 25 meters. Closed and semi-closed systems are generally suited to more sheltered locations and often need proximity to land for power. The authors report that offshore installations cleared so far are not at their intended offshore sites. These factors interact with environmental limits and licensing incentives, but this segment does not describe the full application process.",
+    "A2": "",
+    "A3": "The authors report that consequence assessments are underway for three offshore areas: Trænabanken, Frøyabanken and Norskerenna, with another passage naming Norskerenna sør, Frøyabanken nord and Trænabanken. The assessments are intended to consider areas for offshore aquaculture, and the NFD representative says an assessment programme is being established with a view to opening parts of them. The segment does not describe cumulative-effect assessment methods or how cumulative production effects are incorporated into municipal plans or site-selection decisions. It does identify knowledge needs: the industry calls for further mapping of offshore areas, focusing on optimal water temperatures and water exchange, while a fisheries-authority representative says knowledge is needed about seismic shooting effects on fish in offshore facilities. Two areas under assessment for offshore aquaculture overlap with areas being assessed for wind power.",
+    "A4": "The authors describe development licences as a temporary incentive scheme intended to support green development and address environmental and area challenges, including salmon-lice spread. They report that the scheme ended in 2017 after 24 commitments. Their interviews indicate that new technology can involve higher costs and risks, which may discourage development; higher production costs may also require larger fish volumes for profitability. A Mattilsynet representative considered development licences potentially positive in accelerating technology development, while the NFD representative said environmental impacts already give firms an incentive to develop closed systems. The segment also describes a traffic-light mechanism under which an operator may obtain growth in a red-marked area if it documents no substantial environmental impact. The evidence here concerns incentives and production economics, not the distribution of area-related benefits and costs among stakeholder groups.",
+    "A5": "The authors base their technology review on the Directorate of Fisheries’ licence overview and available reports on the concepts. They also conducted interviews with industry representatives for four technology types and interviewed one representative each from NFD, the Directorate of Fisheries and Mattilsynet; they caution that officials’ views are personal and may not represent their agencies fully. The segment identifies the need for further mapping of offshore locations, especially water temperature and water exchange, and further knowledge of seismic effects on fish in offshore facilities. The authors describe technologies that may change environmental impacts and siting opportunities: closed systems may collect sludge and reduce local impacts, while offshore systems target more exposed sites and submersible systems aim to reduce lice exposure. Their summary expects new systems mainly to complement, rather than replace, conventional open pens. The segment does not assess the overall data infrastructure underpinning spatial decisions.",
+    "A6": "Interviewed officials and industry representatives identify competition for marine space as a growing concern as maritime activity increases. The segment names conflicts between aquaculture and fisheries, including shrimp fishing grounds near farms and local fishers’ concerns about wild-fish quality around farms. Other interests to consider include shipping, defence, submarine cables, benthic nature values, offshore wind and oil and gas. The NFD and Fisheries Directorate representatives say there is not necessarily ample room for all legitimate users. Offshore aquaculture may also conflict with fisheries and shipping corridors, although industry sees possible cooperation between offshore sectors on safety, emergency response and personnel transfers. Closed technology may reduce some local environmental impacts and ease certain conflicts, but the Fisheries Directorate representative cautions that conflicts with fishers may persist as near-coastal production grows. These are interview findings, not a formal evaluation of process legitimacy or predictability.",
+    "A7": "The authors’ summary says the industry and authorities expect growth across closed, semi-closed, submersible and offshore technologies, generally alongside conventional open pens. Interviewed industry representatives describe potential operational measures and technology choices: closed and semi-closed systems may collect sludge, reduce lice exposure and permit production in areas where open pens are poorly suited; submersible pens can be lowered beneath the lice belt and are already used commercially by several operators. The authors report that new technology may allow more efficient use of existing aquaculture areas or open sites with different physical conditions, but note that technologies must work in practice and protect fish welfare. Their scenario analysis also warns that technological change could mean production growth does not translate into equivalent area growth. This segment does not provide a systematic comparison of firm-level spatial-efficiency practices.",
+    "A8": "The segment links water connectivity and farm configuration to both production conditions and fish health. The authors describe offshore systems as relying on good water exchange to carry organic material away; industry expects distance from neighbouring farms and water exchange to reduce lice and treatment needs. Submersible pens are designed to sit beneath the lice belt, while closed and semi-closed systems use pumped water, often from deeper layers, to reduce lice exposure and the entry of other agents. A Mattilsynet representative says a better-suited site structure could limit transmission of lice, viruses and bacteria and improve fish welfare. The authors also note that offshore farms require currents that ensure effective water exchange. These mechanisms are presented as technology descriptions and interview views; the segment does not quantify transmission effects or establish a specific connectivity-based siting rule."
+   },
+   "summary": "",
+   "chapter_title": ""
+  },
+  {
+   "index": 4,
+   "headings": [],
+   "page_from": 102,
+   "page_to": 119,
+   "chars": 37464,
+   "key_figures": [
+    {
+     "quote": "I 2022 utgjorde salgstallene for oppdrettstorsk 5 116 tonn, opp fra 1 622 tonn i 2021.",
+     "statement": "The authors report that farmed-cod sales in Norway rose from 1 622 tonn in 2021 to 5 116 tonn in 2022."
+    },
+    {
+     "quote": "I vekstscenario 3 ender produksjonsvolumet på 40 052 tonn, opp 683 % fra 2022, mens vekstscenario 2 gir et produksjonsvolum på 18 737 tonn, opp 266 % fra i dag.",
+     "statement": "The authors’ scenarios project Norwegian cod production in 2032 at 40 052 tonn under scenario 3 and 18 737 tonn under scenario 2, with the stated increases relative to 2022."
+    },
+    {
+     "quote": "Det samlede arealet som benyttes i dag er på 1 563 267 m2, og den gjennomsnittlige arealbruken er på 52 109 m2 per anlegg (basert på totalt 30 anlegg).",
+     "statement": "The authors find that current permitted Norwegian cod-farming locations use 1 563 267 m2 across 30 anlegg, averaging 52 109 m2 per anlegg."
+    },
+    {
+     "quote": "Sukkertare står for 80 % av den nasjonale produksjonen av tare, mens butare står for de resterende 20 %.",
+     "statement": "The authors report that sugar kelp accounts for 80 % of national kelp production in Norway, while winged kelp accounts for the remaining 20 %."
+    },
+    {
+     "quote": "I 2022 var salgstallet for sukkertare 161 tonn112.",
+     "statement": "The authors report Norwegian sugar-kelp sales of 161 tonn in 2022."
+    },
+    {
+     "quote": "Vekstscenario 1 og 2 gir et produksjonsvolum av sukkertare på henholdsvis 354 og 231 tonn i 2032, opp 120 % og 43 % fra 2022.",
+     "statement": "The authors’ Norwegian sugar-kelp scenarios project production of 354 and 231 tonn in 2032 under scenarios 1 and 2, respectively, with the stated increases from 2022."
+    },
+    {
+     "quote": "Det anslås at 40 % av biomassen i tareskogen beites ned av kråkeboller hvert år108.",
+     "statement": "The document cites an estimate that sea urchins graze down 40 % of kelp-forest biomass each year in Norway."
+    },
+    {
+     "quote": "Havtemperaturen utenfor norskekysten har økt med omentrent 1°C siden 1980-tallet122.",
+     "statement": "The document cites an estimate that sea temperatures off the Norwegian coast have increased by omentrent 1°C since the 1980-tallet."
+    },
+    {
+     "quote": "Falconer mfl. (2020) undersøkte to metoder for å kalibrere resultatene fra en global klimamodell (NorESM) til lokal skala for å bedre forutsi overflatetemperaturen ved 43 oppdrettslokasjoner langs hele norskekysten.",
+     "statement": "A cited 2020 study tested two calibration methods at 43 aquaculture locations along the Norwegian coast to improve local surface-temperature predictions from NorESM."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ findings on future production and area use show that growth in new aquaculture species could increase competition for coastal space, both among those species and with salmon farming. They note that all the new species discussed need locations with good water exchange. Sugar kelp requires substantial horizontal area because of its light requirements, while scallop sea ranching uses large areas but may allow compatible parallel activities. For cod, the authors relay a cited assessment that limited access to area and new sites is a short- to medium-term growth bottleneck, linked to knowledge gaps about escapes, spawning in cages, and effects on spawning grounds. The segment does not describe how planning formally balances environmental, industry, and other-use interests.",
+    "A1": "The authors identify species-specific site conditions as influential: scallop sea ranching depends on suitable seabed substrate and water flow, and the segment says permits are not granted north of Vestfjorden or south of the stated area in Rogaland. All the new species discussed need good water exchange. Cited assessments identify cod spawning grounds, escape and spawning risks, and disease transmission between farms and wild fish as relevant to site choice; colder northern waters may be more favourable for cod. Climate change may also shift suitability: the authors describe warmer southern areas as increasingly challenging for salmon, while northern areas may gain production potential. The segment identifies limited site access and insufficient local climate data as constraints, but does not cover licensing procedures in detail.",
+    "A2": "",
+    "A3": "",
+    "A4": "",
+    "A5": "The authors identify major knowledge needs for climate-related spatial decisions: fine-scale coastal projections, open and continuous environmental measurements at farms, and better understanding of how climate drivers combine with other environmental stressors and fish biology. They report a cited study that found a global climate model underestimated summer temperatures at all compared locations, often by several degrees, and recommend evaluating and adjusting model results to local conditions. They also caution that downscaling can introduce uncertainty and that model data may not represent conditions at an individual farm accurately. The segment discusses adaptation technologies, monitoring, breeding, and possible offshore production, but does not assess how emerging technologies generally change siting opportunities.",
+    "A6": "The authors identify potential competition for area between producers of new species and between those producers and salmon farming if production grows. They also describe cod farming’s possible conflicts with wild cod: cited assessments point to uncertainties about escapes, spawning in cages, and effects on spawning grounds, as well as the need to limit disease spread between farms and to wild fish. Scallop sea ranching occupies large areas, although compatible parallel activities may remain possible. The segment does not discuss procedural legitimacy, stakeholder participation, or how conflicts are resolved in planning.",
+    "A7": "The authors describe possible industry responses to climate risk, including local measures such as deeper nets, different feed types, and changes to stocking strategies. More technically demanding options include closed systems and selective breeding for temperature-tolerant salmon; monitoring environmental conditions and fish health is also recommended. Cited policy advice supports adaptation plans and more flexible regulation and licensing, potentially allowing production sites to move. The authors emphasize that effective choices depend on accurate local information and that high-resolution coastal climate projections and continuous farm measurements are currently insufficient. They also note that harvesting sea urchins for land-based fattening could support kelp-forest restoration without requiring large sea areas.",
+    "A8": "For cod, the authors report that site selection should account for limiting infection spread between farms and to wild fish. A cited study suggests the bacterium Francisella sp. causes less disease and mortality, and is generally less present, in fish in colder-water areas, making northern coastal locations potentially more favourable. The segment also describes climate-related increases in infection pressure for salmon as temperature rises, citing an estimated doubling when temperature increases from 9°C to 11°C. It does not provide a detailed account of water connectivity or farm-network biosecurity mechanisms."
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}

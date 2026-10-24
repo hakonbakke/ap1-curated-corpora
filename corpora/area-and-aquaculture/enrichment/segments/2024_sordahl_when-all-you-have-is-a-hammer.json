@@ -1,0 +1,54 @@
+{
+ "doc_id": "2024_sordahl_when-all-you-have-is-a-hammer",
+ "model": "gpt-6-luna",
+ "large": false,
+ "n_segments": 1,
+ "segments": [
+  {
+   "index": 0,
+   "headings": [],
+   "page_from": 1,
+   "page_to": 12,
+   "chars": 61771,
+   "key_figures": [
+    {
+     "quote": "This will be done through an in-depth study of coastal zone planning in Norway, spanning 35 years and five generations of municipal coastal zone plans in the Tromsø municipality.",
+     "statement": "The authors’ study examines five generations of Tromsø municipal coastal zone plans spanning 35 years."
+    },
+    {
+     "quote": "Tromsø is a medium-sized municipality (with a population of about 77,000) where the inhabitants are spread between a large urban centre and several smaller coastal villages in the adjacent area.",
+     "statement": "The authors report that Tromsø municipality had a population of about 77,000; the passage does not specify a population reference year."
+    },
+    {
+     "quote": "In total, 7 persons were interviewed.",
+     "statement": "The authors interviewed 7 people involved in Tromsø planning processes."
+    },
+    {
+     "quote": "The interviews were conducted by telephone as semi-structured interviews, allowing for follow-up questions, and lasted between 20 and 45 min each.",
+     "statement": "The authors’ telephone interviews with key informants lasted between 20 and 45 min each."
+    },
+    {
+     "quote": "In the current PBA of 2008, it was extended to one nautical mile beyond the baseline (Hersoug and Johnsen 2012).",
+     "statement": "The authors state that the 2008 Planning and Building Act extended municipal coastal planning jurisdiction to one nautical mile beyond the baseline."
+    },
+    {
+     "quote": "The documents themselves have become ‘thicker’, where the plan description of 2015 was twice the size of that of the 2000 plan, and that of the 2022 plan was triple its size.",
+     "statement": "The authors found that the 2015 Tromsø plan description was twice the size of the 2000 plan description and the 2022 description was triple its size."
+    }
+   ],
+   "pq_notes": {
+    "A0": "The authors’ finding is that aquaculture has repeatedly been a major driver of Tromsø coastal planning, but the purposes and means of integration changed across plans. The 1991 plan framed planning as a way to manage growing pressure and prevent spatial conflicts, with aquaculture prominent. The 2000 plan emphasized facilitating fisheries and aquaculture development through coordination. Later plans broadened attention to sustainability, cumulative effects, ecosystem-based management, participation, and coordination across municipal borders. The authors argue that planning’s expanding ambition to be comprehensive can obscure what planning is meant to accomplish and may add complexity rather than resolve it. The segment does not provide a general formula for balancing environmental protection, industry growth, and competing uses.",
+    "A1": "The authors show that development opportunities are shaped by spatial planning and the availability of designated coastal areas, as well as municipal and national planning arrangements. Since 2000, the government has required municipalities to have an approved coastal zone plan before new aquaculture production sites can be established. In Tromsø, industry growth helped drive plans, while later plans addressed conflicts with other users, environmental considerations, and cross-municipal ecosystem management. The segment describes planning as a framework for designating and coordinating uses, not the detailed licensing system or how site availability interacts with fish health. It does not assess individual site suitability or production limits.",
+    "A2": "",
+    "A3": "The authors report that Tromsø’s 2015 inter-municipal plan aimed for an ecosystem-based approach that considered cumulative effects of spatial dispositions. It used a more in-depth impact-assessment and risk-and-vulnerability-analysis methodology, drawing on scientific and mapped local knowledge. The authors interpret this as a response to the 2008 Planning and Building Act’s emphasis on sustainable development, ecosystem-based approaches, and inter-municipal cooperation. They identify a broader challenge: increasingly comprehensive planning gathers more topics, documentation, and knowledge, but may make planning more complex and its purpose less clear. The segment does not describe a specific cumulative-effects model or quantify aquaculture’s cumulative impacts.",
+    "A4": "",
+    "A5": "The authors’ study draws on national and municipal planning documents, screened and systematised with NVIVO, and interviews with key public servants involved in Tromsø planning. They describe planning knowledge as increasingly diverse: the 2015 plan’s impact assessments and risk-and-vulnerability analysis incorporated scientific knowledge and local knowledge that had been gathered and mapped. National policy and guidance also shape what municipalities are expected to consider. The authors caution that knowledge and planning tools are not neutral: they help define what counts as a problem and what solutions appear reasonable. This segment does not discuss emerging technologies or how they might change siting opportunities or environmental impacts.",
+    "A6": "The authors identify spatial conflicts between aquaculture and other coastal users as a recurring planning concern. The 2008 Tromsø plan described aquaculture’s expanding spatial use as being perceived as unjustified expansion at the expense of local rights associated with traditional use. Later plans also addressed conflicts involving commercial tourism and recreation, with conflict lines moving closer to shore. The authors report that participation, public meetings, hearings, and inter-municipal planning were used to gather knowledge, support local legitimacy, and seek more predictable management. They argue that the ideal of integration can itself obscure trade-offs and make decisions more complex; the segment does not evaluate the legitimacy of particular site decisions.",
+    "A7": "",
+    "A8": ""
+   },
+   "summary": "",
+   "chapter_title": ""
+  }
+ ]
+}
