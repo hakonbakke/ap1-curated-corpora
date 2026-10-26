@@ -1,0 +1,26 @@
+# Visit the deployed app every six hours so Streamlit Community Cloud does not put
+# it to sleep (about 12 hours without visits), and wake it if it has slept.
+name: Keep the app awake
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/keep-awake.yml", "scripts/keep_awake.py"]
+
+jobs:
+  visit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/keep_awake.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && python -m playwright install --with-deps chromium-headless-shell
+      - run: python scripts/keep_awake.py
