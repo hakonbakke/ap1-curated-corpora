@@ -245,7 +245,7 @@ class OpenQuestionTests(_SectionCase):
                 for point in CARDS[n]["points"]:
                     self.assertNotIn(point[lang], text)
 
-    def test_choosing_clears_an_existing_answer(self) -> None:
+    def test_choosing_moves_an_existing_answer_into_the_history(self) -> None:
         at = self.in_lang("no")
         self.ask(at, "Hva er en lokalitet?")
         self.assertIn("areal_last", at.session_state)
@@ -253,15 +253,18 @@ class OpenQuestionTests(_SectionCase):
         self.assertEqual(["Hva er en lokalitet?"], self.queries)
         self.choose(at, "no", 4)
         self.assertNotIn("areal_last", at.session_state)
-        self.assertEqual(0, sum(m == KORT for m in self.md(at.main)))
         self.assertEqual([], [s for s in at.subheader if s.value == "Syntese"])
         self.assertEqual(FAULTS["no"][3][2], at.text_area[0].value)
         self.assertEqual(["Hva er en lokalitet?"], self.queries)  # still only the first ask
         self.assertEqual(1, len(self.answer_rows()))
-        # And it stays cleared on a plain rerun.
-        at.run()
-        self.assertNotIn("areal_last", at.session_state)
-        self.assertEqual(0, sum(m == KORT for m in self.md(at.main)))
+        # The old answer is not left open under the new question; it sits folded in the history.
+        for _ in range(2):  # and stays that way on a plain rerun
+            self.assertNotIn("areal_last", at.session_state)
+            folded = next(e for e in at.main.expander if e.label == "Hva er en lokalitet?")
+            self.assertFalse(folded.proto.expanded)
+            self.assertEqual(1, sum(m == KORT for m in self.md(folded)))
+            self.assertEqual(1, sum(m == KORT for m in self.md(at.main)))
+            at.run()
 
     def test_choosing_another_question_replaces_the_text(self) -> None:
         at = self.in_lang("no")

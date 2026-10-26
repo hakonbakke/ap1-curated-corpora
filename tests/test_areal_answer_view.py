@@ -322,6 +322,74 @@ class RatingFormTests(_PageCase):
         self.assertEqual(("", ""), (rating["length"], rating["readability"]))
 
 
+class SessionHistoryTests(_PageCase):
+    def history_expanders(self, at):
+        return [e for e in at.main.expander if e.label.startswith("Første") or e.label.startswith("Andre")]
+
+    def test_a_new_question_keeps_the_old_answer_folded_below(self) -> None:
+        at = self.app().run()
+        self.ask(at, "Første spørsmål?")
+        first_id = at.session_state["areal_last"]["answer_id"]
+        self.assertNotIn("areal_history", at.session_state)
+        self.ask(at, "Andre spørsmål?")
+        self.assertFalse(at.exception, at.exception)
+        self.assertEqual(2, self.api_calls)
+        history = at.session_state["areal_history"]
+        self.assertEqual(["Første spørsmål?"], [h["query"] for h in history])
+        self.assertEqual("Andre spørsmål?", at.session_state["areal_last"]["query"])
+        self.assertIn("Tidligere svar i denne økten (1)", [s.value for s in at.subheader])
+        folded = self.history_expanders(at)
+        self.assertEqual(["Første spørsmål?"], [e.label for e in folded])
+        self.assertFalse(folded[0].proto.expanded)
+        self.assertIn(KORT, self.md(folded[0]))
+        # The old answer keeps its own rating form.
+        self.assertEqual("Var lengden passe?", at.radio(key=f"areal_length_{first_id}").label)
+        at.run()  # a plain rerun keeps both
+        self.assertEqual(2, sum(m == KORT for m in self.md(at.main)))
+
+    def test_newest_earlier_answer_comes_first(self) -> None:
+        at = self.app().run()
+        for q in ("Første a?", "Første b?", "Første c?"):
+            self.ask(at, q)
+        self.assertEqual(["Første b?", "Første a?"], [h["query"] for h in at.session_state["areal_history"]])
+        self.assertEqual(["Første b?", "Første a?"], [e.label for e in self.history_expanders(at)])
+
+    def test_same_question_again_does_not_duplicate(self) -> None:
+        at = self.app().run()
+        self.ask(at, "Første spørsmål?")
+        self.ask(at, "Første spørsmål?")
+        self.assertFalse(at.exception, at.exception)
+        self.assertEqual([], at.session_state["areal_history"] if "areal_history" in at.session_state else [])
+        self.assertEqual(1, sum(m == KORT for m in self.md(at.main)))
+
+    def test_rating_an_earlier_answer_logs_its_own_id(self) -> None:
+        at = self.app().run()
+        self.ask(at, "Første spørsmål?")
+        first_id = at.session_state["areal_last"]["answer_id"]
+        self.ask(at, "Andre spørsmål?")
+        at.radio(key=f"areal_readable_{first_id}").set_value("ja")
+        form_buttons = [b for b in at.button if b.label == "Send tilbakemelding"]
+        self.assertEqual(2, len(form_buttons))
+        form_buttons[-1].click()  # the history form sits below the current answer
+        at.run()
+        self.assertFalse(at.exception, at.exception)
+        rating = [p for p in self.sent if p["type"] == "rating"][0]
+        self.assertEqual((first_id, "ja"), (rating["answer_id"], rating["readability"]))
+
+    def test_history_heading_in_english(self) -> None:
+        at = self.app().run()
+        self.set_radio(at, "Språk / Language", "en")
+        at.run()
+        self.ask(at, "Første q?")
+        self.ask(at, "Andre q?")
+        self.assertIn("Earlier answers in this session (1)", [s.value for s in at.subheader])
+
+    def test_css_covers_history_answers(self) -> None:
+        import ui
+
+        self.assertIn('[class*="st-key-areal_hist_answer_"] h3', ui._BASE_CSS)
+
+
 HEADED = (
     "Innledning om saken.\n\n### Første overskrift\n\nTekst under første.\n\n"
     "### Andre overskrift\n\nTekst under andre."

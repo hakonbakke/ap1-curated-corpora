@@ -126,6 +126,15 @@ h1{ line-height:1.14; }
 }
 /* No anchor-link icon next to those headings */
 .st-key-areal_answer_text [data-testid="stHeaderActionElements"]{ display:none; }
+/* The same for earlier answers in the session history */
+[class*="st-key-areal_hist_answer_"] h1,
+[class*="st-key-areal_hist_answer_"] h2,
+[class*="st-key-areal_hist_answer_"] h3,
+[class*="st-key-areal_hist_answer_"] h4{
+  font-size:1rem; font-weight:700; line-height:1.4;
+  letter-spacing:0; margin:1rem 0 .25rem; padding:0;
+}
+[class*="st-key-areal_hist_answer_"] [data-testid="stHeaderActionElements"]{ display:none; }
 .hl-tag{
   display:inline-block; font-size:.7rem; font-weight:700;
   letter-spacing:.04em; text-transform:uppercase;

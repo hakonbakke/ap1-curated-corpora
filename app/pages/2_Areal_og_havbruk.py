@@ -1040,14 +1040,29 @@ def _open_q_key(key_lang: str) -> str:
     return f"areal_open_q_{key_lang}"
 
 
+MAX_HISTORY = 20
+
+
+def _archive_last() -> None:
+    """Move the shown answer into this session's history (newest first), so a new
+    question never leaves an old answer under it but the old one is not lost."""
+    last = st.session_state.pop("areal_last", None)
+    if not last or not last.get("answer"):
+        return
+    history = st.session_state.setdefault("areal_history", [])
+    if all(h["answer_id"] != last["answer_id"] for h in history):
+        history.insert(0, last)
+        del history[MAX_HISTORY:]
+
+
 def _fill_from_open_question(key_lang: str) -> None:
     """Selectbox callback (runs before the rerun): put the full priority question in
-    the text area and drop the old answer. Asks nothing. The placeholder does nothing."""
+    the text area and archive the old answer. Asks nothing. The placeholder does nothing."""
     n = st.session_state.get(_open_q_key(key_lang))
     if not n:
         return
     st.session_state["areal_query"] = FAULTS[key_lang][n - 1][2]
-    st.session_state.pop("areal_last", None)  # never leave an old answer under a new question
+    _archive_last()
 
 
 def _open_q_label(n: int) -> str:
@@ -1301,6 +1316,34 @@ def _render_last(last: dict) -> None:
     _render_sources(last["results"])
 
 
+def _render_history() -> None:
+    """Earlier answers in this session, newest first, each folded under its question.
+    They live in session state only, so a reload clears them."""
+    history = st.session_state.get("areal_history") or []
+    if not history:
+        return
+    st.divider()
+    st.subheader(
+        tr(lang, f"Earlier answers in this session ({len(history)})", f"Tidligere svar i denne økten ({len(history)})")
+    )
+    st.caption(
+        tr(
+            lang,
+            "Kept while this page is open. Reloading the page clears them.",
+            "Tas vare på så lenge siden er åpen. Laster du siden på nytt, forsvinner de.",
+        )
+    )
+    for item in history:
+        question = " ".join(item["query"].split())
+        label = question if len(question) <= 140 else question[:139] + "…"
+        with st.expander(label):
+            st.caption(_routing_caption(item.get("routed_pq") or []))
+            with st.container(key=f"areal_hist_answer_{item['answer_id']}"):
+                st.markdown(item["answer"])
+            _render_feedback(item["answer_id"])
+            _render_sources(item["results"])
+
+
 def _stream_answer(client: OpenAI, q: str, results: list[dict], holder, codes: list[str]) -> str:
     """Stream the synthesis into `holder`. Returns the full text (stripped)."""
     status = st.empty()
@@ -1336,7 +1379,11 @@ def _ask(q: str) -> None:
     On success the answer is stored in session state and shown."""
     started = time.perf_counter()
     answer_id = uuid.uuid4().hex
-    st.session_state.pop("areal_last", None)  # a new question replaces the old answer
+    shown = st.session_state.get("areal_last")
+    if shown and shown.get("query") == q:
+        st.session_state.pop("areal_last")  # the same question again replaces its answer
+    else:
+        _archive_last()  # a new question moves the old answer into the history
 
     if not corpus_ready:
         st.error(tr(lang, "Corpus not ready.", "Korpuset er ikke klart."))
@@ -1457,6 +1504,7 @@ if run and query.strip():
     _ask(query.strip())
 elif st.session_state.get("areal_last"):
     _render_last(st.session_state["areal_last"])
+_render_history()
 
 st.caption(
     tr(
