@@ -531,9 +531,9 @@ with hero_left:
         tr(
             lang,
             '<h1 class="hl-h1">Area and aquaculture</h1>'
-            '<p class="hl-lede">The pens occupy a vanishingly small share of the coastal zone, and yet area scarcity remains a persistent dispute. A distinguishes pen area, locality area and plan area. B shows the split governing system. C shows the open questions.</p>',
+            '<p class="hl-lede">This is a knowledge room with 50 research articles and reports on aquaculture and the use of coastal space, selected by researchers in the field. You can ask questions about the content and get answers based only on these sources, with a reference to where each finding comes from. The room follows the Honest Broker principle: answers show what the research says, where it disagrees and what it does not know. This is a prototype under development. At the bottom of each answer you will find a feedback form. Please fill it in to help us develop the platform.</p>',
             '<h1 class="hl-h1">Areal og havbruk</h1>'
-            '<p class="hl-lede">Merdene tar en forsvinnende liten del av kystsonen, og likevel er knapphet på areal et vedvarende stridsspørsmål. A skiller merdareal, lokalitetsareal og planareal. B viser det delte styringssystemet. C viser de åpne spørsmålene.</p>',
+            '<p class="hl-lede">Dette er et kunnskapsrom med 50 forskningsartikler og rapporter om havbruk og arealbruk i kystsonen, valgt ut av forskere på feltet. Du kan stille spørsmål til innholdet og får svar som bare bygger på disse kildene, med henvisning til hvor hvert funn kommer fra. Rommet følger Honest Broker-prinsippet: svarene viser hva forskningen sier, hvor den er uenig og hva den ikke vet. Dette er en prototype under utvikling. Nederst i hvert svar finner du et skjema for tilbakemelding. Fyll det gjerne ut, så hjelper du oss å utvikle plattformen.</p>',
         ),
         unsafe_allow_html=True,
     )
